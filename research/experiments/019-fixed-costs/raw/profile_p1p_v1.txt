@@ -1,0 +1,1773 @@
+Analysis of sampling bench_ext (pid 24492) every 1 millisecond
+Process:         bench_ext [24492]
+Path:            /Users/USER/Desktop/*/bench_ext
+Load Address:    0x102f98000
+Identifier:      bench_ext
+Version:         0
+Code Type:       ARM64
+Platform:        macOS
+Parent Process:  zsh [24124]
+Target Type:     live task
+
+Date/Time:       2026-10-01 03:46:41.294 -0700
+Launch Time:     2026-10-01 03:46:27.255 -0700
+OS Version:      macOS 26.5.2 (25F84)
+Report Version:  7
+Analysis Tool:   /usr/bin/sample
+
+Physical footprint:         2.0G
+Physical footprint (peak):  2.0G
+Idle exit:                  untracked
+----
+
+Call graph:
+    9278 Thread_27082742   DispatchQueue_1: com.apple.main-thread  (serial)
+      9278 start  (in dyld) + 6992  [0x187063e00]
+        9219 main  (in bench_ext) + 1056  [0x102f98aa8]  bench_ext.c:54
+        + 9219 libpostal_parse_address  (in bench_ext) + 20  [0x102fb8050]  libpostal.c:280
+        +   5997 address_parser_parse  (in bench_ext) + 1692  [0x102fa07c0]  address_parser.c:2242
+        +   ! 5994 address_parser_predict  (in bench_ext) + 124  [0x102fa00a8]  address_parser.c:2020
+        +   ! : 5317 crf_tagger_predict  (in bench_ext) + 48  [0x102fa5ca4]  crf.c:907
+        +   ! : | 2229 crf_tagger_score  (in bench_ext) + 776  [0x102fa5660]  crf.c:717
+        +   ! : | + 203 address_parser_features  (in bench_ext) + 2192  [0x102f9dfa0]  address_parser.c:1675
+        +   ! : | + ! 108 graph_has_edge  (in bench_ext) + 120  [0x102fb5b28]  graph.c:114
+        +   ! : | + ! 76 graph_has_edge  (in bench_ext) + 88  [0x102fb5b08]  graph.c:113
+        +   ! : | + ! 14 graph_has_edge  (in bench_ext) + 140,132  [0x102fb5b3c,0x102fb5b34]  graph.c:0
+        +   ! : | + ! 3 graph_has_edge  (in bench_ext) + 124  [0x102fb5b2c]  graph.c:115
+        +   ! : | + ! 1 graph_has_edge  (in bench_ext) + 92  [0x102fb5b0c]  graph.c:109
+        +   ! : | + ! 1 graph_has_edge  (in bench_ext) + 108  [0x102fb5b1c]  graph.c:111
+        +   ! : | + 154 address_parser_features  (in bench_ext) + 5144  [0x102f9eb28]  address_parser.c:1895
+        +   ! : | + ! 126 ap_canon_part  (in bench_ext) + 576  [0x102fa1964]  address_parser.c:0
+        +   ! : | + ! : 40 fd_find_slot  (in bench_ext) + 304,260,...  [0x102fa1628,0x102fa15fc,...]  feature_dict.h:147
+        +   ! : | + ! : 37 fd_find_slot  (in bench_ext) + 516  [0x102fa16fc]  feature_dict.h:0
+        +   ! : | + ! : 34 fd_find_slot  (in bench_ext) + 336  [0x102fa1648]  feature_dict.h:151
+        +   ! : | + ! : 5 fd_find_slot  (in bench_ext) + 324  [0x102fa163c]  feature_dict.h:150
+        +   ! : | + ! : 4 fd_find_slot  (in bench_ext) + 84,148  [0x102fa154c,0x102fa158c]  feature_dict.h:146
+        +   ! : | + ! : 3 fd_find_slot  (in bench_ext) + 404,472  [0x102fa168c,0x102fa16d0]  feature_dict.h:152
+        +   ! : | + ! : 2 fd_find_slot  (in bench_ext) + 252,316  [0x102fa15f4,0x102fa1634]  feature_dict.h:148
+        +   ! : | + ! : 1 fd_find_slot  (in bench_ext) + 24  [0x102fa1510]  feature_dict.h:145
+        +   ! : | + ! 8 ap_canon_part  (in bench_ext) + 176  [0x102fa17d4]  address_parser.c:1396
+        +   ! : | + ! : 8 _platform_strlen  (in libsystem_platform.dylib) + 80,4,...  [0x187428b10,0x187428ac4,...]
+        +   ! : | + ! 6 ap_canon_part  (in bench_ext) + 236  [0x102fa1810]  address_parser.c:1398
+        +   ! : | + ! : 6 _platform_memchr  (in libsystem_platform.dylib) + 76,84,...  [0x187428e4c,0x187428e54,...]
+        +   ! : | + ! 3 ap_canon_part  (in bench_ext) + 92  [0x102fa1780]  address_parser.c:1384
+        +   ! : | + ! : 1 cstring_array_get_string  (in bench_ext) + 8  [0x10316e3fc]  string_utils.c:1289
+        +   ! : | + ! : 1 cstring_array_get_string  (in bench_ext) + 28  [0x10316e410]  string_utils.c:1290
+        +   ! : | + ! : 1 cstring_array_get_string  (in bench_ext) + 40  [0x10316e41c]  string_utils.c:1291
+        +   ! : | + ! 2 ap_canon_part  (in bench_ext) + 588  [0x102fa1970]  address_parser.c:0
+        +   ! : | + ! : 2 _free  (in libsystem_malloc.dylib) + 124  [0x18724ecc8]
+        +   ! : | + ! 2 ap_canon_part  (in bench_ext) + 60  [0x102fa1760]  address_parser.c:1384
+        +   ! : | + ! 1 ap_canon_part  (in bench_ext) + 588  [0x102fa1970]  address_parser.c:0
+        +   ! : | + ! 1 ap_canon_part  (in bench_ext) + 12  [0x102fa1730]  address_parser.c:1382
+        +   ! : | + ! 1 ap_canon_part  (in bench_ext) + 144  [0x102fa17b4]  address_parser.c:1392
+        +   ! : | + ! : 1 _platform_strcmp$VARIANT$Base  (in libsystem_platform.dylib) + 0  [0x18742c730]
+        +   ! : | + ! 1 ap_canon_part  (in bench_ext) + 176  [0x102fa17d4]  address_parser.c:1396
+        +   ! : | + ! 1 ap_canon_part  (in bench_ext) + 276  [0x102fa1838]  address_parser.c:1398
+        +   ! : | + ! 1 ap_canon_part  (in bench_ext) + 612  [0x102fa1988]  feature_dict.h:0
+        +   ! : | + ! 1 fd_find_slot  (in bench_ext) + 540  [0x102fa1714]  feature_dict.h:155
+        +   ! : | + 145 address_parser_features  (in bench_ext) + 4912  [0x102f9ea40]  address_parser.c:1879
+        +   ! : | + ! 53 word_or_phrase_at_index  (in bench_ext) + 468  [0x102f9ffd4]  address_parser.c:1091
+        +   ! : | + ! : 39 cstring_array_get_phrase  (in bench_ext) + 104  [0x103175fb0]  trie_search.c:963
+        +   ! : | + ! : | 28 char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:969
+        +   ! : | + ! : | + 27 _platform_memmove  (in libsystem_platform.dylib) + 460,420,...  [0x18742b52c,0x18742b504,...]
+        +   ! : | + ! : | + 1 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : | + ! : | 10 char_array_append  (in bench_ext) + 32  [0x10316d2cc]  string_utils.c:967
+        +   ! : | + ! : | + 9 _platform_strlen  (in libsystem_platform.dylib) + 48,56,...  [0x187428af0,0x187428af8,...]
+        +   ! : | + ! : | + 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! : | 1 char_array_append  (in bench_ext) + 36  [0x10316d2d0]  string_utils.c:968
+        +   ! : | + ! : 3 char_array_get_string  (in bench_ext) + 16,32  [0x10316d138,0x10316d148]  string_utils.c:919
+        +   ! : | + ! : 3 cstring_array_get_phrase  (in bench_ext) + 92  [0x103175fa4]  trie_search.c:962
+        +   ! : | + ! : | 2 cstring_array_get_string  (in bench_ext) + 8  [0x10316e3fc]  string_utils.c:1289
+        +   ! : | + ! : | 1 cstring_array_get_string  (in bench_ext) + 36  [0x10316e418]  string_utils.c:1291
+        +   ! : | + ! : 2 char_array_append  (in bench_ext) + 148  [0x10316d340]  string_utils.c:971
+        +   ! : | + ! : 2 cstring_array_get_phrase  (in bench_ext) + 112  [0x103175fb8]  trie_search.c:965
+        +   ! : | + ! : 1 char_array_terminate  (in bench_ext) + 92  [0x10316d22c]  string_utils.c:1016
+        +   ! : | + ! : 1 cstring_array_get_phrase  (in bench_ext) + 28  [0x103175f64]  trie_search.c:957
+        +   ! : | + ! : 1 cstring_array_get_phrase  (in bench_ext) + 36  [0x103175f6c]  trie_search.c:959
+        +   ! : | + ! : 1 cstring_array_get_phrase  (in bench_ext) + 124  [0x103175fc4]  trie_search.c:965
+        +   ! : | + ! :   1 char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:969
+        +   ! : | + ! :     1 _platform_memmove  (in libsystem_platform.dylib) + 0  [0x18742b360]
+        +   ! : | + ! 46 word_or_phrase_at_index  (in bench_ext) + 244  [0x102f9fef4]  address_parser.c:1077
+        +   ! : | + ! : 39 is_valid_dictionary_phrase  (in bench_ext) + 108  [0x102f9d674]  address_parser.c:1049
+        +   ! : | + ! : | 21 address_expansion_in_dictionary  (in bench_ext) + 56  [0x102f9967c]  address_dictionary.c:30
+        +   ! : | + ! : | 16 address_expansion_in_dictionary  (in bench_ext) + 20,72  [0x102f99658,0x102f9968c]  address_dictionary.c:0
+        +   ! : | + ! : | 2 address_expansion_in_dictionary  (in bench_ext) + 36  [0x102f99668]  address_dictionary.c:29
+        +   ! : | + ! : 6 is_valid_dictionary_phrase  (in bench_ext) + 240  [0x102f9d6f8]  address_parser.c:0
+        +   ! : | + ! : 1 is_valid_dictionary_phrase  (in bench_ext) + 56  [0x102f9d640]  address_parser.c:1047
+        +   ! : | + ! 20 word_or_phrase_at_index  (in bench_ext) + 296  [0x102f9ff28]  address_parser.c:1078
+        +   ! : | + ! : 17 cstring_array_get_phrase  (in bench_ext) + 104  [0x103175fb0]  trie_search.c:963
+        +   ! : | + ! : | 11 char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:969
+        +   ! : | + ! : | + 11 _platform_memmove  (in libsystem_platform.dylib) + 444,460,...  [0x18742b51c,0x18742b52c,...]
+        +   ! : | + ! : | 3 char_array_append  (in bench_ext) + 36  [0x10316d2d0]  string_utils.c:968
+        +   ! : | + ! : | 2 char_array_append  (in bench_ext) + 32  [0x10316d2cc]  string_utils.c:967
+        +   ! : | + ! : | + 2 _platform_strlen  (in libsystem_platform.dylib) + 48,80  [0x187428af0,0x187428b10]
+        +   ! : | + ! : | 1 char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:970
+        +   ! : | + ! : 1 char_array_append  (in bench_ext) + 148  [0x10316d340]  string_utils.c:971
+        +   ! : | + ! : 1 cstring_array_get_phrase  (in bench_ext) + 28  [0x103175f64]  trie_search.c:957
+        +   ! : | + ! : 1 cstring_array_get_phrase  (in bench_ext) + 136  [0x103175fd0]  trie_search.c:968
+        +   ! : | + ! :   1 char_array_terminate  (in bench_ext) + 16  [0x10316d1e0]  string_utils.c:1015
+        +   ! : | + ! 9 word_or_phrase_at_index  (in bench_ext) + 40,92,...  [0x102f9fe28,0x102f9fe5c,...]  address_parser.c:1073
+        +   ! : | + ! 6 word_or_phrase_at_index  (in bench_ext) + 180,196,...  [0x102f9feb4,0x102f9fec4,...]  address_parser.c:1075
+        +   ! : | + ! 5 word_or_phrase_at_index  (in bench_ext) + 320  [0x102f9ff40]  address_parser.c:1090
+        +   ! : | + ! 3 word_or_phrase_at_index  (in bench_ext) + 116,212,...  [0x102f9fe74,0x102f9fed4,...]  address_parser.c:0
+        +   ! : | + ! 1 word_or_phrase_at_index  (in bench_ext) + 372  [0x102f9ff74]  address_parser.c:1109
+        +   ! : | + ! 1 word_or_phrase_at_index  (in bench_ext) + 396  [0x102f9ff8c]  address_parser.c:1128
+        +   ! : | + ! 1 word_or_phrase_at_index  (in bench_ext) + 528  [0x102fa0010]  address_parser.c:1150
+        +   ! : | + 116 address_parser_features  (in bench_ext) + 1900  [0x102f9de7c]  address_parser.c:1574
+        +   ! : | + ! 61 cstring_array_get_phrase  (in bench_ext) + 104  [0x103175fb0]  trie_search.c:963
+        +   ! : | + ! : 45 char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:969
+        +   ! : | + ! : | 42 _platform_memmove  (in libsystem_platform.dylib) + 460,452,...  [0x18742b52c,0x18742b524,...]
+        +   ! : | + ! : | 3 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : | + ! : 10 char_array_append  (in bench_ext) + 32  [0x10316d2cc]  string_utils.c:967
+        +   ! : | + ! : | 9 _platform_strlen  (in libsystem_platform.dylib) + 56,48,...  [0x187428af8,0x187428af0,...]
+        +   ! : | + ! : | 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! : 5 char_array_append  (in bench_ext) + 36  [0x10316d2d0]  string_utils.c:968
+        +   ! : | + ! : 1 char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:970
+        +   ! : | + ! 15 char_array_get_string  (in bench_ext) + 16,24,...  [0x10316d138,0x10316d140,...]  string_utils.c:919
+        +   ! : | + ! 9 cstring_array_get_phrase  (in bench_ext) + 124  [0x103175fc4]  trie_search.c:965
+        +   ! : | + ! : 7 char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:969
+        +   ! : | + ! : | 4 DYLD-STUB$$memcpy  (in bench_ext) + 0,4  [0x10317ac10,0x10317ac14]
+        +   ! : | + ! : | 3 _platform_memmove  (in libsystem_platform.dylib) + 428,452  [0x18742b50c,0x18742b524]
+        +   ! : | + ! : 2 char_array_append  (in bench_ext) + 32  [0x10316d2cc]  string_utils.c:967
+        +   ! : | + ! :   1 DYLD-STUB$$strlen  (in bench_ext) + 0  [0x10317acf4]
+        +   ! : | + ! :   1 _platform_strlen  (in libsystem_platform.dylib) + 80  [0x187428b10]
+        +   ! : | + ! 9 cstring_array_get_phrase  (in bench_ext) + 136  [0x103175fd0]  trie_search.c:968
+        +   ! : | + ! : 9 char_array_terminate  (in bench_ext) + 16  [0x10316d1e0]  string_utils.c:1015
+        +   ! : | + ! 7 char_array_append  (in bench_ext) + 148,144  [0x10316d340,0x10316d33c]  string_utils.c:971
+        +   ! : | + ! 6 char_array_terminate  (in bench_ext) + 92  [0x10316d22c]  string_utils.c:1016
+        +   ! : | + ! 3 cstring_array_get_phrase  (in bench_ext) + 92  [0x103175fa4]  trie_search.c:962
+        +   ! : | + ! : 3 cstring_array_get_string  (in bench_ext) + 36,40  [0x10316e418,0x10316e41c]  string_utils.c:1291
+        +   ! : | + ! 2 cstring_array_get_phrase  (in bench_ext) + 0,4  [0x103175f48,0x103175f4c]  trie_search.c:956
+        +   ! : | + ! 2 cstring_array_get_phrase  (in bench_ext) + 68  [0x103175f8c]  trie_search.c:961
+        +   ! : | + ! 1 cstring_array_get_phrase  (in bench_ext) + 28  [0x103175f64]  trie_search.c:957
+        +   ! : | + ! 1 cstring_array_get_phrase  (in bench_ext) + 112  [0x103175fb8]  trie_search.c:965
+        +   ! : | + 108 address_parser_features  (in bench_ext) + 2700  [0x102f9e19c]  address_parser.c:1692
+        +   ! : | + ! 47 fd_find_slot  (in bench_ext) + 304  [0x102fa1628]  feature_dict.h:147
+        +   ! : | + ! 42 fd_find_slot  (in bench_ext) + 336  [0x102fa1648]  feature_dict.h:151
+        +   ! : | + ! 11 fd_find_slot  (in bench_ext) + 128,84,...  [0x102fa1578,0x102fa154c,...]  feature_dict.h:146
+        +   ! : | + ! 3 fd_find_slot  (in bench_ext) + 316,252  [0x102fa1634,0x102fa15f4]  feature_dict.h:148
+        +   ! : | + ! 2 fd_find_slot  (in bench_ext) + 324  [0x102fa163c]  feature_dict.h:150
+        +   ! : | + ! 2 fd_find_slot  (in bench_ext) + 344,416  [0x102fa1650,0x102fa1698]  feature_dict.h:152
+        +   ! : | + ! 1 fd_find_slot  (in bench_ext) + 516  [0x102fa16fc]  feature_dict.h:0
+        +   ! : | + 100 address_parser_features  (in bench_ext) + 2108  [0x102f9df4c]  address_parser.c:1664
+        +   ! : | + ! 49 graph_has_edge  (in bench_ext) + 88  [0x102fb5b08]  graph.c:113
+        +   ! : | + ! 36 graph_has_edge  (in bench_ext) + 120  [0x102fb5b28]  graph.c:114
+        +   ! : | + ! 11 graph_has_edge  (in bench_ext) + 140,132  [0x102fb5b3c,0x102fb5b34]  graph.c:0
+        +   ! : | + ! 1 graph_has_edge  (in bench_ext) + 92  [0x102fb5b0c]  graph.c:109
+        +   ! : | + ! 1 graph_has_edge  (in bench_ext) + 100  [0x102fb5b14]  graph.c:110
+        +   ! : | + ! 1 graph_has_edge  (in bench_ext) + 108  [0x102fb5b1c]  graph.c:111
+        +   ! : | + ! 1 graph_has_edge  (in bench_ext) + 124  [0x102fb5b2c]  graph.c:115
+        +   ! : | + 97 address_parser_features  (in bench_ext) + 4256  [0x102f9e7b0]  address_parser.c:1854
+        +   ! : | + ! 35 word_or_phrase_at_index  (in bench_ext) + 468  [0x102f9ffd4]  address_parser.c:1091
+        +   ! : | + ! : 20 cstring_array_get_phrase  (in bench_ext) + 104  [0x103175fb0]  trie_search.c:963
+        +   ! : | + ! : | 14 char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:969
+        +   ! : | + ! : | + 14 _platform_memmove  (in libsystem_platform.dylib) + 460,420,...  [0x18742b52c,0x18742b504,...]
+        +   ! : | + ! : | 6 char_array_append  (in bench_ext) + 32  [0x10316d2cc]  string_utils.c:967
+        +   ! : | + ! : |   6 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + ! : 2 char_array_append  (in bench_ext) + 148  [0x10316d340]  string_utils.c:971
+        +   ! : | + ! : 2 cstring_array_get_phrase  (in bench_ext) + 28  [0x103175f64]  trie_search.c:957
+        +   ! : | + ! : 2 cstring_array_get_phrase  (in bench_ext) + 68  [0x103175f8c]  trie_search.c:961
+        +   ! : | + ! : 2 cstring_array_get_phrase  (in bench_ext) + 92  [0x103175fa4]  trie_search.c:962
+        +   ! : | + ! : | 2 cstring_array_get_string  (in bench_ext) + 0,8  [0x10316e3f4,0x10316e3fc]  string_utils.c:1289
+        +   ! : | + ! : 2 cstring_array_get_phrase  (in bench_ext) + 112  [0x103175fb8]  trie_search.c:965
+        +   ! : | + ! : 2 cstring_array_get_phrase  (in bench_ext) + 136  [0x103175fd0]  trie_search.c:968
+        +   ! : | + ! : | 2 char_array_terminate  (in bench_ext) + 16  [0x10316d1e0]  string_utils.c:1015
+        +   ! : | + ! : 1 cstring_array_get_phrase  (in bench_ext) + 0  [0x103175f48]  trie_search.c:956
+        +   ! : | + ! : 1 cstring_array_get_phrase  (in bench_ext) + 80  [0x103175f98]  trie_search.c:962
+        +   ! : | + ! : 1 cstring_array_get_phrase  (in bench_ext) + 124  [0x103175fc4]  trie_search.c:965
+        +   ! : | + ! :   1 char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:969
+        +   ! : | + ! :     1 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : | + ! 14 word_or_phrase_at_index  (in bench_ext) + 296  [0x102f9ff28]  address_parser.c:1078
+        +   ! : | + ! : 11 cstring_array_get_phrase  (in bench_ext) + 104  [0x103175fb0]  trie_search.c:963
+        +   ! : | + ! : | 9 char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:969
+        +   ! : | + ! : | + 8 _platform_memmove  (in libsystem_platform.dylib) + 460,444,...  [0x18742b52c,0x18742b51c,...]
+        +   ! : | + ! : | + 1 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : | + ! : | 2 char_array_append  (in bench_ext) + 32  [0x10316d2cc]  string_utils.c:967
+        +   ! : | + ! : |   2 _platform_strlen  (in libsystem_platform.dylib) + 48,56  [0x187428af0,0x187428af8]
+        +   ! : | + ! : 2 char_array_append  (in bench_ext) + 148  [0x10316d340]  string_utils.c:971
+        +   ! : | + ! : 1 char_array_terminate  (in bench_ext) + 92  [0x10316d22c]  string_utils.c:1016
+        +   ! : | + ! 13 word_or_phrase_at_index  (in bench_ext) + 244  [0x102f9fef4]  address_parser.c:1077
+        +   ! : | + ! : 11 is_valid_dictionary_phrase  (in bench_ext) + 108  [0x102f9d674]  address_parser.c:1049
+        +   ! : | + ! : | 8 address_expansion_in_dictionary  (in bench_ext) + 56  [0x102f9967c]  address_dictionary.c:30
+        +   ! : | + ! : | 3 address_expansion_in_dictionary  (in bench_ext) + 72,20  [0x102f9968c,0x102f99658]  address_dictionary.c:0
+        +   ! : | + ! : 1 address_dictionary_get_expansions  (in bench_ext) + 264  [0x102f99638]  address_dictionary.c:26
+        +   ! : | + ! : 1 is_valid_dictionary_phrase  (in bench_ext) + 0  [0x102f9d608]  address_parser.c:1036
+        +   ! : | + ! 12 word_or_phrase_at_index  (in bench_ext) + 40,92,...  [0x102f9fe28,0x102f9fe5c,...]  address_parser.c:1073
+        +   ! : | + ! 7 word_or_phrase_at_index  (in bench_ext) + 128,196,...  [0x102f9fe80,0x102f9fec4,...]  address_parser.c:1075
+        +   ! : | + ! 5 word_or_phrase_at_index  (in bench_ext) + 212,116  [0x102f9fed4,0x102f9fe74]  address_parser.c:0
+        +   ! : | + ! 2 word_or_phrase_at_index  (in bench_ext) + 0,20  [0x102f9fe00,0x102f9fe14]  address_parser.c:1068
+        +   ! : | + ! 2 word_or_phrase_at_index  (in bench_ext) + 320  [0x102f9ff40]  address_parser.c:1090
+        +   ! : | + ! 2 word_or_phrase_at_index  (in bench_ext) + 372  [0x102f9ff74]  address_parser.c:1109
+        +   ! : | + ! : 2 cstring_array_get_string  (in bench_ext) + 0,8  [0x10316e3f4,0x10316e3fc]  string_utils.c:1289
+        +   ! : | + ! 1 address_dictionary_get_expansions  (in bench_ext) + 264  [0x102f99638]  address_dictionary.c:26
+        +   ! : | + ! 1 char_array_get_string  (in bench_ext) + 120  [0x10316d1a0]  string_utils.c:922
+        +   ! : | + ! 1 word_or_phrase_at_index  (in bench_ext) + 432  [0x102f9ffb0]  address_parser.c:1091
+        +   ! : | + ! 1 word_or_phrase_at_index  (in bench_ext) + 372  [0x102f9ff74]  address_parser.c:1109
+        +   ! : | + ! 1 word_or_phrase_at_index  (in bench_ext) + 396  [0x102f9ff8c]  address_parser.c:1128
+        +   ! : | + 93 address_parser_features  (in bench_ext) + 4876  [0x102f9ea1c]  address_parser.c:1875
+        +   ! : | + ! 36 feature_array_add_named  (in bench_ext) + 308,344,...  [0x102fb1de4,0x102fb1e08,...]  features.c:52
+        +   ! : | + ! 24 feature_array_add_named  (in bench_ext) + 572  [0x102fb1eec]  features.c:30
+        +   ! : | + ! : 20 _platform_strlen  (in libsystem_platform.dylib) + 48,56,...  [0x187428af0,0x187428af8,...]
+        +   ! : | + ! : 4 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! 7 feature_array_add_named  (in bench_ext) + 556,76,...  [0x102fb1edc,0x102fb1cfc,...]  features.c:29
+        +   ! : | + ! 6 feature_array_add_named  (in bench_ext) + 396  [0x102fb1e3c]  features.c:53
+        +   ! : | + ! 4 feature_array_add_named  (in bench_ext) + 236  [0x102fb1d9c]  features.c:51
+        +   ! : | + ! 3 feature_array_add_named  (in bench_ext) + 572,80  [0x102fb1eec,0x102fb1d00]  features.c:31
+        +   ! : | + ! 2 cstring_array_start_token  (in bench_ext) + 108  [0x10316e188]  string_utils.c:1244
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 40  [0x102fb1cd8]  features.c:19
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 108,112  [0x102fb1d1c,0x102fb1d20]  features.c:42
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 268  [0x102fb1dbc]  features.c:52
+        +   ! : | + ! : 2 _platform_memmove  (in libsystem_platform.dylib) + 444,460  [0x18742b51c,0x18742b52c]
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 408  [0x102fb1e48]  features.c:54
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 524  [0x102fb1ebc]  features.c:0
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 528  [0x102fb1ec0]  features.c:37
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 100  [0x102fb1d14]  features.c:40
+        +   ! : | + !   1 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! : | + 92 address_parser_features  (in bench_ext) + 3692  [0x102f9e57c]  address_parser.c:1800
+        +   ! : | + ! 42 add_ngram_features  (in bench_ext) + 236  [0x102f9fd00]  address_parser.c:1268
+        +   ! : | + ! : 11 cstring_array_append_string  (in bench_ext) + 148,144  [0x10316e744,0x10316e740]  string_utils.c:1267
+        +   ! : | + ! : 7 add_ngrams  (in bench_ext) + 352  [0x102fbe3a0]  ngrams.c:43
+        +   ! : | + ! : | 3 cstring_array_append_string  (in bench_ext) + 32  [0x10316e6d0]  string_utils.c:1266
+        +   ! : | + ! : | + 2 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! : | + 1 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + ! : | 3 cstring_array_append_string  (in bench_ext) + 128  [0x10316e730]  string_utils.c:1266
+        +   ! : | + ! : | + 2 _platform_memmove  (in libsystem_platform.dylib) + 428,452  [0x18742b50c,0x18742b524]
+        +   ! : | + ! : | + 1 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : | + ! : | 1 cstring_array_append_string  (in bench_ext) + 36  [0x10316e6d4]  string_utils.c:1266
+        +   ! : | + ! : 4 add_ngrams  (in bench_ext) + 328,228,...  [0x102fbe388,0x102fbe324,...]  ngrams.c:0
+        +   ! : | + ! : 4 add_ngrams  (in bench_ext) + 384  [0x102fbe3c0]  ngrams.c:50
+        +   ! : | + ! : | 4 _platform_memmove  (in libsystem_platform.dylib) + 0,428,...  [0x18742b360,0x18742b50c,...]
+        +   ! : | + ! : 3 add_ngrams  (in bench_ext) + 228  [0x102fbe324]  ngrams.c:25
+        +   ! : | + ! : | 1 utf8proc_iterate  (in bench_ext) + 40  [0x10317976c]  utf8proc.c:0
+        +   ! : | + ! : | 1 utf8proc_iterate  (in bench_ext) + 4  [0x103179748]  utf8proc.c:118
+        +   ! : | + ! : | 1 utf8proc_iterate  (in bench_ext) + 56  [0x10317977c]  utf8proc.c:127
+        +   ! : | + ! : 3 add_ngrams  (in bench_ext) + 436  [0x102fbe3f4]  ngrams.c:55
+        +   ! : | + ! : | 3 cstring_array_append_string_len  (in bench_ext) + 120  [0x10316e7ec]  string_utils.c:1270
+        +   ! : | + ! : |   3 _platform_memmove  (in libsystem_platform.dylib) + 16,452,...  [0x18742b370,0x18742b524,...]
+        +   ! : | + ! : 3 add_ngrams  (in bench_ext) + 464  [0x102fbe410]  ngrams.c:58
+        +   ! : | + ! : | 2 cstring_array_append_string  (in bench_ext) + 32  [0x10316e6d0]  string_utils.c:1266
+        +   ! : | + ! : | + 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! : | + 1 _platform_strlen  (in libsystem_platform.dylib) + 80  [0x187428b10]
+        +   ! : | + ! : | 1 cstring_array_append_string  (in bench_ext) + 128  [0x10316e730]  string_utils.c:1266
+        +   ! : | + ! : |   1 _platform_memmove  (in libsystem_platform.dylib) + 452  [0x18742b524]
+        +   ! : | + ! : 2 add_ngrams  (in bench_ext) + 20,52  [0x102fbe254,0x102fbe274]  ngrams.c:4
+        +   ! : | + ! : 1 add_ngrams  (in bench_ext) + 200  [0x102fbe308]  ngrams.c:66
+        +   ! : | + ! : 1 add_ngrams  (in bench_ext) + 92  [0x102fbe29c]  ngrams.c:7
+        +   ! : | + ! : 1 cstring_array_append_string_len  (in bench_ext) + 140  [0x10316e800]  string_utils.c:1271
+        +   ! : | + ! : 1 cstring_array_start_token  (in bench_ext) + 108  [0x10316e188]  string_utils.c:1244
+        +   ! : | + ! : 1 cstring_array_terminate  (in bench_ext) + 92  [0x10316e4fc]  string_utils.c:1249
+        +   ! : | + ! 34 add_ngram_features  (in bench_ext) + 312  [0x102f9fd4c]  address_parser.c:1276
+        +   ! : | + ! : 8 feature_array_add  (in bench_ext) + 944,908,...  [0x102fb22fc,0x102fb22d8,...]  features.c:108
+        +   ! : | + ! : 8 feature_array_add  (in bench_ext) + 140  [0x102fb1fd8]  features.c:81
+        +   ! : | + ! : | 5 _platform_strlen  (in libsystem_platform.dylib) + 80,56  [0x187428b10,0x187428af8]
+        +   ! : | + ! : | 3 DYLD-STUB$$strlen  (in bench_ext) + 4,0  [0x10317acf8,0x10317acf4]
+        +   ! : | + ! : 3 feature_array_add  (in bench_ext) + 224  [0x102fb202c]  features.c:81
+        +   ! : | + ! : | 3 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! : 2 feature_array_add  (in bench_ext) + 1032  [0x102fb2354]  features.c:109
+        +   ! : | + ! : 2 feature_array_add  (in bench_ext) + 400  [0x102fb20dc]  features.c:81
+        +   ! : | + ! : | 2 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + ! : 2 feature_array_add  (in bench_ext) + 312,400  [0x102fb2084,0x102fb20dc]  features.c:82
+        +   ! : | + ! : 2 feature_array_add  (in bench_ext) + 764  [0x102fb2248]  features.c:92
+        +   ! : | + ! : | 2 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! : | + ! : 2 feature_array_add  (in bench_ext) + 772  [0x102fb2250]  features.c:94
+        +   ! : | + ! : 1 feature_array_add  (in bench_ext) + 1088  [0x102fb238c]  features.c:0
+        +   ! : | + ! : 1 feature_array_add  (in bench_ext) + 872  [0x102fb22b4]  features.c:107
+        +   ! : | + ! : 1 feature_array_add  (in bench_ext) + 60  [0x102fb1f88]  features.c:67
+        +   ! : | + ! : 1 feature_array_add  (in bench_ext) + 320  [0x102fb208c]  features.c:83
+        +   ! : | + ! : 1 feature_array_add  (in bench_ext) + 272  [0x102fb205c]  features.c:88
+        +   ! : | + ! 8 add_ngram_features  (in bench_ext) + 172  [0x102f9fcc0]  address_parser.c:1262
+        +   ! : | + ! : 8 __sprintf_chk  (in libsystem_c.dylib) + 60  [0x1872bc62c]
+        +   ! : | + ! :   7 _vsnprintf  (in libsystem_c.dylib) + 212  [0x1872dd1d0]
+        +   ! : | + ! :   | 3 __vfprintf  (in libsystem_c.dylib) + 11568  [0x1872b4778]
+        +   ! : | + ! :   | + 3 __sfvwrite  (in libsystem_c.dylib) + 348  [0x1872b4d38]
+        +   ! : | + ! :   | +   2 _platform_memmove  (in libsystem_platform.dylib) + 0,428  [0x18742b360,0x18742b50c]
+        +   ! : | + ! :   | +   1 __sfvwrite  (in libsystem_c.dylib) + 408  [0x1872b4d74]
+        +   ! : | + ! :   | 2 __vfprintf  (in libsystem_c.dylib) + 5608  [0x1872b3030]
+        +   ! : | + ! :   | + 2 __ultoa  (in libsystem_c.dylib) + 8  [0x1872b5000]
+        +   ! : | + ! :   | 2 __vfprintf  (in libsystem_c.dylib) + 560,11808  [0x1872b1c78,0x1872b4868]
+        +   ! : | + ! :   1 __vfprintf  (in libsystem_c.dylib) + 11848  [0x1872b4890]
+        +   ! : | + ! 4 add_ngram_features  (in bench_ext) + 336,268,...  [0x102f9fd64,0x102f9fd20,...]  address_parser.c:1276
+        +   ! : | + ! 1 add_ngram_features  (in bench_ext) + 424  [0x102f9fdbc]  address_parser.c:0
+        +   ! : | + ! 1 add_ngram_features  (in bench_ext) + 92  [0x102f9fc70]  address_parser.c:1256
+        +   ! : | + ! : 1 _platform_strlen  (in libsystem_platform.dylib) + 48  [0x187428af0]
+        +   ! : | + ! 1 add_ngrams  (in bench_ext) + 548  [0x102fbe464]  ngrams.c:71
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 1120  [0x102fb23ac]  features.c:114
+        +   ! : | + 81 address_parser_features  (in bench_ext) + 2812  [0x102f9e20c]  address_parser.c:1596
+        +   ! : | + ! 26 feature_array_add_named  (in bench_ext) + 0,36  [0x102fb1cb0,0x102fb1cd4]  features.c:19
+        +   ! : | + ! 14 feature_array_add_named  (in bench_ext) + 572  [0x102fb1eec]  features.c:30
+        +   ! : | + ! : 9 _platform_strlen  (in libsystem_platform.dylib) + 4,48,...  [0x187428ac4,0x187428af0,...]
+        +   ! : | + ! : 5 DYLD-STUB$$strlen  (in bench_ext) + 4,0  [0x10317acf8,0x10317acf4]
+        +   ! : | + ! 11 feature_array_add_named  (in bench_ext) + 80,572  [0x102fb1d00,0x102fb1eec]  features.c:31
+        +   ! : | + ! 10 feature_array_add_named  (in bench_ext) + 76,556  [0x102fb1cfc,0x102fb1edc]  features.c:29
+        +   ! : | + ! 7 feature_array_add_named  (in bench_ext) + 308,272,...  [0x102fb1de4,0x102fb1dc0,...]  features.c:52
+        +   ! : | + ! 3 feature_array_add_named  (in bench_ext) + 396  [0x102fb1e3c]  features.c:53
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 452  [0x102fb1e74]  features.c:0
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 500  [0x102fb1ea4]  features.c:37
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 268  [0x102fb1dbc]  features.c:52
+        +   ! : | + ! : 1 DYLD-STUB$$memcpy  (in bench_ext) + 0  [0x10317ac10]
+        +   ! : | + ! : 1 _platform_memmove  (in libsystem_platform.dylib) + 460  [0x18742b52c]
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 496  [0x102fb1ea0]  features.c:33
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 100  [0x102fb1d14]  features.c:40
+        +   ! : | + ! : 1 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 236  [0x102fb1d9c]  features.c:51
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 408  [0x102fb1e48]  features.c:54
+        +   ! : | + 79 address_parser_features  (in bench_ext) + 6040,7664,...  [0x102f9eea8,0x102f9f500,...]  address_parser.c:0
+        +   ! : | + 74 address_parser_features  (in bench_ext) + 5380  [0x102f9ec14]  address_parser.c:1898
+        +   ! : | + ! 23 feature_array_add_named  (in bench_ext) + 280,344,...  [0x102fb1dc8,0x102fb1e08,...]  features.c:52
+        +   ! : | + ! 16 feature_array_add_named  (in bench_ext) + 572  [0x102fb1eec]  features.c:30
+        +   ! : | + ! : 15 _platform_strlen  (in libsystem_platform.dylib) + 48,56,...  [0x187428af0,0x187428af8,...]
+        +   ! : | + ! : 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! 11 feature_array_add_named  (in bench_ext) + 396  [0x102fb1e3c]  features.c:53
+        +   ! : | + ! 4 cstring_array_start_token  (in bench_ext) + 108  [0x10316e188]  string_utils.c:1244
+        +   ! : | + ! 3 feature_array_add_named  (in bench_ext) + 36,20  [0x102fb1cd4,0x102fb1cc4]  features.c:19
+        +   ! : | + ! 3 feature_array_add_named  (in bench_ext) + 528  [0x102fb1ec0]  features.c:37
+        +   ! : | + ! 3 feature_array_add_named  (in bench_ext) + 236  [0x102fb1d9c]  features.c:51
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 452,524  [0x102fb1e74,0x102fb1ebc]  features.c:0
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 76  [0x102fb1cfc]  features.c:29
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 80,572  [0x102fb1d00,0x102fb1eec]  features.c:31
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 108  [0x102fb1d1c]  features.c:42
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 268  [0x102fb1dbc]  features.c:52
+        +   ! : | + ! : 2 _platform_memmove  (in libsystem_platform.dylib) + 444,460  [0x18742b51c,0x18742b52c]
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 592  [0x102fb1f00]  features.c:32
+        +   ! : | + 71 address_parser_features  (in bench_ext) + 7108  [0x102f9f2d4]  address_parser.c:1884
+        +   ! : | + ! 29 fd_find_slot  (in bench_ext) + 304  [0x102fa1628]  feature_dict.h:147
+        +   ! : | + ! 20 fd_find_slot  (in bench_ext) + 336  [0x102fa1648]  feature_dict.h:151
+        +   ! : | + ! 9 fd_find_slot  (in bench_ext) + 344,404,...  [0x102fa1650,0x102fa168c,...]  feature_dict.h:152
+        +   ! : | + ! 6 fd_find_slot  (in bench_ext) + 192,76,...  [0x102fa15b8,0x102fa1544,...]  feature_dict.h:146
+        +   ! : | + ! 3 fd_find_slot  (in bench_ext) + 516  [0x102fa16fc]  feature_dict.h:0
+        +   ! : | + ! 2 fd_find_slot  (in bench_ext) + 324  [0x102fa163c]  feature_dict.h:150
+        +   ! : | + ! 1 fd_find_slot  (in bench_ext) + 68  [0x102fa153c]  feature_dict.h:145
+        +   ! : | + ! 1 fd_find_slot  (in bench_ext) + 316  [0x102fa1634]  feature_dict.h:148
+        +   ! : | + 61 address_parser_features  (in bench_ext) + 4488  [0x102f9e898]  address_parser.c:1867
+        +   ! : | + ! 47 ap_canon_part  (in bench_ext) + 576  [0x102fa1964]  address_parser.c:0
+        +   ! : | + ! : 12 fd_find_slot  (in bench_ext) + 336  [0x102fa1648]  feature_dict.h:151
+        +   ! : | + ! : 10 fd_find_slot  (in bench_ext) + 192,76,...  [0x102fa15b8,0x102fa1544,...]  feature_dict.h:146
+        +   ! : | + ! : 9 fd_find_slot  (in bench_ext) + 304,260  [0x102fa1628,0x102fa15fc]  feature_dict.h:147
+        +   ! : | + ! : 4 fd_find_slot  (in bench_ext) + 472,388,...  [0x102fa16d0,0x102fa167c,...]  feature_dict.h:152
+        +   ! : | + ! : 3 fd_find_slot  (in bench_ext) + 24,40  [0x102fa1510,0x102fa1520]  feature_dict.h:145
+        +   ! : | + ! : 3 fd_find_slot  (in bench_ext) + 324  [0x102fa163c]  feature_dict.h:150
+        +   ! : | + ! : 2 fd_find_slot  (in bench_ext) + 516  [0x102fa16fc]  feature_dict.h:0
+        +   ! : | + ! : 2 fd_find_slot  (in bench_ext) + 316  [0x102fa1634]  feature_dict.h:148
+        +   ! : | + ! : 1 fd_find_slot  (in bench_ext) + 300  [0x102fa1624]  feature_dict.h:152
+        +   ! : | + ! : | 1 DYLD-STUB$$memcmp  (in bench_ext) + 4  [0x10317ac08]
+        +   ! : | + ! : 1 fd_find_slot  (in bench_ext) + 524  [0x102fa1704]  feature_dict.h:155
+        +   ! : | + ! 3 ap_canon_part  (in bench_ext) + 92  [0x102fa1780]  address_parser.c:1384
+        +   ! : | + ! : 3 cstring_array_get_string  (in bench_ext) + 24  [0x10316e40c]  string_utils.c:1289
+        +   ! : | + ! 3 ap_canon_part  (in bench_ext) + 236  [0x102fa1810]  address_parser.c:1398
+        +   ! : | + ! : 2 _platform_memchr  (in libsystem_platform.dylib) + 84,92  [0x187428e54,0x187428e5c]
+        +   ! : | + ! : 1 DYLD-STUB$$memchr  (in bench_ext) + 0  [0x10317abf8]
+        +   ! : | + ! 2 ap_canon_part  (in bench_ext) + 176  [0x102fa17d4]  address_parser.c:1396
+        +   ! : | + ! : 2 _platform_strlen  (in libsystem_platform.dylib) + 56,92  [0x187428af8,0x187428b1c]
+        +   ! : | + ! 1 ap_canon_part  (in bench_ext) + 588  [0x102fa1970]  address_parser.c:0
+        +   ! : | + ! : 1 _free  (in libsystem_malloc.dylib) + 0  [0x18724ec4c]
+        +   ! : | + ! 1 ap_canon_part  (in bench_ext) + 36  [0x102fa1748]  address_parser.c:1382
+        +   ! : | + ! 1 ap_canon_part  (in bench_ext) + 260  [0x102fa1828]  address_parser.c:1384
+        +   ! : | + ! 1 ap_canon_part  (in bench_ext) + 416  [0x102fa18c4]  address_parser.c:1386
+        +   ! : | + ! 1 ap_canon_part  (in bench_ext) + 176  [0x102fa17d4]  address_parser.c:1396
+        +   ! : | + ! 1 fd_find_slot  (in bench_ext) + 540  [0x102fa1714]  feature_dict.h:155
+        +   ! : | + 51 address_parser_features  (in bench_ext) + 6124  [0x102f9eefc]  address_parser.c:1602
+        +   ! : | + ! 9 feature_array_add  (in bench_ext) + 904  [0x102fb22d4]  features.c:108
+        +   ! : | + ! : 9 _platform_memmove  (in libsystem_platform.dylib) + 0,428,...  [0x18742b360,0x18742b50c,...]
+        +   ! : | + ! 8 feature_array_add  (in bench_ext) + 872  [0x102fb22b4]  features.c:107
+        +   ! : | + ! 7 feature_array_add  (in bench_ext) + 140  [0x102fb1fd8]  features.c:81
+        +   ! : | + ! : 6 _platform_strlen  (in libsystem_platform.dylib) + 56,80  [0x187428af8,0x187428b10]
+        +   ! : | + ! : 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! 5 feature_array_add  (in bench_ext) + 312  [0x102fb2084]  features.c:81
+        +   ! : | + ! : 4 _platform_strlen  (in libsystem_platform.dylib) + 56,64,...  [0x187428af8,0x187428b00,...]
+        +   ! : | + ! : 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! 4 feature_array_add  (in bench_ext) + 944,884,...  [0x102fb22fc,0x102fb22c0,...]  features.c:108
+        +   ! : | + ! 3 cstring_array_start_token  (in bench_ext) + 108  [0x10316e188]  string_utils.c:1244
+        +   ! : | + ! 3 feature_array_add  (in bench_ext) + 1088  [0x102fb238c]  features.c:0
+        +   ! : | + ! 3 feature_array_add  (in bench_ext) + 1032  [0x102fb2354]  features.c:109
+        +   ! : | + ! 3 feature_array_add  (in bench_ext) + 764  [0x102fb2248]  features.c:92
+        +   ! : | + ! : 3 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 40  [0x102fb1f74]  features.c:61
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 224  [0x102fb202c]  features.c:81
+        +   ! : | + ! : 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! : 1 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 224,312  [0x102fb202c,0x102fb2084]  features.c:82
+        +   ! : | + 42 address_parser_features  (in bench_ext) + 4636  [0x102f9e92c]  address_parser.c:1871
+        +   ! : | + ! 16 ap_canon_part  (in bench_ext) + 576  [0x102fa1964]  address_parser.c:0
+        +   ! : | + ! : 4 fd_find_slot  (in bench_ext) + 336  [0x102fa1648]  feature_dict.h:151
+        +   ! : | + ! : 3 fd_find_slot  (in bench_ext) + 80,148,...  [0x102fa1548,0x102fa158c,...]  feature_dict.h:146
+        +   ! : | + ! : 3 fd_find_slot  (in bench_ext) + 252,316  [0x102fa15f4,0x102fa1634]  feature_dict.h:148
+        +   ! : | + ! : 3 fd_find_slot  (in bench_ext) + 324  [0x102fa163c]  feature_dict.h:150
+        +   ! : | + ! : 2 fd_find_slot  (in bench_ext) + 344  [0x102fa1650]  feature_dict.h:152
+        +   ! : | + ! : 1 fd_find_slot  (in bench_ext) + 516  [0x102fa16fc]  feature_dict.h:0
+        +   ! : | + ! 8 ap_canon_part  (in bench_ext) + 60,92,...  [0x102fa1760,0x102fa1780,...]  address_parser.c:1384
+        +   ! : | + ! 6 ap_canon_part  (in bench_ext) + 92  [0x102fa1780]  address_parser.c:1384
+        +   ! : | + ! : 5 cstring_array_get_string  (in bench_ext) + 24,8  [0x10316e40c,0x10316e3fc]  string_utils.c:1289
+        +   ! : | + ! : 1 cstring_array_get_string  (in bench_ext) + 36  [0x10316e418]  string_utils.c:1291
+        +   ! : | + ! 3 ap_canon_part  (in bench_ext) + 176  [0x102fa17d4]  address_parser.c:1396
+        +   ! : | + ! : 2 _platform_strlen  (in libsystem_platform.dylib) + 52,56  [0x187428af4,0x187428af8]
+        +   ! : | + ! : 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! 2 ap_canon_part  (in bench_ext) + 588  [0x102fa1970]  address_parser.c:0
+        +   ! : | + ! : 2 _free  (in libsystem_malloc.dylib) + 0,124  [0x18724ec4c,0x18724ecc8]
+        +   ! : | + ! 2 ap_canon_part  (in bench_ext) + 0,12  [0x102fa1724,0x102fa1730]  address_parser.c:1382
+        +   ! : | + ! 2 ap_canon_part  (in bench_ext) + 416  [0x102fa18c4]  address_parser.c:1386
+        +   ! : | + ! 2 ap_canon_part  (in bench_ext) + 236  [0x102fa1810]  address_parser.c:1398
+        +   ! : | + ! : 1 DYLD-STUB$$memchr  (in bench_ext) + 4  [0x10317abfc]
+        +   ! : | + ! : 1 _platform_memchr  (in libsystem_platform.dylib) + 0  [0x187428e00]
+        +   ! : | + ! 1 fd_find_slot  (in bench_ext) + 544  [0x102fa1718]  feature_dict.h:155
+        +   ! : | + 37 address_parser_features  (in bench_ext) + 4064  [0x102f9e6f0]  address_parser.c:1839
+        +   ! : | + ! 22 ap_canon_part  (in bench_ext) + 576  [0x102fa1964]  address_parser.c:0
+        +   ! : | + ! : 5 fd_find_slot  (in bench_ext) + 148,84,...  [0x102fa158c,0x102fa154c,...]  feature_dict.h:146
+        +   ! : | + ! : 5 fd_find_slot  (in bench_ext) + 336  [0x102fa1648]  feature_dict.h:151
+        +   ! : | + ! : 3 fd_find_slot  (in bench_ext) + 516  [0x102fa16fc]  feature_dict.h:0
+        +   ! : | + ! : 3 fd_find_slot  (in bench_ext) + 252,316  [0x102fa15f4,0x102fa1634]  feature_dict.h:148
+        +   ! : | + ! : 2 fd_find_slot  (in bench_ext) + 244,304  [0x102fa15ec,0x102fa1628]  feature_dict.h:147
+        +   ! : | + ! : 2 fd_find_slot  (in bench_ext) + 324  [0x102fa163c]  feature_dict.h:150
+        +   ! : | + ! : 2 fd_find_slot  (in bench_ext) + 344  [0x102fa1650]  feature_dict.h:152
+        +   ! : | + ! 4 fd_find_slot  (in bench_ext) + 540,544  [0x102fa1714,0x102fa1718]  feature_dict.h:155
+        +   ! : | + ! 3 ap_canon_part  (in bench_ext) + 588  [0x102fa1970]  address_parser.c:0
+        +   ! : | + ! : 2 _free  (in libsystem_malloc.dylib) + 124  [0x18724ecc8]
+        +   ! : | + ! : 1 DYLD-STUB$$free  (in bench_ext) + 4  [0x10317ab6c]
+        +   ! : | + ! 3 ap_canon_part  (in bench_ext) + 236  [0x102fa1810]  address_parser.c:1398
+        +   ! : | + ! : 2 _platform_memchr  (in libsystem_platform.dylib) + 0  [0x187428e00]
+        +   ! : | + ! : 1 DYLD-STUB$$memchr  (in bench_ext) + 4  [0x10317abfc]
+        +   ! : | + ! 2 ap_canon_part  (in bench_ext) + 176  [0x102fa17d4]  address_parser.c:1396
+        +   ! : | + ! : 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! : 1 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + ! 2 ap_canon_part  (in bench_ext) + 612  [0x102fa1988]  feature_dict.h:0
+        +   ! : | + ! 1 ap_canon_part  (in bench_ext) + 92  [0x102fa1780]  address_parser.c:1384
+        +   ! : | + 32 address_parser_features  (in bench_ext) + 6012,2836,...  [0x102f9ee8c,0x102f9e224,...]  address_parser.c:1601
+        +   ! : | + 30 address_parser_features  (in bench_ext) + 2280,2284,...  [0x102f9dff8,0x102f9dffc,...]  address_parser.c:1692
+        +   ! : | + 26 address_parser_features  (in bench_ext) + 2412  [0x102f9e07c]  address_parser.c:1710
+        +   ! : | + ! 19 feature_array_add_named  (in bench_ext) + 244,248,...  [0x102fb1da4,0x102fb1da8,...]  features.c:52
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 36,40  [0x102fb1cd4,0x102fb1cd8]  features.c:19
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 396  [0x102fb1e3c]  features.c:53
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 452  [0x102fb1e74]  features.c:0
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 100  [0x102fb1d14]  features.c:40
+        +   ! : | + ! : 1 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 236  [0x102fb1d9c]  features.c:51
+        +   ! : | + 24 address_parser_features  (in bench_ext) + 1016  [0x102f9db08]  address_parser.c:1554
+        +   ! : | + ! 4 feature_array_add  (in bench_ext) + 872  [0x102fb22b4]  features.c:107
+        +   ! : | + ! 4 feature_array_add  (in bench_ext) + 224  [0x102fb202c]  features.c:81
+        +   ! : | + ! : 4 _platform_strlen  (in libsystem_platform.dylib) + 48,52,...  [0x187428af0,0x187428af4,...]
+        +   ! : | + ! 4 feature_array_add  (in bench_ext) + 312  [0x102fb2084]  features.c:82
+        +   ! : | + ! 3 feature_array_add  (in bench_ext) + 140  [0x102fb1fd8]  features.c:81
+        +   ! : | + ! : 3 _platform_strlen  (in libsystem_platform.dylib) + 80,56  [0x187428b10,0x187428af8]
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 904  [0x102fb22d4]  features.c:108
+        +   ! : | + ! : 2 _platform_memmove  (in libsystem_platform.dylib) + 428,452  [0x18742b50c,0x18742b524]
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 908,944  [0x102fb22d8,0x102fb22fc]  features.c:108
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 20,40  [0x102fb1f60,0x102fb1f74]  features.c:61
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 312  [0x102fb2084]  features.c:81
+        +   ! : | + ! : 2 _platform_strlen  (in libsystem_platform.dylib) + 52,64  [0x187428af4,0x187428b00]
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 1060  [0x102fb2370]  features.c:112
+        +   ! : | + 23 address_parser_features  (in bench_ext) + 2280  [0x102f9dff8]  address_parser.c:0
+        +   ! : | + ! 6 feature_array_add_named  (in bench_ext) + 572  [0x102fb1eec]  features.c:30
+        +   ! : | + ! : 5 _platform_strlen  (in libsystem_platform.dylib) + 48,56,...  [0x187428af0,0x187428af8,...]
+        +   ! : | + ! : 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! 6 feature_array_add_named  (in bench_ext) + 268  [0x102fb1dbc]  features.c:52
+        +   ! : | + ! : 6 _platform_memmove  (in libsystem_platform.dylib) + 452,0,...  [0x18742b524,0x18742b360,...]
+        +   ! : | + ! 3 feature_array_add_named  (in bench_ext) + 260,344,...  [0x102fb1db4,0x102fb1e08,...]  features.c:52
+        +   ! : | + ! 3 feature_array_add_named  (in bench_ext) + 396  [0x102fb1e3c]  features.c:53
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 236  [0x102fb1d9c]  features.c:51
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 32  [0x102fb1cd0]  features.c:19
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 556  [0x102fb1edc]  features.c:29
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 572  [0x102fb1eec]  features.c:31
+        +   ! : | + 22 address_parser_features  (in bench_ext) + 7412  [0x102f9f404]  address_parser.c:0
+        +   ! : | + ! 3 feature_array_add_named  (in bench_ext) + 552,556,...  [0x102fb1ed8,0x102fb1edc,...]  features.c:29
+        +   ! : | + ! 3 feature_array_add_named  (in bench_ext) + 236  [0x102fb1d9c]  features.c:51
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 572  [0x102fb1eec]  features.c:30
+        +   ! : | + ! : 1 DYLD-STUB$$strlen  (in bench_ext) + 0  [0x10317acf4]
+        +   ! : | + ! : 1 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 100  [0x102fb1d14]  features.c:40
+        +   ! : | + ! : 2 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 268  [0x102fb1dbc]  features.c:52
+        +   ! : | + ! : 2 _platform_memmove  (in libsystem_platform.dylib) + 452  [0x18742b524]
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 248  [0x102fb1da8]  features.c:52
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 396  [0x102fb1e3c]  features.c:53
+        +   ! : | + ! 1 cstring_array_start_token  (in bench_ext) + 108  [0x10316e188]  string_utils.c:1244
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 452  [0x102fb1e74]  features.c:0
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 40  [0x102fb1cd8]  features.c:19
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 80  [0x102fb1d00]  features.c:31
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 528  [0x102fb1ec0]  features.c:37
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 108  [0x102fb1d1c]  features.c:42
+        +   ! : | + 22 address_parser_features  (in bench_ext) + 6040  [0x102f9eea8]  address_parser.c:1601
+        +   ! : | + ! 4 feature_array_add  (in bench_ext) + 312  [0x102fb2084]  features.c:81
+        +   ! : | + ! : 4 _platform_strlen  (in libsystem_platform.dylib) + 56,80  [0x187428af8,0x187428b10]
+        +   ! : | + ! 3 feature_array_add  (in bench_ext) + 904  [0x102fb22d4]  features.c:108
+        +   ! : | + ! : 3 _platform_memmove  (in libsystem_platform.dylib) + 452,460  [0x18742b524,0x18742b52c]
+        +   ! : | + ! 3 feature_array_add  (in bench_ext) + 224  [0x102fb202c]  features.c:81
+        +   ! : | + ! : 2 _platform_strlen  (in libsystem_platform.dylib) + 52,64  [0x187428af4,0x187428b00]
+        +   ! : | + ! : 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 908,944  [0x102fb22d8,0x102fb22fc]  features.c:108
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 40  [0x102fb1f74]  features.c:61
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 140  [0x102fb1fd8]  features.c:81
+        +   ! : | + ! : 2 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 764  [0x102fb2248]  features.c:92
+        +   ! : | + ! : 2 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 268  [0x102fb2058]  features.c:0
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 140  [0x102fb1fd8]  features.c:82
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 156  [0x102fb1fe8]  features.c:83
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 272  [0x102fb205c]  features.c:88
+        +   ! : | + 20 address_parser_features  (in bench_ext) + 2548  [0x102f9e104]  address_parser.c:1587
+        +   ! : | + 20 address_parser_features  (in bench_ext) + 3936  [0x102f9e670]  address_parser.c:1827
+        +   ! : | + ! 8 crf_ik_push  (in bench_ext) + 152  [0x102fa48c0]  crf.c:345
+        +   ! : | + ! : 7 cstring_array_start_token  (in bench_ext) + 20  [0x10316e130]  string_utils.c:1242
+        +   ! : | + ! : 1 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! : | + ! 6 crf_ik_push  (in bench_ext) + 44,56  [0x102fa4854,0x102fa4860]  crf.c:338
+        +   ! : | + ! 4 crf_ik_push  (in bench_ext) + 140  [0x102fa48b4]  crf.c:344
+        +   ! : | + ! 2 cstring_array_start_token  (in bench_ext) + 104,108  [0x10316e184,0x10316e188]  string_utils.c:1244
+        +   ! : | + 15 feature_array_add_named  (in bench_ext) + 480,476,...  [0x102fb1e90,0x102fb1e8c,...]  features.c:58
+        +   ! : | + 14 address_parser_features  (in bench_ext) + 6080  [0x102f9eed0]  address_parser.c:1602
+        +   ! : | + ! 4 feature_array_add  (in bench_ext) + 904  [0x102fb22d4]  features.c:108
+        +   ! : | + ! : 3 _platform_memmove  (in libsystem_platform.dylib) + 428,436,...  [0x18742b50c,0x18742b514,...]
+        +   ! : | + ! : 1 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : | + ! 3 feature_array_add  (in bench_ext) + 764  [0x102fb2248]  features.c:92
+        +   ! : | + ! : 3 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 140  [0x102fb1fd8]  features.c:81
+        +   ! : | + ! : 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! : 1 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 1088  [0x102fb238c]  features.c:0
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 872  [0x102fb22b4]  features.c:107
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 944  [0x102fb22fc]  features.c:108
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 224  [0x102fb202c]  features.c:81
+        +   ! : | + ! : 1 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 224  [0x102fb202c]  features.c:82
+        +   ! : | + 13 address_parser_features  (in bench_ext) + 676  [0x102f9d9b4]  address_parser.c:1539
+        +   ! : | + ! 5 is_valid_dictionary_phrase  (in bench_ext) + 108  [0x102f9d674]  address_parser.c:1049
+        +   ! : | + ! : 3 address_expansion_in_dictionary  (in bench_ext) + 56  [0x102f9967c]  address_dictionary.c:30
+        +   ! : | + ! : 2 address_expansion_in_dictionary  (in bench_ext) + 20,72  [0x102f99658,0x102f9968c]  address_dictionary.c:0
+        +   ! : | + ! 3 is_valid_dictionary_phrase  (in bench_ext) + 240,108  [0x102f9d6f8,0x102f9d674]  address_parser.c:0
+        +   ! : | + ! 3 is_valid_dictionary_phrase  (in bench_ext) + 32  [0x102f9d628]  address_parser.c:1038
+        +   ! : | + ! : 2 address_dictionary_get_expansions  (in bench_ext) + 48  [0x102f99560]  address_dictionary.c:18
+        +   ! : | + ! : 1 address_dictionary_get_expansions  (in bench_ext) + 8  [0x102f99538]  address_dictionary.c:17
+        +   ! : | + ! 1 is_valid_dictionary_phrase  (in bench_ext) + 76  [0x102f9d654]  address_parser.c:1048
+        +   ! : | + ! 1 is_valid_dictionary_phrase  (in bench_ext) + 136  [0x102f9d690]  address_parser.c:1056
+        +   ! : | + 13 address_parser_features  (in bench_ext) + 6092,6056  [0x102f9eedc,0x102f9eeb8]  address_parser.c:1602
+        +   ! : | + 13 address_parser_features  (in bench_ext) + 6376  [0x102f9eff8]  address_parser.c:1605
+        +   ! : | + ! 3 feature_array_add  (in bench_ext) + 312,140  [0x102fb2084,0x102fb1fd8]  features.c:82
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 1088  [0x102fb238c]  features.c:0
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 872  [0x102fb22b4]  features.c:107
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 904  [0x102fb22d4]  features.c:108
+        +   ! : | + ! : 1 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 140  [0x102fb1fd8]  features.c:81
+        +   ! : | + ! : 1 _platform_strlen  (in libsystem_platform.dylib) + 80  [0x187428b10]
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 224  [0x102fb202c]  features.c:81
+        +   ! : | + ! : 1 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 312  [0x102fb2084]  features.c:81
+        +   ! : | + ! : 1 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 272  [0x102fb205c]  features.c:88
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 772  [0x102fb2250]  features.c:94
+        +   ! : | + 13 address_parser_features  (in bench_ext) + 6428,6432  [0x102f9f02c,0x102f9f030]  address_parser.c:1606
+        +   ! : | + 13 address_parser_features  (in bench_ext) + 2672  [0x102f9e180]  address_parser.c:1692
+        +   ! : | + ! 11 _platform_strlen  (in libsystem_platform.dylib) + 48,56,...  [0x187428af0,0x187428af8,...]
+        +   ! : | + ! 2 DYLD-STUB$$strlen  (in bench_ext) + 0,4  [0x10317acf4,0x10317acf8]
+        +   ! : | + 12 address_parser_features  (in bench_ext) + 716  [0x102f9d9dc]  address_parser.c:1549
+        +   ! : | + ! 9 cstring_array_get_phrase  (in bench_ext) + 104  [0x103175fb0]  trie_search.c:963
+        +   ! : | + ! : 6 char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:969
+        +   ! : | + ! : | 5 _platform_memmove  (in libsystem_platform.dylib) + 444,460,...  [0x18742b51c,0x18742b52c,...]
+        +   ! : | + ! : | 1 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : | + ! : 1 char_array_append  (in bench_ext) + 32  [0x10316d2cc]  string_utils.c:967
+        +   ! : | + ! : | 1 _platform_strlen  (in libsystem_platform.dylib) + 52  [0x187428af4]
+        +   ! : | + ! : 1 char_array_append  (in bench_ext) + 36  [0x10316d2d0]  string_utils.c:968
+        +   ! : | + ! : 1 char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:970
+        +   ! : | + ! 2 char_array_append  (in bench_ext) + 148  [0x10316d340]  string_utils.c:971
+        +   ! : | + ! 1 cstring_array_get_phrase  (in bench_ext) + 92  [0x103175fa4]  trie_search.c:962
+        +   ! : | + !   1 cstring_array_get_string  (in bench_ext) + 36  [0x10316e418]  string_utils.c:1291
+        +   ! : | + 12 address_parser_features  (in bench_ext) + 4524  [0x102f9e8bc]  address_parser.c:1867
+        +   ! : | + ! 4 crf_ik_push  (in bench_ext) + 156,160  [0x102fa48c4,0x102fa48c8]  crf.c:346
+        +   ! : | + ! 3 crf_ik_push  (in bench_ext) + 152  [0x102fa48c0]  crf.c:345
+        +   ! : | + ! : 2 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! : | + ! : 1 cstring_array_start_token  (in bench_ext) + 20  [0x10316e130]  string_utils.c:1242
+        +   ! : | + ! 3 cstring_array_start_token  (in bench_ext) + 104,108  [0x10316e184,0x10316e188]  string_utils.c:1244
+        +   ! : | + ! 1 crf_ik_push  (in bench_ext) + 12  [0x102fa4834]  crf.c:337
+        +   ! : | + ! 1 crf_ik_push  (in bench_ext) + 56  [0x102fa4860]  crf.c:338
+        +   ! : | + 11 address_parser_features  (in bench_ext) + 4140  [0x102f9e73c]  address_parser.c:1839
+        +   ! : | + ! 5 feature_array_add_named  (in bench_ext) + 308,272  [0x102fb1de4,0x102fb1dc0]  features.c:52
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 572  [0x102fb1eec]  features.c:30
+        +   ! : | + ! : 1 DYLD-STUB$$strlen  (in bench_ext) + 0  [0x10317acf4]
+        +   ! : | + ! : 1 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 268  [0x102fb1dbc]  features.c:52
+        +   ! : | + ! : 2 _platform_memmove  (in libsystem_platform.dylib) + 436,460  [0x18742b514,0x18742b52c]
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 100  [0x102fb1d14]  features.c:40
+        +   ! : | + ! : 1 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 396  [0x102fb1e3c]  features.c:53
+        +   ! : | + 11 address_parser_features  (in bench_ext) + 7080  [0x102f9f2b8]  address_parser.c:1884
+        +   ! : | + ! 11 _platform_strlen  (in libsystem_platform.dylib) + 48,56,...  [0x187428af0,0x187428af8,...]
+        +   ! : | + 11 address_parser_features  (in bench_ext) + 7156  [0x102f9f304]  address_parser.c:1884
+        +   ! : | + ! 11 _platform_memchr  (in libsystem_platform.dylib) + 84,0,...  [0x187428e54,0x187428e00,...]
+        +   ! : | + 10 address_parser_features  (in bench_ext) + 420  [0x102f9d8b4]  address_parser.c:1501
+        +   ! : | + ! 9 _platform_strlen  (in libsystem_platform.dylib) + 48,64,...  [0x187428af0,0x187428b00,...]
+        +   ! : | + ! 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + 10 crf_ik_push  (in bench_ext) + 244,236  [0x102fa491c,0x102fa4914]  crf.c:347
+        +   ! : | + 9 address_parser_features  (in bench_ext) + 6460  [0x102f9f04c]  address_parser.c:1606
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 904  [0x102fb22d4]  features.c:108
+        +   ! : | + ! : 2 _platform_memmove  (in libsystem_platform.dylib) + 428,460  [0x18742b50c,0x18742b52c]
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 1032  [0x102fb2354]  features.c:109
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 140  [0x102fb1fd8]  features.c:81
+        +   ! : | + ! : 2 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! 1 cstring_array_start_token  (in bench_ext) + 108  [0x10316e188]  string_utils.c:1244
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 40  [0x102fb1f74]  features.c:61
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 312  [0x102fb2084]  features.c:82
+        +   ! : | + 9 feature_array_add  (in bench_ext) + 1120,1116  [0x102fb23ac,0x102fb23a8]  features.c:114
+        +   ! : | + 8 address_parser_features  (in bench_ext) + 6512  [0x102f9f080]  address_parser.c:1607
+        +   ! : | + 8 word_or_phrase_at_index  (in bench_ext) + 548,544,...  [0x102fa0024,0x102fa0020,...]  address_parser.c:1150
+        +   ! : | + 7 address_parser_features  (in bench_ext) + 2748  [0x102f9e1cc]  address_parser.c:1692
+        +   ! : | + ! 5 _platform_memchr  (in libsystem_platform.dylib) + 92,0,...  [0x187428e5c,0x187428e00,...]
+        +   ! : | + ! 2 DYLD-STUB$$memchr  (in bench_ext) + 4  [0x10317abfc]
+        +   ! : | + 7 address_parser_features  (in bench_ext) + 3168  [0x102f9e370]  address_parser.c:1814
+        +   ! : | + ! 4 ap_canon_part  (in bench_ext) + 260,60,...  [0x102fa1828,0x102fa1760,...]  address_parser.c:1384
+        +   ! : | + ! 2 ap_canon_part  (in bench_ext) + 12,16  [0x102fa1730,0x102fa1734]  address_parser.c:1382
+        +   ! : | + ! 1 ap_canon_part  (in bench_ext) + 612  [0x102fa1988]  feature_dict.h:0
+        +   ! : | + 7 address_parser_features  (in bench_ext) + 5080,5072,...  [0x102f9eae8,0x102f9eae0,...]  address_parser.c:1895
+        +   ! : | + 7 char_array_get_string  (in bench_ext) + 120,124  [0x10316d1a0,0x10316d1a4]  string_utils.c:922
+        +   ! : | + 6 address_parser_features  (in bench_ext) + 6208  [0x102f9ef50]  address_parser.c:1603
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 224  [0x102fb202c]  features.c:81
+        +   ! : | + ! : 2 _platform_strlen  (in libsystem_platform.dylib) + 48,56  [0x187428af0,0x187428af8]
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 904  [0x102fb22d4]  features.c:108
+        +   ! : | + ! : 1 _platform_memmove  (in libsystem_platform.dylib) + 0  [0x18742b360]
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 1060  [0x102fb2370]  features.c:112
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 140  [0x102fb1fd8]  features.c:81
+        +   ! : | + ! : 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 156  [0x102fb1fe8]  features.c:83
+        +   ! : | + 6 address_parser_features  (in bench_ext) + 4008,4064,...  [0x102f9e6b8,0x102f9e6f0,...]  address_parser.c:1839
+        +   ! : | + 6 address_parser_features  (in bench_ext) + 4556  [0x102f9e8dc]  address_parser.c:1867
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 572  [0x102fb1eec]  features.c:30
+        +   ! : | + ! : 1 DYLD-STUB$$strlen  (in bench_ext) + 0  [0x10317acf4]
+        +   ! : | + ! : 1 _platform_strlen  (in libsystem_platform.dylib) + 48  [0x187428af0]
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 236  [0x102fb1d9c]  features.c:51
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 268  [0x102fb1dbc]  features.c:52
+        +   ! : | + ! : 1 _platform_memmove  (in libsystem_platform.dylib) + 452  [0x18742b524]
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 272  [0x102fb1dc0]  features.c:52
+        +   ! : | + 6 address_parser_features  (in bench_ext) + 4488,4444,...  [0x102f9e898,0x102f9e86c,...]  address_parser.c:1867
+        +   ! : | + 6 ap_canon_part  (in bench_ext) + 636,628  [0x102fa19a0,0x102fa1998]  address_parser.c:1399
+        +   ! : | + 5 address_parser_features  (in bench_ext) + 380  [0x102f9d88c]  address_parser.c:1493
+        +   ! : | + ! 3 tokenized_string_get_token  (in bench_ext) + 4  [0x10316f9a8]  tokens.c:68
+        +   ! : | + ! 2 cstring_array_get_string  (in bench_ext) + 8,24  [0x10316e3fc,0x10316e40c]  string_utils.c:1289
+        +   ! : | + 5 address_parser_features  (in bench_ext) + 764  [0x102f9da0c]  address_parser.c:1554
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 872  [0x102fb22b4]  features.c:107
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 944  [0x102fb22fc]  features.c:108
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 140  [0x102fb1fd8]  features.c:81
+        +   ! : | + ! : 1 DYLD-STUB$$strlen  (in bench_ext) + 0  [0x10317acf4]
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 764  [0x102fb2248]  features.c:92
+        +   ! : | + !   1 cstring_array_start_token  (in bench_ext) + 0  [0x10316e11c]  string_utils.c:1241
+        +   ! : | + 5 address_parser_features  (in bench_ext) + 1060  [0x102f9db34]  address_parser.c:1555
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 944  [0x102fb22fc]  features.c:108
+        +   ! : | + ! 2 feature_array_add  (in bench_ext) + 140  [0x102fb1fd8]  features.c:81
+        +   ! : | + ! : 2 DYLD-STUB$$strlen  (in bench_ext) + 0,4  [0x10317acf4,0x10317acf8]
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 312  [0x102fb2084]  features.c:81
+        +   ! : | + !   1 _platform_strlen  (in libsystem_platform.dylib) + 52  [0x187428af4]
+        +   ! : | + 5 address_parser_features  (in bench_ext) + 3004  [0x102f9e2cc]  address_parser.c:1743
+        +   ! : | + ! 4 char_array_add_len  (in bench_ext) + 120  [0x10316d880]  string_utils.c:1050
+        +   ! : | + ! : 4 _platform_memmove  (in libsystem_platform.dylib) + 452,444,...  [0x18742b524,0x18742b51c,...]
+        +   ! : | + ! 1 char_array_add_len  (in bench_ext) + 132  [0x10316d88c]  string_utils.c:1050
+        +   ! : | + 5 address_parser_features  (in bench_ext) + 4104,4108  [0x102f9e718,0x102f9e71c]  address_parser.c:1853
+        +   ! : | + 4 address_parser_features  (in bench_ext) + 320  [0x102f9d850]  address_parser.c:1473
+        +   ! : | + ! 2 DYLD-STUB$$bzero  (in bench_ext) + 4  [0x10317aae8]
+        +   ! : | + ! 2 _platform_memset  (in libsystem_platform.dylib) + 160  [0x18742b130]
+        +   ! : | + 4 address_parser_features  (in bench_ext) + 456,468  [0x102f9d8d8,0x102f9d8e4]  address_parser.c:1515
+        +   ! : | + 4 address_parser_features  (in bench_ext) + 6596  [0x102f9f0d4]  address_parser.c:1608
+        +   ! : | + 4 address_parser_features  (in bench_ext) + 2328  [0x102f9e028]  address_parser.c:1692
+        +   ! : | + ! 3 cstring_array_get_string  (in bench_ext) + 8,24  [0x10316e3fc,0x10316e40c]  string_utils.c:1289
+        +   ! : | + ! 1 cstring_array_get_string  (in bench_ext) + 40  [0x10316e41c]  string_utils.c:1291
+        +   ! : | + 4 address_parser_features  (in bench_ext) + 7180,7108,...  [0x102f9f31c,0x102f9f2d4,...]  address_parser.c:1884
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 40  [0x102f9d738]  address_parser.c:1439
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 104,108  [0x102f9d778,0x102f9d77c]  address_parser.c:1463
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 196,212,...  [0x102f9d7d4,0x102f9d7e4,...]  address_parser.c:1473
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 2860  [0x102f9e23c]  address_parser.c:1601
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 908  [0x102fb22d8]  features.c:108
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 1032  [0x102fb2354]  features.c:109
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 224  [0x102fb202c]  features.c:81
+        +   ! : | + !   1 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 6292  [0x102f9efa4]  address_parser.c:1604
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 872  [0x102fb22b4]  features.c:107
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 140  [0x102fb1fd8]  features.c:81
+        +   ! : | + ! : 1 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 224  [0x102fb202c]  features.c:81
+        +   ! : | + !   1 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 6712  [0x102f9f148]  address_parser.c:1612
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 2256  [0x102f9dfe0]  address_parser.c:1685
+        +   ! : | + ! 1 cstring_array_start_token  (in bench_ext) + 108  [0x10316e188]  string_utils.c:1244
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 452  [0x102fb1e74]  features.c:0
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 108  [0x102fb1d1c]  features.c:42
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 3040  [0x102f9e2f0]  address_parser.c:1746
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 248  [0x102fb1da8]  features.c:52
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 76  [0x102fb1cfc]  features.c:29
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 3900  [0x102f9e64c]  address_parser.c:1827
+        +   ! : | + ! 2 ap_canon_part  (in bench_ext) + 416  [0x102fa18c4]  address_parser.c:1386
+        +   ! : | + ! 1 ap_canon_part  (in bench_ext) + 612  [0x102fa1988]  feature_dict.h:0
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 3908  [0x102f9e654]  address_parser.c:1827
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 3976  [0x102f9e698]  address_parser.c:1837
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 4556  [0x102f9e8dc]  address_parser.c:1870
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 4672  [0x102f9e950]  address_parser.c:1871
+        +   ! : | + ! 1 crf_ik_push  (in bench_ext) + 56  [0x102fa4860]  crf.c:338
+        +   ! : | + ! 1 crf_ik_push  (in bench_ext) + 156  [0x102fa48c4]  crf.c:346
+        +   ! : | + ! 1 cstring_array_start_token  (in bench_ext) + 108  [0x10316e188]  string_utils.c:1244
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 5212  [0x102f9eb6c]  address_parser.c:1895
+        +   ! : | + ! 2 feature_array_add_named  (in bench_ext) + 36,40  [0x102fb1cd4,0x102fb1cd8]  features.c:19
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 572  [0x102fb1eec]  features.c:30
+        +   ! : | + !   1 _platform_strlen  (in libsystem_platform.dylib) + 48  [0x187428af0]
+        +   ! : | + 3 address_parser_features  (in bench_ext) + 5580  [0x102f9ecdc]  address_parser.c:1928
+        +   ! : | + ! 1 word_or_phrase_at_index  (in bench_ext) + 20  [0x102f9fe14]  address_parser.c:1068
+        +   ! : | + ! 1 word_or_phrase_at_index  (in bench_ext) + 296  [0x102f9ff28]  address_parser.c:1078
+        +   ! : | + ! : 1 char_array_terminate  (in bench_ext) + 92  [0x10316d22c]  string_utils.c:1016
+        +   ! : | + ! 1 word_or_phrase_at_index  (in bench_ext) + 468  [0x102f9ffd4]  address_parser.c:1091
+        +   ! : | + !   1 cstring_array_get_phrase  (in bench_ext) + 104  [0x103175fb0]  trie_search.c:963
+        +   ! : | + !     1 char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:969
+        +   ! : | + !       1 _platform_memmove  (in libsystem_platform.dylib) + 420  [0x18742b504]
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 7332  [0x102f9f3b4]  address_parser.c:0
+        +   ! : | + ! 1 cstring_array_start_token  (in bench_ext) + 108  [0x10316e188]  string_utils.c:1244
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 236  [0x102fb1d9c]  features.c:51
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 7380  [0x102f9f3e4]  address_parser.c:0
+        +   ! : | + ! 1 cstring_array_start_token  (in bench_ext) + 108  [0x10316e188]  string_utils.c:1244
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 572  [0x102fb1eec]  features.c:30
+        +   ! : | + !   1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 396  [0x102f9d89c]  address_parser.c:1495
+        +   ! : | + ! 2 cstring_array_get_string  (in bench_ext) + 8  [0x10316e3fc]  string_utils.c:1289
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 1780  [0x102f9de04]  address_parser.c:1563
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 2516  [0x102f9e0e4]  address_parser.c:1574
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 6344,6348  [0x102f9efd8,0x102f9efdc]  address_parser.c:1605
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 6628  [0x102f9f0f4]  address_parser.c:1608
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 944  [0x102fb22fc]  features.c:108
+        +   ! : | + ! 1 feature_array_add  (in bench_ext) + 1032  [0x102fb2354]  features.c:109
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 7256  [0x102f9f368]  address_parser.c:1613
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 4100  [0x102f9e714]  address_parser.c:1839
+        +   ! : | + ! 2 crf_ik_push  (in bench_ext) + 156  [0x102fa48c4]  crf.c:346
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 4144  [0x102f9e740]  address_parser.c:1842
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 4324,6984  [0x102f9e7f4,0x102f9f258]  address_parser.c:1858
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 4704  [0x102f9e970]  address_parser.c:1871
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 556  [0x102fb1edc]  features.c:29
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 396  [0x102fb1e3c]  features.c:53
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 4732,4740  [0x102f9e98c,0x102f9e994]  address_parser.c:1875
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 5180  [0x102f9eb4c]  address_parser.c:1895
+        +   ! : | + ! 1 crf_ik_push  (in bench_ext) + 56  [0x102fa4860]  crf.c:338
+        +   ! : | + ! 1 cstring_array_start_token  (in bench_ext) + 104  [0x10316e184]  string_utils.c:1244
+        +   ! : | + 2 address_parser_features  (in bench_ext) + 7488  [0x102f9f450]  address_parser.c:1973
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 572  [0x102fb1eec]  features.c:30
+        +   ! : | + ! : 1 _platform_strlen  (in libsystem_platform.dylib) + 52  [0x187428af4]
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 100  [0x102fb1d14]  features.c:40
+        +   ! : | + !   1 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! : | + 2 fd_find_slot  (in bench_ext) + 544  [0x102fa1718]  feature_dict.h:155
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 6800  [0x102f9f1a0]  address_parser.c:0
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 572  [0x102fb1eec]  features.c:31
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 7048  [0x102f9f298]  address_parser.c:0
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 396  [0x102fb1e3c]  features.c:53
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 688  [0x102f9d9c0]  address_parser.c:1543
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 900  [0x102f9da94]  address_parser.c:1554
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 1024  [0x102f9db10]  address_parser.c:1555
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 1212  [0x102f9dbcc]  address_parser.c:1557
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 6260  [0x102f9ef84]  address_parser.c:1604
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 6680  [0x102f9f128]  address_parser.c:1609
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 1980  [0x102f9decc]  address_parser.c:1635
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 2388  [0x102f9e064]  address_parser.c:1710
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 2944  [0x102f9e290]  address_parser.c:1735
+        +   ! : | + ! 1 address_dictionary_get_expansions  (in bench_ext) + 32  [0x102f99550]  address_dictionary.c:18
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 2936  [0x102f9e288]  address_parser.c:1735
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 3556  [0x102f9e4f4]  address_parser.c:1790
+        +   ! : | + ! 1 word_vocab_frequency  (in bench_ext) + 612  [0x102f9f7b0]  address_parser.c:395
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 3592  [0x102f9e518]  address_parser.c:1792
+        +   ! : | + ! 1 feature_array_add_named  (in bench_ext) + 544  [0x102fb1ed0]  features.c:29
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 3212  [0x102f9e39c]  address_parser.c:1826
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 4256  [0x102f9e7b0]  address_parser.c:1855
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 4608  [0x102f9e910]  address_parser.c:1871
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 4892  [0x102f9ea2c]  address_parser.c:1879
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 4992  [0x102f9ea90]  address_parser.c:1884
+        +   ! : | + ! 1 cstring_array_get_string  (in bench_ext) + 8  [0x10316e3fc]  string_utils.c:1289
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 5220  [0x102f9eb74]  address_parser.c:1898
+        +   ! : | + 1 address_parser_features  (in bench_ext) + 5512  [0x102f9ec98]  address_parser.c:2005
+        +   ! : | +   1 feature_array_add_named  (in bench_ext) + 236  [0x102fb1d9c]  features.c:51
+        +   ! : | 1287 crf_tagger_score  (in bench_ext) + 1052  [0x102fa5774]  crf.c:717
+        +   ! : | + 402 crf_dict_lookup_array  (in bench_ext) + 1604,1572,...  [0x102fa7920,0x102fa7900,...]  crf.c:479
+        +   ! : | + 204 crf_dict_lookup_array  (in bench_ext) + 1824,1440,...  [0x102fa79fc,0x102fa787c,...]  crf.c:470
+        +   ! : | + 149 crf_dict_lookup_array  (in bench_ext) + 1296,1332  [0x102fa77ec,0x102fa7810]  crf.c:486
+        +   ! : | + 117 crf_dict_lookup_array  (in bench_ext) + 552  [0x102fa7504]  crf.c:442
+        +   ! : | + ! 103 _platform_memchr  (in libsystem_platform.dylib) + 104,84,...  [0x187428e68,0x187428e54,...]
+        +   ! : | + ! 14 DYLD-STUB$$memchr  (in bench_ext) + 4  [0x10317abfc]
+        +   ! : | + 105 crf_dict_lookup_array  (in bench_ext) + 580,804,...  [0x102fa7520,0x102fa7600,...]  crf.c:442
+        +   ! : | + 103 crf_dict_lookup_array  (in bench_ext) + 740,732,...  [0x102fa75c0,0x102fa75b8,...]  crf.c:444
+        +   ! : | + 56 crf_dict_lookup_array  (in bench_ext) + 1004  [0x102fa76c8]  crf.c:442
+        +   ! : | + ! 56 _platform_memcmp  (in libsystem_platform.dylib) + 0,280,...  [0x187428f10,0x187429028,...]
+        +   ! : | + 27 crf_dict_lookup_array  (in bench_ext) + 1352,1356  [0x102fa7824,0x102fa7828]  crf.c:463
+        +   ! : | + 23 crf_dict_lookup_array  (in bench_ext) + 516,224,...  [0x102fa74e0,0x102fa73bc,...]  crf.c:0
+        +   ! : | + 23 crf_dict_lookup_array  (in bench_ext) + 788,1872,...  [0x102fa75f0,0x102fa7a2c,...]  feature_dict.h:0
+        +   ! : | + 17 crf_dict_lookup_array  (in bench_ext) + 360  [0x102fa7444]  crf.c:424
+        +   ! : | + 14 crf_dict_lookup_array  (in bench_ext) + 1564  [0x102fa78f8]  crf.c:479
+        +   ! : | + ! 12 _platform_memcmp  (in libsystem_platform.dylib) + 0,72,...  [0x187428f10,0x187428f58,...]
+        +   ! : | + ! 2 DYLD-STUB$$memcmp  (in bench_ext) + 0  [0x10317ac04]
+        +   ! : | + 12 crf_dict_lookup_array  (in bench_ext) + 372  [0x102fa7450]  crf.c:425
+        +   ! : | + 10 crf_dict_lookup_array  (in bench_ext) + 420  [0x102fa7480]  crf.c:431
+        +   ! : | + 10 crf_dict_lookup_array  (in bench_ext) + 1252  [0x102fa77c0]  crf.c:445
+        +   ! : | + 7 crf_dict_lookup_array  (in bench_ext) + 428,436  [0x102fa7488,0x102fa7490]  crf.c:433
+        +   ! : | + 3 crf_dict_lookup_array  (in bench_ext) + 388,392  [0x102fa7460,0x102fa7464]  crf.c:426
+        +   ! : | + 2 crf_dict_lookup_array  (in bench_ext) + 72  [0x102fa7324]  crf.c:416
+        +   ! : | + 1 crf_dict_lookup_array  (in bench_ext) + 32  [0x102fa72fc]  crf.c:410
+        +   ! : | + 1 crf_dict_lookup_array  (in bench_ext) + 504  [0x102fa74d4]  crf.c:438
+        +   ! : | + 1 crf_dict_lookup_array  (in bench_ext) + 1364  [0x102fa7830]  crf.c:466
+        +   ! : | 1171 crf_tagger_score  (in bench_ext) + 2100,1960,...  [0x102fa5b8c,0x102fa5b00,...]  crf.c:717
+        +   ! : | 304 crf_tagger_score  (in bench_ext) + 460  [0x102fa5524]  crf.c:705
+        +   ! : | + 296 _platform_memset  (in libsystem_platform.dylib) + 140,148,...  [0x18742b11c,0x18742b124,...]
+        +   ! : | + 8 __bzero  (in libsystem_platform.dylib) + 68,0,...  [0x18742b074,0x18742b030,...]
+        +   ! : | 225 crf_tagger_score  (in bench_ext) + 1080  [0x102fa5790]  crf.c:717
+        +   ! : | + 157 crf_dict_lookup_array  (in bench_ext) + 1824,1440,...  [0x102fa79fc,0x102fa787c,...]  crf.c:470
+        +   ! : | + 27 crf_dict_lookup_array  (in bench_ext) + 1604,1572,...  [0x102fa7920,0x102fa7900,...]  crf.c:479
+        +   ! : | + 8 crf_dict_lookup_array  (in bench_ext) + 516,224,...  [0x102fa74e0,0x102fa73bc,...]  crf.c:0
+        +   ! : | + 5 crf_dict_lookup_array  (in bench_ext) + 436,428  [0x102fa7490,0x102fa7488]  crf.c:433
+        +   ! : | + 4 crf_dict_lookup_array  (in bench_ext) + 360  [0x102fa7444]  crf.c:424
+        +   ! : | + 3 crf_dict_lookup_array  (in bench_ext) + 504,468  [0x102fa74d4,0x102fa74b0]  crf.c:438
+        +   ! : | + 3 crf_dict_lookup_array  (in bench_ext) + 976,524  [0x102fa76ac,0x102fa74e8]  crf.c:442
+        +   ! : | + 3 crf_dict_lookup_array  (in bench_ext) + 1352  [0x102fa7824]  crf.c:463
+        +   ! : | + 3 crf_dict_lookup_array  (in bench_ext) + 1296  [0x102fa77ec]  crf.c:486
+        +   ! : | + 3 crf_dict_lookup_array  (in bench_ext) + 788  [0x102fa75f0]  feature_dict.h:0
+        +   ! : | + 2 crf_dict_lookup_array  (in bench_ext) + 392  [0x102fa7464]  crf.c:426
+        +   ! : | + 2 crf_dict_lookup_array  (in bench_ext) + 420  [0x102fa7480]  crf.c:431
+        +   ! : | + 2 crf_dict_lookup_array  (in bench_ext) + 552  [0x102fa7504]  crf.c:442
+        +   ! : | + ! 2 _platform_memchr  (in libsystem_platform.dylib) + 84,104  [0x187428e54,0x187428e68]
+        +   ! : | + 1 crf_dict_lookup_array  (in bench_ext) + 32  [0x102fa72fc]  crf.c:410
+        +   ! : | + 1 crf_dict_lookup_array  (in bench_ext) + 88  [0x102fa7334]  crf.c:416
+        +   ! : | + 1 crf_dict_lookup_array  (in bench_ext) + 1364  [0x102fa7830]  crf.c:466
+        +   ! : | 44 crf_tagger_score  (in bench_ext) + 564  [0x102fa558c]  crf.c:717
+        +   ! : | + 44 _platform_memmove  (in libsystem_platform.dylib) + 180,192,...  [0x18742b414,0x18742b420,...]
+        +   ! : | 19 address_parser_features  (in bench_ext) + 7684,7688,...  [0x102f9f514,0x102f9f518,...]  address_parser.c:2014
+        +   ! : | 12 crf_tagger_score  (in bench_ext) + 440  [0x102fa5510]  crf.c:705
+        +   ! : | + 12 _platform_memset  (in libsystem_platform.dylib) + 140,160,...  [0x18742b11c,0x18742b130,...]
+        +   ! : | 10 crf_tagger_score  (in bench_ext) + 476  [0x102fa5534]  crf.c:705
+        +   ! : | + 10 _platform_memset  (in libsystem_platform.dylib) + 140,160  [0x18742b11c,0x18742b130]
+        +   ! : | 4 crf_tagger_score  (in bench_ext) + 476,420,...  [0x102fa5534,0x102fa54fc,...]  crf.c:705
+        +   ! : | 4 crf_tagger_score  (in bench_ext) + 2000  [0x102fa5b28]  crf.c:717
+        +   ! : | + 4 state_trans_score_all  (in bench_ext) + 4,0  [0x102fa2db0,0x102fa2dac]  crf_context.c:283
+        +   ! : | 3 crf_tagger_score  (in bench_ext) + 1864  [0x102fa5aa0]  crf.c:717
+        +   ! : | + 3 state_score  (in bench_ext) + 4  [0x102fa2d7c]  crf_context.c:275
+        +   ! : | 3 crf_tagger_score  (in bench_ext) + 1116  [0x102fa57b4]  crf.c:822
+        +   ! : | 1 crf_dict_lookup_array  (in bench_ext) + 1980  [0x102fa7a98]  crf.c:512
+        +   ! : | 1 crf_tagger_score  (in bench_ext) + 24  [0x102fa5370]  crf.c:697
+        +   ! : 611 crf_tagger_predict  (in bench_ext) + 112  [0x102fa5ce4]  crf.c:907
+        +   ! : | 380 crf_context_viterbi  (in bench_ext) + 552  [0x102fa4554]  crf_context.c:631
+        +   ! : | 63 crf_context_viterbi  (in bench_ext) + 548,536,...  [0x102fa4550,0x102fa4544,...]  crf_context.c:634
+        +   ! : | 43 crf_context_viterbi  (in bench_ext) + 524  [0x102fa4538]  crf_context.c:633
+        +   ! : | 36 crf_context_viterbi  (in bench_ext) + 520,512,...  [0x102fa4534,0x102fa452c,...]  crf_context.c:632
+        +   ! : | 19 crf_context_viterbi  (in bench_ext) + 580,112,...  [0x102fa4570,0x102fa439c,...]  crf_context.c:0
+        +   ! : | 15 crf_context_viterbi  (in bench_ext) + 560,572  [0x102fa455c,0x102fa4568]  crf_context.c:628
+        +   ! : | 9 crf_context_viterbi  (in bench_ext) + 644,648,...  [0x102fa45b0,0x102fa45b4,...]  crf_context.c:637
+        +   ! : | 9 crf_context_viterbi  (in bench_ext) + 696,672,...  [0x102fa45e4,0x102fa45cc,...]  crf_context.c:639
+        +   ! : | 8 crf_context_viterbi  (in bench_ext) + 416  [0x102fa44cc]  crf_context.c:627
+        +   ! : | + 6 _platform_memset  (in libsystem_platform.dylib) + 140,12,...  [0x18742b11c,0x18742b09c,...]
+        +   ! : | + 2 DYLD-STUB$$memset  (in bench_ext) + 4  [0x10317ac2c]
+        +   ! : | 7 crf_context_viterbi  (in bench_ext) + 148  [0x102fa43c0]  crf_context.c:681
+        +   ! : | 6 crf_context_viterbi  (in bench_ext) + 92  [0x102fa4388]  crf_context.c:600
+        +   ! : | + 4 _platform_memmove  (in libsystem_platform.dylib) + 180,220  [0x18742b414,0x18742b43c]
+        +   ! : | + 2 DYLD-STUB$$memcpy  (in bench_ext) + 0,4  [0x10317ac10,0x10317ac14]
+        +   ! : | 6 crf_context_viterbi  (in bench_ext) + 1028,1012,...  [0x102fa4730,0x102fa4720,...]  crf_context.c:692
+        +   ! : | 4 crf_context_viterbi  (in bench_ext) + 440  [0x102fa44e4]  crf_context.c:627
+        +   ! : | + 4 _platform_memset_pattern16  (in libsystem_platform.dylib) + 180,0  [0x1874291d4,0x187429120]
+        +   ! : | 4 crf_context_viterbi  (in bench_ext) + 488  [0x102fa4514]  crf_context.c:630
+        +   ! : | 1 crf_context_viterbi  (in bench_ext) + 116  [0x102fa43a0]  crf_context.c:679
+        +   ! : | 1 crf_context_viterbi  (in bench_ext) + 1000  [0x102fa4714]  crf_context.c:694
+        +   ! : 60 crf_tagger_predict  (in bench_ext) + 156  [0x102fa5d10]  crf.c:915
+        +   ! : | 41 cstring_array_add_string  (in bench_ext) + 216  [0x10316e290]  string_utils.c:1253
+        +   ! : | + 39 _platform_memmove  (in libsystem_platform.dylib) + 436,420,...  [0x18742b514,0x18742b504,...]
+        +   ! : | + 2 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : | 12 cstring_array_add_string  (in bench_ext) + 120  [0x10316e230]  string_utils.c:1253
+        +   ! : | + 11 _platform_strlen  (in libsystem_platform.dylib) + 48,64,...  [0x187428af0,0x187428b00,...]
+        +   ! : | + 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | 3 cstring_array_add_string  (in bench_ext) + 124  [0x10316e234]  string_utils.c:1253
+        +   ! : | 2 cstring_array_add_string  (in bench_ext) + 36  [0x10316e1dc]  string_utils.c:1252
+        +   ! : | 2 cstring_array_add_string  (in bench_ext) + 232,288  [0x10316e2a0,0x10316e2d8]  string_utils.c:1254
+        +   ! : 2 crf_tagger_predict  (in bench_ext) + 168  [0x102fa5d1c]  crf.c:913
+        +   ! : 2 crf_tagger_score  (in bench_ext) + 1136  [0x102fa57c8]  crf.c:822
+        +   ! : 1 crf_tagger_predict  (in bench_ext) + 144  [0x102fa5d04]  crf.c:914
+        +   ! : | 1 cstring_array_get_string  (in bench_ext) + 36  [0x10316e418]  string_utils.c:1291
+        +   ! : 1 cstring_array_add_string  (in bench_ext) + 320  [0x10316e2f8]  string_utils.c:1255
+        +   ! 1 address_parser_predict  (in bench_ext) + 8  [0x102fa0034]  address_parser.c:2016
+        +   ! 1 address_parser_predict  (in bench_ext) + 32  [0x102fa004c]  address_parser.c:2017
+        +   ! 1 crf_tagger_predict  (in bench_ext) + 188  [0x102fa5d30]  crf.c:0
+        +   2691 address_parser_parse  (in bench_ext) + 1240  [0x102fa05fc]  address_parser.c:2145
+        +   ! 1007 address_parser_context_fill  (in bench_ext) + 1104  [0x102f9d404]  address_parser.c:983
+        +   ! : 270 trie_search_tokens_from_index  (in bench_ext) + 344,656,...  [0x103174c6c,0x103174da4,...]  trie_search.c:0
+        +   ! : 248 trie_search_tokens_from_index  (in bench_ext) + 780,784  [0x103174e20,0x103174e24]  trie_search.c:381
+        +   ! : 212 trie_search_tokens_from_index  (in bench_ext) + 964  [0x103174ed8]  trie_search.c:386
+        +   ! : 72 trie_search_tokens_from_index  (in bench_ext) + 1028  [0x103174f18]  trie_search.c:401
+        +   ! : | 70 _platform_strncmp$VARIANT$Base  (in libsystem_platform.dylib) + 44,36,...  [0x18742c9dc,0x18742c9d4,...]
+        +   ! : | 2 DYLD-STUB$$strncmp  (in bench_ext) + 4  [0x10317ad04]
+        +   ! : 39 trie_search_tokens_from_index  (in bench_ext) + 472,384,...  [0x103174cec,0x103174c94,...]  trie_search.c:361
+        +   ! : 31 trie_search_tokens_from_index  (in bench_ext) + 468  [0x103174ce8]  trie_search.c:383
+        +   ! : 28 trie_search_tokens_from_index  (in bench_ext) + 456  [0x103174cdc]  trie_search.c:366
+        +   ! : | 16 trie_get_node  (in bench_ext) + 0,16,...  [0x103176ee8,0x103176ef8,...]  trie.c:108
+        +   ! : | 10 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | 1 trie_get_node  (in bench_ext) + 28  [0x103176f04]  trie.c:109
+        +   ! : | 1 trie_get_node  (in bench_ext) + 40  [0x103176f10]  trie.c:110
+        +   ! : 20 trie_search_tokens_from_index  (in bench_ext) + 588,604  [0x103174d60,0x103174d70]  trie_search.c:483
+        +   ! : 17 trie_search_tokens_from_index  (in bench_ext) + 500  [0x103174d08]  trie_search.c:432
+        +   ! : 9 trie_search_tokens_from_index  (in bench_ext) + 1284  [0x103175018]  trie_search.c:535
+        +   ! : 8 trie_search_tokens_from_index  (in bench_ext) + 316,416,...  [0x103174c50,0x103174cb4,...]  trie_search.c:365
+        +   ! : 6 trie_search_tokens_from_index  (in bench_ext) + 440  [0x103174ccc]  trie_search.c:365
+        +   ! : | 6 trie_get_transition_index  (in bench_ext) + 4  [0x103177100]  trie.c:385
+        +   ! : 5 trie_search_tokens_from_index  (in bench_ext) + 1224  [0x103174fdc]  trie_search.c:403
+        +   ! : | 5 _platform_strncmp$VARIANT$Base  (in libsystem_platform.dylib) + 36,44,...  [0x18742c9d4,0x18742c9dc,...]
+        +   ! : 5 trie_search_tokens_from_index  (in bench_ext) + 844  [0x103174e60]  trie_search.c:517
+        +   ! : | 5 trie_get_node  (in bench_ext) + 0,16,...  [0x103176ee8,0x103176ef8,...]  trie.c:108
+        +   ! : 4 trie_search_tokens_from_index  (in bench_ext) + 212  [0x103174be8]  trie_search.c:329
+        +   ! : 4 trie_search_tokens_from_index  (in bench_ext) + 332  [0x103174c60]  trie_search.c:366
+        +   ! : | 3 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | 1 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : 4 trie_search_tokens_from_index  (in bench_ext) + 796  [0x103174e30]  trie_search.c:381
+        +   ! : | 2 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | 2 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : 4 trie_search_tokens_from_index  (in bench_ext) + 668  [0x103174db0]  trie_search.c:493
+        +   ! : 3 trie_search_tokens_from_index  (in bench_ext) + 1184,1056  [0x103174fb4,0x103174f34]  trie_search.c:403
+        +   ! : 3 trie_search_tokens_from_index  (in bench_ext) + 1536  [0x103175114]  trie_search.c:406
+        +   ! : 3 trie_search_tokens_from_index  (in bench_ext) + 828  [0x103174e50]  trie_search.c:515
+        +   ! : | 3 trie_get_transition_index  (in bench_ext) + 4,0  [0x103177100,0x1031770fc]  trie.c:385
+        +   ! : 2 trie_search_tokens_from_index  (in bench_ext) + 1456  [0x1031750c4]  trie_search.c:506
+        +   ! : | 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | 1 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : 2 trie_search_tokens_from_index  (in bench_ext) + 860  [0x103174e70]  trie_search.c:523
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 156  [0x103174bb0]  trie_search.c:0
+        +   ! : | 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 236  [0x103174c00]  trie_search.c:330
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 316  [0x103174c50]  trie_search.c:365
+        +   ! : | 1 trie_get_transition_index  (in bench_ext) + 4  [0x103177100]  trie.c:385
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 456  [0x103174cdc]  trie_search.c:366
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 1588  [0x103175148]  trie_search.c:438
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 1768  [0x1031751fc]  trie_search.c:446
+        +   ! : | 1 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 760  [0x103174e0c]  trie_search.c:512
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 828  [0x103174e50]  trie_search.c:515
+        +   ! 416 address_parser_context_fill  (in bench_ext) + 1396  [0x102f9d528]  address_parser.c:1001
+        +   ! : 98 trie_search_tokens_from_index  (in bench_ext) + 868,656,...  [0x103174e78,0x103174da4,...]  trie_search.c:0
+        +   ! : 88 trie_search_tokens_from_index  (in bench_ext) + 780  [0x103174e20]  trie_search.c:381
+        +   ! : 81 trie_search_tokens_from_index  (in bench_ext) + 964  [0x103174ed8]  trie_search.c:386
+        +   ! : 23 trie_search_tokens_from_index  (in bench_ext) + 468  [0x103174ce8]  trie_search.c:383
+        +   ! : 16 trie_search_tokens_from_index  (in bench_ext) + 472,384,...  [0x103174cec,0x103174c94,...]  trie_search.c:361
+        +   ! : 16 trie_search_tokens_from_index  (in bench_ext) + 456  [0x103174cdc]  trie_search.c:366
+        +   ! : | 8 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : | 7 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | 1 trie_get_node  (in bench_ext) + 40  [0x103176f10]  trie.c:110
+        +   ! : 14 trie_search_tokens_from_index  (in bench_ext) + 416,292,...  [0x103174cb4,0x103174c38,...]  trie_search.c:365
+        +   ! : 9 trie_search_tokens_from_index  (in bench_ext) + 1028  [0x103174f18]  trie_search.c:401
+        +   ! : | 6 _platform_strncmp$VARIANT$Base  (in libsystem_platform.dylib) + 36,20,...  [0x18742c9d4,0x18742c9c4,...]
+        +   ! : | 3 DYLD-STUB$$strncmp  (in bench_ext) + 4  [0x10317ad04]
+        +   ! : 9 trie_search_tokens_from_index  (in bench_ext) + 1284  [0x103175018]  trie_search.c:535
+        +   ! : 8 trie_search_tokens_from_index  (in bench_ext) + 332  [0x103174c60]  trie_search.c:366
+        +   ! : | 5 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | 3 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : 8 trie_search_tokens_from_index  (in bench_ext) + 500  [0x103174d08]  trie_search.c:432
+        +   ! : 6 trie_search_tokens_from_index  (in bench_ext) + 212,216  [0x103174be8,0x103174bec]  trie_search.c:329
+        +   ! : 5 trie_search_tokens_from_index  (in bench_ext) + 224,236  [0x103174bf4,0x103174c00]  trie_search.c:330
+        +   ! : 5 trie_search_tokens_from_index  (in bench_ext) + 576  [0x103174d54]  trie_search.c:478
+        +   ! : | 3 trie_get_transition  (in bench_ext) + 16,20  [0x103177120,0x103177124]  trie.c:392
+        +   ! : | 1 trie_get_transition  (in bench_ext) + 40  [0x103177138]  trie.c:0
+        +   ! : | 1 trie_get_transition  (in bench_ext) + 32  [0x103177130]  trie.c:395
+        +   ! : 4 trie_search_tokens_from_index  (in bench_ext) + 796  [0x103174e30]  trie_search.c:381
+        +   ! : | 3 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : | 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : 3 trie_search_tokens_from_index  (in bench_ext) + 156  [0x103174bb0]  trie_search.c:0
+        +   ! : | 2 trie_get_node  (in bench_ext) + 0,16  [0x103176ee8,0x103176ef8]  trie.c:108
+        +   ! : | 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : 3 trie_search_tokens_from_index  (in bench_ext) + 440  [0x103174ccc]  trie_search.c:365
+        +   ! : | 3 trie_get_transition_index  (in bench_ext) + 4  [0x103177100]  trie.c:385
+        +   ! : 3 trie_search_tokens_from_index  (in bench_ext) + 844  [0x103174e60]  trie_search.c:517
+        +   ! : | 3 trie_get_node  (in bench_ext) + 0,16  [0x103176ee8,0x103176ef8]  trie.c:108
+        +   ! : 2 trie_search_tokens_from_index  (in bench_ext) + 24  [0x103174b2c]  trie_search.c:286
+        +   ! : 2 trie_search_tokens_from_index  (in bench_ext) + 316  [0x103174c50]  trie_search.c:365
+        +   ! : | 2 trie_get_transition_index  (in bench_ext) + 0,4  [0x1031770fc,0x103177100]  trie.c:385
+        +   ! : 2 trie_search_tokens_from_index  (in bench_ext) + 1048  [0x103174f2c]  trie_search.c:419
+        +   ! : | 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | 1 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : 2 trie_search_tokens_from_index  (in bench_ext) + 760  [0x103174e0c]  trie_search.c:512
+        +   ! : 2 trie_search_tokens_from_index  (in bench_ext) + 1936  [0x1031752a4]  trie_search.c:533
+        +   ! : | 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | 1 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 288  [0x103174c34]  trie_search.c:364
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 1224  [0x103174fdc]  trie_search.c:403
+        +   ! : | 1 _platform_strncmp$VARIANT$Base  (in libsystem_platform.dylib) + 0  [0x18742c9b0]
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 1196  [0x103174fc0]  trie_search.c:403
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 1272  [0x10317500c]  trie_search.c:406
+        +   ! : | 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 1536  [0x103175114]  trie_search.c:406
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 588  [0x103174d60]  trie_search.c:483
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 828  [0x103174e50]  trie_search.c:515
+        +   ! 323 address_parser_context_fill  (in bench_ext) + 740  [0x102f9d298]  address_parser.c:947
+        +   ! : 104 trie_search_tokens_from_index  (in bench_ext) + 780  [0x103174e20]  trie_search.c:381
+        +   ! : 60 trie_search_tokens_from_index  (in bench_ext) + 964  [0x103174ed8]  trie_search.c:386
+        +   ! : 38 trie_search_tokens_from_index  (in bench_ext) + 868,344,...  [0x103174e78,0x103174c6c,...]  trie_search.c:0
+        +   ! : 31 trie_search_tokens_from_index  (in bench_ext) + 1028  [0x103174f18]  trie_search.c:401
+        +   ! : | 30 _platform_strncmp$VARIANT$Base  (in libsystem_platform.dylib) + 36,44,...  [0x18742c9d4,0x18742c9dc,...]
+        +   ! : | 1 DYLD-STUB$$strncmp  (in bench_ext) + 4  [0x10317ad04]
+        +   ! : 18 trie_search_tokens_from_index  (in bench_ext) + 468  [0x103174ce8]  trie_search.c:383
+        +   ! : 11 trie_search_tokens_from_index  (in bench_ext) + 472  [0x103174cec]  trie_search.c:361
+        +   ! : 9 trie_search_tokens_from_index  (in bench_ext) + 440  [0x103174ccc]  trie_search.c:365
+        +   ! : | 9 trie_get_transition_index  (in bench_ext) + 4  [0x103177100]  trie.c:385
+        +   ! : 7 trie_search_tokens_from_index  (in bench_ext) + 332  [0x103174c60]  trie_search.c:366
+        +   ! : | 4 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | 3 trie_get_node  (in bench_ext) + 0,16  [0x103176ee8,0x103176ef8]  trie.c:108
+        +   ! : 7 trie_search_tokens_from_index  (in bench_ext) + 456  [0x103174cdc]  trie_search.c:366
+        +   ! : | 6 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : | 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : 6 trie_search_tokens_from_index  (in bench_ext) + 212,84,...  [0x103174be8,0x103174b68,...]  trie_search.c:329
+        +   ! : 4 trie_search_tokens_from_index  (in bench_ext) + 796  [0x103174e30]  trie_search.c:381
+        +   ! : | 3 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : | 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : 4 trie_search_tokens_from_index  (in bench_ext) + 500  [0x103174d08]  trie_search.c:432
+        +   ! : 4 trie_search_tokens_from_index  (in bench_ext) + 1284  [0x103175018]  trie_search.c:535
+        +   ! : 3 trie_search_tokens_from_index  (in bench_ext) + 588  [0x103174d60]  trie_search.c:483
+        +   ! : 2 trie_search_tokens_from_index  (in bench_ext) + 12,40  [0x103174b20,0x103174b3c]  trie_search.c:286
+        +   ! : 2 trie_search_tokens_from_index  (in bench_ext) + 224  [0x103174bf4]  trie_search.c:330
+        +   ! : 2 trie_search_tokens_from_index  (in bench_ext) + 416  [0x103174cb4]  trie_search.c:365
+        +   ! : 2 trie_search_tokens_from_index  (in bench_ext) + 760  [0x103174e0c]  trie_search.c:512
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 316  [0x103174c50]  trie_search.c:365
+        +   ! : | 1 trie_get_transition_index  (in bench_ext) + 4  [0x103177100]  trie.c:385
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 1552  [0x103175124]  trie_search.c:406
+        +   ! : | 1 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 1540  [0x103175118]  trie_search.c:406
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 1048  [0x103174f2c]  trie_search.c:419
+        +   ! : | 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 1768  [0x1031751fc]  trie_search.c:446
+        +   ! : | 1 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 844  [0x103174e60]  trie_search.c:517
+        +   ! : | 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 860  [0x103174e70]  trie_search.c:523
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 1304  [0x10317502c]  trie_search.c:540
+        +   ! : | 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : 1 trie_search_tokens_from_index  (in bench_ext) + 948  [0x103174ec8]  trie_search.h:0
+        +   ! 264 address_parser_context_fill  (in bench_ext) + 292  [0x102f9d0d8]  address_parser.c:879
+        +   ! : 251 normalize_token  (in bench_ext) + 76  [0x102fbf628]  normalize.c:527
+        +   ! : | 55 add_normalized_token  (in bench_ext) + 692,820,...  [0x102fbf46c,0x102fbf4ec,...]  normalize.c:0
+        +   ! : | 43 add_normalized_token  (in bench_ext) + 952  [0x102fbf570]  normalize.c:509
+        +   ! : | + 32 char_array_append_len  (in bench_ext) + 120  [0x10316d3e8]  string_utils.c:975
+        +   ! : | + ! 30 _platform_memmove  (in libsystem_platform.dylib) + 452,428,...  [0x18742b524,0x18742b50c,...]
+        +   ! : | + ! 2 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : | + 11 char_array_append_len  (in bench_ext) + 24,32  [0x10316d388,0x10316d390]  string_utils.c:974
+        +   ! : | 28 add_normalized_token  (in bench_ext) + 708  [0x102fbf47c]  normalize.c:475
+        +   ! : | + 15 char_array_append  (in bench_ext) + 32  [0x10316d2cc]  string_utils.c:967
+        +   ! : | + ! 11 _platform_strlen  (in libsystem_platform.dylib) + 56,64,...  [0x187428af8,0x187428b00,...]
+        +   ! : | + ! 4 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + 6 char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:969
+        +   ! : | + ! 5 _platform_memmove  (in libsystem_platform.dylib) + 428,452,...  [0x18742b50c,0x18742b524,...]
+        +   ! : | + ! 1 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : | + 3 char_array_append  (in bench_ext) + 36  [0x10316d2d0]  string_utils.c:968
+        +   ! : | + 2 char_array_append  (in bench_ext) + 0  [0x10316d2ac]  string_utils.c:966
+        +   ! : | + 2 char_array_append  (in bench_ext) + 32  [0x10316d2cc]  string_utils.c:967
+        +   ! : | 20 add_normalized_token  (in bench_ext) + 348  [0x102fbf314]  normalize.c:437
+        +   ! : | + 20 utf8_is_letter  (in bench_ext) + 0  [0x10316bab0]  string_utils.c:292
+        +   ! : | 15 add_normalized_token  (in bench_ext) + 360  [0x102fbf320]  normalize.c:438
+        +   ! : | + 15 utf8_is_number  (in bench_ext) + 0  [0x10316bacc]  string_utils.c:302
+        +   ! : | 10 add_normalized_token  (in bench_ext) + 712  [0x102fbf480]  normalize.c:479
+        +   ! : | 9 add_normalized_token  (in bench_ext) + 416  [0x102fbf358]  normalize.c:447
+        +   ! : | + 9 utf8_is_letter  (in bench_ext) + 0  [0x10316bab0]  string_utils.c:292
+        +   ! : | 8 add_normalized_token  (in bench_ext) + 248,256,...  [0x102fbf2b0,0x102fbf2b8,...]  normalize.c:430
+        +   ! : | 8 add_normalized_token  (in bench_ext) + 372,380,...  [0x102fbf32c,0x102fbf334,...]  normalize.c:440
+        +   ! : | 8 add_normalized_token  (in bench_ext) + 416  [0x102fbf358]  normalize.c:450
+        +   ! : | 8 add_normalized_token  (in bench_ext) + 888  [0x102fbf530]  normalize.c:504
+        +   ! : | 6 add_normalized_token  (in bench_ext) + 932  [0x102fbf55c]  normalize.c:508
+        +   ! : | 5 add_normalized_token  (in bench_ext) + 284  [0x102fbf2d4]  normalize.c:430
+        +   ! : | + 1 utf8proc_iterate  (in bench_ext) + 4  [0x103179748]  utf8proc.c:118
+        +   ! : | + 1 utf8proc_iterate  (in bench_ext) + 24  [0x10317975c]  utf8proc.c:121
+        +   ! : | + 1 utf8proc_iterate  (in bench_ext) + 56  [0x10317977c]  utf8proc.c:127
+        +   ! : | + 1 utf8proc_iterate  (in bench_ext) + 76  [0x103179790]  utf8proc.c:128
+        +   ! : | + 1 utf8proc_iterate  (in bench_ext) + 176  [0x1031797f4]  utf8proc.c:138
+        +   ! : | 5 add_normalized_token  (in bench_ext) + 492  [0x102fbf3a4]  normalize.c:434
+        +   ! : | + 4 utf8_is_hyphen  (in bench_ext) + 20  [0x10316bb08]  string_utils.c:313
+        +   ! : | + ! 3 utf8proc_category  (in bench_ext) + 0  [0x103179c54]  utf8proc.c:285
+        +   ! : | + ! 1 utf8proc_category  (in bench_ext) + 60  [0x103179c90]  utf8proc.c:286
+        +   ! : | + 1 utf8_is_hyphen  (in bench_ext) + 0  [0x10316baf4]  string_utils.c:312
+        +   ! : | 5 char_array_append_len  (in bench_ext) + 140,144  [0x10316d3fc,0x10316d400]  string_utils.c:977
+        +   ! : | 3 add_normalized_token  (in bench_ext) + 404  [0x102fbf34c]  normalize.c:446
+        +   ! : | + 3 utf8_is_number  (in bench_ext) + 0  [0x10316bacc]  string_utils.c:302
+        +   ! : | 3 add_normalized_token  (in bench_ext) + 1028  [0x102fbf5bc]  normalize.c:521
+        +   ! : | + 3 char_array_terminate  (in bench_ext) + 16  [0x10316d1e0]  string_utils.c:1015
+        +   ! : | 3 char_array_append  (in bench_ext) + 152,148  [0x10316d344,0x10316d340]  string_utils.c:971
+        +   ! : | 2 add_normalized_token  (in bench_ext) + 52  [0x102fbf1ec]  normalize.c:409
+        +   ! : | 2 add_normalized_token  (in bench_ext) + 316  [0x102fbf2f4]  normalize.c:434
+        +   ! : | 1 add_normalized_token  (in bench_ext) + 12  [0x102fbf1c4]  normalize.c:407
+        +   ! : | 1 add_normalized_token  (in bench_ext) + 336  [0x102fbf308]  normalize.c:435
+        +   ! : | 1 add_normalized_token  (in bench_ext) + 456  [0x102fbf380]  normalize.c:440
+        +   ! : | + 1 utf8proc_iterate  (in bench_ext) + 76  [0x103179790]  utf8proc.c:128
+        +   ! : | 1 add_normalized_token  (in bench_ext) + 480  [0x102fbf398]  normalize.c:445
+        +   ! : | + 1 utf8proc_category  (in bench_ext) + 0  [0x103179c54]  utf8proc.c:285
+        +   ! : | 1 char_array_terminate  (in bench_ext) + 92  [0x10316d22c]  string_utils.c:1016
+        +   ! : 9 normalize_token  (in bench_ext) + 40  [0x102fbf604]  normalize.c:526
+        +   ! : | 5 cstring_array_start_token  (in bench_ext) + 16  [0x10316e12c]  string_utils.c:1242
+        +   ! : | 4 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! : 3 add_normalized_token  (in bench_ext) + 1048  [0x102fbf5d0]  normalize.c:523
+        +   ! : 1 cstring_array_start_token  (in bench_ext) + 108  [0x10316e188]  string_utils.c:1244
+        +   ! 148 address_parser_context_fill  (in bench_ext) + 868  [0x102f9d318]  address_parser.c:957
+        +   ! : 146 search_address_dictionaries_prefix  (in bench_ext) + 192  [0x102f9a4b8]  address_dictionary.c:352
+        +   ! : | 134 trie_search_prefixes_from_index_get_prefix_char  (in bench_ext) + 108  [0x103175c90]  trie_search.c:920
+        +   ! : | + 35 trie_search_prefixes_from_index  (in bench_ext) + 256,300,...  [0x10317591c,0x103175948,...]  trie_search.c:0
+        +   ! : | + 31 trie_search_prefixes_from_index  (in bench_ext) + 164  [0x1031758c0]  trie_search.c:759
+        +   ! : | + 10 trie_search_prefixes_from_index  (in bench_ext) + 152  [0x1031758b4]  trie_search.c:756
+        +   ! : | + ! 3 utf8proc_iterate  (in bench_ext) + 4  [0x103179748]  utf8proc.c:118
+        +   ! : | + ! 3 utf8proc_iterate  (in bench_ext) + 56  [0x10317977c]  utf8proc.c:127
+        +   ! : | + ! 2 utf8proc_iterate  (in bench_ext) + 40  [0x10317976c]  utf8proc.c:0
+        +   ! : | + ! 1 utf8proc_iterate  (in bench_ext) + 0  [0x103179744]  utf8proc.c:114
+        +   ! : | + ! 1 utf8proc_iterate  (in bench_ext) + 76  [0x103179790]  utf8proc.c:128
+        +   ! : | + 7 trie_search_prefixes_from_index  (in bench_ext) + 184  [0x1031758d4]  trie_search.c:761
+        +   ! : | + ! 6 utf8_is_hyphen  (in bench_ext) + 20  [0x10316bb08]  string_utils.c:313
+        +   ! : | + ! : 3 utf8proc_category  (in bench_ext) + 0  [0x103179c54]  utf8proc.c:285
+        +   ! : | + ! : 3 utf8proc_category  (in bench_ext) + 60,32  [0x103179c90,0x103179c74]  utf8proc.c:286
+        +   ! : | + ! 1 utf8_is_hyphen  (in bench_ext) + 4  [0x10316baf8]  string_utils.c:312
+        +   ! : | + 7 utf8_is_hyphen  (in bench_ext) + 40,44  [0x10316bb1c,0x10316bb20]  string_utils.c:314
+        +   ! : | + 5 trie_search_prefixes_from_index  (in bench_ext) + 56  [0x103175854]  trie_search.c:732
+        +   ! : | + ! 4 trie_get_node  (in bench_ext) + 16,24  [0x103176ef8,0x103176f00]  trie.c:108
+        +   ! : | + ! 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | + 5 trie_search_prefixes_from_index  (in bench_ext) + 828  [0x103175b58]  trie_search.c:842
+        +   ! : | + ! 3 utf8_common_prefix_len  (in bench_ext) + 112  [0x10316c0a8]  string_utils.c:535
+        +   ! : | + ! 1 utf8_common_prefix_len  (in bench_ext) + 136  [0x10316c0c0]  string_utils.c:0
+        +   ! : | + ! 1 utf8_common_prefix_len  (in bench_ext) + 84  [0x10316c08c]  string_utils.c:530
+        +   ! : | + !   1 utf8proc_iterate  (in bench_ext) + 4  [0x103179748]  utf8proc.c:118
+        +   ! : | + 4 trie_search_prefixes_from_index  (in bench_ext) + 172  [0x1031758c8]  trie_search.c:759
+        +   ! : | + ! 4 utf8proc_codepoint_valid  (in bench_ext) + 0  [0x103179898]  utf8proc.c:161
+        +   ! : | + 4 trie_search_prefixes_from_index  (in bench_ext) + 228  [0x103175900]  trie_search.c:773
+        +   ! : | + ! 4 trie_get_transition_index  (in bench_ext) + 4  [0x103177100]  trie.c:385
+        +   ! : | + 4 trie_search_prefixes_from_index  (in bench_ext) + 244  [0x103175910]  trie_search.c:774
+        +   ! : | + ! 3 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : | + ! 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | + 3 trie_search_prefixes_from_index  (in bench_ext) + 196  [0x1031758e0]  trie_search.c:763
+        +   ! : | + ! 2 utf8proc_category  (in bench_ext) + 60  [0x103179c90]  utf8proc.c:286
+        +   ! : | + ! 1 utf8proc_category  (in bench_ext) + 0  [0x103179c54]  utf8proc.c:285
+        +   ! : | + 3 trie_search_prefixes_from_index  (in bench_ext) + 340  [0x103175970]  trie_search.c:772
+        +   ! : | + 3 trie_search_prefixes_from_index  (in bench_ext) + 748  [0x103175b08]  trie_search.c:822
+        +   ! : | + ! 2 _platform_strlen  (in libsystem_platform.dylib) + 56,64  [0x187428af8,0x187428b00]
+        +   ! : | + ! 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + 3 trie_search_prefixes_from_index  (in bench_ext) + 96  [0x10317587c]  trie_search.c:891
+        +   ! : | + 2 trie_search_prefixes_from_index  (in bench_ext) + 196  [0x1031758e0]  trie_search.c:764
+        +   ! : | + 1 trie_search_prefixes_from_index  (in bench_ext) + 24  [0x103175834]  trie_search.c:729
+        +   ! : | + 1 trie_search_prefixes_from_index  (in bench_ext) + 200  [0x1031758e4]  trie_search.c:764
+        +   ! : | + ! 1 utf8_is_separator  (in bench_ext) + 0  [0x10316bb50]  string_utils.c:335
+        +   ! : | + 1 trie_search_prefixes_from_index  (in bench_ext) + 244  [0x103175910]  trie_search.c:774
+        +   ! : | + 1 trie_search_prefixes_from_index  (in bench_ext) + 568  [0x103175a54]  trie_search.c:782
+        +   ! : | + 1 trie_search_prefixes_from_index  (in bench_ext) + 724  [0x103175af0]  trie_search.c:816
+        +   ! : | + ! 1 trie_get_data_node  (in bench_ext) + 24  [0x10317879c]  trie.c:736
+        +   ! : | + 1 trie_search_prefixes_from_index  (in bench_ext) + 712  [0x103175ae4]  trie_search.c:816
+        +   ! : | + 1 trie_search_prefixes_from_index  (in bench_ext) + 748  [0x103175b08]  trie_search.c:829
+        +   ! : | + 1 trie_search_prefixes_from_index  (in bench_ext) + 828  [0x103175b58]  trie_search.c:846
+        +   ! : | 4 trie_search_prefixes_from_index_get_prefix_char  (in bench_ext) + 44  [0x103175c50]  trie_search.c:911
+        +   ! : | + 3 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | + 1 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : | 3 trie_search_prefixes_from_index_get_prefix_char  (in bench_ext) + 60  [0x103175c60]  trie_search.c:913
+        +   ! : | + 3 trie_get_transition_index  (in bench_ext) + 4  [0x103177100]  trie.c:385
+        +   ! : | 2 trie_search_prefixes_from_index  (in bench_ext) + 996,1004  [0x103175c00,0x103175c08]  trie_search.c:908
+        +   ! : | 2 trie_search_prefixes_from_index_get_prefix_char  (in bench_ext) + 76  [0x103175c70]  trie_search.c:914
+        +   ! : | + 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | + 1 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : | 1 trie_search_prefixes_from_index_get_prefix_char  (in bench_ext) + 0  [0x103175c24]  trie_search.c:910
+        +   ! : 1 search_address_dictionaries_prefix  (in bench_ext) + 0  [0x102f9a3f8]  address_dictionary.c:339
+        +   ! : 1 trie_search_prefixes_from_index_get_prefix_char  (in bench_ext) + 136  [0x103175cac]  trie_search.c:921
+        +   ! 145 address_parser_context_fill  (in bench_ext) + 984  [0x102f9d38c]  address_parser.c:960
+        +   ! : 138 search_address_dictionaries_suffix  (in bench_ext) + 192  [0x102f9a5e0]  address_dictionary.c:369
+        +   ! : | 124 trie_search_suffixes_from_index_get_suffix_char  (in bench_ext) + 128  [0x103175750]  trie_search.c:720
+        +   ! : | + 34 trie_search_suffixes_from_index  (in bench_ext) + 436,100,...  [0x1031755bc,0x10317546c,...]  trie_search.c:0
+        +   ! : | + 20 trie_search_suffixes_from_index  (in bench_ext) + 356  [0x10317556c]  trie_search.c:654
+        +   ! : | + 14 trie_search_suffixes_from_index  (in bench_ext) + 128  [0x103175488]  trie_search.c:616
+        +   ! : | + ! 5 utf8proc_iterate_reversed  (in bench_ext) + 40  [0x10316b86c]  string_utils.c:177
+        +   ! : | + ! 4 utf8proc_iterate_reversed  (in bench_ext) + 84  [0x10316b898]  string_utils.c:186
+        +   ! : | + ! : 2 utf8proc_iterate  (in bench_ext) + 24  [0x10317975c]  utf8proc.c:121
+        +   ! : | + ! : 1 utf8proc_iterate  (in bench_ext) + 40  [0x10317976c]  utf8proc.c:0
+        +   ! : | + ! : 1 utf8proc_iterate  (in bench_ext) + 56  [0x10317977c]  utf8proc.c:127
+        +   ! : | + ! 2 utf8proc_iterate_reversed  (in bench_ext) + 52  [0x10316b878]  string_utils.c:182
+        +   ! : | + ! 2 utf8proc_iterate_reversed  (in bench_ext) + 84  [0x10316b898]  string_utils.c:187
+        +   ! : | + ! 1 utf8proc_iterate_reversed  (in bench_ext) + 44  [0x10316b870]  string_utils.c:180
+        +   ! : | + 9 trie_search_suffixes_from_index  (in bench_ext) + 148  [0x10317549c]  trie_search.c:619
+        +   ! : | + ! 9 utf8proc_codepoint_valid  (in bench_ext) + 0  [0x103179898]  utf8proc.c:161
+        +   ! : | + 8 trie_search_suffixes_from_index  (in bench_ext) + 340  [0x10317555c]  trie_search.c:648
+        +   ! : | + ! 4 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : | + ! 3 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | + ! 1 trie_get_node  (in bench_ext) + 40  [0x103176f10]  trie.c:110
+        +   ! : | + 7 trie_search_suffixes_from_index  (in bench_ext) + 196  [0x1031754cc]  trie_search.c:624
+        +   ! : | + ! 6 _platform_strncmp$VARIANT$Base  (in libsystem_platform.dylib) + 36,44,...  [0x18742c9d4,0x18742c9dc,...]
+        +   ! : | + ! 1 DYLD-STUB$$strncmp  (in bench_ext) + 0  [0x10317ad00]
+        +   ! : | + 7 trie_search_suffixes_from_index  (in bench_ext) + 448  [0x1031755c8]  trie_search.c:657
+        +   ! : | + 5 trie_search_suffixes_from_index  (in bench_ext) + 492  [0x1031755f4]  trie_search.c:665
+        +   ! : | + ! 4 _platform_strlen  (in libsystem_platform.dylib) + 48,64,...  [0x187428af0,0x187428b00,...]
+        +   ! : | + ! 1 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! : | + 3 trie_search_suffixes_from_index  (in bench_ext) + 52  [0x10317543c]  trie_search.c:595
+        +   ! : | + ! 2 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : | + ! 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | + 3 trie_search_suffixes_from_index  (in bench_ext) + 360  [0x103175570]  trie_search.c:690
+        +   ! : | + 3 utf8proc_iterate_reversed  (in bench_ext) + 104  [0x10316b8ac]  string_utils.c:189
+        +   ! : | + 2 trie_search_suffixes_from_index  (in bench_ext) + 24  [0x103175420]  trie_search.c:593
+        +   ! : | + 2 trie_search_suffixes_from_index  (in bench_ext) + 276  [0x10317551c]  trie_search.c:644
+        +   ! : | + 2 trie_search_suffixes_from_index  (in bench_ext) + 324  [0x10317554c]  trie_search.c:647
+        +   ! : | + ! 2 trie_get_transition_index  (in bench_ext) + 4  [0x103177100]  trie.c:385
+        +   ! : | + 2 trie_search_suffixes_from_index  (in bench_ext) + 308  [0x10317553c]  trie_search.c:647
+        +   ! : | + 1 trie_search_suffixes_from_index  (in bench_ext) + 104  [0x103175470]  trie_search.c:615
+        +   ! : | + 1 trie_search_suffixes_from_index  (in bench_ext) + 148  [0x10317549c]  trie_search.c:619
+        +   ! : | + 1 trie_search_suffixes_from_index  (in bench_ext) + 380  [0x103175584]  trie_search.c:691
+        +   ! : | +   1 trie_get_transition  (in bench_ext) + 40  [0x103177138]  trie.c:0
+        +   ! : | 6 trie_search_suffixes_from_index  (in bench_ext) + 700,692,...  [0x1031756c4,0x1031756bc,...]  trie_search.c:706
+        +   ! : | 6 trie_search_suffixes_from_index_get_suffix_char  (in bench_ext) + 96  [0x103175730]  trie_search.c:713
+        +   ! : | + 5 trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        +   ! : | + 1 trie_get_node  (in bench_ext) + 36  [0x103176f0c]  trie.c:0
+        +   ! : | 1 trie_search_suffixes_from_index_get_suffix_char  (in bench_ext) + 0  [0x1031756d0]  trie_search.c:708
+        +   ! : | 1 trie_search_suffixes_from_index_get_suffix_char  (in bench_ext) + 80  [0x103175720]  trie_search.c:712
+        +   ! : |   1 trie_get_transition_index  (in bench_ext) + 4  [0x103177100]  trie.c:385
+        +   ! : 3 search_address_dictionaries_suffix  (in bench_ext) + 0  [0x102f9a520]  address_dictionary.c:356
+        +   ! : 2 search_address_dictionaries_suffix  (in bench_ext) + 36  [0x102f9a544]  address_dictionary.c:0
+        +   ! : 2 trie_search_suffixes_from_index_get_suffix_char  (in bench_ext) + 164  [0x103175774]  trie_search.c:721
+        +   ! 117 address_parser_context_fill  (in bench_ext) + 584  [0x102f9d1fc]  address_parser.c:879
+        +   ! : 111 normalize_token  (in bench_ext) + 76  [0x102fbf628]  normalize.c:527
+        +   ! : | 21 add_normalized_token  (in bench_ext) + 952  [0x102fbf570]  normalize.c:509
+        +   ! : | + 13 char_array_append_len  (in bench_ext) + 120  [0x10316d3e8]  string_utils.c:975
+        +   ! : | + ! 12 _platform_memmove  (in libsystem_platform.dylib) + 452,428,...  [0x18742b524,0x18742b50c,...]
+        +   ! : | + ! 1 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : | + 8 char_array_append_len  (in bench_ext) + 24  [0x10316d388]  string_utils.c:974
+        +   ! : | 19 add_normalized_token  (in bench_ext) + 644,676,...  [0x102fbf43c,0x102fbf45c,...]  normalize.c:0
+        +   ! : | 10 add_normalized_token  (in bench_ext) + 360  [0x102fbf320]  normalize.c:438
+        +   ! : | + 10 utf8_is_number  (in bench_ext) + 0  [0x10316bacc]  string_utils.c:302
+        +   ! : | 8 add_normalized_token  (in bench_ext) + 284  [0x102fbf2d4]  normalize.c:430
+        +   ! : | + 3 utf8proc_iterate  (in bench_ext) + 4  [0x103179748]  utf8proc.c:118
+        +   ! : | + 2 utf8proc_iterate  (in bench_ext) + 112  [0x1031797b4]  utf8proc.c:0
+        +   ! : | + 2 utf8proc_iterate  (in bench_ext) + 56  [0x10317977c]  utf8proc.c:127
+        +   ! : | + 1 utf8proc_iterate  (in bench_ext) + 76  [0x103179790]  utf8proc.c:128
+        +   ! : | 7 add_normalized_token  (in bench_ext) + 372,380,...  [0x102fbf32c,0x102fbf334,...]  normalize.c:440
+        +   ! : | 6 add_normalized_token  (in bench_ext) + 932  [0x102fbf55c]  normalize.c:508
+        +   ! : | 5 add_normalized_token  (in bench_ext) + 348  [0x102fbf314]  normalize.c:437
+        +   ! : | + 5 utf8_is_letter  (in bench_ext) + 0  [0x10316bab0]  string_utils.c:292
+        +   ! : | 4 add_normalized_token  (in bench_ext) + 456  [0x102fbf380]  normalize.c:440
+        +   ! : | + 2 utf8proc_iterate  (in bench_ext) + 112  [0x1031797b4]  utf8proc.c:0
+        +   ! : | + 1 utf8proc_iterate  (in bench_ext) + 0  [0x103179744]  utf8proc.c:114
+        +   ! : | + 1 utf8proc_iterate  (in bench_ext) + 4  [0x103179748]  utf8proc.c:118
+        +   ! : | 4 char_array_append_len  (in bench_ext) + 140,144  [0x10316d3fc,0x10316d400]  string_utils.c:977
+        +   ! : | 3 add_normalized_token  (in bench_ext) + 404  [0x102fbf34c]  normalize.c:446
+        +   ! : | + 3 utf8_is_number  (in bench_ext) + 0  [0x10316bacc]  string_utils.c:302
+        +   ! : | 3 add_normalized_token  (in bench_ext) + 712  [0x102fbf480]  normalize.c:479
+        +   ! : | 3 add_normalized_token  (in bench_ext) + 888  [0x102fbf530]  normalize.c:504
+        +   ! : | 2 add_normalized_token  (in bench_ext) + 248  [0x102fbf2b0]  normalize.c:430
+        +   ! : | 2 add_normalized_token  (in bench_ext) + 492  [0x102fbf3a4]  normalize.c:434
+        +   ! : | + 2 utf8_is_hyphen  (in bench_ext) + 20  [0x10316bb08]  string_utils.c:313
+        +   ! : | +   1 utf8proc_category  (in bench_ext) + 0  [0x103179c54]  utf8proc.c:285
+        +   ! : | +   1 utf8proc_category  (in bench_ext) + 60  [0x103179c90]  utf8proc.c:286
+        +   ! : | 2 add_normalized_token  (in bench_ext) + 456  [0x102fbf380]  normalize.c:444
+        +   ! : | 2 add_normalized_token  (in bench_ext) + 416  [0x102fbf358]  normalize.c:447
+        +   ! : | + 2 utf8_is_letter  (in bench_ext) + 0  [0x10316bab0]  string_utils.c:292
+        +   ! : | 2 add_normalized_token  (in bench_ext) + 416  [0x102fbf358]  normalize.c:450
+        +   ! : | 2 add_normalized_token  (in bench_ext) + 1028  [0x102fbf5bc]  normalize.c:521
+        +   ! : | + 1 char_array_terminate  (in bench_ext) + 0  [0x10316d1d0]  string_utils.c:1014
+        +   ! : | + 1 char_array_terminate  (in bench_ext) + 16  [0x10316d1e0]  string_utils.c:1015
+        +   ! : | 1 add_normalized_token  (in bench_ext) + 52  [0x102fbf1ec]  normalize.c:409
+        +   ! : | 1 add_normalized_token  (in bench_ext) + 516  [0x102fbf3bc]  normalize.c:435
+        +   ! : | + 1 utf8proc_category  (in bench_ext) + 0  [0x103179c54]  utf8proc.c:285
+        +   ! : | 1 add_normalized_token  (in bench_ext) + 340  [0x102fbf30c]  normalize.c:437
+        +   ! : | 1 add_normalized_token  (in bench_ext) + 396  [0x102fbf344]  normalize.c:446
+        +   ! : | 1 char_array_terminate  (in bench_ext) + 96  [0x10316d230]  string_utils.c:1016
+        +   ! : | 1 utf8_is_hyphen  (in bench_ext) + 40  [0x10316bb1c]  string_utils.c:314
+        +   ! : 3 normalize_token  (in bench_ext) + 40  [0x102fbf604]  normalize.c:526
+        +   ! : | 3 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! : 1 add_normalized_token  (in bench_ext) + 1048  [0x102fbf5d0]  normalize.c:523
+        +   ! : 1 cstring_array_start_token  (in bench_ext) + 108  [0x10316e188]  string_utils.c:1244
+        +   ! : 1 normalize_token  (in bench_ext) + 12  [0x102fbf5e8]  normalize.c:525
+        +   ! 69 address_parser_context_fill  (in bench_ext) + 1124  [0x102f9d418]  address_parser.c:984
+        +   ! : 28 token_phrase_memberships  (in bench_ext) + 140,172,...  [0x103175de0,0x103175e00,...]  trie_search.c:938
+        +   ! : 10 token_phrase_memberships  (in bench_ext) + 424  [0x103175efc]  trie_search.c:954
+        +   ! : 8 token_phrase_memberships  (in bench_ext) + 220  [0x103175e30]  collections.h:0
+        +   ! : 8 token_phrase_memberships  (in bench_ext) + 268,256  [0x103175e60,0x103175e54]  trie_search.c:944
+        +   ! : 5 token_phrase_memberships  (in bench_ext) + 128,120  [0x103175dd4,0x103175dcc]  trie_search.c:935
+        +   ! : 2 token_phrase_memberships  (in bench_ext) + 80,96  [0x103175da4,0x103175db4]  trie_search.c:0
+        +   ! : 2 token_phrase_memberships  (in bench_ext) + 24  [0x103175d6c]  trie_search.c:928
+        +   ! : 2 token_phrase_memberships  (in bench_ext) + 104  [0x103175dbc]  trie_search.c:934
+        +   ! : 2 token_phrase_memberships  (in bench_ext) + 328  [0x103175e9c]  trie_search.c:948
+        +   ! : 2 token_phrase_memberships  (in bench_ext) + 336,352  [0x103175ea4,0x103175eb4]  trie_search.c:950
+        +   ! 41 address_parser_context_fill  (in bench_ext) + 464,480,...  [0x102f9d184,0x102f9d194,...]  address_parser.c:879
+        +   ! 35 address_parser_context_fill  (in bench_ext) + 1236  [0x102f9d488]  address_parser.c:988
+        +   ! : 8 string_is_digit  (in bench_ext) + 52  [0x10316c570]  string_utils.c:691
+        +   ! : | 4 utf8proc_iterate  (in bench_ext) + 4  [0x103179748]  utf8proc.c:118
+        +   ! : | 2 utf8proc_iterate  (in bench_ext) + 24  [0x10317975c]  utf8proc.c:121
+        +   ! : | 1 utf8proc_iterate  (in bench_ext) + 112  [0x1031797b4]  utf8proc.c:0
+        +   ! : | 1 utf8proc_iterate  (in bench_ext) + 56  [0x10317977c]  utf8proc.c:127
+        +   ! : 5 string_is_digit  (in bench_ext) + 88,112  [0x10316c594,0x10316c5ac]  string_utils.c:0
+        +   ! : 5 string_is_digit  (in bench_ext) + 88  [0x10316c594]  string_utils.c:697
+        +   ! : | 3 utf8proc_category  (in bench_ext) + 0  [0x103179c54]  utf8proc.c:285
+        +   ! : | 2 utf8proc_category  (in bench_ext) + 32,60  [0x103179c74,0x103179c90]  utf8proc.c:286
+        +   ! : 4 string_is_digit  (in bench_ext) + 76,72  [0x10316c588,0x10316c584]  string_utils.c:695
+        +   ! : 4 string_is_digit  (in bench_ext) + 96  [0x10316c59c]  string_utils.c:698
+        +   ! : 3 string_is_digit  (in bench_ext) + 0,16,...  [0x10316c53c,0x10316c54c,...]  string_utils.c:689
+        +   ! : 2 string_is_digit  (in bench_ext) + 52  [0x10316c570]  string_utils.c:693
+        +   ! : 1 string_is_digit  (in bench_ext) + 36  [0x10316c560]  string_utils.c:691
+        +   ! : 1 string_is_digit  (in bench_ext) + 64  [0x10316c57c]  string_utils.c:694
+        +   ! : 1 string_is_digit  (in bench_ext) + 76  [0x10316c588]  string_utils.c:695
+        +   ! : | 1 utf8proc_codepoint_valid  (in bench_ext) + 0  [0x103179898]  utf8proc.c:161
+        +   ! : 1 string_is_digit  (in bench_ext) + 80  [0x10316c58c]  string_utils.c:697
+        +   ! 25 address_parser_context_fill  (in bench_ext) + 1224  [0x102f9d47c]  address_parser.c:988
+        +   ! : 23 _platform_strlen  (in libsystem_platform.dylib) + 48,0,...  [0x187428af0,0x187428ac0,...]
+        +   ! : 2 DYLD-STUB$$strlen  (in bench_ext) + 4  [0x10317acf8]
+        +   ! 23 address_parser_context_fill  (in bench_ext) + 1412  [0x102f9d538]  address_parser.c:1002
+        +   ! : 9 token_phrase_memberships  (in bench_ext) + 172,140,...  [0x103175e00,0x103175de0,...]  trie_search.c:938
+        +   ! : 6 token_phrase_memberships  (in bench_ext) + 220  [0x103175e30]  collections.h:0
+        +   ! : 4 token_phrase_memberships  (in bench_ext) + 376,336,...  [0x103175ecc,0x103175ea4,...]  trie_search.c:950
+        +   ! : 2 token_phrase_memberships  (in bench_ext) + 128  [0x103175dd4]  trie_search.c:935
+        +   ! : 2 token_phrase_memberships  (in bench_ext) + 424  [0x103175efc]  trie_search.c:954
+        +   ! 16 address_parser_context_fill  (in bench_ext) + 756  [0x102f9d2a8]  address_parser.c:948
+        +   ! : 7 token_phrase_memberships  (in bench_ext) + 220,316  [0x103175e30,0x103175e90]  collections.h:0
+        +   ! : 4 token_phrase_memberships  (in bench_ext) + 172,140  [0x103175e00,0x103175de0]  trie_search.c:938
+        +   ! : 2 token_phrase_memberships  (in bench_ext) + 336,376  [0x103175ea4,0x103175ecc]  trie_search.c:950
+        +   ! : 1 token_phrase_memberships  (in bench_ext) + 24  [0x103175d6c]  trie_search.c:928
+        +   ! : 1 token_phrase_memberships  (in bench_ext) + 104  [0x103175dbc]  trie_search.c:934
+        +   ! : 1 token_phrase_memberships  (in bench_ext) + 268  [0x103175e60]  trie_search.c:944
+        +   ! 12 address_parser_context_fill  (in bench_ext) + 524  [0x102f9d1c0]  address_parser.c:879
+        +   ! : 9 char_array_append_len  (in bench_ext) + 120  [0x10316d3e8]  string_utils.c:975
+        +   ! : | 8 _platform_memmove  (in libsystem_platform.dylib) + 452,0,...  [0x18742b524,0x18742b360,...]
+        +   ! : | 1 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : 2 char_array_append_len  (in bench_ext) + 120  [0x10316d3e8]  string_utils.c:976
+        +   ! : 1 char_array_append_len  (in bench_ext) + 24  [0x10316d388]  string_utils.c:974
+        +   ! 7 address_parser_context_fill  (in bench_ext) + 1216  [0x102f9d474]  address_parser.c:988
+        +   ! : 5 cstring_array_get_string  (in bench_ext) + 8,0,...  [0x10316e3fc,0x10316e3f4,...]  string_utils.c:1289
+        +   ! : 1 cstring_array_get_string  (in bench_ext) + 28  [0x10316e410]  string_utils.c:1290
+        +   ! : 1 cstring_array_get_string  (in bench_ext) + 36  [0x10316e418]  string_utils.c:1291
+        +   ! 5 address_parser_context_fill  (in bench_ext) + 1176,1168,...  [0x102f9d44c,0x102f9d444,...]  address_parser.c:987
+        +   ! 4 address_parser_context_fill  (in bench_ext) + 1236,1224  [0x102f9d488,0x102f9d47c]  address_parser.c:988
+        +   ! 3 address_parser_context_fill  (in bench_ext) + 492  [0x102f9d1a0]  address_parser.c:879
+        +   ! : 3 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! 3 address_parser_context_fill  (in bench_ext) + 852  [0x102f9d308]  address_parser.c:955
+        +   ! : 2 tokenized_string_get_token  (in bench_ext) + 4  [0x10316f9a8]  tokens.c:68
+        +   ! : 1 cstring_array_get_string  (in bench_ext) + 24  [0x10316e40c]  string_utils.c:1289
+        +   ! 3 address_parser_context_fill  (in bench_ext) + 1000,812  [0x102f9d39c,0x102f9d2e0]  address_parser.c:961
+        +   ! 3 address_parser_context_fill  (in bench_ext) + 1348  [0x102f9d4f8]  address_parser.c:990
+        +   ! : 3 _platform_memset  (in libsystem_platform.dylib) + 0,180,...  [0x18742b090,0x18742b144,...]
+        +   ! 3 normalize_token  (in bench_ext) + 84  [0x102fbf630]  normalize.c:528
+        +   ! 3 trie_search_tokens_from_index  (in bench_ext) + 2176  [0x103175394]  trie_search.c:560
+        +   ! 2 address_parser_context_fill  (in bench_ext) + 468,1324  [0x102f9d188,0x102f9d4e0]  address_parser.c:0
+        +   ! 2 address_parser_context_fill  (in bench_ext) + 668  [0x102f9d250]  tokens.h:0
+        +   ! 2 char_array_append_len  (in bench_ext) + 140  [0x10316d3fc]  string_utils.c:977
+        +   ! 2 cstring_array_start_token  (in bench_ext) + 108  [0x10316e188]  string_utils.c:1244
+        +   ! 2 token_phrase_memberships  (in bench_ext) + 432,448  [0x103175f04,0x103175f14]  trie_search.c:954
+        +   ! 1 address_parser_context_fill  (in bench_ext) + 1388  [0x102f9d520]  address_parser.c:1001
+        +   ! 1 address_parser_context_fill  (in bench_ext) + 1412  [0x102f9d538]  address_parser.c:1004
+        +   ! 1 address_parser_context_fill  (in bench_ext) + 64  [0x102f9cff4]  address_parser.c:868
+        +   ! : 1 cstring_array_clear  (in bench_ext) + 0  [0x10316e480]  string_utils.c:1230
+        +   ! 1 address_parser_context_fill  (in bench_ext) + 1148  [0x102f9d430]  address_parser.c:986
+        +   ! 1 address_parser_context_fill  (in bench_ext) + 1060  [0x102f9d3d8]  trie_search.h:0
+        +   ! 1 search_address_dictionaries_prefix  (in bench_ext) + 280  [0x102f9a510]  address_dictionary.c:0
+        +   125 address_parser_parse  (in bench_ext) + 840  [0x102fa046c]  address_parser.c:2097
+        +   ! 13 scan_token  (in bench_ext) + 732864,732860,...  [0x1030759b8,0x1030759b4,...]  scanner.re:216
+        +   ! 11 scan_token  (in bench_ext) + 10984,152,...  [0x102fc55e0,0x102fc2b90,...]  scanner.c:0
+        +   ! 10 scan_token  (in bench_ext) + 5888  [0x102fc41f8]  scanner.c:6401
+        +   ! 9 scan_token  (in bench_ext) + 21228  [0x102fc7de4]  scanner.c:983
+        +   ! 8 scan_token  (in bench_ext) + 60,88  [0x102fc2b34,0x102fc2b50]  scanner.c:128
+        +   ! 6 scan_token  (in bench_ext) + 2716  [0x102fc3594]  scanner.c:859
+        +   ! 6 tokenize_add_tokens  (in bench_ext) + 88  [0x103166f04]  scanner.re:238
+        +   ! : 6 scan_token  (in bench_ext) + 28  [0x102fc2b14]  scanner.re:9
+        +   ! 5 scan_token  (in bench_ext) + 104,116  [0x102fc2b60,0x102fc2b6c]  scanner.c:1198
+        +   ! 4 scan_token  (in bench_ext) + 1284,1316  [0x102fc2ffc,0x102fc301c]  scanner.c:6398
+        +   ! 4 scan_token  (in bench_ext) + 1336  [0x102fc3030]  scanner.c:6430
+        +   ! 3 scan_token  (in bench_ext) + 1360  [0x102fc3048]  scanner.c:6437
+        +   ! 2 scan_token  (in bench_ext) + 52  [0x102fc2b2c]  scanner.c:125
+        +   ! 2 scan_token  (in bench_ext) + 3812  [0x102fc39dc]  scanner.c:1608
+        +   ! 2 scan_token  (in bench_ext) + 44784  [0x102fcd9e8]  scanner.c:5966
+        +   ! 2 scan_token  (in bench_ext) + 1328  [0x102fc3028]  scanner.c:6400
+        +   ! 2 scan_token  (in bench_ext) + 8396  [0x102fc4bc4]  scanner.c:6413
+        +   ! 2 tokenize_add_tokens  (in bench_ext) + 216  [0x103166f84]  scanner.re:251
+        +   ! 1 scan_token  (in bench_ext) + 22148  [0x102fc817c]  scanner.c:1005
+        +   ! 1 scan_token  (in bench_ext) + 268  [0x102fc2c04]  scanner.c:1225
+        +   ! 1 scan_token  (in bench_ext) + 948  [0x102fc2eac]  scanner.c:1237
+        +   ! 1 scan_token  (in bench_ext) + 247560  [0x102fff200]  scanner.c:151817
+        +   ! 1 scan_token  (in bench_ext) + 589220  [0x10305289c]  scanner.c:17961
+        +   ! 1 scan_token  (in bench_ext) + 254220  [0x103000c04]  scanner.c:198823
+        +   ! 1 scan_token  (in bench_ext) + 255624  [0x103001180]  scanner.c:199229
+        +   ! 1 scan_token  (in bench_ext) + 4120  [0x102fc3b10]  scanner.c:2104
+        +   ! 1 scan_token  (in bench_ext) + 2912  [0x102fc3658]  scanner.c:2115
+        +   ! 1 scan_token  (in bench_ext) + 2836  [0x102fc360c]  scanner.c:2120
+        +   ! 1 scan_token  (in bench_ext) + 2444  [0x102fc3484]  scanner.c:2195
+        +   ! 1 scan_token  (in bench_ext) + 475128  [0x103036af0]  scanner.c:2590
+        +   ! 1 scan_token  (in bench_ext) + 294068  [0x10300a7ac]  scanner.c:26887
+        +   ! 1 scan_token  (in bench_ext) + 294080  [0x10300a7b8]  scanner.c:26889
+        +   ! 1 scan_token  (in bench_ext) + 294112  [0x10300a7d8]  scanner.c:26890
+        +   ! 1 scan_token  (in bench_ext) + 295532  [0x10300ad64]  scanner.c:26925
+        +   ! 1 scan_token  (in bench_ext) + 492164  [0x10303ad7c]  scanner.c:2780
+        +   ! 1 scan_token  (in bench_ext) + 342372  [0x10301645c]  scanner.c:33382
+        +   ! 1 scan_token  (in bench_ext) + 11032  [0x102fc5610]  scanner.c:438
+        +   ! 1 scan_token  (in bench_ext) + 11052  [0x102fc5624]  scanner.c:440
+        +   ! 1 scan_token  (in bench_ext) + 11072  [0x102fc5638]  scanner.c:444
+        +   ! 1 scan_token  (in bench_ext) + 23720  [0x102fc87a0]  scanner.c:5012
+        +   ! 1 scan_token  (in bench_ext) + 158688  [0x102fe96d8]  scanner.c:55857
+        +   ! 1 scan_token  (in bench_ext) + 77568  [0x102fd59f8]  scanner.c:62083
+        +   ! 1 scan_token  (in bench_ext) + 5908  [0x102fc420c]  scanner.c:6408
+        +   ! 1 scan_token  (in bench_ext) + 6372  [0x102fc43dc]  scanner.c:6442
+        +   ! 1 scan_token  (in bench_ext) + 1888  [0x102fc3258]  scanner.c:672
+        +   ! 1 scan_token  (in bench_ext) + 22164  [0x102fc818c]  scanner.c:752
+        +   ! 1 scan_token  (in bench_ext) + 22184  [0x102fc81a0]  scanner.c:757
+        +   ! 1 scan_token  (in bench_ext) + 6432  [0x102fc4418]  scanner.c:8221
+        +   ! 1 scan_token  (in bench_ext) + 46728  [0x102fce180]  scanner.c:9535
+        +   ! 1 scan_token  (in bench_ext) + 21268  [0x102fc7e0c]  scanner.c:987
+        +   ! 1 tokenize_add_tokens  (in bench_ext) + 104  [0x103166f14]  scanner.re:0
+        +   ! 1 tokenize_add_tokens  (in bench_ext) + 40  [0x103166ed4]  scanner.re:231
+        +   59 address_parser_parse  (in bench_ext) + 1808  [0x102fa0834]  address_parser.c:2280
+        +   ! 47 cstring_array_append_string  (in bench_ext) + 128  [0x10316e730]  string_utils.c:1266
+        +   ! : 47 _platform_memmove  (in libsystem_platform.dylib) + 460,420,...  [0x18742b52c,0x18742b504,...]
+        +   ! 11 cstring_array_append_string  (in bench_ext) + 32  [0x10316e6d0]  string_utils.c:1266
+        +   ! : 9 _platform_strlen  (in libsystem_platform.dylib) + 48,80,...  [0x187428af0,0x187428b10,...]
+        +   ! : 2 DYLD-STUB$$strlen  (in bench_ext) + 0,4  [0x10317acf4,0x10317acf8]
+        +   ! 1 cstring_array_append_string  (in bench_ext) + 36  [0x10316e6d4]  string_utils.c:1266
+        +   39 address_parser_parse  (in bench_ext) + 1136  [0x102fa0594]  address_parser.c:2122
+        +   ! 31 tokenized_string_add_token  (in bench_ext) + 48  [0x10316f7d4]  tokens.c:36
+        +   ! : 26 cstring_array_add_string_len  (in bench_ext) + 208  [0x10316e5fc]  string_utils.c:1260
+        +   ! : | 23 _platform_memmove  (in libsystem_platform.dylib) + 460,452,...  [0x18742b52c,0x18742b524,...]
+        +   ! : | 3 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : 2 cstring_array_add_string_len  (in bench_ext) + 40  [0x10316e554]  string_utils.c:1259
+        +   ! : 2 cstring_array_add_string_len  (in bench_ext) + 116  [0x10316e5a0]  string_utils.c:1260
+        +   ! : 1 cstring_array_add_string_len  (in bench_ext) + 224  [0x10316e60c]  string_utils.c:1261
+        +   ! 4 tokenized_string_add_token  (in bench_ext) + 52,112  [0x10316f7d8,0x10316f814]  tokens.c:39
+        +   ! 2 cstring_array_add_string_len  (in bench_ext) + 312  [0x10316e664]  string_utils.c:1262
+        +   ! 1 tokenized_string_add_token  (in bench_ext) + 12  [0x10316f7b0]  tokens.c:33
+        +   ! 1 tokenized_string_add_token  (in bench_ext) + 36  [0x10316f7c8]  tokens.c:36
+        +   38 address_parser_parse  (in bench_ext) + 2144  [0x102fa0984]  address_parser.c:0
+        +   ! 18 _xzm_free  (in libsystem_malloc.dylib) + 1048  [0x18723f484]
+        +   ! : 18 mach_absolute_time  (in libsystem_kernel.dylib) + 108,16  [0x1873de10c,0x1873de0b0]
+        +   ! 13 _xzm_free  (in libsystem_malloc.dylib) + 352  [0x18723f1cc]
+        +   ! : 7 __bzero  (in libsystem_platform.dylib) + 24,0  [0x18742b048,0x18742b030]
+        +   ! : 6 _platform_memset  (in libsystem_platform.dylib) + 180,140,...  [0x18742b144,0x18742b11c,...]
+        +   ! 6 _xzm_free  (in libsystem_malloc.dylib) + 120,1240,...  [0x18723f0e4,0x18723f544,...]
+        +   ! 1 _free  (in libsystem_malloc.dylib) + 36  [0x18724ec70]
+        +   36 address_parser_parse  (in bench_ext) + 200  [0x102fa01ec]  address_parser.c:2085
+        +   ! 6 norm_table_fast  (in bench_ext) + 152  [0x102f9caf8]  address_parser.c:517
+        +   ! : 5 _platform_memmove  (in libsystem_platform.dylib) + 0,436,...  [0x18742b360,0x18742b514,...]
+        +   ! : 1 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! 5 norm_table_fast  (in bench_ext) + 172  [0x102f9cb0c]  address_parser.c:509
+        +   ! 5 norm_table_fast  (in bench_ext) + 180,200,...  [0x102f9cb14,0x102f9cb28,...]  address_parser.c:511
+        +   ! 4 norm_table_fast  (in bench_ext) + 252  [0x102f9cb5c]  address_parser.c:515
+        +   ! 3 norm_table_fast  (in bench_ext) + 136,276  [0x102f9cae8,0x102f9cb74]  address_parser.c:0
+        +   ! 3 norm_table_fast  (in bench_ext) + 112  [0x102f9cad0]  address_parser.c:504
+        +   ! : 2 _xzm_xzone_malloc  (in libsystem_malloc.dylib) + 8,180  [0x18723e8c8,0x18723e974]
+        +   ! : 1 _xzm_xzone_malloc_tiny  (in libsystem_malloc.dylib) + 116  [0x187243f48]
+        +   ! 3 norm_table_fast  (in bench_ext) + 228,232  [0x102f9cb44,0x102f9cb48]  address_parser.c:512
+        +   ! 2 norm_table_fast  (in bench_ext) + 268  [0x102f9cb6c]  address_parser.c:515
+        +   ! : 2 utf8proc_iterate  (in bench_ext) + 152  [0x1031797dc]  utf8proc.c:135
+        +   ! 2 norm_table_fast  (in bench_ext) + 268  [0x102f9cb6c]  address_parser.c:516
+        +   ! 1 norm_table_fast  (in bench_ext) + 0  [0x102f9ca60]  address_parser.c:498
+        +   ! 1 norm_table_fast  (in bench_ext) + 248  [0x102f9cb58]  address_parser.c:508
+        +   ! 1 norm_table_fast  (in bench_ext) + 152  [0x102f9caf8]  address_parser.c:517
+        +   32 address_parser_parse  (in bench_ext) + 2036  [0x102fa0918]  address_parser.c:2287
+        +   ! 16 ap_response_block  (in bench_ext) + 100  [0x102fa0a64]  address_parser.c:2034
+        +   ! : 9 _xzm_xzone_malloc  (in libsystem_malloc.dylib) + 228,76,...  [0x18723e9a4,0x18723e90c,...]
+        +   ! : 4 _xzm_xzone_malloc_tiny  (in libsystem_malloc.dylib) + 116,172  [0x187243f48,0x187243f80]
+        +   ! : 3 <deduplicated_symbol>  (in libsystem_malloc.dylib) + 112,136,...  [0x18723e144,0x18723e15c,...]
+        +   ! 6 ap_response_block  (in bench_ext) + 136  [0x102fa0a88]  address_parser.c:2037
+        +   ! : 6 _platform_memmove  (in libsystem_platform.dylib) + 444,420,...  [0x18742b51c,0x18742b504,...]
+        +   ! 4 ap_response_block  (in bench_ext) + 196  [0x102fa0ac4]  address_parser.c:2038
+        +   ! : 4 _platform_memmove  (in libsystem_platform.dylib) + 452,460  [0x18742b524,0x18742b52c]
+        +   ! 3 ap_response_block  (in bench_ext) + 136,160  [0x102fa0a88,0x102fa0aa0]  address_parser.c:2037
+        +   ! 2 ap_response_block  (in bench_ext) + 176,220  [0x102fa0ab0,0x102fa0adc]  address_parser.c:2038
+        +   ! 1 ap_response_block  (in bench_ext) + 236  [0x102fa0aec]  address_parser.c:0
+        +   25 address_parser_parse  (in bench_ext) + 1884  [0x102fa0880]  address_parser.c:2266
+        +   ! 24 _platform_strcmp$VARIANT$Base  (in libsystem_platform.dylib) + 28,0,...  [0x18742c74c,0x18742c730,...]
+        +   ! 1 DYLD-STUB$$strcmp  (in bench_ext) + 4  [0x10317acc8]
+        +   25 address_parser_parse  (in bench_ext) + 1972  [0x102fa08d8]  address_parser.c:2278
+        +   ! 18 char_array_cat  (in bench_ext) + 160  [0x10316b4a4]  string_utils.c:1020
+        +   ! : 18 _platform_memmove  (in libsystem_platform.dylib) + 460,444,...  [0x18742b52c,0x18742b51c,...]
+        +   ! 5 char_array_cat  (in bench_ext) + 64  [0x10316b444]  string_utils.c:1020
+        +   ! : 5 _platform_strlen  (in libsystem_platform.dylib) + 64,56  [0x187428b00,0x187428af8]
+        +   ! 1 char_array_cat  (in bench_ext) + 24  [0x10316b41c]  string_utils.c:1019
+        +   ! 1 char_array_cat  (in bench_ext) + 172  [0x10316b4b0]  string_utils.c:1020
+        +   23 address_parser_parse  (in bench_ext) + 1900  [0x102fa0890]  address_parser.c:2267
+        +   ! 15 cstring_array_add_string  (in bench_ext) + 216  [0x10316e290]  string_utils.c:1253
+        +   ! : 12 _platform_memmove  (in libsystem_platform.dylib) + 420,452,...  [0x18742b504,0x18742b524,...]
+        +   ! : 3 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! 5 cstring_array_add_string  (in bench_ext) + 120  [0x10316e230]  string_utils.c:1253
+        +   ! : 5 _platform_strlen  (in libsystem_platform.dylib) + 56,48,...  [0x187428af8,0x187428af0,...]
+        +   ! 2 cstring_array_add_string  (in bench_ext) + 232  [0x10316e2a0]  string_utils.c:1254
+        +   ! 1 cstring_array_add_string  (in bench_ext) + 36  [0x10316e1dc]  string_utils.c:1252
+        +   15 address_parser_parse  (in bench_ext) + 232  [0x102fa020c]  address_parser.c:2085
+        +   ! 13 normalize_string_latin  (in bench_ext) + 84  [0x102fbe83c]  normalize.c:144
+        +   ! : 7 normalize_string_utf8_languages  (in bench_ext) + 104  [0x102fbe564]  normalize.c:43
+        +   ! : | 3 utf8_case  (in bench_ext) + 64  [0x10316b9c8]  string_utils.c:233
+        +   ! : | + 2 utf8proc_decompose  (in bench_ext) + 200  [0x10317a29c]  utf8proc.c:431
+        +   ! : | + ! 1 utf8proc_decompose  (in bench_ext) + 200  [0x10317a29c]  utf8proc.c:431
+        +   ! : | + ! : 1 utf8proc_decompose_char  (in bench_ext) + 384  [0x103179e70]  utf8proc.c:358
+        +   ! : | + ! 1 utf8proc_decompose_char  (in bench_ext) + 68  [0x103179d34]  utf8proc.c:304
+        +   ! : | + 1 utf8proc_decompose  (in bench_ext) + 152  [0x10317a26c]  utf8proc.c:420
+        +   ! : | +   1 utf8proc_iterate  (in bench_ext) + 56  [0x10317977c]  utf8proc.c:127
+        +   ! : | 2 utf8_case  (in bench_ext) + 196  [0x10316ba4c]  string_utils.c:257
+        +   ! : | + 1 utf8proc_reencode  (in bench_ext) + 664  [0x10317a620]  utf8proc.c:545
+        +   ! : | + 1 utf8proc_reencode  (in bench_ext) + 392  [0x10317a510]  utf8proc.c:553
+        +   ! : | 2 utf8_case  (in bench_ext) + 212  [0x10316ba5c]  string_utils.c:263
+        +   ! : |   2 _realloc  (in libsystem_malloc.dylib) + 452  [0x18724ee90]
+        +   ! : |     2 _malloc_zone_realloc  (in libsystem_malloc.dylib) + 148  [0x18724e674]
+        +   ! : |       2 xzm_realloc  (in libsystem_malloc.dylib) + 876  [0x18723ee60]
+        +   ! : |         2 _xzm_free  (in libsystem_malloc.dylib) + 1048  [0x18723f484]
+        +   ! : |           2 mach_absolute_time  (in libsystem_kernel.dylib) + 108  [0x1873de10c]
+        +   ! : 6 normalize_string_utf8_languages  (in bench_ext) + 244  [0x102fbe5f0]  normalize.c:70
+        +   ! :   4 utf8proc_map  (in bench_ext) + 108  [0x10317a8d4]  utf8proc.c:596
+        +   ! :   + 2 utf8proc_decompose  (in bench_ext) + 152  [0x10317a26c]  utf8proc.c:420
+        +   ! :   + ! 1 utf8proc_iterate  (in bench_ext) + 12  [0x103179750]  utf8proc.c:0
+        +   ! :   + ! 1 utf8proc_iterate  (in bench_ext) + 56  [0x10317977c]  utf8proc.c:127
+        +   ! :   + 2 utf8proc_decompose  (in bench_ext) + 200  [0x10317a29c]  utf8proc.c:431
+        +   ! :   +   2 utf8proc_decompose  (in bench_ext) + 200  [0x10317a29c]  utf8proc.c:431
+        +   ! :   +     2 utf8proc_decompose_char  (in bench_ext) + 692,700  [0x103179fa4,0x103179fac]  utf8proc.c:398
+        +   ! :   1 utf8proc_map  (in bench_ext) + 132  [0x10317a8ec]  utf8proc.c:601
+        +   ! :   + 1 utf8proc_reencode  (in bench_ext) + 528  [0x10317a598]  utf8proc.c:526
+        +   ! :   1 utf8proc_map  (in bench_ext) + 152  [0x10317a900]  utf8proc.c:608
+        +   ! :     1 _realloc  (in libsystem_malloc.dylib) + 452  [0x18724ee90]
+        +   ! :       1 _malloc_zone_realloc  (in libsystem_malloc.dylib) + 148  [0x18724e674]
+        +   ! :         1 xzm_realloc  (in libsystem_malloc.dylib) + 780  [0x18723ee00]
+        +   ! :           1 _xzm_xzone_malloc_freelist_outlined  (in libsystem_malloc.dylib) + 324  [0x18724577c]
+        +   ! :             1 _xzm_chunk_list_pop  (in libsystem_malloc.dylib) + 228  [0x187246964]
+        +   ! 2 normalize_string_latin  (in bench_ext) + 60  [0x102fbe824]  normalize.c:144
+        +   !   1 transliterate  (in bench_ext) + 900  [0x103170134]  transliterate.c:855
+        +   !   | 1 _xzm_xzone_malloc_from_freelist_chunk  (in libsystem_malloc.dylib) + 676  [0x187245dbc]
+        +   !   1 transliterate  (in bench_ext) + 1268  [0x1031702a4]  transliterate.c:883
+        +   !     1 utf8proc_iterate  (in bench_ext) + 56  [0x10317977c]  utf8proc.c:127
+        +   12 address_parser_parse  (in bench_ext) + 76,88,...  [0x102fa0170,0x102fa017c,...]  address_parser.c:2085
+        +   10 address_parser_parse  (in bench_ext) + 892  [0x102fa04a0]  address_parser.c:2105
+        +   ! 10 char_array_add_len  (in bench_ext) + 120  [0x10316d880]  string_utils.c:1050
+        +   !   10 _platform_memmove  (in libsystem_platform.dylib) + 460,420,...  [0x18742b52c,0x18742b504,...]
+        +   10 address_parser_parse  (in bench_ext) + 1704  [0x102fa07cc]  address_parser.c:2248
+        +   ! 5 _xzm_xzone_malloc  (in libsystem_malloc.dylib) + 64,8  [0x18723e900,0x18723e8c8]
+        +   ! 3 <deduplicated_symbol>  (in libsystem_malloc.dylib) + 112,136,...  [0x18723e144,0x18723e15c,...]
+        +   ! 1 DYLD-STUB$$malloc  (in bench_ext) + 4  [0x10317abf0]
+        +   ! 1 _malloc_zone_malloc  (in libsystem_malloc.dylib) + 80  [0x18724e088]
+        +   8 address_parser_parse  (in bench_ext) + 1920  [0x102fa08a4]  address_parser.c:2272
+        +   ! 6 _platform_strcmp$VARIANT$Base  (in libsystem_platform.dylib) + 0,204,...  [0x18742c730,0x18742c7fc,...]
+        +   ! 2 DYLD-STUB$$_platform_strcmp  (in libsystem_platform.dylib) + 8  [0x18742f914]
+        +   5 address_parser_parse  (in bench_ext) + 1100  [0x102fa0570]  address_parser.c:2114
+        +   5 address_parser_parse  (in bench_ext) + 1848  [0x102fa085c]  address_parser.c:2262
+        +   ! 2 cstring_array_get_string  (in bench_ext) + 36  [0x10316e418]  string_utils.c:1291
+        +   ! 2 tokenized_string_get_token  (in bench_ext) + 4  [0x10316f9a8]  tokens.c:68
+        +   ! 1 cstring_array_get_string  (in bench_ext) + 24  [0x10316e40c]  string_utils.c:1289
+        +   4 address_parser_parse  (in bench_ext) + 876  [0x102fa0490]  address_parser.c:2105
+        +   ! 4 _platform_strlen  (in libsystem_platform.dylib) + 48,56  [0x187428af0,0x187428af8]
+        +   4 address_parser_parse  (in bench_ext) + 964,912  [0x102fa04e8,0x102fa04b4]  address_parser.c:2112
+        +   4 address_parser_parse  (in bench_ext) + 1864  [0x102fa086c]  address_parser.c:2264
+        +   ! 3 cstring_array_get_string  (in bench_ext) + 36  [0x10316e418]  string_utils.c:1291
+        +   ! 1 cstring_array_get_string  (in bench_ext) + 8  [0x10316e3fc]  string_utils.c:1289
+        +   4 address_parser_parse  (in bench_ext) + 1908  [0x102fa0898]  address_parser.c:2268
+        +   ! 3 cstring_array_start_token  (in bench_ext) + 24  [0x10316e134]  string_utils.c:1243
+        +   ! 1 cstring_array_start_token  (in bench_ext) + 0  [0x10316e11c]  string_utils.c:1241
+        +   4 address_parser_parse  (in bench_ext) + 1960  [0x102fa08cc]  address_parser.c:2276
+        +   ! 3 char_array_cat  (in bench_ext) + 160  [0x10316b4a4]  string_utils.c:1020
+        +   ! : 2 DYLD-STUB$$memcpy  (in bench_ext) + 4  [0x10317ac14]
+        +   ! : 1 _platform_memmove  (in libsystem_platform.dylib) + 428  [0x18742b50c]
+        +   ! 1 char_array_cat  (in bench_ext) + 40  [0x10316b42c]  string_utils.c:1019
+        +   4 cstring_array_append_string  (in bench_ext) + 148,152  [0x10316e744,0x10316e748]  string_utils.c:1267
+        +   3 address_parser_parse  (in bench_ext) + 1004,2020  [0x102fa0510,0x102fa0908]  address_parser.c:0
+        +   3 address_parser_parse  (in bench_ext) + 124  [0x102fa01a0]  address_parser.c:2085
+        +   ! 2 <deduplicated_symbol>  (in libsystem_malloc.dylib) + 112,136  [0x18723e144,0x18723e15c]
+        +   ! 1 _xzm_xzone_malloc  (in libsystem_malloc.dylib) + 8  [0x18723e8c8]
+        +   3 address_parser_parse  (in bench_ext) + 820  [0x102fa0458]  address_parser.c:2097
+        +   ! 3 _platform_strlen  (in libsystem_platform.dylib) + 4,48,...  [0x187428ac4,0x187428af0,...]
+        +   3 address_parser_parse  (in bench_ext) + 1884  [0x102fa0880]  address_parser.c:2266
+        +   3 address_parser_parse  (in bench_ext) + 1920  [0x102fa08a4]  address_parser.c:2272
+        +   3 address_parser_parse  (in bench_ext) + 1816  [0x102fa083c]  address_parser.c:2281
+        +   ! 2 cstring_array_terminate  (in bench_ext) + 0  [0x10316e4a0]  string_utils.c:1247
+        +   ! 1 cstring_array_terminate  (in bench_ext) + 16  [0x10316e4b0]  string_utils.c:1248
+        +   3 tokenize_add_tokens  (in bench_ext) + 252  [0x103166fa8]  scanner.re:256
+        +   3 tokenized_string_add_token  (in bench_ext) + 152  [0x10316f83c]  tokens.c:41
+        +   2 address_parser_parse  (in bench_ext) + 16  [0x102fa0134]  address_parser.c:2071
+        +   2 address_parser_parse  (in bench_ext) + 980,988  [0x102fa04f8,0x102fa0500]  address_parser.c:2113
+        +   2 address_parser_parse  (in bench_ext) + 1212  [0x102fa05e0]  address_parser.c:2145
+        +   2 address_parser_parse  (in bench_ext) + 1788  [0x102fa0820]  address_parser.c:2267
+        +   ! 1 cstring_array_add_string  (in bench_ext) + 36  [0x10316e1dc]  string_utils.c:1252
+        +   ! 1 cstring_array_add_string  (in bench_ext) + 216  [0x10316e290]  string_utils.c:1253
+        +   !   1 _platform_memmove  (in libsystem_platform.dylib) + 452  [0x18742b524]
+        +   2 char_array_cat  (in bench_ext) + 248  [0x10316b4fc]  string_utils.c:1022
+        +   1 address_parser_parse  (in bench_ext) + 64  [0x102fa0164]  address_parser.c:2085
+        +   ! 1 _platform_strlen  (in libsystem_platform.dylib) + 56  [0x187428af8]
+        +   1 address_parser_parse  (in bench_ext) + 584  [0x102fa036c]  address_parser.c:2095
+        +   1 address_parser_parse  (in bench_ext) + 1240  [0x102fa05fc]  address_parser.c:2156
+        +   1 address_parser_parse  (in bench_ext) + 1888  [0x102fa0884]  address_parser.c:2267
+        +   1 address_parser_predict  (in bench_ext) + 228  [0x102fa0110]  address_parser.c:2025
+        +   1 ap_response_block  (in bench_ext) + 276  [0x102fa0b14]  address_parser.c:2041
+        29 main  (in bench_ext) + 1076  [0x102f98abc]  bench_ext.c:56
+        + 19 libpostal_address_parser_response_destroy  (in bench_ext) + 32  [0x102fb801c]  libpostal.c:244
+        + ! 10 _xzm_free  (in libsystem_malloc.dylib) + 1048  [0x18723f484]
+        + ! : 10 mach_absolute_time  (in libsystem_kernel.dylib) + 108,16,...  [0x1873de10c,0x1873de0b0,...]
+        + ! 8 _xzm_free  (in libsystem_malloc.dylib) + 0,28,...  [0x18723f06c,0x18723f088,...]
+        + ! 1 _free  (in libsystem_malloc.dylib) + 36  [0x18724ec70]
+        + 6 _xzm_free  (in libsystem_malloc.dylib) + 1568,8,...  [0x18723f68c,0x18723f074,...]
+        + 2 _xzm_free  (in libsystem_malloc.dylib) + 352  [0x18723f1cc]
+        + ! 1 DYLD-STUB$$_platform_bzero  (in libsystem_malloc.dylib) + 4  [0x1872567f0]
+        + ! 1 _platform_memset  (in libsystem_platform.dylib) + 180  [0x18742b144]
+        + 1 _free  (in libsystem_malloc.dylib) + 56  [0x18724ec84]
+        + 1 libpostal_address_parser_response_destroy  (in bench_ext) + 4  [0x102fb8000]  libpostal.c:242
+        16 main  (in bench_ext) + 1084  [0x102f98ac4]  bench_ext.c:57
+        + 13 clock_gettime_nsec_np  (in libsystem_c.dylib) + 384  [0x1872b115c]
+        + ! 13 mach_absolute_time  (in libsystem_kernel.dylib) + 108,112  [0x1873de10c,0x1873de110]
+        + 2 clock_gettime_nsec_np  (in libsystem_c.dylib) + 12,324  [0x1872b0fe8,0x1872b1120]
+        + 1 clock_gettime_nsec_np  (in libsystem_c.dylib) + 240  [0x1872b10cc]
+        +   1 DYLD-STUB$$mach_timebase_info  (in libsystem_c.dylib) + 12  [0x1873298c8]
+        10 main  (in bench_ext) + 1040  [0x102f98a98]  bench_ext.c:53
+        + 9 clock_gettime_nsec_np  (in libsystem_c.dylib) + 384  [0x1872b115c]
+        + ! 9 mach_absolute_time  (in libsystem_kernel.dylib) + 108,112  [0x1873de10c,0x1873de110]
+        + 1 clock_gettime_nsec_np  (in libsystem_c.dylib) + 240  [0x1872b10cc]
+        +   1 mach_timebase_info  (in libsystem_kernel.dylib) + 0  [0x1873ddfcc]
+        1 _xzm_free  (in libsystem_malloc.dylib) + 1548  [0x18723f678]
+        1 main  (in bench_ext) + 1044  [0x102f98a9c]  bench_ext.c:54
+        1 main  (in bench_ext) + 1176  [0x102f98b20]  bench_ext.c:60
+        + 1 getrusage  (in libsystem_kernel.dylib) + 8  [0x1873e5804]
+        1 main  (in bench_ext) + 1328  [0x102f98bb8]  bench_ext.c:63
+          1 printf  (in libsystem_c.dylib) + 80  [0x1872dc9cc]
+            1 vfprintf_l  (in libsystem_c.dylib) + 144  [0x1872c1ff4]
+              1 __vfprintf  (in libsystem_c.dylib) + 11568  [0x1872b4778]
+                1 __sfvwrite  (in libsystem_c.dylib) + 380  [0x1872b4d58]
+                  1 __sfvwrite  (in libsystem_c.dylib) + 492  [0x1872b4dc8]
+
+Total number in stack (recursive counted multiple, when >=5):
+        58       _platform_strlen  (in libsystem_platform.dylib) + 0  [0x187428ac0]
+        45       _platform_memmove  (in libsystem_platform.dylib) + 0  [0x18742b360]
+        34       DYLD-STUB$$strlen  (in bench_ext) + 0  [0x10317acf4]
+        25       trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:0
+        25       trie_get_node  (in bench_ext) + 0  [0x103176ee8]  trie.c:108
+        20       DYLD-STUB$$memcpy  (in bench_ext) + 0  [0x10317ac10]
+        16       cstring_array_start_token  (in bench_ext) + 0  [0x10316e11c]  string_utils.c:1243
+        16       cstring_array_start_token  (in bench_ext) + 0  [0x10316e11c]  string_utils.c:1244
+        14       cstring_array_get_string  (in bench_ext) + 0  [0x10316e3f4]  string_utils.c:1289
+        11       char_array_append  (in bench_ext) + 128  [0x10316d32c]  string_utils.c:969
+        11       feature_array_add  (in bench_ext) + 140  [0x102fb1fd8]  features.c:81
+        11       trie_get_transition_index  (in bench_ext) + 0  [0x1031770fc]  trie.c:385
+        10       cstring_array_get_string  (in bench_ext) + 0  [0x10316e3f4]  string_utils.c:1291
+        10       feature_array_add_named  (in bench_ext) + 572  [0x102fb1eec]  features.c:30
+        9       feature_array_add  (in bench_ext) + 0  [0x102fb1f4c]  features.c:108
+        9       feature_array_add  (in bench_ext) + 224  [0x102fb202c]  features.c:81
+        9       feature_array_add_named  (in bench_ext) + 0  [0x102fb1cb0]  features.c:51
+        9       feature_array_add_named  (in bench_ext) + 0  [0x102fb1cb0]  features.c:52
+        9       feature_array_add_named  (in bench_ext) + 0  [0x102fb1cb0]  features.c:53
+        9       utf8proc_iterate  (in bench_ext) + 0  [0x103179744]  utf8proc.c:127
+        8       _platform_memchr  (in libsystem_platform.dylib) + 0  [0x187428e00]
+        8       _platform_memset  (in libsystem_platform.dylib) + 0  [0x18742b090]
+        8       char_array_append  (in bench_ext) + 32  [0x10316d2cc]  string_utils.c:967
+        8       feature_array_add_named  (in bench_ext) + 0  [0x102fb1cb0]  features.c:29
+        7       _free  (in libsystem_malloc.dylib) + 0  [0x18724ec4c]
+        7       char_array_append  (in bench_ext) + 0  [0x10316d2ac]  string_utils.c:971
+        7       cstring_array_get_phrase  (in bench_ext) + 104  [0x103175fb0]  trie_search.c:963
+        7       feature_array_add  (in bench_ext) + 0  [0x102fb1f4c]  features.c:107
+        7       feature_array_add  (in bench_ext) + 0  [0x102fb1f4c]  features.c:82
+        7       feature_array_add  (in bench_ext) + 904  [0x102fb22d4]  features.c:108
+        7       feature_array_add_named  (in bench_ext) + 0  [0x102fb1cb0]  features.c:19
+        7       feature_array_add_named  (in bench_ext) + 268  [0x102fb1dbc]  features.c:52
+        7       utf8proc_category  (in bench_ext) + 0  [0x103179c54]  utf8proc.c:285
+        7       utf8proc_iterate  (in bench_ext) + 0  [0x103179744]  utf8proc.c:0
+        7       utf8proc_iterate  (in bench_ext) + 0  [0x103179744]  utf8proc.c:118
+        6       _platform_strncmp$VARIANT$Base  (in libsystem_platform.dylib) + 0  [0x18742c9b0]
+        6       char_array_terminate  (in bench_ext) + 0  [0x10316d1d0]  string_utils.c:1016
+        6       fd_find_slot  (in bench_ext) + 0  [0x102fa14f8]  feature_dict.h:0
+        6       fd_find_slot  (in bench_ext) + 0  [0x102fa14f8]  feature_dict.h:146
+        6       fd_find_slot  (in bench_ext) + 0  [0x102fa14f8]  feature_dict.h:148
+        6       fd_find_slot  (in bench_ext) + 0  [0x102fa14f8]  feature_dict.h:150
+        6       fd_find_slot  (in bench_ext) + 0  [0x102fa14f8]  feature_dict.h:151
+        6       fd_find_slot  (in bench_ext) + 0  [0x102fa14f8]  feature_dict.h:152
+        6       fd_find_slot  (in bench_ext) + 0  [0x102fa14f8]  feature_dict.h:155
+        6       feature_array_add_named  (in bench_ext) + 0  [0x102fb1cb0]  features.c:0
+        6       feature_array_add_named  (in bench_ext) + 0  [0x102fb1cb0]  features.c:31
+        6       feature_array_add_named  (in bench_ext) + 100  [0x102fb1d14]  features.c:40
+        5       DYLD-STUB$$memchr  (in bench_ext) + 0  [0x10317abf8]
+        5       ap_canon_part  (in bench_ext) + 0  [0x102fa1724]  address_parser.c:1384
+        5       char_array_append  (in bench_ext) + 0  [0x10316d2ac]  string_utils.c:968
+        5       char_array_terminate  (in bench_ext) + 0  [0x10316d1d0]  string_utils.c:1015
+        5       fd_find_slot  (in bench_ext) + 0  [0x102fa14f8]  feature_dict.h:147
+        5       feature_array_add  (in bench_ext) + 0  [0x102fb1f4c]  features.c:0
+        5       feature_array_add  (in bench_ext) + 0  [0x102fb1f4c]  features.c:109
+        5       feature_array_add  (in bench_ext) + 312  [0x102fb2084]  features.c:81
+        5       feature_array_add  (in bench_ext) + 764  [0x102fb2248]  features.c:92
+        5       mach_absolute_time  (in libsystem_kernel.dylib) + 0  [0x1873de0a0]
+        5       utf8proc_category  (in bench_ext) + 0  [0x103179c54]  utf8proc.c:286
+
+Sort by top of stack, same collapsed (when >= 5):
+        trie_search_tokens_from_index  (in bench_ext)        1494
+        crf_dict_lookup_array  (in bench_ext)        1324
+        crf_tagger_score  (in bench_ext)        1181
+        crf_context_viterbi  (in bench_ext)        593
+        _platform_memmove  (in libsystem_platform.dylib)        433
+        fd_find_slot  (in bench_ext)        398
+        _platform_memset  (in libsystem_platform.dylib)        336
+        graph_has_edge  (in bench_ext)        303
+        address_parser_features  (in bench_ext)        299
+        feature_array_add_named  (in bench_ext)        269
+        _platform_strlen  (in libsystem_platform.dylib)        255
+        add_normalized_token  (in bench_ext)        160
+        trie_get_node  (in bench_ext)        139
+        _platform_memchr  (in libsystem_platform.dylib)        132
+        scan_token  (in bench_ext)        121
+        _platform_strncmp$VARIANT$Base  (in libsystem_platform.dylib)        118
+        token_phrase_memberships  (in bench_ext)        110
+        feature_array_add  (in bench_ext)        101
+        trie_search_prefixes_from_index  (in bench_ext)        82
+        trie_search_suffixes_from_index  (in bench_ext)        78
+        cstring_array_start_token  (in bench_ext)        74
+        _platform_memcmp  (in libsystem_platform.dylib)        68
+        word_or_phrase_at_index  (in bench_ext)        66
+        address_parser_context_fill  (in bench_ext)        61
+        address_expansion_in_dictionary  (in bench_ext)        55
+        DYLD-STUB$$strlen  (in bench_ext)        54
+        mach_absolute_time  (in libsystem_kernel.dylib)        52
+        utf8proc_iterate  (in bench_ext)        50
+        cstring_array_get_string  (in bench_ext)        48
+        ap_canon_part  (in bench_ext)        42
+        address_parser_parse  (in bench_ext)        39
+        char_array_append  (in bench_ext)        39
+        utf8_is_letter  (in bench_ext)        36
+        trie_get_transition_index  (in bench_ext)        35
+        DYLD-STUB$$memcpy  (in bench_ext)        33
+        char_array_append_len  (in bench_ext)        33
+        _platform_strcmp$VARIANT$Base  (in libsystem_platform.dylib)        31
+        crf_ik_push  (in bench_ext)        31
+        utf8_is_number  (in bench_ext)        31
+        char_array_terminate  (in bench_ext)        28
+        char_array_get_string  (in bench_ext)        26
+        norm_table_fast  (in bench_ext)        25
+        utf8proc_category  (in bench_ext)        22
+        _xzm_free  (in libsystem_malloc.dylib)        21
+        string_is_digit  (in bench_ext)        21
+        DYLD-STUB$$memchr  (in bench_ext)        19
+        cstring_array_get_phrase  (in bench_ext)        19
+        _xzm_xzone_malloc  (in libsystem_malloc.dylib)        17
+        cstring_array_append_string  (in bench_ext)        17
+        __bzero  (in libsystem_platform.dylib)        15
+        utf8proc_codepoint_valid  (in bench_ext)        14
+        is_valid_dictionary_phrase  (in bench_ext)        13
+        utf8proc_iterate_reversed  (in bench_ext)        13
+        cstring_array_add_string  (in bench_ext)        12
+        _free  (in libsystem_malloc.dylib)        10
+        utf8_is_hyphen  (in bench_ext)        10
+        add_ngrams  (in bench_ext)        9
+        tokenized_string_add_token  (in bench_ext)        9
+        <deduplicated_symbol>  (in libsystem_malloc.dylib)        8
+        DYLD-STUB$$strncmp  (in bench_ext)        7
+        ap_response_block  (in bench_ext)        7
+        cstring_array_add_string_len  (in bench_ext)        7
+        tokenize_add_tokens  (in bench_ext)        7
+        tokenized_string_get_token  (in bench_ext)        7
+        address_dictionary_get_expansions  (in bench_ext)        6
+        trie_get_transition  (in bench_ext)        6
+        _xzm_xzone_malloc_tiny  (in libsystem_malloc.dylib)        5
+        add_ngram_features  (in bench_ext)        5
+        char_array_cat  (in bench_ext)        5
+        search_address_dictionaries_suffix  (in bench_ext)        5
+
+Binary Images:
+       0x102f98000 -        0x1031bbcb7 +bench_ext (0) <92EEECB6-2543-33E8-99BA-CE4319AF9B54> /Users/*/Desktop/*/bench_ext
+       0x186fbc000 -        0x18700eb4b  libobjc.A.dylib (951.7) <FF1D8AE4-ABEF-35F1-A30A-1183B9CB414F> /usr/lib/libobjc.A.dylib
+       0x18700f000 -        0x187043d07  libdyld.dylib (1378) <B147D877-D0C2-388F-B38D-D3132E39905F> /usr/lib/system/libdyld.dylib
+       0x187044000 -        0x1870ea217  dyld (1.0.0 - 1378) <F924BDD3-4365-3466-9580-8B1B3FA8F857> /usr/lib/dyld
+       0x1870eb000 -        0x1870ee228  libsystem_blocks.dylib (96) <CC947089-488D-316B-A9C7-46DEC0F73145> /usr/lib/system/libsystem_blocks.dylib
+       0x1870ef000 -        0x18714355f  libxpc.dylib (3102.120.13) <C40FCAE8-7A17-3D82-87CB-3DA4802ADEF1> /usr/lib/system/libxpc.dylib
+       0x187144000 -        0x1871649ff  libsystem_trace.dylib (1861.120.4) <D0FABAB3-5AE7-3F10-8C62-60CBF5D70850> /usr/lib/system/libsystem_trace.dylib
+       0x187165000 -        0x1872135f7  libcorecrypto.dylib (1922.121.1) <A01A158D-6FE7-3B1C-A2C4-6BCB90D7314A> /usr/lib/system/libcorecrypto.dylib
+       0x187214000 -        0x1872641d7  libsystem_malloc.dylib (812.100.31) <5FAE4807-4D2B-3A95-A63A-DD96D3DA11B4> /usr/lib/system/libsystem_malloc.dylib
+       0x187265000 -        0x1872ac23f  libdispatch.dylib (1542.100.32) <F071EFE4-299F-3089-ACC4-0025B8FFB52A> /usr/lib/system/libdispatch.dylib
+       0x1872ad000 -        0x1872afffb  libsystem_featureflags.dylib (103) <71FCFFBD-85F8-3365-AFE0-BECEA4369122> /usr/lib/system/libsystem_featureflags.dylib
+       0x1872b0000 -        0x187330d9f  libsystem_c.dylib (1752.120.2) <694B7881-1BF3-3D0F-8F19-B50AE4E8EF8A> /usr/lib/system/libsystem_c.dylib
+       0x187331000 -        0x1873c1ae7  libc++.1.dylib (2100.43) <5013C0F8-84A9-3B56-9FEB-C353816A750F> /usr/lib/libc++.1.dylib
+       0x1873c2000 -        0x1873dc75f  libc++abi.dylib (2100.43) <E482D257-E5A0-3816-BD97-7B39342958DA> /usr/lib/libc++abi.dylib
+       0x1873dd000 -        0x18741a2af  libsystem_kernel.dylib (12377.121.10) <FCA53B98-3D6A-38B2-A0EC-DF0F7E05F171> /usr/lib/system/libsystem_kernel.dylib
+       0x18741b000 -        0x187427b3b  libsystem_pthread.dylib (539.100.4) <4F33683C-18C8-39A1-800B-2E3BD43BCC13> /usr/lib/system/libsystem_pthread.dylib
+       0x187428000 -        0x187430963  libsystem_platform.dylib (375.120.2) <160FD864-8D15-36FC-9E97-9725388CFAFE> /usr/lib/system/libsystem_platform.dylib
+       0x187431000 -        0x1874606eb  libsystem_info.dylib (600) <3D62F2D9-F516-31BF-83C7-E203D872300B> /usr/lib/system/libsystem_info.dylib
+       0x18b3f8000 -        0x18b401e5f  libsystem_darwin.dylib (1752.120.2) <8858F025-745A-388E-9544-080781CC9A69> /usr/lib/system/libsystem_darwin.dylib
+       0x18b863000 -        0x18b8751b6  libsystem_notify.dylib (348.120.4) <64D76451-1E0C-369B-A631-54DA3140E083> /usr/lib/system/libsystem_notify.dylib
+       0x18db30000 -        0x18db4af7b  libsystem_networkextension.dylib (2226.121.1) <0331EE20-A1FB-3C0D-990A-F65939CFF505> /usr/lib/system/libsystem_networkextension.dylib
+       0x18dbcd000 -        0x18dbe4fdf  libsystem_asl.dylib (406) <F40838DF-2F15-3F62-970F-DEE25706BF1B> /usr/lib/system/libsystem_asl.dylib
+       0x18f78b000 -        0x18f793387  libsystem_symptoms.dylib (2169.120.7) <F5029F5C-1BF3-31C7-892E-BC8606AC829E> /usr/lib/system/libsystem_symptoms.dylib
+       0x193a2f000 -        0x193a67257  libsystem_containermanager.dylib (725.120.2) <518BE44D-AA31-31E6-B44B-A37AD5E47040> /usr/lib/system/libsystem_containermanager.dylib
+       0x194e40000 -        0x194e445d7  libsystem_configuration.dylib (1405.120.5) <0F7BBC1C-3D50-3E59-A31F-E4672A80BCEB> /usr/lib/system/libsystem_configuration.dylib
+       0x194e45000 -        0x194e4b8cf  libsystem_sandbox.dylib (2680.120.12) <EC3A75EA-44C0-3A0B-9BF7-71C117B0A9C6> /usr/lib/system/libsystem_sandbox.dylib
+       0x19649f000 -        0x1964a21fb  libquarantine.dylib (196.120.2) <5849009B-ACA3-3796-94C4-BBDF8D300EBA> /usr/lib/system/libquarantine.dylib
+       0x196c3e000 -        0x196c44d03  libsystem_coreservices.dylib (191.4.5) <9576143B-C303-35A3-BA63-1FD06EDA2BB1> /usr/lib/system/libsystem_coreservices.dylib
+       0x1971c9000 -        0x197206a77  libsystem_m.dylib (3312.100.1) <A7E0863C-101A-31A0-922B-ED9B02626151> /usr/lib/system/libsystem_m.dylib
+       0x197208000 -        0x19720b527  libmacho.dylib (1378) <755441B4-C034-3E3A-8E3C-F424FBB28261> /usr/lib/system/libmacho.dylib
+       0x197225000 -        0x1972323a7  libcommonCrypto.dylib (600035) <CE357BB1-2D49-37CC-9FFE-D093936B1475> /usr/lib/system/libcommonCrypto.dylib
+       0x197233000 -        0x19723cca3  libunwind.dylib (2100.2) <FC8F0C4E-6FB0-3E27-ABEF-B0FA720CD5E4> /usr/lib/system/libunwind.dylib
+       0x197245000 -        0x19724f7ff  libcopyfile.dylib (240) <8ACFAC7A-88E9-3EF4-853F-A9140FF110E5> /usr/lib/system/libcopyfile.dylib
+       0x197250000 -        0x197253987  libcompiler_rt.dylib (103.3) <AA79151F-C19D-3C7C-92F8-B10F04D82C1C> /usr/lib/system/libcompiler_rt.dylib
+       0x197254000 -        0x19725878b  libsystem_collections.dylib (1752.120.2) <72DB5BE7-EF78-37D0-8AAD-53E37CFE4287> /usr/lib/system/libsystem_collections.dylib
+       0x197259000 -        0x19725c4cf  libsystem_secinit.dylib (168.100.7) <E525C566-CDA4-3D99-B12B-1615FD54A1F3> /usr/lib/system/libsystem_secinit.dylib
+       0x19725d000 -        0x19725fbf7  libremovefile.dylib (85.100.6) <635E661D-80A7-340D-A165-3F7D318FDFC9> /usr/lib/system/libremovefile.dylib
+       0x197260000 -        0x197260f27  libkeymgr.dylib (31) <8C08891A-DF1C-3DCC-AB64-4742FD6BE9BA> /usr/lib/system/libkeymgr.dylib
+       0x197261000 -        0x197269e37  libsystem_dnssd.dylib (2881.120.11) <6F45DF3F-233B-3BC3-BA8C-B43E7DA884BF> /usr/lib/system/libsystem_dnssd.dylib
+       0x19726a000 -        0x19726f09b  libcache.dylib (95) <189B576E-6176-3F82-8FA4-5914B0BEAEE7> /usr/lib/system/libcache.dylib
+       0x197270000 -        0x197271ce3  libSystem.B.dylib (1356) <BA6A669A-3BB9-3BC7-85E8-8F0C1E68351E> /usr/lib/libSystem.B.dylib
+       0x28a52c000 -        0x28a533349  libRosetta.dylib (367.9) <8651ED4F-6506-3788-B56B-32EE414A85CA> /usr/lib/libRosetta.dylib
+       0x28c149000 -        0x28c14ca4b  libsystem_darwindirectory.dylib (122) <CF277A2C-C818-3F16-8B3F-3C7B39FCD164> /usr/lib/system/libsystem_darwindirectory.dylib
+       0x28c14d000 -        0x28c1565d3  libsystem_eligibility.dylib (319.121.1) <DDAC0531-0262-3DDC-8EC8-80EB9438847A> /usr/lib/system/libsystem_eligibility.dylib
+       0x28c157000 -        0x28c15e88b  libsystem_sanitizers.dylib (26.1) <44C4234F-8B2D-38D3-A774-B4B3C75AF3A7> /usr/lib/system/libsystem_sanitizers.dylib
+       0x28c15f000 -        0x28c15fbb7  libsystem_trial.dylib (474.2.18.2) <68C583BA-AFF5-3916-86AE-6E38BFEF98D6> /usr/lib/system/libsystem_trial.dylib

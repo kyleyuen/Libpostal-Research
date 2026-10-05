@@ -1,0 +1,33 @@
+
+== _platform_memmove: exclusive 9.5% of samples; by caller:
+    3.75%  char_array_add_vjoined
+    1.26%  crf_dict_lookup_array
+    1.22%  xzm_realloc
+    0.76%  fd_split
+    0.68%  char_array_append
+    0.32%  char_array_cat_len
+    0.31%  cstring_array_to_strings
+    0.24%  crf_tagger_score
+
+== _platform_strlen: exclusive 3.6% of samples; by caller:
+    1.90%  char_array_add_vjoined
+    0.34%  char_array_append
+    0.21%  address_parser_parse
+    0.18%  strdup
+    0.17%  trie_get_from_index
+    0.12%  address_parser_features
+    0.12%  address_parser_context_fill
+    0.11%  trie_get_data
+
+== _platform_memset: exclusive 1.9% of samples; by caller:
+    1.33%  crf_context_set_num_items
+    0.53%  _xzm_free
+    0.01%  address_parser_context_fill
+
+== _platform_memcmp: exclusive 2.3% of samples; by caller:
+    1.81%  crf_dict_lookup_array
+    0.46%  fd_split
+
+== line-level exclusive inside crf_tagger_score:
+
+== line-level exclusive inside crf_tagger_score_direct:

@@ -1,0 +1,4 @@
+# 2026-10-04T20:21:39-0700 EXTRA_SW="$(cat raw/switches_fss.txt)" tools/build_cc.sh fss clang llvm "-O2 -flto" "-O1" "-flto" /opt/homebrew/opt/mimalloc/lib/mimalloc.o
+# 2026-10-04T20:21:43-0700 link bench_split -DHAVE_FS
+# attempt 1 failed: artifacts/scanner_cache missing (raw/attempt1_*); 2026-10-04T20:21:52-0700 attempt 2 same command
+# 2026-10-04T20:26:52-0700 tools/run.sh (background)

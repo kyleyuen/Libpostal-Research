@@ -1,0 +1,34 @@
+
+== _platform_memmove: exclusive 7.3% of samples; by caller:
+    1.66%  crf_dict_lookup_array
+    0.93%  fd_split
+    0.83%  char_array_append
+    0.53%  word_vocab_frequency
+    0.48%  feature_array_add
+    0.38%  char_array_append_len
+    0.36%  crf_tagger_score
+    0.33%  cstring_array_append_string
+
+== _platform_strlen: exclusive 3.7% of samples; by caller:
+    1.60%  feature_array_add
+    0.43%  char_array_append
+    0.25%  word_vocab_frequency
+    0.25%  address_parser_features
+    0.20%  cstring_array_append_string
+    0.19%  address_parser_parse
+    0.19%  strdup
+    0.17%  address_parser_context_fill
+
+== _platform_memset: exclusive 2.3% of samples; by caller:
+    1.80%  crf_tagger_score
+    0.51%  _xzm_free
+    0.02%  address_parser_context_fill
+
+== _platform_memcmp: exclusive 3.4% of samples; by caller:
+    2.56%  crf_dict_lookup_array
+    0.57%  fd_split
+    0.28%  word_vocab_frequency
+
+== _platform_strncmp$VARIANT$Base: exclusive 1.1% of samples; by caller:
+    1.02%  trie_search_tokens_from_index
+    0.05%  trie_search_suffixes_from_index

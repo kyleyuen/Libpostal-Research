@@ -1,0 +1,12 @@
+--- trie.h.orig	2026-09-29 13:18:08
++++ trie.h	2026-09-29 13:18:19
+@@ -97,6 +97,9 @@
+ bool trie_set_data_node(trie_t *self, uint32_t index, trie_data_node_t data_node);
+ 
+ bool trie_get_data_at_index(trie_t *self, uint32_t index,  uint32_t *data);
++
++// Same result as trie_get_data(self, key, data) when key is NUL-terminated at key[len] with no interior NUL, but never calls strlen.
++bool trie_get_data_len(trie_t *self, char *key, size_t len, uint32_t *data);
+ bool trie_get_data(trie_t *self, char *key, uint32_t *data);
+ bool trie_set_data_at_index(trie_t *self, uint32_t index, uint32_t data);
+ bool trie_set_data(trie_t *self, char *key, uint32_t data);

@@ -1,0 +1,31 @@
+{
+ "dumps": {
+  "cpi/osm-v3": {
+   "identical": true,
+   "candidate_sha256": "e8a48875b12310ef77f41603d0c6e54edc48c25657596407769d8e4deadb051b",
+   "baseline_sha256": "e8a48875b12310ef77f41603d0c6e54edc48c25657596407769d8e4deadb051b",
+   "lines": 11405
+  },
+  "cpi/unseen-v11": {
+   "identical": true,
+   "candidate_sha256": "19fe8fcc105465535233e1362146d500ce462b39318caf34dfce74c06c6f2a8d",
+   "baseline_sha256": "19fe8fcc105465535233e1362146d500ce462b39318caf34dfce74c06c6f2a8d",
+   "lines": 7882
+  }
+ },
+ "frozen": {},
+ "fuzz": {
+  "cpi/s1": {
+   "identical": true,
+   "inputs": 2000
+  },
+  "cpi/s2": {
+   "identical": true,
+   "inputs": 2000
+  }
+ },
+ "negative_control": {
+  "dataset": "osm-v3",
+  "detected": true
+ }
+}

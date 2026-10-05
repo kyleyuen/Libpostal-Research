@@ -1,0 +1,4981 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-05T03:53:46Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 266779072,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Orła Białego",
+    "amenity": "restaurant",
+    "cuisine": "vietnamese;asian",
+    "name": "Restauracja Hong Ha",
+    "opening_hours": "Mo-Su 10:00-22:00",
+    "phone": "+48666612145",
+    "website": "https://www.barhongha.pl/",
+    "website:menu": "https://www.barhongha.pl/restauracja/hong-ha"
+  }
+},
+{
+  "type": "node",
+  "id": 483631231,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "amenity": "library",
+    "contact:email": "czytelnia@biblioteka.legnica.eu",
+    "contact:phone": "+48767225284",
+    "contact:website": "www.biblioteka.legnica.eu",
+    "level": "2",
+    "name": "Legnicka Biblioteka Publiczna im. Tadeusza Gumińskiego w Legnicy",
+    "opening_hours": "Mo-Tu 10:00-19:00; We off; Th-Fr 10:00-19:00; Sa 9:00-15:00; Su off; SH Mo 10:00-17:00; Tu 10:00-16:00; We off; Th 10:00-17:00; Fr 10:00-16:00; Su-Sa off"
+  }
+},
+{
+  "type": "node",
+  "id": 567835419,
+  "tags": {
+    "addr:housenumber": "40",
+    "addr:street": "Złotoryjska",
+    "amenity": "courthouse",
+    "name": "Sąd Okręgowy"
+  }
+},
+{
+  "type": "node",
+  "id": 567835426,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "19",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska",
+    "amenity": "courthouse",
+    "name": "Sąd Rejonowy wyd. Karny i Gospodarczy"
+  }
+},
+{
+  "type": "node",
+  "id": 935792876,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Biskupia",
+    "amenity": "bank",
+    "atm": "yes",
+    "millennium:date": "2009-09-14 14:49:45",
+    "millennium:ref": "20729",
+    "name": "Millennium Bank",
+    "opening_hours": "Mo-Fr 09:00-17:00",
+    "smoking": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 935797924,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "30",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "Millennium Bank",
+    "brand:wikidata": "Q4855947",
+    "brand:wikipedia": "pl:Bank Millennium",
+    "millennium:date": "2009-09-14 14:49:45",
+    "millennium:ref": "20451",
+    "name": "Millennium Bank",
+    "opening_hours": "Mo-Sa 09:30-21:00"
+  }
+},
+{
+  "type": "node",
+  "id": 1732938192,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "72",
+    "addr:postcode": "59-200",
+    "addr:street": "Piastowska",
+    "amenity": "post_office",
+    "brand": "Poczta Polska",
+    "brand:wikidata": "Q168833",
+    "name": "Poczta Polska",
+    "opening_hours": "Mo-Fr 08:00-20:00; Sa-Su off",
+    "operator": "Poczta Polska",
+    "phone": "+48 76 850 03 58; +48 76 850 04 46",
+    "ref": "UP Legnica 1",
+    "website": "https://placowki.poczta-polska.pl/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1765221904,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "15",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek",
+    "amenity": "library",
+    "contact:email": "wypozyczalnia@biblioteka.legnica.eu",
+    "contact:phone": "+48767226016",
+    "contact:website": "www.biblioteka.legnica.eu",
+    "name": "Legnicka Biblioteka Publiczna Wypożyczalnia dla dorosłych",
+    "opening_hours": "Mo-Tu 10:00-19:00; We off; Th-Fr 10:00-19:00; Sa 10:00-15:00; Su off; SH Mo-Tu 10:00-18:00; We off; Th-Fr 10:00-18:00; Su-Sa off"
+  }
+},
+{
+  "type": "node",
+  "id": 1766849461,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "30",
+    "addr:postcode": "59-220",
+    "addr:street": "Waleriana Łukasińskiego",
+    "amenity": "library",
+    "contact:email": "fdm1@biblioteka.legnica.eu",
+    "contact:phone": "+48767225286",
+    "contact:website": "http://www.biblioteka.legnica.eu",
+    "level": "1",
+    "name": "Legnicka Biblioteka Publiczna Filia Dziecięco — Młodzieżowa Numer I",
+    "opening_hours": "Mo-Tu 10:00-18:00; We off; Th-Fr 10:00-18:00; Sa 09:00-15:00; Su off; SH Mo 10:00-17:00; Tu 10:00-16:00; We off; Th 10:00-17:00; Fr 10:00-16:00; Sa-Su off"
+  }
+},
+{
+  "type": "node",
+  "id": 1766954955,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Wjazdowa",
+    "check_date": "2024-10-20",
+    "name": "Haga",
+    "opening_hours": "Mo-Fr 09:00-18:00, Sa 10:00-14:00",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "phone": "+48 76 862 23 61",
+    "shop": "stationery"
+  }
+},
+{
+  "type": "node",
+  "id": 1880845041,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "amenity": "library",
+    "contact:email": "cdr@biblioteka.legnica.eu",
+    "contact:phone": "+48767226022",
+    "contact:website": "www.biblioteka.legnica.eu",
+    "level": "1",
+    "name": "Centrum Dokumentacji Romskiej",
+    "opening_hours": "Mo-Tu 10:00-19:00; We off; Th-Fr 10:00-19:00; Sa 10:00-15:00; Su off"
+  }
+},
+{
+  "type": "node",
+  "id": 1880845051,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "amenity": "library",
+    "contact:email": "dzs@biblioteka.legnica.eu",
+    "contact:phone": "+48767225282",
+    "contact:website": "www.biblioteka.legnica.eu",
+    "level": "1",
+    "name": "Dokumenty Życia Społecznego",
+    "opening_hours": "Mo-Tu 10:00-15:30; We off; Th-Fr 10:00-15:30; Sa 10:00-15:00; Su off"
+  }
+},
+{
+  "type": "node",
+  "id": 1880845078,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "amenity": "library",
+    "contact:email": "administracja@biblioteka.legnica.eu",
+    "contact:phone": "+48767225285",
+    "contact:website": "http://www.biblioteka.legnica.eu",
+    "name": "Dział Administracyjno - Gospodarczy",
+    "opening_hours": "Mo-Fr 07:30-15:30; Sa-Su off"
+  }
+},
+{
+  "type": "node",
+  "id": 1880845084,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "amenity": "library",
+    "contact:email": "dgioz@biblioteka.legnica.eu",
+    "contact:fax": "+48767226015",
+    "contact:phone": "+48767226015",
+    "contact:website": "http://www.biblioteka.legnica.eu",
+    "level": "1",
+    "name": "Dział Gromadzenia i Opracowania Zbiorów",
+    "opening_hours": "Mo-Fr 07:30-15:30; Sa-Su off"
+  }
+},
+{
+  "type": "node",
+  "id": 1880845094,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "amenity": "library",
+    "contact:email": "dibir@biblioteka.legnica.eu",
+    "contact:phone": "+48767226022",
+    "contact:website": "www.biblioteka.legnica.eu",
+    "level": "1",
+    "name": "Dział Informacyjno - Bibliograficzny i Regionalny",
+    "opening_hours": "Mo-Tu 10:00-19:00; We off; Th-Fr 10:00-19:00; Sa 10:00-15:00; Su off; SH Mo 10:00-17:00; Tu 10:00-16:00; We off; Th 10:00-17:00; Fr 10:00-16:00; Su-Sa off"
+  }
+},
+{
+  "type": "node",
+  "id": 1880845118,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "amenity": "library",
+    "contact:email": "diip@biblioteka.legnica.eu",
+    "contact:phone": "+48767226017",
+    "contact:website": "http://www.biblioteka.legnica.eu",
+    "name": "Dział Instrukcyjny i Planowania",
+    "opening_hours": "Mo-Fr 07:30-15:30; Sa-Su off"
+  }
+},
+{
+  "type": "node",
+  "id": 1880845124,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "amenity": "library",
+    "contact:email": "ksiegowosc@biblioteka.legnica.eu",
+    "contact:phone": "+48767225283",
+    "contact:website": "http://www.biblioteka.legnica.eu",
+    "name": "Dział Księgowości",
+    "opening_hours": "Mo-Fr 07:30-15:30; Sa-Su off"
+  }
+},
+{
+  "type": "node",
+  "id": 1880845149,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "amenity": "library",
+    "contact:email": "kadry@biblioteka.legnica.eu",
+    "contact:phone": "+48767226023",
+    "contact:website": "http://www.biblioteka.legnica.eu",
+    "name": "Dział Organizacyjny",
+    "opening_hours": "Mo-Fr 07:30-15:30; Sa-Su off"
+  }
+},
+{
+  "type": "node",
+  "id": 1880845160,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "amenity": "library",
+    "contact:email": "promocja@biblioteka.legnica.eu",
+    "contact:fax": "+48767226020",
+    "contact:phone": "+48767226020",
+    "contact:website": "http://www.biblioteka.legnica.eu",
+    "name": "Dział Promocji",
+    "opening_hours": "Mo-Fr 07:30-15:30; Sa-Su off"
+  }
+},
+{
+  "type": "node",
+  "id": 1880845174,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "contact:fax": "+48767226020",
+    "contact:phone": "+48767226020",
+    "contact:website": "www.biblioteka.legnica.eu",
+    "level": "1",
+    "name": "Galeria \"Loża\"",
+    "shop": "art"
+  }
+},
+{
+  "type": "node",
+  "id": 1880845194,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "amenity": "library",
+    "contact:email": "pie@biblioteka.legnica.eu",
+    "contact:phone": "+48767226022",
+    "contact:website": "www.biblioteka.legnica.eu",
+    "name": "Punkt Informacji Europejskiej",
+    "opening_hours": "Mo-Tu 10:00-19:00; We off; Th-Fr 10:00-19:00; Sa 10:00-15:00; Su off"
+  }
+},
+{
+  "type": "node",
+  "id": 2221919533,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:country": "PL",
+    "addr:housenumber": "21",
+    "addr:postcode": "59-220",
+    "addr:street": "Partyzantów",
+    "name": "TAURON Dystrybucja S.A. - Oddział Legnica",
+    "office": "company"
+  }
+},
+{
+  "type": "node",
+  "id": 2431378387,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5",
+    "addr:street": "Najświętszej Marii Panny",
+    "name": "Świat Książki",
+    "opening_hours": "Mo-Fr 09:00-17:30; Sa 10:00-14:00",
+    "shop": "books",
+    "website": "https://www.swiatksiazki.pl/ksiegarnie/nasze-ksiegarnie"
+  }
+},
+{
+  "type": "node",
+  "id": 2450257008,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Adama Mickiewicza"
+  }
+},
+{
+  "type": "node",
+  "id": 2450257029,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Biskupia"
+  }
+},
+{
+  "type": "node",
+  "id": 2450257083,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Gwarna"
+  }
+},
+{
+  "type": "node",
+  "id": 2450257097,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "11",
+    "addr:postcode": "59-220",
+    "addr:street": "Ignacego Paderewskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 2450257685,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "10",
+    "addr:postcode": "59-220",
+    "addr:street": "Piekarska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450257831,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "10",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450257853,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "10",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny"
+  }
+},
+{
+  "type": "node",
+  "id": 2450258172,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "11",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450258495,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "11",
+    "addr:postcode": "59-220",
+    "addr:street": "Marii Skłodowskiej-Curie"
+  }
+},
+{
+  "type": "node",
+  "id": 2450258556,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "11",
+    "addr:postcode": "59-220",
+    "addr:street": "Piekarska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450258652,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "11",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450259578,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "12",
+    "addr:postcode": "59-220",
+    "addr:street": "Dziennikarska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450259593,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "12",
+    "addr:postcode": "59-220",
+    "addr:street": "Elizy Orzeszkowej"
+  }
+},
+{
+  "type": "node",
+  "id": 2450261145,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "12",
+    "addr:postcode": "59-220",
+    "addr:street": "Piekarska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450261701,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "12",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450262257,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "13",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450262793,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "13",
+    "addr:postcode": "59-220",
+    "addr:street": "Parkowa"
+  }
+},
+{
+  "type": "node",
+  "id": 2450262850,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "13",
+    "addr:postcode": "59-220",
+    "addr:street": "Piekarska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450263566,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "13",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450263656,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "13/17a",
+    "addr:postcode": "59-220",
+    "addr:street": "Jagiellońska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450263657,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "13/17b",
+    "addr:postcode": "59-220",
+    "addr:street": "Jagiellońska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450263658,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "13/17c",
+    "addr:postcode": "59-220",
+    "addr:street": "Jagiellońska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450263659,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "13/17d",
+    "addr:postcode": "59-220",
+    "addr:street": "Jagiellońska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450263753,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "14",
+    "addr:postcode": "59-220",
+    "addr:street": "Dziennikarska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450263756,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "14",
+    "addr:postcode": "59-220",
+    "addr:street": "Elizy Orzeszkowej"
+  }
+},
+{
+  "type": "node",
+  "id": 2450263867,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "14",
+    "addr:postcode": "59-220",
+    "addr:street": "Parkowa"
+  }
+},
+{
+  "type": "node",
+  "id": 2450263872,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "14",
+    "addr:postcode": "59-220",
+    "addr:street": "Piekarska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450263945,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "14",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450264005,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "14",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny"
+  }
+},
+{
+  "type": "node",
+  "id": 2450264038,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "14a",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny"
+  }
+},
+{
+  "type": "node",
+  "id": 2450264043,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "14b",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny"
+  }
+},
+{
+  "type": "node",
+  "id": 2450264044,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "14c",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny"
+  }
+},
+{
+  "type": "node",
+  "id": 2450264045,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "14d",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny"
+  }
+},
+{
+  "type": "node",
+  "id": 2450264065,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "15",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450264262,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "15",
+    "addr:postcode": "59-220",
+    "addr:street": "Piekarska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450264283,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "15",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek"
+  }
+},
+{
+  "type": "node",
+  "id": 2450264329,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "15",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450265269,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "17",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450265545,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "17",
+    "addr:postcode": "59-220",
+    "addr:street": "Piekarska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450265701,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "18",
+    "addr:postcode": "59-220",
+    "addr:street": "Elizy Orzeszkowej"
+  }
+},
+{
+  "type": "node",
+  "id": 2450266103,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "19",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450266629,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "19",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450266725,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1a",
+    "addr:postcode": "59-220",
+    "addr:street": "Adama Mickiewicza"
+  }
+},
+{
+  "type": "node",
+  "id": 2450266848,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450267250,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Władysława Reymonta"
+  }
+},
+{
+  "type": "node",
+  "id": 2450267258,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450267320,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "20",
+    "addr:postcode": "59-220",
+    "addr:street": "Elizy Orzeszkowej"
+  }
+},
+{
+  "type": "node",
+  "id": 2450267582,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "21",
+    "addr:postcode": "59-220",
+    "addr:street": "Piekarska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450267807,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Elizy Orzeszkowej"
+  }
+},
+{
+  "type": "node",
+  "id": 2450267897,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housename": "Legnicka Biblioteka Publiczna",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450268535,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "24A",
+    "addr:postcode": "59-220",
+    "addr:street": "Środkowa"
+  }
+},
+{
+  "type": "node",
+  "id": 2450268564,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "25",
+    "addr:postcode": "59-220",
+    "addr:street": "Emilii Plater"
+  }
+},
+{
+  "type": "node",
+  "id": 2450268843,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "26A",
+    "addr:postcode": "59-220",
+    "addr:street": "Środkowa"
+  }
+},
+{
+  "type": "node",
+  "id": 2450268878,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "27",
+    "addr:postcode": "59-220",
+    "addr:street": "Emilii Plater"
+  }
+},
+{
+  "type": "node",
+  "id": 2450269109,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "28",
+    "addr:postcode": "59-220",
+    "addr:street": "Franciszka Żwirki i Stanisława Wigury"
+  }
+},
+{
+  "type": "node",
+  "id": 2450269110,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "28",
+    "addr:postcode": "59-220",
+    "addr:street": "Franciszka Żwirki i Stanisława Wigury"
+  }
+},
+{
+  "type": "node",
+  "id": 2450269542,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Gwarna"
+  }
+},
+{
+  "type": "node",
+  "id": 2450269556,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Ignacego Paderewskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 2450269691,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450269704,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Pocztowa"
+  }
+},
+{
+  "type": "node",
+  "id": 2450269809,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Władysława Reymonta"
+  }
+},
+{
+  "type": "node",
+  "id": 2450269815,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450269936,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "30",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450269939,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "30",
+    "addr:postcode": "59-220",
+    "addr:street": "Franciszka Żwirki i Stanisława Wigury"
+  }
+},
+{
+  "type": "node",
+  "id": 2450269940,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "30",
+    "addr:postcode": "59-220",
+    "addr:street": "Franciszka Żwirki i Stanisława Wigury"
+  }
+},
+{
+  "type": "node",
+  "id": 2450269997,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "31",
+    "addr:postcode": "59-220",
+    "addr:street": "Jaworzyńska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450270386,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "33",
+    "addr:postcode": "59-220",
+    "addr:street": "Jaworzyńska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450270703,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "35",
+    "addr:postcode": "59-220",
+    "addr:street": "Jaworzyńska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450270721,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "35",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek"
+  }
+},
+{
+  "type": "node",
+  "id": 2450270833,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "36",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek"
+  }
+},
+{
+  "type": "node",
+  "id": 2450270895,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "37",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek"
+  }
+},
+{
+  "type": "node",
+  "id": 2450271205,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Jaworzyńska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450271326,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Pocztowa"
+  }
+},
+{
+  "type": "node",
+  "id": 2450271418,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Wjazdowa"
+  }
+},
+{
+  "type": "node",
+  "id": 2450271429,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450271509,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "40",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450271659,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "43",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450272297,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Gwarna"
+  }
+},
+{
+  "type": "node",
+  "id": 2450272334,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Ignacego Paderewskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 2450272518,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Pocztowa"
+  }
+},
+{
+  "type": "node",
+  "id": 2450272686,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Zamkowa"
+  }
+},
+{
+  "type": "node",
+  "id": 2450272690,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450272901,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "54",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450273070,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "56",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450273194,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5a",
+    "addr:postcode": "59-220",
+    "addr:street": "Dziennikarska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450273445,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4A",
+    "addr:postcode": "59-220",
+    "addr:street": "Jaworzyńska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450273549,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "6",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450273661,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "6",
+    "addr:postcode": "59-220",
+    "addr:street": "Wjazdowa"
+  }
+},
+{
+  "type": "node",
+  "id": 2450273692,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "6",
+    "addr:postcode": "59-220",
+    "addr:street": "Zamkowa"
+  }
+},
+{
+  "type": "node",
+  "id": 2450273696,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "6",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450274952,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Gwarna"
+  }
+},
+{
+  "type": "node",
+  "id": 2450275017,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Ignacego Paderewskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 2450276046,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7a",
+    "addr:postcode": "59-220",
+    "addr:street": "Młynarska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450276055,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7b",
+    "addr:postcode": "59-220",
+    "addr:street": "Młynarska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450276774,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "8",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450276972,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "8",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny"
+  }
+},
+{
+  "type": "node",
+  "id": 2450277528,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "8a",
+    "addr:postcode": "59-220",
+    "addr:street": "Jerzego Libana"
+  }
+},
+{
+  "type": "node",
+  "id": 2450278048,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Jagiellońska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450278388,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Piekarska"
+  }
+},
+{
+  "type": "node",
+  "id": 2450278394,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Pocztowa"
+  }
+},
+{
+  "type": "node",
+  "id": 2450278620,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9a",
+    "addr:postcode": "59-220",
+    "addr:street": "Jerzego Libana"
+  }
+},
+{
+  "type": "node",
+  "id": 2450278623,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9a",
+    "addr:postcode": "59-220",
+    "addr:street": "Pocztowa"
+  }
+},
+{
+  "type": "node",
+  "id": 3658706676,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Jerzego Libana",
+    "amenity": "doctors",
+    "check_date": "2024-10-20",
+    "healthcare": "doctor",
+    "name": "Centrum Medyczne",
+    "opening_hours": "Mo-Fr 07:00-18:00",
+    "website": "https://cmlegnica.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 4542517926,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Tadeusza Kościuszki"
+  }
+},
+{
+  "type": "node",
+  "id": 4816591715,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "11",
+    "addr:postcode": "59-220",
+    "addr:street": "Dziennikarska",
+    "name": "Janmar. PHU. Komis. Januszczyc M.",
+    "shop": "second_hand"
+  }
+},
+{
+  "type": "node",
+  "id": 4816591716,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "11",
+    "addr:postcode": "59-220",
+    "addr:street": "Dziennikarska",
+    "name": "Golden Leo Sp. z o.o.",
+    "office": "estate_agent"
+  }
+},
+{
+  "type": "node",
+  "id": 4823472311,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "10",
+    "addr:postcode": "59-220",
+    "addr:street": "Ignacego Paderewskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 4823472312,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "8",
+    "addr:postcode": "59-220",
+    "addr:street": "Ignacego Paderewskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 4823472313,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "6",
+    "addr:postcode": "59-220",
+    "addr:street": "Ignacego Paderewskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 4823472314,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Ignacego Paderewskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 4823472315,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Ignacego Paderewskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 4823472316,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Ignacego Paderewskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 4823472317,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Ignacego Paderewskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 4938367617,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Jaworzyńska",
+    "amenity": "restaurant",
+    "cuisine": "pizza",
+    "delivery": "yes",
+    "name": "Da Grasso",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5181447879,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "58b/1",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska",
+    "amenity": "driving_school",
+    "license_classes": "B",
+    "name": "Nauka Jazdy Sezam",
+    "phone": "+48 76 723 76 75",
+    "website": "https://www.prawojazdysezam.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 5257229298,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny",
+    "name": "Semilac",
+    "phone": "+48 733 002 397",
+    "shop": "beauty"
+  }
+},
+{
+  "type": "node",
+  "id": 5620301895,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "27",
+    "addr:postcode": "59-220",
+    "addr:street": "Wrocławska",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "ING Bank Śląski",
+    "brand:wikidata": "Q1410383",
+    "brand:wikipedia": "pl:ING Bank Śląski",
+    "check_date": "2025-10-03",
+    "name": "ING Bank Śląski",
+    "website": "https://www.ing.pl",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5620307852,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "37",
+    "addr:postcode": "59-220",
+    "addr:street": "Wrocławska"
+  }
+},
+{
+  "type": "node",
+  "id": 5757396330,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny",
+    "information": "office",
+    "internet_access": "no",
+    "name": "Ośrodek Sportu i Rekreacji",
+    "opening_hours": "Mo-Fr 07:30-15:30",
+    "operator": "Urząd Miasta Legnica",
+    "phone": "+48767233800",
+    "tourism": "information",
+    "website": "https://osir.legnica.eu/strona-glowna"
+  }
+},
+{
+  "type": "node",
+  "id": 5757396343,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny",
+    "name": "Pączkarnia Manufaktura",
+    "phone": "+48 726 021 020",
+    "shop": "pastry",
+    "website": "https://paczkarniamanufaktura.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 5757396363,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "14",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska",
+    "description:pl": "bezpłatna pomoc w różnym zakresie, DrOczko - salon dla dzieci;bezpłatna pomoc w różnym zakresie",
+    "healthcare": "optometrist",
+    "name": "Optyk dr OKO",
+    "phone": "+48 76 862 00 97; +48 515 49 81 75",
+    "shop": "optician",
+    "website": "https://www.instagram.com/optyk_dr_oko/"
+  }
+},
+{
+  "type": "node",
+  "id": 5828050407,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "amenity": "music_school",
+    "email": "zsmuzlca@wp.pl",
+    "name": "Zespół Szkół Muzycznych w Legnicy"
+  }
+},
+{
+  "type": "node",
+  "id": 5868901459,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "13",
+    "addr:postcode": "59-220",
+    "addr:street": "Zielona",
+    "name": "Polskie Stowarzysznie Szczęśliwych Emerytów"
+  }
+},
+{
+  "type": "node",
+  "id": 5874440174,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Muzealna",
+    "name": "Alias",
+    "shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 6011250032,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "41",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "name": "MyShop Factory Outlet",
+    "shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 6210444316,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "20",
+    "addr:postcode": "59-220",
+    "addr:street": "Księdza Piotra Ściegiennego"
+  }
+},
+{
+  "type": "node",
+  "id": 6210444317,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "24",
+    "addr:postcode": "59-220",
+    "addr:street": "Księdza Piotra Ściegiennego"
+  }
+},
+{
+  "type": "node",
+  "id": 6210444318,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Księdza Piotra Ściegiennego"
+  }
+},
+{
+  "type": "node",
+  "id": 6480477870,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2/1A",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "name": "Andiw sp. z o. o.",
+    "office": "insurance",
+    "opening_hours": "Mo-Fr 08:00-17:00"
+  }
+},
+{
+  "type": "node",
+  "id": 6481606763,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "15",
+    "addr:postcode": "59-220",
+    "addr:street": "Władysława Reymonta",
+    "contact:website": "http://www.legnica.chsch.pl/",
+    "name": "Chrześcijańska Służba Charytatywna",
+    "office": "charity"
+  }
+},
+{
+  "type": "node",
+  "id": 6705237939,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "6",
+    "addr:postcode": "59-220",
+    "addr:street": "Wjazdowa",
+    "check_date": "2024-10-20",
+    "name": "Galanteria skórzana \"u Grażyny\"",
+    "opening_hours": "Mo-Fr 10:00-18:00, Sa 10:00-14:00",
+    "shop": "leather"
+  }
+},
+{
+  "type": "node",
+  "id": 6705275291,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Piekarska",
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "healthcare:speciality": "internal;paediatrics;dermatology;laryngology;neurology;optometrist",
+    "name": "Przychodna B&M Medyk"
+  }
+},
+{
+  "type": "node",
+  "id": 6967744178,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotego Florena"
+  }
+},
+{
+  "type": "node",
+  "id": 6967778091,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotego Florena"
+  }
+},
+{
+  "type": "node",
+  "id": 7148673156,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "16",
+    "addr:postcode": "59-220",
+    "addr:street": "Generała Władysława Andersa",
+    "name": "Pasmanteria",
+    "note": "\"Ekspresowe\" (na miejscu) naprawy zamków.",
+    "shop": "sewing",
+    "website": "https://pasmanteria.legnica.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 7148690172,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "17",
+    "addr:street": "Piekarska",
+    "description": "Głównie zdominowana i przystosowana dla ćwiczących trójbój siłowy.",
+    "leisure": "fitness_centre",
+    "name": "TKKF Śródmieście"
+  }
+},
+{
+  "type": "node",
+  "id": 7153382488,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny",
+    "brand": "Rossmann",
+    "brand:wikidata": "Q316004",
+    "brand:wikipedia": "pl:Rossmann",
+    "check_date": "2024-08-16",
+    "name": "Rossmann",
+    "shop": "chemist",
+    "website": "https://www.rossmann.pl/drogerie/Drogeria-Rossmann-najswietszej-marii-panny-2,legnica,2,1550"
+  }
+},
+{
+  "type": "node",
+  "id": 7154047901,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "12",
+    "addr:street": "Księdza Piotra Ściegiennego",
+    "name": "Boardextreme",
+    "service": "snowboard;ski",
+    "shop": "sports",
+    "ski": "yes;rental",
+    "sport": "snowboard;ski;windsurfing;kitesurfing"
+  }
+},
+{
+  "type": "node",
+  "id": 7162331865,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4A",
+    "addr:postcode": "59-220",
+    "addr:street": "Waleriana Łukasińskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 7162331866,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4B",
+    "addr:postcode": "59-220",
+    "addr:street": "Waleriana Łukasińskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 7162331867,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4C",
+    "addr:postcode": "59-220",
+    "addr:street": "Waleriana Łukasińskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 7162331868,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4D",
+    "addr:postcode": "59-220",
+    "addr:street": "Waleriana Łukasińskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 7162331869,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4E",
+    "addr:postcode": "59-220",
+    "addr:street": "Waleriana Łukasińskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 7162331870,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4F",
+    "addr:postcode": "59-220",
+    "addr:street": "Waleriana Łukasińskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 7162331871,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4G",
+    "addr:postcode": "59-220",
+    "addr:street": "Waleriana Łukasińskiego"
+  }
+},
+{
+  "type": "node",
+  "id": 7242515050,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "10/18b",
+    "addr:postcode": "59-220",
+    "addr:street": "Wrocławska",
+    "check_date": "2024-08-16",
+    "email": "legnica@ismoking.pl",
+    "mobile": "+48 781 970 808",
+    "name": "iSmoking",
+    "shop": "e-cigarette"
+  }
+},
+{
+  "type": "node",
+  "id": 7370340694,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "8",
+    "addr:postcode": "59-220",
+    "addr:street": "Witelona",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370340730,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "14",
+    "addr:postcode": "59-220",
+    "addr:street": "Młynarska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370340731,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370340733,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "10A",
+    "addr:postcode": "59-220",
+    "addr:street": "Jaworzyńska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370340734,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Zofii Kossak",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370340735,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Zofii Kossak",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370340736,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Zamkowa",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370340737,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "28a",
+    "addr:postcode": "59-220",
+    "addr:street": "Środkowa",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370340738,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "8",
+    "addr:postcode": "59-220",
+    "addr:street": "Zamkowa",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370340740,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2of",
+    "addr:postcode": "59-220",
+    "addr:street": "Parkowa",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370340741,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "10",
+    "addr:postcode": "59-220",
+    "addr:street": "Witelona",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359095,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "64/66",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359097,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "17-19",
+    "addr:postcode": "59-220",
+    "addr:street": "Jaworzyńska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359300,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "26A",
+    "addr:postcode": "59-220",
+    "addr:street": "Janusza Korczaka",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359313,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Fryderyka Skarbka",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359314,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "10",
+    "addr:postcode": "59-220",
+    "addr:street": "Fryderyka Skarbka",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359375,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "6",
+    "addr:postcode": "59-220",
+    "addr:street": "Witelona",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359376,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Powstańców Śląskich",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359377,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Świętego Piotra",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359378,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Mordechaja Anielewicza",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359380,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "13",
+    "addr:postcode": "59-220",
+    "addr:street": "Młynarska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359382,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "4A",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359383,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "15A",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359386,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "43",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359387,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Murarska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359388,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Murarska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359389,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Benjamina Bilsego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359390,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Benjamina Bilsego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359391,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Benjamina Bilsego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359392,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Benjamina Bilsego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359393,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "15",
+    "addr:postcode": "59-220",
+    "addr:street": "Benjamina Bilsego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359394,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "11",
+    "addr:postcode": "59-220",
+    "addr:street": "Benjamina Bilsego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359400,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Kardynała Bolesława Kominka",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359401,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "15B",
+    "addr:postcode": "59-220",
+    "addr:street": "Rycerska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359402,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "15A",
+    "addr:postcode": "59-220",
+    "addr:street": "Rycerska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359403,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "28",
+    "addr:postcode": "59-220",
+    "addr:street": "Środkowa",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359404,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "26",
+    "addr:postcode": "59-220",
+    "addr:street": "Środkowa",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359405,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "24",
+    "addr:postcode": "59-220",
+    "addr:street": "Środkowa",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359407,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Benjamina Bilsego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359410,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "4of",
+    "addr:postcode": "59-220",
+    "addr:street": "Parkowa",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359541,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Zielona",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359542,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Zielona",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359549,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "13of",
+    "addr:postcode": "59-220",
+    "addr:street": "Witelona",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359550,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "29",
+    "addr:postcode": "59-220",
+    "addr:street": "Wrocławska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359555,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "11of",
+    "addr:postcode": "59-220",
+    "addr:street": "Witelona",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359556,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Hetmańska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359564,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "14",
+    "addr:postcode": "59-220",
+    "addr:street": "Świętego Piotra",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359568,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "25",
+    "addr:postcode": "59-220",
+    "addr:street": "Wrocławska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359585,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Pocztowa",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359588,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "8A",
+    "addr:postcode": "59-220",
+    "addr:street": "Żeglarska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359590,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "6",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotego Florena",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359701,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "10of II",
+    "addr:postcode": "59-220",
+    "addr:street": "Jerzego Libana",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359702,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "10of I",
+    "addr:postcode": "59-220",
+    "addr:street": "Jerzego Libana",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359706,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Aleja Orła Białego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359707,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "10",
+    "addr:postcode": "59-220",
+    "addr:street": "Aleja Orła Białego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7370359718,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "5of",
+    "addr:postcode": "59-220",
+    "addr:street": "Wrocławska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7502522388,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "8",
+    "addr:postcode": "59-220",
+    "addr:street": "Muzealna",
+    "amenity": "parcel_locker",
+    "brand": "Paczkomat InPost",
+    "brand:wikidata": "Q110970254",
+    "description": "Na stacji paliw Circle K",
+    "opening_hours": "24/7",
+    "operator": "InPost",
+    "operator:wikidata": "Q3182097",
+    "operator:wikipedia": "pl:InPost",
+    "parcel_mail_in": "yes",
+    "parcel_pickup": "yes",
+    "ref": "LEG08N",
+    "website": "https://inpost.pl/paczkomat-legnica-leg08n-muzealna-paczkomaty-dolnoslaskie"
+  }
+},
+{
+  "type": "node",
+  "id": 7868315846,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "21",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek"
+  }
+},
+{
+  "type": "node",
+  "id": 7868454337,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Młynarska",
+    "amenity": "bar",
+    "name": "Cztery Pokoje"
+  }
+},
+{
+  "type": "node",
+  "id": 7868454338,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "34",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek",
+    "amenity": "bar",
+    "name": "Ministerstwo Śledzia i Wódki"
+  }
+},
+{
+  "type": "node",
+  "id": 7884195232,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7/1C",
+    "addr:postcode": "59-220",
+    "addr:street": "Dziennikarska",
+    "guest_house": "hostel",
+    "internet_access": "yes",
+    "internet_access:fee": "customers",
+    "name": "Kolorowa",
+    "rooms": "15",
+    "tourism": "hostel",
+    "website": "https://kolorowa.legnica.pl/hostel/index.html"
+  }
+},
+{
+  "type": "node",
+  "id": 7884195255,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "15/1",
+    "addr:postcode": "59-220",
+    "addr:street": "Władysława Reymonta",
+    "amenity": "place_of_worship",
+    "denomination": "seventh_day_adventist",
+    "name": "Kościół Adwentystów Dnia Siódmego",
+    "religion": "christian",
+    "website": "https://legnica.adwentysci.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 8088199220,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Franklina Roosevelta"
+  }
+},
+{
+  "type": "node",
+  "id": 8088199222,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "24",
+    "addr:postcode": "59-220",
+    "addr:street": "Jaworzyńska"
+  }
+},
+{
+  "type": "node",
+  "id": 9319305862,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Pocztowa",
+    "check_date": "2024-03-03",
+    "name": "Odessa Market",
+    "phone": "+48 535 550 151",
+    "shop": "convenience",
+    "website": "https://odessamarket.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 9319305863,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5A",
+    "addr:postcode": "59-220",
+    "addr:street": "Pocztowa",
+    "check_date": "2024-04-02",
+    "name": "Pianoforte",
+    "phone": "+48 76 7222260",
+    "shop": "musical_instrument",
+    "website": "https://www.pianoforte.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 9422757774,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek",
+    "amenity": "restaurant",
+    "name": "Tradycja",
+    "phone": "+48 76 852 35 33",
+    "website": "https://tradycja.legnica.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 9422757775,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "10",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek",
+    "amenity": "restaurant",
+    "name": "Rynek 10",
+    "phone": "+48 76 862 30 79",
+    "website": "https://www.rynek10.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9422757776,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "36",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek",
+    "amenity": "restaurant",
+    "cuisine": "sushi;bubble_tea",
+    "name": "Rolka",
+    "opening_hours": "Mo-Su 12:00-21:00",
+    "phone": "+48 666 626 646",
+    "website": "https://rolka.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 9422757777,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5g",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny",
+    "description:pl": "bezpłatna pomoc w różnym zakresie",
+    "name": "Glass Optyk",
+    "phone": "+48 516 920 291",
+    "shop": "optician",
+    "website": "https://www.glassoptyk.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 9567281362,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "41",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "description:pl": "bezpłatna pomoc w różnym zakresie",
+    "name": "Optyk dr OKO",
+    "phone": "+48 76 856 50 52",
+    "shop": "optician",
+    "website": "https://www.instagram.com/optyk_dr_oko/"
+  }
+},
+{
+  "type": "node",
+  "id": 9579342083,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "11",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "check_date": "2024-10-20",
+    "contact:instagram": "https://www.instagram.com/optyk_dr_oko/",
+    "description:pl": "bezpłatna pomoc w różnym zakresie",
+    "healthcare": "optometrist",
+    "name": "Dr OKO",
+    "phone": "+48 76 852 47 03",
+    "shop": "optician",
+    "website": "https://droko.pl/salon/ul-chojnowska-11/5"
+  }
+},
+{
+  "type": "node",
+  "id": 9781250669,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Zofii Kossak",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781250682,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "12-14",
+    "addr:postcode": "59-220",
+    "addr:street": "Dziennikarska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781250688,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "42",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781250689,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "48A",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781250693,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "10",
+    "addr:postcode": "59-220",
+    "addr:street": "Mordechaja Anielewicza",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781250694,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "7a",
+    "addr:postcode": "59-220",
+    "addr:street": "Mordechaja Anielewicza",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781250702,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "17",
+    "addr:postcode": "59-220",
+    "addr:street": "Księdza Piotra Ściegiennego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781250703,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "27",
+    "addr:postcode": "59-220",
+    "addr:street": "Księdza Piotra Ściegiennego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781250706,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "1-15",
+    "addr:postcode": "59-220",
+    "addr:street": "Benjamina Bilsego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781250715,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "54-56",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781250716,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263117,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "6",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263118,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Wazów",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263126,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "14a",
+    "addr:postcode": "59-220",
+    "addr:street": "Senatorska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263135,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "25-27",
+    "addr:postcode": "59-220",
+    "addr:street": "Emilii Plater",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263140,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "12/14",
+    "addr:postcode": "59-220",
+    "addr:street": "Elizy Orzeszkowej",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263141,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "18/24",
+    "addr:postcode": "59-220",
+    "addr:street": "Elizy Orzeszkowej",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263145,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "33",
+    "addr:postcode": "59-220",
+    "addr:street": "Nowy Świat",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263146,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Nowy Świat",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263147,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "5c-5d",
+    "addr:postcode": "59-220",
+    "addr:street": "Murarska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263148,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "31-35",
+    "addr:postcode": "59-220",
+    "addr:street": "Jaworzyńska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263149,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "11",
+    "addr:postcode": "59-220",
+    "addr:street": "Jaworzyńska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263150,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "4-6",
+    "addr:postcode": "59-220",
+    "addr:street": "Jaworzyńska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263151,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "5-6",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek",
+    "government": "public_safety",
+    "name": "Polskie Centrum Bezpieczeństwa i Prewencji",
+    "office": "government",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263155,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "7-9",
+    "addr:postcode": "59-220",
+    "addr:street": "Wjazdowa",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263156,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "1-2",
+    "addr:postcode": "59-220",
+    "addr:street": "Szkolna",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263157,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "10of",
+    "addr:postcode": "59-220",
+    "addr:street": "Jerzego Libana",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263183,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Grodzka",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263196,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "1a",
+    "addr:postcode": "59-220",
+    "addr:street": "Zielona",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263197,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "13of",
+    "addr:postcode": "59-220",
+    "addr:street": "Zielona",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263198,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Zielona",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263199,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "5-6",
+    "addr:postcode": "59-220",
+    "addr:street": "Zamkowa",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263200,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "13-17",
+    "addr:postcode": "59-220",
+    "addr:street": "Zamkowa",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263202,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "19",
+    "addr:postcode": "59-220",
+    "addr:street": "Wrocławska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263209,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "7-7oficyna",
+    "addr:postcode": "59-220",
+    "addr:street": "Wrocławska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263211,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "4C",
+    "addr:postcode": "59-220",
+    "addr:street": "Szpitalna",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263214,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "13-14",
+    "addr:postcode": "59-220",
+    "addr:street": "Parkowa",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263215,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Nowa",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263218,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "8-10",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263219,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "17",
+    "addr:postcode": "59-220",
+    "addr:street": "Młynarska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263341,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "10of",
+    "addr:postcode": "59-220",
+    "addr:street": "Szkolna",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263366,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "20-21",
+    "addr:postcode": "59-220",
+    "addr:street": "Władysława Reymonta",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263370,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Aleja Orła Białego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263384,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Generała Henryka Dąbrowskiego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263385,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Księdza Piotra Ściegiennego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263386,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "39of",
+    "addr:postcode": "59-220",
+    "addr:street": "Księdza Piotra Ściegiennego",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263387,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "14",
+    "addr:postcode": "59-220",
+    "addr:street": "Senatorska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9781263390,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:housenumber": "15b",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 9899536064,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "8",
+    "addr:postcode": "59-220",
+    "addr:street": "Aleja Orła Białego",
+    "amenity": "restaurant",
+    "cuisine": "pizza",
+    "name": "Chata Pirata"
+  }
+},
+{
+  "type": "node",
+  "id": 9899536065,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Franklina Roosevelta",
+    "amenity": "restaurant",
+    "cuisine": "pizza",
+    "name": "Formia Pizza"
+  }
+},
+{
+  "type": "node",
+  "id": 9899536066,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "16B",
+    "addr:postcode": "59-220",
+    "addr:street": "Janusza Korczaka",
+    "amenity": "restaurant",
+    "cuisine": "pizza",
+    "name": "Rustica. Pizzeria"
+  }
+},
+{
+  "type": "node",
+  "id": 9899547213,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Jaworzyńska",
+    "brand": "PZU",
+    "brand:wikidata": "Q1807170",
+    "name": "PZU",
+    "office": "insurance"
+  }
+},
+{
+  "type": "node",
+  "id": 9902060425,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Benjamina Bilsego",
+    "check_date": "2024-10-20",
+    "name": "Zagłoba",
+    "opening_hours": "24/7",
+    "phone": "+48 696 440 687",
+    "shop": "alcohol"
+  }
+},
+{
+  "type": "node",
+  "id": 9902060426,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "check_date": "2024-10-20",
+    "email": "sklep.legnica@at-krotoszyn.pl",
+    "name": "Sklep oświetleniowy A-T",
+    "phone": "+48 508 036 826",
+    "shop": "electrical",
+    "website": "https://at-krotoszyn.pl/sklepy/legnica/"
+  }
+},
+{
+  "type": "node",
+  "id": 9945227222,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Świętego Piotra",
+    "amenity": "restaurant",
+    "cuisine": "sushi",
+    "name": "Koku Sushi"
+  }
+},
+{
+  "type": "node",
+  "id": 9945227223,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "20",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek",
+    "amenity": "fast_food",
+    "cuisine": "kebab",
+    "drive_through": "no",
+    "name": "Cyrus Kebab",
+    "phone": "+48 509 969 117",
+    "website": "https://www.cyrus.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 9945227224,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "33",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek",
+    "amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 9945227225,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "33",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek",
+    "amenity": "bar",
+    "name": "Cubana"
+  }
+},
+{
+  "type": "node",
+  "id": 9945227226,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1D",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny",
+    "amenity": "cafe",
+    "name": "Prawdziwe Lody"
+  }
+},
+{
+  "type": "node",
+  "id": 9945227227,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny",
+    "brand": "Hert",
+    "brand:wikidata": "Q128931723",
+    "check_date": "2024-08-16",
+    "name": "Hert",
+    "shop": "bakery"
+  }
+},
+{
+  "type": "node",
+  "id": 10020093873,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Plac Mariacki",
+    "name": "Wieża kościoła",
+    "name:cs": "Veža kostola",
+    "name:en": "Church tower",
+    "shop": "ticket",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 10219705959,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "21A",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "amenity": "fast_food",
+    "check_date": "2024-10-20",
+    "cuisine": "kebab",
+    "drive_through": "no",
+    "name": "Paradise Kebab",
+    "phone": "+48 500 797 026"
+  }
+},
+{
+  "type": "node",
+  "id": 10219705960,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "44",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "brand": "Żabka",
+    "brand:wikidata": "Q2589061",
+    "name": "Żabka",
+    "name:pl": "Żabka",
+    "name:uk": "Жабка",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 10598868659,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1A",
+    "addr:postcode": "59-220",
+    "addr:street": "Księdza Piotra Ściegiennego",
+    "amenity": "parcel_locker",
+    "brand": "Paczkomat InPost",
+    "brand:wikidata": "Q110970254",
+    "opening_hours": "24/7",
+    "operator": "InPost",
+    "operator:wikidata": "Q3182097",
+    "parcel_mail_in": "yes",
+    "parcel_pickup": "yes",
+    "ref": "LEG36M",
+    "website": "https://inpost.pl/paczkomat-legnica-leg36m-sciegiennego-paczkomaty-dolnoslaskie"
+  }
+},
+{
+  "type": "node",
+  "id": 10601824956,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Księdza Piotra Ściegiennego",
+    "amenity": "fast_food",
+    "cuisine": "burger;sandwich;tosty",
+    "website": "https://www.facebook.com/salamancaburger/"
+  }
+},
+{
+  "type": "node",
+  "id": 10601989995,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "check_date": "2024-10-20",
+    "craft": "watchmaker",
+    "name": "Zegarmistrzostwo Marek Meksa",
+    "phone": "+48 76 722 39 16"
+  }
+},
+{
+  "type": "node",
+  "id": 10601996280,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Nowa",
+    "check_date": "2023-08-19",
+    "shop": "shoe_repair"
+  }
+},
+{
+  "type": "node",
+  "id": 10699718605,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:postcode": "59-209",
+    "addr:street": "Plac Słowiański",
+    "amenity": "post_office",
+    "name": "Poczta Polska",
+    "opening_hours": "Mo-Th 08:00-14:00; Fr 12:30-20:00",
+    "website": "https://poczta-polska.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 11337987369,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny",
+    "amenity": "restaurant",
+    "cuisine": "polish",
+    "name": "Hort Cafe",
+    "opening_hours": "Mo-Su 10:00-18:00",
+    "phone": "+48 76 856 05 36",
+    "website": "https://www.facebook.com/people/Hort-Cafe-Restauracja/100058683982492/"
+  }
+},
+{
+  "type": "node",
+  "id": 11381183574,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Piekarska",
+    "amenity": "dojo",
+    "contact:facebook": "https://www.facebook.com/people/Centrum-Sport%C3%B3w-Walki-Hodana/100063725673315/",
+    "mobile": "+48 576 207 444",
+    "name": "Centrum Sportów Walki \"Hodana\"",
+    "sport": "martial_arts"
+  }
+},
+{
+  "type": "node",
+  "id": 11584467026,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Pocztowa",
+    "check_date": "2024-02-03",
+    "name": "Pan Szkiełko",
+    "phone": "+48 694 803 777",
+    "shop": "optician",
+    "website": "http://panszkielko.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 11584467027,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Pocztowa",
+    "amenity": "doctors",
+    "check_date": "2024-02-03",
+    "healthcare": "doctor",
+    "healthcare:speciality": "ophthalmology",
+    "name": "Ośrodek Okulistyczny - Agnieszka Ślusarczyk",
+    "phone": "+48 76 722 75 75"
+  }
+},
+{
+  "type": "node",
+  "id": 11663191895,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Wrocławska",
+    "amenity": "restaurant",
+    "check_date": "2024-08-16",
+    "cuisine": "pizza;italian",
+    "delivery": "no",
+    "email": "legnica@fabbrica.pl",
+    "name": "Fabbrica Italian Comfort Food",
+    "old_name": "Fabryka Pizzy",
+    "opening_hours": "Su-Th 12:00-22:00, Fr-Sa 12:00-23:00",
+    "phone": "+48 76 720 86 61",
+    "website": "https://www.fabbrica.pl/legnica-wroclawska/info"
+  }
+},
+{
+  "type": "node",
+  "id": 11663191897,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1b",
+    "addr:postcode": "59-220",
+    "addr:street": "Wrocławska",
+    "name": "Navtel",
+    "phone": "+48733980577",
+    "shop": "mobile_phone"
+  }
+},
+{
+  "type": "node",
+  "id": 11691625081,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7/2",
+    "addr:postcode": "59-220",
+    "addr:street": "Pocztowa",
+    "check_date": "2024-03-03",
+    "craft": "window_construction",
+    "name": "Okna Muszyński",
+    "phone": "+48 795 421 036",
+    "website": "https://oknamuszynski.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 11783532306,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5B",
+    "addr:postcode": "59-220",
+    "addr:street": "Pocztowa",
+    "check_date": "2024-04-02",
+    "email": "legnica@proline.pl",
+    "level": "0",
+    "name": "ProLine",
+    "phone": "+48 664 999 918",
+    "shop": "computer"
+  }
+},
+{
+  "type": "node",
+  "id": 11783532307,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4/d",
+    "addr:postcode": "59-220",
+    "addr:street": "Pocztowa",
+    "check_date": "2024-04-02",
+    "name": "Neo",
+    "phone": "+48 76 818 02 69",
+    "shop": "hearing_aids"
+  }
+},
+{
+  "type": "node",
+  "id": 11804755390,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Plac Zamkowy",
+    "name": "Dolnośląskie Centrum Kształcenia Ustawicznego i Językowego Kadr w Legnicy",
+    "office": "educational_institution",
+    "phone": "+48 76 862 21 39",
+    "website": "https://centrumzamek.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 11804755401,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Plac Zamkowy",
+    "amenity": "school",
+    "name": "Wojskowa Szkoła Średnia im. Zawiszy Czarnego",
+    "website": "https://www.wsszc.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 11811334370,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "government": "register_office",
+    "name": "Sala ślubów USC",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 11955674975,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "amenity": "community_centre",
+    "name": "Legnickie Centrum Kultury",
+    "website": "https://www.lck.art.pl/kontakt"
+  }
+},
+{
+  "type": "node",
+  "id": 12014952781,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1/3",
+    "addr:postcode": "59-220",
+    "addr:street": "Piekarska",
+    "amenity": "restaurant",
+    "check_date": "2024-10-20",
+    "contact:facebook": "https://www.facebook.com/profile.php?id=61558524514012",
+    "name": "Domowe Obiady",
+    "opening_hours": "Mo-Fr 11:00-17:00; Sa 11:00-18:00; Su 11:00-17:00"
+  }
+},
+{
+  "type": "node",
+  "id": 12118442310,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "10/18c",
+    "addr:postcode": "59-220",
+    "addr:street": "Wrocławska",
+    "check_date": "2024-08-16",
+    "name": "Netia",
+    "office": "telecommunication",
+    "phone": "+48 76 721 99 99"
+  }
+},
+{
+  "type": "node",
+  "id": 12118921192,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "14",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny",
+    "amenity": "cafe",
+    "check_date": "2024-08-16",
+    "level": "0",
+    "mobile": "+48 730 130 393",
+    "name": "The White Bear Coffee"
+  }
+},
+{
+  "type": "node",
+  "id": 12133710558,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "11/1A",
+    "addr:postcode": "59-220",
+    "addr:street": "Wrocławska",
+    "brand": "Audika",
+    "brand:wikidata": "Q2870745",
+    "check_date": "2024-10-20",
+    "name": "Audika",
+    "phone": "+48 76 722 03 63",
+    "shop": "hearing_aids"
+  }
+},
+{
+  "type": "node",
+  "id": 12141514723,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-200",
+    "addr:street": "Pocztowa",
+    "amenity": "place_of_worship",
+    "denomination": "mormon",
+    "facebook": "https://www.facebook.com/nasladowcyjezusachrystusalegnica",
+    "name": "Kościół Jezusa Chrystusa Świętych w Dniach Ostatnich",
+    "name:de": "Kirche Jesu Christi der Heiligen der Letzten Tage",
+    "name:en": "The Church of Jesus Christ of Latter-day Saints",
+    "religion": "christian",
+    "service_times": "Su 10:00+",
+    "website": "https://www.koscioljezusachrystusa.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 12151151422,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Plac Zamkowy",
+    "amenity": "cafe",
+    "cuisine": "coffee;cake;dessert;tea",
+    "name": "Kleks",
+    "opening_hours": "We-Su 10:00-18:00",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12279280174,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "19",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "check_date": "2024-10-20",
+    "contact:facebook": "https://www.facebook.com/profile.php?id=61557013692860",
+    "email": "biuro@am-zn.pl",
+    "name": "AM Zarządzanie Nieruchomościami",
+    "office": "property_management",
+    "phone": "+48 889 746 224",
+    "website": "https://am-zn.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 12410033140,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "8",
+    "addr:postcode": "59-220",
+    "addr:street": "Zamkowa",
+    "amenity": "bar",
+    "brand": "Pijalnia Wódki i Piwa",
+    "brand:wikidata": "Q86681898",
+    "email": "pijalnialegnica@adres.pl",
+    "facebook": "https://www.facebook.com/profile.php?id=100026737435292",
+    "name": "Pijalnia Wódki i Piwa",
+    "opening_hours": "Mo-Th 13:00-23:59; Fr-Sa 13:00-01:00; Su 15:00-23:30",
+    "phone": "+48530477774"
+  }
+},
+{
+  "type": "node",
+  "id": 12410049946,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Zamkowa",
+    "email": "skytattoo.legnica@gmail.com",
+    "facebook": "https://www.facebook.com/SKYTATTOO.Legnica",
+    "name": "Salon studio tatuażu Sky Tattoo Legnica",
+    "opening_hours": "Mo 11:00-15:00; Tu-Sa 11:00-17:00; Su 11:00-16:00",
+    "phone": "+48572107665",
+    "shop": "tattoo"
+  }
+},
+{
+  "type": "node",
+  "id": 12419241185,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "10a/3",
+    "addr:postcode": "59-220",
+    "addr:street": "Jaworzyńska",
+    "amenity": "pub",
+    "email": "pubpanda81@gmail.com",
+    "mobile": "+48 695 112 184",
+    "name": "Pan-Da"
+  }
+},
+{
+  "type": "node",
+  "id": 12478557497,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Plac Wolności",
+    "email": "adwokat@adwokat-legnica.org",
+    "name": "Kancelaria Adwokacka LexNexa adwokat Radosław Grzyb",
+    "office": "lawyer",
+    "phone": "+48518115494",
+    "website": "https://www.adwokat-legnica.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 13381568457,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Plac Klasztorny"
+  }
+},
+{
+  "type": "node",
+  "id": 13765954406,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "41",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "contact:email": "ferio-legnica@kinderplaneta.pl",
+    "leisure": "indoor_play",
+    "name": "Kinderplaneta",
+    "phone": "+48 60 387 3788",
+    "website": "https://kinderplaneta.pl/galeria-feiro-legnica/"
+  }
+},
+{
+  "type": "node",
+  "id": 13979934578,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek",
+    "email": "bramaglogowska@osir.legnica.eu",
+    "information": "office",
+    "name": "Punkt informacyjny turystycznej",
+    "name:en": "Tourist Information",
+    "opening_hours": "Mo-Su 09:00-17:00",
+    "operator": "Ośrodek Sportu i Rekreacji Legnica",
+    "payment:cash": "yes",
+    "phone": "+48724242427",
+    "tourism": "information",
+    "website": "https://osir.legnica.eu/p,10,punkt-informacji-turystycznej",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14089198589,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Nowy Świat",
+    "check_date": "2026-08-12",
+    "craft": "watchmaker",
+    "name": "Serwis zegarmistrzowski \"Kurant\" Ireneusz Szwedo",
+    "opening_hours": "Mo-Fr 10:00-18:00",
+    "payment:cash": "yes",
+    "phone": "+48 733 601 235",
+    "website": "https://zegarmistrz-kurant.pl/kontakt/"
+  }
+},
+{
+  "type": "node",
+  "id": 14100702906,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Szkolna",
+    "amenity": "fast_food",
+    "cuisine": "kebab",
+    "delivery": "yes",
+    "drive_through": "no",
+    "name": "TOMI Grill&Pizza",
+    "phone": "+48 570 398 303",
+    "website": "https://www.tomikebab.pl/",
+    "website:menu": "https://www.tomikebab.pl/restauracja/tomi-grill-pizza"
+  }
+},
+{
+  "type": "node",
+  "id": 14101114658,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "27",
+    "addr:postcode": "59-220",
+    "addr:street": "Wrocławska",
+    "name": "Cukiernia Cynamon",
+    "shop": "pastry"
+  }
+},
+{
+  "type": "node",
+  "id": 14103080873,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "8",
+    "addr:postcode": "59-220",
+    "addr:street": "Świętego Piotra",
+    "amenity": "fast_food",
+    "cuisine": "sandwich;friture;fries",
+    "drive_through": "no",
+    "name": "Fryciarnia Amsterdam",
+    "opening_hours": "Mo-Fr 10:00-21:00; Sa 11:00-21:00; Su Off; PH Off",
+    "phone": "+48767224400",
+    "website": "https://fryciarnia.com",
+    "website:menu": "https://fryciarnia.com/food"
+  }
+},
+{
+  "type": "way",
+  "id": 24516705,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:city:simc": "0954047",
+    "addr:country": "PL",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Plac Katedralny",
+    "addr:street:sym_ul": "60268",
+    "amenity": "place_of_worship",
+    "building": "cathedral",
+    "building:architecture": "gothic",
+    "church:type": "parish",
+    "deanery": "Dekanat Legnica Wschód",
+    "denomination": "roman_catholic",
+    "diocese": "Diecezja legnicka",
+    "heritage": "2",
+    "historic": "yes",
+    "material": "brick",
+    "mobile": "+48 500 245 517",
+    "name": "Katedra pw. Świętych Apostołów Piotra i Pawła",
+    "parish": "Parafia katedralna Świętych Apostołów Piotra i Pawła w Legnicy",
+    "parish:wikidata": "Q11803568",
+    "parish:wikipedia": "pl:Parafia Katedralna Świętych Apostołów Piotra i Pawła w Legnicy",
+    "religion": "christian",
+    "start_date": "1333..1380",
+    "website": "https://www.katedra.legnica.pl/",
+    "wikidata": "Q11737334",
+    "wikimedia_commons": "File:SM_Legnica_KatedraPiotraiPawła_(3)_ID_593131.jpg",
+    "wikimedia_commons:category": "Category:Legnica_Cathedral",
+    "wikipedia": "pl:Katedra Świętych Apostołów Piotra i Pawła w Legnicy"
+  }
+},
+{
+  "type": "way",
+  "id": 24516738,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "6",
+    "addr:postcode": "59-220",
+    "addr:street": "Plac Katedralny",
+    "building": "yes",
+    "heritage": "2",
+    "heritage:operator": "nid",
+    "historic": "yes",
+    "material": "brick",
+    "ref:nid": "607/L",
+    "source:addr": "mapy.legnica.eu",
+    "wikidata": "Q30049582"
+  }
+},
+{
+  "type": "way",
+  "id": 24516845,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1a",
+    "addr:postcode": "59-220",
+    "addr:street": "Marii Skłodowskiej-Curie",
+    "building": "castle"
+  }
+},
+{
+  "type": "way",
+  "id": 39228081,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny",
+    "building": "retail",
+    "start_date": "2007"
+  }
+},
+{
+  "type": "way",
+  "id": 39228089,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "18",
+    "addr:postcode": "59-220",
+    "addr:street": "Środkowa",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 39228091,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Skarbowa",
+    "brand": "Qubus",
+    "brand:wikidata": "Q11832868",
+    "building": "yes",
+    "name": "Qubus",
+    "official_name": "Qubus Hotel",
+    "start_date": "1977",
+    "tourism": "hotel",
+    "website": "https://www.qubushotel.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 39233120,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "8",
+    "addr:postcode": "59-220",
+    "addr:street": "Plac Słowiański",
+    "building": "yes",
+    "building:architecture": "neo-renaissance",
+    "heritage": "2",
+    "historic": "yes",
+    "material": "brick",
+    "name": "Nowy Ratusz",
+    "start_date": "1905",
+    "wikidata": "Q18432783",
+    "wikipedia": "pl:Nowy Ratusz w Legnicy"
+  }
+},
+{
+  "type": "way",
+  "id": 39233122,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "39",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek",
+    "amenity": "theatre",
+    "architect": "Carl Ferdinand Langhans",
+    "building": "yes",
+    "building:architecture": "neo-renaissance",
+    "building:levels": "2",
+    "heritage": "2",
+    "historic": "yes",
+    "material": "brick",
+    "name": "Teatr im. Heleny Modrzejewskiej",
+    "old_name:de": "Stadttheater",
+    "wikidata": "Q9356198",
+    "wikipedia": "pl:Teatr im. Heleny Modrzejewskiej w Legnicy",
+    "year_of_construction": "1842"
+  }
+},
+{
+  "type": "way",
+  "id": 39269838,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "10/18a",
+    "addr:postcode": "59-220",
+    "addr:street": "Wrocławska",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 39269855,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4a",
+    "addr:postcode": "59-220",
+    "addr:street": "Gwarna",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 39269858,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Najświętszej Marii Panny",
+    "building": "commercial",
+    "building:levels": "3",
+    "historic": "yes",
+    "old_name:de": "Kaufhaus Ludwig Haurwitz",
+    "source:addr": "gugik.gov.pl",
+    "start_date": "~1905"
+  }
+},
+{
+  "type": "way",
+  "id": 39493075,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housename": "Legnicka Biblioteka Publiczna",
+    "addr:housenumber": "22",
+    "addr:postcode": "59-220",
+    "addr:street": "Piastowska",
+    "amenity": "library",
+    "architect": "Kruger",
+    "building": "yes",
+    "building:architecture": "neo-romanesque",
+    "building:colour": "red",
+    "building:levels": "3",
+    "building:material": "brick",
+    "building:min_level": "-1",
+    "contact:email": "sekretariat@biblioteka.legnica.eu",
+    "contact:fax": "+48767223967",
+    "contact:phone": "+48767226021",
+    "contact:website": "www.biblioteka.legnica.eu",
+    "heritage": "2",
+    "heritage:operator": "Legnicka Biblioteka Publiczna",
+    "heritage:since": "1970-01-01",
+    "historic": "building",
+    "material": "brick",
+    "name": "Legnicka Biblioteka Publiczna",
+    "old_name": "Loża wolnomularska",
+    "operator": "Legnicka Biblioteka Publiczna",
+    "roof:colour": "red",
+    "roof:levels": "1",
+    "roof:material": "roof_tiles",
+    "roof:orientation": "along",
+    "roof:shape": "half-hipped",
+    "ruins": "no",
+    "start_date": "1894",
+    "tourism": "attraction",
+    "wikidata": "Q30049782",
+    "year_of_construction": "1892-1894"
+  }
+},
+{
+  "type": "way",
+  "id": 44774948,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "41/43",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "building": "yes",
+    "name": "Galeria Ferio",
+    "name:ru": "Tesco",
+    "shop": "mall",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 139753488,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "24",
+    "addr:postcode": "59-220",
+    "addr:street": "Rynek",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 139755785,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "6",
+    "addr:postcode": "59-220",
+    "addr:street": "Chojnowska",
+    "building": "yes",
+    "building:colour": "brown",
+    "building:levels": "7",
+    "building:material": "brick",
+    "height": "35",
+    "man_made": "tower",
+    "name": "Wieża Bramy Chojnowskiej",
+    "roof:colour": "red",
+    "roof:height": "5",
+    "roof:material": "roof_tiles",
+    "roof:shape": "hipped",
+    "tower:construction": "freestanding",
+    "tower:type": "defensive"
+  }
+},
+{
+  "type": "way",
+  "id": 198235473,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Tadeusza Kościuszki",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 198235474,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235475,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Generała Władysława Andersa",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235476,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "10",
+    "addr:postcode": "59-220",
+    "addr:street": "Tadeusza Kościuszki",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235477,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "10",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235478,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "10",
+    "addr:postcode": "59-220",
+    "addr:street": "Generała Władysława Andersa",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235479,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "11",
+    "addr:postcode": "59-220",
+    "addr:street": "Tadeusza Kościuszki",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235480,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "11",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235481,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "16",
+    "addr:postcode": "59-220",
+    "addr:street": "Tadeusza Kościuszki",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235482,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "12",
+    "addr:postcode": "59-220",
+    "addr:street": "Tadeusza Kościuszki",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235483,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "12",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235484,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "11",
+    "addr:postcode": "59-220",
+    "addr:street": "Generała Władysława Andersa",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235486,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "13",
+    "addr:postcode": "59-220",
+    "addr:street": "Tadeusza Kościuszki",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235487,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "13",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235489,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "14",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235490,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "14",
+    "addr:postcode": "59-220",
+    "addr:street": "Generała Władysława Andersa",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235491,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "15",
+    "addr:postcode": "59-220",
+    "addr:street": "Tadeusza Kościuszki",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235493,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "15",
+    "addr:postcode": "59-220",
+    "addr:street": "Generała Władysława Andersa",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235494,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "18",
+    "addr:postcode": "59-220",
+    "addr:street": "Tadeusza Kościuszki",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235495,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "16",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235502,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2",
+    "addr:postcode": "59-220",
+    "addr:street": "Tadeusza Kościuszki",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235503,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235512,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235513,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "3",
+    "addr:postcode": "59-220",
+    "addr:street": "Generała Władysława Andersa",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 198235514,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "2a",
+    "addr:postcode": "59-220",
+    "addr:street": "Tadeusza Kościuszki",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 198235515,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 198235516,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "4",
+    "addr:postcode": "59-220",
+    "addr:street": "Generała Władysława Andersa",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 198235518,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "6",
+    "addr:postcode": "59-220",
+    "addr:street": "Jana Pawła II",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235520,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "6",
+    "addr:postcode": "59-220",
+    "addr:street": "Generała Władysława Andersa",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235522,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235523,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "7",
+    "addr:postcode": "59-220",
+    "addr:street": "Generała Władysława Andersa",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235524,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "8",
+    "addr:postcode": "59-220",
+    "addr:street": "Jana Pawła II",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235525,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "8",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235526,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "8",
+    "addr:postcode": "59-220",
+    "addr:street": "Generała Władysława Andersa",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235527,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Tadeusza Kościuszki",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235528,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Wojska Polskiego",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235529,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "9",
+    "addr:postcode": "59-220",
+    "addr:street": "Generała Władysława Andersa",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235530,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "30a",
+    "addr:postcode": "59-220",
+    "addr:street": "Generała Władysława Andersa",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235536,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-220",
+    "addr:street": "Jana Pawła II",
+    "amenity": "university",
+    "building": "yes",
+    "name": "Wyższe Seminarium Duchowne"
+  }
+},
+{
+  "type": "way",
+  "id": 198235540,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "70",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235542,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "23",
+    "addr:postcode": "59-220",
+    "addr:street": "Elizy Orzeszkowej",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235544,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "60",
+    "addr:postcode": "59-220",
+    "addr:street": "Złotoryjska",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 198235547,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "17of",
+    "addr:postcode": "59-220",
+    "addr:street": "Elizy Orzeszkowej",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235552,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "5",
+    "addr:postcode": "59-220",
+    "addr:street": "Elizy Orzeszkowej",
+    "building": "residential",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 198235559,
+  "tags": {
+    "addr:city": "Legnica",
+    "addr:housenumber": "8",
+    "addr:postcode": "59-220",
+    "addr:street": "Elizy Orzeszkowej",
+    "building": "residential",
+    "building:levels": "4",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+}
+
+  ]
+}

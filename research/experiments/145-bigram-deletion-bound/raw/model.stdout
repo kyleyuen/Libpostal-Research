@@ -1,0 +1,12 @@
+dev: c_canon 13.0 ns; ceiling (deletion) 0.391 us = 7.1%
+   pessimistic (unit ids cost one fresh lookup per token)     gain 0.117 us = 2.1%  -> projected 6.08x -> 6.21x
+   middle (131: 38% already cached)                           gain 0.146 us = 2.6%  -> projected 6.08x -> 6.24x
+   optimistic (unit ids free)                                 gain 0.193 us = 3.5%  -> projected 6.08x -> 6.30x
+   ceiling: bigram path deleted outright (not exact)          gain 0.391 us = 7.1%  -> 6.54x
+   7.8x needs -22.1% of total = 1.222 us (split units)
+osm: c_canon 10.3 ns; ceiling (deletion) 0.330 us = 9.1%
+   pessimistic (unit ids cost one fresh lookup per token)     gain 0.131 us = 3.6%  -> projected 5.78x -> 5.99x
+   middle (131: 38% already cached)                           gain 0.152 us = 4.2%  -> projected 5.78x -> 6.03x
+   optimistic (unit ids free)                                 gain 0.187 us = 5.1%  -> projected 5.78x -> 6.09x
+   ceiling: bigram path deleted outright (not exact)          gain 0.330 us = 9.1%  -> 6.35x
+   7.8x needs -26.0% of total = 0.945 us (split units)

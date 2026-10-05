@@ -1,0 +1,30 @@
+replica_vs_library: checked=10308 mismatches=0 shortcut_paths=3
+pass 1: library_call=36.660 us/addr staged_untimed=31.716 us/addr staged_timed=32.124 us/addr | normalize=2.532 tokenize+build tokens=0.567 context_fill (phrase/dict search)=3.974 crf ctx reset+trans copy=1.328 feature generation=5.633 trie lookup: state features=11.548 weight accumulate: state=1.317 trie lookup: prev-tag features=2.761 weight accumulate: prev-tag=0.842 viterbi=0.662 label strings=0.179 response build=0.493 free temporaries+response=0.146 
+pass 2: library_call=37.406 us/addr staged_untimed=31.741 us/addr staged_timed=31.658 us/addr | normalize=2.546 tokenize+build tokens=0.548 context_fill (phrase/dict search)=3.899 crf ctx reset+trans copy=1.320 feature generation=5.564 trie lookup: state features=11.300 weight accumulate: state=1.290 trie lookup: prev-tag features=2.718 weight accumulate: prev-tag=0.823 viterbi=0.683 label strings=0.175 response build=0.498 free temporaries+response=0.149 
+pass 3: library_call=36.415 us/addr staged_untimed=32.061 us/addr staged_timed=31.716 us/addr | normalize=2.558 tokenize+build tokens=0.557 context_fill (phrase/dict search)=3.901 crf ctx reset+trans copy=1.322 feature generation=5.585 trie lookup: state features=11.315 weight accumulate: state=1.296 trie lookup: prev-tag features=2.711 weight accumulate: prev-tag=0.826 viterbi=0.677 label strings=0.177 response build=0.497 free temporaries+response=0.146 
+pass 4: library_call=35.488 us/addr staged_untimed=31.853 us/addr staged_timed=32.320 us/addr | normalize=2.599 tokenize+build tokens=0.566 context_fill (phrase/dict search)=3.953 crf ctx reset+trans copy=1.339 feature generation=5.682 trie lookup: state features=11.584 weight accumulate: state=1.314 trie lookup: prev-tag features=2.777 weight accumulate: prev-tag=0.848 viterbi=0.683 label strings=0.178 response build=0.502 free temporaries+response=0.147 
+pass 5: library_call=36.718 us/addr staged_untimed=31.643 us/addr staged_timed=35.128 us/addr | normalize=2.747 tokenize+build tokens=0.628 context_fill (phrase/dict search)=4.254 crf ctx reset+trans copy=1.439 feature generation=6.334 trie lookup: state features=12.642 weight accumulate: state=1.414 trie lookup: prev-tag features=2.979 weight accumulate: prev-tag=0.913 viterbi=0.728 label strings=0.204 response build=0.529 free temporaries+response=0.166 
+pass 6: library_call=35.808 us/addr staged_untimed=30.724 us/addr staged_timed=30.926 us/addr | normalize=2.527 tokenize+build tokens=0.534 context_fill (phrase/dict search)=3.724 crf ctx reset+trans copy=1.331 feature generation=5.486 trie lookup: state features=11.002 weight accumulate: state=1.242 trie lookup: prev-tag features=2.643 weight accumulate: prev-tag=0.797 viterbi=0.685 label strings=0.173 response build=0.489 free temporaries+response=0.146 
+pass 7: library_call=34.908 us/addr staged_untimed=30.712 us/addr staged_timed=31.871 us/addr | normalize=2.550 tokenize+build tokens=0.560 context_fill (phrase/dict search)=3.912 crf ctx reset+trans copy=1.338 feature generation=5.606 trie lookup: state features=11.408 weight accumulate: state=1.302 trie lookup: prev-tag features=2.713 weight accumulate: prev-tag=0.832 viterbi=0.679 label strings=0.180 response build=0.498 free temporaries+response=0.147 
+pass 8: library_call=36.840 us/addr staged_untimed=32.290 us/addr staged_timed=31.827 us/addr | normalize=2.548 tokenize+build tokens=0.561 context_fill (phrase/dict search)=3.902 crf ctx reset+trans copy=1.327 feature generation=5.602 trie lookup: state features=11.374 weight accumulate: state=1.301 trie lookup: prev-tag features=2.732 weight accumulate: prev-tag=0.833 viterbi=0.676 label strings=0.176 response build=0.500 free temporaries+response=0.148 
+pass 9: library_call=35.140 us/addr staged_untimed=31.857 us/addr staged_timed=32.720 us/addr | normalize=2.590 tokenize+build tokens=0.587 context_fill (phrase/dict search)=4.028 crf ctx reset+trans copy=1.349 feature generation=5.740 trie lookup: state features=11.769 weight accumulate: state=1.333 trie lookup: prev-tag features=2.810 weight accumulate: prev-tag=0.858 viterbi=0.673 label strings=0.184 response build=0.503 free temporaries+response=0.149 
+pass 10: library_call=36.592 us/addr staged_untimed=31.402 us/addr staged_timed=31.965 us/addr | normalize=2.579 tokenize+build tokens=0.551 context_fill (phrase/dict search)=3.929 crf ctx reset+trans copy=1.334 feature generation=5.617 trie lookup: state features=11.434 weight accumulate: state=1.307 trie lookup: prev-tag features=2.729 weight accumulate: prev-tag=0.835 viterbi=0.683 label strings=0.175 response build=0.498 free temporaries+response=0.149 
+counts_last_10_passes: addresses=103080 shortcut=60 tokens=1211860 state_feature_lookups=9453900 (hits 7953200) prevtag_lookups=1800960 (hits 1717800)
+per_address: tokens=11.76 state_lookups=91.71 (hit 84.1%) prevtag_lookups=17.47 (hit 95.4%)
+timer_resolution_note: CLOCK_UPTIME_RAW ticks are ~41.67 ns; the staged run adds ~30-60 timer reads per address
+recorded state_features=472695 prevtag_features=90048
+B1 corpus-order (all 472695): 186.6 ns/lookup hits=397660
+B2 shuffled (no token locality): 290.2 ns/lookup
+B3 each lookup done twice back-to-back: 142.0 ns/lookup (mean of 1st + 2nd)
+B4 hot working set (first 50 addrs, 2333 features repeated): 55.5 ns/lookup
+B1 corpus-order (all 472695): 182.5 ns/lookup hits=397660
+B2 shuffled (no token locality): 296.6 ns/lookup
+B3 each lookup done twice back-to-back: 152.7 ns/lookup (mean of 1st + 2nd)
+B4 hot working set (first 50 addrs, 2333 features repeated): 55.5 ns/lookup
+B1 corpus-order (all 472695): 189.8 ns/lookup hits=397660
+B2 shuffled (no token locality): 299.0 ns/lookup
+B3 each lookup done twice back-to-back: 143.8 ns/lookup (mean of 1st + 2nd)
+B4 hot working set (first 50 addrs, 2333 features repeated): 56.8 ns/lookup
+trie steps per state-feature lookup: mean=21.36 over 472695 (replica mismatches vs trie_get: 0)
+state_features trie: nodes=22140243 tail_bytes=68802960 data=11470624 | trans trie nodes=3818106
+mean state feature length=22.6 bytes

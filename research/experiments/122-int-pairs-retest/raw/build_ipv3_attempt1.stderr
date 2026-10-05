@@ -1,0 +1,221 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/libpostal.c:10:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_parser.h:52:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/averaged_perceptron.h:27:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:10:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/language_classifier.h:13:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.h:26:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:825:74: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  825 |                 log_debug("phrase.start = %zu, prev_phrase_end = %zu\n", phrase.start, prev_phrase_end);
+      |                                           ~~~                            ^~~~~~~~~~~~
+      |                                           %u
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:872:89: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'bool' [-Wformat]
+  872 |                     log_debug("have_strictly_ignorable=%zu, phrase_is_canonical=%zu\n", have_strictly_ignorable, phrase_is_canonical);
+      |                                                        ~~~                              ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:872:114: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'bool' [-Wformat]
+  872 |                     log_debug("have_strictly_ignorable=%zu, phrase_is_canonical=%zu\n", have_strictly_ignorable, phrase_is_canonical);
+      |                                                                                 ~~~                              ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:932:26: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+  932 |                     bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                          ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1184:46: warning: unused variable 'start_index' [-Wunused-variable]
+ 1184 |                                     uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                                              ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1202:38: warning: unused variable 'start_index' [-Wunused-variable]
+ 1202 |                             uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                                      ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1235:26: warning: unused variable 'start_index' [-Wunused-variable]
+ 1235 |                 uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                          ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1310:22: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+ 1310 |                 bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                      ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1344:22: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+ 1344 |                 bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                      ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1440:11: warning: unused variable 'lang' [-Wunused-variable]
+ 1440 |     char *lang;
+      |           ^~~~
+11 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_dictionary.c:63:47: warning: second argument to 'va_arg' is of promotable type 'uint16_t' (aka 'unsigned short'); this va_arg has undefined behavior because arguments will be promoted to 'int' [-Wvarargs]
+   63 |         uint16_t dictionary_id = va_arg(args, uint16_t);
+      |                                               ^~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/__stdarg_va_arg.h:20:47: note: expanded from macro 'va_arg'
+   20 | #define va_arg(ap, type) __builtin_va_arg(ap, type)
+      |                                               ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_dictionary.c:173:10: warning: variable 'is_phrase' set but not used [-Wunused-but-set-variable]
+  173 |     bool is_phrase = false;
+      |          ^
+2 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/transliterate.c:614:12: warning: variable 'group_num_start' set but not used [-Wunused-but-set-variable]
+  614 |     size_t group_num_start = 0;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/transliterate.c:615:12: warning: variable 'group_num_len' set but not used [-Wunused-but-set-variable]
+  615 |     size_t group_num_len = 0;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/transliterate.c:1027:26: warning: variable 'added_previous_phrase' set but not used [-Wunused-but-set-variable]
+ 1027 |                     bool added_previous_phrase = false;
+      |                          ^
+3 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/trie.c:1074:13: warning: unused variable 'base' [-Wunused-variable]
+ 1074 |     int32_t base;
+      |             ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/trie.c:1075:13: warning: unused variable 'check' [-Wunused-variable]
+ 1075 |     int32_t check;
+      |             ^~~~~
+2 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/trie_search.c:184:16: warning: initialization of pointer of type 'phrase_array *' to null from a constant boolean expression [-Wbool-conversion]
+  184 |         return false;
+      |                ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/trie_search.c:897:72: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  897 |                     log_debug("No space transition, phrase_len=%zu\n", phrase_len);
+      |                                                                ~~~     ^~~~~~~~~~
+      |                                                                %u
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/trie_search.c:854:12: warning: variable 'separator_char_len' set but not used [-Wunused-but-set-variable]
+  854 |     size_t separator_char_len = 0;
+      |            ^
+3 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/string_utils.c:116:17: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  116 |     for (size_t count = 0; (temp = strstr(start, replace)); count++) {
+      |                 ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/string_utils.c:193:18: warning: variable 'remaining' set but not used [-Wunused-but-set-variable]
+  193 |     ssize_t len, remaining;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/string_utils.c:384:13: warning: unused variable 'num_utf8_chars' [-Wunused-variable]
+  384 |     ssize_t num_utf8_chars = 0;
+      |             ^~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/string_utils.c:521:12: warning: unused variable 'remaining' [-Wunused-variable]
+  521 |     size_t remaining = len;
+      |            ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/string_utils.c:687:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  687 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/string_utils.c:713:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  713 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/string_utils.c:876:13: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  876 |     ssize_t index = 0;
+      |             ^
+7 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/normalize.c:269:22: warning: unused variable 'key' [-Wunused-variable]
+  269 |             khiter_t key = kh_put(int_set, scripts, (khint_t)script, &ret);
+      |                      ^~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/normalize.c:208:11: warning: unused variable 'numex_replaced' [-Wunused-variable]
+  208 |     char *numex_replaced = NULL;
+      |           ^~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/normalize.c:374:14: warning: unused variable 'is_hyphen' [-Wunused-variable]
+  374 |         bool is_hyphen = utf8_is_hyphen(ch);
+      |              ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/normalize.c:367:10: warning: unused variable 'append_char' [-Wunused-variable]
+  367 |     bool append_char = true;
+      |          ^~~~~~~~~~~
+4 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:805:18: warning: unused variable 'rule_index' [-Wunused-variable]
+  805 |         uint32_t rule_index = phrase.data;
+      |                  ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:703:19: warning: unused variable 'ch' [-Wunused-variable]
+  703 |     unsigned char ch = '\0';
+      |                   ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:706:10: warning: unused variable 'advance_state' [-Wunused-variable]
+  706 |     bool advance_state = true;
+      |          ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:714:17: warning: unused variable 'number_str' [-Wunused-variable]
+  714 |     char_array *number_str = NULL;
+      |                 ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:978:10: warning: unused variable 'whole_tokens_only' [-Wunused-variable]
+  978 |     bool whole_tokens_only = language->whole_tokens_only;
+      |          ^~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:1073:10: warning: unused variable 'ignorable' [-Wunused-variable]
+ 1073 |     bool ignorable = true;
+      |          ^~~~~~~~~
+6 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_parser.h:52:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/averaged_perceptron.h:27:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:491:10: warning: unused variable 'has_key' [-Wunused-variable]
+  491 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:960:14: warning: unused variable 'phrase' [-Wunused-variable]
+  960 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:1055:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+ 1055 |     bool have_address_phrases = search_address_dictionaries_tokens_with_phrases(normalized_str, normalized_tokens, NULL, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:1154:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+ 1154 |     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:1175:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+ 1175 |     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:1291:13: warning: unused variable 'token' [-Wunused-variable]
+ 1291 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:1380:13: warning: unused variable 'membership' [-Wunused-variable]
+ 1380 |     int64_t membership;
+      |             ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:1408:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1408 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:2041:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 2041 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:2043:18: warning: unused variable 'k' [-Wunused-variable]
+ 2043 |         khiter_t k;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:2072:18: error: expected expression
+ 2072 |             if (!AP_CONST(features, 1)) feature_array_add(features, 1, "postcode have context");
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:1713:5: note: expanded from macro 'AP_CONST'
+ 1713 |     feature_array_add(crf_ik_verify_str[0], 1, (q) == 0 ? "bias" : "postcode have context"), true) : false)
+      |     ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:1433:48: note: expanded from macro 'feature_array_add'
+ 1433 | #define feature_array_add(f, count, name, ...) do { static fa_nb_cache_t fa_nbc_ = {{NULL, NULL}, {-1, -1}}; \
+      |                                                ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:2097:14: error: expected expression
+ 2097 |         if (!AP_CONST(features, 0)) feature_array_add(features, 1, "bias");
+      |              ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:1713:5: note: expanded from macro 'AP_CONST'
+ 1713 |     feature_array_add(crf_ik_verify_str[0], 1, (q) == 0 ? "bias" : "postcode have context"), true) : false)
+      |     ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:1433:48: note: expanded from macro 'feature_array_add'
+ 1433 | #define feature_array_add(f, count, name, ...) do { static fa_nb_cache_t fa_nbc_ = {{NULL, NULL}, {-1, -1}}; \
+      |                                                ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:2142:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable]
+ 2142 |             bool ngrams_added = false;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:2326:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 2326 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:2332:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 2332 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:2333:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 2333 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/122-int-pairs-retest/artifacts/ipv3/src/address_parser.c:2268:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable]
+ 2268 |         size_t next_word_len = 1;
+      |                ^
+16 warnings and 2 errors generated.

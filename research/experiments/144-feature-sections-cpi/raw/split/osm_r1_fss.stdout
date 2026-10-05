@@ -1,0 +1,18 @@
+total_parse cold_us=3.776 warm_us=2.224
+normalize cold_us=0.072 warm_us=0.030 diff=0.042
+tokenize cold_us=0.177 warm_us=0.110 diff=0.066
+context_fill cold_us=0.996 warm_us=0.336 diff=0.660
+predict_total cold_us=2.353 warm_us=1.620 diff=0.733
+response cold_us=0.158 warm_us=0.110 diff=0.048
+features cold_us=0.935 warm_us=0.653 diff=0.282
+lookups cold_us=0.402 warm_us=0.156 diff=0.246
+accumulate cold_us=0.599 warm_us=0.428 diff=0.171
+fs_setup cold_us=0.049 warm_us=0.044 diff=0.005
+fs_address_dict cold_us=0.057 warm_us=0.045 diff=0.012
+fs_component cold_us=0.121 warm_us=0.061 diff=0.060
+fs_postcode cold_us=0.109 warm_us=0.066 diff=0.043
+fs_word cold_us=0.111 warm_us=0.086 diff=0.024
+fs_trans_word cold_us=0.050 warm_us=0.045 diff=0.005
+fs_prev_word cold_us=0.137 warm_us=0.103 diff=0.034
+fs_next_word cold_us=0.262 warm_us=0.164 diff=0.098
+viterbi_and_rest cold_us=0.417 warm_us=0.383

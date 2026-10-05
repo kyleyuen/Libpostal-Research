@@ -1,0 +1,128 @@
+In file included from collections.h:11,
+                 from crf.h:19,
+                 from crf.c:1:
+vector.h: In function 'aligned_resize':
+In file included from collections.h:11,
+                 from averaged_perceptron.h:26,
+                 from address_parser.h:52,
+                 from address_parser.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from crf_context.h:20,
+                 from crf.h:20:
+matrix.h: At top level:
+In file included from sparse_matrix.h:46,
+                 from averaged_perceptron.h:27:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+address_parser.c: In function 'word_vocab_frequency':
+address_parser.c:399:10: warning: unused variable 'has_key' [-Wunused-variable]
+  399 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+address_parser.c: In function 'address_parser_normalize_phrase_token':
+address_parser.h:66:125: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   66 | #define ADDRESS_PARSER_NORMALIZE_TOKEN_OPTIONS NORMALIZE_TOKEN_DELETE_FINAL_PERIOD | NORMALIZE_TOKEN_DELETE_ACRONYM_PERIODS | NORMALIZE_TOKEN_REPLACE_DIGITS
+      |                                                                                                                             ^
+address_parser.h:67:54: note: in expansion of macro 'ADDRESS_PARSER_NORMALIZE_TOKEN_OPTIONS'
+   67 | #define ADDRESS_PARSER_NORMALIZE_ADMIN_TOKEN_OPTIONS ADDRESS_PARSER_NORMALIZE_TOKEN_OPTIONS ^ NORMALIZE_TOKEN_REPLACE_DIGITS
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+address_parser.c:408:40: note: in expansion of macro 'ADDRESS_PARSER_NORMALIZE_ADMIN_TOKEN_OPTIONS'
+  408 |     normalize_token(array, str, token, ADDRESS_PARSER_NORMALIZE_ADMIN_TOKEN_OPTIONS);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+address_parser.c: In function 'address_parser_context_fill':
+address_parser.c:1001:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+ 1001 |     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+address_parser.c:983:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+  983 |     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+address_parser.c:947:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+  947 |     bool have_address_phrases = search_address_dictionaries_tokens_with_phrases(normalized_str, normalized_tokens, NULL, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+address_parser.c:861:14: warning: unused variable 'phrase' [-Wunused-variable]
+  861 |     phrase_t phrase;
+      |              ^~~~~~
+address_parser.c:860:11: warning: variable 'word' set but not used [-Wunused-but-set-variable=]
+  860 |     char *word;
+      |           ^~~~
+address_parser.c: In function 'phrase_prefix':
+address_parser.c:1020:40: warning: unused parameter 'len' [-Wunused-parameter]
+ 1020 | char *phrase_prefix(char *word, size_t len, phrase_t prefix_phrase, char_array *prefix_phrase_array) {
+      |                                 ~~~~~~~^~~
+address_parser.c: In function 'word_or_phrase_at_index':
+address_parser.c:1110:13: warning: unused variable 'token' [-Wunused-variable]
+ 1110 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+address_parser.c:1068:74: warning: unused parameter 'parser' [-Wunused-parameter]
+ 1068 | static address_parser_phrase_t word_or_phrase_at_index(address_parser_t *parser, tokenized_string_t *tokenized, address_parser_context_t *context, uint32_t i, bool long_context) {
+      |                                                        ~~~~~~~~~~~~~~~~~~^~~~~~
+address_parser.c: In function 'phrase_index':
+address_parser.c:1199:13: warning: unused variable 'membership' [-Wunused-variable]
+ 1199 |     int64_t membership;
+      |             ^~~~~~~~~~
+address_parser.c: In function 'next_numeric_token_index':
+address_parser.c:1227:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1227 |     phrase_t phrase;
+      |              ^~~~~~
+address_parser.c: In function 'add_ngram_features':
+address_parser.c:1272:14: warning: variable 'idx' set but not used [-Wunused-but-set-variable=]
+ 1272 |     uint32_t idx;
+      |              ^~~
+address_parser.c: In function 'ap_ik_emit1':
+address_parser.c:1415:112: warning: unused parameter 'name' [-Wunused-parameter]
+ 1415 | static inline bool ap_ik_emit1(address_parser_context_t *context, cstring_array *a, int which, int role, char *name, char *s, ssize_t j) {
+      |                                                                                                          ~~~~~~^~~~
+address_parser.c: In function 'ap_ik_emit2':
+address_parser.c:1432:112: warning: unused parameter 'name' [-Wunused-parameter]
+ 1432 | static inline bool ap_ik_emit2(address_parser_context_t *context, cstring_array *a, int which, int role, char *name, char *s1, ssize_t j1, char *s2, ssize_t j2) {
+      |                                                                                                          ~~~~~~^~~~
+address_parser.c: In function 'address_parser_features':
+address_parser.c:1670:18: warning: unused variable 'k' [-Wunused-variable]
+ 1670 |         khiter_t k;
+      |                  ^
+address_parser.c:1668:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 1668 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+address_parser.c:1769:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable=]
+ 1769 |             bool ngrams_added = false;
+      |                  ^~~~~~~~~~~~
+address_parser.c:1960:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 1960 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+address_parser.c:1959:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 1959 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+address_parser.c:1953:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 1953 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+address_parser.c:1895:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable=]
+ 1895 |         size_t next_word_len = 1;
+      |                ^~~~~~~~~~~~~
+address_parser.c:1714:10: warning: variable 'known_suffix' set but not used [-Wunused-but-set-variable=]
+ 1714 |     bool known_suffix = false;
+      |          ^~~~~~~~~~~~
+address_parser.c:1713:10: warning: variable 'known_prefix' set but not used [-Wunused-but-set-variable=]
+ 1713 |     bool known_prefix = false;
+      |          ^~~~~~~~~~~~
+address_parser.c:1711:10: warning: variable 'is_unknown' set but not used [-Wunused-but-set-variable=]
+ 1711 |     bool is_unknown = false;
+      |          ^~~~~~~~~~
+address_parser.c:1473:19: warning: unused variable 'separators' [-Wunused-variable]
+ 1473 |     uint32_array *separators = context->separators;
+      |                   ^~~~~~~~~~
+address_parser.c:1463:11: warning: unused variable 'country' [-Wunused-variable]
+ 1463 |     char *country = context->country;
+      |           ^~~~~~~
+address_parser.c:1462:11: warning: unused variable 'language' [-Wunused-variable]
+ 1462 |     char *language = context->language;
+      |           ^~~~~~~~

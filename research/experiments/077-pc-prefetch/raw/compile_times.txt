@@ -1,0 +1,4 @@
+pcp_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 8s
+pcp: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 7s
+pcfs_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 9s
+pcfs: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 6s

@@ -1,0 +1,53 @@
+--- ../libpostal/src/trie.c	2026-09-28 15:50:15
++++ experiments/011-normalize-fastpaths/candidate/trie.c	2026-09-29 20:15:10
+@@ -758,7 +758,50 @@
+      uint32_t node_id = trie_get(self, key);
+      return trie_get_data_at_index(self, node_id, data);
+ }
++
++// Mirrors trie_get_from_index step for step; the only difference is that the tail length comes from the known key length
++// instead of strlen(query_tail): at loop index i the tail is key[i+1..len) when key[i] != 0, and empty when i == len.
++static uint32_t trie_get_from_index_len(trie_t *self, char *word, size_t len, uint32_t i) {
++    if (word == NULL) return NULL_NODE_ID;
++
++    unsigned char *ptr = (unsigned char *)word;
+ 
++    uint32_t node_id = i;
++    trie_node_t node = trie_get_node(self, i);
++    if (node.base == NULL_NODE_ID) return NULL_NODE_ID;
++
++    uint32_t next_id;
++
++    for (size_t k = 0; k < len + 1; k++, ptr++, node_id = next_id) {
++        next_id = trie_get_transition_index(self, node, *ptr);
++        node = trie_get_node(self, next_id);
++
++        if (node.check != node_id) {
++            return NULL_NODE_ID;
++        }
++
++        if (node.check == node_id && node.base < 0) {
++            trie_data_node_t data_node = trie_get_data_node(self, node);
++
++            char *query_tail = *ptr ? (char *) ptr + 1 : (char *) ptr;
++            size_t query_tail_len = *ptr ? len - k - 1 : 0;
++
++            if (data_node.tail != 0 && trie_compare_tail(self, query_tail, query_tail_len + 1, data_node.tail)) {
++                return next_id;
++            } else {
++                return NULL_NODE_ID;
++            }
++        }
++    }
++
++    return next_id;
++}
++
++bool trie_get_data_len(trie_t *self, char *key, size_t len, uint32_t *data) {
++    uint32_t node_id = trie_get_from_index_len(self, key, len, ROOT_NODE_ID);
++    return trie_get_data_at_index(self, node_id, data);
++}
++
+ inline bool trie_set_data_at_index(trie_t *self, uint32_t index, uint32_t data) {
+     if (index == NULL_NODE_ID) return false;
+      trie_node_t node = trie_get_node(self, index);

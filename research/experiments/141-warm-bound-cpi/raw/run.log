@@ -1,0 +1,96 @@
+2026-10-04T19:01:39-0700 START timing/dev_r1_cpi_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 20
+2026-10-04T19:01:51-0700 END timing/dev_r1_cpi_ext exit=0
+2026-10-04T19:01:54-0700 START timing/dev_r1_cpi_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_cpi /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 20
+2026-10-04T19:02:08-0700 END timing/dev_r1_cpi_warm exit=0
+2026-10-04T19:02:10-0700 START timing/dev_r1_orig_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_orig /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 20
+2026-10-04T19:02:23-0700 END timing/dev_r1_orig_warm exit=0
+2026-10-04T19:02:25-0700 START timing/dev_r1_orig_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 20
+2026-10-04T19:02:35-0700 END timing/dev_r1_orig_ext exit=0
+2026-10-04T19:02:37-0700 START timing/osm_r1_cpi_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-04T19:02:50-0700 END timing/osm_r1_cpi_ext exit=0
+2026-10-04T19:02:52-0700 START timing/osm_r1_cpi_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_cpi /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-04T19:03:05-0700 END timing/osm_r1_cpi_warm exit=0
+2026-10-04T19:03:08-0700 START timing/osm_r1_orig_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_orig /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-04T19:03:18-0700 END timing/osm_r1_orig_warm exit=0
+2026-10-04T19:03:21-0700 START timing/osm_r1_orig_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-04T19:03:28-0700 END timing/osm_r1_orig_ext exit=0
+2026-10-04T19:03:30-0700 START timing/u11_r1_cpi_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 20
+2026-10-04T19:03:42-0700 END timing/u11_r1_cpi_ext exit=0
+2026-10-04T19:03:45-0700 START timing/u11_r1_cpi_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_cpi /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 20
+2026-10-04T19:03:57-0700 END timing/u11_r1_cpi_warm exit=0
+2026-10-04T19:04:00-0700 START timing/u11_r1_orig_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_orig /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 20
+2026-10-04T19:04:07-0700 END timing/u11_r1_orig_warm exit=0
+2026-10-04T19:04:10-0700 START timing/u11_r1_orig_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 20
+2026-10-04T19:04:16-0700 END timing/u11_r1_orig_ext exit=0
+2026-10-04T19:04:19-0700 START timing/dev_r2_cpi_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_cpi /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 20
+2026-10-04T19:04:32-0700 END timing/dev_r2_cpi_warm exit=0
+2026-10-04T19:04:35-0700 START timing/dev_r2_orig_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_orig /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 20
+2026-10-04T19:04:47-0700 END timing/dev_r2_orig_warm exit=0
+2026-10-04T19:04:50-0700 START timing/dev_r2_orig_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 20
+2026-10-04T19:04:59-0700 END timing/dev_r2_orig_ext exit=0
+2026-10-04T19:05:01-0700 START timing/dev_r2_cpi_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 20
+2026-10-04T19:05:14-0700 END timing/dev_r2_cpi_ext exit=0
+2026-10-04T19:05:17-0700 START timing/osm_r2_cpi_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_cpi /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-04T19:05:30-0700 END timing/osm_r2_cpi_warm exit=0
+2026-10-04T19:05:32-0700 START timing/osm_r2_orig_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_orig /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-04T19:05:42-0700 END timing/osm_r2_orig_warm exit=0
+2026-10-04T19:05:45-0700 START timing/osm_r2_orig_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-04T19:05:52-0700 END timing/osm_r2_orig_ext exit=0
+2026-10-04T19:05:55-0700 START timing/osm_r2_cpi_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-04T19:06:07-0700 END timing/osm_r2_cpi_ext exit=0
+2026-10-04T19:06:10-0700 START timing/u11_r2_cpi_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_cpi /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 20
+2026-10-04T19:06:22-0700 END timing/u11_r2_cpi_warm exit=0
+2026-10-04T19:06:25-0700 START timing/u11_r2_orig_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_orig /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 20
+2026-10-04T19:06:33-0700 END timing/u11_r2_orig_warm exit=0
+2026-10-04T19:06:35-0700 START timing/u11_r2_orig_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 20
+2026-10-04T19:06:41-0700 END timing/u11_r2_orig_ext exit=0
+2026-10-04T19:06:43-0700 START timing/u11_r2_cpi_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 20
+2026-10-04T19:06:55-0700 END timing/u11_r2_cpi_ext exit=0
+2026-10-04T19:06:58-0700 START timing/dev_r3_orig_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_orig /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 20
+2026-10-04T19:07:10-0700 END timing/dev_r3_orig_warm exit=0
+2026-10-04T19:07:12-0700 START timing/dev_r3_orig_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 20
+2026-10-04T19:07:22-0700 END timing/dev_r3_orig_ext exit=0
+2026-10-04T19:07:24-0700 START timing/dev_r3_cpi_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 20
+2026-10-04T19:07:37-0700 END timing/dev_r3_cpi_ext exit=0
+2026-10-04T19:07:39-0700 START timing/dev_r3_cpi_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_cpi /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 20
+2026-10-04T19:07:52-0700 END timing/dev_r3_cpi_warm exit=0
+2026-10-04T19:07:55-0700 START timing/osm_r3_orig_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_orig /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-04T19:08:05-0700 END timing/osm_r3_orig_warm exit=0
+2026-10-04T19:08:07-0700 START timing/osm_r3_orig_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-04T19:08:14-0700 END timing/osm_r3_orig_ext exit=0
+2026-10-04T19:08:17-0700 START timing/osm_r3_cpi_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-04T19:08:29-0700 END timing/osm_r3_cpi_ext exit=0
+2026-10-04T19:08:32-0700 START timing/osm_r3_cpi_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_cpi /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-04T19:08:45-0700 END timing/osm_r3_cpi_warm exit=0
+2026-10-04T19:08:47-0700 START timing/u11_r3_orig_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_orig /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 20
+2026-10-04T19:08:55-0700 END timing/u11_r3_orig_warm exit=0
+2026-10-04T19:08:58-0700 START timing/u11_r3_orig_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 20
+2026-10-04T19:09:04-0700 END timing/u11_r3_orig_ext exit=0
+2026-10-04T19:09:06-0700 START timing/u11_r3_cpi_ext: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 20
+2026-10-04T19:09:18-0700 END timing/u11_r3_cpi_ext exit=0
+2026-10-04T19:09:21-0700 START timing/u11_r3_cpi_warm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/141-warm-bound-cpi/tools/bench_warm_cpi /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 20
+2026-10-04T19:09:33-0700 END timing/u11_r3_cpi_warm exit=0
+2026-10-04T19:09:36-0700 START split/dev_r1: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/css/bench_split /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 3
+2026-10-04T19:09:47-0700 END split/dev_r1 exit=0
+2026-10-04T19:09:50-0700 START split/osm_r1: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/css/bench_split /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 3
+2026-10-04T19:10:02-0700 END split/osm_r1 exit=0
+2026-10-04T19:10:04-0700 START split/u11_r1: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/css/bench_split /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 3
+2026-10-04T19:10:16-0700 END split/u11_r1 exit=0
+2026-10-04T19:10:19-0700 START split/dev_r2: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/css/bench_split /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 3
+2026-10-04T19:10:31-0700 END split/dev_r2 exit=0
+2026-10-04T19:10:33-0700 START split/osm_r2: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/css/bench_split /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 3
+2026-10-04T19:10:45-0700 END split/osm_r2 exit=0
+2026-10-04T19:10:48-0700 START split/u11_r2: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/css/bench_split /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 3
+2026-10-04T19:10:59-0700 END split/u11_r2 exit=0
+2026-10-04T19:11:02-0700 START split/dev_r3: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/css/bench_split /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 3
+2026-10-04T19:11:14-0700 END split/dev_r3 exit=0
+2026-10-04T19:11:16-0700 START split/osm_r3: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/css/bench_split /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 3
+2026-10-04T19:11:28-0700 END split/osm_r3 exit=0
+2026-10-04T19:11:30-0700 START split/u11_r3: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/css/bench_split /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 3
+2026-10-04T19:11:42-0700 END split/u11_r3 exit=0
+2026-10-04T19:11:44-0700 START split/dev_r4: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/css/bench_split /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 3
+2026-10-04T19:11:56-0700 END split/dev_r4 exit=0
+2026-10-04T19:11:58-0700 START split/osm_r4: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/css/bench_split /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 3
+2026-10-04T19:12:10-0700 END split/osm_r4 exit=0
+2026-10-04T19:12:12-0700 START split/u11_r4: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/css/bench_split /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv 3
+2026-10-04T19:12:24-0700 END split/u11_r4 exit=0

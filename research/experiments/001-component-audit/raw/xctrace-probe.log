@@ -1,0 +1,7 @@
+Starting recording with the CPU Counters template. Launching process: parser_profile. Time limit: 8.0 s
+Ctrl-C to stop the recording
+Reached specified time limit, ending recording...
+Recording completed. Saving output file...
+Output file saved as: cpu-counters-probe.trace
+xctrace record --template 'CPU Counters' --output cpu-counters-probe.trace  8  65.15s user 9.19s system 112% cpu 1:06.01 total
+exit=0

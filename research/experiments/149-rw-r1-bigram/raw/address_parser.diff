@@ -1,0 +1,53 @@
+1718a1719,1735
+> #ifdef EXP_CANON_RING
+> // 149: per-address, content-validated cache of canon() (and the pair unit) for strings that miss the token memos (e.g. phrase strings).
+> // Exact: a hit requires the same length and the same bytes, so it returns what a fresh fd_canon / fd_pu_get would. Reset for every address.
+> typedef struct { uint32_t len, canon, unit; uint8_t has_unit; char b[59]; } ap_cr_t;
+> static ap_cr_t ap_cr[8]; static unsigned ap_cr_n = 0, ap_cr_next = 0;
+> static inline void ap_cr_reset(void) { ap_cr_n = 0; ap_cr_next = 0; }
+> static inline ap_cr_t *ap_cr_find(const char *s, size_t len) {
+>     for (unsigned i = 0; i < ap_cr_n; i++) if (ap_cr[i].len == len && memcmp(ap_cr[i].b, s, len) == 0) return &ap_cr[i];
+>     return NULL;
+> }
+> static inline ap_cr_t *ap_cr_add(const char *s, size_t len, uint32_t canon) {
+>     if (len >= sizeof ap_cr[0].b) return NULL;
+>     ap_cr_t *e = &ap_cr[ap_cr_next]; ap_cr_next = (ap_cr_next + 1) & 7; if (ap_cr_n < 8) ap_cr_n++;
+>     e->len = (uint32_t)len; memcpy(e->b, s, len); e->canon = canon; e->has_unit = 0;
+>     return e;
+> }
+> #endif
+1743a1761,1763
+> #ifdef EXP_CANON_RING
+>     { ap_cr_t *e = ap_cr_find(s, len); if (e != NULL) return e->canon; uint32_t c = fd_canon(vocab_dict, s, len); ap_cr_add(s, len, c); return c; }
+> #endif
+1746a1767,1784
+> // 149: unit of one bigram part: its vocabulary canon, else (EXP_PHRASE_UNITS) its phrase-unit id. Must equal fd_pair_unit() as used by
+> // fd_int_classify at load, so a pair is integer-routed at parse time iff its key was moved to the integer table.
+> static inline uint32_t ap_pair_part(address_parser_context_t *context, const char *s, ssize_t j, bool nonlast) {
+>     uint32_t c = ap_canon_part(context, s, j, nonlast);
+> #ifdef EXP_PHRASE_UNITS
+>     if (c != FDI_NONE || fd_pu.off == NULL) return c;
+>     size_t len = strlen(s);
+>     if (nonlast && len > 0 && s[len - 1] == '|') len--;
+> #ifdef EXP_CANON_RING
+>     ap_cr_t *e = ap_cr_find(s, len);
+>     if (e != NULL) { if (!e->has_unit) { e->unit = fd_pu_get(s, len); e->has_unit = 1; } return e->unit; }
+> #endif
+>     return fd_pu_get(s, len);
+> #else
+>     return c;
+> #endif
+> }
+> 
+1768c1806
+<     uint32_t c1 = ap_canon_part(context, s1, j1, true);
+---
+>     uint32_t c1 = ap_pair_part(context, s1, j1, true);
+1770c1808
+<     uint32_t c2 = ap_canon_part(context, s2, j2, false);
+---
+>     uint32_t c2 = ap_pair_part(context, s2, j2, false);
+1819a1858,1860
+> #ifdef EXP_CANON_RING
+>         if (idx == 0) ap_cr_reset();
+> #endif

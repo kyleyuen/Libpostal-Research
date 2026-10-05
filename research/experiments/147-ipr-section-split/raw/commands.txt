@@ -1,0 +1,2 @@
+# 2026-10-04T21:23:29-0700 EXTRA_SW="$(cat raw/switches_ifs.txt)" tools/build_cc.sh ifs clang llvm "-O2 -flto" "-O1" "-flto" mimalloc.o; link bench_split -DHAVE_FS
+# 2026-10-04T21:28:43-0700 tools/run.sh (background)

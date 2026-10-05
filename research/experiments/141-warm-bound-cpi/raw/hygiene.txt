@@ -1,0 +1,25 @@
+# hygiene record (commands run by Claude, output captured)
+2026-10-04T18:58:08-0700 pre-check: icdd 72.3% CPU (top), Chrome helpers ~20%/10%, mds_stores present, load 3.30 3.05 3.18; crashpad handlers present (Chrome, 2x VS Code, Cursor, Claude) but not in top-8 CPU; gate OK (AC 100%), no PAUSE_TIMING, caffeinate 21869 running
+2026-10-04T18:58:15-0700 killall icdd (launchd relaunches on demand; same action as 2026-10-03T23:46:49)
+--- re-capture 2026-10-04T19:00:16-0700
+PID    COMMAND          %CPU
+405    WindowServer     14.9
+89033  Terminal         12.0
+42325  2.1.288          8.1 
+1      launchd          7.8 
+96317  Claude           6.7 
+0      kernel_task      5.7 
+1611   Google Chrome He 4.7 
+49015  top              3.8 
+16835  Google Chrome He 3.5 
+12352  com.apple.Virtua 3.4 
+19:00  up 39 days, 29 mins, 2 users, load averages: 2.15 2.65 3.00
+pgrep chrome_crashpad_handler: 1601 14577 35249 63664 96330 
+pgrep icdd: 48853 
+pgrep mds_stores: 79896 
+  PID  %CPU COMMAND
+ 1601   0.0 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.fr
+14577   0.0 /Applications/Visual Studio Code.app/Contents/Frameworks/Electron Framework.fr
+35249   0.0 /Applications/Visual Studio Code.app/Contents/Frameworks/Electron Framework.fr
+63664   0.0 /Applications/Cursor.app/Contents/Frameworks/Electron Framework.framework/Help
+96330   0.0 /Applications/Claude.app/Contents/Frameworks/Electron Framework.framework/Help

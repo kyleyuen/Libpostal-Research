@@ -1,0 +1,15 @@
+TRACE addresses=10309 (per address: distinct_lines distinct_pages new_in_run lru16MiB_miss lru48MiB_miss)
+TRACE feat_slots         72.02    28.29    55.57    58.39    55.99
+TRACE feat_arena         62.98    22.64    46.87    49.31    47.20
+TRACE int_key_slots      83.65     0.65    83.65    83.65    83.65
+TRACE row_index          23.50    14.71     5.32     7.61     5.60
+TRACE state_rows         50.34    13.75     9.22    12.53     9.63
+TRACE trans_rows         55.36     6.75     5.29     7.43     5.54
+TRACE role_ids            5.67     4.86     1.57     1.97     1.62
+TRACE vocab_slots         6.54     6.14     0.01     2.55     2.04
+TRACE vocab_arena         6.05     5.41     0.03     2.11     1.67
+TRACE trie_component     39.97    23.62     8.19    11.93     8.62
+TRACE trie_postal        23.98    19.19     2.80     4.13     2.96
+TRACE trie_other         40.31    20.15     0.73     1.44     0.76
+TRACE postcode_ctx        3.93     2.56     1.97     2.54     2.06
+TRACE TOTAL             474.31   168.72   221.23   245.59   227.36

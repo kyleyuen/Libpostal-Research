@@ -1,0 +1,111 @@
+retry New York 0 <HTTPError 504: 'Gateway Timeout'>
+2026-10-01T00:20:33-07:00 restarted with 700 m radius after 504 timeouts at 2 km
+retry New York 0 <HTTPError 504: 'Gateway Timeout'>
+retry New York 1 <HTTPError 504: 'Gateway Timeout'>
+2026-10-01T00:24:07-07:00 switched to the maps.mail.ru Overpass mirror (main server 504s; other mirrors timed out)
+retry New York 0 <HTTPError 504: 'Gateway Timeout'>
+ok New York 400
+ok Chicago 400
+ok Los Angeles 383
+ok Houston 138
+retry Seattle 0 <HTTPError 504: 'Gateway Time-out'>
+retry Seattle 1 <HTTPError 504: 'Gateway Timeout'>
+ok Seattle 400
+ok Toronto 400
+ok Montreal 400
+ok London 400
+ok Manchester 400
+ok Dublin 400
+retry Sydney 0 <HTTPError 504: 'Gateway Timeout'>
+ok Sydney 400
+ok Melbourne 400
+retry Auckland 0 <HTTPError 504: 'Gateway Time-out'>
+retry Auckland 1 <HTTPError 504: 'Gateway Timeout'>
+ok Auckland 400
+ok Cape Town 257
+ok Mumbai 7
+ok Singapore 400
+ok Paris 400
+ok Lyon 217
+ok Brussels 400
+ok Luxembourg 400
+retry Berlin 0 <HTTPError 504: 'Gateway Time-out'>
+ok Berlin 400
+ok Munich 400
+ok Hamburg 400
+ok Vienna 400
+retry Zurich 0 <HTTPError 504: 'Gateway Timeout'>
+2026-10-01T00:38:13-07:00 fetch stopped by request (user leaving); 24 of 64 cities saved in raw/; rerun 'python3 build_osm.py fetch' to resume (existing cities are skipped)
+2026-10-01T01:11:19-07:00 fetch resumed
+ok Zurich 400
+ok Amsterdam 400
+ok Rotterdam 400
+ok Copenhagen 400
+ok Stockholm 400
+ok Oslo 400
+ok Helsinki 400
+retry Warsaw 0 <HTTPError 504: 'Gateway Time-out'>
+ok Warsaw 400
+ok Krakow 400
+retry Prague 0 <HTTPError 504: 'Gateway Timeout'>
+ok Prague 400
+retry Bratislava 0 <HTTPError 504: 'Gateway Time-out'>
+retry Bratislava 1 <HTTPError 504: 'Gateway Timeout'>
+retry Bratislava 2 <HTTPError 504: 'Gateway Timeout'>
+ok Bratislava 400
+ok Budapest 400
+ok Ljubljana 400
+retry Zagreb 0 <HTTPError 504: 'Gateway Time-out'>
+retry Zagreb 1 <HTTPError 504: 'Gateway Timeout'>
+retry Zagreb 2 <HTTPError 504: 'Gateway Time-out'>
+ok Zagreb 400
+retry Rome 0 <HTTPError 504: 'Gateway Time-out'>
+retry Rome 1 <HTTPError 504: 'Gateway Timeout'>
+retry Rome 2 <HTTPError 504: 'Gateway Timeout'>
+retry Rome 3 <HTTPError 504: 'Gateway Timeout'>
+retry Milan 0 <HTTPError 504: 'Gateway Timeout'>
+retry Milan 1 <HTTPError 504: 'Gateway Timeout'>
+retry Milan 2 <HTTPError 504: 'Gateway Timeout'>
+ok Milan 400
+ok Madrid 400
+retry Barcelona 0 <HTTPError 504: 'Gateway Timeout'>
+ok Barcelona 400
+retry Lisbon 0 <HTTPError 504: 'Gateway Time-out'>
+ok Lisbon 400
+ok Athens 400
+ok Bucharest 400
+retry Sofia 0 <HTTPError 504: 'Gateway Time-out'>
+retry Sofia 1 <HTTPError 504: 'Gateway Timeout'>
+ok Sofia 400
+retry Istanbul 0 <HTTPError 504: 'Gateway Time-out'>
+retry Istanbul 1 <HTTPError 504: 'Gateway Timeout'>
+ok Istanbul 337
+retry Kyiv 0 <HTTPError 504: 'Gateway Timeout'>
+ok Kyiv 400
+ok Moscow 400
+retry Vilnius 0 <HTTPError 504: 'Gateway Timeout'>
+ok Vilnius 400
+retry Riga 0 <HTTPError 504: 'Gateway Time-out'>
+ok Riga 400
+ok Tallinn 400
+ok Sao Paulo 400
+ok Buenos Aires 400
+ok Mexico City 400
+retry Santiago 0 <HTTPError 504: 'Gateway Time-out'>
+retry Santiago 1 <HTTPError 504: 'Gateway Timeout'>
+ok Santiago 400
+retry Bogota 0 <HTTPError 504: 'Gateway Timeout'>
+retry Bogota 1 <HTTPError 504: 'Gateway Timeout'>
+retry Bogota 2 <HTTPError 504: 'Gateway Time-out'>
+ok Bogota 28
+retry Tokyo 0 <HTTPError 504: 'Gateway Time-out'>
+retry Tokyo 1 <HTTPError 504: 'Gateway Timeout'>
+ok Tokyo 0
+ok Osaka 6
+retry Taipei 0 <HTTPError 504: 'Gateway Timeout'>
+retry Taipei 1 <HTTPError 504: 'Gateway Timeout'>
+ok Taipei 400
+ok Seoul 400
+ok Beijing 31
+ok Tel Aviv 400
+ok Dubai 33

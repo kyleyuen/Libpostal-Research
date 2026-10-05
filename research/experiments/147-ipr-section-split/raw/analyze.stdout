@@ -1,0 +1,45 @@
+dev
+   total_parse        fss 6.410/2.637  ifs 6.133/2.657  delta -0.277/+0.021
+   context_fill       fss 2.059/0.391  ifs 1.923/0.390  delta -0.136/-0.001
+   features           fss 1.658/0.806  ifs 1.636/0.845  delta -0.022/+0.038
+   lookups            fss 0.761/0.201  ifs 0.673/0.188  delta -0.088/-0.013
+   accumulate         fss 0.885/0.475  ifs 0.865/0.474  delta -0.020/-0.001
+   fs_setup           fss 0.057/0.049  ifs 0.058/0.050  delta +0.002/+0.001
+   fs_address_dict    fss 0.082/0.052  ifs 0.080/0.053  delta -0.002/+0.001
+   fs_component       fss 0.400/0.071  ifs 0.360/0.070  delta -0.040/-0.002
+   fs_postcode        fss 0.204/0.092  ifs 0.199/0.093  delta -0.005/+0.001
+   fs_word            fss 0.177/0.131  ifs 0.176/0.132  delta -0.001/+0.001
+   fs_trans_word      fss 0.060/0.051  ifs 0.060/0.052  delta +0.000/+0.001
+   fs_prev_word       fss 0.186/0.120  ifs 0.215/0.145  delta +0.029/+0.025
+   fs_next_word       fss 0.448/0.197  ifs 0.446/0.209  delta -0.002/+0.012
+   viterbi_and_rest   fss 0.491/0.440  ifs 0.490/0.442  delta -0.001/+0.002
+osm
+   total_parse        fss 4.338/2.284  ifs 3.906/2.292  delta -0.432/+0.008
+   context_fill       fss 1.255/0.349  ifs 1.048/0.350  delta -0.207/+0.002
+   features           fss 1.055/0.670  ifs 0.988/0.693  delta -0.067/+0.023
+   lookups            fss 0.491/0.162  ifs 0.384/0.148  delta -0.107/-0.014
+   accumulate         fss 0.659/0.439  ifs 0.615/0.436  delta -0.044/-0.003
+   fs_setup           fss 0.051/0.045  ifs 0.051/0.046  delta +0.000/+0.002
+   fs_address_dict    fss 0.065/0.046  ifs 0.059/0.046  delta -0.006/+0.001
+   fs_component       fss 0.167/0.062  ifs 0.124/0.061  delta -0.042/-0.001
+   fs_postcode        fss 0.117/0.068  ifs 0.111/0.068  delta -0.007/+0.000
+   fs_word            fss 0.122/0.089  ifs 0.115/0.089  delta -0.008/+0.000
+   fs_trans_word      fss 0.051/0.046  ifs 0.051/0.046  delta -0.001/+0.000
+   fs_prev_word       fss 0.145/0.105  ifs 0.160/0.123  delta +0.015/+0.018
+   fs_next_word       fss 0.298/0.170  ifs 0.278/0.175  delta -0.020/+0.005
+   viterbi_and_rest   fss 0.428/0.392  ifs 0.429/0.392  delta +0.001/+0.001
+u11
+   total_parse        fss 3.765/2.314  ifs 3.633/2.333  delta -0.132/+0.019
+   context_fill       fss 0.964/0.342  ifs 0.905/0.346  delta -0.058/+0.004
+   features           fss 0.978/0.697  ifs 0.968/0.718  delta -0.010/+0.021
+   lookups            fss 0.416/0.168  ifs 0.366/0.157  delta -0.050/-0.011
+   accumulate         fss 0.592/0.419  ifs 0.579/0.419  delta -0.013/+0.000
+   fs_setup           fss 0.048/0.044  ifs 0.049/0.045  delta +0.001/+0.001
+   fs_address_dict    fss 0.060/0.047  ifs 0.060/0.048  delta -0.001/+0.001
+   fs_component       fss 0.131/0.059  ifs 0.112/0.059  delta -0.019/-0.001
+   fs_postcode        fss 0.122/0.081  ifs 0.119/0.081  delta -0.003/+0.000
+   fs_word            fss 0.137/0.112  ifs 0.137/0.113  delta +0.000/+0.002
+   fs_trans_word      fss 0.050/0.045  ifs 0.049/0.045  delta -0.001/-0.001
+   fs_prev_word       fss 0.134/0.105  ifs 0.148/0.119  delta +0.014/+0.013
+   fs_next_word       fss 0.257/0.165  ifs 0.255/0.171  delta -0.002/+0.006
+   viterbi_and_rest   fss 0.415/0.384  ifs 0.416/0.385  delta +0.001/+0.001

@@ -1,0 +1,347 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.12.67-linuxkit - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/clang 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /out/mimalloc-build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4ArCc4"
+      binary: "/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4ArCc4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4ArCc4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8ca11/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8ca11.dir/build.make CMakeFiles/cmTC_8ca11.dir/build
+        gmake[1]: Entering directory '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4ArCc4'
+        Building C object CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o
+        /usr/bin/clang   -v -MD -MT CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: aarch64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-abi aapcs -debugger-tuning=gdb -fdebug-compilation-dir=/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4ArCc4 -v -fcoverage-compilation-dir=/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4ArCc4 -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include -internal-externc-isystem /usr/include/aarch64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target aarch64-unknown-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-18/lib/clang/18/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_8ca11
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ca11.dir/link.txt --verbose=1
+        /usr/bin/clang  -v CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o -o cmTC_8ca11 
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: aarch64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_8ca11 /lib/aarch64-linux-gnu/Scrt1.o /lib/aarch64-linux-gnu/crti.o /usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/aarch64-linux-gnu/13 -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/lib -L/usr/lib CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o /lib/aarch64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4ArCc4'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/llvm-18/lib/clang/18/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/llvm-18/lib/clang/18/include] ==> [/usr/lib/llvm-18/lib/clang/18/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/llvm-18/lib/clang/18/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4ArCc4']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8ca11/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8ca11.dir/build.make CMakeFiles/cmTC_8ca11.dir/build]
+        ignore line: [gmake[1]: Entering directory '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4ArCc4']
+        ignore line: [Building C object CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/clang   -v -MD -MT CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: aarch64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-abi aapcs -debugger-tuning=gdb -fdebug-compilation-dir=/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4ArCc4 -v -fcoverage-compilation-dir=/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4ArCc4 -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include -internal-externc-isystem /usr/include/aarch64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target aarch64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-18/lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_8ca11]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ca11.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang  -v CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o -o cmTC_8ca11 ]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: aarch64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_8ca11 /lib/aarch64-linux-gnu/Scrt1.o /lib/aarch64-linux-gnu/crti.o /usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/aarch64-linux-gnu/13 -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/lib -L/usr/lib CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o /lib/aarch64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [aarch64linux] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8ca11] ==> ignore
+          arg [/lib/aarch64-linux-gnu/Scrt1.o] ==> obj [/lib/aarch64-linux-gnu/Scrt1.o]
+          arg [/lib/aarch64-linux-gnu/crti.o] ==> obj [/lib/aarch64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/aarch64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_8ca11.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o] ==> obj [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o]
+          arg [/lib/aarch64-linux-gnu/crtn.o] ==> obj [/lib/aarch64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o] ==> [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o] ==> [/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/aarch64-linux-gnu/13] ==> [/usr/lib/gcc/aarch64-linux-gnu/13]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/aarch64-linux-gnu/Scrt1.o;/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o;/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/13;/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:732 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file execinfo.h"
+    directories:
+      source: "/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-xWaCog"
+      binary: "/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-xWaCog"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MI_HAS_EXECINFOH"
+      cached: true
+      stdout: |
+        Change Dir: '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-xWaCog'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b3af2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b3af2.dir/build.make CMakeFiles/cmTC_b3af2.dir/build
+        gmake[1]: Entering directory '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-xWaCog'
+        Building C object CMakeFiles/cmTC_b3af2.dir/MI_HAS_EXECINFOH.c.o
+        /usr/bin/clang   -std=gnu11 -MD -MT CMakeFiles/cmTC_b3af2.dir/MI_HAS_EXECINFOH.c.o -MF CMakeFiles/cmTC_b3af2.dir/MI_HAS_EXECINFOH.c.o.d -o CMakeFiles/cmTC_b3af2.dir/MI_HAS_EXECINFOH.c.o -c /out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-xWaCog/MI_HAS_EXECINFOH.c
+        Linking C executable cmTC_b3af2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3af2.dir/link.txt --verbose=1
+        /usr/bin/clang CMakeFiles/cmTC_b3af2.dir/MI_HAS_EXECINFOH.c.o -o cmTC_b3af2 
+        gmake[1]: Leaving directory '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-xWaCog'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckLinkerFlag.cmake:37 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - "CMakeLists.txt:865 (check_linker_flag)"
+      - "CMakeLists.txt:884 (find_link_library)"
+    checks:
+      - "Performing Test mi_has_libpthread"
+    directories:
+      source: "/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4CHS80"
+      binary: "/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4CHS80"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "mi_has_libpthread"
+      cached: true
+      stdout: |
+        Change Dir: '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4CHS80'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fb064/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fb064.dir/build.make CMakeFiles/cmTC_fb064.dir/build
+        gmake[1]: Entering directory '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4CHS80'
+        Building C object CMakeFiles/cmTC_fb064.dir/src.c.o
+        /usr/bin/clang -Dmi_has_libpthread  -std=gnu11 -MD -MT CMakeFiles/cmTC_fb064.dir/src.c.o -MF CMakeFiles/cmTC_fb064.dir/src.c.o.d -o CMakeFiles/cmTC_fb064.dir/src.c.o -c /out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4CHS80/src.c
+        Linking C executable cmTC_fb064
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb064.dir/link.txt --verbose=1
+        /usr/bin/clang -lpthread CMakeFiles/cmTC_fb064.dir/src.c.o -o cmTC_fb064 
+        gmake[1]: Leaving directory '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-4CHS80'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckLinkerFlag.cmake:37 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - "CMakeLists.txt:865 (check_linker_flag)"
+      - "CMakeLists.txt:888 (find_link_library)"
+    checks:
+      - "Performing Test mi_has_librt"
+    directories:
+      source: "/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-yFpNKo"
+      binary: "/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-yFpNKo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "mi_has_librt"
+      cached: true
+      stdout: |
+        Change Dir: '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-yFpNKo'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b7522/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b7522.dir/build.make CMakeFiles/cmTC_b7522.dir/build
+        gmake[1]: Entering directory '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-yFpNKo'
+        Building C object CMakeFiles/cmTC_b7522.dir/src.c.o
+        /usr/bin/clang -Dmi_has_librt  -std=gnu11 -MD -MT CMakeFiles/cmTC_b7522.dir/src.c.o -MF CMakeFiles/cmTC_b7522.dir/src.c.o.d -o CMakeFiles/cmTC_b7522.dir/src.c.o -c /out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-yFpNKo/src.c
+        Linking C executable cmTC_b7522
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7522.dir/link.txt --verbose=1
+        /usr/bin/clang -lrt CMakeFiles/cmTC_b7522.dir/src.c.o -o cmTC_b7522 
+        gmake[1]: Leaving directory '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-yFpNKo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckLinkerFlag.cmake:37 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - "CMakeLists.txt:865 (check_linker_flag)"
+      - "CMakeLists.txt:892 (find_link_library)"
+    checks:
+      - "Performing Test mi_has_libatomic"
+    directories:
+      source: "/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-f9EHTL"
+      binary: "/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-f9EHTL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "mi_has_libatomic"
+      cached: true
+      stdout: |
+        Change Dir: '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-f9EHTL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e3e81/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e3e81.dir/build.make CMakeFiles/cmTC_e3e81.dir/build
+        gmake[1]: Entering directory '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-f9EHTL'
+        Building C object CMakeFiles/cmTC_e3e81.dir/src.c.o
+        /usr/bin/clang -Dmi_has_libatomic  -std=gnu11 -MD -MT CMakeFiles/cmTC_e3e81.dir/src.c.o -MF CMakeFiles/cmTC_e3e81.dir/src.c.o.d -o CMakeFiles/cmTC_e3e81.dir/src.c.o -c /out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-f9EHTL/src.c
+        Linking C executable cmTC_e3e81
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3e81.dir/link.txt --verbose=1
+        /usr/bin/clang -latomic CMakeFiles/cmTC_e3e81.dir/src.c.o -o cmTC_e3e81 
+        gmake[1]: Leaving directory '/out/mimalloc-build/CMakeFiles/CMakeScratch/TryCompile-f9EHTL'
+        
+      exitCode: 0
+...

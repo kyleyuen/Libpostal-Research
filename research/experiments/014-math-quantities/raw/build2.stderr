@@ -1,0 +1,89 @@
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/014-math-quantities/tools/trace.c:163:62: error: too many arguments provided to function-like macro invocation
+  163 |                 size_t fl2 = strlen(feat); uint32_t tid = 0, did = 0;
+      |                                                              ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_utils.h:247:9: note: macro 'cstring_array_foreach' defined here
+  247 | #define cstring_array_foreach(array, i, s, code) {                                      \
+      |         ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/014-math-quantities/tools/trace.c:162:13: note: cannot use initializer list at the beginning of a macro argument
+  162 |             cstring_array_foreach(context->features, fi, feat, {
+      |             ^                                                  ~
+  163 |                 size_t fl2 = strlen(feat); uint32_t tid = 0, did = 0;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  164 |                 bool th = trie_get_data(crf->state_features, feat, &tid), dh = probe(sd, feat, fl2, &did);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  165 |                 if (th != dh || (th && tid != did)) id_mism++;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  166 |                 if (dh) { touch_row(crf->weights, did); hS++; }
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  167 |                 nstat_t *s = nstat('S', feat, fl2); int c = classify(feat, fl2); s->n++; s->cls[c]++; if (th) { s->hit++; s->cls_hit[c]++; }
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  168 |                 if (bias_pos < 0 && !strcmp(feat, "bias")) bias_pos = k;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  169 |                 if (k == 0) firstS = feat;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+  170 |                 if (!strncmp(feat, "prefix|", 7)) pre = true;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  171 |                 if (!strncmp(feat, "suffix|", 7)) suf = true;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  172 |                 fprintf(ff, "S\t%zu\t%zu\t%s\n", a, t, feat); k++; nS++; nlook++;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  173 |             })
+      |             ~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/014-math-quantities/tools/trace.c:162:13: error: use of undeclared identifier 'cstring_array_foreach'; did you mean 'cstring_array_clear'?
+  162 |             cstring_array_foreach(context->features, fi, feat, {
+      |             ^~~~~~~~~~~~~~~~~~~~~
+      |             cstring_array_clear
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_utils.h:212:6: note: 'cstring_array_clear' declared here
+  212 | void cstring_array_clear(cstring_array *self);
+      |      ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/014-math-quantities/tools/trace.c:162:34: error: expected ';' after expression
+  162 |             cstring_array_foreach(context->features, fi, feat, {
+      |                                  ^
+      |                                  ;
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/014-math-quantities/tools/trace.c:176:62: error: too many arguments provided to function-like macro invocation
+  176 |                 size_t fl2 = strlen(feat); uint32_t tid = 0, did = 0;
+      |                                                              ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_utils.h:247:9: note: macro 'cstring_array_foreach' defined here
+  247 | #define cstring_array_foreach(array, i, s, code) {                                      \
+      |         ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/014-math-quantities/tools/trace.c:175:13: note: cannot use initializer list at the beginning of a macro argument
+  175 |             cstring_array_foreach(context->prev_tag_features, fi, feat, {
+      |             ^                                                           ~
+  176 |                 size_t fl2 = strlen(feat); uint32_t tid = 0, did = 0;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  177 |                 bool th = trie_get_data(crf->state_trans_features, feat, &tid), dh = probe(td, feat, fl2, &did);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  178 |                 if (th != dh || (th && tid != did)) id_mism++;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  179 |                 if (dh) { touch_row(crf->state_trans_weights, did); hP++; }
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  180 |                 nstat_t *s = nstat('P', feat, fl2); int c = classify(feat, fl2); s->n++; s->cls[c]++; if (th) { s->hit++; s->cls_hit[c]++; }
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  181 |                 fprintf(ff, "P\t%zu\t%zu\t%s\n", a, t, feat); kP++; nP++; nlook++;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  182 |             })
+      |             ~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/014-math-quantities/tools/trace.c:175:13: error: use of undeclared identifier 'cstring_array_foreach'; did you mean 'cstring_array_clear'?
+  175 |             cstring_array_foreach(context->prev_tag_features, fi, feat, {
+      |             ^~~~~~~~~~~~~~~~~~~~~
+      |             cstring_array_clear
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_utils.h:212:6: note: 'cstring_array_clear' declared here
+  212 | void cstring_array_clear(cstring_array *self);
+      |      ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/014-math-quantities/tools/trace.c:175:34: error: expected ';' after expression
+  175 |             cstring_array_foreach(context->prev_tag_features, fi, feat, {
+      |                                  ^
+      |                                  ;
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/014-math-quantities/tools/trace.c:162:13: warning: expression result unused [-Wunused-value]
+  162 |             cstring_array_foreach(context->features, fi, feat, {
+      |             ^~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/014-math-quantities/tools/trace.c:175:13: warning: expression result unused [-Wunused-value]
+  175 |             cstring_array_foreach(context->prev_tag_features, fi, feat, {
+      |             ^~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/014-math-quantities/tools/trace.c:229:57: error: use of undeclared identifier 'UNKNOWN_WORD'
+  229 |     uint32_t c1 = 0, c2 = 0; bool u1 = trie_get_data(V, UNKNOWN_WORD, &c1), u2 = trie_get_data(V, UNKNOWN_NUMERIC, &c2);
+      |                                                         ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/014-math-quantities/tools/trace.c:229:99: error: use of undeclared identifier 'UNKNOWN_NUMERIC'
+  229 |     uint32_t c1 = 0, c2 = 0; bool u1 = trie_get_data(V, UNKNOWN_WORD, &c1), u2 = trie_get_data(V, UNKNOWN_NUMERIC, &c2);
+      |                                                                                                   ^
+2 warnings and 8 errors generated.

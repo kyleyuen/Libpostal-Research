@@ -1,0 +1,9 @@
+switch: 9.63 ns per switch (20000000 round trips)
+loop chase      k=1: 116.35 ns per access [0]
+loop chase      k=2: 57.92 ns per access [0]
+loop chase      k=4: 28.69 ns per access [0]
+loop chase      k=8: 14.20 ns per access [0]
+coroutine chase k=1: 116.93 ns per access
+coroutine chase k=2: 58.43 ns per access
+coroutine chase k=4: 29.63 ns per access
+coroutine chase k=8: 15.58 ns per access

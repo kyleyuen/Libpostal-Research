@@ -1,0 +1,8 @@
+pdv_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 7s
+pdv: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 6s
+pdt_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 8s
+pdt: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 7s
+pss_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 8s
+pss: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 6s
+dss_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 8s
+dss: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 6s

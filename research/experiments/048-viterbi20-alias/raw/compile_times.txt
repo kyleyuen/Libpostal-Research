@@ -1,0 +1,6 @@
+al_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 9s
+v20_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 9s
+va_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 9s
+al: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 7s
+va: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 8s
+v20: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 8s

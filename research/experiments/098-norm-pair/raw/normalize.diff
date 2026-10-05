@@ -1,0 +1,60 @@
+--- ../091-viterbi-maxonly/sources/normalize.c	2026-10-03 10:07:03
++++ sources/normalize.c	2026-10-03 21:49:38
+@@ -544,6 +544,57 @@
+ 
+ }
+ 
++#ifdef EXP_NORM_PAIR
++// Experiment 098: add_normalized_token for the address parser's two option sets in one scan. std = DELETE_FINAL_PERIOD | DELETE_ACRONYM_PERIODS | REPLACE_DIGITS,
++// admin = std without REPLACE_DIGITS. With these options the hyphen, split, possessive and apostrophe branches of add_normalized_token cannot fire and the
++// next-character lookahead is unused, so per character only four things can happen: a number goes to std as DIGIT_CHAR and to admin unchanged; a final full
++// stop ends both; a full stop in an ACRONYM token is dropped from both; anything else is appended to both. The iterate call (full len) and the char_len <= 0
++// stop are kept as in the original. Differential test: tools/norm_pair_test.c.
++void add_normalized_token_pair(char_array *std, char_array *adm, char *str, token_t token) {
++#ifdef EXP_TOKEN_ASCII
++    if (!nt_ready) nt_tables();
++#endif
++    uint8_t *ptr = (uint8_t *)str + token.offset;
++    size_t len = token.len;
++    if (len > 0) {
++        size_t q = 0; bool letters = true, digits = true;
++        for (; q < len; q++) {
++            uint8_t c = ptr[q];
++            bool l = (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'), d = c >= '0' && c <= '9';
++            letters = letters && l; digits = digits && d;
++            if (!letters && !digits) break;
++        }
++        if (q == len) {
++            if (letters) char_array_append_len(std, (char *)ptr, len);
++            else for (size_t k = 0; k < len; k++) char_array_append(std, DIGIT_CHAR);
++            char_array_append_len(adm, (char *)ptr, len);
++            char_array_terminate(std); char_array_terminate(adm);
++            return;
++        }
++    }
++    size_t idx = 0;
++    int32_t ch;
++    ssize_t char_len;
++    while (idx < len) {
++        char_len = NT_ITER(ptr, len, &ch);
++        if (char_len <= 0) break;
++        if (utf8_is_number(NT_CAT(ch))) {
++            char_array_append(std, DIGIT_CHAR);
++            char_array_append_len(adm, (char *)ptr, char_len);
++        } else if (ch == FULL_STOP_CODEPOINT) {
++            if (idx == len - 1) break;
++            if (token.type != ACRONYM) { char_array_append_len(std, (char *)ptr, char_len); char_array_append_len(adm, (char *)ptr, char_len); }
++        } else {
++            char_array_append_len(std, (char *)ptr, char_len);
++            char_array_append_len(adm, (char *)ptr, char_len);
++        }
++        ptr += char_len;
++        idx += char_len;
++    }
++    char_array_terminate(std); char_array_terminate(adm);
++}
++#endif
++
+ inline void normalize_token(cstring_array *array, char *str, token_t token, uint64_t options) {
+     cstring_array_start_token(array);
+     add_normalized_token(array->str, str, token, options);

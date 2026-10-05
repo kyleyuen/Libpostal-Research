@@ -1,0 +1,4860 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-04T10:39:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 255436415,
+  "tags": {
+    "access:covid19": "yes",
+    "addr:city": "Joensuu",
+    "addr:housenumber": "7",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu",
+    "amenity": "pharmacy",
+    "check_date:opening_hours": "2024-05-30",
+    "dispensing": "yes",
+    "drive_through": "no",
+    "healthcare": "pharmacy",
+    "level": "0",
+    "name": "Yliopiston apteekki",
+    "name:en": "Yliopiston apteekki",
+    "opening_hours": "Mo-Sa 08:00-22:00; Su 10:00-20:00",
+    "operator": "Helsingin yliopisto",
+    "operator:wikidata": "Q28695",
+    "phone": "+358 300 20200",
+    "website": "https://www.yliopistonapteekki.fi/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 255443994,
+  "tags": {
+    "access:covid19": "yes",
+    "addr:city": "Joensuu",
+    "addr:housenumber": "1",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu",
+    "amenity": "restaurant",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "level": "2",
+    "name": "Kerubi",
+    "opening_hours": "Mo 11:00-14:00; Tu-Th 11:00-23:00; Fr 11:00-04:30; Sa 12:00-04:30; Su off",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+358 13 129377",
+    "takeaway:covid19": "yes",
+    "url": "http://www.kerubi.fi/",
+    "website": "https://www.kerubi.fi/",
+    "wikidata": "Q24368369",
+    "wikipedia": "fi:Ilosaari#Karjalantalo"
+  }
+},
+{
+  "type": "node",
+  "id": 255444037,
+  "tags": {
+    "access:covid19": "no",
+    "addr:city": "Joensuu",
+    "addr:housenumber": "32",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu",
+    "amenity": "restaurant",
+    "delivery:covid19": "yes",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "name": "Ravintola Kreeta",
+    "opening_hours": "Mo,Tu 11:00-21:00; We,Th 11:00-22:00; Fr 11:00-23:00; Sa 12:00-23:00; Su 12:00-21:00",
+    "opening_hours:covid19": "Mo-Fr 10:30-18:00; Sa 12:00-20:00; Su 12:00-18:00",
+    "takeaway:covid19": "yes",
+    "website": "https://www.ravintolakreeta.fi/"
+  }
+},
+{
+  "type": "node",
+  "id": 256071142,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "12",
+    "addr:postcode": "80100",
+    "addr:street": "Itäranta",
+    "alt_name": "Joensuun rautatieasema",
+    "name": "Joensuu",
+    "name:fi": "Joensuu",
+    "name:ru": "Йоэнсуу",
+    "network": "VR",
+    "network:wikidata": "Q913248",
+    "note": "Joensuun liikennepaikan osa",
+    "operator": "Väylävirasto",
+    "operator:wikidata": "Q3360446",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:name": "Joensuu asema",
+    "railway:position:exact": "624.313",
+    "railway:ref": "Jns",
+    "start_date": "1894-11-01",
+    "survey:date": "2024-08-23",
+    "train": "yes",
+    "uic_ref": "1000460",
+    "website": "https://www.vr.fi/rautatieasemat-ja-reitit/joensuu",
+    "wheelchair": "limited",
+    "wikidata": "Q6214189",
+    "wikipedia": "fi:Joensuun rautatieasema"
+  }
+},
+{
+  "type": "node",
+  "id": 256073911,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "15",
+    "addr:postcode": "80100",
+    "addr:street": "Suvantokatu",
+    "amenity": "fuel",
+    "brand": "Neste",
+    "brand:wikidata": "Q616376",
+    "brand:wikipedia": "en:Neste",
+    "name": "Neste Express",
+    "opening_hours": "24/7"
+  }
+},
+{
+  "type": "node",
+  "id": 256080035,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "27",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "amenity": "cinema",
+    "name": "Tapio",
+    "opening_hours": "\"differs by week\"",
+    "screen": "4",
+    "wheelchair": "yes",
+    "wikidata": "Q11871613",
+    "wikipedia": "fi:Kino Tapio"
+  }
+},
+{
+  "type": "node",
+  "id": 260108999,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "8",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu",
+    "amenity": "restaurant",
+    "brand": "Rosso",
+    "check_date:opening_hours": "2024-04-25",
+    "cuisine": "italian",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Rosso",
+    "opening_hours": "Mo-Th 11:00-22:00; Fr,Sa 11:00-23:00; Su 12:00-21:00",
+    "outdoor_seating": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 260109001,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "amenity": "nightclub",
+    "name": "Viihdemaailma Ilona",
+    "opening_hours": "We 23:00-05:00; Fr,Sa 22:00-05:00",
+    "website": "https://www.ravintola.fi/ravintola/viihdemaailma-ilona-joensuu/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 260241914,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "1",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu",
+    "amenity": "cafe",
+    "check_date:opening_hours": "2026-07-31",
+    "cuisine": "carelian",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "name": "Kauppaneuvoksen kahvila",
+    "opening_hours": "Mo-Fr 10:00-17:00; Sa 10:00-16:00"
+  }
+},
+{
+  "type": "node",
+  "id": 260251156,
+  "tags": {
+    "access:covid19": "yes",
+    "addr:city": "Joensuu",
+    "addr:housenumber": "16",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "branch": "Keskusta",
+    "brand": "K-Citymarket",
+    "brand:wikidata": "Q11868561",
+    "brand:wikipedia": "fi:K-Citymarket",
+    "check_date:opening_hours": "2026-06-19",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "name": "K-Citymarket",
+    "opening_hours": "Mo-Sa 08:00-23:00; Su 11:00-23:00",
+    "phone": "+358 10 5384500",
+    "shop": "supermarket",
+    "takeaway:covid19": "yes",
+    "website": "https://www.k-ruoka.fi/kauppa/k-citymarket-joensuu-keskusta/aukioloajat",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 260252193,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "18",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu",
+    "amenity": "restaurant",
+    "brand": "Pizza Express",
+    "check_date:opening_hours": "2024-04-29",
+    "cuisine": "pizza",
+    "delivery:covid19": "yes",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "name": "Pizza Express & Cafe",
+    "opening_hours": "Mo,Tu 11:00-21:00; We-Sa 11:00-22:00; Su 12:00-20:00",
+    "phone": "+358 13 223 551",
+    "takeaway:covid19": "yes",
+    "website": "https://www.pizzaexpresscafe.fi/"
+  }
+},
+{
+  "type": "node",
+  "id": 260421027,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "27",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "addr:unit": "B",
+    "amenity": "bank",
+    "drive_through": "no",
+    "name": "Säästöpankki Optia",
+    "opening_hours": "Mo-Th 08:00-19:30; Fr 10:00-16:00",
+    "operator": "Säästöpankki",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 260422279,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu",
+    "addr:unit": "A",
+    "amenity": "clinic",
+    "contact:facebook": "https://www.facebook.com/PihlajalinnaJoensuu/",
+    "fee": "yes",
+    "healthcare": "clinic",
+    "level": "1",
+    "name": "Pihlajalinna Ite Joensuu",
+    "opening_hours": "Mo-Th 07:30-18:30; Fr 07:30-18:00; Sa 08:00-14:00",
+    "operator": "Pihlajalinna",
+    "operator:type": "private",
+    "operator:wikidata": "Q18689068",
+    "website": "https://www.pihlajalinna.fi/toimipisteet/pihlajalinna-ite-joensuu-torikatu-25",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 260423043,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "24",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu",
+    "disused:shop": "pastry"
+  }
+},
+{
+  "type": "node",
+  "id": 260423155,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "20",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu",
+    "amenity": "cafe",
+    "brand": "Coffee House",
+    "brand:wikidata": "Q11855430",
+    "brand:wikipedia": "fi:Coffee House",
+    "check_date:opening_hours": "2023-04-21",
+    "cuisine": "coffee_shop",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "name": "Coffee House",
+    "opening_hours": "Mo-Fr 07:30-21:00; Sa 09:00-21:00; Su 10:00-19:00",
+    "outdoor_seating": "yes",
+    "takeaway": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 260423989,
+  "tags": {
+    "access:covid19": "yes",
+    "addr:city": "Joensuu",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu",
+    "amenity": "cafe",
+    "cuisine": "donut",
+    "delivery:covid19": "yes",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "level": "0",
+    "name": "Arnolds Bakery & Coffee",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 10:00-18:00; Su 12:00-16:00",
+    "takeaway": "yes",
+    "takeaway:covid19": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 260423993,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "27",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "amenity": "cafe",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "email": "info@trattoriaotto.fi",
+    "name": "Otto Trattoria & Caffé",
+    "opening_hours": "Tu-Th 11:00-21:00; Fr 11:00-22:00; Sa 14:00-22:00",
+    "phone": "+358 50 514 0899",
+    "website": "http://www.trattoriaotto.fi/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 292820594,
+  "tags": {
+    "access:covid19": "yes",
+    "addr:city": "Joensuu",
+    "addr:housenumber": "8",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu",
+    "amenity": "fast_food",
+    "brand": "Hesburger",
+    "brand:wikidata": "Q1276832",
+    "brand:wikipedia": "en:Hesburger",
+    "cuisine": "burger",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "level": "0",
+    "name": "Hesburger",
+    "opening_hours": "Mo-Sa 11:00-20:00; Su 12:00-18:00",
+    "operator": "Pohjois-Karjalan Osuuskauppa",
+    "phone": "+358107623370",
+    "ref:vatin": "FI01681709",
+    "source": "Hesburger import",
+    "start_date": "2008-08-29",
+    "takeaway": "yes",
+    "takeaway:covid19": "yes",
+    "website": "https://www.hesburger.fi/ravintolat?tid=286",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 603766806,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "1",
+    "addr:postcode": "80220",
+    "addr:street": "Vallilanaukio"
+  }
+},
+{
+  "type": "node",
+  "id": 625977821,
+  "tags": {
+    "access:covid19": "yes",
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "11",
+    "addr:postcode": "80220",
+    "addr:street": "Jokikatu",
+    "branch": "Aittaranta",
+    "brand": "K-Market",
+    "brand:wikidata": "Q11868562",
+    "brand:wikipedia": "fi:K-Market",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "name": "K-Market",
+    "opening_hours": "Mo-Fr 07:00-21:00; Sa 08:00-21:00; Su 10:00-21:00",
+    "phone": "+358 40 0159835",
+    "shop": "convenience",
+    "website": "https://www.k-ruoka.fi/kauppa/k-market-aittaranta",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 630932332,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "6",
+    "addr:postcode": "80100",
+    "addr:street": "Jokikatu",
+    "amenity": "recycling",
+    "location": "overground",
+    "name": "Uusiotori",
+    "note": "Recycling_center",
+    "opening_hours": "Mo-Fr 07:00-18:00; Sa 07:00-15:00",
+    "operator": "Aktiiviset työtähakevat Ry",
+    "phone": "+358 13 220604",
+    "recycling:clothes": "yes",
+    "recycling:shoes": "yes",
+    "recycling:white_goods": "yes",
+    "recycling_type": "container",
+    "url": "http://www.kaytanto.fi/penkierk.htm",
+    "waste": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 643341299,
+  "tags": {
+    "access:covid19": "yes",
+    "addr:city": "Joensuu",
+    "addr:housenumber": "44",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "amenity": "restaurant",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "name": "Usva Kauppakatu",
+    "opening_hours": "Mo-Fr 08:00-15:00",
+    "takeaway:covid19": "yes",
+    "website": "https://www.ravintolausva.fi/"
+  }
+},
+{
+  "type": "node",
+  "id": 667777788,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "28",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu",
+    "name": "Joensuun pyörähuolto",
+    "opening_hours": "Mo-Fr 09:00-17:00",
+    "phone": "+358 13 129490;+358 456 328377",
+    "shop": "bicycle",
+    "source": "http://www.polkupyoraily.net/wiki/Joensuun_py%C3%B6r%C3%A4huolto",
+    "website": "https://www.joensuunpyorahuolto.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 673640594,
+  "tags": {
+    "access:covid19": "yes",
+    "addr:city": "Joensuu",
+    "addr:housenumber": "7",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu",
+    "amenity": "restaurant",
+    "cuisine": "chinese",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "level": "0",
+    "name": "Deli China",
+    "opening_hours": "Mo 11:00-14:00; Tu-Fr 11:00-21:00; Sa 12:00-21:00; Su 12:00-19:00",
+    "opening_hours:covid19": "Mo-Fr 11:00-19:00; Sa,Su 12:00-19:00",
+    "phone": "+358 13 120 288",
+    "takeaway:covid19": "yes",
+    "website": "https://www.deli-china.fi"
+  }
+},
+{
+  "type": "node",
+  "id": 764552635,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "2",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu",
+    "amenity": "cafe",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "name": "Kesäravintola Tuulaaki",
+    "outdoor_seating": "yes",
+    "seasonal": "summer",
+    "self_service": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 944896503,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "19",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu",
+    "branch": "Rantakatu Joensuu",
+    "brand": "S-market",
+    "brand:wikidata": "Q11891613",
+    "brand:wikipedia": "fi:S-market",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "level": "0",
+    "name": "S-market",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 09:00-22:00",
+    "phone": "+358 10 7622432",
+    "shop": "supermarket",
+    "website": "https://www.s-kaupat.fi/myymala/s-market-rantakatu-joensuu/590776589"
+  }
+},
+{
+  "type": "node",
+  "id": 1198450487,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "23",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "amenity": "restaurant",
+    "cuisine": "chinese",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "indoor_seating": "yes",
+    "name": "Nana",
+    "opening_hours": "Mo-Th 10:45-22:00; Fr 10:30-23:00; Sa 11:00-23:00; Su 12:15-21:00",
+    "opening_hours:covid19": "off",
+    "outdoor_seating": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1246662167,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "37 B",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu",
+    "check_date": "2023-07-29",
+    "name": "Sportman Ky",
+    "opening_hours": "Mo-Fr 09:00-17:00",
+    "shop": "bicycle",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1418314533,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "1",
+    "addr:postcode": "80100",
+    "addr:street": "Itäranta",
+    "amenity": "restaurant",
+    "cuisine": "french",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Frans & Ellie",
+    "opening_hours:covid19": "off",
+    "phone": "+358 107822021",
+    "website": "https://www.raflaamo.fi/fi/ravintola/joensuu/frans-ellie-joensuu"
+  }
+},
+{
+  "type": "node",
+  "id": 1482186080,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "20",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu",
+    "amenity": "restaurant",
+    "brand": "Amarillo",
+    "brand:wikidata": "Q11851119",
+    "check_date:opening_hours": "2025-09-05",
+    "contact:facebook": "https://www.facebook.com/amarillo.joensuu/",
+    "contact:instagram": "https://www.instagram.com/amarillojoensuu/",
+    "cuisine": "mexican",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "level": "0",
+    "name": "Amarillo",
+    "opening_hours": "Mo-Th 11:00-22:00; Fr 10:45-23:00; Sa 11:00-23:00; Su 12:00-21:00",
+    "opening_hours:url": "https://www.raflaamo.fi/fi/ravintola/joensuu/amarillo-joensuu",
+    "phone": "+358 10 762 3420",
+    "reservation": "yes",
+    "website": "https://www.raflaamo.fi/fi/ravintola/joensuu/amarillo-joensuu",
+    "website:menu": "https://www.raflaamo.fi/fi/ravintola/joensuu/amarillo-joensuu/menu/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1597520575,
+  "tags": {
+    "addr:housename": "Mainostoimisto Jide",
+    "addr:housenumber": "38 B",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "name": "Mainostoimisto Jide",
+    "source": "http://jide.fi"
+  }
+},
+{
+  "type": "node",
+  "id": 1675678437,
+  "tags": {
+    "addr:housenumber": "29",
+    "addr:street": "Torikatu",
+    "disused:shop": "yes",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 2501771614,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "23",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu",
+    "check_date:opening_hours": "2023-04-18",
+    "name": "Pyöräkellari",
+    "opening_hours": "Mo-Fr 09:00-17:00",
+    "shop": "bicycle",
+    "website": "http://pyorakellari.fi/"
+  }
+},
+{
+  "type": "node",
+  "id": 2736203543,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "32",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "amenity": "restaurant",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "level": "0",
+    "name": "Local Bistro",
+    "opening_hours:covid19": "off",
+    "website": "https://www.localbistro.fi/"
+  }
+},
+{
+  "type": "node",
+  "id": 2736203546,
+  "tags": {
+    "addr:housenumber": "28",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 2736203547,
+  "tags": {
+    "addr:housenumber": "33",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 2738257959,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "30",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3046125840,
+  "tags": {
+    "access:covid19": "yes",
+    "addr:city": "Joensuu",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "currency:EUR": "yes",
+    "drink:coffee": "served",
+    "drink:tea": "served",
+    "email": "mokkamaa@mokkamaa.fi",
+    "name": "Mokkamaa",
+    "opening_hours": "Mo-Fr 10:00-18:00, Sa 10:00-15:00",
+    "payment:credit_cards": "yes",
+    "phone": "+358 50 562 4132",
+    "ref:vatin": "FI20803361",
+    "shop": "coffee;tea;chocolate",
+    "survey:date": "2022-11-04",
+    "takeaway": "yes",
+    "takeaway:covid19": "yes",
+    "website": "https://mokkamaa.fi",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3643008889,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "28",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "amenity": "restaurant",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "level": "2",
+    "name": "Sulo Iso Myy",
+    "opening_hours:covid19": "off",
+    "phone": "+358 10 5813360",
+    "website": "https://www.ravintolasulo.fi/"
+  }
+},
+{
+  "type": "node",
+  "id": 3643008891,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "22",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "amenity": "pub",
+    "check_date": "2026-08-26",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "60’s Palaver",
+    "opening_hours": "Tu-Th 16:00-01:00, Fr,Sa 15:00-03:00, Mo 17:00-24:00",
+    "outdoor_seating": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3643098979,
+  "tags": {
+    "access:covid19": "yes",
+    "addr:city": "Joensuu",
+    "addr:housenumber": "16",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu",
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "email": "info@ravintolakielo.fi",
+    "name": "Kielo",
+    "opening_hours": "Tu-Sa 16:00-22:00",
+    "phone": "+358 13 227874",
+    "takeaway:covid19": "yes",
+    "website": "https://ravintolakielo.fi/"
+  }
+},
+{
+  "type": "node",
+  "id": 3661557546,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "35",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "amenity": "pub",
+    "check_date:opening_hours": "2023-11-29",
+    "contact:facebook": "https://www.facebook.com/JetSetBarJNS",
+    "email": "info@jetsetbar.fi",
+    "name": "Jet Set Bar",
+    "opening_hours": "Mo-Su 12:00-02:00+",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+358 13 123009",
+    "website": "https://www.jetsetbar.fi/"
+  }
+},
+{
+  "type": "node",
+  "id": 3661561972,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "10",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu",
+    "amenity": "food_court",
+    "level": "0",
+    "name": "Huuva",
+    "opening_hours": "Mo-Th 10:30-20:30; Fr 10:30-22:00; Sa 11:00-22:00; Su 12:00-20:00"
+  }
+},
+{
+  "type": "node",
+  "id": 3681693973,
+  "tags": {
+    "access:covid19": "yes",
+    "addr:city": "Joensuu",
+    "addr:housenumber": "10",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu",
+    "amenity": "pharmacy",
+    "check_date": "2026-08-28",
+    "contact:facebook": "https://www.facebook.com/joensuunuusiapteekki",
+    "drive_through": "no",
+    "healthcare": "pharmacy",
+    "level": "0",
+    "name": "Joensuun Uusi Apteekki",
+    "opening_hours": "Mo-Fr 08:00-19:00; Sa 09:00-17:00",
+    "phone": "+358 10 2313084",
+    "website": "https://joensuunuusiapteekki.fi/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3685150735,
+  "tags": {
+    "addr:housenumber": "31",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3725198566,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "29",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu",
+    "addr:unit": "A",
+    "check_date:opening_hours": "2022-11-22",
+    "description": "Avoinna Ma-Pe klo 9.00 - 18.00 ja La klo 9.00 - 15.00",
+    "level": "1",
+    "name": "Parturi-kampaamo Team",
+    "opening_hours": "Mo-Fr 09:00-18:00; Sa 09:00-15:00",
+    "operator": "Yritys",
+    "payment:cash": "yes",
+    "payment:coins": "yes",
+    "payment:credit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "phone": "+35813221546",
+    "shop": "hairdresser",
+    "stroller": "yes",
+    "website": "https://www.pkteam.fi/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3726196750,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "12",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu",
+    "amenity": "fast_food",
+    "cuisine": "pizza",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "email": "joensuu.rax@restel.fi",
+    "kids_area": "yes",
+    "level": "0",
+    "name": "Rax Pizzabuffet",
+    "opening_hours": "Mo-Fr 10:30-20:00; Sa 11:00-20:00; Su 12:00-19:00",
+    "opening_hours:covid19": "off",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+358 20 7664915",
+    "website": "https://www.rax.fi/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3726196755,
+  "tags": {
+    "access:covid19": "yes",
+    "addr:city": "Joensuu",
+    "addr:housenumber": "28",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "amenity": "fast_food",
+    "delivery:covid19": "yes",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "level": "1",
+    "name": "Sinet",
+    "opening_hours": "Mo-Sa 10:30-22:00; Su 11:00-22:00",
+    "takeaway:covid19": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3726196756,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu",
+    "addr:unit": "A",
+    "amenity": "restaurant",
+    "cuisine": "pizza",
+    "level": "0",
+    "name": "La Festa",
+    "opening_hours": "Mo-Th 10:30-21:30, Fr 10:30-05:00, Sa 11:00-05:00, Su 12:00-21:30"
+  }
+},
+{
+  "type": "node",
+  "id": 3726308690,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "16",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu",
+    "email": "joensuu@greenstar.fi",
+    "internet_access": "yes",
+    "internet_access:fee": "customers",
+    "name": "GreenStar Hotel Joensuu",
+    "operator": "Greenstar Hotels Oy",
+    "phone": "+358 10 423 9390",
+    "start_date": "2008",
+    "tourism": "hotel",
+    "website": "https://www.greenstar.fi/"
+  }
+},
+{
+  "type": "node",
+  "id": 3726360882,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "26",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "amenity": "fast_food",
+    "cuisine": "kebab",
+    "level": "1",
+    "name": "Uskudar Kebab",
+    "opening_hours": "Mo-Sa 10:30-22:00; Su 12:00-22:00"
+  }
+},
+{
+  "type": "node",
+  "id": 3726526441,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "1",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3726526442,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "11",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3726526443,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "13",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3726526444,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "15",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3726526445,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "17",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3726526446,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "19",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3726526447,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "21",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3726526448,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "23",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3726526449,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3726526450,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "3",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3726526451,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "5",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3726526452,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "7",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3726526453,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "9",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3726526454,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu",
+    "amenity": "cafe",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "internet_access": "wlan",
+    "name": "Kahvila Pilkku",
+    "opening_hours": "Jun-Aug: Mo-Fr 09:00-18:00; Jun-Aug: Su off; Jun-Aug: Sa 10:00-15:00"
+  }
+},
+{
+  "type": "node",
+  "id": 3727216192,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housename": "Surakan aitta",
+    "addr:housenumber": "2",
+    "addr:postcode": "80100",
+    "addr:street": "Suvantokatu",
+    "amenity": "cafe",
+    "cuisine": "coffee_shop;sandwich;bakery",
+    "delivery": "yes",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "email": "virva.kostamo@kotileipurinherkkupaja.fi",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Kotileipurin Herkkupaja",
+    "opening_hours": "Mo-Fr 06:00-17:00",
+    "opening_hours:covid19": "Mo-Fr 06:00-17:00",
+    "outdoor_seating": "yes",
+    "phone": "+358 45 6107891",
+    "takeaway": "yes",
+    "website": "https://www.kotileipurinherkkupaja.fi/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851247,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "1",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851249,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "10",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851250,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "10",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851251,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "10",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851252,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "10",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "addr:unit": "A"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851253,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "10",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "addr:unit": "B"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851254,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "11",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851255,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "11",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851256,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "11",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851257,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "11",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851258,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "12",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851260,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "12",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851261,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "12a",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851262,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "12b",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851263,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "13",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851264,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "13",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851265,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "13",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851267,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "14",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851268,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "14a",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851269,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "14b",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851270,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "15",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851271,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "15",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851272,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "15",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851273,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "15",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851274,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "15a",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851275,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "16",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851276,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "16",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851277,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "16a",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851278,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "16b",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851279,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "17",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851280,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "17",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851281,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "17",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851282,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "17",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851283,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "18",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851284,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "18",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851285,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "18",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851286,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "18a",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851287,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "19",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851288,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "19",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851289,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "19",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851290,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "19",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851294,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "2",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851295,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "2",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851296,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "20",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851298,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "20",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851299,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "21",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851300,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "21",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851301,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "21",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851302,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "22",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851303,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "22",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851304,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "23",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851305,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "23",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851306,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "23",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851307,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "23",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851308,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "23a",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851310,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "24",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851311,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "24",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851312,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "24",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851313,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "24a",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851314,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851315,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851316,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851317,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "25a",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851318,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "25b",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851319,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "26",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851320,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "26a",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851321,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "26b",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851322,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "27b",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851323,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "27",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851324,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "27",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851325,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "27",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "addr:unit": "A"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851326,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "27",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu",
+    "addr:unit": "B"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851327,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "28",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851328,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "28",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851330,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "29",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851332,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "29",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851333,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "29a",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851334,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "29b",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851338,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "3",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851339,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "3",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851340,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "30",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851341,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "30",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851342,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "30a",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851343,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "30b",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851344,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "31",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851346,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "31",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851347,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "32",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851348,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "32",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851349,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "32",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851350,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "32a",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851351,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "33",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851352,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "33a",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851353,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "33b",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851354,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "34",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851355,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "35",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851356,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "35",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851357,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "35",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851358,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "35a",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851359,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "35b",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851360,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "36",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851361,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "36",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851362,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "37",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851363,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "37",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851364,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "37a",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851366,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "38",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851367,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "38",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851368,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "39",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851369,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "39",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851372,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "4",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851373,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "4",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851374,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "40",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851375,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "40",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851376,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "41",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851377,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "41",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851379,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "43",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851380,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "44",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851381,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "46",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851383,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "4a",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851385,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "4b",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851387,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "5",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851388,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "5",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851389,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "5",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851390,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "5",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851391,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "51",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851394,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "6",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851395,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "6",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851396,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "6",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851397,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "6",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851398,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "7",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851399,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "7",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851400,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "7",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851401,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "7",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851402,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "8",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851403,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "8",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851404,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "8",
+    "addr:postcode": "80100",
+    "addr:street": "Koskikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851405,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "8",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851406,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "9",
+    "addr:postcode": "80100",
+    "addr:street": "Kauppakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851407,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "9",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851408,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "9",
+    "addr:postcode": "80100",
+    "addr:street": "Rantakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727851409,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "9",
+    "addr:postcode": "80100",
+    "addr:street": "Torikatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916428,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "10",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916433,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "12",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916439,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "14",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916440,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "15",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916443,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "16",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916444,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "17",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916445,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "17",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916446,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "18",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916447,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "18a",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916448,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "18b",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916449,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "19",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916450,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "19a",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916451,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "19b",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916453,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "20",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916454,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "20a",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916455,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "20b",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916456,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "21",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916457,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "21",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916458,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "22",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916459,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "22",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916460,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "23",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916461,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "23",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916462,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "24",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916463,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "24a",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916464,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "24b",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916465,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "24c",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916466,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916467,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916468,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "25a",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916469,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "25b",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916470,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "26",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916471,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "26a",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916472,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "26b",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916473,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "27",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916474,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "27",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916475,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "28a",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916476,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "28b",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916477,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "29",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916478,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "29",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916479,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "29a",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916486,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "30",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916487,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "30a",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916488,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "30b",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916489,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "31",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916490,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "31",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916491,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "32a",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916492,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "32a",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916493,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "32b",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916494,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "32b",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916495,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "33a",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916496,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "34",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916497,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "34",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916498,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "35",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916499,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "35a",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916500,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "35b",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916501,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "36",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916502,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "36",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916503,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "37",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916504,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "37a",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916505,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "37b",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916506,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "38",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916507,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "38",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916508,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "39",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916509,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "39a",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916510,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "39b",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916514,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "40",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916515,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "40",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916516,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "41",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916517,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "41a",
+    "addr:postcode": "80100",
+    "addr:street": "Kalevankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916520,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "42",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916522,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "43a",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916523,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "43b",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916524,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "44",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916725,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "45a",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916726,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "45b",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916727,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "46",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916728,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "47a",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916729,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "47b",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916730,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "49a",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727916748,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "8",
+    "addr:postcode": "80100",
+    "addr:street": "Koulukatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996596,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "20",
+    "addr:postcode": "80110",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996600,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "21b",
+    "addr:postcode": "80110",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996602,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "22a",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996604,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "22b",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996607,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "23a",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996608,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "23b",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996609,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "24",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996611,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996612,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "26",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996616,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "27",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996619,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "28",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996620,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "28",
+    "addr:postcode": "80100",
+    "addr:street": "Sepänkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996826,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "30",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996827,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "30",
+    "addr:postcode": "80100",
+    "addr:street": "Sepänkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996828,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "31",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996829,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "31a",
+    "addr:postcode": "80100",
+    "addr:street": "Sepänkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996831,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "32 b",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996833,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "32a",
+    "addr:postcode": "80100",
+    "addr:street": "Sepänkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996835,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "32b",
+    "addr:postcode": "80100",
+    "addr:street": "Sepänkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996837,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "33",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996839,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "33b",
+    "addr:postcode": "80100",
+    "addr:street": "Sepänkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996840,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "34",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996841,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "34",
+    "addr:postcode": "80100",
+    "addr:street": "Sepänkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996844,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "35a",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996845,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "35b",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996847,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "36a",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996849,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "36b",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996850,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "37",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996855,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "39",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996861,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "40",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996866,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "41",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996871,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "43",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3727996877,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "45",
+    "addr:postcode": "80100",
+    "addr:street": "Merimiehenkatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3728216985,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "1",
+    "addr:postcode": "80100",
+    "addr:street": "Kalastajankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3728216989,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "10",
+    "addr:postcode": "80100",
+    "addr:street": "Kalastajankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3728216995,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "12",
+    "addr:postcode": "80100",
+    "addr:street": "Kalastajankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3728217001,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "14",
+    "addr:postcode": "80100",
+    "addr:street": "Kalastajankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3728217007,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "16",
+    "addr:postcode": "80100",
+    "addr:street": "Kalastajankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3728217014,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "2",
+    "addr:postcode": "80100",
+    "addr:street": "Kalastajankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3728217530,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "3",
+    "addr:postcode": "80100",
+    "addr:street": "Kalastajankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3728217536,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "4",
+    "addr:postcode": "80100",
+    "addr:street": "Kalastajankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3728217539,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "5",
+    "addr:postcode": "80100",
+    "addr:street": "Kalastajankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3728217543,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "6",
+    "addr:postcode": "80100",
+    "addr:street": "Kalastajankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3728217546,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "7",
+    "addr:postcode": "80100",
+    "addr:street": "Kalastajankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3728217550,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "8",
+    "addr:postcode": "80100",
+    "addr:street": "Kalastajankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3728217553,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "9",
+    "addr:postcode": "80100",
+    "addr:street": "Kalastajankatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182472,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "1",
+    "addr:postcode": "80100",
+    "addr:street": "Elielinkuja"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182474,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "1",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182475,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "1",
+    "addr:postcode": "80100",
+    "addr:street": "Sairaalakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182477,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "1",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182478,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "10",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182481,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "10",
+    "addr:postcode": "80100",
+    "addr:street": "Sairaalakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182482,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "10",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182483,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "10",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182485,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "11",
+    "addr:postcode": "80100",
+    "addr:street": "Pohjoiskatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182487,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "11",
+    "addr:postcode": "80100",
+    "addr:street": "Sairaalakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182488,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "11",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182491,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "12",
+    "addr:postcode": "80100",
+    "addr:street": "Sairaalakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182492,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "12",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182493,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "12",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182494,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "13",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182496,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "13",
+    "addr:postcode": "80100",
+    "addr:street": "Sairaalakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182497,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "13",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182498,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "13",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182499,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "14",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182502,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "14",
+    "addr:postcode": "80100",
+    "addr:street": "Sairaalakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182503,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "14",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182504,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "14",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182505,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "15",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182508,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "15",
+    "addr:postcode": "80100",
+    "addr:street": "Sairaalakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182509,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "15",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182510,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "16",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182513,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "16",
+    "addr:postcode": "80100",
+    "addr:street": "Sairaalakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182514,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "16",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182515,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "16",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182516,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "17",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182519,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "17",
+    "addr:postcode": "80100",
+    "addr:street": "Sairaalakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182520,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "17",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733182521,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "18",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222425,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "18",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222426,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "18",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222427,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "19",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222430,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "19",
+    "addr:postcode": "80100",
+    "addr:street": "Sairaalakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222431,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "19",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222434,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "2",
+    "addr:postcode": "80100",
+    "addr:street": "Elielinkuja"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222435,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "2",
+    "addr:postcode": "80100",
+    "addr:street": "Kirkkokuja"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222437,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "2",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222439,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "2",
+    "addr:postcode": "80100",
+    "addr:street": "Sairaalakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222440,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "2",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222441,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "20",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222445,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "20",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222446,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "20",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222447,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "21",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222449,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "21",
+    "addr:postcode": "80100",
+    "addr:street": "Sairaalakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222450,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "21",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222451,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "22",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222454,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "22",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222455,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "22",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222456,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "23",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222460,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "23",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222461,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "24",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222464,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "24",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222465,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "24",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222466,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222470,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "25",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222471,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "26",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222474,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "26",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222475,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "26",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222476,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "27",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222480,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "27",
+    "addr:postcode": "80100",
+    "addr:street": "Yläsatamakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222481,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "28",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222484,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "28",
+    "addr:postcode": "80100",
+    "addr:street": "Siltakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222492,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "3",
+    "addr:postcode": "80100",
+    "addr:street": "Niskakatu"
+  }
+},
+{
+  "type": "node",
+  "id": 3733222493,
+  "tags": {
+    "addr:city": "Joensuu",
+    "addr:country": "FI",
+    "addr:housenumber": "3",
+    "addr:postcode": "80100",
+    "addr:street": "Pohjoiskatu"
+  }
+}
+
+  ]
+}

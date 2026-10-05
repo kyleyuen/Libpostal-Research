@@ -1,0 +1,145 @@
+--- ../119-component-phrase-ids/sources/crf.c	2026-10-04 01:21:46
++++ sources/crf.c	2026-10-04 16:10:14
+@@ -331,7 +331,19 @@
+ #ifdef EXP_ROLE_IDS
+ #define CRF_ROLE_N 6
+ uint32_t *crf_role_ids = NULL;   // [vocab slot][role]; NULL = not built
++#ifdef EXP_HOT_TIER
++// Experiment 137 (hot tier). The weight rows of the most frequent vocabulary words' role features (ranked by the model's own training counts, filled up to
++// a byte budget fixed in advance) are copied, record for record, into one compact region per weight table. Their role-table entries are rewritten to
++// virtual feature ids >= the table's row count; crf_hot_row() resolves an id to (records, length) in either the original rows or the copy. The same
++// records are added in the same order, so every score is identical.
++static uint32_t crf_hot_base[2] = {UINT32_MAX, UINT32_MAX};   // row counts of the state / transition tables (first virtual id)
++static crf_wrec_t *crf_hot_rec[2] = {NULL, NULL}; static uint32_t *crf_hot_start[2] = {NULL, NULL}; static size_t crf_hot_n[2] = {0, 0};
++#ifdef EXP_HOT_TIER_VERIFY
++static uint32_t *crf_hot_orig[2] = {NULL, NULL}; static unsigned long long crf_hot_checked = 0;
++__attribute__((destructor)) static void crf_hot_report(void) { fprintf(stderr, "EXP_HOT_TIER_VERIFY: %llu hot row uses checked, 0 mismatches\n", crf_hot_checked); }
++#endif
+ #endif
++#endif
+ #ifdef EXP_CONST_IDS
+ // Experiment 025: state-feature ids of the value-less constant keys "bias" and "postcode have context", looked up once in the final dictionary.
+ uint32_t crf_const_ids[2] = {CRF_NO_FEATURE, CRF_NO_FEATURE};
+@@ -363,7 +375,45 @@
+ // Called once after the vocabulary dictionary exists. Any doubt leaves the dictionaries of `h` in place (crf_ik_active stays 0).
+ #ifdef EXP_CP_IDS
+ const void *crf_state_dict_of(crf_t *c) { return c == NULL ? NULL : (const void *)c->state_dict; }   // 119: address_parser.c sees the original crf.h
++#endif
++#ifdef EXP_HOT_TIER
++// Called once at load with vocabulary slots in decreasing training-count order. Copies role rows until `budget` bytes of records are used.
++bool crf_hot_build(crf_t *crf, const uint32_t *slots, size_t nslots, size_t budget) {
++    if (crf_role_ids == NULL || crf_pack_state == NULL || crf_pack_trans == NULL || crf->weights == NULL || crf->state_trans_weights == NULL) return false;
++    const uint32_t *ip[2] = {crf->weights->indptr->a, crf->state_trans_weights->indptr->a}; const crf_wrec_t *rec[2] = {crf_pack_state, crf_pack_trans};
++    uint32_t base[2] = {(uint32_t)(crf->weights->indptr->n - 1), (uint32_t)(crf->state_trans_weights->indptr->n - 1)};
++    size_t cap[2] = {0, 0}, rcap[2] = {0, 0}, rn[2] = {0, 0}, used = 0;
++    // small open-addressing map original id -> virtual index, per table (a feature shared by several words is copied once)
++    enum { HM = 1 << 17 }; uint32_t *hk[2], *hv[2]; for (int w = 0; w < 2; w++) { hk[w] = malloc(HM * sizeof(uint32_t)); hv[w] = malloc(HM * sizeof(uint32_t)); if (!hk[w] || !hv[w]) return false; memset(hk[w], 0xFF, HM * sizeof(uint32_t)); }
++    for (size_t q = 0; q < nslots && used < budget; q++) {
++        uint32_t sl = slots[q];
++        for (int r = 0; r < CRF_ROLE_N; r++) {
++            uint32_t *e = &crf_role_ids[(size_t)sl * CRF_ROLE_N + r], id = *e; int w = r < 4 ? 0 : 1;
++            if (id == CRF_NO_FEATURE || id >= base[w]) continue;
++            size_t i = ((size_t)id * 2654435761u) & (HM - 1); while (hk[w][i] != UINT32_MAX && hk[w][i] != id) i = (i + 1) & (HM - 1);
++            if (hk[w][i] == id) { *e = base[w] + hv[w][i]; continue; }
++            if (crf_hot_n[w] + 2 > HM / 2) continue;   // map nearly full: leave the row where it is
++            uint32_t len = ip[w][id + 1] - ip[w][id];
++            if (crf_hot_n[w] + 2 > cap[w]) { size_t m = cap[w] ? cap[w] * 2 : 4096; uint32_t *ns_ = realloc(crf_hot_start[w], m * sizeof *ns_); if (!ns_) return false; crf_hot_start[w] = ns_; cap[w] = m;
++#ifdef EXP_HOT_TIER_VERIFY
++                uint32_t *no = realloc(crf_hot_orig[w], m * sizeof *no); if (!no) return false; crf_hot_orig[w] = no;
++#endif
++            }
++            if (rn[w] + len > rcap[w]) { size_t m = rcap[w] ? rcap[w] * 2 : 65536; while (m < rn[w] + len) m *= 2; crf_wrec_t *nr = realloc(crf_hot_rec[w], m * sizeof *nr); if (!nr) return false; crf_hot_rec[w] = nr; rcap[w] = m; }
++            if (crf_hot_n[w] == 0) crf_hot_start[w][0] = 0;
++            memcpy(crf_hot_rec[w] + rn[w], rec[w] + ip[w][id], len * sizeof(crf_wrec_t)); rn[w] += len;
++            uint32_t h = (uint32_t)crf_hot_n[w]++; crf_hot_start[w][h + 1] = (uint32_t)rn[w];
++#ifdef EXP_HOT_TIER_VERIFY
++            crf_hot_orig[w][h] = id;
+ #endif
++            hk[w][i] = id; hv[w][i] = h; *e = base[w] + h; used += len * sizeof(crf_wrec_t) + sizeof(uint32_t);
++        }
++    }
++    for (int w = 0; w < 2; w++) { free(hk[w]); free(hv[w]); crf_hot_base[w] = base[w]; }
++    if (getenv("FTT_VERBOSE") != NULL) fprintf(stderr, "HOT_TIER rows state %zu (%zu records) trans %zu (%zu records), %.2f MB\n", crf_hot_n[0], rn[0], crf_hot_n[1], rn[1], used / 1048576.0);
++    return true;
++}
++#endif
+ bool crf_int_keys_enable(crf_t *crf, const feature_dict_t *vocab) {
+     if (getenv("CRF_INT_KEYS_DISABLE") != NULL || crf == NULL || vocab == NULL || crf->state_dict == NULL || crf->trans_dict == NULL) return false;
+     feature_dict_t *old[2] = {(feature_dict_t *)crf->state_dict, (feature_dict_t *)crf->trans_dict}, *nd[2] = {NULL, NULL};
+@@ -431,6 +481,16 @@
+ static unsigned long long ds_str = 0, ds_dup = 0, ds_int = 0;
+ __attribute__((destructor)) static void ds_report(void) { if (ds_str + ds_int) fprintf(stderr, "DUP_STATS string_keys=%llu duplicates=%llu int_or_resolved=%llu\n", ds_str, ds_dup, ds_int); }
+ #endif
++#ifdef EXP_HOT_TIER
++static inline const crf_wrec_t *crf_hot_row(int w, uint32_t id, const uint32_t *ip, const crf_wrec_t *rec, uint32_t *len) {
++    if (id >= crf_hot_base[w]) { uint32_t h = id - crf_hot_base[w]; *len = crf_hot_start[w][h + 1] - crf_hot_start[w][h];
++#ifdef EXP_HOT_TIER_VERIFY
++        { uint32_t o = crf_hot_orig[w][h]; if (ip[o + 1] - ip[o] != *len || memcmp(&rec[ip[o]], crf_hot_rec[w] + crf_hot_start[w][h], *len * sizeof *rec) != 0) { fprintf(stderr, "EXP_HOT_TIER_VERIFY MISMATCH table %d id %u\n", w, o); abort(); } crf_hot_checked++; }
++#endif
++        return crf_hot_rec[w] + crf_hot_start[w][h]; }
++    *len = ip[id + 1] - ip[id]; return rec + ip[id];
++}
++#endif
+ static void crf_dict_lookup_array(const feature_dict_t *d, cstring_array *a, uint32_t *ids, const uint32_t *indptr, int which) {
+     enum { WIN = 64 };
+     uint8_t nb[WIN]; const char *rest[WIN]; size_t rl[WIN]; uint64_t hh[WIN]; bool ok[WIN];
+@@ -503,8 +563,12 @@
+ #endif
+                 ids[base + j] = fdi_lookup(d, hh[j], &feature_id) ? feature_id : CRF_NO_FEATURE;
+ #ifdef EXP_WEIGHT_PREFETCH
++#ifdef EXP_HOT_TIER
++                if (ids[base + j] != CRF_NO_FEATURE && ids[base + j] < crf_hot_base[which]) __builtin_prefetch(&indptr[ids[base + j]]);   // virtual ids: start table is small and hot
++#else
+                 if (ids[base + j] != CRF_NO_FEATURE) __builtin_prefetch(&indptr[ids[base + j]]);
+ #endif
++#endif
+             } else
+ #endif
+ #ifdef EXP_ARENA_PREFETCH
+@@ -662,14 +726,22 @@
+     // Apple Silicon line is 128 bytes, hw.cachelinesize), up to EXP_ROW_LINES prefetches per row, instead of only the row's first line.
+ #ifdef EXP_ROW_TRANS_ONLY
+     // 114: state rows keep the single first-line prefetch (085 rs8: the state-row extra prefetches cost on OSM-style data); only transition rows get every line.
++#ifdef EXP_HOT_TIER
++    for (size_t k = 0; k < ns; k++) { uint32_t id = crf_state_ids[k]; if (id != CRF_NO_FEATURE) { uint32_t ln; __builtin_prefetch(crf_hot_row(0, id, indptr, srec, &ln)); } }
++#else
+     for (size_t k = 0; k < ns; k++) { uint32_t id = crf_state_ids[k]; if (id != CRF_NO_FEATURE) __builtin_prefetch(&srec[indptr[id]]); }
++#endif
+ #else
+     for (size_t k = 0; k < ns; k++) { uint32_t id = crf_state_ids[k]; if (id == CRF_NO_FEATURE) continue;
+         const char *a = (const char *)&srec[indptr[id]], *b = (const char *)&srec[indptr[id + 1]]; int c = 0;
+         for (uintptr_t q = (uintptr_t)a & ~(uintptr_t)(EXP_ROW_STEP - 1); q < (uintptr_t)b && c < EXP_ROW_LINES; q += EXP_ROW_STEP, c++) __builtin_prefetch((const void *)q); }
+ #endif
+     for (size_t k = 0; k < np; k++) { uint32_t id = crf_trans_ids[k]; if (id == CRF_NO_FEATURE) continue;
++#ifdef EXP_HOT_TIER
++        uint32_t ln; const crf_wrec_t *rp = crf_hot_row(1, id, tindptr, trec, &ln); const char *a = (const char *)rp, *b = (const char *)(rp + ln); int c = 0;
++#else
+         const char *a = (const char *)&trec[tindptr[id]], *b = (const char *)&trec[tindptr[id + 1]]; int c = 0;
++#endif
+         for (uintptr_t q = (uintptr_t)a & ~(uintptr_t)(EXP_ROW_STEP - 1); q < (uintptr_t)b && c < EXP_ROW_LINES; q += EXP_ROW_STEP, c++) __builtin_prefetch((const void *)q); }
+ #else
+     for (size_t k = 0; k < ns; k++) { uint32_t id = crf_state_ids[k]; if (id != CRF_NO_FEATURE) __builtin_prefetch(&srec[indptr[id]]); }
+@@ -690,7 +762,11 @@
+             uint32_t feature_id = crf_state_ids[k];
+             if (feature_id == CRF_NO_FEATURE) continue;
+ #ifdef EXP_ROW_PACK
++#ifdef EXP_HOT_TIER
++            { uint32_t ln; const crf_wrec_t *rp = crf_hot_row(0, feature_id, indptr, srec, &ln); for (uint32_t col = 0; col < ln; col++) state_scores[rp[col].cls] += rp[col].w; }
++#else
+             for (int col = indptr[feature_id]; col < indptr[feature_id + 1]; col++) state_scores[srec[col].cls] += srec[col].w;
++#endif
+ #else
+             for (int col = indptr[feature_id]; col < indptr[feature_id + 1]; col++) state_scores[indices[col]] += data[col];
+ #endif
+@@ -704,7 +780,11 @@
+             for (int col = tindptr[feature_id]; col < tindptr[feature_id + 1]; col++) { state_trans_scores[tindices[col]] += tdata[col]; crf_st_note(row0 + tindices[col]); }
+ #else
+ #ifdef EXP_ROW_PACK
++#ifdef EXP_HOT_TIER
++            { uint32_t ln; const crf_wrec_t *rp = crf_hot_row(1, feature_id, tindptr, trec, &ln); for (uint32_t col = 0; col < ln; col++) state_trans_scores[rp[col].cls] += rp[col].w; }
++#else
+             for (int col = tindptr[feature_id]; col < tindptr[feature_id + 1]; col++) state_trans_scores[trec[col].cls] += trec[col].w;   // L * L classes
++#endif
+ #else
+             for (int col = tindptr[feature_id]; col < tindptr[feature_id + 1]; col++) state_trans_scores[tindices[col]] += tdata[col];   // L * L classes
+ #endif

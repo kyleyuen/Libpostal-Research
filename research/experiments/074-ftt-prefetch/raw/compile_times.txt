@@ -1,0 +1,14 @@
+pf1_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 8s
+pf2_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 8s
+pf1: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 6s
+pf2: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 7s
+pf3_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 9s
+pfv_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 9s
+pfv: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 7s
+pf3: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 7s
+psp_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 8s
+psp: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 6s
+pf2st_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 12s
+pf2st: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 8s
+dgst_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 8s
+dgst: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 7s

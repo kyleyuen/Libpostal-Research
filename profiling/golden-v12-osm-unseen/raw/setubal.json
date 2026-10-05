@@ -1,0 +1,4538 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-04T10:47:01Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1684582264,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "2156",
+    "addr:postcode": "2900-000",
+    "addr:street": "Avenida Luísa Todi",
+    "alt_name": "McDonald's Setúbal Centro",
+    "amenity": "fast_food",
+    "branch": "Setúbal Centro",
+    "brand": "McDonald's",
+    "brand:wikidata": "Q38076",
+    "brand:wikipedia": "pt:McDonald's",
+    "check_date": "2025-02-21",
+    "contact:facebook": "McDonaldsPortugal",
+    "contact:instagram": "mcdonaldsportugal",
+    "contact:linkedin": "https://www.linkedin.com/company/mcdonald's-corporation/",
+    "contact:phone": "+351 265 535 620",
+    "contact:tiktok": "mcdonalds.pt",
+    "contact:youtube": "https://www.youtube.com/McDonaldsPortugal",
+    "cuisine": "burger",
+    "drive_through": "no",
+    "name": "McDonald's",
+    "opening_hours": "Mo-Th 08:00-00:00; Fr-Su 08:00-02:00; Su 08:00-00:00",
+    "ref": "2e9a3a6d-9da7-56fd-b86f-b4fec5cc86ce",
+    "source:contact": "website",
+    "takeaway": "yes",
+    "website": "https://www.mcdonalds.pt/restaurantes/setubal-centro/"
+  }
+},
+{
+  "type": "node",
+  "id": 1887575415,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "76",
+    "addr:postcode": "2900-450",
+    "addr:street": "Avenida Luísa Todi",
+    "amenity": "restaurant",
+    "check_date": "2025-08-22",
+    "cuisine": "seafood",
+    "diet:fish": "yes",
+    "diet:seafood": "yes",
+    "name": "Charroco",
+    "opening_hours": "Tu-Sa 12:00-15:00,19:00-22:00; Su 12:00-15:00",
+    "outdoor_seating": "no",
+    "phone": "+351265423885",
+    "reservation": "recommended",
+    "website": "https://charroco.pt"
+  }
+},
+{
+  "type": "node",
+  "id": 2522696055,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:country": "PT",
+    "addr:housenumber": "15",
+    "addr:postcode": "2910-575",
+    "addr:street": "Rua José Pedro da Silva",
+    "email": "reservas@hotelarangues.com",
+    "end_date": "2021-08-22",
+    "fax": "+351 265 526 877",
+    "name": "Aranguês",
+    "phone": "+351 265 525 171",
+    "source": "RNET",
+    "source_ref": "3442",
+    "stars": "3",
+    "tourism": "hotel",
+    "website": "https://www.hotelarangues.com/",
+    "wikidata": "Q111870891"
+  }
+},
+{
+  "type": "node",
+  "id": 4355928893,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "162",
+    "addr:postcode": "2900-451",
+    "addr:street": "Avenida Luísa Todi",
+    "check_date": "2023-09-16",
+    "email": "maeds@amrs.pt",
+    "fax": "+351 265 527678",
+    "fee": "no",
+    "name": "Museu de Arqueologia e Etnografia do Distrito de Setúbal",
+    "operator": "AMRS - Associação de Municípios da Região de Setúbal",
+    "tourism": "museum",
+    "website": "https://maeds.amrs.pt/"
+  }
+},
+{
+  "type": "node",
+  "id": 4622741607,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:postcode": "2900-479",
+    "addr:street": "Avenida Manuel Maria Portela",
+    "internet_access": "wlan",
+    "name": "Tutti Belli",
+    "opening_hours": "Mo-Sa",
+    "phone": "+351 934 090 798",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 4769313908,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "31A",
+    "addr:postcode": "2900-311",
+    "addr:street": "Avenida 5 de Outubro",
+    "amenity": "bank",
+    "atm": "yes",
+    "branch": "Setúbal - 5 de Outubro",
+    "brand": "Santander",
+    "brand:website": "https://www.santander.pt/",
+    "brand:wikidata": "Q4854116",
+    "brand:wikipedia": "pt:Banco Santander Portugal",
+    "cash_in": "yes",
+    "cash_out": "yes",
+    "check_date": "2024-08-01",
+    "cheque_in": "yes",
+    "contact:email": "setubal.5outubro@santander.pt",
+    "contact:facebook": "santanderpt",
+    "contact:instagram": "santanderpt",
+    "contact:linkedin": "https://www.linkedin.com/company/santanderpt/",
+    "contact:phone": "+351 265 529 920",
+    "contact:twitter": "santanderpt",
+    "contact:youtube": "@santanderpt",
+    "drive_through": "no",
+    "internet_access": "wlan",
+    "language:en": "yes",
+    "language:es": "yes",
+    "language:pt": "yes",
+    "name": "Santander",
+    "opening_hours": "Mo-Fr 08:30-15:00; Sa-Su off; Jan 01,Apr 25,May 25,Jun 01,Jun 26,Aug 10,Aug 24,Oct 15,Nov 05,Dec 01,Dec 08,Dec 25 off",
+    "operator": "Banco Santander (Portugal)",
+    "operator:wikidata": "Q4854116",
+    "operator:wikipedia": "pt:Banco Santander Portugal",
+    "ref": "5174",
+    "source": "https://locations.santander.com/pt/santander-totta/setubal/avenida-5-de-outubro-31-a-2900-311-setubal/",
+    "source:contact": "website",
+    "source:opening_hours": "website",
+    "website": "https://www.santander.pt/"
+  }
+},
+{
+  "type": "node",
+  "id": 4770024238,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "34",
+    "addr:postcode": "2900-308",
+    "addr:street": "Avenida 5 de Outubro",
+    "check_date": "2024-06-01",
+    "name": "Dolores Diogo Cabeleireiros",
+    "shop": "hairdresser",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 4770031597,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "32",
+    "addr:postcode": "2900-308",
+    "addr:street": "Avenida 5 de Outubro",
+    "amenity": "cafe",
+    "check_date": "2024-08-01",
+    "cuisine": "coffee_shop",
+    "indoor_seating": "yes",
+    "name": "Nutritiva Moderna",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5606405475,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "232",
+    "addr:postcode": "2900-452",
+    "addr:street": "Avenida Luísa Todi",
+    "branch": "Lounge",
+    "brand": "RE/MAX",
+    "brand:wikidata": "Q965845",
+    "brand:wikipedia": "pt:RE/MAX",
+    "check_date": "2023-09-16",
+    "contact:email": "lounge@remax.pt",
+    "contact:facebook": "remaxportugal",
+    "contact:instagram": "remaxportugal",
+    "contact:linkedin": "https://www.linkedin.com/company/remaxportugal/",
+    "contact:phone": "+351 265 591 243;+351 962 004 279",
+    "contact:youtube": "@remaxportugal314",
+    "name": "RE/MAX Lounge",
+    "office": "estate_agent",
+    "operator": "Imosetúbal - Sociedade de Mediação Imobiliária, Lda.",
+    "ref": "12399",
+    "source:contact": "website",
+    "website": "https://www.remax.pt/lounge"
+  }
+},
+{
+  "type": "node",
+  "id": 5782230408,
+  "tags": {
+    "addr:housenumber": "73",
+    "addr:street": "Avenida Luisa Tody",
+    "amenity": "restaurant",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "O Canteiro",
+    "phone": "+351265415138"
+  }
+},
+{
+  "type": "node",
+  "id": 5983097491,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "8",
+    "addr:postcode": "2900-428",
+    "addr:street": "Rua de Jorge de Sousa",
+    "check_date": "2024-08-13",
+    "email": "laboratorio@precilab.pt",
+    "healthcare": "sample_collection",
+    "name": "Precilab",
+    "phone": "+351265529400"
+  }
+},
+{
+  "type": "node",
+  "id": 6227943487,
+  "tags": {
+    "addr:housenumber": "115",
+    "addr:postcode": "2900-251",
+    "addr:street": "Rua Arronches Junqueiro",
+    "amenity": "restaurant",
+    "cuisine": "french",
+    "name": "Brisas",
+    "phone": "+351 968 376 912",
+    "website": "https://www.facebook.com/Brisasbrise/"
+  }
+},
+{
+  "type": "node",
+  "id": 7616245461,
+  "tags": {
+    "addr:housenumber": "35",
+    "addr:street": "Avenida Mariano de Carvalho",
+    "check_date": "2025-08-18",
+    "name": "Mercado da Carne",
+    "shop": "butcher"
+  }
+},
+{
+  "type": "node",
+  "id": 7865701114,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "58",
+    "addr:postcode": "2900-206",
+    "addr:street": "Avenida Alexandre Herculano",
+    "brand": "Meliá",
+    "check_date": "2025-08-18",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Meliá Setúbal",
+    "tourism": "hotel",
+    "wikidata": "Q111870889"
+  }
+},
+{
+  "type": "node",
+  "id": 7866636204,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "61",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues",
+    "description": "Guesthouse",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "PÊPA Guesthouse & Lounge Bar",
+    "phone": "+351 932 384 268",
+    "reservation": "yes",
+    "rooms": "4",
+    "tourism": "apartment",
+    "website": "https://www.facebook.com/pepaguesthouse/"
+  }
+},
+{
+  "type": "node",
+  "id": 9796973941,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "10",
+    "addr:postcode": "2900-380",
+    "addr:street": "Largo Doutor Francisco Soveral",
+    "amenity": "restaurant",
+    "check_date": "2024-08-13",
+    "cuisine": "regional",
+    "name": "De Pedra e Sal",
+    "phone": "+351265418353"
+  }
+},
+{
+  "type": "node",
+  "id": 9959395517,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "80",
+    "addr:postcode": "2900-248",
+    "addr:street": "Rua Arronches Junqueiro",
+    "bar": "no",
+    "check_date": "2026-05-10",
+    "email": "geral@hosteldayoff.pt",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Day Off Suite&Hostel",
+    "phone": "+351 265 107 726",
+    "reservation": "yes",
+    "smoking": "outside",
+    "tourism": "hotel",
+    "website": "https://www.hosteldayoff.pt",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10146462882,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "48",
+    "addr:postcode": "2900-205",
+    "addr:street": "Avenida Alexandre Herculano",
+    "amenity": "clinic",
+    "check_date": "2025-07-05",
+    "email": "usf.ltodi@arslvt.min-saude.pt",
+    "healthcare": "clinic",
+    "name": "USF Luísa Todi",
+    "operator": "Serviço Nacional de Saúde",
+    "operator:short": "SNS",
+    "operator:wikidata": "Q1299901",
+    "phone": "+351 265540290"
+  }
+},
+{
+  "type": "node",
+  "id": 10248288445,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "83;84",
+    "addr:postcode": "2900-276",
+    "addr:street": "Praça de Bocage",
+    "brand": "O Boticário",
+    "brand:wikidata": "Q7073219",
+    "email": "setubal@oboticario.pt",
+    "name": "O Boticário",
+    "phone": "+351 963904676",
+    "shop": "perfumery"
+  }
+},
+{
+  "type": "node",
+  "id": 10749569287,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "146 R",
+    "addr:postcode": "2900-001",
+    "addr:street": "Avenida 5 de Outubro",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "Novo Banco",
+    "brand:wikidata": "Q17488861",
+    "brand:wikipedia": "pt:Novo Banco",
+    "check_date": "2025-08-18",
+    "contact:fax": "+351 265532898",
+    "contact:phone": "+351 265230604",
+    "drive_through": "no",
+    "name": "Novo Banco",
+    "operator": "Novo Banco",
+    "operator:old_name": "Banco Espírito Santo",
+    "operator:old_name:short": "BES",
+    "operator:wikidata": "Q17488861",
+    "operator:wikipedia": "pt:Novo Banco",
+    "ref": "B0227",
+    "ref_name": "Setúbal"
+  }
+},
+{
+  "type": "node",
+  "id": 11014702226,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "70",
+    "addr:street": "Avenida Luísa Todi",
+    "amenity": "restaurant",
+    "check_date": "2025-08-22",
+    "diet:fish": "yes",
+    "diet:seafood": "yes",
+    "email": "restaurante.rebarca@gmail.com",
+    "indoor_seating": "yes",
+    "name": "Restaurante Rebarca",
+    "outdoor_seating": "yes",
+    "phone": "+351265221309",
+    "reservation": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11015749044,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:street": "Largo da Misericórdia",
+    "amenity": "cafe",
+    "check_date": "2025-09-11",
+    "cuisine": "pastry",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "The World Needs Nata",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11021918274,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "20",
+    "addr:postcode": "2900-205",
+    "addr:street": "Avenida Alexandre Herculano",
+    "branch": "Setúbal (Alexandre Herculano)",
+    "brand": "Synlab",
+    "brand:wikidata": "Q2376015",
+    "brand:wikipedia": "en:Synlab Group",
+    "check_date": "2025-08-18",
+    "contact:email": "posto.alexandre-herculano@synlab.pt",
+    "contact:facebook": "synlabPT",
+    "contact:instagram": "synlabpt",
+    "contact:linkedin": "https://www.linkedin.com/company/synlabportugal/",
+    "contact:phone": "+351 265 528 000",
+    "healthcare": "laboratory",
+    "healthcare:speciality": "biology",
+    "name": "Synlab",
+    "opening_hours": "Mo-Fr 07:30-18:00; Sa 08:00-11:00",
+    "opening_hours:analysis": "Mo-Fr 07:30-12:00,14:00-16:30; Sa 08:00-11:00",
+    "sample_collection": "yes",
+    "source:contact": "website",
+    "source:opening_hours": "website",
+    "website": "https://www.synlab.pt/onde-estamos/synlab-setubal-alexandre-herculano"
+  }
+},
+{
+  "type": "node",
+  "id": 11031975938,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "21B",
+    "addr:postcode": "2910-433",
+    "addr:street": "Avenida Bento Gonçalves",
+    "branch": "Setúbal Rua",
+    "brand": "5àsec",
+    "brand:wikidata": "Q2817899",
+    "brand:wikipedia": "pt:5àsec",
+    "check_date": "2024-01-16",
+    "contact:facebook": "5asecportugal",
+    "contact:instagram": "5asecportugal",
+    "contact:phone": "+351 265 523 185",
+    "contact:youtube": "https://www.youtube.com/@5asecpt",
+    "name": "5àsec",
+    "opening_hours": "Mo-Fr 08:00-20:00; Sa 09:00-19:00; Su off",
+    "ref": "17549",
+    "shop": "dry_cleaning",
+    "source:contact": "website",
+    "source:opening_hours": "website",
+    "website": "https://www.5asec.pt/pt-pt/localizar-a-sua-lavandaria-5asec/distrito-setubal/setubal/pressing-setubal-rua"
+  }
+},
+{
+  "type": "node",
+  "id": 11031975940,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "19C",
+    "addr:postcode": "2910-433",
+    "addr:street": "Avenida Bento Gonçalves",
+    "branch": "Tipy Family Sado",
+    "brand": "Century 21",
+    "brand:wikidata": "Q1054480",
+    "brand:wikipedia": "en:Century 21 Real Estate",
+    "check_date": "2024-01-16",
+    "contact:email": "tipyfamilysado@century21.pt",
+    "contact:facebook": "C21Portugal",
+    "contact:instagram": "c21portugal",
+    "contact:linkedin": "https://www.linkedin.com/company/century21portugal",
+    "contact:phone": "+351 265 107 422",
+    "contact:twitter": "C21Portugal",
+    "contact:youtube": "@C21Portugal",
+    "name": "Century 21 Tipy Family Sado",
+    "office": "estate_agent",
+    "ref": "C0410",
+    "source:contact": "website",
+    "website": "https://www.century21.pt/agencias/tipyfamilysado"
+  }
+},
+{
+  "type": "node",
+  "id": 11031975949,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "33",
+    "addr:postcode": "2910-433",
+    "addr:street": "Avenida Bento Gonçalves",
+    "addr:unit": "31T",
+    "branch": "Setúbal",
+    "contact:email": "setubal@ttrw-store.pt",
+    "contact:phone": "+351 265425873",
+    "craft": "electronics_repair",
+    "name": "TTRW Setúbal",
+    "opening_hours": "Mo-Sa 09:00-13:00,15:00-19:00",
+    "operator": "TTRW",
+    "website": "http://ttrw-store.pt/ttrw-store-setubal/"
+  }
+},
+{
+  "type": "node",
+  "id": 11032318981,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "5",
+    "addr:postcode": "2900-461",
+    "addr:street": "Avenida Luísa Todi",
+    "alt_name": "Galeria Municipal do 11",
+    "check_date": "2024-05-19",
+    "fee": "no",
+    "name": "Galeria Municipal",
+    "opening_hours": "Tu-Sa 11:00-13:00,14:00-18:00",
+    "tourism": "museum",
+    "website": "https://visitsetubal.com/cultura-patrimonio/galeria-municipal-do-11/"
+  }
+},
+{
+  "type": "node",
+  "id": 11044451849,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "19",
+    "addr:postcode": "2900-585",
+    "addr:street": "Praça Almirante Reis",
+    "branch": "Setúbal",
+    "brand": "Minisom",
+    "brand:wikidata": "Q135215682",
+    "check_date": "2023-07-13",
+    "contact:facebook": "Minisom",
+    "contact:instagram": "minisom_amplifon",
+    "contact:phone": "+351 800 100 210",
+    "contact:youtube": "https://www.youtube.com/@Minisom_Portugal",
+    "name": "Minisom",
+    "opening_hours": "Mo-Fr 09:30-13:00,14:00-18:30; Sa,Su off",
+    "ref": "107",
+    "shop": "hearing_aids",
+    "source:contact": "website",
+    "source:opening_hours": "website",
+    "website": "https://www.minisom.pt/centros-minisom/aparelhos-auditivos-setubal/minisom-setubal-s107"
+  }
+},
+{
+  "type": "node",
+  "id": 11051120655,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "41",
+    "addr:postcode": "2900-276",
+    "addr:street": "Praça do Bocage",
+    "amenity": "bank",
+    "atm": "yes",
+    "branch": "Setúbal - Bocage",
+    "brand": "Santander",
+    "brand:website": "https://www.santander.pt/",
+    "brand:wikidata": "Q4854116",
+    "brand:wikipedia": "pt:Banco Santander Portugal",
+    "cash_in": "yes",
+    "cash_out": "yes",
+    "check_date": "2024-05-19",
+    "cheque_in": "yes",
+    "contact:email": "setubal.bocage@santander.pt",
+    "contact:facebook": "santanderpt",
+    "contact:instagram": "santanderpt",
+    "contact:linkedin": "https://www.linkedin.com/company/santanderpt/",
+    "contact:phone": "+351 265 546 480",
+    "contact:twitter": "santanderpt",
+    "contact:youtube": "@santanderpt",
+    "internet_access": "wlan",
+    "language:en": "yes",
+    "language:es": "yes",
+    "language:pt": "yes",
+    "name": "Santander",
+    "opening_hours": "Mo-Fr 08:30-15:00; Sa-Su off; Jan 01,Apr 25,May 25,Jun 01,Jun 26,Aug 10,Aug 24,Oct 15,Nov 05,Dec 01,Dec 08,Dec 25 off",
+    "operator": "Banco Santander (Portugal)",
+    "operator:wikidata": "Q4854116",
+    "operator:wikipedia": "pt:Banco Santander Portugal",
+    "ref": "3608",
+    "source:contact": "website",
+    "source:opening_hours": "website",
+    "website": "https://www.santander.pt/"
+  }
+},
+{
+  "type": "node",
+  "id": 11090473905,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:postcode": "2900-197",
+    "addr:street": "Rua Acácio Barradas",
+    "amenity": "restaurant",
+    "cuisine": "barbecue;grill;portuguese;regional",
+    "name": "Carnes do Convento",
+    "opening_hours": "Fr 19:30-22:30; Su-Th 12:30-22:30",
+    "phone": "+351934173847"
+  }
+},
+{
+  "type": "node",
+  "id": 11103397605,
+  "tags": {
+    "addr:housenumber": "103",
+    "addr:postcode": "2900-229",
+    "addr:street": "Rua Arronches Junqueiro",
+    "amenity": "restaurant",
+    "cuisine": "barbecue;fish;friture;local;portuguese",
+    "name": "Adega dos Garrafoes",
+    "opening_hours": "Su-We 12:00-15:00; Th-Fr 12:00-22:30",
+    "phone": "+351265229151"
+  }
+},
+{
+  "type": "node",
+  "id": 11196392916,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:floor": "0",
+    "addr:housenumber": "233",
+    "addr:postcode": "2900-647",
+    "addr:street": "Avenida Luísa Todi",
+    "amenity": "bar",
+    "check_date": "2026-05-09",
+    "contact:facebook": "Uni%C3%A3o-Setubalense-100064701247777",
+    "email": "smrus2019@gmail.com",
+    "internet_access": "wlan",
+    "level": "0",
+    "name": "Sociedade Musical e Recreativa União Setubalense",
+    "payment:cash": "yes",
+    "start_date": "1899-03-22",
+    "website": "https://uniaosetubalense.pt/",
+    "wheelchair": "no",
+    "wikidata": "Q133838352",
+    "wikipedia": "pt:União Setubalense"
+  }
+},
+{
+  "type": "node",
+  "id": 11196392922,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:floor": "0",
+    "addr:housenumber": "73",
+    "addr:postcode": "2900-461",
+    "addr:street": "Avenida Luísa Todi",
+    "amenity": "restaurant",
+    "bar": "yes",
+    "brand": "Taberna Londrina",
+    "check_date": "2025-09-11",
+    "cuisine": "regional",
+    "diet:vegetarian": "yes",
+    "internet_access": "wlan",
+    "level": "0",
+    "name": "Taberna Londrina",
+    "opening_hours": "Mo-Th,Su 12:00-24:00; Fr-Sa 12:00-24:30",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+351265094437",
+    "reservation": "yes",
+    "website": "https://www.tabernalondrina.com/locais/setubal",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11212703579,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:country": "PT",
+    "addr:housenumber": "131",
+    "addr:postcode": "2900-276",
+    "addr:street": "Praça do Bocage",
+    "branch": "Setúbal Franquia",
+    "brand": "Wells",
+    "brand:wikidata": "Q115388598",
+    "brand:wikipedia": "pt:Wells (lojas)",
+    "check_date": "2024-05-19",
+    "contact:facebook": "WellsPT",
+    "contact:instagram": "wells_oficial",
+    "contact:phone": "+351 265 238 079",
+    "contact:youtube": "https://www.youtube.com/@Wells_oficial",
+    "name": "Wells",
+    "opening_hours": "Mo-Sa,PH 09:00-19:00; Su off",
+    "ref": "3210",
+    "shop": "chemist",
+    "source:contact": "website",
+    "source:opening_hours": "website",
+    "website": "https://wells.pt/"
+  }
+},
+{
+  "type": "node",
+  "id": 11283684562,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "23",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283684563,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "28",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283684564,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "10",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283684565,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "15",
+    "addr:postcode": "2910-609",
+    "addr:street": "Rua do Mirante",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283684566,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283684567,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "11",
+    "addr:postcode": "2910-609",
+    "addr:street": "Rua do Mirante",
+    "building:levels": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 11283684568,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "16",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745269,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745270,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "13",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745271,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "7",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745272,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "15",
+    "addr:postcode": "2910-406",
+    "addr:street": "Rua de Aranguês"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745273,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "14",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745274,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "10",
+    "addr:postcode": "2910-467",
+    "addr:street": "Beco dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745275,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "9",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745276,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "9",
+    "addr:postcode": "2910-467",
+    "addr:street": "Beco dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745277,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "7",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745278,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "13",
+    "addr:postcode": "2910-575",
+    "addr:street": "Rua José Pedro Da Silva",
+    "building:levels": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745279,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "18",
+    "addr:postcode": "2910-609",
+    "addr:street": "Rua do Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745280,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "28",
+    "addr:postcode": "2910-609",
+    "addr:street": "Rua do Mirante",
+    "building:levels": "3"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745281,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "11",
+    "addr:postcode": "2910-575",
+    "addr:street": "Rua José Pedro Da Silva",
+    "building:levels": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745282,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "12",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745283,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "14",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745284,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "21",
+    "addr:postcode": "2910-610",
+    "addr:street": "Travessa do Mirante",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745285,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "13",
+    "addr:postcode": "2910-432",
+    "addr:street": "Avenida Bento Gonçalves",
+    "building:levels": "7"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745286,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "4",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745287,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "12",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745288,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "1S",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745289,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "5",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745290,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-467",
+    "addr:street": "Beco dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745291,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "9",
+    "addr:postcode": "2910-575",
+    "addr:street": "Rua José Pedro Da Silva",
+    "building:levels": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745292,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "18",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745293,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "11",
+    "addr:postcode": "2910-610",
+    "addr:street": "Travessa do Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745294,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "23",
+    "addr:postcode": "2910-610",
+    "addr:street": "Travessa do Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745295,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "13",
+    "addr:postcode": "2910-610",
+    "addr:street": "Travessa do Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745296,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "5",
+    "addr:postcode": "2910-575",
+    "addr:street": "Rua José Pedro Da Silva",
+    "building:levels": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745297,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "26",
+    "addr:postcode": "2910-609",
+    "addr:street": "Rua do Mirante",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745298,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "22",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745299,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "13",
+    "addr:postcode": "2910-609",
+    "addr:street": "Rua do Mirante",
+    "building:levels": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745300,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745301,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "30",
+    "addr:postcode": "2910-609",
+    "addr:street": "Rua do Mirante",
+    "building:levels": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745302,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "9",
+    "addr:postcode": "2910-432",
+    "addr:street": "Avenida Bento Gonçalves",
+    "building:levels": "7"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745303,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "20",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745304,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "25",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745305,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "29",
+    "addr:postcode": "2910-610",
+    "addr:street": "Travessa do Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745306,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "31",
+    "addr:postcode": "2910-610",
+    "addr:street": "Travessa do Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745307,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-432",
+    "addr:street": "Avenida Bento Gonçalves",
+    "building:levels": "9"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745308,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "13",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745309,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "27",
+    "addr:postcode": "2910-610",
+    "addr:street": "Travessa do Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745310,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "1",
+    "addr:postcode": "2910-575",
+    "addr:street": "Rua José Pedro Da Silva",
+    "building:levels": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745311,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "17",
+    "addr:postcode": "2910-610",
+    "addr:street": "Travessa do Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745312,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "5",
+    "addr:postcode": "2910-610",
+    "addr:street": "Travessa do Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745313,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "8",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745314,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-467",
+    "addr:street": "Beco dos Cobertos",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745315,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "8",
+    "addr:postcode": "2910-610",
+    "addr:street": "Travessa Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745316,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-609",
+    "addr:street": "Rua do Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745317,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "5",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745318,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "2",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745319,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "30",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745320,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "12",
+    "addr:postcode": "2910-406",
+    "addr:street": "Rua de Aranguês"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745321,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "8",
+    "addr:postcode": "2910-609",
+    "addr:street": "Rua do Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745322,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "16",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745323,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "23",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745324,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "8",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745325,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-610",
+    "addr:street": "Travessa Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745326,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "21",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745327,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "21",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745328,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "24",
+    "addr:postcode": "2910-609",
+    "addr:street": "Rua do Mirante",
+    "building:levels": "3"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745329,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "9",
+    "addr:postcode": "2910-610",
+    "addr:street": "Travessa do Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745330,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "12",
+    "addr:postcode": "2910-467",
+    "addr:street": "Beco dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745331,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "8",
+    "addr:postcode": "2910-467",
+    "addr:street": "Beco dos Cobertos",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745332,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "4",
+    "addr:postcode": "2910-467",
+    "addr:street": "Beco dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745333,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "19",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745334,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "19",
+    "addr:postcode": "2910-466",
+    "addr:street": "Travessa dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745335,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "1",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745336,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "4",
+    "addr:postcode": "2910-609",
+    "addr:street": "Rua do Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745337,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "11",
+    "addr:postcode": "2910-432",
+    "addr:street": "Avenida Bento Gonçalves",
+    "building:levels": "7"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745338,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "14",
+    "addr:postcode": "2910-609",
+    "addr:street": "Rua do Mirante",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745339,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "7",
+    "addr:postcode": "2910-432",
+    "addr:street": "Avenida Bento Gonçalves",
+    "building:levels": "7"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745340,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "5",
+    "addr:postcode": "2910-467",
+    "addr:street": "Beco dos Cobertos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745341,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "19",
+    "addr:postcode": "2910-406",
+    "addr:street": "Rua de Aranguês",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745342,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "13A",
+    "addr:postcode": "2910-610",
+    "addr:street": "Travessa Mirante"
+  }
+},
+{
+  "type": "node",
+  "id": 11283745343,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "15",
+    "addr:postcode": "2910-575",
+    "addr:street": "Rua José Pedro Da Silva"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785816,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "4",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785817,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "18",
+    "addr:postcode": "2910-080",
+    "addr:street": "Beco das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785818,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "2",
+    "addr:postcode": "2910-078",
+    "addr:street": "Rua da Fantazia",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785819,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "4",
+    "addr:postcode": "2910-078",
+    "addr:street": "Rua da Fantazia",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785820,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-078",
+    "addr:street": "Rua da Fantazia",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785821,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "14",
+    "addr:postcode": "2910-078",
+    "addr:street": "Rua da Fantazia",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785822,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "13",
+    "addr:postcode": "2910-081",
+    "addr:street": "Ladeira das Fontaínhas",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785823,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "7",
+    "addr:postcode": "2910-081",
+    "addr:street": "Ladeira das Fontaínhas",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785824,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "14",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785825,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "24",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785826,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "20",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785827,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "54",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785828,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "52",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785829,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "50",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785830,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "48",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785831,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "46",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785832,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "40",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785833,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "50",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785834,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "58",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785835,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "9",
+    "addr:postcode": "2910-083",
+    "addr:street": "Travessa Nova Do Forno",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785836,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "47",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785837,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "10",
+    "addr:postcode": "2910-084",
+    "addr:street": "Rua do Poço das Fontaínhas",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785838,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "70",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785839,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "30",
+    "addr:postcode": "2910-077",
+    "addr:street": "Rua das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785840,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "44",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785841,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "46",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785842,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "12",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785843,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "36",
+    "addr:postcode": "2910-437",
+    "addr:street": "Rua de Braz Martins",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785844,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "43",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues",
+    "building:levels": "3"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785845,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "30 30A",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785846,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "20B",
+    "addr:postcode": "2910-084",
+    "addr:street": "Rua do Poço das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785847,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "28",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785848,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "4",
+    "addr:postcode": "2910-502",
+    "addr:street": "Beco do Forte"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785849,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-502",
+    "addr:street": "Beco do Forte"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785850,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "21",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785851,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "4",
+    "addr:postcode": "2910-081",
+    "addr:street": "Ladeira das Fontaínhas",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785852,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "90",
+    "addr:postcode": "2910-082",
+    "addr:street": "Rua das Fontaínhas",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785853,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "4",
+    "addr:postcode": "2910-701",
+    "addr:street": "Largo 28 De Janeiro",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785854,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "12A",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785855,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "18",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785856,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "22",
+    "addr:postcode": "2910-078",
+    "addr:street": "Rua da Fantazia"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785857,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "44",
+    "addr:postcode": "2910-082",
+    "addr:street": "Rua Fontaínhas",
+    "building:levels": "3"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785858,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "7",
+    "addr:postcode": "2910-077",
+    "addr:street": "Rua das Barrocas",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785859,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "50",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785860,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "28",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785861,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "9",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785862,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "37",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785863,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "23",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785864,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "13",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785865,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "2",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785866,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "28",
+    "addr:postcode": "2910-082",
+    "addr:street": "Rua das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785867,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "28",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283785868,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "27",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848469,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-491",
+    "addr:street": "Travessa da Fava"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848470,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-093",
+    "addr:street": "Travessa São Domingos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848471,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "26B",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848472,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "10",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848473,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "49",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848474,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "2",
+    "addr:postcode": "2910-491",
+    "addr:street": "Travessa da Fava",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848475,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "17",
+    "addr:postcode": "2910-655",
+    "addr:street": "Largo Santos E Silva"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848476,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "95",
+    "addr:postcode": "2910-503",
+    "addr:street": "Rua do Forte",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848477,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "28 28A",
+    "addr:postcode": "2910-077",
+    "addr:street": "Rua das Barrocas",
+    "building:levels": "3"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848478,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "52",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota",
+    "building:levels": "3"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848479,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "2",
+    "addr:postcode": "2910-093",
+    "addr:street": "Travessa São Domingos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848480,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "31",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848481,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "56",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848482,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "11",
+    "addr:postcode": "2910-080",
+    "addr:street": "Beco das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848483,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "48",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848484,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "22",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848485,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "22",
+    "addr:postcode": "2910-090",
+    "addr:street": "Rua Gonçalo De Abreu"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848486,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "5",
+    "addr:postcode": "2910-083",
+    "addr:street": "Travessa Nova do Forno"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848487,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "47",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848488,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "42",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848489,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "8",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848490,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "39",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848491,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "15",
+    "addr:postcode": "2910-089",
+    "addr:street": "Rua Gonçalo De Abreu",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848492,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "20",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848493,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "32",
+    "addr:postcode": "2910-081",
+    "addr:street": "Ladeira das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848494,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "24",
+    "addr:postcode": "2910-078",
+    "addr:street": "Rua da Fantazia"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848495,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "38",
+    "addr:postcode": "2910-077",
+    "addr:street": "Rua das Barrocas",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848496,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "39",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848497,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "52",
+    "addr:postcode": "2910-437",
+    "addr:street": "Rua de Braz Martins"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848498,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "49",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848499,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-438",
+    "addr:street": "Travessa de Braz Martins"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848500,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "28",
+    "addr:postcode": "2910-090",
+    "addr:street": "Rua Gonçalo De Abreu",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848501,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "10",
+    "addr:postcode": "2910-435",
+    "addr:street": "Travessa da Boa Hora",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848502,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-502",
+    "addr:street": "Beco do Forte"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848503,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "20",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848504,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "32",
+    "addr:postcode": "2910-090",
+    "addr:street": "Rua Gonçalo De Abreu"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848505,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-655",
+    "addr:street": "Largo Santos E Silva"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848506,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "2",
+    "addr:postcode": "2910-438",
+    "addr:street": "Travessa de Braz Martins"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848507,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "20",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848508,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "16",
+    "addr:postcode": "2910-082",
+    "addr:street": "Rua das Fontaínhas",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848509,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "79",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848510,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "36",
+    "addr:postcode": "2910-077",
+    "addr:street": "Rua das Barrocas",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848511,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-087",
+    "addr:street": "Rua Quebra Costas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848512,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "4",
+    "addr:postcode": "2910-491",
+    "addr:street": "Travessa da Fava",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848513,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "5",
+    "addr:postcode": "2910-081",
+    "addr:street": "Ladeira das Fontaínhas",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848514,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "7",
+    "addr:postcode": "2910-503",
+    "addr:street": "Rua do Forte"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848515,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "7",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848516,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-435",
+    "addr:street": "Travessa da Boa Hora"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848517,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "25",
+    "addr:postcode": "2910-081",
+    "addr:street": "Ladeira das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848518,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "18",
+    "addr:postcode": "2910-084",
+    "addr:street": "Rua do Poço das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848519,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "20",
+    "addr:postcode": "2910-081",
+    "addr:street": "Ladeira das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848520,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "28",
+    "addr:postcode": "2910-437",
+    "addr:street": "Rua de Braz Martins",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848521,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "8",
+    "addr:postcode": "2910-437",
+    "addr:street": "Rua de Braz Martins",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848522,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "2",
+    "addr:postcode": "2910-437",
+    "addr:street": "Travessa Nova do Forno"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848523,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "34",
+    "addr:postcode": "2910-081",
+    "addr:street": "Ladeira das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848524,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "5",
+    "addr:postcode": "2910-503",
+    "addr:street": "Rua do Forte"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848525,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "27",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848526,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "33",
+    "addr:postcode": "2910-089",
+    "addr:street": "Rua Gonçalo De Abreu"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848527,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "1",
+    "addr:postcode": "2910-079",
+    "addr:street": "Travessa Fantasia"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848528,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "52",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848529,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "55",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848530,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "62",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848531,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "15",
+    "addr:postcode": "2910-087",
+    "addr:street": "Rua Quebra Costas",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848532,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "38",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848533,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "33",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848534,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "13",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848535,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "18",
+    "addr:postcode": "2910-078",
+    "addr:street": "Rua da Fantazia"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848536,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "30",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848537,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "16",
+    "addr:postcode": "2910-080",
+    "addr:street": "Beco das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848538,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "40",
+    "addr:postcode": "2910-077",
+    "addr:street": "Rua das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848539,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "40",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848540,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "50",
+    "addr:postcode": "2910-082",
+    "addr:street": "Rua Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848541,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "48",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848542,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "26",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848543,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "26",
+    "addr:postcode": "2910-077",
+    "addr:street": "Rua das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848544,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "10",
+    "addr:postcode": "2910-503",
+    "addr:street": "Rua do Forte",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848545,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "27",
+    "addr:postcode": "2910-089",
+    "addr:street": "Rua Gonçalo De Abreu",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848546,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "45",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848547,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "24",
+    "addr:postcode": "2910-090",
+    "addr:street": "Rua Gonçalo De Abreu"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848548,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "32",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848549,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "19",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848550,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "8",
+    "addr:postcode": "2910-093",
+    "addr:street": "Travessa São Domingos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848551,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-080",
+    "addr:street": "Beco das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848552,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "32",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848553,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "26A",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848554,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "8",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848555,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "2",
+    "addr:postcode": "2910-090",
+    "addr:street": "Rua Gonçalo De Abreu"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848556,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "28",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848557,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "25",
+    "addr:postcode": "2910-438",
+    "addr:street": "Travessa de Braz Martins"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848558,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "1",
+    "addr:postcode": "2910-435",
+    "addr:street": "Travessa da Boa Hora"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848559,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "1",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848560,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "104",
+    "addr:postcode": "2910-082",
+    "addr:street": "Rua das Fontaínhas",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848561,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "1",
+    "addr:postcode": "2910-437",
+    "addr:street": "Rua de Braz Martins"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848562,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "5",
+    "addr:postcode": "2910-080",
+    "addr:street": "Beco das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848563,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "14",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848564,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "34",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848565,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "16",
+    "addr:postcode": "2910-077",
+    "addr:street": "Rua das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848566,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "26",
+    "addr:postcode": "2910-080",
+    "addr:street": "Beco das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848567,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "38",
+    "addr:postcode": "2910-437",
+    "addr:street": "Rua de Braz Martins"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848568,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "75",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848569,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "26",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848570,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-701",
+    "addr:street": "Largo 28 De Janeiro"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848571,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "21",
+    "addr:postcode": "2910-089",
+    "addr:street": "Rua Gonçalo De Abreu",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848572,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848573,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "62",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848574,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "15",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848575,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "2",
+    "addr:postcode": "2910-087",
+    "addr:street": "Rua do Quebra Costas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848576,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "4",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848577,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-084",
+    "addr:street": "Rua das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848578,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "36",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848579,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "54",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848580,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "34",
+    "addr:postcode": "2910-082",
+    "addr:street": "Rua das Fontaínhas",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848581,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "32",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848582,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "9",
+    "addr:postcode": "2910-085",
+    "addr:street": "Travessa Poço Das Fontainhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848583,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "36",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848584,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "13",
+    "addr:postcode": "2910-080",
+    "addr:street": "Beco das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848585,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-084",
+    "addr:street": "Terreiro do Forte"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848586,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "28",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848587,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848588,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "23",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848589,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "1",
+    "addr:postcode": "2910-509",
+    "addr:street": "Travessa da Funga"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848590,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "36",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848591,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-079",
+    "addr:street": "Travessa Fantasia",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848592,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-081",
+    "addr:street": "Ladeira das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848593,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "38",
+    "addr:postcode": "2910-082",
+    "addr:street": "Rua Fontaínhas",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848594,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "4",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848595,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "1",
+    "addr:postcode": "2910-437",
+    "addr:street": "Travessa Nova do Forno"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848596,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "5",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848597,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "14",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848598,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "24",
+    "addr:postcode": "2910-077",
+    "addr:street": "Rua das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848599,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "5",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848600,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "33",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848601,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "25",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848602,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "51",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848603,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "18 20",
+    "addr:postcode": "2910-077",
+    "addr:street": "Rua das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848604,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "16",
+    "addr:postcode": "2910-078",
+    "addr:street": "Rua da Fantazia",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848605,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-435",
+    "addr:street": "Travessa da Boa Hora"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848606,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "30",
+    "addr:postcode": "2910-503",
+    "addr:street": "Rua do Forte"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848607,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "47",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848608,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "4 6",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848609,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "12",
+    "addr:postcode": "2910-093",
+    "addr:street": "Travessa São Domingos",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848610,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "27",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848611,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "5",
+    "addr:postcode": "2910-079",
+    "addr:street": "Travessa Fantasia"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848612,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "10",
+    "addr:postcode": "2910-491",
+    "addr:street": "Travessa da Fava",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848613,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "48",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848614,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "21",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848615,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "1",
+    "addr:postcode": "2910-085",
+    "addr:street": "Travessa Poço Das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848616,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "24",
+    "addr:postcode": "2910-084",
+    "addr:street": "Rua do Poço das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848617,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "10",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848618,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "24",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848619,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "32",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848620,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "43",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848621,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "42",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848622,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "38",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848623,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "18",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848624,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "33",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848625,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "5",
+    "addr:postcode": "2910-093",
+    "addr:street": "Travessa São Domingos"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848626,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "10",
+    "addr:postcode": "2910-078",
+    "addr:street": "Rua da Fantazia"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848627,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "2",
+    "addr:postcode": "2910-683",
+    "addr:street": "Forte",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848628,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "13",
+    "addr:postcode": "2910-437",
+    "addr:street": "Rua de Braz Martins"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848629,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "4",
+    "addr:postcode": "2910-087",
+    "addr:street": "Rua do Quebra Costas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848630,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-083",
+    "addr:street": "Travessa Nova do Forno"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848631,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "11",
+    "addr:postcode": "2910-087",
+    "addr:street": "Rua Quebra Costas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848632,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "7",
+    "addr:postcode": "2910-083",
+    "addr:street": "Travessa Nova Do Forno"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848633,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "39",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848634,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "16",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848635,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "28",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848636,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "11",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848637,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "11",
+    "addr:postcode": "2910-081",
+    "addr:street": "Ladeira das Fontaínhas",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848638,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "37",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua Gonçalo De Abreu",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848639,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "12",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848640,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "34",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848641,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "38",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848642,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "54",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848643,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "15",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848644,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "8",
+    "addr:postcode": "2910-491",
+    "addr:street": "Travessa da Fava",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848645,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "2",
+    "addr:postcode": "2910-435",
+    "addr:street": "Travessa da Boa Hora",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848646,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "24",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848647,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-503",
+    "addr:street": "Rua do Forte"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848648,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "1",
+    "addr:postcode": "2910-655",
+    "addr:street": "Largo Santos e Silva"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848649,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "23",
+    "addr:postcode": "2910-081",
+    "addr:street": "Ladeira das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848650,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-077",
+    "addr:street": "Rua das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848651,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "20",
+    "addr:postcode": "2910-078",
+    "addr:street": "Rua da Fantazia",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848652,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-509",
+    "addr:street": "Travessa da Funga",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848653,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "27",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848654,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "3",
+    "addr:postcode": "2910-470",
+    "addr:street": "Largo Defensores da República"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848655,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "54",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848656,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "2",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848657,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "1",
+    "addr:postcode": "2910-491",
+    "addr:street": "Travessa da Fava",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848658,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "16",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848659,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "62",
+    "addr:postcode": "2910-085",
+    "addr:street": "Travessa Poço Das Fontaínhas",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848660,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "50",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848661,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "14",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848662,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "7",
+    "addr:postcode": "2910-655",
+    "addr:street": "Largo Santos E Silva"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848663,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "28",
+    "addr:postcode": "2910-503",
+    "addr:street": "Rua do Forte",
+    "building:levels": "3"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848664,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "42",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848665,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "52",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848666,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "38",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848667,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "50",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848668,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "34",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848669,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "11",
+    "addr:postcode": "2910-437",
+    "addr:street": "Rua de Braz Martins",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848670,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "12",
+    "addr:postcode": "2910-090",
+    "addr:street": "Rua Gonçalo De Abreu"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848671,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "31",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848672,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "8",
+    "addr:postcode": "2910-699",
+    "addr:street": "Rua Doutor Vicente José Carvalho"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848673,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "21",
+    "addr:postcode": "2910-081",
+    "addr:street": "Ladeira das Fontaínhas",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848674,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "9",
+    "addr:postcode": "2910-380",
+    "addr:street": "Rua da Alegria"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848675,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "42",
+    "addr:postcode": "2910-077",
+    "addr:street": "Rua das Barrocas",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848676,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "15",
+    "addr:postcode": "2910-437",
+    "addr:street": "Rua de Braz Martins"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848677,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "52",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848678,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "82",
+    "addr:postcode": "2910-082",
+    "addr:street": "Rua das Fontaínhas",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848680,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "21",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848681,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "10",
+    "addr:postcode": "2910-502",
+    "addr:street": "Beco do Forte"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848682,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "32",
+    "addr:postcode": "2910-080",
+    "addr:street": "Beco das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848683,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "1",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848684,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "28",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848685,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "10",
+    "addr:postcode": "2910-091",
+    "addr:street": "Rua José Fontana"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848686,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "35",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848687,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "7",
+    "addr:postcode": "2910-509",
+    "addr:street": "Travessa da Funga"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848688,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "58",
+    "addr:postcode": "2910-585",
+    "addr:street": "Praça General Luís Domingues",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848689,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "58",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848690,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "13",
+    "addr:postcode": "2910-085",
+    "addr:street": "Travessa Poço Das Fontaínhas",
+    "building:levels": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848691,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "2A",
+    "addr:postcode": "2910-470",
+    "addr:street": "Largo Defensores da República",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848692,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "64",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848693,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "22",
+    "addr:postcode": "2910-082",
+    "addr:street": "Rua Fontaínhas",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848694,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "35",
+    "addr:postcode": "2910-418",
+    "addr:street": "Escadinhas das Barrocas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848695,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "6",
+    "addr:postcode": "2910-080",
+    "addr:street": "Beco das Fontaínhas"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848696,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "45",
+    "addr:postcode": "2910-480",
+    "addr:street": "Rua de Edmond Bartissol",
+    "building:levels": "3"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848697,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "70",
+    "addr:postcode": "2910-082",
+    "addr:street": "Rua das Fontaínhas",
+    "building:levels": "3"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848698,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "17",
+    "addr:postcode": "2910-507",
+    "addr:street": "Rua Francisco José Mota"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848699,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "16",
+    "addr:postcode": "2910-090",
+    "addr:street": "Rua Gonçalo De Abreu"
+  }
+},
+{
+  "type": "node",
+  "id": 11283848700,
+  "tags": {
+    "addr:city": "Setúbal",
+    "addr:housenumber": "44",
+    "addr:postcode": "2910-088",
+    "addr:street": "Rua Gil Vicente"
+  }
+}
+
+  ]
+}

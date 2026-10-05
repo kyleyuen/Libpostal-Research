@@ -1,0 +1,29 @@
+cold: µs/address per run [5.818, 5.988], samples [17003, 16910]
+warm: µs/address per run [3.589, 3.649], samples [17013, 17014]
+function                                         cold    warm cold-warm
+address_parser_parse                            1.715   1.148     0.567
+trie_search_tokens_from_index                   0.808   0.369     0.439
+crf_dict_lookup_array                           0.632   0.337     0.296
+fd_find_slot                                    0.384   0.195     0.189
+address_parser_features                         0.380   0.213     0.167
+_platform_memset                                0.335   0.202     0.133
+_platform_strncmp$VARIANT$Base                  0.117   0.024     0.092
+_platform_strlen                                0.185   0.100     0.085
+_platform_memmove                               0.304   0.226     0.078
+feature_array_add_nb                            0.184   0.132     0.052
+token_phrase_memberships                        0.073   0.033     0.040
+is_valid_dictionary_phrase                      0.050   0.013     0.037
+scan_token                                      0.113   0.082     0.030
+feature_array_add_nbl                           0.098   0.078     0.020
+_platform_memcmp                                0.051   0.032     0.020
+ap_canon_part                                   0.059   0.047     0.011
+search_address_dictionaries_prefix              0.017   0.010     0.008
+word_or_phrase_at_index                         0.031   0.024     0.008
+_platform_memchr                                0.022   0.016     0.006
+word_or_phrase_memo                             0.023   0.018     0.005
+utf8proc_iterate                                0.018   0.013     0.005
+add_ngram_features                              0.005   0.002     0.004
+DYLD-STUB$$memcpy                               0.019   0.016     0.003
+__bzero                                         0.014   0.011     0.003
+cstring_array_get_phrase                        0.023   0.021     0.002
+sum 2.284

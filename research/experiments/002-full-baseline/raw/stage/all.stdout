@@ -1,0 +1,87 @@
+replica_vs_library: checked=12863 mismatches=0 shortcut_paths=0
+corpus: addresses=12863 ascii=7464 non_ascii=5399
+pass 1: library=35.112 staged_untimed_batched=29.976 staged_untimed_original_order=33.582 staged_timed_original_order=33.917 staged_timed_batched=30.031 (us/addr)
+pass 2: library=34.065 staged_untimed_batched=29.125 staged_untimed_original_order=35.017 staged_timed_original_order=36.469 staged_timed_batched=30.591 (us/addr)
+pass 3: library=34.481 staged_untimed_batched=30.048 staged_untimed_original_order=34.937 staged_timed_original_order=35.461 staged_timed_batched=34.775 (us/addr)
+pass 4: library=33.762 staged_untimed_batched=29.966 staged_untimed_original_order=32.287 staged_timed_original_order=33.441 staged_timed_batched=30.674 (us/addr)
+pass 5: library=36.475 staged_untimed_batched=30.180 staged_untimed_original_order=34.385 staged_timed_original_order=35.066 staged_timed_batched=30.671 (us/addr)
+pass 6: library=35.620 staged_untimed_batched=30.407 staged_untimed_original_order=34.247 staged_timed_original_order=34.844 staged_timed_batched=30.283 (us/addr)
+STAGE_TABLE original_order (us/addr, mean over 6 passes; lookup+accumulate is ONE block per token)
+  normalize                                         2.538
+  tokenize+build tokens                             0.535
+  context_fill (phrase/dict search)                 3.707
+  crf ctx reset+trans copy                          1.288
+  feature generation                                5.480
+  viterbi                                           0.679
+  label strings                                     0.167
+  response build                                    0.490
+  free temporaries (response NOT included)          0.148
+  ORIG-ORDER lookup+accumulate: state              15.896
+  ORIG-ORDER lookup+accumulate: prev-tag            3.775
+  response destroy (outer loop)                     0.073
+STAGE_TABLE batched_approximation (us/addr; lookup and accumulate separated -> ~13% faster than library)
+  normalize                                         2.575
+  tokenize+build tokens                             0.547
+  context_fill (phrase/dict search)                 3.790
+  crf ctx reset+trans copy                          1.308
+  feature generation                                5.542
+  trie lookup: state features                      10.888
+  weight accumulate: state                          1.322
+  trie lookup: prev-tag features                    2.709
+  weight accumulate: prev-tag                       0.818
+  viterbi                                           0.690
+  label strings                                     0.173
+  response build                                    0.496
+  free temporaries (response NOT included)          0.150
+  response destroy (outer loop)                     0.074
+STAGE_TABLE original_order NON-ASCII inputs (n=32394 addresses processed, us/addr)
+  normalize                                         2.717
+  tokenize+build tokens                             0.587
+  context_fill (phrase/dict search)                 3.802
+  crf ctx reset+trans copy                          1.308
+  feature generation                                5.675
+  viterbi                                           0.689
+  label strings                                     0.178
+  response build                                    0.504
+  free temporaries (response NOT included)          0.151
+  ORIG-ORDER lookup+accumulate: state              16.121
+  ORIG-ORDER lookup+accumulate: prev-tag            3.875
+  TOTAL of stages                                  35.606
+STAGE_TABLE original_order ASCII inputs (n=44784 addresses processed, us/addr)
+  normalize                                         2.409
+  tokenize+build tokens                             0.498
+  context_fill (phrase/dict search)                 3.639
+  crf ctx reset+trans copy                          1.274
+  feature generation                                5.340
+  viterbi                                           0.672
+  label strings                                     0.159
+  response build                                    0.481
+  free temporaries (response NOT included)          0.146
+  ORIG-ORDER lookup+accumulate: state              15.733
+  ORIG-ORDER lookup+accumulate: prev-tag            3.703
+  TOTAL of stages                                  34.053
+counts_6_passes: addresses=77178 shortcut=18 tokens=453936 state_feature_lookups=3540084 (hits 2977554) prevtag_lookups=674136 (hits 642702)
+per_address: tokens=5.88 state_lookups=45.87 (hit 84.1%) prevtag_lookups=8.73 (hit 95.3%)
+timer_resolution_note: CLOCK_UPTIME_RAW ticks are ~41.67 ns; timed passes add ~30-60 timer reads per address
+recorded state_features=590014 prevtag_features=112356
+B1 corpus-order (all 590014): 183.1 ns/lookup hits=496259
+B2 shuffled (no token locality): 282.1 ns/lookup
+B3 each lookup done twice back-to-back: 143.8 ns/lookup (mean of 1st + 2nd)
+B4 hot working set (first 50 addrs, 2332 features repeated): 58.4 ns/lookup
+B1 corpus-order (all 590014): 177.8 ns/lookup hits=496259
+B2 shuffled (no token locality): 287.1 ns/lookup
+B3 each lookup done twice back-to-back: 135.6 ns/lookup (mean of 1st + 2nd)
+B4 hot working set (first 50 addrs, 2332 features repeated): 58.4 ns/lookup
+B1 corpus-order (all 590014): 173.2 ns/lookup hits=496259
+B2 shuffled (no token locality): 286.9 ns/lookup
+B3 each lookup done twice back-to-back: 140.6 ns/lookup (mean of 1st + 2nd)
+B4 hot working set (first 50 addrs, 2332 features repeated): 58.6 ns/lookup
+trie steps per state-feature lookup: mean=21.36 over 590014 (replica mismatches vs trie_get: 0)
+state_features trie: nodes=22140243 tail_bytes=68802960 data=11470624 | trans trie nodes=3818106
+mean state feature length=22.6 bytes
+hit/miss split of 590014 recorded state lookups: hits=496259 (84.1%) misses=93755 (15.9%)
+B5 rep0: hit-keys 145.3 ns/lookup (corpus order within hits) | miss-keys 301.1 ns/lookup
+B5 rep1: hit-keys 199.0 ns/lookup (corpus order within hits) | miss-keys 236.7 ns/lookup
+B5 rep2: hit-keys 151.0 ns/lookup (corpus order within hits) | miss-keys 228.3 ns/lookup
+steps HIT: n=496259 mean=21.04 p50=21 p90=33 p99=47 max=76 | histogram(steps:count) 1:33838 6:320 7:3132 8:6748 9:4022 10:11303 11:9783 12:14701 13:28999 14:17876 15:18269 16:26662 17:15278 18:16952 19:17923 20:19803 21:14434 22:23807 23:21104 24:16329 25:10885 26:11566 27:23633 28:19095 29:30967 30:13539 31:7850 32:6737 33:4900 34:3320 35:2411 36:1581 37:5144 38:1873 39:2361 40:2905 50:941 60:61 70:2 
+steps MISS: n=93755 mean=23.02 p50=23 p90=28 p99=43 max=64 | histogram(steps:count) 7:3 8:51 9:234 10:707 11:883 12:851 13:729 14:1039 15:2244 16:2809 17:2289 18:2580 19:4790 20:6982 21:9097 22:7837 23:9151 24:8876 25:8568 26:6028 27:5645 28:3201 29:2601 30:1344 31:900 32:676 33:516 34:354 35:231 36:210 37:158 38:130 39:147 40:214 50:70 

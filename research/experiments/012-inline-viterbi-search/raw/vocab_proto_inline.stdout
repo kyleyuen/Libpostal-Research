@@ -1,0 +1,11 @@
+vocab trie: nodes=7147311 tail=12484341 data=3694561 keys(header)=3694560 alphabet=256 bytes=94.6 MB
+dict: keys=3694560 leaves_total=3694560 visited=3694560 skipped=0 build=0.69s table=37.6 MB (4926082 slots) arena=58.9 MB (mean 16.73 B/key) total=96.5 MB = 102.0% of trie
+exhaustive round-trip: checked=3694560 mismatches=0
+query words: 237861
+fuzz: mutations=2000000 (trie hits 844006) mismatches=0
+timing corpus-order rep0: trie 49.9 ns/lookup | dict 26.2 ns/lookup (hits 209536/209536)
+timing shuffled rep0: trie 88.9 ns/lookup | dict 40.4 ns/lookup (hits 209536/209536)
+timing corpus-order rep1: trie 55.6 ns/lookup | dict 23.7 ns/lookup (hits 209536/209536)
+timing shuffled rep1: trie 87.3 ns/lookup | dict 37.9 ns/lookup (hits 209536/209536)
+timing corpus-order rep2: trie 51.0 ns/lookup | dict 25.3 ns/lookup (hits 209536/209536)
+timing shuffled rep2: trie 85.6 ns/lookup | dict 37.5 ns/lookup (hits 209536/209536)

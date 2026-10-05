@@ -1,0 +1,19 @@
+TT component fresh digit-start cold_us=0.035 warm_us=0.018
+TT component fresh other cold_us=0.215 warm_us=0.025
+TT component inside walk cold_us=0.178 warm_us=0.025
+TT postcode fresh digit-start cold_us=0.233 warm_us=0.021
+TT postcode fresh other cold_us=0.075 warm_us=0.030
+TT postcode inside walk cold_us=0.032 warm_us=0.007
+TT other fresh digit-start cold_us=0.000 warm_us=0.000
+TT other fresh other cold_us=0.169 warm_us=0.055
+TT other inside walk cold_us=0.013 warm_us=0.004
+total_parse cold_us=5.611 warm_us=2.496
+normalize cold_us=0.067 warm_us=0.042 diff=0.025
+tokenize cold_us=0.209 warm_us=0.124 diff=0.086
+context_fill cold_us=1.800 warm_us=0.430 diff=1.369
+predict_total cold_us=3.303 warm_us=1.768 diff=1.535
+response cold_us=0.213 warm_us=0.116 diff=0.097
+features cold_us=1.365 warm_us=0.680 diff=0.685
+lookups cold_us=0.664 warm_us=0.197 diff=0.467
+accumulate cold_us=0.803 warm_us=0.469 diff=0.335
+viterbi_and_rest cold_us=0.470 warm_us=0.422

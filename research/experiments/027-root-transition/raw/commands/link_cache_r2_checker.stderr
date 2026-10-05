@@ -1,0 +1,10 @@
+In file included from research/experiments/027-root-transition/tools/check_root_cache.c:9:
+In file included from research/experiments/027-root-transition/artifacts/cache_r2/src/trie_search.h:10:
+In file included from research/experiments/027-root-transition/artifacts/cache_r2/src/trie.h:32:
+libpostal/src/file_utils.h:59:30: warning: declaration of 'struct direct' will not be visible outside of this function [-Wvisibility]
+   59 | bool is_relative_path(struct dirent *ent);
+      |                              ^
+libpostal/src/file_utils.h:20:16: note: expanded from macro 'dirent'
+   20 | #define dirent direct
+      |                ^
+1 warning generated.

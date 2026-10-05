@@ -1,0 +1,43 @@
+1784a1785,1790
+> #ifdef EXP_FS_STATS
+> // 144 (diagnostic only; ported from 076/038): feature-section timers fs_t[0..7].
+> #include <mach/mach_time.h>
+> uint64_t fs_t[8];
+> #define FS_MARK(k) do { uint64_t fs_b = mach_absolute_time(); fs_t[k] += fs_b - fs_a; fs_a = fs_b; } while (0)
+> #endif
+1785a1792,1794
+> #ifdef EXP_FS_STATS
+>     uint64_t fs_a = mach_absolute_time();
+> #endif
+1880a1890,1892
+> #ifdef EXP_FS_STATS
+>     FS_MARK(0);
+> #endif
+1922a1935,1937
+> #ifdef EXP_FS_STATS
+>     FS_MARK(1);
+> #endif
+2005a2021,2023
+> #ifdef EXP_FS_STATS
+>     FS_MARK(2);
+> #endif
+2064a2083,2085
+> #ifdef EXP_FS_STATS
+>     FS_MARK(3);
+> #endif
+2209a2231,2233
+> #ifdef EXP_FS_STATS
+>     FS_MARK(4);
+> #endif
+2225a2250,2252
+> #ifdef EXP_FS_STATS
+>     FS_MARK(5);
+> #endif
+2250a2278,2280
+> #ifdef EXP_FS_STATS
+>     FS_MARK(6);
+> #endif
+2384a2415,2417
+> #ifdef EXP_FS_STATS
+>     FS_MARK(7);
+> #endif

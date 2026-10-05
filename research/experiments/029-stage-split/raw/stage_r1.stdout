@@ -1,0 +1,13 @@
+file=/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv addresses=10308 passes=50
+total_us=8.046 (parse+destroy per address, timers included)
+normalize_us=0.066
+tokenize_us=0.225
+context_fill_us=2.228
+features_us=2.056
+lookups_us=1.146
+accumulate_us=1.108
+viterbi_and_rest_of_predict_us=1.006
+response_build_us=0.189
+response_destroy_us=0.005
+unattributed_us=0.018 (setup of parse call, bypass paths, timer overhead)
+per_address: bytes=39.03 tokens=5.878 state_features=45.86 transition_features=8.74 bypassed=0.0003

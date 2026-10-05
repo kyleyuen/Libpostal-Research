@@ -1,0 +1,100 @@
+ok Omaha 211
+retry Albuquerque 0 <HTTPError 504: 'Gateway Time-out'>
+ok Albuquerque 400
+ok Richmond 400
+ok Buffalo 400
+retry Tucson 0 <HTTPError 504: 'Gateway Timeout'>
+ok Tucson 400
+retry Kingston 0 <HTTPError 504: 'Gateway Timeout'>
+ok Kingston 400
+retry Brighton 0 <HTTPError 504: 'Gateway Time-out'>
+ok Brighton 400
+ok Plymouth 400
+retry Athlone 0 <HTTPError 504: 'Gateway Time-out'>
+ok Athlone 400
+ok Townsville 35
+ok Napier 400
+ok East London 12
+ok Limoges 400
+ok Amiens 222
+ok Perpignan 40
+ok Bruges 400
+ok Kassel 400
+retry Erfurt 0 <HTTPError 504: 'Gateway Timeout'>
+ok Erfurt 400
+retry Ulm 0 <HTTPError 504: 'Gateway Timeout'>
+ok Ulm 400
+ok Wels 400
+ok Winterthur 400
+ok Nijmegen 400
+retry Horsens 0 <HTTPError 504: 'Gateway Time-out'>
+ok Horsens 400
+retry Norrkoping 0 <HTTPError 504: 'Gateway Timeout'>
+retry Norrkoping 1 <HTTPError 504: 'Gateway Timeout'>
+retry Norrkoping 2 <HTTPError 504: 'Gateway Time-out'>
+retry Norrkoping 3 <HTTPError 504: 'Gateway Timeout'>
+retry Bodo 0 <HTTPError 504: 'Gateway Time-out'>
+ok Bodo 400
+retry Pori 0 <HTTPError 504: 'Gateway Time-out'>
+ok Pori 400
+ok Gliwice 400
+retry Opole 0 <HTTPError 504: 'Gateway Time-out'>
+ok Opole 400
+retry Pardubice 0 <HTTPError 504: 'Gateway Timeout'>
+ok Pardubice 400
+retry Kecskemet 0 <HTTPError 504: 'Gateway Time-out'>
+ok Kecskemet 178
+ok Dubrovnik 109
+ok Lecce 400
+retry Perugia 0 <HTTPError 504: 'Gateway Timeout'>
+ok Perugia 400
+retry Oviedo 0 <HTTPError 504: 'Gateway Time-out'>
+ok Oviedo 400
+retry Cadiz 0 <HTTPError 504: 'Gateway Time-out'>
+retry Cadiz 1 <HTTPError 504: 'Gateway Timeout'>
+retry Cadiz 2 <HTTPError 504: 'Gateway Timeout'>
+retry Cadiz 3 <HTTPError 504: 'Gateway Timeout'>
+retry Viseu 0 <HTTPError 504: 'Gateway Time-out'>
+ok Viseu 147
+retry Kalamata 0 <HTTPError 504: 'Gateway Timeout'>
+ok Kalamata 133
+retry Oradea 0 <HTTPError 504: 'Gateway Time-out'>
+ok Oradea 349
+retry Sliven 0 <HTTPError 504: 'Gateway Timeout'>
+retry Sliven 1 <HTTPError 504: 'Gateway Timeout'>
+ok Sliven 400
+retry Gaziantep 0 <HTTPError 504: 'Gateway Time-out'>
+ok Gaziantep 11
+retry Chernivtsi 0 <HTTPError 504: 'Gateway Timeout'>
+ok Chernivtsi 377
+retry Tula 0 <HTTPError 504: 'Gateway Timeout'>
+ok Tula 400
+retry Valmiera 0 <HTTPError 504: 'Gateway Timeout'>
+ok Valmiera 400
+retry Utena 0 <HTTPError 504: 'Gateway Time-out'>
+ok Utena 400
+retry Florianopolis 0 <HTTPError 504: 'Gateway Timeout'>
+ok Florianopolis 400
+ok Bahia Blanca 400
+retry Morelia 0 <HTTPError 504: 'Gateway Time-out'>
+retry Morelia 1 <HTTPError 504: 'Gateway Timeout'>
+retry Morelia 2 <HTTPError 504: 'Gateway Time-out'>
+ok Morelia 74
+retry Valdivia 0 <HTTPError 504: 'Gateway Time-out'>
+ok Valdivia 400
+retry Cartagena 0 <HTTPError 504: 'Gateway Time-out'>
+ok Cartagena 14
+ok Chiclayo 63
+retry Niigata 0 <HTTPError 504: 'Gateway Time-out'>
+ok Niigata 1
+ok Matsuyama 2
+ok Taitung 400
+retry Jeonju 0 <HTTPError 504: 'Gateway Timeout'>
+retry Jeonju 1 <HTTPError 504: 'Gateway Timeout'>
+retry Jeonju 2 <HTTPError 504: 'Gateway Time-out'>
+ok Jeonju 58
+retry Ashdod 0 <HTTPError 504: 'Gateway Time-out'>
+retry Ashdod 1 <HTTPError 504: 'Gateway Timeout'>
+retry Ashdod 2 <HTTPError 504: 'Gateway Time-out'>
+ok Ashdod 222
+fetch exit 0

@@ -1,0 +1,28 @@
+--- ../101-prefix-suffix-flags/sources/crf.c	2026-10-03 22:18:32
++++ sources/crf.c	2026-10-04 00:42:52
+@@ -654,9 +654,25 @@
+     crf_dict_lookup_array((feature_dict_t *)self->trans_dict, prev_tag_features, crf_trans_ids, tindptr, 1);
+ #ifdef EXP_ROW_PACK
+ #ifdef EXP_WEIGHT_PREFETCH
++#ifdef EXP_ROW_LINES
++    // 085 (re-tested in 113 on the cleaned machine): hints only. Prefetch every line a weight row spans, EXP_ROW_STEP bytes apart (085 used 64; the
++    // Apple Silicon line is 128 bytes, hw.cachelinesize), up to EXP_ROW_LINES prefetches per row, instead of only the row's first line.
++#ifdef EXP_ROW_TRANS_ONLY
++    // 114: state rows keep the single first-line prefetch (085 rs8: the state-row extra prefetches cost on OSM-style data); only transition rows get every line.
++    for (size_t k = 0; k < ns; k++) { uint32_t id = crf_state_ids[k]; if (id != CRF_NO_FEATURE) __builtin_prefetch(&srec[indptr[id]]); }
++#else
++    for (size_t k = 0; k < ns; k++) { uint32_t id = crf_state_ids[k]; if (id == CRF_NO_FEATURE) continue;
++        const char *a = (const char *)&srec[indptr[id]], *b = (const char *)&srec[indptr[id + 1]]; int c = 0;
++        for (uintptr_t q = (uintptr_t)a & ~(uintptr_t)(EXP_ROW_STEP - 1); q < (uintptr_t)b && c < EXP_ROW_LINES; q += EXP_ROW_STEP, c++) __builtin_prefetch((const void *)q); }
++#endif
++    for (size_t k = 0; k < np; k++) { uint32_t id = crf_trans_ids[k]; if (id == CRF_NO_FEATURE) continue;
++        const char *a = (const char *)&trec[tindptr[id]], *b = (const char *)&trec[tindptr[id + 1]]; int c = 0;
++        for (uintptr_t q = (uintptr_t)a & ~(uintptr_t)(EXP_ROW_STEP - 1); q < (uintptr_t)b && c < EXP_ROW_LINES; q += EXP_ROW_STEP, c++) __builtin_prefetch((const void *)q); }
++#else
+     for (size_t k = 0; k < ns; k++) { uint32_t id = crf_state_ids[k]; if (id != CRF_NO_FEATURE) __builtin_prefetch(&srec[indptr[id]]); }
+     for (size_t k = 0; k < np; k++) { uint32_t id = crf_trans_ids[k]; if (id != CRF_NO_FEATURE) __builtin_prefetch(&trec[tindptr[id]]); }
+ #endif
++#endif
+ #else
+     crf_prefetch_rows(crf_state_ids, ns, indptr, indices, data);
+     crf_prefetch_rows(crf_trans_ids, np, tindptr, tindices, tdata);

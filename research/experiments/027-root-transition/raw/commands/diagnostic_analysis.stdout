@@ -1,0 +1,18 @@
+trial=1 variant=control_r2 setup_s=8.790 first_us=8.843 warm_median_addr_s=125456.9 warm_cpu_us=7.966 clean=5/119
+trial=1 variant=cache_r2 setup_s=8.754 first_us=8.689 warm_median_addr_s=125937.5 warm_cpu_us=7.938 clean=10/119
+trial=1 candidate_over_control=1.00383
+trial=2 variant=control_r2 setup_s=8.665 first_us=8.999 warm_median_addr_s=125148.7 warm_cpu_us=7.988 clean=8/119
+trial=2 variant=cache_r2 setup_s=8.738 first_us=8.039 warm_median_addr_s=124687.5 warm_cpu_us=8.014 clean=8/119
+trial=2 candidate_over_control=0.99631
+trial=3 variant=control_r2 setup_s=8.573 first_us=8.095 warm_median_addr_s=126325.4 warm_cpu_us=7.913 clean=11/119
+trial=3 variant=cache_r2 setup_s=8.723 first_us=8.080 warm_median_addr_s=124590.8 warm_cpu_us=8.024 clean=7/119
+trial=3 candidate_over_control=0.98627
+trial=4 variant=control_r2 setup_s=8.688 first_us=9.365 warm_median_addr_s=125534.5 warm_cpu_us=7.962 clean=6/119
+trial=4 variant=cache_r2 setup_s=8.675 first_us=9.260 warm_median_addr_s=126110.6 warm_cpu_us=7.929 clean=9/119
+trial=4 candidate_over_control=1.00459
+trial=5 variant=control_r2 setup_s=8.630 first_us=9.407 warm_median_addr_s=125611.0 warm_cpu_us=7.961 clean=9/119
+trial=5 variant=cache_r2 setup_s=8.755 first_us=8.087 warm_median_addr_s=125546.8 warm_cpu_us=7.965 clean=16/119
+trial=5 candidate_over_control=0.99949
+pooled variant=control_r2 passes=595 median_addr_s=125636.8 p10_addr_s=120067.3 median_cpu_us=7.957 clean=39/595
+pooled variant=cache_r2 passes=595 median_addr_s=125380.7 p10_addr_s=119903.1 median_cpu_us=7.973 clean=50/595
+paired_ratio median=0.99949 min=0.98627 max=1.00459

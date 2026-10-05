@@ -1,0 +1,65 @@
+--- ../101-prefix-suffix-flags/sources/address_parser.c	2026-10-03 22:18:32
++++ sources/address_parser.c	2026-10-03 23:04:52
+@@ -233,6 +233,9 @@
+ #ifdef EXP_FTT_ROLE_PREFETCH
+ extern uint32_t *crf_role_ids;
+ #define ap_role_ids_ext crf_role_ids
++#endif
++#ifdef EXP_PC_FLAG
++bool trie_word_falls_off(trie_t *self, const char *w, size_t len); extern const trie_t *trie_pcf_trie; extern const int32_t *trie_pcf_slot; extern size_t trie_pcf_n;
+ #endif
+ #ifdef EXP_FTT
+ extern const trie_t *trie_ftt_trie; extern const uint64_t *trie_ftt_tab; extern const int32_t *trie_ftt_slot; extern size_t trie_ftt_n;
+@@ -242,6 +245,9 @@
+     size_t V = vocab_dict->size; uint64_t *tab = calloc(V, sizeof *tab); if (tab == NULL) return; size_t n = 0;
+     for (size_t sl = 0; sl < V; sl++) { uint64_t sv = vocab_dict->slots[sl]; if (!sv) continue;
+         const char *w = (const char *)vocab_dict->arena + (uint32_t)sv + 1; tab[sl] = trie_ftt_walk(parser->phrases, w, strlen(w)); if (tab[sl]) n++;
++#ifdef EXP_PC_FLAG
++        if (parser->postal_codes != NULL && trie_word_falls_off(parser->postal_codes, w, strlen(w))) tab[sl] |= 1ULL << 60;   // 105: bit 60 = falls off the postcode trie
++#endif
+ #ifdef EXP_PS_FLAGS
+         // experiment 101: bit 61 / bit 62 = the address-dictionary prefix / suffix search (lang NULL, as in context fill) returns NULL_PHRASE for w.
+         // Unused bits of the 056 entry; every reader masks its fields or tests bit 63 only.
+@@ -251,6 +257,9 @@
+ #endif
+     }
+     trie_ftt_tab = tab; trie_ftt_trie = parser->phrases;
++#ifdef EXP_PC_FLAG
++    trie_pcf_trie = parser->postal_codes;
++#endif
+     if (getenv("FTT_VERBOSE") != NULL) fprintf(stderr, "FTT entries=%zu of %zu slots, table=%.1f MB\n", n, V, V * 8.0 / 1048576);
+ }
+ #endif
+@@ -1142,6 +1151,9 @@
+         phrase_array_push(context->prefix_phrases, prefix_phrase);
+         phrase_array_push(context->suffix_phrases, suffix_phrase);
+     }
++#endif
++#ifdef EXP_PC_FLAG
++    const int32_t *pcf_slots = trie_ftt_slot; size_t pcf_slots_n = trie_ftt_n;   // 105: the admin slots, kept for the postcode search (same tokens)
+ #endif
+     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+ #ifdef EXP_FTT
+@@ -1164,7 +1176,22 @@
+     phrase_array *postal_code_phrases = context->postal_code_phrases;
+     int64_array *postal_code_phrase_memberships = context->postal_code_phrase_memberships;
+ 
++#ifdef EXP_PC_FLAG
++    trie_pcf_slot = pcf_slots; trie_pcf_n = pcf_slots_n;
++#endif
+     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
++#ifdef EXP_PC_FLAG
++    trie_pcf_slot = NULL; trie_pcf_n = 0;
++#ifdef EXP_PC_FLAG_VERIFY
++    {   // run the search again without the flags and compare every phrase
++        static phrase_array *pcv = NULL; if (pcv == NULL) pcv = phrase_array_new(); phrase_array_clear(pcv);
++        bool hv = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &pcv);
++        if (hv != have_postal_code_phrases || pcv->n != postal_code_phrases->n || (pcv->n && memcmp(pcv->a, postal_code_phrases->a, pcv->n * sizeof *pcv->a))) {
++            fprintf(stderr, "EXP_PC_FLAG_VERIFY MISMATCH\n"); abort(); }
++        static unsigned long long nv = 0; if ((++nv & 0x3FFFF) == 0) fprintf(stderr, "EXP_PC_FLAG_VERIFY %llu searches ok\n", nv);
++    }
++#endif
++#endif
+     token_phrase_memberships(postal_code_phrases, postal_code_phrase_memberships, num_tokens);
+ #if defined(EXP_PC_PREFETCH) && defined(EXP_PC_COMPRESS)
+     // 077: hint only. Feature generation tests each postal-code phrase's postcode-context row; prefetch its row-index entry, then read it and prefetch the row start.

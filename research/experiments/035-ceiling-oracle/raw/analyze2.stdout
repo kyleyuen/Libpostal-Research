@@ -1,0 +1,7 @@
+| binary (PGO training) | v1 µs | v1 speedup (range) | nv µs | nv speedup (range) | osm µs | osm speedup (range) |
+|---|---:|---:|---:|---:|---:|---:|
+| original | 33.827 | 1.000× (1.00–1.00) | 34.535 | 1.000× (1.00–1.00) | 21.593 | 1.000× (1.00–1.00) |
+| l3 no-PGO control | 8.174 | 4.159× (4.09–4.18) | 8.192 | 4.202× (4.16–4.24) | 5.272 | 4.103× (3.93–4.14) |
+| level-2 ceiling: keys replayed, lookups paid (no PGO) — probe only | 3.905 | 8.696× (8.60–8.71) | 4.008 | 8.563× (8.51–8.70) | 2.854 | 7.584× (7.40–7.98) |
+
+peak footprint bytes (max over rounds): orig 2615167208/2613561576/2613577936; l3n 2380351720/2380368128/2370308304; okn 2383972584/2383890688/2374453480

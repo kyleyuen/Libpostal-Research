@@ -1,0 +1,340 @@
+== t=0s phase=load
+======================================================================
+parser_profile [72108]: 64-bit    Footprint: 47 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+  30 MB        0 B          0 B          4    MALLOC_LARGE
+  16 MB        0 B          0 B          7    MALLOC_SMALL
+ 416 KB        0 B          0 B          8    MALLOC metadata
+ 256 KB        0 B          0 B          1    page table
+ 132 KB        0 B          0 B         35    __DATA_DIRTY
+  80 KB        0 B          0 B          1    MALLOC_TINY
+  74 KB      16 KB          0 B         34    __DATA
+  50 KB        0 B          0 B        126    unused dyld shared cache area
+  32 KB        0 B          0 B          3    untagged (VM_ALLOCATE)
+  32 KB        0 B          0 B          2    stack
+  32 KB        0 B          0 B          2    __TPRO_CONST
+  16 KB        0 B          0 B          1    MALLOC_NANO
+  16 KB        0 B          0 B          1    os_alloc_once
+  16 KB        0 B          0 B          1    tag 22
+    0 B     112 KB          0 B         46    __TEXT
+    0 B      16 KB          0 B         43    __DATA_CONST
+    0 B      16 KB          0 B          3    __LINKEDIT
+    0 B        0 B          0 B         45    __AUTH_CONST
+    0 B        0 B          0 B         12    __AUTH
+    0 B        0 B          0 B          1    mapped file
+    ---        ---          ---        ---    ---
+  47 MB     160 KB          0 B        378    TOTAL
+
+Auxiliary data:
+    phys_footprint: 45 MB
+    phys_footprint_peak: 45 MB
+
+== t=2s phase=load
+======================================================================
+parser_profile [72108]: 64-bit    Footprint: 2282 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+2222 MB        0 B          0 B         42    MALLOC_LARGE
+  58 MB        0 B          0 B         18    MALLOC_SMALL
+1410 KB        0 B          0 B          1    page table
+1040 KB        0 B          0 B          9    MALLOC metadata
+ 132 KB        0 B          0 B         35    __DATA_DIRTY
+  96 KB        0 B          0 B          1    MALLOC_TINY
+  74 KB      16 KB          0 B         34    __DATA
+  50 KB        0 B          0 B        126    unused dyld shared cache area
+  32 KB        0 B          0 B          3    untagged (VM_ALLOCATE)
+  32 KB        0 B          0 B          2    stack
+  32 KB        0 B          0 B          2    __TPRO_CONST
+  16 KB        0 B          0 B          1    os_alloc_once
+  16 KB        0 B          0 B          1    MALLOC_NANO
+  16 KB        0 B          0 B          1    tag 22
+    0 B     160 KB          0 B         46    __TEXT
+    0 B      16 KB          0 B         43    __DATA_CONST
+    0 B      16 KB          0 B          3    __LINKEDIT
+    0 B        0 B          0 B         45    __AUTH_CONST
+    0 B        0 B          0 B         12    __AUTH
+    0 B        0 B          0 B          1    mapped file
+    ---        ---          ---        ---    ---
+2282 MB     208 KB          0 B        428    TOTAL
+
+Auxiliary data:
+    phys_footprint: 2281 MB
+    phys_footprint_peak: 2281 MB
+
+== after_READY=1s phase=steady
+======================================================================
+parser_profile [72108]: 64-bit    Footprint: 2172 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+2110 MB        0 B          0 B         36    MALLOC_LARGE
+  59 MB        0 B          0 B         20    MALLOC_SMALL
+1410 KB        0 B          0 B          1    page table
+1072 KB        0 B          0 B          9    MALLOC metadata
+ 132 KB        0 B          0 B         35    __DATA_DIRTY
+ 112 KB        0 B          0 B          1    MALLOC_TINY
+  74 KB      16 KB          0 B         34    __DATA
+  50 KB        0 B          0 B        126    unused dyld shared cache area
+  32 KB        0 B          0 B          3    untagged (VM_ALLOCATE)
+  32 KB        0 B          0 B          2    stack
+  32 KB        0 B          0 B          2    __TPRO_CONST
+  16 KB        0 B          0 B          1    os_alloc_once
+  16 KB        0 B          0 B          1    MALLOC_NANO
+  16 KB        0 B          0 B          1    tag 22
+    0 B    1504 KB          0 B         46    __TEXT
+    0 B     160 KB          0 B         43    __DATA_CONST
+    0 B      16 KB          0 B          3    __LINKEDIT
+    0 B        0 B          0 B         45    __AUTH_CONST
+    0 B        0 B          0 B         12    __AUTH
+    0 B        0 B          0 B          1    mapped file
+    ---        ---          ---        ---    ---
+2172 MB    1696 KB          0 B        424    TOTAL
+
+Auxiliary data:
+    phys_footprint: 2172 MB
+    phys_footprint_peak: 2336 MB
+
+== after_READY=3s phase=steady
+======================================================================
+parser_profile [72108]: 64-bit    Footprint: 2172 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+2110 MB        0 B          0 B         36    MALLOC_LARGE
+  59 MB        0 B          0 B         20    MALLOC_SMALL
+1410 KB        0 B          0 B          1    page table
+1072 KB        0 B          0 B          9    MALLOC metadata
+ 132 KB        0 B          0 B         35    __DATA_DIRTY
+ 112 KB        0 B          0 B          1    MALLOC_TINY
+  74 KB      16 KB          0 B         34    __DATA
+  50 KB        0 B          0 B        126    unused dyld shared cache area
+  32 KB        0 B          0 B          3    untagged (VM_ALLOCATE)
+  32 KB        0 B          0 B          2    stack
+  32 KB        0 B          0 B          2    __TPRO_CONST
+  16 KB        0 B          0 B          1    os_alloc_once
+  16 KB        0 B          0 B          1    MALLOC_NANO
+  16 KB        0 B          0 B          1    tag 22
+    0 B    1504 KB          0 B         46    __TEXT
+    0 B     160 KB          0 B         43    __DATA_CONST
+    0 B      16 KB          0 B          3    __LINKEDIT
+    0 B        0 B          0 B         45    __AUTH_CONST
+    0 B        0 B          0 B         12    __AUTH
+    0 B        0 B          0 B          1    mapped file
+    ---        ---          ---        ---    ---
+2172 MB    1696 KB          0 B        424    TOTAL
+
+Auxiliary data:
+    phys_footprint: 2172 MB
+    phys_footprint_peak: 2336 MB
+
+== after_READY=6s phase=steady
+======================================================================
+parser_profile [72108]: 64-bit    Footprint: 2172 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+2110 MB        0 B          0 B         36    MALLOC_LARGE
+  59 MB        0 B          0 B         22    MALLOC_SMALL
+1410 KB        0 B          0 B          1    page table
+1104 KB        0 B          0 B          9    MALLOC metadata
+ 132 KB        0 B          0 B         35    __DATA_DIRTY
+ 112 KB        0 B          0 B          1    MALLOC_TINY
+  74 KB      16 KB          0 B         34    __DATA
+  50 KB        0 B          0 B        126    unused dyld shared cache area
+  32 KB        0 B          0 B          3    untagged (VM_ALLOCATE)
+  32 KB        0 B          0 B          2    stack
+  32 KB        0 B          0 B          2    __TPRO_CONST
+  16 KB        0 B          0 B          1    MALLOC_NANO
+  16 KB        0 B          0 B          1    os_alloc_once
+  16 KB        0 B          0 B          1    tag 22
+    0 B    1504 KB          0 B         46    __TEXT
+    0 B     160 KB          0 B         43    __DATA_CONST
+    0 B      16 KB          0 B          3    __LINKEDIT
+    0 B        0 B          0 B         45    __AUTH_CONST
+    0 B        0 B          0 B         12    __AUTH
+    0 B        0 B          0 B          1    mapped file
+    ---        ---          ---        ---    ---
+2172 MB    1696 KB          0 B        426    TOTAL
+
+Auxiliary data:
+    phys_footprint: 2172 MB
+    phys_footprint_peak: 2336 MB
+
+== after_READY=10s phase=steady
+======================================================================
+parser_profile [72108]: 64-bit    Footprint: 2172 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+2110 MB        0 B          0 B         36    MALLOC_LARGE
+  59 MB        0 B          0 B         22    MALLOC_SMALL
+1410 KB        0 B          0 B          1    page table
+1104 KB        0 B          0 B          9    MALLOC metadata
+ 132 KB        0 B          0 B         35    __DATA_DIRTY
+ 112 KB        0 B          0 B          1    MALLOC_TINY
+  74 KB      16 KB          0 B         34    __DATA
+  50 KB        0 B          0 B        126    unused dyld shared cache area
+  32 KB        0 B          0 B          3    untagged (VM_ALLOCATE)
+  32 KB        0 B          0 B          2    stack
+  32 KB        0 B          0 B          2    __TPRO_CONST
+  16 KB        0 B          0 B          1    os_alloc_once
+  16 KB        0 B          0 B          1    MALLOC_NANO
+  16 KB        0 B          0 B          1    tag 22
+    0 B    1504 KB          0 B         46    __TEXT
+    0 B     160 KB          0 B         43    __DATA_CONST
+    0 B      16 KB          0 B          3    __LINKEDIT
+    0 B        0 B          0 B          1    mapped file
+    0 B        0 B          0 B         45    __AUTH_CONST
+    0 B        0 B          0 B         12    __AUTH
+    ---        ---          ---        ---    ---
+2172 MB    1696 KB          0 B        426    TOTAL
+
+Auxiliary data:
+    phys_footprint: 2172 MB
+    phys_footprint_peak: 2336 MB
+
+== after_READY=15s phase=steady
+======================================================================
+parser_profile [72108]: 64-bit    Footprint: 2172 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+2110 MB        0 B          0 B         36    MALLOC_LARGE
+  59 MB        0 B          0 B         22    MALLOC_SMALL
+1410 KB        0 B          0 B          1    page table
+1104 KB        0 B          0 B          9    MALLOC metadata
+ 132 KB        0 B          0 B         35    __DATA_DIRTY
+ 112 KB        0 B          0 B          1    MALLOC_TINY
+  74 KB      16 KB          0 B         34    __DATA
+  50 KB        0 B          0 B        126    unused dyld shared cache area
+  32 KB        0 B          0 B          3    untagged (VM_ALLOCATE)
+  32 KB        0 B          0 B          2    stack
+  32 KB        0 B          0 B          2    __TPRO_CONST
+  16 KB        0 B          0 B          1    tag 22
+  16 KB        0 B          0 B          1    os_alloc_once
+  16 KB        0 B          0 B          1    MALLOC_NANO
+    0 B    1504 KB          0 B         46    __TEXT
+    0 B     160 KB          0 B         43    __DATA_CONST
+    0 B      16 KB          0 B          3    __LINKEDIT
+    0 B        0 B          0 B         45    __AUTH_CONST
+    0 B        0 B          0 B         12    __AUTH
+    0 B        0 B          0 B          1    mapped file
+    ---        ---          ---        ---    ---
+2172 MB    1696 KB          0 B        426    TOTAL
+
+Auxiliary data:
+    phys_footprint: 2172 MB
+    phys_footprint_peak: 2336 MB
+
+== after_READY=20s phase=steady
+======================================================================
+parser_profile [72108]: 64-bit    Footprint: 2172 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+2110 MB        0 B          0 B         36    MALLOC_LARGE
+  59 MB        0 B          0 B         22    MALLOC_SMALL
+1410 KB        0 B          0 B          1    page table
+1104 KB        0 B          0 B          9    MALLOC metadata
+ 132 KB        0 B          0 B         35    __DATA_DIRTY
+ 112 KB        0 B          0 B          1    MALLOC_TINY
+  74 KB      16 KB          0 B         34    __DATA
+  50 KB        0 B          0 B        126    unused dyld shared cache area
+  32 KB        0 B          0 B          3    untagged (VM_ALLOCATE)
+  32 KB        0 B          0 B          2    stack
+  32 KB        0 B          0 B          2    __TPRO_CONST
+  16 KB        0 B          0 B          1    os_alloc_once
+  16 KB        0 B          0 B          1    MALLOC_NANO
+  16 KB        0 B          0 B          1    tag 22
+    0 B    1504 KB          0 B         46    __TEXT
+    0 B     160 KB          0 B         43    __DATA_CONST
+    0 B      16 KB          0 B          3    __LINKEDIT
+    0 B        0 B          0 B          1    mapped file
+    0 B        0 B          0 B         45    __AUTH_CONST
+    0 B        0 B          0 B         12    __AUTH
+    ---        ---          ---        ---    ---
+2172 MB    1696 KB          0 B        426    TOTAL
+
+Auxiliary data:
+    phys_footprint: 2172 MB
+    phys_footprint_peak: 2336 MB
+
+== after_READY=25s phase=steady
+======================================================================
+parser_profile [72108]: 64-bit    Footprint: 2172 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+2110 MB        0 B          0 B         36    MALLOC_LARGE
+  59 MB        0 B          0 B         22    MALLOC_SMALL
+1410 KB        0 B          0 B          1    page table
+1104 KB        0 B          0 B          9    MALLOC metadata
+ 132 KB        0 B          0 B         35    __DATA_DIRTY
+ 112 KB        0 B          0 B          1    MALLOC_TINY
+  74 KB      16 KB          0 B         34    __DATA
+  50 KB        0 B          0 B        126    unused dyld shared cache area
+  32 KB        0 B          0 B          3    untagged (VM_ALLOCATE)
+  32 KB        0 B          0 B          2    stack
+  32 KB        0 B          0 B          2    __TPRO_CONST
+  16 KB        0 B          0 B          1    MALLOC_NANO
+  16 KB        0 B          0 B          1    os_alloc_once
+  16 KB        0 B          0 B          1    tag 22
+    0 B    1504 KB          0 B         46    __TEXT
+    0 B     160 KB          0 B         43    __DATA_CONST
+    0 B      16 KB          0 B          3    __LINKEDIT
+    0 B        0 B          0 B         45    __AUTH_CONST
+    0 B        0 B          0 B         12    __AUTH
+    0 B        0 B          0 B          1    mapped file
+    ---        ---          ---        ---    ---
+2172 MB    1696 KB          0 B        426    TOTAL
+
+Auxiliary data:
+    phys_footprint: 2172 MB
+    phys_footprint_peak: 2336 MB
+
+== after_READY=30s phase=steady
+======================================================================
+parser_profile [72108]: 64-bit    Footprint: 2172 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+2110 MB        0 B          0 B         36    MALLOC_LARGE
+  59 MB        0 B          0 B         22    MALLOC_SMALL
+1410 KB        0 B          0 B          1    page table
+1104 KB        0 B          0 B          9    MALLOC metadata
+ 132 KB        0 B          0 B         35    __DATA_DIRTY
+ 112 KB        0 B          0 B          1    MALLOC_TINY
+  74 KB      16 KB          0 B         34    __DATA
+  50 KB        0 B          0 B        126    unused dyld shared cache area
+  32 KB        0 B          0 B          3    untagged (VM_ALLOCATE)
+  32 KB        0 B          0 B          2    stack
+  32 KB        0 B          0 B          2    __TPRO_CONST
+  16 KB        0 B          0 B          1    os_alloc_once
+  16 KB        0 B          0 B          1    MALLOC_NANO
+  16 KB        0 B          0 B          1    tag 22
+    0 B    1504 KB          0 B         46    __TEXT
+    0 B     160 KB          0 B         43    __DATA_CONST
+    0 B      16 KB          0 B          3    __LINKEDIT
+    0 B        0 B          0 B         45    __AUTH_CONST
+    0 B        0 B          0 B         12    __AUTH
+    0 B        0 B          0 B          1    mapped file
+    ---        ---          ---        ---    ---
+2172 MB    1696 KB          0 B        426    TOTAL
+
+Auxiliary data:
+    phys_footprint: 2172 MB
+    phys_footprint_peak: 2336 MB
+

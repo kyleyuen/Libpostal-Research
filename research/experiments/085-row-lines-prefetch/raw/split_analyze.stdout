@@ -1,0 +1,14 @@
+dev
+  total_parse        pcp cold 6.845 rl8 cold 6.574 Δ -0.271 | warm 3.072 3.113 Δ +0.041
+  context_fill       pcp cold 2.132 rl8 cold 2.113 Δ -0.019 | warm 0.524 0.522 Δ -0.002
+  features           pcp cold 1.560 rl8 cold 1.552 Δ -0.008 | warm 0.812 0.811 Δ -0.001
+  lookups            pcp cold 0.852 rl8 cold 1.058 Δ +0.206 | warm 0.268 0.322 Δ +0.054
+  accumulate         pcp cold 1.105 rl8 cold 0.648 Δ -0.457 | warm 0.516 0.495 Δ -0.021
+  viterbi_and_rest   pcp cold 0.658 rl8 cold 0.664 Δ +0.006 | warm 0.618 0.619 Δ +0.001
+osm
+  total_parse        pcp cold 4.530 rl8 cold 4.575 Δ +0.045 | warm 2.653 2.686 Δ +0.033
+  context_fill       pcp cold 1.259 rl8 cold 1.260 Δ +0.001 | warm 0.468 0.465 Δ -0.003
+  features           pcp cold 1.023 rl8 cold 1.033 Δ +0.010 | warm 0.660 0.660 Δ +0.000
+  lookups            pcp cold 0.516 rl8 cold 0.687 Δ +0.171 | warm 0.220 0.268 Δ +0.048
+  accumulate         pcp cold 0.715 rl8 cold 0.568 Δ -0.147 | warm 0.475 0.457 Δ -0.018
+  viterbi_and_rest   pcp cold 0.584 rl8 cold 0.586 Δ +0.002 | warm 0.552 0.554 Δ +0.002

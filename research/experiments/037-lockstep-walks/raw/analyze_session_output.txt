@@ -1,0 +1,19 @@
+2026-10-02T16:31:16-0700
+2026-10-02T16:42:35-0700
+  45 0
+| binary (PGO training) | v1 µs | v1 speedup (range) | nv µs | nv speedup (range) | osm µs | osm speedup (range) |
+|---|---:|---:|---:|---:|---:|---:|
+| original | 33.686 | 1.000× (1.00–1.00) | 34.286 | 1.000× (1.00–1.00) | 21.296 | 1.000× (1.00–1.00) |
+| l3 (deliverable) | 7.865 | 4.286× (4.15–4.33) | 7.939 | 4.328× (4.28–4.39) | 4.987 | 4.253× (4.21–4.33) |
+| lk = l3 + lockstep walks | 8.081 | 4.168× (4.13–4.19) | 8.159 | 4.200× (4.16–4.24) | 5.264 | 4.049× (4.02–4.08) |
+
+peak footprint bytes (max over rounds): orig 2613217536/2613610728/2612775144; l3 2380335336/2380351744/2370291920; lk 2380335336/2380335336/2370291920
+t=3s threads=1 t=6s threads=1 t=9s threads=1 t=12s threads=1 t=15s threads=1 t=18s threads=1 
+orig 2026-10-02T16:41:17-07:00 Footprint: 2492 MB
+l3 2026-10-02T16:41:30-07:00 Footprint: 2141 MB
+lk 2026-10-02T16:41:44-07:00 Footprint: 2141 MB
+orig 2026-10-02T16:42:06-07:00 Footprint: 2492 MB
+l3 2026-10-02T16:42:20-07:00 Footprint: 2141 MB
+lk 2026-10-02T16:42:34-07:00 Footprint: 2141 MB
+
+[exited with code 0]

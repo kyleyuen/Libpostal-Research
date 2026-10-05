@@ -1,0 +1,6822 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-03T09:10:36Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 71719181,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "25",
+    "addr:postcode": "70173",
+    "addr:street": "Stephanstraße",
+    "amenity": "parking",
+    "capacity": "32",
+    "capacity:disabled": "0",
+    "charge": "3.50 EUR/hour;19:00 - 6:00 8.00 EUR/max;20.00 EUR/day",
+    "check_date:opening_hours": "2023-05-07",
+    "description": "Maximale Höhe: 2,3m",
+    "fee": "yes",
+    "maxheight": "2.30",
+    "name": "Königshof",
+    "opening_hours": "24/7",
+    "opening_hours:signed": "no",
+    "operator": "APCOA Deutschland GmbH",
+    "operator:type": "private",
+    "parking": "multi-storey",
+    "payment:cash": "yes",
+    "payment:dkv": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "website": "https://www.apcoa.de/parken/stuttgart/koenigshof/"
+  }
+},
+{
+  "type": "node",
+  "id": 71719792,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "33",
+    "addr:postcode": "70173",
+    "addr:street": "Stephanstraße",
+    "amenity": "parking",
+    "capacity:disabled": "2",
+    "covered": "yes",
+    "fee": "yes",
+    "layer": "-1",
+    "name": "Marquardtgarage",
+    "opening_hours": "Mo-We 05:00-01:00; Th-Sa 05:00-03:00; Su,PH 09:00-01:00",
+    "operator": "Jäger Parkhaus-Betreibungs-GmbH",
+    "operator:type": "private",
+    "parking": "underground",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "supervised": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 76908569,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "1",
+    "addr:street": "Breite Straße",
+    "amenity": "parking",
+    "fee": "yes",
+    "layer": "-1",
+    "parking": "underground",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 76926962,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "27",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "amenity": "parking",
+    "bicycle": "no",
+    "capacity": "190",
+    "description": "Maximale Höhe: 1,8m",
+    "fee": "yes",
+    "layer": "-1",
+    "maxheight": "1.8",
+    "motorcar:liquid_gas": "no",
+    "motorcycle": "no",
+    "name": "Neue Brücke / Königstraße",
+    "opening_hours": "24/7",
+    "operator": "APCOA PARKING Deutschland GmbH",
+    "operator:type": "private",
+    "parking": "underground",
+    "payment:cash": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "surface": "asphalt",
+    "trailer": "no",
+    "was:name": "Karstadt",
+    "website": "https://www.apcoa.de/parken/stuttgart/neue-bruecke-koenigstrasse/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 76944707,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "70173",
+    "addr:street": "Schillerplatz",
+    "amenity": "pharmacy",
+    "check_date": "2026-06-19",
+    "healthcare": "pharmacy",
+    "name": "Hof-Apotheke Stuttgart",
+    "opening_hours": "Mo-Fr 08:30-19:00; Th 08:30-20:00; Sa 08:00-19:00",
+    "phone": "+49 711 225890",
+    "website": "https://www.hofapotheke.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 76957762,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Bolzstraße",
+    "amenity": "post_office",
+    "description": "Bietet Dienstleistungen der Deutschen Post und von DHL an.",
+    "level": "0",
+    "name": "Deutsche Post",
+    "opening_hours": "Mo-Fr 10:00-14:00, 15:30-19:30; Sa 10:00-14:00",
+    "operator": "Deutsche Post",
+    "operator:wikidata": "Q157645",
+    "phone": "0800 1888444",
+    "ref": "501",
+    "source": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 87403984,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "13",
+    "addr:postcode": "70173",
+    "addr:street": "Steinstraße",
+    "amenity": "bar",
+    "contact:facebook": "https://www.facebook.com/1.stock.stuttgart/",
+    "entrance": "yes",
+    "indoor_seating": "yes",
+    "live_music": "yes",
+    "name": "1. Stock",
+    "opening_hours": "Th 20:00-02:00, Fr-Sa 20:00-04:00; Mo-We off",
+    "outdoor_seating": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 96608395,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "70178",
+    "addr:street": "Christophstraße",
+    "amenity": "police",
+    "check_date": "2025-03-30",
+    "name": "Kriminalwache/Fahndung",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 96616972,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "52",
+    "addr:postcode": "70178",
+    "addr:street": "Nesenbachstraße",
+    "check_date": "2026-03-04",
+    "disused:amenity": "restaurant",
+    "old_name": "Earl Eberhard",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 102975510,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "20",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "amenity": "cinema",
+    "check_date:opening_hours": "2023-10-31",
+    "contact:phone": "+49 711 2290440",
+    "name": "Gloria",
+    "opening_hours:signed": "no",
+    "operator": "EM-Filmtheaterbetriebe",
+    "payment:mastercard": "yes",
+    "website": "https://www.innenstadtkinos.de/",
+    "wheelchair": "no",
+    "wikidata": "Q50842498"
+  }
+},
+{
+  "type": "node",
+  "id": 264257970,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "47",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "amenity": "bar",
+    "name": "Yart",
+    "phone": "+49 176 66802001",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 264257971,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "36",
+    "addr:postcode": "70173",
+    "addr:street": "Hirschstraße",
+    "amenity": "bar",
+    "name": "Club Zwanglos",
+    "old_name": "Schocken",
+    "opening_hours": "Su,Mo 15:00-01:00, Tu-We 15:00-02:00, Th 15:00-03:00, Fr,Sa 15:00-05:00",
+    "website": "http://www.club-schocken.de/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 264893979,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "70173",
+    "addr:street": "Schulstraße",
+    "addr:suburb": "Mitte",
+    "amenity": "restaurant",
+    "contact:instagram": "https://www.instagram.com/sanku_maotsai_stuttgart/",
+    "cuisine": "chinese;malatang;sichuan",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Sanku Maots' ai",
+    "opening_hours": "Mo-Th 11:30-21:30; Fr-Sa 11:30-22:00; Su 12:00-21:00"
+  }
+},
+{
+  "type": "node",
+  "id": 264893981,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "70173",
+    "addr:street": "Bolzstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 265482728,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "7",
+    "addr:postcode": "70178",
+    "addr:street": "Christophstraße",
+    "amenity": "parking_entrance",
+    "fee": "yes",
+    "maxheight": "2",
+    "name": "Tübinger Carré",
+    "parking": "underground",
+    "website": "https://www.stuttgarter-heimschutz.de/standorte/tuebinger-carre/"
+  }
+},
+{
+  "type": "node",
+  "id": 265727467,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "86",
+    "addr:postcode": "70180",
+    "addr:street": "Olgastraße",
+    "brand": "Rewe",
+    "brand:wikidata": "Q16968817",
+    "brand:wikipedia": "en:REWE",
+    "contact:website": "https://www.rewe.de",
+    "name": "REWE",
+    "opening_hours": "Mo-Sa 08:00-24:00",
+    "ref": "0344",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 265727468,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "70182",
+    "addr:street": "Wilhelmsplatz",
+    "amenity": "cafe",
+    "bistro": "yes",
+    "name": "Bistro Einstein",
+    "outdoor_seating": "yes",
+    "phone": "+49 711 2349797",
+    "website": "https://bistroeinstein.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 266697127,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "34",
+    "addr:postcode": "70173",
+    "addr:street": "Hauptstätter Straße",
+    "entrance": "yes",
+    "former:amenity": "police",
+    "former:name": "Polizeirevier 1 Hauptstätter Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 266697371,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "15",
+    "addr:street": "Torstraße",
+    "branch": "Stuttgart",
+    "brand": "ARLT Computer",
+    "brand:wikidata": "Q675902",
+    "name": "ARLT Computer",
+    "opening_hours": "Mo-Fr 10:00-20:00; Sa 10:00-18:00",
+    "shop": "computer",
+    "website": "https://www.arlt.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 267504713,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "70173",
+    "addr:street": "Schillerplatz",
+    "amenity": "restaurant",
+    "bar": "yes",
+    "contact:website": "http://www.alte-kanzlei-stuttgart.de/",
+    "cuisine": "german;regional;schwäbisch",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Alte Kanzlei",
+    "opening_hours": "Tu-Fr 11:00-23:00; Sa 09:00-23:00; Su,PH 09:00-22:00; Mo off",
+    "outdoor_seating": "yes",
+    "reservation": "recommended",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 268592720,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "70173",
+    "addr:street": "Bolzstraße",
+    "amenity": "restaurant",
+    "brand": "Vapiano",
+    "brand:wikidata": "Q506252",
+    "check_date": "2024-07-31",
+    "cuisine": "italian",
+    "diet:vegan": "yes",
+    "email": "stuttgart1@vapiano.de",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Vapiano",
+    "opening_hours": "Mo-Th 11:00-22:00; Fr, Sa 11:00-23:00; Su 12:00-21:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 711 2296706",
+    "website": "https://www.vapiano.de/de/restaurants/stuttgart",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 268844549,
+  "tags": {
+    "addr:housenumber": "11",
+    "addr:street": "Charlottenstraße",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2023-07-22",
+    "cuisine": "italian",
+    "description": "will close for good 2026-08-31",
+    "indoor_seating": "yes",
+    "name": "La Piazza",
+    "opening_hours": "Mo-Su 11:00-23:00",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes",
+    "phone": "+49 711 247873",
+    "toilets:wheelchair": "no",
+    "website": "https://www.lapiazza-stuttgart.de/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 268844665,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "17",
+    "addr:postcode": "70173",
+    "addr:street": "Charlottenplatz",
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "indoor_seating": "yes",
+    "name": "Amadeus",
+    "opening_hours": "Mo-Fr 12:00-24:00;Sa 09:00-24:00;Su 10:00-24:00",
+    "opening_hours:kitchen": "Mo-Th 12:00-21:00; Fr 12:00-22:00; Sa 09:00-22:00; Su 12:00-21:00",
+    "outdoor_seating": "yes",
+    "panoramax": "a159b97d-8c23-4938-b77a-42de374bc2ec",
+    "payment:cash": "yes",
+    "payment:girocard": "yes",
+    "payment:mastercard": "yes",
+    "phone": "+49 711 292678",
+    "website": "https://www.amadeus-stuttgart.de/",
+    "website:menu": "https://www.amadeus-stuttgart.de/speisen-getranke/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 273380192,
+  "tags": {
+    "addr:housenumber": "20",
+    "addr:street": "Wilhelmstraße",
+    "amenity": "fast_food",
+    "cuisine": "italian",
+    "name": "Pizza da Rosella",
+    "old_name": "Pizza Maria",
+    "opening_hours": "Mo-Fr 08:00-21:00; Sa 09:00-18:00; Su, PH off",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 274544264,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "70173",
+    "addr:street": "Schillerplatz",
+    "fee": "no",
+    "museum": "history",
+    "name": "Haus der Musik",
+    "opening_hours": "Tu-Su 10:00-17:00",
+    "operator": "Landesmuseum Württemberg",
+    "operator:type": "public",
+    "toilets:wheelchair": "yes",
+    "tourism": "museum",
+    "website": "https://www.landesmuseum-stuttgart.de/ausstellungen/schausammlungen/musikinstrumente/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 274923752,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "70173",
+    "addr:street": "Bolzstraße",
+    "amenity": "cafe",
+    "check_date:opening_hours": "2024-08-31",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "fax": "+49 711 2262610",
+    "indoor_seating": "yes",
+    "name": "Café le Théatre",
+    "old_name": "Café le Théâtre",
+    "opening_hours": "Mo-Th 10:00-01:00, Fr-Sa 10:00-02:00, Su 15:00-24:00",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "no",
+    "phone": "+49 711 2262610",
+    "website": "https://www.cafeletheatre.de/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 274923762,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "12",
+    "addr:postcode": "70173",
+    "addr:street": "Marktplatz",
+    "brand": "Thomas Sabo",
+    "brand:wikidata": "Q13415716",
+    "brand:wikipedia": "en:Thomas Sabo",
+    "check_date:opening_hours": "2024-04-26",
+    "name": "Thomas Sabo",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "shop": "jewelry"
+  }
+},
+{
+  "type": "node",
+  "id": 278298753,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "2",
+    "addr:postcode": "70173",
+    "addr:street": "Schlossplatz",
+    "addr:suburb": "Mitte",
+    "check_date:opening_hours": "2025-08-23",
+    "contact:website": "https://www.wkv-stuttgart.de/kontakt/",
+    "fee": "yes",
+    "name": "Württembergischer Kunstverein",
+    "opening_hours": "Tu,Th-Su 11:00-18:00; We 11:00-20:00",
+    "short_name": "WKV",
+    "tourism": "gallery",
+    "website": "https://www.wkv-stuttgart.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 278298754,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:postcode": "70173",
+    "addr:street": "Schlossplatz",
+    "amenity": "cafe",
+    "diet:vegan": "yes",
+    "indoor_seating": "yes",
+    "name": "Isopi All Day Café",
+    "outdoor_seating": "yes",
+    "payment:mastercard": "yes",
+    "start_date": "2025-04-11",
+    "was:name": "Café Künstlerbund",
+    "wheelchair": "yes",
+    "wheelchair:description": "Aufzug vorhanden, barrierefreies WC im Keller per Aufzug erreichbar"
+  }
+},
+{
+  "type": "node",
+  "id": 279923490,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "12-14",
+    "addr:postcode": "70182",
+    "addr:street": "Charlottenstraße",
+    "amenity": "bank",
+    "atm": "yes",
+    "name": "Volksbank Stuttgart",
+    "operator": "Volksbank Stuttgart eG",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 281118758,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "2A",
+    "addr:postcode": "70184",
+    "addr:street": "Eugensplatz",
+    "amenity": "ice_cream",
+    "check_date:opening_hours": "2026-06-06",
+    "cuisine": "ice_cream",
+    "diet:vegan": "yes",
+    "email": "kontakt@eispinguin.de",
+    "indoor_seating": "no",
+    "name": "Eis-Bistro Pinguin",
+    "opening_hours": "Mo-Fr 13:00-20:00; Sa-Su 13:00-20:00",
+    "outdoor_seating": "no",
+    "phone": "+49 711 2637973",
+    "takeaway": "only",
+    "website": "https://www.eispinguin.de",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 281990789,
+  "tags": {
+    "addr:housenumber": "28-30",
+    "addr:postcode": "70184",
+    "addr:street": "Hohenheimer Straße",
+    "name": "Hotel Zur Weinsteige",
+    "stars": "3",
+    "tourism": "hotel",
+    "website": "https://www.zur-weinsteige.de/",
+    "wikidata": "Q111390252"
+  }
+},
+{
+  "type": "node",
+  "id": 303804266,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "18",
+    "addr:postcode": "70182",
+    "addr:street": "Leonhardstraße",
+    "amenity": "bar",
+    "name": "Lido"
+  }
+},
+{
+  "type": "node",
+  "id": 317272430,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "16",
+    "addr:postcode": "70182",
+    "addr:street": "Eugenstraße",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2025-08-26",
+    "cuisine": "thai",
+    "name": "Esszimmer",
+    "opening_hours": "Mo-Fr 11:30-15:00, We-Sa 17:00-22:00, Su 17:00-21:00",
+    "phone": "+49 711 24869855",
+    "website": "http://nits-thaikueche.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 332405423,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "70178",
+    "addr:street": "Tübinger Straße",
+    "amenity": "cinema",
+    "check_date": "2024-08-03",
+    "name": "Delphi Arthaus Kino",
+    "phone": "+49 711 292495",
+    "website": "https://www.arthaus-kino.de/",
+    "wheelchair": "no",
+    "wikidata": "Q50842496"
+  }
+},
+{
+  "type": "node",
+  "id": 332405424,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:postcode": "70178",
+    "addr:street": "Tübinger Straße",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "BW-Bank",
+    "brand:de": "BW-Bank",
+    "brand:en": "BW-Bank",
+    "brand:wikidata": "Q798891",
+    "brand:wikipedia": "de:Baden-Württembergische Bank",
+    "check_date:opening_hours": "2025-09-03",
+    "name": "BW-Bank",
+    "name:de": "BW-Bank",
+    "name:en": "BW-Bank",
+    "opening_hours": "Mo-Fr 09:30-13:00, Mo,Tu,Th,Fr 14:00-16:30",
+    "operator": "Landesbank Baden-Württemberg",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 438047018,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "33",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 438047019,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "35",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "amenity": "cafe",
+    "end_date": "2022-03",
+    "indoor_seating": "yes",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 438047028,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "70173",
+    "addr:street": "Töpferstraße",
+    "entrance": "yes",
+    "name": "Bergamo",
+    "operator": "Transit/Bergamo"
+  }
+},
+{
+  "type": "node",
+  "id": 438047029,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "35",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "amenity": "cafe",
+    "check_date": "2023-10-17",
+    "indoor_seating": "yes",
+    "internet_access": "no",
+    "name": "Café Hegel",
+    "old:name": "Hafendörfer",
+    "opening_hours": "Mo-Fr 08:00-20:00; Sa-Su 08:30-20:00",
+    "outdoor_seating": "yes",
+    "seats": "65",
+    "shop:-2022": "bakery",
+    "start_date": "2023-03-07",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 438047031,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:postcode": "70178",
+    "addr:street": "Tübinger Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 438047035,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1-7",
+    "addr:postcode": "70178",
+    "addr:street": "Kleine Königstraße",
+    "contact:website": "https://eh-meyer.de/",
+    "name": "E+H Meyer",
+    "opening_hours": "Tu-Fr 11:00-19:00; Sa 11:00-18:00",
+    "shop": "furniture",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 438047040,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "44",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "check_date:opening_hours": "2026-03-04",
+    "name": "Tritschler LifeStyle",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "shop": "houseware",
+    "website": "https://www.tritschler.com/Tritschler-LifeStyle/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 438047041,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "46",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "Decathlon",
+    "brand:wikidata": "Q509349",
+    "end_date": "2024-12-31",
+    "name": "Decathlon",
+    "note": "Hintereingang gegenüber vom Spielplatz in der Kronprinzstr.",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "shop": "sports",
+    "start_date": "2025-05-02",
+    "website": "https://www.decathlon.de/store-view/filiale-stuttgart-konigstrase-0070340703407"
+  }
+},
+{
+  "type": "node",
+  "id": 438047043,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70173",
+    "addr:street": "Gymnasiumstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 438049613,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "12",
+    "addr:postcode": "70173",
+    "addr:street": "Schulstraße",
+    "name": "Läderach",
+    "not:brand:wikidata": "Q1437143",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "shop": "confectionery",
+    "source": "survey",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 450940602,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "52",
+    "addr:postcode": "70178",
+    "addr:street": "Nesenbachstraße",
+    "disused:shop": "books"
+  }
+},
+{
+  "type": "node",
+  "id": 451617469,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "21",
+    "addr:postcode": "70173",
+    "addr:street": "Lautenschlagerstraße",
+    "check_date": "2025-12-23",
+    "old_name": "Gravis",
+    "shop": "vacant",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 451617514,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70173",
+    "addr:street": "Bolzstraße",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 451698632,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "70173",
+    "addr:street": "Bolzstraße",
+    "amenity": "ice_cream",
+    "check_date:opening_hours": "2024-08-31",
+    "drive_through": "no",
+    "email": "info@oldbridge-gelateria.de",
+    "name": "Old Bridge Gelateria",
+    "opening_hours": "Mo-Fr 11:00-23:00, Sa 11:00-24:00, Su 13:00-23:00",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "no",
+    "payment:cash": "yes",
+    "phone": "+49 711 50424611",
+    "takeaway": "only",
+    "website": "https://www.oldbridge-gelateria.de"
+  }
+},
+{
+  "type": "node",
+  "id": 485664418,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "29",
+    "addr:postcode": "70182",
+    "addr:street": "Blumenstraße",
+    "check_date": "2026-06-09",
+    "lgbtq": "welcome",
+    "name": "Gästehaus Ziegler",
+    "tourism": "hotel",
+    "website": "https://www.hotel-ziegler.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 505030145,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "70173",
+    "addr:street": "Bolzstraße",
+    "amenity": "fast_food",
+    "brand": "Frittenwerk",
+    "brand:wikidata": "Q121094275",
+    "contact:phone": "+49 711 88799969",
+    "contact:website": "https://frittenwerk.com/stuttgart-bolzstrasse.php",
+    "cuisine": "friture",
+    "diet:vegetarian": "yes",
+    "name": "Frittenwerk",
+    "opening_hours": "Mo-Th 11:00-22:00; Fr-Sa 11:00-22:30; Su 11:00-21:00",
+    "takeaway": "yes",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 539543601,
+  "tags": {
+    "addr:housenumber": "25",
+    "addr:postcode": "70173",
+    "addr:street": "Lautenschlagerstraße",
+    "amenity": "restaurant",
+    "changing_table": "yes",
+    "changing_table:location": "room",
+    "check_date": "2024-02-11",
+    "contact:phone": "+49 711 2294411",
+    "cuisine": "italian",
+    "diet:vegan": "yes",
+    "name": "SENZANOME",
+    "old_name": "Vinolio",
+    "opening_hours": "Mo-Th 11:30-23:30; Fr-Sa 11:30-24:00",
+    "website": "https://www.senzanome-stuttgart.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 539745026,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "70173",
+    "addr:street": "Bolzstraße",
+    "amenity": "fast_food",
+    "contact:email": "stuttgart@tobis-food.de",
+    "contact:phone": "+49 711 2293307",
+    "cuisine": "local",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "level": "0",
+    "name": "tobi's",
+    "old_name": "todi's",
+    "opening_hours": "Mo-Th 11:30-23:00; Fr-Sa 11:30-24:00",
+    "outdoor_seating": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "smoking": "outside",
+    "toilets:wheelchair": "no",
+    "website": "https://tobis-food.de",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 539782156,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70173",
+    "addr:street": "Kronenstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 539782164,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "10A",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "amenity": "fast_food",
+    "check_date:opening_hours": "2024-10-30",
+    "contact:email": "filiz.recber@me.com",
+    "contact:phone": "+49 711 8703374",
+    "cuisine": "kebab",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Ützel Brützel",
+    "opening_hours": "Mo-Th 09:00-23:00; Fr,Sa 09:00-00:00; Su 09:00-22:00",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "pedestrian_zone",
+    "step_count": "1",
+    "toilets:wheelchair": "no",
+    "website": "http://www.ützel-brützel.de/",
+    "wheelchair": "no",
+    "wheelchair:description:de": "1 Stufe vor dem Eingang"
+  }
+},
+{
+  "type": "node",
+  "id": 539792595,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "14",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 561175316,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "38",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "addr:suburb": "Mitte",
+    "brand": "Aldi Süd",
+    "brand:wikidata": "Q41171672",
+    "check_date": "2026-07-20",
+    "check_date:opening_hours": "2026-07-20",
+    "fixme": "Position ist geschätzt",
+    "level": "-1",
+    "name": "Aldi Süd",
+    "opening_hours": "Mo-Sa 09:00-21:00; PH off",
+    "payment:american_express": "yes",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:coins": "yes",
+    "payment:contactless": "yes",
+    "payment:girocard": "yes",
+    "payment:google_pay": "yes",
+    "payment:mastercard": "yes",
+    "payment:notes": "yes",
+    "payment:visa": "yes",
+    "self_checkout": "yes",
+    "shop": "supermarket",
+    "website": "https://filialen.aldi-sued.de/baden-wuerttemberg/stuttgart/koenigstrasse-38",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 663196084,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "13",
+    "addr:postcode": "70182",
+    "addr:street": "Leonhardstraße",
+    "amenity": "bar",
+    "name": "Fou Fou",
+    "phone": "+49 711 51891511",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 672472858,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "22",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "amenity": "nightclub",
+    "check_date": "2026-08-03",
+    "level": "-1",
+    "name": "Lerche 22",
+    "opening_hours": "closed",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 704322863,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "72",
+    "addr:postcode": "70182",
+    "addr:street": "Weberstraße",
+    "amenity": "restaurant",
+    "contact:phone": "+49 711 2364888",
+    "contact:website": "http://www.weinstube-schellenturm.de",
+    "cuisine": "regional",
+    "name": "Weinstube Schellenturm",
+    "opening_hours": "Mo-Sa 17:00-24:00; Su, PH off",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 821196335,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "35",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 821196345,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 822885842,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "14",
+    "addr:postcode": "70173",
+    "addr:street": "Schillerplatz",
+    "brand": "Reiseland",
+    "name": "Reiseland",
+    "not:brand:wikidata": "Q40387610",
+    "opening_hours": "Mo-Fr 10:00-17:00; Sa 10:00-14:00",
+    "operator": "Reiseland GmbH & Co. KG",
+    "shop": "travel_agency",
+    "website": "https://www.xn--meinreisebro24-psb.com/reiseland/dcid/13128/stuttgart/schillerplatz-4",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 822998729,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "17",
+    "addr:street": "Charlottenplatz",
+    "fee": "no",
+    "name": "ifa-Galerie",
+    "opening_hours": "Tu-Su 12:00-18:00",
+    "toilets:wheelchair": "no",
+    "tourism": "gallery",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 823036903,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "28",
+    "addr:postcode": "70173",
+    "addr:street": "Konrad-Adenauer-Straße",
+    "amenity": "restaurant",
+    "cuisine": "regional;italian",
+    "name": "Fresko",
+    "old_name": "gast",
+    "opening_hours": "Mo off; Tu-Su 10:00-18:00,19:00-24:00",
+    "outdoor_seating": "yes",
+    "start_date": "2017-05",
+    "website": "https://fresko-stuttgart.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 845907958,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "11",
+    "addr:postcode": "70182",
+    "addr:street": "Charlottenstraße",
+    "amenity": "bank",
+    "atm": "yes",
+    "name": "LBBW",
+    "opening_hours": "Mo-Fr 09:00-13:00, Mo-We,Fr 14:00-16:30; Th 14:00-18:00",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 845907960,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "40",
+    "addr:postcode": "70182",
+    "addr:street": "Charlottenstraße",
+    "amenity": "dojo",
+    "check_date": "2023-10-07",
+    "name": "Taekwondo-Blackbelt",
+    "opening_hours": "Mo-Fr 16:00-21:30",
+    "sport": "taekwondo",
+    "website": "http://www.taekwondo-blackbelt.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 863194795,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "4",
+    "addr:postcode": "70173",
+    "addr:street": "Kleiner Schlossplatz",
+    "amenity": "restaurant",
+    "check_date": "2026-06-20",
+    "check_date:opening_hours": "2026-06-20",
+    "contact:email": "info@ochsn-willi.de",
+    "contact:fax": "+49 711 2265189",
+    "contact:phone": "+49 711 2265191",
+    "contact:website": "http://www.ochsn-willi.de",
+    "indoor_seating": "yes",
+    "name": "Ochs'n Willi",
+    "opening_hours": "11:00-23:30",
+    "outdoor_seating": "yes",
+    "smoking": "separated",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes",
+    "wheelchair:description": "Ebenerdiger Eingang, kleines Klo",
+    "wheelchair:description:de": "Gastraum teilweise ebenerdig zugänglich, aber keine geeigneten Toiletten"
+  }
+},
+{
+  "type": "node",
+  "id": 863214755,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "70173",
+    "addr:street": "Kronprinzstraße",
+    "check_date:opening_hours": "2025-02-03",
+    "delivery": "yes",
+    "entrance": "yes",
+    "name": "Feinkost Böhm",
+    "opening_hours": "Mo-Th 10:00-19:00; Fr,Sa 09:00-19:00; Su off",
+    "operator": "Feinkost Böhm GmbH",
+    "shop": "deli",
+    "website": "https://www.feinkost-boehm.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 882410237,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "23",
+    "addr:postcode": "70173",
+    "addr:street": "Calwer Straße",
+    "air_conditioning": "no",
+    "amenity": "fast_food",
+    "contact:instagram": "https://www.instagram.com/udosnack_/",
+    "cuisine": "burger",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "indoor_seating": "no",
+    "name": "Udo Snack",
+    "opening_hours": "Mo-Th 11:00-21:00; Fr-Sa 11:00-23:00; Su,PH 12:00-19:00",
+    "outdoor_seating": "no",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "smoking": "no",
+    "start_date": "1964",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 905750369,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "28",
+    "addr:street": "Königstraße",
+    "amenity": "cafe",
+    "branch": "House",
+    "brand": "Starbucks",
+    "brand:wikidata": "Q37158",
+    "check_date": "2026-02-27",
+    "cuisine": "coffee_shop",
+    "entrance": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "level": "0;1",
+    "name": "Starbucks",
+    "official_name": "Starbucks Coffee",
+    "opening_hours": "Mo-Sa 08:00-22:00; Su 10:00-21:00; PH 10:00-21:00",
+    "outdoor_seating": "pedestrian_zone",
+    "takeaway": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://starbucks.de",
+    "wheelchair": "limited",
+    "wheelchair:description": "Toilette im ersten Stock ohne Aufzug"
+  }
+},
+{
+  "type": "node",
+  "id": 905750375,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "26",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "MediaMarkt",
+    "brand:wikidata": "Q2381223",
+    "check_date": "2026-02-27",
+    "level": "0;1",
+    "name": "MediaMarkt",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "payment:apple_pay": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:girocard": "yes",
+    "payment:google_pay": "yes",
+    "shop": "electronics",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.mediamarkt.de/de/store/stuttgart-konigstrasse-214",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 934145235,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "46",
+    "addr:postcode": "70713",
+    "addr:street": "Königstraße",
+    "amenity": "bank",
+    "atm": "yes",
+    "bic": "GENODE61BBB",
+    "brand": "BBBank",
+    "brand:website": "https://www.bbbank.de/",
+    "brand:wikidata": "Q795504",
+    "brand:wikipedia": "en:BBBank",
+    "check_date": "2026-02-27",
+    "check_date:opening_hours": "2026-09-08",
+    "name": "BBBank",
+    "opening_hours": "Mo,Th 09:00-12:30,14:00-18:00; Tu,Fr 09:00-12:30,14:00-16:00; We 09:00-12:30; Sa,Su,PH off",
+    "opening_hours:self_service": "Mo-Su,PH 05:00-24:00",
+    "operator": "Baden-Württembergischer Genossenschaftsverband",
+    "operator:en": "Baden-Württemberg Cooperative Association",
+    "operator:wikidata": "Q798896",
+    "operator:wikipedia": "de:Baden-Württembergischer Genossenschaftsverband",
+    "self_service": "partially",
+    "source:opening_hours": "https://www.bbbank.de/meine-bbbank/standorte/uebersicht-der-filialen/stuttgart-koenigsstrasse.html",
+    "website": "https://www.bbbank.de/meine-bbbank/standorte/uebersicht-der-filialen/stuttgart-koenigsstrasse.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 934145237,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "44",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "amenity": "cafe",
+    "brand": "Starbucks",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "en:Starbucks",
+    "check_date": "2026-01-05",
+    "check_date:smoking": "2026-01-05",
+    "cuisine": "coffee_shop",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Starbucks",
+    "official_name": "Starbucks Coffee",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su,PH 10:00-21:00",
+    "outdoor_seating": "yes",
+    "payment:american_express": "yes",
+    "payment:coins": "yes",
+    "payment:diners_club": "yes",
+    "payment:jcb": "yes",
+    "payment:mastercard": "yes",
+    "payment:notes": "yes",
+    "smoking": "no",
+    "takeaway": "yes",
+    "website": "https://www.starbucks.de/store-locator/store/1018806/koenigstrasse-44-koenigstrasse-44-stuttgart-bw-70173-de",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1018225670,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "70182",
+    "addr:street": "Wilhelmsplatz",
+    "amenity": "pub",
+    "name": "La Concha",
+    "outdoor_seating": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1018311816,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "70182",
+    "addr:street": "Wilhelmsplatz",
+    "amenity": "bar",
+    "name": "Mono Bar",
+    "website": "https://mono-bar.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1039291535,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "26",
+    "addr:postcode": "70173",
+    "addr:street": "Calwer Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 1052857546,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "12",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "Peek & Cloppenburg",
+    "brand:wikidata": "Q2066959",
+    "brand:wikipedia": "en:Peek & Cloppenburg",
+    "changing_table": "yes",
+    "changing_table:level": "1",
+    "changing_table:location": "room",
+    "internet_access": "wlan",
+    "name": "Peek & Cloppenburg",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "operator": "Peek & Cloppenburg KG, Berliner Allee 2, 40212 Düsseldorf",
+    "payment:credit_cards": "yes",
+    "shop": "clothes",
+    "toilets": "yes",
+    "website": "https://www.peek-cloppenburg.de/stores/227/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1057852018,
+  "tags": {
+    "access": "customers",
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "33",
+    "addr:street": "Königstraße",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 1057852154,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1-3",
+    "addr:postcode": "70173",
+    "addr:street": "Marktstraße",
+    "amenity": "bar",
+    "name": "Maison Matcha"
+  }
+},
+{
+  "type": "node",
+  "id": 1194234790,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "29",
+    "addr:postcode": "70182",
+    "addr:street": "Blumenstraße",
+    "alt_name": "Treffpunkt Kellergewölbe",
+    "amenity": "pub",
+    "lgbtq": "primary",
+    "lgbtq:men": "primary",
+    "name": "K29 - Der Zieglerkeller",
+    "operator": "Gayzone Stuttgart e.V.",
+    "short_name": "Der Zieglerkeller",
+    "website": "https://www.gayzone-stuttgart.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 1230477253,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "70",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "name": "MT Handyland",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "shop": "mobile_phone",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1244524013,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "49",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "addr:suburb": "Mitte",
+    "amenity": "fast_food",
+    "brand": "Subway",
+    "brand:wikidata": "Q244457",
+    "brand:wikipedia": "en:Subway (restaurant)",
+    "contact:phone": "+49 711 51892601",
+    "cuisine": "sandwich",
+    "entrance": "yes",
+    "indoor_seating": "yes",
+    "name": "Subway",
+    "opening_hours": "Mo-Th 09:00-05:00, Fr 09:00-07:30, Sa 10:00-07:30, Su 11:00-05:00",
+    "outdoor_seating": "yes",
+    "smoking": "no",
+    "takeaway": "yes",
+    "website": "http://subway-sandwiches.de",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1246932851,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70173",
+    "addr:street": "Steinstraße",
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "entrance": "yes",
+    "indoor_seating": "yes",
+    "name": "Trattoria Santa Lucia",
+    "opening_hours": "Mo-Fr 12:00-15:00,18:00-24:00; Sa 12:00-24:00; Su off",
+    "outdoor_seating": "yes",
+    "smoking": "no",
+    "website": "http://www.trattoriasantalucia.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 1246933185,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "14",
+    "addr:postcode": "70173",
+    "addr:street": "Nadlerstraße",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2024-04-27",
+    "cuisine": "asian",
+    "indoor_seating": "yes",
+    "name": "N14 Restaurant",
+    "note": "Burger King 2017-2018",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes",
+    "smoking": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1294242797,
+  "tags": {
+    "addr:country": "DE",
+    "addr:housenumber": "13-15",
+    "addr:street": "Königstraße",
+    "amenity": "cafe",
+    "contact:email": "info@cafe-treppe.de",
+    "contact:phone": "+49 711 2221646",
+    "drive_through": "no",
+    "entrance": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "treppe",
+    "opening_hours": "Mo-Th 08:00-24:00, Fr-Sa 08:00-02:00, Su,PH 10:00-24:00",
+    "operator": "Treppe-OnlineCafe GmbH",
+    "outdoor_seating": "yes",
+    "step_count": "1",
+    "toilets:wheelchair": "no",
+    "website": "http://www.treppe-onlinecafe.de",
+    "wheelchair": "no",
+    "wheelchair:description": "1 Stufe am Eingang"
+  }
+},
+{
+  "type": "node",
+  "id": 1306933889,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "26",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "disused:name": "Rossmann",
+    "disused:shop": "chemist",
+    "level": "1",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1324310914,
+  "tags": {
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:postcode": "70173",
+    "addr:street": "Kleiner Schlossplatz",
+    "amenity": "bank",
+    "brand": "BW-Bank",
+    "brand:de": "BW-Bank",
+    "brand:en": "BW-Bank",
+    "brand:wikidata": "Q798891",
+    "brand:wikipedia": "de:Baden-Württembergische Bank",
+    "name": "BW-Bank",
+    "name:de": "BW-Bank",
+    "name:en": "BW-Bank",
+    "opening_hours": "Mo-We,Fr 08:30-16:00; Th 08:30-17:30",
+    "operator": "Landesbank Baden-Württemberg",
+    "wheelchair": "limited",
+    "wheelchair:description": "Äußerer Automat erreichbar, Tür schwer zu öffnen"
+  }
+},
+{
+  "type": "node",
+  "id": 1351324865,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "38",
+    "addr:postcode": "70182",
+    "addr:street": "Urbanstraße",
+    "amenity": "restaurant",
+    "cuisine": "indian",
+    "email": "sunny-singh@hotmail.de",
+    "indoor_seating": "yes",
+    "name": "Prince of India",
+    "opening_hours": "Mo 17:00-23:30; Tu-Su 11:30-15:00,17:00-23:30",
+    "outdoor_seating": "no",
+    "phone": "+49 711 245108",
+    "takeaway": "yes",
+    "website": "https://www.indianrestaurantgermany.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1353074385,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "47",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "C&A",
+    "brand:wikidata": "Q701338",
+    "brand:wikipedia": "en:C&A",
+    "changing_table": "yes",
+    "check_date": "2026-02-27",
+    "contact:phone": "+49 711 20620",
+    "name": "C&A",
+    "opening_hours": "Mo-Sa 09:30-20:00",
+    "opening_hours:url": "https://www.c-and-a.com/stores/de-de/baden-wuerttemberg/stuttgart/koenigstrasse-47.html",
+    "payment:cards": "yes",
+    "payment:contactless": "yes",
+    "shop": "clothes",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.c-and-a.com/stores/de-de/baden-wuerttemberg/stuttgart/koenigstrasse-47.html",
+    "website:map": "https://www.c-and-a.com/stores/de-de/baden-wuerttemberg/stuttgart/koenigstrasse-47.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1353074408,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "43A",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "Nanu-Nana",
+    "brand:wikidata": "Q1720245",
+    "brand:wikipedia": "de:Nanu-Nana",
+    "check_date": "2025-05-24",
+    "name": "Nanu-Nana",
+    "opening_hours": "Mo-Sa 10:00-20:00; PH off",
+    "shop": "gift",
+    "website": "https://www.nanu-nana.de/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1353074415,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "45",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "amenity": "restaurant",
+    "brand": "BLOCK HOUSE",
+    "brand:wikidata": "Q320430",
+    "contact:phone": "+49 711 2369420",
+    "contact:website": "http://block-house.de",
+    "cuisine": "steak_house",
+    "diet:vegetarian": "no",
+    "indoor_seating": "yes",
+    "name": "BLOCK HOUSE",
+    "opening_hours": "Su-Th 12:00-22:00; Fr-Sa 12:00-23:00",
+    "outdoor_seating": "yes",
+    "payment:american_express": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:girocard": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "smoking": "no",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1353074436,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "41",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "JD Sports",
+    "brand:wikidata": "Q6108019",
+    "check_date:opening_hours": "2024-11-16",
+    "name": "JD Sports",
+    "note": "Anfang Oktober 2020 war hier JD Sports (www.jdsports.de) im Bau",
+    "opening_hours:signed": "no",
+    "shop": "sports",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1374533897,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "12",
+    "addr:postcode": "70182",
+    "addr:street": "Esslinger Straße",
+    "amenity": "restaurant",
+    "cuisine": "vietnamese",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Takeshii's Cuisine",
+    "name:de": "Takeshii's Vietnamese Cuisine",
+    "name:en": "Takeshii's Vietnamese Cuisine",
+    "opening_hours": "Mo-Th 18:00-22:00; Fr-Sa 18:00-23:00",
+    "outdoor_seating": "no",
+    "phone": "+49 711 24839559",
+    "website": "https://www.takeshii.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1392512814,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "5",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "check_date": "2024-11-16",
+    "check_date:opening_hours": "2024-11-16",
+    "name": "Pop Up Outlet",
+    "opening_hours:signed": "no",
+    "shop": "variety_store",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1392605320,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "5",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "Müller",
+    "brand:wikidata": "Q1958759",
+    "brand:wikipedia": "en:Müller (German trade company)",
+    "check_date:opening_hours": "2025-08-23",
+    "contact:phone": "+49 711 72233930",
+    "currency:EUR": "yes",
+    "name": "Müller",
+    "opening_hours": "Mo-Sa 09:00-20:00; PH off",
+    "payment:cash": "yes",
+    "payment:girocard": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "second_hand": "no",
+    "shop": "chemist",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1393073477,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "7",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "disused:amenity": "cafe",
+    "disused:cuisine": "coffee_shop"
+  }
+},
+{
+  "type": "node",
+  "id": 1393073486,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Kronprinzstraße",
+    "addr:suburb": "Mitte",
+    "baby_feeding": "yes",
+    "brand": "dm",
+    "brand:wikidata": "Q266572",
+    "brand:wikipedia": "en:Dm-drogerie markt",
+    "changing_table": "yes",
+    "check_date:opening_hours": "2025-05-02",
+    "name": "dm",
+    "opening_hours": "Mo-Fr 08:30-20:00; Sa 09:00-20:00",
+    "opening_hours:url": "https://www.dm.de/store/d26l/stuttgart/kronprinzstrasse-6",
+    "self_checkout": "yes",
+    "shop": "chemist",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.dm.de/store/d26l/stuttgart/kronprinzstrasse-6",
+    "website:map": "https://www.dm.de/store/d26l/stuttgart/kronprinzstrasse-6",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1397163115,
+  "tags": {
+    "addr:housenumber": "39",
+    "addr:street": "Friedrichstraße",
+    "check_date": "2024-07-31",
+    "check_date:opening_hours": "2024-06-07",
+    "clothes": "women",
+    "email": "service@greenality.de",
+    "name": "GREENALITY Store Frauen und Männer",
+    "note": "previously American Apparel",
+    "opening_hours": "Mo-Sa 11:00-19:00",
+    "organic": "yes",
+    "phone": "+49 711 169 178 54",
+    "shop": "clothes",
+    "website": "https://www.greenality.de/stores/store-stuttgart",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1397163137,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:postcode": "70173",
+    "addr:street": "Kleiner Schlossplatz",
+    "brand": "Buchhandlung Walther König",
+    "brand:wikidata": "Q998441",
+    "capacity:covid19": "6",
+    "contact:email": "stuttgart@buchhandlung-walther-koenig.de",
+    "contact:phone": "+49 7112221748",
+    "level": "0",
+    "name": "Buchhandlung Walther König",
+    "opening_hours": "Tu-Sa 10:00-18:00; Su,PH 10:00-18:00",
+    "shop": "books",
+    "website": "https://www.buchhandlung-walther-koenig.de",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1397163147,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "28",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "check_date": "2026-03-31",
+    "level": "0",
+    "name": "Terrazza",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1397163172,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "40",
+    "addr:postcode": "70174",
+    "addr:street": "Friedrichstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 1397163174,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "45",
+    "addr:postcode": "70174",
+    "addr:street": "Friedrichstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 1397163216,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "26",
+    "addr:street": "Königstraße",
+    "brand": "Nanu-Nana",
+    "brand:wikidata": "Q1720245",
+    "brand:wikipedia": "de:Nanu-Nana",
+    "contact:website": "https://nanu-nana.de",
+    "email": "info@nanu-nana.de",
+    "level": "1",
+    "name": "Nanu-Nana",
+    "opening_hours": "Mo-Sa 10:00-20:00; Su, PH off",
+    "phone": "+49 711 2200-379",
+    "shop": "gift",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1397163232,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "70173",
+    "addr:street": "Kronprinzstraße",
+    "amenity": "restaurant",
+    "check_date": "2023-08-12",
+    "cuisine": "regional",
+    "indoor_seating": "yes",
+    "name": "Feinkost Böhm",
+    "opening_hours": "Mo-Th 10:00-19:00; Fr,Sa 09:00-19:00; Su off",
+    "operator": "Feinkost Böhm GmbH",
+    "outdoor_seating": "yes",
+    "website": "https://www.feinkost-boehm.de/restaurant",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1397163357,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "43",
+    "addr:postcode": "70174",
+    "addr:street": "Friedrichstraße",
+    "amenity": "bar",
+    "contact:instagram": "https://www.instagram.com/wabisabistuttgart/",
+    "indoor_seating": "yes",
+    "name": "Wabi Sabi",
+    "opening_hours": "Th-Sa 18:00+",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1397163395,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "26",
+    "addr:street": "Königstraße",
+    "check_date:opening_hours": "2026-03-31",
+    "contact:phone": "+49 711 12355111",
+    "email": "koenigsbau@servicepunkt.net",
+    "level": "0",
+    "name": "Service Punkt",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "opening_hours:signed": "no",
+    "ref": "1527",
+    "shop": "repair",
+    "website": "https://www.servicepunkt.net/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1400985062,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "16",
+    "addr:street": "Königstraße",
+    "brand": "Douglas",
+    "brand:wikidata": "Q2052213",
+    "check_date": "2026-08-20",
+    "check_date:opening_hours": "2024-06-03",
+    "name": "Douglas",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "shop": "perfumery",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1400985087,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "4",
+    "addr:postcode": "70173",
+    "addr:street": "Bolzstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 1400985097,
+  "tags": {
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:street": "Kleiner Schlossplatz",
+    "check_date:opening_hours": "2026-06-20",
+    "name": "Galerie Schlichtenmaier",
+    "opening_hours": "Tu-Fr 11:00-19:00; Sa 11:00-17:00",
+    "shop": "art",
+    "website": "https://www.schlichtenmaier.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1400985106,
+  "tags": {
+    "addr:country": "DE",
+    "addr:housenumber": "13",
+    "addr:street": "Kleiner Schlossplatz"
+  }
+},
+{
+  "type": "node",
+  "id": 1400985109,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:street": "Fürstenstraße",
+    "check_date:opening_hours": "2026-06-20",
+    "name": "Heart & Sole",
+    "opening_hours": "Mo-Fr 10:00-18:00; Sa 10:00-18:00",
+    "shop": "sports",
+    "website": "https://www.heartandsole.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1400985119,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "20",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "amenity": "driving_school",
+    "education": "driving_school",
+    "name": "Etes"
+  }
+},
+{
+  "type": "node",
+  "id": 1400985130,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:street": "Fürstenstraße",
+    "brand": "O2",
+    "brand:wikidata": "Q1759255",
+    "brand:wikipedia": "en:Telefónica Europe",
+    "name": "O2",
+    "opening_hours": "Mo-Fr 10:00-20:00; Sa 10:00-18:00",
+    "shop": "mobile_phone",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1400985134,
+  "tags": {
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:street": "Kleiner Schlossplatz",
+    "amenity": "restaurant",
+    "indoor_seating": "yes",
+    "name": "OGGI",
+    "opening_hours": "Mo-Th 12:00-22:00; Fr,Sa 12:00-23:00; Su 12:00-21:00",
+    "outdoor_seating": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://oggi-tavola-mediterranea.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1400985246,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "13/15",
+    "addr:postcode": "70173",
+    "addr:street": "Kleiner Schlossplatz",
+    "check_date:opening_hours": "2024-08-31",
+    "name": "abseits",
+    "opening_hours": "Mo-Fr 10:00-20:00; Sa 10:00-19:00",
+    "shop": "clothes",
+    "website": "https://www.abseitsgermany.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 1400985251,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "22",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "amenity": "cafe",
+    "contact:instagram": "https://www.instagram.com/lamore_di_caffe/",
+    "indoor_seating": "yes",
+    "name": "L‘amore di caffé",
+    "opening_hours": "Mo-Fr 08:00-21:00; Su 10:00-20:00; Sa 09:00-21:00",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1400985255,
+  "tags": {
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:street": "Kleiner Schlossplatz",
+    "brand": "Aston Martin",
+    "brand:wikidata": "Q27074",
+    "name": "Aston Martin",
+    "opening_hours": "Tu-Sa 10:00-19:00",
+    "phone": "+49 711 98296007",
+    "shop": "car",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1418654522,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "22",
+    "addr:postcode": "70173",
+    "addr:street": "Marktplatz",
+    "building": "bunker",
+    "disused": "yes",
+    "location": "underground",
+    "military": "bunker",
+    "name": "Marktplatzbunker"
+  }
+},
+{
+  "type": "node",
+  "id": 1491584206,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "4A",
+    "addr:postcode": "70173",
+    "addr:street": "Lange Straße",
+    "brand": "Ulla Popken",
+    "brand:wikidata": "Q2475146",
+    "brand:wikipedia": "en:Ulla Popken",
+    "check_date:opening_hours": "2023-10-31",
+    "clothes": "oversize",
+    "email": "kunden-service@popken.de",
+    "name": "Ulla Popken",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "operator": "Popken Fashion GmbH",
+    "phone": "+49 711 2264888",
+    "ref:vatin": "DE152739137",
+    "shop": "clothes",
+    "website": "https://www.ullapopken.de/de/filialfinder#!/l/stuttgart/lange-strasse-4a/1790536",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1493169832,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:postcode": "70174",
+    "addr:street": "Theodor-Heuss-Straße",
+    "amenity": "police",
+    "email": "stuttgart-prev1@polizei.bwl.de",
+    "entrance": "yes",
+    "fax": "+49 711 8990-3109",
+    "name": "Polizeirevier 1 Theodor-Heuss-Straße",
+    "opening_hours": "24/7",
+    "operator": "Polizeipräsidium Stuttgart",
+    "phone": "+49 711 8990-3100",
+    "start_date": "2016-03-29",
+    "website": "https://www.polizei-bw.de/Dienststellen/PPStuttgart/ueber%20uns/UnsereDienststellen/Reviere/Seiten/default.aspx",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1496010249,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Königstraße",
+    "brand": "Mango",
+    "brand:wikidata": "Q136503",
+    "check_date": "2024-11-16",
+    "check_date:opening_hours": "2024-11-16",
+    "clothes": "women",
+    "level": "0",
+    "name": "Mango",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 1496010284,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "23",
+    "addr:postcode": "70173",
+    "addr:street": "Schillerstraße",
+    "check_date": "2026-03-13",
+    "disused:shop": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1496010285,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "3",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "check_date:opening_hours": "2026-03-31",
+    "contact:phone": "+49 711 933474-21",
+    "contact:website": "https://www.yeanshalle.de",
+    "name": "YEANS HALLE",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "shop": "clothes",
+    "website": "https://www.yeanshalle.de",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1496010291,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1 B",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "check_date": "2026-03-13",
+    "check_date:opening_hours": "2024-04-26",
+    "contact:email": "kundenservice@iffland-hoeren.de",
+    "contact:phone": "+49 711 292274",
+    "contact:website": "http://iffland-hoeren.de/filialen/stuttgart-mitte.html/",
+    "disused:shop": "hearing_aids",
+    "entrance": "yes",
+    "name": "iffland.hören",
+    "opening_hours": "Mo-We,Fr 09:00-18:00; Th 09:00-19:00; Sa 10:00-13:00",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1496010292,
+  "tags": {
+    "addr:housenumber": "1B",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "check_date": "2026-03-13",
+    "disused:shop": "clothes",
+    "entrance": "yes",
+    "name": "là pour là",
+    "opening_hours": "Mo-Sa 11:00-19:00",
+    "website": "https://www.lapourla.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1545583868,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "35",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "amenity": "restaurant",
+    "cuisine": "vietnamese",
+    "diet:vegetarian": "yes",
+    "email": "info@breitengrad17.de",
+    "indoor_seating": "yes",
+    "level": "-1",
+    "name": "Breitengrad 17",
+    "opening_hours": "Mo-Sa 12:00-15:00,18:00-23:00; PH off",
+    "outdoor_seating": "yes",
+    "phone": "+49 711 6529209",
+    "website": "http://www.breitengrad17.de/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1545583876,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "37",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 1545588684,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "27",
+    "addr:postcode": "70173",
+    "addr:street": "Hirschstraße",
+    "amenity": "bar",
+    "changing_table": "no",
+    "check_date": "2026-09-13",
+    "contact:instagram": "https://www.instagram.com/kap_tormentoso",
+    "drink:club-mate": "yes",
+    "email": "info@kap-tormentoso.de",
+    "food": "yes",
+    "internet_access": "no",
+    "name": "Kap Tormentoso",
+    "opening_hours": "Mo-Th,Su 15:00+; Fr-Sa,PH 11:30+",
+    "outdoor_seating": "yes",
+    "phone": "+49 711 12894262",
+    "smoking": "separated",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "toilets:wheelchair": "no",
+    "website": "https://www.kap-tormentoso.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 1545588685,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "4",
+    "addr:postcode": "70173",
+    "addr:street": "Nadlerstraße",
+    "check_date": "2024-08-03",
+    "name": "Best",
+    "shop": "clothes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1545588686,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "70173",
+    "addr:street": "Schulstraße",
+    "amenity": "restaurant",
+    "cuisine": "asian",
+    "name": "Hong Deng Ji",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1545588689,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "27",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "Primark",
+    "brand:wikidata": "Q137023",
+    "brand:wikipedia": "en:Primark",
+    "check_date": "2025-05-24",
+    "check_date:opening_hours": "2025-04-23",
+    "clothes": "women;men;underwear;children",
+    "name": "Primark",
+    "opening_hours": "Mo-Fr 10:00-20:00; Sa 09:30-20:00",
+    "operator:wikidata": "Q137023",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:cryptocurrencies": "no",
+    "payment:debit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "second_hand": "no",
+    "shop": "clothes",
+    "toilets:wheelchair": "yes",
+    "website": "https://stores.primark.com/de_de/deutschland/stuttgart/konigstrasse-27-27a",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1545596824,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "70173",
+    "addr:street": "Bolzstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 1545596831,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70173",
+    "addr:street": "Kronenstraße",
+    "branch": "Stuttgart",
+    "brand": "SportScheck",
+    "brand:wikidata": "Q1664847",
+    "check_date:opening_hours": "2025-06-23",
+    "entrance": "yes",
+    "internet_access": "wlan",
+    "name": "SportScheck",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "operator": "SportScheck GmbH",
+    "phone": "+49 711 305840",
+    "shop": "sports",
+    "toilets:wheelchair": "no",
+    "website": "https://www.sportscheck.com/filialen/stuttgart/",
+    "wheelchair": "yes",
+    "wheelchair:description": "Auf dem 4. Stock Behindertentoiletten vorhanden (Aufzug vorhanden)"
+  }
+},
+{
+  "type": "node",
+  "id": 1545596832,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "22",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 1545596841,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "Reserved",
+    "brand:wikidata": "Q21809354",
+    "brand:wikipedia": "en:Reserved",
+    "check_date:opening_hours": "2024-08-30",
+    "name": "Reserved",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "shop": "clothes",
+    "website": "https://www.reserved.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1545596842,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "30",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "Thalia",
+    "brand:wikidata": "Q2408854",
+    "check_date": "2026-07-20",
+    "check_date:opening_hours": "2026-07-20",
+    "email": "thalia.stuttgart@thalia.de",
+    "name": "Thalia",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "operator": "Thalia Universitätsbuchhandlung GmbH, Batheyer Straße 115-117,58099 Hagen",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+49 711 25070",
+    "shop": "books",
+    "source:name": "Aufschrift auf dem Gebäude",
+    "website": "https://www.thalia.de/shop/home/filialen/showDetails/5115/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1545596851,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "12",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "entrance": "main",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1545596852,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "6",
+    "addr:postcode": "70173",
+    "addr:street": "Bolzstraße",
+    "brand": "DER Reisebüro",
+    "brand:wikidata": "Q56729186",
+    "brand:wikipedia": "de:Deutsches Reisebüro",
+    "check_date:opening_hours": "2024-08-31",
+    "contact:website": "http://www.der.com/reisebuero/Stuttgart-Bolzstrasse-4#06b836f9-f2ff-457b-a259-2c41bddd7ab9",
+    "entrance": "yes",
+    "name": "DER Reisebüro",
+    "opening_hours": "Mo-Fr 10:00-13:00,13:30-18:00; Sa 10:00-13:00",
+    "shop": "travel_agency",
+    "source": "survey",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1545717039,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1b",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 1561974104,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "5",
+    "addr:postcode": "70182",
+    "addr:street": "Leonhardstraße",
+    "amenity": "restaurant",
+    "cuisine": "swabian",
+    "name": "Weinstube Fröhlich",
+    "opening_hours": "Tu-Th 07:30-23:30; Fr,Sa 17:30-24:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 711 242417",
+    "website": "https://www.weinstube-froehlich.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 1562399218,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:postcode": "70182",
+    "addr:street": "Kanalstraße",
+    "amenity": "restaurant",
+    "check_date": "2026-08-20",
+    "contact:email": "info@zur-kiste.de",
+    "cuisine": "regional",
+    "indoor_seating": "yes",
+    "name": "Weinstube Zur Kiste",
+    "opening_hours": "Mo-Fr 17:00-23:00, Sa 11:30-23:00, Su, PH off",
+    "outdoor_seating": "yes",
+    "phone": "+49 711 244002",
+    "takeaway": "yes",
+    "website": "https://www.zur-kiste.de/",
+    "wheelchair": "no",
+    "wikidata": "Q65124792"
+  }
+},
+{
+  "type": "node",
+  "id": 1590842017,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "50",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "Massimo Dutti",
+    "brand:wikidata": "Q788231",
+    "name": "Massimo Dutti",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1654904187,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "28",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "amenity": "bank",
+    "level": "3",
+    "name": "M.M. Warburg & Co.",
+    "opening_hours": "24/7",
+    "phone": "+49 711 22922-0",
+    "wheelchair": "yes",
+    "wheelchair:description": "Fahrstuhl in den 2. und 3. Stock, rollstuhlgerechtes WC"
+  }
+},
+{
+  "type": "node",
+  "id": 1674998233,
+  "tags": {
+    "addr:housenumber": "28",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "amenity": "cafe",
+    "check_date": "2026-03-31",
+    "check_date:opening_hours": "2026-03-31",
+    "contact:email": "post@cafe-koenigsbau.de",
+    "contact:fax": "+49 711 290403",
+    "contact:phone": "+49 711 290787",
+    "contact:website": "https://koenigsbau-cafe.de",
+    "entrance": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "level": "0",
+    "name": "Café Königsbau",
+    "opening_hours": "Mo-Sa 09:00-20:00; PH,Su 10:00-20:00",
+    "opening_hours:signed": "no",
+    "operator": "Cafe Königsbau Dr. Stefan Rösslein GmbH & Co.",
+    "outdoor_seating": "yes",
+    "step_count": "1",
+    "wheelchair": "no",
+    "wheelchair:description": "1 Stufe am Eingang"
+  }
+},
+{
+  "type": "node",
+  "id": 1678434041,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "70173",
+    "addr:street": "Bolzstraße",
+    "amenity": "restaurant",
+    "branch": "Stuttgart",
+    "brewery": "Brauhaus Schönbuch",
+    "cuisine": "regional;swabian",
+    "delivery": "no",
+    "diet:vegetarian": "yes",
+    "food:burger": "yes",
+    "food:falafel": "yes",
+    "food:salad": "yes",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Brauhaus Schönbuch",
+    "note": "Keine Brauerei vor Ort. Die Tanks sind nur Attrappe.",
+    "opening_hours": "11:00-24:00; Th-Sa 11:00-01:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 711 72230930",
+    "smoking": "outside",
+    "takeaway": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.brauhaus-schoenbuch.de/stuttgart",
+    "website:map": "https://www.brauhaus-schoenbuch.de/stuttgart/kontakt",
+    "website:map:osm": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1728660834,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "36A",
+    "addr:postcode": "70182",
+    "addr:street": "Rosenstraße",
+    "name": "Haare & Polarity",
+    "shop": "hairdresser",
+    "website": "https://www.bettina-runte.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 1729362320,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "36B",
+    "addr:postcode": "70182",
+    "addr:street": "Wagnerstraße",
+    "craft": "carpenter",
+    "name": "Hasselwander",
+    "website": "https://www.schreinerei-hasselwander.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 1729362340,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "38",
+    "addr:postcode": "70182",
+    "addr:street": "Wagnerstraße",
+    "craft": "carpenter",
+    "name": "Restauration antiker Möbel",
+    "website": "https://www.restauration-fabian.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 1743262273,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "49",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "name": "Katz",
+    "opening_hours": "Mo-Fr 06:30-19:00; Sa 08:00-19:00",
+    "operator": "KATZ der bäcker GmbH",
+    "shop": "bakery",
+    "toilets:wheelchair": "no",
+    "website": "https://www.baeckerei-katz.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1749564089,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "17",
+    "addr:postcode": "70173",
+    "addr:street": "Charlottenplatz",
+    "check_date": "2025-12-04",
+    "disused:amenity": "cafe",
+    "name": "Grand Café Planie",
+    "note": "Nachfolger frühestens Ende 2022 : https://www.stuttgarter-nachrichten.de/inhalt.caf-planie-in-stuttgart-geschlossen-bis-ende-2022.b9045eaa-fec0-4e69-8e67-fdf34f536481.html",
+    "stop_date": "2020-10",
+    "was:changing_table": "yes",
+    "was:outdoor_seating": "yes",
+    "was:payment:maestro": "yes",
+    "was:smoking": "outside",
+    "was:toilets:wheelchair": "no",
+    "was:wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1749564090,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "70173",
+    "addr:street": "Schulstraße",
+    "brand": "vomFASS",
+    "brand:wikidata": "Q2533008",
+    "contact:website": "https://www.vomfass.de/stuttgart",
+    "name": "vomFASS",
+    "shop": "deli",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1779626555,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "61",
+    "addr:street": "Eberhardstraße",
+    "amenity": "theatre",
+    "name": "FITZ Zentrum für Figurentheater Stuttgart",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.fitz-stuttgart.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1779626590,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "61A",
+    "addr:street": "Eberhardstraße",
+    "amenity": "theatre",
+    "name": "Theater tri-bühne",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.tri-buehne.de/",
+    "wheelchair": "yes",
+    "wikidata": "Q2416145"
+  }
+},
+{
+  "type": "node",
+  "id": 1794027719,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Marstallstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 1825343164,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "14",
+    "addr:postcode": "70173",
+    "addr:street": "Stiftstraße",
+    "entrance": "yes",
+    "shop": "vacant",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1867407436,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "70173",
+    "addr:street": "Thouretstraße",
+    "name": "Sofa company",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "shop": "furniture",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1946179186,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "4",
+    "addr:postcode": "70174",
+    "addr:street": "Theodor-Heuss-Straße",
+    "amenity": "pub",
+    "board_games": "yes",
+    "check_date": "2025-05-20",
+    "check_date:opening_hours": "2025-05-20",
+    "indoor_seating": "yes",
+    "name": "Ribingurumu",
+    "opening_hours": "Mo-Th 05:00-01:00, Fr 17:00-03:00, Sa 16:00-03:00",
+    "outdoor_seating": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1946179204,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "15",
+    "addr:postcode": "70174",
+    "addr:street": "Theodor-Heuss-Straße",
+    "amenity": "fast_food",
+    "brand": "Burger King",
+    "brand:wikidata": "Q177054",
+    "brand:wikipedia": "en:Burger King",
+    "changing_table": "yes",
+    "cuisine": "burger",
+    "diet:halal": "no",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "franchise:wikidata": "Q177054",
+    "indoor_seating": "yes",
+    "name": "Burger King",
+    "opening_hours": "Mo-Th 10:00-22:00; Fr,Sa 11:00-24:00; Su 12:00-22:00",
+    "operator": "BK-Süd GmbH",
+    "outdoor_seating": "no",
+    "panoramax": "ed2510f8-d02d-4cc8-9ca5-e0c8b348ccd1",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:qr_code": "no",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1975127682,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "70173",
+    "addr:street": "Charlottenplatz",
+    "amenity": "bar",
+    "check_date": "2026-09-11",
+    "contact:email": "info@goldmarks.de",
+    "contact:facebook": "goldmarks",
+    "contact:instagram": "goldmarks_stuttgart",
+    "contact:website": "http://www.goldmarks.de/",
+    "indoor_seating": "yes",
+    "name": "Goldmark's",
+    "outdoor_seating": "no",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "website": "https://www.goldmarks.de/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1975135445,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:postcode": "70173",
+    "addr:street": "Charlottenplatz",
+    "check_date": "2026-09-11",
+    "disused:amenity": "nightclub",
+    "name": "Universum",
+    "website": "https://www.universum-stuttgart.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 2007161174,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70182",
+    "addr:street": "Charlottenstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2008288290,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70173",
+    "addr:street": "Schulstraße",
+    "amenity": "bar",
+    "contact:email": "cafe-monroes@t-online.de",
+    "contact:phone": "+49 711 2262770",
+    "level": "1",
+    "lgbtq": "primary",
+    "lgbtq:men": "primary",
+    "name": "Monroes",
+    "opening_hours": "Mo-Sa 12:00-05:00; Su,PH 15:00-05:00",
+    "operator": "Klaus-Dieter Menzel",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2080369149,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "6A",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "amenity": "pub",
+    "indoor_seating": "yes",
+    "name": "Marshall Matt",
+    "outdoor_seating": "yes",
+    "smoking": "dedicated",
+    "toilets:wheelchair": "no",
+    "website": "https://www.marshallbar.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2131355261,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "70173",
+    "addr:street": "Marktplatz",
+    "amenity": "library",
+    "check_date": "2024-01-21",
+    "email": "rathausbuecherei@stuttgart.de",
+    "fax": "+49 711 216-91214",
+    "name": "Rathausbücherei",
+    "opening_hours": "Mo 08:00-12:30,13:30-15:30; Tu-Fr 08:00-12:30; Th 08:00-12:30,13:30-17:00",
+    "phone": "+49 711 216-91212",
+    "ref:isil": "DE-Stg91",
+    "url": "http://www.stuttgart.de/rathausbibliothek",
+    "wikidata": "Q28733675"
+  }
+},
+{
+  "type": "node",
+  "id": 2131372447,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:postcode": "70173",
+    "addr:street": "Schulstraße",
+    "brand": "Tchibo",
+    "brand:wikidata": "Q564213",
+    "brand:wikipedia": "de:Tchibo",
+    "check_date": "2025-12-01",
+    "name": "Tchibo",
+    "opening_hours": "Mo-Sa 09:00-19:30",
+    "shop": "coffee",
+    "website": "https://www.tchibo.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2131375202,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "35-37",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "brand": "dm",
+    "brand:wikidata": "Q266572",
+    "brand:wikipedia": "en:Dm-drogerie markt",
+    "check_date:opening_hours": "2024-04-27",
+    "name": "dm",
+    "opening_hours": "Mo-Sa 08:00-20:00",
+    "shop": "chemist",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2131375893,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "39",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "addr:suburb": "Mitte",
+    "check_date": "2025-10-07",
+    "name": "Amt für öffentliche Ordnung",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 2131376304,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "33",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "addr:suburb": "Mitte",
+    "check_date:opening_hours": "2024-04-27",
+    "contact:email": "poststelle.sozialamt@stuttgart.de",
+    "contact:phone": "+49 711 21659000",
+    "name": "Sozialamt",
+    "office": "government",
+    "opening_hours:signed": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2131376437,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "33",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "addr:suburb": "Mitte",
+    "check_date:opening_hours": "2024-04-27",
+    "contact:email": "BSBauen@stuttgart.de",
+    "contact:phone": "+49 711 21660100",
+    "name": "Baurechtsamt",
+    "office": "government",
+    "opening_hours:signed": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2131376610,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "addr:suburb": "Mitte",
+    "government": "register_office",
+    "name": "Standesamt Mitte",
+    "office": "government",
+    "opening_hours": "Mo,We,Fr 08:30-13:00; Th 14:00-18:00; Tu,Sa,Su,PH off",
+    "phone": "+49 711 21688852",
+    "website": "https://www.stuttgart.de/organigramm/verwaltungseinheit/standesamt-stuttgart.php"
+  }
+},
+{
+  "type": "node",
+  "id": 2143174618,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "4",
+    "addr:postcode": "70182",
+    "addr:street": "Wilhelmsplatz",
+    "amenity": "restaurant",
+    "cuisine": "italian;pizza",
+    "name": "Il Pomodoro",
+    "opening_hours": "Mo-Fr 11:30-15:00,17:00-00:00; Sa 15:00-00:00",
+    "operator": "Petra Reim",
+    "outdoor_seating": "yes",
+    "phone": "+49 711 86025777"
+  }
+},
+{
+  "type": "node",
+  "id": 2143178815,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "70182",
+    "addr:street": "Wilhelmsplatz",
+    "amenity": "restaurant",
+    "changing_table": "no",
+    "cuisine": "vietnamese",
+    "name": "Noodle 1 Dining",
+    "opening_hours": "Tu-Fr 12:00-14:30, 17:30-23:00; Sa, PH 13:00-23:00; Su 15:00-21:00; Mo off",
+    "outdoor_seating": "yes",
+    "phone": "+49 711 86010286",
+    "website": "https://www.noodle1.de/",
+    "wheelchair": "limited",
+    "wheelchair:description": "Nur Terrasse ist Rollstuhlgerecht, Stufen um ins Lokalinnere zu kommen."
+  }
+},
+{
+  "type": "node",
+  "id": 2158782289,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "31",
+    "addr:postcode": "70173",
+    "addr:street": "Hirschstraße",
+    "check_date:opening_hours": "2025-04-23",
+    "description": "Kostüme für Fasching, Halloween und Volksfeste",
+    "name": "Deiters",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00",
+    "operator": "Deiters GmbH",
+    "payment:girocard": "yes",
+    "payment:mastercard": "yes",
+    "shop": "costumes",
+    "source": "survey",
+    "website": "https://www.deiters.de/stuttgart",
+    "wheelchair": "limited",
+    "wheelchair:description:de": "ebenerdiger Zugang, aber kein Aufzug ins Obergeschoss"
+  }
+},
+{
+  "type": "node",
+  "id": 2188376746,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "37",
+    "addr:postcode": "70173",
+    "addr:street": "Hauptstätter Straße",
+    "amenity": "cafe",
+    "name": "Cafe Bohne"
+  }
+},
+{
+  "type": "node",
+  "id": 2279530416,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "10",
+    "addr:postcode": "70188",
+    "addr:street": "Haußmannstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2280546412,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "27",
+    "addr:postcode": "70173",
+    "addr:street": "Hirschstraße",
+    "amenity": "restaurant",
+    "cuisine": "chinese",
+    "name": "Kuai Style",
+    "opening_hours": "Mo-Fr 12:00-14:30,17:00-20:30; Sa 12:00-20:30",
+    "outdoor_seating": "yes",
+    "takeaway": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2373066020,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housename": "Bülow Carré",
+    "addr:housenumber": "23",
+    "addr:postcode": "70173",
+    "addr:street": "Lautenschlagerstraße",
+    "email": "stuttgart@wiesingermedia.de",
+    "fax": "+49 711 28 42 765",
+    "name": "WiesigerMedia",
+    "opening_hours": "Mo-Fr 09:00-18:00; Sa 09:00-14:00; PH off",
+    "operator": "WiesingerMedia GmbH",
+    "phone": "+49 711 29 64 33",
+    "shop": "copyshop",
+    "website": "https://www.copyshop-stuttgart.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 2376332844,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "14",
+    "addr:postcode": "70182",
+    "addr:street": "Werastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2376332858,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "16",
+    "addr:postcode": "70182",
+    "addr:street": "Werastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2376332871,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "18",
+    "addr:postcode": "70182",
+    "addr:street": "Werastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2376332897,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "70182",
+    "addr:street": "Ulrichstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2376332911,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "20",
+    "addr:postcode": "70182",
+    "addr:street": "Olgastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2376332922,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "20a",
+    "addr:postcode": "70182",
+    "addr:street": "Werastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2376332935,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "20b",
+    "addr:postcode": "70182",
+    "addr:street": "Werastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2376332945,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "24",
+    "addr:postcode": "70182",
+    "addr:street": "Olgastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2376332975,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "34",
+    "addr:postcode": "70182",
+    "addr:street": "Olgastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2411388398,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "47",
+    "addr:postcode": "70173",
+    "addr:street": "Hauptstätter Straße",
+    "amenity": "fast_food",
+    "contact:website": "https://www.metzgerei-ergenzinger.de/",
+    "name": "Imbiss Metzgerei Ergenzinger",
+    "opening_hours": "Mo-Fr 11:30-15:00"
+  }
+},
+{
+  "type": "node",
+  "id": 2414405277,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "78A",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2441464019,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "10",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "amenity": "cafe",
+    "check_date:opening_hours": "2022-05-21",
+    "cuisine": "coffee_shop",
+    "email": "info@harrys-kaffee.de",
+    "fax": "+49 711 51887101",
+    "internet_access": "no",
+    "name": "Harry's Kaffeerösterei",
+    "opening_hours": "Mo-Fr 09:30-19:00; Sa 09:30-18:00",
+    "operator": "Harry Rahm",
+    "outdoor_seating": "yes",
+    "phone": "+49 711 51887100",
+    "shop": "coffee",
+    "takeaway": "yes",
+    "website": "https://harrys-kaffee.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 2452913178,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "8",
+    "addr:postcode": "70173",
+    "addr:street": "Kronprinzstraße",
+    "brand": "ADAC Geschäftsstelle",
+    "brand:wikidata": "Q289953",
+    "club": "automobile",
+    "name": "ADAC Geschäftsstelle",
+    "opening_hours": "Mo-Fr 09:30-18:30; Sa 10:00-14:00",
+    "shop": "travel_agency",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2452913179,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "15",
+    "addr:postcode": "70173",
+    "addr:street": "Büchsenstraße",
+    "name": "Edited",
+    "note": "ist seit Januar 2020 an diesem Standort; \"Bradshaw\" zog zuvor an den Töpferplatz 1 um",
+    "old_name": "Bradshaw",
+    "opening_hours": "Mo-Sa 11:00-20:00",
+    "shop": "clothes",
+    "surveillance": "indoor",
+    "website": "https://www.edited.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 2452913182,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "46",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "check_date:opening_hours": "2023-11-01",
+    "name": "Kutter Juwelier",
+    "opening_hours:signed": "no",
+    "shop": "jewelry"
+  }
+},
+{
+  "type": "node",
+  "id": 2452913200,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:postcode": "70173",
+    "addr:street": "Kronprinzstraße",
+    "check_date:opening_hours": "2024-10-11",
+    "contact:website": "https://www.trauringschmiede.de/trauringe_stuttgart.html",
+    "name": "Trauring Schmiede",
+    "opening_hours": "Mo-Fr 11:00-19:00; Sa 10:00-19:00",
+    "shop": "jewelry"
+  }
+},
+{
+  "type": "node",
+  "id": 2452913201,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "31",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "WMF",
+    "brand:wikidata": "Q451423",
+    "brand:wikipedia": "en:WMF Group",
+    "contact:email": "filk1sy@wmf.de",
+    "contact:phone": "+49 711 292932",
+    "contact:website": "https://www.wmf.com/de/de/filialen/shopfinder.html#!/l/baden-w%c3%bcrttemberg/stuttgart/konigstrasse-31/de066",
+    "name": "WMF",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "payment:american_express": "yes",
+    "payment:cash": "yes",
+    "payment:girocard": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "ref": "930K1SY",
+    "shop": "houseware",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2473326366,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "70182",
+    "addr:street": "Charlottenstraße",
+    "name": "La Galeria",
+    "opening_hours": "Mo-Fr 11:00-13:30,14:30-18:00; Sa 11:00-14:30",
+    "shop": "antiques"
+  }
+},
+{
+  "type": "node",
+  "id": 2480557854,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "84",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "disused:shop": "furniture"
+  }
+},
+{
+  "type": "node",
+  "id": 2523255714,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "35",
+    "addr:postcode": "70182",
+    "addr:street": "Wagnerstraße",
+    "amenity": "social_facility",
+    "branch": "Bereich Armut, Wohnungsnot und Schulden",
+    "brand": "Caritas",
+    "brand:wikidata": "Q29508174",
+    "brand:wikipedia": "de:Deutscher Caritasverband",
+    "name": "Bereich Armut, Wohnungsnot und Schulden",
+    "operator": "Caritasverband für Stuttgart e. V.",
+    "website": "https://www.caritas-stuttgart.de/hilfe-beratung/wohnungslos/"
+  }
+},
+{
+  "type": "node",
+  "id": 2523379046,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "36",
+    "addr:postcode": "70173",
+    "addr:street": "Hirschstraße",
+    "alt_name": "Kindsköpfe",
+    "female": "yes",
+    "male": "yes",
+    "name": "Bettina Kojzek",
+    "phone": "+49 711 2263363",
+    "shop": "hairdresser",
+    "website": "https://www.bettinakojzek-dersalon.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 2557803859,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "70173",
+    "addr:street": "Kronprinzstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2574071444,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "19",
+    "addr:postcode": "70182",
+    "addr:street": "Archivstraße",
+    "note": "TODO genau Position des Eingangs"
+  }
+},
+{
+  "type": "node",
+  "id": 2607786538,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "22",
+    "addr:postcode": "70184",
+    "addr:street": "Alexanderstraße",
+    "amenity": "school",
+    "check_date": "2026-06-09",
+    "name": "Galileo Grundschule",
+    "operator": "Klett Schulen und Bildung gGmbH",
+    "website": "https://www.galileo-grundschule.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 2607786539,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "22",
+    "addr:postcode": "70184",
+    "addr:street": "Alexanderstraße",
+    "amenity": "kindergarten",
+    "check_date": "2026-06-09",
+    "name": "Galileo Kindertagesstätte",
+    "operator": "Klett Schulen und Bildung gGmbH",
+    "website": "https://www.galileo-grundschule.de/kindertagesstaette/"
+  }
+},
+{
+  "type": "node",
+  "id": 2627032987,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:postcode": "70173",
+    "addr:street": "Bolzstraße",
+    "amenity": "restaurant",
+    "contact:phone": "+49 711 65557011",
+    "cuisine": "gourmet",
+    "indoor_seating": "yes",
+    "name": "5",
+    "opening_hours": "Mo-Th 09:00-23:00; Fr-Sa 09:00-01:00; Su 09:00-22:00",
+    "outdoor_seating": "yes",
+    "website": "https://www.5.fo/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2692485134,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "70173",
+    "addr:street": "Stiftstraße",
+    "brand": "L'Occitane",
+    "brand:wikidata": "Q1880676",
+    "brand:wikipedia": "en:L'Occitane en Provence",
+    "check_date:opening_hours": "2023-11-01",
+    "name": "L'Occitane",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "shop": "cosmetics",
+    "website": "https://de.loccitane.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2706911818,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "27",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "Zara",
+    "brand:wikidata": "Q147662",
+    "check_date:opening_hours": "2025-04-07",
+    "level": "0",
+    "name": "Zara",
+    "opening_hours:signed": "no",
+    "shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2759446748,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "4",
+    "addr:postcode": "70173",
+    "addr:street": "Marktplatz",
+    "brand": "Müller",
+    "brand:wikidata": "Q1958759",
+    "contact:phone": "+49 1701294095",
+    "contact:website": "https://www.mueller.de/mueller-beauty-stores/standorte/",
+    "name": "Müller Beauty Store",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "shop": "chemist",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2759446771,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "4",
+    "addr:postcode": "70173",
+    "addr:street": "Marktplatz",
+    "name": "Juwelier Schumacher",
+    "opening_hours": "Mo-Fr 10:00-18:30; Sa 10:00-16:30",
+    "shop": "jewelry",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2759446785,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:street": "Rathauspassage",
+    "branch": "Rathauspassage",
+    "brand": "Lange",
+    "laundry_service": "yes",
+    "name": "Lange",
+    "opening_hours": "Mo-Fr 07:00-16:00; Sa 08:00-13:00",
+    "self_service": "no",
+    "shop": "laundry",
+    "website": "http://www.lange-diefeinereinigung.de/rathauspassage.php",
+    "wheelchair": "no",
+    "wheelchair:description:de": "Stufen am Eingang"
+  }
+},
+{
+  "type": "node",
+  "id": 2759446800,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "14",
+    "addr:postcode": "70173",
+    "addr:street": "Kirchstraße",
+    "name": "Vins",
+    "shop": "wine",
+    "website": "https://vins.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 2759446960,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "14",
+    "addr:postcode": "70173",
+    "addr:street": "Kirchstraße",
+    "brand": "van Laack",
+    "brand:wikidata": "Q871242",
+    "name": "van Laack",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00",
+    "shop": "clothes",
+    "website": "http://www.vanlaack.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2777303638,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "70173",
+    "addr:street": "Geißstraße",
+    "amenity": "nightclub",
+    "level": "1",
+    "name": "Detroit",
+    "old_name": "Corsobar",
+    "opening_hours": "Th 18:00-02:00, Fr,Sa 18:00-03:00",
+    "website": "https://detroitbar.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2790423495,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "1",
+    "addr:postcode": "70173",
+    "addr:street": "Stauffenbergstraße",
+    "amenity": "restaurant",
+    "bar": "yes",
+    "check_date": "2025-08-23",
+    "contact:website": "https://www.carls-brauhaus.de/",
+    "cuisine": "regional;german",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "level": "0",
+    "name": "Carls Brauhaus",
+    "note": "Trotz Namens keine Brauerei",
+    "opening_hours": "Mo-Fr 11:00-23:00; Sa 10:00-01:00; Su 10:00-23:00",
+    "opening_hours:kitchen": "Mo-Fr 11:00+; Sa,Su,PH 10:00+",
+    "outdoor_seating": "sidewalk",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+49 711 25974611",
+    "reservation": "yes",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "website:menu": "https://www.carls-brauhaus.de/media/media/Speisekarte_03_2025.pdf",
+    "wheelchair": "yes",
+    "wheelchair:description": "Lokal barrierefrei zu betreten."
+  }
+},
+{
+  "type": "node",
+  "id": 2939498405,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "70173",
+    "addr:street": "Charlottenplatz",
+    "amenity": "pub",
+    "brewery": "Stuttgarter Hofbräu",
+    "indoor_seating": "yes",
+    "level": "-1",
+    "name": "Winkinger",
+    "opening_hours": "Mo-Th 09:00-01:00, Fr,Sa 09:00-02:00, Su 12:00-01:00",
+    "outdoor_seating": "no",
+    "smoking": "separated"
+  }
+},
+{
+  "type": "node",
+  "id": 2942600908,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "70174",
+    "addr:street": "Theodor-Heuss-Passage",
+    "amenity": "bar",
+    "contact:website": "https://superschmarrn.de/",
+    "covered": "yes",
+    "name": "Superschmarrn",
+    "opening_hours": "Mo-Th 11:00-01:00; Fr-Sa 11:00-03:00; Su 11:00-01:00"
+  }
+},
+{
+  "type": "node",
+  "id": 2942600909,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:postcode": "70174",
+    "addr:street": "Theodor-Heuss-Straße",
+    "check_date:opening_hours": "2025-05-20",
+    "checked_date": "2019-09",
+    "contact:email": "Laden.Stuttgart@piano-fischer.de",
+    "contact:fax": "+49 711 16348-280",
+    "contact:phone": "+49 711 16348-270",
+    "contact:website": "https://www.piano-fischer.de/standorte/stuttgart/",
+    "name": "Piano-Fischer",
+    "opening_hours": "Mo-Fr 10:00-18:00; Sa 10:00-16:00",
+    "shop": "musical_instrument",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2942683785,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "24",
+    "addr:postcode": "70173",
+    "addr:street": "Kronprinzstraße",
+    "amenity": "restaurant",
+    "contact:website": "https://www.thatsamore-restaurant.de/",
+    "cuisine": "steak_house",
+    "name": "That's Amore",
+    "opening_hours": "Mo-Fr 17:00-00:00; Sa 12:00-01:00",
+    "opening_hours:kitchen": "Mo-Fr 17:30-22:00; Sa 12:00-22:00",
+    "outdoor_seating": "sidewalk",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2942683786,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "24",
+    "addr:postcode": "70173",
+    "addr:street": "Kronprinzstraße",
+    "amenity": "fast_food",
+    "check_date": "2026-02-27",
+    "check_date:opening_hours": "2025-11-01",
+    "cuisine": "burger",
+    "entrance": "yes",
+    "indoor_seating": "yes",
+    "name": "doen doen",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes",
+    "takeaway": "yes",
+    "wheelchair": "limited",
+    "wheelchair:description": "Überhaupt keine Toilette vorhanden."
+  }
+},
+{
+  "type": "node",
+  "id": 2965857527,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:postcode": "70173",
+    "addr:street": "Neue Brücke",
+    "entrance": "yes",
+    "name": "Globalways AG",
+    "office": "company",
+    "smoking": "no",
+    "toilets:wheelchair": "no",
+    "website": "https://www.globalways.net/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2977518143,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70182",
+    "addr:street": "Pfarrstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2977518144,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "70182",
+    "addr:street": "Pfarrstraße",
+    "contact:website": "http://cityfitness-stuttgart.de/",
+    "leisure": "fitness_centre",
+    "name": "City Fitness Stuttgart",
+    "opening_hours": "Mo-Fr 10:00-22:00; Sa,Su 10:00-18:00"
+  }
+},
+{
+  "type": "node",
+  "id": 2980125176,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "28",
+    "addr:postcode": "70180",
+    "addr:street": "Heusteigstraße",
+    "email": "marc@bodon.de",
+    "name": "bodon, konzeption und gestaltung",
+    "office": "design",
+    "phone": "+49 711 91241888",
+    "website": "https://www.bodon.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 2980125179,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "28",
+    "addr:postcode": "70180",
+    "addr:street": "Heusteigstraße",
+    "alt_name": "pro aurum Vertrieb GmbH Geschäftsstelle Stuttgart",
+    "name": "pro aurum",
+    "shop": "gold",
+    "website": "https://www.proaurum.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 2984116104,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "49",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "amenity": "nightclub",
+    "check_date": "2025-10-07",
+    "contact:email": "info@dilayla.de",
+    "contact:phone": "+49 711 2369527",
+    "contact:website": "http://dilayla.de",
+    "entrance": "yes",
+    "name": "Dilayla",
+    "opening_hours": "Th 23:00-05:00, Fr-Sa 23:00-07:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "no",
+    "payment:girocard": "no",
+    "smoking": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2998162386,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "27",
+    "addr:postcode": "70173",
+    "addr:street": "Torstraße",
+    "amenity": "restaurant",
+    "disused:amenity": "restaurant",
+    "disused:name": "reiskorn",
+    "name": "Terrassa",
+    "opening_hours": "Tu-Fr 15:00-00:00; Sa, Su 09:00-00:00",
+    "phone": "+49 157 83058613",
+    "website": "https://terrassa-restaurant.de"
+  }
+},
+{
+  "type": "node",
+  "id": 2998189795,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "27",
+    "addr:postcode": "70173",
+    "addr:street": "Torstraße",
+    "amenity": "bar",
+    "contact:facebook": "https://www.facebook.com/CaffeBarStuttgart",
+    "name": "Caffè-Bar Fleck & Schneck",
+    "opening_hours": "Mo-We 08:30-01:00, Th-Fr 08:30-02:00, Sa 09:00-03:00, Su 09:00-24:00",
+    "outdoor_seating": "yes",
+    "website": "https://caffe-bar.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 3028148626,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "70173",
+    "addr:street": "Marktplatz",
+    "amenity": "cafe",
+    "description": "take away only",
+    "name": "The Gardener's Nosh & Go"
+  }
+},
+{
+  "type": "node",
+  "id": 3034203026,
+  "tags": {
+    "addr:housenumber": "21",
+    "addr:street": "Lautenschlagerstraße",
+    "amenity": "restaurant",
+    "brand": "Peter Pane",
+    "brand:wikidata": "Q66084419",
+    "check_date": "2024-07-31",
+    "contact:phone": "+49 711 22938780",
+    "contact:website": "https://peterpane.de/standorte/#!/l/stuttgart/lautenschlagerstrasse-21/3044553",
+    "cuisine": "burger",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "level": "0",
+    "name": "Peter Pane",
+    "old_name": "Coa",
+    "opening_hours": "Su-Th 12:00-22:30; Fr,Sa 12:00-23:30",
+    "outdoor_seating": "no",
+    "payment:contactless": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "self_service": "no",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "website:menu": "https://peterpane.de/speisekarte/"
+  }
+},
+{
+  "type": "node",
+  "id": 3034218866,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "70173",
+    "addr:street": "Bolzstraße",
+    "amenity": "restaurant",
+    "check_date": "2025-11-12",
+    "cuisine": "italian",
+    "level": "0",
+    "name": "L‘Osteria",
+    "old_name": "Tialini",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3062479166,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:postcode": "70178",
+    "addr:street": "Tübinger Straße",
+    "branch": "Ausrüstung GmbH",
+    "brand": "Globetrotter",
+    "brand:wikidata": "Q1531763",
+    "check_date": "2025-08-15",
+    "check_date:opening_hours": "2024-12-31",
+    "internet_access": "wlan",
+    "name": "Globetrotter",
+    "opening_hours": "Mo-Fr 10:30-19:00; Sa 10:00-19:00",
+    "phone": "+49 711 7226440",
+    "shop": "outdoor",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.globetrotter.de/filialen/stuttgart/filiale-stuttgart",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3071587622,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "2A",
+    "addr:postcode": "70182",
+    "addr:street": "Katharinenstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3071587623,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70182",
+    "addr:street": "Wilhelmstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3071587625,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "70182",
+    "addr:street": "Wilhelmsplatz"
+  }
+},
+{
+  "type": "node",
+  "id": 3071815895,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "57",
+    "addr:postcode": "70182",
+    "addr:street": "Olgastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3071815896,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "57A",
+    "addr:postcode": "70182",
+    "addr:street": "Olgastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3071815897,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "57B",
+    "addr:postcode": "70182",
+    "addr:street": "Olgastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3073049608,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "25",
+    "addr:postcode": "70182",
+    "addr:street": "Urbanstraße",
+    "door": "yes",
+    "door:type": "single",
+    "entrance": "main",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3092295469,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "39",
+    "addr:postcode": "70173",
+    "addr:street": "Hauptstätter Straße",
+    "amenity": "restaurant",
+    "contact:phone": "+49 711 45143474",
+    "contact:website": "https://chobab.de/",
+    "cuisine": "korean;japanese",
+    "name": "Chobab",
+    "opening_hours": "Tu-Su 17:00-22:00",
+    "opening_hours:kitchen": "Tu-Su 17:00-21:30",
+    "website:menu": "https://chobab.de/speisekarte/"
+  }
+},
+{
+  "type": "node",
+  "id": 3100525312,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "17",
+    "addr:postcode": "70173",
+    "addr:street": "Charlottenplatz",
+    "brand": "Weltladen",
+    "brand:wikidata": "Q1640782",
+    "brand:wikipedia": "de:Weltladen",
+    "check_date:opening_hours": "2025-04-27",
+    "contact:email": "info@weltladen-planie-stuttgart.de",
+    "contact:phone": "+49 711 76103231",
+    "name": "Weltladen",
+    "opening_hours": "Mo-Sa 10:00-19:00; Su,PH off",
+    "shop": "convenience",
+    "website": "https://weltladen-planie-stuttgart.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3123112836,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "14",
+    "addr:postcode": "70182",
+    "addr:street": "Archivstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3123112837,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "16",
+    "addr:postcode": "70182",
+    "addr:street": "Archivstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3123112838,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "18",
+    "addr:postcode": "70182",
+    "addr:street": "Olgastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3123112839,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "70182",
+    "addr:street": "Uhlandstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3123168286,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:postcode": "70182",
+    "addr:street": "Charlottenstraße",
+    "massage": "thai",
+    "name": "Langsuan Thaimassage",
+    "opening_hours": "Mo-Fr 10:00-18:00; PH,Su off",
+    "operator": "Puttachart Sindlinger",
+    "phone": "+49 711 51889032",
+    "shop": "massage",
+    "website": "http://www.stuttgarter-thaimassage.de"
+  }
+},
+{
+  "type": "node",
+  "id": 3123168287,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:postcode": "70182",
+    "addr:street": "Uhlandstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3123607931,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "36A",
+    "addr:postcode": "70182",
+    "addr:street": "Blumenstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3123607932,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "36B",
+    "addr:postcode": "70182",
+    "addr:street": "Blumenstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3132733407,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Moserstraße",
+    "amenity": "cafe",
+    "cuisine": "coffee_shop",
+    "description": "Kaffee | Croissants | Mittagstisch",
+    "name": "Silberknie",
+    "opening_hours": "Mo-Fr 09:00-17:00; Sa, Su 10:00-16:00",
+    "website": "https://www.instagram.com/silberknie/"
+  }
+},
+{
+  "type": "node",
+  "id": 3148157829,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:postcode": "70182",
+    "addr:street": "Kanalstraße",
+    "disused:amenity": "restaurant",
+    "disused:cuisine": "persian",
+    "disused:name": "Persian Restaurant",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3150576767,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "17",
+    "addr:postcode": "70173",
+    "addr:street": "Lautenschlagerstraße",
+    "alt_name": "Spielothek Stuttgart",
+    "amenity": "casino",
+    "check_date": "2023-08-12",
+    "check_date:opening_hours": "2021-06-12",
+    "name": "Casino Merkur",
+    "opening_hours": "Mo-Sa 06:00-24:00; Su 11:00-24:00",
+    "website": "https://www.merkur-spielothek.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3150576770,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "17/2",
+    "addr:postcode": "70173",
+    "addr:street": "Lautenschlagerstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3150752894,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "19",
+    "addr:postcode": "70173",
+    "addr:street": "Stephanstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3150752895,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:postcode": "70173",
+    "addr:street": "Thouretstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3150752896,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "21",
+    "addr:postcode": "70173",
+    "addr:street": "Stephanstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3150752897,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "10C",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "branch": "Office Space",
+    "brand": "Regus",
+    "brand:wikidata": "Q761072",
+    "check_date:opening_hours": "2024-06-06",
+    "level": "5",
+    "name": "Regus",
+    "office": "coworking",
+    "opening_hours:signed": "no",
+    "website": "https://www.regus.com/locations/office-space/stuttgart-konigstrasse-10c"
+  }
+},
+{
+  "type": "node",
+  "id": 3150752898,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70173",
+    "addr:street": "Kronenstraße",
+    "check_date:opening_hours": "2024-10-30",
+    "leisure": "fitness_centre",
+    "name": "Woman Pur",
+    "opening_hours:signed": "no",
+    "operator": "Woman Pur GmbH",
+    "website": "https://www.womanpur.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3150968109,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "40",
+    "addr:postcode": "70173",
+    "addr:street": "Hauptstätter Straße",
+    "amenity": "nightclub",
+    "contact:facebook": "https://www.facebook.com/RomanticaStuttgart/",
+    "contact:soundcloud": "https://soundcloud.com/romantica-club-stuttgart",
+    "disused:amenity": "bar",
+    "disused:name": "Bar Romantica",
+    "name": "Romantica",
+    "opening_hours": "Th,Su 23:00-05:00, Sa 00:00-06:00, Su 00:00-06:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3152240837,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "17",
+    "addr:postcode": "70173",
+    "addr:street": "Charlottenplatz",
+    "check_date:opening_hours": "2024-08-31",
+    "contact:email": "info@welcome-center-stuttgart.de",
+    "contact:phone": "+49 711 76164640",
+    "name": "Welcome Center Stuttgart",
+    "office": "government",
+    "opening_hours": "Mo,Fr 08:30-13:00; Tu,Th 14:00-18:00; We,Sa,Su,PH off",
+    "website": "https://welcome-center-stuttgart.de//",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3159311604,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "6A",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "amenity": "bar",
+    "indoor_seating": "yes",
+    "name": "Comodo",
+    "opening_hours": "13:00+",
+    "outdoor_seating": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3164453705,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "49",
+    "addr:postcode": "70173",
+    "addr:street": "Hauptstätter Straße",
+    "check_date": "2024-02-29",
+    "disused:amenity": "bar",
+    "disused:name": "Cafe Mistral"
+  }
+},
+{
+  "type": "node",
+  "id": 3164815134,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "31",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "female": "yes",
+    "name": "Fille et Garçon",
+    "opening_hours": "Tu-Fr 10:00-19:00; Sa 09:00-16:00",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 3167222282,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "6",
+    "addr:postcode": "70182",
+    "addr:street": "Jakobstraße",
+    "amenity": "pub",
+    "name": "Jakobstube",
+    "website": "https://jakobstube.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3204496067,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "17",
+    "addr:postcode": "70173",
+    "addr:street": "Charlottenplatz",
+    "addr:suburb": "Mitte",
+    "amenity": "cafe",
+    "changing_table": "yes",
+    "check_date:opening_hours": "2026-09-05",
+    "contact:phone": "+49 711 31511310",
+    "cuisine": "international",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "WeltCafé",
+    "opening_hours": "Mo-Tu,Th-Sa 09:00-22:00; Su 09:00-20:00",
+    "operator": "Welthaus Stuttgart e.V.",
+    "organic": "yes",
+    "outdoor_seating": "no",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "smoking": "outside",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "website": "https://www.welthaus-stuttgart.de/ueber-uns/weltcafe/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3211636689,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "28",
+    "addr:postcode": "70182",
+    "addr:street": "Uhlandstraße",
+    "amenity": "cafe",
+    "contact:email": "cafe@babeleck.de",
+    "contact:phone": "+49 711 9681399",
+    "diet:non-vegetarian": "yes",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Café Moody",
+    "opening_hours": "Mo-We 08:30-17:00; Th,Fr 08:30-22:00; Sa 10:00-22:00",
+    "outdoor_seating": "yes",
+    "smoking": "outside",
+    "takeaway": "yes",
+    "toilets": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://www.instagram.com/moody_stuttgart",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3241408145,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "12",
+    "addr:postcode": "70173",
+    "addr:street": "Sporerstraße",
+    "check_date:opening_hours": "2024-04-26",
+    "clothes": "men;oversize",
+    "name": "Hirmer Große Größen",
+    "opening_hours": "Mo-Th 10:00-19:00; Fr,Sa 10:00-20:00",
+    "shop": "clothes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3278859666,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "70182",
+    "addr:street": "Charlottenstraße",
+    "disused:shop": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3280164853,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "4",
+    "addr:postcode": "70182",
+    "addr:street": "Leonhardstraße",
+    "disused:amenity": "pub",
+    "name": "Uhu Bar",
+    "note": "Komplett geschlossen oder neue Bleibe?\nhttps://www.stuttgarter-nachrichten.de/inhalt.aufregung-im-stuttgarter-rotlichtviertel-die-uhu-bar-sucht-nach-der-kuendigung-ein-neues-nest.2e49dc77-48d6-447a-b4ed-a1d0ce8a8209.html",
+    "opening_hours": "Tu-Th 20:00-03:00, Fr-Sa 20:00-05:00",
+    "smoking": "separated",
+    "website": "https://www.uhu-bar.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3315260945,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3315260946,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "32",
+    "addr:postcode": "70173",
+    "addr:street": "Hauptstätter Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3315260948,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "4/1",
+    "addr:street": "Lazarettstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3315339140,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:postcode": "70182",
+    "addr:street": "Katharinenstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3315339141,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "22",
+    "addr:postcode": "70182",
+    "addr:street": "Weberstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3315339142,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "24",
+    "addr:postcode": "70182",
+    "addr:street": "Weberstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3315339143,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "26",
+    "addr:postcode": "70182",
+    "addr:street": "Weberstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3315339144,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "4A",
+    "addr:postcode": "70182",
+    "addr:street": "Jakobstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3315339145,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "70182",
+    "addr:street": "Katharinenstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3315339146,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "9",
+    "addr:postcode": "70182",
+    "addr:street": "Katharinenstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3317409823,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5C",
+    "addr:postcode": "70178",
+    "addr:street": "Gerberstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3317409824,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5F",
+    "addr:postcode": "70178",
+    "addr:street": "Gerberstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3318030319,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70178",
+    "addr:street": "Christophstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3318030320,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "70178",
+    "addr:street": "Christophstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3318030321,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "9",
+    "addr:postcode": "70178",
+    "addr:street": "Christophstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3319440941,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "16",
+    "addr:postcode": "70173",
+    "addr:street": "Geißstraße",
+    "amenity": "bar",
+    "check_date:opening_hours": "2023-08-10",
+    "contact:facebook": "https://www.facebook.com/Cafe-Wei%C3%9F-118353831556807/",
+    "entrance": "yes",
+    "name": "Café Weiß",
+    "opening_hours": "Mo-Fr 18:00-03:00, Fr-Sa 18:00-04:00",
+    "outdoor_seating": "no",
+    "start_date": "1961",
+    "website": "https://cafe-weiss.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3319440945,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "13",
+    "addr:postcode": "70173",
+    "addr:street": "Geißstraße",
+    "amenity": "bar",
+    "contact:website": "http://rubens-home.de",
+    "entrance": "yes",
+    "name": "Ruben´s",
+    "opening_hours": "Tu-Fr 16:00-01:00, Fr 16:00-03:00, Sa 14:00-03:00; Mo off",
+    "opening_hours:kitchen": "Tu-Fr 16:00-23:00, Fr 16:00-23:00, Sa 14:00-23:00, Mo off",
+    "operator": "Ruben´s Home GmbH",
+    "outdoor_seating": "yes",
+    "payment:coins": "yes",
+    "payment:credit_cards": "no",
+    "payment:girocard": "yes",
+    "payment:notes": "yes",
+    "smoking": "isolated",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3319440948,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "14",
+    "addr:postcode": "70173",
+    "addr:street": "Geißstraße",
+    "amenity": "bar",
+    "contact:facebook": "https://www.facebook.com/pg/BarKottan",
+    "disused": "yes",
+    "entrance": "yes",
+    "name": "Kottan",
+    "opening_hours": "Mo-We 09:00-02:00, Th 09:00-03:00, Fr 09:00-04:00, Sa 10:00-04:00",
+    "outdoor_seating": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3319564353,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "70178",
+    "addr:street": "Tübinger Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3325708024,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "12",
+    "addr:postcode": "70182",
+    "addr:street": "Wilhelmstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3333970740,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "10",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "check_date": "2026-04-23",
+    "name": "1000schön",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00",
+    "shop": "gift",
+    "website": "https://www.1000schoen-stuttgart.de/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3337321152,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "70173",
+    "addr:street": "Neue Brücke"
+  }
+},
+{
+  "type": "node",
+  "id": 3337321153,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "15",
+    "addr:postcode": "70173",
+    "addr:street": "Kronprinzstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3337321154,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "27A",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3337321155,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "56",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3337321156,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "70",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "amenity": "pharmacy",
+    "healthcare": "pharmacy",
+    "name": "Internationale Apotheke",
+    "opening_hours": "Mo-Fr 08:30-19:00; Sa 09:00-19:00",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3337382662,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "14",
+    "addr:postcode": "70173",
+    "addr:street": "Calwer Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3337382663,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "16",
+    "addr:street": "Calwer Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3337382664,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "20",
+    "addr:postcode": "70174",
+    "addr:street": "Büchsenstraße",
+    "check_date": "2025-09-01",
+    "name": "URBAN OFFICES",
+    "office": "company",
+    "website": "https://www.urbanoffices.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3337382665,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70174",
+    "addr:street": "Theodor-Heuss-Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3337382666,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3A",
+    "addr:postcode": "70174",
+    "addr:street": "Theodor-Heuss-Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3337382667,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "70174",
+    "addr:street": "Theodor-Heuss-Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3337382669,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "9",
+    "addr:postcode": "70174",
+    "addr:street": "Theodor-Heuss-Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3337739787,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "70173",
+    "addr:street": "Konrad-Adenauer-Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3357349833,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "20",
+    "addr:postcode": "70174",
+    "addr:street": "Büchsenstraße",
+    "amenity": "events_venue",
+    "capacity": "99",
+    "email": "info@skyloft-stuttgart.de",
+    "level": "6",
+    "name": "Skyloft Stuttgart",
+    "operator": "CSCOM GmbH",
+    "phone": "+49 711 230800240",
+    "website": "https://www.skyloft-stuttgart.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3372327075,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "3",
+    "addr:postcode": "70182",
+    "addr:street": "Leonhardstraße",
+    "amenity": "pub",
+    "name": "Jackie Brown",
+    "opening_hours": "Th 19:00-02:00; Fr-Sa 19:00-03:00",
+    "phone": "+49 711 88222260",
+    "website": "https://www.jackiebrown.bar"
+  }
+},
+{
+  "type": "node",
+  "id": 3391506090,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70182",
+    "addr:street": "Weberstraße",
+    "amenity": "pub",
+    "name": "Paul & George",
+    "opening_hours": "Mo-We 18:00-01:00; Th 18:00-02:00; Fr-Sa 18:00-03:00; Su 18:00-00:00",
+    "phone": "+49 711 72695181",
+    "website": "http://paulandgeorge.de",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3394530965,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "45",
+    "addr:postcode": "70173",
+    "addr:street": "Hauptstätter Straße",
+    "amenity": "pub",
+    "check_date:opening_hours": "2024-02-29",
+    "contact:facebook": "https://www.facebook.com/pages/Immer-Beer-Herzen/1562077654047261",
+    "description": "Tischkicker Ulrich \"Coin\" im Untergeschoss",
+    "name": "Immer.Beer.Herzen",
+    "opening_hours": "Mo-We 17:00-01:00, Th 17:00-02:00, Fr-Sa 17:00-03:00",
+    "sport": "table_soccer",
+    "toilets:wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3394536063,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "31",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "amenity": "cafe",
+    "check_date:opening_hours": "2024-04-27",
+    "cuisine": "ice_cream",
+    "indoor_seating": "no",
+    "name": "Old Bridge Gelateria",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "no",
+    "payment:credit_cards": "no",
+    "payment:maestro": "no",
+    "start_date": "1988",
+    "takeaway": "only",
+    "website": "https://www.oldbridge-gelateria.de/",
+    "wheelchair": "yes",
+    "wheelchair:description:de": "ebenerdiger Zugang"
+  }
+},
+{
+  "type": "node",
+  "id": 3396952670,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "9-13",
+    "addr:postcode": "70173",
+    "addr:street": "Schmale Straße",
+    "brand": "Blue Tomato",
+    "brand:wikidata": "Q107637238",
+    "email": "stuttgart@blue-tomato.com",
+    "name": "Blue Tomato",
+    "opening_hours": "Mo-Fr 11:00-19:00; Sa 11:00-20:00; PH off",
+    "operator": "Blue Tomato",
+    "phone": "+49 711 99312499",
+    "shop": "clothes",
+    "website": "https://www.blue-tomato.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 3450823688,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "22",
+    "addr:postcode": "70173",
+    "addr:street": "Hirschstraße",
+    "consulate": "consulate_general",
+    "country": "CH",
+    "diplomatic": "consulate",
+    "name": "Schweizerisches Generalkonsulat",
+    "name:en": "Consulate General of Switzerland",
+    "name:fr": "Consulat Général de Suisse",
+    "office": "diplomatic",
+    "phone": "+49 711 22 29 430",
+    "website": "https://www.eda.admin.ch/stuttgart"
+  }
+},
+{
+  "type": "node",
+  "id": 3451906189,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "2",
+    "addr:postcode": "70182",
+    "addr:street": "Wächterstraße",
+    "amenity": "fast_food",
+    "cuisine": "italian",
+    "delivery": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Angelo's Pizza-Taxi",
+    "opening_hours": "Mo-Su 11:00-23:30",
+    "operator": "Angelo Romanelli",
+    "outdoor_seating": "no",
+    "phone": "+49 711 232222",
+    "takeaway": "yes",
+    "website": "https://www.angelos-stuttgart.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3452298775,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "44",
+    "addr:postcode": "70184",
+    "addr:street": "Hohenheimer Straße",
+    "amenity": "theatre",
+    "check_date": "2024-07-07",
+    "name": "Studio Theater Stuttgart",
+    "operator": "Studio Theater Stuttgart e.V.",
+    "phone": "+49 711 24 60 93",
+    "website": "https://www.studiotheater.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3452312652,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "85",
+    "addr:street": "Olgastraße",
+    "name": "City Reinigung",
+    "opening_hours": "Mo-Fr 07:00-19:00; Sa 08:00-13:00",
+    "phone": "+49 711 2364881",
+    "shop": "dry_cleaning"
+  }
+},
+{
+  "type": "node",
+  "id": 3456076920,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "70173",
+    "addr:street": "Marktplatz",
+    "disused:alt_name": "Stuttgarter Ratskeller",
+    "disused:amenity": "restaurant",
+    "disused:cuisine": "regional",
+    "disused:name": "Ratskeller",
+    "disused:outdoor_seating": "yes",
+    "disused:wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3474595431,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "44",
+    "addr:postcode": "70184",
+    "addr:street": "Hohenheimer Straße",
+    "amenity": "theatre",
+    "name": "Kindertheater Kruschteltunnel",
+    "operator": "Studio Theater Stuttgart e.V.",
+    "phone": "+49 711 24 60 93",
+    "website": "https://www.studiotheater.de/index/index/parentId/41/childId/47"
+  }
+},
+{
+  "type": "node",
+  "id": 3497525846,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "21b",
+    "addr:postcode": "70182",
+    "addr:street": "Charlottenstraße",
+    "brand": "Tipico",
+    "brand:wikidata": "Q15851003",
+    "brand:wikipedia": "en:Tipico",
+    "check_date:opening_hours": "2025-08-26",
+    "name": "Tipico",
+    "opening_hours": "Mo-Su 10:00-23:00",
+    "shop": "bookmaker"
+  }
+},
+{
+  "type": "node",
+  "id": 3497586709,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:postcode": "70188",
+    "addr:street": "Haußmannstraße",
+    "amenity": "dentist",
+    "check_date:opening_hours": "2025-11-17",
+    "healthcare": "dentist",
+    "name": "Dr. Markus Bauer",
+    "opening_hours": "Mo 09:00-13:00,15:00-19:00; Tu 08:00-12:30,14:30-18:00; We 10:00-14:00; Th 08:00-12:30,14:30-19:00; Fr 08:00-13:00",
+    "opening_hours:signed": "no",
+    "phone": "+49 711 232100",
+    "website": "https://www.feine-zahnmedizin.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3573110066,
+  "tags": {
+    "addr:country": "DE",
+    "addr:housenumber": "3-5",
+    "addr:street": "Alte Poststraße",
+    "disused:name": "Blue Tomato",
+    "disused:shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3573110067,
+  "tags": {
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:street": "Alte Poststraße",
+    "name": "Calumet Photographic",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "operator": "Calumet Photographic",
+    "phone": "+49 711 217 49 70",
+    "shop": "photo",
+    "website": "https://www.calumetphoto.de/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3573110068,
+  "tags": {
+    "addr:country": "DE",
+    "addr:housenumber": "31",
+    "addr:street": "Calwer Straße",
+    "amenity": "restaurant",
+    "contact:website": "https://bullburgerhouse.de/",
+    "cuisine": "burger",
+    "name": "Bull Burgerhouse",
+    "opening_hours": "Mo-Fr 11:30-14:30,17:30-22:00; Sa 17:00-23:00; Su 17:00-22:00"
+  }
+},
+{
+  "type": "node",
+  "id": 3609127070,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "23",
+    "addr:street": "Charlottenstraße",
+    "name": "Immo-Team Stuttgart",
+    "office": "estate_agent",
+    "opening_hours": "Mo-Fr 09:30-16:30; Sa 09:30-12:30"
+  }
+},
+{
+  "type": "node",
+  "id": 3609127075,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "25",
+    "addr:postcode": "70182",
+    "addr:street": "Charlottenstraße",
+    "amenity": "driving_school",
+    "name": "Fahrschule Tobias",
+    "website": "http://www.fahrschule-tobias.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3644951435,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "20",
+    "addr:postcode": "70173",
+    "addr:street": "Torstraße",
+    "amenity": "pub",
+    "contact:website": "http://oblomow-stuttgart.de",
+    "description": "Tecball-Tischkicker im hinteren Bereich der Bar (sehr rutschige Bälle)",
+    "name": "Oblomow",
+    "opening_hours": "Su-Th 15:00-05:00; Fr-Sa 15:00-08:00",
+    "smoking": "separated",
+    "sport": "table_soccer",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3644951436,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "19",
+    "addr:postcode": "70173",
+    "addr:street": "Torstraße",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2023-08-10",
+    "cuisine": "regional",
+    "name": "Tauberquelle",
+    "opening_hours": "Mo-Sa 11:30-24:00",
+    "phone": "+49 711 5532933",
+    "toilets:wheelchair": "no",
+    "website": "https://tauberquelle-stuttgart.de/",
+    "website:menu": "https://tauberquelle-stuttgart.de/speisekarte/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3644952205,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "20",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "entrance": "yes",
+    "name": "teo",
+    "opening_hours": "Tu-Fr 12:00-19:00; Sa 11:00-18:00",
+    "second_hand": "only",
+    "shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 3648067967,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "10C",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "name": "Sitll",
+    "note": "Bei Regus",
+    "phone": "0800 40400476",
+    "smoking": "outside",
+    "website": "https://sitll.de",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3653310049,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "17",
+    "addr:postcode": "70173",
+    "addr:street": "Charlottenplatz",
+    "name": "Deutsch-Amerikanisches Zentrum James-F.-Byrnes-Institut e.V.",
+    "phone": "+49 711 228180",
+    "website": "https://daz.org/",
+    "wikidata": "Q1201731"
+  }
+},
+{
+  "type": "node",
+  "id": 3665989621,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "4",
+    "addr:postcode": "70173",
+    "addr:street": "Schillerplatz",
+    "check_date:opening_hours": "2024-04-25",
+    "description": "Tabakprodukte und Spirituosen",
+    "name": "Alte Tabakstube",
+    "opening_hours": "Mo-Fr 10:00-18:30; Sa 10:00-17:00; PH off",
+    "phone": "+49 711 292729",
+    "shop": "tobacco",
+    "website": "https://www.altetabakstube.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3666307149,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "8b",
+    "addr:postcode": "70182",
+    "addr:street": "Wilhelmstraße",
+    "name": "Jan Kath Teppiche",
+    "shop": "carpet",
+    "website": "https://jan-kath.de/showrooms/stuttgart/"
+  }
+},
+{
+  "type": "node",
+  "id": 3666320796,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "7",
+    "addr:postcode": "70182",
+    "addr:street": "Wilhelmstraße",
+    "name": "Württembergische Bäckerfachschule e.V.",
+    "office": "foundation"
+  }
+},
+{
+  "type": "node",
+  "id": 3666347125,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "69c",
+    "addr:postcode": "70182",
+    "addr:street": "Olgastraße",
+    "description": "Bücher, Kunst, Spiele",
+    "name": "Buchhandlung Quenzer",
+    "opening_hours:url": "http://www.buchhandlung-quenzer.de/oeffnungszeiten.html",
+    "shop": "books",
+    "website": "http://www.buchhandlung-quenzer.de/index.html"
+  }
+},
+{
+  "type": "node",
+  "id": 3675350287,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "36",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "Jack & Jones",
+    "brand:wikidata": "Q6077665",
+    "brand:wikipedia": "en:Jack & Jones",
+    "contact:phone": "+49 711 90714670",
+    "name": "Jack & Jones",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "opening_hours:signed": "no",
+    "shop": "clothes",
+    "website": "http://jackjones.de",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3698457725,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "14",
+    "addr:postcode": "70178",
+    "addr:street": "Christophstraße",
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "diet:vegetarian": "yes",
+    "name": "Ramen Izakaya SUZUNA",
+    "opening_hours": "Tu-Sa 18:00-23:00; Su 17:30-22:00",
+    "phone": "+4971181044141",
+    "website": "https://suzuna.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3701994471,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "6",
+    "addr:postcode": "70173",
+    "addr:street": "Lange Straße",
+    "check_date:opening_hours": "2025-11-24",
+    "name": "Kauf Dich Glücklich",
+    "opening_hours": "Mo-Sa 11:00-20:00",
+    "shop": "clothes",
+    "website": "https://www.kaufdichgluecklich-shop.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3702000839,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "4",
+    "addr:postcode": "70173",
+    "addr:street": "Breite Straße",
+    "check_date:opening_hours": "2025-04-23",
+    "name": "Geschwisterliebe",
+    "opening_hours": "Mo-Fr 12:00-20:00; Sa 12:00-19:00",
+    "shop": "clothes",
+    "website": "https://www.geschwisterliebeshop.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3734251508,
+  "tags": {
+    "addr:housenumber": "20",
+    "addr:street": "Torstraße",
+    "amenity": "bar",
+    "contact:email": "info@torhauszwanzig.de",
+    "contact:phone": "+49 711 24868912",
+    "contact:website": "http://torhaus20.de",
+    "name": "Torhaus Zwanzig",
+    "opening_hours": "Mo off; Tu-Th 17:00-01:00, Fr 17:00-03:00, Sa 15:00-03:00, Su 15:00-01:00",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3739551893,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "70173",
+    "addr:street": "Neue Brücke",
+    "amenity": "restaurant",
+    "check_date": "2025-12-19",
+    "cuisine": "vietnamese",
+    "diet:vegan": "only",
+    "indoor_seating": "yes",
+    "internet_access": "no",
+    "name": "Viegan",
+    "opening_hours": "Mo-Th, Su, PH 11:00-22:00 off; Fr, Sa 11:00-23:00",
+    "outdoor_seating": "no",
+    "phone": "+4971196899956",
+    "smoking": "no",
+    "toilets:wheelchair": "no",
+    "website": "https://www.viegan-restaurant.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3760151259,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "19",
+    "addr:postcode": "70173",
+    "addr:street": "Nadlerstraße",
+    "amenity": "parking",
+    "capacity": "137",
+    "capacity:disabled": "6",
+    "fee": "yes",
+    "layer": "-2",
+    "name": "Rathausgarage",
+    "operator": "LHS Stuttgart - Tiefbauamt",
+    "operator:type": "public",
+    "parking": "underground"
+  }
+},
+{
+  "type": "node",
+  "id": 3760153358,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "14",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "amenity": "bar",
+    "indoor_seating": "yes",
+    "name": "Black",
+    "outdoor_seating": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3773829474,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "70182",
+    "addr:street": "Katharinenstraße",
+    "amenity": "restaurant",
+    "name": "Buk Chon"
+  }
+},
+{
+  "type": "node",
+  "id": 3781899357,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:postcode": "70173",
+    "addr:street": "Dorotheenstraße",
+    "check_date:opening_hours": "2024-11-26",
+    "contact:website": "https://schmidtundkeller.de/",
+    "name": "Schmidt & Keller",
+    "opening_hours": "Mo-Fr 09:00-18:00; Sa 09:00-14:00",
+    "shop": "hearing_aids",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3781902158,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "2",
+    "addr:postcode": "70173",
+    "addr:street": "Dorotheenstraße",
+    "check_date:opening_hours": "2025-02-07",
+    "government": "ministry",
+    "name": "Ministerium für Finanzen Baden-Württemberg",
+    "name:de": "Ministerium für Finanzen Baden-Württemberg",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "website": "https://fm.baden-wuerttemberg.de",
+    "wikidata": "Q1416524",
+    "wikipedia": "de:Finanzministerium Baden-Württemberg"
+  }
+},
+{
+  "type": "node",
+  "id": 3781907157,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "4",
+    "addr:postcode": "70173",
+    "addr:street": "Schillerplatz",
+    "check_date:opening_hours": "2024-08-31",
+    "government": "ministry",
+    "name": "Ministerium der Justiz und für Migration \nBaden-Württemberg",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "website": "https://www.justiz-bw.de",
+    "wikidata": "Q1714333",
+    "wikipedia": "de:Ministerium der Justiz und für Europa Baden-Württemberg"
+  }
+},
+{
+  "type": "node",
+  "id": 3792172173,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "20",
+    "addr:postcode": "70173",
+    "addr:street": "Sporerstraße",
+    "changing_table": "no",
+    "entrance": "yes",
+    "indoor_seating": "yes",
+    "name": "Katz",
+    "opening_hours": "Mo-We 07:00-19:00; Th-Fr 07:00-20:00; Sa 08:00-20:00; Su,PH off",
+    "outdoor_seating": "yes",
+    "phone": "+49 711 41140687",
+    "shop": "bakery",
+    "toilets": "no",
+    "website": "https://www.baeckerei-katz.de/stores/katz-der-baecker-gmbh-45/"
+  }
+},
+{
+  "type": "node",
+  "id": 3797297180,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "44",
+    "addr:postcode": "70182",
+    "addr:street": "Charlottenstraße",
+    "amenity": "theatre",
+    "name": "Theater am Olgaeck",
+    "website": "https://www.theateramolgaeck.de/",
+    "wheelchair": "no",
+    "wikidata": "Q2416035"
+  }
+},
+{
+  "type": "node",
+  "id": 3797297181,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "42",
+    "addr:postcode": "70182",
+    "addr:street": "Charlottenstraße",
+    "amenity": "social_facility",
+    "name": "Fachberatungsstelle Gewaltprävention",
+    "operator": "Sozialberatung Stuttgart e.V.",
+    "phone": "+49 711 9455853 10",
+    "social_facility:for": "victim",
+    "website": "https://www.sozialberatung-stuttgart.de/gewaltpraevention.php"
+  }
+},
+{
+  "type": "node",
+  "id": 3797297184,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "15",
+    "addr:postcode": "70182",
+    "addr:street": "Blumenstraße",
+    "addr:suburb": "Mitte",
+    "tourism": "gallery"
+  }
+},
+{
+  "type": "node",
+  "id": 3797299349,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "45",
+    "addr:postcode": "70184",
+    "addr:street": "Hohenheimer Straße",
+    "name": "Biebrach & Dörr Hausgeräte",
+    "opening_hours": "Mo-Fr 11:00-19:00; Sa 10:00-14:00; PH off",
+    "phone": "+49 711 4704370",
+    "shop": "houseware",
+    "website": "http://www.haushaltsgeräte-stuttgart.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3797299350,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "47",
+    "addr:postcode": "70184",
+    "addr:street": "Hohenheimer Straße",
+    "check_date": "2025-06-09",
+    "craft": "upholsterer",
+    "name": "Roland Wilk Polsterei"
+  }
+},
+{
+  "type": "node",
+  "id": 3799633753,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "18",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "TK Maxx",
+    "brand:wikidata": "Q23823668",
+    "brand:wikipedia": "en:TK Maxx",
+    "check_date": "2024-11-26",
+    "name": "TK Maxx",
+    "opening_hours": "Mo-Sa 09:30-20:00",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "shop": "department_store",
+    "toilets": "no",
+    "website": "https://www.tkmaxx.de/filialen/TK_Maxx_Stuttgart",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3805477885,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "70",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "The North Face",
+    "brand:wikidata": "Q152784",
+    "check_date:opening_hours": "2024-05-04",
+    "clothes": "outdoor",
+    "name": "The North Face",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "shop": "clothes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3805477886,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "47",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "amenity": "restaurant",
+    "contact:email": "info@umamiramen.de",
+    "contact:phone": "+49 71139680769",
+    "contact:website": "https://umamiramen.de/",
+    "cuisine": "ramen;japanese;asian",
+    "entrance": "yes",
+    "indoor_seating": "yes",
+    "name": "Umami Ramen",
+    "opening_hours": "Mo-Su 11:30-22:00",
+    "outdoor_seating": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3812319348,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "25",
+    "addr:postcode": "70173",
+    "addr:street": "Torstraße",
+    "amenity": "bar",
+    "name": "Barbier",
+    "opening_hours": "Mo-Sa 09:30-19:00",
+    "website": "https://www.barbier-stadtmitte.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3814611179,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "9",
+    "addr:postcode": "70180",
+    "addr:street": "Bopserstraße",
+    "amenity": "pub",
+    "contact:facebook": "https://www.facebook.com/bootswesternbarstuttgart/",
+    "lgbtq": "primary",
+    "lgbtq:gay": "primary",
+    "lgbtq:men": "primary",
+    "name": "reBoots",
+    "old:website": "http://www.boots-stuttgart.com",
+    "opening_hours": "Sa 18:00-03:00; Su 18:00-00:00; Fr 16:30-03:00; Th 19:00-00:00; We 19:00-01:00; Tu 19:00-02:00",
+    "phone": "+49 711 2364764",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3829549462,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "68c",
+    "addr:postcode": "70182",
+    "addr:street": "Olgastraße",
+    "amenity": "fast_food",
+    "craft": "caterer",
+    "cuisine": "asian",
+    "description": "Speisen ausschließlich ohne Glutamat",
+    "name": "Goldener Drachen Asia-Imbiss",
+    "opening_hours": "Mo-Fr 11:00-14:30, Mo,Tu,Th,Fr 17:00-21:00",
+    "phone": "+49 711 4704430",
+    "smoking": "outside",
+    "takeaway": "yes",
+    "website": "http://www.goldener-drachen.de"
+  }
+},
+{
+  "type": "node",
+  "id": 3835362759,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "45",
+    "addr:postcode": "70174",
+    "addr:street": "Friedrichstraße",
+    "amenity": "doctors",
+    "check_date:opening_hours": "2024-06-07",
+    "healthcare": "centre",
+    "healthcare:speciality": "lasik;ophthalmology",
+    "name": "Augenlaserzentrum Stuttgart (CARE Vision)",
+    "opening_hours:signed": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3858492081,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "51B",
+    "addr:postcode": "70182",
+    "addr:street": "Olgastraße",
+    "name": "Hannes Roether",
+    "shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 3885555539,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:postcode": "70182",
+    "addr:street": "Esslinger Straße",
+    "check_date": "2024-04-26",
+    "disused:shop": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3885555544,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "26",
+    "addr:postcode": "70182",
+    "addr:street": "Esslinger Straße",
+    "name": "Hautnah Cashmere & Silk",
+    "shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 3885555549,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "20",
+    "addr:postcode": "70182",
+    "addr:street": "Esslinger Straße",
+    "check_date:opening_hours": "2026-06-03",
+    "entrance": "yes",
+    "fee": "no",
+    "name": "Kunsthaus Fischinger",
+    "official_name": "Galerie Fischinger",
+    "opening_hours": "Tu-Fr 10:30-18:00; Sa 10:30-16:00",
+    "phone": "+49 711 232990",
+    "shop": "art",
+    "tourism": "gallery",
+    "website": "https://www.galeriefischinger.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3885555551,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:postcode": "70182",
+    "addr:street": "Esslinger Straße",
+    "check_date:opening_hours": "2026-03-08",
+    "entrance": "yes",
+    "name": "Lieblingsstück by Manuela Zinser",
+    "opening_hours": "Mo-Sa 10:00-18:00",
+    "shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 3885555553,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:postcode": "70182",
+    "addr:street": "Esslinger Straße",
+    "check_date": "2026-03-09",
+    "contact:instagram": "highstandards_shop",
+    "currency:EUR": "yes",
+    "email": "info@high-standards.de",
+    "name": "High Standards",
+    "opening_hours": "Mo-Sa 11:00-20:00",
+    "operator": "High Standards Auns",
+    "payment:apple_pay": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:girocard": "yes",
+    "payment:google_pay": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:notes": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "phone": "+49 1514 2898799",
+    "shop": "cannabis",
+    "survey:date": "2026-03-09",
+    "website": "https://high-standards.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3885555563,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "18",
+    "addr:postcode": "70182",
+    "addr:street": "Esslinger Straße",
+    "check_date:opening_hours": "2026-06-03",
+    "entrance": "yes",
+    "name": "WauMiau",
+    "opening_hours": "Mo-Fr 11:00-19:00; Sa 10:00-18:00",
+    "shop": "pet",
+    "website": "https://www.waumiau.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3886700058,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "22",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "entrance": "yes",
+    "name": "Kiosk am Schlossplatz",
+    "opening_hours": "Mo-Fr 11:00+; Sa 11:00-24:00; Su off",
+    "shop": "kiosk",
+    "step_count": "2",
+    "website": "https://www.instagram.com/kioskamschlossplatz/",
+    "wheelchair": "no",
+    "wheelchair:description": "steps at the entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 3886700060,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "22",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "amenity": "fast_food",
+    "check_date:opening_hours": "2026-03-31",
+    "cuisine": "bubble_tea",
+    "indoor_seating": "yes",
+    "name": "Min Min Tea House",
+    "opening_hours": "Mo-Fr 11:00-20:00; Sa 11:00-21:00; Su 12:00-20:00",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3888437443,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "51A",
+    "addr:postcode": "70182",
+    "addr:street": "Olgastraße",
+    "contact:phone": "+49 711 241871",
+    "craft": "electrician",
+    "entrance": "yes",
+    "name": "Elektro Berg",
+    "shop": "electrical",
+    "website": "http://elektroberg.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3888437445,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "23",
+    "addr:postcode": "70184",
+    "addr:street": "Alexanderstraße",
+    "contact:phone": "+49 711 51896077",
+    "entrance": "yes",
+    "name": "Sazou",
+    "shop": "interior_decoration",
+    "source": "survey",
+    "website": "https://www.sazou.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3892535559,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "42",
+    "addr:postcode": "70184",
+    "addr:street": "Hohenheimer Straße",
+    "contact:phone": "+49 711 4704495",
+    "contact:website": "https://www.portugiesische-weine-stuttgart.de/",
+    "name": "Portugiesische Weine und andere Spezialitäten",
+    "opening_hours": "Mo-Fr 14:00-20:00; Sa 09:00-20:00",
+    "shop": "wine",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 3892593334,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "30",
+    "addr:postcode": "70173",
+    "addr:street": "Stephanstraße",
+    "check_date": "2025-11-13",
+    "entrance": "yes",
+    "shop": "vacant"
+  }
+},
+{
+  "type": "node",
+  "id": 3895839063,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "31",
+    "addr:postcode": "70182",
+    "addr:street": "Brennerstraße",
+    "contact:phone": "+49 711 2364141",
+    "entrance": "yes",
+    "healthcare": "physiotherapist",
+    "name": "Pross",
+    "source": "survey",
+    "website": "http://www.praxis-pross.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3895839064,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "35",
+    "addr:postcode": "70182",
+    "addr:street": "Olgastraße",
+    "craft": "goldsmith",
+    "entrance": "yes",
+    "name": "Marion Schäfer",
+    "shop": "jewelry",
+    "source": "survey",
+    "website": "https://goldschmiedeatelier-stuttgart.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3896463895,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "10",
+    "addr:postcode": "70173",
+    "addr:street": "Kirchstraße",
+    "disused:name": "Hochland",
+    "disused:shop": "coffee;tea"
+  }
+},
+{
+  "type": "node",
+  "id": 3896463896,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "6b",
+    "addr:postcode": "70173",
+    "addr:street": "Kirchstraße",
+    "amenity": "cafe",
+    "check_date:opening_hours": "2024-11-01",
+    "indoor_seating": "yes",
+    "name": "Holanka Bar",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3896463898,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "8b",
+    "addr:postcode": "70180",
+    "addr:street": "Wilhelmstraße",
+    "contact:phone": "+49 711 94581064",
+    "entrance": "yes",
+    "name": "Schmachtfetzen",
+    "shop": "clothes",
+    "source": "survey",
+    "website": "https://www.schmachtfetzen.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3896463899,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "8b",
+    "addr:postcode": "70182",
+    "addr:street": "Wilhelmstraße",
+    "entrance": "yes",
+    "name": "Minotti by Kampe54",
+    "shop": "interior_decoration",
+    "source": "survey",
+    "website": "https://www.kampe54.de/minotti/index.htm"
+  }
+},
+{
+  "type": "node",
+  "id": 3896463900,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "21D",
+    "addr:postcode": "70182",
+    "addr:street": "Katharinenstraße",
+    "amenity": "social_centre",
+    "check_date": "2026-08-15",
+    "entrance": "yes",
+    "name": "Experimentierraum der Engagementförderung",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 3897361033,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "35/37",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "disused:shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 3897361036,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "3",
+    "addr:postcode": "70178",
+    "addr:street": "Christophstraße",
+    "entrance": "yes",
+    "name": "IKK",
+    "office": "insurance",
+    "operator": "IKK Stuttgart-Ludwigsburg",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 3897361040,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "6",
+    "addr:postcode": "70173",
+    "addr:street": "Josef-Hirn-Platz",
+    "amenity": "fast_food",
+    "contact:facebook": "https://www.facebook.com/Thios-Inn-1554000734873883/",
+    "cuisine": "greek",
+    "entrance": "yes",
+    "name": "Thios Inn",
+    "origin": "greek",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 3897361041,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "41",
+    "addr:postcode": "70173",
+    "addr:street": "Eberhardstraße",
+    "amenity": "cafe",
+    "entrance": "yes",
+    "indoor_seating": "yes",
+    "name": "CD Coffee & more",
+    "outdoor_seating": "yes",
+    "smoking": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3897361042,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "15",
+    "addr:postcode": "70173",
+    "addr:street": "Schulstraße",
+    "amenity": "restaurant",
+    "contact:website": "https://qq-sushilounge.de/",
+    "cuisine": "sushi",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "QQ Sushi Kitchen",
+    "opening_hours": "Mo-Sa 11:30-22:00; PH,Su 13:00-22:00",
+    "outdoor_seating": "no",
+    "phone": "+49 711 88783425",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3897361043,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "15",
+    "addr:postcode": "70173",
+    "addr:street": "Schulstraße",
+    "amenity": "cafe",
+    "cuisine": "bubble_tea",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Neun 9 Bar",
+    "opening_hours": "Mo-Sa 11:30-20:00; Su 11:30-19:00",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3897361044,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "17",
+    "addr:postcode": "70173",
+    "addr:street": "Schulstraße",
+    "check_date": "2025-12-01",
+    "indoor_seating": "yes",
+    "name": "Katz",
+    "opening_hours": "Mo-Fr 06:30-19:00; Sa 08:00-19:00",
+    "outdoor_seating": "no",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "shop": "bakery",
+    "smoking": "no",
+    "website": "https://www.baeckerei-katz.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3897361047,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "19",
+    "addr:postcode": "70173",
+    "addr:street": "Eichstraße",
+    "check_date": "2023-11-17",
+    "check_date:opening_hours": "2024-04-27",
+    "description": "Stadt Stuttgart, Amt für Stadtplanung und Wohnen,\nAbteilung Städtebauliche Planung Rosenstein",
+    "government": "public_service",
+    "name": "PlanWerkstatt",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "source": "survey;osm notes",
+    "website": "https://www.stuttgart.de/organigramm/verwaltungseinheit/abteilung-staedtebauliche-planung-rosenstein.php",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3908602573,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "29-31",
+    "addr:postcode": "70182",
+    "addr:street": "Charlottenstraße",
+    "contact:phone": "+49 711 726939110",
+    "entrance": "yes",
+    "name": "Vitra by storeS",
+    "shop": "furniture",
+    "source": "survey",
+    "website": "http://www.store-s.de/vitra-stuttgart/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3908602574,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "7",
+    "addr:postcode": "70173",
+    "addr:street": "Marktplatz",
+    "contact:phone": "+49 711 22249320",
+    "contact:website": "https://www.tritschler.com/",
+    "entrance": "yes",
+    "name": "Tritschler",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "shop": "general",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3908602575,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "70173",
+    "addr:street": "Stiftstraße",
+    "check_date:opening_hours": "2024-08-31",
+    "clothes": "men",
+    "contact:email": "stuttgart@eckerle.de",
+    "contact:phone": "+49 711 2245130",
+    "contact:website": "http://www.eckerle.de/",
+    "entrance": "yes",
+    "name": "Eckerle Herrenmoden",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "shop": "clothes",
+    "source": "survey",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3908602578,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "54",
+    "addr:postcode": "70182",
+    "addr:street": "Olgastraße",
+    "check_date:opening_hours": "2021-02-02",
+    "contact:phone": "+49 711 241466",
+    "entrance": "yes",
+    "name": "Der Blumenladen",
+    "opening_hours": "Mo-Fr 08:00-18:30; Sa 09:00-16:00",
+    "shop": "florist",
+    "source": "survey",
+    "website": "https://derblumenladen.net/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3919312754,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "14",
+    "addr:postcode": "70173",
+    "addr:street": "Stiftstraße",
+    "entrance": "yes",
+    "shop": "vacant",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 3925669808,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "5a",
+    "addr:postcode": "70178",
+    "addr:street": "Gerberstraße",
+    "disused:amenity": "restaurant",
+    "entrance": "yes",
+    "was:name": "Floating Market"
+  }
+},
+{
+  "type": "node",
+  "id": 3937616471,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "43b",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "brand": "baby-walz",
+    "brand:wikidata": "Q108004413",
+    "name": "baby-walz",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "phone": "+49 711 2296070",
+    "shop": "baby_goods",
+    "website": "https://www.baby-walz.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3957484445,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "70",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3978329678,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "4A",
+    "addr:postcode": "70182",
+    "addr:street": "Gaisburgstraße",
+    "amenity": "library",
+    "name": "Bibliothek für Zeitgeschichte",
+    "opening_hours": "Mo-Fr 10:00-17:00",
+    "operator": "Württembergische Landesbibliothek",
+    "wikidata": "Q856554"
+  }
+},
+{
+  "type": "node",
+  "id": 3978341401,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "4A",
+    "addr:postcode": "70182",
+    "addr:street": "Gaisburgstraße",
+    "amenity": "library",
+    "name": "Abteilung Karten und Graphik",
+    "operator": "Württembergische Landesbibliothek",
+    "website": "https://www.wlb-stuttgart.de/sammlungen/karten-und-graphik/"
+  }
+},
+{
+  "type": "node",
+  "id": 3983759335,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "68",
+    "addr:postcode": "70173",
+    "addr:street": "Königstraße",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3999154368,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "70182",
+    "addr:street": "Jakobstraße",
+    "amenity": "cafe",
+    "contact:website": "http://www.verein-jugendliche.de/projekte/cafe-strich-punkt/",
+    "lastcheck": "2016-02-10",
+    "name": "Cafe Strich-Punkt",
+    "opening_hours": "Mo 16:00-20:00; Th 16:00-19:00",
+    "social_facility": "ambulatory_care",
+    "social_facility:for": "gay"
+  }
+},
+{
+  "type": "node",
+  "id": 4024295767,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "12c",
+    "addr:postcode": "70182",
+    "addr:street": "Gaisburgstraße",
+    "name": "Hebammenpraxis Stuttgart-Mitte",
+    "office": "physician",
+    "phone": "+49 711 60 57 51",
+    "website": "https://hebammenpraxis-stuttgart.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 4063998258,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "1A",
+    "addr:postcode": "70173",
+    "addr:street": "Stiftstraße",
+    "name": "Bungalow",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "shop": "clothes",
+    "website": "http://www.bungalow-gallery.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4084831768,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:postcode": "70173",
+    "addr:street": "Breite Straße",
+    "check_date": "2025-04-23",
+    "check_date:opening_hours": "2025-04-23",
+    "name": "Grüne Erde",
+    "opening_hours": "Mo-Fr 11:00-18:00; Sa 11:00-17:00",
+    "shop": "clothes",
+    "website": "https://www.grueneerde.com/ge-s-32.html"
+  }
+},
+{
+  "type": "node",
+  "id": 4084838565,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "2",
+    "addr:postcode": "70173",
+    "addr:street": "Schulstraße",
+    "baby_feeding": "yes",
+    "changing_table": "yes",
+    "changing_table:location": "room",
+    "check_date:opening_hours": "2026-07-01",
+    "name": "Korbmayer",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "shop": "clothes",
+    "website": "https://korbmayer.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4084842363,
+  "tags": {
+    "addr:city": "Stuttgart",
+    "addr:housenumber": "4",
+    "addr:postcode": "70173",
+    "addr:street": "Breite Straße",
+    "name": "Blutsgeschwister",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 11:00-19:00",
+    "shop": "clothes"
+  }
+}
+
+  ]
+}

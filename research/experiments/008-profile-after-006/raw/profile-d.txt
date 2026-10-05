@@ -1,0 +1,84 @@
+total samples 12837
+
+-- exclusive time by category (% of total; non-overlapping)
+   24.9%  libc string/mem ops
+   22.6%  CRF scoring / viterbi
+   19.7%  trie / phrase search
+   10.8%  normalization/unicode
+    6.6%  other
+    6.1%  allocator + zeroing (malloc/free/realloc/memset/bzero)
+    4.6%  string arrays / feature strings
+    3.3%  tokenizing
+    1.4%  dictionary lookup
+
+-- inclusive (overlapping) for pipeline stages
+   99.7%  libpostal_parse_address
+   99.6%  address_parser_parse
+    1.9%  tokenize
+    0.5%  tokenized_string_new_from_str_size
+    0.3%  tokenized_string_add_token
+   17.2%  address_parser_context_fill
+   61.3%  address_parser_predict
+   56.6%  crf_tagger_score
+   22.0%  address_parser_features
+    6.9%  trie_get_data
+   10.5%  trie_search_tokens_from_index
+    3.9%  normalize_token
+    3.5%  add_normalized_token
+    1.3%  cstring_array_get_phrase
+   61.3%  crf_tagger_predict
+    3.7%  crf_context_viterbi
+    2.9%  crf_context_set_num_items
+    0.3%  libpostal_address_parser_response_destroy
+    1.1%  cstring_array_to_strings
+    8.4%  char_array_add_vjoined
+    9.1%  feature_array_add
+    0.3%  address_expansion_in_dictionary
+    0.7%  search_address_dictionaries_prefix
+    1.0%  search_address_dictionaries_suffix
+
+-- top exclusive functions
+   13.3%  crf_tagger_score
+   11.3%  _platform_memmove
+    8.6%  trie_search_tokens_from_index
+    5.4%  crf_key_batch_lookup_dict
+    5.1%  trie_get_from_index
+    4.0%  _platform_strlen
+    3.6%  crf_context_viterbi
+    2.6%  _platform_strncmp$VARIANT$Base
+    2.3%  trie_get_prefix_from_index
+    2.2%  utf8proc_decompose_char
+    2.1%  _platform_memcmp
+    2.0%  utf8proc_iterate
+    1.8%  char_array_add_vjoined
+    1.7%  utf8proc_reencode
+    1.6%  graph_has_edge
+    1.5%  _platform_memset
+    1.5%  scan_token
+    1.4%  fd_split
+    1.3%  add_normalized_token
+    1.2%  _xzm_free
+    1.2%  address_parser_features
+    1.1%  transliterate
+    1.1%  DYLD-STUB$$memcpy
+    1.1%  <deduplicated_symbol>
+    1.0%  crf_key_batch_add_token
+    1.0%  _platform_memchr
+    0.9%  utf8proc_decompose
+    0.8%  DYLD-STUB$$strlen
+
+-- allocator entry points: 6.0% of samples inclusive at the outermost allocator call; by immediate caller:
+   0.92%  double_matrix_resize
+   0.79%  cstring_array_add_string
+   0.51%  crf_context_set_num_items
+   0.47%  cstring_array_new
+   0.39%  utf8_case
+   0.38%  cstring_array_to_strings
+   0.37%  char_array_cat_len
+   0.31%  cstring_array_new_size
+   0.27%  utf8proc_map
+   0.26%  tokenized_string_destroy
+   0.25%  transliterate
+   0.23%  libpostal_address_parser_response_destroy
+   0.20%  cstring_array_destroy
+   0.15%  address_parser_parse

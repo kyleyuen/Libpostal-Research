@@ -1,0 +1,13 @@
+file=../013-random-and-floor/data/floor_non_ascii_only.tsv addresses=5404 passes=1
+total_us=14.387 (parse+destroy per address, timers included)
+normalize_us=2.829
+tokenize_us=0.563
+context_fill_us=3.250
+features_us=2.526
+lookups_us=2.130
+accumulate_us=0.945
+viterbi_and_rest_of_predict_us=1.180
+response_build_us=0.811
+response_destroy_us=0.088
+unattributed_us=0.064 (setup of parse call, bypass paths, timer overhead)
+per_address: bytes=42.71 tokens=5.949 state_features=45.78 transition_features=8.67 bypassed=0.0002

@@ -1,0 +1,512 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/libpostal.c:10:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_parser.h:52:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/averaged_perceptron.h:27:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:10:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/language_classifier.h:13:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.h:26:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:825:74: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  825 |                 log_debug("phrase.start = %zu, prev_phrase_end = %zu\n", phrase.start, prev_phrase_end);
+      |                                           ~~~                            ^~~~~~~~~~~~
+      |                                           %u
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:872:89: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'bool' [-Wformat]
+  872 |                     log_debug("have_strictly_ignorable=%zu, phrase_is_canonical=%zu\n", have_strictly_ignorable, phrase_is_canonical);
+      |                                                        ~~~                              ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:872:114: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'bool' [-Wformat]
+  872 |                     log_debug("have_strictly_ignorable=%zu, phrase_is_canonical=%zu\n", have_strictly_ignorable, phrase_is_canonical);
+      |                                                                                 ~~~                              ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:932:26: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+  932 |                     bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                          ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1184:46: warning: unused variable 'start_index' [-Wunused-variable]
+ 1184 |                                     uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                                              ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1202:38: warning: unused variable 'start_index' [-Wunused-variable]
+ 1202 |                             uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                                      ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1235:26: warning: unused variable 'start_index' [-Wunused-variable]
+ 1235 |                 uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                          ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1310:22: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+ 1310 |                 bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                      ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1344:22: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+ 1344 |                 bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                      ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1440:11: warning: unused variable 'lang' [-Wunused-variable]
+ 1440 |     char *lang;
+      |           ^~~~
+11 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_dictionary.c:63:47: warning: second argument to 'va_arg' is of promotable type 'uint16_t' (aka 'unsigned short'); this va_arg has undefined behavior because arguments will be promoted to 'int' [-Wvarargs]
+   63 |         uint16_t dictionary_id = va_arg(args, uint16_t);
+      |                                               ^~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/__stdarg_va_arg.h:20:47: note: expanded from macro 'va_arg'
+   20 | #define va_arg(ap, type) __builtin_va_arg(ap, type)
+      |                                               ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_dictionary.c:173:10: warning: variable 'is_phrase' set but not used [-Wunused-but-set-variable]
+  173 |     bool is_phrase = false;
+      |          ^
+2 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/transliterate.c:614:12: warning: variable 'group_num_start' set but not used [-Wunused-but-set-variable]
+  614 |     size_t group_num_start = 0;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/transliterate.c:615:12: warning: variable 'group_num_len' set but not used [-Wunused-but-set-variable]
+  615 |     size_t group_num_len = 0;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/transliterate.c:1027:26: warning: variable 'added_previous_phrase' set but not used [-Wunused-but-set-variable]
+ 1027 |                     bool added_previous_phrase = false;
+      |                          ^
+3 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/trie.c:1074:13: warning: unused variable 'base' [-Wunused-variable]
+ 1074 |     int32_t base;
+      |             ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/trie.c:1075:13: warning: unused variable 'check' [-Wunused-variable]
+ 1075 |     int32_t check;
+      |             ^~~~~
+2 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/trie_search.c:184:16: warning: initialization of pointer of type 'phrase_array *' to null from a constant boolean expression [-Wbool-conversion]
+  184 |         return false;
+      |                ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/trie_search.c:915:72: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  915 |                     log_debug("No space transition, phrase_len=%zu\n", phrase_len);
+      |                                                                ~~~     ^~~~~~~~~~
+      |                                                                %u
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/trie_search.c:872:12: warning: variable 'separator_char_len' set but not used [-Wunused-but-set-variable]
+  872 |     size_t separator_char_len = 0;
+      |            ^
+3 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/string_utils.c:116:17: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  116 |     for (size_t count = 0; (temp = strstr(start, replace)); count++) {
+      |                 ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/string_utils.c:193:18: warning: variable 'remaining' set but not used [-Wunused-but-set-variable]
+  193 |     ssize_t len, remaining;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/string_utils.c:384:13: warning: unused variable 'num_utf8_chars' [-Wunused-variable]
+  384 |     ssize_t num_utf8_chars = 0;
+      |             ^~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/string_utils.c:521:12: warning: unused variable 'remaining' [-Wunused-variable]
+  521 |     size_t remaining = len;
+      |            ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/string_utils.c:687:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  687 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/string_utils.c:713:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  713 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/string_utils.c:876:13: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  876 |     ssize_t index = 0;
+      |             ^
+7 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/normalize.c:269:22: warning: unused variable 'key' [-Wunused-variable]
+  269 |             khiter_t key = kh_put(int_set, scripts, (khint_t)script, &ret);
+      |                      ^~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/normalize.c:208:11: warning: unused variable 'numex_replaced' [-Wunused-variable]
+  208 |     char *numex_replaced = NULL;
+      |           ^~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/normalize.c:374:14: warning: unused variable 'is_hyphen' [-Wunused-variable]
+  374 |         bool is_hyphen = utf8_is_hyphen(ch);
+      |              ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/normalize.c:367:10: warning: unused variable 'append_char' [-Wunused-variable]
+  367 |     bool append_char = true;
+      |          ^~~~~~~~~~~
+4 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:805:18: warning: unused variable 'rule_index' [-Wunused-variable]
+  805 |         uint32_t rule_index = phrase.data;
+      |                  ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:703:19: warning: unused variable 'ch' [-Wunused-variable]
+  703 |     unsigned char ch = '\0';
+      |                   ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:706:10: warning: unused variable 'advance_state' [-Wunused-variable]
+  706 |     bool advance_state = true;
+      |          ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:714:17: warning: unused variable 'number_str' [-Wunused-variable]
+  714 |     char_array *number_str = NULL;
+      |                 ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:978:10: warning: unused variable 'whole_tokens_only' [-Wunused-variable]
+  978 |     bool whole_tokens_only = language->whole_tokens_only;
+      |          ^~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:1073:10: warning: unused variable 'ignorable' [-Wunused-variable]
+ 1073 |     bool ignorable = true;
+      |          ^~~~~~~~~
+6 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_parser.h:52:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/averaged_perceptron.h:27:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:399:10: warning: unused variable 'has_key' [-Wunused-variable]
+  399 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:861:14: warning: unused variable 'phrase' [-Wunused-variable]
+  861 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:947:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+  947 |     bool have_address_phrases = search_address_dictionaries_tokens_with_phrases(normalized_str, normalized_tokens, NULL, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:983:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+  983 |     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1001:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+ 1001 |     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1110:13: warning: unused variable 'token' [-Wunused-variable]
+ 1110 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1199:13: warning: unused variable 'membership' [-Wunused-variable]
+ 1199 |     int64_t membership;
+      |             ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1227:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1227 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1668:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 1668 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1670:18: warning: unused variable 'k' [-Wunused-variable]
+ 1670 |         khiter_t k;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1769:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable]
+ 1769 |             bool ngrams_added = false;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1953:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 1953 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1959:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 1959 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1960:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 1960 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1895:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable]
+ 1895 |         size_t next_word_len = 1;
+      |                ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1462:11: warning: unused variable 'language' [-Wunused-variable]
+ 1462 |     char *language = context->language;
+      |           ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1463:11: warning: unused variable 'country' [-Wunused-variable]
+ 1463 |     char *country = context->country;
+      |           ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1473:19: warning: unused variable 'separators' [-Wunused-variable]
+ 1473 |     uint32_array *separators = context->separators;
+      |                   ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1711:10: warning: variable 'is_unknown' set but not used [-Wunused-but-set-variable]
+ 1711 |     bool is_unknown = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1713:10: warning: variable 'known_prefix' set but not used [-Wunused-but-set-variable]
+ 1713 |     bool known_prefix = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/address_parser.c:1714:10: warning: variable 'known_suffix' set but not used [-Wunused-but-set-variable]
+ 1714 |     bool known_suffix = false;
+      |          ^
+22 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_parser_io.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_parser_io.h:8:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_parser.h:52:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/averaged_perceptron.h:27:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_parser_io.c:105:16: warning: unused variable 'pair_len' [-Wunused-variable]
+  105 |         size_t pair_len = strlen(str);
+      |                ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_utils.h:251:9: note: expanded from macro 'cstring_array_foreach'
+  251 |         code;                                                                           \
+      |         ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_parser_io.c:99:12: warning: unused variable 'num_pairs' [-Wunused-variable]
+   99 |     size_t num_pairs = cstring_array_num_strings(pairs);
+      |            ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_parser_io.c:246:12: warning: unused variable 'len' [-Wunused-variable]
+  246 |     size_t len = strlen(normalized);
+      |            ^~~
+4 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/averaged_perceptron.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/averaged_perceptron.h:27:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/averaged_perceptron.c:45:14: warning: unused variable 'i' [-Wunused-variable]
+   45 |     uint32_t i = 0;
+      |              ^
+2 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/crf.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/crf.h:20:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/crf_context.h:20:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/crf_context.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/crf_context.h:20:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/crf_context.c:241:18: warning: unused variable 'T' [-Wunused-variable]
+  241 |     const size_t T = context->num_items;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/crf_context.c:242:18: warning: unused variable 'L' [-Wunused-variable]
+  242 |     const size_t L = context->num_labels;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/crf_context.c:541:18: warning: unused variable 'L' [-Wunused-variable]
+  541 |     const size_t L = self->num_labels;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/037-lockstep-walks/artifacts/lkv/src/crf_context.c:543:19: warning: unused variable 'cur' [-Wunused-variable]
+  543 |     const double *cur = NULL;
+      |                   ^~~
+5 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.c:119:12: warning: unused variable 'val' [-Wunused-variable]
+  119 |     double val;
+      |            ^~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.c:159:12: warning: unused variable 'val' [-Wunused-variable]
+  159 |     double val;
+      |            ^~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.c:178:15: warning: unused variable 'indices' [-Wunused-variable]
+  178 |     uint32_t *indices = self->indices->a;
+      |               ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.c:201:12: warning: unused variable 'val' [-Wunused-variable]
+  201 |     double val;
+      |            ^~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.c:217:15: warning: unused variable 'indices' [-Wunused-variable]
+  217 |     uint32_t *indices = self->indices->a;
+      |               ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.c:239:15: warning: unused variable 'indptr' [-Wunused-variable]
+  239 |     uint32_t *indptr = self->indptr->a;
+      |               ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.c:243:12: warning: unused variable 'm1_rows' [-Wunused-variable]
+  243 |     size_t m1_rows = self->m;
+      |            ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.c:244:12: warning: unused variable 'm1_cols' [-Wunused-variable]
+  244 |     size_t m1_cols = self->n;
+      |            ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.c:246:12: warning: unused variable 'm2_rows' [-Wunused-variable]
+  246 |     size_t m2_rows = matrix->m;
+      |            ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.c:275:15: warning: unused variable 'indptr' [-Wunused-variable]
+  275 |     uint32_t *indptr = self->indptr->a;
+      |               ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.c:279:12: warning: unused variable 'm1_rows' [-Wunused-variable]
+  279 |     size_t m1_rows = self->m;
+      |            ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.c:280:12: warning: unused variable 'm1_cols' [-Wunused-variable]
+  280 |     size_t m1_cols = self->n;
+      |            ^~~~~~~
+13 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/averaged_perceptron_tagger.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/averaged_perceptron_tagger.h:20:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/averaged_perceptron.h:27:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/language_classifier.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/language_classifier.h:13:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.h:26:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/language_features.c:2:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/language_classifier.h:13:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.h:26:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/language_features.c:55:11: warning: unused variable 'feature_namespace' [-Wunused-variable]
+   55 |     char *feature_namespace;
+      |           ^~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/language_features.c:74:12: warning: variable 'consumed' set but not used [-Wunused-but-set-variable]
+   74 |     size_t consumed = 0;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/language_features.c:274:21: warning: unused variable 'prev_token' [-Wunused-variable]
+  274 |             token_t prev_token;
+      |                     ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/language_features.c:275:19: warning: unused variable 'phrase' [-Wunused-variable]
+  275 |             char *phrase = NULL;
+      |                   ^~~~~~
+5 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.c:3:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.h:26:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.c:45:12: warning: unused variable 'n' [-Wunused-variable]
+   45 |     size_t n = x->n;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.c:63:13: warning: unused variable 'expected_values' [-Wunused-variable]
+   63 |     double *expected_values = p_y->values;
+      |             ^~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.c:91:12: warning: unused variable 'num_features' [-Wunused-variable]
+   91 |     size_t num_features = n;
+      |            ^~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.c:93:14: warning: unused variable 'i' [-Wunused-variable]
+   93 |     uint32_t i, j;
+      |              ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.c:95:12: warning: unused variable 'residual' [-Wunused-variable]
+   95 |     double residual;
+      |            ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.c:103:13: warning: unused variable 'theta_values' [-Wunused-variable]
+  103 |     double *theta_values = theta->values;
+      |             ^~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.c:104:13: warning: unused variable 'predicted_values' [-Wunused-variable]
+  104 |     double *predicted_values = p_y->values;
+      |             ^~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.c:105:13: warning: unused variable 'gradient_values' [-Wunused-variable]
+  105 |     double *gradient_values = gradient->values;
+      |             ^~~~~~~~~~~~~~~
+9 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic.h:7:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic.c:16:12: warning: unused variable 'sum' [-Wunused-variable]
+   16 |     double sum = 0.0;
+      |            ^~~
+2 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/minibatch.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/minibatch.h:9:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/minibatch.c:8:14: warning: unused variable 'feature_id' [-Wunused-variable]
+    8 |     uint32_t feature_id;
+      |              ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/minibatch.c:12:12: warning: unused variable 'm' [-Wunused-variable]
+   12 |     size_t m = minibatch->n;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/minibatch.c:53:17: warning: unused variable 'feature' [-Wunused-variable]
+   53 |     const char *feature;
+      |                 ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/minibatch.c:102:17: warning: unused variable 'label' [-Wunused-variable]
+  102 |     const char *label;
+      |                 ^~~~~
+5 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/ngrams.c:37:22: warning: unused variable 'token_index' [-Wunused-variable]
+   37 |             uint32_t token_index = cstring_array_start_token(grams);
+      |                      ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/ngrams.c:18:12: warning: variable 'consumed' set but not used [-Wunused-but-set-variable]
+   18 |     size_t consumed = 0;
+      |            ^
+2 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/place.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/place.h:8:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/language_classifier.h:13:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.h:26:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/near_dupe.c:14:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/place.h:8:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/language_classifier.h:13:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.h:26:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/near_dupe.c:436:18: warning: variable 'any_existing_acronyms' set but not used [-Wunused-but-set-variable]
+  436 |             bool any_existing_acronyms = false;
+      |                  ^
+2 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/dedupe.c:2:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_parser.h:52:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/averaged_perceptron.h:27:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_similarity.c:122:17: warning: unused variable 'match_at' [-Wunused-variable]
+  122 |         ssize_t match_at = -1;
+      |                 ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_similarity.c:124:16: warning: variable 'min_at' set but not used [-Wunused-but-set-variable]
+  124 |         size_t min_at = 0;
+      |                ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_similarity.c:101:10: warning: unused variable 'in_gap' [-Wunused-variable]
+  101 |     bool in_gap = false;
+      |          ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_similarity.c:454:12: warning: unused variable 'i' [-Wunused-variable]
+  454 |     size_t i = 0;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_similarity.c:532:12: warning: unused variable 'j' [-Wunused-variable]
+  532 |     double j;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_similarity.c:647:51: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  647 |             if (utf8_compare_len_case_insensitive(ptr1 + ti.offset + ti_pos, ptr2 + tj.offset, tj.len) == 0) {
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_utils.h:82:51: note: passing argument to parameter 'str1' here
+   82 | int utf8_compare_len_case_insensitive(const char *str1, const char *str2, size_t len);
+      |                                                   ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_similarity.c:647:78: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  647 |             if (utf8_compare_len_case_insensitive(ptr1 + ti.offset + ti_pos, ptr2 + tj.offset, tj.len) == 0) {
+      |                                                                              ^~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_utils.h:82:69: note: passing argument to parameter 'str2' here
+   82 | int utf8_compare_len_case_insensitive(const char *str1, const char *str2, size_t len);
+      |                                                                     ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/string_similarity.c:621:13: warning: variable 'phrase_token_pos' set but not used [-Wunused-but-set-variable]
+  621 |     ssize_t phrase_token_pos = -1;
+      |             ^
+8 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/soft_tfidf.c:302:62: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  302 |         log_debug("p1.len = %zu, i = %zu, p1.start = %zu\n", p1.len, i, p1.start);
+      |                             ~~~                              ^~~~~~
+      |                             %u
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/soft_tfidf.c:302:73: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  302 |         log_debug("p1.len = %zu, i = %zu, p1.start = %zu\n", p1.len, i, p1.start);
+      |                                                      ~~~                ^~~~~~~~
+      |                                                      %u
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/soft_tfidf.c:344:57: warning: format specifies type 'ssize_t' (aka 'long') but the argument has type 'int64_t' (aka 'long long') [-Wformat]
+  344 |                 log_debug("acronym_membership = %zd\n", acronym_membership);
+      |                                                 ~~~     ^~~~~~~~~~~~~~~~~~
+      |                                                 %lld
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/soft_tfidf.c:360:60: warning: format specifies type 'ssize_t' (aka 'long') but the argument has type 'int64_t' (aka 'long long') [-Wformat]
+  360 |                 log_debug("multi_word_membership = %zd\n", multi_word_membership);
+      |                                                    ~~~     ^~~~~~~~~~~~~~~~~~~~~
+      |                                                    %lld
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/soft_tfidf.c:273:14: warning: unused variable 'have_strict_abbreviation' [-Wunused-variable]
+  273 |         bool have_strict_abbreviation = false;
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/jaccard.c:38:14: warning: variable 'k' set but not used [-Wunused-but-set-variable]
+   38 |     khiter_t k;
+      |              ^
+1 warning generated.

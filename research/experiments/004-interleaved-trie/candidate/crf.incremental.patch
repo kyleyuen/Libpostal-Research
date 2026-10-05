@@ -1,0 +1,46 @@
+--- crf.c.003	2026-09-29 12:53:46
++++ crf.c	2026-09-29 12:54:21
+@@ -19,13 +19,20 @@
+ static uint32_t *crf_feature_ids = NULL;
+ static size_t crf_feature_ids_capacity = 0;
+ 
++void trie_get_data_batch(trie_t *self, char **keys, size_t n, uint32_t *out, uint32_t not_found);  // added to trie.h/trie.c by this patch
++
++static char **crf_feature_keys = NULL;
++
+ static inline uint32_t *crf_feature_ids_reserve(size_t n) {
+-    if (n > crf_feature_ids_capacity) {
++    if (n > crf_feature_ids_capacity || crf_feature_ids == NULL) {   // == NULL: an empty first batch must still allocate
+         size_t capacity = crf_feature_ids_capacity ? crf_feature_ids_capacity : 256;
+         while (capacity < n) capacity *= 2;
+         uint32_t *ids = realloc(crf_feature_ids, capacity * sizeof(uint32_t));
+         if (ids == NULL) return NULL;
++        char **keys = realloc(crf_feature_keys, capacity * sizeof(char *));
++        if (keys == NULL) return NULL;
+         crf_feature_ids = ids;
++        crf_feature_keys = keys;
+         crf_feature_ids_capacity = capacity;
+     }
+     return crf_feature_ids;
+@@ -87,8 +94,9 @@
+         if (feature_ids == NULL) return false;
+ 
+         cstring_array_foreach(features, fidx, feature, {
+-            feature_ids[fidx] = crf_get_feature_id(self, feature, &feature_id) ? feature_id : CRF_NO_FEATURE;
++            crf_feature_keys[fidx] = feature;
+         })
++        trie_get_data_batch(self->state_features, crf_feature_keys, features->indices->n, feature_ids, CRF_NO_FEATURE);
+ 
+         for (fidx = 0; fidx < features->indices->n; fidx++) {
+             feature_id = feature_ids[fidx];
+@@ -112,8 +120,9 @@
+         if (feature_ids == NULL) return false;
+ 
+         cstring_array_foreach(prev_tag_features, fidx, feature, {
+-            feature_ids[fidx] = crf_get_state_trans_feature_id(self, feature, &feature_id) ? feature_id : CRF_NO_FEATURE;
++            crf_feature_keys[fidx] = feature;
+         })
++        trie_get_data_batch(self->state_trans_features, crf_feature_keys, prev_tag_features->indices->n, feature_ids, CRF_NO_FEATURE);
+ 
+         for (fidx = 0; fidx < prev_tag_features->indices->n; fidx++) {
+             feature_id = feature_ids[fidx];

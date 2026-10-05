@@ -1,0 +1,74 @@
+--- ../098-norm-pair/sources/address_parser.c	2026-10-03 21:50:22
++++ sources/address_parser.c	2026-10-03 22:18:32
+@@ -241,7 +241,15 @@
+     if (getenv("FTT_DISABLE") != NULL || vocab_dict == NULL || parser->phrases == NULL) return;
+     size_t V = vocab_dict->size; uint64_t *tab = calloc(V, sizeof *tab); if (tab == NULL) return; size_t n = 0;
+     for (size_t sl = 0; sl < V; sl++) { uint64_t sv = vocab_dict->slots[sl]; if (!sv) continue;
+-        const char *w = (const char *)vocab_dict->arena + (uint32_t)sv + 1; tab[sl] = trie_ftt_walk(parser->phrases, w, strlen(w)); if (tab[sl]) n++; }
++        const char *w = (const char *)vocab_dict->arena + (uint32_t)sv + 1; tab[sl] = trie_ftt_walk(parser->phrases, w, strlen(w)); if (tab[sl]) n++;
++#ifdef EXP_PS_FLAGS
++        // experiment 101: bit 61 / bit 62 = the address-dictionary prefix / suffix search (lang NULL, as in context fill) returns NULL_PHRASE for w.
++        // Unused bits of the 056 entry; every reader masks its fields or tests bit 63 only.
++        { size_t wl = strlen(w); phrase_t pp = search_address_dictionaries_prefix((char *)w, wl, NULL), sp = search_address_dictionaries_suffix((char *)w, wl, NULL);
++          if (pp.start == 0 && pp.len == 0 && pp.data == 0) tab[sl] |= 1ULL << 61;
++          if (sp.start == 0 && sp.len == 0 && sp.data == 0) tab[sl] |= 1ULL << 62; }
++#endif
++    }
+     trie_ftt_tab = tab; trie_ftt_trie = parser->phrases;
+     if (getenv("FTT_VERBOSE") != NULL) fprintf(stderr, "FTT entries=%zu of %zu slots, table=%.1f MB\n", n, V, V * 8.0 / 1048576);
+ }
+@@ -933,6 +941,10 @@
+ 
+ #ifdef EXP_NORM_PAIR
+ void add_normalized_token_pair(char_array *std, char_array *adm, char *str, token_t token);   // normalize.c (experiment 098)
++#endif
++#ifdef EXP_PS_FLAGS_VERIFY
++static unsigned long long ps_verified = 0;
++__attribute__((destructor)) static void ps_report(void) { fprintf(stderr, "EXP_PS_FLAGS_VERIFY: %llu flagged searches re-run, 0 mismatches\n", ps_verified); }
+ #endif
+ void address_parser_context_fill(address_parser_context_t *context, address_parser_t *parser, tokenized_string_t *tokenized_str, char *language, char *country) {
+     uint32_t token_index;
+@@ -1038,6 +1050,7 @@
+     phrase_array_clear(context->prefix_phrases);
+     phrase_array_clear(context->suffix_phrases);
+ 
++#ifndef EXP_PS_FLAGS
+     for (size_t i = 0; i < num_tokens; i++) {
+         token_t token = tokens->a[i];
+         char *word_pre_norm = tokenized_string_get_token(tokenized_str, i);
+@@ -1048,6 +1061,7 @@
+         phrase_t suffix_phrase = search_address_dictionaries_suffix(word_pre_norm, token.len, NULL);
+         phrase_array_push(context->suffix_phrases, suffix_phrase);
+     }
++#endif
+ 
+     /*
+     Component phrases
+@@ -1108,6 +1122,27 @@
+         }
+     }
+ #endif
++#ifdef EXP_PS_FLAGS
++    // Experiment 101: the prefix/suffix loop, moved here (nothing in between reads prefix_phrases / suffix_phrases) so the 056 slots are known. When a
++    // token's raw bytes equal its admin bytes, the admin slot is the slot of the raw bytes and the entry's flags say whether each search returns NULL_PHRASE.
++    for (size_t i = 0; i < num_tokens; i++) {
++        token_t token = tokens->a[i];
++        char *word_pre_norm = tokenized_string_get_token(tokenized_str, i);
++        uint64_t pse = 0;
++        if (trie_ftt_slot != NULL && i < trie_ftt_n && trie_ftt_slot[i] >= 0) {
++            token_t at = normalized_admin_tokens->a[i];
++            if (at.len == token.len && memcmp(normalized_str_admin + at.offset, word_pre_norm, token.len) == 0) pse = trie_ftt_tab[trie_ftt_slot[i]];
++        }
++        phrase_t prefix_phrase = (pse >> 61) & 1 ? NULL_PHRASE : search_address_dictionaries_prefix(word_pre_norm, token.len, NULL);
++        phrase_t suffix_phrase = (pse >> 62) & 1 ? NULL_PHRASE : search_address_dictionaries_suffix(word_pre_norm, token.len, NULL);
++#ifdef EXP_PS_FLAGS_VERIFY
++        if ((pse >> 61) & 1) { phrase_t q = search_address_dictionaries_prefix(word_pre_norm, token.len, NULL); if (q.start || q.len || q.data) { fprintf(stderr, "EXP_PS_FLAGS_VERIFY prefix MISMATCH '%.*s'\n", (int)token.len, word_pre_norm); abort(); } ps_verified++; }
++        if ((pse >> 62) & 1) { phrase_t q = search_address_dictionaries_suffix(word_pre_norm, token.len, NULL); if (q.start || q.len || q.data) { fprintf(stderr, "EXP_PS_FLAGS_VERIFY suffix MISMATCH '%.*s'\n", (int)token.len, word_pre_norm); abort(); } ps_verified++; }
++#endif
++        phrase_array_push(context->prefix_phrases, prefix_phrase);
++        phrase_array_push(context->suffix_phrases, suffix_phrase);
++    }
++#endif
+     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+ #ifdef EXP_FTT
+     trie_ftt_slot = NULL; trie_ftt_n = 0;

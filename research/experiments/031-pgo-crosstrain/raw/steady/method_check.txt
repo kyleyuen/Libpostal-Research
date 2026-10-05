@@ -1,0 +1,20 @@
+orig_warmup 2026-10-02T14:56:31-07:00 Footprint: 2171 MB json_phys_footprint_MiB=Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json;d=json.load(open('/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/raw/steady/orig_warmup.json'));print([round(p['phys_footprint']/2**20) for p in d['processes']])
+                                                                                                                                                               ~^^^^^^^^^^^^^^^^^^
+KeyError: 'phys_footprint'
+orig_nowarm 2026-10-02T14:56:53-07:00 Footprint: 2172 MB json_phys_footprint_MiB=Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json;d=json.load(open('/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/raw/steady/orig_nowarm.json'));print([round(p['phys_footprint']/2**20) for p in d['processes']])
+                                                                                                                                                               ~^^^^^^^^^^^^^^^^^^
+KeyError: 'phys_footprint'
+l4_warmup 2026-10-02T14:57:08-07:00 Footprint: 2250 MB json_phys_footprint_MiB=Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json;d=json.load(open('/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/raw/steady/l4_warmup.json'));print([round(p['phys_footprint']/2**20) for p in d['processes']])
+                                                                                                                                                             ~^^^^^^^^^^^^^^^^^^
+KeyError: 'phys_footprint'
+l4_nowarm 2026-10-02T14:57:22-07:00 Footprint: 2250 MB json_phys_footprint_MiB=Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json;d=json.load(open('/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/raw/steady/l4_nowarm.json'));print([round(p['phys_footprint']/2**20) for p in d['processes']])
+                                                                                                                                                             ~^^^^^^^^^^^^^^^^^^
+KeyError: 'phys_footprint'

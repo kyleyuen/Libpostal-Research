@@ -1,0 +1,4 @@
+nat_gen: clang lib -O2 -flto -mcpu=native scanner -O1 link -flto -mcpu=native /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 9s
+o3_gen: clang lib -O3 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 9s
+nat: clang lib -O2 -flto -mcpu=native scanner -O1 link -flto -mcpu=native /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 7s
+o3: clang lib -O3 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 7s

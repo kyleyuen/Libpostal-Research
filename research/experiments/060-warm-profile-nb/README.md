@@ -1,0 +1,3 @@
+# Experiment 060 — warm-only profile of 059 `nb` (diagnostic)
+
+`sample` of `nb` cycling the first 30 golden-v1 development addresses (400,000 passes; `raw/`). Top exclusive: parse (inlined) 34.8%, crf_dict_lookup_array 6.3% (was 9.0% in 049), memmove 6.2%, memset 5.8%, trie search 5.7%, strlen 4.8% (+1.1% stub), address_parser_features 4.1%, normalize_token 3.9%, feature_array_add_nb 3.5%, ap_ik_emit1 2.6%, **plain feature_array_add 2.2%** (+strlen 1.38%, memmove 0.85%): `add_phrase_features` and other helpers defined above the name-byte macro in address_parser.c still use the text path. Basis for 061.

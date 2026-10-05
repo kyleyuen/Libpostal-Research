@@ -1,0 +1,24 @@
+| binary (PGO training) | v1 µs | v1 speedup (range) | nv µs | nv speedup (range) | osm µs | osm speedup (range) |
+|---|---:|---:|---:|---:|---:|---:|
+| original | 31.463 | 1.000× (1.00–1.00) | 31.940 | 1.000× (1.00–1.00) | 19.285 | 1.000× (1.00–1.00) |
+| psf (previous deliverable) | 5.499 | 5.721× (5.71–5.75) | 5.696 | 5.604× (5.56–5.65) | 3.558 | 5.420× (5.34–5.50) |
+| rt8 = psf + 114 | 5.362 | 5.865× (5.84–5.89) | 5.531 | 5.769× (5.71–5.81) | 3.521 | 5.491× (5.39–5.54) |
+
+peak footprint bytes (max over rounds): orig 2613364968/2613643520/2613971152; psf 2537359736/2537376144/2543438224; rt8 2537376120/2537392528/2543454608
+t=3s threads=1
+t=6s threads=1
+t=9s threads=1
+t=12s threads=1
+t=15s threads=1
+t=18s threads=1
+orig 2026-10-04T01:13:24-07:00 Footprint: 2493 MB
+psf 2026-10-04T01:13:37-07:00 Footprint: 1878 MB
+rt8 2026-10-04T01:13:50-07:00 Footprint: 1878 MB
+orig 2026-10-04T01:14:11-07:00 Footprint: 2492 MB
+psf 2026-10-04T01:14:25-07:00 Footprint: 1878 MB
+rt8 2026-10-04T01:14:38-07:00 Footprint: 1878 MB
+  45 0
+2026-10-04T01:03:28-0700
+2026-10-04T01:14:39-0700
+
+[exited with code 0]

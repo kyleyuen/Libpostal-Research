@@ -1,0 +1,35 @@
+2026-10-02T16:45:49-0700 START builds dup (l3 + EXP_DUP_SEARCH) and fs (l3 + EXP_STAGE_STATS + EXP_FS_STATS), both PGO/LTO/mimalloc, in parallel
+2026-10-02T16:46:18-0700 END builds dup=0 fs=1
+dup dump exit 0 sha 45574ee2b1972f1acf2d (orig 45574ee2b1972f1acf2d)
+2026-10-02T16:46:46-0700 NOTE fs attempt 1 failed (section marker 7 placed in ap_response_block; feature function ends with a blank line before its closing brace); fixed and rebuilt
+2026-10-02T16:47:18-0700 END build fs exit=0
+2026-10-02T16:47:31-0700 START fs_r1: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/038-split-diagnostics/artifacts/fs/stage_bench /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 50
+2026-10-02T16:47:44-0700 END fs_r1 exit=0
+2026-10-02T16:47:46-0700 START fs_r2: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/038-split-diagnostics/artifacts/fs/stage_bench /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 50
+2026-10-02T16:47:59-0700 END fs_r2 exit=0
+2026-10-02T16:48:01-0700 START fs_r3: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/038-split-diagnostics/artifacts/fs/stage_bench /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 50
+2026-10-02T16:48:14-0700 END fs_r3 exit=0
+2026-10-02T16:48:16-0700 START ic_l3_p2_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l3/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T16:48:25-0700 END ic_l3_p2_r1 exit=0
+2026-10-02T16:48:27-0700 START ic_l3_p102_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l3/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T16:48:44-0700 END ic_l3_p102_r1 exit=0
+2026-10-02T16:48:46-0700 START ic_dup_p2_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/038-split-diagnostics/artifacts/dup/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T16:48:55-0700 END ic_dup_p2_r1 exit=0
+2026-10-02T16:48:57-0700 START ic_dup_p102_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/038-split-diagnostics/artifacts/dup/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T16:49:14-0700 END ic_dup_p102_r1 exit=0
+2026-10-02T16:49:16-0700 START ic_l3_p2_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l3/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T16:49:25-0700 END ic_l3_p2_r2 exit=0
+2026-10-02T16:49:27-0700 START ic_l3_p102_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l3/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T16:49:44-0700 END ic_l3_p102_r2 exit=0
+2026-10-02T16:49:46-0700 START ic_dup_p2_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/038-split-diagnostics/artifacts/dup/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T16:49:55-0700 END ic_dup_p2_r2 exit=0
+2026-10-02T16:49:57-0700 START ic_dup_p102_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/038-split-diagnostics/artifacts/dup/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T16:50:14-0700 END ic_dup_p102_r2 exit=0
+2026-10-02T16:50:16-0700 START ic_l3_p2_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l3/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T16:50:25-0700 END ic_l3_p2_r3 exit=0
+2026-10-02T16:50:27-0700 START ic_l3_p102_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l3/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T16:50:44-0700 END ic_l3_p102_r3 exit=0
+2026-10-02T16:50:46-0700 START ic_dup_p2_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/038-split-diagnostics/artifacts/dup/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T16:50:54-0700 END ic_dup_p2_r3 exit=0
+2026-10-02T16:50:57-0700 START ic_dup_p102_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/038-split-diagnostics/artifacts/dup/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T16:51:14-0700 END ic_dup_p102_r3 exit=0

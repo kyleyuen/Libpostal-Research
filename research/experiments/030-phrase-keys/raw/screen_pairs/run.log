@@ -1,0 +1,30 @@
+2026-10-02T14:12:54-0700 START build: env EXTRA_SW=-DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -DEXP_INT_KEYS_PAIRS /bin/bash /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/030-phrase-keys/tools/build_cc.sh pr clang llvm -O2 -flto -O1 -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o
+2026-10-02T14:13:26-0700 END build exit=0
+2026-10-02T14:13:26-0700 START dump_pr: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/030-phrase-keys/artifacts/pr/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/development.txt
+2026-10-02T14:13:37-0700 END dump_pr exit=0
+2026-10-02T14:13:37-0700 START dump_l4: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/development.txt
+2026-10-02T14:13:46-0700 END dump_l4 exit=0
+2026-10-02T14:13:46-0700 START ic_l4_p2_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T14:13:55-0700 END ic_l4_p2_r1 exit=0
+2026-10-02T14:13:57-0700 START ic_l4_p102_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T14:14:14-0700 END ic_l4_p102_r1 exit=0
+2026-10-02T14:14:16-0700 START ic_pr_p2_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/030-phrase-keys/artifacts/pr/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T14:14:27-0700 END ic_pr_p2_r1 exit=0
+2026-10-02T14:14:29-0700 START ic_pr_p102_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/030-phrase-keys/artifacts/pr/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T14:14:48-0700 END ic_pr_p102_r1 exit=0
+2026-10-02T14:14:50-0700 START ic_l4_p2_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T14:14:59-0700 END ic_l4_p2_r2 exit=0
+2026-10-02T14:15:01-0700 START ic_l4_p102_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T14:15:18-0700 END ic_l4_p102_r2 exit=0
+2026-10-02T14:15:20-0700 START ic_pr_p2_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/030-phrase-keys/artifacts/pr/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T14:15:31-0700 END ic_pr_p2_r2 exit=0
+2026-10-02T14:15:33-0700 START ic_pr_p102_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/030-phrase-keys/artifacts/pr/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T14:15:52-0700 END ic_pr_p102_r2 exit=0
+2026-10-02T14:15:54-0700 START ic_l4_p2_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T14:16:03-0700 END ic_l4_p2_r3 exit=0
+2026-10-02T14:16:05-0700 START ic_l4_p102_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T14:16:23-0700 END ic_l4_p102_r3 exit=0
+2026-10-02T14:16:25-0700 START ic_pr_p2_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/030-phrase-keys/artifacts/pr/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T14:16:36-0700 END ic_pr_p2_r3 exit=0
+2026-10-02T14:16:38-0700 START ic_pr_p102_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/030-phrase-keys/artifacts/pr/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T14:16:56-0700 END ic_pr_p102_r3 exit=0

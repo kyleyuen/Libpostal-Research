@@ -1,0 +1,32 @@
+2026-10-04T22:31:14-0700 === stage integrity
+2026-10-04T22:31:14-0700 integrity: 2 datasets (19,287 addresses), 2 variants, 7 model files hashed
+2026-10-04T22:31:14-0700 === stage correctness
+2026-10-04T22:31:14-0700 correctness: 8 jobs, 3 in parallel
+2026-10-04T22:31:19-0700   baseline dump osm-v3: exit 0 (4s)
+2026-10-04T22:31:27-0700   cpi dump osm-v3: exit 0 (13s)
+2026-10-04T22:31:27-0700   baseline dump unseen-v11: exit 0 (4s)
+2026-10-04T22:31:31-0700   cpi dump unseen-v11: exit 0 (13s)
+2026-10-04T22:31:31-0700   baseline fuzz s1: exit 0 (3s)
+2026-10-04T22:31:35-0700   cpi fuzz s1: exit 0 (13s)
+2026-10-04T22:31:35-0700   baseline fuzz s2: exit 0 (4s)
+2026-10-04T22:31:43-0700   cpi fuzz s2: exit 0 (12s)
+2026-10-04T22:31:43-0700 correctness: 2 dumps, 2 fuzz runs, mismatches: none
+2026-10-04T22:31:43-0700 === stage timing
+2026-10-04T22:31:43-0700 settle: load 2.47 < 99 after 0s
+2026-10-04T22:31:56-0700 timing 1/8 osm-v3__cpi__r1 exit 0 load 2.22
+2026-10-04T22:32:04-0700 timing 2/8 osm-v3__original__r1 exit 0 load 2.04
+2026-10-04T22:32:19-0700 timing 3/8 unseen-v11__cpi__r1 exit 0 load 1.89
+2026-10-04T22:32:26-0700 timing 4/8 unseen-v11__original__r1 exit 0 load 1.75
+2026-10-04T22:32:33-0700 timing 5/8 osm-v3__original__r2 exit 0 load 1.69
+2026-10-04T22:32:49-0700 timing 6/8 osm-v3__cpi__r2 exit 0 load 1.97
+2026-10-04T22:32:56-0700 timing 7/8 unseen-v11__original__r2 exit 0 load 1.96
+2026-10-04T22:33:11-0700 timing 8/8 unseen-v11__cpi__r2 exit 0 load 2.19
+2026-10-04T22:33:13-0700 === stage memory
+2026-10-04T22:33:22-0700 memory: original steady footprint 2492 MB
+2026-10-04T22:33:35-0700 memory: cpi steady footprint 1926 MB
+2026-10-04T22:33:35-0700 === stage threads
+2026-10-04T22:33:53-0700 threads: original [1, 1, 1, 1, 1, 1]
+2026-10-04T22:34:11-0700 threads: cpi [1, 1, 1, 1, 1, 1]
+2026-10-04T22:34:11-0700 === stage report
+2026-10-04T22:34:11-0700 report: results.json and report.md written
+2026-10-04T22:34:11-0700 done: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/smoke-test

@@ -1,0 +1,101 @@
+== mimalloc 2026-10-01T02:07:40-07:00
+==> Downloading bottle manifests
+✔︎ Bottle Manifest mimalloc (3.5.3)
+==> Would install 1 formula:
+mimalloc 3.5.3
+==> Fetching downloads for: mimalloc
+✔︎ Bottle mimalloc (3.5.3)
+==> Pouring mimalloc--3.5.3.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/mimalloc/3.5.3: 38 files, 927.9KB
+exit=0
+== llvm 2026-10-01T02:07:42-07:00
+==> Downloading bottle manifests
+✔︎ Bottle Manifest llvm (23.1.2)
+==> Would install 1 formula:
+llvm 23.1.2
+==> Would install 1 dependency for llvm:
+z3
+==> Would upgrade 1 dependency for llvm:
+xz
+==> Fetching downloads for: llvm
+✔︎ Bottle Manifest z3 (5.1.0)
+✔︎ Bottle Manifest xz (5.8.4)
+✔︎ Bottle xz (5.8.4)
+✔︎ Bottle z3 (5.1.0)
+✔︎ Bottle llvm (23.1.2)
+==> Installing dependencies for llvm: xz and z3
+==> Upgrading llvm dependency: xz
+==> Pouring xz--5.8.4.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/xz/5.8.4: 96 files, 2.7MB
+==> Installing llvm dependency: z3
+==> Pouring z3--5.1.0.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/z3/5.1.0: 122 files, 34.8MB
+==> Installing llvm
+==> Pouring llvm--23.1.2.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/llvm/23.1.2: 9,384 files, 1.9GB
+==> Caveats
+==> llvm
+CLANG_CONFIG_FILE_SYSTEM_DIR: /opt/homebrew/etc/clang
+CLANG_CONFIG_FILE_USER_DIR:   ~/.config/clang
+
+LLD and LLDB are now provided in separate formulae:
+  brew install lld
+  brew install lldb
+
+Z3 solver support will be removed in LLVM 24 as it is unsupported upstream,
+see https://github.com/llvm/llvm-project/pull/205370
+
+Using `clang`, `clang++`, etc., requires a CLT installation at `/Library/Developer/CommandLineTools`.
+If you don't want to install the CLT, you can write appropriate configuration files pointing to your
+SDK at ~/.config/clang.
+
+To use the bundled libunwind please use the following LDFLAGS:
+  LDFLAGS="-L/opt/homebrew/opt/llvm/lib/unwind -lunwind"
+
+To use the bundled libc++ please use the following LDFLAGS:
+  LDFLAGS="-L/opt/homebrew/opt/llvm/lib/c++ -L/opt/homebrew/opt/llvm/lib/unwind -lunwind"
+Features newer than system libc++ will require the following define to enable
+(support for this may be removed in a future major LLVM release):
+  CPPFLAGS="-D_LIBCPP_DISABLE_AVAILABILITY"
+
+NOTE: You probably want to use the libunwind and libc++ provided by macOS unless you know what you're doing.
+
+llvm is keg-only, which means it was not symlinked into /opt/homebrew,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have llvm first in your PATH, run:
+  echo 'export PATH=/opt/homebrew/opt/llvm/bin:$PATH' >> ~/.zshrc
+
+For compilers to find llvm you may need to set:
+  export LDFLAGS=-L/opt/homebrew/opt/llvm/lib
+  export CPPFLAGS=-I/opt/homebrew/opt/llvm/include
+
+For cmake to find llvm you may need to set:
+  export CMAKE_PREFIX_PATH=/opt/homebrew/opt/llvm
+exit=0
+== gcc 2026-10-01T02:08:12-07:00
+==> Downloading bottle manifests
+✔︎ Bottle Manifest gcc (16.2.0)
+==> Would install 1 formula:
+gcc 16.2.0
+==> Would install 2 dependencies for gcc:
+isl
+libmpc
+==> Fetching downloads for: gcc
+✔︎ Bottle Manifest libmpc (1.4.1)
+✔︎ Bottle Manifest isl (0.28)
+✔︎ Bottle libmpc (1.4.1)
+✔︎ Bottle isl (0.28)
+✔︎ Bottle gcc (16.2.0)
+==> Installing dependencies for gcc: isl and libmpc
+==> Installing gcc dependency: isl
+==> Pouring isl--0.28.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/isl/0.28: 80 files, 8.0MB
+==> Installing gcc dependency: libmpc
+==> Pouring libmpc--1.4.1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libmpc/1.4.1: 14 files, 523.5KB
+==> Installing gcc
+==> Pouring gcc--16.2.0.arm64_tahoe.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/gcc/16.2.0: 1,705 files, 500.6MB
+exit=0

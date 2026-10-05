@@ -1,0 +1,38 @@
+# 2026-10-04T21:19:15-0700 146 verification summary
+exits:    8 0
+oracle golden-v1 O1 IDENTICAL
+oracle golden-v1 O2 IDENTICAL
+oracle golden-v1 O3i IDENTICAL
+oracle golden-v1 O4 IDENTICAL
+oracle golden-v1 O3k differing lines (expected = placeholder positions): 123002 ; placeholders in candidate: 123002
+oracle novel O1 IDENTICAL
+oracle novel O2 IDENTICAL
+oracle novel O3i IDENTICAL
+oracle novel O4 IDENTICAL
+oracle novel O3k differing lines (expected = placeholder positions): 120300 ; placeholders in candidate: 120300
+oracle osm-v3 O1 IDENTICAL
+oracle osm-v3 O2 IDENTICAL
+oracle osm-v3 O3i IDENTICAL
+oracle osm-v3 O4 IDENTICAL
+oracle osm-v3 O3k differing lines (expected = placeholder positions): 96681 ; placeholders in candidate: 96681
+oracle fuzz-s1-200k O1 IDENTICAL
+oracle fuzz-s1-200k O2 IDENTICAL
+oracle fuzz-s1-200k O3i IDENTICAL
+oracle fuzz-s1-200k O4 IDENTICAL
+oracle fuzz-s1-200k O3k differing lines (expected = placeholder positions): 2344780 ; placeholders in candidate: 2344780
+hrw v1 sha 45574ee2b1972f1acf2d (expect 45574ee2b1972f1acf2d)
+c146 v1 sha 45574ee2b1972f1acf2d (expect 45574ee2b1972f1acf2d)
+hrw nv sha 806b8a81603ea9adf3af (expect 806b8a81603ea9adf3af)
+hrw OSM IDENTICAL
+hrw fuzz s1 (2M) IDENTICAL
+hrw fuzz s2 (2M) IDENTICAL
+u11: compare below
+RESULT: IDENTICAL
+counters v1: rw runtime: bigrams via int 123002, via string (non-unit part) 6, via string (left part empty or ends in '|') 0
+counters nv: rw runtime: bigrams via int 120300, via string (non-unit part) 3, via string (left part empty or ends in '|') 0
+counters osm: rw runtime: bigrams via int 96681, via string (non-unit part) 0, via string (left part empty or ends in '|') 0
+counters fz200k: rw runtime: bigrams via int 2344780, via string (non-unit part) 3365, via string (left part empty or ends in '|') 30
+counters fz1: rw runtime: bigrams via int 23431291, via string (non-unit part) 35370, via string (left part empty or ends in '|') 266
+counters fz2: rw runtime: bigrams via int 23458089, via string (non-unit part) 35843, via string (left part empty or ends in '|') 233
+counters u11: rw runtime: bigrams via int 66089, via string (non-unit part) 0, via string (left part empty or ends in '|') 0
+hrw u11 IDENTICAL to 134 dump_orig (original library)

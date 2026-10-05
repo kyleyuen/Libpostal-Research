@@ -1,0 +1,1015 @@
+In file included from gazetteers.h:13,
+                 from address_expansion_rule.h:9,
+                 from address_dictionary.h:13,
+                 from expand.h:9,
+                 from expand.c:3:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from gazetteers.h:13,
+                 from address_expansion_rule.h:9,
+                 from address_dictionary.h:13,
+                 from address_dictionary.c:5:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from gazetteers.h:13,
+                 from address_expansion_rule.h:9,
+                 from address_dictionary.h:13,
+                 from libpostal.c:9:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+address_dictionary.c: In function 'address_dictionary_add_expansion':
+address_dictionary.c:173:10: warning: variable 'is_phrase' set but not used [-Wunused-but-set-variable=]
+  173 |     bool is_phrase = false;
+      |          ^~~~~~~~~
+In file included from sparse_matrix.h:46,
+                 from averaged_perceptron.h:27,
+                 from address_parser.h:52,
+                 from libpostal.c:10:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+In file included from logistic_regression.h:26,
+                 from language_classifier.h:13,
+                 from expand.c:10:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+In file included from /opt/homebrew/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stdarg.h:1,
+                 from address_dictionary.c:3:
+address_dictionary.c: In function 'address_phrase_in_dictionaries':
+address_dictionary.c:63:47: warning: 'uint16_t' {aka 'short unsigned int'} is promoted to 'int' when passed through '...'
+   63 |         uint16_t dictionary_id = va_arg(args, uint16_t);
+      |                                               ^
+address_dictionary.c:63:47: note: (so you should pass 'int' not 'uint16_t' {aka 'short unsigned int'} to 'va_arg')
+address_dictionary.c:63:47: note: if this code is reached, the program will abort
+expand.c: In function 'add_affix_expansions':
+expand.c:179:65: warning: unused parameter 'lang' [-Wunused-parameter]
+  179 | bool add_affix_expansions(string_tree_t *tree, char *str, char *lang, token_t token, phrase_t prefix, phrase_t suffix, libpostal_normalize_options_t options, bool with_period) {
+      |                                                           ~~~~~~^~~~
+In file included from collections.h:8,
+                 from address_dictionary.h:16:
+expand.c: In function 'add_string_alternatives_phrase_option':
+log/log.h:52:55: warning: format '%zu' expects argument of type 'size_t', but argument 3 has type 'uint32_t' {aka 'unsigned int'} [-Wformat=]
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~
+expand.c:825:17: note: in expansion of macro 'log_debug'
+  825 |                 log_debug("phrase.start = %zu, prev_phrase_end = %zu\n", phrase.start, prev_phrase_end);
+      |                 ^~~~~~~~~
+log/log.h:52:55: warning: format '%zu' expects argument of type 'size_t', but argument 3 has type 'int' [-Wformat=]
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~
+expand.c:872:21: note: in expansion of macro 'log_debug'
+  872 |                     log_debug("have_strictly_ignorable=%zu, phrase_is_canonical=%zu\n", have_strictly_ignorable, phrase_is_canonical);
+      |                     ^~~~~~~~~
+log/log.h:52:55: warning: format '%zu' expects argument of type 'size_t', but argument 4 has type 'int' [-Wformat=]
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~
+expand.c:872:21: note: in expansion of macro 'log_debug'
+  872 |                     log_debug("have_strictly_ignorable=%zu, phrase_is_canonical=%zu\n", have_strictly_ignorable, phrase_is_canonical);
+      |                     ^~~~~~~~~
+expand.c:932:26: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+  932 |                     bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                          ^~~~~~~~~~~~~~~~~~~
+expand.c:1184:46: warning: unused variable 'start_index' [-Wunused-variable]
+ 1184 |                                     uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                                              ^~~~~~~~~~~
+expand.c:1202:38: warning: unused variable 'start_index' [-Wunused-variable]
+ 1202 |                             uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                                      ^~~~~~~~~~~
+expand.c:1235:26: warning: unused variable 'start_index' [-Wunused-variable]
+ 1235 |                 uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                          ^~~~~~~~~~~
+expand.c:1310:22: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+ 1310 |                 bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                      ^~~~~~~~~~~~~~~~~~~
+expand.c:1344:22: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+ 1344 |                 bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                      ^~~~~~~~~~~~~~~~~~~
+expand.c: In function 'normalize_ordinal_suffixes':
+expand.c:1368:106: warning: unused parameter 'i' [-Wunused-parameter]
+ 1368 | inline bool normalize_ordinal_suffixes(string_tree_t *tree, char *str, char *lang, token_t token, size_t i, token_t prev_token, libpostal_normalize_options_t options) {
+      |                                                                                                   ~~~~~~~^
+expand.c: In function 'expand_alternative_phrase_option':
+expand.c:1440:11: warning: unused variable 'lang' [-Wunused-variable]
+ 1440 |     char *lang;
+      |           ^~~~
+In file included from libpostal.c:7:
+In function 'libpostal_setup_language_classifier_datadir',
+    inlined from 'libpostal_setup_language_classifier' at libpostal.c:436:12:
+log/log.h:24:45: warning: '%s' directive argument is null [-Wformat-overflow=]
+   24 |   #define log_error(M, ...) fprintf(stderr, "ERR   " M " at %s (%s:%d) errno:%s\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__, clean_errno())
+      |                                             ^~~~~~~~
+libpostal.c:344:9: note: in expansion of macro 'log_error'
+  344 |         log_error("Error loading language classifier, dir=%s\n", language_classifier_dir);
+      |         ^~~~~~~~~
+In function 'libpostal_setup_parser_datadir',
+    inlined from 'libpostal_setup_parser' at libpostal.c:459:12:
+log/log.h:24:45: warning: '%s' directive argument is null [-Wformat-overflow=]
+   24 |   #define log_error(M, ...) fprintf(stderr, "ERR   " M " at %s (%s:%d) errno:%s\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__, clean_errno())
+      |                                             ^~~~~~~~
+libpostal.c:447:9: note: in expansion of macro 'log_error'
+  447 |         log_error("Error loading address parser module, dir=%s\n", parser_dir);
+      |         ^~~~~~~~~
+In file included from collections.h:11,
+                 from transliterate.h:8,
+                 from transliterate.c:2:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+transliterate.c: In function 'replace_groups':
+transliterate.c:615:12: warning: variable 'group_num_len' set but not used [-Wunused-but-set-variable=]
+  615 |     size_t group_num_len = 0;
+      |            ^~~~~~~~~~~~~
+transliterate.c:614:12: warning: variable 'group_num_start' set but not used [-Wunused-but-set-variable=]
+  614 |     size_t group_num_start = 0;
+      |            ^~~~~~~~~~~~~~~
+transliterate.c: In function 'transliterate':
+transliterate.c:933:26: warning: variable 'added_previous_phrase' set but not used [-Wunused-but-set-variable=]
+  933 |                     bool added_previous_phrase = false;
+      |                          ^~~~~~~~~~~~~~~~~~~~~
+In file included from collections.h:8:
+log/log.h:52:55: warning: format '%lu' expects argument of type 'long unsigned int', but argument 4 has type 'size_t' {aka 'long long unsigned int'} [-Wformat=]
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~
+transliterate.c:1032:13: note: in expansion of macro 'log_debug'
+ 1032 |             log_debug("Got unicode normalization step, new str=%s, len=%lu\n", str, strlen(str));
+      |             ^~~~~~~~~
+In file included from collections.h:11,
+                 from tokens.h:10,
+                 from tokens.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+tokens.c: In function 'tokenized_string_new_size':
+tokens.c:13:66: warning: unused parameter 'num_tokens' [-Wunused-parameter]
+   13 | tokenized_string_t *tokenized_string_new_size(size_t len, size_t num_tokens) {
+      |                                                           ~~~~~~~^~~~~~~~~~
+In file included from collections.h:11,
+                 from trie.h:31,
+                 from trie.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+trie.c: In function 'trie_read':
+trie.c:1032:13: warning: unused variable 'check' [-Wunused-variable]
+ 1032 |     int32_t check;
+      |             ^~~~~
+trie.c:1031:13: warning: unused variable 'base' [-Wunused-variable]
+ 1031 |     int32_t base;
+      |             ^~~~
+In file included from collections.h:11,
+                 from trie.h:31,
+                 from trie_search.h:10,
+                 from trie_search.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+trie_search.c: In function 'trie_search_from_index':
+trie_search.c:59:18: warning: variable 'i' set but not used [-Wunused-but-set-variable=]
+   59 |         for (int i=0; remaining > 0; remaining--, i++, ptr++, last_node=node, last_state=state, node_id=next_id) {
+      |                  ^
+trie_search.c:21:54: warning: variable 'last_node' set but not used [-Wunused-but-set-variable=]
+   21 |     trie_node_t node = trie_get_node(self, node_id), last_node = node;
+      |                                                      ^~~~~~~~~
+In file included from collections.h:8:
+trie_search.c: In function 'trie_search_prefixes_from_index':
+log/log.h:52:55: warning: format '%zu' expects argument of type 'size_t', but argument 3 has type 'uint32_t' {aka 'unsigned int'} [-Wformat=]
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~
+trie_search.c:670:21: note: in expansion of macro 'log_debug'
+  670 |                     log_debug("No space transition, phrase_len=%zu\n", phrase_len);
+      |                     ^~~~~~~~~
+trie_search.c:627:12: warning: variable 'separator_char_len' set but not used [-Wunused-but-set-variable=]
+  627 |     size_t separator_char_len = 0;
+      |            ^~~~~~~~~~~~~~~~~~
+trie.c: In function 'trie_get_from_index':
+trie.c:880:12: warning: 'next_id' may be used uninitialized [-Wmaybe-uninitialized]
+  880 |     return next_id;
+      |            ^~~~~~~
+trie.c:853:14: note: 'next_id' was declared here
+  853 |     uint32_t next_id;
+      |              ^~~~~~~
+In function 'phrase_array_push',
+    inlined from 'trie_search_from_index' at trie_search.c:128:25:
+vector.h:125:30: warning: 'data' may be used uninitialized [-Wmaybe-uninitialized]
+  125 |         array->a[array->n++] = value;                                                       \
+      |         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+vector.h:191:5: note: in expansion of macro '__VECTOR_BASE'
+  191 |     __VECTOR_BASE(name, type)                                           \
+      |     ^~~~~~~~~~~~~
+trie_search.h:26:1: note: in expansion of macro 'VECTOR_INIT'
+   26 | VECTOR_INIT(phrase_array, phrase_t)
+      | ^~~~~~~~~~~
+trie_search.c: In function 'trie_search_from_index':
+trie_search.c:28:14: note: 'data' was declared here
+   28 |     uint32_t data;
+      |              ^~~~
+In function 'phrase_array_push',
+    inlined from 'trie_search_tokens_from_index' at trie_search.c:458:9:
+vector.h:125:30: warning: 'data' may be used uninitialized [-Wmaybe-uninitialized]
+  125 |         array->a[array->n++] = value;                                                       \
+      |         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+vector.h:191:5: note: in expansion of macro '__VECTOR_BASE'
+  191 |     __VECTOR_BASE(name, type)                                           \
+      |     ^~~~~~~~~~~~~
+trie_search.h:26:1: note: in expansion of macro 'VECTOR_INIT'
+   26 | VECTOR_INIT(phrase_array, phrase_t)
+      | ^~~~~~~~~~~
+trie_search.c: In function 'trie_search_tokens_from_index':
+trie_search.c:246:14: note: 'data' was declared here
+  246 |     uint32_t data;
+      |              ^~~~
+In file included from collections.h:11,
+                 from trie_utils.h:4,
+                 from trie_utils.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+trie_utils.c: In function 'trie_new_from_cstring_array_sorted':
+trie_utils.c:55:14: warning: variable 'i' set but not used [-Wunused-but-set-variable=]
+   55 |     uint32_t i;
+      |              ^
+trie_utils.c: In function 'trie_new_from_cstring_array':
+trie_utils.c:86:14: warning: variable 'i' set but not used [-Wunused-but-set-variable=]
+   86 |     uint32_t i;
+      |              ^
+In file included from collections.h:11,
+                 from string_utils.h:16,
+                 from string_utils.c:3:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+string_utils.c: In function 'string_replace_with_array':
+string_utils.c:116:17: warning: variable 'count' set but not used [-Wunused-but-set-variable=]
+  116 |     for (size_t count = 0; (temp = strstr(start, replace)); count++) {
+      |                 ^~~~~
+string_utils.c: In function 'utf8_reversed_string':
+string_utils.c:193:18: warning: variable 'remaining' set but not used [-Wunused-but-set-variable=]
+  193 |     ssize_t len, remaining;
+      |                  ^~~~~~~~~
+string_utils.c: In function 'unicode_codepoints':
+string_utils.c:384:13: warning: unused variable 'num_utf8_chars' [-Wunused-variable]
+  384 |     ssize_t num_utf8_chars = 0;
+      |             ^~~~~~~~~~~~~~
+string_utils.c: In function 'utf8_compare_case_insensitive':
+string_utils.c:505:85: warning: unused parameter 'len' [-Wunused-parameter]
+  505 | inline int utf8_compare_case_insensitive(const char *str1, const char *str2, size_t len) {
+      |                                                                              ~~~~~~~^~~
+string_utils.c: In function 'utf8_common_prefix_len':
+string_utils.c:521:12: warning: unused variable 'remaining' [-Wunused-variable]
+  521 |     size_t remaining = len;
+      |            ^~~~~~~~~
+string_utils.c: In function 'string_is_digit':
+string_utils.c:687:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  687 |     bool ignorable = true;
+      |          ^~~~~~~~~
+string_utils.c: In function 'string_is_ignorable':
+string_utils.c:713:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  713 |     bool ignorable = true;
+      |          ^~~~~~~~~
+string_utils.c: In function 'string_left_spaces_len':
+string_utils.c:876:13: warning: variable 'index' set but not used [-Wunused-but-set-variable=]
+  876 |     ssize_t index = 0;
+      |             ^~~~~
+string_utils.c: In function 'cstring_array_get_offset':
+string_utils.c:6:34: warning: comparison of unsigned expression in '< 0' is always false [-Wtype-limits]
+    6 | #define INVALID_INDEX(i, n) ((i) < 0 || (i) >= (n))
+      |                                  ^
+string_utils.c:1252:9: note: in expansion of macro 'INVALID_INDEX'
+ 1252 |     if (INVALID_INDEX(i, self->indices->n)) {
+      |         ^~~~~~~~~~~~~
+string_utils.c: In function 'cstring_array_token_length':
+string_utils.c:6:34: warning: comparison of unsigned expression in '< 0' is always false [-Wtype-limits]
+    6 | #define INVALID_INDEX(i, n) ((i) < 0 || (i) >= (n))
+      |                                  ^
+string_utils.c:1265:9: note: in expansion of macro 'INVALID_INDEX'
+ 1265 |     if (INVALID_INDEX(i, self->indices->n)) {
+      |         ^~~~~~~~~~~~~
+In file included from collections.h:11,
+                 from string_utils.h:16,
+                 from file_utils.h:12,
+                 from file_utils.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from collections.h:11,
+                 from string_utils.h:16,
+                 from normalize.h:34,
+                 from normalize.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+normalize.c: In function 'normalize_string_languages':
+normalize.c:269:22: warning: unused variable 'key' [-Wunused-variable]
+  269 |             khiter_t key = kh_put(int_set, scripts, (khint_t)script, &ret);
+      |                      ^~~
+normalize.c:208:11: warning: unused variable 'numex_replaced' [-Wunused-variable]
+  208 |     char *numex_replaced = NULL;
+      |           ^~~~~~~~~~~~~~
+normalize.c: In function 'numeric_starts_with_alpha':
+normalize.c:374:14: warning: unused variable 'is_hyphen' [-Wunused-variable]
+  374 |         bool is_hyphen = utf8_is_hyphen(ch);
+      |              ^~~~~~~~~
+normalize.c:367:10: warning: unused variable 'append_char' [-Wunused-variable]
+  367 |     bool append_char = true;
+      |          ^~~~~~~~~~~
+In file included from collections.h:11,
+                 from numex.h:14,
+                 from numex.c:3:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+numex.c: In function 'convert_numeric_expressions':
+numex.c:805:18: warning: unused variable 'rule_index' [-Wunused-variable]
+  805 |         uint32_t rule_index = phrase.data;
+      |                  ^~~~~~~~~~
+numex.c:714:17: warning: unused variable 'number_str' [-Wunused-variable]
+  714 |     char_array *number_str = NULL;
+      |                 ^~~~~~~~~~
+numex.c:706:10: warning: unused variable 'advance_state' [-Wunused-variable]
+  706 |     bool advance_state = true;
+      |          ^~~~~~~~~~~~~
+numex.c:703:19: warning: unused variable 'ch' [-Wunused-variable]
+  703 |     unsigned char ch = '\0';
+      |                   ^~
+numex.c: In function 'get_ordinal_namespace_prefix':
+numex.c:978:10: warning: unused variable 'whole_tokens_only' [-Wunused-variable]
+  978 |     bool whole_tokens_only = language->whole_tokens_only;
+      |          ^~~~~~~~~~~~~~~~~
+numex.c: In function 'possible_ordinal_digit_len':
+numex.c:1073:10: warning: unused variable 'ignorable' [-Wunused-variable]
+ 1073 |     bool ignorable = true;
+      |          ^~~~~~~~~
+In file included from collections.h:11,
+                 from features.h:6,
+                 from features.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In function 'ordinal_indicator_destroy',
+    inlined from 'ordinal_indicator_new' at numex.c:338:9:
+numex.c:323:13: warning: '*ordinal.suffix' may be used uninitialized [-Wmaybe-uninitialized]
+  323 |     if (self->suffix != NULL) {
+      |         ~~~~^~~~~~~~
+In file included from collections.h:11,
+                 from string_utils.h:16,
+                 from unicode_scripts.h:8,
+                 from unicode_scripts.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from collections.h:11,
+                 from averaged_perceptron.h:26,
+                 from address_parser.h:52,
+                 from address_parser.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from sparse_matrix.h:46,
+                 from averaged_perceptron.h:27:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+address_parser.c: In function 'word_vocab_frequency':
+address_parser.c:349:10: warning: unused variable 'has_key' [-Wunused-variable]
+  349 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+address_parser.c: In function 'address_parser_normalize_phrase_token':
+address_parser.h:66:125: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   66 | #define ADDRESS_PARSER_NORMALIZE_TOKEN_OPTIONS NORMALIZE_TOKEN_DELETE_FINAL_PERIOD | NORMALIZE_TOKEN_DELETE_ACRONYM_PERIODS | NORMALIZE_TOKEN_REPLACE_DIGITS
+      |                                                                                                                             ^
+address_parser.h:67:54: note: in expansion of macro 'ADDRESS_PARSER_NORMALIZE_TOKEN_OPTIONS'
+   67 | #define ADDRESS_PARSER_NORMALIZE_ADMIN_TOKEN_OPTIONS ADDRESS_PARSER_NORMALIZE_TOKEN_OPTIONS ^ NORMALIZE_TOKEN_REPLACE_DIGITS
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+address_parser.c:358:40: note: in expansion of macro 'ADDRESS_PARSER_NORMALIZE_ADMIN_TOKEN_OPTIONS'
+  358 |     normalize_token(array, str, token, ADDRESS_PARSER_NORMALIZE_ADMIN_TOKEN_OPTIONS);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+address_parser.c: In function 'address_parser_context_fill':
+address_parser.c:816:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+  816 |     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+address_parser.c:798:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+  798 |     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+address_parser.c:762:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+  762 |     bool have_address_phrases = search_address_dictionaries_tokens_with_phrases(normalized_str, normalized_tokens, NULL, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+address_parser.c:690:14: warning: unused variable 'phrase' [-Wunused-variable]
+  690 |     phrase_t phrase;
+      |              ^~~~~~
+address_parser.c:689:11: warning: variable 'word' set but not used [-Wunused-but-set-variable=]
+  689 |     char *word;
+      |           ^~~~
+address_parser.c: In function 'phrase_prefix':
+address_parser.c:835:40: warning: unused parameter 'len' [-Wunused-parameter]
+  835 | char *phrase_prefix(char *word, size_t len, phrase_t prefix_phrase, char_array *prefix_phrase_array) {
+      |                                 ~~~~~~~^~~
+address_parser.c: In function 'word_or_phrase_at_index':
+address_parser.c:925:13: warning: unused variable 'token' [-Wunused-variable]
+  925 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+address_parser.c:883:74: warning: unused parameter 'parser' [-Wunused-parameter]
+  883 | static address_parser_phrase_t word_or_phrase_at_index(address_parser_t *parser, tokenized_string_t *tokenized, address_parser_context_t *context, uint32_t i, bool long_context) {
+      |                                                        ~~~~~~~~~~~~~~~~~~^~~~~~
+address_parser.c: In function 'phrase_index':
+address_parser.c:973:13: warning: unused variable 'membership' [-Wunused-variable]
+  973 |     int64_t membership;
+      |             ^~~~~~~~~~
+address_parser.c: In function 'next_numeric_token_index':
+address_parser.c:1001:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1001 |     phrase_t phrase;
+      |              ^~~~~~
+address_parser.c: In function 'add_ngram_features':
+address_parser.c:1046:14: warning: variable 'idx' set but not used [-Wunused-but-set-variable=]
+ 1046 |     uint32_t idx;
+      |              ^~~
+address_parser.c: In function 'address_parser_features':
+address_parser.c:1285:18: warning: unused variable 'k' [-Wunused-variable]
+ 1285 |         khiter_t k;
+      |                  ^
+address_parser.c:1283:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 1283 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+address_parser.c:1384:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable=]
+ 1384 |             bool ngrams_added = false;
+      |                  ^~~~~~~~~~~~
+address_parser.c:1575:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 1575 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+address_parser.c:1574:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 1574 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+address_parser.c:1568:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 1568 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+address_parser.c:1510:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable=]
+ 1510 |         size_t next_word_len = 1;
+      |                ^~~~~~~~~~~~~
+address_parser.c:1329:10: warning: variable 'known_suffix' set but not used [-Wunused-but-set-variable=]
+ 1329 |     bool known_suffix = false;
+      |          ^~~~~~~~~~~~
+address_parser.c:1328:10: warning: variable 'known_prefix' set but not used [-Wunused-but-set-variable=]
+ 1328 |     bool known_prefix = false;
+      |          ^~~~~~~~~~~~
+address_parser.c:1326:10: warning: variable 'is_unknown' set but not used [-Wunused-but-set-variable=]
+ 1326 |     bool is_unknown = false;
+      |          ^~~~~~~~~~
+address_parser.c:1109:19: warning: unused variable 'separators' [-Wunused-variable]
+ 1109 |     uint32_array *separators = context->separators;
+      |                   ^~~~~~~~~~
+address_parser.c:1099:11: warning: unused variable 'country' [-Wunused-variable]
+ 1099 |     char *country = context->country;
+      |           ^~~~~~~
+address_parser.c:1098:11: warning: unused variable 'language' [-Wunused-variable]
+ 1098 |     char *language = context->language;
+      |           ^~~~~~~~
+In file included from collections.h:11,
+                 from averaged_perceptron.h:26,
+                 from address_parser.h:52,
+                 from address_parser_io.h:8,
+                 from address_parser_io.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from sparse_matrix.h:46,
+                 from averaged_perceptron.h:27:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+In file included from file_utils.h:12,
+                 from sparse_matrix.h:45:
+address_parser_io.c: In function 'address_parser_data_set_tokenize_line':
+address_parser_io.c:105:16: warning: unused variable 'pair_len' [-Wunused-variable]
+  105 |         size_t pair_len = strlen(str);
+      |                ^~~~~~~~
+string_utils.h:251:9: note: in definition of macro 'cstring_array_foreach'
+  251 |         code;                                                                           \
+      |         ^~~~
+address_parser_io.c:99:12: warning: unused variable 'num_pairs' [-Wunused-variable]
+   99 |     size_t num_pairs = cstring_array_num_strings(pairs);
+      |            ^~~~~~~~~
+address_parser_io.c: In function 'address_parser_data_set_next':
+address_parser_io.c:246:12: warning: unused variable 'len' [-Wunused-variable]
+  246 |     size_t len = strlen(normalized);
+      |            ^~~
+In file included from collections.h:11,
+                 from averaged_perceptron.h:26,
+                 from averaged_perceptron.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from sparse_matrix.h:46,
+                 from averaged_perceptron.h:27:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+averaged_perceptron.c: In function 'averaged_perceptron_predict_scores':
+averaged_perceptron.c:16:14: warning: variable 'i' set but not used [-Wunused-but-set-variable=]
+   16 |     uint32_t i = 0;
+      |              ^
+averaged_perceptron.c: In function 'averaged_perceptron_predict_scores_counts':
+averaged_perceptron.c:45:14: warning: unused variable 'i' [-Wunused-variable]
+   45 |     uint32_t i = 0;
+      |              ^
+In file included from collections.h:11,
+                 from crf.h:19,
+                 from crf.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from collections.h:11,
+                 from crf_context.h:8,
+                 from crf_context.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from crf_context.h:20,
+                 from crf.h:20:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+In file included from crf_context.h:20:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+crf_context.c: In function 'crf_context_reset':
+crf_context.c:239:18: warning: unused variable 'L' [-Wunused-variable]
+  239 |     const size_t L = context->num_labels;
+      |                  ^
+crf_context.c:238:18: warning: unused variable 'T' [-Wunused-variable]
+  238 |     const size_t T = context->num_items;
+      |                  ^
+crf_context.c: In function 'crf_context_score':
+crf_context.c:540:19: warning: unused variable 'cur' [-Wunused-variable]
+  540 |     const double *cur = NULL;
+      |                   ^~~
+crf_context.c:538:18: warning: unused variable 'L' [-Wunused-variable]
+  538 |     const size_t L = self->num_labels;
+      |                  ^
+crf_context.c: At top level:
+crf_context.c:296:12: warning: 'double_matrix_get_row' is static but used in inline function 'exp_state_trans_score_all' which is not static
+  296 |     return double_matrix_get_row(self->exp_state_trans, t);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+In file included from collections.h:11,
+                 from sparse_matrix.h:44,
+                 from sparse_matrix.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from sparse_matrix.h:46:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+sparse_matrix.c: In function 'sparse_matrix_sort_indices':
+sparse_matrix.c:95:14: warning: variable 'row' set but not used [-Wunused-but-set-variable=]
+   95 |     uint32_t row, row_start, row_len, i;
+      |              ^~~
+sparse_matrix.c: In function 'sparse_matrix_dot_vector':
+sparse_matrix.c:119:12: warning: unused variable 'val' [-Wunused-variable]
+  119 |     double val;
+      |            ^~~
+sparse_matrix.c: In function 'sparse_matrix_sum_cols':
+sparse_matrix.c:159:12: warning: unused variable 'val' [-Wunused-variable]
+  159 |     double val;
+      |            ^~~
+sparse_matrix.c: In function 'sparse_matrix_rows_sum_cols':
+sparse_matrix.c:178:15: warning: unused variable 'indices' [-Wunused-variable]
+  178 |     uint32_t *indices = self->indices->a;
+      |               ^~~~~~~
+sparse_matrix.c: In function 'sparse_matrix_sum_all_rows':
+sparse_matrix.c:201:12: warning: unused variable 'val' [-Wunused-variable]
+  201 |     double val;
+      |            ^~~
+sparse_matrix.c:200:14: warning: variable 'row' set but not used [-Wunused-but-set-variable=]
+  200 |     uint32_t row, row_start, row_len;
+      |              ^~~
+sparse_matrix.c: In function 'sparse_matrix_sum_rows':
+sparse_matrix.c:217:15: warning: unused variable 'indices' [-Wunused-variable]
+  217 |     uint32_t *indices = self->indices->a;
+      |               ^~~~~~~
+sparse_matrix.c: In function 'sparse_matrix_dot_dense':
+sparse_matrix.c:246:12: warning: unused variable 'm2_rows' [-Wunused-variable]
+  246 |     size_t m2_rows = matrix->m;
+      |            ^~~~~~~
+sparse_matrix.c:244:12: warning: unused variable 'm1_cols' [-Wunused-variable]
+  244 |     size_t m1_cols = self->n;
+      |            ^~~~~~~
+sparse_matrix.c:243:12: warning: unused variable 'm1_rows' [-Wunused-variable]
+  243 |     size_t m1_rows = self->m;
+      |            ^~~~~~~
+sparse_matrix.c:239:15: warning: unused variable 'indptr' [-Wunused-variable]
+  239 |     uint32_t *indptr = self->indptr->a;
+      |               ^~~~~~
+sparse_matrix.c: In function 'sparse_matrix_dot_sparse':
+sparse_matrix.c:280:12: warning: unused variable 'm1_cols' [-Wunused-variable]
+  280 |     size_t m1_cols = self->n;
+      |            ^~~~~~~
+sparse_matrix.c:279:12: warning: unused variable 'm1_rows' [-Wunused-variable]
+  279 |     size_t m1_rows = self->m;
+      |            ^~~~~~~
+sparse_matrix.c:275:15: warning: unused variable 'indptr' [-Wunused-variable]
+  275 |     uint32_t *indptr = self->indptr->a;
+      |               ^~~~~~
+In file included from collections.h:11,
+                 from averaged_perceptron.h:26,
+                 from averaged_perceptron_tagger.h:20,
+                 from averaged_perceptron_tagger.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from sparse_matrix.h:46,
+                 from averaged_perceptron.h:27:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+In file included from collections.h:11,
+                 from graph.h:27,
+                 from graph.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from collections.h:11,
+                 from graph_builder.h:16,
+                 from graph_builder.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from collections.h:11,
+                 from language_classifier.h:11,
+                 from language_classifier.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from logistic_regression.h:26,
+                 from language_classifier.h:13:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+In file included from collections.h:11,
+                 from language_features.h:6,
+                 from language_features.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from logistic_regression.h:26,
+                 from language_classifier.h:13,
+                 from language_features.c:2:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+language_features.c: In function 'add_ngram_features':
+language_features.c:74:12: warning: variable 'consumed' set but not used [-Wunused-but-set-variable=]
+   74 |     size_t consumed = 0;
+      |            ^~~~~~~~
+language_features.c:55:11: warning: unused variable 'feature_namespace' [-Wunused-variable]
+   55 |     char *feature_namespace;
+      |           ^~~~~~~~~~~~~~~~~
+language_features.c: In function 'add_script_feature':
+language_features.c:216:69: warning: unused parameter 'prefix' [-Wunused-parameter]
+  216 | static void add_script_feature(khash_t(str_double) *features, char *prefix, char_array *feature_array, script_t script) {
+      |                                                               ~~~~~~^~~~~~
+language_features.c: In function 'extract_language_features':
+language_features.c:275:19: warning: unused variable 'phrase' [-Wunused-variable]
+  275 |             char *phrase = NULL;
+      |                   ^~~~~~
+language_features.c:274:21: warning: unused variable 'prev_token' [-Wunused-variable]
+  274 |             token_t prev_token;
+      |                     ^~~~~~~~~~
+In file included from collections.h:11,
+                 from logistic_regression.h:25,
+                 from logistic_regression.c:3:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from logistic_regression.h:26:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+logistic_regression.c: In function 'logistic_regression_cost_function':
+logistic_regression.c:63:13: warning: unused variable 'expected_values' [-Wunused-variable]
+   63 |     double *expected_values = p_y->values;
+      |             ^~~~~~~~~~~~~~~
+logistic_regression.c:45:12: warning: unused variable 'n' [-Wunused-variable]
+   45 |     size_t n = x->n;
+      |            ^
+logistic_regression.c: In function 'logistic_regression_gradient':
+logistic_regression.c:105:13: warning: unused variable 'gradient_values' [-Wunused-variable]
+  105 |     double *gradient_values = gradient->values;
+      |             ^~~~~~~~~~~~~~~
+logistic_regression.c:104:13: warning: unused variable 'predicted_values' [-Wunused-variable]
+  104 |     double *predicted_values = p_y->values;
+      |             ^~~~~~~~~~~~~~~~
+logistic_regression.c:103:13: warning: unused variable 'theta_values' [-Wunused-variable]
+  103 |     double *theta_values = theta->values;
+      |             ^~~~~~~~~~~~
+logistic_regression.c:95:12: warning: unused variable 'residual' [-Wunused-variable]
+   95 |     double residual;
+      |            ^~~~~~~~
+logistic_regression.c:93:14: warning: unused variable 'i' [-Wunused-variable]
+   93 |     uint32_t i, j;
+      |              ^
+logistic_regression.c:91:12: warning: unused variable 'num_features' [-Wunused-variable]
+   91 |     size_t num_features = n;
+      |            ^~~~~~~~~~~~
+In file included from collections.h:11,
+                 from matrix.h:13,
+                 from logistic.h:7,
+                 from logistic.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from collections.h:11,
+                 from minibatch.h:7,
+                 from minibatch.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+logistic.c: In function 'softmax_vector':
+logistic.c:16:12: warning: unused variable 'sum' [-Wunused-variable]
+   16 |     double sum = 0.0;
+      |            ^~~
+In file included from sparse_matrix.h:46,
+                 from minibatch.h:9:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+minibatch.c: In function 'count_features_minibatch':
+minibatch.c:12:12: warning: unused variable 'm' [-Wunused-variable]
+   12 |     size_t m = minibatch->n;
+      |            ^
+minibatch.c:8:14: warning: unused variable 'feature_id' [-Wunused-variable]
+    8 |     uint32_t feature_id;
+      |              ^~~~~~~~~~
+minibatch.c: In function 'count_labels_minibatch':
+minibatch.c:30:14: warning: variable 'i' set but not used [-Wunused-but-set-variable=]
+   30 |     uint32_t i;
+      |              ^
+minibatch.c: In function 'select_features_threshold':
+minibatch.c:53:17: warning: unused variable 'feature' [-Wunused-variable]
+   53 |     const char *feature;
+      |                 ^~~~~~~
+minibatch.c: In function 'select_labels_threshold':
+minibatch.c:102:17: warning: unused variable 'label' [-Wunused-variable]
+  102 |     const char *label;
+      |                 ^~~~~
+minibatch.c: In function 'label_vector':
+minibatch.c:197:14: warning: variable 'i' set but not used [-Wunused-but-set-variable=]
+  197 |     uint32_t i;
+      |              ^
+In file included from collections.h:11,
+                 from string_utils.h:16,
+                 from ngrams.h:1,
+                 from ngrams.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+ngrams.c: In function 'add_ngrams':
+ngrams.c:37:22: warning: unused variable 'token_index' [-Wunused-variable]
+   37 |             uint32_t token_index = cstring_array_start_token(grams);
+      |                      ^~~~~~~~~~~
+ngrams.c:18:12: warning: variable 'consumed' set but not used [-Wunused-but-set-variable=]
+   18 |     size_t consumed = 0;
+      |            ^~~~~~~~
+In file included from collections.h:11,
+                 from language_classifier.h:11,
+                 from place.h:8,
+                 from place.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from logistic_regression.h:26,
+                 from language_classifier.h:13:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+In file included from collections.h:11,
+                 from string_utils.h:16,
+                 from near_dupe.h:9,
+                 from near_dupe.c:5:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from logistic_regression.h:26,
+                 from language_classifier.h:13,
+                 from place.h:8,
+                 from near_dupe.c:14:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+near_dupe.c: In function 'add_quadgrams_or_string_to_array_if_unique':
+near_dupe.c:272:16: warning: variable 'i' set but not used [-Wunused-but-set-variable=]
+  272 |         size_t i;
+      |                ^
+near_dupe.c: In function 'name_word_hashes':
+near_dupe.c:436:18: warning: variable 'any_existing_acronyms' set but not used [-Wunused-but-set-variable=]
+  436 |             bool any_existing_acronyms = false;
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+In file included from collections.h:11,
+                 from string_utils.h:16,
+                 from double_metaphone.c:6:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from gazetteers.h:13,
+                 from address_expansion_rule.h:9,
+                 from address_dictionary.h:13,
+                 from acronyms.h:7,
+                 from dedupe.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from sparse_matrix.h:46,
+                 from averaged_perceptron.h:27,
+                 from address_parser.h:52,
+                 from dedupe.c:2:
+matrix.h: At top level:
+matrix.h:21:2: warning: #warning "No CBLAS" [-Wcpp]
+   21 | #warning "No CBLAS"
+      |  ^~~~~~~
+In file included from collections.h:11,
+                 from string_similarity.h:7,
+                 from string_similarity.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+string_similarity.c: In function 'affine_gap_distance_unicode_costs':
+string_similarity.c:124:16: warning: variable 'min_at' set but not used [-Wunused-but-set-variable=]
+  124 |         size_t min_at = 0;
+      |                ^~~~~~
+string_similarity.c:122:17: warning: unused variable 'match_at' [-Wunused-variable]
+  122 |         ssize_t match_at = -1;
+      |                 ^~~~~~~~
+string_similarity.c:101:10: warning: unused variable 'in_gap' [-Wunused-variable]
+  101 |     bool in_gap = false;
+      |          ^~~~~~
+string_similarity.c: In function 'damerau_levenshtein_distance_unicode':
+string_similarity.c:356:101: warning: unused parameter 'replace_cost' [-Wunused-parameter]
+  356 | ssize_t damerau_levenshtein_distance_unicode(uint32_array *u1_array, uint32_array *u2_array, size_t replace_cost) {
+      |                                                                                              ~~~~~~~^~~~~~~~~~~~
+string_similarity.c: In function 'jaro_distance_unicode':
+string_similarity.c:454:12: warning: unused variable 'i' [-Wunused-variable]
+  454 |     size_t i = 0;
+      |            ^
+string_similarity.c: In function 'jaro_winkler_distance_unicode_prefix_threshold':
+string_similarity.c:532:12: warning: unused variable 'j' [-Wunused-variable]
+  532 |     double j;
+      |            ^
+string_similarity.c: In function 'multi_word_token_alignments':
+string_similarity.c:647:68: warning: pointer targets in passing argument 1 of 'utf8_compare_len_case_insensitive' differ in signedness [-Wpointer-sign]
+  647 |             if (utf8_compare_len_case_insensitive(ptr1 + ti.offset + ti_pos, ptr2 + tj.offset, tj.len) == 0) {
+      |                                                   ~~~~~~~~~~~~~~~~~^~~~~~~~
+      |                                                                    |
+      |                                                                    uint8_t * {aka unsigned char *}
+In file included from file_utils.h:12,
+                 from trie.h:32,
+                 from trie_search.h:10,
+                 from string_similarity.h:8:
+string_utils.h:82:51: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   82 | int utf8_compare_len_case_insensitive(const char *str1, const char *str2, size_t len);
+      |                                       ~~~~~~~~~~~~^~~~
+string_similarity.c:647:83: warning: pointer targets in passing argument 2 of 'utf8_compare_len_case_insensitive' differ in signedness [-Wpointer-sign]
+  647 |             if (utf8_compare_len_case_insensitive(ptr1 + ti.offset + ti_pos, ptr2 + tj.offset, tj.len) == 0) {
+      |                                                                              ~~~~~^~~~~~~~~~~
+      |                                                                                   |
+      |                                                                                   uint8_t * {aka unsigned char *}
+string_utils.h:82:69: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   82 | int utf8_compare_len_case_insensitive(const char *str1, const char *str2, size_t len);
+      |                                                         ~~~~~~~~~~~~^~~~
+string_similarity.c:621:13: warning: variable 'phrase_token_pos' set but not used [-Wunused-but-set-variable=]
+  621 |     ssize_t phrase_token_pos = -1;
+      |             ^~~~~~~~~~~~~~~~
+In file included from gazetteers.h:13,
+                 from address_expansion_rule.h:9,
+                 from address_dictionary.h:13,
+                 from acronyms.h:7,
+                 from acronyms.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from collections.h:11,
+                 from soft_tfidf.h:5,
+                 from soft_tfidf.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+In file included from collections.h:11,
+                 from jaccard.h:7,
+                 from jaccard.c:1:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+soft_tfidf.c: In function 'phrases_have_same_canonical':
+soft_tfidf.c:72:41: warning: unused parameter 'num_tokens1' [-Wunused-parameter]
+   72 | bool phrases_have_same_canonical(size_t num_tokens1, char **tokens1, size_t num_tokens2, char **tokens2, phrase_t match1, phrase_t match2, canonical_match_t *response) {
+      |                                  ~~~~~~~^~~~~~~~~~~
+soft_tfidf.c:72:77: warning: unused parameter 'num_tokens2' [-Wunused-parameter]
+   72 | bool phrases_have_same_canonical(size_t num_tokens1, char **tokens1, size_t num_tokens2, char **tokens2, phrase_t match1, phrase_t match2, canonical_match_t *response) {
+      |                                                                      ~~~~~~~^~~~~~~~~~~
+In file included from collections.h:8:
+soft_tfidf.c: In function 'soft_tfidf_similarity_with_phrases_and_acronyms':
+log/log.h:52:55: warning: format '%zu' expects argument of type 'size_t', but argument 3 has type 'uint32_t' {aka 'unsigned int'} [-Wformat=]
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~
+soft_tfidf.c:302:9: note: in expansion of macro 'log_debug'
+  302 |         log_debug("p1.len = %zu, i = %zu, p1.start = %zu\n", p1.len, i, p1.start);
+      |         ^~~~~~~~~
+log/log.h:52:55: warning: format '%zu' expects argument of type 'size_t', but argument 5 has type 'uint32_t' {aka 'unsigned int'} [-Wformat=]
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~
+soft_tfidf.c:302:9: note: in expansion of macro 'log_debug'
+  302 |         log_debug("p1.len = %zu, i = %zu, p1.start = %zu\n", p1.len, i, p1.start);
+      |         ^~~~~~~~~
+soft_tfidf.c:273:14: warning: unused variable 'have_strict_abbreviation' [-Wunused-variable]
+  273 |         bool have_strict_abbreviation = false;
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~
+jaccard.c: In function 'jaccard_similarity_string_arrays':
+jaccard.c:38:14: warning: variable 'k' set but not used [-Wunused-but-set-variable=]
+   38 |     khiter_t k;
+      |              ^
+soft_tfidf.c:582:90: warning: 'norm2_offset' may be used uninitialized [-Wmaybe-uninitialized]
+  582 |     double norm = sqrt(double_array_sum_sq(token_scores1, num_tokens1) + norm1_offset) * sqrt(double_array_sum_sq(token_scores2, num_tokens2) + norm2_offset);
+      |                                                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+soft_tfidf.c:252:12: note: 'norm2_offset' was declared here
+  252 |     double norm2_offset = 0.0;
+      |            ^~~~~~~~~~~~
+soft_tfidf.c:582:19: warning: 'norm1_offset' may be used uninitialized [-Wmaybe-uninitialized]
+  582 |     double norm = sqrt(double_array_sum_sq(token_scores1, num_tokens1) + norm1_offset) * sqrt(double_array_sum_sq(token_scores2, num_tokens2) + norm2_offset);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+soft_tfidf.c:251:12: note: 'norm1_offset' was declared here
+  251 |     double norm1_offset = 0.0;
+      |            ^~~~~~~~~~~~
+In file included from collections.h:11,
+                 from tokens.h:10,
+                 from scanner.h:11,
+                 from scanner.re:5:
+vector.h: In function 'aligned_resize':
+vector.h:13:52: warning: unused parameter 'old_size' [-Wunused-parameter]
+   13 | static inline void *aligned_resize(void *p, size_t old_size, size_t new_size, size_t alignment) {
+      |                                             ~~~~~~~^~~~~~~~
+geohash/geohash.c: In function 'interleaved_to_geohashstr':
+geohash/geohash.c:154:68: warning: unused parameter 'length' [-Wunused-parameter]
+  154 | static int interleaved_to_geohashstr(uint16_t *interleaved, size_t length, char *dst, size_t dst_length) {
+      |                                                             ~~~~~~~^~~~~~
+geohash/geohash.c: In function 'geohash_neighbors':
+geohash/geohash.c:488:57: warning: unused parameter 'dst_length' [-Wunused-parameter]
+  488 | int geohash_neighbors(char *hashcode, char *dst, size_t dst_length, int *string_count) {
+      |                                                  ~~~~~~~^~~~~~~~~~

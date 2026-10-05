@@ -1,0 +1,16 @@
+dev
+   total_parse        cpi 5.899/2.532  hot 6.064/2.622  Δcold +0.165 Δwarm +0.090
+   context_fill       cpi 1.856/0.388  hot 1.932/0.387  Δcold +0.076 Δwarm -0.001
+   features           cpi 1.462/0.708  hot 1.495/0.703  Δcold +0.033 Δwarm -0.005
+   lookups            cpi 0.697/0.206  hot 0.753/0.225  Δcold +0.056 Δwarm +0.019
+   accumulate         cpi 0.856/0.484  hot 0.898/0.530  Δcold +0.042 Δwarm +0.046
+   viterbi_and_rest   cpi 0.489/0.441  hot 0.487/0.438  Δcold -0.002 Δwarm -0.003
+   accumulate cold Δ per round [0.061, 0.043, 0.04, 0.059, 0.02]
+osm
+   total_parse        cpi 4.557/2.242  hot 4.007/2.253  Δcold -0.550 Δwarm +0.011
+   context_fill       cpi 1.380/0.360  hot 1.084/0.347  Δcold -0.296 Δwarm -0.013
+   features           cpi 1.050/0.588  hot 0.919/0.574  Δcold -0.131 Δwarm -0.014
+   lookups            cpi 0.543/0.171  hot 0.473/0.188  Δcold -0.070 Δwarm +0.017
+   accumulate         cpi 0.697/0.452  hot 0.670/0.486  Δcold -0.027 Δwarm +0.034
+   viterbi_and_rest   cpi 0.435/0.395  hot 0.420/0.388  Δcold -0.015 Δwarm -0.007
+   accumulate cold Δ per round [-0.073, -0.013, 0.044, -0.019, 0.009]

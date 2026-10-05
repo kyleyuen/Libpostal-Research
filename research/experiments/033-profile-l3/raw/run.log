@@ -1,0 +1,10 @@
+2026-10-02T15:42:43-0700 START sample: /bin/bash /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/033-profile-l3/tools/run_sample.sh
+2026-10-02T15:43:38-0700 END sample exit=0
+2026-10-02T15:43:38-0700 START build: env EXTRA_SW=-DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=3 -DEXP_STAGE_STATS -DEXP_CF_STATS /bin/bash /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/033-profile-l3/tools/build_cc.sh l3cf clang llvm -O2 -flto -O1 -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o
+2026-10-02T15:44:10-0700 END build exit=0
+2026-10-02T15:44:10-0700 START stage_r1: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/033-profile-l3/artifacts/l3cf/stage_bench /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 50
+2026-10-02T15:44:24-0700 END stage_r1 exit=0
+2026-10-02T15:44:27-0700 START stage_r2: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/033-profile-l3/artifacts/l3cf/stage_bench /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 50
+2026-10-02T15:44:40-0700 END stage_r2 exit=0
+2026-10-02T15:44:43-0700 START stage_r3: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/033-profile-l3/artifacts/l3cf/stage_bench /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 50
+2026-10-02T15:44:57-0700 END stage_r3 exit=0

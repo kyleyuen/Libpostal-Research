@@ -1,0 +1,11 @@
+total_parse cold_us=6.574 warm_us=2.843
+normalize cold_us=0.071 warm_us=0.043 diff=0.027
+tokenize cold_us=0.235 warm_us=0.136 diff=0.099
+context_fill cold_us=2.011 warm_us=0.459 diff=1.551
+predict_total cold_us=3.995 warm_us=2.057 diff=1.937
+response cold_us=0.243 warm_us=0.128 diff=0.115
+features cold_us=1.543 warm_us=0.815 diff=0.728
+lookups cold_us=0.841 warm_us=0.268 diff=0.573
+accumulate cold_us=1.087 warm_us=0.504 diff=0.583
+cf_normalize_tokens cold_us=0.146 warm_us=0.097 diff=0.049
+viterbi_and_rest cold_us=0.524 warm_us=0.471

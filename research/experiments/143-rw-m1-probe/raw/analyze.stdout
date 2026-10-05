@@ -1,0 +1,45 @@
+units: 7,345,126 distinct strings (vocab 3,694,560, component 4,012,750, dictionary 153,670, +2 unknowns)
+
+model state_features:
+  word+next word               keys  2,890,725  1-split  2,884,139  0-split    6,586  2+-split      0  not unambiguous  0.23%  table   46.1 MB
+  (other)                      keys  2,741,206
+  prev word+word               keys  2,134,522  1-split  2,126,966  0-split    7,556  2+-split      0  not unambiguous  0.35%  table   34.0 MB
+  word|ngrams (string path)    keys  1,440,394
+  next word                    keys    797,715  1-split    796,827  0-split      888  2+-split      0  not unambiguous  0.11%  table    8.5 MB
+  prev word                    keys    674,751  1-split    673,588  0-split    1,163  2+-split      0  not unambiguous  0.17%  table    7.2 MB
+  word                         keys    477,553  1-split    477,553  0-split        0  2+-split      0  not unambiguous  0.00%  table    5.1 MB
+  first word                   keys    240,976  1-split    240,976  0-split        0  2+-split      0  not unambiguous  0.00%  table    2.6 MB
+  sub_word                     keys     72,781  1-split     21,924  0-split   50,857  2+-split      0  not unambiguous 69.88%  table    0.2 MB
+
+model trans_features:
+  prev word                    keys  1,146,351  1-split  1,143,045  0-split    3,306  2+-split      0  not unambiguous  0.29%  table   12.2 MB
+  word                         keys    940,123  1-split    935,777  0-split    4,346  2+-split      0  not unambiguous  0.46%  table   10.0 MB
+
+unit-id maps (component and dictionary data id -> unit id, u32): 16.7 MB
+GROSS extra tables: 142.6 MB (before removing the same keys from the string dictionary; kill rule 1: > 50 MB)
+
+development addresses mapped into golden-v1 oracle: 10,308
+
+runtime coverage, golden-v1 development (10,305 addresses with predicted tokens):
+  S prev word            per address  4.80  in model  91.5%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  S prev word+word       per address  4.80  in model  43.3%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  S next word            per address  4.76  in model  95.7%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  S word+next word       per address  4.76  in model  46.8%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  P word                 per address  4.37  in model  96.8%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  P prev word            per address  4.37  in model  94.0%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  S word                 per address  2.58  in model  89.4%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  S first word           per address  0.69  in model  67.4%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  S sub_word             per address  0.07  in model  54.9%  unit-covered  23.3%  of in-model keys covered  30.6%  ambiguous 0
+  ALL word families       per address 31.20  unit-covered  99.8%  of in-model keys  99.9%
+
+runtime coverage, OSM v3 (11,405 addresses with predicted tokens):
+  S prev word            per address  4.32  in model  93.7%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  S prev word+word       per address  4.32  in model  60.6%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  S next word            per address  4.15  in model  98.2%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  S word+next word       per address  4.15  in model  64.5%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  P word                 per address  3.88  in model  98.5%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  P prev word            per address  3.88  in model  95.6%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  S word                 per address  2.43  in model  91.4%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  S first word           per address  0.69  in model  69.0%  unit-covered 100.0%  of in-model keys covered 100.0%  ambiguous 0
+  S sub_word             per address  0.02  in model  57.0%  unit-covered  53.5%  of in-model keys covered  66.3%  ambiguous 0
+  ALL word families       per address 27.85  unit-covered 100.0%  of in-model keys 100.0%

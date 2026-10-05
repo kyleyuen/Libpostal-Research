@@ -1,0 +1,98 @@
+--- feature_dict.h.009	2026-09-29 19:13:10
++++ feature_dict.h	2026-09-29 19:13:10
+@@ -27,6 +27,8 @@
+     uint32_t num_names;
+     uint8_t name_table[256];       // open addressing over names: index+1, 0 = empty
+     uint64_t num_keys;
++    bool split;                    // true: keys are name|value (state/trans features); false: whole key is compared (vocabulary)
++    bool wide_value;               // true: 32-bit value stored after the key in the arena (ids may exceed 2^24)
+     uint64_t leaves_total, leaves_visited, skipped_unreachable;   // build statistics
+     double build_seconds;
+ } feature_dict_t;
+@@ -75,6 +77,7 @@
+ 
+ // Splits a key into (name id, has separator, rest). Returns false if the name is unknown to the dictionary (=> no stored key can equal it).
+ static inline bool fd_split(const feature_dict_t *d, const char *key, size_t len, uint8_t *name_byte, const char **rest, size_t *rest_len) {
++    if (!d->split) { *name_byte = 0; *rest = key; *rest_len = len; return true; }
+     const char *p = memchr(key, FD_SEP, len);
+     size_t nlen = p ? (size_t)(p - key) : len;
+     int id = fd_find_name(d, key, nlen);
+@@ -93,7 +96,11 @@
+         if (!s) return false;
+         if ((uint8_t)(s >> 56) == tag) {
+             const uint8_t *e = d->arena + (uint32_t)s;
+-            if (e[0] == name_byte && memcmp(e + 1, rest, rest_len + 1) == 0) { *id = (uint32_t)((s >> 32) & 0xFFFFFF) - 1; return true; }
++            if (e[0] == name_byte && memcmp(e + 1, rest, rest_len + 1) == 0) {
++                if (d->wide_value) memcpy(id, e + 2 + rest_len, sizeof(uint32_t));
++                else *id = (uint32_t)((s >> 32) & 0xFFFFFF) - 1;
++                return true;
++            }
+         }
+     }
+ }
+@@ -115,14 +122,18 @@
+ static inline double fd_now(void) { struct timespec t; clock_gettime(CLOCK_MONOTONIC, &t); return t.tv_sec + t.tv_nsec / 1e9; }
+ 
+ static bool fd_insert(feature_dict_t *d, const char *key, size_t len, uint32_t data) {
+-    const char *p = memchr(key, FD_SEP, len);
+-    size_t nlen = p ? (size_t)(p - key) : len;
+-    int id = fd_add_name(d, key, nlen);
+-    if (id < 0) return false;
+-    uint8_t nb = (uint8_t)id | (p ? 0x80 : 0);
+-    const char *rest = p ? p + 1 : key + len; size_t rl = p ? len - nlen - 1 : 0;
+-    if (data >= 0xFFFFFE) return false;
+-    if (d->arena_used + rl + 2 > d->arena_map || d->arena_used + rl + 2 > 0xFFFFFFF0ULL) return false;
++    uint8_t nb; const char *rest; size_t rl;
++    if (d->split) {
++        const char *p = memchr(key, FD_SEP, len);
++        size_t nlen = p ? (size_t)(p - key) : len;
++        int id = fd_add_name(d, key, nlen);
++        if (id < 0) return false;
++        nb = (uint8_t)id | (p ? 0x80 : 0);
++        rest = p ? p + 1 : key + len; rl = p ? len - nlen - 1 : 0;
++    } else { nb = 0; rest = key; rl = len; }
++    if (!d->wide_value && data >= 0xFFFFFE) return false;
++    size_t entry = rl + 2 + (d->wide_value ? sizeof(uint32_t) : 0);
++    if (d->arena_used + entry > d->arena_map || d->arena_used + entry > 0xFFFFFFF0ULL) return false;
+     uint64_t h = fd_hash_key(nb, rest, rl);
+     uint64_t i = fd_index(d, h);
+     for (;; i = fd_next(d, i)) {                     // a trie never stores a key twice; refuse (=> keep the trie) if one appears
+@@ -133,8 +144,9 @@
+     }
+     uint32_t off = (uint32_t)d->arena_used;
+     d->arena[off] = nb; memcpy(d->arena + off + 1, rest, rl); d->arena[off + 1 + rl] = 0;
+-    d->arena_used += rl + 2;
+-    d->slots[i] = (uint64_t)off | ((uint64_t)(data + 1) << 32) | ((uint64_t)(uint8_t)h << 56);
++    if (d->wide_value) memcpy(d->arena + off + 2 + rl, &data, sizeof(uint32_t));
++    d->arena_used += entry;
++    d->slots[i] = (uint64_t)off | (d->wide_value ? (uint64_t)1 << 32 : (uint64_t)(data + 1) << 32) | ((uint64_t)(uint8_t)h << 56);
+     d->num_keys++;
+     return true;
+ }
+@@ -198,7 +210,7 @@
+ static bool fd_insert_cb(void *ctx, const char *key, size_t len, uint32_t data) { return fd_insert((feature_dict_t *)ctx, key, len, data); }
+ 
+ // Builds a dictionary from every key stored in `trie`. Returns NULL (caller keeps the trie) on any doubt.
+-static feature_dict_t *fd_build(trie_t *trie) {
++static feature_dict_t *fd_build_ex(trie_t *trie, bool split, bool wide_value) {
+     double t0 = fd_now();
+     if (!trie || trie->alphabet_size != 256 || !trie->nodes || !trie->data || !trie->tail) return NULL;
+     for (int i = 0; i < 256; i++) if (trie->alpha_map[(uint8_t)trie->alphabet[i]] != i) return NULL;      // bijective alphabet: no character aliasing
+@@ -206,9 +218,10 @@
+     trie_node_t *nodes = trie->nodes->a;
+     uint64_t leaves_total = 0;
+     for (uint32_t i = TRIE_POOL_BEGIN; i < nn; i++) if (nodes[i].check > 0 && nodes[i].base < 0) leaves_total++;
+-    if (leaves_total == 0 || leaves_total >= 0xFFFFFE) return NULL;
++    if (leaves_total == 0 || (!wide_value && leaves_total >= 0xFFFFFE)) return NULL;
+ 
+     feature_dict_t *d = calloc(1, sizeof *d); if (!d) return NULL;
++    d->split = split; d->wide_value = wide_value;
+     uint64_t size = leaves_total * 4 / 3 + 2;                                                        // load factor 0.75
+     d->size = size;
+     d->slots = calloc(size, sizeof(uint64_t)); if (!d->slots) { free(d); return NULL; }
+@@ -227,4 +240,5 @@
+     d->build_seconds = fd_now() - t0;
+     return d;
+ }
++static feature_dict_t *fd_build(trie_t *trie) { return fd_build_ex(trie, true, false); }
+ #endif

@@ -1,0 +1,11 @@
+--- ../libpostal/src/crf.h	2026-09-28 15:50:15
++++ experiments/011-normalize-fastpaths/candidate/crf.h	2026-09-29 20:15:10
+@@ -33,6 +33,8 @@
+     double_matrix_t *trans_weights;
+     uint32_array *viterbi;
+     crf_context_t *context;
++    void *state_dict;   // experiment 006: exact dictionary replacing state_features after load (NULL = trie in use)
++    void *trans_dict;   // same for state_trans_features
+ } crf_t;
+ 
+ bool crf_tagger_predict(crf_t *model, void *tagger, void *tagger_context, cstring_array *features, cstring_array *prev_tag_features, cstring_array *labels, tagger_feature_function feature_function, tokenized_string_t *tokenized, bool print_features);

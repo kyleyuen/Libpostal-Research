@@ -1,0 +1,82 @@
+--- ../119-component-phrase-ids/sources/crf.c	2026-10-04 01:21:46
++++ sources/crf.c	2026-10-04 02:39:30
+@@ -10,6 +10,13 @@
+ // model file in chunks (two passes with fseek: classes, then weights), so the original arrays are never allocated. Same doubles, same order.
+ typedef struct __attribute__((packed)) { double w; uint16_t cls; } crf_wrec_t;
+ static crf_wrec_t *crf_pack_state = NULL, *crf_pack_trans = NULL;
++#ifdef EXP_ROW_CLEAR
++// Experiment 128. crf_trow_mask[f]: bit i set when transition feature f has a weight in source-label row i (class / L), from the model at load.
++// crf_rm[t]: OR of those masks over the transition features added at token t of the current address (direct path). Invariant between addresses:
++// every state_trans row of tokens t >= 1 is zero except the rows recorded in crf_rm; the next address re-zeroes exactly those rows (row 0 is never
++// read, EXP_ST_ROW0). Growth, a non-direct scoring path or any doubt falls back to clearing everything.
++static uint32_t *crf_trow_mask = NULL; static uint32_t *crf_rm = NULL; static size_t crf_rm_cap = 0, crf_rm_T = 0; static int crf_rm_clean = 0;
++#endif
+ #ifdef EXP_BACK_NOCLEAR
+ // Experiment 072: 1 when every model weight is finite (checked once at load). Then Viterbi writes every backward-edge cell it later reads (t >= 1:
+ // each target label's maximum starts at -DBL_MAX and every candidate score is finite and larger), so clearing them per address is redundant.
+@@ -696,9 +703,15 @@
+ #endif
+         }
+         double *state_trans_scores = state_trans_score_all(crf_context, (uint32_t)t);
++#ifdef EXP_ROW_CLEAR
++        uint32_t rm_t = 0;
++#endif
+         for (uint32_t k = crf_trans_tok[t]; k < crf_trans_tok[t + 1]; k++) {
+             uint32_t feature_id = crf_trans_ids[k];
+             if (feature_id == CRF_NO_FEATURE) continue;
++#ifdef EXP_ROW_CLEAR
++            rm_t |= crf_trow_mask != NULL ? crf_trow_mask[feature_id] : 0xFFFFFFFFu;
++#endif
+ #ifdef EXP_ALLOC_LEAN
+             uint32_t row0 = (uint32_t)(state_trans_scores - crf_context->state_trans->values);
+             for (int col = tindptr[feature_id]; col < tindptr[feature_id + 1]; col++) { state_trans_scores[tindices[col]] += tdata[col]; crf_st_note(row0 + tindices[col]); }
+@@ -710,7 +723,13 @@
+ #endif
+ #endif
+         }
++#ifdef EXP_ROW_CLEAR
++        if (t < crf_rm_cap) crf_rm[t] = rm_t;
++#endif
+     }
++#ifdef EXP_ROW_CLEAR
++    crf_rm_clean = crf_trow_mask != NULL && num_tokens <= crf_rm_cap;   // every written row of this address is recorded
++#endif
+ #ifdef EXP_ALLOC_LEAN
+     crf_st_clean = !crf_st_fail;   // recording complete for this address
+ #endif
+@@ -750,7 +769,20 @@
+     else for (size_t i = 0; i < crf_st_n; i++) self->state_trans->values[crf_st_touched[i]] = 0.0;
+     crf_st_n = 0; crf_st_clean = 0; crf_st_fail = 0;   // clean stays 0 unless the direct path records this address completely
+ #else
+-#ifdef EXP_ST_ROW0
++#if defined(EXP_ROW_CLEAR) && defined(EXP_ST_ROW0)
++    if (crf_rm_cap < crf_lean_cap_items) { uint32_t *q = realloc(crf_rm, crf_lean_cap_items * sizeof *q); if (q == NULL) { free(crf_rm); crf_rm = NULL; crf_rm_cap = 0; crf_rm_clean = 0; } else { crf_rm = q; crf_rm_cap = crf_lean_cap_items; } grew = true; }
++    if (grew || !crf_rm_clean || crf_rm == NULL || L > 32) {
++        if (crf_lean_cap_items > 1) memset(self->state_trans->values + L * L, 0, (crf_lean_cap_items - 1) * L * L * sizeof(double));   // establish the invariant
++    } else {
++        for (size_t t = 1; t < crf_rm_T; t++) { uint32_t m = crf_rm[t]; double *row = self->state_trans->values + t * L * L;
++            while (m) { unsigned i = (unsigned)__builtin_ctz(m); memset(row + (size_t)i * L, 0, L * sizeof(double)); m &= m - 1; } }
++    }
++    if (crf_rm != NULL) memset(crf_rm, 0, crf_rm_cap * sizeof *crf_rm);
++    crf_rm_T = T; crf_rm_clean = 0;   // set again only when the direct path records this address completely
++#ifdef EXP_ROW_CLEAR_VERIFY
++    for (size_t q = L * L; q < crf_lean_cap_items * L * L; q++) if (self->state_trans->values[q] != 0.0 || signbit(self->state_trans->values[q])) { fprintf(stderr, "EXP_ROW_CLEAR_VERIFY: nonzero cell %zu\n", q); abort(); }
++#endif
++#elif defined(EXP_ST_ROW0)
+     // Experiment 026: Viterbi reads state_trans rows t >= 1 only (it starts at t = 1), so row 0 never needs clearing; whatever it holds is never read.
+     if (T > 1) memset(self->state_trans->values + L * L, 0, (T - 1) * L * L * sizeof(double));
+ #else
+@@ -1137,6 +1169,13 @@
+     if (crf->trans_weights == NULL) {
+         goto exit_crf_created;
+     }
++#ifdef EXP_ROW_CLEAR
++    if (crf_pack_trans != NULL && crf->state_trans_weights != NULL && crf->num_classes <= 32) {   // 128: source-row mask of every transition feature row
++        size_t nf = crf->state_trans_weights->indptr->n - 1; const uint32_t *ip = crf->state_trans_weights->indptr->a; uint32_t *mk = malloc((nf ? nf : 1) * sizeof *mk);
++        if (mk != NULL) { for (size_t q = 0; q < nf; q++) { uint32_t m = 0; for (uint32_t c = ip[q]; c < ip[q + 1]; c++) { uint32_t i = crf_pack_trans[c].cls / crf->num_classes; m |= i < 32 ? 1u << i : 0xFFFFFFFFu; } mk[q] = m; }
++            crf_trow_mask = mk; }
++    }
++#endif
+ #ifdef EXP_BACK_NOCLEAR
+     if (crf->weights != NULL && crf->state_trans_weights != NULL && crf_pack_state != NULL && crf_pack_trans != NULL && crf->trans_weights != NULL) {
+         int fin = 1; size_t ns_ = crf->weights->indptr->a[crf->weights->indptr->n - 1], nt_ = crf->state_trans_weights->indptr->a[crf->state_trans_weights->indptr->n - 1];

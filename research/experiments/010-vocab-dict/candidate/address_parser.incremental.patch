@@ -1,0 +1,55 @@
+--- address_parser.c.009	2026-09-29 19:13:10
++++ address_parser.c	2026-09-29 19:13:10
+@@ -11,6 +11,10 @@
+ 
+ #define ADDRESS_PARSER_MODEL_FILENAME "address_parser.dat"
+ #define ADDRESS_PARSER_MODEL_FILENAME_CRF "address_parser_crf.dat"
++#ifdef EXP_VOCAB_DICT
++#include "feature_dict.h"
++static feature_dict_t *vocab_dict = NULL;
++#endif
+ #define ADDRESS_PARSER_VOCAB_FILENAME "address_parser_vocab.trie"
+ #define ADDRESS_PARSER_PHRASE_FILENAME "address_parser_phrases.dat"
+ #define ADDRESS_PARSER_POSTAL_CODES_FILENAME "address_parser_postal_codes.dat"
+@@ -229,6 +233,18 @@
+     }
+ 
+     parser->vocab = vocab;
++#ifdef EXP_VOCAB_DICT
++    if (getenv("CRF_DICT_DISABLE") == NULL) {   // experiment switch; any doubt keeps the trie
++        feature_dict_t *vd = fd_build_ex(vocab, false, true);
++        if (vd != NULL) {
++            if (getenv("CRF_DICT_VERBOSE") != NULL) fprintf(stderr, "vocab dictionary: keys=%llu build=%.2fs dict=%.1f MB replaces trie=%.1f MB\n", (unsigned long long)vd->num_keys, vd->build_seconds,
++                (vd->size * 8 + vd->arena_used) / 1048576.0, (vocab->nodes->n * sizeof(trie_node_t) + vocab->tail->n + vocab->data->n * sizeof(trie_data_node_t)) / 1048576.0);
++            vocab_dict = vd;
++            trie_destroy(vocab);
++            parser->vocab = NULL;
++        }
++    }
++#endif
+ 
+     char_array_clear(path);
+ 
+@@ -321,6 +337,9 @@
+         address_parser_context_destroy(self->context);
+     }
+ 
++#ifdef EXP_VOCAB_DICT
++    if (self == parser) { fd_destroy(vocab_dict); vocab_dict = NULL; }
++#endif
+     if (self->vocab != NULL) {
+         trie_destroy(self->vocab);
+     }
+@@ -346,6 +365,12 @@
+ 
+ static inline uint32_t word_vocab_frequency(address_parser_t *parser, char *word) {   
+     uint32_t count = 0;
++#ifdef EXP_VOCAB_DICT
++    if (vocab_dict != NULL) {
++        if (!fd_lookup(vocab_dict, word, strlen(word), &count)) count = 0;
++        return count;
++    }
++#endif
+     bool has_key = trie_get_data(parser->vocab, word, &count);
+     return count;
+ }

@@ -1,0 +1,35 @@
+--- ../119-component-phrase-ids/sources/address_parser.c	2026-10-04 01:21:46
++++ sources/address_parser.c	2026-10-04 16:10:14
+@@ -242,6 +242,22 @@
+ #ifdef EXP_FTT
+ extern const trie_t *trie_ftt_trie; extern const uint64_t *trie_ftt_tab; extern const int32_t *trie_ftt_slot; extern size_t trie_ftt_n;
+ uint64_t trie_ftt_walk(trie_t *self, const char *w, size_t len);
++#ifdef EXP_HOT_TIER
++// Experiment 137: rank vocabulary words by the model's training counts (ties by slot) and let crf.c copy their role rows into the hot tier, 4 MB
++// (budget fixed in advance from the hardware: fits in the shared L2; not tuned on any dataset).
++bool crf_hot_build(crf_t *crf, const uint32_t *slots, size_t nslots, size_t budget);
++static uint32_t *ap_hot_cnt; static int ap_hot_cmp(const void *x, const void *y) { uint32_t a = *(const uint32_t *)x, b = *(const uint32_t *)y;
++    if (ap_hot_cnt[a] != ap_hot_cnt[b]) return ap_hot_cnt[a] < ap_hot_cnt[b] ? 1 : -1; return a < b ? -1 : a > b; }
++static void ap_hot_build(address_parser_t *p) {
++    if (getenv("HOT_TIER_DISABLE") != NULL || vocab_dict == NULL || p->model_type != ADDRESS_PARSER_TYPE_CRF || p->model.crf == NULL) return;
++    size_t V = vocab_dict->size, nw = 0; uint32_t *ord = malloc(V * sizeof *ord); ap_hot_cnt = calloc(V, sizeof *ap_hot_cnt); if (!ord || !ap_hot_cnt) { free(ord); free(ap_hot_cnt); return; }
++    for (size_t sl = 0; sl < V; sl++) { uint64_t sv = vocab_dict->slots[sl]; if (!sv) continue; const char *w = (const char *)vocab_dict->arena + (uint32_t)sv + 1; uint32_t c = 0;
++        if (fd_lookup(vocab_dict, w, strlen(w), &c)) { ap_hot_cnt[sl] = c; ord[nw++] = (uint32_t)sl; } }
++    qsort(ord, nw, sizeof *ord, ap_hot_cmp);
++    crf_hot_build(p->model.crf, ord, nw, (size_t)EXP_HOT_TIER_BYTES);
++    free(ord); free(ap_hot_cnt);
++}
++#endif
+ static void ap_ftt_build(address_parser_t *parser) {   // experiment 056: walk every vocabulary key through the component-phrase trie (model data only)
+     if (getenv("FTT_DISABLE") != NULL || vocab_dict == NULL || parser->phrases == NULL) return;
+     size_t V = vocab_dict->size; uint64_t *tab = calloc(V, sizeof *tab); if (tab == NULL) return; size_t n = 0;
+@@ -423,6 +439,9 @@
+ #endif
+ #ifdef EXP_CP_IDS
+     cp_build(parser);
++#endif
++#ifdef EXP_HOT_TIER
++    ap_hot_build(parser);
+ #endif
+     parser->context = address_parser_context_new();
+     if (parser->context == NULL) {

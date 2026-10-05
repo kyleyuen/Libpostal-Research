@@ -1,0 +1,14 @@
+c2_gen: library -O2 -flto 4s, scanner -O0 9s, link 4s, total 17s
+c2: library -O2 -flto 4s, scanner -O0 5s, link 3s, total 12s
+2026-09-30T22:32:00-07:00 c2s attempt 1 stopped after ~6 min: scanner at -O2 WITH -flto is re-optimized at every link (3 tools x 2 PGO builds); rebuilt with the scanner at -O2 without LTO
+c2s_gen: library -O2 -flto 4s, scanner -O2 318s, link 4s, total 326s
+2026-09-30T22:40:18-07:00 both c2s builds stopped: the first was not killed by the earlier pkill and ran concurrently with the restart (outputs in artifacts/c2s* are unreliable and will be rebuilt). Measured: scanner at -O2 = 318 s per compile; PGO compiles it twice.
+scanner -O1 compile: 256 s
+c2s1_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+c2s1: library -O2 -flto 4s, scanner -O1 0s, link 3s, total 7s
+c3_gen: library -O3 -flto 5s, scanner -O1 0s, link 4s, total 9s
+c3: library -O3 -flto 4s, scanner -O1 0s, link 3s, total 7s
+c4_gen: library -O3 -flto -mcpu=apple-m1 5s, scanner -O1 0s, link 4s, total 9s
+c4: library -O3 -flto -mcpu=apple-m1 4s, scanner -O1 0s, link 3s, total 7s
+c2s2_gen: library -O2 -flto 5s, scanner -O2 269s, link 4s, total 278s
+c2s2: library -O2 -flto 4s, scanner -O2 0s, link 3s, total 7s

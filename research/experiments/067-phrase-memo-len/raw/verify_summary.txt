@@ -1,0 +1,8 @@
+verify v1 exit 0: 0 mismatches; 
+verify nv exit 0: 0 mismatches; 
+verify osm exit 0: 0 mismatches; 
+verify fuzz1 exit 0: 0 mismatches; EXP_FA_LEN_VERIFY 8388608 phrases ok
+plv v1 45574ee2b1972f1acf2d nv 806b8a81603ea9adf3af | pl v1 45574ee2b1972f1acf2d
+osm IDENTICAL
+fuzz1 IDENTICAL
+pl fuzz2 IDENTICAL

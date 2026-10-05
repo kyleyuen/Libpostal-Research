@@ -1,0 +1,136 @@
+--- crf.c.006	2026-09-29 19:10:07
++++ crf.c	2026-09-29 19:10:07
+@@ -265,9 +265,121 @@
+         }
+     }
+     return true;
++}
++#endif
++
++
++#ifdef EXP_DIRECT_KEYS
++// Experiment 009: no per-token key copy. address_parser_features appends every token's keys to the same cstring_arrays (crf_features_accumulate),
++// the keys are looked up straight out of those arrays (length from the offsets, no strlen), and the weight rows of hits are prefetched.
++int crf_features_accumulate = 0;
++
++// Looks up all keys of `a` in the dictionary d; ids[i] = feature id or CRF_NO_FEATURE. Prefetches the weight-row start of every hit.
++static void crf_dict_lookup_array(const feature_dict_t *d, cstring_array *a, uint32_t *ids, const uint32_t *indptr) {
++    enum { WIN = 64 };
++    uint8_t nb[WIN]; const char *rest[WIN]; size_t rl[WIN]; uint64_t hh[WIN]; bool ok[WIN];
++    size_t n = a->indices->n;
++    char *chars = a->str->a; uint32_t *off = a->indices->a; size_t chars_n = a->str->n;
++    for (size_t base = 0; base < n; base += WIN) {
++        size_t m = n - base < WIN ? n - base : WIN;
++        for (size_t j = 0; j < m; j++) {
++            size_t i = base + j;
++            size_t len = (i + 1 < n ? off[i + 1] : chars_n) - off[i] - 1;
++            ok[j] = fd_split(d, chars + off[i], len, &nb[j], &rest[j], &rl[j]);
++            if (ok[j]) {
++                hh[j] = fd_hash_key(nb[j], rest[j], rl[j]);
++                __builtin_prefetch(&d->slots[fd_index(d, hh[j])]);
++            }
++        }
++        for (size_t j = 0; j < m; j++) {
++            uint32_t feature_id;
++            if (ok[j] && fd_lookup_hashed(d, nb[j], rest[j], rl[j], hh[j], &feature_id)) {
++                ids[base + j] = feature_id;
++#ifdef EXP_WEIGHT_PREFETCH
++                __builtin_prefetch(&indptr[feature_id]);
++#endif
++            } else {
++                ids[base + j] = CRF_NO_FEATURE;
++            }
++        }
++    }
+ }
++
++static inline void crf_prefetch_rows(const uint32_t *ids, size_t n, const uint32_t *indptr, const uint32_t *indices, const double *data) {
++#ifdef EXP_WEIGHT_PREFETCH
++    for (size_t k = 0; k < n; k++) {
++        uint32_t id = ids[k];
++        if (id == CRF_NO_FEATURE) continue;
++        uint32_t start = indptr[id];
++        __builtin_prefetch(&indices[start]);
++        __builtin_prefetch(&data[start]);
++    }
+ #endif
++}
+ 
++static uint32_t *crf_state_ids = NULL, *crf_trans_ids = NULL, *crf_state_tok = NULL, *crf_trans_tok = NULL;
++static size_t crf_state_ids_m = 0, crf_trans_ids_m = 0, crf_tok_m = 0;
++
++static bool crf_tagger_score_direct(crf_t *self, void *tagger, void *tagger_context, cstring_array *features, cstring_array *prev_tag_features, tagger_feature_function feature_function, tokenized_string_t *tokenized, crf_context_t *crf_context, size_t num_tokens) {
++    if (!double_matrix_copy(self->trans_weights, crf_context->trans)) return false;
++    if (num_tokens + 1 > crf_tok_m) {
++        size_t m = crf_tok_m ? crf_tok_m : 32;
++        while (m < num_tokens + 1) m *= 2;
++        uint32_t *a = realloc(crf_state_tok, m * sizeof(uint32_t)); if (a == NULL) return false; crf_state_tok = a;
++        uint32_t *b = realloc(crf_trans_tok, m * sizeof(uint32_t)); if (b == NULL) return false; crf_trans_tok = b;
++        crf_tok_m = m;
++    }
++
++    cstring_array_clear(features);
++    cstring_array_clear(prev_tag_features);
++    crf_features_accumulate = 1;
++    bool ok = true;
++    for (size_t t = 0; t < num_tokens; t++) {
++        crf_state_tok[t] = (uint32_t)features->indices->n;
++        crf_trans_tok[t] = (uint32_t)prev_tag_features->indices->n;
++        if (!feature_function(tagger, tagger_context, tokenized, (uint32_t)t)) {
++            log_error("Could not add address parser features\n");
++            ok = false;
++            break;
++        }
++    }
++    crf_features_accumulate = 0;
++    if (!ok) return false;
++    crf_state_tok[num_tokens] = (uint32_t)features->indices->n;
++    crf_trans_tok[num_tokens] = (uint32_t)prev_tag_features->indices->n;
++
++    size_t ns = features->indices->n, np = prev_tag_features->indices->n;
++    if (ns > crf_state_ids_m) { size_t m = crf_state_ids_m ? crf_state_ids_m : 256; while (m < ns) m *= 2; uint32_t *p = realloc(crf_state_ids, m * sizeof(uint32_t)); if (p == NULL) return false; crf_state_ids = p; crf_state_ids_m = m; }
++    if (np > crf_trans_ids_m) { size_t m = crf_trans_ids_m ? crf_trans_ids_m : 64; while (m < np) m *= 2; uint32_t *p = realloc(crf_trans_ids, m * sizeof(uint32_t)); if (p == NULL) return false; crf_trans_ids = p; crf_trans_ids_m = m; }
++
++    uint32_t *indptr = self->weights->indptr->a, *indices = self->weights->indices->a;
++    double *data = self->weights->data->a;
++    uint32_t *tindptr = self->state_trans_weights->indptr->a, *tindices = self->state_trans_weights->indices->a;
++    double *tdata = self->state_trans_weights->data->a;
++
++    crf_dict_lookup_array((feature_dict_t *)self->state_dict, features, crf_state_ids, indptr);
++    crf_dict_lookup_array((feature_dict_t *)self->trans_dict, prev_tag_features, crf_trans_ids, tindptr);
++    crf_prefetch_rows(crf_state_ids, ns, indptr, indices, data);
++    crf_prefetch_rows(crf_trans_ids, np, tindptr, tindices, tdata);
++
++    for (size_t t = 0; t < num_tokens; t++) {
++        double *state_scores = state_score(crf_context, (uint32_t)t);
++        for (uint32_t k = crf_state_tok[t]; k < crf_state_tok[t + 1]; k++) {
++            uint32_t feature_id = crf_state_ids[k];
++            if (feature_id == CRF_NO_FEATURE) continue;
++            for (int col = indptr[feature_id]; col < indptr[feature_id + 1]; col++) state_scores[indices[col]] += data[col];
++        }
++        double *state_trans_scores = state_trans_score_all(crf_context, (uint32_t)t);
++        for (uint32_t k = crf_trans_tok[t]; k < crf_trans_tok[t + 1]; k++) {
++            uint32_t feature_id = crf_trans_ids[k];
++            if (feature_id == CRF_NO_FEATURE) continue;
++            for (int col = tindptr[feature_id]; col < tindptr[feature_id + 1]; col++) state_trans_scores[tindices[col]] += tdata[col];   // L * L classes
++        }
++    }
++    return true;
++}
++#endif
++
+ bool crf_tagger_score(crf_t *self, void *tagger, void *tagger_context, cstring_array *features, cstring_array *prev_tag_features, tagger_feature_function feature_function, tokenized_string_t *tokenized, bool print_features) {
+     if (self == NULL || feature_function == NULL || tokenized == NULL ) {
+         return false;
+@@ -282,6 +394,11 @@
+     // EXP_NO_RESET: crf_context_set_num_items already zeroed state and state_trans, trans is overwritten by the copy below,
+     // and the marginal arrays reset() would also clear are never read by Viterbi decoding.
+ 
++#ifdef EXP_DIRECT_KEYS
++    if (!print_features && self->state_dict != NULL && self->trans_dict != NULL) {
++        return crf_tagger_score_direct(self, tagger, tagger_context, features, prev_tag_features, feature_function, tokenized, crf_context, num_tokens);
++    }
++#endif
+ #ifdef EXP_DEDUP_BATCH
+     if (!print_features) {
+         return crf_tagger_score_batched(self, tagger, tagger_context, features, prev_tag_features, feature_function, tokenized, crf_context, num_tokens);

@@ -1,0 +1,48 @@
+dev
+   total_parse        css 5.509/2.434  fss 5.575/2.513  (timer overhead +0.066/+0.079) n=4,4
+   context_fill       css 1.712/0.370  fss 1.711/0.369  (timer overhead -0.001/-0.001) n=4,4
+   features           css 1.353/0.679  fss 1.425/0.770  (timer overhead +0.073/+0.091) n=4,4
+   lookups            css 0.663/0.199  fss 0.661/0.191  (timer overhead -0.002/-0.008) n=4,4
+   accumulate         css 0.795/0.465  fss 0.790/0.456  (timer overhead -0.005/-0.010) n=4,4
+   viterbi_and_rest   css 0.469/0.424  fss 0.469/0.423  (timer overhead +0.001/-0.001) n=4,4
+   fs_setup           0.054/0.047
+   fs_address_dict    0.071/0.050
+   fs_component       0.300/0.067
+   fs_postcode        0.193/0.088
+   fs_word            0.164/0.125
+   fs_trans_word      0.058/0.050
+   fs_prev_word       0.173/0.116
+   fs_next_word       0.371/0.188
+   sum fs_* cold 1.385 vs fss features cold 1.425
+osm
+   total_parse        css 3.681/2.139  fss 3.700/2.216  (timer overhead +0.018/+0.077) n=4,4
+   context_fill       css 0.978/0.338  fss 0.958/0.336  (timer overhead -0.020/-0.002) n=4,4
+   features           css 0.863/0.560  fss 0.918/0.649  (timer overhead +0.055/+0.089) n=4,4
+   lookups            css 0.407/0.164  fss 0.398/0.157  (timer overhead -0.010/-0.008) n=4,4
+   accumulate         css 0.599/0.435  fss 0.589/0.425  (timer overhead -0.010/-0.010) n=4,4
+   viterbi_and_rest   css 0.414/0.380  fss 0.415/0.380  (timer overhead +0.001/+0.000) n=4,4
+   fs_setup           0.049/0.044
+   fs_address_dict    0.056/0.045
+   fs_component       0.114/0.060
+   fs_postcode        0.108/0.066
+   fs_word            0.111/0.087
+   fs_trans_word      0.050/0.045
+   fs_prev_word       0.137/0.103
+   fs_next_word       0.257/0.164
+   sum fs_* cold 0.881 vs fss features cold 0.918
+u11
+   total_parse        css 3.447/2.157  fss 3.460/2.243  (timer overhead +0.012/+0.086) n=4,4
+   context_fill       css 0.868/0.330  fss 0.837/0.331  (timer overhead -0.031/+0.001) n=4,4
+   features           css 0.844/0.585  fss 0.903/0.676  (timer overhead +0.059/+0.091) n=4,4
+   lookups            css 0.390/0.169  fss 0.375/0.163  (timer overhead -0.015/-0.006) n=4,4
+   accumulate         css 0.566/0.414  fss 0.554/0.407  (timer overhead -0.012/-0.007) n=4,4
+   viterbi_and_rest   css 0.403/0.372  fss 0.404/0.372  (timer overhead +0.001/-0.001) n=4,4
+   fs_setup           0.048/0.043
+   fs_address_dict    0.058/0.046
+   fs_component       0.100/0.058
+   fs_postcode        0.116/0.079
+   fs_word            0.131/0.108
+   fs_trans_word      0.048/0.044
+   fs_prev_word       0.129/0.102
+   fs_next_word       0.237/0.161
+   sum fs_* cold 0.866 vs fss features cold 0.903

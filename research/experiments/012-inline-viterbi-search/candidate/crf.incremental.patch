@@ -1,0 +1,80 @@
+--- crf.c.011	2026-09-29 21:20:23
++++ crf.c	2026-09-29 21:20:23
+@@ -551,6 +551,65 @@
+     return true;
+ }
+ 
++
++#ifdef EXP_FAST_VITERBI
++// Same recurrence, tie-breaking and floating-point association as crf_context_viterbi (crf_context.c), with the loops swapped (source label outer, target label inner)
++// so the two accessor calls per (i, j) disappear and the inner loop runs over contiguous rows. For a fixed target j the candidates i are still visited in ascending order and
++// replace the best only when strictly greater, so the chosen i, back[j] and cur[j] are identical, NaNs included.
++#define CRF_FAST_VITERBI_MAX_L 256
++static double crf_context_viterbi_fast(crf_context_t *self, uint32_t *labels) {
++    const size_t T = self->num_items;
++    const size_t L = self->num_labels;
++    if (T == 0 || L > CRF_FAST_VITERBI_MAX_L) return crf_context_viterbi(self, labels);
++
++    double best[CRF_FAST_VITERBI_MAX_L];
++    int32_t arg[CRF_FAST_VITERBI_MAX_L];
++
++    double *cur = alpha_score(self, 0);
++    const double *state = state_score(self, 0);
++    double_array_raw_copy(cur, state, L);
++
++    const double *trans_all = self->trans->values;
++
++    for (size_t t = 1; t < T; t++) {
++        const double *prev = alpha_score(self, t - 1);
++        cur = alpha_score(self, t);
++        state = state_score(self, t);
++        uint32_t *back = backward_edge_at(self, t);
++        const double *st = state_trans_score_all(self, t);
++
++        for (size_t j = 0; j < L; j++) { best[j] = -DBL_MAX; arg[j] = -1; }
++        for (size_t i = 0; i < L; i++) {
++            const double pi = prev[i];
++            const double *sti = st + i * L;
++            const double *tri = trans_all + i * L;
++            for (size_t j = 0; j < L; j++) {
++                double score = pi + sti[j] + tri[j];
++                if (best[j] < score) { best[j] = score; arg[j] = (int32_t)i; }
++            }
++        }
++        for (size_t j = 0; j < L; j++) {
++            if (arg[j] >= 0) back[j] = (uint32_t)arg[j];
++            cur[j] = best[j] + state[j];
++        }
++    }
++
++    double max_score = -DBL_MAX;
++    ssize_t argmax_score = -1;
++    const double *last = alpha_score(self, T - 1);
++    labels[T - 1] = 0;
++    for (size_t i = 0; i < L; i++) {
++        if (last[i] > max_score) { max_score = last[i]; argmax_score = (ssize_t)i; }
++    }
++    if (argmax_score >= 0) labels[T - 1] = (uint32_t)argmax_score;
++    for (ssize_t t = (ssize_t)T - 2; t >= 0; t--) {
++        uint32_t *back = backward_edge_at(self, (size_t)t + 1);
++        labels[t] = back[labels[t + 1]];
++    }
++    return max_score;
++}
++#endif
++
+ bool crf_tagger_score_viterbi(crf_t *self, void *tagger, void *tagger_context, cstring_array *features, cstring_array *prev_tag_features, tagger_feature_function feature_function, tokenized_string_t *tokenized, double *score, bool print_features) {
+     if (!crf_tagger_score(self, tagger, tagger_context, features, prev_tag_features, feature_function, tokenized, print_features)) {
+         return false;
+@@ -559,7 +618,11 @@
+     size_t num_tokens = tokenized->tokens->n;
+ 
+     uint32_array_resize_fixed(self->viterbi, num_tokens);
++#ifdef EXP_FAST_VITERBI
++    double viterbi_score = crf_context_viterbi_fast(self->context, self->viterbi->a);
++#else
+     double viterbi_score = crf_context_viterbi(self->context, self->viterbi->a);
++#endif
+ 
+     *score = viterbi_score;
+ 

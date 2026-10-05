@@ -1,0 +1,58 @@
+--- ../119-component-phrase-ids/sources/address_parser.c	2026-10-04 01:21:46
++++ sources/address_parser.c	2026-10-04 02:27:39
+@@ -256,6 +256,15 @@
+ #endif
+     }
+     trie_ftt_tab = tab; trie_ftt_trie = parser->phrases;
++#ifdef EXP_PDT
++    if (parser->postal_codes != NULL) {   // 111/126: every ASCII digit string of 1..5 bytes walked in the postcode trie (model data only)
++        extern const trie_t *trie_pdt_trie; extern uint64_t trie_pdt_tab[111110]; size_t k = 0; char d[6];
++        for (int len = 1; len <= 5; len++) { uint32_t lim = 1; for (int q = 0; q < len; q++) lim *= 10;
++            for (uint32_t v = 0; v < lim; v++) { uint32_t x = v; for (int q = len - 1; q >= 0; q--) { d[q] = (char)('0' + x % 10); x /= 10; }
++                trie_pdt_tab[k++] = trie_ftt_walk(parser->postal_codes, d, (size_t)len); } }
++        trie_pdt_trie = parser->postal_codes;
++    }
++#endif
+     if (getenv("FTT_VERBOSE") != NULL) fprintf(stderr, "FTT entries=%zu of %zu slots, table=%.1f MB\n", n, V, V * 8.0 / 1048576);
+ }
+ #endif
+@@ -1032,6 +1041,23 @@
+ 
+     char *normalized_str = normalized->str->a;
+     char *normalized_str_admin = normalized_admin->str->a;
++#ifdef EXP_PDT_PF
++    // 126: hints only. For each admin token starting with ASCII digits, the 1..5-digit table gives the node its postcode-trie walk ends at; prefetch it now,
++    // a whole stage before the postcode search, then (stage 2, before the component search) read it and prefetch the cells the search reads next.
++    static uint32_t pdp_fin[256]; size_t pdp_n = 0;
++    {   extern const trie_t *trie_pdt_trie; extern uint64_t trie_pdt_tab[111110]; static const uint32_t pb[6] = {0, 0, 10, 110, 1110, 11110};
++        if (trie_pdt_trie != NULL) {
++            const trie_node_t *na = trie_pdt_trie->nodes->a; size_t nn = trie_pdt_trie->nodes->n;
++            for (size_t j = 0; j < normalized_admin_tokens->n && pdp_n < 256; j++) {
++                token_t tk = normalized_admin_tokens->a[j]; const char *ts = normalized_str_admin + tk.offset;
++                if (tk.type == WHITESPACE || tk.len == 0 || (unsigned)((unsigned char)ts[0] - '0') >= 10u) continue;
++                uint32_t v = 0; size_t m = 0; while (m < 5 && m < tk.len && (unsigned)((unsigned char)ts[m] - '0') < 10u) { v = v * 10 + (uint32_t)(ts[m] - '0'); m++; }
++                uint64_t e = trie_pdt_tab[pb[m] + v]; uint32_t fin = (uint32_t)(e & 0x7FFFFF);
++                if ((e >> 63) && fin < nn) { __builtin_prefetch(&na[fin]); pdp_fin[pdp_n++] = fin; }
++            }
++        }
++    }
++#endif
+ 
+     /*
+     Address dictionary phrases
+@@ -1151,6 +1177,15 @@
+         phrase_array_push(context->suffix_phrases, suffix_phrase);
+     }
+ #endif
++#ifdef EXP_PDT_PF
++    if (pdp_n > 0) {   // 126 stage 2 (hints only): terminal ('\0') and continuation (' ') cells, or the data node and its tail for a leaf
++        extern const trie_t *trie_pdt_trie; trie_t *pt = (trie_t *)trie_pdt_trie; const trie_node_t *na = pt->nodes->a; size_t nn = pt->nodes->n;
++        static uint32_t c0 = UINT32_MAX, cs = UINT32_MAX; if (c0 == UINT32_MAX) { c0 = trie_get_char_index(pt, '\0'); cs = trie_get_char_index(pt, ' '); }
++        for (size_t q = 0; q < pdp_n; q++) { trie_node_t fn = na[pdp_fin[q]];
++            if (fn.base >= 0) { size_t a0 = (size_t)fn.base + c0, a1 = (size_t)fn.base + cs; if (a0 < nn) __builtin_prefetch(&na[a0]); if (a1 < nn && (a1 >> 3) != (a0 >> 3)) __builtin_prefetch(&na[a1]); }
++            else { size_t di = (size_t)(-fn.base); if (di < pt->data->n) { __builtin_prefetch(&pt->data->a[di]); } } }
++    }
++#endif
+     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+ #ifdef EXP_FTT
+     trie_ftt_slot = NULL; trie_ftt_n = 0;

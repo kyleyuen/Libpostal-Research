@@ -1,0 +1,9 @@
+r0_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+r0: library -O2 -flto 4s, scanner -O1 0s, link 2s, total 6s
+u1_gen: library -O2 -flto 5s, scanner -O1 0s, link 3s, total 8s
+u1: library -O2 -flto 4s, scanner -O1 0s, link 3s, total 7s
+u2_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+u2: library -O2 -flto 4s, scanner -O1 0s, link 3s, total 7s
+2026-09-30T23:47:38-07:00 u2 first build had no step-2 code (edit failed on whitespace); rebuilt
+u2_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+u2: library -O2 -flto 4s, scanner -O1 0s, link 3s, total 7s

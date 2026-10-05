@@ -1,0 +1,13 @@
+| variant | pass median µs | P10 µs | CPU median µs | cold median µs | clean median µs (n) | peak max MB | setup median s |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| fixes | 8.123 | 7.992 | 8.120 | 9.069 | 8.009 (57) | 2470.6 | 9.133 |
+| borrow | 7.979 | 7.828 | 7.971 | 8.687 | 7.863 (52) | 2470.6 | 8.956 |
+
+| trial | fixes median µs | borrow median µs | borrow speedup |
+|---:|---:|---:|---:|
+| 1 | 8.122 | 7.941 | 1.0227x |
+| 2 | 8.200 | 7.948 | 1.0317x |
+| 3 | 8.333 | 7.910 | 1.0534x |
+| 4 | 8.040 | 8.203 | 0.9801x |
+| 5 | 8.098 | 7.970 | 1.0160x |
+paired_median_speedup=1.02273x range=0.98013..1.05341x

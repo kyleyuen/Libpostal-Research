@@ -1,0 +1,3 @@
+PASS deterministic rebuild: all five generated files byte-identical
+PASS output checker negative control: one changed output produced exactly one mismatch and exit 1
+{"checked": 12863, "mismatches": 1, "first_ids": ["0001f4302f01f3354c19a09dfe18762826574d2e484d8fd03677b40a499e5459"]}

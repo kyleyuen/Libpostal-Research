@@ -1,0 +1,26 @@
+{
+ "argv": [
+  "run_suite.py",
+  "--config",
+  "/private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/1fd9b691-bcfa-41f8-b753-ee02bbe9bc7e/scratchpad/suite_smoke.json",
+  "--datasets",
+  "osm-v3,unseen-v11",
+  "--rounds",
+  "2",
+  "--passes",
+  "3",
+  "--fuzz-count",
+  "2000",
+  "--run-id",
+  "smoke-test"
+ ],
+ "start": "2026-10-04T22:31:14-0700",
+ "variants": [
+  "original",
+  "cpi"
+ ],
+ "datasets": [
+  "osm-v3",
+  "unseen-v11"
+ ]
+}

@@ -1,0 +1,38 @@
+
+== _platform_memmove: exclusive 5.2% of samples; by caller:
+    1.61%  cstring_array_add_string
+    0.74%  normalize_token
+    0.61%  cstring_array_get_phrase
+    0.55%  address_parser_parse
+    0.42%  add_ngrams
+    0.27%  word_or_phrase_memo
+    0.27%  cstring_array_add_string_len
+    0.21%  ap_response_block
+
+== _platform_strlen: exclusive 3.9% of samples; by caller:
+    1.53%  feature_array_add_nb
+    0.64%  address_parser_parse
+    0.41%  address_parser_features
+    0.32%  cstring_array_add_string
+    0.27%  cstring_array_get_phrase
+    0.27%  word_or_phrase_memo
+    0.18%  ap_ik_emit1
+    0.17%  char_array_cat
+
+== cstring_array_get_phrase: exclusive 0.8% of samples; by caller:
+    0.48%  address_parser_features
+    0.23%  word_or_phrase_at_index
+    0.07%  address_parser_parse
+    0.03%  word_or_phrase_memo
+
+== line-level exclusive inside address_parser_parse:
+   30.09%  address_parser.c:2360
+    5.04%  address_parser.c:2263
+    0.34%  address_parser.c:2203
+    0.10%  address_parser.c:2382
+    0.09%  address_parser.c:2399
+    0.08%  address_parser.c:2398
+    0.06%  address_parser.c:2231
+    0.06%  address_parser.c:2380
+    0.05%  address_parser.c:2384
+    0.04%  address_parser.c:2386

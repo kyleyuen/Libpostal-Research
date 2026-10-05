@@ -1,0 +1,33 @@
+x0_gen: clang lib -O2 -flto scanner -O1 link -flto : 9s
+x0: clang lib -O2 -flto scanner -O1 link -flto : 7s
+2026-10-01T02:11:30-07:00 PAUSE_TIMING set: 020 compiler builds must not overlap 019 timing
+x1 exit=1
+2026-10-01T02:12:32-07:00 NOTE: tools/build_cc.sh was edited (AR/RANLIB) while x2 was building with it; check x2 for corruption
+x2 exit=143
+2026-10-01T02:22:42-07:00 x2 (GCC) stopped at ~11 min: dsymutil on -g LTO binaries took >4 min per tool; to be rebuilt without -g
+x3_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 9s
+x3: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 7s
+2026-10-01T02:24:26-07:00 queued x2 (GCC no -g) cancelled: possible race with 019 timing between pause windows; to run after 019 timing
+x3 exit=0 (recorded manually: the chain bash was killed by an over-broad pkill pattern after starting x3; x3 artifacts complete)
+2026-10-01T02:28:09-07:00 PAUSE_TIMING set again for x1
+x1_gen: /opt/homebrew/opt/llvm/bin/clang lib -O2 -flto scanner -O1 link -flto -fuse-ld=/opt/homebrew/opt/lld/bin/ld64.lld : 9s
+x1_gen: /opt/homebrew/opt/llvm/bin/clang lib -O2 -flto scanner -O1 link -flto -fuse-ld=/opt/homebrew/opt/lld/bin/ld64.lld : 8s
+x1: /opt/homebrew/opt/llvm/bin/clang lib -O2 -flto scanner -O1 link -flto -fuse-ld=/opt/homebrew/opt/lld/bin/ld64.lld : 6s
+x1 exit=0 (26s)
+x1: /opt/homebrew/opt/llvm/bin/clang lib -O2 -flto scanner -O1 link -flto -fuse-ld=/opt/homebrew/opt/lld/bin/ld64.lld : 6s
+x1 exit=0
+2026-10-01T02:28:34-07:00 PAUSE_TIMING released after x1
+NOTE x1: tokenizer object reused from the cache file scanner_clang_O1.o (compiled by Apple clang 17): the cache key used the compiler's basename 'clang' for both compilers
+2026-10-01T02:33:11-07:00 PAUSE_TIMING released after x0/x1/x3 verification
+2026-10-01T02:33:36-07:00 zombie x1 waiter (woken by manual 'x3 exit' line) rebuilt x1 concurrently with the manual x1 build and released PAUSE_TIMING at 02:28:34 during x0/x1/x3 verification; x1 to be rebuilt cleanly and reverified after 019 timing
+z1_gen: /opt/homebrew/opt/llvm/bin/clang lib -O2 -flto scanner -O1 link -flto -fuse-ld=/opt/homebrew/opt/lld/bin/ld64.lld : 203s
+z1: /opt/homebrew/opt/llvm/bin/clang lib -O2 -flto scanner -O1 link -flto -fuse-ld=/opt/homebrew/opt/lld/bin/ld64.lld : 6s
+z1 exit=0 total 221s
+z3_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 9s
+z3: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 7s
+z3 exit=0 total 30s
+z2 exit=127 total 0s
+z2_gen: /opt/homebrew/bin/gcc-16 lib -O2 -flto=auto scanner -O1 link -flto=auto : 95s
+z2: /opt/homebrew/bin/gcc-16 lib -O2 -flto=auto scanner -O1 link -flto=auto : 14s
+z2 (rerun, watchdog) exit=0 total 120s
+NOTE session 2: z-builds use 019 p1's switches (EXTRA_SW="-DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK"); z1 = Homebrew clang 23.1.2 + llvm-ar + ld64.lld with its own tokenizer object; z3 = Apple clang + mimalloc.o; z2 = GCC 16.2 without -g under a 30-minute watchdog.

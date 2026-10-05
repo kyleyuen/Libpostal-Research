@@ -1,0 +1,171 @@
+--- ../114-trans-rows-prefetch/sources/address_parser.c	2026-10-04 00:42:52
++++ sources/address_parser.c	2026-10-04 01:21:46
+@@ -233,6 +233,11 @@
+ #ifdef EXP_FTT_ROLE_PREFETCH
+ extern uint32_t *crf_role_ids;
+ #define ap_role_ids_ext crf_role_ids
++#endif
++#ifdef EXP_CP_IDS
++#include <time.h>
++static void cp_build(address_parser_t *p);   // experiment 119, defined below
++const void *crf_state_dict_of(crf_t *c);   // crf.c (119)
+ #endif
+ #ifdef EXP_FTT
+ extern const trie_t *trie_ftt_trie; extern const uint64_t *trie_ftt_tab; extern const int32_t *trie_ftt_slot; extern size_t trie_ftt_n;
+@@ -415,6 +420,9 @@
+ 
+ #ifdef EXP_FTT
+     ap_ftt_build(parser);
++#endif
++#ifdef EXP_CP_IDS
++    cp_build(parser);
+ #endif
+     parser->context = address_parser_context_new();
+     if (parser->context == NULL) {
+@@ -1459,8 +1467,117 @@
+     { static unsigned long long n_checked = 0; n_checked++; if ((n_checked & 0xFFFFF) == 0) fprintf(stderr, "EXP_FA_LEN_VERIFY %llu phrases ok\n", n_checked); }
+ #endif
+     return e->buf->a;
++}
++#endif
++#ifdef EXP_CP_IDS
++// Experiment 119: the component-phrase feature block of address_parser_features, unchanged, as a function (also run at load on every trie key).
++static void ap_cp_emit(cstring_array *features, uint32_t cpt, uint32_t most_common, char *s, size_t sl) {
++        if (s != NULL && cpt > 0) {
++            FA_ADD2L(features, "phrase", s, sl);
++        }
++
++        if (cpt > 0) {
++            APF(features, cpt, ADDRESS_COMPONENT_SUBURB, "suburb", s, sl);
++            APF(features, cpt, ADDRESS_COMPONENT_CITY, "city", s, sl);
++            APF(features, cpt, ADDRESS_COMPONENT_CITY_DISTRICT, "city_district", s, sl);
++            APF(features, cpt, ADDRESS_COMPONENT_ISLAND, "island", s, sl);
++            APF(features, cpt, ADDRESS_COMPONENT_STATE_DISTRICT, "state_district", s, sl);
++            APF(features, cpt, ADDRESS_COMPONENT_STATE, "state", s, sl);
++            APF(features, cpt, ADDRESS_COMPONENT_COUNTRY_REGION, "country_region", s, sl);
++            APF(features, cpt, ADDRESS_COMPONENT_COUNTRY, "country", s, sl);
++            APF(features, cpt, ADDRESS_COMPONENT_WORLD_REGION, "world_region", s, sl);
++        }
++
++        if (cpt != most_common) {
++            if (most_common == ADDRESS_PARSER_BOUNDARY_CITY) {
++                FA_ADD2L(features, "commonly city", s, sl);
++            } else if (most_common == ADDRESS_PARSER_BOUNDARY_COUNTRY) {
++                FA_ADD2L(features, "commonly country", s, sl);
++            } else if (most_common == ADDRESS_PARSER_BOUNDARY_SUBURB) {
++                FA_ADD2L(features, "commonly suburb", s, sl);
++            } else if (most_common == ADDRESS_PARSER_BOUNDARY_CITY_DISTRICT) {
++                FA_ADD2L(features, "commonly city_district", s, sl);
++            } else if (most_common == ADDRESS_PARSER_BOUNDARY_STATE) {
++                FA_ADD2L(features, "commonly state", s, sl);
++            } else if (most_common == ADDRESS_PARSER_BOUNDARY_COUNTRY_REGION) {
++                FA_ADD2L(features, "commonly country_region", s, sl);
++            } else if (most_common == ADDRESS_PARSER_BOUNDARY_STATE_DISTRICT) {
++                FA_ADD2L(features, "commonly state_district", s, sl);
++            } else if (most_common == ADDRESS_PARSER_BOUNDARY_ISLAND) {
++                FA_ADD2L(features, "commonly island", s, sl);
++            }
++        }
++}
++#endif
++#ifdef EXP_CP_IDS
++// Table (model data only): for every component-trie key K with data id d, the state feature ids that ap_cp_emit(K, phrase_types[d]) produces and the
++// dictionary contains, in emission order (keys the dictionary lacks add nothing to the scores, so they are left out); cp_len[d] = strlen(K) (0 = unusable).
++// The runtime phrase string is the matched admin tokens joined by spaces; the trie match consumes exactly those token bytes with "" or " " between tokens,
++// so equal lengths mean equal strings (118 found rare matches without the spaces; their lengths differ and they take the original path).
++static uint32_t *cp_start = NULL, *cp_pool = NULL; static uint8_t *cp_cnt = NULL, *cp_len = NULL; static size_t cp_n = 0, cp_pool_n = 0, cp_pool_m = 0; static bool cp_ready = false;
++static cstring_array *cp_tmp = NULL; static const feature_dict_t *cp_dict = NULL;
++static void cp_ids_for(const char *k, size_t kl, uint32_t d, address_parser_t *p) {
++    address_parser_types_t t = p->phrase_types->a[d];
++    cstring_array_clear(cp_tmp); ap_cp_emit(cp_tmp, t.components, t.most_common, (char *)k, kl);
++    uint32_t c = 0; cp_start[d] = (uint32_t)cp_pool_n;
++    for (uint32_t q = 0; q < cp_tmp->indices->n; q++) {
++        char *ks = cstring_array_get_string(cp_tmp, q); uint32_t id;
++        if (fd_lookup(cp_dict, ks, strlen(ks), &id)) {
++            if (cp_pool_n == cp_pool_m) { size_t m = cp_pool_m ? cp_pool_m * 2 : 1 << 20; uint32_t *np = realloc(cp_pool, m * sizeof *np); if (np == NULL) { cp_n = 0; return; } cp_pool = np; cp_pool_m = m; }
++            cp_pool[cp_pool_n++] = id; c++;
++        }
++    }
++    if (c > 255) { cp_len[d] = 0; cp_pool_n = cp_start[d]; return; }
++    cp_cnt[d] = (uint8_t)c; cp_len[d] = (kl > 0 && kl <= 255) ? (uint8_t)kl : 0;
+ }
++static char cp_buf[4096];
++static void cp_dfs(trie_t *t, uint32_t node_id, size_t depth, address_parser_t *p) {
++    if (cp_n == 0) return;
++    trie_node_t node = trie_get_node(t, node_id);
++    if (node.base < 0) {
++        trie_data_node_t dn = t->data->a[-node.base]; const char *tail = (const char *)t->tail->a + dn.tail; size_t tl = strlen(tail);
++        size_t kl = depth; if (kl > 0 && cp_buf[kl - 1] == '\0') kl--;
++        if (kl + tl >= sizeof cp_buf || dn.data >= cp_n) return;
++        memcpy(cp_buf + kl, tail, tl); cp_buf[kl + tl] = 0;
++#ifdef EXP_CP_IDS_VERIFY
++        { uint32_t got; if (!trie_get_data(t, cp_buf, &got) || got != dn.data) { fprintf(stderr, "EXP_CP_IDS_VERIFY enumeration MISMATCH\n"); abort(); } }
+ #endif
++        cp_ids_for(cp_buf, kl + tl, dn.data, p);
++        return;
++    }
++    for (uint32_t ci = 0; ci < NUM_CHARS; ci++) {
++        uint32_t idx = trie_get_transition_index(t, node, (unsigned char)ci);
++        if (idx >= t->nodes->n || idx == node_id || (uint32_t)trie_get_node(t, idx).check != node_id || depth + 1 >= sizeof cp_buf) continue;
++        cp_buf[depth] = (char)ci; cp_dfs(t, idx, depth + 1, p);
++    }
++}
++static void cp_build(address_parser_t *p) {
++    if (getenv("CP_IDS_DISABLE") != NULL || p->model_type != ADDRESS_PARSER_TYPE_CRF || p->model.crf == NULL || crf_state_dict_of(p->model.crf) == NULL || p->phrases == NULL) return;
++    struct timespec t0, t1; clock_gettime(CLOCK_MONOTONIC, &t0);
++    cp_dict = (const feature_dict_t *)crf_state_dict_of(p->model.crf); cp_n = p->phrase_types->n; cp_tmp = cstring_array_new();
++    cp_start = malloc(cp_n * sizeof *cp_start); cp_cnt = calloc(cp_n, 1); cp_len = calloc(cp_n, 1);
++    if (cp_tmp == NULL || cp_start == NULL || cp_cnt == NULL || cp_len == NULL) { cp_n = 0; return; }
++    cp_dfs(p->phrases, ROOT_NODE_ID, 0, p);
++    cstring_array_destroy(cp_tmp); cp_tmp = NULL;
++    if (cp_n == 0) { free(cp_start); free(cp_cnt); free(cp_len); free(cp_pool); return; }
++    uint32_t *sh = realloc(cp_pool, (cp_pool_n ? cp_pool_n : 1) * sizeof *sh); if (sh != NULL) cp_pool = sh;
++    cp_ready = true; clock_gettime(CLOCK_MONOTONIC, &t1);
++    if (getenv("FTT_VERBOSE") != NULL) { size_t usable = 0; for (size_t d = 0; d < cp_n; d++) usable += cp_len[d] != 0;
++        fprintf(stderr, "CP_IDS data ids=%zu usable=%zu pool ids=%zu table=%.1f MB build=%.2fs\n", cp_n, usable, cp_pool_n, (cp_n * 6.0 + cp_pool_n * 4.0) / 1048576, (t1.tv_sec - t0.tv_sec) + (t1.tv_nsec - t0.tv_nsec) / 1e9); }
++}
++#ifdef EXP_CP_IDS_VERIFY
++static unsigned long long cp_verified = 0;
++__attribute__((destructor)) static void cp_report(void) { fprintf(stderr, "EXP_CP_IDS_VERIFY: %llu table uses checked, 0 mismatches\n", cp_verified); }
++static void cp_verify(uint32_t cpt, uint32_t mc, char *s, size_t sl, const uint32_t *q, uint32_t qn) {
++    static cstring_array *v = NULL; if (v == NULL) v = cstring_array_new(); cstring_array_clear(v);
++    ap_cp_emit(v, cpt, mc, s, sl); uint32_t c = 0;
++    for (uint32_t k = 0; k < v->indices->n; k++) { char *ks = cstring_array_get_string(v, k); uint32_t id;
++        if (fd_lookup(cp_dict, ks, strlen(ks), &id)) { if (c >= qn || q[c] != id) { fprintf(stderr, "EXP_CP_IDS_VERIFY MISMATCH phrase='%s'\n", s); abort(); } c++; } }
++    if (c != qn) { fprintf(stderr, "EXP_CP_IDS_VERIFY COUNT MISMATCH phrase='%s'\n", s); abort(); }
++    cp_verified++;
++}
++#endif
++#endif
+ static inline void add_phrase_features(cstring_array *features, uint32_t phrase_types, uint32_t component, char *phrase_type, char *phrase_string) {
+     if (phrase_types == component) {
+         log_debug("phrase=%s, phrase_types=%d\n", phrase_string, phrase_types);
+@@ -1833,6 +1950,20 @@
+             next_index = (ssize_t)component_phrase.start + component_phrase.len;
+         }
+ 
++#ifdef EXP_CP_IDS
++        bool cp_done = false;
++        if (component_phrase_string != NULL && component_phrase_types > 0) add_word_feature = false;
++        if (cp_ready && crf_ik_active && crf_features_accumulate && component_phrase_index < cp_n && cp_len[component_phrase_index] != 0 &&
++            cp_len[component_phrase_index] == component_phrase_string_len && component_phrase_string != NULL) {
++            const uint32_t *q = cp_pool + cp_start[component_phrase_index]; uint32_t qn = cp_cnt[component_phrase_index];
++            for (uint32_t k = 0; k < qn; k++) crf_ik_push(features, 0, (1ULL << 63) | q[k]);
++#ifdef EXP_CP_IDS_VERIFY
++            cp_verify(component_phrase_types, most_common, component_phrase_string, component_phrase_string_len, q, qn);
++#endif
++            cp_done = true;
++        }
++        if (!cp_done) ap_cp_emit(features, component_phrase_types, most_common, component_phrase_string, component_phrase_string_len);
++#else
+         if (component_phrase_string != NULL && component_phrase_types > 0) {
+             FA_ADD2L(features, "phrase", component_phrase_string, component_phrase_string_len);
+             add_word_feature = false;
+@@ -1869,6 +2000,7 @@
+                 FA_ADD2L(features, "commonly island", component_phrase_string, component_phrase_string_len);
+             }
+         }
++#endif
+     }
+ 
+     bool possible_postal_code = false;

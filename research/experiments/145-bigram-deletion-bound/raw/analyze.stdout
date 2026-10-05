@@ -1,0 +1,27 @@
+dev
+   total_parse        css 5.534/2.449  nbs 5.071/2.260  delta -0.463/-0.189
+   context_fill       css 1.716/0.372  nbs 1.708/0.367  delta -0.008/-0.005
+   features           css 1.361/0.681  nbs 1.190/0.582  delta -0.171/-0.099
+   lookups            css 0.663/0.200  nbs 0.443/0.139  delta -0.220/-0.060
+   accumulate         css 0.798/0.469  nbs 0.744/0.447  delta -0.054/-0.022
+   viterbi_and_rest   css 0.472/0.426  nbs 0.470/0.423  delta -0.003/-0.003
+   DeltaT_max(features+lookups) cold 0.391 us = 7.1% of total; warm 0.160 us = 6.5%
+   per-run css total cold [5.556, 5.517, 5.55, 5.502]  nbs [5.109, 4.945, 5.032, 5.119]
+osm
+   total_parse        css 3.640/2.147  nbs 3.216/1.976  delta -0.424/-0.172
+   context_fill       css 0.940/0.340  nbs 0.904/0.334  delta -0.036/-0.006
+   features           css 0.859/0.561  nbs 0.698/0.474  delta -0.160/-0.087
+   lookups            css 0.404/0.165  nbs 0.234/0.111  delta -0.170/-0.054
+   accumulate         css 0.595/0.436  nbs 0.548/0.417  delta -0.047/-0.019
+   viterbi_and_rest   css 0.420/0.384  nbs 0.413/0.380  delta -0.007/-0.004
+   DeltaT_max(features+lookups) cold 0.330 us = 9.1% of total; warm 0.141 us = 6.6%
+   per-run css total cold [3.641, 3.769, 3.639, 3.597]  nbs [3.206, 3.247, 3.225, 3.162]
+u11
+   total_parse        css 3.396/2.168  nbs 3.005/2.015  delta -0.391/-0.154
+   context_fill       css 0.832/0.331  nbs 0.796/0.328  delta -0.036/-0.003
+   features           css 0.835/0.587  nbs 0.687/0.506  delta -0.148/-0.082
+   lookups            css 0.382/0.170  nbs 0.228/0.120  delta -0.153/-0.050
+   accumulate         css 0.561/0.417  nbs 0.518/0.399  delta -0.044/-0.018
+   viterbi_and_rest   css 0.403/0.374  nbs 0.402/0.374  delta -0.001/+0.000
+   DeltaT_max(features+lookups) cold 0.301 us = 8.9% of total; warm 0.132 us = 6.1%
+   per-run css total cold [3.434, 3.367, 3.392, 3.401]  nbs [3.062, 2.992, 3.01, 3.001]

@@ -1,0 +1,11 @@
+stage                     pl cold  pl warm  dg cold  dg warm   Δcold
+total_parse                 7.076    3.102    7.072    3.074  -0.004
+normalize                   0.071    0.044    0.072    0.045  +0.001
+tokenize                    0.238    0.137    0.242    0.139  +0.004
+context_fill                2.219    0.532    2.210    0.526  -0.009
+predict_total               4.316    2.234    4.316    2.209  +0.000
+response                    0.210    0.135    0.212    0.136  +0.002
+features                    1.701    0.814    1.706    0.816  +0.005
+lookups                     0.853    0.277    0.860    0.270  +0.007
+accumulate                  1.104    0.525    1.094    0.506  -0.010
+viterbi_and_rest            0.657    0.618    0.658    0.618  +0.001

@@ -1,0 +1,33 @@
+## Q3. Cache lines (128 B) touched by the feature-weight lookups of build h's layout, per scored address (development split)
+
+Scored addresses: 10,305 (bypassed: 3). Scope: state + transition dictionary probes (slots, arena keys) and CSR rows (indptr, indices, data). Excluded: vocabulary dictionary, phrase/postal tries, normalization, the per-address state matrices (so this is a floor for the lookup path only).
+
+| Quantity per address | mean | median | P10 | P90 | max |
+|---|---:|---:|---:|---:|---:|
+| nS | 45.9 | 43 | 27 | 66 | 246 |
+| nP | 8.7 | 8 | 6 | 12 | 40 |
+| touches | 452.3 | 429 | 281 | 641 | 2586 |
+| distinct | 270.0 | 264 | 172 | 377 | 1021 |
+| d_slot | 55.0 | 52 | 35 | 77 | 307 |
+| d_arena | 44.0 | 42 | 25 | 65 | 181 |
+| d_indptr | 23.5 | 22 | 15 | 33 | 104 |
+| d_indices | 58.0 | 57 | 36 | 80 | 201 |
+| d_data | 89.5 | 88 | 55 | 125 | 303 |
+| compulsory | 57.5 | 49 | 13 | 108 | 620 |
+| miss_128K | 181.6 | 170 | 88 | 288 | 989 |
+| miss_16M | 76.4 | 67 | 30 | 133 | 620 |
+| miss_32M | 65.1 | 57 | 19 | 118 | 620 |
+| miss_64M | 57.8 | 50 | 14 | 108 | 620 |
+
+Totals: lookups 562,743; line touches 4,661,394; sum of per-address distinct lines 2,782,124; distinct lines over the whole split (compulsory) 592,742; LRU misses at 16 MiB 787,683 (0.283 of per-address distinct).
+miss_X = touches whose exact LRU stack distance over this stream is >= X (or first touch); the stream is ONLY these lookups, so real caches (shared with all other parser data) would miss more.
+
+Little's law floor, T_mem_min = N * lambda / M_max with lambda = 127.2 ns and M_max = 29.7 (Q2):
+
+| N used | N (mean per address) | T_mem_min us | share of 13.22 us |
+|---|---:|---:|---:|
+| distinct lines per address (every address starts cold) | 270.0 | 1.156 | 8.7% |
+| LRU misses at 16 MiB (lookup stream only) | 76.4 | 0.327 | 2.5% |
+| LRU misses at 64 MiB | 57.8 | 0.247 | 1.9% |
+
+With no overlap at all (M = 1): distinct lines x lambda = 34.34 us per address.

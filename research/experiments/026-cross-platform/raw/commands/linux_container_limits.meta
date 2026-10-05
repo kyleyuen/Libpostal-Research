@@ -1,0 +1,5 @@
+start=2026-10-01T17:40:14-07:00
+cwd=/Users/kyle/Desktop/HW/CSCI 201 Reserach
+argv: <docker> <run> <--rm> <--platform> <linux/arm64> <libpostal-audit-linux-arm64:026> <bash> <-c> <printf\ \"memory.max=\"\;\ cat\ /sys/fs/cgroup/memory.max\;\ printf\ \"memory.swap.max=\"\;\ cat\ /sys/fs/cgroup/memory.swap.max\;\ printf\ \"cpu.max=\"\;\ cat\ /sys/fs/cgroup/cpu.max\;\ grep\ -E\ \"MemTotal\|SwapTotal\"\ /proc/meminfo>
+exit=0
+end=2026-10-01T17:40:15-07:00

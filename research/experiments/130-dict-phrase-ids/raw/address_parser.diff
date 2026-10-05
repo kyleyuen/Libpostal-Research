@@ -1,0 +1,129 @@
+--- ../119-component-phrase-ids/sources/address_parser.c	2026-10-04 01:21:46
++++ sources/address_parser.c	2026-10-04 02:52:34
+@@ -237,6 +237,9 @@
+ #ifdef EXP_CP_IDS
+ #include <time.h>
+ static void cp_build(address_parser_t *p);   // experiment 119, defined below
++#ifdef EXP_DP_IDS
++static void dp_build(address_parser_t *p);   // experiment 130, defined below
++#endif
+ const void *crf_state_dict_of(crf_t *c);   // crf.c (119)
+ #endif
+ #ifdef EXP_FTT
+@@ -424,6 +427,9 @@
+ #ifdef EXP_CP_IDS
+     cp_build(parser);
+ #endif
++#ifdef EXP_DP_IDS
++    dp_build(parser);
++#endif
+     parser->context = address_parser_context_new();
+     if (parser->context == NULL) {
+         goto exit_address_parser_created;
+@@ -1467,8 +1473,81 @@
+     { static unsigned long long n_checked = 0; n_checked++; if ((n_checked & 0xFFFFF) == 0) fprintf(stderr, "EXP_FA_LEN_VERIFY %llu phrases ok\n", n_checked); }
+ #endif
+     return e->buf->a;
++}
++#endif
++#ifdef EXP_DP_IDS
++// Experiment 130: 119's method for the address-dictionary phrase features. ap_dp_emit = the original block (ten APF calls) as a function; at load every
++// key K of the address-dictionary trie (153,670; one key per data id, 129) is run through it with expansion d's components and the ids the state
++// dictionary contains are stored in order; dp_len[d] = strlen(K). At parse time equal lengths mean equal strings (the 118/129 argument).
++static void ap_dp_emit(cstring_array *features, uint32_t apt, char *s, size_t sl) {
++            APF(features, apt, LIBPOSTAL_ADDRESS_STREET, "street", s, sl);
++            APF(features, apt, LIBPOSTAL_ADDRESS_NAME, "name", s, sl);
++            APF(features, apt, LIBPOSTAL_ADDRESS_CATEGORY, "category", s, sl);
++            APF(features, apt, LIBPOSTAL_ADDRESS_UNIT, "unit", s, sl);
++            APF(features, apt, LIBPOSTAL_ADDRESS_PO_BOX, "po_box", s, sl);
++            APF(features, apt, LIBPOSTAL_ADDRESS_LEVEL, "level", s, sl);
++            APF(features, apt, LIBPOSTAL_ADDRESS_ENTRANCE, "entrance", s, sl);
++            APF(features, apt, LIBPOSTAL_ADDRESS_STAIRCASE, "staircase", s, sl);
++            APF(features, apt, LIBPOSTAL_ADDRESS_HOUSE_NUMBER, "house_number", s, sl);
++            APF(features, apt, LIBPOSTAL_ADDRESS_POSTAL_CODE, "postal_code", s, sl);
++}
++static uint32_t *dp_start = NULL, *dp_pool = NULL; static uint8_t *dp_cnt = NULL, *dp_len = NULL; static size_t dp_n = 0, dp_pool_n = 0, dp_pool_m = 0; static bool dp_ready = false;
++static cstring_array *dp_tmp = NULL; static const feature_dict_t *dp_dict = NULL; static char dp_buf[4096];
++static void dp_dfs(trie_t *t, uint32_t node_id, size_t depth) {
++    if (dp_n == 0) return;
++    trie_node_t node = trie_get_node(t, node_id);
++    if (node.base < 0) {
++        trie_data_node_t dn = t->data->a[-node.base]; const char *tail = (const char *)t->tail->a + dn.tail; size_t tl = strlen(tail);
++        size_t kl = depth; if (kl > 0 && dp_buf[kl - 1] == '\0') kl--;
++        if (kl + tl >= sizeof dp_buf || dn.data >= dp_n) return;
++        memcpy(dp_buf + kl, tail, tl); dp_buf[kl + tl] = 0; size_t L = kl + tl;
++#ifdef EXP_DP_IDS_VERIFY
++        { uint32_t got; if (!trie_get_data(t, dp_buf, &got) || got != dn.data) { fprintf(stderr, "EXP_DP_IDS_VERIFY enumeration MISMATCH\n"); abort(); } }
++#endif
++        uint32_t d = dn.data;
++        if (dp_len[d] != 0 || dp_cnt[d] == 255) { dp_len[d] = 0; dp_cnt[d] = 255; return; }   // a second key for d: never use the table for d
++        address_expansion_value_t *ev = address_dictionary_get_expansions(d); if (ev == NULL || L == 0 || L > 255) { dp_cnt[d] = 255; return; }   // seen, unusable
++        cstring_array_clear(dp_tmp); ap_dp_emit(dp_tmp, ev->components, dp_buf, L);
++        uint32_t c = 0; dp_start[d] = (uint32_t)dp_pool_n;
++        for (uint32_t q = 0; q < dp_tmp->indices->n; q++) { char *ks = cstring_array_get_string(dp_tmp, q); uint32_t id;
++            if (fd_lookup(dp_dict, ks, strlen(ks), &id)) {
++                if (dp_pool_n == dp_pool_m) { size_t m = dp_pool_m ? dp_pool_m * 2 : 1 << 16; uint32_t *np = realloc(dp_pool, m * sizeof *np); if (np == NULL) { dp_n = 0; return; } dp_pool = np; dp_pool_m = m; }
++                dp_pool[dp_pool_n++] = id; c++; } }
++        if (c > 254) { dp_pool_n = dp_start[d]; return; }
++        dp_cnt[d] = (uint8_t)c; dp_len[d] = (uint8_t)L;
++        return;
++    }
++    for (uint32_t ci = 0; ci < NUM_CHARS; ci++) {
++        uint32_t idx = trie_get_transition_index(t, node, (unsigned char)ci);
++        if (idx >= t->nodes->n || idx == node_id || (uint32_t)trie_get_node(t, idx).check != node_id || depth + 1 >= sizeof dp_buf) continue;
++        dp_buf[depth] = (char)ci; dp_dfs(t, idx, depth + 1);
++    }
++}
++static void dp_build(address_parser_t *p) {
++    address_dictionary_t *ad = get_address_dictionary();
++    if (getenv("DP_IDS_DISABLE") != NULL || ad == NULL || ad->trie == NULL || ad->values == NULL || p->model_type != ADDRESS_PARSER_TYPE_CRF || crf_state_dict_of(p->model.crf) == NULL) return;
++    dp_dict = (const feature_dict_t *)crf_state_dict_of(p->model.crf); dp_n = ad->values->n; dp_tmp = cstring_array_new();
++    dp_start = malloc(dp_n * sizeof *dp_start); dp_cnt = calloc(dp_n, 1); dp_len = calloc(dp_n, 1);
++    if (dp_tmp == NULL || dp_start == NULL || dp_cnt == NULL || dp_len == NULL) { dp_n = 0; return; }
++    dp_dfs(ad->trie, ROOT_NODE_ID, 0);
++    cstring_array_destroy(dp_tmp); dp_tmp = NULL;
++    if (dp_n == 0) return;
++    dp_ready = true;
++    if (getenv("FTT_VERBOSE") != NULL) { size_t usable = 0; for (size_t d = 0; d < dp_n; d++) usable += dp_len[d] != 0; fprintf(stderr, "DP_IDS data ids=%zu usable=%zu pool ids=%zu\n", dp_n, usable, dp_pool_n); }
++}
++#ifdef EXP_DP_IDS_VERIFY
++static unsigned long long dp_verified = 0;
++__attribute__((destructor)) static void dp_report(void) { fprintf(stderr, "EXP_DP_IDS_VERIFY: %llu table uses checked, 0 mismatches\n", dp_verified); }
++static void dp_verify(uint32_t apt, char *s, size_t sl, const uint32_t *q, uint32_t qn) {
++    static cstring_array *v = NULL; if (v == NULL) v = cstring_array_new(); cstring_array_clear(v);
++    ap_dp_emit(v, apt, s, sl); uint32_t c = 0;
++    for (uint32_t k = 0; k < v->indices->n; k++) { char *ks = cstring_array_get_string(v, k); uint32_t id;
++        if (fd_lookup(dp_dict, ks, strlen(ks), &id)) { if (c >= qn || q[c] != id) { fprintf(stderr, "EXP_DP_IDS_VERIFY MISMATCH phrase='%s'\n", s); abort(); } c++; } }
++    if (c != qn) { fprintf(stderr, "EXP_DP_IDS_VERIFY COUNT MISMATCH phrase='%s'\n", s); abort(); }
++    dp_verified++;
+ }
+ #endif
++#endif
+ #ifdef EXP_CP_IDS
+ // Experiment 119: the component-phrase feature block of address_parser_features, unchanged, as a function (also run at load on every trie key).
+ static void ap_cp_emit(cstring_array *features, uint32_t cpt, uint32_t most_common, char *s, size_t sl) {
+@@ -1905,6 +1984,16 @@
+             add_word_feature = false;
+             log_debug("phrase_string=%s\n", phrase_string);
+ 
++#ifdef EXP_DP_IDS
++            if (dp_ready && crf_ik_active && crf_features_accumulate && expansion_index < dp_n && dp_len[expansion_index] != 0 &&
++                dp_len[expansion_index] == phrase_string_len && phrase_string != NULL) {
++                const uint32_t *q = dp_pool + dp_start[expansion_index]; uint32_t qn = dp_cnt[expansion_index];
++                for (uint32_t k = 0; k < qn; k++) crf_ik_push(features, 0, (1ULL << 63) | q[k]);
++#ifdef EXP_DP_IDS_VERIFY
++                dp_verify(address_phrase_types, phrase_string, phrase_string_len, q, qn);
++#endif
++            } else ap_dp_emit(features, address_phrase_types, phrase_string, phrase_string_len);
++#else
+             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_STREET, "street", phrase_string, phrase_string_len);
+             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_NAME, "name", phrase_string, phrase_string_len);
+             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_CATEGORY, "category", phrase_string, phrase_string_len);
+@@ -1915,6 +2004,7 @@
+             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_STAIRCASE, "staircase", phrase_string, phrase_string_len);
+             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_HOUSE_NUMBER, "house_number", phrase_string, phrase_string_len);
+             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_POSTAL_CODE, "postal_code", phrase_string, phrase_string_len);
++#endif
+         }
+     }
+ 

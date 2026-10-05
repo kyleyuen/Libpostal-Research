@@ -1,0 +1,31 @@
+build exit 0
+dump exit 0 sha 45574ee2b1972f1acf2d
+2026-10-02T17:04:42-0700 START ic_l3_p2_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l3/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T17:04:51-0700 END ic_l3_p2_r1 exit=0
+2026-10-02T17:04:53-0700 START ic_l3_p102_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l3/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T17:05:10-0700 END ic_l3_p102_r1 exit=0
+2026-10-02T17:05:12-0700 START ic_dupl_p2_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/042-cold-attribution/artifacts/dupl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T17:05:22-0700 END ic_dupl_p2_r1 exit=0
+2026-10-02T17:05:24-0700 START ic_dupl_p102_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/042-cold-attribution/artifacts/dupl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T17:05:42-0700 END ic_dupl_p102_r1 exit=0
+2026-10-02T17:05:44-0700 START ic_l3_p2_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l3/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T17:05:53-0700 END ic_l3_p2_r2 exit=0
+2026-10-02T17:05:55-0700 START ic_l3_p102_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l3/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T17:06:12-0700 END ic_l3_p102_r2 exit=0
+2026-10-02T17:06:14-0700 START ic_dupl_p2_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/042-cold-attribution/artifacts/dupl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T17:06:23-0700 END ic_dupl_p2_r2 exit=0
+2026-10-02T17:06:25-0700 START ic_dupl_p102_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/042-cold-attribution/artifacts/dupl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T17:06:44-0700 END ic_dupl_p102_r2 exit=0
+2026-10-02T17:06:46-0700 START ic_l3_p2_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l3/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T17:06:55-0700 END ic_l3_p2_r3 exit=0
+2026-10-02T17:06:57-0700 START ic_l3_p102_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l3/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T17:07:14-0700 END ic_l3_p102_r3 exit=0
+2026-10-02T17:07:16-0700 START ic_dupl_p2_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/042-cold-attribution/artifacts/dupl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T17:07:25-0700 END ic_dupl_p2_r3 exit=0
+2026-10-02T17:07:27-0700 START ic_dupl_p102_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/042-cold-attribution/artifacts/dupl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 102
+2026-10-02T17:07:46-0700 END ic_dupl_p102_r3 exit=0
+build nnz exit 0
+nnz run exit 0
+2026-10-02T17:08:37-0700 NOTE nnz attempt 1: instrumentation patch did not apply (anchor mismatch); counter build ran without it (no output)
+build nnz2 exit 0
+nnz run2 exit 0

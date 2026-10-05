@@ -1,0 +1,223 @@
+2026-10-02T14:20:40-0700 START build_tv1: env EXTRA_SW=-DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 PGO_TRAIN=/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt /bin/bash /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/tools/build_cc.sh tv1 clang llvm -O2 -flto -O1 -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o
+2026-10-02T14:21:10-0700 END build_tv1 exit=0
+2026-10-02T14:21:10-0700 START build_tnv: env EXTRA_SW=-DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 PGO_TRAIN=/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt /bin/bash /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/tools/build_cc.sh tnv clang llvm -O2 -flto -O1 -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o
+2026-10-02T14:21:40-0700 END build_tnv exit=0
+2026-10-02T14:21:40-0700 START build_tosm: env EXTRA_SW=-DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 PGO_TRAIN=/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.txt /bin/bash /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/tools/build_cc.sh tosm clang llvm -O2 -flto -O1 -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o
+2026-10-02T14:22:10-0700 END build_tosm exit=0
+2026-10-02T14:22:10-0700 START build_nopgo: env EXTRA_SW=-DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 /bin/bash /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/tools/build_cc.sh nopgo clang none -O2 -flto -O1 -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o
+2026-10-02T14:22:16-0700 END build_nopgo exit=0
+2026-10-02T14:22:16-0700 START dump_l4_v1: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt
+2026-10-02T14:22:25-0700 END dump_l4_v1 exit=0
+2026-10-02T14:22:25-0700 START dump_tv1_v1: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt
+2026-10-02T14:22:35-0700 END dump_tv1_v1 exit=0
+2026-10-02T14:22:35-0700 START dump_tnv_v1: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt
+2026-10-02T14:22:44-0700 END dump_tnv_v1 exit=0
+2026-10-02T14:22:44-0700 START dump_tosm_v1: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt
+2026-10-02T14:22:53-0700 END dump_tosm_v1 exit=0
+2026-10-02T14:22:53-0700 START dump_nopgo_v1: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt
+2026-10-02T14:23:02-0700 END dump_nopgo_v1 exit=0
+2026-10-02T14:23:02-0700 START dump_l4_nv: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt
+2026-10-02T14:23:11-0700 END dump_l4_nv exit=0
+2026-10-02T14:23:11-0700 START dump_tv1_nv: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt
+2026-10-02T14:23:20-0700 END dump_tv1_nv exit=0
+2026-10-02T14:23:20-0700 START dump_tnv_nv: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt
+2026-10-02T14:23:29-0700 END dump_tnv_nv exit=0
+2026-10-02T14:23:29-0700 START dump_tosm_nv: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt
+2026-10-02T14:23:38-0700 END dump_tosm_nv exit=0
+2026-10-02T14:23:38-0700 START dump_nopgo_nv: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt
+2026-10-02T14:23:47-0700 END dump_nopgo_nv exit=0
+2026-10-02T14:23:47-0700 START dump_l4_osm: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.txt
+2026-10-02T14:23:56-0700 END dump_l4_osm exit=0
+2026-10-02T14:23:56-0700 START dump_tv1_osm: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.txt
+2026-10-02T14:24:04-0700 END dump_tv1_osm exit=0
+2026-10-02T14:24:04-0700 START dump_tnv_osm: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.txt
+2026-10-02T14:24:13-0700 END dump_tnv_osm exit=0
+2026-10-02T14:24:14-0700 START dump_tosm_osm: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.txt
+2026-10-02T14:24:22-0700 END dump_tosm_osm exit=0
+2026-10-02T14:24:22-0700 START dump_nopgo_osm: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.txt
+2026-10-02T14:24:32-0700 END dump_nopgo_osm exit=0
+2026-10-02T14:24:32-0700 START timing/v1_r1_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:24:43-0700 END timing/v1_r1_l4 exit=0
+2026-10-02T14:25:05-0700 NOTE attempt 1 timing aborted after one run: cap() set global n, clobbering the binary count (outer.stderr: 'division by 0'); script still wrote DONE. Preserved as raw/timing_attempt1_failed and raw/attempt1_DONE_premature. Builds and 12/12 output checks are valid. Timing rerun with tools/run_timing.sh.
+2026-10-02T14:25:14-0700 START timing/v1_r1_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:25:25-0700 END timing/v1_r1_l4 exit=0
+2026-10-02T14:25:27-0700 START timing/v1_r1_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:25:38-0700 END timing/v1_r1_tv1 exit=0
+2026-10-02T14:25:40-0700 START timing/v1_r1_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:25:51-0700 END timing/v1_r1_tnv exit=0
+2026-10-02T14:25:53-0700 START timing/v1_r1_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:26:04-0700 END timing/v1_r1_tosm exit=0
+2026-10-02T14:26:06-0700 START timing/v1_r1_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:26:17-0700 END timing/v1_r1_nopgo exit=0
+2026-10-02T14:26:19-0700 START timing/v1_r1_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:26:31-0700 END timing/v1_r1_orig exit=0
+2026-10-02T14:26:33-0700 START timing/nv_r1_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:26:44-0700 END timing/nv_r1_l4 exit=0
+2026-10-02T14:26:46-0700 START timing/nv_r1_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:26:57-0700 END timing/nv_r1_tv1 exit=0
+2026-10-02T14:26:59-0700 START timing/nv_r1_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:27:10-0700 END timing/nv_r1_tnv exit=0
+2026-10-02T14:27:12-0700 START timing/nv_r1_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:27:23-0700 END timing/nv_r1_tosm exit=0
+2026-10-02T14:27:25-0700 START timing/nv_r1_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:27:36-0700 END timing/nv_r1_nopgo exit=0
+2026-10-02T14:27:38-0700 START timing/nv_r1_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:27:50-0700 END timing/nv_r1_orig exit=0
+2026-10-02T14:27:52-0700 START timing/osm_r1_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:28:02-0700 END timing/osm_r1_l4 exit=0
+2026-10-02T14:28:04-0700 START timing/osm_r1_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:28:14-0700 END timing/osm_r1_tv1 exit=0
+2026-10-02T14:28:16-0700 START timing/osm_r1_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:28:26-0700 END timing/osm_r1_tnv exit=0
+2026-10-02T14:28:28-0700 START timing/osm_r1_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:28:38-0700 END timing/osm_r1_tosm exit=0
+2026-10-02T14:28:40-0700 START timing/osm_r1_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:28:50-0700 END timing/osm_r1_nopgo exit=0
+2026-10-02T14:28:52-0700 START timing/osm_r1_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:29:00-0700 END timing/osm_r1_orig exit=0
+2026-10-02T14:29:02-0700 START timing/v1_r2_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:29:13-0700 END timing/v1_r2_tv1 exit=0
+2026-10-02T14:29:15-0700 START timing/v1_r2_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:29:26-0700 END timing/v1_r2_tnv exit=0
+2026-10-02T14:29:28-0700 START timing/v1_r2_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:29:39-0700 END timing/v1_r2_tosm exit=0
+2026-10-02T14:29:41-0700 START timing/v1_r2_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:29:52-0700 END timing/v1_r2_nopgo exit=0
+2026-10-02T14:29:54-0700 START timing/v1_r2_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:30:06-0700 END timing/v1_r2_orig exit=0
+2026-10-02T14:30:08-0700 START timing/v1_r2_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:30:18-0700 END timing/v1_r2_l4 exit=0
+2026-10-02T14:30:20-0700 START timing/nv_r2_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:30:31-0700 END timing/nv_r2_tv1 exit=0
+2026-10-02T14:30:33-0700 START timing/nv_r2_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:30:44-0700 END timing/nv_r2_tnv exit=0
+2026-10-02T14:30:46-0700 START timing/nv_r2_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:30:57-0700 END timing/nv_r2_tosm exit=0
+2026-10-02T14:30:59-0700 START timing/nv_r2_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:31:10-0700 END timing/nv_r2_nopgo exit=0
+2026-10-02T14:31:12-0700 START timing/nv_r2_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:31:24-0700 END timing/nv_r2_orig exit=0
+2026-10-02T14:31:26-0700 START timing/nv_r2_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:31:37-0700 END timing/nv_r2_l4 exit=0
+2026-10-02T14:31:39-0700 START timing/osm_r2_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:31:49-0700 END timing/osm_r2_tv1 exit=0
+2026-10-02T14:31:51-0700 START timing/osm_r2_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:32:00-0700 END timing/osm_r2_tnv exit=0
+2026-10-02T14:32:02-0700 START timing/osm_r2_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:32:12-0700 END timing/osm_r2_tosm exit=0
+2026-10-02T14:32:14-0700 START timing/osm_r2_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:32:24-0700 END timing/osm_r2_nopgo exit=0
+2026-10-02T14:32:26-0700 START timing/osm_r2_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:32:34-0700 END timing/osm_r2_orig exit=0
+2026-10-02T14:32:36-0700 START timing/osm_r2_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:32:46-0700 END timing/osm_r2_l4 exit=0
+2026-10-02T14:32:48-0700 START timing/v1_r3_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:32:58-0700 END timing/v1_r3_tnv exit=0
+2026-10-02T14:33:00-0700 START timing/v1_r3_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:33:11-0700 END timing/v1_r3_tosm exit=0
+2026-10-02T14:33:13-0700 START timing/v1_r3_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:33:24-0700 END timing/v1_r3_nopgo exit=0
+2026-10-02T14:33:26-0700 START timing/v1_r3_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:33:37-0700 END timing/v1_r3_orig exit=0
+2026-10-02T14:33:39-0700 START timing/v1_r3_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:33:50-0700 END timing/v1_r3_l4 exit=0
+2026-10-02T14:33:52-0700 START timing/v1_r3_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:34:03-0700 END timing/v1_r3_tv1 exit=0
+2026-10-02T14:34:05-0700 START timing/nv_r3_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:34:15-0700 END timing/nv_r3_tnv exit=0
+2026-10-02T14:34:17-0700 START timing/nv_r3_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:34:28-0700 END timing/nv_r3_tosm exit=0
+2026-10-02T14:34:30-0700 START timing/nv_r3_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:34:41-0700 END timing/nv_r3_nopgo exit=0
+2026-10-02T14:34:43-0700 START timing/nv_r3_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:34:55-0700 END timing/nv_r3_orig exit=0
+2026-10-02T14:34:57-0700 START timing/nv_r3_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:35:08-0700 END timing/nv_r3_l4 exit=0
+2026-10-02T14:35:10-0700 START timing/nv_r3_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:35:20-0700 END timing/nv_r3_tv1 exit=0
+2026-10-02T14:35:23-0700 START timing/osm_r3_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:35:32-0700 END timing/osm_r3_tnv exit=0
+2026-10-02T14:35:34-0700 START timing/osm_r3_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:35:44-0700 END timing/osm_r3_tosm exit=0
+2026-10-02T14:35:46-0700 START timing/osm_r3_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:35:56-0700 END timing/osm_r3_nopgo exit=0
+2026-10-02T14:35:58-0700 START timing/osm_r3_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:36:06-0700 END timing/osm_r3_orig exit=0
+2026-10-02T14:36:08-0700 START timing/osm_r3_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:36:18-0700 END timing/osm_r3_l4 exit=0
+2026-10-02T14:36:20-0700 START timing/osm_r3_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:36:29-0700 END timing/osm_r3_tv1 exit=0
+2026-10-02T14:36:32-0700 START timing/v1_r4_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:36:42-0700 END timing/v1_r4_tosm exit=0
+2026-10-02T14:36:44-0700 START timing/v1_r4_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:36:55-0700 END timing/v1_r4_nopgo exit=0
+2026-10-02T14:36:57-0700 START timing/v1_r4_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:37:09-0700 END timing/v1_r4_orig exit=0
+2026-10-02T14:37:11-0700 START timing/v1_r4_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:37:22-0700 END timing/v1_r4_l4 exit=0
+2026-10-02T14:37:24-0700 START timing/v1_r4_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:37:35-0700 END timing/v1_r4_tv1 exit=0
+2026-10-02T14:37:37-0700 START timing/v1_r4_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:37:49-0700 END timing/v1_r4_tnv exit=0
+2026-10-02T14:37:51-0700 START timing/nv_r4_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:38:04-0700 END timing/nv_r4_tosm exit=0
+2026-10-02T14:38:06-0700 START timing/nv_r4_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:38:18-0700 END timing/nv_r4_nopgo exit=0
+2026-10-02T14:38:20-0700 START timing/nv_r4_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:38:32-0700 END timing/nv_r4_orig exit=0
+2026-10-02T14:38:34-0700 START timing/nv_r4_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:38:45-0700 END timing/nv_r4_l4 exit=0
+2026-10-02T14:38:47-0700 START timing/nv_r4_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:38:58-0700 END timing/nv_r4_tv1 exit=0
+2026-10-02T14:39:00-0700 START timing/nv_r4_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:39:11-0700 END timing/nv_r4_tnv exit=0
+2026-10-02T14:39:13-0700 START timing/osm_r4_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:39:23-0700 END timing/osm_r4_tosm exit=0
+2026-10-02T14:39:25-0700 START timing/osm_r4_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:39:35-0700 END timing/osm_r4_nopgo exit=0
+2026-10-02T14:39:37-0700 START timing/osm_r4_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:39:45-0700 END timing/osm_r4_orig exit=0
+2026-10-02T14:39:47-0700 START timing/osm_r4_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:39:57-0700 END timing/osm_r4_l4 exit=0
+2026-10-02T14:39:59-0700 START timing/osm_r4_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:40:09-0700 END timing/osm_r4_tv1 exit=0
+2026-10-02T14:40:11-0700 START timing/osm_r4_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:40:21-0700 END timing/osm_r4_tnv exit=0
+2026-10-02T14:40:23-0700 START timing/v1_r5_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:40:34-0700 END timing/v1_r5_nopgo exit=0
+2026-10-02T14:40:36-0700 START timing/v1_r5_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:40:48-0700 END timing/v1_r5_orig exit=0
+2026-10-02T14:40:50-0700 START timing/v1_r5_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:41:01-0700 END timing/v1_r5_l4 exit=0
+2026-10-02T14:41:03-0700 START timing/v1_r5_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:41:13-0700 END timing/v1_r5_tv1 exit=0
+2026-10-02T14:41:15-0700 START timing/v1_r5_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:41:26-0700 END timing/v1_r5_tnv exit=0
+2026-10-02T14:41:28-0700 START timing/v1_r5_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-02T14:41:39-0700 END timing/v1_r5_tosm exit=0
+2026-10-02T14:41:41-0700 START timing/nv_r5_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:41:52-0700 END timing/nv_r5_nopgo exit=0
+2026-10-02T14:41:54-0700 START timing/nv_r5_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:42:06-0700 END timing/nv_r5_orig exit=0
+2026-10-02T14:42:08-0700 START timing/nv_r5_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:42:19-0700 END timing/nv_r5_l4 exit=0
+2026-10-02T14:42:21-0700 START timing/nv_r5_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:42:31-0700 END timing/nv_r5_tv1 exit=0
+2026-10-02T14:42:33-0700 START timing/nv_r5_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:42:44-0700 END timing/nv_r5_tnv exit=0
+2026-10-02T14:42:46-0700 START timing/nv_r5_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv 20
+2026-10-02T14:42:57-0700 END timing/nv_r5_tosm exit=0
+2026-10-02T14:42:59-0700 START timing/osm_r5_nopgo: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/nopgo/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:43:09-0700 END timing/osm_r5_nopgo exit=0
+2026-10-02T14:43:11-0700 START timing/osm_r5_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:43:20-0700 END timing/osm_r5_orig exit=0
+2026-10-02T14:43:22-0700 START timing/osm_r5_l4: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:43:31-0700 END timing/osm_r5_l4 exit=0
+2026-10-02T14:43:34-0700 START timing/osm_r5_tv1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tv1/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:43:43-0700 END timing/osm_r5_tv1 exit=0
+2026-10-02T14:43:45-0700 START timing/osm_r5_tnv: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tnv/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:43:55-0700 END timing/osm_r5_tnv exit=0
+2026-10-02T14:43:57-0700 START timing/osm_r5_tosm: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/031-pgo-crosstrain/artifacts/tosm/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-02T14:44:07-0700 END timing/osm_r5_tosm exit=0
+2026-10-02T14:56:08-0700 NOTE first method-check loop failed (shell quoting; original never launched, loop waited); stopped; empty outputs removed; rerun with tools/steady_check.sh
+2026-10-02T15:07:54-0700 NOTE steady_variants.sh attempt 1 failed (unquoted paths with spaces split in the for-list; no binary launched); stopped; preserved in raw/steady/variants_attempt1_failed; rerun with quoted array

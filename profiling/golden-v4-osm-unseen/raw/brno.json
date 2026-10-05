@@ -1,0 +1,5343 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-03T06:19:04Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 83365417,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:housenumber": "4",
+    "addr:postcode": "60200",
+    "addr:street": "Kobližná",
+    "amenity": "library",
+    "check_date:opening_hours": "2026-03-25",
+    "email": "kjm@kjm.cz",
+    "name": "Knihovna Jiřího Mahena",
+    "old_name": "Schrattenbachův palác",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-14:00; Su off",
+    "phone": "+420 542 532 163",
+    "source": "uhul:ortofoto",
+    "website": "https://www.kjm.cz/",
+    "wheelchair": "yes",
+    "wikidata": "Q12029621"
+  }
+},
+{
+  "type": "node",
+  "id": 83483337,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:country": "CZ",
+    "addr:housenumber": "1a",
+    "addr:postcode": "66226",
+    "addr:street": "Moravské náměstí",
+    "email": "pokl_mp@moravska-galerie.cz",
+    "fee": "no",
+    "name": "Místodržitelský palác",
+    "name:es": "Palacio del Gobernador",
+    "old_name": "Augustiniánský klášter",
+    "opening_hours": "We,Fr-Su 10:00-18:00; Th 10:00-19:00",
+    "phone": "+420 771 242 331",
+    "source": "cuzk:km",
+    "tourism": "museum",
+    "website": "https://moravska-galerie.cz/kontakt/mistodrzitelsky-palac/",
+    "wikidata": "Q12039262",
+    "wikipedia": "cs:Místodržitelský palác (Brno)"
+  }
+},
+{
+  "type": "node",
+  "id": 83483340,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:housenumber": "18",
+    "addr:postcode": "60200",
+    "addr:street": "Husova",
+    "amenity": "cafe",
+    "bar": "yes",
+    "email": "morgalcafe@gmail.com",
+    "indoor_seating": "yes",
+    "name": "Morgal",
+    "opening_hours": "Mo 16:00-22:00; Tu-Su 11:00-23:00",
+    "outdoor_seating": "yes",
+    "phone": "+420 736 776 728",
+    "smoking": "no",
+    "website": "https://www.morgal.cz/",
+    "website:menu": "https://www.morgal.cz",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 159540426,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:housenumber": "9",
+    "addr:postcode": "60200",
+    "addr:street": "Zelný trh",
+    "amenity": "theatre",
+    "check_date": "2026-06-01",
+    "name": "Husa na provázku",
+    "old_name": "Na provázku",
+    "source": "uhul:ortofoto",
+    "wikidata": "Q11812413",
+    "wikipedia": "cs:Divadlo Husa na provázku"
+  }
+},
+{
+  "type": "node",
+  "id": 295657863,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:housenumber": "127/3",
+    "addr:postcode": "60200",
+    "addr:street": "Moravské náměstí",
+    "amenity": "cinema",
+    "check_date": "2026-03-27",
+    "name": "Scala",
+    "opening_hours": "Mo-Su 17:00-21:00",
+    "website": "https://www.kinoscala.cz",
+    "wheelchair": "no",
+    "wikidata": "Q12029228",
+    "wikipedia": "cs:Kino Scala"
+  }
+},
+{
+  "type": "node",
+  "id": 296437971,
+  "tags": {
+    "addr:conscriptionnumber": "1",
+    "addr:housenumber": "1/2",
+    "addr:postcode": "60200",
+    "addr:street": "Rooseveltova",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19093136",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296438323,
+  "tags": {
+    "addr:conscriptionnumber": "16",
+    "addr:housenumber": "16/2b",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "2b",
+    "ref:ruian:addr": "19093349",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296438483,
+  "tags": {
+    "addr:conscriptionnumber": "324",
+    "addr:housenumber": "324/14",
+    "addr:place": "Zábrdovice",
+    "addr:postcode": "60200",
+    "addr:street": "Milady Horákové",
+    "addr:streetnumber": "14",
+    "ref:ruian:addr": "19185642"
+  }
+},
+{
+  "type": "node",
+  "id": 296438725,
+  "tags": {
+    "addr:conscriptionnumber": "244",
+    "addr:housenumber": "244/29",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "29",
+    "ref:ruian:addr": "19104723",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296438758,
+  "tags": {
+    "addr:conscriptionnumber": "498",
+    "addr:housenumber": "498/7",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Františkánská",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19098898"
+  }
+},
+{
+  "type": "node",
+  "id": 296439056,
+  "tags": {
+    "addr:conscriptionnumber": "44",
+    "addr:housenumber": "44/14",
+    "addr:postcode": "60200",
+    "addr:street": "Dvořákova",
+    "addr:streetnumber": "14",
+    "ref:ruian:addr": "19093730",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296439164,
+  "tags": {
+    "addr:conscriptionnumber": "389",
+    "addr:housenumber": "389/10",
+    "addr:postcode": "60200",
+    "addr:street": "Údolní",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19169639",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296439259,
+  "tags": {
+    "addr:conscriptionnumber": "258",
+    "addr:housenumber": "258/13",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Vodní",
+    "addr:streetnumber": "13",
+    "ref:ruian:addr": "19104901"
+  }
+},
+{
+  "type": "node",
+  "id": 296439542,
+  "tags": {
+    "addr:conscriptionnumber": "382",
+    "addr:housenumber": "382/15",
+    "addr:postcode": "60200",
+    "addr:street": "Studánka",
+    "addr:streetnumber": "15",
+    "ref:ruian:addr": "19106408",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296439644,
+  "tags": {
+    "addr:conscriptionnumber": "482",
+    "addr:housenumber": "482/3",
+    "addr:postcode": "60200",
+    "addr:street": "Orlí",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19098693",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296439892,
+  "tags": {
+    "addr:conscriptionnumber": "29",
+    "addr:housenumber": "29/8a",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "8a",
+    "ref:ruian:addr": "19093535"
+  }
+},
+{
+  "type": "node",
+  "id": 296439907,
+  "tags": {
+    "addr:conscriptionnumber": "720",
+    "addr:housenumber": "720/1",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Mášova",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19173776"
+  }
+},
+{
+  "type": "node",
+  "id": 296440077,
+  "tags": {
+    "addr:conscriptionnumber": "940",
+    "addr:housenumber": "940/23",
+    "addr:postcode": "60200",
+    "addr:street": "Jaselská",
+    "addr:streetnumber": "23",
+    "ref:ruian:addr": "19176503",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296440518,
+  "tags": {
+    "addr:conscriptionnumber": "638",
+    "addr:housenumber": "638/8",
+    "addr:place": "Zábrdovice",
+    "addr:postcode": "60200",
+    "addr:street": "Ponávka",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19188374"
+  }
+},
+{
+  "type": "node",
+  "id": 296440779,
+  "tags": {
+    "addr:conscriptionnumber": "231",
+    "addr:housenumber": "231/10",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19104570",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296440807,
+  "tags": {
+    "addr:conscriptionnumber": "591",
+    "addr:housenumber": "591/11",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Rooseveltova",
+    "addr:streetnumber": "11",
+    "ref:ruian:addr": "19099789"
+  }
+},
+{
+  "type": "node",
+  "id": 296441214,
+  "tags": {
+    "addr:conscriptionnumber": "112",
+    "addr:housenumber": "112/7",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Kozí",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19094604"
+  }
+},
+{
+  "type": "node",
+  "id": 296441437,
+  "tags": {
+    "addr:conscriptionnumber": "60",
+    "addr:housenumber": "60/30",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Anenská",
+    "addr:streetnumber": "30",
+    "ref:ruian:addr": "19102399"
+  }
+},
+{
+  "type": "node",
+  "id": 296441713,
+  "tags": {
+    "addr:conscriptionnumber": "332",
+    "addr:housenumber": "332/12",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Zelný trh",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19097042"
+  }
+},
+{
+  "type": "node",
+  "id": 296441803,
+  "tags": {
+    "addr:conscriptionnumber": "321",
+    "addr:housenumber": "321/5",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Studánka",
+    "addr:streetnumber": "5",
+    "ref:ruian:addr": "19105738"
+  }
+},
+{
+  "type": "node",
+  "id": 296441842,
+  "tags": {
+    "addr:conscriptionnumber": "515",
+    "addr:housenumber": "515/3",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Josefská",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19099053"
+  }
+},
+{
+  "type": "node",
+  "id": 296442575,
+  "tags": {
+    "addr:conscriptionnumber": "307",
+    "addr:housenumber": "307/26",
+    "addr:postcode": "60200",
+    "addr:street": "Údolní",
+    "addr:streetnumber": "26",
+    "ref:ruian:addr": "19168586",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296442874,
+  "tags": {
+    "addr:conscriptionnumber": "603",
+    "addr:housenumber": "603/4",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Malinovského náměstí",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19099959"
+  }
+},
+{
+  "type": "node",
+  "id": 296443163,
+  "tags": {
+    "addr:conscriptionnumber": "455",
+    "addr:housenumber": "455/8",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Veveří",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19170483"
+  }
+},
+{
+  "type": "node",
+  "id": 296443209,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:conscriptionnumber": "276",
+    "addr:housenumber": "276/23",
+    "addr:postcode": "60200",
+    "addr:street": "Kounicova",
+    "addr:streetnumber": "23",
+    "amenity": "cafe",
+    "check_date": "2026-10-02",
+    "name": "Místogalerie Skleněná louka",
+    "opening_hours": "Mo-Fr 14:00-00:00; Sa 16:00-00:00",
+    "payment:cards": "no",
+    "payment:cash": "yes",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 296443533,
+  "tags": {
+    "addr:conscriptionnumber": "654",
+    "addr:housenumber": "654/10",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Nádražní",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19100701"
+  }
+},
+{
+  "type": "node",
+  "id": 296443756,
+  "tags": {
+    "addr:conscriptionnumber": "125",
+    "addr:housenumber": "125/9",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Jakubská",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19094795"
+  }
+},
+{
+  "type": "node",
+  "id": 296443813,
+  "tags": {
+    "addr:conscriptionnumber": "436",
+    "addr:housenumber": "436/11",
+    "addr:postcode": "60200",
+    "addr:street": "Masarykova",
+    "addr:streetnumber": "11",
+    "ref:ruian:addr": "19098219",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296443918,
+  "tags": {
+    "addr:conscriptionnumber": "320",
+    "addr:housenumber": "320/21",
+    "addr:postcode": "60200",
+    "addr:street": "Zelný trh",
+    "addr:streetnumber": "21",
+    "ref:ruian:addr": "19096976",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296443986,
+  "tags": {
+    "addr:conscriptionnumber": "250",
+    "addr:housenumber": "250/7",
+    "addr:postcode": "60200",
+    "addr:street": "Mečová",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19096143",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296444524,
+  "tags": {
+    "addr:conscriptionnumber": "141",
+    "addr:housenumber": "141/47",
+    "addr:place": "Zábrdovice",
+    "addr:postcode": "60200",
+    "addr:street": "Koliště",
+    "addr:streetnumber": "47",
+    "ref:ruian:addr": "31181384"
+  }
+},
+{
+  "type": "node",
+  "id": 296444728,
+  "tags": {
+    "addr:conscriptionnumber": "238",
+    "addr:housenumber": "238/39",
+    "addr:postcode": "60200",
+    "addr:street": "Veselá",
+    "addr:streetnumber": "39",
+    "ref:ruian:addr": "19095945",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296444793,
+  "tags": {
+    "addr:conscriptionnumber": "553",
+    "addr:housenumber": "553/16",
+    "addr:postcode": "60200",
+    "addr:street": "Dvořákova",
+    "addr:streetnumber": "16",
+    "ref:ruian:addr": "19099509",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296444849,
+  "tags": {
+    "addr:conscriptionnumber": "294",
+    "addr:housenumber": "294/2",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Petrská",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19096640"
+  }
+},
+{
+  "type": "node",
+  "id": 296444968,
+  "tags": {
+    "addr:conscriptionnumber": "647",
+    "addr:housenumber": "647/7",
+    "addr:postcode": "60200",
+    "addr:street": "Dvořákova",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19100612",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296445049,
+  "tags": {
+    "addr:conscriptionnumber": "307",
+    "addr:housenumber": "307/30",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Masarykova",
+    "addr:streetnumber": "30",
+    "ref:ruian:addr": "19096810"
+  }
+},
+{
+  "type": "node",
+  "id": 296445541,
+  "tags": {
+    "addr:conscriptionnumber": "534",
+    "addr:housenumber": "534/8",
+    "addr:postcode": "60200",
+    "addr:street": "Komenského náměstí",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19099282",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296445546,
+  "tags": {
+    "addr:conscriptionnumber": "639",
+    "addr:housenumber": "639/17",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "17",
+    "ref:ruian:addr": "19109539"
+  }
+},
+{
+  "type": "node",
+  "id": 296445793,
+  "tags": {
+    "addr:conscriptionnumber": "193",
+    "addr:housenumber": "193/9",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Dominikánské náměstí",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19095546"
+  }
+},
+{
+  "type": "node",
+  "id": 296445876,
+  "tags": {
+    "addr:conscriptionnumber": "1862",
+    "addr:housenumber": "1862/14",
+    "addr:postcode": "60200",
+    "addr:street": "Lidická",
+    "addr:streetnumber": "14",
+    "amenity": "restaurant",
+    "check_date:currency:XBT": "2025-04-25",
+    "email": "teatr@congusto.cz",
+    "indoor_seating": "yes",
+    "name": "Teátr",
+    "opening_hours": "Mo-Th 11:00-23:00; Fr-Sa 11:00-00:00; Su 11:00-22:00",
+    "outdoor_seating": "no",
+    "payment:onchain": "no",
+    "payment:qerko": "yes",
+    "phone": "+420 533 316 443",
+    "website": "https://www.restaurant-teatr.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 296445896,
+  "tags": {
+    "addr:conscriptionnumber": "168",
+    "addr:housenumber": "168/15",
+    "addr:postcode": "60200",
+    "addr:street": "Česká",
+    "addr:streetnumber": "15",
+    "ref:ruian:addr": "19095350",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296446060,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:conscriptionnumber": "453",
+    "addr:housenumber": "453/9",
+    "addr:postcode": "60200",
+    "addr:street": "Jánská",
+    "addr:streetnumber": "9",
+    "amenity": "nightclub",
+    "fee": "100",
+    "name": "7. nebe",
+    "website": "https://7nebe.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 296446085,
+  "tags": {
+    "addr:conscriptionnumber": "209",
+    "addr:housenumber": "209/8",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Hybešova",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19104324"
+  }
+},
+{
+  "type": "node",
+  "id": 296446683,
+  "tags": {
+    "addr:conscriptionnumber": "389",
+    "addr:housenumber": "389/21",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "21",
+    "ref:ruian:addr": "19106530",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296446786,
+  "tags": {
+    "addr:conscriptionnumber": "938",
+    "addr:housenumber": "938/3",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19111703"
+  }
+},
+{
+  "type": "node",
+  "id": 296447002,
+  "tags": {
+    "addr:conscriptionnumber": "583",
+    "addr:housenumber": "583/12",
+    "addr:postcode": "60200",
+    "addr:street": "Rooseveltova",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19099681",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296447157,
+  "tags": {
+    "addr:conscriptionnumber": "401",
+    "addr:housenumber": "401/8",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19106777"
+  }
+},
+{
+  "type": "node",
+  "id": 296447334,
+  "tags": {
+    "addr:conscriptionnumber": "275",
+    "addr:housenumber": "275/1",
+    "addr:postcode": "60200",
+    "addr:street": "Petrov",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19096429",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296447915,
+  "tags": {
+    "addr:conscriptionnumber": "326",
+    "addr:housenumber": "326/46",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "46",
+    "ref:ruian:addr": "19105797"
+  }
+},
+{
+  "type": "node",
+  "id": 296448033,
+  "tags": {
+    "addr:conscriptionnumber": "353",
+    "addr:housenumber": "353/15",
+    "addr:postcode": "60200",
+    "addr:street": "Husova",
+    "addr:streetnumber": "15",
+    "ref:ruian:addr": "19097301",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296448041,
+  "tags": {
+    "addr:conscriptionnumber": "469",
+    "addr:housenumber": "469/17",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Orlí",
+    "addr:streetnumber": "17",
+    "ref:ruian:addr": "19098545"
+  }
+},
+{
+  "type": "node",
+  "id": 296448050,
+  "tags": {
+    "addr:conscriptionnumber": "49",
+    "addr:housenumber": "49/21",
+    "addr:postcode": "60200",
+    "addr:street": "Kobližná",
+    "addr:streetnumber": "21",
+    "ref:ruian:addr": "19093811",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296448278,
+  "tags": {
+    "addr:conscriptionnumber": "193",
+    "addr:housenumber": "193/15",
+    "addr:postcode": "60200",
+    "addr:street": "Jircháře",
+    "addr:streetnumber": "15",
+    "ref:ruian:addr": "19104081",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296448416,
+  "tags": {
+    "addr:conscriptionnumber": "61",
+    "addr:housenumber": "61/16",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Kobližná",
+    "addr:streetnumber": "16",
+    "ref:ruian:addr": "19093969"
+  }
+},
+{
+  "type": "node",
+  "id": 296448648,
+  "tags": {
+    "addr:conscriptionnumber": "368",
+    "addr:housenumber": "368/5",
+    "addr:postcode": "60200",
+    "addr:street": "Mečová",
+    "addr:streetnumber": "5",
+    "ref:ruian:addr": "19097476",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296449242,
+  "tags": {
+    "addr:conscriptionnumber": "196",
+    "addr:housenumber": "196/13",
+    "addr:postcode": "60200",
+    "addr:street": "Jaselská",
+    "addr:streetnumber": "13",
+    "ref:ruian:addr": "19166478",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296449654,
+  "tags": {
+    "addr:conscriptionnumber": "422",
+    "addr:housenumber": "422/42",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "42",
+    "ref:ruian:addr": "19107005"
+  }
+},
+{
+  "type": "node",
+  "id": 296450213,
+  "tags": {
+    "addr:conscriptionnumber": "401",
+    "addr:housenumber": "401/6",
+    "addr:postcode": "60200",
+    "addr:street": "Masarykova",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19097760",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296450305,
+  "tags": {
+    "addr:conscriptionnumber": "651",
+    "addr:housenumber": "651/39",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "39",
+    "ref:ruian:addr": "19109661"
+  }
+},
+{
+  "type": "node",
+  "id": 296450893,
+  "tags": {
+    "addr:conscriptionnumber": "625",
+    "addr:housenumber": "625/33",
+    "addr:postcode": "60200",
+    "addr:street": "Česká",
+    "addr:streetnumber": "33",
+    "ref:ruian:addr": "19100299",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296450952,
+  "tags": {
+    "addr:conscriptionnumber": "213",
+    "addr:housenumber": "213/6",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19095767",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296452028,
+  "tags": {
+    "addr:conscriptionnumber": "1922",
+    "addr:housenumber": "1922/3",
+    "addr:postcode": "60200",
+    "addr:street": "třída Kpt. Jaroše",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19196954",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296453927,
+  "tags": {
+    "addr:conscriptionnumber": "660",
+    "addr:housenumber": "660/51",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "51",
+    "ref:ruian:addr": "19109768"
+  }
+},
+{
+  "type": "node",
+  "id": 296454278,
+  "tags": {
+    "addr:conscriptionnumber": "628",
+    "addr:housenumber": "628/12",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Benešova",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19100329"
+  }
+},
+{
+  "type": "node",
+  "id": 296454471,
+  "tags": {
+    "addr:conscriptionnumber": "354",
+    "addr:housenumber": "354/5",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Slovákova",
+    "addr:streetnumber": "5",
+    "ref:ruian:addr": "19169230"
+  }
+},
+{
+  "type": "node",
+  "id": 296454637,
+  "tags": {
+    "addr:conscriptionnumber": "733",
+    "addr:housenumber": "733/17",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Mášova",
+    "addr:streetnumber": "17",
+    "ref:ruian:addr": "19173920"
+  }
+},
+{
+  "type": "node",
+  "id": 296454915,
+  "tags": {
+    "addr:conscriptionnumber": "477",
+    "addr:housenumber": "477/3",
+    "addr:postcode": "60200",
+    "addr:street": "Vodní",
+    "addr:streetnumber": "3",
+    "note": "Adresa: v RÚIAN AM zrušeno.",
+    "ref:ruian:addr": "19107609"
+  }
+},
+{
+  "type": "node",
+  "id": 296455023,
+  "tags": {
+    "addr:conscriptionnumber": "611",
+    "addr:housenumber": "611/6",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Moravské náměstí",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19100094"
+  }
+},
+{
+  "type": "node",
+  "id": 296455274,
+  "tags": {
+    "addr:conscriptionnumber": "252",
+    "addr:housenumber": "252/35",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "35",
+    "ref:ruian:addr": "19104821",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296455617,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:conscriptionnumber": "6",
+    "addr:country": "CZ",
+    "addr:housenumber": "6/16",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Běhounská",
+    "addr:streetnumber": "16",
+    "addr:suburb": "Brno-střed",
+    "ref:ruian:addr": "19093233",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296456237,
+  "tags": {
+    "addr:conscriptionnumber": "694",
+    "addr:housenumber": "694/7",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Lidická",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19173512"
+  }
+},
+{
+  "type": "node",
+  "id": 296456524,
+  "tags": {
+    "addr:conscriptionnumber": "1910",
+    "addr:housenumber": "1910/9",
+    "addr:place": "Černá Pole",
+    "addr:postcode": "60200",
+    "addr:street": "Koliště",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19196784"
+  }
+},
+{
+  "type": "node",
+  "id": 296456742,
+  "tags": {
+    "addr:conscriptionnumber": "490",
+    "addr:housenumber": "490/14",
+    "addr:postcode": "60200",
+    "addr:street": "Orlí",
+    "addr:streetnumber": "14",
+    "ref:ruian:addr": "19098791",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296457816,
+  "tags": {
+    "addr:conscriptionnumber": "336",
+    "addr:housenumber": "336/6",
+    "addr:postcode": "60200",
+    "addr:street": "Starobrněnská",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19097123",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296458923,
+  "tags": {
+    "addr:conscriptionnumber": "427",
+    "addr:housenumber": "427/14",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Josefská",
+    "addr:streetnumber": "14",
+    "ref:ruian:addr": "19098081"
+  }
+},
+{
+  "type": "node",
+  "id": 296458958,
+  "tags": {
+    "addr:conscriptionnumber": "463",
+    "addr:housenumber": "463/16",
+    "addr:postcode": "60200",
+    "addr:street": "Veveří",
+    "addr:streetnumber": "16",
+    "ref:ruian:addr": "19170572",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296459070,
+  "tags": {
+    "addr:conscriptionnumber": "319",
+    "addr:housenumber": "319/8",
+    "addr:postcode": "60200",
+    "addr:street": "Masarykova",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19096968",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296459723,
+  "tags": {
+    "addr:conscriptionnumber": "86",
+    "addr:housenumber": "86/17",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "náměstí Svobody",
+    "addr:streetnumber": "17",
+    "ref:ruian:addr": "19094248"
+  }
+},
+{
+  "type": "node",
+  "id": 296459953,
+  "tags": {
+    "addr:conscriptionnumber": "299",
+    "addr:housenumber": "299/6",
+    "addr:postcode": "60200",
+    "addr:street": "Zelný trh",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19096721",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296460424,
+  "tags": {
+    "addr:conscriptionnumber": "506",
+    "addr:housenumber": "506/37",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Masarykova",
+    "addr:streetnumber": "37",
+    "ref:ruian:addr": "19099002"
+  }
+},
+{
+  "type": "node",
+  "id": 296461602,
+  "tags": {
+    "addr:conscriptionnumber": "753",
+    "addr:housenumber": "753/12",
+    "addr:postcode": "60200",
+    "addr:street": "Moravské náměstí",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19174241",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296462113,
+  "tags": {
+    "addr:conscriptionnumber": "384",
+    "addr:housenumber": "384/13",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "13",
+    "ref:ruian:addr": "19106459",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296462539,
+  "tags": {
+    "addr:conscriptionnumber": "313",
+    "addr:housenumber": "313/4",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Zelný trh",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19096887"
+  }
+},
+{
+  "type": "node",
+  "id": 296463113,
+  "tags": {
+    "addr:conscriptionnumber": "218",
+    "addr:housenumber": "218/11",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Hybešova",
+    "addr:streetnumber": "11",
+    "ref:ruian:addr": "19104430"
+  }
+},
+{
+  "type": "node",
+  "id": 296463481,
+  "tags": {
+    "addr:conscriptionnumber": "414",
+    "addr:housenumber": "414/30",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "30",
+    "ref:ruian:addr": "19106904"
+  }
+},
+{
+  "type": "node",
+  "id": 296463588,
+  "tags": {
+    "addr:conscriptionnumber": "448",
+    "addr:housenumber": "448/10",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Jánská",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19098294"
+  }
+},
+{
+  "type": "node",
+  "id": 296463641,
+  "tags": {
+    "addr:conscriptionnumber": "219",
+    "addr:housenumber": "219/17",
+    "addr:postcode": "60200",
+    "addr:street": "Husova",
+    "addr:streetnumber": "17",
+    "ref:ruian:addr": "19095848",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296463894,
+  "tags": {
+    "addr:conscriptionnumber": "245",
+    "addr:housenumber": "245/14",
+    "addr:postcode": "60200",
+    "addr:street": "Solniční",
+    "addr:streetnumber": "14",
+    "ref:ruian:addr": "19096038",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296464012,
+  "tags": {
+    "addr:conscriptionnumber": "691",
+    "addr:housenumber": "691/3",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Novobranská",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19099363"
+  }
+},
+{
+  "type": "node",
+  "id": 296464120,
+  "tags": {
+    "addr:conscriptionnumber": "394",
+    "addr:housenumber": "394/35",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "35",
+    "ref:ruian:addr": "19106653"
+  }
+},
+{
+  "type": "node",
+  "id": 296464204,
+  "tags": {
+    "addr:conscriptionnumber": "173",
+    "addr:housenumber": "173/8",
+    "addr:postcode": "60200",
+    "addr:street": "Zámečnická",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19095422",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296464407,
+  "tags": {
+    "addr:conscriptionnumber": "575",
+    "addr:housenumber": "575/1",
+    "addr:postcode": "60200",
+    "addr:street": "Sukova",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19099584",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296464559,
+  "tags": {
+    "addr:conscriptionnumber": "156",
+    "addr:housenumber": "156/6",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Česká",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19095171"
+  }
+},
+{
+  "type": "node",
+  "id": 296464849,
+  "tags": {
+    "addr:conscriptionnumber": "460",
+    "addr:housenumber": "460/25",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Jánská",
+    "addr:streetnumber": "25",
+    "ref:ruian:addr": "19098448"
+  }
+},
+{
+  "type": "node",
+  "id": 296465026,
+  "tags": {
+    "addr:conscriptionnumber": "285",
+    "addr:housenumber": "285/15",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Starobrněnská",
+    "addr:streetnumber": "15",
+    "ref:ruian:addr": "19096526"
+  }
+},
+{
+  "type": "node",
+  "id": 296465279,
+  "tags": {
+    "addr:conscriptionnumber": "9",
+    "addr:housenumber": "9/9",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Anenská",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19101830"
+  }
+},
+{
+  "type": "node",
+  "id": 296465920,
+  "tags": {
+    "addr:conscriptionnumber": "418",
+    "addr:housenumber": "418/5",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Nádražní",
+    "addr:streetnumber": "5",
+    "ref:ruian:addr": "19097956"
+  }
+},
+{
+  "type": "node",
+  "id": 296465949,
+  "tags": {
+    "addr:conscriptionnumber": "164",
+    "addr:housenumber": "164/7",
+    "addr:postcode": "60200",
+    "addr:street": "Česká",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19095261",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296465994,
+  "tags": {
+    "addr:conscriptionnumber": "187",
+    "addr:housenumber": "187/4",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Jaselská",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19166273"
+  }
+},
+{
+  "type": "node",
+  "id": 296466138,
+  "tags": {
+    "addr:conscriptionnumber": "346",
+    "addr:housenumber": "346/13",
+    "addr:postcode": "60200",
+    "addr:street": "Dominikánská",
+    "addr:streetnumber": "13",
+    "ref:ruian:addr": "19097239",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296466519,
+  "tags": {
+    "addr:conscriptionnumber": "644",
+    "addr:housenumber": "644/10",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Rašínova",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19100566"
+  }
+},
+{
+  "type": "node",
+  "id": 296466662,
+  "tags": {
+    "addr:conscriptionnumber": "268",
+    "addr:housenumber": "268/9",
+    "addr:postcode": "60200",
+    "addr:street": "Petrov",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19096348",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296467000,
+  "tags": {
+    "addr:conscriptionnumber": "68",
+    "addr:housenumber": "68/3",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Poštovská",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19094043"
+  }
+},
+{
+  "type": "node",
+  "id": 296467046,
+  "tags": {
+    "addr:conscriptionnumber": "204",
+    "addr:housenumber": "204/21",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Jaselská",
+    "addr:streetnumber": "21",
+    "ref:ruian:addr": "19166575"
+  }
+},
+{
+  "type": "node",
+  "id": 296467594,
+  "tags": {
+    "addr:conscriptionnumber": "362",
+    "addr:housenumber": "362/11",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Panská",
+    "addr:streetnumber": "11",
+    "ref:ruian:addr": "19097395"
+  }
+},
+{
+  "type": "node",
+  "id": 296468269,
+  "tags": {
+    "addr:conscriptionnumber": "629",
+    "addr:housenumber": "629/5d",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "5d",
+    "ref:ruian:addr": "19109415"
+  }
+},
+{
+  "type": "node",
+  "id": 296468455,
+  "tags": {
+    "addr:conscriptionnumber": "393",
+    "addr:housenumber": "393/6",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Panská",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19097671"
+  }
+},
+{
+  "type": "node",
+  "id": 296468947,
+  "tags": {
+    "addr:conscriptionnumber": "37",
+    "addr:housenumber": "37/20",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Anenská",
+    "addr:streetnumber": "20",
+    "ref:ruian:addr": "19102101"
+  }
+},
+{
+  "type": "node",
+  "id": 296469060,
+  "tags": {
+    "addr:conscriptionnumber": "644",
+    "addr:housenumber": "644/27",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "27",
+    "ref:ruian:addr": "19109580"
+  }
+},
+{
+  "type": "node",
+  "id": 296469068,
+  "tags": {
+    "addr:conscriptionnumber": "201",
+    "addr:housenumber": "201/21",
+    "addr:postcode": "60200",
+    "addr:street": "Jircháře",
+    "addr:streetnumber": "21",
+    "ref:ruian:addr": "19104219",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296469078,
+  "tags": {
+    "addr:conscriptionnumber": "1857",
+    "addr:housenumber": "1857/4",
+    "addr:place": "Černá Pole",
+    "addr:postcode": "60200",
+    "addr:street": "Lidická",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19196091"
+  }
+},
+{
+  "type": "node",
+  "id": 296469223,
+  "tags": {
+    "addr:conscriptionnumber": "680",
+    "addr:housenumber": "680/6",
+    "addr:postcode": "60200",
+    "addr:street": "Kounicova",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19173296",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296469669,
+  "tags": {
+    "addr:conscriptionnumber": "44",
+    "addr:housenumber": "44/8",
+    "addr:postcode": "60200",
+    "addr:street": "Vachova",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19093721",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296471296,
+  "tags": {
+    "addr:conscriptionnumber": "36",
+    "addr:housenumber": "36/1",
+    "addr:postcode": "60200",
+    "addr:street": "Vachova",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19093616",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296471427,
+  "tags": {
+    "addr:conscriptionnumber": "477",
+    "addr:housenumber": "477/13",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Orlí",
+    "addr:streetnumber": "13",
+    "ref:ruian:addr": "19098642"
+  }
+},
+{
+  "type": "node",
+  "id": 296475478,
+  "tags": {
+    "addr:conscriptionnumber": "274",
+    "addr:housenumber": "274/36",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "36",
+    "ref:ruian:addr": "19105169"
+  }
+},
+{
+  "type": "node",
+  "id": 296475985,
+  "tags": {
+    "addr:conscriptionnumber": "483",
+    "addr:housenumber": "483/1",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Orlí",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19098715"
+  }
+},
+{
+  "type": "node",
+  "id": 296476002,
+  "tags": {
+    "addr:conscriptionnumber": "603",
+    "addr:housenumber": "603/3",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Divadelní",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19099967"
+  }
+},
+{
+  "type": "node",
+  "id": 296476637,
+  "tags": {
+    "addr:conscriptionnumber": "30",
+    "addr:housenumber": "30/9",
+    "addr:postcode": "60200",
+    "addr:street": "Kobližná",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19093551",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296477773,
+  "tags": {
+    "addr:conscriptionnumber": "227",
+    "addr:housenumber": "227/14",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Hybešova",
+    "addr:streetnumber": "14",
+    "ref:ruian:addr": "19104545"
+  }
+},
+{
+  "type": "node",
+  "id": 296478515,
+  "tags": {
+    "addr:conscriptionnumber": "94",
+    "addr:housenumber": "94/8",
+    "addr:postcode": "60200",
+    "addr:street": "Veselá",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19094353",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296478903,
+  "tags": {
+    "addr:conscriptionnumber": "45",
+    "addr:housenumber": "45/6",
+    "addr:postcode": "60200",
+    "addr:street": "Vachova",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19093748",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296479565,
+  "tags": {
+    "addr:conscriptionnumber": "141",
+    "addr:housenumber": "141/7",
+    "addr:postcode": "60200",
+    "addr:street": "Joštova",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19095023",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296479737,
+  "tags": {
+    "addr:conscriptionnumber": "105",
+    "addr:housenumber": "105/1",
+    "addr:postcode": "60200",
+    "addr:street": "Běhounská",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19094515",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296479950,
+  "tags": {
+    "addr:conscriptionnumber": "160",
+    "addr:housenumber": "160/4",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Česká",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19095180"
+  }
+},
+{
+  "type": "node",
+  "id": 296480346,
+  "tags": {
+    "addr:conscriptionnumber": "183",
+    "addr:housenumber": "183/2",
+    "addr:place": "Zábrdovice",
+    "addr:postcode": "60200",
+    "addr:street": "Bratislavská",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19183836"
+  }
+},
+{
+  "type": "node",
+  "id": 296480418,
+  "tags": {
+    "addr:conscriptionnumber": "270",
+    "addr:housenumber": "270/11",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Kounicova",
+    "addr:streetnumber": "11",
+    "ref:ruian:addr": "19167814"
+  }
+},
+{
+  "type": "node",
+  "id": 296480490,
+  "tags": {
+    "addr:conscriptionnumber": "306",
+    "addr:housenumber": "306/16",
+    "addr:postcode": "60200",
+    "addr:street": "Marešova",
+    "addr:streetnumber": "16",
+    "ref:ruian:addr": "19168578",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296480632,
+  "tags": {
+    "addr:conscriptionnumber": "322",
+    "addr:housenumber": "322/10",
+    "addr:place": "Zábrdovice",
+    "addr:postcode": "60200",
+    "addr:street": "Milady Horákové",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19185600"
+  }
+},
+{
+  "type": "node",
+  "id": 296480829,
+  "tags": {
+    "addr:conscriptionnumber": "126",
+    "addr:housenumber": "126/11",
+    "addr:postcode": "60200",
+    "addr:street": "Jakubská",
+    "addr:streetnumber": "11",
+    "check_date": "2026-02-17",
+    "contact:phone": "+420 542 212 039; +420 542 219 898",
+    "contact:website": "http://svatyjakubbrno.wz.cz/",
+    "denomination": "catholic",
+    "name": "Římskokatolická farnost u kostela sv. Jakuba, Brno",
+    "office": "religion",
+    "opening_hours": "Mo,We,Fr 09:00-12:00,17:00-18:00",
+    "religion": "christian",
+    "wheelchair": "no",
+    "wikidata": "Q10521623",
+    "wikipedia": "cs:Římskokatolická farnost u kostela sv. Jakuba, Brno"
+  }
+},
+{
+  "type": "node",
+  "id": 296480833,
+  "tags": {
+    "addr:conscriptionnumber": "169",
+    "addr:housenumber": "169/24",
+    "addr:postcode": "60200",
+    "addr:street": "Veselá",
+    "addr:streetnumber": "24",
+    "ref:ruian:addr": "19095368",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296480928,
+  "tags": {
+    "addr:conscriptionnumber": "655",
+    "addr:housenumber": "655/30",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Orlí",
+    "addr:streetnumber": "30",
+    "ref:ruian:addr": "19100710"
+  }
+},
+{
+  "type": "node",
+  "id": 296481134,
+  "tags": {
+    "addr:conscriptionnumber": "914",
+    "addr:housenumber": "914/46",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "46",
+    "ref:ruian:addr": "19111461"
+  }
+},
+{
+  "type": "node",
+  "id": 296481608,
+  "tags": {
+    "addr:conscriptionnumber": "588",
+    "addr:housenumber": "588/13",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Dvořákova",
+    "addr:streetnumber": "13",
+    "ref:ruian:addr": "19099746"
+  }
+},
+{
+  "type": "node",
+  "id": 296481629,
+  "tags": {
+    "addr:conscriptionnumber": "17",
+    "addr:housenumber": "17/15",
+    "addr:postcode": "60200",
+    "addr:street": "Jezuitská",
+    "addr:streetnumber": "15",
+    "ref:ruian:addr": "19093365",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296482115,
+  "tags": {
+    "addr:conscriptionnumber": "61",
+    "addr:housenumber": "61/32",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Anenská",
+    "addr:streetnumber": "32",
+    "ref:ruian:addr": "19102402"
+  }
+},
+{
+  "type": "node",
+  "id": 296482208,
+  "tags": {
+    "addr:conscriptionnumber": "494",
+    "addr:housenumber": "494/17",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Františkánská",
+    "addr:streetnumber": "17",
+    "ref:ruian:addr": "19098855"
+  }
+},
+{
+  "type": "node",
+  "id": 296482576,
+  "tags": {
+    "addr:conscriptionnumber": "645",
+    "addr:housenumber": "645/29",
+    "addr:place": "Zábrdovice",
+    "addr:postcode": "60200",
+    "addr:street": "Koliště",
+    "addr:streetnumber": "29",
+    "ref:ruian:addr": "19188455"
+  }
+},
+{
+  "type": "node",
+  "id": 296483084,
+  "tags": {
+    "addr:conscriptionnumber": "338",
+    "addr:housenumber": "338/10",
+    "addr:postcode": "60200",
+    "addr:street": "Starobrněnská",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19097140",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296483329,
+  "tags": {
+    "addr:conscriptionnumber": "637",
+    "addr:housenumber": "637/1",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Solniční",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19100442"
+  }
+},
+{
+  "type": "node",
+  "id": 296483351,
+  "tags": {
+    "addr:conscriptionnumber": "195",
+    "addr:housenumber": "195/12",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Jaselská",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19166451"
+  }
+},
+{
+  "type": "node",
+  "id": 296483359,
+  "tags": {
+    "addr:conscriptionnumber": "536",
+    "addr:housenumber": "536/14",
+    "addr:postcode": "60200",
+    "addr:street": "Husova",
+    "addr:streetnumber": "14",
+    "amenity": "cafe",
+    "name": "BLOKK",
+    "ref:ruian:addr": "19099339",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296483687,
+  "tags": {
+    "addr:conscriptionnumber": "389",
+    "addr:housenumber": "389/62",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "62",
+    "ref:ruian:addr": "19106548",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296484014,
+  "tags": {
+    "addr:conscriptionnumber": "460",
+    "addr:housenumber": "460/13",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Veveří",
+    "addr:streetnumber": "13",
+    "ref:ruian:addr": "19170548"
+  }
+},
+{
+  "type": "node",
+  "id": 296484312,
+  "tags": {
+    "addr:conscriptionnumber": "406",
+    "addr:housenumber": "406/17",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "17",
+    "ref:ruian:addr": "19106823",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296484470,
+  "tags": {
+    "addr:conscriptionnumber": "269",
+    "addr:housenumber": "269/8",
+    "addr:postcode": "60200",
+    "addr:street": "Petrov",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19096356",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296484498,
+  "tags": {
+    "addr:conscriptionnumber": "434",
+    "addr:housenumber": "434/2",
+    "addr:postcode": "60200",
+    "addr:street": "Orlí",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19098171",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296484632,
+  "tags": {
+    "addr:conscriptionnumber": "324",
+    "addr:housenumber": "324/19",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Zelný trh",
+    "addr:streetnumber": "19",
+    "ref:ruian:addr": "19096984"
+  }
+},
+{
+  "type": "node",
+  "id": 296485097,
+  "tags": {
+    "addr:conscriptionnumber": "184",
+    "addr:housenumber": "184/8",
+    "addr:postcode": "60200",
+    "addr:street": "Marešova",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19166222",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296485183,
+  "tags": {
+    "addr:conscriptionnumber": "142",
+    "addr:housenumber": "142/12",
+    "addr:place": "Zábrdovice",
+    "addr:postcode": "60200",
+    "addr:street": "Ponávka",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19183411"
+  }
+},
+{
+  "type": "node",
+  "id": 296485278,
+  "tags": {
+    "addr:conscriptionnumber": "355",
+    "addr:housenumber": "355/13",
+    "addr:postcode": "60200",
+    "addr:street": "Husova",
+    "addr:streetnumber": "13",
+    "ref:ruian:addr": "19097328",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296485371,
+  "tags": {
+    "addr:conscriptionnumber": "294",
+    "addr:housenumber": "294/9",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Zelný trh",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19096658"
+  }
+},
+{
+  "type": "node",
+  "id": 296485412,
+  "tags": {
+    "addr:conscriptionnumber": "564",
+    "addr:housenumber": "564/6",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Rooseveltova",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19099517"
+  }
+},
+{
+  "type": "node",
+  "id": 296485712,
+  "tags": {
+    "addr:conscriptionnumber": "369",
+    "addr:housenumber": "369/10",
+    "addr:postcode": "60200",
+    "addr:street": "Radnická",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19097484",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296485767,
+  "tags": {
+    "addr:conscriptionnumber": "307",
+    "addr:housenumber": "307/15",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Kapucínské náměstí",
+    "addr:streetnumber": "15",
+    "ref:ruian:addr": "19096828"
+  }
+},
+{
+  "type": "node",
+  "id": 296485840,
+  "tags": {
+    "addr:conscriptionnumber": "409",
+    "addr:housenumber": "409/26",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Masarykova",
+    "addr:streetnumber": "26",
+    "ref:ruian:addr": "19097841"
+  }
+},
+{
+  "type": "node",
+  "id": 296486102,
+  "tags": {
+    "addr:conscriptionnumber": "194",
+    "addr:housenumber": "194/10",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Dominikánské náměstí",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19095554"
+  }
+},
+{
+  "type": "node",
+  "id": 296486190,
+  "tags": {
+    "addr:conscriptionnumber": "516",
+    "addr:housenumber": "516/20",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Orlí",
+    "addr:streetnumber": "20",
+    "ref:ruian:addr": "19099061"
+  }
+},
+{
+  "type": "node",
+  "id": 296486463,
+  "tags": {
+    "addr:conscriptionnumber": "453",
+    "addr:housenumber": "453/9",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Jánská",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19098359"
+  }
+},
+{
+  "type": "node",
+  "id": 296486730,
+  "tags": {
+    "addr:conscriptionnumber": "652",
+    "addr:housenumber": "652/41",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "41",
+    "ref:ruian:addr": "19109679"
+  }
+},
+{
+  "type": "node",
+  "id": 296486911,
+  "tags": {
+    "addr:conscriptionnumber": "728",
+    "addr:housenumber": "728/10",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Mášova",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19173857"
+  }
+},
+{
+  "type": "node",
+  "id": 296487022,
+  "tags": {
+    "addr:conscriptionnumber": "214",
+    "addr:housenumber": "214/15",
+    "addr:postcode": "60200",
+    "addr:street": "Františkánská",
+    "addr:streetnumber": "15",
+    "ref:ruian:addr": "19095775",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296487047,
+  "tags": {
+    "addr:conscriptionnumber": "626",
+    "addr:housenumber": "626/16",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Benešova",
+    "addr:streetnumber": "16",
+    "ref:ruian:addr": "19100302"
+  }
+},
+{
+  "type": "node",
+  "id": 296487302,
+  "tags": {
+    "addr:conscriptionnumber": "6",
+    "addr:housenumber": "6/6",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Anenská",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19101791"
+  }
+},
+{
+  "type": "node",
+  "id": 296487660,
+  "tags": {
+    "addr:conscriptionnumber": "609",
+    "addr:housenumber": "609/6",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Komenského náměstí",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19100060"
+  }
+},
+{
+  "type": "node",
+  "id": 296487781,
+  "tags": {
+    "addr:conscriptionnumber": "253",
+    "addr:housenumber": "253/4",
+    "addr:postcode": "60200",
+    "addr:street": "Brandlova",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19096151",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296487850,
+  "tags": {
+    "addr:conscriptionnumber": "194",
+    "addr:housenumber": "194/17",
+    "addr:postcode": "60200",
+    "addr:street": "Jircháře",
+    "addr:streetnumber": "17",
+    "ref:ruian:addr": "19104103",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296487856,
+  "tags": {
+    "addr:conscriptionnumber": "62",
+    "addr:housenumber": "62/14",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Kobližná",
+    "addr:streetnumber": "14",
+    "ref:ruian:addr": "19093977"
+  }
+},
+{
+  "type": "node",
+  "id": 296488324,
+  "tags": {
+    "addr:conscriptionnumber": "239",
+    "addr:housenumber": "239/11",
+    "addr:postcode": "60200",
+    "addr:street": "Solniční",
+    "addr:streetnumber": "11",
+    "ref:ruian:addr": "19095953",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296488679,
+  "tags": {
+    "addr:conscriptionnumber": "634",
+    "addr:housenumber": "634/13",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "13",
+    "ref:ruian:addr": "19109482"
+  }
+},
+{
+  "type": "node",
+  "id": 296488921,
+  "tags": {
+    "addr:conscriptionnumber": "388",
+    "addr:housenumber": "388/8",
+    "addr:postcode": "60200",
+    "addr:street": "Údolní",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19169621",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296489125,
+  "tags": {
+    "addr:conscriptionnumber": "458",
+    "addr:housenumber": "458/21",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Jánská",
+    "addr:streetnumber": "21",
+    "ref:ruian:addr": "19098421"
+  }
+},
+{
+  "type": "node",
+  "id": 296489309,
+  "tags": {
+    "addr:conscriptionnumber": "697",
+    "addr:housenumber": "697/13",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Lidická",
+    "addr:streetnumber": "13",
+    "ref:ruian:addr": "19173547"
+  }
+},
+{
+  "type": "node",
+  "id": 296489464,
+  "tags": {
+    "addr:conscriptionnumber": "378",
+    "addr:housenumber": "378/1",
+    "addr:postcode": "60200",
+    "addr:street": "Průchodní",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19097565",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296489587,
+  "tags": {
+    "addr:conscriptionnumber": "253",
+    "addr:housenumber": "253/15",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Hybešova",
+    "addr:streetnumber": "15",
+    "ref:ruian:addr": "19104839"
+  }
+},
+{
+  "type": "node",
+  "id": 296489800,
+  "tags": {
+    "addr:conscriptionnumber": "7",
+    "addr:housenumber": "7/3",
+    "addr:postcode": "60200",
+    "addr:street": "Jezuitská",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19093241",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296490159,
+  "tags": {
+    "addr:conscriptionnumber": "353",
+    "addr:housenumber": "353/4",
+    "addr:postcode": "60200",
+    "addr:street": "Slovákova",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19169221",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296490559,
+  "tags": {
+    "addr:conscriptionnumber": "269",
+    "addr:housenumber": "269/62",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "62",
+    "ref:ruian:addr": "19105061"
+  }
+},
+{
+  "type": "node",
+  "id": 296490765,
+  "tags": {
+    "addr:conscriptionnumber": "71",
+    "addr:housenumber": "71/43",
+    "addr:postcode": "60200",
+    "addr:street": "Koliště",
+    "addr:streetnumber": "43",
+    "ref:ruian:addr": "19182619",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296491168,
+  "tags": {
+    "addr:conscriptionnumber": "36",
+    "addr:housenumber": "36/17",
+    "addr:postcode": "60200",
+    "addr:street": "Kobližná",
+    "addr:streetnumber": "17",
+    "ref:ruian:addr": "19093624",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296491174,
+  "tags": {
+    "addr:conscriptionnumber": "664",
+    "addr:housenumber": "664/57",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "57",
+    "ref:ruian:addr": "19109831"
+  }
+},
+{
+  "type": "node",
+  "id": 296491231,
+  "tags": {
+    "addr:conscriptionnumber": "491",
+    "addr:housenumber": "491/16",
+    "addr:postcode": "60200",
+    "addr:street": "Orlí",
+    "addr:streetnumber": "16",
+    "ref:ruian:addr": "19098804",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296491714,
+  "tags": {
+    "addr:conscriptionnumber": "473",
+    "addr:housenumber": "473/10",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Minoritská",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19098596"
+  }
+},
+{
+  "type": "node",
+  "id": 296491888,
+  "tags": {
+    "addr:conscriptionnumber": "1909",
+    "addr:housenumber": "1909/7",
+    "addr:place": "Černá Pole",
+    "addr:postcode": "60200",
+    "addr:street": "Koliště",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19196768"
+  }
+},
+{
+  "type": "node",
+  "id": 296492048,
+  "tags": {
+    "addr:conscriptionnumber": "423",
+    "addr:housenumber": "423/43",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "43",
+    "ref:ruian:addr": "19107013"
+  }
+},
+{
+  "type": "node",
+  "id": 296492347,
+  "tags": {
+    "addr:conscriptionnumber": "87",
+    "addr:housenumber": "87/1",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Zámečnická",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19094256"
+  }
+},
+{
+  "type": "node",
+  "id": 296493166,
+  "tags": {
+    "addr:conscriptionnumber": "612",
+    "addr:housenumber": "612/22",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Benešova",
+    "addr:streetnumber": "22",
+    "ref:ruian:addr": "19100108"
+  }
+},
+{
+  "type": "node",
+  "id": 296493189,
+  "tags": {
+    "addr:conscriptionnumber": "236",
+    "addr:housenumber": "236/16",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "16",
+    "ref:ruian:addr": "19104626",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296493868,
+  "tags": {
+    "addr:conscriptionnumber": "98",
+    "addr:housenumber": "98/1",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Rašínova",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19094426"
+  }
+},
+{
+  "type": "node",
+  "id": 296494119,
+  "tags": {
+    "addr:conscriptionnumber": "504",
+    "addr:housenumber": "504/8",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Josefská",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19098952"
+  }
+},
+{
+  "type": "node",
+  "id": 296494408,
+  "tags": {
+    "addr:conscriptionnumber": "165",
+    "addr:housenumber": "165/1",
+    "addr:postcode": "60200",
+    "addr:street": "Skrytá",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19095287",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296494454,
+  "tags": {
+    "addr:conscriptionnumber": "145",
+    "addr:housenumber": "145/26",
+    "addr:postcode": "60200",
+    "addr:street": "Česká",
+    "addr:streetnumber": "26",
+    "ref:ruian:addr": "19095091",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296494720,
+  "tags": {
+    "addr:conscriptionnumber": "384",
+    "addr:housenumber": "384/54",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "54",
+    "ref:ruian:addr": "19106467",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296495075,
+  "tags": {
+    "addr:conscriptionnumber": "337",
+    "addr:housenumber": "337/8",
+    "addr:postcode": "60200",
+    "addr:street": "Starobrněnská",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19097131",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296495174,
+  "tags": {
+    "addr:conscriptionnumber": "678",
+    "addr:housenumber": "678/6",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Nádražní",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19100922"
+  }
+},
+{
+  "type": "node",
+  "id": 296495753,
+  "tags": {
+    "addr:conscriptionnumber": "190",
+    "addr:housenumber": "190/7",
+    "addr:postcode": "60200",
+    "addr:street": "Jaselská",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19166346",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296495980,
+  "tags": {
+    "addr:conscriptionnumber": "428",
+    "addr:housenumber": "428/5",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Františkánská",
+    "addr:streetnumber": "5",
+    "ref:ruian:addr": "19098103"
+  }
+},
+{
+  "type": "node",
+  "id": 296496156,
+  "tags": {
+    "addr:conscriptionnumber": "333",
+    "addr:housenumber": "333/4",
+    "addr:postcode": "60200",
+    "addr:street": "Peroutková",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19097051",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296496434,
+  "tags": {
+    "addr:conscriptionnumber": "132",
+    "addr:housenumber": "132/2",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Moravské náměstí",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19094884"
+  }
+},
+{
+  "type": "node",
+  "id": 296496602,
+  "tags": {
+    "addr:conscriptionnumber": "596",
+    "addr:housenumber": "596/35",
+    "addr:postcode": "60200",
+    "addr:street": "Údolní",
+    "addr:streetnumber": "35",
+    "ref:ruian:addr": "19099835",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296496707,
+  "tags": {
+    "addr:conscriptionnumber": "300",
+    "addr:housenumber": "300/5",
+    "addr:postcode": "60200",
+    "addr:street": "Zelný trh",
+    "addr:streetnumber": "5",
+    "ref:ruian:addr": "19096739",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296496883,
+  "tags": {
+    "addr:conscriptionnumber": "642",
+    "addr:housenumber": "642/2",
+    "addr:postcode": "60200",
+    "addr:street": "Jezuitská",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19100531",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296497082,
+  "tags": {
+    "addr:conscriptionnumber": "286",
+    "addr:housenumber": "286/13",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Starobrněnská",
+    "addr:streetnumber": "13",
+    "ref:ruian:addr": "19096542"
+  }
+},
+{
+  "type": "node",
+  "id": 296497728,
+  "tags": {
+    "addr:conscriptionnumber": "418",
+    "addr:housenumber": "418/3",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Nádražní",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19097964"
+  }
+},
+{
+  "type": "node",
+  "id": 296497736,
+  "tags": {
+    "addr:conscriptionnumber": "347",
+    "addr:housenumber": "347/11",
+    "addr:postcode": "60200",
+    "addr:street": "Dominikánská",
+    "addr:streetnumber": "11",
+    "ref:ruian:addr": "19097247",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296498004,
+  "tags": {
+    "addr:conscriptionnumber": "313",
+    "addr:housenumber": "313/9",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Kapucínské náměstí",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19096895"
+  }
+},
+{
+  "type": "node",
+  "id": 296498293,
+  "tags": {
+    "addr:conscriptionnumber": "264",
+    "addr:housenumber": "264/5",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Šilingrovo náměstí",
+    "addr:streetnumber": "5",
+    "ref:ruian:addr": "30643724"
+  }
+},
+{
+  "type": "node",
+  "id": 296499004,
+  "tags": {
+    "addr:conscriptionnumber": "445",
+    "addr:housenumber": "445/4",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Jánská",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19098260"
+  }
+},
+{
+  "type": "node",
+  "id": 296499274,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:conscriptionnumber": "363",
+    "addr:housenumber": "363/9",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Panská",
+    "addr:streetnumber": "9",
+    "check_date": "2026-03-27",
+    "name": "Dům ochránců přírody",
+    "name:en": "Dům ochránců přírody",
+    "office": "ngo",
+    "ref:ruian:addr": "19097409",
+    "smoking": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 296499278,
+  "tags": {
+    "addr:conscriptionnumber": "523",
+    "addr:housenumber": "523/23",
+    "addr:postcode": "60200",
+    "addr:street": "Údolní",
+    "addr:streetnumber": "23",
+    "ref:ruian:addr": "19099151",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296499391,
+  "tags": {
+    "addr:conscriptionnumber": "575",
+    "addr:housenumber": "575/18",
+    "addr:postcode": "60200",
+    "addr:street": "Rooseveltova",
+    "addr:streetnumber": "18",
+    "ref:ruian:addr": "19099592",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296500209,
+  "tags": {
+    "addr:conscriptionnumber": "173",
+    "addr:housenumber": "173/2",
+    "addr:postcode": "60200",
+    "addr:street": "Veselá",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19095431",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296500389,
+  "tags": {
+    "addr:conscriptionnumber": "461",
+    "addr:housenumber": "461/2",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Pohořelec",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19098456"
+  }
+},
+{
+  "type": "node",
+  "id": 296500436,
+  "tags": {
+    "addr:conscriptionnumber": "626",
+    "addr:housenumber": "626/5",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "5",
+    "ref:ruian:addr": "19109369"
+  }
+},
+{
+  "type": "node",
+  "id": 296500448,
+  "tags": {
+    "addr:conscriptionnumber": "690",
+    "addr:housenumber": "690/15",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Moravské náměstí",
+    "addr:streetnumber": "15",
+    "ref:ruian:addr": "19173458"
+  }
+},
+{
+  "type": "node",
+  "id": 296500526,
+  "tags": {
+    "addr:conscriptionnumber": "181",
+    "addr:housenumber": "181/5",
+    "addr:postcode": "60200",
+    "addr:street": "Jircháře",
+    "addr:streetnumber": "5",
+    "ref:ruian:addr": "19103948",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296500555,
+  "tags": {
+    "addr:conscriptionnumber": "1856",
+    "addr:housenumber": "1856/1",
+    "addr:place": "Černá Pole",
+    "addr:postcode": "60200",
+    "addr:street": "Koliště",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19196083"
+  }
+},
+{
+  "type": "node",
+  "id": 296500773,
+  "tags": {
+    "addr:conscriptionnumber": "677",
+    "addr:housenumber": "677/2",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Kounicova",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19173288"
+  }
+},
+{
+  "type": "node",
+  "id": 296500847,
+  "tags": {
+    "addr:conscriptionnumber": "645",
+    "addr:housenumber": "645/31",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "31",
+    "ref:ruian:addr": "19109598"
+  }
+},
+{
+  "type": "node",
+  "id": 296500857,
+  "tags": {
+    "addr:conscriptionnumber": "398",
+    "addr:housenumber": "398/1",
+    "addr:postcode": "60200",
+    "addr:street": "Panská",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19097735",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296501005,
+  "tags": {
+    "addr:conscriptionnumber": "14",
+    "addr:housenumber": "14/12",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Anenská",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19101902"
+  }
+},
+{
+  "type": "node",
+  "id": 296501651,
+  "tags": {
+    "addr:conscriptionnumber": "396",
+    "addr:housenumber": "396/24",
+    "addr:postcode": "60200",
+    "addr:street": "Údolní",
+    "addr:streetnumber": "24",
+    "ref:ruian:addr": "19169728",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296501776,
+  "tags": {
+    "addr:conscriptionnumber": "398",
+    "addr:housenumber": "398/4",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19106734"
+  }
+},
+{
+  "type": "node",
+  "id": 296502084,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:conscriptionnumber": "50",
+    "addr:country": "CZ",
+    "addr:housenumber": "50/10",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "10",
+    "addr:suburb": "Brno-střed",
+    "ref:ruian:addr": "19093829",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296502112,
+  "tags": {
+    "addr:conscriptionnumber": "466",
+    "addr:housenumber": "466/18",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Jánská",
+    "addr:streetnumber": "18",
+    "ref:ruian:addr": "19098511"
+  }
+},
+{
+  "type": "node",
+  "id": 296502199,
+  "tags": {
+    "addr:conscriptionnumber": "617",
+    "addr:housenumber": "617/9",
+    "addr:postcode": "60200",
+    "addr:street": "Žerotínovo náměstí",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19100167",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296502219,
+  "tags": {
+    "addr:conscriptionnumber": "220",
+    "addr:housenumber": "220/2",
+    "addr:postcode": "60200",
+    "addr:street": "Údolní",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19095864",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296502602,
+  "tags": {
+    "addr:conscriptionnumber": "245",
+    "addr:housenumber": "245/2",
+    "addr:postcode": "60200",
+    "addr:street": "Opletalova",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19096046",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296502720,
+  "tags": {
+    "addr:conscriptionnumber": "546",
+    "addr:housenumber": "546/5",
+    "addr:postcode": "60200",
+    "addr:street": "Sukova",
+    "addr:streetnumber": "5",
+    "ref:ruian:addr": "19099410",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296503300,
+  "tags": {
+    "addr:conscriptionnumber": "465",
+    "addr:housenumber": "465/18",
+    "addr:postcode": "60200",
+    "addr:street": "Veveří",
+    "addr:streetnumber": "18",
+    "ref:ruian:addr": "19170599",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296503951,
+  "tags": {
+    "addr:conscriptionnumber": "94",
+    "addr:housenumber": "94/1",
+    "addr:postcode": "60200",
+    "addr:street": "Středova",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19094361",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296504315,
+  "tags": {
+    "addr:conscriptionnumber": "516",
+    "addr:housenumber": "516/1",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Josefská",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19099070"
+  }
+},
+{
+  "type": "node",
+  "id": 296504495,
+  "tags": {
+    "addr:conscriptionnumber": "106",
+    "addr:housenumber": "106/3",
+    "addr:postcode": "60200",
+    "addr:street": "Běhounská",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19094531",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296505021,
+  "tags": {
+    "addr:conscriptionnumber": "350",
+    "addr:housenumber": "350/22",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Veveří",
+    "addr:streetnumber": "22",
+    "ref:ruian:addr": "19169175"
+  }
+},
+{
+  "type": "node",
+  "id": 296505082,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:conscriptionnumber": "120",
+    "addr:housenumber": "120/4",
+    "addr:postcode": "60200",
+    "addr:street": "Jakubská",
+    "addr:streetnumber": "4",
+    "amenity": "restaurant",
+    "brewery": "Pivovar Pegas",
+    "email": "reception@hotelpegas.cz",
+    "microbrewery": "yes",
+    "name": "Pivnice Pegas",
+    "opening_hours": "Mo-Th 10:00-24:00, Su 11:00-23:00, Fr 10:00-01:00, Sa 11:00-24:00",
+    "phone": "+420 542 210 104",
+    "website": "https://brnorestauracepivnice.hotelpegas.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 296505088,
+  "tags": {
+    "addr:conscriptionnumber": "512",
+    "addr:housenumber": "512/9",
+    "addr:postcode": "60200",
+    "addr:street": "Josefská",
+    "addr:streetnumber": "9",
+    "note": "Adresa: v RÚIAN AM neexistuje.",
+    "ref:ruian:addr": "19099029"
+  }
+},
+{
+  "type": "node",
+  "id": 296505131,
+  "tags": {
+    "addr:conscriptionnumber": "141",
+    "addr:housenumber": "141/31",
+    "addr:postcode": "60200",
+    "addr:street": "Česká",
+    "addr:streetnumber": "31",
+    "ref:ruian:addr": "19095031",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296505539,
+  "tags": {
+    "addr:conscriptionnumber": "70",
+    "addr:housenumber": "70/4",
+    "addr:postcode": "60200",
+    "addr:street": "Kobližná",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19094086",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296505839,
+  "tags": {
+    "addr:conscriptionnumber": "428",
+    "addr:housenumber": "428/1",
+    "addr:postcode": "60200",
+    "addr:street": "Františkánská",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19098120"
+  }
+},
+{
+  "type": "node",
+  "id": 296506886,
+  "tags": {
+    "addr:conscriptionnumber": "319",
+    "addr:housenumber": "319/38",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "38",
+    "ref:ruian:addr": "19105703"
+  }
+},
+{
+  "type": "node",
+  "id": 296507205,
+  "tags": {
+    "addr:conscriptionnumber": "217",
+    "addr:housenumber": "217/2",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Špilberk",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19095783"
+  }
+},
+{
+  "type": "node",
+  "id": 296507960,
+  "tags": {
+    "addr:conscriptionnumber": "195",
+    "addr:housenumber": "195/24",
+    "addr:postcode": "60200",
+    "addr:street": "Panská",
+    "addr:streetnumber": "24",
+    "note": "Adresa: v RÚIAN AM neexistuje.",
+    "ref:ruian:addr": "19095562"
+  }
+},
+{
+  "type": "node",
+  "id": 296508118,
+  "tags": {
+    "addr:conscriptionnumber": "534",
+    "addr:housenumber": "534/2",
+    "addr:postcode": "60200",
+    "addr:street": "Besední",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19099304",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296508170,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:conscriptionnumber": "45",
+    "addr:housenumber": "45/6",
+    "addr:postcode": "60200",
+    "addr:street": "Vachova",
+    "addr:streetnumber": "6",
+    "amenity": "bar",
+    "check_date:currency:XBT": "2025-05-14",
+    "internet_access": "wlan",
+    "name": "4pokoje",
+    "opening_hours": "Mo 17:00-24:00; Tu,We 00:00-01:00,17:00-24:00; Th-Sa 00:00-03:00,17:00-24:00; Su 00:00-04:00",
+    "payment:qerko": "yes",
+    "phone": "+420 770 122 102",
+    "website": "https://miluju4pokoje.cz",
+    "website:menu": "https://miluju4pokoje.cz/menu",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 296508431,
+  "tags": {
+    "addr:conscriptionnumber": "161",
+    "addr:housenumber": "161/10",
+    "addr:postcode": "60200",
+    "addr:street": "Veselá",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19095201",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296508463,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:conscriptionnumber": "8",
+    "addr:country": "CZ",
+    "addr:housenumber": "8/5",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Jezuitská",
+    "addr:streetnumber": "5",
+    "addr:suburb": "Brno-střed",
+    "ref:ruian:addr": "19093250",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296508534,
+  "tags": {
+    "addr:conscriptionnumber": "454",
+    "addr:housenumber": "454/10",
+    "addr:postcode": "60200",
+    "addr:street": "Poštovská",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19098367",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296508785,
+  "tags": {
+    "addr:conscriptionnumber": "641",
+    "addr:housenumber": "641/21",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "21",
+    "ref:ruian:addr": "19109555"
+  }
+},
+{
+  "type": "node",
+  "id": 296508997,
+  "tags": {
+    "addr:conscriptionnumber": "390",
+    "addr:housenumber": "390/64",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "64",
+    "ref:ruian:addr": "19106564",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296509174,
+  "tags": {
+    "addr:conscriptionnumber": "31",
+    "addr:housenumber": "31/7",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Rooseveltova",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19093560"
+  }
+},
+{
+  "type": "node",
+  "id": 296509444,
+  "tags": {
+    "addr:conscriptionnumber": "624",
+    "addr:housenumber": "624/3",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Malinovského náměstí",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19100230"
+  }
+},
+{
+  "type": "node",
+  "id": 296509463,
+  "tags": {
+    "addr:conscriptionnumber": "169",
+    "addr:housenumber": "169/17",
+    "addr:postcode": "60200",
+    "addr:street": "Česká",
+    "addr:streetnumber": "17",
+    "ref:ruian:addr": "19095376",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296509732,
+  "tags": {
+    "addr:conscriptionnumber": "403",
+    "addr:housenumber": "403/12",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19106793"
+  }
+},
+{
+  "type": "node",
+  "id": 296510142,
+  "tags": {
+    "addr:conscriptionnumber": "576",
+    "addr:housenumber": "576/3",
+    "addr:postcode": "60200",
+    "addr:street": "Sukova",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19099614",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296510200,
+  "tags": {
+    "addr:conscriptionnumber": "470",
+    "addr:housenumber": "470/4",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Minoritská",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19098561"
+  }
+},
+{
+  "type": "node",
+  "id": 296510204,
+  "tags": {
+    "addr:conscriptionnumber": "356",
+    "addr:housenumber": "356/4",
+    "addr:postcode": "60200",
+    "addr:street": "Mečová",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19097336",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296510560,
+  "tags": {
+    "addr:conscriptionnumber": "370",
+    "addr:housenumber": "370/12",
+    "addr:postcode": "60200",
+    "addr:street": "Radnická",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19097492",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296510951,
+  "tags": {
+    "addr:conscriptionnumber": "241",
+    "addr:housenumber": "241/20",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "20",
+    "ref:ruian:addr": "19104685",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296511149,
+  "tags": {
+    "addr:conscriptionnumber": "198",
+    "addr:housenumber": "198/15",
+    "addr:postcode": "60200",
+    "addr:street": "Jaselská",
+    "addr:streetnumber": "15",
+    "ref:ruian:addr": "19166508",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296511377,
+  "tags": {
+    "addr:conscriptionnumber": "416",
+    "addr:housenumber": "416/34",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "34",
+    "ref:ruian:addr": "19106921"
+  }
+},
+{
+  "type": "node",
+  "id": 296511387,
+  "tags": {
+    "addr:conscriptionnumber": "696",
+    "addr:housenumber": "696/11",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Lidická",
+    "addr:streetnumber": "11",
+    "ref:ruian:addr": "19173539"
+  }
+},
+{
+  "type": "node",
+  "id": 296511545,
+  "tags": {
+    "addr:conscriptionnumber": "598",
+    "addr:housenumber": "598/3",
+    "addr:postcode": "60200",
+    "addr:street": "Joštova",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19099878",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296511617,
+  "tags": {
+    "addr:conscriptionnumber": "653",
+    "addr:housenumber": "653/43",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "43",
+    "ref:ruian:addr": "19109687"
+  }
+},
+{
+  "type": "node",
+  "id": 296511803,
+  "tags": {
+    "addr:conscriptionnumber": "339",
+    "addr:housenumber": "339/12",
+    "addr:postcode": "60200",
+    "addr:street": "Starobrněnská",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19097158",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296512560,
+  "tags": {
+    "addr:conscriptionnumber": "691",
+    "addr:housenumber": "691/3",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Lidická",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19173474"
+  }
+},
+{
+  "type": "node",
+  "id": 296512567,
+  "tags": {
+    "addr:conscriptionnumber": "755",
+    "addr:housenumber": "755/14a",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Moravské náměstí",
+    "addr:streetnumber": "14a",
+    "ref:ruian:addr": "19174268"
+  }
+},
+{
+  "type": "node",
+  "id": 296512950,
+  "tags": {
+    "addr:conscriptionnumber": "324",
+    "addr:housenumber": "324/16",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Radnická",
+    "addr:streetnumber": "16",
+    "ref:ruian:addr": "19096992"
+  }
+},
+{
+  "type": "node",
+  "id": 296513496,
+  "tags": {
+    "addr:conscriptionnumber": "648",
+    "addr:housenumber": "648/9",
+    "addr:postcode": "60200",
+    "addr:street": "Dvořákova",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19100639",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296513644,
+  "tags": {
+    "addr:conscriptionnumber": "1908",
+    "addr:housenumber": "1908/5",
+    "addr:place": "Černá Pole",
+    "addr:postcode": "60200",
+    "addr:street": "Koliště",
+    "addr:streetnumber": "5",
+    "ref:ruian:addr": "19196741"
+  }
+},
+{
+  "type": "node",
+  "id": 296513851,
+  "tags": {
+    "addr:conscriptionnumber": "212",
+    "addr:housenumber": "212/10",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Hybešova",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19104359"
+  }
+},
+{
+  "type": "node",
+  "id": 296513914,
+  "tags": {
+    "addr:conscriptionnumber": "254",
+    "addr:housenumber": "254/9",
+    "addr:postcode": "60200",
+    "addr:street": "Údolní",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19096160",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296514002,
+  "tags": {
+    "addr:conscriptionnumber": "142",
+    "addr:housenumber": "142/49",
+    "addr:place": "Zábrdovice",
+    "addr:postcode": "60200",
+    "addr:street": "Koliště",
+    "addr:streetnumber": "49",
+    "ref:ruian:addr": "19183429"
+  }
+},
+{
+  "type": "node",
+  "id": 296514386,
+  "tags": {
+    "addr:conscriptionnumber": "224",
+    "addr:housenumber": "224/13",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Hybešova",
+    "addr:streetnumber": "13",
+    "ref:ruian:addr": "19104502"
+  }
+},
+{
+  "type": "node",
+  "id": 296514504,
+  "tags": {
+    "addr:conscriptionnumber": "483",
+    "addr:housenumber": "483/17",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Masarykova",
+    "addr:streetnumber": "17",
+    "ref:ruian:addr": "19098723"
+  }
+},
+{
+  "type": "node",
+  "id": 296514549,
+  "tags": {
+    "addr:conscriptionnumber": "287",
+    "addr:housenumber": "287/9",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Starobrněnská",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19096569"
+  }
+},
+{
+  "type": "node",
+  "id": 296514636,
+  "tags": {
+    "addr:conscriptionnumber": "550",
+    "addr:housenumber": "550/4",
+    "addr:postcode": "60200",
+    "addr:street": "Novobranská",
+    "addr:streetnumber": "4",
+    "check_date:opening_hours": "2025-11-24",
+    "cuisine": "coffee_shop",
+    "email": "cukrarna@bezcukru.com",
+    "level": "0",
+    "mobile": "+420 601 234 034",
+    "name": "BezCukru",
+    "opening_hours": "Mo-Su 10:00-19:00",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "shop": "pastry",
+    "website": "https://bezcukru.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 296514665,
+  "tags": {
+    "addr:conscriptionnumber": "727",
+    "addr:housenumber": "727/9",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Mášova",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19173849"
+  }
+},
+{
+  "type": "node",
+  "id": 296514812,
+  "tags": {
+    "addr:conscriptionnumber": "308",
+    "addr:housenumber": "308/14",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Kapucínské náměstí",
+    "addr:streetnumber": "14",
+    "ref:ruian:addr": "19096836"
+  }
+},
+{
+  "type": "node",
+  "id": 296514894,
+  "tags": {
+    "addr:conscriptionnumber": "502",
+    "addr:housenumber": "502/12",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Josefská",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19098928"
+  }
+},
+{
+  "type": "node",
+  "id": 296514987,
+  "tags": {
+    "addr:conscriptionnumber": "737",
+    "addr:housenumber": "737/19a",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Mášova",
+    "addr:streetnumber": "19a",
+    "ref:ruian:addr": "19173989"
+  }
+},
+{
+  "type": "node",
+  "id": 296515357,
+  "tags": {
+    "addr:conscriptionnumber": "645",
+    "addr:housenumber": "645/6",
+    "addr:postcode": "60200",
+    "addr:street": "Dvořákova",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19100582",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296516075,
+  "tags": {
+    "addr:conscriptionnumber": "382",
+    "addr:housenumber": "382/50",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "50",
+    "ref:ruian:addr": "19106424",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296516447,
+  "tags": {
+    "addr:conscriptionnumber": "270",
+    "addr:housenumber": "270/7",
+    "addr:postcode": "60200",
+    "addr:street": "Petrov",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19096364",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296516996,
+  "tags": {
+    "addr:conscriptionnumber": "63",
+    "addr:housenumber": "63/12",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Kobližná",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19093985"
+  }
+},
+{
+  "type": "node",
+  "id": 296517012,
+  "tags": {
+    "addr:conscriptionnumber": "70",
+    "addr:housenumber": "70/2",
+    "addr:postcode": "60200",
+    "addr:street": "Poštovská",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19094078",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296517038,
+  "tags": {
+    "addr:conscriptionnumber": "400",
+    "addr:housenumber": "400/4",
+    "addr:postcode": "60200",
+    "addr:street": "Masarykova",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19097751",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296517263,
+  "tags": {
+    "addr:conscriptionnumber": "418",
+    "addr:housenumber": "418/1",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Nádražní",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19097972"
+  }
+},
+{
+  "type": "node",
+  "id": 296517295,
+  "tags": {
+    "addr:conscriptionnumber": "524",
+    "addr:housenumber": "524/4",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Měnínská",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19099177"
+  }
+},
+{
+  "type": "node",
+  "id": 296517332,
+  "tags": {
+    "addr:conscriptionnumber": "640",
+    "addr:housenumber": "640/6",
+    "addr:postcode": "60200",
+    "addr:street": "Solniční",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19100493",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296517588,
+  "tags": {
+    "addr:conscriptionnumber": "98",
+    "addr:housenumber": "98/4",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "náměstí Svobody",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19094434"
+  }
+},
+{
+  "type": "node",
+  "id": 296517707,
+  "tags": {
+    "addr:conscriptionnumber": "456",
+    "addr:housenumber": "456/9",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Veveří",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19170491"
+  }
+},
+{
+  "type": "node",
+  "id": 296517909,
+  "tags": {
+    "addr:conscriptionnumber": "25",
+    "addr:housenumber": "25/4",
+    "addr:postcode": "60200",
+    "addr:street": "Beethovenova",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19093471",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296518633,
+  "tags": {
+    "addr:conscriptionnumber": "112",
+    "addr:housenumber": "112/10",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Běhounská",
+    "addr:streetnumber": "10",
+    "ref:ruian:addr": "19094612"
+  }
+},
+{
+  "type": "node",
+  "id": 296518705,
+  "tags": {
+    "addr:conscriptionnumber": "39",
+    "addr:housenumber": "39/3",
+    "addr:postcode": "60200",
+    "addr:street": "Vachova",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19093659",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296518980,
+  "tags": {
+    "addr:conscriptionnumber": "441",
+    "addr:housenumber": "441/7",
+    "addr:postcode": "60200",
+    "addr:street": "Masarykova",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19098235"
+  }
+},
+{
+  "type": "node",
+  "id": 296519282,
+  "tags": {
+    "addr:conscriptionnumber": "385",
+    "addr:housenumber": "385/3",
+    "addr:postcode": "60200",
+    "addr:street": "Radnická",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19097581",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296519369,
+  "tags": {
+    "addr:conscriptionnumber": "520",
+    "addr:housenumber": "520/26",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Orlí",
+    "addr:streetnumber": "26",
+    "ref:ruian:addr": "19099118"
+  }
+},
+{
+  "type": "node",
+  "id": 296519987,
+  "tags": {
+    "addr:conscriptionnumber": "165",
+    "addr:housenumber": "165/9",
+    "addr:postcode": "60200",
+    "addr:street": "Česká",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19095295",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296520089,
+  "tags": {
+    "addr:conscriptionnumber": "356",
+    "addr:housenumber": "356/7",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Slovákova",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19169256"
+  }
+},
+{
+  "type": "node",
+  "id": 296520377,
+  "tags": {
+    "addr:conscriptionnumber": "630",
+    "addr:housenumber": "630/3",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Solniční",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19100345"
+  }
+},
+{
+  "type": "node",
+  "id": 296520473,
+  "tags": {
+    "addr:conscriptionnumber": "544",
+    "addr:housenumber": "544/26",
+    "addr:postcode": "60200",
+    "addr:street": "Kobližná",
+    "addr:streetnumber": "26",
+    "ref:ruian:addr": "19099380",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296520645,
+  "tags": {
+    "addr:conscriptionnumber": "132",
+    "addr:housenumber": "132/19",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Běhounská",
+    "addr:streetnumber": "19",
+    "ref:ruian:addr": "19094892"
+  }
+},
+{
+  "type": "node",
+  "id": 296520654,
+  "tags": {
+    "addr:conscriptionnumber": "181",
+    "addr:housenumber": "181/3",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Zámečnická",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19095449"
+  }
+},
+{
+  "type": "node",
+  "id": 296520996,
+  "tags": {
+    "addr:conscriptionnumber": "461",
+    "addr:housenumber": "461/22",
+    "addr:postcode": "60200",
+    "addr:street": "Kobližná",
+    "addr:streetnumber": "22",
+    "ref:ruian:addr": "19098464",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296521092,
+  "tags": {
+    "addr:conscriptionnumber": "254",
+    "addr:housenumber": "254/9",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Vodní",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19104847"
+  }
+},
+{
+  "type": "node",
+  "id": 296521182,
+  "tags": {
+    "addr:conscriptionnumber": "1",
+    "addr:housenumber": "1/1",
+    "addr:postcode": "60200",
+    "addr:street": "Moravské náměstí",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19093152",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296521271,
+  "tags": {
+    "addr:conscriptionnumber": "631",
+    "addr:housenumber": "631/7a",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "7a",
+    "ref:ruian:addr": "19109440"
+  }
+},
+{
+  "type": "node",
+  "id": 296521446,
+  "tags": {
+    "addr:conscriptionnumber": "357",
+    "addr:housenumber": "357/6",
+    "addr:postcode": "60200",
+    "addr:street": "Mečová",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19097344",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296521520,
+  "tags": {
+    "addr:conscriptionnumber": "479",
+    "addr:housenumber": "479/20",
+    "addr:postcode": "60200",
+    "addr:street": "Nádražní",
+    "addr:streetnumber": "20",
+    "ref:ruian:addr": "19107633",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296521636,
+  "tags": {
+    "addr:conscriptionnumber": "150",
+    "addr:housenumber": "150/20",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Česká",
+    "addr:streetnumber": "20",
+    "ref:ruian:addr": "19095104"
+  }
+},
+{
+  "type": "node",
+  "id": 296522113,
+  "tags": {
+    "addr:conscriptionnumber": "3",
+    "addr:housenumber": "23",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "23",
+    "ref:ruian:addr": "19101759"
+  }
+},
+{
+  "type": "node",
+  "id": 296522189,
+  "tags": {
+    "addr:conscriptionnumber": "189",
+    "addr:housenumber": "189/6",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Jaselská",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19166311"
+  }
+},
+{
+  "type": "node",
+  "id": 296523009,
+  "tags": {
+    "addr:conscriptionnumber": "585",
+    "addr:housenumber": "585/4",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Jezuitská",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19099703"
+  }
+},
+{
+  "type": "node",
+  "id": 296523123,
+  "tags": {
+    "addr:conscriptionnumber": "364",
+    "addr:housenumber": "364/7",
+    "addr:postcode": "60200",
+    "addr:street": "Panská",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19097417",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296523399,
+  "tags": {
+    "addr:conscriptionnumber": "348",
+    "addr:housenumber": "348/9",
+    "addr:postcode": "60200",
+    "addr:street": "Dominikánská",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19097255",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296523689,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:conscriptionnumber": "290",
+    "addr:country": "CZ",
+    "addr:housenumber": "290/5",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Peroutková",
+    "addr:streetnumber": "5",
+    "addr:suburb": "Brno-střed",
+    "ref:ruian:addr": "19096593"
+  }
+},
+{
+  "type": "node",
+  "id": 296524570,
+  "tags": {
+    "addr:conscriptionnumber": "603",
+    "addr:housenumber": "603/1",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Divadelní",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19099975"
+  }
+},
+{
+  "type": "node",
+  "id": 296524692,
+  "tags": {
+    "addr:conscriptionnumber": "300",
+    "addr:housenumber": "300/8",
+    "addr:postcode": "60200",
+    "addr:street": "Kapucínské náměstí",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19096747",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296525102,
+  "tags": {
+    "addr:conscriptionnumber": "308",
+    "addr:housenumber": "308/2",
+    "addr:postcode": "60200",
+    "addr:street": "Obilní trh",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19168616",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296525262,
+  "tags": {
+    "addr:conscriptionnumber": "1856",
+    "addr:housenumber": "1856/2",
+    "addr:place": "Černá Pole",
+    "addr:postcode": "60200",
+    "addr:street": "Lidická",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19196075"
+  }
+},
+{
+  "type": "node",
+  "id": 296525476,
+  "tags": {
+    "addr:conscriptionnumber": "408",
+    "addr:housenumber": "408/20",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "20",
+    "ref:ruian:addr": "19106840"
+  }
+},
+{
+  "type": "node",
+  "id": 296525800,
+  "tags": {
+    "addr:conscriptionnumber": "645",
+    "addr:housenumber": "645/29",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "29",
+    "ref:ruian:addr": "19109601"
+  }
+},
+{
+  "type": "node",
+  "id": 296526156,
+  "tags": {
+    "addr:conscriptionnumber": "314",
+    "addr:housenumber": "314/2",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Zelný trh",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19096917"
+  }
+},
+{
+  "type": "node",
+  "id": 296526195,
+  "tags": {
+    "addr:conscriptionnumber": "655",
+    "addr:housenumber": "655/7",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Novobranská",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19100744"
+  }
+},
+{
+  "type": "node",
+  "id": 296526208,
+  "tags": {
+    "addr:conscriptionnumber": "479",
+    "addr:housenumber": "479/9",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Orlí",
+    "addr:streetnumber": "9",
+    "ref:ruian:addr": "19098669"
+  }
+},
+{
+  "type": "node",
+  "id": 296526356,
+  "tags": {
+    "addr:conscriptionnumber": "220",
+    "addr:housenumber": "220/2",
+    "addr:postcode": "60200",
+    "addr:street": "Komenského náměstí",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19095872",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296526402,
+  "tags": {
+    "addr:conscriptionnumber": "1920",
+    "addr:housenumber": "1920/1",
+    "addr:postcode": "60200",
+    "addr:street": "třída Kpt. Jaroše",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19196903",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296526663,
+  "tags": {
+    "addr:conscriptionnumber": "391",
+    "addr:housenumber": "391/14",
+    "addr:postcode": "60200",
+    "addr:street": "Údolní",
+    "addr:streetnumber": "14",
+    "ref:ruian:addr": "19169663",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296527423,
+  "tags": {
+    "addr:conscriptionnumber": "246",
+    "addr:housenumber": "246/3",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Biskupská",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19096054"
+  }
+},
+{
+  "type": "node",
+  "id": 296527698,
+  "tags": {
+    "addr:conscriptionnumber": "475",
+    "addr:housenumber": "475/5",
+    "addr:place": "Zábrdovice",
+    "addr:postcode": "60200",
+    "addr:street": "Ponávka",
+    "addr:streetnumber": "5",
+    "ref:ruian:addr": "19187335"
+  }
+},
+{
+  "type": "node",
+  "id": 296528425,
+  "tags": {
+    "addr:conscriptionnumber": "565",
+    "addr:housenumber": "565/4",
+    "addr:postcode": "60200",
+    "addr:street": "Rooseveltova",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19099525",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296528985,
+  "tags": {
+    "addr:conscriptionnumber": "280",
+    "addr:housenumber": "280/7",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Biskupská",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19096437"
+  }
+},
+{
+  "type": "node",
+  "id": 296529005,
+  "tags": {
+    "addr:conscriptionnumber": "651",
+    "addr:housenumber": "651/8",
+    "addr:postcode": "60200",
+    "addr:street": "Dvořákova",
+    "addr:streetnumber": "8",
+    "ref:ruian:addr": "19100663",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296529351,
+  "tags": {
+    "addr:conscriptionnumber": "426",
+    "addr:housenumber": "426/48",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "48",
+    "ref:ruian:addr": "19107048"
+  }
+},
+{
+  "type": "node",
+  "id": 296529895,
+  "tags": {
+    "addr:conscriptionnumber": "219",
+    "addr:housenumber": "219/12",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Hybešova",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19104456"
+  }
+},
+{
+  "type": "node",
+  "id": 296530059,
+  "tags": {
+    "addr:conscriptionnumber": "412",
+    "addr:housenumber": "412/1",
+    "addr:postcode": "60200",
+    "addr:street": "Kapucínské náměstí",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19097875",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296530108,
+  "tags": {
+    "addr:conscriptionnumber": "492",
+    "addr:housenumber": "492/18",
+    "addr:postcode": "60200",
+    "addr:street": "Orlí",
+    "addr:streetnumber": "18",
+    "ref:ruian:addr": "19098812",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296530148,
+  "tags": {
+    "addr:conscriptionnumber": "258",
+    "addr:housenumber": "258/20",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Hybešova",
+    "addr:streetnumber": "20",
+    "ref:ruian:addr": "19104910"
+  }
+},
+{
+  "type": "node",
+  "id": 296530271,
+  "tags": {
+    "addr:conscriptionnumber": "264",
+    "addr:housenumber": "264/2",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Dominikánská",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "28137582"
+  }
+},
+{
+  "type": "node",
+  "id": 296530388,
+  "tags": {
+    "addr:conscriptionnumber": "167",
+    "addr:country": "CZ",
+    "addr:housenumber": "167/7",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Husova",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19103727"
+  }
+},
+{
+  "type": "node",
+  "id": 296530604,
+  "tags": {
+    "addr:conscriptionnumber": "391",
+    "addr:housenumber": "391/12",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Panská",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19097662"
+  }
+},
+{
+  "type": "node",
+  "id": 296531083,
+  "tags": {
+    "addr:conscriptionnumber": "161",
+    "addr:housenumber": "161/2",
+    "addr:postcode": "60200",
+    "addr:street": "Středova",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19095210",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296531099,
+  "tags": {
+    "addr:conscriptionnumber": "381",
+    "addr:housenumber": "381/49",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "49",
+    "ref:ruian:addr": "19106394"
+  }
+},
+{
+  "type": "node",
+  "id": 296531434,
+  "tags": {
+    "addr:conscriptionnumber": "121",
+    "addr:housenumber": "121/1",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Jakubská",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19094744"
+  }
+},
+{
+  "type": "node",
+  "id": 296531536,
+  "tags": {
+    "addr:conscriptionnumber": "618",
+    "addr:housenumber": "618/32",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Orlí",
+    "addr:streetnumber": "32",
+    "ref:ruian:addr": "19100183"
+  }
+},
+{
+  "type": "node",
+  "id": 296531597,
+  "tags": {
+    "addr:conscriptionnumber": "170",
+    "addr:housenumber": "170/26",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Veselá",
+    "addr:streetnumber": "26",
+    "ref:ruian:addr": "19095384"
+  }
+},
+{
+  "type": "node",
+  "id": 296531643,
+  "tags": {
+    "addr:conscriptionnumber": "324",
+    "addr:housenumber": "324/16",
+    "addr:place": "Zábrdovice",
+    "addr:postcode": "60200",
+    "addr:street": "Milady Horákové",
+    "addr:streetnumber": "16",
+    "ref:ruian:addr": "19185634"
+  }
+},
+{
+  "type": "node",
+  "id": 296531884,
+  "tags": {
+    "addr:conscriptionnumber": "635",
+    "addr:housenumber": "635/4",
+    "addr:postcode": "60200",
+    "addr:street": "Dvořákova",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19100400",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296532079,
+  "tags": {
+    "addr:conscriptionnumber": "240",
+    "addr:housenumber": "240/12",
+    "addr:postcode": "60200",
+    "addr:street": "Solniční",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19095970",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296532585,
+  "tags": {
+    "addr:conscriptionnumber": "680",
+    "addr:housenumber": "680/7",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Leitnerova",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19110057"
+  }
+},
+{
+  "type": "node",
+  "id": 296532618,
+  "tags": {
+    "addr:conscriptionnumber": "496",
+    "addr:housenumber": "496/19a",
+    "addr:postcode": "60200",
+    "addr:street": "Údolní",
+    "addr:streetnumber": "19a",
+    "ref:ruian:addr": "19098871",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296532652,
+  "tags": {
+    "addr:conscriptionnumber": "247",
+    "addr:housenumber": "247/6",
+    "addr:postcode": "60200",
+    "addr:street": "Brandlova",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19096062",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296532728,
+  "tags": {
+    "addr:conscriptionnumber": "90",
+    "addr:housenumber": "90/19",
+    "addr:postcode": "60200",
+    "addr:street": "náměstí Svobody",
+    "addr:streetnumber": "19",
+    "ref:ruian:addr": "19094302",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296533059,
+  "tags": {
+    "addr:conscriptionnumber": "133",
+    "addr:housenumber": "133/5",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Solniční",
+    "addr:streetnumber": "5",
+    "ref:ruian:addr": "19094931"
+  }
+},
+{
+  "type": "node",
+  "id": 296533145,
+  "tags": {
+    "addr:conscriptionnumber": "247",
+    "addr:housenumber": "247/29a",
+    "addr:postcode": "60200",
+    "addr:street": "Kopečná",
+    "addr:streetnumber": "29a",
+    "ref:ruian:addr": "19104758",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296533337,
+  "tags": {
+    "addr:conscriptionnumber": "391",
+    "addr:housenumber": "391/25",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "25",
+    "ref:ruian:addr": "19106572",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296533366,
+  "tags": {
+    "addr:conscriptionnumber": "57",
+    "addr:housenumber": "57/20",
+    "addr:postcode": "60200",
+    "addr:street": "Kobližná",
+    "addr:streetnumber": "20",
+    "ref:ruian:addr": "19093926",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296533432,
+  "tags": {
+    "addr:conscriptionnumber": "533",
+    "addr:housenumber": "533/12",
+    "addr:postcode": "60200",
+    "addr:street": "Husova",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19099274",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296533890,
+  "tags": {
+    "addr:city": "Brno",
+    "addr:conscriptionnumber": "605",
+    "addr:country": "CZ",
+    "addr:housenumber": "605/18",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Benešova",
+    "addr:streetnumber": "18",
+    "addr:suburb": "Brno-střed",
+    "amenity": "restaurant",
+    "check_date:currency:XBT": "2023-09-11",
+    "email": "restaurant@gardenpub.cz",
+    "name": "Garden Restaurant & Pub",
+    "opening_hours": "Mo-Fr 06:30-24:00; Sa,Su 00:00-01:00,06:30-24:00",
+    "payment:onchain": "no",
+    "payment:qerko": "yes",
+    "payment:qerko:lightning": "yes",
+    "phone": "+420 771 240 300",
+    "website": "https://www.gardenpub.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 296533947,
+  "tags": {
+    "addr:conscriptionnumber": "621",
+    "addr:housenumber": "621/1b",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "1b",
+    "ref:ruian:addr": "19109288"
+  }
+},
+{
+  "type": "node",
+  "id": 296533959,
+  "tags": {
+    "addr:conscriptionnumber": "454",
+    "addr:housenumber": "454/7",
+    "addr:postcode": "60200",
+    "addr:street": "Veveří",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19170475",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296533967,
+  "tags": {
+    "addr:conscriptionnumber": "1953",
+    "addr:housenumber": "1953/5a",
+    "addr:place": "Černá Pole",
+    "addr:postcode": "60200",
+    "addr:street": "Milady Horákové",
+    "addr:streetnumber": "5a",
+    "ref:ruian:addr": "19197314"
+  }
+},
+{
+  "type": "node",
+  "id": 296534069,
+  "tags": {
+    "addr:conscriptionnumber": "400",
+    "addr:housenumber": "400/7",
+    "addr:postcode": "60200",
+    "addr:street": "Pekařská",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19106769",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296534341,
+  "tags": {
+    "addr:conscriptionnumber": "435",
+    "addr:housenumber": "435/15",
+    "addr:postcode": "60200",
+    "addr:street": "Údolní",
+    "addr:streetnumber": "15",
+    "ref:ruian:addr": "19098197",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296534788,
+  "tags": {
+    "addr:conscriptionnumber": "365",
+    "addr:housenumber": "365/2",
+    "addr:postcode": "60200",
+    "addr:street": "Radnická",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19097425",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296534917,
+  "tags": {
+    "addr:conscriptionnumber": "319",
+    "addr:housenumber": "319/1",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Studánka",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19105681"
+  }
+},
+{
+  "type": "node",
+  "id": 296535005,
+  "tags": {
+    "addr:conscriptionnumber": "218",
+    "addr:housenumber": "218/1",
+    "addr:postcode": "60200",
+    "addr:street": "Marešova",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19095791",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296535389,
+  "tags": {
+    "addr:conscriptionnumber": "195",
+    "addr:housenumber": "195/11",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Dominikánské náměstí",
+    "addr:streetnumber": "11",
+    "ref:ruian:addr": "19095571"
+  }
+},
+{
+  "type": "node",
+  "id": 296535625,
+  "tags": {
+    "addr:conscriptionnumber": "371",
+    "addr:housenumber": "371/14",
+    "addr:postcode": "60200",
+    "addr:street": "Radnická",
+    "addr:streetnumber": "14",
+    "ref:ruian:addr": "19097506",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296535886,
+  "tags": {
+    "addr:conscriptionnumber": "643",
+    "addr:housenumber": "643/23",
+    "addr:place": "Zábrdovice",
+    "addr:postcode": "60200",
+    "addr:street": "Koliště",
+    "addr:streetnumber": "23",
+    "ref:ruian:addr": "19188439"
+  }
+},
+{
+  "type": "node",
+  "id": 296535914,
+  "tags": {
+    "addr:conscriptionnumber": "197",
+    "addr:housenumber": "197/14",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Jaselská",
+    "addr:streetnumber": "14",
+    "ref:ruian:addr": "19166494"
+  }
+},
+{
+  "type": "node",
+  "id": 296535930,
+  "tags": {
+    "addr:conscriptionnumber": "26",
+    "addr:housenumber": "26/4",
+    "addr:postcode": "60200",
+    "addr:street": "Kozí",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19093489",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296536095,
+  "tags": {
+    "addr:conscriptionnumber": "41",
+    "addr:housenumber": "41/2",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Vachova",
+    "addr:streetnumber": "2",
+    "ref:ruian:addr": "19093764"
+  }
+},
+{
+  "type": "node",
+  "id": 296536303,
+  "tags": {
+    "addr:conscriptionnumber": "454",
+    "addr:housenumber": "454/11",
+    "addr:postcode": "60200",
+    "addr:street": "Jánská",
+    "addr:streetnumber": "11",
+    "ref:ruian:addr": "19098383",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296536315,
+  "tags": {
+    "addr:conscriptionnumber": "677",
+    "addr:housenumber": "677/15",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Běhounská",
+    "addr:streetnumber": "15",
+    "ref:ruian:addr": "19100914"
+  }
+},
+{
+  "type": "node",
+  "id": 296536592,
+  "tags": {
+    "addr:conscriptionnumber": "654",
+    "addr:housenumber": "654/45",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "45",
+    "ref:ruian:addr": "19109695"
+  }
+},
+{
+  "type": "node",
+  "id": 296536626,
+  "tags": {
+    "addr:conscriptionnumber": "730",
+    "addr:housenumber": "730/12",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Mášova",
+    "addr:streetnumber": "12",
+    "ref:ruian:addr": "19173873"
+  }
+},
+{
+  "type": "node",
+  "id": 296537075,
+  "tags": {
+    "addr:conscriptionnumber": "690",
+    "addr:housenumber": "690/1",
+    "addr:place": "Veveří",
+    "addr:postcode": "60200",
+    "addr:street": "Lidická",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19173466"
+  }
+},
+{
+  "type": "node",
+  "id": 296537686,
+  "tags": {
+    "addr:conscriptionnumber": "650",
+    "addr:housenumber": "650/5",
+    "addr:postcode": "60200",
+    "addr:street": "Dvořákova",
+    "addr:streetnumber": "5",
+    "ref:ruian:addr": "19100647",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296538173,
+  "tags": {
+    "addr:conscriptionnumber": "468",
+    "addr:housenumber": "468/14",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Jánská",
+    "addr:streetnumber": "14",
+    "ref:ruian:addr": "19098537"
+  }
+},
+{
+  "type": "node",
+  "id": 296538211,
+  "tags": {
+    "addr:conscriptionnumber": "582",
+    "addr:housenumber": "582/17",
+    "addr:postcode": "60200",
+    "addr:street": "Jezuitská",
+    "addr:streetnumber": "17",
+    "ref:ruian:addr": "19099673",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296538961,
+  "tags": {
+    "addr:conscriptionnumber": "636",
+    "addr:housenumber": "636/15",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Pellicova",
+    "addr:streetnumber": "15",
+    "ref:ruian:addr": "19109512"
+  }
+},
+{
+  "type": "node",
+  "id": 296539244,
+  "tags": {
+    "addr:conscriptionnumber": "341",
+    "addr:housenumber": "341/18",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Starobrněnská",
+    "addr:streetnumber": "18",
+    "ref:ruian:addr": "19097166"
+  }
+},
+{
+  "type": "node",
+  "id": 296539496,
+  "tags": {
+    "addr:conscriptionnumber": "208",
+    "addr:housenumber": "208/6",
+    "addr:place": "Staré Brno",
+    "addr:postcode": "60200",
+    "addr:street": "Hybešova",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19104316"
+  }
+},
+{
+  "type": "node",
+  "id": 296539515,
+  "tags": {
+    "addr:conscriptionnumber": "638",
+    "addr:housenumber": "638/3",
+    "addr:postcode": "60200",
+    "addr:street": "Benešova",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19100469",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296539573,
+  "tags": {
+    "addr:conscriptionnumber": "301",
+    "addr:housenumber": "301/7",
+    "addr:postcode": "60200",
+    "addr:street": "Kapucínské náměstí",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19096755",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296540137,
+  "tags": {
+    "addr:conscriptionnumber": "271",
+    "addr:housenumber": "271/6",
+    "addr:postcode": "60200",
+    "addr:street": "Petrov",
+    "addr:streetnumber": "6",
+    "ref:ruian:addr": "19096372",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296540164,
+  "tags": {
+    "addr:conscriptionnumber": "325",
+    "addr:housenumber": "325/18",
+    "addr:postcode": "60200",
+    "addr:street": "Zelný trh",
+    "addr:streetnumber": "18",
+    "ref:ruian:addr": "19097000",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296540489,
+  "tags": {
+    "addr:conscriptionnumber": "1907",
+    "addr:housenumber": "1907/3",
+    "addr:place": "Černá Pole",
+    "addr:postcode": "60200",
+    "addr:street": "Koliště",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19196733"
+  }
+},
+{
+  "type": "node",
+  "id": 296540724,
+  "tags": {
+    "addr:conscriptionnumber": "142",
+    "addr:housenumber": "142/1",
+    "addr:place": "Zábrdovice",
+    "addr:postcode": "60200",
+    "addr:street": "Cejl",
+    "addr:streetnumber": "1",
+    "ref:ruian:addr": "19183437"
+  }
+},
+{
+  "type": "node",
+  "id": 296540779,
+  "tags": {
+    "addr:conscriptionnumber": "1923",
+    "addr:housenumber": "1923/4",
+    "addr:place": "Černá Pole",
+    "addr:postcode": "60200",
+    "addr:street": "třída Kpt. Jaroše",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19196962"
+  }
+},
+{
+  "type": "node",
+  "id": 296541038,
+  "tags": {
+    "addr:conscriptionnumber": "485",
+    "addr:housenumber": "485/4",
+    "addr:postcode": "60200",
+    "addr:street": "Orlí",
+    "addr:streetnumber": "4",
+    "ref:ruian:addr": "19098731",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 296541151,
+  "tags": {
+    "addr:conscriptionnumber": "550",
+    "addr:housenumber": "550/3",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Měnínská",
+    "addr:streetnumber": "3",
+    "ref:ruian:addr": "19099444"
+  }
+},
+{
+  "type": "node",
+  "id": 296541201,
+  "tags": {
+    "addr:conscriptionnumber": "289",
+    "addr:housenumber": "289/7",
+    "addr:place": "Brno-město",
+    "addr:postcode": "60200",
+    "addr:street": "Starobrněnská",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19096585"
+  }
+},
+{
+  "type": "node",
+  "id": 296541410,
+  "tags": {
+    "addr:conscriptionnumber": "108",
+    "addr:housenumber": "108/7",
+    "addr:postcode": "60200",
+    "addr:street": "Běhounská",
+    "addr:streetnumber": "7",
+    "ref:ruian:addr": "19094540",
+    "source:addr": "cuzk:ruian"
+  }
+}
+
+  ]
+}

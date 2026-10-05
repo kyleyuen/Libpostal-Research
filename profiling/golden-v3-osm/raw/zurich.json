@@ -1,0 +1,6965 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-01T08:09:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 30883051,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "14",
+    "addr:postcode": "8001",
+    "addr:street": "Gessnerallee",
+    "alt_name": "Parkhaus Gessnerallee",
+    "amenity": "parking",
+    "capacity": "620",
+    "capacity:disabled": "yes",
+    "charge": "Mo-Sa 07:00-24:00 2.00 CHF/30m;Su 07:00-24:00 1.00 CHF/30m;Mo-Su 00:00-07:00 1.00 CHF/30m;max. 40.00 CHF/24h",
+    "description": "300 m langes Parkhaus mit vier Parkebenen vollständig unter der Gessnerallee. Ersatz für die aufgehobenen Parkdecks über der Sihl vor der Sihlpost (Parkdeck Gessnerallee) und am Staufacherquai",
+    "fee": "yes",
+    "layer": "-1",
+    "lit": "yes",
+    "maxheight": "2.10",
+    "maxstay": "5760",
+    "name": "City Parking",
+    "opening_hours": "24/7",
+    "operator": "City Parkhaus AG",
+    "operator:type": "private",
+    "parking": "underground",
+    "start_date": "2004-06-09",
+    "supervised": "yes",
+    "surface": "concrete",
+    "wheelchair": "limited",
+    "wikidata": "Q105171578",
+    "wikimedia_commons": "Category:City Parking",
+    "wikipedia": "de:Parkhaus Gessnerallee"
+  }
+},
+{
+  "type": "node",
+  "id": 39947904,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofbrücke",
+    "brand": "Coop",
+    "brand:wikidata": "Q432564",
+    "brand:wikipedia": "de:Coop (Schweiz)",
+    "check_date": "2026-02-14",
+    "check_date:opening_hours": "2026-02-14",
+    "name": "Coop",
+    "opening_hours": "Mo-Sa 06:00-22:00",
+    "operator": "Coop Genossenschaft",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 119246912,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "57",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "Coop City St. Annahof",
+    "branch": "Zürich St. Annahof",
+    "brand": "Coop City",
+    "brand:wikidata": "Q120492050",
+    "level": "0;1;2;3",
+    "name": "Coop City",
+    "opening_hours": "Mo-Sa 09:00-20:00",
+    "operator": "Coop Genossenschaft",
+    "shop": "department_store",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.coop-city.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 119247298,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "28",
+    "addr:postcode": "8001",
+    "addr:street": "Sihlstrasse",
+    "amenity": "restaurant",
+    "bar": "yes",
+    "check_date": "2026-05-25",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "only",
+    "email": "info@hiltl.ch",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Haus Hiltl",
+    "opening_hours": "Mo-We 07:00-22:00; Th-Fr 07:00-23:00; Sa 08:00-23:00; Su 10:00-22:00",
+    "outdoor_seating": "yes",
+    "payment:account_cards": "yes",
+    "phone": "+41 44 227 70 00",
+    "takeaway": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://hiltl.ch/",
+    "wheelchair": "yes",
+    "wikidata": "Q5764402",
+    "wikipedia": "de:Hiltl (Restaurant)"
+  }
+},
+{
+  "type": "node",
+  "id": 119249170,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "31-35",
+    "addr:postcode": "8001",
+    "addr:street": "Löwenstrasse",
+    "alt_name": "Migros City (MMM)",
+    "branch": "Zürich City",
+    "brand": "Migros",
+    "brand:website": "https://www.migros.ch/",
+    "brand:wikidata": "Q680727",
+    "brand:wikipedia": "de:Migros",
+    "indoor": "yes",
+    "level": "2;3",
+    "name": "Migros",
+    "opening_hours": "Mo-Sa 09:00-20:00; PH off",
+    "operator": "Genossenschaft Migros Zürich",
+    "shop": "supermarket",
+    "website": "https://filialen.migros.ch/de/migros-supermarkt-zuerich-city",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 140416888,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "3",
+    "addr:postcode": "8001",
+    "addr:street": "Uraniastrasse",
+    "amenity": "parking",
+    "capacity": "451",
+    "capacity:disabled": "1",
+    "capacity:parent": "yes",
+    "capacity:women": "no",
+    "charge": "Mo-Sa 06:00-22:00 1.10 CHF/15m up to 5h, 1.30 CHF/15m up to 9h; Su, Nights 2.00 CHF/h; max. 43.00 CHF/24h",
+    "fee": "yes",
+    "layer": "-1",
+    "lit": "yes",
+    "max_level": "4",
+    "maxheight": "2.10",
+    "min_level": "-1",
+    "name": "Parkhaus Urania",
+    "opening_hours": "24/7",
+    "operator": "Parking Zürich AG",
+    "parking": "underground",
+    "supervised": "yes",
+    "website": "http://www.parkhaus-urania.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 211155877,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "97",
+    "addr:postcode": "8004",
+    "addr:street": "Kasernenstrasse",
+    "amenity": "post_office",
+    "check_date": "2026-07-03",
+    "check_date:opening_hours": "2026-07-03",
+    "level": "0",
+    "name": "Poststelle 8021 Zürich 1 Sihlpost",
+    "opening_hours": "Mo-Fr 08:00-20:00; Sa-Su 10:00-18:00",
+    "operator": "Die Post",
+    "operator:de": "Die Post",
+    "operator:en": "Swiss Post",
+    "operator:fr": "La Poste",
+    "operator:it": "La Posta",
+    "operator:rm": "La Posta",
+    "operator:wikidata": "Q614803",
+    "phone": "+41 848 88 88 88",
+    "website": "https://www.post.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 252407018,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "1",
+    "addr:postcode": "8006",
+    "addr:street": "Culmannstrasse",
+    "amenity": "restaurant",
+    "check_date": "2024-08-03",
+    "contact:email": "info@culmann.ch",
+    "contact:phone": "+41 44 251 36 51",
+    "contact:website": "https://www.culmann.ch/",
+    "cuisine": "italian;pizza",
+    "indoor_seating": "yes",
+    "name": "Ristorante Culmann",
+    "opening_hours": "Mo-Fr 11:30-14:00, Mo-Sa 17:30-23:00",
+    "outdoor_seating": "yes",
+    "takeaway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 267348518,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "5",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofplatz",
+    "alt_name": "McDonald's Bahnhofplatz",
+    "amenity": "fast_food",
+    "branch": "Zürich Bahnhofplatz",
+    "brand": "McDonald's",
+    "brand:wikidata": "Q38076",
+    "brand:wikipedia": "en:McDonald's",
+    "check_date": "2025-10-03",
+    "check_date:opening_hours": "2025-10-03",
+    "cuisine": "burger",
+    "delivery": "no",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "McDonald's",
+    "opening_hours": "Mo-We 08:00-01:00, Th 08:00-03:00, Fr 08:00-06:00, Sa 08:00-07:00, Su,PH 09:00-01:00",
+    "operator": "McDonald's",
+    "outdoor_seating": "yes",
+    "smoking": "no",
+    "takeaway": "yes",
+    "website": "https://www.mcdonalds.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 270802863,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "2",
+    "addr:postcode": "8001",
+    "addr:street": "Weinplatz",
+    "name": "Storchen",
+    "toilets:wheelchair": "yes",
+    "tourism": "hotel",
+    "website": "https://storchen.ch/",
+    "wheelchair": "yes",
+    "wikidata": "Q30592570",
+    "wikimedia_commons": "Category:Hotel zum Storchen",
+    "wikipedia": "en:Hotel Storchen Zürich"
+  }
+},
+{
+  "type": "node",
+  "id": 271411934,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "7",
+    "addr:postcode": "8001",
+    "addr:street": "Uraniastrasse",
+    "amenity": "post_office",
+    "name": "Poststelle 8025 Zürich 25 Urania",
+    "opening_hours": "Mo-Fr 09:00-18:00; Sa 09:00-12:00",
+    "operator": "Die Post",
+    "operator:de": "Die Post",
+    "operator:en": "Swiss Post",
+    "operator:fr": "La Poste",
+    "operator:it": "La Posta",
+    "operator:rm": "La Posta",
+    "operator:wikidata": "Q614803",
+    "phone": "+41 848 88 88 88",
+    "website": "https://www.post.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 271411935,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "9",
+    "addr:postcode": "8001",
+    "addr:street": "Uraniastrasse",
+    "amenity": "restaurant",
+    "check_date": "2026-09-28",
+    "cuisine": "french",
+    "indoor_seating": "yes",
+    "name": "Brasserie Lipp",
+    "opening_hours": "Mo-Fr 12:00-15:00,18:00-23:00; Sa 12:00-23:00; Su 16:30-22:00",
+    "operator": "Candrian Catering",
+    "outdoor_seating": "yes",
+    "website": "https://www.brasserie-lipp.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 271411936,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "3",
+    "addr:postcode": "8001",
+    "addr:street": "Werdmühleplatz",
+    "amenity": "restaurant",
+    "email": "info@lotti-lokal.ch",
+    "name": "Lotti",
+    "old_name": "Casa Mia",
+    "opening_hours": "Mo-Fr 09:00-23:00; Sa 10:00-23:00; Su, Mo off",
+    "phone": "+41 43 399 01 01",
+    "website": "https://www.lotti-lokal.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 271411938,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "48",
+    "addr:postcode": "8001",
+    "addr:street": "Rennweg",
+    "amenity": "cafe",
+    "brand": "Starbucks",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "en:Starbucks",
+    "cuisine": "coffee_shop",
+    "internet_access": "wlan",
+    "name": "Starbucks",
+    "official_name": "Starbucks Coffee",
+    "opening_hours": "Mo-Fr 07:00-19:30; Sa 08:00-19:00; Su 10:30-18:00",
+    "takeaway": "yes",
+    "website": "https://www.starbucks.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 271411939,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "53",
+    "addr:postcode": "8001",
+    "addr:street": "Rennweg",
+    "amenity": "cafe",
+    "check_date": "2023-09-30",
+    "name": "Confiserie Honold",
+    "opening_hours": "Mo-Fr 08:00-18:30; Sa 08:00-18:00",
+    "outdoor_seating": "yes",
+    "shop": "pastry",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 273371550,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:street": "Stüssihofstatt",
+    "amenity": "pub",
+    "check_date": "2023-09-13",
+    "name": "Nachtflug",
+    "website": "https://www.n8flug.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 277997937,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "37",
+    "addr:postcode": "8001",
+    "addr:street": "Sihlstrasse",
+    "check_date": "2026-03-07",
+    "check_date:opening_hours": "2026-03-07",
+    "name": "Benci Brothers",
+    "opening_hours": "Mo-We,Fr 10:00-19:00; Th 10:00-20:00; Sa 09:00-18:00",
+    "shop": "shoes",
+    "website": "https://www.bencibrothers.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 279180951,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "4",
+    "addr:postcode": "8001",
+    "addr:street": "Beatenplatz",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2025-05-29",
+    "cuisine": "international",
+    "name": "Dupont Brasserie & Bar",
+    "opening_hours": "Mo-Th 10:00-23:00, Fr-Sa 10:00-01:00",
+    "operator": "Candrian Catering",
+    "website": "https://dupont.ch/"
+  }
+},
+{
+  "type": "node",
+  "id": 280783431,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "21",
+    "addr:postcode": "8001",
+    "addr:street": "Marktgasse",
+    "alt_name": "Santa Lucia Niederdorf",
+    "amenity": "restaurant",
+    "branch": "Zürich Niederdorf",
+    "brand": "Santa Lucia",
+    "brand:wikidata": "Q110419156",
+    "check_date": "2023-04-24",
+    "cuisine": "pizza;italian",
+    "indoor_seating": "yes",
+    "name": "Santa Lucia",
+    "opening_hours": "Mo-Sa 11:30-02:00; Su 11:30-24:00",
+    "operator": "Bindella",
+    "outdoor_seating": "yes",
+    "oven": "wood_fired",
+    "takeaway": "yes",
+    "website": "https://www.bindella.ch/de/santa-lucia-niederdorf.html",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 283458324,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "7",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofplatz",
+    "check_date": "2024-08-09",
+    "name": "Schweizerhof",
+    "phone": "+41 44 218 88 88",
+    "tourism": "hotel",
+    "website": "https://www.hotelschweizerhof.com",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 283458326,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "21",
+    "addr:postcode": "8001",
+    "addr:street": "Lintheschergasse",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2026-01-20",
+    "cuisine": "regional",
+    "indoor_seating": "yes",
+    "name": "Walliser Kanne",
+    "opening_hours": "Mo-Sa 11:30-23:00; Su 17:30-22:30",
+    "opening_hours:url": "https://www.walliserkanne-zuerich.ch/kontakt/",
+    "outdoor_seating": "sidewalk",
+    "phone": "+41 44 211 31 33",
+    "website": "https://www.walliserkanne-zuerich.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 283458327,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "87",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "internet_access": "wlan",
+    "name": "St. Gotthard",
+    "operator": "Manz Privacy Hotels",
+    "rooms": "138",
+    "stars": "4",
+    "tourism": "hotel",
+    "website": "https://www.hotelstgotthard.ch/",
+    "wheelchair": "no",
+    "wikidata": "Q112013505"
+  }
+},
+{
+  "type": "node",
+  "id": 283458331,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "6",
+    "addr:postcode": "8001",
+    "addr:street": "Schweizergasse",
+    "alt_name": "SAM'S Schweizergasse",
+    "amenity": "restaurant",
+    "branch": "Zürich City",
+    "check_date": "2025-11-12",
+    "cuisine": "american",
+    "indoor_seating": "yes",
+    "name": "SAM'S Pizza Land",
+    "opening_hours": "Mo-Th 09:00-22:00; Fr,Sa 09:00-24:00; Su 11:00-22:00",
+    "operator": "its1world Management",
+    "outdoor_seating": "yes",
+    "takeaway": "yes",
+    "website": "https://www.samspizza.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 283458332,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "8",
+    "addr:postcode": "8001",
+    "addr:street": "Schweizergasse",
+    "amenity": "bar",
+    "level": "0",
+    "name": "Baryton",
+    "outdoor_seating": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 283458339,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "32",
+    "addr:postcode": "8001",
+    "addr:street": "Schützengasse",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2025-06-10",
+    "indoor_seating": "yes",
+    "name": "Schützengasse",
+    "opening_hours": "Mo-Fr 11:30-14:30,18:00-24:00, Sa 19:00-24:00; PH off",
+    "opening_hours:kitchen": "Mo-Fr 11:30-14:00,18:00-22:00, Sa 19:00-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 500 10 30",
+    "website": "https://www.schuetzengasse.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 283458359,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "12",
+    "addr:postcode": "8001",
+    "addr:street": "Seidengasse",
+    "alt_name": "Migros Bank Zürich City",
+    "amenity": "bank",
+    "atm": "yes",
+    "branch": "Zürich City",
+    "brand": "Migros Bank",
+    "brand:de": "Migros Bank",
+    "brand:fr": "Banque Migros",
+    "brand:it": "Banca Migros",
+    "brand:wikidata": "Q1593349",
+    "check_date": "2024-04-15",
+    "name": "Migros Bank",
+    "name:de": "Migros Bank",
+    "name:fr": "Banque Migros",
+    "name:it": "Banca Migros",
+    "opening_hours": "Mo-Fr 10:00-12:00,14:00-17:00; PH off",
+    "operator": "Migros Bank",
+    "website": "https://www.migrosbank.ch/de/standorte.html/migros-bank-niederlassung-zuerich",
+    "wheelchair": "yes",
+    "wikimedia_commons": "Category:Migros Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 283458360,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "34",
+    "addr:postcode": "8001",
+    "addr:street": "Löwenstrasse",
+    "check_date": "2025-10-28",
+    "email": "hotelcity@hotelcity.ch",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "City Hotel",
+    "phone": "+41 44 217 17 17",
+    "tourism": "hotel",
+    "website": "https://www.hotelcity.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 286038265,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "31",
+    "addr:postcode": "8001",
+    "addr:street": "Sihlstrasse",
+    "amenity": "restaurant",
+    "check_date": "2024-08-19",
+    "indoor_seating": "yes",
+    "name": "Glogge-Egge",
+    "opening_hours": "Mo-Su 11:45-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 225 91 91",
+    "website": "https://www.glockenhof.ch/de/restaurants/restaurant_glogge_egge",
+    "wheelchair": "yes",
+    "wheelchair:description": "Stufenloser Eingang durch Hotel-Lobby, Rolli-WC mit Lift im oberen Stock"
+  }
+},
+{
+  "type": "node",
+  "id": 286038266,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "8",
+    "addr:postcode": "8001",
+    "addr:street": "Pelikanstrasse",
+    "amenity": "restaurant",
+    "bar": "yes",
+    "cuisine": "international",
+    "email": "info@jamesjoyce.ch",
+    "name": "James Joyce",
+    "opening_hours": "Mo-Sa 11:00-23:00",
+    "opening_hours:kitchen": "Mo-Sa 11:00-22:30",
+    "operator": "Segmüller Collection",
+    "phone": "+41 44 221 18 28",
+    "website": "https://www.jamesjoyce.ch/"
+  }
+},
+{
+  "type": "node",
+  "id": 288340413,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "11",
+    "addr:postcode": "8001",
+    "addr:street": "Zähringerplatz",
+    "amenity": "restaurant",
+    "capacity": "200",
+    "check_date": "2025-08-04",
+    "check_date:opening_hours": "2025-08-04",
+    "cuisine": "regional",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "email": "info@zaehringer.ch",
+    "name": "Café Zähringer",
+    "opening_hours": "Tu,We 10:00-23:00, Th-Sa 10:00-24:00, Su 10:00-22:00; Mo off",
+    "organic": "yes",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 252 05 00",
+    "regional": "yes",
+    "restaurant:self_governing": "yes",
+    "smoking": "outside",
+    "takeaway": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.zaehringer.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 298169838,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "13",
+    "addr:postcode": "8001",
+    "addr:street": "Stüssihofstatt",
+    "amenity": "restaurant",
+    "name": "greperey - crêpes & drinks",
+    "opening_hours": "Tu-Th 11:30-22:00, Fr,Sa 11:30-24:00, Su 11:30-22:00; Mo off",
+    "wikidata": "Q35722490"
+  }
+},
+{
+  "type": "node",
+  "id": 300697122,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "14",
+    "addr:postcode": "8001",
+    "addr:street": "Spitalgasse",
+    "amenity": "bar",
+    "check_date": "2023-10-07",
+    "level": "0",
+    "lgbtq": "primary",
+    "name": "KWEER",
+    "opening_hours": "Mo-Fr 08:00-17:00, Sa-Su 09:00-17:00, We-Th 17:00-24:00, Fr-Sa 17:00-02:00",
+    "outdoor_seating": "yes",
+    "website": "https://kweerbar.ch",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 300744285,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "18",
+    "addr:postcode": "8001",
+    "addr:street": "Pelikanstrasse",
+    "amenity": "nightclub",
+    "check_date": "2024-04-15",
+    "name": "Kaufleuten Klubsaal",
+    "toilets:wheelchair": "yes",
+    "website": "https://kaufleuten.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 317768650,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "144",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "amenity": "cafe",
+    "brand": "Starbucks",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "en:Starbucks",
+    "cuisine": "coffee_shop",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Starbucks",
+    "official_name": "Starbucks Coffee",
+    "opening_hours": "Mo-Th 06:30-20:30; Fr 06:30-21:00; Sa 07:00-21:00; Su,PH 07:00-20:30",
+    "outdoor_seating": "no",
+    "takeaway": "yes",
+    "website": "https://www.starbucks.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 317768690,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "66",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "pub",
+    "indoor_seating": "yes",
+    "name": "Gräbli-Bar",
+    "opening_hours": "Mo-Th 05:00-04:00; Fr-Su 05:00-04:59",
+    "operator": "Holenstein Gastro",
+    "outdoor_seating": "yes",
+    "website": "http://www.graebli-bar.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 317769155,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "40",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "restaurant",
+    "branch": "Zürcher Niederdorf",
+    "brand": "dieci",
+    "cuisine": "pizza",
+    "diet:gluten_free": "yes",
+    "diet:vegan": "yes",
+    "indoor_seating": "yes",
+    "name": "10' dieci",
+    "opening_hours": "Nov-Mar Mo-Sa 11:30-22:00; Apr-Oct Su-Th 11:00-23:00; Apr-Oct Fr-Sa 11:00-24:00",
+    "operator": "Dieci",
+    "outdoor_seating": "yes",
+    "phone": "+41 43 268 53 02",
+    "takeaway": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://dieci.ch/de/gelateria-zuerich-niederdorf",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 317769175,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "76",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "restaurant",
+    "check_date": "2023-12-08",
+    "cuisine": "local",
+    "name": "Rheinfelder Bierhalle",
+    "phone": "+41 44 251 54 64",
+    "website": "https://www.rheinfelderbierhalle.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 317771056,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "100",
+    "addr:postcode": "8006",
+    "addr:street": "Rämistrasse",
+    "entrance": "main",
+    "name": "Haupteingang Universitätsspital Zürich",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 317773082,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "25",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "branch": "Zürich Niederdorf",
+    "brand": "Flying Tiger Copenhagen",
+    "brand:wikidata": "Q2786319",
+    "check_date": "2026-05-09",
+    "check_date:opening_hours": "2026-05-09",
+    "name": "Flying Tiger Copenhagen",
+    "old_name": "Otto Troendle;Salt Store",
+    "opening_hours": "Mo-Sa 09:00-20:00",
+    "operator": "Tiger Stores (Switzerland)",
+    "shop": "variety_store",
+    "short_name": "Flying Tiger",
+    "website": "https://ch.flyingtiger.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 317773504,
+  "tags": {
+    "addr:housenumber": "24",
+    "addr:street": "Niederdorfstrasse",
+    "alt_name": "Kontiki",
+    "amenity": "pub",
+    "check_date": "2025-10-01",
+    "facebook": "https://www.facebook.com/kontikibarzh/?fref=ts",
+    "indoor_seating": "yes",
+    "name": "Kon-Tiki",
+    "opening_hours": "Mo-Th,Su 17:00-24:00; Fr,Sa 17:00-02:00",
+    "outdoor_seating": "yes",
+    "website": "https://www.kontikibar.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 317773545,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "30",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "alt_name": "Burger King Niederdorf",
+    "amenity": "fast_food",
+    "branch": "Zürich Niederdorf",
+    "brand": "Burger King",
+    "brand:wikidata": "Q177054",
+    "check_date": "2026-05-09",
+    "check_date:opening_hours": "2026-05-09",
+    "cuisine": "burger",
+    "indoor_seating": "yes",
+    "name": "Burger King",
+    "old_name": "McDonald's;Enzian Restaurant",
+    "opening_hours": "Mo-Th 11:00-23:00, Fr,Sa 11:00-01:00, Su 11:00-23:30",
+    "outdoor_seating": "yes",
+    "smoking": "no",
+    "takeaway": "yes",
+    "website": "https://www.burger-king.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 321364221,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "34",
+    "addr:postcode": "8092",
+    "addr:street": "Leonhardstrasse",
+    "amenity": "cafe",
+    "indoor": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "yes",
+    "level": "0",
+    "name": "bQm Kulturcafé & Bar",
+    "opening_hours": "Mo-Fr 13:00-23:00; Sa,Su,PH off",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 632 75 03",
+    "website": "https://www.bqm-bar.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 321364237,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "34",
+    "addr:postcode": "8092",
+    "addr:street": "Leonhardstrasse",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2026-04-22",
+    "delivery": "no",
+    "diet:vegetarian": "yes",
+    "indoor": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "level": "-1",
+    "name": "SV Mensa Polyterrasse",
+    "opening_hours": "Mo-Fr 11:15-14:00,17:30-19:30",
+    "outdoor_seating": "no",
+    "phone": "+41 44 632 62 02",
+    "smoking": "no",
+    "takeaway": "yes",
+    "website": "https://www.ethz.ch/de/campus/erleben/gastronomie-und-einkaufen/gastronomie/restaurants-und-cafeterias/zentrum/mensa-polyterrasse.html",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 321364380,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "6",
+    "addr:postcode": "8092",
+    "addr:street": "Universitätstrasse",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2025-06-28",
+    "cuisine": "fusion",
+    "indoor_seating": "yes",
+    "name": "food&lab",
+    "opening_hours": "Mo-Fr 08:30-15:00",
+    "opening_hours:kitchen": "Mo-Fr 11:30-13:30",
+    "outdoor_seating": "no",
+    "phone": "+41 44 632 80 11",
+    "smoking": "no",
+    "takeaway": "yes",
+    "website": "https://ethz.ch/de/campus/erleben/gastronomie-und-einkaufen/gastronomie/restaurants-und-cafeterias/zentrum/food-lab.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 331179800,
+  "tags": {
+    "addr:housenumber": "61",
+    "addr:street": "Limmatquai",
+    "amenity": "cafe",
+    "delivery": "no",
+    "email": "info@rathauscafe.ch",
+    "name": "Rathaus-Café",
+    "opening_hours": "Mo-We 07:30-22:00; Th,Fr 07:30-23:00; Sa 10:30-23:00; Su 10:30-19:00",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "phone": "+41 44 261 07 70",
+    "smoking": "outside",
+    "takeaway": "no",
+    "toilets:wheelchair": "no",
+    "website": "https://www.rathauscafe.ch/",
+    "wheelchair": "yes",
+    "wheelchair:description": "rollstuhlgerechtes öffentliches ZüriWC im gleichen Gebäude"
+  }
+},
+{
+  "type": "node",
+  "id": 331182590,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "70",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "restaurant",
+    "check_date": "2024-04-01",
+    "indoor_seating": "yes",
+    "name": "Johanniter",
+    "opening_hours": "Mo-Su 10:00-24:00",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 253 62 00",
+    "toilets:wheelchair": "no",
+    "website": "https://www.johanniter.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 331183362,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "132",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "amenity": "restaurant",
+    "check_date": "2025-10-01",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Bierhalle Wolf",
+    "opening_hours": "Mo-Th,Su 11:00-23:15; Fr-Sa 11:00-02:00",
+    "operator": "Holenstein Gastro",
+    "outdoor_seating": "no",
+    "website": "https://www.bierhalle-wolf.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 331184721,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "6",
+    "addr:postcode": "8001",
+    "addr:street": "In Gassen",
+    "alt_name": "Bindella Zürich",
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "name": "Bindella",
+    "opening_hours": "Mo-Sa 11:30-23:30; Su 17:30-22:30",
+    "operator": "Bindella",
+    "outdoor_seating": "yes",
+    "website": "https://www.bindella.ch/de/bindella-zuerich.html"
+  }
+},
+{
+  "type": "node",
+  "id": 338639750,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "21",
+    "addr:postcode": "8005",
+    "addr:street": "Ausstellungsstrasse",
+    "amenity": "nightclub",
+    "check_date": "2024-11-03",
+    "contact:email": "uhu@kauzig.ch",
+    "contact:phone": "+41 77 9743476",
+    "contact:ra": "https://ra.co/clubs/95870",
+    "contact:website": "https://www.kauzig.ch",
+    "name": "Kauz",
+    "opening_hours": "22:00+"
+  }
+},
+{
+  "type": "node",
+  "id": 343068234,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "35",
+    "addr:postcode": "8001",
+    "addr:street": "Uraniastrasse",
+    "amenity": "cafe",
+    "check_date": "2026-03-07",
+    "check_date:opening_hours": "2026-03-07",
+    "name": "Caffé Handelshof",
+    "opening_hours": "Mo-Fr 07:00-21:00; Sa 08:00-19:00; PH off",
+    "website": "https://handelshof.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 343347150,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "20",
+    "addr:postcode": "8001",
+    "addr:street": "Marktgasse",
+    "amenity": "restaurant",
+    "check_date": "2023-09-13",
+    "name": "Zunfthaus zur Schmiden",
+    "wheelchair": "yes",
+    "wikidata": "Q29933698",
+    "wikimedia_commons": "Category:Zunfthaus zur Schmiden"
+  }
+},
+{
+  "type": "node",
+  "id": 343347643,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "3",
+    "addr:postcode": "8001",
+    "addr:street": "Metzgergasse",
+    "amenity": "pub",
+    "check_date": "2023-06-04",
+    "contact:phone": "+41 44 261 27 72",
+    "lgbtq": "primary",
+    "name": "Cranberry",
+    "outdoor_seating": "yes",
+    "website": "https://www.cranberry.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 343347885,
+  "tags": {
+    "addr:housenumber": "66",
+    "addr:street": "Limmatquai",
+    "amenity": "cafe",
+    "check_date": "2026-09-03",
+    "check_date:opening_hours": "2026-09-03",
+    "name": "Gran Café Motta",
+    "opening_hours": "Mo-Th 07:30-21:00; Fr 07:30-22:00; Sa 08:00-22:00; Su 08:00-21:00",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 343364120,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Neumarkt",
+    "amenity": "restaurant",
+    "changing_table": "no",
+    "check_date": "2023-04-22",
+    "cuisine": "italian",
+    "email": "info@restauarantkantorei.ch",
+    "name": "Kantorei",
+    "opening_hours": "Mo-Fr 09:00-23:00; Sa 11:30-23:00; Su 11:30-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 252 27 27",
+    "website": "https://restaurantkantorei.ch",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 343391109,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "3",
+    "addr:postcode": "8001",
+    "addr:street": "Spitalgasse",
+    "check_date": "2023-04-24",
+    "name": "PLATZHIRSCH Hotel & Bar",
+    "smoking": "isolated",
+    "tourism": "hotel",
+    "website": "https://www.hotelplatzhirsch.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 343391110,
+  "tags": {
+    "addr:housenumber": "26",
+    "addr:street": "Froschaugasse",
+    "amenity": "bar",
+    "check_date": "2023-12-09",
+    "cuisine": "regional",
+    "description": "wine bar",
+    "level": "0",
+    "name": "Wystube Isebähnli",
+    "outdoor_seating": "yes",
+    "website": "https://www.isebaehnli.com",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 345591780,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Löwenstrasse",
+    "amenity": "pub",
+    "check_date": "2024-02-03",
+    "name": "UrbanVior",
+    "operator": "Vior AG",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.urbanvior.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 358104906,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housename": "ETH RZ",
+    "addr:housenumber": "59",
+    "addr:street": "Clausiusstrasse",
+    "entrance": "main",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 362911166,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "8",
+    "addr:postcode": "8001",
+    "addr:street": "Gessnerallee",
+    "amenity": "bar",
+    "email": "info@stall6.ch",
+    "name": "Stall 6",
+    "opening_hours": "Tu-Sa 17:00+",
+    "phone": "+41 44 225 81 54",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.stall6.ch/bar/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 362911612,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "11",
+    "addr:postcode": "8001",
+    "addr:street": "Gessnerallee",
+    "amenity": "bar",
+    "name": "El Lokal",
+    "website": "https://www.ellokal.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 364396943,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "5",
+    "addr:postcode": "8001",
+    "addr:street": "Neumarkt",
+    "alt_name": "Theater Neumarkt",
+    "amenity": "theatre",
+    "check_date": "2025-04-29",
+    "name": "Theater am Neumarkt",
+    "toilets:wheelchair": "no",
+    "wheelchair": "no",
+    "wikidata": "Q2416020",
+    "wikimedia_commons": "Category:Theater am Neumarkt Zürich",
+    "wikipedia": "en:Theater am Neumarkt"
+  }
+},
+{
+  "type": "node",
+  "id": 365918123,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "26",
+    "addr:postcode": "8001",
+    "addr:street": "Weinbergstrasse",
+    "amenity": "fast_food",
+    "cuisine": "kebab",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Weinberg Bistro Zürich",
+    "old_name": "Luigi",
+    "opening_hours": "Mo-Sa 10:00-22:30; Su 10:00-22:00",
+    "outdoor_seating": "no",
+    "toilets": "yes",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 370529244,
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:street": "Untere Zäune",
+    "amenity": "restaurant",
+    "check_date": "2024-02-12",
+    "name": "zum Grünen Glas",
+    "opening_hours": "Mo-Fr 11:30-14:00,17:30-23:00; Sa 17:30-23:00; PH closed",
+    "phone": "+41 44 251 62 04",
+    "website": "https://www.gruenesglas.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370529368,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "2",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "restaurant",
+    "check_date": "2025-08-04",
+    "check_date:opening_hours": "2025-08-04",
+    "name": "Piadina Bar",
+    "opening_hours": "Mo-We 11:00-21:00; Th-Sa 11:00-22:00; Su off",
+    "phone": "+41 44 251 65 94",
+    "toilets:wheelchair": "no",
+    "website": "https://www.piadina-bar-margherita.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 370529921,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:street": "Glockengasse",
+    "amenity": "restaurant",
+    "name": "Marküs",
+    "old_name": "Kaiser's Reblaube",
+    "phone": "+41 44 210 07 07",
+    "website": "https://markues.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 370530329,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "42",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "amenity": "restaurant",
+    "name": "Haus zum Rüden",
+    "opening_hours": "Tu-Fr 11:30-14:00,18:00-23:00; Sa 18:00-23:00; Su,Mo closed",
+    "phone": "+41 44 261 95 66",
+    "uzh_landmark": "true",
+    "website": "https://www.haus-zum-rueden.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 370531172,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "3",
+    "addr:postcode": "8001",
+    "addr:street": "Nägelihof",
+    "amenity": "restaurant",
+    "cuisine": "french",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Mère Catherine",
+    "opening_hours": "Mo-Fr 11:30-15:00, 17:30-23:00; Sa 11:30-23:00; Su closed",
+    "operator": "Restaurants Commercio-Piccadilly",
+    "outdoor_seating": "yes",
+    "website": "https://www.mere-catherine.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 370531363,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "7",
+    "addr:postcode": "8001",
+    "addr:street": "Rennweg",
+    "check_date": "2025-11-12",
+    "name": "Widder",
+    "tourism": "hotel",
+    "wheelchair": "yes",
+    "wikidata": "Q1247784",
+    "wikipedia": "de:Widder Hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 370822313,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "51",
+    "addr:postcode": "8001",
+    "addr:street": "Zähringerstrasse",
+    "check_date": "2026-07-20",
+    "name": "k snack Central",
+    "opening_hours": "Mo-Fr 06:00-19:00; Sa 08:00-17:00",
+    "operator": "Valora",
+    "shop": "kiosk",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370822481,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "142",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2025-10-31",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Weinstube 1923",
+    "opening_hours": "Mo-Fr 11:30-14:00,17:30-22:00; Sa,Su off",
+    "phone": "+41 44 267 60 42",
+    "website": "https://weinstube1923.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370822646,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "90",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "cafe",
+    "brand": "jung seit 1976",
+    "check_date:opening_hours": "2025-08-14",
+    "name": "Schurter",
+    "opening_hours": "Mo-Fr 07:00-18:00; Sa 09:00-16:00; Su,PH off",
+    "operator": "Kleiner Jung AG",
+    "takeaway": "yes",
+    "website": "https://jung.ag/zuercherspezialitaeten/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370834132,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "80",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "restaurant",
+    "contact:phone": "+41 44 740 20 00",
+    "contact:website": "https://www.lapasta-zh.ch",
+    "cuisine": "pasta;italian",
+    "diet:meat": "yes",
+    "diet:vegetarian": "yes",
+    "name": "La Pasta",
+    "opening_hours": "Mo-Th 11:30-14:00,17:30-22:00; Fr 11:30-14:00,17:30-22:30; Sa 12:00-22:30; Su off",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370834353,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "88",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "disused:brand": "Migrolino",
+    "disused:brand:wikidata": "Q56745088",
+    "disused:name": "Migrolino",
+    "disused:shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 370834375,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "84",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "check_date": "2026-05-09",
+    "check_date:opening_hours": "2026-05-09",
+    "name": "Peak Performance",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 09:30-18:00",
+    "shop": "clothes",
+    "source": "survey",
+    "website": "https://www.peakperformance.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 370834408,
+  "tags": {
+    "addr:housenumber": "71",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "fast_food",
+    "cuisine": "barbecue;kebab;sandwich",
+    "indoor_seating": "yes",
+    "name": "Food Corner",
+    "old_name": "Central Geylan Kebap Haus",
+    "opening_hours": "Mo-Su 10:00-23:00",
+    "source": "survey",
+    "takeaway": "yes",
+    "website": "https://www.foodcorner-swiss.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370834639,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "74",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "restaurant",
+    "check_date": "2026-04-22",
+    "cuisine": "italian;pizza;sandwich",
+    "indoor_seating": "yes",
+    "name": "Da Raffaele",
+    "outdoor_seating": "yes",
+    "self_service": "no",
+    "website": "https://da-raffaele.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 370834754,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "68",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "restaurant",
+    "indoor_seating": "yes",
+    "name": "N-68",
+    "opening_hours": "Mo-Th 11:00-23:00, Fr,Sa 11:00-24:00, Su 11:00-22:00",
+    "operator": "Holenstein Gastro",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 261 08 12",
+    "website": "https://www.n68.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 370835059,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "64",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "alt_name": "Akt Niederdorf",
+    "amenity": "pub",
+    "check_date": "2024-10-26",
+    "indoor_seating": "yes",
+    "name": "5. Akt",
+    "opening_hours": "Tu-Th 16:00-24:00; Fr-Sa 16:00-02:00",
+    "operator": "Holenstein Gastro",
+    "outdoor_seating": "no",
+    "phone": "+41 44 251 41 33",
+    "website": "http://www.akt-niederdorf.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370835262,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "60",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "fast_food",
+    "cuisine": "burger",
+    "name": "Sando",
+    "takeaway": "only",
+    "website": "https://sandoburger.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 370835435,
+  "tags": {
+    "addr:housenumber": "60",
+    "addr:street": "Niederdorfstrasse",
+    "check_date": "2024-10-26",
+    "disused:amenity": "restaurant",
+    "end_date": "2025-08-31",
+    "indoor_seating": "yes",
+    "name": "Rank",
+    "note": "Burgerkette Sando (Node direkt nördlich https://www.openstreetmap.org/node/370835262) übernimmt das Lokal ca. Ende 2025",
+    "outdoor_seating": "yes",
+    "website": "https://amrank.ch/"
+  }
+},
+{
+  "type": "node",
+  "id": 370835901,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "52",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "pub",
+    "check_date": "2026-05-09",
+    "check_date:opening_hours": "2026-05-09",
+    "indoor_seating": "yes",
+    "name": "Big Ben Pub",
+    "opening_hours:signed": "no",
+    "operator": "Holenstein Gastro",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 262 15 85",
+    "website": "https://bigbenpubzurich.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 370836338,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "39",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "check_date": "2026-05-09",
+    "check_date:opening_hours": "2026-05-09",
+    "name": "Central Power",
+    "opening_hours:signed": "no",
+    "shop": "clothes",
+    "website": "https://centralpower.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370836433,
+  "tags": {
+    "addr:housenumber": "37",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "restaurant",
+    "check_date": "2025-10-01",
+    "indoor_seating": "yes",
+    "name": "Iberia",
+    "outdoor_seating": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 370837336,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "40",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "check_date": "2025-08-14",
+    "name": "Hotel Alexander",
+    "stars": "3",
+    "tourism": "hotel",
+    "website": "https://www.hotel-alexander.ch",
+    "wheelchair": "limited",
+    "wikidata": "Q112013503"
+  }
+},
+{
+  "type": "node",
+  "id": 370837565,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "29",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "check_date": "2026-05-09",
+    "check_date:opening_hours": "2026-05-09",
+    "name": "Drogerie Nature First",
+    "old_name": "Drogerie Eikolzer",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-17:00",
+    "operator": "Nature First",
+    "shop": "chemist",
+    "website": "https://naturefirst.ch/standorte/drogerie-niederdorf",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370838264,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "21",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "check_date": "2026-05-09",
+    "check_date:opening_hours": "2026-05-09",
+    "name": "Snipes",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00",
+    "operator": "Snipes Schweiz; Dosenbach-Ochsner",
+    "shop": "shoes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370838635,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "6",
+    "addr:postcode": "8001",
+    "addr:street": "Badergasse",
+    "amenity": "pub",
+    "check_date": "2024-04-01",
+    "name": "Hotel Schäfli",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370838914,
+  "tags": {
+    "addr:housenumber": "19",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "restaurant",
+    "check_date": "2023-09-13",
+    "cuisine": "steak_house",
+    "indoor_seating": "yes",
+    "name": "Steakhouse Old Town",
+    "outdoor_seating": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370839004,
+  "tags": {
+    "addr:housenumber": "17",
+    "addr:street": "Niederdorfstrasse",
+    "check_date:opening_hours": "2026-02-07",
+    "fair_trade": "yes",
+    "name": "RRREVOLVE Fair Fashion Store",
+    "opening_hours": "Mo-Fr 11:00-19:00; Sa 11:00-18:00",
+    "opening_hours:url": "https://rrrevolve.ch/content/7-laden-zurich",
+    "organic": "yes",
+    "phone": "+41 44 261 02 27",
+    "shop": "clothes",
+    "website": "https://rrrevolve.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370839377,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "15",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "alt_name": "Liguria",
+    "amenity": "restaurant",
+    "check_date": "2023-09-13",
+    "cuisine": "italian",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Vallocaia",
+    "old_name": "Malatesta",
+    "opening_hours": "Mo-Su 11:30-23:30",
+    "operator": "Bindella",
+    "outdoor_seating": "yes",
+    "phone": "+41 43 268 51 68",
+    "website": "https://www.bindella.ch/de/vallocaia.html",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370839580,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "13",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "email": "info@hirschen-zuerich.ch",
+    "fax": "+41 43 268 33 34",
+    "name": "Hotel Hirschen",
+    "phone": "+41 43 268 33 33",
+    "rooms": "27",
+    "tourism": "hotel",
+    "website": "https://www.hirschen-zuerich.ch/",
+    "wheelchair": "no",
+    "wikidata": "Q111874800"
+  }
+},
+{
+  "type": "node",
+  "id": 370839762,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "11",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "name": "7 Day-Shop",
+    "opening_hours": "Su-Th 08:00-23:00; Fr,Sa 08:00-24:00",
+    "shop": "convenience",
+    "uzh_landmark": "true"
+  }
+},
+{
+  "type": "node",
+  "id": 370840032,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "10",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "check_date": "2025-08-04",
+    "name": "Wellenberg",
+    "tourism": "hotel",
+    "website": "https://www.hotel-wellenberg.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 370840367,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "10",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "restaurant",
+    "check_date": "2023-04-24",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Brasserie Louis",
+    "opening_hours": "Su-Th 11:30-23:00; Fr-Sa 11:30-24:00",
+    "operator": "Kramer Gastronomie",
+    "outdoor_seating": "yes",
+    "website": "https://brasserie-louis.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 370840457,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "10",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "fast_food",
+    "check_date": "2023-04-24",
+    "name": "Louis Take Away",
+    "opening_hours": "Mo-We 11:30-24:00; Th 11:30-01:00; Fr-Sa 11:30-02:00; Su 11:30-23:00",
+    "operator": "Kramer Gastronomie",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 370840562,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "5",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "alt_name": "Spaghetti Factory Rosenhof",
+    "amenity": "restaurant",
+    "branch": "Zürich Rosenhof",
+    "brand": "Spaghetti Factory",
+    "check_date": "2023-04-24",
+    "cuisine": "pasta",
+    "name": "Spaghetti Factory",
+    "opening_hours": "Mo-Th 11:30-23:00; Fr-Sa 11:30-25:00; Su 11:30-22:30",
+    "operator": "Bindella",
+    "phone": "+41 44 251 94 00",
+    "website": "https://www.bindella.ch/de/spaghetti-factory-rosenhof.html",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 370840605,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "7",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "restaurant",
+    "check_date": "2023-04-24",
+    "cuisine": "italian",
+    "indoor_seating": "yes",
+    "name": "Trattoria Sempre",
+    "opening_hours": "11:30-23:00; Fr,Sa 11:30-23:30",
+    "operator": "Bindella",
+    "outdoor_seating": "yes",
+    "website": "https://www.bindella.ch/gastronomie/trattoria-sempre",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370840847,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "description": "rooms to let for a minimum of 4 months",
+    "name": "bedsitting-rooms.ch",
+    "tourism": "hotel",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370841191,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:street": "Stüssihofstatt",
+    "check_date": "2025-08-04",
+    "check_date:opening_hours": "2025-08-04",
+    "name": "Zum chalte Brunne",
+    "opening_hours": "Mo-Fr 10:00-18:30; Sa 10:00-17:30; Su off",
+    "shop": "butcher",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370841763,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "19",
+    "addr:postcode": "8001",
+    "addr:street": "Marktgasse",
+    "amenity": "restaurant",
+    "check_date": "2023-04-24",
+    "cuisine": "regional",
+    "indoor_seating": "yes",
+    "name": "Rheinfelder Bierhaus",
+    "opening_hours": "Mo-Su 09:00-24:00",
+    "operator": "Beffa Gastro",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 251 29 91",
+    "website": "https://restaurant-rheinfelderbierhaus.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 370842516,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "27",
+    "addr:postcode": "8001",
+    "addr:street": "Münstergasse",
+    "check_date": "2025-05-11",
+    "name": "Condomeria",
+    "opening_hours": "Mo-Fr 11:00-19:00; Sa 10:00-17:00",
+    "payment:cash": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+41 44 261 45 49",
+    "shop": "erotic",
+    "vending": "condoms",
+    "website": "https://www.condomeria.ch/laeden/standorte/zuerich/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370842935,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "12",
+    "addr:postcode": "8001",
+    "addr:street": "Marktgasse",
+    "brand": "Lululemon",
+    "brand:wikidata": "Q6702957",
+    "clothes": "men;women",
+    "name": "Lululemon",
+    "official_name": "Lululemon Athletica",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "shop": "clothes",
+    "website": "https://www.lululemon.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 370843568,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "21",
+    "addr:postcode": "8001",
+    "addr:street": "Münstergasse",
+    "brand": "American Vintage",
+    "brand:wikidata": "Q2422884",
+    "check_date": "2023-06-10",
+    "level": "0",
+    "name": "American Vintage",
+    "opening_hours": "Mo-Fr 10:00-18:00; Sa 10:00-17:30; PH closed",
+    "shop": "clothes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 370843572,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "23",
+    "addr:postcode": "8001",
+    "addr:street": "Münstergasse",
+    "name": "Katis Wolle",
+    "shop": "fabric"
+  }
+},
+{
+  "type": "node",
+  "id": 370843777,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "4",
+    "addr:postcode": "8001",
+    "addr:street": "Napfgasse",
+    "amenity": "cafe",
+    "check_date": "2024-02-12",
+    "contact:facebook": "stiftung.arbeitskette",
+    "contact:instagram": "1842cafeconfiserie",
+    "cuisine": "cake",
+    "email": "1842@arbeitskette.ch",
+    "internet_access": "wlan",
+    "internet_access:fee": "yes",
+    "name": "Café & Conditorei 1842",
+    "opening_hours": "Mo-Su 09:00-19:00",
+    "operator": "Arbeitskette",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 2515150",
+    "shop": "bakery",
+    "website": "https://www.cafe1842.ch",
+    "wheelchair": "no",
+    "wikidata": "Q1124534",
+    "wikimedia_commons": "Category:Café Schober",
+    "wikipedia": "de:Conditorei Schober"
+  }
+},
+{
+  "type": "node",
+  "id": 370844160,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "20",
+    "addr:postcode": "8001",
+    "addr:street": "Münstergasse",
+    "amenity": "cafe",
+    "check_date": "2026-08-16",
+    "level": "0",
+    "name": "Andorra",
+    "opening_hours": "Mo-Th 17:00-24:00; Fr-Sa 16:00-02:00; Su 14:00-22:00",
+    "outdoor_seating": "yes",
+    "payment:cash": "no",
+    "website": "https://www.andorra.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 370844293,
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:street": "Münstergasse",
+    "amenity": "restaurant",
+    "check_date": "2023-04-24",
+    "cuisine": "spanish",
+    "indoor_seating": "yes",
+    "name": "Bodega Española",
+    "outdoor_seating": "yes",
+    "uzh_landmark": "true",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 428304303,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "60",
+    "addr:postcode": "8006",
+    "addr:street": "Stampfenbachstrasse",
+    "alt_name": "ibis Styles Zürich City",
+    "branch": "Zürich City",
+    "brand": "Ibis Styles",
+    "brand:wikidata": "Q3147425",
+    "check_date": "2026-08-05",
+    "name": "ibis Styles",
+    "operator": "Accor Hotels",
+    "tourism": "hotel",
+    "website": "https://all.accor.com/hotel/B5J7/index.de.shtml",
+    "wikidata": "Q112013516",
+    "wikimedia_commons": "File:20230202 132138 ibis Styles Adagio ZH.png"
+  }
+},
+{
+  "type": "node",
+  "id": 430731948,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "25",
+    "addr:postcode": "8001",
+    "addr:street": "Uraniastrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 430731977,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "6",
+    "addr:postcode": "8001",
+    "addr:street": "Sihlstrasse",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 448855246,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "17",
+    "addr:postcode": "8001",
+    "addr:street": "Brunngasse",
+    "amenity": "restaurant",
+    "name": "cue",
+    "start_date": "1998"
+  }
+},
+{
+  "type": "node",
+  "id": 460419758,
+  "tags": {
+    "access": "no",
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "74",
+    "addr:postcode": "8001",
+    "addr:street": "Seilergraben",
+    "barrier": "gate",
+    "capacity": "36",
+    "charge": "Mo-Sa 07:00-24:00 2.00 CHF for first 30m, 1.00 CHF/15m up to 3h, 1.00 CHF/20m up to 10.5h;Nights 1.00 CHF/h;max. 34.00 CHF/24h",
+    "disused:amenity": "parking",
+    "fee": "yes",
+    "layer": "-1",
+    "lit": "yes",
+    "maxheight": "2.50",
+    "name": "Parkgarage am Central",
+    "operator": "Parking Zürich AG",
+    "parking": "underground",
+    "supervised": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 460438490,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "69",
+    "addr:postcode": "8001",
+    "addr:street": "Seilergraben",
+    "alt_name": "Swiss Chocolate Hotel",
+    "fax": "+41 44 267 26 71",
+    "name": "Swiss Chocolate by Fassbind",
+    "phone": "+41 44 267 26 70",
+    "source": "survey",
+    "tourism": "hotel",
+    "website": "https://byfassbind.com/de/hotel/swisschocolatezurich/",
+    "wheelchair": "no",
+    "wikidata": "Q111409752"
+  }
+},
+{
+  "type": "node",
+  "id": 475991816,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "77a",
+    "addr:postcode": "8004",
+    "addr:street": "Kasernenstrasse",
+    "alt_name": "60 Seconds to Napoli Zürich",
+    "amenity": "restaurant",
+    "branch": "Zürich Aussersihl",
+    "cuisine": "italian;pizza",
+    "indoor_seating": "yes",
+    "name": "60 Seconds to Napoli",
+    "old_name": "Cucina",
+    "opening_hours": "Mo-Su 11:30-24:00",
+    "outdoor_seating": "yes",
+    "website": "https://60secondstonapoli.de/standort/zuerich/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 498462094,
+  "tags": {
+    "addr:housenumber": "23",
+    "addr:street": "Neumarkt",
+    "alt_name": "Antiquitäten Martin Kiener",
+    "check_date": "2024-08-30",
+    "email": "martinkiener@martinkiener.ch",
+    "level": "0",
+    "name": "Antiquitäten M. Kiener",
+    "phone": "+41 44 262 42 21",
+    "shop": "antiques",
+    "website": "https://martinkiener.ch",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 552932425,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "102",
+    "addr:postcode": "8006",
+    "addr:street": "Stampfenbachstrasse",
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "name": "Pizzeria Veneziana",
+    "old_name": "Grottino 85",
+    "opening_hours": "Mo-Fr 11:00-14:00,17:00-22:30, Fr,Sa 11:00-14:00,17:00-23:00",
+    "operator": "Sares Invest",
+    "website": "https://pizzeriaveneziana.ch/"
+  }
+},
+{
+  "type": "node",
+  "id": 560397861,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "22",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 560404049,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "9",
+    "addr:postcode": "8001",
+    "addr:street": "Uraniastrasse",
+    "check_date": "2026-07-02",
+    "name": "Benci Brothers",
+    "shop": "shoes"
+  }
+},
+{
+  "type": "node",
+  "id": 560519077,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "96",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "branch": "Zürich Limmatquai",
+    "check_date": "2023-04-24",
+    "name": "Magic X",
+    "opening_hours": "Mo-Fr 10:00-20:00; Sa 10:00-19:00",
+    "operator": "Magic X",
+    "shop": "erotic",
+    "website": "https://www.magic-x.com/magic-x-zuerich/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 560519078,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "98",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "amenity": "cafe",
+    "bar": "yes",
+    "brewery": "Wädenswiler",
+    "changing_table": "no",
+    "check_date": "2025-05-08",
+    "cuisine": "nachos;kuchen;oliven",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Marea",
+    "opening_hours": "Mo-Th,Su 16:00-24:00; Fr 16:00-02:00; PH closed; Sa 14:00-02:00",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 201 13 13",
+    "smoking": "no",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "toilets:wheelchair": "no",
+    "website": "https://marea.bar/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 560519079,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "100",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "branch": "Zürich Limmatquai",
+    "check_date": "2025-09-30",
+    "check_date:opening_hours": "2025-09-30",
+    "name": "Einzelstück",
+    "opening_hours": "Mo-Sa 11:00-19:00; Su off",
+    "shop": "antiques",
+    "website": "https://www.einzelstueck.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 560524511,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "106",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "alt_name": "Hüsler Nest Center Zürich",
+    "branch": "Zürich City",
+    "brand": "Hüsler Nest",
+    "check_date": "2024-08-30",
+    "name": "Hüsler Nest Center",
+    "phone": "+41 44 260 83 00",
+    "shop": "bed",
+    "website": "https://zuerich.huesler-nest.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 560524512,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "110",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "brand": "Jack & Jones",
+    "brand:wikidata": "Q6077665",
+    "check_date": "2026-05-09",
+    "check_date:opening_hours": "2026-05-09",
+    "name": "Jack & Jones",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00",
+    "shop": "clothes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 560524516,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "116",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "amenity": "cafe",
+    "check_date": "2024-08-30",
+    "indoor_seating": "yes",
+    "name": "Grande",
+    "note": "bar \"Grande\" is next door",
+    "outdoor_seating": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 560524517,
+  "tags": {
+    "addr:housenumber": "118",
+    "addr:street": "Limmatquai",
+    "amenity": "bar",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Grande Cafe & Bar",
+    "opening_hours": "Mo-We 07:30-23:00, Th 07:30-24:00, Fr 07:30-02:00, Sa 09:00-02:00, Su 09:00-20:00",
+    "outdoor_seating": "yes",
+    "website": "https://grande.bar/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 560524518,
+  "tags": {
+    "addr:housenumber": "120",
+    "addr:street": "Limmatquai",
+    "brand": "ONLY",
+    "brand:wikidata": "Q61799370",
+    "name": "ONLY",
+    "opening_hours": "Mo-Fr 09:30-20:00; Sa 09:30-18:00",
+    "operator": "Bestseller (Schweiz)",
+    "shop": "clothes",
+    "website": "https://www.only.com/de-ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 560524519,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "122",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai"
+  }
+},
+{
+  "type": "node",
+  "id": 560524520,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "102",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "check_date": "2025-09-30",
+    "check_date:opening_hours": "2025-09-30",
+    "name": "Passissimo",
+    "note": "previously Dosenbach, the building might still be owned by them",
+    "opening_hours": "Mo-Fr 10:30-13:00,13:30-18:30; Sa 10:30-17:30",
+    "shop": "shoes",
+    "website": "https://passissimo.ch",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 567132770,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "5",
+    "addr:postcode": "8005",
+    "addr:street": "Limmatstrasse",
+    "amenity": "cafe",
+    "brand": "Starbucks",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "en:Starbucks",
+    "cuisine": "coffee_shop",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Starbucks",
+    "official_name": "Starbucks Coffee",
+    "opening_hours": "Mo-Fr 06:15-20:00; Sa 06:15-21:00; Su 06:30-21:00",
+    "outdoor_seating": "sidewalk",
+    "phone": "+41434214243",
+    "takeaway": "yes",
+    "website": "https://www.starbucks.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 567132773,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "5",
+    "addr:postcode": "8005",
+    "addr:street": "Limmatstrasse",
+    "air_conditioning": "yes",
+    "alt_name": "Fred Hotel Zürich Hauptbahnhof",
+    "bar": "no",
+    "branch": "Zürich Hauptbahnhof",
+    "brand": "Fred Hotels Zürich",
+    "check_date": "2025-07-28",
+    "contact:email": "hauptbahnhof@fredhotels.ch",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Fred Hotel",
+    "old_name": "Walhalla Hotel",
+    "operator": "Fred Tschanz AG",
+    "phone": "+41 44 446 54 00",
+    "smoking": "no",
+    "swimming_pool": "no",
+    "tourism": "hotel",
+    "website": "https://fredhotels.ch/de/hauptbahnhof/",
+    "wheelchair": "limited",
+    "wikidata": "Q112013511"
+  }
+},
+{
+  "type": "node",
+  "id": 568018605,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "41",
+    "addr:postcode": "8005",
+    "addr:street": "Sihlquai",
+    "amenity": "parking",
+    "capacity": "176",
+    "capacity:disabled": "3",
+    "capacity:parent": "no",
+    "capacity:women": "no",
+    "charge": "Mo-Sa 06:00-22:00 1.10 CHF/15m up to 5h, 1.30 CHF/15m up to 9h;Su, Nights 2.00 CHF/h;max. 43.00 CHF/24h",
+    "fee": "yes",
+    "lit": "yes",
+    "name": "Parkhaus Hauptbahnhof",
+    "opening_hours": "24/7",
+    "operator": "Parking Zürich AG",
+    "parking": "multi-storey",
+    "supervised": "yes",
+    "website": "https://www.parkingzuerich.ch/parkhaeuser/parkhaus-hauptbahnhof/"
+  }
+},
+{
+  "type": "node",
+  "id": 582820194,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "12",
+    "addr:postcode": "8004",
+    "addr:street": "Militärstrasse",
+    "amenity": "pub",
+    "check_date": "2024-10-27",
+    "indoor_seating": "yes",
+    "name": "Hafenkneipe",
+    "opening_hours": "Mo-We 16:00-24:00, Th 16:00-01:00, Fr 16:00-02:00, Sa 20:00-02:00",
+    "outdoor_seating": "no",
+    "website": "http://hafenkneipe.info/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 595134002,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "20",
+    "addr:postcode": "8001",
+    "addr:street": "Uraniastrasse",
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "name": "Live sushi fusion restaurant",
+    "opening_hours": "Tu-Fr 18:00-23:00; Sa 16:00-23:00"
+  }
+},
+{
+  "type": "node",
+  "id": 595136362,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Löwenstrasse",
+    "amenity": "cafe",
+    "indoor_seating": "yes",
+    "name": "Babu's Bakery & Coffeehouse",
+    "opening_hours": "Mo-Fr 07:00-17:00; Su 09:00-17:00; Sa 08:00-18:00",
+    "outdoor_seating": "yes",
+    "website": "https://www.babus.ch/",
+    "wheelchair": "yes",
+    "wifi": "free"
+  }
+},
+{
+  "type": "node",
+  "id": 600465273,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "7",
+    "addr:postcode": "8001",
+    "addr:street": "Schoffelgasse",
+    "check_date": "2024-02-12",
+    "description": "Nothilfe und Wiederaufbau",
+    "disused:name": "Kafi Schoffel",
+    "name": "Medair",
+    "office": "ngo",
+    "uzh_landmark": "true",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 616972764,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "6",
+    "addr:postcode": "8001",
+    "addr:street": "Schmidgasse",
+    "amenity": "pub",
+    "check_date": "2024-04-01",
+    "name": "Cha Cha Cha",
+    "phone": "+41 44 251 97 32",
+    "source": "knowledge",
+    "website": "http://www.babalubar.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 632531324,
+  "tags": {
+    "addr:housenumber": "24",
+    "addr:street": "Zähringerstrasse",
+    "amenity": "restaurant",
+    "cuisine": "chinese",
+    "name": "Zhong Hua",
+    "opening_hours": "Mo-Fr 11:30-22:00; Sa,Su 17:00-22:00",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 632531329,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "12",
+    "addr:postcode": "8001",
+    "addr:street": "Gräbligasse"
+  }
+},
+{
+  "type": "node",
+  "id": 632531334,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "28",
+    "addr:postcode": "8001",
+    "addr:street": "Zähringerstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 632531335,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "9",
+    "addr:postcode": "8001",
+    "addr:street": "Gräbligasse"
+  }
+},
+{
+  "type": "node",
+  "id": 632531336,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "69",
+    "addr:postcode": "8001",
+    "addr:street": "Seilergraben"
+  }
+},
+{
+  "type": "node",
+  "id": 632545301,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "6",
+    "addr:postcode": "8001",
+    "addr:street": "Leonhardstrasse",
+    "check_date": "2025-03-24",
+    "internet_access": "wlan",
+    "name": "Hotel Royal",
+    "source": "SchutzundRettung Zürich",
+    "tourism": "hotel",
+    "wheelchair": "no",
+    "wikidata": "Q111874813"
+  }
+},
+{
+  "type": "node",
+  "id": 632545305,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Leonhardstrasse",
+    "check_date": "2025-07-09",
+    "cuisine": "italian",
+    "disused:amenity": "restaurant",
+    "name": "Bocuci: Bottega & Cucina",
+    "opening_hours": "Tu-Fr 11:30-14:30,17:30-23:30; Sa 18:00-23:30; Su-Mo off",
+    "opening_hours:kitchen": "Tu-Fr 12:00-14:00, Tu-Sa 18:00-21:30",
+    "phone": "+41 44 261 40 55",
+    "website": "https://www.bocuci.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 632553562,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "55",
+    "addr:postcode": "8092",
+    "addr:street": "Clausiusstrasse",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 632553574,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "3",
+    "addr:postcode": "8006",
+    "addr:street": "Haldenbachstrasse",
+    "amenity": "restaurant",
+    "check_date": "2025-07-29",
+    "cuisine": "regional",
+    "name": "Restaurant Haldenbach",
+    "opening_hours": "Mo-Fr 08:30-24:00; Sa 18:00-24:00; Su off",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 2618040",
+    "website": "https://www.restauranthaldenbach.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 632559348,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "2",
+    "addr:postcode": "8006",
+    "addr:street": "Haldenbachstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 632559349,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "20",
+    "addr:postcode": "8006",
+    "addr:street": "Sonneggstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 632562127,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "40",
+    "addr:postcode": "8006",
+    "addr:street": "Universitätstrasse",
+    "amenity": "restaurant",
+    "check_date": "2026-09-24",
+    "check_date:opening_hours": "2023-05-17",
+    "cuisine": "italian",
+    "name": "Ristorante Al Forno da Angelo",
+    "opening_hours": "Mo-Fr 11:30-14:00,18:00-23:00; Sa 18:00-23:00; Su off",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 251 65 77",
+    "website": "https://de-de.facebook.com/RistoranteAlFornoDaAngelo/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 633584154,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "11",
+    "addr:postcode": "8006",
+    "addr:street": "Universitätstrasse",
+    "amenity": "fast_food",
+    "brand": "Domino's",
+    "brand:wikidata": "Q839466",
+    "brand:wikipedia": "en:Domino's Pizza",
+    "check_date": "2026-02-07",
+    "check_date:opening_hours": "2026-02-07",
+    "cuisine": "pizza",
+    "delivery": "yes",
+    "drive_in": "no",
+    "indoor_seating": "yes",
+    "name": "Domino's",
+    "opening_hours": "Mo-Su 11:00-22:00",
+    "outdoor_seating": "yes",
+    "short_name": "Domino's",
+    "takeaway": "yes",
+    "website": "https://www.dominos.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 633584160,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "9",
+    "addr:postcode": "8006",
+    "addr:street": "Universitätstrasse",
+    "alt_name": "Buchmann Café Oberstrass",
+    "amenity": "cafe",
+    "branch": "Zürich Oberstrass",
+    "brand": "Walter Buchmann",
+    "check_date": "2026-09-10",
+    "check_date:diet:vegetarian": "2025-06-19",
+    "check_date:opening_hours": "2026-02-07",
+    "currency:XBT": "no",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Café Oberstrass",
+    "opening_hours": "Mo-Fr 07:00-17:00; Sa 08:00-14:00; Su off",
+    "operator": "Walter Buchmann AG",
+    "outdoor_seating": "sidewalk",
+    "payment:cash": "no",
+    "payment:lightning": "no",
+    "payment:lightning_contactless": "no",
+    "payment:onchain": "no",
+    "phone": "+41 44 807 57 48",
+    "website": "https://www.walterbuchmann.ch/oberstrass",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 633584181,
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:street": "Universitätstrasse",
+    "amenity": "restaurant",
+    "check_date": "2026-08-04",
+    "check_date:diet:vegetarian": "2026-08-04",
+    "cuisine": "italian",
+    "delivery": "yes",
+    "diet:vegetarian": "yes",
+    "email": "info@hotpasta.ch",
+    "indoor_seating": "yes",
+    "name": "Hot Pasta",
+    "opening_hours": "Mo-Fr 11:00-24:00",
+    "opening_hours:kitchen": "Mo-Fr 11:00-23:00; Sa 11:00-15:00",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+41 43 535 76 65",
+    "reservation": "yes",
+    "smoking": "no",
+    "takeaway": "yes",
+    "website": "https://hotpasta.ch/",
+    "website:menu": "https://hotpasta.ch/menus/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 633584185,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Universitätstrasse",
+    "check_date": "2026-02-07",
+    "check_date:opening_hours": "2026-02-07",
+    "email": "shop@k55.ch",
+    "level": "0",
+    "name": "K55",
+    "opening_hours": "Mo-Fr 10:00-18:30; Sa 10:00-17:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+41 44 500 11 00",
+    "shop": "electronics",
+    "website": "https://www.k55.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 633584200,
+  "tags": {
+    "addr:housenumber": "23",
+    "addr:street": "Universitätstrasse",
+    "amenity": "pub",
+    "capacity": "100",
+    "check_date": "2025-08-13",
+    "cuisine": "american",
+    "indoor_seating": "yes",
+    "name": "The Alehouse Palmhof",
+    "opening_hours": "Mo-Fr 10:00-24:00; Sa 11:30-24:00; Su 11:30-22:00",
+    "opening_hours:kitchen": "Mo-Fr 11:30-14:00, Sa-Su 11:30-15:00, Mo-Su 18:00-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+41445428745",
+    "rooms": "2",
+    "smoking": "outside",
+    "website": "https://www.alehouse.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 633584204,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "8",
+    "addr:postcode": "8006",
+    "addr:street": "Universitätstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 633584215,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "16",
+    "addr:postcode": "8006",
+    "addr:street": "Universitätstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 633584224,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "31",
+    "addr:postcode": "8006",
+    "addr:street": "Universitätstrasse",
+    "amenity": "fast_food",
+    "check_date": "2026-07-27",
+    "check_date:diet:vegetarian": "2026-02-07",
+    "check_date:opening_hours": "2026-02-07",
+    "cuisine": "thai",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "no",
+    "name": "Lemon Grass",
+    "opening_hours": "Mo-Fr 11:00-15:30",
+    "outdoor_seating": "no",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "takeaway": "only",
+    "website": "http://the-lemon-grass.ch",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 633584227,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "39",
+    "addr:postcode": "8006",
+    "addr:street": "Universitätstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 633601362,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "amenity": "cafe",
+    "check_date": "2026-08-16",
+    "name": "Henrici",
+    "opening_hours": "Mo 08:00-22:00; Tu-Th 08:00-23:00; Fr 08:00-24:00; Sa 08:00-24:00; Su 08:00-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 251 54 54",
+    "website": "https://www.cafe-henrici.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 633601369,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "13",
+    "addr:postcode": "8001",
+    "addr:street": "Stüssihofstatt"
+  }
+},
+{
+  "type": "node",
+  "id": 633640151,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "26",
+    "addr:postcode": "8001",
+    "addr:street": "Münstergasse"
+  }
+},
+{
+  "type": "node",
+  "id": 633640154,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Spiegelgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 633640168,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "14",
+    "addr:postcode": "8001",
+    "addr:street": "Marktgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 633640178,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "19",
+    "addr:postcode": "8001",
+    "addr:street": "Marktgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 633678264,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Rüdenplatz",
+    "name": "7dayshop",
+    "shop": "convenience",
+    "website": "https://www.7dayshop.ch",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 633678272,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "2",
+    "addr:postcode": "8001",
+    "addr:street": "Rüdenplatz"
+  }
+},
+{
+  "type": "node",
+  "id": 633678282,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "82",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai"
+  }
+},
+{
+  "type": "node",
+  "id": 633678283,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "88",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "name": "Fleuve",
+    "opening_hours": "Mo-Sa 11:00-19:00",
+    "shop": "interior_decoration",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 633678286,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "94",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai"
+  }
+},
+{
+  "type": "node",
+  "id": 637840703,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "17",
+    "addr:postcode": "8001",
+    "addr:street": "Zähringerplatz",
+    "alt_name": "Der wilde Kaiser",
+    "amenity": "restaurant",
+    "check_date": "2025-08-04",
+    "check_date:opening_hours": "2025-08-04",
+    "cuisine": "austrian",
+    "indoor_seating": "yes",
+    "name": "Wien Zeile",
+    "opening_hours": "Tu-Sa 10:00-23:00",
+    "outdoor_seating": "yes",
+    "website": "https://www.kaiser-wienzeile.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 637840706,
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:street": "Mühlegasse",
+    "amenity": "bar",
+    "check_date": "2023-10-07",
+    "lgbtq": "primary",
+    "name": "Predigerhof",
+    "opening_hours": "Mo-Su 14:00-02:00",
+    "website": "https://predigerhof.ch",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 637840710,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "9",
+    "addr:postcode": "8001",
+    "addr:street": "Zähringerstrasse",
+    "alt_name": "Cut & Color Zähringerstrasse",
+    "branch": "Zürich Niederdorf",
+    "brand": "cut&color",
+    "check_date": "2025-08-14",
+    "check_date:opening_hours": "2025-08-14",
+    "female": "yes",
+    "male": "yes",
+    "name": "Cut & Color",
+    "opening_hours": "Mo-Th 09:00-19:00; Fr 09:00-20:00; Sa 09:00-17:00; Su,PH off",
+    "operator": "Hairstylist Pierre",
+    "shop": "hairdresser",
+    "website": "https://www.cutandcolor.ch/de/coiffeur-zuerich-zaehringerstrasse",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 638389144,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "10",
+    "addr:postcode": "8001",
+    "addr:street": "Rosengasse",
+    "check_date": "2023-06-04",
+    "name": "Hotel Adler",
+    "tourism": "hotel",
+    "website": "https://www.hotel-adler.ch/",
+    "wheelchair": "no",
+    "wikidata": "Q111409743"
+  }
+},
+{
+  "type": "node",
+  "id": 638966009,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "82",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "amenity": "restaurant",
+    "check_date": "2025-07-14",
+    "cuisine": "fish",
+    "name": "Bianchi",
+    "opening_hours": "Mo-Sa 11:30-23:30; Su 11:30-22:30",
+    "operator": "Bindella",
+    "phone": "+41 44 262 98 44",
+    "website": "https://www.bindella.ch/de/bianchi.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 638966013,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Hirschengasse",
+    "amenity": "restaurant",
+    "check_date": "2024-01-16",
+    "name": "Weinschenke",
+    "opening_hours": "Mo-Sa 16:30-24:00",
+    "operator": "Hotel Hirschen",
+    "website": "https://www.hirschen-zuerich.ch/weinschenke.html",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 638966027,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "10",
+    "addr:postcode": "8001",
+    "addr:street": "Graue Gasse"
+  }
+},
+{
+  "type": "node",
+  "id": 638966040,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "9",
+    "addr:postcode": "8001",
+    "addr:street": "Hirschengasse"
+  }
+},
+{
+  "type": "node",
+  "id": 638966066,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "12",
+    "addr:postcode": "8001",
+    "addr:street": "Graue Gasse"
+  }
+},
+{
+  "type": "node",
+  "id": 638966082,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "18",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "brand:wikidata": "Q1389494",
+    "name": "Freitag",
+    "opening_hours": "Mo-Fr 11:00-19:00; Sa 10:00-18:00",
+    "shop": "bag",
+    "website": "https://freitag.ch/de_CH/stores/europe/freitag-store-zuerich-niederdorf"
+  }
+},
+{
+  "type": "node",
+  "id": 638966085,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "2",
+    "addr:postcode": "8001",
+    "addr:street": "Spitalgasse",
+    "check_date": "2023-04-09",
+    "name": "Carhartt",
+    "shop": "clothes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 638966087,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "2",
+    "addr:postcode": "8001",
+    "addr:street": "Spitalgasse",
+    "amenity": "cafe",
+    "check_date": "2026-08-17",
+    "cuisine": "pizza",
+    "name": "Colibri Bar",
+    "opening_hours": "Mo-Th 14:00-23:30; Fr-Sa 14:00-24:00; Su 14:00-23:30",
+    "outdoor_seating": "yes",
+    "website": "https://www.instagram.com/colibribarzurich/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 638984357,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "74",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "alt_name": "Vanini Limmatquai",
+    "branch": "Zürich Limmatquai",
+    "check_date": "2024-02-06",
+    "name": "Vittorio Vanini - Swiss Chocolate since 1871",
+    "shop": "chocolate",
+    "website": "https://www.vanini1871.ch/"
+  }
+},
+{
+  "type": "node",
+  "id": 638984402,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "76",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "branch": "Zürich Limmatquai",
+    "brand": "Anouk",
+    "check_date": "2024-03-31",
+    "name": "Anouk",
+    "opening_hours": "Mo-Fr 10:00-19:00, Sa 10:00-18:00, PH off",
+    "operator": "Anouk Fashion",
+    "shop": "clothes",
+    "website": "https://www.anoukfashion.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 638984405,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "5",
+    "addr:postcode": "8001",
+    "addr:street": "Rosengasse",
+    "check_date": "2023-06-04",
+    "name": "SPLENDID",
+    "tourism": "hotel",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 638984422,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Brunngasse",
+    "check_date": "2026-09-03",
+    "check_date:opening_hours": "2026-09-03",
+    "female:signed": "no",
+    "level": "0",
+    "male:signed": "no",
+    "name": "Time for Beauty",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 11:00-14:00; PH off",
+    "operator": "Marina Toshchuk",
+    "shop": "hairdresser",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 638984426,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "8",
+    "addr:postcode": "8001",
+    "addr:street": "Brunngasse",
+    "check_date": "2025-11-23",
+    "description": "Familienunternehmen in 2. Generation seit 1979.\nWerkstatt für Schuhreparaturen, Verkauf siehe Shop an der Mühlegasse 12",
+    "email": "info@feraschuhe.ch",
+    "name": "Fera",
+    "opening_hours": "Tu-Fr 10:00-18:30; Sa 10:00-16:00",
+    "opening_hours:description": "Di-Fr 10-18.30, Sa 10-16 Uhr",
+    "phone": "+41 44 252 52 13",
+    "repair": "yes",
+    "shoes:repair": "yes",
+    "shop": "shoe_repair",
+    "website": "https://fera1979.ch",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 638984428,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "12",
+    "addr:postcode": "8001",
+    "addr:street": "Brunngasse"
+  }
+},
+{
+  "type": "node",
+  "id": 639029566,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "23",
+    "addr:postcode": "8001",
+    "addr:street": "Marktgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 639029571,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Rindermarkt",
+    "amenity": "pub",
+    "check_date": "2023-04-22",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Oliver Twist Pub",
+    "opening_hours": "Mo-Sa 12:00-24:00; Su 13:00-24:00",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 252 47 10",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 639029597,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "15",
+    "addr:postcode": "8001",
+    "addr:street": "Stüssihofstatt",
+    "disused:amenity": "restaurant",
+    "disused:name": "The Butcher",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 639029692,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "16",
+    "addr:postcode": "8001",
+    "addr:street": "Rindermarkt"
+  }
+},
+{
+  "type": "node",
+  "id": 639029694,
+  "tags": {
+    "addr:housenumber": "16",
+    "addr:street": "Rindermarkt",
+    "check_date": "2023-04-22",
+    "name": "Chemische Reinigung Lässer",
+    "opening_hours": "Tu-Fr 10:00-18:00; Sa 09:00-16:00",
+    "shop": "dry_cleaning",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 639042885,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "8",
+    "addr:postcode": "8001",
+    "addr:street": "Schlüsselgasse",
+    "contact:youtube": "https://www.youtube.com/watch?v=rDhcdarAjoQ",
+    "email": "info@veltlinerkeller.ch",
+    "facebook": "https://www.facebook.com/RestaurantVeltlinerKeller/?fref=ts",
+    "fax": "+41 44 225 40 45",
+    "name": "Restaurant Veltlinerkeller",
+    "opening_hours": "Mo-Fr 11:30-24:00; Nov-Dec: Sa \"evening\"",
+    "phone": "+41 44 225 40 40",
+    "website": "https://veltlinerkeller.ch/"
+  }
+},
+{
+  "type": "node",
+  "id": 639048658,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "2",
+    "addr:postcode": "8001",
+    "addr:street": "Marktgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 639048659,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "4",
+    "addr:postcode": "8001",
+    "addr:street": "Marktgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 639048666,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "62",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "alt_name": "KochOptik Limmatquai",
+    "branch": "Zürich Limmatquai",
+    "brand": "KochOptik",
+    "check_date": "2025-07-14",
+    "level": "0",
+    "name": "Kochoptik",
+    "opening_hours": "Mo-Fr 09:00-18:30; Sa 10:00-17:00",
+    "operator": "Kochoptik",
+    "shop": "optician",
+    "website": "https://kochoptik.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 639048668,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Marktgasse",
+    "check_date": "2024-08-30",
+    "level": "0",
+    "name": "Urs Bergmann",
+    "opening_hours": "Mo-Fr 10:00-18:00; Sa 10:00-17:00; PH closed",
+    "shop": "florist",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 639048678,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "15",
+    "addr:postcode": "8001",
+    "addr:street": "Metzgergasse"
+  }
+},
+{
+  "type": "node",
+  "id": 639048684,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "18",
+    "addr:postcode": "8001",
+    "addr:street": "Marktgasse",
+    "check_date": "2023-04-24",
+    "level": "0",
+    "name": "Opatra",
+    "shop": "beauty",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 639048685,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "8",
+    "addr:postcode": "8001",
+    "addr:street": "Schneggengasse",
+    "check_date": "2023-06-04",
+    "contact:email": "reservation@statthotel.ch",
+    "contact:fax": "+41 43 343 98 78",
+    "contact:phone": "+41 43 268 59 30",
+    "contact:website": "http://www.statthotel.ch",
+    "name": "stattHotel",
+    "rooms": "13",
+    "smoking": "no",
+    "tourism": "hotel",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 639048688,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "88",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "email": "welcome@kronezurich.ch",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Pop Up Hotel Krone Zurich",
+    "phone": "+41 445004180",
+    "tourism": "hotel",
+    "website": "https://www.kronezurich.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 650468758,
+  "tags": {
+    "addr:housenumber": "62",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "Genesis Studio Zürich",
+    "branch": "Zürich",
+    "brand": "Genesis",
+    "brand:wikidata": "Q21451523",
+    "check_date": "2025-11-07",
+    "check_date:opening_hours": "2025-11-07",
+    "name": "Genesis Studio",
+    "opening_hours": "Mo-Fr 10:00-19:00, Sa 10:00-17:00; PH off",
+    "shop": "car",
+    "website": "https://www.genesis.com/ch/de/service-and-information/service/genesis-studio-zurich.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 656327442,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "80",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "amenity": "bank",
+    "brand": "Crédit Agricole",
+    "brand:wikidata": "Q590952",
+    "name": "Crédit Agricole",
+    "opening_hours": "Mo-Fr 10:00-16:00",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 656327484,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "94",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "check_date": "2024-08-30",
+    "clothes": "children",
+    "name": "Zvrich",
+    "shop": "clothes",
+    "website": "https://zvrich.swiss/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 656327504,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "5",
+    "addr:postcode": "8001",
+    "addr:street": "Spitalgasse",
+    "beauty": "nails",
+    "check_date": "2024-02-23",
+    "name": "Nails Beauty83",
+    "shop": "beauty"
+  }
+},
+{
+  "type": "node",
+  "id": 656327506,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "5",
+    "addr:postcode": "8001",
+    "addr:street": "Spitalgasse",
+    "alt_name": "Gayclub Oz",
+    "amenity": "nightclub",
+    "lgbtq": "primary",
+    "name": "Heaven Club",
+    "old_name": "Zodiac Club",
+    "opening_hours": "Fr-Sa 22:45-05:00",
+    "website": "https://heavenclub.ch"
+  }
+},
+{
+  "type": "node",
+  "id": 656327518,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "8",
+    "addr:postcode": "8001",
+    "addr:street": "Spitalgasse",
+    "check_date": "2024-02-12",
+    "description": "20er-80er Jahrmode Accesoires, Aenderungen, Reparaturen",
+    "name": "Bazaar",
+    "opening_hours": "Mo-Sa 09:00-18:00",
+    "phone": "+41 44 252 08 36",
+    "shop": "second_hand",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 656327526,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "5",
+    "addr:postcode": "8001",
+    "addr:street": "Spitalgasse",
+    "check_date": "2024-02-23",
+    "email": "towndown@bluewin.ch",
+    "name": "Towndown",
+    "opening_hours": "Mo-Fr 10:30-20:00; Sa 10:00-18:00",
+    "phone": "+41 79 953 92 80",
+    "shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 656327538,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "4",
+    "addr:postcode": "8001",
+    "addr:street": "Schmidgasse",
+    "amenity": "cafe",
+    "check_date": "2026-08-16",
+    "name": "YAMAN Café-Bar",
+    "opening_hours": "Su-Th 17:00-24:00; Fr-Sa 14:00-24:00",
+    "outdoor_seating": "yes",
+    "website": "https://www.instagram.com/yaman_cafebar",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 656327549,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "8",
+    "addr:postcode": "8001",
+    "addr:street": "Schmidgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 656327554,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "5",
+    "addr:postcode": "8001",
+    "addr:street": "Schmidgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 656327580,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "3",
+    "addr:postcode": "8001",
+    "addr:street": "Malergasse"
+  }
+},
+{
+  "type": "node",
+  "id": 656327592,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "46",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 656327615,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Häringstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 656327626,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "21",
+    "addr:postcode": "8001",
+    "addr:street": "Zähringerstrasse",
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Walliser Keller",
+    "opening_hours": "Mo-Fr 11:30-13:15, 17:00-23:00; Sa 17:00-23:00",
+    "operator": "Best Western",
+    "outdoor_seating": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://walliser-keller.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 656327647,
+  "tags": {
+    "addr:housenumber": "128",
+    "addr:street": "Limmatquai",
+    "check_date": "2026-02-14",
+    "female": "yes",
+    "male": "yes",
+    "name": "McConnell",
+    "shop": "hairdresser",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 656327649,
+  "tags": {
+    "addr:housenumber": "126",
+    "addr:street": "Limmatquai",
+    "check_date": "2023-05-19",
+    "name": "Messer Dolmetsch",
+    "shop": "gift",
+    "wheelchair": "limited",
+    "wheelchair:description": "Nur halbe Ladenfläche befahrbar, da Treppe zu oberem Bereich zu hoch."
+  }
+},
+{
+  "type": "node",
+  "id": 656327655,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "3",
+    "addr:postcode": "8001",
+    "addr:street": "Am Rank"
+  }
+},
+{
+  "type": "node",
+  "id": 656327691,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "25",
+    "addr:postcode": "8001",
+    "addr:street": "Zähringerstrasse",
+    "name": "Felix",
+    "tourism": "hotel",
+    "website": "https://www.hotelfelix.ch/",
+    "wheelchair": "yes",
+    "wheelchair:description": "Rollstuhleingang",
+    "wikidata": "Q111874803"
+  }
+},
+{
+  "type": "node",
+  "id": 656327693,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "21",
+    "addr:postcode": "8001",
+    "addr:street": "Zähringerstrasse",
+    "brand": "Best Western Plus",
+    "brand:wikidata": "Q38623383",
+    "contact:email": "info@zurcherhof.ch",
+    "contact:phone": "+41 44 269 44 44",
+    "contact:website": "https://www.zurcherhof.ch/",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Best Western Plus Hotel Zürcherhof",
+    "operator": "Best Western",
+    "rooms": "39",
+    "smoking": "no",
+    "tourism": "hotel",
+    "wheelchair": "yes",
+    "wikidata": "Q111409746"
+  }
+},
+{
+  "type": "node",
+  "id": 656327698,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "61",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 656327700,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Gräbligasse",
+    "amenity": "bar",
+    "indoor_seating": "yes",
+    "name": "Fumoir",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 656327703,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "2",
+    "addr:postcode": "8001",
+    "addr:street": "Gräbligasse"
+  }
+},
+{
+  "type": "node",
+  "id": 656327706,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "57",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 656327707,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "63",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 656327709,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "3",
+    "addr:postcode": "8001",
+    "addr:street": "Gräbligasse"
+  }
+},
+{
+  "type": "node",
+  "id": 656327717,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "33",
+    "addr:postcode": "8001",
+    "addr:street": "Zähringerstrasse",
+    "check_date": "2024-02-28",
+    "name": "Citystudios",
+    "phone": "+41 78 692 91 16",
+    "tourism": "hotel",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 656327727,
+  "tags": {
+    "addr:housenumber": "9",
+    "addr:street": "Spitalgasse",
+    "check_date": "2025-08-04",
+    "check_date:opening_hours": "2025-08-04",
+    "description": "Eingang Seite Zähringerplatz",
+    "male": "yes",
+    "name": "Barber Niederdorf",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-18:00; Su off",
+    "phone": "+41 44 262 24 84",
+    "shop": "hairdresser",
+    "website": "https://www.envoguecoiffure.com",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 656327737,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "11",
+    "addr:street": "Zähringerstrasse",
+    "amenity": "bar",
+    "check_date": "2024-10-26",
+    "contact:phone": "+41 43 244 88 90",
+    "indoor_seating": "yes",
+    "lgbtq": "primary",
+    "name": "Kame-Haus",
+    "opening_hours": "Mo-Tu off; We 17:30-23:00; Fr 17:30-26:00; Sa 15:00-26:00; Su 15:00-22:00",
+    "outdoor_seating": "no",
+    "website": "https://kakarot.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 656327757,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "17",
+    "addr:postcode": "8001",
+    "addr:street": "Mühlegasse",
+    "check_date": "2024-10-26",
+    "name": "Scheuble",
+    "tourism": "hotel",
+    "wheelchair": "no",
+    "wikidata": "Q111874802"
+  }
+},
+{
+  "type": "node",
+  "id": 656327772,
+  "tags": {
+    "addr:housenumber": "16",
+    "addr:street": "Zähringerstrasse",
+    "amenity": "restaurant",
+    "indoor_seating": "yes",
+    "name": "Raclette Stube",
+    "opening_hours": "Mo-Fr 18:00+; Sa,Su 17:00+",
+    "outdoor_seating": "no",
+    "website": "https://www.raclette-stube.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 656327806,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "28",
+    "addr:postcode": "8001",
+    "addr:street": "Zähringerstrasse",
+    "amenity": "fast_food",
+    "branch": "Zürich Niederdorf",
+    "check_date:opening_hours": "2023-10-03",
+    "cuisine": "burger;salad",
+    "indoor_seating": "yes",
+    "name": "Holy Cow!",
+    "opening_hours": "Mo-We 11:00-22:00; Th-Sa 11:00-23:00; Su 11:00-22:00",
+    "outdoor_seating": "yes",
+    "website": "https://www.holycow.ch/",
+    "website:menu": "https://holycow.ch/wp-content/uploads/2024/11/Holy_Cow_02_2024_Menu_A4_DE.pdf",
+    "wheelchair": "no",
+    "wheelchair:description": "Stufe beim Eingang"
+  }
+},
+{
+  "type": "node",
+  "id": 656327809,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "32",
+    "addr:postcode": "8001",
+    "addr:street": "Zähringerstrasse",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 656327813,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "136",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "check_date": "2025-05-11",
+    "name": "Limmatblick",
+    "tourism": "hotel",
+    "wheelchair": "no",
+    "wikidata": "Q111874805"
+  }
+},
+{
+  "type": "node",
+  "id": 656327815,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "134",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "check_date": "2026-02-14",
+    "email": "info@berling.ch",
+    "name": "Berling Optik",
+    "opening_hours": "Mo-Fr 09:00-12:30,13:30-18:30; Sa 09:00-17:00",
+    "phone": "+41 44 269 40 60",
+    "shop": "optician",
+    "website": "https://www.berling.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 656327817,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "67",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 656327818,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "69",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 656327834,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "43",
+    "addr:postcode": "8001",
+    "addr:street": "Zähringerstrasse",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Sorell Hotel Rütli",
+    "operator": "ZFV-Unternehmungen",
+    "rooms": "58",
+    "stars": "3",
+    "tourism": "hotel",
+    "website": "https://sorellhotels.com/ruetli/",
+    "wheelchair": "limited",
+    "wheelchair:description": "Restaurant gut zugänglich. Hotel sehr wahrscheinlich ohne Lift.",
+    "wikidata": "Q111409751"
+  }
+},
+{
+  "type": "node",
+  "id": 656327837,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "142",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "check_date": "2025-05-11",
+    "name": "Limmathof",
+    "phone": "+41 44 267 60 40",
+    "tourism": "hotel",
+    "website": "https://www.limmathof.com/",
+    "wheelchair": "no",
+    "wikidata": "Q111120296"
+  }
+},
+{
+  "type": "node",
+  "id": 683372569,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Central",
+    "check_date": "2025-03-24",
+    "internet_access": "wlan",
+    "name": "Central Plaza",
+    "name:zh": "中央广场酒店",
+    "phone": "+41 44 256 56 56",
+    "toilets:wheelchair": "yes",
+    "tourism": "hotel",
+    "wheelchair": "yes",
+    "wikidata": "Q111874809"
+  }
+},
+{
+  "type": "node",
+  "id": 683372571,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "8",
+    "addr:postcode": "8001",
+    "addr:street": "Neumühlequai"
+  }
+},
+{
+  "type": "node",
+  "id": 683372572,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "10",
+    "addr:postcode": "8001",
+    "addr:street": "Neumühlequai"
+  }
+},
+{
+  "type": "node",
+  "id": 683372573,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "12",
+    "addr:postcode": "8001",
+    "addr:street": "Neumühlequai",
+    "branch": "Zürich Walche",
+    "brand": "Pfister",
+    "brand:wikidata": "Q104215428",
+    "check_date": "2024-03-16",
+    "check_date:opening_hours": "2023-07-04",
+    "contact:email": "zh-walche@pfister.ch",
+    "contact:fax": "+41 44 267 25 26",
+    "contact:phone": "+41 44 267 25 25",
+    "contact:website": "http://www.pfister.ch/de/filialen/zuerich-walcheplatz",
+    "name": "Pfister",
+    "opening_hours": "Mo-Fr 09:00-18:30; Sa 09:00-17:00",
+    "operator": "Möbel Pfister",
+    "payment:american_express": "yes",
+    "payment:coins": "yes",
+    "payment:diners_club": "yes",
+    "payment:mastercard": "yes",
+    "payment:notes": "yes",
+    "payment:visa": "yes",
+    "shop": "furniture",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 683372575,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "12",
+    "addr:postcode": "8001",
+    "addr:street": "Neumühlequai"
+  }
+},
+{
+  "type": "node",
+  "id": 683372576,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "6",
+    "addr:postcode": "8001",
+    "addr:street": "Neumühlequai"
+  }
+},
+{
+  "type": "node",
+  "id": 683372578,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Neumühlequai",
+    "check_date": "2023-04-10",
+    "name": "Coiffure Jnside",
+    "opening_hours": "Mo-Fr 08:30-18:30; Sa 08:00-17:00; PH off",
+    "shop": "hairdresser",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 683372579,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "12",
+    "addr:postcode": "8001",
+    "addr:street": "Walcheplatz",
+    "contact:email": "info@beautyconcierge.ch",
+    "contact:phone": "+41 44 501 81 01",
+    "contact:website": "http://beautyconcierge.ch",
+    "disused:shop": "beauty",
+    "name": "Beauty Concierge",
+    "opening_hours": "Tu-Fr 10:00-20:00; Sa 08:30-18:00",
+    "payment:american_express": "yes",
+    "payment:coins": "yes",
+    "payment:diners_club": "yes",
+    "payment:discover_card": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:notes": "yes",
+    "payment:visa": "yes",
+    "payment:visa_electron": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 683372582,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "30",
+    "addr:postcode": "8006",
+    "addr:street": "Neumühlequai",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 683372583,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "32",
+    "addr:postcode": "8006",
+    "addr:street": "Neumühlequai",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 683372584,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "34",
+    "addr:postcode": "8006",
+    "addr:street": "Neumühlequai",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 683372589,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "36",
+    "addr:postcode": "8006",
+    "addr:street": "Neumühlequai",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 683372590,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "38",
+    "addr:postcode": "8006",
+    "addr:street": "Neumühlequai",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 683372592,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "41",
+    "addr:postcode": "8005",
+    "addr:street": "Sihlquai"
+  }
+},
+{
+  "type": "node",
+  "id": 683372595,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "55",
+    "addr:postcode": "8005",
+    "addr:street": "Sihlquai",
+    "name": "Sihlquai55 Inspace Visarte Zürich",
+    "note": "Zugang via Ausstellungsstrasse 16",
+    "website": "http://www.sihlquai55.ch"
+  }
+},
+{
+  "type": "node",
+  "id": 683372596,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "57",
+    "addr:postcode": "8005",
+    "addr:street": "Sihlquai"
+  }
+},
+{
+  "type": "node",
+  "id": 683372621,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "40",
+    "addr:postcode": "8006",
+    "addr:street": "Neumühlequai",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 683372627,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "20",
+    "addr:street": "Neumühlequai"
+  }
+},
+{
+  "type": "node",
+  "id": 683372632,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "2",
+    "addr:postcode": "8001",
+    "addr:street": "Walcheplatz"
+  }
+},
+{
+  "type": "node",
+  "id": 693318432,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "67",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "WE Bahnhofstrasse",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "WE",
+    "brand:wikidata": "Q1987861",
+    "brand:wikipedia": "en:WE (clothing)",
+    "check_date": "2024-08-09",
+    "name": "WE",
+    "opening_hours": "Mo- Fr 09:00-20:00; Sa 09:00-18:00",
+    "operator": "WE Switzerland Fashion",
+    "shop": "clothes",
+    "website": "https://www.wefashion.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 693318441,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "71",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "amenity": "pharmacy",
+    "brand": "Rotpunkt Apotheke",
+    "check_date": "2026-04-14",
+    "check_date:opening_hours": "2026-04-14",
+    "healthcare": "pharmacy",
+    "name": "Victoria Apotheke",
+    "opening_hours": "Mo-Fr 08:00-19:00; Sa 09:00-18:00",
+    "operator": "Rotpunkt Pharma",
+    "website": "https://www.pharmaworld.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318446,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "69",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "Swatch Zürich City",
+    "branch": "Zürich City (Pop-Up)",
+    "brand": "Swatch",
+    "brand:wikidata": "Q573422",
+    "check_date": "2024-08-09",
+    "level": "0",
+    "name": "Swatch",
+    "opening_hours:signed": "no",
+    "operator": "Swatch Retail",
+    "shop": "watches",
+    "website": "https://www.swatch.com/de_ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318447,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "66",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "Zara",
+    "brand:wikidata": "Q147662",
+    "check_date": "2024-08-09",
+    "clothes": "women;men;children",
+    "name": "Zara",
+    "old_name": "Bally Zürich",
+    "operator": "Zara Suisse",
+    "shop": "clothes",
+    "website": "https://www.zara.com/ch/de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318449,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "73",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "BIG Flagship",
+    "check_date": "2026-04-14",
+    "check_date:opening_hours": "2026-04-14",
+    "clothes": "women",
+    "name": "Collectif mon Amour",
+    "opening_hours": "Mo-Sa 10:00-19:00; PH off",
+    "operator": "Modissa",
+    "shop": "clothes",
+    "website": "https://bigzh.ch/big-flagship/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 693318451,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "6",
+    "addr:postcode": "8001",
+    "addr:street": "Seidengasse",
+    "brand": "H&M",
+    "brand:wikidata": "Q188326",
+    "brand:wikipedia": "en:H&M",
+    "check_date": "2023-05-13",
+    "name": "H&M",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 08:30-20:00",
+    "phone": "+41 800 665 590",
+    "shop": "clothes",
+    "website": "https://www2.hm.com/de_ch/customer-service/shopping-at-hm/local-store.CH0916.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318452,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "15",
+    "addr:postcode": "8001",
+    "addr:street": "Uraniastrasse",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318485,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "80",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "KURZ Zürich",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "KURZ",
+    "check_date": "2025-10-03",
+    "check_date:opening_hours": "2025-10-03",
+    "name": "Kurz",
+    "opening_hours": "Mo-Fr 09:15-18:30; Sa 09:15-17:00",
+    "operator": "Juwelier Kurz",
+    "shop": "jewelry",
+    "website": "http://www.kurzschmuckuhren.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318486,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "78",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "Swarovski",
+    "brand:wikidata": "Q611115",
+    "brand:wikipedia": "en:Swarovski",
+    "check_date": "2024-08-09",
+    "name": "Swarovski",
+    "note": "Nach dem Umbau ist Christ ausgezogen und jetzt ist ein neuer Flagship Store von Swarovski dort eingezogen.",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "shop": "jewelry",
+    "website": "https://www.swarovski.com/en-CH/store/0001827110/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318489,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "76",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "Salt Store Bahnhofstrasse",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "Salt",
+    "brand:wikidata": "Q3884382",
+    "check_date": "2024-08-09",
+    "name": "Salt",
+    "opening_hours": "Mo-Sa 21:00-20:00",
+    "operator": "Salt Mobile",
+    "shop": "telecommunication",
+    "start_date": "2024-05-16",
+    "website": "https://www.salt.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 693318497,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "79",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 693318506,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Uraniastrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 693318508,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Uraniastrasse",
+    "check_date": "2026-07-02",
+    "name": "Schweizer Heimatwerk",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-19:00",
+    "shop": "gift",
+    "website": "https://www.heimatwerk.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318517,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "4",
+    "addr:postcode": "8001",
+    "addr:street": "Uraniastrasse",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318525,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "7",
+    "addr:postcode": "8001",
+    "addr:street": "Uraniastrasse",
+    "name": "Gautschi Optik",
+    "opening_hours": "Mo 11:00-18:30; Tu-Fr 08:30-18:30; Sa 08:30-17:00",
+    "shop": "optician",
+    "website": "https://www.gautschi-augenoptik.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318530,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "4",
+    "addr:postcode": "8001",
+    "addr:street": "Werdmühleplatz",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318531,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "4",
+    "addr:postcode": "8001",
+    "addr:street": "Werdmühleplatz",
+    "name": "liluca",
+    "opening_hours": "Tu-Fr 10:00-12:00,13:00-19:00; Sa 09:00-17:00",
+    "shop": "clothes",
+    "website": "https://www.liluca.ch/zuerich/"
+  }
+},
+{
+  "type": "node",
+  "id": 693318532,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "2",
+    "addr:postcode": "8001",
+    "addr:street": "Uraniastrasse",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318547,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "10",
+    "addr:postcode": "8001",
+    "addr:street": "Werdmühlestrasse",
+    "contact:instagram": "wowmuseumzurich",
+    "contact:twitter": "WowZurich",
+    "fee": "yes",
+    "fixme": "Pop-up-Store location, changes occupant",
+    "name": "WOW Museum",
+    "opening_hours": "Mo,We-Th 10:00-20:00; Tu off; Fr 10:00-22:00; Sa 09:00-22:00; Su 09:00-20:00",
+    "tourism": "museum",
+    "website": "https://www.wow-museum.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 693318551,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "4",
+    "addr:postcode": "8001",
+    "addr:street": "Werdmühleplatz",
+    "brand": "Clarks",
+    "brand:wikidata": "Q1095857",
+    "name": "Clarks",
+    "shop": "shoes",
+    "website": "https://clarks.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 693318560,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "82",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "branch": "Zürich",
+    "brand": "Mango",
+    "brand:wikidata": "Q136503",
+    "check_date": "2026-09-28",
+    "clothes": "women",
+    "name": "Mango",
+    "opening_hours": "Mo-Fr 09:30-20:00, Sa 09:30-18:00; PH off",
+    "shop": "clothes",
+    "website": "https://shop.mango.com/CH/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 693318563,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "88",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "PKZ Women Bahnhofstrasse",
+    "branch": "Zürich Bahnhofstrasse Damenmode",
+    "brand": "PKZ",
+    "brand:wikidata": "Q1661717",
+    "check_date": "2024-11-26",
+    "check_date:opening_hours": "2024-11-26",
+    "clothes": "women",
+    "name": "PKZ Women",
+    "old_name": "Feldpausch",
+    "opening_hours": "Mo-We 10:00-19:00; Th,Fr 10:00-20:00; Sa 09:00-19:00",
+    "operator": "PKZ Burger-Kehl & Co.",
+    "shop": "clothes",
+    "website": "https://www.pkz.ch/de/36-storelocator?sid=101",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318564,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "84",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "branch": "Zürich",
+    "brand": "Diesel",
+    "brand:wikidata": "Q158285",
+    "check_date": "2026-07-02",
+    "level": "0;1;2",
+    "name": "Nile",
+    "opening_hours": "Mo-We 10:00-19:00; Th-Fr 10:00-20:00; Sa 09:00-18:00",
+    "shop": "clothes",
+    "website": "https://storelocator.diesel.com/400993-diesel-store-zurich-bahnhofstrasse",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318570,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "92",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "H&M Bahnhofstrasse",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "H&M",
+    "brand:wikidata": "Q188326",
+    "brand:wikipedia": "en:H&M",
+    "check_date": "2026-07-02",
+    "check_date:opening_hours": "2025-10-30",
+    "clothes": "women;men",
+    "level": "0",
+    "name": "H&M",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 08:30-20:00",
+    "operator": "H&M Hennes & Mauritz",
+    "shop": "clothes",
+    "website": "https://www2.hm.com/de_ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318573,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "3",
+    "addr:postcode": "8001",
+    "addr:street": "Werdmühleplatz",
+    "alt_name": "Gidor Werdmühle",
+    "branch": "Zürich Werdmühle",
+    "brand": "Gidor",
+    "brand:wikidata": "Q1523182",
+    "check_date:opening_hours": "2026-08-19",
+    "female": "yes",
+    "male": "yes",
+    "name": "Gidor",
+    "opening_hours": "Mo-Sa 09:00-20:00",
+    "operator": "Gidor",
+    "shop": "hairdresser",
+    "website": "https://www.gidor.ch/filiale/zuerich-werdmuehle/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 693318592,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "81",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "Coop Vitality Bahnhofstrasse",
+    "amenity": "pharmacy",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "Coop Vitality",
+    "brand:wikidata": "Q111725297",
+    "check_date": "2025-10-29",
+    "healthcare": "pharmacy",
+    "level": "0",
+    "name": "Coop Vitality",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-19:00",
+    "operator": "Coop Vitality & GaleniCare",
+    "website": "https://www.coopvitality.ch/de/coop-vitality-zurich",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318594,
+  "tags": {
+    "addr:housenumber": "98",
+    "addr:street": "Bahnhofstrasse",
+    "check_date": "2026-07-02",
+    "check_date:opening_hours": "2024-11-26",
+    "level": "0",
+    "name": "Götte Optik",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-17:00",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "shop": "optician",
+    "website": "https://www.goetteoptik.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 693318596,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "87",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "Lovisa Zürich",
+    "branch": "Zürich",
+    "brand": "Lovisa",
+    "brand:wikidata": "Q106298409",
+    "check_date": "2024-11-27",
+    "check_date:opening_hours": "2024-11-27",
+    "level": "0",
+    "name": "Lovisa",
+    "opening_hours:signed": "no",
+    "operator": "Lovisa Switzerland",
+    "shop": "jewelry",
+    "website": "https://www.lovisajewellery.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 693318598,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "87",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "check_date": "2025-08-28",
+    "check_date:opening_hours": "2025-08-28",
+    "level": "0",
+    "name": "McOptic",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-17:00",
+    "shop": "optician",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 693318599,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "83",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "branch": "Zürich City",
+    "brand": "Fielmann",
+    "brand:wikidata": "Q457822",
+    "brand:wikipedia": "de:Fielmann",
+    "check_date": "2025-08-28",
+    "check_date:opening_hours": "2025-08-28",
+    "level": "0",
+    "name": "Fielmann",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-17:00",
+    "shop": "optician",
+    "website": "https://www.fielmann.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318600,
+  "tags": {
+    "addr:housenumber": "81",
+    "addr:street": "Bahnhofstrasse",
+    "brand": "Ochsner Sport",
+    "brand:wikidata": "Q102030654",
+    "check_date": "2025-08-28",
+    "check_date:opening_hours": "2025-08-28",
+    "name": "Ochsner Sport",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-19:00",
+    "operator": "Dosenbach-Ochsner",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+41 44 211 09 90",
+    "shop": "sports",
+    "website": "http://ochsner-sport.ch",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318610,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "81",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 693318612,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "87",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "Sunrise Shop Bahnhofstrasse",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "Sunrise",
+    "brand:wikidata": "Q112573820",
+    "brand:wikipedia": "de:Sunrise Communications",
+    "check_date": "2024-08-09",
+    "level": "0",
+    "name": "Sunrise",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00",
+    "operator": "Sunrise Communications",
+    "shop": "telecommunication",
+    "website": "https://www.sunrise.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 693318615,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "102",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "Yooji's Bahnhofstrasse",
+    "amenity": "food_court",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "Yooji's",
+    "check_date": "2025-09-03",
+    "check_date:opening_hours": "2025-05-29",
+    "cuisine": "sushi",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Yooji's",
+    "opening_hours": "Mo-Sa 11:00-22:00; Su 12:00-21:00",
+    "operator": "Two Spice",
+    "outdoor_seating": "yes",
+    "takeaway": "yes",
+    "website": "https://www.yoojis.com/standorte/zuerich-i-bahnhofstrasse/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318630,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:street": "Schützengasse",
+    "disused:amenity": "cafe",
+    "level": "0",
+    "name": "Oskar Kowalski",
+    "website": "https://www.oskar-kowalski.ch/"
+  }
+},
+{
+  "type": "node",
+  "id": 693318631,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "12",
+    "addr:postcode": "8001",
+    "addr:street": "Schützengasse",
+    "alt_name": "D-Vino Bahnhofstrasse",
+    "amenity": "bar",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "D-Vino",
+    "check_date": "2025-09-03",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "D-Vino",
+    "opening_hours": "Mo-Fr 07:00-24:00; Sa 11:00-24:00; Su 10:00-23:00",
+    "operator": "D-Vino Weinbars",
+    "outdoor_seating": "yes",
+    "website": "https://www.d-vino.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318633,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "93",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "air_conditioning": "no",
+    "alt_name": "ViCafe Bahnhofstrasse",
+    "amenity": "cafe",
+    "branch": "Zürich Bahnhofstrasse",
+    "check_date": "2024-08-09",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "no",
+    "level": "0",
+    "name": "ViCafe",
+    "opening_hours": "Mo-Fr 06:30-18:00; Sa 07:30-18:00; Su 09:00-18:00",
+    "operator": "Vicafe Espresso Bars",
+    "outdoor_seating": "no",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "start_date": "2018-05-09",
+    "takeaway": "only",
+    "website": "https://vicafe.ch/zuerich/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 693318634,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "93",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "Christ Bahnhofstrasse",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "Christ",
+    "brand:wikidata": "Q1077957",
+    "brand:wikipedia": "de:Christ (Juwelier)",
+    "check_date": "2026-05-04",
+    "check_date:opening_hours": "2026-05-04",
+    "level": "0",
+    "name": "Christ",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-19:00; PH off",
+    "operator": "Coop Genossenschaft",
+    "shop": "jewelry",
+    "website": "https://www.christ-swiss.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318635,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "93",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 693318636,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "93",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "check_date:opening_hours": "2026-05-04",
+    "level": "0",
+    "name": "Gisada Switzerland",
+    "opening_hours:signed": "no",
+    "shop": "clothes",
+    "start_date": "2024-05-14"
+  }
+},
+{
+  "type": "node",
+  "id": 693318638,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "91",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "level": "0",
+    "name": "Favarger",
+    "opening_hours": "Mo-Sa 09:00-20:00; Su 10:00-18:00",
+    "shop": "chocolate",
+    "website": "https://www.favarger.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318640,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "91",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 693318643,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "89",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "amenity": "cafe",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "Bachmann",
+    "check_date": "2025-05-28",
+    "check_date:opening_hours": "2025-05-28",
+    "check_date:toilets:wheelchair": "2024-10-25",
+    "indoor_seating": "yes",
+    "level": "0;1;2",
+    "name": "Bachmann",
+    "opening_hours": "Mo-Fr 06:45-20:00; Sa 07:00-20:00; Su 10:00-18:00; PH closed",
+    "operator": "Confiseur Bachmann",
+    "outdoor_seating": "no",
+    "shop": "pastry",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.confiserie.ch/de/zuerich-bahnhofstrasse",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 693318646,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "93",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "Swisscom Shop Bahnhofplatz",
+    "branch": "Zürich Bahnhofplatz",
+    "brand": "Swisscom",
+    "brand:wikidata": "Q644324",
+    "check_date": "2026-05-04",
+    "check_date:opening_hours": "2026-05-04",
+    "level": "0",
+    "name": "Swisscom",
+    "opening_hours": "Mo-Sa 09:00-20:00; PH off",
+    "operator": "Swisscom (Schweiz)",
+    "shop": "telecommunication",
+    "website": "https://www.swisscom.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 693318648,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "104",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "brand": "Intimissimi",
+    "brand:wikidata": "Q305404",
+    "brand:wikipedia": "en:Intimissimi",
+    "check_date:opening_hours": "2025-08-28",
+    "clothes": "underwear",
+    "level": "0",
+    "name": "Intimissimi",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-19:00; PH closed",
+    "operator": "Calzedonia Switzerland",
+    "shop": "clothes",
+    "start_date": "2019-09",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318653,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "106",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "Läderach Bahnhofstrasse",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "Läderach",
+    "brand:wikidata": "Q1437143",
+    "check_date": "2025-10-03",
+    "check_date:opening_hours": "2025-10-03",
+    "level": "0",
+    "name": "Läderach",
+    "opening_hours": "Mo-Sa 09:00-20:00; Su off",
+    "operator": "Läderach (Schweiz)",
+    "shop": "chocolate",
+    "website": "https://www.laderach.com/de/locations/location-details/zürich-bahnhofstrasse-zürich-75",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318662,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "6",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofplatz",
+    "amenity": "cafe",
+    "brand": "Starbucks",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "en:Starbucks",
+    "cuisine": "coffee_shop",
+    "indoor_seating": "yes",
+    "name": "Starbucks",
+    "official_name": "Starbucks Coffee",
+    "opening_hours": "Mo-Th 06:00-22:00; Fr 06:00-23:00; Sa 06:30-23:00; Su,PH 07:30-22:30",
+    "outdoor_seating": "yes",
+    "takeaway": "yes",
+    "website": "https://www.starbucks.co.uk/store-locator/13174-135529/bahnhofplatz-zurich",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318667,
+  "tags": {
+    "addr:housenumber": "110",
+    "addr:street": "Bahnhofstrasse",
+    "amenity": "dentist",
+    "check_date:opening_hours": "2025-10-03",
+    "healthcare": "dentist",
+    "name": "swiss smile",
+    "opening_hours": "Mo-Fr 07:00-21:00",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 693318670,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "108",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "amenity": "pharmacy",
+    "branch": "Zürich City",
+    "brand": "Amavita",
+    "brand:wikidata": "Q93733901",
+    "brand:wikipedia": "de:Amavita",
+    "check_date": "2025-09-03",
+    "check_date:opening_hours": "2025-08-28",
+    "healthcare": "pharmacy",
+    "name": "Amavita",
+    "old_name": "Apotheke Sammet",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 08:00-20:00; Su 11:00-18:00",
+    "operator": "GaleniCare",
+    "website": "https://www.amavita.ch/de/amavita-apotheke-bahnhofplatz-zurich",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318671,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "4",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofplatz",
+    "alt_name": "Visilab Bahnhofplatz",
+    "branch": "Zürich Bahnhofplatz",
+    "brand": "Visilab",
+    "brand:wikidata": "Q2528307",
+    "check_date": "2025-08-10",
+    "check_date:opening_hours": "2025-08-10",
+    "level": "0",
+    "name": "Visilab",
+    "opening_hours": "Mo-Fr 09:30-19:00; Sa 09:30-18:00; Su,PH off",
+    "operator": "Visilab",
+    "shop": "optician",
+    "website": "https://www.visilab.ch/"
+  }
+},
+{
+  "type": "node",
+  "id": 693318682,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "5",
+    "addr:postcode": "8001",
+    "addr:street": "Badergasse"
+  }
+},
+{
+  "type": "node",
+  "id": 693318685,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "9",
+    "addr:postcode": "8001",
+    "addr:street": "Badergasse"
+  }
+},
+{
+  "type": "node",
+  "id": 693318691,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "94",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "check_date": "2023-04-09",
+    "name": "Müller Optik Zürich",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-17:00",
+    "shop": "optician",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 693318700,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "14",
+    "addr:postcode": "8001",
+    "addr:street": "Mühlegasse"
+  }
+},
+{
+  "type": "node",
+  "id": 703215222,
+  "tags": {
+    "addr:housenumber": "40",
+    "addr:street": "Stampfenbachstrasse",
+    "alt_name": "Zentral Thai Restaurant",
+    "amenity": "restaurant",
+    "check_date": "2026-09-15",
+    "cuisine": "thai",
+    "delivery": "yes",
+    "indoor_seating": "yes",
+    "name": "Zentral",
+    "opening_hours": "Mo-Fr 11:00-14:30, 17:30-22:00, Sa 12:00-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+41 43 443 90 00",
+    "website": "https://www.zentralthairestaurant.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 703215583,
+  "tags": {
+    "addr:housenumber": "38",
+    "addr:street": "Stampfenbachstrasse",
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "indoor_seating": "yes",
+    "name": "Casa Ferlin",
+    "old_name": "Chiantiquelle",
+    "opening_hours": "Mo-Fr 11:30-14:00,18:30-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 362 35 09",
+    "website": "https://www.casaferlin.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 703216769,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "7",
+    "addr:postcode": "8001",
+    "addr:street": "Stampfenbachstrasse",
+    "amenity": "pharmacy",
+    "branch": "Zürich Central",
+    "brand": "TopPharm",
+    "brand:wikidata": "Q110277794",
+    "check_date": "2026-04-20",
+    "check_date:opening_hours": "2026-04-20",
+    "healthcare": "pharmacy",
+    "name": "TopPharm",
+    "opening_hours": "Mo-Fr 07:45-18:45; Sa 09:00-16:00",
+    "operator": "TopPharm Genossenschaft",
+    "website": "https://www.apotheke.ch/leonhards",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 725764675,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "34",
+    "addr:postcode": "8005",
+    "addr:street": "Limmatstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 725764719,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "40",
+    "addr:postcode": "8005",
+    "addr:street": "Limmatstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 725764952,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "27",
+    "addr:postcode": "8005",
+    "addr:street": "Limmatstrasse",
+    "check_date": "2025-03-19",
+    "email": "info@bilaya.ch",
+    "name": "Bilaya Wohnbau AG",
+    "office": "estate_agent",
+    "phone": "+41 43 343 50 90",
+    "website": "https://www.bilaya.ch/"
+  }
+},
+{
+  "type": "node",
+  "id": 725765046,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "28",
+    "addr:postcode": "8005",
+    "addr:street": "Limmatstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 733254763,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "61",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "alt_name": "Kapo",
+    "amenity": "police",
+    "check_date": "2026-03-07",
+    "name": "Polizeiposten Rathaus Zürich",
+    "opening_hours": "Mo-Fr 07:00-17:30",
+    "operator": "Kantonspolizei Zürich",
+    "operator:wikidata": "Q1728099",
+    "operator:wikipedia": "de:Kantonspolizei Zürich",
+    "phone": "+41 44 247 29 80",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 739966964,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "41",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "amenity": "restaurant",
+    "bar": "yes",
+    "cuisine": "international;steak_house",
+    "email": "info@carlton.ch",
+    "name": "Carlton",
+    "opening_hours": "Mo-Th 11:00-24:00, Fr 11:00-01:00, Sa 11:00-02:00",
+    "operator": "Segmüller Collection",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 227 19 19",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.carlton.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 765567648,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "3",
+    "addr:postcode": "8001",
+    "addr:street": "Sihlstrasse",
+    "branch": "Zürich City",
+    "brand": "Aldi",
+    "brand:wikidata": "Q41171672",
+    "disused:name": "Aldi",
+    "disused:shop": "supermarket",
+    "operator": "Aldi Suisse",
+    "start_date": "2021-08-26",
+    "website": "https://www.aldi-suisse.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 765813879,
+  "tags": {
+    "addr:country": "CH",
+    "addr:housenumber": "58",
+    "addr:postcode": "8001",
+    "addr:street": "Hirschengraben",
+    "amenity": "social_facility",
+    "check_date": "2024-02-12",
+    "healthcare": "blood_donation",
+    "name": "Blutspende SRK Zürich",
+    "opening_hours": "Mo 10:00-17:00; Tu 11:30-19:00; We 07:30-17:00; Th 08:00-19:00",
+    "phone": "+41 58 272 52 84",
+    "website": "https://blutspendezurich.ch",
+    "wheelchair": "limited",
+    "wheelchair:description": "Es gibt eine Rampe zum Personalraum, die nach Absprache genutzt werden könnte, der Haupteingang hat eine größere Stufe (ca. anderthalb Handbreit)."
+  }
+},
+{
+  "type": "node",
+  "id": 893293110,
+  "tags": {
+    "addr:housenumber": "8",
+    "addr:street": "Neumarkt",
+    "check_date": "2024-08-30",
+    "name": "Spitzbarth",
+    "shop": "jewelry",
+    "website": "https://spitzbarth.com",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 893293422,
+  "tags": {
+    "addr:housenumber": "27",
+    "addr:street": "Neumarkt",
+    "check_date": "2023-04-22",
+    "name": "Whisky Shop",
+    "opening_hours": "Mo-Th,Su off; Fr 12:30-18:00; Sa 12:00-16:00",
+    "phone": "+41 79 373 40 92",
+    "shop": "alcohol",
+    "website": "https://whiskyneumarkt.ch"
+  }
+},
+{
+  "type": "node",
+  "id": 893293445,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "19",
+    "addr:postcode": "8001",
+    "addr:street": "Neumarkt"
+  }
+},
+{
+  "type": "node",
+  "id": 893470163,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "8",
+    "addr:postcode": "8001",
+    "addr:street": "Leuengasse"
+  }
+},
+{
+  "type": "node",
+  "id": 893470380,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "21",
+    "addr:postcode": "8001",
+    "addr:street": "Leuengasse"
+  }
+},
+{
+  "type": "node",
+  "id": 893470443,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "15",
+    "addr:postcode": "8001",
+    "addr:street": "Leuengasse"
+  }
+},
+{
+  "type": "node",
+  "id": 893470519,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "12",
+    "addr:postcode": "8001",
+    "addr:street": "Elsässergasse"
+  }
+},
+{
+  "type": "node",
+  "id": 893470536,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "27",
+    "addr:postcode": "8001",
+    "addr:street": "Spiegelgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 894108038,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "25",
+    "addr:postcode": "8001",
+    "addr:street": "Münstergasse",
+    "amenity": "cafe",
+    "name": "Rare street coffee"
+  }
+},
+{
+  "type": "node",
+  "id": 894108050,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "7",
+    "addr:postcode": "8001",
+    "addr:street": "Krebsgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 894108064,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "7",
+    "addr:postcode": "8001",
+    "addr:street": "Rosengasse",
+    "check_date": "2023-06-04",
+    "level": "0",
+    "name": "SkinWork",
+    "opening_hours": "Mo-Fr 12:00-19:00; Sa 12:00-17:00; PH closed",
+    "shop": "tattoo"
+  }
+},
+{
+  "type": "node",
+  "id": 894108075,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "10",
+    "addr:postcode": "8001",
+    "addr:street": "Krebsgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 894788899,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "19",
+    "addr:postcode": "8001",
+    "addr:street": "Obere Zäune",
+    "amenity": "restaurant",
+    "email": "info@hotelbourbon.ch",
+    "indoor_seating": "yes",
+    "name": "Hôtel Bourbon",
+    "note": "This is the bar belonging to the restaurant next door. It's not a hotel, despite the name.",
+    "opening_hours": "Mo-Th 11:30-22:30; Fr 11:30-23:00; Sa 12:00-23:00; Su off",
+    "outdoor_seating": "yes",
+    "phone": "+41 43 253 20 20",
+    "website": "https://www.hotelbourbon.ch/",
+    "website:menu": "https://www.hotelbourbon.ch/menu",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 894788906,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "13",
+    "addr:postcode": "8001",
+    "addr:street": "Spiegelgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 894788911,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "2",
+    "addr:postcode": "8001",
+    "addr:street": "Spiegelgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 894788931,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "33",
+    "addr:postcode": "8001",
+    "addr:street": "Spiegelgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 895750353,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Napfgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 895750366,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "4",
+    "addr:postcode": "8001",
+    "addr:street": "Schoffelgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 895787608,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "19",
+    "addr:postcode": "8001",
+    "addr:street": "Obere Zäune"
+  }
+},
+{
+  "type": "node",
+  "id": 895787624,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "3",
+    "addr:postcode": "8001",
+    "addr:street": "Napfgasse"
+  }
+},
+{
+  "type": "node",
+  "id": 895787642,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "24",
+    "addr:postcode": "8001",
+    "addr:street": "Obere Zäune",
+    "check_date": "2025-07-14",
+    "email": "patrikfroehlich@swissonline.ch",
+    "name": "Galerie Patrik Fröhlich",
+    "opening_hours": "Mo,Su off; Tu-Fr 10:00-12:00,14:00-18:30; Sa 11:00-16:00",
+    "phone": "+41 44 242 89 00",
+    "shop": "art",
+    "website": "https://www.tribalart.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 897826114,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Predigergasse"
+  }
+},
+{
+  "type": "node",
+  "id": 897826149,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "4",
+    "addr:postcode": "8001",
+    "addr:street": "Predigergasse",
+    "appliance:repair": "yes",
+    "check_date": "2023-06-04",
+    "description": "Die Flickbar ist eine lokal verwurzelte Reparaturwerkstatt. Wir reparieren alles was tragbar ist: Geräte, Objekte, Maschinen und Apparate aller Art. Auch ältere elektronische Geräte – jedoch keine Handys, Computer oder Fotokameras.",
+    "electronics:repair": "yes",
+    "email": "info@flickbar.ch",
+    "metal:repair": "yes",
+    "name": "FLICKBAR",
+    "opening_hours": "Tu-Fr 16:00-19:00",
+    "opening_hours:description": "Di-Fr 16:00-19:00",
+    "phone": "+41 43 542 25 14",
+    "repair": "yes",
+    "shop": "repair",
+    "website": "https://www.flickbar.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 922080796,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "39",
+    "addr:postcode": "8005",
+    "addr:street": "Konradstrasse",
+    "check_date": "2024-02-25",
+    "name": "Montana",
+    "operator": "Candrian Catering",
+    "stars": "3",
+    "tourism": "hotel",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 922501905,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "77",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "branch": "Zürich",
+    "brand": "& Other Stories",
+    "brand:wikidata": "Q85322338",
+    "check_date": "2026-09-28",
+    "clothes": "women",
+    "name": "& Other Stories",
+    "opening_hours": "Mo-Sa 10:00-19:00; PH off",
+    "operator": "H&M Hennes & Mauritz",
+    "shop": "clothes",
+    "website": "https://www.stories.com/de_ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 955074356,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Mühlegasse",
+    "amenity": "stripclub",
+    "check_date": "2026-03-13",
+    "name": "Haifisch Bar",
+    "opening_hours": "Su-Th 20:00-04:00, Fr-Sa 20:00-05:00",
+    "website": "https://haifischbar.ch/"
+  }
+},
+{
+  "type": "node",
+  "id": 955271870,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "10",
+    "addr:postcode": "8001",
+    "addr:street": "Münstergasse",
+    "check_date": "2025-08-25",
+    "name": "Atelier Tibet",
+    "note": "Atelier Tibet ab 17. Juni 2025 an der Münstergasse 10 laut am alten Ort (Kirchweg 3).",
+    "opening_hours": "Mo-Fr 10:30-18:30; Sa 10:30-17:00; Su, PH off",
+    "shop": "gift"
+  }
+},
+{
+  "type": "node",
+  "id": 955271884,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "4",
+    "addr:postcode": "8001",
+    "addr:street": "Münstergasse"
+  }
+},
+{
+  "type": "node",
+  "id": 983601215,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "7",
+    "addr:street": "Schützengasse",
+    "amenity": "restaurant",
+    "check_date": "2025-09-03",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Palette",
+    "opening_hours": "Mo-We 07:00-23:00; Th-Fr 07:00-24:00; Sa 08:00-24:00, Su 08:00-17:00",
+    "outdoor_seating": "yes",
+    "website": "https://palette-zürich.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 988652775,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "39",
+    "addr:postcode": "8005",
+    "addr:street": "Konradstrasse",
+    "amenity": "cafe",
+    "check_date": "2025-07-07",
+    "old_name": "Le Lyonnais",
+    "opening_hours": "Mo-Fr 06:30-10:00; Sa-Su 07:00-11:00",
+    "operator": "Hotel Montana",
+    "website": "https://hotelmontana-zurich.com"
+  }
+},
+{
+  "type": "node",
+  "id": 989941659,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housename": "UZH-KOL",
+    "addr:housenumber": "71",
+    "addr:postcode": "8006",
+    "addr:street": "Rämistrasse",
+    "entrance": "main",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 989941666,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "12",
+    "addr:postcode": "8001",
+    "addr:street": "Künstlergasse",
+    "entrance": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1028113949,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "9",
+    "addr:postcode": "8001",
+    "addr:street": "Weinbergstrasse",
+    "amenity": "cinema",
+    "brand": "blue Cinema",
+    "check_date": "2025-10-30",
+    "name": "Capitol",
+    "opening_hours": "\"Open daily one hour before the showing starts. More information at blue.ch\"",
+    "operator": "KITAG Kino-Theater AG",
+    "screen": "6",
+    "website": "https://www.bluecinema.ch/de/kinos-und-infos/kinos/capitol/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1028117584,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "18",
+    "addr:postcode": "8001",
+    "addr:street": "Brunngasse",
+    "amenity": "doctors",
+    "healthcare": "doctor",
+    "healthcare:speciality": "ophthalmology",
+    "level": "1",
+    "name": "Augenärzte FMH"
+  }
+},
+{
+  "type": "node",
+  "id": 1036170678,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housename": "UZH-KO2",
+    "addr:housenumber": "4",
+    "addr:postcode": "8006",
+    "addr:street": "Karl-Schmid-Strasse",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 1069585402,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "44",
+    "addr:postcode": "8001",
+    "addr:street": "Zähringerstrasse",
+    "disused:amenity": "cinema",
+    "name": "Arthouse Alba",
+    "opening_hours": "\"half hour before the movie time\"",
+    "operator": "Arthouse Commercio Movie AG",
+    "screen": "1",
+    "toilets:wheelchair": "no",
+    "website": "https://www.arthouse.ch/",
+    "wheelchair": "limited",
+    "wheelchair:description": "Parterre rollstuhlgängig",
+    "wheelchair:places": "yes",
+    "wheelchair:source": "http://www.arthouse.ch/pdf/kinomiete_v1.pdf",
+    "wikidata": "Q35722072"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775170,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "53",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "brand": "Balenciaga",
+    "brand:wikidata": "Q1530892",
+    "check_date": "2024-08-09",
+    "name": "Balenciaga",
+    "shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775198,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "37",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "name": "Bucheron",
+    "opening_hours": "Mo-Fr 10:00-18:30; Sa 10:00-18:00",
+    "shop": "jewelry",
+    "website": "https://www.boucheron.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775246,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "11",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofquai"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775269,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "64",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "branch": "Zürich",
+    "disused:shop": "jewelry",
+    "name": "Les Ambassadeurs",
+    "opening_hours": "Mo-Fr 10:00-18:30; Sa 10:00-17:00; Su off",
+    "operator": "Les Ambassadeurs",
+    "website": "https://www.lesambassadeurs.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775290,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "33",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "check_date": "2024-08-09",
+    "name": "Meister Juwelier",
+    "opening_hours": "Mo-Fr 09:30-18:30; Sa 10:00-17:00",
+    "shop": "jewelry",
+    "website": "https://meister-juwelier.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775292,
+  "tags": {
+    "addr:housenumber": "44",
+    "addr:street": "Bahnhofstrasse",
+    "check_date": "2024-08-09",
+    "name": "Hublot",
+    "shop": "watches",
+    "website": "https://www.hublot.com",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775297,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "39",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "brand": "Gucci",
+    "brand:wikidata": "Q178516",
+    "check_date": "2024-08-09",
+    "name": "Gucci",
+    "shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775314,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "54",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "brand": "Celine",
+    "brand:wikidata": "Q948531",
+    "clothes": "luxury",
+    "name": "Celine",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00",
+    "shop": "clothes",
+    "website": "https://www.celine.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775334,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "40",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "check_date": "2024-08-09",
+    "name": "Chopard",
+    "opening_hours": "Mo-Fr 10:00-18:30; Sa 10:00-17:00",
+    "shop": "jewelry",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775338,
+  "tags": {
+    "addr:housenumber": "44",
+    "addr:street": "Bahnhofstrasse",
+    "brand": "Burberry",
+    "brand:wikidata": "Q390107",
+    "brand:wikipedia": "en:Burberry",
+    "check_date": "2024-08-09",
+    "clothes": "men;women",
+    "name": "Burberry",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00; Su off",
+    "shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775345,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "45",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "UBS Zürich",
+    "amenity": "bank",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "UBS",
+    "brand:wikidata": "Q193199",
+    "brand:wikipedia": "en:UBS",
+    "name": "UBS",
+    "opening_hours": "Mo-Fr 09:00-17:00",
+    "operator": "UBS Switzerland",
+    "website": "https://www.ubs.com/standorte/schweiz/zurich/bahnhofstrasse-45/ubs-geschaeftsstelle-188.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775372,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "47",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775408,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "67",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "Sprüngli Bahnhofstrasse",
+    "branch": "Zürich Bahnhofstrasse",
+    "brand": "Sprüngli",
+    "brand:wikidata": "Q692605",
+    "check_date": "2026-03-10",
+    "check_date:opening_hours": "2026-03-10",
+    "name": "Sprüngli",
+    "opening_hours": "Mo-Fr 08:00-19:00; Sa 09:00-18:00",
+    "operator": "Confiserie Sprüngli",
+    "shop": "pastry",
+    "website": "https://www.spruengli.ch/de/standorte/bahnhofstrasse.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775411,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "36",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "branch": "Zürich",
+    "check_date": "2025-12-28",
+    "check_date:opening_hours": "2025-12-28",
+    "name": "Gübelin",
+    "opening_hours": "Mo-Fr 10:00-18:30; Sa 10:00-17:00; Su off",
+    "operator": "Gübelin",
+    "shop": "jewelry",
+    "website": "https://www.gubelin.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775436,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofplatz",
+    "branch": "Zürich",
+    "check_date": "2026-09-16",
+    "check_date:opening_hours": "2026-09-16",
+    "name": "DQ Solutions",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-18:00",
+    "operator": "DQ Solutions",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "phone": "+41 44 265 10 10",
+    "shop": "computer",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775455,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "46",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "PKZ Men Bahnhofstrasse",
+    "branch": "Zürich Bahnhofstrasse Herrenmode",
+    "brand": "PKZ",
+    "brand:wikidata": "Q1661717",
+    "check_date": "2024-08-09",
+    "clothes": "men",
+    "name": "PKZ Men",
+    "opening_hours": "Mo-Sa 09:00-20:00",
+    "operator": "PKZ Burger-Kehl & Co.",
+    "shop": "clothes",
+    "website": "https://www.pkz.ch/de/36-storelocator?sid=10",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775459,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "47",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "Cartier Zürich",
+    "branch": "Zürich",
+    "brand": "Cartier",
+    "brand:wikidata": "Q538587",
+    "check_date": "2024-08-09",
+    "name": "Cartier",
+    "opening_hours": "Mo-Fr 10:00-18:30; Sa 10:00-17:00",
+    "operator": "Richemont Suisse",
+    "shop": "jewelry",
+    "website": "https://www.cartier.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775463,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "35",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "check_date": "2024-04-15",
+    "level": "1",
+    "name": "En Vogue",
+    "opening_hours": "Mo 09:00-18:30; Tu-Fr 09:00-20:00; Sa 09:00-17:00",
+    "shop": "hairdresser",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775489,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "39",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "brand": "Chanel",
+    "brand:wikidata": "Q218115",
+    "brand:wikipedia": "en:Chanel",
+    "check_date": "2024-08-09",
+    "name": "Chanel",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-17:30",
+    "shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775501,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "58",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "amenity": "pharmacy",
+    "check_date": "2025-11-07",
+    "check_date:opening_hours": "2025-11-07",
+    "healthcare": "pharmacy",
+    "name": "Löwen Apotheke",
+    "opening_hours": "Mo-Fr 09:30-19:00; Sa 10:00-18:00",
+    "website": "http://www.loewen-apotheke-zuerich.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775503,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "45",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775505,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "48",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775524,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "35",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "alt_name": "Tod's Zürich",
+    "branch": "Zürich",
+    "brand": "Tod's",
+    "brand:wikidata": "Q1342350",
+    "check_date": "2024-08-09",
+    "name": "Tod's",
+    "opening_hours": "Mo-Fr 10:00-18:30, Sa 10:00-17:00; PH off",
+    "shop": "shoes",
+    "website": "https://www.tods.com/ch-en/stores-single/?idStore=223",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775530,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "42",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775534,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "62",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 1110775563,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "38",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "brand": "Piaget",
+    "brand:wikidata": "Q658961",
+    "check_date": "2024-08-09",
+    "name": "Piaget",
+    "opening_hours": "Mo-Fr 10:00-18:30; Sa 10:00-17:00; Su off",
+    "shop": "jewelry",
+    "website": "https://www.piaget.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1115159231,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housename": "Orell-Füssli-Hof",
+    "addr:housenumber": "31",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofstrasse",
+    "check_date": "2024-08-09",
+    "name": "Breguet",
+    "opening_hours": "Mo-Fr 09:30-18:30; Sa 09:30-17:00",
+    "shop": "watches",
+    "website": "https://www.breguet.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1243222364,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "85",
+    "addr:postcode": "8006",
+    "addr:street": "Stampfenbachstrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 1258114496,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "1",
+    "addr:postcode": "8001",
+    "addr:street": "Bahnhofbrücke",
+    "amenity": "police",
+    "check_date": "2025-05-29",
+    "name": "Verkehrspolizei der Stadtpolizei Zürich",
+    "name:en": "Traffic Police",
+    "operator": "Stadtpolizei Zürich",
+    "operator:wikidata": "Q2327949",
+    "operator:wikipedia": "de:Stadtpolizei Zürich"
+  }
+},
+{
+  "type": "node",
+  "id": 1283388269,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "36",
+    "addr:postcode": "8092",
+    "addr:street": "Leonhardstrasse",
+    "check_date:opening_hours": "2026-01-22",
+    "leisure": "sports_centre",
+    "name": "ASVZ Sport Center Polyterrasse",
+    "opening_hours": "Mo-Fr 06:30-22:45, Sa-Su 09:00-17:45",
+    "operator": "ASVZ",
+    "operator:short": "ASVZ",
+    "operator:wikidata": "Q62056745",
+    "sport": "multi",
+    "website": "https://www.asvz.ch/anlage/45594-sport-center-polyterrasse"
+  }
+},
+{
+  "type": "node",
+  "id": 1304962768,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "40",
+    "addr:postcode": "8001",
+    "addr:street": "Uraniastrasse",
+    "amenity": "fast_food",
+    "branch": "Zürich",
+    "brand": "Sushi Shop",
+    "brand:wikidata": "Q3505657",
+    "cuisine": "sushi",
+    "name": "Sushi Shop",
+    "opening_hours": "Mo-Su 11:00-22:00",
+    "takeaway": "yes",
+    "website": "https://www.mysushishop.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1335408639,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Zürich",
+    "addr:housenumber": "6",
+    "addr:postcode": "8092",
+    "addr:street": "Universitätstrasse",
+    "door": "automatic",
+    "entrance": "yes",
+    "level": "0",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1345666130,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "4",
+    "addr:postcode": "8001",
+    "addr:street": "Füsslistrasse",
+    "alt_name": "Orell Füssli Kramhof",
+    "branch": "Zürich Kramhof",
+    "brand": "Orell Füssli",
+    "brand:wikidata": "Q15837687",
+    "check_date": "2026-08-06",
+    "check_date:opening_hours": "2026-08-06",
+    "name": "Orell Füssli",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00",
+    "operator": "Orell Füssli Thalia",
+    "shop": "books",
+    "website": "https://www.orellfuessli.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1346146716,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "2",
+    "addr:postcode": "8005",
+    "addr:street": "Zollstrasse",
+    "alt_name": "Wirtschaft zum Vorbahnhof",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2025-08-10",
+    "cuisine": "regional",
+    "diet:vegetarian": "no",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Brasserie zum Vorbahnhof",
+    "opening_hours": "Mo-Fr 11:00-23:00; Sa,Su,PH off",
+    "operator": "Candrian Catering",
+    "outdoor_seating": "yes",
+    "phone": "+41442720100",
+    "website": "https://www.vorbahnhof.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1354628908,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "7",
+    "addr:postcode": "8001",
+    "addr:street": "Löwenstrasse",
+    "alt_name": "Coop Pronto Löwenstrasse",
+    "branch": "Zürich Löwenstrasse",
+    "brand": "Coop Pronto",
+    "brand:wikidata": "Q1129777",
+    "check_date": "2026-07-22",
+    "check_date:opening_hours": "2026-07-22",
+    "level": "0",
+    "name": "Coop Pronto",
+    "note": "formerly/ehemals Silberkugel",
+    "opening_hours": "Mo-Sa 06:00-23:00",
+    "operator": "Coop Mineraloel",
+    "shop": "convenience",
+    "website": "https://www.coop-pronto.ch/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1354802976,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "122",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "branch": "Zürich Limmatquai",
+    "brand": "Blue Tomato",
+    "brand:wikidata": "Q107637238",
+    "check_date": "2025-10-01",
+    "clothes": "yes",
+    "name": "Blue Tomato",
+    "note": "formerly/ehemals Chicorée",
+    "opening_hours": "Mo-Fr 10:00-20:00; Sa 09:00-18:00",
+    "shop": "clothes",
+    "sport": "skateboard;snowboard;ski;surf",
+    "website": "https://www.blue-tomato.com/de-CH/shop/zuerich/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1354802977,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "47",
+    "addr:postcode": "8001",
+    "addr:street": "Niederdorfstrasse",
+    "alt_name": "Suan Long Niederdorf",
+    "amenity": "restaurant",
+    "branch": "Zürich Niederdorf",
+    "check_date": "2025-10-01",
+    "cuisine": "chinese;thai",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Suan Long",
+    "opening_hours": "Mo-Su 11:00-22:00",
+    "operator": "Suan Long Enge",
+    "outdoor_seating": "yes",
+    "source": "survey",
+    "takeaway": "yes",
+    "website": "https://suanlong.ch/restaurant/suan-long-niederdorf/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1354850083,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "6",
+    "addr:postcode": "8001",
+    "addr:street": "Füsslistrasse",
+    "disused:shop": "mobile_phone",
+    "name": "Swisscom Shop"
+  }
+},
+{
+  "type": "node",
+  "id": 1357158657,
+  "tags": {
+    "addr:housenumber": "9",
+    "addr:street": "Walchestrasse",
+    "check_date": "2023-06-21",
+    "name": "Zingg-Lamprecht",
+    "opening_hours": "Mo-Fr 09:00-18:30; Sa 09:00-17:00",
+    "phone": "+41 44 368 41 41",
+    "shop": "furniture",
+    "website": "https://zingg-lamprecht.ch/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1363069723,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "8",
+    "addr:postcode": "8001",
+    "addr:street": "Gessnerallee",
+    "amenity": "restaurant",
+    "bar": "yes",
+    "check_date": "2024-12-13",
+    "cuisine": "regional",
+    "email": "reservation@riithalle.ch",
+    "name": "Riithalle",
+    "opening_hours": "Mo-We 11:00-23:00; Th-Fr 11:00-24:00; Sa 12:00-24:00; Su 18:00-23:00",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 212 07 66",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.riithalle.ch/",
+    "wheelchair": "yes",
+    "wheelchair:description": "Code für Toilette im Restaurant verlangen"
+  }
+},
+{
+  "type": "node",
+  "id": 1374903993,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:housenumber": "6",
+    "addr:postcode": "8005",
+    "addr:street": "Konradstrasse",
+    "amenity": "restaurant",
+    "cuisine": "lebanese",
+    "indoor_seating": "yes",
+    "name": "Sham",
+    "opening_hours": "Tu-Fr 11:30-14:00,17:30-23:00; Sa-Su 12:00-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+41 44 440 09 09",
+    "website": "https://www.restaurant-sham.ch/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1376486718,
+  "tags": {
+    "addr:city": "Zürich",
+    "addr:country": "CH",
+    "addr:housenumber": "94",
+    "addr:postcode": "8001",
+    "addr:street": "Limmatquai",
+    "amenity": "cafe",
+    "branch": "Zürich Limmatquai",
+    "level": "0",
+    "name": "Soul",
+    "old_name": "TUI ReiseCenter;Green Gorilla Cafe",
+    "opening_hours": "Tu-We 08:00-19:00, Th-Fr 08:00-22:00, Sa 09:00-22:00, Su 09:00-19:00",
+    "website": "https://soulzuerich.ch/",
+    "wheelchair": "yes"
+  }
+}
+
+  ]
+}

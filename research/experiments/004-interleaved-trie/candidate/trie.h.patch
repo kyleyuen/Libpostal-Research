@@ -1,0 +1,13 @@
+--- trie.h.orig	2026-09-29 12:53:46
++++ trie.h	2026-09-29 12:54:04
+@@ -97,6 +97,10 @@
+ bool trie_set_data_node(trie_t *self, uint32_t index, trie_data_node_t data_node);
+ 
+ bool trie_get_data_at_index(trie_t *self, uint32_t index,  uint32_t *data);
++
++// Looks up n keys at once by interleaving their trie walks (one thread). out[i] = data for keys[i], or not_found.
++// Same result as trie_get_data(self, keys[i], &out[i]) for every i, in any order of completion.
++void trie_get_data_batch(trie_t *self, char **keys, size_t n, uint32_t *out, uint32_t not_found);
+ bool trie_get_data(trie_t *self, char *key, uint32_t *data);
+ bool trie_set_data_at_index(trie_t *self, uint32_t index, uint32_t data);
+ bool trie_set_data(trie_t *self, char *key, uint32_t data);

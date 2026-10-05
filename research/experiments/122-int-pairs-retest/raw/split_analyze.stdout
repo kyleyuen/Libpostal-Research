@@ -1,0 +1,14 @@
+dev
+   total_parse        cpi 5.539/2.441  ipr 5.630/2.469  Δcold +0.091 Δwarm +0.029
+   context_fill       cpi 1.719/0.371  ipr 1.752/0.373  Δcold +0.034 Δwarm +0.002
+   features           cpi 1.367/0.681  ipr 1.446/0.718  Δcold +0.079 Δwarm +0.037
+   lookups            cpi 0.667/0.199  ipr 0.635/0.190  Δcold -0.032 Δwarm -0.009
+   accumulate         cpi 0.804/0.467  ipr 0.812/0.464  Δcold +0.008 Δwarm -0.004
+   viterbi_and_rest   cpi 0.470/0.424  ipr 0.470/0.424  Δcold +0.001 Δwarm +0.000
+osm
+   total_parse        cpi 3.703/2.147  ipr 3.675/2.159  Δcold -0.027 Δwarm +0.011
+   context_fill       cpi 0.982/0.340  ipr 0.980/0.340  Δcold -0.002 Δwarm +0.000
+   features           cpi 0.872/0.562  ipr 0.887/0.588  Δcold +0.015 Δwarm +0.026
+   lookups            cpi 0.412/0.164  ipr 0.377/0.153  Δcold -0.035 Δwarm -0.010
+   accumulate         cpi 0.605/0.436  ipr 0.600/0.433  Δcold -0.005 Δwarm -0.004
+   viterbi_and_rest   cpi 0.416/0.383  ipr 0.415/0.382  Δcold -0.001 Δwarm -0.001

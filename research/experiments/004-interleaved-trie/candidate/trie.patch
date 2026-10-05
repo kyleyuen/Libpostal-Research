@@ -1,0 +1,121 @@
+--- trie.c.orig	2026-09-29 12:53:46
++++ trie.c	2026-09-29 12:54:04
+@@ -758,7 +758,118 @@
+      uint32_t node_id = trie_get(self, key);
+      return trie_get_data_at_index(self, node_id, data);
+ }
++
++#ifndef TRIE_BATCH_LANES
++#define TRIE_BATCH_LANES 8
++#endif
+ 
++#define NULL_DATA_NODE_INIT {0, 0}
++
++enum { TRIE_LANE_WALK = 0, TRIE_LANE_DATA, TRIE_LANE_TAIL };
++
++typedef struct trie_batch_lane {
++    size_t key_index;
++    unsigned char *ptr;      // character being consumed (the terminating NUL is consumed too, as in trie_get_from_index)
++    uint32_t node_id;
++    uint32_t next_id;
++    trie_node_t node;
++    trie_data_node_t data_node;
++    int state;
++} trie_batch_lane_t;
++
++static inline trie_node_t trie_batch_get_node(trie_t *self, uint32_t index) {
++    if ((index >= self->nodes->n) || index < ROOT_NODE_ID) return self->null_node;
++    return self->nodes->a[index];
++}
++
++// ponytail-style note: mirrors trie_get_from_index (above) step for step; keep the two in sync.
++void trie_get_data_batch(trie_t *self, char **keys, size_t n, uint32_t *out, uint32_t not_found) {
++    trie_node_t root = trie_get_node(self, ROOT_NODE_ID);
++    if (root.base == NULL_NODE_ID) {
++        for (size_t i = 0; i < n; i++) out[i] = not_found;
++        return;
++    }
++
++    trie_batch_lane_t lanes[TRIE_BATCH_LANES];
++    size_t next_key = 0;
++    size_t active = 0;
++
++    for (size_t l = 0; l < TRIE_BATCH_LANES && next_key < n; l++) {
++        lanes[l] = (trie_batch_lane_t){next_key, (unsigned char *)keys[next_key], ROOT_NODE_ID, 0, root, NULL_DATA_NODE_INIT, TRIE_LANE_WALK};
++        next_key++;
++        active++;
++    }
++    size_t num_lanes = active;
++
++    while (active > 0) {
++        // Phase A: every walking lane computes its next node index and prefetches it.
++        for (size_t l = 0; l < num_lanes; l++) {
++            trie_batch_lane_t *lane = &lanes[l];
++            if (lane->key_index == (size_t)-1) continue;
++            if (lane->state == TRIE_LANE_WALK) {
++                uint32_t char_index = self->alpha_map[(uint8_t)*lane->ptr] + 1;
++                lane->next_id = lane->node.base + char_index;
++                if (lane->next_id < self->nodes->n) __builtin_prefetch(&self->nodes->a[lane->next_id]);
++            }
++        }
++        // Phase B: every lane consumes what it prefetched last round and advances one stage.
++        for (size_t l = 0; l < num_lanes; l++) {
++            trie_batch_lane_t *lane = &lanes[l];
++            if (lane->key_index == (size_t)-1) continue;
++
++            bool finished = false;
++            uint32_t result_id = NULL_NODE_ID;
++
++            if (lane->state == TRIE_LANE_WALK) {
++                trie_node_t node = trie_batch_get_node(self, lane->next_id);
++                if (node.check != lane->node_id) {
++                    finished = true;
++                } else if (node.base < 0) {
++                    int32_t data_index = -1 * node.base;
++                    __builtin_prefetch(&self->data->a[data_index]);
++                    lane->data_node.tail = 0;   // filled in next round
++                    lane->node = node;
++                    lane->state = TRIE_LANE_DATA;
++                } else if (*lane->ptr == 0) {
++                    finished = true;            // consumed the NUL without hitting a leaf: original returns next_id
++                    result_id = lane->next_id;
++                } else {
++                    lane->node_id = lane->next_id;
++                    lane->node = node;
++                    lane->ptr++;
++                }
++            } else if (lane->state == TRIE_LANE_DATA) {
++                int32_t data_index = -1 * lane->node.base;
++                lane->data_node = self->data->a[data_index];
++                if (lane->data_node.tail != 0) {
++                    if (lane->data_node.tail < self->tail->n) __builtin_prefetch(self->tail->a + lane->data_node.tail);
++                    lane->state = TRIE_LANE_TAIL;
++                } else {
++                    finished = true;
++                }
++            } else {
++                char *query_tail = *lane->ptr ? (char *)lane->ptr + 1 : (char *)lane->ptr;
++                if (trie_compare_tail(self, query_tail, strlen(query_tail) + 1, lane->data_node.tail)) {
++                    result_id = lane->next_id;
++                }
++                finished = true;
++            }
++
++            if (finished) {
++                uint32_t value;
++                out[lane->key_index] = trie_get_data_at_index(self, result_id, &value) ? value : not_found;
++                if (next_key < n) {
++                    *lane = (trie_batch_lane_t){next_key, (unsigned char *)keys[next_key], ROOT_NODE_ID, 0, root, NULL_DATA_NODE_INIT, TRIE_LANE_WALK};
++                    next_key++;
++                } else {
++                    lane->key_index = (size_t)-1;
++                    active--;
++                }
++            }
++        }
++    }
++}
++
+ inline bool trie_set_data_at_index(trie_t *self, uint32_t index, uint32_t data) {
+     if (index == NULL_NODE_ID) return false;
+      trie_node_t node = trie_get_node(self, index);

@@ -1,0 +1,11 @@
+2026-10-02T16:14:15-0700 START build wc (l3 sources + EXP_WALK_COUNT, -O2, no PGO/LTO; counts only)
+build exit 0
+dump v1 exit 139
+dump osm exit 139
+2026-10-02T16:14:39-0700 END
+2026-10-02T16:15:01-0700 NOTE attempt 1: dumps exit 139 at exit (destructor dereferenced a freed trie); preserved in raw/attempt1_crash; fix: record node count at first call
+build2 exit 0
+dump v1 exit 0
+dump osm exit 0
+build3 (fresh-walk split) exit 0
+dump3 v1 exit 0

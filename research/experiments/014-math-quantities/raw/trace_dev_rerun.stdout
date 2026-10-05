@@ -1,0 +1,35 @@
+dicts: state keys=11470623 slots=15294166 | trans keys=2086474 slots=2781967 | vocab keys=3694560 slots=4926082
+alignment (addr % 128): state slots=0 arena=0 | trans slots=0 arena=0 | W indptr=0 indices=0 data=0 | TW indptr=0 indices=0 data=0
+addresses=10308 bypass=3 lookups=562743 dict_vs_trie_id_mismatches=0
+touches=4661394 sum_distinct_per_addr=2782124 compulsory=592742 miss_128K=1871429 miss_16M=787683 miss_32M=671218 miss_64M=595330 distinct_lines_total=592742
+kind	name	lookups	hits	novalue	inD	notD	novalue_hits	inD_hits	notD_hits
+S	bias	27130	27130	27130	0	0	27130	0	0
+S	word	44988	37226	0	26538	18450	0	23721	13505
+S	first word	7156	4820	0	7154	2	0	4818	2
+S	next word	49042	46946	0	43915	5127	0	42502	4444
+S	word+next word	49042	22965	0	38016	11026	0	19253	3712
+S	unambiguous phrase type	20052	20052	0	19690	362	0	19690	362
+S	unambiguous phrase type+phrase	20052	19182	0	13824	6228	0	13594	5588
+S	phrase	32103	31240	0	23000	9103	0	22778	8462
+S	phrase type+phrase	62426	62085	0	47278	15148	0	47211	14874
+S	commonly suburb	2905	2842	0	1660	1245	0	1640	1202
+S	prev word	49482	45290	0	45229	4253	0	41715	3575
+S	prev word+word	49482	21401	0	38087	11395	0	18202	3199
+P	word	45024	43572	0	40781	4243	0	39783	3789
+P	prev word	45024	42318	0	41465	3559	0	39166	3152
+S	postcode no context	10914	10895	0	10908	6	0	10889	6
+S	commonly city	22521	21826	0	15542	6979	0	15345	6481
+S	commonly state_district	630	557	0	378	252	0	378	179
+S	postcode have context	14644	13467	7322	7273	49	7322	6137	8
+S	commonly state	2465	2456	0	2228	237	0	2225	231
+S	first word unknown+number right	524	513	0	0	524	0	0	513
+S	commonly country	3014	3012	0	2952	62	0	2952	60
+S	suffix	2620	2620	0	2615	5	0	2615	5
+S	commonly city_district	522	501	0	219	303	0	217	284
+S	first word unknown+street phrase right	110	101	0	0	110	0	0	101
+S	first word unknown+number+ambiguous phrase right	76	74	38	38	0	38	36	0
+S	commonly island	38	37	0	20	18	0	19	18
+S	sub_word	743	408	0	173	570	0	125	283
+S	commonly country_region	5	5	0	1	4	0	1	4
+S	first word unknown+street affix right	5	5	0	0	5	0	0	5
+S	prefix	4	4	0	3	1	0	3	1

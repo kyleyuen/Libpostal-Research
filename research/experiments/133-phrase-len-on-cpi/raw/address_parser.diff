@@ -1,0 +1,84 @@
+--- ../119-component-phrase-ids/sources/address_parser.c	2026-10-04 01:21:46
++++ sources/address_parser.c	2026-10-04 03:06:07
+@@ -1246,6 +1246,29 @@
+     return type == ADDRESS_PARSER_NULL_PHRASE || type == ADDRESS_PARSER_SUFFIX_PHRASE || type == ADDRESS_PARSER_PREFIX_PHRASE;
+ }
+ 
++#ifdef EXP_PHRASE_LEN
++// Experiment 099: cstring_array_get_phrase (trie_search.c) for the context's normalized arrays, with each word's length taken from the cstring index
++// (cstring_array_token_length: next start - start - 1) instead of strlen, and the separator pushed as one byte. The words are normalized tokens of a NUL-terminated
++// input; normalization only emits input bytes, DIGIT_CHAR and spaces, so no word contains a NUL and both lengths agree (EXP_PHRASE_LEN_VERIFY checks).
++static char *ap_get_phrase(cstring_array *str, char_array *out, phrase_t phrase) {
++    char_array_clear(out);
++    size_t phrase_end = phrase.start + phrase.len;
++    for (size_t k = phrase.start; k < phrase_end; k++) {
++        char *w = cstring_array_get_string(str, (uint32_t)k); size_t wl = (size_t)cstring_array_token_length(str, (uint32_t)k);
++#ifdef EXP_PHRASE_LEN_VERIFY
++        if (wl != strlen(w)) { fprintf(stderr, "EXP_PHRASE_LEN_VERIFY MISMATCH %zu vs %zu\n", wl, strlen(w)); abort(); }
++        { static unsigned long long nv = 0; if ((++nv & 0xFFFFF) == 0) fprintf(stderr, "EXP_PHRASE_LEN_VERIFY %llu words ok\n", nv); }
++#endif
++        char_array_append_len(out, w, wl);
++        if (k < phrase_end - 1) char_array_push(out, ' ');
++    }
++    char_array_terminate(out);
++    return char_array_get_string(out);
++}
++#define AP_GET_PHRASE ap_get_phrase
++#else
++#define AP_GET_PHRASE cstring_array_get_phrase
++#endif
+ static address_parser_phrase_t word_or_phrase_at_index(address_parser_t *parser, tokenized_string_t *tokenized, address_parser_context_t *context, uint32_t i, bool long_context) {
+     phrase_t phrase;
+     address_parser_phrase_t response;
+@@ -1256,7 +1279,7 @@
+     phrase_t component_phrase = phrase_at_index(context->component_phrases, context->component_phrase_memberships, i);
+ 
+     if (phrase.len > 0 && is_valid_dictionary_phrase(phrase) && component_phrase.len <= phrase.len) {
+-        phrase_string = cstring_array_get_phrase(context->normalized, long_context ? context->long_context_phrase : context->context_phrase, phrase),
++        phrase_string = AP_GET_PHRASE(context->normalized, long_context ? context->long_context_phrase : context->context_phrase, phrase),
+ 
+         response = (address_parser_phrase_t){
+             phrase_string,
+@@ -1269,7 +1292,7 @@
+     phrase = component_phrase;
+ 
+     if (phrase.len > 0) {
+-        phrase_string = cstring_array_get_phrase(context->normalized_admin, long_context ? context->long_context_component_phrase : context->context_component_phrase, phrase);
++        phrase_string = AP_GET_PHRASE(context->normalized_admin, long_context ? context->long_context_component_phrase : context->context_component_phrase, phrase);
+ 
+         response = (address_parser_phrase_t){
+             phrase_string,
+@@ -1454,12 +1477,12 @@
+ static ap_pm_t *ap_pm[2] = {NULL, NULL}; static size_t ap_pm_cap[2] = {0, 0}; static uint32_t ap_pm_gen = 1;
+ static char *ap_phrase_memo(int which, size_t index, cstring_array *src, char_array *scratch, phrase_t phrase, size_t *len) {
+     if (index >= ap_pm_cap[which]) { size_t m = ap_pm_cap[which] ? ap_pm_cap[which] : 16; while (m <= index) m *= 2;
+-        ap_pm_t *q = realloc(ap_pm[which], m * sizeof *q); if (q == NULL) { char *r = cstring_array_get_phrase(src, scratch, phrase); *len = strlen(r); return r; }
++        ap_pm_t *q = realloc(ap_pm[which], m * sizeof *q); if (q == NULL) { char *r = AP_GET_PHRASE(src, scratch, phrase); *len = strlen(r); return r; }
+         for (size_t k = ap_pm_cap[which]; k < m; k++) { q[k].buf = NULL; q[k].gen = 0; } ap_pm[which] = q; ap_pm_cap[which] = m; }
+     ap_pm_t *e = &ap_pm[which][index];
+     if (e->gen != ap_pm_gen) {
+-        if (e->buf == NULL) { e->buf = char_array_new(); if (e->buf == NULL) { char *r = cstring_array_get_phrase(src, scratch, phrase); *len = strlen(r); return r; } }
+-        cstring_array_get_phrase(src, e->buf, phrase); e->gen = ap_pm_gen;
++        if (e->buf == NULL) { e->buf = char_array_new(); if (e->buf == NULL) { char *r = AP_GET_PHRASE(src, scratch, phrase); *len = strlen(r); return r; } }
++        AP_GET_PHRASE(src, e->buf, phrase); e->gen = ap_pm_gen;
+     }
+     *len = e->buf->n - 1;   // char_array_terminate appended one NUL
+ #ifdef EXP_FA_LEN_VERIFY
+@@ -1899,7 +1922,7 @@
+ #ifdef EXP_FA_LEN
+             phrase_string = ap_phrase_memo(0, (size_t)address_phrase_index, context->normalized, phrase_tokens, phrase, &phrase_string_len);
+ #else
+-            phrase_string = cstring_array_get_phrase(context->normalized, phrase_tokens, phrase);
++            phrase_string = AP_GET_PHRASE(context->normalized, phrase_tokens, phrase);
+ #endif
+ 
+             add_word_feature = false;
+@@ -1928,7 +1951,7 @@
+ #ifdef EXP_FA_LEN
+         component_phrase_string = ap_phrase_memo(1, (size_t)component_phrase_index, context->normalized_admin, component_phrase_tokens, component_phrase, &component_phrase_string_len);
+ #else
+-        component_phrase_string = cstring_array_get_phrase(context->normalized_admin, component_phrase_tokens, component_phrase);
++        component_phrase_string = AP_GET_PHRASE(context->normalized_admin, component_phrase_tokens, component_phrase);
+ #endif
+         
+         uint32_t component_phrase_index = component_phrase.data;

@@ -1,0 +1,57 @@
+--- ../142-stage-oracles/src/address_parser.c	2026-10-04 19:23:48
++++ src/address_parser.c	2026-10-04 21:15:15
+@@ -51,6 +51,10 @@
+     phrase_t ph = phrases->a[m];
+     fprintf(f, "\t%u,%u,%u", ph.start, ph.len, ph.data);
+ }
++#endif
++
++#ifdef EXP_RW_BIGRAM
++#include "rw_bigram.h"
+ #endif
+ 
+ static address_parser_t *parser = NULL;
+@@ -332,6 +336,9 @@
+         goto exit_address_parser_created;
+     }
+ 
++#ifdef EXP_RW_BIGRAM
++    if (!rw_init(parser)) { log_error("rw_init failed\n"); goto exit_address_parser_created; }
++#endif
+     char_array_destroy(path);
+     return true;
+ 
+@@ -1144,6 +1151,9 @@
+     cstring_array_clear(features);
+     cstring_array_clear(prev_tag_features);
+     cstring_array_clear(prev2_tag_features);
++#ifdef EXP_RW_BIGRAM
++    rw_side_reset();
++#endif
+ 
+     token_array *tokens = tokenized->tokens;
+ 
+@@ -1534,7 +1544,11 @@
+         }
+ 
+         // Previous word and current word
++#ifdef EXP_RW_BIGRAM
++        rw_bigram(features, 0, prev_word, word);
++#else
+         feature_array_add(features, 3, "prev word+word", prev_word, word);
++#endif
+     }
+ 
+     if (next_index < num_tokens) {
+@@ -1557,7 +1571,11 @@
+         feature_array_add(features, 2, "next word", next_word);
+ 
+         // Current word and next word
++#ifdef EXP_RW_BIGRAM
++        rw_bigram(features, 1, word, next_word);
++#else
+         feature_array_add(features, 3, "word+next word", word, next_word);
++#endif
+ 
+         // Prev tag, current word and next word
+         //feature_array_add(features, 4, "prev tag+word+next word", prev || "START", word, next_word);

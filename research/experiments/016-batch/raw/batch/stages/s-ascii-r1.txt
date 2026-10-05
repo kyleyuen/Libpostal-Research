@@ -1,0 +1,13 @@
+file=/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/013-random-and-floor/data/ascii_only.tsv addresses=7459 passes=5
+total_us=10.936 (parse+destroy per address, timers included)
+normalize_us=0.041
+tokenize_us=0.488
+context_fill_us=2.874
+features_us=2.485
+lookups_us=2.089
+accumulate_us=0.976
+viterbi_and_rest_of_predict_us=1.139
+response_build_us=0.714
+response_destroy_us=0.081
+unattributed_us=0.049 (setup of parse call, bypass paths, timer overhead)
+per_address: bytes=36.38 tokens=5.833 state_features=45.94 transition_features=8.78 bypassed=0.0003

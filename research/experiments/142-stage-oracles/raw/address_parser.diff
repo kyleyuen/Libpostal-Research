@@ -1,0 +1,79 @@
+--- libpostal/src/address_parser.c	2026-09-28 15:50:15
++++ research/experiments/142-stage-oracles/src/address_parser.c	2026-10-04 19:23:48
+@@ -20,6 +20,39 @@
+ 
+ #define DEFAULT_RARE_WORD_THRESHOLD 50
+ 
++#ifdef EXP_ORACLE
++// 142 stage oracles: fprintf-only dumps of the ORIGINAL parser's intermediate state. No computation is changed.
++// Active only when ORACLE_DIR is set. Format: research/plans/REWRITE_PLAN_2026-10-04.md §3.3 (+ sparse T rows, 142 README).
++FILE *oracle_fp[5];
++uint64_t oracle_addr = 0;   // number of address_parser_parse calls so far; current address = oracle_addr - 1
++static int oracle_ready = 0;
++FILE *oracle_file(int k) {
++    if (!oracle_ready) {
++        oracle_ready = 1;
++        const char *d = getenv("ORACLE_DIR");
++        if (d != NULL) {
++            static const char *nm[5] = {"O1.txt", "O2.txt", "O3k.txt", "O3i.txt", "O4.txt"};
++            char p[4096];
++            for (int i = 0; i < 5; i++) { snprintf(p, sizeof p, "%s/%s", d, nm[i]); oracle_fp[i] = fopen(p, "w"); if (oracle_fp[i] == NULL) abort(); }
++        }
++    }
++    return oracle_fp[k];
++}
++void oracle_str(FILE *f, const char *s) {
++    if (s == NULL) { fputs("(null)", f); return; }
++    for (; *s; s++) {
++        unsigned char c = (unsigned char)*s;
++        if (c == '\\') fputs("\\\\", f); else if (c == '\t') fputs("\\t", f); else if (c == '\n') fputs("\\n", f); else if (c == '\r') fputs("\\r", f); else fputc(c, f);
++    }
++}
++static void oracle_member(FILE *f, phrase_array *phrases, int64_array *memberships, size_t i) {
++    int64_t m = (memberships != NULL && i < memberships->n) ? memberships->a[i] : -1;
++    if (m < 0 || phrases == NULL || (size_t)m >= phrases->n) { fputs("\t-", f); return; }
++    phrase_t ph = phrases->a[m];
++    fprintf(f, "\t%u,%u,%u", ph.start, ph.len, ph.data);
++}
++#endif
++
+ static address_parser_t *parser = NULL;
+ 
+ typedef enum {
+@@ -1713,6 +1746,36 @@
+     country = NULL;
+     address_parser_context_fill(context, parser, tokenized_str, language, country);
+ 
++#ifdef EXP_ORACLE
++    {
++        unsigned long long oa = (unsigned long long)oracle_addr++;
++        FILE *f1 = oracle_file(0), *f2 = oracle_file(1);
++        size_t nt = tokenized_str->tokens->n;
++        if (f1 != NULL) {
++            fprintf(f1, "%llu\tN\t%zu\n", oa, nt);
++            for (size_t t = 0; t < nt; t++) {
++                token_t tk = tokenized_str->tokens->a[t];
++                fprintf(f1, "%llu\t%zu\t%u\t%zu\t%zu\t%u\n", oa, t, (unsigned)tk.type, tk.offset, tk.len, t < context->separators->n ? context->separators->a[t] : 0xffffffffu);
++            }
++        }
++        if (f2 != NULL) {
++            size_t nn = cstring_array_num_strings(context->normalized), na = cstring_array_num_strings(context->normalized_admin);
++            fprintf(f2, "%llu\tN\t%zu\t%zu\t%zu\t%zu\t%zu\t%zu\n", oa, nt, nn, na, context->address_dictionary_phrases->n, context->component_phrases->n, context->postal_code_phrases->n);
++            for (size_t t = 0; t < nt; t++) {
++                fprintf(f2, "%llu\t%zu\t", oa, t);
++                oracle_str(f2, t < nn ? cstring_array_get_string(context->normalized, t) : NULL); fputc('\t', f2);
++                oracle_str(f2, t < na ? cstring_array_get_string(context->normalized_admin, t) : NULL);
++                oracle_member(f2, context->address_dictionary_phrases, context->address_phrase_memberships, t);
++                oracle_member(f2, context->component_phrases, context->component_phrase_memberships, t);
++                oracle_member(f2, context->postal_code_phrases, context->postal_code_phrase_memberships, t);
++                phrase_t pp = t < context->prefix_phrases->n ? context->prefix_phrases->a[t] : NULL_PHRASE;
++                phrase_t sp = t < context->suffix_phrases->n ? context->suffix_phrases->a[t] : NULL_PHRASE;
++                fprintf(f2, "\t%u,%u,%u\t%u,%u,%u\n", pp.start, pp.len, pp.data, sp.start, sp.len, sp.data);
++            }
++        }
++    }
++#endif
++
+     libpostal_address_parser_response_t *response = NULL;
+ 
+     // If the whole input string is a single known phrase at the SUBURB level or higher, bypass sequence prediction altogether

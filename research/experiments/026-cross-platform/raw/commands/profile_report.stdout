@@ -1,0 +1,53 @@
+total samples 12695
+
+-- exclusive time by category (% of total; non-overlapping)
+   37.5%  other
+   19.9%  trie / phrase search
+   14.5%  libc string/mem ops
+   10.9%  CRF scoring / viterbi
+    5.6%  string arrays / feature strings
+    3.8%  allocator + zeroing (malloc/free/realloc/memset/bzero)
+    3.5%  dictionary lookup
+    2.7%  normalization/unicode
+    1.6%  tokenizing
+
+-- inclusive (overlapping) for pipeline stages
+   98.8%  address_parser_parse
+   23.9%  address_parser_features
+    0.0%  word_vocab_frequency
+   18.4%  trie_search_tokens_from_index
+    2.7%  normalize_token
+    1.8%  cstring_array_get_phrase
+    2.3%  feature_array_add
+
+-- top exclusive functions
+   27.8%  address_parser_parse
+   16.7%  trie_search_tokens_from_index
+   10.9%  crf_dict_lookup_array
+    6.0%  address_parser_features
+    5.5%  _platform_memmove
+    4.0%  feature_array_add_named
+    3.5%  fd_find_slot
+    3.5%  _platform_strlen
+    3.4%  _platform_memset
+    2.1%  ap_ik_emit1
+    2.1%  normalize_token
+    1.7%  _platform_strncmp$VARIANT$Base
+    1.4%  _platform_memchr
+    1.4%  scan_token
+    1.2%  token_phrase_memberships
+    1.2%  feature_array_add
+    1.0%  _platform_memcmp
+    0.8%  mach_absolute_time
+    0.7%  is_valid_dictionary_phrase
+    0.6%  word_or_phrase_at_index
+    0.5%  utf8proc_iterate
+    0.4%  DYLD-STUB$$strlen
+    0.3%  word_or_phrase_memo
+    0.3%  _platform_strcmp$VARIANT$Base
+    0.3%  cstring_array_get_phrase
+    0.3%  DYLD-STUB$$memcpy
+    0.2%  cstring_array_add_string
+    0.2%  add_ngrams
+
+-- allocator entry points: 0.0% of samples inclusive at the outermost allocator call; by immediate caller:

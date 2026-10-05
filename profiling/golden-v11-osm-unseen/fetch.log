@@ -1,0 +1,108 @@
+retry Boise 0 <HTTPError 504: 'Gateway Timeout'>
+retry Boise 1 <HTTPError 504: 'Gateway Timeout'>
+retry Boise 2 <HTTPError 504: 'Gateway Time-out'>
+retry Boise 3 <HTTPError 504: 'Gateway Timeout'>
+ok Spokane 243
+ok Madison 400
+retry Hartford 0 <HTTPError 504: 'Gateway Time-out'>
+retry Hartford 1 <HTTPError 504: 'Gateway Timeout'>
+ok Hartford 400
+ok Savannah 379
+retry Moncton 0 <HTTPError 504: 'Gateway Time-out'>
+retry Moncton 1 <HTTPError 504: 'Gateway Timeout'>
+ok Moncton 123
+retry Exeter 0 <HTTPError 504: 'Gateway Time-out'>
+retry Exeter 1 <HTTPError 504: 'Gateway Timeout'>
+ok Exeter 400
+ok Aberdeen 400
+ok Wexford 347
+retry Cairns 0 <HTTPError 504: 'Gateway Timeout'>
+retry Cairns 1 <HTTPError 504: 'Gateway Timeout'>
+ok Cairns 82
+ok Rotorua 400
+ok Kimberley 1
+retry Poitiers 0 <HTTPError 504: 'Gateway Timeout'>
+retry Poitiers 1 <HTTPError 504: 'Gateway Timeout'>
+ok Poitiers 283
+retry Besancon 0 <HTTPError 504: 'Gateway Time-out'>
+ok Besancon 400
+retry Caen 0 <HTTPError 504: 'Gateway Time-out'>
+ok Caen 221
+ok Leuven 400
+ok Potsdam 400
+retry Wurzburg 0 <HTTPError 504: 'Gateway Timeout'>
+retry Wurzburg 1 <HTTPError 504: 'Gateway Timeout'>
+retry Wurzburg 2 <HTTPError 504: 'Gateway Timeout'>
+retry Wurzburg 3 <HTTPError 504: 'Gateway Timeout'>
+ok Trier 400
+retry Villach 0 <HTTPError 504: 'Gateway Timeout'>
+ok Villach 400
+retry Lugano 0 <HTTPError 504: 'Gateway Timeout'>
+retry Lugano 1 <HTTPError 504: 'Gateway Timeout'>
+retry Lugano 2 <HTTPError 504: 'Gateway Time-out'>
+ok Lugano 400
+ok Leeuwarden 400
+ok Randers 400
+retry Umea 0 <HTTPError 504: 'Gateway Timeout'>
+ok Umea 372
+retry Alesund 0 <HTTPError 504: 'Gateway Time-out'>
+retry Alesund 1 <HTTPError 504: 'Gateway Timeout'>
+retry Alesund 2 <HTTPError 504: 'Gateway Timeout'>
+retry Alesund 3 <HTTPError 504: 'Gateway Timeout'>
+retry Vaasa 0 <HTTPError 504: 'Gateway Time-out'>
+ok Vaasa 400
+ok Bialystok 400
+ok Radom 400
+retry Ceske Budejovice 0 <HTTPError 504: 'Gateway Timeout'>
+ok Ceske Budejovice 400
+retry Sopron 0 <HTTPError 504: 'Gateway Time-out'>
+ok Sopron 400
+ok Sibenik 400
+ok Udine 400
+retry Siena 0 <HTTPError 504: 'Gateway Time-out'>
+ok Siena 400
+retry Burgos 0 <HTTPError 504: 'Gateway Time-out'>
+ok Burgos 400
+ok Girona 400
+retry Evora 0 <HTTPError 504: 'Gateway Time-out'>
+ok Evora 400
+retry Chania 0 <HTTPError 504: 'Gateway Time-out'>
+ok Chania 400
+retry Sibiu 0 <HTTPError 504: 'Gateway Timeout'>
+retry Sibiu 1 <HTTPError 504: 'Gateway Timeout'>
+retry Sibiu 2 <HTTPError 504: 'Gateway Time-out'>
+retry Sibiu 3 <HTTPError 504: 'Gateway Timeout'>
+ok Veliko Tarnovo 76
+ok Trabzon 17
+retry Poltava 0 <HTTPError 504: 'Gateway Timeout'>
+ok Poltava 368
+ok Voronezh 309
+retry Jurmala 0 <HTTPError 504: 'Gateway Timeout'>
+ok Jurmala 400
+retry Palanga 0 <HTTPError 504: 'Gateway Timeout'>
+retry Palanga 1 <HTTPError 504: 'Gateway Timeout'>
+retry Palanga 2 <HTTPError 504: 'Gateway Timeout'>
+ok Palanga 400
+retry Salvador 0 <HTTPError 504: 'Gateway Timeout'>
+retry Salvador 1 <HTTPError 504: 'Gateway Timeout'>
+retry Salvador 2 <HTTPError 504: 'Gateway Timeout'>
+ok Salvador 51
+retry Tucuman 0 <HTTPError 504: 'Gateway Time-out'>
+ok Tucuman 166
+retry Oaxaca 0 <HTTPError 504: 'Gateway Time-out'>
+ok Oaxaca 86
+ok Iquique 17
+ok Santa Marta 9
+retry Huancayo 0 <HTTPError 504: 'Gateway Time-out'>
+retry Huancayo 1 <HTTPError 504: 'Gateway Timeout'>
+retry Huancayo 2 <HTTPError 504: 'Gateway Timeout'>
+ok Huancayo 45
+ok Nagasaki 4
+retry Kochi 0 <HTTPError 504: 'Gateway Time-out'>
+ok Kochi 2
+retry Hualien 0 <HTTPError 504: 'Gateway Time-out'>
+retry Hualien 1 <HTTPError 504: 'Gateway Timeout'>
+ok Hualien 400
+ok Pohang 34
+ok Eilat 16
+fetch exit 0

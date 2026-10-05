@@ -1,0 +1,5 @@
+start=2026-10-01T17:56:10-07:00
+cwd=/Users/kyle/Desktop/HW/CSCI 201 Reserach
+argv: <docker> <run> <--rm> <--platform> <linux/arm64> <-v> </Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/026-cross-platform/linux:/out> <libpostal-audit-linux-arm64-mi3:026> <bash> <-c> <cmake\ -S\ /out/mimalloc-3.5.3\ -B\ /out/mimalloc-build\ -DCMAKE_C_COMPILER=clang\ -DCMAKE_BUILD_TYPE=Release\ -DMI_BUILD_TESTS=OFF\ -DMI_BUILD_SHARED=ON\ -DMI_BUILD_STATIC=ON\ -DMI_BUILD_OBJECT=ON\ \&\&\ cmake\ --build\ /out/mimalloc-build\ -j4>
+exit=0
+end=2026-10-01T17:56:12-07:00

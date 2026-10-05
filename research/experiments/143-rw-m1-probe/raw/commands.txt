@@ -1,0 +1,6 @@
+# 2026-10-04T19:32:00-0700 clang -O2 -g -I libpostal/src tools/keydump.c 142/artifacts/ctl/libpostal.a -lm -o tools/keydump
+# attempt 1 failed: LIBPOSTAL_DATA_DIR not defined (raw/attempt1_build.*)
+# 2026-10-04T19:32:05-0700 attempt 2: + -DHAVE_CONFIG_H -DLIBPOSTAL_DATA_DIR
+# 2026-10-04T19:32:10-0700 tools/keydump /private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/1fd9b691-bcfa-41f8-b753-ee02bbe9bc7e/scratchpad/143_keys (scratchpad; hashes in raw/keys.sha256)
+# 2026-10-04T19:34:18-0700 python3 tools/analyze.py <keys> research/oracles/v1 profiling/golden-v1/all.txt profiling/golden-v1/development.txt > raw/analyze.stdout
+# 2026-10-04T19:35:11-0700 CRF_DICT_VERBOSE=1 119/artifacts/cpi/dump_outputs (3 addresses) — load-time dictionary sizes

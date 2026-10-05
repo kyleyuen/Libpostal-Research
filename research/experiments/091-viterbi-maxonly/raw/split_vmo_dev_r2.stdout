@@ -1,0 +1,12 @@
+total_parse cold_us=6.803 warm_us=3.019
+normalize cold_us=0.071 warm_us=0.043 diff=0.028
+tokenize cold_us=0.241 warm_us=0.141 diff=0.099
+context_fill cold_us=2.138 warm_us=0.529 diff=1.608
+predict_total cold_us=4.108 warm_us=2.157 diff=1.951
+response cold_us=0.225 warm_us=0.130 diff=0.094
+features cold_us=1.556 warm_us=0.814 diff=0.742
+lookups cold_us=0.846 warm_us=0.269 diff=0.577
+accumulate cold_us=1.104 warm_us=0.525 diff=0.579
+vt_score_setup cold_us=0.195 warm_us=0.165 diff=0.030
+vt_viterbi cold_us=0.339 warm_us=0.330 diff=0.009
+viterbi_and_rest cold_us=0.602 warm_us=0.549

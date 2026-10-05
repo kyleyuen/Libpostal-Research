@@ -1,0 +1,32 @@
+2026-10-02T13:52:56-0700 START build: env EXTRA_SW=-DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -DEXP_STAGE_STATS /bin/bash /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/029-stage-split/tools/build_cc.sh l4s clang llvm -O2 -flto -O1 -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o
+2026-10-02T13:53:29-0700 END build exit=0
+2026-10-02T13:53:29-0700 START stage_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/029-stage-split/artifacts/l4s/stage_bench /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 50
+2026-10-02T13:53:43-0700 END stage_r1 exit=0
+2026-10-02T13:53:46-0700 START stage_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/029-stage-split/artifacts/l4s/stage_bench /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 50
+2026-10-02T13:53:58-0700 END stage_r2 exit=0
+2026-10-02T13:54:01-0700 START stage_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/029-stage-split/artifacts/l4s/stage_bench /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 50
+2026-10-02T13:54:14-0700 END stage_r3 exit=0
+2026-10-02T13:54:17-0700 START ic_orig_p2_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T13:54:21-0700 END ic_orig_p2_r1 exit=0
+2026-10-02T13:54:24-0700 START ic_orig_p22_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 22
+2026-10-02T13:54:35-0700 END ic_orig_p22_r1 exit=0
+2026-10-02T13:54:38-0700 START ic_l4_p2_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T13:54:47-0700 END ic_l4_p2_r1 exit=0
+2026-10-02T13:54:50-0700 START ic_l4_p22_r1: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 22
+2026-10-02T13:55:01-0700 END ic_l4_p22_r1 exit=0
+2026-10-02T13:55:04-0700 START ic_orig_p2_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T13:55:08-0700 END ic_orig_p2_r2 exit=0
+2026-10-02T13:55:11-0700 START ic_orig_p22_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 22
+2026-10-02T13:55:22-0700 END ic_orig_p22_r2 exit=0
+2026-10-02T13:55:25-0700 START ic_l4_p2_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T13:55:34-0700 END ic_l4_p2_r2 exit=0
+2026-10-02T13:55:37-0700 START ic_l4_p22_r2: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 22
+2026-10-02T13:55:48-0700 END ic_l4_p22_r2 exit=0
+2026-10-02T13:55:51-0700 START ic_orig_p2_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T13:55:55-0700 END ic_orig_p2_r3 exit=0
+2026-10-02T13:55:58-0700 START ic_orig_p22_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 22
+2026-10-02T13:56:08-0700 END ic_orig_p22_r3 exit=0
+2026-10-02T13:56:12-0700 START ic_l4_p2_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 2
+2026-10-02T13:56:20-0700 END ic_l4_p2_r3 exit=0
+2026-10-02T13:56:24-0700 START ic_l4_p22_r3: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/025-audit-next/data/development.tsv 22
+2026-10-02T13:56:34-0700 END ic_l4_p22_r3 exit=0

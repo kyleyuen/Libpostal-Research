@@ -1,0 +1,221 @@
+--- final/021-l4/sources/address_parser.c
++++ experiments/025-audit-next/sources/address_parser.c
+@@ -417,10 +417,20 @@
+ static inline char *address_parser_normalize_ascii_fast(char *str) {
+     size_t len = strlen(str);
+     if (len == 0) return NULL;
++#ifdef EXP_ASCII_BORROW
++    bool changed = false;
++#endif
+     for (size_t i = 0; i < len; i++) {
+         unsigned char c = (unsigned char)str[i];
+         if (c < 0x20 || c > 0x7e || c == '&') return NULL;
+-    }
++#ifdef EXP_ASCII_BORROW
++        changed |= c >= 'A' && c <= 'Z';
++#endif
++    }
++#ifdef EXP_ASCII_BORROW
++    // The parser already treats a NULL normalization result as a borrowed input.
++    if (!changed) return str;
++#endif
+     char *out = malloc(len + 1);
+     if (out == NULL) return NULL;
+     for (size_t i = 0; i < len; i++) {
+@@ -524,7 +534,13 @@
+ inline char *address_parser_normalize_string(char *str) {
+ #ifdef EXP_ASCII_NORM
+     char *fast = address_parser_normalize_ascii_fast(str);
+-    if (fast != NULL) return fast;
++    if (fast != NULL) {
++#ifdef EXP_ASCII_BORROW
++        return fast == str ? NULL : fast;
++#else
++        return fast;
++#endif
++    }
+ #endif
+ #ifdef EXP_NORM_TABLE
+     char *tfast = norm_table_fast(str);
+@@ -2076,9 +2092,18 @@
+ static char_array *rs_str = NULL;
+ static cstring_array *rs_token_labels = NULL, *rs_labels = NULL, *rs_components = NULL;
+ static bool rs_ready(void) {
++#ifdef EXP_AUDIT_FIXES
++    if (!rs_tokens) rs_tokens = token_array_new();
++    if (!rs_ts) rs_ts = tokenized_string_new();
++    if (!rs_str) rs_str = char_array_new();
++    if (!rs_token_labels) rs_token_labels = cstring_array_new();
++    if (!rs_labels) rs_labels = cstring_array_new();
++    if (!rs_components) rs_components = cstring_array_new();
++#else
+     if (rs_tokens) return true;
+     rs_tokens = token_array_new(); rs_ts = tokenized_string_new(); rs_str = char_array_new();
+     rs_token_labels = cstring_array_new(); rs_labels = cstring_array_new(); rs_components = cstring_array_new();
++#endif
+     return rs_tokens && rs_ts && rs_str && rs_token_labels && rs_labels && rs_components;
+ }
+ #endif
+@@ -2343,4 +2368,13 @@
+         address_parser_destroy(parser);
+     }
+     parser = NULL;
+-}
++#if defined(EXP_REUSE) && defined(EXP_AUDIT_FIXES)
++    token_array_destroy(rs_tokens); rs_tokens = NULL;
++    if (rs_ts) rs_ts->str = NULL; // rs_str owns the borrowed character buffer.
++    tokenized_string_destroy(rs_ts); rs_ts = NULL;
++    char_array_destroy(rs_str); rs_str = NULL;
++    cstring_array_destroy(rs_token_labels); rs_token_labels = NULL;
++    cstring_array_destroy(rs_labels); rs_labels = NULL;
++    cstring_array_destroy(rs_components); rs_components = NULL;
++#endif
++}
+--- final/021-l4/sources/crf.c
++++ experiments/025-audit-next/sources/crf.c
+@@ -284,28 +284,44 @@
+     for (size_t t = 0; t < num_tokens; t++) {
+         double *state_scores = state_score(crf_context, (uint32_t)t);
+         uint32_t *indptr = self->weights->indptr->a;
++#if defined(EXP_ROW_PACK) && defined(EXP_AUDIT_FIXES)
++        const crf_wrec_t *srec = crf_pack_state;
++#else
+         uint32_t *indices = self->weights->indices->a;
+         double *data = self->weights->data->a;
++#endif
+ 
+         for (uint32_t k = sb->tok_begin[t]; k < sb->tok_begin[t + 1]; k++) {
+             uint32_t feature_id = sb->id[k];
+             if (feature_id == CRF_NO_FEATURE) continue;
+             for (int col = indptr[feature_id]; col < indptr[feature_id + 1]; col++) {
++#if defined(EXP_ROW_PACK) && defined(EXP_AUDIT_FIXES)
++                state_scores[srec[col].cls] += srec[col].w;
++#else
+                 state_scores[indices[col]] += data[col];
++#endif
+             }
+         }
+ 
+         double *state_trans_scores = state_trans_score_all(crf_context, (uint32_t)t);
+         indptr = self->state_trans_weights->indptr->a;
++#if defined(EXP_ROW_PACK) && defined(EXP_AUDIT_FIXES)
++        const crf_wrec_t *trec = crf_pack_trans;
++#else
+         indices = self->state_trans_weights->indices->a;
+         data = self->state_trans_weights->data->a;
++#endif
+ 
+         for (uint32_t k = pb->tok_begin[t]; k < pb->tok_begin[t + 1]; k++) {
+             uint32_t feature_id = pb->id[k];
+             if (feature_id == CRF_NO_FEATURE) continue;
+             for (int col = indptr[feature_id]; col < indptr[feature_id + 1]; col++) {
++#if defined(EXP_ROW_PACK) && defined(EXP_AUDIT_FIXES)
++                state_trans_scores[trec[col].cls] += trec[col].w;
++#else
+                 // Note: here there are L * L classes
+                 state_trans_scores[indices[col]] += data[col];
++#endif
+             }
+         }
+     }
+@@ -745,7 +761,9 @@
+     }
+ #endif
+ #ifdef EXP_ROW_PACK
++#ifndef EXP_AUDIT_FIXES
+     fprintf(stderr, "EXP_ROW_PACK: only the direct scoring path is supported (dictionaries disabled or print_features requested)\n"); abort();
++#endif
+ #endif
+ #ifdef EXP_DEDUP_BATCH
+     if (!print_features) {
+@@ -796,8 +814,12 @@
+         double *state_scores = state_score(crf_context, t);
+ 
+         uint32_t *indptr = self->weights->indptr->a;
++#if defined(EXP_ROW_PACK) && defined(EXP_AUDIT_FIXES)
++        const crf_wrec_t *srec = crf_pack_state;
++#else
+         uint32_t *indices = self->weights->indices->a;
+         double *data = self->weights->data->a;
++#endif
+ 
+         uint32_t *feature_ids = crf_feature_ids_reserve(features->indices->n);
+         if (feature_ids == NULL) return false;
+@@ -813,16 +835,24 @@
+             }
+ 
+             for (int col = indptr[feature_id]; col < indptr[feature_id + 1]; col++) {
++#if defined(EXP_ROW_PACK) && defined(EXP_AUDIT_FIXES)
++                state_scores[srec[col].cls] += srec[col].w;
++#else
+                 uint32_t class_id = indices[col];
+                 state_scores[class_id] += data[col];
++#endif
+             }
+         }
+ 
+         double *state_trans_scores = state_trans_score_all(crf_context, t);
+ 
+         indptr = self->state_trans_weights->indptr->a;
++#if defined(EXP_ROW_PACK) && defined(EXP_AUDIT_FIXES)
++        const crf_wrec_t *trec = crf_pack_trans;
++#else
+         indices = self->state_trans_weights->indices->a;
+         data = self->state_trans_weights->data->a;
++#endif
+ 
+         feature_ids = crf_feature_ids_reserve(prev_tag_features->indices->n);
+         if (feature_ids == NULL) return false;
+@@ -838,9 +868,13 @@
+             }
+ 
+             for (int col = indptr[feature_id]; col < indptr[feature_id + 1]; col++) {
++#if defined(EXP_ROW_PACK) && defined(EXP_AUDIT_FIXES)
++                state_trans_scores[trec[col].cls] += trec[col].w;
++#else
+                 // Note: here there are L * L classes
+                 uint32_t class_id = indices[col];
+                 state_trans_scores[class_id] += data[col];
++#endif
+             }
+         }
+ 
+@@ -1004,6 +1038,13 @@
+         log_info("crf or filename was NULL\n");
+         return false;
+     }
++#ifdef EXP_AUDIT_FIXES
++    // Packed model rows and converted dictionaries cannot be written by the
++    // original trie/CSR serializer. Report this instead of dereferencing NULL.
++    if (self->state_features == NULL || self->state_trans_features == NULL ||
++        self->weights == NULL || self->state_trans_weights == NULL ||
++        self->weights->indices == NULL || self->state_trans_weights->indices == NULL) return false;
++#endif
+     FILE *f = fopen(filename, "wb");
+     if (f == NULL) return false;
+     bool ret_val = crf_write(self, f);
+@@ -1121,6 +1162,24 @@
+ 
+ void crf_destroy(crf_t *self) {
+     if (self == NULL) return;
++#ifdef EXP_AUDIT_FIXES
++#ifdef EXP_LEAN_CONTEXT
++    crf_lean_cap_items = 0;
++#endif
++#ifdef EXP_INT_KEYS
++    crf_ik_active = 0;
++    for (int w = 0; w < 2; w++) {
++        free(crf_ik_keys[w]); crf_ik_keys[w] = NULL;
++        crf_ik_n[w] = crf_ik_m[w] = 0;
++    }
++#ifdef EXP_ROLE_IDS
++    free(crf_role_ids); crf_role_ids = NULL;
++#endif
++#ifdef EXP_CONST_IDS
++    crf_const_ready = 0;
++#endif
++#endif
++#endif
+ #ifdef EXP_ROW_PACK
+     free(crf_pack_state); crf_pack_state = NULL; free(crf_pack_trans); crf_pack_trans = NULL;
+ #endif

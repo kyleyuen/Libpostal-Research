@@ -1,0 +1,3 @@
+# 2026-10-04T20:33:13-0700 EXTRA_SW="$(cat raw/switches_nbs.txt)" tools/build_cc.sh nbs clang llvm "-O2 -flto" "-O1" "-flto" mimalloc.o; link bench_split
+# 2026-10-04T20:37:53-0700 tools/run.sh (background)
+# 2026-10-04T20:48:35-0700 python3 tools/coverage_122.py ...; python3 tools/model2.py > raw/model2.stdout (review fixes)

@@ -1,0 +1,89 @@
+retry Sacramento 0 <HTTPError 504: 'Gateway Timeout'>
+ok Sacramento 222
+ok Kansas City 400
+ok Cincinnati 400
+ok Milwaukee 400
+ok Raleigh 400
+ok Saskatoon 400
+ok Sheffield 400
+ok Nottingham 400
+retry Kilkenny 0 <HTTPError 504: 'Gateway Timeout'>
+ok Kilkenny 400
+retry Geelong 0 <HTTPError 504: 'Gateway Timeout'>
+ok Geelong 400
+retry Tauranga 0 <HTTPError 504: 'Gateway Timeout'>
+ok Tauranga 400
+retry Bloemfontein 0 <HTTPError 504: 'Gateway Time-out'>
+ok Bloemfontein 93
+retry Angers 0 <HTTPError 504: 'Gateway Timeout'>
+ok Angers 400
+retry Tours 0 <HTTPError 504: 'Gateway Timeout'>
+ok Tours 196
+retry Metz 0 <HTTPError 504: 'Gateway Timeout'>
+ok Metz 246
+retry Mons 0 <HTTPError 504: 'Gateway Timeout'>
+retry Mons 1 <HTTPError 504: 'Gateway Timeout'>
+retry Mons 2 <HTTPError 504: 'Gateway Time-out'>
+ok Mons 400
+retry Karlsruhe 0 <HTTPError 504: 'Gateway Time-out'>
+ok Karlsruhe 400
+retry Augsburg 0 <HTTPError 504: 'Gateway Timeout'>
+ok Augsburg 400
+retry Kiel 0 <HTTPError 504: 'Gateway Time-out'>
+ok Kiel 400
+ok Klagenfurt 400
+ok Lucerne 400
+retry Haarlem 0 <HTTPError 504: 'Gateway Timeout'>
+ok Haarlem 400
+ok Roskilde 400
+retry Orebro 0 <HTTPError 504: 'Gateway Timeout'>
+ok Orebro 400
+retry Drammen 0 <HTTPError 504: 'Gateway Timeout'>
+ok Drammen 400
+ok Lahti 400
+retry Torun 0 <HTTPError 504: 'Gateway Timeout'>
+ok Torun 400
+ok Rzeszow 400
+ok Hradec Kralove 400
+retry Gyor 0 <HTTPError 504: 'Gateway Timeout'>
+ok Gyor 337
+retry Pula 0 <HTTPError 504: 'Gateway Timeout'>
+ok Pula 400
+ok Padua 400
+ok Catania 400
+retry Granada 0 <HTTPError 504: 'Gateway Time-out'>
+ok Granada 400
+retry Salamanca 0 <HTTPError 504: 'Gateway Timeout'>
+ok Salamanca 400
+retry Aveiro 0 <HTTPError 504: 'Gateway Timeout'>
+ok Aveiro 400
+retry Volos 0 <HTTPError 504: 'Gateway Timeout'>
+ok Volos 400
+ok Constanta 294
+retry Stara Zagora 0 <HTTPError 504: 'Gateway Timeout'>
+ok Stara Zagora 400
+ok Eskisehir 32
+ok Zaporizhzhia 204
+ok Nizhny Novgorod 315
+ok Ventspils 400
+ok Alytus 400
+retry Belo Horizonte 0 <HTTPError 504: 'Gateway Timeout'>
+ok Belo Horizonte 116
+ok Mar del Plata 400
+retry Queretaro 0 <HTTPError 504: 'Gateway Timeout'>
+ok Queretaro 400
+retry Antofagasta 0 <HTTPError 504: 'Gateway Timeout'>
+ok Antofagasta 400
+retry Pereira 0 <HTTPError 504: 'Gateway Timeout'>
+ok Pereira 400
+ok Cusco 400
+retry Yokohama 0 <HTTPError 504: 'Gateway Timeout'>
+ok Yokohama 0
+retry Hamamatsu 0 <HTTPError 504: 'Gateway Time-out'>
+ok Hamamatsu 0
+retry Keelung 0 <HTTPError 504: 'Gateway Timeout'>
+ok Keelung 400
+retry Daejeon 0 <HTTPError 504: 'Gateway Timeout'>
+ok Daejeon 94
+ok Netanya 400
+fetch exit 0

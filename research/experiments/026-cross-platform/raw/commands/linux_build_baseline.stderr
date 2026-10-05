@@ -1,0 +1,105 @@
++ variant=baseline
++ case "$variant" in
++ src=/out/source/src
++ overlay=/workspace/research/final/021-l4/sources
++ dest=/out/artifacts/baseline
++ '[' -e /out/artifacts/baseline/build.complete ']'
++ mkdir -p /out/artifacts/baseline/obj
++ base=(-std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"')
++ switches=(-DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4)
++ changed='crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens'
++ libsrc='strndup libpostal expand address_dictionary transliterate tokens trie trie_search trie_utils string_utils file_utils utf8proc/utf8proc normalize numex features unicode_scripts address_parser address_parser_io averaged_perceptron crf crf_context sparse_matrix averaged_perceptron_tagger graph graph_builder language_classifier language_features logistic_regression logistic minibatch float_utils ngrams place near_dupe double_metaphone geohash/geohash dedupe string_similarity acronyms soft_tfidf jaccard'
+++ clang --version
+++ head -1
++ printf '%s\n' variant=baseline 'compiler=Ubuntu clang version 18.1.3 (1ubuntu1)' 'base=-std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS -DLIBPOSTAL_DATA_DIR="/model"' 'switches=-DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4' library=-O2 scanner=-O1 link=-O2
++ for file in $libsrc
++ stem=strndup
++ path=/out/source/src/strndup.c
++ '[' baseline = candidate ']'
++ includes=(-I"$src" -I"/out/source")
++ flags=()
++ '[' baseline = candidate ']'
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -O2 -I/out/source/src -I/out/source -c /out/source/src/strndup.c -o /out/artifacts/baseline/obj/strndup.o
++ for file in $libsrc
++ stem=libpostal
++ path=/out/source/src/libpostal.c
++ '[' baseline = candidate ']'
++ includes=(-I"$src" -I"/out/source")
++ flags=()
++ '[' baseline = candidate ']'
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -O2 -I/out/source/src -I/out/source -c /out/source/src/libpostal.c -o /out/artifacts/baseline/obj/libpostal.o
+In file included from /out/source/src/libpostal.c:1:
+In file included from /usr/include/stdlib.h:26:
+In file included from /usr/include/aarch64-linux-gnu/bits/libc-header-start.h:33:
+In file included from /out/source/src/features.h:4:
+In file included from /usr/include/stdlib.h:26:
+/usr/include/aarch64-linux-gnu/bits/libc-header-start.h:74:5: error: function-like macro '__GLIBC_USE' is not defined
+   74 | #if __GLIBC_USE (IEC_60559_BFP_EXT) || __GLIBC_USE (ISOC2X)
+      |     ^
+/usr/include/aarch64-linux-gnu/bits/libc-header-start.h:80:5: error: function-like macro '__GLIBC_USE' is not defined
+   80 | #if __GLIBC_USE (IEC_60559_BFP_EXT) || defined __STDC_WANT_IEC_60559_EXT__
+      |     ^
+/usr/include/aarch64-linux-gnu/bits/libc-header-start.h:97:5: error: function-like macro '__GLIBC_USE' is not defined
+   97 | #if __GLIBC_USE (IEC_60559_FUNCS_EXT) || __GLIBC_USE (ISOC2X)
+      |     ^
+In file included from /out/source/src/libpostal.c:1:
+In file included from /usr/include/stdlib.h:26:
+In file included from /usr/include/aarch64-linux-gnu/bits/libc-header-start.h:33:
+In file included from /out/source/src/features.h:4:
+In file included from /usr/include/stdlib.h:56:
+/usr/include/aarch64-linux-gnu/bits/floatn.h:58:22: error: token is not a valid binary operator in a preprocessor subexpression
+   58 | #  if !__GNUC_PREREQ (7, 0) || (defined __cplusplus && !__GNUC_PREREQ (13, 0))
+      |       ~~~~~~~~~~~~~~ ^
+/usr/include/aarch64-linux-gnu/bits/floatn.h:68:22: error: token is not a valid binary operator in a preprocessor subexpression
+   68 | #  if !__GNUC_PREREQ (7, 0) || (defined __cplusplus && !__GNUC_PREREQ (13, 0))
+      |       ~~~~~~~~~~~~~~ ^
+/usr/include/aarch64-linux-gnu/bits/floatn.h:79:22: error: token is not a valid binary operator in a preprocessor subexpression
+   79 | #  if !__GNUC_PREREQ (7, 0) || (defined __cplusplus && !__GNUC_PREREQ (13, 0))
+      |       ~~~~~~~~~~~~~~ ^
+/usr/include/aarch64-linux-gnu/bits/floatn.h:84:22: error: token is not a valid binary operator in a preprocessor subexpression
+   84 | #  if !__GNUC_PREREQ (7, 0)
+      |       ~~~~~~~~~~~~~~ ^
+In file included from /out/source/src/libpostal.c:1:
+In file included from /usr/include/stdlib.h:26:
+In file included from /usr/include/aarch64-linux-gnu/bits/libc-header-start.h:33:
+In file included from /out/source/src/features.h:4:
+In file included from /usr/include/stdlib.h:56:
+In file included from /usr/include/aarch64-linux-gnu/bits/floatn.h:95:
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:69:5: error: function-like macro '__GNUC_PREREQ' is not defined
+   69 | #if __GNUC_PREREQ (7, 0) && !defined __cplusplus
+      |     ^
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:90:22: error: token is not a valid binary operator in a preprocessor subexpression
+   90 | #  if !__GNUC_PREREQ (7, 0) || (defined __cplusplus && !__GNUC_PREREQ (13, 0))
+      |       ~~~~~~~~~~~~~~ ^
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:98:22: error: token is not a valid binary operator in a preprocessor subexpression
+   98 | #  if !__GNUC_PREREQ (7, 0) || (defined __cplusplus && !__GNUC_PREREQ (13, 0))
+      |       ~~~~~~~~~~~~~~ ^
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:110:22: error: token is not a valid binary operator in a preprocessor subexpression
+  110 | #  if !__GNUC_PREREQ (7, 0) || (defined __cplusplus && !__GNUC_PREREQ (13, 0))
+      |       ~~~~~~~~~~~~~~ ^
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:118:22: error: token is not a valid binary operator in a preprocessor subexpression
+  118 | #  if !__GNUC_PREREQ (7, 0) || (defined __cplusplus && !__GNUC_PREREQ (13, 0))
+      |       ~~~~~~~~~~~~~~ ^
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:148:22: error: token is not a valid binary operator in a preprocessor subexpression
+  148 | #  if !__GNUC_PREREQ (7, 0) || (defined __cplusplus && !__GNUC_PREREQ (13, 0))
+      |       ~~~~~~~~~~~~~~ ^
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:156:22: error: token is not a valid binary operator in a preprocessor subexpression
+  156 | #  if !__GNUC_PREREQ (7, 0) || (defined __cplusplus && !__GNUC_PREREQ (13, 0))
+      |       ~~~~~~~~~~~~~~ ^
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:168:22: error: token is not a valid binary operator in a preprocessor subexpression
+  168 | #  if !__GNUC_PREREQ (7, 0) || (defined __cplusplus && !__GNUC_PREREQ (13, 0))
+      |       ~~~~~~~~~~~~~~ ^
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:176:22: error: token is not a valid binary operator in a preprocessor subexpression
+  176 | #  if !__GNUC_PREREQ (7, 0) || (defined __cplusplus && !__GNUC_PREREQ (13, 0))
+      |       ~~~~~~~~~~~~~~ ^
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:213:22: error: token is not a valid binary operator in a preprocessor subexpression
+  213 | #  if !__GNUC_PREREQ (7, 0) || (defined __cplusplus && !__GNUC_PREREQ (13, 0))
+      |       ~~~~~~~~~~~~~~ ^
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:217:22: error: token is not a valid binary operator in a preprocessor subexpression
+  217 | #  if !__GNUC_PREREQ (7, 0)
+      |       ~~~~~~~~~~~~~~ ^
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:250:23: error: token is not a valid binary operator in a preprocessor subexpression
+  250 | #   if !__GNUC_PREREQ (7, 0) || (defined __cplusplus && !__GNUC_PREREQ (13, 0))
+      |        ~~~~~~~~~~~~~~ ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

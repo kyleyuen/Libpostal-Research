@@ -1,0 +1,4742 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-04T05:07:34Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 814222332,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:housenumber": "22",
+    "addr:postcode": "703 62",
+    "addr:street": "Järnvägsgatan",
+    "internet_access": "yes",
+    "name": "City Central",
+    "phone": "+46 19 310240",
+    "tourism": "hotel",
+    "website": "https://www.firsthotels.se/hotell/sverige/orebro/city-central-hotel-orebro-first-partner-collection/"
+  }
+},
+{
+  "type": "node",
+  "id": 829288824,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:housenumber": "15",
+    "addr:postcode": "702 12",
+    "addr:street": "Storgatan",
+    "brand": "Willys",
+    "brand:wikidata": "Q10720214",
+    "brand:wikipedia": "sv:Willys",
+    "name": "Willys Hemma",
+    "operator": "Willys",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 829519749,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:housenumber": "5",
+    "addr:postcode": "702 12",
+    "addr:street": "Manillagatan",
+    "name": "Örebro MC Service",
+    "opening_hours": "Mo-Fr 10:00-18:00",
+    "payment:cards": "yes",
+    "phone": "+4619137540",
+    "service:vehicle:brakes": "yes",
+    "service:vehicle:oil_change": "yes",
+    "service:vehicle:tyres": "yes",
+    "shop": "motorcycle_repair"
+  }
+},
+{
+  "type": "node",
+  "id": 1909182644,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan",
+    "check_date": "2025-03-31",
+    "contact:website": "https://www.synsam.se/hitta-butik/holmquist-optik-synsam/18",
+    "name": "Holmquist Optik Synsam",
+    "shop": "optician"
+  }
+},
+{
+  "type": "node",
+  "id": 2014208146,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "14",
+    "addr:postcode": "70342",
+    "addr:street": "Ekersgatan",
+    "brand": "ICA Supermarket",
+    "brand:wikidata": "Q1663776",
+    "brand:wikipedia": "sv:Ica",
+    "check_date": "2025-04-03",
+    "name": "ICA Supermarket Ekershallen",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+4619167050",
+    "shop": "supermarket",
+    "website": "https://www.ica.se/butiker/supermarket/orebro/ica-supermarket-ekershallen-1061/start/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2269301099,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4-8",
+    "addr:street": "Köpmangatan",
+    "disused:amenity": "toilets",
+    "fee": "no",
+    "name": "Offentlig hk-toalett med taklyft",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes",
+    "wheelchair:description": "Avgift 5 kr. Kod till taklyft 8901"
+  }
+},
+{
+  "type": "node",
+  "id": 2269658750,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "30-32",
+    "addr:street": "Nygatan",
+    "amenity": "parking",
+    "capacity": "4",
+    "capacity:disabled": "4",
+    "parking": "multi-storey",
+    "wheelchair": "designated"
+  }
+},
+{
+  "type": "node",
+  "id": 2269661259,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7-17",
+    "addr:street": "Kungsgatan",
+    "amenity": "parking",
+    "fee": "yes",
+    "layer": "-1",
+    "parking": "underground",
+    "wheelchair": "yes",
+    "wheelchair:description": "1 plats"
+  }
+},
+{
+  "type": "node",
+  "id": 2271710430,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8-10",
+    "addr:street": "Sofiagatan",
+    "amenity": "parking",
+    "name": "Hk-parkering (2 platser)",
+    "wheelchair": "yes",
+    "wheelchair:description": "2 platser"
+  }
+},
+{
+  "type": "node",
+  "id": 2271718598,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "33-35",
+    "addr:street": "Västra Bangatan",
+    "amenity": "parking",
+    "capacity": "1",
+    "capacity:disabled": "1",
+    "description": "Hk-parkering (1 plats)",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2271719812,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:street": "Tulegatan",
+    "amenity": "parking",
+    "name": "Hk-parkering (1 plats)",
+    "wheelchair": "yes",
+    "wheelchair:description": "1 plats"
+  }
+},
+{
+  "type": "node",
+  "id": 2271720849,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "28-30",
+    "addr:street": "Ringgatan",
+    "amenity": "parking",
+    "name": "Hk-parkering (2 platser)",
+    "wheelchair": "yes",
+    "wheelchair:description": "2 platser"
+  }
+},
+{
+  "type": "node",
+  "id": 2275895179,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "14",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget",
+    "amenity": "restaurant",
+    "check_date": "2025-04-01",
+    "name": "Satin",
+    "phone": "+46 19 185550",
+    "website": "http://www.satin.nu",
+    "wheelchair": "no",
+    "wheelchair:description": "Trappsteg vid entrén ca 12 cm.Trång hk-toalett."
+  }
+},
+{
+  "type": "node",
+  "id": 2275913053,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "16",
+    "addr:street": "Stortorget",
+    "amenity": "restaurant",
+    "check_date": "2026-07-08",
+    "check_date:opening_hours": "2026-07-08",
+    "cuisine": "asian",
+    "name": "Mii Soo",
+    "opening_hours": "Mo-Fr 11:00-21:00; Sa 17:00-21:00",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2275917421,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "16",
+    "addr:street": "Stortorget",
+    "amenity": "restaurant",
+    "check_date": "2025-04-01",
+    "name": "1 rum & kök",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2275925581,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3 A",
+    "addr:postcode": "702 12",
+    "addr:street": "Trädgårdsgatan",
+    "amenity": "restaurant",
+    "check_date": "2025-04-09",
+    "diet:vegetarian": "yes",
+    "name": "Pizzeria Mamma Mia",
+    "opening_hours": "Mo-Th 11:00-21:00; Fr,Sa 11:00-22:00; Su 11:00-21:00",
+    "phone": "+46 19 108810",
+    "website": "https://mammamiapizzeria.se/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2275947392,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:street": "Drottninggatan",
+    "amenity": "cafe",
+    "check_date": "2024-07-01",
+    "name": "Paolo's",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2275965352,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "12",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan",
+    "amenity": "restaurant",
+    "check_date": "2024-07-01",
+    "name": "Striker"
+  }
+},
+{
+  "type": "node",
+  "id": 2275974329,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "14",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan",
+    "amenity": "restaurant",
+    "check_date": "2024-07-01",
+    "name": "Hellas",
+    "phone": "+46 19 125451",
+    "website": "http://www.rst-hellas.se",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2275979386,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:street": "Drottninggatan",
+    "amenity": "restaurant",
+    "check_date": "2024-07-01",
+    "name": "Kina Muren",
+    "wheelchair": "no",
+    "wheelchair:description": "Lång trappa till restaurangen. Hiss saknas."
+  }
+},
+{
+  "type": "node",
+  "id": 2275993572,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan",
+    "disused:amenity": "pub"
+  }
+},
+{
+  "type": "node",
+  "id": 2275999588,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "26",
+    "addr:street": "Drottninggatan",
+    "amenity": "fast_food",
+    "brand": "Burger King",
+    "brand:wikidata": "Q177054",
+    "brand:wikipedia": "en:Burger King",
+    "check_date": "2025-03-27",
+    "cuisine": "burger",
+    "name": "Burger King",
+    "takeaway": "yes",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes",
+    "wheelchair:description": "RWC saknas."
+  }
+},
+{
+  "type": "node",
+  "id": 2276037539,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20",
+    "addr:postcode": "702 12",
+    "addr:street": "Engelbrektsgatan",
+    "amenity": "restaurant",
+    "name": "Ingeborgs",
+    "phone": "+46 19 272712",
+    "website": "https://www.ingeborgsiorebro.se/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2276049401,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18",
+    "addr:postcode": "702 23",
+    "addr:street": "Rudbecksgatan",
+    "amenity": "restaurant",
+    "name": "Saigon",
+    "opening_hours": "Mo-Su 11:00-21:00",
+    "phone": "+46 19 10 08 75",
+    "website": "https://www.saigonexpress.se/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2276070028,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18-24",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan",
+    "amenity": "cafe",
+    "check_date": "2025-03-27",
+    "indoor_seating": "yes",
+    "name": "Bara Vara",
+    "outdoor_seating": "yes",
+    "phone": "+46 19 107832",
+    "website": "http://www.baravara.net",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2277690912,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20",
+    "addr:postcode": "702 11",
+    "addr:street": "Rudbecksgatan",
+    "amenity": "restaurant",
+    "check_date": "2025-03-28",
+    "name": "Maxim",
+    "phone": "+46 19 6090590",
+    "website": "https://gastrogate.com/restaurang/restaurangmaxim/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2278399158,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "6",
+    "addr:street": "Stortorget",
+    "amenity": "restaurant",
+    "name": "Tasty Bros"
+  }
+},
+{
+  "type": "node",
+  "id": 2278401897,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:street": "Stortorget",
+    "amenity": "restaurant",
+    "check_date": "2025-03-27",
+    "cuisine": "sushi",
+    "name": "Sushi Yama",
+    "opening_hours": "Mo-We 11:00-21:00, Th-Sa 11:00-22:00, Su 12:00-22:00",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2281023168,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:street": "Kungsgatan",
+    "check_date": "2024-07-01",
+    "name": "Örebro Saluhall",
+    "phone": "+46 70 641 09 29",
+    "shop": "department_store",
+    "toilets": "yes",
+    "website": "https://orebrosaluhall.se/",
+    "wheelchair": "limited",
+    "wheelchair:description": "Restaurangen ej rullstolstillgänglig"
+  }
+},
+{
+  "type": "node",
+  "id": 2281024860,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:street": "Kungsgatan (Örebro Saluhall)",
+    "amenity": "restaurant",
+    "cuisine": "sushi",
+    "name": "Orshi",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2281041739,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5Ö",
+    "addr:street": "Köpmangatan",
+    "amenity": "cafe",
+    "brand": "Espresso House",
+    "brand:wikidata": "Q10489162",
+    "brand:wikipedia": "en:Espresso House",
+    "check_date": "2025-03-27",
+    "cuisine": "coffee_shop",
+    "name": "Espresso House",
+    "takeaway": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2283144424,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7-9",
+    "addr:street": "Stortorget",
+    "amenity": "restaurant",
+    "name": "The London Inn"
+  }
+},
+{
+  "type": "node",
+  "id": 2283160460,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:street": "Ågatan",
+    "amenity": "restaurant",
+    "check_date": "2025-04-01",
+    "name": "Kitchenette",
+    "website": "https://kitchenette.se/"
+  }
+},
+{
+  "type": "node",
+  "id": 2295722790,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "6",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan",
+    "amenity": "restaurant",
+    "check_date": "2025-04-01",
+    "name": "Palette",
+    "phone": "+46 19 6111446",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2295905172,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "26",
+    "addr:postcode": "702 10",
+    "addr:street": "Kyrkogatan",
+    "disused:amenity": "cafe"
+  }
+},
+{
+  "type": "node",
+  "id": 2295912646,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3B",
+    "addr:postcode": "702 10",
+    "addr:street": "Södra Strandgatan",
+    "amenity": "pub",
+    "check_date": "2025-04-01",
+    "name": "Stallyktan",
+    "phone": "+46 19 100835",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2295926234,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "6",
+    "addr:postcode": "703 61",
+    "addr:street": "Järntorgsgatan",
+    "amenity": "restaurant",
+    "check_date": "2025-04-01",
+    "cuisine": "armenian",
+    "name": "Yerevan Mangal",
+    "phone": "+46 19 127710",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2295932457,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan",
+    "amenity": "restaurant",
+    "check_date": "2025-04-01",
+    "name": "Art Bar",
+    "website": "https://www.artbar.nu",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2295943711,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13 A",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan",
+    "disused:amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 2295947756,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "12B",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan",
+    "disused:amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 2295957379,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan",
+    "amenity": "restaurant",
+    "check_date": "2025-04-03",
+    "indoor_seating": "yes",
+    "name": "Coco Thai",
+    "not:brand:wikidata": "Q65084369",
+    "outdoor_seating": "yes",
+    "phone": "+46 19 128868",
+    "website": "http://cocothai.homestead.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2295960320,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:street": "Storgatan",
+    "amenity": "fast_food",
+    "brand": "Subway",
+    "brand:wikidata": "Q244457",
+    "brand:wikipedia": "en:Subway (restaurant)",
+    "check_date": "2024-07-01",
+    "cuisine": "sandwich",
+    "indoor_seating": "yes",
+    "name": "Subway",
+    "opening_hours": "Mo-Sa 10:00-20:00; Su 12:00-16:00",
+    "outdoor_seating": "no",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2295969761,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17A",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan",
+    "amenity": "cafe",
+    "check_date": "2026-03-12",
+    "name": "Hälls",
+    "phone": "+46 19 6110048",
+    "website": "https://www.hallskonditori.se/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2295973786,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "19",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan",
+    "amenity": "restaurant",
+    "name": "Wongs",
+    "phone": "+46 19 6111840",
+    "website": "https://www.wongs.se/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2295985793,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18",
+    "addr:postcode": "703 62",
+    "addr:street": "Fredsgatan",
+    "amenity": "restaurant",
+    "check_date": "2025-04-03",
+    "cuisine": "pizza",
+    "name": "Bagdad",
+    "phone": "+46 19 127730",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2295992453,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18",
+    "addr:street": "Storgatan",
+    "amenity": "restaurant",
+    "check_date": "2024-07-01",
+    "name": "Storgatan 18",
+    "opening_hours": "Mo-Sa 14:00+; Su off",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2296012755,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "27",
+    "addr:postcode": "702 22",
+    "addr:street": "Drottninggatan",
+    "addr:unit": "Krämaren",
+    "disused:amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 2317667530,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "702 10",
+    "addr:street": "Badhusgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2317667532,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:postcode": "702 10",
+    "addr:street": "Badhusgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2317667533,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "702 10",
+    "addr:street": "Badhusgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2317667534,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:postcode": "702 10",
+    "addr:street": "Badhusgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2317667535,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "702 10",
+    "addr:street": "Badhusgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2317667536,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "9",
+    "addr:postcode": "702 10",
+    "addr:street": "Badhusgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2319235232,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "12",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2320072203,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2320072204,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:postcode": "702 11",
+    "addr:street": "Rudbecksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2320072205,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:postcode": "702 11",
+    "addr:street": "Rudbecksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2320072206,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "702 11",
+    "addr:street": "Rudbecksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2320072207,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:postcode": "702 10",
+    "addr:street": "Fabriksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2320072208,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2320072209,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "9",
+    "addr:postcode": "702 11",
+    "addr:street": "Rudbecksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2324623404,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "2",
+    "addr:postcode": "702 10",
+    "addr:street": "Fabriksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2324623405,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182270,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "702 10",
+    "addr:street": "Fabriksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182271,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "702 10",
+    "addr:street": "Nikolaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182272,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:postcode": "702 10",
+    "addr:street": "Fabriksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182274,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11B",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182276,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:postcode": "702 10",
+    "addr:street": "Fabriksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182278,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "16A",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182280,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "16B",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182283,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18",
+    "addr:postcode": "702 10",
+    "addr:street": "Kyrkogatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182285,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18A",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182287,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20",
+    "addr:postcode": "702 10",
+    "addr:street": "Kyrkogatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182289,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "22",
+    "addr:postcode": "702 10",
+    "addr:street": "Kyrkogatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182291,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "702 10",
+    "addr:street": "Fabriksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182293,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "702 10",
+    "addr:street": "Nikolaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182296,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:postcode": "702 10",
+    "addr:street": "Fabriksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182298,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "702 10",
+    "addr:street": "Fabriksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2326182301,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "9",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2328436252,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "702 10",
+    "addr:street": "Ågatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2328436256,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:postcode": "702 10",
+    "addr:street": "Ågatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2328436259,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:postcode": "702 10",
+    "addr:street": "Vasagatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2328436261,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "2",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2328436262,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2329017458,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:postcode": "702 10",
+    "addr:street": "Ågatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2329017460,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "702 10",
+    "addr:street": "Södra Strandgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2329017461,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3A-3B",
+    "addr:postcode": "702 10",
+    "addr:street": "Södra Strandgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2329017462,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "9",
+    "addr:postcode": "702 10",
+    "addr:street": "Vasagatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2329400399,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "27",
+    "addr:street": "Kungsgatan",
+    "name": "London My Style",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 2329405837,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "23",
+    "addr:street": "Kungsgatan",
+    "check_date": "2025-03-31",
+    "name": "Jessie´s",
+    "shop": "hairdresser",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2329464691,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17",
+    "addr:street": "Kungsgatan",
+    "check_date": "2024-07-01",
+    "disused:shop": "hairdresser",
+    "name": "KA PA",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2329465582,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17",
+    "addr:street": "Kungsgatan",
+    "brand": "Elon",
+    "brand:wikidata": "Q10478830",
+    "check_date": "2024-07-01",
+    "name": "Elon",
+    "shop": "electronics"
+  }
+},
+{
+  "type": "node",
+  "id": 2329466970,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:street": "Kungsgatan",
+    "female": "yes",
+    "name": "Bonnie & Clyde",
+    "shop": "hairdresser",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2329468171,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:street": "Engelbrektsgatan",
+    "name": "Coquette",
+    "shop": "hairdresser",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2329470159,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:street": "Köpmangatan",
+    "check_date": "2025-04-02",
+    "name": "Ragnar",
+    "shop": "hairdresser",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2329472011,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "9",
+    "addr:street": "Köpmangatan",
+    "check_date": "2025-04-01",
+    "name": "Nikita Hair",
+    "shop": "hairdresser",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2329473203,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:street": "Köpmangatan",
+    "check_date": "2025-04-01",
+    "name": "ESS",
+    "shop": "hairdresser",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2329476194,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15 B",
+    "addr:street": "Köpmangatan",
+    "beauty": "nails",
+    "name": "QS NailSpa",
+    "shop": "beauty"
+  }
+},
+{
+  "type": "node",
+  "id": 2329484647,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "21",
+    "addr:street": "Drottninggatan",
+    "check_date": "2025-03-27",
+    "name": "Drottninggatan",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 2329486017,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "38",
+    "addr:street": "Drottninggatan",
+    "check_date": "2025-03-27",
+    "name": "Frida",
+    "shop": "hairdresser",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2329491682,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:street": "Vasagatan",
+    "check_date": "2025-04-02",
+    "name": "Vasa",
+    "shop": "hairdresser",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2329493023,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:street": "Vasagatan",
+    "check_date": "2025-04-02",
+    "name": "EGO",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 2329495589,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:street": "Södra Strandgatan",
+    "check_date": "2025-04-03",
+    "name": "Randis hårstudio",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 2329497866,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "16 B",
+    "addr:street": "Nygatan",
+    "check_date": "2025-04-01",
+    "name": "Salong Louise H",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 2329498833,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:street": "Fabriksgatan",
+    "name": "Art of Hair",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 2329501698,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "14",
+    "addr:street": "Rudbecksgatan",
+    "check_date": "2025-03-31",
+    "name": "Bothén",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 2329502713,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20",
+    "addr:street": "Rudbecksgatan",
+    "check_date": "2025-03-31",
+    "name": "African Surprice",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 2336100286,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "702 10",
+    "addr:street": "Kyrkogatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2336100289,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2336100290,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2336100291,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2336100292,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2336100295,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "22",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2336100298,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "24",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2336100302,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "702 10",
+    "addr:street": "Kyrkogatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2336100305,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:postcode": "702 10",
+    "addr:street": "Kyrkogatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2336100308,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "702 10",
+    "addr:street": "Kyrkogatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2336100312,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:postcode": "702 10",
+    "addr:street": "Nikolaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2337092293,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2337092294,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2337092295,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "12",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2337092296,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2337092297,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "14",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2337092298,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2337092299,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "16",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2337092300,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2337092301,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2337092302,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2337092303,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "19",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2337092304,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "19",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2337092305,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "2",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2337092306,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget",
+    "name": "laget.se",
+    "phone": "+46 19 15 44 00",
+    "website": "https://laget.se/"
+  }
+},
+{
+  "type": "node",
+  "id": 2338535412,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2338535418,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2338535421,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2338535422,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "12",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2338535423,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2338535424,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "14",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2338535425,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "21",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2338535427,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "23",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2338535428,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "25",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2338535429,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "6",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2338535430,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2338535431,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2338535432,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget",
+    "amenity": "restaurant",
+    "check_date": "2025-03-27",
+    "cuisine": "italian",
+    "name": "Fratelli"
+  }
+},
+{
+  "type": "node",
+  "id": 2338535433,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "9",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2341032982,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2341032983,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2341032984,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "2",
+    "addr:postcode": "702 12",
+    "addr:street": "Engelbrektsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2341032985,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "2",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan",
+    "disused:shop": "yes",
+    "fixme": "Ange typ av affär"
+  }
+},
+{
+  "type": "node",
+  "id": 2341032986,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2341032987,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2341032988,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:postcode": "702 12",
+    "addr:street": "Engelbrektsgatan",
+    "name": "Quale",
+    "office": "consulting"
+  }
+},
+{
+  "type": "node",
+  "id": 2341032989,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2341032990,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2341032991,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "6",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2341032992,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2341032993,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "9",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2372397082,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "2",
+    "addr:postcode": "702 10",
+    "addr:street": "Trädgårdstorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2372397085,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:postcode": "702 10",
+    "addr:street": "Trädgårdstorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2376121159,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "703 61",
+    "addr:street": "Kansligatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2376121160,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:postcode": "703 61",
+    "addr:street": "Kansligatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2385860952,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan",
+    "fixme": "Ange typ av affär",
+    "name": "Embrace Design",
+    "shop": "jewelry"
+  }
+},
+{
+  "type": "node",
+  "id": 2385860953,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:postcode": "702 12",
+    "addr:street": "Engelbrektsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2385860954,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "2",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2385860955,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2385860956,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2385860957,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2385860958,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "Handelsbanken",
+    "brand:wikidata": "Q1421630",
+    "brand:wikipedia": "en:Handelsbanken",
+    "check_date": "2025-03-27",
+    "name": "Handelsbanken"
+  }
+},
+{
+  "type": "node",
+  "id": 2385860959,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "6",
+    "addr:postcode": "702 12",
+    "addr:street": "Engelbrektsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2385860960,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "6",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2385860961,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2385860962,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:postcode": "702 12",
+    "addr:street": "Engelbrektsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2385860963,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "9",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2395542383,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "2",
+    "addr:postcode": "703 61",
+    "addr:street": "Slottsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2395542391,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "21",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2395542397,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "22",
+    "addr:postcode": "703 62",
+    "addr:street": "Fredsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2395542403,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "23 B",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2395542408,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "23",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2395542415,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "25",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2395542420,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "703 62",
+    "addr:street": "Skolgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2395542425,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:postcode": "703 61",
+    "addr:street": "Slottsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2395627880,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "702 12",
+    "addr:street": "Engelbrektsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401188181,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:postcode": "702 10",
+    "addr:street": "Kyrkogatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401188182,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:postcode": "702 10",
+    "addr:street": "Kyrkogatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401188183,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:postcode": "702 10",
+    "addr:street": "Kyrkogatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401188184,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17",
+    "addr:postcode": "702 10",
+    "addr:street": "Kyrkogatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401188185,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "19",
+    "addr:postcode": "702 11",
+    "addr:street": "Rudbecksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401188186,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20 A",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401188187,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20 B",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401188188,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "21",
+    "addr:postcode": "702 11",
+    "addr:street": "Rudbecksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401188189,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "26",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401188190,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "28",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401188191,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "30",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401188192,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "32",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401188193,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "34",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401188194,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "36",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401898186,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "702 10",
+    "addr:street": "Våghustorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2401898187,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401898188,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "21",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401898189,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "22",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401898190,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "22",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401898191,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "23",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401898192,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "24",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401898193,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "24",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401898194,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "25",
+    "addr:postcode": "702 10",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401898195,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "26",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2401898196,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "702 10",
+    "addr:street": "Våghustorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2406643803,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15 A",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2406643804,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15 B",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2406643805,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "16",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2406643806,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2406643807,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2406643808,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "19",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2406643809,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2406643810,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "21",
+    "addr:postcode": "702 10",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2406643811,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "22",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2406643812,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "25",
+    "addr:postcode": "702 11",
+    "addr:street": "Rudbecksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2406643813,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "27",
+    "addr:postcode": "702 11",
+    "addr:street": "Rudbecksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2406643814,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "28",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2406643815,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "30",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2406643816,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "32",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2419288898,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2419288899,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2419288900,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "12",
+    "addr:postcode": "702 12",
+    "addr:street": "Engelbrektsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2419288901,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2419288902,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "16",
+    "addr:postcode": "702 12",
+    "addr:street": "Engelbrektsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2419288903,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2419288904,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18",
+    "addr:postcode": "702 12",
+    "addr:street": "Engelbrektsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2419288905,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "19",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2419288906,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "2",
+    "addr:postcode": "702 12",
+    "addr:street": "Trädgårdsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2419288907,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "22",
+    "addr:postcode": "702 12",
+    "addr:street": "Engelbrektsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2419288908,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "24",
+    "addr:postcode": "702 12",
+    "addr:street": "Engelbrektsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2419288909,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2419288910,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:postcode": "702 12",
+    "addr:street": "Trädgårdsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339781,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:postcode": "702 12",
+    "addr:street": "Trädgårdsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339782,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339783,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "12",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339784,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "12",
+    "addr:postcode": "702 12",
+    "addr:street": "Trädgårdsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339785,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "14",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339786,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "14",
+    "addr:postcode": "702 12",
+    "addr:street": "Trädgårdsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339789,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339793,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "16",
+    "addr:postcode": "702 12",
+    "addr:street": "Trädgårdsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339796,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339800,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18",
+    "addr:postcode": "702 12",
+    "addr:street": "Trädgårdsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339801,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339802,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "22",
+    "addr:postcode": "702 11",
+    "addr:street": "Stortorget"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339803,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "27",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339804,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "29",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339805,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "35",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339806,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "37",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339807,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2434339808,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "9",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2457666159,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20",
+    "addr:postcode": "702 12",
+    "addr:street": "Trädgårdsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2457666163,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "21",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2457666166,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "22",
+    "addr:postcode": "702 12",
+    "addr:street": "Trädgårdsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2457666170,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "23",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2457666184,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "27",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2457666192,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "29",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2457666195,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "29",
+    "addr:postcode": "702 11",
+    "addr:street": "Rudbecksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2457666205,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "34",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2457666212,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "36",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2457666219,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "38",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2457666235,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "40",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2457666238,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "42",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2457666242,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "44",
+    "addr:postcode": "702 11",
+    "addr:street": "Nygatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159792,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "703 61",
+    "addr:street": "Slottsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159793,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "12",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159796,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:postcode": "703 61",
+    "addr:street": "Slottsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159800,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "14",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159804,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "16",
+    "addr:postcode": "703 62",
+    "addr:street": "Fredsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159807,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "16",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159810,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17 A",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159814,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17 B",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159817,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17 C",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159824,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17 E",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159828,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17 F",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159831,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17 G",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159835,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18",
+    "addr:postcode": "703 62",
+    "addr:street": "Fredsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159838,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "19",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159842,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "703 61",
+    "addr:street": "Slottsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159845,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159848,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:postcode": "703 61",
+    "addr:street": "Slottsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159851,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "6",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159854,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "703 61",
+    "addr:street": "Slottsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2458159858,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2459030559,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:housenumber": "13",
+    "addr:street": "Storgatan",
+    "brand": "Hemköp",
+    "brand:wikidata": "Q10521746",
+    "name": "Hemköp Örebro Lucullus",
+    "opening_hours": "Mo-Su 07:30-21:00",
+    "phone": "+46 19 16 61 00",
+    "shop": "supermarket",
+    "website": "https://www.hemkop.se/butik/4644",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2535703721,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:postcode": "703 62",
+    "addr:street": "Fredsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2535703725,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17",
+    "addr:postcode": "703 62",
+    "addr:street": "Fredsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2535703729,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2535703732,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2535703736,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "22",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2535703740,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "24",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2535703741,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "26",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2535703747,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "26",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan",
+    "alt_name": "Outdoor Örebro",
+    "check_date": "2024-07-01",
+    "name": "Outdoor",
+    "opening_hours": "Mo-Fr 10:00-18:00; Sa 10:00-14:00",
+    "shop": "outdoor",
+    "website": "https://www.odx.se/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2535703776,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "22a",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan",
+    "name": "Köttbutiken nr1",
+    "shop": "butcher"
+  }
+},
+{
+  "type": "node",
+  "id": 2667651382,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2667651383,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:postcode": "703 61",
+    "addr:street": "Järntorgsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2667651386,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "12",
+    "addr:postcode": "703 61",
+    "addr:street": "Järntorgsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2667651389,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2667651392,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2667651396,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "6",
+    "addr:postcode": "703 61",
+    "addr:street": "Järntorgsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2667651399,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:postcode": "703 61",
+    "addr:street": "Järntorgsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2672151641,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "26",
+    "addr:postcode": "702 23",
+    "addr:street": "Köpmangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2696719126,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "38",
+    "addr:postcode": "702 22",
+    "addr:street": "Drottninggatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2706719623,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "14",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan",
+    "brand": "Clarion",
+    "brand:wikidata": "Q10454567",
+    "check_date": "2025-03-27",
+    "email": "cl.orebro@choice.se",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Clarion Hotel",
+    "operator": "Nordicchoicehotels",
+    "phone": "+46 19 670 67 00",
+    "rooms": "136",
+    "stars": "4",
+    "tourism": "hotel",
+    "website": "https://clarionorebro.se/"
+  }
+},
+{
+  "type": "node",
+  "id": 2706925755,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "702 11",
+    "addr:street": "Kungsgatan",
+    "amenity": "restaurant",
+    "check_date": "2025-03-31",
+    "name": "Makeriet",
+    "phone": "+4619252025",
+    "website": "https://www.makerietorebro.se/"
+  }
+},
+{
+  "type": "node",
+  "id": 2707074280,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20",
+    "addr:postcode": "702 23",
+    "addr:street": "Rudbecksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2772228102,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "26",
+    "addr:postcode": "702 23",
+    "addr:street": "Rudbecksgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2802374065,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "703 61",
+    "addr:street": "Norra Strandgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2802374066,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "2",
+    "addr:postcode": "703 61",
+    "addr:street": "Järntorgsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2802374067,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2802374068,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "703 61",
+    "addr:street": "Norra Strandgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2802374069,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2802374070,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:postcode": "703 61",
+    "addr:street": "Norra Strandgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2802374071,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:postcode": "703 61",
+    "addr:street": "Järntorgsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238664,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "703 61",
+    "addr:street": "Järntorgsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238665,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238666,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238667,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "12",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238668,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238669,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "2",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238670,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "26",
+    "addr:postcode": "703 61",
+    "addr:street": "Östra Bangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238671,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "28",
+    "addr:postcode": "703 61",
+    "addr:street": "Östra Bangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238672,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "703 61",
+    "addr:street": "Järntorgsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238673,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238674,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "6",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238675,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "703 61",
+    "addr:street": "Järntorgsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238676,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238677,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238678,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "9",
+    "addr:postcode": "703 61",
+    "addr:street": "Järntorgsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819238679,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "9",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819361404,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "1",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819361405,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:postcode": "703 61",
+    "addr:street": "Magasinsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819361406,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819361407,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819361408,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "3",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819361409,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819361410,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819361411,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:postcode": "703 61",
+    "addr:street": "Magasinsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2819361412,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "9",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2821881522,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "34",
+    "addr:postcode": "703 61",
+    "addr:street": "Östra Bangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2821881523,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "38",
+    "addr:postcode": "703 61",
+    "addr:street": "Östra Bangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2821881524,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:postcode": "703 62",
+    "addr:street": "Fredsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847022725,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:postcode": "703 62",
+    "addr:street": "Fredsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847022726,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847022727,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847022728,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "12",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847022729,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847022730,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847022731,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13A",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847022732,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "14-16",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847022733,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847022734,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847022735,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847022736,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847022737,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:postcode": "703 62",
+    "addr:street": "Fredsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847022738,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "9",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847099456,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847099457,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847099458,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "12",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847099459,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847099460,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "14",
+    "addr:postcode": "703 62",
+    "addr:street": "Fredsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847099461,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:postcode": "703 61",
+    "addr:street": "Olaigatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847099462,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "15",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847099463,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "2",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847099464,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847099465,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "5",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847099466,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "6",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847099467,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847099468,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2847099469,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "9",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2869234634,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "2",
+    "addr:postcode": "703 62",
+    "addr:street": "Järnvägsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2869234636,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "35",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2869234637,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "4",
+    "addr:postcode": "703 62",
+    "addr:street": "Järnvägsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2869234638,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "42",
+    "addr:postcode": "703 61",
+    "addr:street": "Östra Bangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2869234639,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "44B",
+    "addr:postcode": "703 61",
+    "addr:street": "Östra Bangatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2869234640,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "6",
+    "addr:postcode": "703 62",
+    "addr:street": "Järnvägsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879298968,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "21",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879298969,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "26",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879298971,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "29",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879298972,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "34",
+    "addr:postcode": "703 61",
+    "addr:street": "Klostergatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879298973,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "7",
+    "addr:postcode": "703 62",
+    "addr:street": "Fredsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879298974,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "8",
+    "addr:postcode": "703 62",
+    "addr:street": "Järnvägsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879420591,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "10",
+    "addr:postcode": "703 62",
+    "addr:street": "Järnvägsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879420592,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "11",
+    "addr:postcode": "703 62",
+    "addr:street": "Fredsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879420593,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "12",
+    "addr:postcode": "703 62",
+    "addr:street": "Järnvägsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879420594,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "13",
+    "addr:postcode": "703 62",
+    "addr:street": "Fredsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879420595,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "14",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879420596,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "16",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879420597,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "18",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879420598,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "19",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879420599,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "20",
+    "addr:postcode": "703 61",
+    "addr:street": "Gamla gatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879420600,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "21",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2879422301,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "23",
+    "addr:postcode": "703 61",
+    "addr:street": "Storgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2896324956,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "14",
+    "addr:postcode": "703 62",
+    "addr:street": "Järnvägsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2896324957,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "16",
+    "addr:postcode": "703 62",
+    "addr:street": "Järnvägsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2896324958,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "17",
+    "addr:postcode": "703 61",
+    "addr:street": "Slottsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2896324959,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "19",
+    "addr:postcode": "703 61",
+    "addr:street": "Slottsgatan"
+  }
+},
+{
+  "type": "node",
+  "id": 2896324960,
+  "tags": {
+    "addr:city": "Örebro",
+    "addr:country": "SE",
+    "addr:housenumber": "21",
+    "addr:postcode": "703 61",
+    "addr:street": "Slottsgatan"
+  }
+}
+
+  ]
+}

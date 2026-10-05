@@ -1,0 +1,82 @@
+--- crf.c.009	2026-09-29 19:33:29
++++ crf.c	2026-09-29 19:33:29
+@@ -292,11 +292,30 @@
+             if (ok[j]) {
+                 hh[j] = fd_hash_key(nb[j], rest[j], rl[j]);
+                 __builtin_prefetch(&d->slots[fd_index(d, hh[j])]);
++            }
++        }
++#ifdef EXP_ARENA_PREFETCH
++        // pass 1b: find each key's first candidate slot (empty, or tag match) and prefetch that key's arena entry before comparing
++        uint64_t cand[WIN];
++        for (size_t j = 0; j < m; j++) {
++            cand[j] = 0;
++            if (!ok[j]) continue;
++            uint8_t tag = (uint8_t)hh[j];
++            uint64_t i = fd_index(d, hh[j]);
++            for (;; i = fd_next(d, i)) {
++                uint64_t sl = d->slots[i];
++                if (!sl || (uint8_t)(sl >> 56) == tag) { if (sl) __builtin_prefetch(d->arena + (uint32_t)sl); break; }
+             }
++            cand[j] = i;
+         }
++#endif
+         for (size_t j = 0; j < m; j++) {
+             uint32_t feature_id;
++#ifdef EXP_ARENA_PREFETCH
++            if (ok[j] && fd_lookup_hashed_from(d, nb[j], rest[j], rl[j], hh[j], cand[j], &feature_id)) {
++#else
+             if (ok[j] && fd_lookup_hashed(d, nb[j], rest[j], rl[j], hh[j], &feature_id)) {
++#endif
+                 ids[base + j] = feature_id;
+ #ifdef EXP_WEIGHT_PREFETCH
+                 __builtin_prefetch(&indptr[feature_id]);
+@@ -378,7 +397,36 @@
+             if (feature_id == CRF_NO_FEATURE) continue;
+             for (int col = tindptr[feature_id]; col < tindptr[feature_id + 1]; col++) state_trans_scores[tindices[col]] += tdata[col];   // L * L classes
+         }
++    }
++    return true;
++}
++#endif
++
++
++#ifdef EXP_LEAN_CONTEXT
++// Viterbi-only replacement for crf_context_set_num_items. The library version resizes and zeroes 8 matrices per address (alpha, beta, state, state_trans,
++// four marginal arrays, backward edges) and, because double_matrix_resize compares against the *current* dimensions, re-allocates whenever an address is longer
++// than the previous one. Viterbi decoding reads only state, state_trans, trans (written elsewhere), alpha_score (every cell it reads is written first) and
++// backward_edges (kept zeroed, as before). Capacity is tracked here so a matrix is only reallocated when it really has to grow.
++static size_t crf_lean_cap_items = 0;
++
++static bool crf_context_set_num_items_lean(crf_context_t *self, size_t T) {
++    const size_t L = self->num_labels;
++    if (T > crf_lean_cap_items) {
++        size_t cap = crf_lean_cap_items ? crf_lean_cap_items : 32;
++        while (cap < T) cap *= 2;
++        if (!double_matrix_resize(self->state, cap, L) || !double_matrix_resize(self->state_trans, cap, L * L) ||
++            !double_matrix_resize(self->alpha_score, cap, L) || !uint32_matrix_resize(self->backward_edges, cap, L)) return false;
++        crf_lean_cap_items = cap;
+     }
++    self->state->m = T; self->state->n = L;
++    self->state_trans->m = T; self->state_trans->n = L * L;
++    self->alpha_score->m = T; self->alpha_score->n = L;
++    self->backward_edges->m = T; self->backward_edges->n = L;
++    memset(self->state->values, 0, T * L * sizeof(double));
++    memset(self->state_trans->values, 0, T * L * L * sizeof(double));
++    memset(self->backward_edges->values, 0, T * L * sizeof(uint32_t));
++    self->num_items = T;
+     return true;
+ }
+ #endif
+@@ -390,7 +438,11 @@
+     size_t num_tokens = tokenized->tokens->n;
+ 
+     crf_context_t *crf_context = self->context;
++#ifdef EXP_LEAN_CONTEXT
++    if (!crf_context_set_num_items_lean(crf_context, num_tokens)) return false;
++#else
+     crf_context_set_num_items(crf_context, num_tokens);
++#endif
+ #ifndef EXP_NO_RESET
+     crf_context_reset(crf_context, CRF_CONTEXT_RESET_ALL);
+ #endif

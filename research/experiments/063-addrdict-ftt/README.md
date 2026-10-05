@@ -1,0 +1,14 @@
+# Experiment 063 — first-token table for the address-dictionary trie (on 062 `lf`)
+
+Date/time/timezone: created 2026-10-02T20:13:56-0700, America/Los_Angeles. Status: **rejected (slower)**
+
+Change (`EXP_FTT2`): a second 056-style table (56.4 MB, every vocabulary key walked from the root of the address-dictionary trie; the search uses the root when no language is given), slots of the normalized tokens probed before the address-dictionary search and reused for admin tokens with identical bytes.
+Checks: verify build 116,871 + 111,575 + 95,817 + 19,285,060 (2M fuzz) table-assisted walks (both tables), 0 mismatches; outputs identical (`raw/verify_summary.txt`).
+Screen (6 rounds, `raw/screen_analyze.stdout`):
+    v1 lf [6.833, 6.833, 6.82, 6.829, 6.827, 6.833] median 6.831
+    v1 f2 [7.086, 6.998, 7.092, 7.005, 6.972, 6.988] median 7.002
+    v1 f2 vs lf per round [0.9643, 0.9764, 0.9616, 0.9749, 0.9792, 0.9778]
+    osm lf [4.644, 4.326, 4.365, 4.304, 4.324, 4.348] median 4.337
+    osm f2 [4.51, 4.456, 4.353, 4.389, 4.368, 4.396] median 4.393
+    osm f2 vs lf per round [1.0297, 0.9708, 1.0028, 0.9806, 0.9899, 0.9891]
+−2.1…−3.8% golden-v1, ≈−1% OSM: the address-dictionary trie is small and cached; the extra vocabulary probes and a cold 56 MB table cost more than the walks they replace.

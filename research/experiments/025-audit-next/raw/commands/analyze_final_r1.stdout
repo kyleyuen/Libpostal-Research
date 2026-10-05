@@ -1,0 +1,23 @@
+| dataset | variant | passes | setup s | system busy % | passes preempted | median µs | P10 µs | CPU-time median µs | clean-pass median µs (n) | cold pass1 µs |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| novel | baseline | 90 | 2.96 | nan | 100% | 35.74 | 34.74 | 35.73 | nan (0) | 36.90 |
+| novel | fixes | 90 | 8.95 | nan | 91% | 7.93 | 7.79 | 7.93 | 7.86 (8) | 8.21 |
+| novel | borrow | 90 | 8.69 | nan | 90% | 7.93 | 7.83 | 7.93 | 7.85 (9) | 8.15 |
+| v1-all | baseline | 90 | 3.16 | nan | 100% | 35.37 | 33.98 | 35.36 | nan (0) | 36.72 |
+| v1-all | fixes | 90 | 9.08 | nan | 97% | 8.15 | 7.77 | 8.15 | 7.72 (3) | 8.53 |
+| v1-all | borrow | 90 | 9.05 | nan | 96% | 8.03 | 7.78 | 8.03 | 7.83 (4) | 8.94 |
+
+Speedup vs baseline (baseline µs / variant µs) by estimator:
+
+| dataset | variant | median | P10 (interference-free) | CPU-time | clean passes | cold pass1 |
+|---|---|---:|---:|---:|---:|---:|
+| novel | fixes | 4.508x | 4.462x | 4.508x | nanx | 4.493x |
+| novel | borrow | 4.508x | 4.438x | 4.508x | nanx | 4.528x |
+| v1-all | fixes | 4.341x | 4.374x | 4.341x | nanx | 4.307x |
+| v1-all | borrow | 4.404x | 4.369x | 4.404x | nanx | 4.107x |
+
+Per-country speedup (last warm pass, median over processes; countries with >=100 addresses):
+  novel   fixes : countries=17 min 3.776 (tw) median 4.589 max 5.061 (ru); below 1.05x: 0
+  novel   borrow: countries=17 min 3.793 (tw) median 4.572 max 5.059 (ru); below 1.05x: 0
+  v1-all  fixes : countries=17 min 3.473 (tw) median 4.247 max 4.554 (ru); below 1.05x: 0
+  v1-all  borrow: countries=17 min 3.645 (tw) median 4.397 max 4.769 (ru); below 1.05x: 0

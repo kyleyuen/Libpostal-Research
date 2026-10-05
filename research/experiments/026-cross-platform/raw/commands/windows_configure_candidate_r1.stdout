@@ -1,0 +1,150 @@
+CFLAGS=-std=gnu2x -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 2
+checking whether build environment is sane... yes
+checking for x86_64-w64-mingw32-strip... x86_64-w64-mingw32-strip
+checking for a race-free mkdir -p... mkdir -p
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '501' is supported by ustar format... yes
+checking whether GID '20' is supported by ustar format... yes
+checking how to create a ustar tar archive... plaintar
+checking build system type... aarch64-apple-darwin25.5.0
+checking host system type... x86_64-w64-mingw32
+checking how to print strings... printf
+checking whether make supports the include directive... yes (GNU style)
+checking for x86_64-w64-mingw32-gcc... x86_64-w64-mingw32-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.exe
+checking for suffix of executables... .exe
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-w64-mingw32-gcc accepts -g... yes
+checking for x86_64-w64-mingw32-gcc option to enable C23 features... unsupported
+checking for x86_64-w64-mingw32-gcc option to enable C11 features... none needed
+checking whether x86_64-w64-mingw32-gcc understands -c and -o together... yes
+checking dependency style of x86_64-w64-mingw32-gcc... gcc3
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-w64-mingw32-gcc... /opt/homebrew/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld
+checking if the linker (/opt/homebrew/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /opt/homebrew/bin/x86_64-w64-mingw32-nm -B
+checking the name lister (/opt/homebrew/bin/x86_64-w64-mingw32-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 786432
+checking how to convert aarch64-apple-darwin25.5.0 file names to x86_64-w64-mingw32 format... func_convert_file_nix_to_w32
+checking how to convert aarch64-apple-darwin25.5.0 file names to toolchain format... func_convert_file_noop
+checking for /opt/homebrew/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld option to reload object files... -r
+checking for file... file
+checking for x86_64-w64-mingw32-objdump... x86_64-w64-mingw32-objdump
+checking how to recognize dependent libraries... file_magic ^x86 archive import|^x86 DLL
+checking for x86_64-w64-mingw32-dlltool... x86_64-w64-mingw32-dlltool
+checking how to associate runtime and link libraries... func_cygming_dll_for_implib
+checking for x86_64-w64-mingw32-ranlib... x86_64-w64-mingw32-ranlib
+checking for x86_64-w64-mingw32-ar... x86_64-w64-mingw32-ar
+checking for archiver @FILE support... @
+checking for x86_64-w64-mingw32-strip... (cached) x86_64-w64-mingw32-strip
+checking command to parse /opt/homebrew/bin/x86_64-w64-mingw32-nm -B output from x86_64-w64-mingw32-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-w64-mingw32-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for sys/time.h... yes
+checking for dlfcn.h... no
+checking for x86_64-w64-mingw32-as... x86_64-w64-mingw32-as
+checking for x86_64-w64-mingw32-dlltool... (cached) x86_64-w64-mingw32-dlltool
+checking for x86_64-w64-mingw32-objdump... (cached) x86_64-w64-mingw32-objdump
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if x86_64-w64-mingw32-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-w64-mingw32-gcc option to produce PIC... -DDLL_EXPORT -DPIC
+checking if x86_64-w64-mingw32-gcc PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if x86_64-w64-mingw32-gcc static flag -static works... yes
+checking if x86_64-w64-mingw32-gcc supports -c -o file.o... yes
+checking if x86_64-w64-mingw32-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-w64-mingw32-gcc linker (/opt/homebrew/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for library containing log... none required
+checking for egrep... (cached) /usr/bin/grep -E
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99 or later... yes
+checking for fcntl.h... yes
+checking for float.h... yes
+checking for inttypes.h... (cached) yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for malloc.h... yes
+checking for memory.h... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for inline... inline
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for int8_t... yes
+checking for off_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for uint8_t... yes
+checking for ptrdiff_t... yes
+checking for malloc... yes
+checking for realloc... yes
+checking for drand48... no
+checking for getcwd... yes
+checking for gettimeofday... yes
+checking for memmove... yes
+checking for memset... yes
+checking for regcomp... no
+checking for setlocale... yes
+checking for sqrt... yes
+checking for strdup... yes
+checking for strndup... no
+checking for shuf... no
+checking for gshuf... no
+checking for cblas.h... no
+configure: extra cflags for scanner.c: 
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libpostal.pc
+config.status: creating src/Makefile
+config.status: creating src/libpostal_data
+config.status: creating test/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands

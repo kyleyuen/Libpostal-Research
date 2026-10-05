@@ -1,0 +1,42 @@
+--- ../119-component-phrase-ids/sources/trie_search.c	2026-10-04 01:21:21
++++ sources/trie_search.c	2026-10-04 02:27:39
+@@ -342,6 +342,13 @@
+ // of each token (or -1) for the trie the table belongs to. The loop then starts at its last step with last_node_id = prev and reads fin instead of
+ // computing the transition; every branch after that is the original code.
+ const trie_t *trie_ftt_trie = NULL; const uint64_t *trie_ftt_tab = NULL; const int32_t *trie_ftt_slot = NULL; size_t trie_ftt_n = 0;
++#ifdef EXP_PDT
++// Experiment 111: the same kind of entry for every ASCII digit string d of 1..5 bytes (126; 111 used 1..4), walked in the postcode trie (model data only). For a token starting
++// with m >= 1 ASCII digits, the entry of its first min(m, 5) bytes says where the byte loop's walk of those bytes ends (fall-off, tail or end of the
++// prefix); those steps are the token's own first steps, so the loop can start at the entry's last step exactly as for 056 entries.
++const trie_t *trie_pdt_trie = NULL; uint64_t trie_pdt_tab[111110];
++static const uint32_t pdt_base[6] = {0, 0, 10, 110, 1110, 11110};
++#endif
+ #ifdef EXP_FTT_VERIFY
+ unsigned long long trie_ftt_verified = 0;
+ __attribute__((destructor)) static void ftt_report(void) { fprintf(stderr, "EXP_FTT_VERIFY: %llu tokens checked, 0 mismatches\n", trie_ftt_verified); }
+@@ -440,6 +447,25 @@
+ 
+ #ifdef EXP_FTT
+         int ftt_j0 = 0; uint32_t ftt_fin = 0; bool ftt_use = false;
++#ifdef EXP_PDT
++        if (self == trie_pdt_trie && token.type != WHITESPACE && token_length > 0 && (unsigned)((unsigned char)ptr[0] - '0') < 10u &&
++            node_id == start_node_id && last_node_id == start_node_id && start_node_id == ROOT_NODE_ID && node.base >= 0 && last_node.base >= 0) {
++            uint32_t v = 0; size_t m = 0;
++            while (m < 5 && m < token_length && (unsigned)((unsigned char)ptr[m] - '0') < 10u) { v = v * 10 + (uint32_t)(ptr[m] - '0'); m++; }
++            uint64_t e = trie_pdt_tab[pdt_base[m] + v];
++#ifdef EXP_PDT_VERIFY
++            if (trie_ftt_walk(self, ptr, m) != e) { fprintf(stderr, "EXP_PDT_VERIFY MISMATCH '%.*s'\n", (int)token_length, ptr); abort(); }
++#endif
++            if (e >> 63) {
++                int kk = (int)((e >> 46) & 0xFF);
++                if (kk >= 1 && kk <= (int)token_length) {
++                    ftt_use = true; ftt_j0 = kk - 1; ftt_fin = (uint32_t)(e & 0x7FFFFF);
++                    last_node_id = (uint32_t)((e >> 23) & 0x7FFFFF); last_node.base = 0; last_node.check = 0;   // only .base >= 0 and the id are read
++                    ptr += ftt_j0;
++                }
++            }
++        } else
++#endif
+         if (self == trie_ftt_trie && trie_ftt_slot != NULL && (size_t)i < trie_ftt_n && trie_ftt_slot[i] >= 0 && token.type != WHITESPACE &&
+             node_id == start_node_id && last_node_id == start_node_id && start_node_id == ROOT_NODE_ID && node.base >= 0 && last_node.base >= 0) {
+             uint64_t e = trie_ftt_tab[trie_ftt_slot[i]];

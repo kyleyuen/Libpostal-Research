@@ -1,0 +1,29 @@
+setup_seconds=2.97
+
+=== state_features: trie nodes=22140243 tail=68802960 data=11470624 num_keys(header)=11470623 alphabet=256  trie_bytes=337689896 (322.0 MB)
+dict: keys=11470623 leaves_total=11470623 visited=11470623 skipped_unreachable=0 names=29 build_seconds=2.58 table=116.7 MB (15294166 slots, load 0.75) arena=190.7 MB (mean 17.43 B/key) total=307.3 MB = 95.4% of trie
+names: [next word] [sub_word] [suffix] [unambiguous phrase type+phrase] [unambiguous phrase type] [commonly island] [commonly state] [commonly state_district] [commonly suburb] [commonly city] [commonly city_district] [commonly country] [commonly country_region] [postcode no context] [postcode have context] [prefix] [prev word+word] [prev word] [phrase type+phrase] [phrase] [bias] [first word unknown+number right] [first word unknown+number+ambiguous phrase right] [first word unknown+street affix right] [first word unknown+street phrase right] [first word unknown+venue phrase right] [first word] [word+next word] [word]
+exhaustive round-trip: checked=11470623 mismatches=0 (3.4s)
+fuzz: mutations=2000000 (trie hits 300447) mismatches=0
+timing dev keys=472695 rep0: corpus-order trie 185.7 | dict 60.3 | dict-batched(32) 35.2 ns/lookup || shuffled trie 292.1 | dict 131.0  (hits 397660/397660/397660 397660/397660)
+timing dev keys=472695 rep1: corpus-order trie 182.7 | dict 60.3 | dict-batched(32) 35.5 ns/lookup || shuffled trie 291.8 | dict 136.5  (hits 397660/397660/397660 397660/397660)
+timing dev keys=472695 rep2: corpus-order trie 181.5 | dict 59.8 | dict-batched(32) 35.0 ns/lookup || shuffled trie 289.9 | dict 132.1  (hits 397660/397660/397660 397660/397660)
+corpus-key agreement dev: keys=472695 mismatches=0
+timing novel keys=602989 rep0: corpus-order trie 183.5 | dict 63.0 | dict-batched(32) 35.4 ns/lookup || shuffled trie 295.4 | dict 158.7  (hits 496541/496541/496541 496541/496541)
+timing novel keys=602989 rep1: corpus-order trie 186.8 | dict 62.7 | dict-batched(32) 35.7 ns/lookup || shuffled trie 293.0 | dict 154.2  (hits 496541/496541/496541 496541/496541)
+timing novel keys=602989 rep2: corpus-order trie 185.8 | dict 63.2 | dict-batched(32) 35.4 ns/lookup || shuffled trie 296.5 | dict 156.2  (hits 496541/496541/496541 496541/496541)
+corpus-key agreement novel: keys=602989 mismatches=0
+
+=== state_trans_features: trie nodes=3818106 tail=9243458 data=2086475 num_keys(header)=2086474 alphabet=256  trie_bytes=56480106 (53.9 MB)
+dict: keys=2086474 leaves_total=2086474 visited=2086474 skipped_unreachable=0 names=2 build_seconds=0.36 table=21.2 MB (2781967 slots, load 0.75) arena=26.1 MB (mean 13.10 B/key) total=47.3 MB = 87.8% of trie
+names: [prev word] [word]
+exhaustive round-trip: checked=2086474 mismatches=0 (0.4s)
+fuzz: mutations=2000000 (trie hits 402072) mismatches=0
+timing dev keys=90048 rep0: corpus-order trie 147.7 | dict 62.8 | dict-batched(32) 28.8 ns/lookup || shuffled trie 131.1 | dict 62.4  (hits 85890/85890/85890 85890/85890)
+timing dev keys=90048 rep1: corpus-order trie 112.1 | dict 54.2 | dict-batched(32) 27.9 ns/lookup || shuffled trie 125.3 | dict 64.6  (hits 85890/85890/85890 85890/85890)
+timing dev keys=90048 rep2: corpus-order trie 103.9 | dict 59.9 | dict-batched(32) 27.2 ns/lookup || shuffled trie 147.9 | dict 65.0  (hits 85890/85890/85890 85890/85890)
+corpus-key agreement dev: keys=90048 mismatches=0
+timing novel keys=111006 rep0: corpus-order trie 137.3 | dict 61.0 | dict-batched(32) 28.9 ns/lookup || shuffled trie 148.5 | dict 70.0  (hits 104864/104864/104864 104864/104864)
+timing novel keys=111006 rep1: corpus-order trie 132.2 | dict 49.8 | dict-batched(32) 27.9 ns/lookup || shuffled trie 126.0 | dict 63.2  (hits 104864/104864/104864 104864/104864)
+timing novel keys=111006 rep2: corpus-order trie 119.8 | dict 59.1 | dict-batched(32) 29.0 ns/lookup || shuffled trie 135.6 | dict 65.4  (hits 104864/104864/104864 104864/104864)
+corpus-key agreement novel: keys=111006 mismatches=0

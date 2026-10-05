@@ -1,0 +1,10 @@
+dev: c=0.772; lookup saving at full coverage 0.041 us; c_canon 14.3 ns
+   bigram card: pess 0.119 (2.1%, 6.21x)  mid 0.151 (2.7%)  opt 0.203 (3.7%, 6.31x)  ceiling 0.391 (7.1%, 6.54x)
+   + other families 0.070-0.119 us (extrapolated) + phrase-type slice +0.061 us (130 measured)
+   WHOLE PIPELINE realistic 0.250-0.383 us = 4.5-6.9% -> 6.36-6.53x ; outer ceiling 0.682 us = 12.3% -> 6.93x
+   7.8x needs 1.222 us; left after realistic pipeline 0.839-0.973 us; after ceiling 0.541 us
+osm: c=0.819; lookup saving at full coverage 0.043 us; c_canon 10.5 ns
+   bigram card: pess 0.138 (3.8%, 6.00x)  mid 0.159 (4.4%)  opt 0.194 (5.3%, 6.10x)  ceiling 0.330 (9.1%, 6.35x)
+   + other families 0.062-0.088 us (extrapolated) + phrase-type slice -0.007 us (130 measured)
+   WHOLE PIPELINE realistic 0.193-0.275 us = 5.3-7.5% -> 6.10-6.25x ; outer ceiling 0.479 us = 13.2% -> 6.65x
+   7.8x needs 0.945 us; left after realistic pipeline 0.670-0.752 us; after ceiling 0.466 us

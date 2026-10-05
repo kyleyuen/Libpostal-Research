@@ -1,0 +1,142 @@
+--- ../libpostal/src/address_parser.c	2026-09-28 15:50:15
++++ experiments/011-normalize-fastpaths/candidate/address_parser.c	2026-09-29 20:15:10
+@@ -11,6 +11,10 @@
+ 
+ #define ADDRESS_PARSER_MODEL_FILENAME "address_parser.dat"
+ #define ADDRESS_PARSER_MODEL_FILENAME_CRF "address_parser_crf.dat"
++#ifdef EXP_VOCAB_DICT
++#include "feature_dict.h"
++static feature_dict_t *vocab_dict = NULL;
++#endif
+ #define ADDRESS_PARSER_VOCAB_FILENAME "address_parser_vocab.trie"
+ #define ADDRESS_PARSER_PHRASE_FILENAME "address_parser_phrases.dat"
+ #define ADDRESS_PARSER_POSTAL_CODES_FILENAME "address_parser_postal_codes.dat"
+@@ -229,6 +233,18 @@
+     }
+ 
+     parser->vocab = vocab;
++#ifdef EXP_VOCAB_DICT
++    if (getenv("CRF_DICT_DISABLE") == NULL) {   // experiment switch; any doubt keeps the trie
++        feature_dict_t *vd = fd_build_ex(vocab, false, true);
++        if (vd != NULL) {
++            if (getenv("CRF_DICT_VERBOSE") != NULL) fprintf(stderr, "vocab dictionary: keys=%llu build=%.2fs dict=%.1f MB replaces trie=%.1f MB\n", (unsigned long long)vd->num_keys, vd->build_seconds,
++                (vd->size * 8 + vd->arena_used) / 1048576.0, (vocab->nodes->n * sizeof(trie_node_t) + vocab->tail->n + vocab->data->n * sizeof(trie_data_node_t)) / 1048576.0);
++            vocab_dict = vd;
++            trie_destroy(vocab);
++            parser->vocab = NULL;
++        }
++    }
++#endif
+ 
+     char_array_clear(path);
+ 
+@@ -321,6 +337,9 @@
+         address_parser_context_destroy(self->context);
+     }
+ 
++#ifdef EXP_VOCAB_DICT
++    if (self == parser) { fd_destroy(vocab_dict); vocab_dict = NULL; }
++#endif
+     if (self->vocab != NULL) {
+         trie_destroy(self->vocab);
+     }
+@@ -346,6 +365,12 @@
+ 
+ static inline uint32_t word_vocab_frequency(address_parser_t *parser, char *word) {   
+     uint32_t count = 0;
++#ifdef EXP_VOCAB_DICT
++    if (vocab_dict != NULL) {
++        if (!fd_lookup(vocab_dict, word, strlen(word), &count)) count = 0;
++        return count;
++    }
++#endif
+     bool has_key = trie_get_data(parser->vocab, word, &count);
+     return count;
+ }
+@@ -356,9 +381,37 @@
+ 
+ static inline void address_parser_normalize_phrase_token(cstring_array *array, char *str, token_t token) {
+     normalize_token(array, str, token, ADDRESS_PARSER_NORMALIZE_ADMIN_TOKEN_OPTIONS);
++}
++
++#ifdef EXP_ASCII_NORM
++// Experiment 011. For a string made only of bytes 0x20-0x7E other than '&', normalize_string_latin(COMPOSE|LOWERCASE|SIMPLE_LATIN_ASCII) is exactly ASCII lowercasing:
++//  - the transliterator "latin-ascii-simple" has two steps; "html-escape" has 65,788 rules that ALL start with '&', and ruleset "1" has 138 rules whose first bytes are all
++//    UTF-8 lead bytes (0xC2,0xC3,0xCB,0xE2,0xE3,0xEF), so no rule can start at any other ASCII byte and transliteration leaves the string unchanged;
++//  - the UTF-8 step (compose + lowercase) maps A-Z to a-z and leaves other ASCII unchanged.
++// Verified by differential test against the library (839,514 exhaustive short strings, 60M random strings, corpus lines; 0 mismatches). Anything else falls back to the library.
++static inline char *address_parser_normalize_ascii_fast(char *str) {
++    size_t len = strlen(str);
++    if (len == 0) return NULL;
++    for (size_t i = 0; i < len; i++) {
++        unsigned char c = (unsigned char)str[i];
++        if (c < 0x20 || c > 0x7e || c == '&') return NULL;
++    }
++    char *out = malloc(len + 1);
++    if (out == NULL) return NULL;
++    for (size_t i = 0; i < len; i++) {
++        char c = str[i];
++        out[i] = (c >= 'A' && c <= 'Z') ? (char)(c + 32) : c;
++    }
++    out[len] = '\0';
++    return out;
+ }
++#endif
+ 
+ inline char *address_parser_normalize_string(char *str) {
++#ifdef EXP_ASCII_NORM
++    char *fast = address_parser_normalize_ascii_fast(str);
++    if (fast != NULL) return fast;
++#endif
+     return normalize_string_latin(str, strlen(str), ADDRESS_PARSER_NORMALIZE_STRING_OPTIONS);
+ }
+ 
+@@ -723,6 +776,20 @@
+         token_array_push(normalized_tokens, normalized_token);
+ 
+         size_t admin_token_offset = normalized_admin->str->n;
++#ifdef EXP_ADMIN_SHARE
++        // The admin options equal the standard token options minus NORMALIZE_TOKEN_REPLACE_DIGITS, which only acts on digit characters (normalize.c). For an
++        // all-ASCII token without digits both normalizations therefore produce identical bytes: reuse the first result (differential test: 0 mismatches).
++        bool share_admin = true;
++        for (size_t b = 0; b < token.len; b++) {
++            unsigned char c = (unsigned char)(str + token.offset)[b];
++            if (c >= 0x80 || (c >= '0' && c <= '9')) { share_admin = false; break; }
++        }
++        if (share_admin) {
++            cstring_array_start_token(normalized_admin);
++            char_array_append_len(normalized_admin->str, normalized->str->a + token_offset, normalized->str->n - 1 - token_offset);
++            char_array_terminate(normalized_admin->str);
++        } else
++#endif
+         address_parser_normalize_phrase_token(normalized_admin, str, token);
+         size_t admin_token_len;
+         if (normalized_admin->str->n > admin_token_offset) {
+@@ -1085,6 +1152,10 @@
+ char *prev2: the predicted tag at index i - 2
+ 
+ */
++
++#ifdef EXP_DIRECT_KEYS
++extern int crf_features_accumulate;   // defined in crf.c
++#endif
+ 
+ bool address_parser_features(void *self, void *ctx, tokenized_string_t *tokenized, uint32_t idx) {
+     if (self == NULL || ctx == NULL) return false;
+@@ -1108,9 +1179,16 @@
+ 
+     uint32_array *separators = context->separators;
+ 
++#ifdef EXP_DIRECT_KEYS
++    // crf_tagger_score accumulates every token's features in these arrays (no per-token copy) and clears them itself.
++    if (!crf_features_accumulate) {
++#endif
+     cstring_array_clear(features);
+     cstring_array_clear(prev_tag_features);
+     cstring_array_clear(prev2_tag_features);
++#ifdef EXP_DIRECT_KEYS
++    }
++#endif
+ 
+     token_array *tokens = tokenized->tokens;
+ 

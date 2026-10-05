@@ -1,0 +1,20 @@
+HOT_PROBE_TOP 0 'DDDDD' slot-field 330797339 fd_lookup 330797339
+HOT_PROBE_TOP 1 'DD' slot-field 249191847 fd_lookup 249191847
+HOT_PROBE_TOP 2 'DDD' slot-field 183265675 fd_lookup 183265675
+HOT_PROBE_TOP 3 'DDDD' slot-field 180361572 fd_lookup 180361572
+HOT_PROBE_TOP 4 'D' slot-field 120556336 fd_lookup 120556336
+HOT_PROBE_TOP 5 'DDDDD-DDD' slot-field 76736821 fd_lookup 76736821
+HOT_PROBE_TOP 6 'rua' slot-field 49022916 fd_lookup 49022916
+HOT_PROBE_TOP 7 'de' slot-field 34253590 fd_lookup 34253590
+HOT_PROBE_TOP 8 'r' slot-field 33763082 fd_lookup 33763082
+HOT_PROBE_TOP 9 'st' slot-field 27424037 fd_lookup 27424037
+HOT_PROBE_TOP 10 'DD-DDD' slot-field 24441607 fd_lookup 24441607
+HOT_PROBE_TOP 11 'dr' slot-field 23024983 fd_lookup 23024983
+HOT_PROBE_LOAD budget 1 MB: 993 most frequent words of 3694560, 1.0 MB of rows
+HOT_PROBE_LOAD budget 4 MB: 4855 most frequent words of 3694560, 4.0 MB of rows
+HOT_PROBE_LOAD budget 16 MB: 27936 most frequent words of 3694560, 16.0 MB of rows
+HOT_PROBE state per address: rows read 35.9, records 454.5; lookup keys 40.2, not found 4.2 (10.5%)
+HOT_PROBE trans per address: rows read 7.5, records 587.4; lookup keys 7.8, not found 0.2 (2.9%)
+HOT_PROBE budget 1 MB                 hot rows: state 18.5% (records 26.3%), trans 55.3% (records 82.7%)
+HOT_PROBE budget 4 MB (design point)  hot rows: state 21.4% (records 29.0%), trans 66.7% (records 88.6%)
+HOT_PROBE budget 16 MB                hot rows: state 24.8% (records 31.9%), trans 79.7% (records 94.3%)

@@ -1,0 +1,36 @@
+2026-10-04T01:34:13-0700 START dump_orig: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/017-loadtime-precompute/artifacts/dump_outputs_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.txt
+2026-10-04T01:34:16-0700 END dump_orig exit=0
+2026-10-04T01:34:16-0700 START dump_rt8: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/114-trans-rows-prefetch/artifacts/rt8/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.txt
+2026-10-04T01:34:26-0700 END dump_rt8 exit=0
+2026-10-04T01:34:26-0700 START dump_cpi: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.txt
+2026-10-04T01:34:37-0700 END dump_cpi exit=0
+2026-10-04T01:34:37-0700 START timing/u_r1_rt8: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/114-trans-rows-prefetch/artifacts/rt8/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:34:47-0700 END timing/u_r1_rt8 exit=0
+2026-10-04T01:34:49-0700 START timing/u_r1_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:35:01-0700 END timing/u_r1_cpi exit=0
+2026-10-04T01:35:03-0700 START timing/u_r1_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:35:09-0700 END timing/u_r1_orig exit=0
+2026-10-04T01:35:11-0700 START timing/u_r2_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:35:23-0700 END timing/u_r2_cpi exit=0
+2026-10-04T01:35:26-0700 START timing/u_r2_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:35:31-0700 END timing/u_r2_orig exit=0
+2026-10-04T01:35:34-0700 START timing/u_r2_rt8: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/114-trans-rows-prefetch/artifacts/rt8/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:35:43-0700 END timing/u_r2_rt8 exit=0
+2026-10-04T01:35:45-0700 START timing/u_r3_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:35:51-0700 END timing/u_r3_orig exit=0
+2026-10-04T01:35:53-0700 START timing/u_r3_rt8: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/114-trans-rows-prefetch/artifacts/rt8/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:36:03-0700 END timing/u_r3_rt8 exit=0
+2026-10-04T01:36:05-0700 START timing/u_r3_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:36:17-0700 END timing/u_r3_cpi exit=0
+2026-10-04T01:36:19-0700 START timing/u_r4_rt8: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/114-trans-rows-prefetch/artifacts/rt8/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:36:29-0700 END timing/u_r4_rt8 exit=0
+2026-10-04T01:36:31-0700 START timing/u_r4_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:36:43-0700 END timing/u_r4_cpi exit=0
+2026-10-04T01:36:46-0700 START timing/u_r4_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:36:51-0700 END timing/u_r4_orig exit=0
+2026-10-04T01:36:53-0700 START timing/u_r5_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:37:06-0700 END timing/u_r5_cpi exit=0
+2026-10-04T01:37:08-0700 START timing/u_r5_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:37:13-0700 END timing/u_r5_orig exit=0
+2026-10-04T01:37:16-0700 START timing/u_r5_rt8: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/114-trans-rows-prefetch/artifacts/rt8/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv 20
+2026-10-04T01:37:25-0700 END timing/u_r5_rt8 exit=0

@@ -1,0 +1,6947 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-05T03:31:48Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 92897807,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Avignon",
+    "addr:housenumber": "18",
+    "addr:postcode": "84000",
+    "addr:street": "Place Pie",
+    "amenity": "parking",
+    "brand": "Indigo",
+    "brand:wikidata": "Q3559970",
+    "capacity": "520",
+    "fee": "yes",
+    "level": "1",
+    "name": "Les Halles",
+    "opening_hours": "24/7",
+    "operator": "Indigo",
+    "operator:type": "private",
+    "operator:wikidata": "Q3559970",
+    "park_ride": "no",
+    "parking": "multi-storey",
+    "phone": "+33 4 90 27 15 15",
+    "supervised": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 302848756,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Place du Palais",
+    "amenity": "restaurant",
+    "check_date": "2026-01-03",
+    "indoor_seating": "yes",
+    "name": "Café In et Off",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "838220572",
+    "ref:FR:SIRET": "83822057200013",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 302848757,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Place du Palais",
+    "check_date": "2025-04-05",
+    "email": "contact@hotel-avignon.com",
+    "fax": "+33 4 90 27 91 17",
+    "internet_access": "wlan",
+    "name": "Hôtel du Palais des Papes",
+    "phone": "+33 4 90 86 04 13",
+    "ref:FR:NAF": "55.10Z",
+    "ref:FR:SIREN": "433162021",
+    "ref:FR:SIRET": "43316202100029",
+    "source": "INSEE - 2026-06",
+    "source:stars": "survey 2013",
+    "stars": "3",
+    "start_date": "2000-10-31",
+    "tourism": "hotel",
+    "website": "https://www.hotel-avignon.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 302848804,
+  "tags": {
+    "addr:housenumber": "8",
+    "addr:street": "Rue de la balance ",
+    "amenity": "restaurant",
+    "check_date": "2025-04-06",
+    "contact:housenumber": "10",
+    "contact:street": "Rue de la Balance",
+    "name": "Restaurant Festicafé",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "502660541",
+    "ref:FR:SIRET": "50266054100017",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 302852528,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue Félicien David",
+    "amenity": "cafe",
+    "check_date": "2025-08-10",
+    "contact:facebook": "61566646900500",
+    "cuisine": "french",
+    "indoor_seating": "yes",
+    "name": "Casa Bronzini",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "927619791",
+    "ref:FR:SIRET": "92761979100019",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 302852532,
+  "tags": {
+    "addr:housenumber": "24",
+    "addr:street": "Place de l'Horloge",
+    "amenity": "restaurant",
+    "indoor_seating": "yes",
+    "name": "L'Opéra Café",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "438221228",
+    "ref:FR:SIRET": "43822122800010",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2023-12-06"
+  }
+},
+{
+  "type": "node",
+  "id": 302852533,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:street": "Rue de Mons",
+    "amenity": "restaurant",
+    "name": "La Sperlongaise",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIREN": "340915057",
+    "ref:FR:SIRET": "34091505700012",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2023-12-06"
+  }
+},
+{
+  "type": "node",
+  "id": 302852534,
+  "tags": {
+    "addr:housenumber": "20",
+    "addr:street": "Place de l'Horloge",
+    "amenity": "restaurant",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Le Forum",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIREN": "819025453",
+    "ref:FR:SIRET": "81902545300021",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2023-12-06"
+  }
+},
+{
+  "type": "node",
+  "id": 302852535,
+  "tags": {
+    "addr:housenumber": "18",
+    "addr:street": "Place de l'Horloge",
+    "amenity": "restaurant",
+    "name": "Brasserie de l'hôtel de ville",
+    "old_name": "L'Hôtel de Ville",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "818846941",
+    "ref:FR:SIRET": "81884694100016",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-20"
+  }
+},
+{
+  "type": "node",
+  "id": 302852536,
+  "tags": {
+    "addr:housenumber": "26 Bis",
+    "addr:street": "Place de l'Horloge",
+    "amenity": "restaurant",
+    "name": "La brasse",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "987898616",
+    "ref:FR:SIRET": "98789861600014",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-20",
+    "was:name": "Le Venaissin"
+  }
+},
+{
+  "type": "node",
+  "id": 303075922,
+  "tags": {
+    "addr:housenumber": "21 bis",
+    "addr:street": "Place Crillon",
+    "amenity": "restaurant",
+    "check_date": "2026-02-18",
+    "cuisine": "italian",
+    "name": "Milano",
+    "opening_hours": "Mo-Sa 08:30-14:30,18:30-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+33 4 66 55 68 96",
+    "was:name": "La Piazza;Les Artistes",
+    "website": "https://www.restaurantlemilano.fr",
+    "website:menu": "http://api.sherbert.cimpress.io/v3/assets/3E3DZ2upY9tEWsV4Kz1vF~200/versions/1?signature=7769c00f52e3c0a4fcf465de3ca7065773d4d5fa"
+  }
+},
+{
+  "type": "node",
+  "id": 303075926,
+  "tags": {
+    "addr:housenumber": "19",
+    "addr:street": "Place Crillon",
+    "amenity": "restaurant",
+    "name": "La Scène",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIREN": "844732354",
+    "ref:FR:SIRET": "84473235400015",
+    "source": "INSEE - 2026-06",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 303075927,
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:street": "Place Crillon",
+    "amenity": "restaurant",
+    "check_date": "2026-02-18",
+    "name": "Le Café de la Comédie",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIREN": "882426125",
+    "ref:FR:SIRET": "88242612500010",
+    "source": "INSEE - 2026-06",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 303075929,
+  "tags": {
+    "addr:housenumber": "9",
+    "addr:street": "Rue Folco de Baroncelli",
+    "check_date": "2026-02-15",
+    "check_date:opening_hours": "2026-02-15",
+    "mapillary": "2235385616595675",
+    "name": "Gallerie Ducastel",
+    "opening_hours": "Tu-Sa 10:00-12:30, 15:00-19:00",
+    "phone": "+33490820454",
+    "shop": "art",
+    "source": "survey",
+    "survey:date": "2026-04-29",
+    "website": "http://www.galerieducastel.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 303075942,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:street": "Rue du Rempart du Rhône",
+    "amenity": "restaurant",
+    "check_date": "2026-02-15",
+    "name": "La Ferugoulo",
+    "phone": "+33490821028",
+    "website": "https://www.laferigoulo.net/"
+  }
+},
+{
+  "type": "node",
+  "id": 303075943,
+  "tags": {
+    "addr:housenumber": "20",
+    "addr:street": "Rue Saint-Étienne",
+    "amenity": "restaurant",
+    "check_date": "2026-02-18",
+    "contact:facebook": "https://www.facebook.com/legoutdujour84",
+    "cuisine": "french",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Le Goût du jour",
+    "old_name": "Restaurant Michel Peyaud",
+    "panoramax": "e2840f47-cc7b-4398-8a9b-623c1c04b0ae",
+    "phone": "+33 4 32 76 32 16",
+    "source": "survey",
+    "survey:date": "2026-01-14",
+    "website": "https://www.legoutdujour84.com"
+  }
+},
+{
+  "type": "node",
+  "id": 303080428,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:country": "FR",
+    "addr:housenumber": "7",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Portail Matheron",
+    "amenity": "pharmacy",
+    "branch": "Roux",
+    "brand": "Lafayette",
+    "brand:wikidata": "Q91301346",
+    "dispensing": "yes",
+    "fax": "+33490828068",
+    "healthcare": "pharmacy",
+    "name": "Pharmacie Desneuf",
+    "opening_hours": "Mo-Sa 08:30-19:30",
+    "panoramax": "b311bbb1-e2b4-424f-bd93-19c0bf7e114c",
+    "phone": "+33490822538",
+    "ref:FR:FINESS": "840004550",
+    "ref:FR:SIRET": "44373597200020",
+    "source": "survey",
+    "survey:date": "2025-11-19",
+    "type:FR:FINESS": "620",
+    "was:name": "Lafayette;Au pain d'Avignon;Histoire de pains",
+    "was:shop": "bakery"
+  }
+},
+{
+  "type": "node",
+  "id": 419423773,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:street": "Rue Grivolas",
+    "amenity": "restaurant",
+    "check_date": "2025-11-12",
+    "check_date:opening_hours": "2025-11-12",
+    "indoor_seating": "yes",
+    "name": "La maison",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "821117249",
+    "ref:FR:SIRET": "82111724900010",
+    "source": "INSEE - 2026-02",
+    "was:name": "Vin sur vin;La Table du Blond",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 975409493,
+  "tags": {
+    "addr:housenumber": "23",
+    "addr:street": "Rue des Trois Colombes",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1427774354,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:street": "Rue Galante",
+    "amenity": "restaurant",
+    "cuisine": "french",
+    "highchair": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "kids_area": "no",
+    "level": "0",
+    "name": "Le Vintage",
+    "opening_hours": "Mo-Su 11:30-14:00,19:00-22:00",
+    "outdoor_seating": "no",
+    "phone": "+33 4 86 65 48 54",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "793942103",
+    "ref:FR:SIRET": "79394210300029",
+    "self_service": "no",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-01-26",
+    "toilets:wheelchair": "no",
+    "website": "https://levintageavignon.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1445335048,
+  "tags": {
+    "addr:housenumber": "18",
+    "addr:street": "Boulevard Raspail"
+  }
+},
+{
+  "type": "node",
+  "id": 1445366513,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "15",
+    "addr:street": "Boulevard Raspail",
+    "amenity": "restaurant",
+    "check_date": "2026-02-16",
+    "check_date:opening_hours": "2026-02-16",
+    "cuisine": "vietnamese",
+    "email": "croqnemletai84@gmail.com",
+    "name": "Croq Nem Le Tai",
+    "opening_hours": "Tu-Sa 11:30-14:00, 18:30-22:30",
+    "phone": "+33 4 90 85 06 82",
+    "source": "survey",
+    "survey:date": "2023-10-03",
+    "website": "https://www.croqnemletai.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1445386636,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "21",
+    "addr:street": "Rue Saint-Agricol",
+    "email": "pylones-avignon@pylones.com",
+    "mapillary": "lQ29C0ne941LUvGPQfl-Ow",
+    "name": "Pylones",
+    "opening_hours": "Tu-Sa 10:00-19:00",
+    "panoramax": "c18536dd-fd3e-444c-98ad-7cbfa7b50a65",
+    "phone": "+33 4 90 82 30 45",
+    "ref:FR:SIRET": "33225187500123",
+    "shop": "gift",
+    "source": "survey",
+    "survey:date": "2025-08-26",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1445439111,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "35",
+    "addr:street": "Rue Saint-Agricol",
+    "clothes": "men",
+    "name": "Hero",
+    "panoramax": "095c5109-635c-47aa-902d-37b2b1cc2180",
+    "ref:FR:SIRET": "50158257100094",
+    "shop": "clothes",
+    "source": "survey",
+    "survey:date": "2026-01-20",
+    "was:name": "JF Deldon",
+    "was:shop": "chocolate"
+  }
+},
+{
+  "type": "node",
+  "id": 1445441858,
+  "tags": {
+    "addr:housenumber": "27",
+    "addr:street": "Rue Joseph Vernet",
+    "brand": "Comptoir des Cotonniers",
+    "brand:wikidata": "Q2990868",
+    "check_date": "2023-07-19",
+    "mapillary": "553095072342801",
+    "name": "Comptoir des Cotonniers",
+    "opening_hours": "Tu-Sa 10:00-19:00; Mo 14:00-19:00",
+    "panoramax": "be653977-319a-44d5-a20e-cb94b960ef75",
+    "ref:FR:NAF": "14.13Z",
+    "ref:FR:SIRET": "48206578600428",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "start_date": "2014-12-15",
+    "survey:date": "2026-07-09",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1445443601,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "25",
+    "addr:street": "Rue Joseph Vernet",
+    "brand": "Cosmoparis",
+    "brand:wikidata": "Q105105839",
+    "mapillary": "764172337576428",
+    "name": "Cosmoparis",
+    "ref:FR:NAF": "47.72A",
+    "ref:FR:SIRET": "35297505600230",
+    "shop": "shoes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-13",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1445444602,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "25",
+    "addr:street": "Rue Joseph Vernet",
+    "brand": "Zadig & Voltaire",
+    "brand:wikidata": "Q3574548",
+    "brand:wikipedia": "fr:Zadig & Voltaire",
+    "clothes": "women",
+    "name": "Zadig & Voltaire",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIRET": "41348498100720",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-13",
+    "website": "https://storelocator.zadig-et-voltaire.com/fr/france/avignon/zadigvoltaire-avignon-182",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1445446333,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "10",
+    "addr:street": "Rue Joseph Vernet",
+    "brand:wikidata": "Q141242163",
+    "name": "Finsbury",
+    "opening_hours": "Tu-We 10:30-19:00; Th-Sa 10:00-19:00; Mo,Su off",
+    "panoramax": "ed104ec7-8021-4bba-8bfe-d8c6580e740b",
+    "phone": "+33 9 61 20 12 43",
+    "ref:FR:NAF": "47.72A",
+    "ref:FR:SIRET": "82430552800229",
+    "shop": "shoes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-13",
+    "was:name": "So'oH",
+    "was:shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1445458432,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue de la République",
+    "mapillary": "795642167725444",
+    "name": "Canon shoes",
+    "ref:FR:NAF": "47.64Z",
+    "ref:FR:SIREN": "424806958",
+    "ref:FR:SIRET": "42480695800023",
+    "shop": "shoes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2023-12-11",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1445459667,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "3",
+    "addr:street": "Rue de la République",
+    "brand": "Tezenis",
+    "brand:wikidata": "Q28056374",
+    "clothes": "women;underwear;swimwear;men;children",
+    "name": "Tezenis",
+    "panoramax": "9ed2aeeb-f763-45e3-82e5-79ddcebd579a",
+    "ref:FR:SIRET": "51509956202616",
+    "shop": "clothes",
+    "source": "survey",
+    "survey:date": "2026-01-16",
+    "was:brand": "André",
+    "was:name": "André",
+    "was:shop": "shoes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1445483521,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "14",
+    "addr:street": "Rue des Fourbisseurs",
+    "check_date": "2024-02-17",
+    "name": "My lemon factory",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIREN": "795403658",
+    "ref:FR:SIRET": "79540365800037",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "was:name": "Delishoes"
+  }
+},
+{
+  "type": "node",
+  "id": 1445484318,
+  "tags": {
+    "addr:housenumber": "27",
+    "addr:street": "Rue des Fourbisseurs",
+    "check_date": "2026-06-13",
+    "check_date:opening_hours": "2026-06-13",
+    "created_by": "iLOE 1.9",
+    "mapillary": "299990708190201",
+    "name": "Gris perle",
+    "opening_hours": "Tu-Fr 10:00-19:00; Sa 10:00-12:30,14:30-19:00",
+    "ref:FR:NAF": "47.78C",
+    "ref:FR:SIREN": "388589491",
+    "ref:FR:SIRET": "38858949100025",
+    "shop": "jewelry",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 1489546931,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Montée Jean XXIII",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489546940,
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:street": "Rue Gérard Philipe",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489546955,
+  "tags": {
+    "addr:housenumber": "19",
+    "addr:street": "Rue Gérard Philipe",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489558906,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "28",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489610275,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue Félicien David",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489610278,
+  "tags": {
+    "addr:housenumber": "11",
+    "addr:street": "Place de l'Horloge",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489610286,
+  "tags": {
+    "addr:housenumber": "12",
+    "addr:street": "Place de l'Horloge",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489610294,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Place de l'Horloge",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489610316,
+  "tags": {
+    "addr:housenumber": "17",
+    "addr:street": "Place de l'Horloge",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489610363,
+  "tags": {
+    "addr:housenumber": "20",
+    "addr:street": "Place de l'Horloge",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489610385,
+  "tags": {
+    "addr:housenumber": "30",
+    "addr:street": "Place de l'Horloge",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489711716,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue Henri Fabre",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489711750,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue des Escaliers Sainte-Anne",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489711801,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Rue Henri Fabre",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489711877,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Rue du Crucifix",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489711884,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Rue du Rempart de la Ligne",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489712028,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Rue Henri Fabre",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1489712097,
+  "tags": {
+    "addr:housenumber": "1 bis",
+    "addr:street": "Rue Sainte-Catherine",
+    "amenity": "theatre",
+    "check_date": "2026-02-16",
+    "description": "Développement et la valorisation de la danse sur le territoire.",
+    "email": "contact@theatre-golovine.com",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Théâtre Golovine",
+    "phone": "+33 4 90 86 01 27",
+    "source:festival": "Mairie d'Avignon",
+    "website": "https://www.theatre-golovine.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 1489712099,
+  "tags": {
+    "addr:housenumber": "14",
+    "addr:street": "Rue des Études",
+    "amenity": "theatre",
+    "check_date": "2026-02-15",
+    "email": "latarasque@wanadoo.fr",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Théâtre  la Nouvelle Étincelle",
+    "phone": "+33 4 90 85 43 91",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "source:festival": "Mairie d'Avignon",
+    "website": "https://lanouvelleetincelle.fr"
+  }
+},
+{
+  "type": "node",
+  "id": 1489712109,
+  "tags": {
+    "addr:housenumber": "1 bis",
+    "addr:street": "Rue des Escaliers Sainte-Anne",
+    "amenity": "theatre",
+    "check_date": "2026-02-16",
+    "email": "info@lesdoms.eu",
+    "fax": "+33 4 90 85 53 95",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Théâtre des Doms",
+    "phone": "+33 4 90 14 07 99",
+    "source:festival": "Mairie d'Avignon",
+    "website": "https://www.lesdoms.eu/"
+  }
+},
+{
+  "type": "node",
+  "id": 1489712110,
+  "tags": {
+    "addr:housenumber": "28",
+    "addr:street": "Rue du Roi René",
+    "amenity": "theatre",
+    "email": "contact@theatredeshalles.com",
+    "fax": "+33 4 90 82 95 43",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Théâtre des Halles",
+    "phone": "+33 4 90 85 52 57",
+    "ref:FR:NAF": "90.01Z",
+    "ref:FR:SIREN": "438145922",
+    "ref:FR:SIRET": "43814592200011",
+    "source": "INSEE - 2026-06",
+    "source:festival": "Mairie d'Avignon",
+    "website": "https://www.theatredeshalles.com/",
+    "wikidata": "Q17640034",
+    "wikipedia": "fr:Théâtre des Halles"
+  }
+},
+{
+  "type": "node",
+  "id": 1489712123,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "8 Bis",
+    "addr:street": "Rue Sainte-Catherine",
+    "amenity": "theatre",
+    "email": "contact@chenenoir.fr",
+    "fax": "+33 4 90 85 82 05",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Théâtre du Chêne Noir",
+    "phone": "+33 4 90 82 40 57",
+    "ref:FR:NAF": "90.01Z",
+    "ref:FR:SIREN": "305109662",
+    "ref:FR:SIRET": "30510966200018",
+    "source": "INSEE - 2026-06",
+    "source:festival": "Mairie d'Avignon",
+    "website": "https://www.chenenoir.fr/",
+    "wheelchair": "yes",
+    "wikidata": "Q3527784",
+    "wikipedia": "fr:Théâtre du Chêne noir"
+  }
+},
+{
+  "type": "node",
+  "id": 1489712125,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Rue Henri Fabre",
+    "amenity": "theatre",
+    "name": "Théâtre le Paris",
+    "phone": "0 899 70 60 51",
+    "ref:FR:SIRET": "02196244400010",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "survey:date": "2025-02-04",
+    "website": "http://www.leparisavignon.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1490187068,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue Violette",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1490187069,
+  "tags": {
+    "addr:housenumber": "14",
+    "addr:street": "Rue Violette",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1490187070,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Rue Saluces",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1490187071,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Rue Violette",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1490187072,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Rue Saluces",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1490187073,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:street": "Rue Saluces",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1490236423,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "5",
+    "addr:postcode": "84000",
+    "addr:street": "Rue du Laboureur",
+    "description": "Le Musée Angladon - Collection Jacques Doucet est un musée d'Avignon situé dans l'hôtel de Massilian, un ancien hôtel particulier du xviiie siècle. Créé en 1996, selon les volontés de Jean et Paulette Angladon-Dubrujeaud, héritiers du couturier parisien J",
+    "email": "angladon@angladon.com",
+    "fax": "+33 4 90 85 78 07",
+    "fee": "yes",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "museum": "art",
+    "name": "Musée Angladon",
+    "opening_hours": "Tu-Su 13:00-18:00",
+    "phone": "+33 4 90 82 29 03",
+    "source": "www.ot-avignon.fr",
+    "source:festival": "Mairie d'Avignon",
+    "tourism": "museum",
+    "website": "https://angladon.com/",
+    "wikidata": "Q3329052",
+    "wikipedia": "fr:Musée Angladon"
+  }
+},
+{
+  "type": "node",
+  "id": 1490236426,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:street": "Rue du Laboureur",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1490236429,
+  "tags": {
+    "addr:housenumber": "17",
+    "addr:street": "Rue Gérard Philipe",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1490236430,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Rue du Laboureur",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1493422255,
+  "tags": {
+    "addr:housenumber": "A",
+    "addr:street": "Avenue Maréchal de Lattre de Tassigny"
+  }
+},
+{
+  "type": "node",
+  "id": 1493422286,
+  "tags": {
+    "addr:housenumber": "B",
+    "addr:street": "Avenue Maréchal de Lattre de Tassigny"
+  }
+},
+{
+  "type": "node",
+  "id": 1493422310,
+  "tags": {
+    "addr:housenumber": "D",
+    "addr:street": "Avenue du 7e Génie"
+  }
+},
+{
+  "type": "node",
+  "id": 1493422346,
+  "tags": {
+    "addr:housenumber": "E",
+    "addr:street": "Avenue du 7e Génie"
+  }
+},
+{
+  "type": "node",
+  "id": 1493422366,
+  "tags": {
+    "addr:housenumber": "F",
+    "addr:street": "Avenue du 7e Génie"
+  }
+},
+{
+  "type": "node",
+  "id": 1493422387,
+  "tags": {
+    "addr:housenumber": "G",
+    "addr:street": "Avenue Maréchal de Lattre de Tassigny"
+  }
+},
+{
+  "type": "node",
+  "id": 1493422409,
+  "tags": {
+    "addr:housenumber": "H",
+    "addr:street": "Avenue du 7e Génie"
+  }
+},
+{
+  "type": "node",
+  "id": 1493422437,
+  "tags": {
+    "addr:housenumber": "J",
+    "addr:street": "Avenue Maréchal de Lattre de Tassigny"
+  }
+},
+{
+  "type": "node",
+  "id": 1493422472,
+  "tags": {
+    "addr:housenumber": "K",
+    "addr:street": "Avenue Maréchal de Lattre de Tassigny"
+  }
+},
+{
+  "type": "node",
+  "id": 1493422527,
+  "tags": {
+    "addr:housenumber": "N",
+    "addr:street": "Avenue du 7e Génie"
+  }
+},
+{
+  "type": "node",
+  "id": 1493422563,
+  "tags": {
+    "addr:housenumber": "O",
+    "addr:street": "Avenue du 7e Génie"
+  }
+},
+{
+  "type": "node",
+  "id": 1493422610,
+  "tags": {
+    "addr:housenumber": "P",
+    "addr:street": "Rue Saint-Michel"
+  }
+},
+{
+  "type": "node",
+  "id": 1493422632,
+  "tags": {
+    "addr:housenumber": "R",
+    "addr:street": "Rue Saint-Michel"
+  }
+},
+{
+  "type": "node",
+  "id": 1493422648,
+  "tags": {
+    "addr:housenumber": "S",
+    "addr:street": "Rue Saint-Michel"
+  }
+},
+{
+  "type": "node",
+  "id": 1500292328,
+  "tags": {
+    "addr:housenumber": "32",
+    "addr:street": "Cours Jean Jaurès",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1500292329,
+  "tags": {
+    "addr:housenumber": "35",
+    "addr:street": "Rue Théodore Aubanel",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1500292331,
+  "tags": {
+    "addr:housenumber": "41",
+    "addr:street": "Cours Jean Jaurès",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1500292333,
+  "tags": {
+    "addr:housenumber": "46",
+    "addr:street": "Cours Jean Jaurès",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1500292337,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Rue Frédéric Mistral",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1500435839,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:postcode": "84000",
+    "addr:street": "Rue de la République",
+    "amenity": "pharmacy",
+    "dispensing": "yes",
+    "healthcare": "pharmacy",
+    "name": "Grande Pharmacie Grégoire",
+    "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-19:30",
+    "ref:FR:FINESS": "840004824",
+    "ref:FR:NAF": "47.73Z",
+    "ref:FR:SIREN": "509176608",
+    "ref:FR:SIRET": "50917660800016",
+    "source": "INSEE - 2026-06",
+    "start_date": "2008-11-01",
+    "survey:date": "2026-03-02",
+    "website": "https://grandepharmaciegregoire.pharminfo.fr/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1501550364,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue Victor Hugo",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1501550370,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue du Collège Roure",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1501550385,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:street": "Rue Victor Hugo",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1501550395,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:street": "Rue du Collège Roure",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1501550445,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Rue Victor Hugo",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1501550460,
+  "tags": {
+    "addr:housenumber": "17",
+    "addr:street": "Rue Victor Hugo",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1501550477,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Rue Victor Hugo",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1503042370,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:street": "Boulevard Raspail",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1503042423,
+  "tags": {
+    "addr:housenumber": "21",
+    "addr:street": "Boulevard Raspail",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1506324560,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:street": "Rue du Portail Boquier",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1506324608,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Rue du Portail Boquier",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1506324625,
+  "tags": {
+    "addr:housenumber": "44",
+    "addr:street": "Cours Jean Jaurès",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1506324651,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Rue du Portail Boquier",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1507281594,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Rue Folco de Baroncelli",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1507281603,
+  "tags": {
+    "addr:housenumber": "14",
+    "addr:street": "Rue Folco de Baroncelli",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1507281638,
+  "tags": {
+    "addr:housenumber": "23",
+    "addr:street": "Rue Folco de Baroncelli",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1507281643,
+  "tags": {
+    "addr:housenumber": "29",
+    "addr:street": "Boulevard Raspail",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1507281646,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Rue Folco de Baroncelli",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1507281654,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:street": "Boulevard Raspail",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1507349080,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Place Saint-Didier",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1507349112,
+  "tags": {
+    "addr:housenumber": "16",
+    "addr:street": "Rue du Change",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1507349132,
+  "tags": {
+    "addr:housenumber": "20",
+    "addr:street": "Rue Galante",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1507349137,
+  "tags": {
+    "addr:housenumber": "24",
+    "addr:street": "Rue de la Saraillerie",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1507349138,
+  "tags": {
+    "addr:housenumber": "26",
+    "addr:street": "Place de l'Horloge",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1507349150,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Rue Galante",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1507349153,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Rue Petite Saunerie",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1509835940,
+  "tags": {
+    "addr:housenumber": "20",
+    "addr:street": "Rue du Portail Boquier",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1509835941,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Rue Gérard Philipe",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1509949749,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue Jean Vilar",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "node",
+  "id": 1538378604,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "15",
+    "addr:street": "Rue des Marchands",
+    "brand": "Palais des Thés",
+    "brand:website": "https://www.palaisdesthes.com",
+    "brand:wikidata": "Q3225161",
+    "brand:wikipedia": "en:Le Palais des Thés",
+    "check_date:opening_hours": "2024-09-04",
+    "name": "Palais des Thés",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "ref:FR:SIRET": "47886237800047",
+    "shop": "tea",
+    "source": "survey",
+    "survey:date": "2026-01-30",
+    "was:name": "Caroll",
+    "was:shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 1538380378,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "24",
+    "addr:street": "Rue des Marchands",
+    "shop": "vacant",
+    "source": "survey",
+    "survey:date": "2026-01-30",
+    "was:amenity": "ice_cream",
+    "was:name": "Del'ices & vous"
+  }
+},
+{
+  "type": "node",
+  "id": 1538386279,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "9",
+    "addr:street": "Place Carnot",
+    "amenity": "cafe",
+    "indoor_seating": "yes",
+    "name": "La cigale",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "825182025",
+    "ref:FR:SIRET": "82518202500015",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-02-24",
+    "was:name": "Tapenade cafe",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1538387502,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "11",
+    "addr:street": "Place Carnot",
+    "amenity": "fast_food",
+    "cuisine": "asian",
+    "indoor_seating": "yes",
+    "name": "Rooroo",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "885222778",
+    "ref:FR:SIRET": "88522277800015",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-02-24",
+    "was:amenity": "fast_food",
+    "was:name": "Chez Pina;Le petit carnot;Presse",
+    "was:shop": "art;kiosk"
+  }
+},
+{
+  "type": "node",
+  "id": 1538398619,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "5",
+    "addr:street": "Place Jérusalem",
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "name": "ti amo ti ...",
+    "panoramax": "fd7338f2-9761-4a2e-bf5a-56bfd86e51a2",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIRET": "80965057500040",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-21",
+    "was:name": "Il centro ! d’Italia;AOC",
+    "was:shop": "alcohol"
+  }
+},
+{
+  "type": "node",
+  "id": 1539742950,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "50",
+    "addr:postcode": "84000",
+    "addr:street": "Rue des Fourbisseurs",
+    "amenity": "restaurant",
+    "cuisine": "peruvian",
+    "description": "Empanadas y Ceviches",
+    "diet:vegetarian": "yes",
+    "name": "La Canoa",
+    "opening_hours": "Tu,Fr 12:00-14:30,19:00-21:30; Sa 12:00-17:00,19:30-21:30; Su 12:00-15:00; Mo off",
+    "source": "local knowledge",
+    "survey:date": "2025-03-18"
+  }
+},
+{
+  "type": "node",
+  "id": 1539786627,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:postcode": "84000",
+    "addr:street": "Avenue Maréchal de Lattre de Tassigny",
+    "name": "Librairie Clément VI",
+    "opening_hours": "Tu-Sa 09:00-12:30,14:00-19:00",
+    "payment:cash": "yes",
+    "payment:visa": "yes",
+    "phone": "+33 4 90 82 54 11",
+    "ref:FR:NAF": "47.61Z",
+    "ref:FR:SIREN": "524552916",
+    "ref:FR:SIRET": "52455291600016",
+    "shop": "books",
+    "source": "INSEE - 2026-06",
+    "start_date": "2010-09-23",
+    "survey:date": "2025-12-31"
+  }
+},
+{
+  "type": "node",
+  "id": 1539788887,
+  "tags": {
+    "addr:housenumber": "45",
+    "addr:postcode": "84000",
+    "addr:street": "Cours Jean Jaurès",
+    "brand": "Marie Blachère",
+    "brand:wikidata": "Q62082410",
+    "level": "0",
+    "mapillary": "943888043092022",
+    "name": "Marie Blachère",
+    "opening_hours:signed": "no",
+    "phone": "+33 4 90 85 80 62",
+    "ref:FR:NAF": "10.71C",
+    "ref:FR:SIRET": "93179455600049",
+    "shop": "bakery",
+    "source": "INSEE - 2026-06",
+    "source:phone": "Avignon Côté Cité",
+    "survey:date": "2024-12-29",
+    "was:name": "Maitre Panisse",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1539822047,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Place Jérusalem",
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "name": "Casa nostra",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "850999749",
+    "ref:FR:SIRET": "85099974900011",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-21",
+    "was:amenity": "fast_food;restaurant",
+    "was:name": "Matto;L'orangeraie"
+  }
+},
+{
+  "type": "node",
+  "id": 1539826382,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "3",
+    "addr:street": "Place Jérusalem",
+    "name": "La coupe d'or",
+    "opening_hours": "Tu,Th-Sa 10:00-12:00, Mo-Sa 14:00-19:00",
+    "ref:FR:NAF": "47.25Z",
+    "ref:FR:SIREN": "417622172",
+    "ref:FR:SIRET": "41762217200019",
+    "shop": "alcohol",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-21"
+  }
+},
+{
+  "type": "node",
+  "id": 1540755545,
+  "tags": {
+    "addr:housenumber": "42",
+    "addr:postcode": "84000",
+    "addr:street": "Cours Jean Jaurès",
+    "brand": "Armand Thiery",
+    "brand:wikidata": "Q2861975",
+    "check_date": "2025-12-22",
+    "check_date:opening_hours": "2025-12-22",
+    "name": "Armand Thiery",
+    "opening_hours": "Mo-Sa 09:30-19:00; Su 10:00-13:00,14:00-19:00",
+    "phone": "+33 4 90 86 29 32",
+    "ref:FR:SIRET": "38062233200522",
+    "shop": "clothes",
+    "short_name": "AT SAS",
+    "source": "survey",
+    "start_date": "1995-01-01",
+    "website": "www.armand-thierry.fr",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1540755548,
+  "tags": {
+    "addr:housenumber": "45",
+    "addr:postcode": "84000",
+    "addr:street": "Cours Jean Jaurès",
+    "check_date": "2026-07-18",
+    "check_date:opening_hours": "2026-07-18",
+    "name": "La Gitane",
+    "opening_hours:signed": "no",
+    "panoramax": "bfb3bcc0-9f1e-462c-9908-671d04bdb14f",
+    "phone": "+33 4 90 86 08 65",
+    "shop": "kiosk",
+    "source": "survey",
+    "source:addr": "survey",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1540755551,
+  "tags": {
+    "addr:housenumber": "45",
+    "addr:postcode": "84000",
+    "addr:street": "Cours Jean Jaurès",
+    "amenity": "restaurant",
+    "check_date": "2026-07-18",
+    "check_date:opening_hours": "2026-07-18",
+    "name": "Le Domus",
+    "opening_hours:signed": "no",
+    "phone": "+33 4 90 85 63 83",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIRET": "93844963400022",
+    "source": "INSEE - 2026-06",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1540755553,
+  "tags": {
+    "addr:housenumber": "43",
+    "addr:postcode": "84000",
+    "addr:street": "Cours Jean Jaurès",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "Crédit Agricole",
+    "brand:wikidata": "Q590952",
+    "brand:wikipedia": "fr:Crédit agricole",
+    "check_date": "2024-08-10",
+    "name": "Crédit Agricole",
+    "opening_hours": "Tu-We 08:30-12:15,13:30-17:45; Th 09:15-12:15,13:30-17:45; Fr 08:30-12:15,13:30-17:45; Sa 08:30-12:45",
+    "phone": "+33 4 84 63 84 15",
+    "source": "survey",
+    "was:name": "Banque Chaix",
+    "website": "https://www.credit-agricole.fr/particulier/agence/alpes-provence/avignon-republique-188.html"
+  }
+},
+{
+  "type": "node",
+  "id": 1540763731,
+  "tags": {
+    "addr:housenumber": "38",
+    "addr:postcode": "84000",
+    "addr:street": "Cours Jean Jaurès",
+    "amenity": "theatre",
+    "email": "contact@lepalaceavignon.fr",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Au palace",
+    "phone": "+33 4 90 03 33 41",
+    "source": "Avignon Côté Cité",
+    "source:festival": "Mairie d'Avignon",
+    "survey:date": "2024-12-29",
+    "was:name": "Le Palace",
+    "website": "https://www.lepalaceavignon.fr/",
+    "wikidata": "Q98288505"
+  }
+},
+{
+  "type": "node",
+  "id": 1540763737,
+  "tags": {
+    "addr:housenumber": "38",
+    "addr:postcode": "84000",
+    "addr:street": "Cours Jean Jaurès",
+    "name": "Alizea Paris-Nice",
+    "phone": "+33 4 90 82 02 21",
+    "source": "Avignon Côté Cité",
+    "survey:date": "2024-12-29",
+    "tourism": "hotel",
+    "website": "https://www.hotelalizea.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 1540763738,
+  "tags": {
+    "addr:housenumber": "36",
+    "addr:street": "Cours Jean Jaurès",
+    "amenity": "restaurant",
+    "check_date": "2025-12-22",
+    "check_date:opening_hours": "2025-12-22",
+    "name": "Pomelo",
+    "opening_hours": "Mo-Su 12:00-14:00,19:00-22:00",
+    "source": "survey",
+    "was:name": "Le bistro’nomic;La Taverne de Maître Kanter"
+  }
+},
+{
+  "type": "node",
+  "id": 1540763739,
+  "tags": {
+    "addr:housenumber": "32",
+    "addr:postcode": "84000",
+    "addr:street": "Cours Jean Jaurès",
+    "amenity": "pub",
+    "cuisine": "burger;pizza",
+    "email": "contact@thepipeline.fr",
+    "internet_access": "wlan",
+    "name": "The Pipeline",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIREN": "353753924",
+    "ref:FR:SIRET": "35375392400037",
+    "source": "INSEE - 2026-06",
+    "start_date": "2001-12-15",
+    "survey:date": "2024-12-29",
+    "was:name": "France Loisir",
+    "was:shop": "books",
+    "was:short_name": "FL",
+    "website": "http://Thepipeline.fr"
+  }
+},
+{
+  "type": "node",
+  "id": 1540763741,
+  "tags": {
+    "addr:housenumber": "38",
+    "addr:postcode": "84000",
+    "addr:street": "Cours Jean Jaurès",
+    "amenity": "pub",
+    "brewery": "yes",
+    "check_date": "2026-10-02",
+    "check_date:opening_hours": "2026-02-15",
+    "indoor_seating": "yes",
+    "name": "O' Collin's Irish Pub",
+    "old_name": "O' Neill's Irish Pub",
+    "opening_hours": "Mo-Fr 10:00-01:00; Sa 14:30-01:00; Su 16:00-01:00",
+    "outdoor_seating": "yes",
+    "phone": "+33 4 32 76 37 40",
+    "source": "survey",
+    "survey:date": "2025-09-23",
+    "theme": "irish"
+  }
+},
+{
+  "type": "node",
+  "id": 1540773134,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "2",
+    "addr:street": "Rue des Marchands",
+    "name": "Autrefois",
+    "note": "Ancienne patisserie Le délice des papes",
+    "ref:FR:SIRET": "44128016100023",
+    "shop": "confectionery",
+    "source": "survey",
+    "survey:date": "2026-01-30",
+    "was:amenity": "restaurant",
+    "was:name": "La cigale"
+  }
+},
+{
+  "type": "node",
+  "id": 1540784836,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "25",
+    "addr:street": "Rue de la République",
+    "brand": "Normal",
+    "brand:wikidata": "Q19562429",
+    "check_date": "2026-07-18",
+    "check_date:opening_hours": "2026-07-18",
+    "email": "FR0157@normal.fr",
+    "name": "Normal",
+    "opening_hours": "Mo-Sa 08:30-19:30",
+    "phone": "+33 6 03 54 37 55",
+    "ref:FR:SIRET": "84443148600480",
+    "shop": "chemist",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1540784840,
+  "tags": {
+    "addr:housenumber": "16 Bis",
+    "addr:street": "Rue de la République",
+    "brand": "Darjeeling",
+    "brand:wikidata": "Q3016203",
+    "clothes": "underwear",
+    "mapillary": "133772982101300",
+    "name": "Darjeeling",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "panoramax": "046055d2-d8fe-4534-9e91-a3c9b96fa6c7",
+    "phone": "+33490146430",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIRET": "39925851601248",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "start_date": "2007-05-15",
+    "survey:date": "2026-01-23",
+    "website": "https://www.darjeeling.fr/storelocator/8401"
+  }
+},
+{
+  "type": "node",
+  "id": 1540784842,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "29",
+    "addr:street": "Rue de la République",
+    "amenity": "bar",
+    "check_date": "2025-04-06",
+    "name": "L'Olympic",
+    "ref:FR:SIRET": "74988495300011",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1540784844,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "16 Bis",
+    "addr:street": "Rue de la République",
+    "brand": "KIKO Milano",
+    "brand:wikidata": "Q3812045",
+    "email": "0339@stores.kikocosmetics.com",
+    "name": "KIKO Milano",
+    "phone": "+33 4 90 82 53 25",
+    "ref:FR:NAF": "47.75Z",
+    "ref:FR:SIRET": "52179523701612",
+    "shop": "cosmetics",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-23",
+    "was:name": "Du pareil...au même",
+    "was:shop": "clothes",
+    "website": "https://kiko-stores.kikocosmetics.com/fr-fr/france/avignon-rue-de-la"
+  }
+},
+{
+  "type": "node",
+  "id": 1540784855,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "18",
+    "addr:postcode": "84000",
+    "addr:street": "Rue de la République",
+    "brand": "Free",
+    "brand:wikidata": "Q2467627",
+    "name": "Free",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "shop": "telecommunication",
+    "source": "survey",
+    "survey:date": "2026-01-23",
+    "was:clothes": "women",
+    "was:name": "Bocage;Brûle parfums",
+    "was:shop": "shoes;perfumery",
+    "website": "https://www.free.fr/boutiques/boutique-1637"
+  }
+},
+{
+  "type": "node",
+  "id": 1540784865,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "23",
+    "addr:street": "Rue de la République",
+    "brand": "Calzedonia",
+    "brand:wikidata": "Q1027874",
+    "clothes": "underwear;women",
+    "name": "Calzedonia",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "opening_hours:signed": "no",
+    "panoramax": "8c2409b0-c92e-4904-a56d-a51454c5ad07",
+    "phone": "+33490256765",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIRET": "51509956201170",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-16",
+    "was:name": "Péchés gourmands",
+    "was:shop": "confectionery",
+    "website": "https://www.calzedonia.com/fr/boutiques/provence-alpes-cote_d_azur/vaucluse/avignon_23_rue_de_la_republique/CFS9.html"
+  }
+},
+{
+  "type": "node",
+  "id": 1540788704,
+  "tags": {
+    "addr:housenumber": "16 Bis",
+    "addr:street": "Rue de la République",
+    "brand": "Générale d'Optique",
+    "brand:wikidata": "Q62391701",
+    "name": "Générale d'Optique",
+    "opening_hours": "Mo-Sa 09:30-19:00",
+    "phone": "+33490868553",
+    "ref:FR:NAF": "47.78A",
+    "ref:FR:SIRET": "49278795700991",
+    "shop": "optician",
+    "source": "INSEE - 2026-06",
+    "start_date": "2011-01-01",
+    "survey:date": "2026-01-23",
+    "website": "https://www.generale-optique.com/opticien/avignon/115"
+  }
+},
+{
+  "type": "node",
+  "id": 1540788706,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "23",
+    "addr:postcode": "84000",
+    "addr:street": "Rue de la République",
+    "branch": "Avignon",
+    "brand": "Carrefour City",
+    "brand:wikidata": "Q2940187",
+    "level": "-1",
+    "mapillary": "132047982247688",
+    "name": "Carrefour City",
+    "opening_hours": "Mo-We 07:00-22:00; Th 07:00-20:00; Fr-Sa 07:00-22:00; Su 09:00-22:00",
+    "operator": "Carrefour City",
+    "phone": "+334 90 85 13 37",
+    "ref:FR:NAF": "47.11D",
+    "ref:FR:SIREN": "931618524",
+    "ref:FR:SIRET": "93161852400033",
+    "shop": "convenience",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-23",
+    "website": "https://www.carrefour.fr/magasin/city-avignon-republique"
+  }
+},
+{
+  "type": "node",
+  "id": 1598868870,
+  "tags": {
+    "addr:housenumber": "37 Bis",
+    "addr:street": "Rue Saint-Agricol",
+    "brand": "Devernois",
+    "brand:wikidata": "Q98778444",
+    "brand:wikipedia": "fr:Devernois (entreprise)",
+    "clothes": "women;sports;fur;fashion;men",
+    "email": "b089@devernois.fr",
+    "mapillary": "450135729623292",
+    "name": "Devernois",
+    "phone": "+33 4 90 14 06 79",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIRET": "32173632400849",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "start_date": "2004-08-09",
+    "survey:date": "2026-01-20"
+  }
+},
+{
+  "type": "node",
+  "id": 1601721280,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "1",
+    "addr:postcode": "84000",
+    "addr:street": "Place Pie",
+    "amenity": "cafe",
+    "check_date": "2025-08-11",
+    "check_date:smoking": "2025-08-11",
+    "indoor_seating": "yes",
+    "name": "Lalogène",
+    "opening_hours": "Mo-Su 07:30-01:30",
+    "outdoor_seating": "pedestrian_zone",
+    "phone": "+33 4 90 14 91 05",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "494886989",
+    "ref:FR:SIRET": "49488698900016",
+    "smoking": "outside",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 1603233054,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "5",
+    "addr:street": "Place Saint-Pierre",
+    "amenity": "restaurant",
+    "check_date": "2025-04-05",
+    "name": "Coin Caché",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "948885587",
+    "ref:FR:SIRET": "94888558700014",
+    "source": "INSEE - 2026-06",
+    "was:name": "La Goulette"
+  }
+},
+{
+  "type": "node",
+  "id": 1763840129,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "42",
+    "addr:street": "Rue Joseph Vernet",
+    "mapillary": "133405435438917",
+    "name": "Coppelia",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIREN": "413080524",
+    "ref:FR:SIRET": "41308052400023",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-19"
+  }
+},
+{
+  "type": "node",
+  "id": 1763841651,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue Portail Bienson",
+    "name": "Un jour en ville",
+    "opening_hours": "Tu 11:00-19:00; We-Sa 10:00-19:00",
+    "ref:FR:NAF": "47.76Z",
+    "ref:FR:SIREN": "514481100",
+    "ref:FR:SIRET": "51448110000030",
+    "shop": "florist",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-09-26"
+  }
+},
+{
+  "type": "node",
+  "id": 1763842661,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:street": "Rue d'Annanelle",
+    "amenity": "driving_school",
+    "name": "Stych",
+    "ref:FR:NAF": "85.53Z",
+    "ref:FR:SIRET": "80095356400419",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-01-08",
+    "was:name": "First permis"
+  }
+},
+{
+  "type": "node",
+  "id": 1763842963,
+  "tags": {
+    "addr:housenumber": "9",
+    "addr:street": "Rue d'Annanelle",
+    "air_conditioning": "yes",
+    "amenity": "restaurant",
+    "name": "Le cochon bleu",
+    "phone": "+33490829510",
+    "source": "survey",
+    "survey:date": "2025-01-08",
+    "website": "https://restaurant-lecochonbleu.fr/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1763843489,
+  "tags": {
+    "addr:housenumber": "55",
+    "addr:street": "Rue Joseph Vernet",
+    "amenity": "bar",
+    "name": "Le tom tip",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "508722642",
+    "ref:FR:SIRET": "50872264200016",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-11-29"
+  }
+},
+{
+  "type": "node",
+  "id": 1763845236,
+  "tags": {
+    "addr:housenumber": "66",
+    "addr:street": "Rue Joseph Vernet",
+    "name": "Leggett Immobilier",
+    "office": "estate_agent",
+    "opening_hours": "Mo-Fr 09:00-18:00",
+    "panoramax": "4731036d-387f-4118-9ace-2e0ab67e7aa8",
+    "ref:FR:NAF": "68.31Z",
+    "ref:FR:SIRET": "43408693000253",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-19",
+    "was:name": "Suite 66",
+    "was:shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 1763853343,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:street": "Rue Viala",
+    "alt_name": "Les opticiens mutualistes",
+    "brand": "Écouter Voir",
+    "brand:wikidata": "Q18414551",
+    "email": "opticiens.avignon@lamut.fr",
+    "name": "Écouter voir",
+    "opening_hours": "Tu-Fr 10:00-13:00,14:00-19:00; Sa 10:00-13:00",
+    "panoramax": "a624c1b3-b05b-45e3-86d1-c22e64f4e522",
+    "phone": "+33 4 90 85 14 09",
+    "ref:FR:SIRET": "35209813100159",
+    "shop": "optician",
+    "source": "INSEE - 07/2017",
+    "start_date": "2007-07-01",
+    "survey:date": "2025-04-25",
+    "website": "https://magasins.ecoutervoir.fr/provence-alpes-cote-d-azur/vaucluse/avignon/ecouter-voir-optique-mutualiste-444"
+  }
+},
+{
+  "type": "node",
+  "id": 1763854392,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "4",
+    "addr:street": "Rue Viala",
+    "brand:wikidata": "Q101249024",
+    "name": "The Cha Yuan",
+    "opening_hours": "Mo 14:00-19:00; Tu-Fr 10:30-12:45,14:15-19:00; Sa 10:30-12:45,14:15-19:00",
+    "phone": "+33 9 53 64 41 33",
+    "ref:FR:NAF": "47.29Z",
+    "ref:FR:SIRET": "41227830100053",
+    "shop": "tea",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-03-25",
+    "website": "http://www.cha-yuan.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 1763856558,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "1",
+    "addr:street": "Rue Viala",
+    "brand": "Nespresso",
+    "brand:wikidata": "Q301301",
+    "name": "Nespresso",
+    "old_name": "Photo sphere",
+    "old_shop": "photo",
+    "ref:FR:NAF": "47.29Z",
+    "ref:FR:SIRET": "38259782100489",
+    "shop": "coffee",
+    "short_name": "N",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-04-16"
+  }
+},
+{
+  "type": "node",
+  "id": 1794337424,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:street": "Rue de la République",
+    "mapillary": "137352998416737",
+    "name": "Antoine Boucault",
+    "ref:FR:NAF": "47.78A",
+    "ref:FR:SIREN": "533446050",
+    "ref:FR:SIRET": "53344605000015",
+    "shop": "optician",
+    "source": "INSEE - 2026-06",
+    "start_date": "2011-06-01",
+    "survey:date": "2025-04-16",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1794339565,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "11",
+    "addr:street": "Rue de la République",
+    "mapillary": "312916610214693",
+    "shop": "vacant",
+    "source": "survey",
+    "survey:date": "2026-07-06",
+    "was:name": "Carline",
+    "was:shop": "jewelry",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1796932912,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "19",
+    "addr:street": "Rue Petite Saunerie",
+    "name": "Futur intérieur",
+    "opening_hours": "Tu-Sa 10:30-13:00,15:00-19:00",
+    "ref:FR:SIRET": "83889410300012",
+    "shop": "furniture",
+    "source": "survey",
+    "survey:date": "2025-09-23",
+    "was:description": "affiches de cinéma & publicité",
+    "was:name": "Mad museum,Seven",
+    "was:shop": "film_poster,clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1796937756,
+  "tags": {
+    "addr:housenumber": "27",
+    "addr:street": "Rue Carnot",
+    "amenity": "restaurant",
+    "cuisine": "gnocci",
+    "indoor_seating": "yes",
+    "name": "Gnocchi Della Mamma",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "918544990",
+    "ref:FR:SIRET": "91854499000016",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2022-10-28",
+    "was:amenity": "fast_food",
+    "was:name": "Chez Poupie;Jean-Louis Clément",
+    "was:shop": "hairdresser",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1796939868,
+  "tags": {
+    "addr:housenumber": "51",
+    "addr:street": "Rue Carnot",
+    "amenity": "bar",
+    "check_date:opening_hours": "2026-02-18",
+    "name": "Barjoe",
+    "opening_hours": "Mo-Su 15:30-01:30",
+    "panoramax:outdoor": "179ffef1-5390-4fd6-a782-3b2c768087e5",
+    "phone": "+33486842555",
+    "survey:date": "2026-07-20",
+    "was:amenity": "restaurant",
+    "was:name": "Cubanito",
+    "website": "https://barjoe.fr/avignon/"
+  }
+},
+{
+  "type": "node",
+  "id": 1796940197,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "23",
+    "addr:postcode": "84000",
+    "addr:street": "Rue de la Croix",
+    "brand": "Marie Blachère",
+    "brand:wikidata": "Q62082410",
+    "indoor_seating": "yes",
+    "name": "Marie Blachère",
+    "opening_hours": "Mo-Sa 07:00-20:00",
+    "outdoor_seating": "yes",
+    "panoramax": "bf2bac6a-edae-42a6-9fe5-975a579dfe4e",
+    "phone": "+33 4 90 83 21 86",
+    "ref:FR:NAF": "10.71C",
+    "ref:FR:SIRET": "93179455600031",
+    "shop": "bakery",
+    "smoking": "outside",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-05-21",
+    "was:amenity": "fast_food",
+    "was:name": "Mezzo di pasta",
+    "website": "https://boulangeries.marieblachere.com/fr/france-FR/5103/marie-blachere-avignon-la-croix/details",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1796949593,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Rue et Place du Portail Matheron",
+    "amenity": "restaurant",
+    "cuisine": "asian",
+    "indoor_seating": "yes",
+    "name": "Saigon food",
+    "outdoor_seating": "yes",
+    "payment:cards": "no",
+    "payment:visa": "no",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "851403717",
+    "ref:FR:SIRET": "85140371700016",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2023-12-18",
+    "was:name": "Wok'n box",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1796949749,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "14",
+    "addr:postcode": "84000",
+    "addr:street": "Rue et Place du Portail Matheron",
+    "brand": "Carrefour City",
+    "brand:wikidata": "Q2940187",
+    "brand:wikipedia": "fr:Carrefour City",
+    "name": "Carrefour City",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-13:00,16:00-20:00",
+    "operator": "Carrefour",
+    "phone": "+33 4 90 14 61 62",
+    "ref:FR:NAF": "47.11D",
+    "ref:FR:SIREN": "920352002",
+    "ref:FR:SIRET": "92035200200025",
+    "shop": "convenience",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2023-12-18",
+    "website": "https://www.carrefour.fr/magasin/city-avignon-matheron",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1821448855,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Place Saint-Didier",
+    "amenity": "cafe",
+    "changing_table": "yes",
+    "check_date": "2026-06-13",
+    "level": "0",
+    "name": "Le saint chocolat",
+    "opening_hours": "Mo-Fr 08:00-18:00; Sa 09:00-18:00",
+    "outdoor_seating": "yes",
+    "smoking": "outside",
+    "takeaway": "yes",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "toilets:disposal": "bucket",
+    "toilets:handwashing": "yes",
+    "toilets:paper_supplied": "yes",
+    "toilets:position": "seated",
+    "toilets:wheelchair": "yes",
+    "was:name": "Comptoir Saint-Didier",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1821450501,
+  "tags": {
+    "addr:housenumber": "41",
+    "addr:street": "Rue de la Saraillerie",
+    "shop": "vacant",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "survey:date": "2024-01-26",
+    "was:amenity": "restaurant",
+    "was:cuisine": "sushi;asian",
+    "was:name": "Akat’ Sushi;Les baguettes d'or"
+  }
+},
+{
+  "type": "node",
+  "id": 1821454458,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "7",
+    "addr:street": "Rue Figuière",
+    "amenity": "restaurant",
+    "name": "Le bistrot des sales gosses",
+    "old_name": "L'hermitage",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "522684364",
+    "ref:FR:SIRET": "52268436400014",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 1823093346,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "28",
+    "addr:street": "Rue de la Bouquerie",
+    "name": "dans l'hair du temps",
+    "ref:FR:NAF": "96.02A",
+    "ref:FR:SIREN": "342179777",
+    "ref:FR:SIRET": "34217977700012",
+    "shop": "hairdresser",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-10-10",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1823306634,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "2",
+    "addr:street": "Rue Mignard",
+    "amenity": "fast_food",
+    "cuisine": "indian",
+    "diet:halal": "yes",
+    "diet:vegan": "yes",
+    "name": "Raj mahal",
+    "outdoor_seating": "yes",
+    "ref:FR:SIRET": "83903088900019",
+    "source": "survey",
+    "survey:date": "2025-04-16",
+    "takeaway": "yes",
+    "was:name": "Chicken follow"
+  }
+},
+{
+  "type": "node",
+  "id": 1823308977,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "1",
+    "addr:street": "Rue Saint-Antoine",
+    "amenity": "restaurant",
+    "cuisine": "crepe",
+    "name": "Mamma mia",
+    "old_name": "Entre nous",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "452760853",
+    "ref:FR:SIRET": "45276085300013",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 1823313561,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue Etroite",
+    "amenity": "restaurant",
+    "name": "Restaurant d'ici et d'ailleurs",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "921509311",
+    "ref:FR:SIRET": "92150931100012",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-01-26"
+  }
+},
+{
+  "type": "node",
+  "id": 1823313695,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "6",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Galante",
+    "amenity": "restaurant",
+    "capacity": "44",
+    "check_date": "2025-04-05",
+    "check_date:diet:vegetarian": "2025-04-05",
+    "cuisine": "chinese",
+    "diet:vegetarian": "no",
+    "name": "Xuan",
+    "outdoor_seating": "yes",
+    "phone": "+33 4 90 86 03 75",
+    "website": "https://www.facebook.com/xuanavignon/"
+  }
+},
+{
+  "type": "node",
+  "id": 1823314333,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "8",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Galante",
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "name": "Tanoshii",
+    "outdoor_seating": "yes",
+    "phone": "+33 4 90 85 59 43",
+    "survey:date": "2024-01-26"
+  }
+},
+{
+  "type": "node",
+  "id": 1823319591,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "27",
+    "addr:street": "Rue de la Bancasse",
+    "amenity": "nightclub",
+    "check_date": "2024-02-15",
+    "name": "Les ambassadeurs",
+    "ref:FR:SIRET": "44263968800013",
+    "source": "survey",
+    "wikidata": "Q63382848"
+  }
+},
+{
+  "type": "node",
+  "id": 1823328514,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:country": "FR",
+    "addr:housenumber": "40",
+    "addr:postcode": "84000",
+    "addr:street": "Rue de Marchands",
+    "name": "Andebanno",
+    "panoramax": "f40cced4-0061-4fdf-92b7-bac05795b208",
+    "shop": "interior_decoration",
+    "survey:date": "2019-04-15",
+    "was:name": "Vertes annees",
+    "was:shop": "shoes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1823329097,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "26",
+    "addr:street": "Rue des Marchands",
+    "clothes": "children",
+    "name": "Pin d'épices",
+    "old_name": "...l'autre Kara",
+    "ref:FR:SIRET": "47756787900267",
+    "shop": "clothes",
+    "source": "survey",
+    "survey:date": "2020-06-17"
+  }
+},
+{
+  "type": "node",
+  "id": 1823351040,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "6",
+    "addr:postcode": "84000",
+    "addr:street": "Rue du Général Leclerc",
+    "amenity": "restaurant",
+    "check_date:diet:vegetarian": "2026-01-24",
+    "description": "Cantine du quartier",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Kouk",
+    "outdoor_seating": "yes",
+    "panoramax": "926ac2d4-dc7c-428a-b08d-660b706b7f8c",
+    "source": "survey",
+    "survey:date": "2026-06-01",
+    "was:alt_name": "Famille Melido",
+    "was:name": "Restaurant Françoise;Chez Françoise",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1823351623,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "2",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Général Leclerc",
+    "amenity": "restaurant",
+    "check_date": "2026-02-18",
+    "check_date:opening_hours": "2026-02-18",
+    "cuisine": "turkish",
+    "description": "Cuisine d’Anatolie",
+    "indoor_seating": "yes",
+    "name": "Éphèse",
+    "opening_hours": "Tu-Su 11:30-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+33 4 90 84 05 57",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "894946649",
+    "ref:FR:SIRET": "89494664900015",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-20",
+    "takeaway": "yes",
+    "was:name": "Baalbeck",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1824390008,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "2",
+    "addr:postcode": "84000",
+    "addr:street": "Place des Carmes",
+    "amenity": "restaurant",
+    "contact:facebook": "https://www.facebook.com/leculdepoule",
+    "cuisine": "french",
+    "indoor_seating": "yes",
+    "name": "Le Cul De Poule",
+    "name:oc": "Lo Cuou de Galina",
+    "opening_hours": "12:00-14:30,19:00-22:30",
+    "outdoor_seating": "yes",
+    "phone": "+33490829323",
+    "source": "survey",
+    "source:name:oc": "ieo-bdtopoc",
+    "survey:date": "2024-08-02",
+    "website": "https://www.leculdepoule.fr/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1824522848,
+  "tags": {
+    "addr:housenumber": "82",
+    "addr:street": "Rue Joseph Vernet",
+    "name": "L’atelier du sourcil",
+    "panoramax": "d7b168c2-c7bb-4edc-8ac7-802465468f01",
+    "ref:FR:NAF": "96.02B",
+    "ref:FR:SIRET": "79212914000523",
+    "shop": "beauty",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2023-04-05",
+    "was:brand": "Optical Center",
+    "was:name": "Optical Center",
+    "was:shop": "optician"
+  }
+},
+{
+  "type": "node",
+  "id": 1824525736,
+  "tags": {
+    "addr:housenumber": "84",
+    "addr:street": "Rue Joseph Vernet",
+    "mapillary": "326713782146667",
+    "name": "Maison Ciboulette",
+    "ref:FR:NAF": "47.21Z",
+    "ref:FR:SIREN": "911501054",
+    "ref:FR:SIRET": "91150105400017",
+    "shop": "greengrocer",
+    "short_name": "AR",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-03-25",
+    "was:name": "Talon aiguille",
+    "was:shop": "shoes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1824528154,
+  "tags": {
+    "addr:housenumber": "96",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Joseph Vernet",
+    "email": "service@paraboot.com",
+    "mapillary": "221521119371211",
+    "name": "Paraboot",
+    "opening_hours": "Tu-Sa 10:30-13:00, 14:30-19:00",
+    "outdoor_seating": "no",
+    "phone": "+33 4 90 82 04 61",
+    "ref:FR:NAF": "47.72A",
+    "ref:FR:SIRET": "34986959400276",
+    "shop": "shoes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-09-29",
+    "website": "https://www.paraboot.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 1824531386,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "85",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Joseph Vernet",
+    "brand": "Café Coton",
+    "brand:wikidata": "Q105076734",
+    "mapillary": "1456238654721496",
+    "name": "Café Coton",
+    "opening_hours": "Mo 14:00-19:00; Tu-Sa 10:00-13:00,14:00-19:00",
+    "phone": "+33 4 90 14 65 28",
+    "shop": "clothes",
+    "source": "survey",
+    "survey:date": "2024-08-09",
+    "website": "https://www.cafecoton.com/fr/avignon",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1824534079,
+  "tags": {
+    "addr:housenumber": "25 C",
+    "addr:street": "Rue de la République",
+    "amenity": "fast_food",
+    "name": "Yumi",
+    "panoramax": "b900cb5e-3bee-4c06-a330-a68747d882e1",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIRET": "88854661100045",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-04-16",
+    "was:amenity": "restaurant",
+    "was:name": "Sushi shop"
+  }
+},
+{
+  "type": "node",
+  "id": 1824758057,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "43",
+    "addr:postcode": "84000",
+    "addr:street": "Rue des Fourbisseurs",
+    "check_date": "2026-06-13",
+    "contact:email": "boulangeriebellaciao@gmail.com",
+    "contact:facebook": "https://www.facebook.com/boulangeriebellaciao",
+    "description": "Boulangerie utopiste",
+    "mapillary": "474138300677087",
+    "name": "Bella ciao",
+    "opening_hours": "We-Sa 10:00-19:00; Tu 16:00-19:00",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "phone": "+33 6 95 15 84 66",
+    "ref:FR:NAF": "10.71C",
+    "ref:FR:SIREN": "819600149",
+    "ref:FR:SIRET": "81960014900010",
+    "shop": "bakery",
+    "source": "INSEE - 2026-06",
+    "was:name": "J'envie l'art",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1824761093,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "16",
+    "addr:street": "Rue de la Bonneterie",
+    "female": "yes",
+    "male": "yes",
+    "name": "Thierry Farina",
+    "ref:FR:SIRET": "40226618300019",
+    "shop": "hairdresser",
+    "survey:date": "2020-10-21",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1824762379,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:street": "Place Jérusalem",
+    "amenity": "fast_food",
+    "cuisine": "chicken",
+    "indoor_seating": "no",
+    "name": "KMC house",
+    "outdoor_seating": "yes",
+    "panoramax": "3ab3acf7-b537-4714-b4ff-8bb41a545a51",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "988356796",
+    "ref:FR:SIRET": "98835679600017",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-12-05",
+    "takeaway": "yes",
+    "was:cuisine": "kebab",
+    "was:name": "Le toasty;Les merveilles",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1825085471,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Rue Saint-Jean le Vieux",
+    "amenity": "bar",
+    "check_date": "2026-02-18",
+    "check_date:opening_hours": "2026-02-18",
+    "name": "Au fût et à mesure",
+    "opening_hours": "Mo-Su 18:00-01:30",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIRET": "91787394500021",
+    "source": "INSEE - 2026-06",
+    "was:amenity": "ice_cream",
+    "was:name": "Verino glacier"
+  }
+},
+{
+  "type": "node",
+  "id": 1825085821,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "7",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Saint-Jean le Vieux",
+    "amenity": "fast_food",
+    "branch": "Avignon",
+    "brand": "Pokawa",
+    "brand:wikidata": "Q123018553",
+    "check_date": "2026-02-18",
+    "check_date:opening_hours": "2026-02-18",
+    "cuisine": "poke",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Pokawa",
+    "opening_hours": "Mo-Su 10:00-22:30",
+    "panoramax": "e40e79c0-e157-4ba0-8056-af7436838f10",
+    "phone": "+33 4 65 87 29 59",
+    "source": "survey",
+    "survey:date": "2022-02-21",
+    "takeaway": "yes",
+    "was:name": "Le Pie Kafé",
+    "website": "https://restaurants.pokawa.com/poke-bowl-avignon"
+  }
+},
+{
+  "type": "node",
+  "id": 1825085830,
+  "tags": {
+    "addr:housenumber": "8",
+    "addr:street": "Rue du Général Leclerc",
+    "amenity": "restaurant",
+    "check_date": "2026-02-18",
+    "check_date:opening_hours": "2026-02-18",
+    "name": "Café Saint-Jean",
+    "opening_hours": "Mo-Su 07:30-01:00",
+    "panoramax": "d5e2b7f9-b749-4547-af8a-0bde6ba10d17",
+    "source": "survey",
+    "survey:date": "2022-02-21",
+    "was:name": "Wall St Café"
+  }
+},
+{
+  "type": "node",
+  "id": 1825715860,
+  "tags": {
+    "addr:housenumber": "9",
+    "addr:street": "Rue de la Bonneterie",
+    "check_date": "2025-04-05",
+    "clothes": "men",
+    "name": "Contact",
+    "old_name": "Swoon",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIREN": "505155994",
+    "ref:FR:SIRET": "50515599400013",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 1825720123,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "6",
+    "addr:street": "Place de la Principale",
+    "amenity": "cafe",
+    "name": "Gustave",
+    "old_name": "Joke and co",
+    "old_name_1": "Joke",
+    "ref:FR:SIRET": "82965763400020",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1825720724,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "4",
+    "addr:street": "Place de la Principale",
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "diet:vegan": "yes",
+    "name": "Naka",
+    "old_name": "Art&gourmet",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "918705377",
+    "ref:FR:SIRET": "91870537700011",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-03-25"
+  }
+},
+{
+  "type": "node",
+  "id": 1825721571,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:country": "FR",
+    "addr:housenumber": "17",
+    "addr:street": "Rue Rouge",
+    "amenity": "fast_food",
+    "name": "H.D.C food",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIRET": "83924544600027",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2023-10-10",
+    "takeaway": "yes",
+    "was:cuisine": "friture",
+    "was:name": "Enjoy Food;La part à pizza;Bar à frite;Chez Benjamin;Au four banal",
+    "was:shop": "bakery"
+  }
+},
+{
+  "type": "node",
+  "id": 1825722088,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "12",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Rouge",
+    "name": "Les bonbons D’Avignon",
+    "shop": "confectionery",
+    "survey:date": "2024-12-19",
+    "was:name": "Toupine et Cabesselle;Beaucoup Store",
+    "was:shop": "deli;boutique"
+  }
+},
+{
+  "type": "node",
+  "id": 1825722306,
+  "tags": {
+    "addr:housenumber": "8",
+    "addr:street": "Place de la Principale",
+    "clothes": "women",
+    "name": "Numéro 6",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIREN": "377512256",
+    "ref:FR:SIRET": "37751225600019",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-05-03",
+    "was:name": "Entre ciel et mer"
+  }
+},
+{
+  "type": "node",
+  "id": 1825724512,
+  "tags": {
+    "addr:housenumber": "23",
+    "addr:street": "Place du Change",
+    "name": "La mule du pape",
+    "opening_hours": "Mo 14:00-19:00; Tu-Sa 09:30-12:30,14:00-19:00",
+    "ref:FR:NAF": "47.72A",
+    "ref:FR:SIRET": "31780892100041",
+    "shop": "shoes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-01-26"
+  }
+},
+{
+  "type": "node",
+  "id": 1825725108,
+  "tags": {
+    "addr:housenumber": "21",
+    "addr:street": "Place du Change",
+    "name": "La botte rouge",
+    "opening_hours": "Mo 14:00-19:00; Tu-Sa 10:00-12:30,14:00-19:00",
+    "ref:FR:NAF": "47.72A",
+    "ref:FR:SIRET": "31780892100082",
+    "shop": "shoes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-01-26",
+    "was:name": "Ma 2e mule du pape"
+  }
+},
+{
+  "type": "node",
+  "id": 1825727792,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "5",
+    "addr:street": "Rue des Trois Carreaux",
+    "amenity": "bar",
+    "name": "Café du change",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIREN": "899863286",
+    "ref:FR:SIRET": "89986328600014",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-01-26",
+    "was:name": "Bar du Change"
+  }
+},
+{
+  "type": "node",
+  "id": 1825735689,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "15",
+    "addr:street": "Place du Change",
+    "check_date": "2023-10-29",
+    "cuisine": "truffle",
+    "name": "Le Spécialiste de la Truffe",
+    "opening_hours": "Mo-Sa 10:00-14:00,15:00-19:00",
+    "operator": "Signorini Tartufi",
+    "phone": "+33 9 80 48 55 16",
+    "shop": "deli",
+    "source": "survey",
+    "was:name": "Bose;Konsortium",
+    "was:shop": "hifi;shoes",
+    "website": "https://www.signorinitartufi.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 1825736963,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "20",
+    "addr:place": "Place du Change",
+    "addr:street": "Place du Change",
+    "amenity": "ice_cream",
+    "name": "La dame blanche",
+    "opening_hours": "Mo-Su 14:00-19:00",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "842491987",
+    "ref:FR:SIRET": "84249198700017",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-08-26",
+    "was:name": "Le club"
+  }
+},
+{
+  "type": "node",
+  "id": 1825737381,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Rue du Petit Change",
+    "name": "My lemon factory",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIRET": "79540365800052",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-08-26",
+    "was:clothes": "women",
+    "was:name": "Aventures des toiles",
+    "was:shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 1825742204,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "2",
+    "addr:street": "Place de l'Horloge",
+    "name": "Dumas",
+    "ref:FR:SIRET": "33983960700035",
+    "shop": "jewelry",
+    "source": "survey",
+    "survey:date": "2023-12-11",
+    "was:name": "Hermes Paris",
+    "was:shop": "boutique"
+  }
+},
+{
+  "type": "node",
+  "id": 1825745934,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Rue des Marchands",
+    "brand": "Maison 123",
+    "brand:wikidata": "Q128033893",
+    "clothes": "women",
+    "name": "Maison 123",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIRET": "44460046400200",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-30"
+  }
+},
+{
+  "type": "node",
+  "id": 1825747571,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "10",
+    "addr:street": "Rue des Marchands",
+    "name": "Tellement or",
+    "ref:FR:SIRET": "33258872200014",
+    "shop": "jewelry",
+    "source": "survey",
+    "survey:date": "2026-01-30"
+  }
+},
+{
+  "type": "node",
+  "id": 1825748681,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "5",
+    "addr:street": "Rue des Marchands",
+    "amenity": "ice_cream",
+    "name": "Liri",
+    "ref:FR:SIRET": "84320154200027",
+    "source": "survey",
+    "survey:date": "2024-06-26",
+    "was:clothes": "women",
+    "was:name": "Ice Monkey;Liri;Jarroux",
+    "was:shop": "clothes;jewelry",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1825748899,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "7",
+    "addr:street": "Rue des Marchands",
+    "panoramax": "0ebf829f-b347-4a44-8016-616c2e922d8b",
+    "shop": "vacant",
+    "source": "survey",
+    "survey:date": "2026-06-08",
+    "was:name": "Faguo;Foot Korner;telandcom",
+    "was:shop": "clothes;mobile_phone",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1825750006,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "12",
+    "addr:street": "Rue Favart",
+    "brand": "Foot Locker",
+    "brand:wikidata": "Q63335",
+    "contact:website": "https://stores.footlocker.fr/fr/fr-t/avignon/9-rue-des-marchands-214_31_05107.html",
+    "name": "Foot Locker",
+    "opening_hours": "Mo 13:30-19:00; Tu-Sa 10:00-19:00",
+    "phone": "+33 4 84 94 01 11",
+    "ref:FR:NAF": "47.64Z",
+    "ref:FR:SIRET": "38240186700074",
+    "shop": "shoes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-06-24",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1825753726,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "15",
+    "addr:street": "Rue de la Rappe",
+    "name": "-",
+    "shop": "vacant",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-07-20",
+    "was:brand": "Antonelle",
+    "was:clothes": "women",
+    "was:name": "Antonelle;The body shop",
+    "was:shop": "clothes;cosmetics"
+  }
+},
+{
+  "type": "node",
+  "id": 1825755974,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "27",
+    "addr:postcode": "84000",
+    "addr:street": "Rue des Marchands",
+    "brand": "Godot & Fils",
+    "brand:wikidata": "Q134652093",
+    "contact:instagram": "https://www.instagram.com/godot_et_fils_1933/",
+    "contact:phone": "+33 4 88 61 03 56",
+    "contact:website": "https://godotetfils.com/avignon/",
+    "name": "Godot & fils",
+    "opening_hours": "Tu-Sa 10:00-13:00, 14:00-18:30",
+    "payment:cheque": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mastercard": "yes",
+    "ref:FR:SIRET": "90248333800015",
+    "shop": "gold_buyer",
+    "source": "survey",
+    "survey:date": "2024-01-26",
+    "was:name": "Central fashion",
+    "was:shop": "clothes",
+    "website:booking": "https://www.achat-or-et-argent.fr/prise-de-rendez-vous/32/avignon"
+  }
+},
+{
+  "type": "node",
+  "id": 1825758023,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "30",
+    "addr:street": "Rue des Marchands",
+    "amenity": "fast_food",
+    "description": "Crèpes,glaces,café",
+    "name": "Amalfitano",
+    "survey:date": "2026-07-20",
+    "was:cuisine": "pizza;tacos;sandwich",
+    "was:name": "DMS gourmandise;DMS Pizza;Kara"
+  }
+},
+{
+  "type": "node",
+  "id": 1825771001,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "3",
+    "addr:postcode": "84000",
+    "addr:street": "Place Nicolas Saboly",
+    "amenity": "restaurant",
+    "cuisine": "pizza;italian",
+    "name": "Le verso",
+    "opening_hours": "Mo-Su 12:00-14:00,19:00-22:30",
+    "phone": "+33 4 90 85 28 89",
+    "source": "survey",
+    "survey:date": "2024-08-27",
+    "website:menu": "https://myplv.cokecce.com/cms/sites/myplv/myplv_client-files/qrcodes/64818ff43cb89275343197c5/menu_091f.pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 1825785390,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Rue Saint-Agricol",
+    "amenity": "pharmacy",
+    "dispensing": "yes",
+    "healthcare": "pharmacy",
+    "name": "Pharmacie Saint Agricol",
+    "opening_hours": "Mo-Fr 09:00-19:00",
+    "panoramax": "8c291e5a-7ba5-4ace-a0cf-22a4db88348c",
+    "ref:FR:FINESS": "840008783",
+    "ref:FR:NAF": "47.73Z",
+    "ref:FR:SIREN": "910337260",
+    "ref:FR:SIRET": "91033726000012",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-08-26",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1825785721,
+  "tags": {
+    "addr:housenumber": "17",
+    "addr:street": "Rue Saint-Agricol",
+    "brand": "Sud Express",
+    "brand:wikidata": "Q104826254",
+    "clothes": "women",
+    "name": "Sud Express",
+    "panoramax": "736b4272-a1da-4018-82e4-d5d1ead970eb",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIRET": "30970699200851",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "start_date": "2016-07-18",
+    "survey:date": "2026-01-20",
+    "was:name": "Weill",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1825787306,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue Félicien David",
+    "brand": "Solaris",
+    "brand:wikidata": "Q3489229",
+    "name": "Solaris",
+    "panoramax": "7a415591-d933-4e47-b344-7932b41c631f",
+    "ref:FR:NAF": "47.78A",
+    "ref:FR:SIRET": "39933096800633",
+    "shop": "optician",
+    "source": "INSEE - 2026-02",
+    "start_date": "2012-04-21",
+    "survey:date": "2026-01-20"
+  }
+},
+{
+  "type": "node",
+  "id": 1825789475,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Passage Saint-Agricol",
+    "mapillary": "1378985002473878",
+    "name": "Laurence Molière",
+    "opening_hours": "Mo 14:00-19:00; Tu-Sa 09:30-19:00",
+    "panoramax": "63a46c46-1a62-4b8f-b14d-2dc1d4227da6",
+    "ref:FR:NAF": "47.78A",
+    "ref:FR:SIREN": "533234324",
+    "ref:FR:SIRET": "53323432400010",
+    "shop": "optician",
+    "source": "INSEE - 2026-06",
+    "start_date": "2011-06-01",
+    "survey:date": "2025-08-26",
+    "wheelchair": "bad"
+  }
+},
+{
+  "type": "node",
+  "id": 1825789596,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "8",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Saint-Agricol",
+    "brand": "Iris Galerie",
+    "brand:website": "https://irisgalerie.com",
+    "name": "Iris Galerie",
+    "opening_hours": "Mo-Su 11:00-20:00",
+    "panoramax": "d9fd890d-c708-471c-a95c-080be339b96d",
+    "shop": "eye_picture",
+    "survey:date": "2025-08-26",
+    "was:name": "Swatch",
+    "was:shop": "watches",
+    "website": "https://irisgalerie.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 1825789636,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:street": "Rue Saint-Agricol",
+    "brand": "Max Mara",
+    "brand:wikidata": "Q1151774",
+    "clothes": "women",
+    "level": "0",
+    "mapillary": "235127935050958",
+    "name": "Max Mara",
+    "panoramax": "224060a3-0178-4281-aeb1-ad4a574abd22",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIREN": "503868168",
+    "ref:FR:SIRET": "50386816800025",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "start_date": "2008-07-25",
+    "survey:date": "2025-08-26",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1825791086,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "16 B",
+    "addr:street": "Rue Saint-Agricol",
+    "mapillary": "200738575208333",
+    "name": "Bichon",
+    "panoramax": "f3c573b8-8080-44cd-a598-10d78e30eb17",
+    "ref:FR:NAF": "47.77Z",
+    "ref:FR:SIREN": "532301504",
+    "ref:FR:SIRET": "53230150400017",
+    "shop": "jewelry",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-08-26",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1825791809,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "16 B",
+    "addr:street": "Rue Saint-Agricol",
+    "amenity": "ice_cream",
+    "brand": "Amorino",
+    "brand:wikidata": "Q2843884",
+    "check_date:opening_hours": "2024-09-04",
+    "name": "Amorino",
+    "opening_hours": "Mo-Th 10:00-00:30, Fr,Sa 10:00-01:00, Su 10:00-00:30",
+    "panoramax": "1f630696-5108-431f-8e3e-6619b35af156",
+    "phone": "+33 9 51 60 91 28",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "503362493",
+    "ref:FR:SIRET": "50336249300010",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-08-26",
+    "takeaway": "yes",
+    "website": "https://www.amorino.com/stores/avignon",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1825792121,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "16 B",
+    "addr:street": "Rue Saint-Agricol",
+    "brand": "Mauboussin",
+    "brand:wikidata": "Q3300085",
+    "email": "ncollin@mauboussin.com",
+    "mapillary": "200738575208333",
+    "name": "Mauboussin",
+    "opening_hours": "Mo-Sa 10:00-13:00,14:00-19:00",
+    "panoramax": "fbbd21f7-432a-48a7-8244-654f93ae6157",
+    "phone": "+33 4 90 27 93 71",
+    "ref:FR:NAF": "47.77Z",
+    "ref:FR:SIRET": "54210630700177",
+    "shop": "jewelry",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-08-26",
+    "website": "https://boutiques.mauboussin.fr/boutiquesmauboussin/fr/store/france/provence-alpes-cote-d-azur/vaucluse/avignon/avignon/m056",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1825795290,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "29",
+    "addr:street": "Rue Saint-Agricol",
+    "brand": "La Fée Maraboutée",
+    "brand:wikidata": "Q105429377",
+    "clothes": "women",
+    "mapillary": "175181527803510",
+    "name": "La Fée Maraboutée",
+    "opening_hours": "Mo 14:00-19:00; Tu-Sa 10:00-19:00",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIREN": "828917617",
+    "ref:FR:SIRET": "82891761700015",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-20",
+    "was:name": "Clubmed",
+    "was:shop": "travel_agency"
+  }
+},
+{
+  "type": "node",
+  "id": 1825800119,
+  "tags": {
+    "addr:housenumber": "20",
+    "addr:street": "Rue Saint-Agricol",
+    "mapillary": "6161947193830954",
+    "name": "Fragonard",
+    "opening_hours": "Mo-Su 10:00-19:00",
+    "panoramax": "fcf46800-19f1-4a5f-806d-e289931c699e",
+    "ref:FR:NAF": "47.75Z",
+    "ref:FR:SIRET": "79481742900036",
+    "shop": "perfumery",
+    "source": "INSEE - 2026-06",
+    "start_date": "2015-07-01",
+    "survey:date": "2025-08-26",
+    "was:name": "La boutique du sac",
+    "was:shop": "bag"
+  }
+},
+{
+  "type": "node",
+  "id": 1825800726,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "33",
+    "addr:street": "Rue Saint-Agricol",
+    "mapillary": "452872082678207",
+    "name": "Bliss",
+    "opening_hours": "Mo 14:00-19:00; Tu-Sa 10:00-13:00,14:00-19:00",
+    "ref:FR:SIRET": "82344458300012",
+    "shop": "bag",
+    "source": "survey",
+    "survey:date": "2026-01-20",
+    "was:name": "Scala",
+    "was:shop": "jewelry"
+  }
+},
+{
+  "type": "node",
+  "id": 1826474687,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:street": "Rue Guillaume Puy",
+    "amenity": "restaurant",
+    "name": "Citron pressé",
+    "opening_hours": "Mo-Fr 12:00-15:00",
+    "panoramax": "c1695eba-43ea-4de8-9ed3-959ed9bb2ef8",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "884521287",
+    "ref:FR:SIRET": "88452128700018",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-04-09"
+  }
+},
+{
+  "type": "node",
+  "id": 1826484588,
+  "tags": {
+    "addr:housenumber": "17",
+    "addr:street": "Rue et Place du Portail Matheron",
+    "amenity": "bar",
+    "indoor_seating": "yes",
+    "name": "Mon bar",
+    "name:oc": "Mon Bar",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIREN": "803132828",
+    "ref:FR:SIRET": "80313282800010",
+    "source": "INSEE - 2026-06",
+    "source:name:oc": "ieo-bdtopoc",
+    "survey:date": "2023-12-18",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1826491177,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "4",
+    "addr:street": "Rue de la Petite Meuse",
+    "amenity": "cafe",
+    "name": "7.1 Café",
+    "ref:FR:SIRET": "90214473200010",
+    "source": "survey",
+    "survey:date": "2022-03-23",
+    "was:name": "Cafe bar des Halles"
+  }
+},
+{
+  "type": "node",
+  "id": 1826496287,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "41",
+    "addr:street": "Rue de la Bonneterie",
+    "check_date": "2025-11-12",
+    "check_date:opening_hours": "2025-11-12",
+    "mapillary": "491926645289269",
+    "name": "Culinarion",
+    "opening_hours": "Tu-Sa 10:00-13:00,14:00-19:00; Su 10:00-13:00",
+    "ref:FR:SIRET": "52092729400022",
+    "shop": "houseware",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1826500178,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "40",
+    "addr:street": "Rue de la Bonneterie",
+    "name": "La crognotte rieuse",
+    "opening_hours": "Mo 12:00-18:00; Tu-Sa 10:00-13:00,14:00-19:00",
+    "ref:FR:SIRET": "50896861700052",
+    "shop": "books",
+    "source": "survey",
+    "survey:date": "2024-01-24",
+    "was:name": "La boîte à tricot;Pronuptia",
+    "was:shop": "wool;clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 1826501728,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "34",
+    "addr:street": "Rue de la Bonneterie",
+    "amenity": "fast_food",
+    "cuisine": "burger",
+    "name": "Bundy’s burger",
+    "opening_hours": "Mo-Fr 09:00-21:30; Sa 10:00-22:30",
+    "outdoor_seating": "yes",
+    "ref:FR:SIRET": "83798816100019",
+    "source": "survey",
+    "survey:date": "2024-01-24",
+    "was:clothes": "women",
+    "was:name": "Casting",
+    "was:shop": "clothes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1826510057,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "7",
+    "addr:street": "Place Saint-Didier",
+    "disused:shop": "shoes",
+    "ref:FR:NAF": "47.72A",
+    "ref:FR:SIREN": "510077332",
+    "ref:FR:SIRET": "51007733200052",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 1826511962,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "64",
+    "addr:postcode": "84000",
+    "addr:street": "Rue des Fourbisseurs",
+    "books": "comic",
+    "check_date": "2026-06-13",
+    "check_date:opening_hours": "2026-06-13",
+    "description": "Librairie de bandes dessinées",
+    "name": "La licorne",
+    "opening_hours": "Tu-Sa 10:00-12:30,14:00-19:00",
+    "phone": "+33 4 86 81 00 90",
+    "ref:FR:SIRET": "50236759200016",
+    "shop": "books",
+    "source": "survey",
+    "start_date": "2008-01-05",
+    "website": "https://www.la-licorne-bd-occasion-avignon.fr/"
+  }
+},
+{
+  "type": "node",
+  "id": 1826690192,
+  "tags": {
+    "addr:housenumber": "19",
+    "addr:street": "Rue Théodore Aubanel",
+    "craft": "shoemaker",
+    "name": "Cordonnerie du centre",
+    "panoramax": "c48a7d72-c29e-4ed8-9555-f8ee9cc0533a",
+    "ref:FR:NAF": "95.23Z",
+    "ref:FR:SIREN": "420430852",
+    "ref:FR:SIRET": "42043085200020",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-04-16",
+    "was:craft": "stained_glass",
+    "was:name": "Atelier Fiatlux vitrail"
+  }
+},
+{
+  "type": "node",
+  "id": 1826920961,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue Thiers",
+    "amenity": "fast_food",
+    "cuisine": "turkish",
+    "name": "Galatasaray",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "918977588",
+    "ref:FR:SIRET": "91897758800014",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2022-07-01",
+    "was:name": "U sushi;Mac sushi"
+  }
+},
+{
+  "type": "node",
+  "id": 1954652148,
+  "tags": {
+    "addr:housenumber": "74",
+    "addr:street": "Place des Corps Saints",
+    "amenity": "bar",
+    "bar": "wine",
+    "indoor_seating": "yes",
+    "name": "Le 17 Place Aux Vins",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIREN": "834816266",
+    "ref:FR:SIRET": "83481626600029",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-03-18",
+    "was:amenity": "restaurant;bar",
+    "was:name": "Balthazar;Bar Lounge",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1962556990,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Rue des Infirmières",
+    "amenity": "restaurant",
+    "name": "Le Barrio",
+    "name:oc": "Lo Barri",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "534185426",
+    "ref:FR:SIRET": "53418542600010",
+    "source": "INSEE - 2026-06",
+    "source:name:oc": "ieo-bdtopoc",
+    "survey:date": "2017-07-13"
+  }
+},
+{
+  "type": "node",
+  "id": 1962664822,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Racine",
+    "amenity": "restaurant",
+    "cuisine": "burger;hot_dog;french",
+    "name": "La Cuisine de Papa",
+    "phone": "+33 4 90 82 56 01",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "832116677",
+    "ref:FR:SIRET": "83211667700028",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-16",
+    "was:name": "L'Isle Sonnante",
+    "website": "http://lacuisinedepapa.fr"
+  }
+},
+{
+  "type": "node",
+  "id": 1962912316,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:street": "Rue des Escaliers Sainte-Anne",
+    "amenity": "cinema",
+    "brand": "Utopia",
+    "brand:wikidata": "Q3552766",
+    "brand:wikipedia": "fr:Utopia (cinéma)",
+    "check_date": "2026-02-18",
+    "name": "Utopia Manutention",
+    "official_name": "Utopia Manutention 1",
+    "ref:FR:CNC": "33791",
+    "website": "https://www.cinemas-utopia.org/avignon/"
+  }
+},
+{
+  "type": "node",
+  "id": 2021447253,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "33",
+    "addr:street": "Rue Joseph Vernet",
+    "name": "Puyricard",
+    "opening_hours": "Tu-Sa 10:00-12:30,15:00-19:00",
+    "panoramax": "f8d3576b-8773-40c8-8a7c-5efe11b880ae",
+    "ref:FR:SIRET": "44538847300115",
+    "shop": "chocolate",
+    "survey:date": "2025-09-26"
+  }
+},
+{
+  "type": "node",
+  "id": 2021447983,
+  "tags": {
+    "addr:housenumber": "30",
+    "addr:street": "Rue Joseph Vernet",
+    "panoramax": "7d6d7e0e-6d19-453e-ab47-b58c7fd25b13",
+    "shop": "vacant",
+    "showcase:length": "3 m",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-09-30",
+    "was:brand": "Tommy Hilfiger",
+    "was:name": "Tommy Hilfiger;Façonnable",
+    "was:shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2021449558,
+  "tags": {
+    "addr:housenumber": "30",
+    "addr:street": "Rue Joseph Vernet",
+    "brand": "Gérard Darel",
+    "brand:wikidata": "Q3123882",
+    "brand:wikipedia": "fr:Gérard Darel",
+    "clothes": "children",
+    "name": "Gérard Darel",
+    "opening_hours": "Tu-Sa 10:00-19:00; Mo 14:00-19:00",
+    "panoramax": "ba07d241-b88e-4d7d-8441-e9e15d90215e",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIRET": "81411679400607",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "start_date": "2015-10-27",
+    "survey:date": "2026-01-14",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2021449617,
+  "tags": {
+    "addr:housenumber": "28",
+    "addr:street": "Rue Joseph Vernet",
+    "brand": "Petit Bateau",
+    "brand:wikidata": "Q3377090",
+    "check_date": "2023-07-19",
+    "clothes": "children",
+    "mapillary": "156467873081131",
+    "name": "Petit Bateau",
+    "opening_hours": "Tu-Sa 10:00-19:00; Mo 14:00-19:00",
+    "phone": "+33 4 90 85 59 03",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIRET": "30529134601071",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-14",
+    "website": "https://stores.petit-bateau.com/france/avignon/28-rue-joseph-vernet",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2021451823,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "28",
+    "addr:street": "Rue Joseph Vernet",
+    "mapillary": "296541431932551",
+    "name": "Majestic filatures",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "panoramax": "62eb9fdd-9ba7-4d43-a20c-df8cd2787d71",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIRET": "79497353700044",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-14",
+    "was:name": "Ventilo Paris",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2021457699,
+  "tags": {
+    "addr:housenumber": "19",
+    "addr:street": "Rue Joseph Vernet",
+    "name": "Souleiado",
+    "ref:FR:NAF": "47.51Z",
+    "ref:FR:SIRET": "73568029000229",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-13"
+  }
+},
+{
+  "type": "node",
+  "id": 2021464320,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "11",
+    "addr:street": "Rue Joseph Vernet",
+    "name": "Father & Sons",
+    "opening_hours": "Mo 14:00-19:00; Tu-Sa 10:00-19:00",
+    "ref:FR:SIRET": "82068133600013",
+    "shop": "clothes",
+    "survey:date": "2026-01-13",
+    "was:name": "one step",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2021470041,
+  "tags": {
+    "addr:housenumber": "24",
+    "addr:street": "Rue Saint-Étienne",
+    "shop": "vacant",
+    "source": "survey",
+    "survey:date": "2026-06-01",
+    "was:amenity": "restaurant",
+    "was:cuisine": "sushi",
+    "was:name": "Sushi & Bowl;Origami nouveau"
+  }
+},
+{
+  "type": "node",
+  "id": 2021471087,
+  "tags": {
+    "addr:housenumber": "24",
+    "addr:street": "Rue de la Petite Fusterie",
+    "name": "Contact immobilier",
+    "office": "estate_agent",
+    "ref:FR:NAF": "68.32A",
+    "ref:FR:SIREN": "318381860",
+    "ref:FR:SIRET": "31838186000028",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2020-06-12",
+    "was:name": "Orpi"
+  }
+},
+{
+  "type": "node",
+  "id": 2052658797,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "22",
+    "addr:postcode": "84000",
+    "addr:street": "Place de l'Horloge",
+    "alt_name": "Théâtre Cinévox",
+    "amenity": "cinema",
+    "capacity": "379",
+    "cinema:3D": "no",
+    "contact:facebook": "https://www.facebook.com/cinevoxavignon",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Le Vox",
+    "phone": "+33 4 90 85 00 25",
+    "ref:FR:CNC": "33751",
+    "ref:FR:SIRET": "65262110300025",
+    "screen": "2",
+    "source": "INSEE - 07/2017",
+    "source:festival": "Mairie d'Avignon",
+    "start_date": "2007-04-27",
+    "survey:date": "2023-12-06",
+    "website": "http://www.theatrecinevox.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2052668369,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "25 C",
+    "addr:postcode": "84000",
+    "addr:street": "Rue de la République",
+    "brand": "Sephora",
+    "brand:wikidata": "Q2408041",
+    "name": "Sephora",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "panoramax": "683b816b-49b8-4e8f-ac30-290b10e006e1",
+    "phone": "+33 4 90 80 40 80",
+    "ref:FR:NAF": "47.75Z",
+    "ref:FR:SIRET": "39371228600086",
+    "shop": "cosmetics",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-16",
+    "website": "https://www.sephora.fr/information-magasin/?storeID=S5411",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2052688489,
+  "tags": {
+    "addr:housenumber": "34",
+    "addr:street": "Cours Jean Jaurès",
+    "check_date": "2025-12-22",
+    "check_date:opening_hours": "2025-12-22",
+    "name": "Visite Avignon",
+    "opening_hours": "Tu-Sa 10:00-18:00; Su 13:00-18:00",
+    "shop": "souvenir",
+    "source": "survey",
+    "was:alt_name": "Pallas cuir",
+    "was:name": "Pallas griffe",
+    "was:shop": "clothes",
+    "was:website": "www.pallascuir.com",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2059729435,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue Jean-Henri Fabre",
+    "amenity": "restaurant",
+    "cuisine": "sushi",
+    "name": "Moma sushi",
+    "panoramax": "4c4b8d98-b5b5-4dcb-bc8f-1ca83c8dbc04",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "832355036",
+    "ref:FR:SIRET": "83235503600019",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-03-25",
+    "was:name": "Jean-Louis David",
+    "was:shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 2059731659,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Rue Jean-Henri Fabre",
+    "name": "L. Roux Immobilier",
+    "office": "estate_agent",
+    "panoramax": "0bc9dcbd-34cb-449c-bc7e-c5aa599d3761",
+    "ref:FR:NAF": "68.31Z",
+    "ref:FR:SIRET": "40371031200014",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-03-25",
+    "was:name": "Royal tatoo studio",
+    "was:shop": "tattoo"
+  }
+},
+{
+  "type": "node",
+  "id": 2059732944,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Henri Fabre",
+    "check_date": "2025-02-04",
+    "name": "La friperie",
+    "opening_hours": "Mo-Fr 10:00-19:30; Sa 10:30-19:30",
+    "panoramax": "255da12a-954b-41ce-8d7d-e8167602cf9f",
+    "second_hand": "only",
+    "shop": "clothes",
+    "source": "survey",
+    "was:name": "La friperie avignonnaise;Cardel",
+    "was:shop": "shoes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2059733146,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Rue Jean-Henri Fabre",
+    "name": "Le Comptoir de la Mode",
+    "phone": "+33 6 84 8480 09",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIREN": "535305221",
+    "ref:FR:SIRET": "53530522100058",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-02-04",
+    "was:name": "Chez souad;Atlas Voyages",
+    "was:shop": "travel_agency"
+  }
+},
+{
+  "type": "node",
+  "id": 2059733436,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Rue Henri Fabre",
+    "name": "Institut Mahler",
+    "ref:FR:SIRET": "52831891800018",
+    "shop": "beauty",
+    "source": "survey",
+    "survey:date": "2025-02-04"
+  }
+},
+{
+  "type": "node",
+  "id": 2059734875,
+  "tags": {
+    "addr:housenumber": "4 Bis",
+    "addr:street": "Rue Théophile Gautier",
+    "name": "Bonfils immobilier",
+    "office": "estate_agent",
+    "ref:FR:NAF": "68.31Z",
+    "ref:FR:SIREN": "449563931",
+    "ref:FR:SIRET": "44956393100046",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-03-18",
+    "was:amenity": "fast_food",
+    "was:cuisine": "indian",
+    "was:name": "Master nan",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2059735534,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Rue Henri Fabre",
+    "amenity": "pharmacy",
+    "check_date": "2026-02-16",
+    "check_date:opening_hours": "2026-02-16",
+    "dispensing": "yes",
+    "healthcare": "pharmacy",
+    "name": "Pharmacie des Corps Saints",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:30-13:30, 15:30-19:00",
+    "phone": "+33490825517",
+    "ref:FR:FINESS": "840003883",
+    "source": "Celtipharm - 10/2014",
+    "survey:date": "2025-10-24",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2059738808,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Place des Corps Saints",
+    "amenity": "fast_food",
+    "check_date": "2025-11-12",
+    "check_date:opening_hours": "2025-11-12",
+    "indoor_seating": "yes",
+    "name": "Snack Le César",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes",
+    "ref:FR:SIRET": "48532713400022",
+    "source": "survey",
+    "was:name": "Les viandes blanches",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2059739200,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:street": "Place des Corps Saints",
+    "mapillary": "SVtahauTfFQdfQDmjuxKVQ",
+    "name": "Gleize & Anguiano",
+    "ref:FR:SIRET": "30966301100026",
+    "shop": "jewelry",
+    "source": "survey",
+    "survey:date": "2025-03-18"
+  }
+},
+{
+  "type": "node",
+  "id": 2059747263,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Rue Agricol Perdiguier",
+    "amenity": "restaurant",
+    "capacity": "20",
+    "cuisine": "french",
+    "indoor_seating": "yes",
+    "name": "Le Molière",
+    "opening_hours": "Mo-Fr 11:00-15:00; Sa-Su 11:00-23:00",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "434390894",
+    "ref:FR:SIRET": "43439089400039",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-03-18",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2059747638,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Rue Agricol Perdiguier",
+    "laundry_service": "no",
+    "mapillary": "140856221382699",
+    "name": "LA BULLE D'O",
+    "opening_hours": "Mo-Su 07:00-20:00",
+    "panoramax": "d81917cf-16c5-4d2c-9e3a-258ad26a414b",
+    "ref:FR:NAF": "96.01B",
+    "ref:FR:SIRET": "98331036800029",
+    "self_service": "yes",
+    "shop": "laundry",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-12-31",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2059747850,
+  "tags": {
+    "addr:housenumber": "62",
+    "addr:street": "Place des Corps Saints",
+    "amenity": "restaurant",
+    "name": "Les tables de La Fontaine",
+    "old_name": "Zeste",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "952945137",
+    "ref:FR:SIRET": "95294513700018",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2018-08-01"
+  }
+},
+{
+  "type": "node",
+  "id": 2059748512,
+  "tags": {
+    "addr:housenumber": "42",
+    "addr:street": "Place des Corps Saints",
+    "name": "Les Bulleuses",
+    "opening_hours:signed": "no",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIRET": "94875904800028",
+    "shop": "alcohol",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-02-20",
+    "was:amenity": "restaurant",
+    "was:cuisine": "crepe"
+  }
+},
+{
+  "type": "node",
+  "id": 2059748810,
+  "tags": {
+    "addr:housenumber": "38",
+    "addr:street": "Place des Corps Saints",
+    "amenity": "bar",
+    "brewery": "yes",
+    "check_date": "2025-11-12",
+    "check_date:opening_hours": "2025-11-12",
+    "indoor_seating": "yes",
+    "name": "Les célestins",
+    "opening_hours": "Mo-Sa 09:00-01:00",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIREN": "345197974",
+    "ref:FR:SIRET": "34519797400016",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 2059749274,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "1",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Paul Manivet",
+    "amenity": "restaurant",
+    "check_date": "2026-09-05",
+    "cuisine": "sandwich",
+    "delivery": "no",
+    "description": "Bistrot à tartines",
+    "level": "0",
+    "name": "L'épicerie de Ginette",
+    "opening_hours": "Mo-Su 11:00-23:00",
+    "phone": "+33 4 90 85 58 70",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "411889371",
+    "ref:FR:SIRET": "41188937100034",
+    "source": "INSEE - 2026-06",
+    "website": "https://lepicerie-de-ginette-restaurant-avignon.metro.rest/?lang=fr"
+  }
+},
+{
+  "type": "node",
+  "id": 2059749446,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "2",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Paul Manivet",
+    "amenity": "restaurant",
+    "check_date": "2026-09-05",
+    "cuisine": "burger",
+    "name": "Burger will",
+    "opening_hours": "Mo-Su 12:00-14:00,19:00-22:00",
+    "opening_hours:signed": "no",
+    "panoramax": "ac92ea71-48de-4447-bbb8-47430fd4e9ac",
+    "phone": "+33 4 90 25 60 75",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIRET": "95294513700026",
+    "source": "INSEE - 2026-06",
+    "was:name": "Chez Bodus le garçon boucher;terre de saveur"
+  }
+},
+{
+  "type": "node",
+  "id": 2059750000,
+  "tags": {
+    "addr:housenumber": "23",
+    "addr:street": "Place des Corps Saints",
+    "amenity": "restaurant",
+    "check_date": "2025-12-01",
+    "check_date:opening_hours": "2025-12-01",
+    "diet:gluten_free": "yes",
+    "diet:lactose_free": "yes",
+    "diet:vegan": "yes",
+    "email": "glacesprinciere@gmail.com",
+    "internet_access": "wlan",
+    "mapillary": "274236334429045",
+    "name": "La princière",
+    "opening_hours": "Mo-Su 12:30-18:30",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:coins": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "phone": "+33 9 80 37 58 06",
+    "ref:FR:NAF": "5610C",
+    "ref:FR:SIRET": "85188916200034",
+    "source": "Mapillary",
+    "takeaway": "yes",
+    "website": "https://la-princiere-avignon.eatbu.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2059750529,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "19",
+    "addr:street": "Place des Corps Saints",
+    "amenity": "restaurant",
+    "check_date": "2025-12-01",
+    "check_date:opening_hours": "2025-12-01",
+    "name": "L'Agape",
+    "opening_hours": "Tu-Sa 12:00-15:00,19:30-24:00",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "802537092",
+    "ref:FR:SIRET": "80253709200024",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 2059752413,
+  "tags": {
+    "addr:housenumber": "34",
+    "addr:street": "Place des Corps Saints",
+    "amenity": "restaurant",
+    "capacity": "50",
+    "cuisine": "pizza",
+    "indoor_seating": "yes",
+    "name": "Le pili",
+    "opening_hours": "Mo-Su 10:00-22:00",
+    "outdoor_seating": "yes",
+    "ref:FR:SIRET": "43802565200019",
+    "source": "survey;local knowledge",
+    "survey:date": "2024-02-20",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2059756573,
+  "tags": {
+    "addr:housenumber": "30",
+    "addr:postcode": "84000",
+    "addr:street": "Place des Corps Saints",
+    "alt_name": "Maison Violette",
+    "gluten_free": "yes",
+    "indoor_seating": "yes",
+    "mapillary": "203099058084560",
+    "name": "Violette",
+    "opening_hours": "Tu-Sa 07:30-19:00",
+    "operator": "Sébastien Beaupère",
+    "outdoor_seating": "yes",
+    "panoramax": "99819e1c-4a9d-485b-b943-40073d580e01",
+    "phone": "+33 6 59 44 62 94",
+    "ref:FR:NAF": "47.24Z",
+    "ref:FR:SIRET": "90823150900021",
+    "shop": "bakery",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-05-17",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "toilets:wheelchair": "yes",
+    "was:name": "Christian Olivero",
+    "website": "https://www.facebook.com/Maison-Violette-Boulangerie-Naturelle-316844281838084/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2059763119,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "9",
+    "addr:street": "Place des Corps Saints",
+    "amenity": "fast_food",
+    "check_date": "2025-12-01",
+    "check_date:opening_hours": "2025-12-01",
+    "cuisine": "kebab",
+    "name": "Istanbul kebap",
+    "opening_hours:signed": "no",
+    "ref:FR:SIRET": "52165391500012",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 2059764393,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "9",
+    "addr:street": "Place des Corps Saints",
+    "amenity": "pub",
+    "microbrewery": "yes",
+    "name": "Le St Pierre",
+    "opening_hours": "Tu-Su 11:30-14:30,19:30-22:30",
+    "phone": "+33 4 84 14 57 30",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIRET": "98768385100024",
+    "source": "INSEE - 2026-06",
+    "was:amenity": "restaurant",
+    "was:name": "Le Wine;Wine bar;Macadam Bistrot;Le corps saint",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2059764922,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "15",
+    "addr:street": "Place des Corps Saints",
+    "amenity": "bar",
+    "name": "Le perlier",
+    "ref:FR:SIRET": "91106523300015",
+    "shop": "kiosk",
+    "source": "survey",
+    "survey:date": "2025-11-27",
+    "was:name": "Bar le quenaïs"
+  }
+},
+{
+  "type": "node",
+  "id": 2092344394,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:country": "FR",
+    "addr:housenumber": "36",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Carnot",
+    "check_date": "2026-02-18",
+    "check_date:opening_hours": "2026-02-18",
+    "contact:facebook": "https://www.facebook.com/lamemoiredumonde",
+    "name": "Librairie La Mémoire du monde",
+    "opening_hours": "Tu-Sa 10:00-18:30",
+    "panoramax": "c691cd3e-c978-499b-b1a3-1bf00315ce45",
+    "phone": "+33 4 90 85 96 76",
+    "ref:FR:NAF": "47.61Z",
+    "ref:FR:SIREN": "301769956",
+    "ref:FR:SIRET": "30176995600030",
+    "ref:vatin": "FR53301769956",
+    "shop": "books",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2022-07-19",
+    "website": "https://www.lamemoiredumonde.fr/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2093214447,
+  "tags": {
+    "addr:housenumber": "16",
+    "addr:street": "Rue du Portail Boquier",
+    "name": "Les saveurs des sillons",
+    "panoramax": "d7711e98-d237-4232-8b64-481248e0ec94",
+    "ref:FR:NAF": "10.71B",
+    "ref:FR:SIREN": "994609022",
+    "ref:FR:SIRET": "99460902200011",
+    "shop": "bakery",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-02-26",
+    "was:name": "Barbe blanche;Kinjy's coiffure;Inoa",
+    "was:shop": "hairdresser",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2093219050,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "17",
+    "addr:street": "Boulevard Raspail",
+    "check_date": "2026-02-16",
+    "name": "Le coiffeur du faubourg",
+    "phone": "+33 490824055",
+    "ref:FR:NAF": "96.02A",
+    "ref:FR:SIREN": "750449829",
+    "ref:FR:SIRET": "75044982900027",
+    "shop": "hairdresser",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-08-07",
+    "was:name": "I. Voisin audition",
+    "was:name_1": "Entendre;Acoustique Grégoire",
+    "was:shop": "hearing_aids",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2115650839,
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:street": "Place du Palais",
+    "fee": "yes",
+    "museum": "history",
+    "name": "Musée du Palais des Papes",
+    "name:oc": "Musèu dau Palais dei Papas",
+    "name:zh": "教皇宫",
+    "ref:FR:NAF": "91.03Z",
+    "ref:FR:SIRET": "30720603700102",
+    "source": "INSEE - 2026-06",
+    "source:name:oc": "ieo-bdtopoc",
+    "tourism": "museum",
+    "website": "https://palais-des-papes.com/fr",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2115662826,
+  "tags": {
+    "addr:housenumber": "17",
+    "addr:street": "Rue Saint-Jean le Vieux",
+    "alt_name": "Le conservatoire",
+    "amenity": "bar",
+    "check_date": "2025-08-11",
+    "check_date:smoking": "2025-08-11",
+    "indoor_seating": "yes",
+    "name": "Brasserie du Conservatoire",
+    "outdoor_seating": "pedestrian_zone",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "682620687",
+    "ref:FR:SIRET": "68262068700033",
+    "smoking": "outside",
+    "source": "INSEE - 2026-06",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2123564254,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Avenue Maréchal de Lattre de Tassigny",
+    "name": "Shonen room",
+    "ref:FR:SIRET": "84972747400033",
+    "shop": "manga",
+    "source": "survey",
+    "survey:date": "2024-02-20",
+    "was:name": "Fresh N’cream;Max´hair",
+    "was:shop": "ice_cream;hairdresser",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2123565068,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:postcode": "84000",
+    "addr:street": "Avenue du Maréchal de Lattre de Tassigny",
+    "name": "Boutique Orizo",
+    "opening_hours": "Mo-Fr 08:00-12:30,13:30-18:00; Sa 09:00-12:00",
+    "phone": "+33 4 32 74 18 32",
+    "shop": "ticket",
+    "source": "survey",
+    "survey:date": "2022-09-02",
+    "was:name": "TCRA",
+    "website": "https://www.orizo.fr/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2123572572,
+  "tags": {
+    "addr:housenumber": "14",
+    "addr:street": "Rue de la République",
+    "mapillary": "391293598718780",
+    "name": "La havane",
+    "panoramax": "3d37a031-c89a-44d3-a99e-3a15c8e7f46e",
+    "ref:FR:NAF": "47.26Z",
+    "ref:FR:SIREN": "978544484",
+    "ref:FR:SIRET": "97854448400014",
+    "shop": "newsagent",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-23",
+    "tobacco": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2123610716,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue Favart",
+    "amenity": "restaurant",
+    "cuisine": "pizza",
+    "name": "Les Arts",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "978228997",
+    "ref:FR:SIRET": "97822899700018",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-20"
+  }
+},
+{
+  "type": "node",
+  "id": 2124799385,
+  "tags": {
+    "addr:housenumber": "27",
+    "addr:street": "Rue Agricol Perdiguier",
+    "name": "La boissonnerie",
+    "ref:FR:SIRET": "92148167700026",
+    "shop": "alcohol",
+    "source": "survey",
+    "survey:date": "2024-06-25",
+    "was:name": "Le garçon coiffeur",
+    "was:shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 2133494151,
+  "tags": {
+    "addr:housenumber": "16",
+    "addr:postcode": "84000",
+    "addr:street": "Place Crillon",
+    "name": "Le studio mouvement",
+    "old_name": "Expression florale",
+    "old_shop": "florist",
+    "phone": "+33490169111",
+    "ref:FR:NAF": "47.59B",
+    "ref:FR:SIRET": "33372231200035",
+    "shop": "interior_decoration",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 2133498010,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "14",
+    "addr:postcode": "84000",
+    "addr:street": "Place Crillon",
+    "brand": "Carrefour Express",
+    "brand:wikidata": "Q2940190",
+    "name": "Carrefour Express",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-19:00",
+    "phone": "+33 4 90 90 84 24",
+    "ref:FR:NAF": "47.11D",
+    "ref:FR:SIREN": "982407777",
+    "ref:FR:SIRET": "98240777700027",
+    "shop": "convenience",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-10-18",
+    "was:brand": "Société Marseillaise de Crédit",
+    "was:brand:wikidata": "Q3488479",
+    "was:brand:wikipedia": "fr:Société marseillaise de crédit",
+    "was:name": "Société Marseillaise de Crédit",
+    "website": "https://www.carrefour.fr/magasin/express-avignon-crillon",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2153105882,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "12",
+    "addr:postcode": "84000",
+    "addr:street": "Rue du Limas",
+    "amenity": "nightclub",
+    "lgbtq": "primary",
+    "name": "L'Esclave",
+    "ref:FR:SIRET": "33853491000017",
+    "survey:date": "2023-11-22",
+    "website": "http://www.esclavebar.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2153339739,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Place de l'Horloge",
+    "amenity": "townhall",
+    "check_date": "2024-04-24",
+    "email": "contact@mairie-avignon.com",
+    "name": "Mairie - Avignon",
+    "opening_hours": "Mo-Fr 08:00-17:30",
+    "phone": "+33490808000",
+    "source": "INSEE - 2026-06",
+    "website": "https://www.avignon.fr/"
+  }
+},
+{
+  "type": "node",
+  "id": 2174786508,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:country": "FR",
+    "addr:housenumber": "31",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Saint-Michel",
+    "check_date": "2026-01-12",
+    "check_date:opening_hours": "2026-01-12",
+    "mapillary": "506133293892656",
+    "name": "Luminex Provence",
+    "opening_hours": "Mo-Fr 08:00-12:00,14:00-18:00; Sa 09:30-12:00,14:00-18:00",
+    "shop": "lighting",
+    "source": "survey",
+    "website": "https://www.chassillan.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2174786509,
+  "tags": {
+    "addr:housenumber": "23",
+    "addr:street": "Rue Saint-Michel",
+    "craft": "watchmaker",
+    "email": "horlogerie23@proton.me",
+    "name": "Horlogerie 23 : des Longchamps et Planeix",
+    "opening_hours": "Tu-Fr 10:00-17:00; Sa 10:00-13:00",
+    "phone": "+33 6 99 37 18 93",
+    "source": "survey",
+    "survey:date": "2020-10-28",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2174786510,
+  "tags": {
+    "addr:housenumber": "20",
+    "addr:street": "Rue Paul Manivet",
+    "amenity": "bar",
+    "check_date": "2026-01-12",
+    "check_date:opening_hours": "2026-01-12",
+    "lottery": "yes",
+    "name": "Bar Le Saint-Michel",
+    "opening_hours": "Mo,Tu,Th,Fr 07:30-19:30; Sa 08:00-19:30; Su 09:00-18:00",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIREN": "753404656",
+    "ref:FR:SIRET": "75340465600013",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 2174796874,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "7",
+    "addr:street": "Rue Saint-Michel",
+    "check_date": "2025-11-12",
+    "check_date:opening_hours": "2025-11-12",
+    "description": "Alimentation générale",
+    "mapillary": "215531066750900",
+    "name": "Épicerie d'or",
+    "opening_hours:signed": "no",
+    "ref:FR:SIRET": "49392688500010",
+    "shop": "convenience",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 2211138057,
+  "tags": {
+    "addr:housenumber": "21",
+    "addr:street": "Place Crillon",
+    "description": "cuisiniste",
+    "name": "Atelier Mouvement",
+    "ref:FR:NAF": "47.59B",
+    "ref:FR:SIREN": "333722312",
+    "ref:FR:SIRET": "33372231200019",
+    "shop": "kitchen",
+    "source": "INSEE - 2026-06",
+    "website": "https://www.mouvement.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2211145502,
+  "tags": {
+    "addr:housenumber": "11",
+    "addr:street": "Rue du Limas",
+    "name": "Agence Herys Immo",
+    "office": "estate_agent",
+    "ref:FR:NAF": "68.31Z",
+    "ref:FR:SIREN": "822485926",
+    "ref:FR:SIRET": "82248592600023",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-03-03",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2211146380,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:country": "FR",
+    "addr:housenumber": "13",
+    "addr:street": "Rue du Limas",
+    "check_date": "2026-07-20",
+    "check_date:opening_hours": "2026-02-15",
+    "indoor_seating": "yes",
+    "name": "Chez Wendy",
+    "opening_hours": "Mo-Fr 08:00-15:00",
+    "panoramax": "0844b831-6fa7-4cea-9aad-0ee2d081c78b",
+    "ref:FR:NAF": "10.71B",
+    "ref:FR:SIREN": "949318521",
+    "ref:FR:SIRET": "94931852100018",
+    "seats": "10",
+    "shop": "bakery",
+    "source": "INSEE - 2026-06",
+    "was:name": "Aux Délices de Floriemie;Ronde des pains",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2211151728,
+  "tags": {
+    "addr:housenumber": "19",
+    "addr:street": "Rue de la Grande Fusterie",
+    "amenity": "fast_food",
+    "cuisine": "burger",
+    "name": "Baby",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "979492246",
+    "ref:FR:SIRET": "97949224600017",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-04-26",
+    "was:name": "Le C’19;Oscar;Bahia"
+  }
+},
+{
+  "type": "node",
+  "id": 2211153945,
+  "tags": {
+    "addr:housenumber": "43",
+    "addr:street": "Rue de la Grande Fusterie",
+    "name": "Affirmatif",
+    "phone": "+33 4 90 85 28 10",
+    "ref:FR:NAF": "96.02A",
+    "ref:FR:SIREN": "350818522",
+    "ref:FR:SIRET": "35081852200012",
+    "shop": "hairdresser",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-04-26",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2211159436,
+  "tags": {
+    "addr:housenumber": "36",
+    "addr:street": "Rue de la Grande Fusterie",
+    "check_date": "2023-06-13",
+    "name": "Souvenirs La Cigale",
+    "ref:FR:NAF": "47.78C",
+    "ref:FR:SIRET": "78999648500031",
+    "shop": "gift",
+    "source": "INSEE - 2026-06",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2211167327,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "25",
+    "addr:postcode": "84000",
+    "addr:street": "Allée Antoine Pinay",
+    "amenity": "restaurant",
+    "email": "le-pavillon-bleu-avignon@orange.fr",
+    "name": "Le pavillon bleu",
+    "phone": "+33 4 90 86 71 30",
+    "source": "survey",
+    "website": "https://www.lepavillonbleu-avignon.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2212785876,
+  "tags": {
+    "addr:housenumber": "18",
+    "addr:street": "Rue des Lices",
+    "brand": "Carrefour Express",
+    "brand:wikidata": "Q2940190",
+    "name": "Carrefour Express",
+    "opening_hours": "Mo-Sa 07:30-21:00; Su 09:00-20:00",
+    "phone": "+33 4 90 82 95 41",
+    "ref:FR:NAF": "47.11D",
+    "ref:FR:SIREN": "841557267",
+    "ref:FR:SIRET": "84155726700025",
+    "shop": "convenience",
+    "source": "INSEE - 2026-06",
+    "source:ref": "INSEE - 2022-10",
+    "start_date": "2016-11-21",
+    "survey:date": "2024-09-09",
+    "was:name": "8 à Huit",
+    "website": "https://www.carrefour.fr/magasin/express-avignon-lices",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2212785965,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "20",
+    "addr:street": "Rue des Lices",
+    "name": "Boucherie Filali",
+    "ref:FR:SIRET": "84531713000019",
+    "shop": "butcher",
+    "survey:date": "2024-09-09",
+    "was:name": "Cyclopanier",
+    "was:shop": "greengrocer",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2212789280,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "19",
+    "addr:postcode": "84000",
+    "addr:street": "Rue des Lices",
+    "amenity": "restaurant",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "La Planque - Bar à jeux",
+    "opening_hours": "Tu-Fr 16:00-00:00; Sa 11:00-00:00",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "994779494",
+    "ref:FR:SIRET": "99477949400016",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-09-09",
+    "theme": "cat",
+    "website": "https://www.instagram.com/laplanqueavignon",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2212791562,
+  "tags": {
+    "addr:housenumber": "30",
+    "addr:street": "Rue des Lices",
+    "amenity": "fast_food",
+    "name": "Brut.e.",
+    "was:amenity": "restaurant",
+    "was:name": "L'épice and love"
+  }
+},
+{
+  "type": "node",
+  "id": 2212797776,
+  "tags": {
+    "addr:housenumber": "44",
+    "addr:street": "Rue des Lices",
+    "amenity": "bar",
+    "check_date": "2026-09-06",
+    "check_date:opening_hours": "2026-02-15",
+    "name": "Café des Lices",
+    "opening_hours": "Mo-Fr 07:30-14:00, 17:30-21:00; Sa-Su 09:30-14:00, 17:30-21:00",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 2212811762,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:postcode": "84000",
+    "addr:street": "Rue de la Carreterie",
+    "email": "lalunetteriedemorgane@gmail.com",
+    "name": "La lunetterie de Morgane",
+    "opening_hours": "Tu-Sa 09:30-12:30, 13:30-18:30",
+    "outdoor_seating": "no",
+    "phone": "+33 4 88 54 35 99",
+    "ref:FR:NAF": "47.78A",
+    "ref:FR:SIREN": "893601716",
+    "ref:FR:SIRET": "89360171600010",
+    "shop": "optician",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-08-02",
+    "was:name": "Optical design;Optique des Carmes",
+    "was:shop": "optician",
+    "website": "https://www.lalunetteriedemorgane.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2212813810,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "11",
+    "addr:postcode": "84000",
+    "addr:street": "Place des Carmes",
+    "amenity": "arts_centre",
+    "name": "L'Atelier de Jeanne",
+    "was:name": "CDM coiffure",
+    "was:shop": "hairdresser",
+    "website": "https://www.atelierdejeanneavignon.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2212815017,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "21",
+    "addr:postcode": "84000",
+    "addr:street": "Place des Carmes",
+    "amenity": "restaurant",
+    "cuisine": "french",
+    "delivery": "no",
+    "name": "Au Jardin des Carmes",
+    "name:oc": "Au Jardin dei Carmes",
+    "opening_hours": "Tu-Sa 12:00-22:30",
+    "outdoor_seating": "yes",
+    "phone": "+33 9 54 25 10 67",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "838955649",
+    "ref:FR:SIRET": "83895564900010",
+    "source": "INSEE - 2026-06",
+    "source:name:oc": "ieo-bdtopoc",
+    "survey:date": "2022-06-27",
+    "takeaway": "no",
+    "website": "http://www.aujardindescarmes.fr"
+  }
+},
+{
+  "type": "node",
+  "id": 2212815654,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "5",
+    "addr:postcode": "84000",
+    "addr:street": "Place des Carmes",
+    "hairdresser": "barber",
+    "male": "yes",
+    "mapillary": "187191529799328",
+    "name": "Barber shop",
+    "opening_hours": "Mo-Sa 09:00-18:00",
+    "phone": "+33 4 84 15 55 69",
+    "shop": "hairdresser",
+    "source": "survey",
+    "source:name:oc": "ieo-bdtopoc",
+    "survey:date": "2020-06-25",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2212817356,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Place des Carmes",
+    "amenity": "bar",
+    "cuisine": "tapas",
+    "description": "Bar à vin, tapas",
+    "name": "Marion nous",
+    "name:oc": "Marion-se",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIREN": "801196965",
+    "ref:FR:SIRET": "80119696500025",
+    "source": "INSEE - 2026-06",
+    "source:name:oc": "ieo-bdtopoc",
+    "survey:date": "2019-09-09",
+    "was:amenity": "restaurant",
+    "was:name": "Entrée des artistes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2212818305,
+  "tags": {
+    "addr:housenumber": "23",
+    "addr:street": "Place des Carmes",
+    "amenity": "theatre",
+    "check_date": "2024-04-24",
+    "email": "theatre-des-carmes@orange.fr",
+    "name": "Théâtre des Carmes",
+    "name:oc": "Teatre dei Carmes - Andrieu Benedetto",
+    "phone": "+33 4 90 82 20 47",
+    "ref:FR:NAF": "90.01Z",
+    "ref:FR:SIREN": "334302379",
+    "ref:FR:SIRET": "33430237900014",
+    "source": "INSEE - 2026-06",
+    "source:name:oc": "ieo-bdtopoc",
+    "website": "http://www.theatredescarmes.com/",
+    "wheelchair": "no",
+    "wikidata": "Q3527744"
+  }
+},
+{
+  "type": "node",
+  "id": 2212822456,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "25",
+    "addr:postcode": "84000",
+    "addr:street": "Place des Carmes",
+    "amenity": "restaurant",
+    "check_date": "2023-03-20",
+    "contact:website": "https://hygge.green",
+    "description": "Cantine bio, vegan,  sans gluten",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "fixme": "resurvey",
+    "name": "Hygge",
+    "opening_hours": "Mo-Sa 11:00-15:00",
+    "phone": "+33 4 65 81 06 87",
+    "source": "survey",
+    "was:description": "Restaurant Bar à tapas",
+    "was:name": "Pace é salute..."
+  }
+},
+{
+  "type": "node",
+  "id": 2212899095,
+  "tags": {
+    "addr:housenumber": "52",
+    "addr:street": "Rue Carnot",
+    "check_date": "2022-11-21",
+    "name": "M.y Primeurs",
+    "opening_hours": "Mo-Sa 08:00-14:00,16:00-20:00; Su 08:00-13:00",
+    "organic": "yes",
+    "panoramax": "26c09161-0e9d-4587-812d-c06960c955ca",
+    "ref:FR:NAF": "47.21Z",
+    "ref:FR:SIREN": "827606484",
+    "ref:FR:SIRET": "82760648400018",
+    "shop": "farm",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-12-31",
+    "was:name": "Idols",
+    "was:shop": "clothes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2241171600,
+  "tags": {
+    "addr:housenumber": "17",
+    "addr:street": "Rue des Trois Faucons",
+    "amenity": "restaurant",
+    "check_date": "2026-02-15",
+    "check_date:opening_hours": "2026-02-15",
+    "cuisine": "french",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "fou de fafa",
+    "opening_hours": "Mo-Su 19:00-23:00",
+    "outdoor_seating": "yes",
+    "panoramax": "30eed7a2-c5e8-4799-b555-22963dfe8319",
+    "phone": "+33 4 32 76 35 13",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "528597321",
+    "ref:FR:SIRET": "52859732100017",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-01-26",
+    "website": "https://www.restaurantfoudefafa.com",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2303581479,
+  "tags": {
+    "addr:housenumber": "M",
+    "addr:street": "Avenue Maréchal de Lattre de Tassigny",
+    "source": "survey 2013"
+  }
+},
+{
+  "type": "node",
+  "id": 2314132238,
+  "tags": {
+    "addr:housenumber": "29",
+    "addr:postcode": "84000",
+    "addr:street": "Rue des Trois Faucons",
+    "brand": "Amplifon",
+    "brand:wikidata": "Q477222",
+    "email": "frshop961@amplifon.com",
+    "mapillary": "301603658001034",
+    "name": "Amplifon",
+    "old_name": "Audition Santé Michon",
+    "opening_hours": "Mo-Fr 08:00-12:00,14:00-18:00",
+    "phone": "+33 4 20 10 71 99",
+    "ref:FR:NAF": "47.74Z",
+    "ref:FR:SIRET": "31808311010218",
+    "shop": "hearing_aids",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-03-18",
+    "was:name": "Auddition Santé Michon",
+    "website": "https://www.amplifon.com/fr/nous-trouver/audioprothesiste-avignon/amplifon-avignon-centre-s961",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2314153300,
+  "tags": {
+    "addr:housenumber": "14",
+    "addr:street": "Rue des Trois Faucons",
+    "name": "Immobilier Casaus",
+    "office": "estate_agent",
+    "phone": "+33 4 90 81 02 01",
+    "ref:FR:NAF": "68.31Z",
+    "ref:FR:SIREN": "534591417",
+    "ref:FR:SIRET": "53459141700033",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-01-26",
+    "website": "www.immobilier-casais.com",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2314153305,
+  "tags": {
+    "addr:housenumber": "19",
+    "addr:street": "Rue des Trois Faucons",
+    "amenity": "restaurant",
+    "indoor_seating": "yes",
+    "name": "Le Joat",
+    "outdoor_seating": "yes",
+    "panoramax": "99b04a0e-ccb5-467c-a232-e8bd28fad7b7",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "932437296",
+    "ref:FR:SIRET": "93243729600019",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-10-10",
+    "was:description": "Galerie restaurant",
+    "was:name": "Art&buffet",
+    "was:shop": "art",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2314169282,
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:street": "Rue des Trois Faucons",
+    "description": "fr:design végétal",
+    "name": "À nos amours",
+    "ref:FR:NAF": "47.76Z",
+    "ref:FR:SIREN": "530581404",
+    "ref:FR:SIRET": "53058140400015",
+    "shop": "florist",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-01-26",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2314169283,
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:street": "Rue des Trois Faucons",
+    "mapillary": "611867413541679",
+    "name": "Aline Géhant",
+    "opening_hours": "Tu-Sa 10:00-13:00,15:00-18:00",
+    "ref:FR:NAF": "10.82Z",
+    "ref:FR:SIREN": "518210497",
+    "ref:FR:SIRET": "51821049700013",
+    "shop": "chocolate",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-01-26",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2314185534,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Rue des Trois Faucons",
+    "check_date": "2026-02-15",
+    "check_date:opening_hours": "2025-11-19",
+    "mapillary": "773683860206825",
+    "name": "La cueillette",
+    "opening_hours": "Tu-Sa 08:30-18:45",
+    "ref:FR:NAF": "47.21Z",
+    "ref:FR:SIREN": "793376849",
+    "ref:FR:SIRET": "79337684900014",
+    "shop": "greengrocer",
+    "source": "INSEE - 2026-06",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2314192825,
+  "tags": {
+    "addr:housenumber": "11",
+    "addr:street": "Rue du Collège de la Croix",
+    "amenity": "theatre",
+    "check_date": "2025-04-18",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Le Cabestan",
+    "ref:FR:NAF": "90.01Z",
+    "ref:FR:SIREN": "480061878",
+    "ref:FR:SIRET": "48006187800017",
+    "source": "INSEE - 2026-06",
+    "source:festival": "Mairie d'Avignon",
+    "website": "https://lecabestan.canalblog.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2345368592,
+  "tags": {
+    "addr:housenumber": "19",
+    "addr:postcode": "84000",
+    "addr:street": "Place de la Principale",
+    "amenity": "restaurant",
+    "name": "Le potard",
+    "old_name": "La Tartinerie de la Chapelle",
+    "source": "survey 2014",
+    "survey:date": "2017-07-27",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2382295792,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "14",
+    "addr:street": "Rue Joseph Vernet",
+    "mapillary": "153705600089424",
+    "name": "De toutes les matières",
+    "old_name": "Le luxe en Avignon",
+    "panoramax": "dcc182f8-c141-4170-884e-998f59ef5959",
+    "ref:FR:SIRET": "50510628600022",
+    "shop": "perfumery",
+    "source": "survey",
+    "survey:date": "2026-01-14",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2382295793,
+  "tags": {
+    "addr:housenumber": "14",
+    "addr:street": "Rue Joseph Vernet",
+    "brand": "Dinh Van",
+    "brand:wikidata": "Q105324937",
+    "mapillary": "762030221171265",
+    "name": "Dinh Van",
+    "ref:FR:NAF": "32.12Z",
+    "ref:FR:SIRET": "42095002400174",
+    "shop": "jewelry",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-14",
+    "was:name": "IKKS Junior",
+    "was:shop": "clothes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2408703560,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "31",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Saint-Jean le Vieux",
+    "laundry_service": "no",
+    "name": "Laverie Factory (Chapeau rouge)",
+    "opening_hours": "Mo-Su 06:00-21:00",
+    "phone": "+33465846395",
+    "ref:FR:NAF": "96.01B",
+    "ref:FR:SIRET": "92812744800043",
+    "self_service": "yes",
+    "shop": "laundry",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2020-08-18",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2408703562,
+  "tags": {
+    "addr:housenumber": "22",
+    "addr:street": "Rue de la Bonneterie",
+    "name": "Aroma bien-être",
+    "ref:FR:NAF": "96.02B",
+    "ref:FR:SIREN": "437941479",
+    "ref:FR:SIRET": "43794147900028",
+    "shop": "beauty",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2020-10-21",
+    "was:name": "Pull-in",
+    "was:shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 2428268579,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:street": "Rue du Collège du Roure",
+    "alcohol": "wine",
+    "check_date": "2025-11-19",
+    "check_date:opening_hours": "2025-11-19",
+    "name": "Le Vin Devant Soi",
+    "opening_hours": "Mo-Sa 10:00-19:30",
+    "ref:FR:NAF": "47.25Z",
+    "ref:FR:SIREN": "507533156",
+    "ref:FR:SIRET": "50753315600018",
+    "shop": "alcohol",
+    "source": "INSEE - 2026-06",
+    "website": "lvds.fr",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2428283964,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:street": "Rue de Mons",
+    "amenity": "restaurant",
+    "name": "Restaurant Christian Etienne",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "377696612",
+    "ref:FR:SIRET": "37769661200029",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 2428344135,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Rue de la République",
+    "brand": "Bijou Brigitte",
+    "brand:wikidata": "Q599545",
+    "name": "Bijou Brigitte",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "ref:FR:NAF": "47.78C",
+    "ref:FR:SIRET": "50264131900038",
+    "shop": "jewelry",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-12-29",
+    "was:name": "Petrol park",
+    "was:shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 2489392000,
+  "tags": {
+    "addr:housenumber": "33",
+    "addr:street": "Rue des Fourbisseurs",
+    "name": "Éric & les chics filles",
+    "opening_hours": "Tu-Sa 10:00-19:00",
+    "panoramax": "58198862-c63c-4b12-8af5-da78684212c0",
+    "shop": "clothes",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2013",
+    "survey:date": "2026-07-06",
+    "was:name": "Cig' Concept",
+    "was:shop": "e-cigarette"
+  }
+},
+{
+  "type": "node",
+  "id": 2499280161,
+  "tags": {
+    "addr:housenumber": "9",
+    "addr:street": "Rue Henri Fabre",
+    "amenity": "fast_food",
+    "check_date": "2026-02-16",
+    "check_date:opening_hours": "2026-02-16",
+    "cuisine": "indian",
+    "name": "Naan hut",
+    "opening_hours": "Mo-Su 10:30-15:00, 18:00-23:00",
+    "phone": "+33956197570",
+    "source": "survey",
+    "survey:date": "2025-03-24",
+    "was:amenity": "restaurant",
+    "was:cuisine": "burger",
+    "was:name": "Nalata;Chez Bodus le garçon boucher;Le chat´ touilleur",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2499297617,
+  "tags": {
+    "addr:housenumber": "52",
+    "addr:street": "Rue Paul Saïn",
+    "amenity": "theatre",
+    "name": "Theatre des 3 raisins",
+    "ref:FR:NAF": "90.01Z",
+    "ref:FR:SIREN": "844123810",
+    "ref:FR:SIRET": "84412381000013",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2021-10-08",
+    "vacant": "yes",
+    "was:amenity": "pharmacy",
+    "was:name": "Pharmacie Thiers",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2512524425,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "14",
+    "addr:street": "Place Pie",
+    "amenity": "fast_food",
+    "cuisine": "tacos;burger",
+    "drive_through": "no",
+    "indoor_seating": "yes",
+    "name": "O’ Liban",
+    "outdoor_seating": "yes",
+    "panoramax": "36b115e7-8a0b-4c17-aea7-b43e491d1057",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "449899715",
+    "ref:FR:SIRET": "44989971500048",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-05-22",
+    "takeaway": "yes",
+    "was:cuisine": "lebanese;burger",
+    "was:name": "Select burger;Un coin de gourmandises",
+    "was:shop": "bakery",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2512532525,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "54",
+    "addr:postcode": "84000",
+    "addr:street": "Rue de la Bonneterie",
+    "branch": "Avignon Bonneterie",
+    "brand": "Naturalia",
+    "brand:wikidata": "Q3337081",
+    "brand:wikipedia": "fr:Naturalia",
+    "bulk_purchase": "yes",
+    "level": "0",
+    "name": "Naturalia",
+    "opening_hours": "Mo-Sa 09:00-20:00; Su 09:00-12:45",
+    "operator": "Naturalia",
+    "organic": "only",
+    "panoramax": "7ca2d7cf-14c1-46e2-8f9f-0b058ddbd08c",
+    "phone": "+33490840904",
+    "ref:FR:NAF": "47.29Z",
+    "ref:FR:SIRET": "30247464801084",
+    "shop": "supermarket",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-01-24",
+    "website": "https://magasins.naturalia.fr/naturalia/fr/store/france/provence-alpes-cote-d-azur/vaucluse/avignon/avignon-bonneterie/3953",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2512533823,
+  "tags": {
+    "addr:housenumber": "52",
+    "addr:street": "Rue de la Bonneterie",
+    "amenity": "restaurant",
+    "check_date": "2025-11-12",
+    "check_date:opening_hours": "2025-11-12",
+    "cuisine": "pizza",
+    "name": "La fabrique",
+    "opening_hours": "Tu-Fr 16:00-18:00+, Sa 10:30-14:30,17:00-24:00, Su 00:00-01:00",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "889127940",
+    "ref:FR:SIRET": "88912794000027",
+    "source": "INSEE - 2026-06",
+    "was:alt_name": "Le bateau ivre",
+    "was:amenity": "bar",
+    "was:name": "Brasserie des halles",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2512539248,
+  "tags": {
+    "addr:housenumber": "52",
+    "addr:street": "Rue de la Bonneterie",
+    "alt_name": "Grande pharmacie des halles",
+    "amenity": "pharmacy",
+    "dispensing": "yes",
+    "healthcare": "pharmacy",
+    "name": "Aprium Pharmacie",
+    "ref:FR:FINESS": "840004725",
+    "ref:FR:NAF": "47.73Z",
+    "ref:FR:SIREN": "505146183",
+    "ref:FR:SIRET": "50514618300023",
+    "source": "INSEE - 2026-06",
+    "start_date": "2016-10-31",
+    "survey:date": "2024-01-24",
+    "was:name": "Pharmacie des Halles",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2512545453,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Rue Grivolas",
+    "amenity": "college",
+    "check_date": "2026-09-17",
+    "description": "Centre de ressource sur le patrimoine et le bâti ancien",
+    "name": "École d'Avignon",
+    "source": "survey",
+    "was:description": "fr:Centre de formation à la réhabilitation du patrimoine architectural",
+    "website": "https://www.ecole-avignon.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2649595340,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "4",
+    "addr:postcode": "84000",
+    "addr:street": "Escaliers Sainte-Anne",
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "La Manutention",
+    "opening_hours": "Tu-Sa 11:30-14:30,19:00-22:00",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2792755435,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Rue Figuière",
+    "amenity": "cinema",
+    "brand": "Utopia",
+    "brand:wikidata": "Q3552766",
+    "brand:wikipedia": "fr:Utopia (cinéma)",
+    "capacity": "139",
+    "check_date": "2026-02-18",
+    "cinema:3D": "no",
+    "contact:facebook": "https://www.facebook.com/utopia.avignon/",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Utopia République",
+    "phone": "+33 4 90 82 65 36",
+    "ref:FR:CNC": "33772",
+    "screen": "1",
+    "source:festival": "Mairie d'Avignon",
+    "survey:date": "2020-08-18",
+    "website": "https://www.cinemas-utopia.org/avignon/"
+  }
+},
+{
+  "type": "node",
+  "id": 3029462756,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:country": "FR",
+    "addr:housenumber": "8",
+    "addr:postcode": "84000",
+    "addr:street": "Place Pie",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 3029462757,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Rue Florence",
+    "amenity": "fast_food",
+    "mapillary": "2919269321694417",
+    "name": "Aux délices d'Anaïs",
+    "panoramax": "302f5128-5c91-4c8f-b28b-b74b8eb8aa45",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "432545465",
+    "ref:FR:SIRET": "43254546500010",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-09-23",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3029467659,
+  "tags": {
+    "addr:housenumber": "12",
+    "addr:street": "Place Pie",
+    "amenity": "fast_food",
+    "cuisine": "turkish",
+    "name": "Bodrum",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "925312159",
+    "ref:FR:SIRET": "92531215900021",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2025-02-24",
+    "was:cuisine": "tacos;kebab",
+    "was:name": "B&Burger;Takosking;Nabab"
+  }
+},
+{
+  "type": "node",
+  "id": 3029474770,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "4",
+    "addr:postcode": "84000",
+    "addr:street": "Place Jérusalem",
+    "amenity": "bank",
+    "atm": "no",
+    "branch": "Avignon Pie",
+    "brand": "Banque Populaire",
+    "brand:wikidata": "Q846647",
+    "comment": "Plus de DAB / no more ATM",
+    "drive_through": "no",
+    "name": "Banque Populaire",
+    "old_name": "Banque Chaix",
+    "opening_hours": "Tu 08:30-12:20,14:00-18:00; We-Fr 08:30-12:20,13:30-18:00; Sa 08:30-12:35",
+    "phone": "+33 4 90 16 69 00",
+    "source": "survey",
+    "survey:date": "2025-09-23",
+    "website": "https://agences.banquepopulaire.fr/banque-assurance/agence-avignon-pie-id1460700201"
+  }
+},
+{
+  "type": "node",
+  "id": 3029498744,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "22",
+    "addr:postcode": "84000",
+    "addr:street": "Rue du Vieux-Sextier",
+    "amenity": "bar",
+    "name": "Les fistons",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "921194213",
+    "ref:FR:SIRET": "92119421300010",
+    "shop": "deli",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-05-22",
+    "was:amenity": "restaurant",
+    "was:cuisine": "italian",
+    "was:name": "Chez les Castagno",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3029499037,
+  "tags": {
+    "addr:housenumber": "18",
+    "addr:street": "Rue du Vieux Sextier",
+    "name": "La comédie humaine",
+    "panoramax": "edce73c3-6c4e-4a08-bb10-b67e5109d5ba",
+    "ref:FR:NAF": "47.61Z",
+    "ref:FR:SIREN": "992492033",
+    "ref:FR:SIRET": "99249203300012",
+    "shop": "books",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2020-10-26",
+    "was:name": "Marvel",
+    "was:shop": "shoes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3029499038,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "20",
+    "addr:postcode": "84000",
+    "addr:street": "Rue du Vieux-Sextier",
+    "amenity": "restaurant",
+    "cuisine": "asian",
+    "name": "Wafu Ramen",
+    "panoramax": "4bd75f4f-d65b-4ed1-9929-d1e807d65708",
+    "source": "survey",
+    "survey:date": "2020-10-26",
+    "was:cuisine": "spanish",
+    "was:name": "El Pintxo",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3029507097,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "29",
+    "addr:postcode": "84000",
+    "addr:street": "Rue du Vieux-Sextier",
+    "amenity": "restaurant",
+    "capacity": "30",
+    "cuisine": "japanese",
+    "diet:vegetarian": "yes",
+    "name": "Mecha Uma",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "891598583",
+    "ref:FR:SIRET": "89159858300021",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2023-10-10",
+    "was:cuisine": "french",
+    "was:name": "Resto O'Petitapetit",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3029566518,
+  "tags": {
+    "addr:housenumber": "40",
+    "addr:street": "Rue des Marchands",
+    "name": "Andebanno",
+    "ref:FR:NAF": "47.78C",
+    "ref:FR:SIREN": "843783564",
+    "ref:FR:SIRET": "84378356400027",
+    "shop": "gift",
+    "source": "INSEE - 2026-06"
+  }
+},
+{
+  "type": "node",
+  "id": 3029570985,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Rue des Fourbisseurs",
+    "amenity": "restaurant",
+    "name": "Chez Nine",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "881356661",
+    "ref:FR:SIRET": "88135666100010",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2020-06-18",
+    "was:amenity": "fast_food",
+    "was:name": "Encas de plaisir",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3029571575,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Rue des Fourbisseurs",
+    "clothes": "women",
+    "name": "K boutic",
+    "panoramax": "8c619b0f-ea03-4cd8-9429-cbfaf269798a",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIREN": "503857443",
+    "ref:FR:SIRET": "50385744300017",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2020-06-17",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3029576877,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:street": "Rue des Fourbisseurs",
+    "check_date": "2024-02-17",
+    "clothes": "socks",
+    "name": "La Manufacture",
+    "panoramax": "ad5d19c8-2101-4019-9028-e6bbfacc3317",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIREN": "830544920",
+    "ref:FR:SIRET": "83054492000010",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "was:name": "Mademoiselle",
+    "was:shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3029578662,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Rue du Vieux Sextier",
+    "female": "yes",
+    "male": "yes",
+    "name": "Sandra B.",
+    "panoramax:2026": "7cfd9e4c-7e1a-4ccd-be37-06f3f212f38a",
+    "ref:FR:NAF": "96.02A",
+    "ref:FR:SIREN": "451959340",
+    "ref:FR:SIRET": "45195934000014",
+    "shop": "hairdresser",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-04-09",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3029638230,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Rue du Roi René",
+    "check_date": "2025-11-12",
+    "check_date:opening_hours": "2025-11-12",
+    "name": "Béatrice esthétique",
+    "opening_hours:signed": "no",
+    "ref:FR:NAF": "96.02B",
+    "ref:FR:SIREN": "403695638",
+    "ref:FR:SIRET": "40369563800029",
+    "shop": "beauty",
+    "source": "INSEE - 2026-06",
+    "was:name": "Alimentation;My chicha",
+    "was:shop": "convenience",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3029648649,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Place Saint-Didier",
+    "amenity": "fast_food",
+    "check_date": "2026-02-15",
+    "check_date:opening_hours": "2026-02-15",
+    "cuisine": "coffee_shop;sandwich",
+    "name": "Édition café",
+    "opening_hours": "Tu-Sa 09:00-17:00",
+    "source": "survey",
+    "was:name": "Le petit saint didier"
+  }
+},
+{
+  "type": "node",
+  "id": 3029654625,
+  "tags": {
+    "addr:housenumber": "11",
+    "addr:street": "Place Saint-Didier",
+    "check_date": "2026-02-15",
+    "check_date:opening_hours": "2025-11-12",
+    "description": "fr:atelier de création & mercerie fine",
+    "mapillary": "oi8nZqZbglxhGqC7kkk4Ig",
+    "name": "Kalate",
+    "opening_hours": "We,Fr 10:30-13:00,15:00-19:00; Tu 15:00-19:00; Th 10:30-12:00,15:00-19:00; Sa 10:30-13:00,14:30-19:00",
+    "shop": "haberdashery",
+    "source": "survey",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3080486084,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "24",
+    "addr:street": "Rue Joseph Vernet",
+    "name": "Yoco.nutt",
+    "shop": "juice",
+    "source": "survey",
+    "survey:date": "2026-01-14",
+    "was:brand": "Vilebrequin",
+    "was:clothes": "swimwear",
+    "was:name": "Vilebrequin;Tony togs;Sweet pants",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3080491514,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "25",
+    "addr:street": "Rue Joseph Vernet",
+    "brand": "Cotélac",
+    "brand:wikidata": "Q2998637",
+    "name": "Cotélac",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIRET": "37823997400132",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-14",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3080525495,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "18",
+    "addr:street": "Rue Joseph Vernet",
+    "name": "Victoire & compagnie",
+    "ref:FR:SIRET": "52237529400017",
+    "shop": "fashion_accessories",
+    "source": "survey",
+    "survey:date": "2026-01-14",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3370017978,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "13",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Bouquerie",
+    "leisure": "sports_centre",
+    "name": "Dojo du centre",
+    "phone": "+33 4 90 82 14 08",
+    "source": "survey;local knowledge",
+    "sport": "judo;fitness;yoga",
+    "survey:date": "2018-11-05",
+    "website": "https://www.dojoducentre-avignon.fr/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3421595302,
+  "tags": {
+    "addr:housenumber": "60",
+    "addr:street": "Place des Corps Saints",
+    "amenity": "restaurant",
+    "cuisine": "crepe",
+    "indoor_seating": "yes",
+    "name": "Les Bulleuses",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIREN": "948759048",
+    "ref:FR:SIRET": "94875904800010",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2023-07-20",
+    "was:name": "La Porteña",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3421595304,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "2",
+    "addr:postcode": "84000",
+    "addr:street": "Rue du Laboureur",
+    "amenity": "cafe",
+    "mapillary": "301096654831688",
+    "name": "Grand Café Barretta",
+    "outdoor_seating": "yes",
+    "phone": "+33 4 90 01 58 18",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "835091083",
+    "ref:FR:SIRET": "83509108300013",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-01-26",
+    "toilets:wheelchair": "yes",
+    "website": "www.facebook.com/Grand-Café-Barretta-204295823525980",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3421595312,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Corderie",
+    "amenity": "bank",
+    "brand": "Crédit Coopératif",
+    "brand:website": "https://www.credit-cooperatif.coop",
+    "brand:wikidata": "Q3006190",
+    "brand:wikipedia": "fr:Crédit coopératif",
+    "check_date": "2026-06-13",
+    "email": "avignon@credit-cooperatif.coop",
+    "name": "Crédit Coopératif",
+    "opening_hours": "Mo-Fr 08:45-12:10, 13:50-17:00",
+    "phone": "+33 4 84 63 00 11",
+    "ref:FR:NAF": "64.19Z",
+    "ref:FR:SIRET": "34997493101320",
+    "source": "INSEE - 2026-06",
+    "website": "https://www.credit-cooperatif.coop"
+  }
+},
+{
+  "type": "node",
+  "id": 3515659038,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "28bis",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Joseph Vernet",
+    "amenity": "restaurant",
+    "award:michelin": "1",
+    "name": "Restaurant Pollen",
+    "name:fr": "Restaurant Pollen",
+    "opening_hours": "Fr-We open \"midi et soir\"",
+    "phone": "+33 4 90 85 26 51",
+    "source": "survey",
+    "survey:date": "2026-08-03",
+    "url:award": "https://guide.michelin.com/fr/fr/provence-alpes-cote-dazur/avignon/restaurant/pollen1000267"
+  }
+},
+{
+  "type": "node",
+  "id": 3516300690,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Rue Joseph Vernet",
+    "clothes": "women",
+    "name": "Gertrude",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIRET": "92083606100027",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-14",
+    "was:clothes": "women",
+    "was:name": "Ikks;Bang & Olufsen",
+    "was:shop": "clothes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3516301294,
+  "tags": {
+    "addr:housenumber": "8",
+    "addr:street": "Rue Joseph Vernet",
+    "clothes": "women",
+    "name": "Tara Jarmon",
+    "panoramax": "c7194622-ee39-4da3-aae8-cf8fb4544b90",
+    "ref:FR:NAF": "47.71Z",
+    "ref:FR:SIREN": "531830917",
+    "ref:FR:SIRET": "53183091700013",
+    "shop": "clothes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-01-13",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3546684800,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housename": "Mairie d'Avignon",
+    "addr:housenumber": "15",
+    "addr:postcode": "84000",
+    "addr:street": "Place de l'Horloge"
+  }
+},
+{
+  "type": "node",
+  "id": 3766921061,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Rue Théodore Aubanel",
+    "amenity": "restaurant",
+    "check_date": "2024-05-14",
+    "cuisine": "regional",
+    "level": "0",
+    "name": "Première édition",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "911115970",
+    "ref:FR:SIRET": "91111597000012",
+    "source": "INSEE - 2026-06",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3867380896,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Rue du Rateau",
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "name": "Sapori di Calabria",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "950781039",
+    "ref:FR:SIRET": "95078103900017",
+    "source": "INSEE - 2026-06",
+    "was:name": "L'Ubu"
+  }
+},
+{
+  "type": "node",
+  "id": 3941179973,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "34",
+    "addr:postcode": "84000",
+    "addr:street": "Rue du Chapeau Rouge",
+    "amenity": "theatre",
+    "email": "asso.chapeau.rouge@hotmail.fr",
+    "name": "Théâtre Chapeau Rouge",
+    "operator": "Association Chapeau Rouge",
+    "phone": "+33 4 90 84 04 03",
+    "survey:date": "2020-08-18",
+    "website": "http://www.chapeaurougeavignon.org"
+  }
+},
+{
+  "type": "node",
+  "id": 4137545289,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:street": "Rue Félix Gras",
+    "amenity": "restaurant",
+    "indoor_seating": "yes",
+    "name": "Le comptoir MBC",
+    "outdoor_seating": "yes",
+    "payment:credit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIRET": "81222009300023",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-04-29",
+    "was:name": "Rossini Sandwicherie",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4163320089,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:country": "FR",
+    "addr:housenumber": "17",
+    "addr:postcode": "84000",
+    "addr:street": "Rue de la République",
+    "email": "avignon@hifrance.org",
+    "guest_house": "hostel",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Auberge de Jeunesse Avignon",
+    "payment:cash": "yes",
+    "payment:mastercard": "no",
+    "payment:visa": "yes",
+    "phone": "+33 4 84 51 28 20",
+    "smoking": "no",
+    "survey:date": "2022-01-07",
+    "tourism": "hostel",
+    "was:name": "Pop' Hostel",
+    "website": "https://www.hifrance.org/auberges-de-jeunesse/avignon/"
+  }
+},
+{
+  "type": "node",
+  "id": 4375261864,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "2",
+    "addr:postcode": "84000",
+    "addr:street": "Rue du Collège d'Annecy"
+  }
+},
+{
+  "type": "node",
+  "id": 4375388356,
+  "tags": {
+    "addr:housenumber": "20",
+    "addr:street": "Rue de la Croix",
+    "amenity": "restaurant",
+    "cuisine": "french",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Chez Mamie",
+    "outdoor_seating": "no",
+    "panoramax": "1279c679-12b4-4e09-aa14-57c8d2aa0213",
+    "phone": "+33 4 13 39 04 88",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "844178699",
+    "ref:FR:SIRET": "84417869900014",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2026-07-20",
+    "was:amenity": "bank",
+    "was:cuisine": "moroccan;asian",
+    "was:name": "credit coopératif",
+    "website": "http://www.chez-mamie-restaurant-avignon.com/la-carte-chez-mamie-restaurant-avignon",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4378910116,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:country": "FR",
+    "addr:housenumber": "6",
+    "addr:postcode": "84000",
+    "addr:street": "Rue d'Amphoux",
+    "description": "sur rendez-vous",
+    "email": "osteo@marie-jacquart.fr",
+    "healthcare": "alternative",
+    "healthcare:speciality": "osteopathy",
+    "name": "Ostéopathie Marie Jacquart",
+    "phone": "+33 4 84 51 03 07",
+    "website": "https://www.marie-jacquart.fr/"
+  }
+},
+{
+  "type": "node",
+  "id": 4414668779,
+  "tags": {
+    "addr:housenumber": "37",
+    "addr:street": "Rue du Four de la Terre"
+  }
+},
+{
+  "type": "node",
+  "id": 4447843311,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "104",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Philonarde",
+    "amenity": "theatre",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Théâtre du Passage",
+    "source:festival": "Mairie d'Avignon"
+  }
+},
+{
+  "type": "node",
+  "id": 4462179314,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "4 Bis",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Carnot",
+    "amenity": "bar",
+    "description": "Bar à shooters, rhums arrangés, rhums.",
+    "email": "avignon@barberousse.com",
+    "name": "Barberousse",
+    "opening_hours": "Tu-Sa 18:00-01:30",
+    "operator": "Franchise Barberousse",
+    "phone": "+33 4 90 87 08 02",
+    "ref:FR:NAF": "56.30Z",
+    "ref:FR:SIRET": "97883254100020",
+    "smoking": "isolated",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2023-12-06",
+    "was:name": "Le Barberousse",
+    "website": "http://www.barberousse.com/ville/avignon"
+  }
+},
+{
+  "type": "node",
+  "id": 4471543040,
+  "tags": {
+    "addr:housenumber": "37",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Saraillerie",
+    "amenity": "restaurant",
+    "name": "Le Coude à Coude",
+    "name:en": "Le Coude à Coude",
+    "name:fr": "Le Coude à Coude",
+    "opening_hours": "Tu-Sa 10:00-14:00,19:00-22:00",
+    "phone": "+33484142292",
+    "survey:date": "2024-01-26"
+  }
+},
+{
+  "type": "node",
+  "id": 4557541874,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "37",
+    "addr:postcode": "84000",
+    "addr:street": "Rue de la Bonneterie",
+    "drive_through": "no",
+    "mapillary": "381729089734902",
+    "name": "Liquid",
+    "opening_hours": "Tu-Sa 09:30-19:00",
+    "phone": "+334 90 85 19 89",
+    "ref:FR:NAF": "47.25Z",
+    "ref:FR:SIREN": "448308197",
+    "ref:FR:SIRET": "44830819700012",
+    "shop": "alcohol",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-01-24",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4579530910,
+  "tags": {
+    "addr:housenumber": "39",
+    "addr:street": "Rue Carnot",
+    "award:FR": "Gault&Millaut",
+    "check_date": "2026-02-18",
+    "check_date:opening_hours": "2026-02-18",
+    "coffee": "yes",
+    "name": "Authentique",
+    "opening_hours": "Tu-Fr 13:30-19:00; Sa 10:00-18:30",
+    "outdoor_seating": "yes",
+    "phone": "+33986692784",
+    "shop": "pastry",
+    "source": "survey",
+    "survey:date": "2024-04-19",
+    "was:name": "Julie Immobilier;Elyse Avenue Immobilier",
+    "was:office": "estate_agent",
+    "website": "https://www.authentique-chocolaterie.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4579530911,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "43",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Carnot",
+    "amenity": "fast_food",
+    "check_date": "2026-02-18",
+    "cuisine": "italian_pizza;pizza",
+    "name": "Slice",
+    "phone": "+33486341426",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "903414415",
+    "ref:FR:SIRET": "90341441500013",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-04-19",
+    "website": "https://pizzeriaslice.fr/"
+  }
+},
+{
+  "type": "node",
+  "id": 4660624014,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:street": "Place Cloître Saint-Pierre",
+    "amenity": "theatre",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Le Rouge Gorge",
+    "ref:FR:NAF": "90.01Z",
+    "ref:FR:SIRET": "45316680300040",
+    "source": "INSEE - 2026-06",
+    "source:festival": "Mairie d'Avignon",
+    "website": "https://www.lerougegorge.fr/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4665546523,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "10",
+    "addr:postcode": "84000",
+    "addr:street": "Rue d'Amphoux",
+    "amenity": "theatre",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Théâtre Transversal",
+    "phone": "+33 4 90 86 17 12",
+    "source:festival": "Mairie d'Avignon",
+    "website": "https://www.theatretransversal.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4665591753,
+  "tags": {
+    "addr:housenumber": "18",
+    "addr:street": "Rue des Études",
+    "amenity": "theatre",
+    "check_date": "2026-02-15",
+    "email": "theatre.laparenthese@gmail.com",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Théâtre La Parenthèse",
+    "phone": "+33 4 50 39 06 16",
+    "source:festival": "Mairie d'Avignon",
+    "website": "https://theatre-la-parenthese.weebly.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4665623589,
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:street": "Rue des Teinturiers",
+    "amenity": "theatre",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Théâtre de l'Ange",
+    "ref:FR:NAF": "90.01Z",
+    "ref:FR:SIRET": "43523889400024",
+    "source": "INSEE - 2026-06",
+    "source:festival": "Mairie d'Avignon",
+    "survey:date": "2019-01-03"
+  }
+},
+{
+  "type": "node",
+  "id": 4672181916,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "29",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Saraillerie",
+    "shop": "vacant",
+    "smoking": "outside",
+    "survey:date": "2025-03-25",
+    "was:amenity": "restaurant",
+    "was:name": "Alice et ses Merveilles;Newground"
+  }
+},
+{
+  "type": "node",
+  "id": 4672183222,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:street": "Rue des Escaliers Sainte-Anne",
+    "amenity": "theatre",
+    "check_date": "2026-02-16",
+    "name": "Théâtre La manutention et Jazz Club"
+  }
+},
+{
+  "type": "node",
+  "id": 4672203477,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "19",
+    "addr:postcode": "84000",
+    "addr:street": "Place Crillon",
+    "amenity": "theatre",
+    "festival": "yes",
+    "festival:Avignon_In:2015": "no",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "La Factory / Théâtre de l'Oulle",
+    "operator": "Laurent Rochut",
+    "website": "https://la-factory.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 4672205947,
+  "tags": {
+    "addr:housenumber": "14",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Plaisance",
+    "amenity": "theatre",
+    "contact:email": "avignon@laurette-theatre.fr",
+    "contact:phone": "+33 9 53 01 76 74",
+    "description": "Théâtre Laurette",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "Laurette Théâtre",
+    "wikidata": "Q3219624"
+  }
+},
+{
+  "type": "node",
+  "id": 4672216712,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "37",
+    "addr:postcode": "84000",
+    "addr:street": "Rue du Vieux Sextier",
+    "amenity": "restaurant",
+    "capacity": "25",
+    "cuisine": "french",
+    "name": "Le Petit Gourmand",
+    "opening_hours": "12:00-14:00,18:00-21:30",
+    "outdoor_seating": "yes",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "933631483",
+    "ref:FR:SIRET": "93363148300015",
+    "smoking": "outside",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-07-17",
+    "takeaway": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4672216957,
+  "tags": {
+    "addr:housenumber": "28",
+    "addr:street": "Rue du Vieux Sextier",
+    "amenity": "restaurant",
+    "check_date": "2024-04-04",
+    "cuisine": "regional;french",
+    "name": "L'ardoise",
+    "outdoor_seating": "yes",
+    "phone": "+33 4 90 85 02 95",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIRET": "94169370700023",
+    "reservation": "yes",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2024-05-22",
+    "toilets": "yes",
+    "toilets:wheelchair": "no",
+    "was:cuisine": "french",
+    "was:name": "La Salicorne"
+  }
+},
+{
+  "type": "node",
+  "id": 4672227630,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "28",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Paul Saïn",
+    "amenity": "place_of_worship",
+    "denomination": "catholic",
+    "name": "Chapelle de l'Immaculée Conception",
+    "ref:clochers.org": "84007an",
+    "religion": "christian",
+    "wikidata": "Q60339940"
+  }
+},
+{
+  "type": "node",
+  "id": 4672228898,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "21",
+    "addr:postcode": "84000",
+    "addr:street": "Rue du Chapeau Rouge",
+    "amenity": "restaurant",
+    "capacity": "40",
+    "check_date": "2023-03-24",
+    "cuisine": "italian",
+    "delivery": "yes",
+    "name": "L'Italienne au Chapeau Rouge",
+    "opening_hours": "Tu-Fr12:00-13:30, 19:30-21:30",
+    "phone": "+33 4 90 82 42 73",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "838856946",
+    "ref:FR:SIRET": "83885694600028",
+    "smoking": "outside",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2019-09-19",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4678580661,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "3",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Pourquery de Boisserin",
+    "air_conditioning": "yes",
+    "amenity": "theatre",
+    "festival": "yes",
+    "festival:Avignon_Off:2015": "yes",
+    "name": "La Scala Provence",
+    "operator": "Les Petites Heures Provence",
+    "panoramax": "02fbe3e3-8481-47b7-9d55-299aaf38afaf",
+    "phone": "+33 4 65 00 00 90",
+    "ref:FR:NAF": "90.01Z",
+    "ref:FR:SIREN": "903101558",
+    "ref:FR:SIRET": "90310155800026",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2017-07-07",
+    "website": "https://lascala-provence.fr/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4678581233,
+  "tags": {
+    "addr:housenumber": "31",
+    "addr:street": "Rue de la Carreterie",
+    "amenity": "theatre",
+    "capacity": "121",
+    "name": "Essaion-Avignon",
+    "phone": "+33 4 90 25 63 48",
+    "ref:FR:NAF": "90.01Z",
+    "ref:FR:SIRET": "41833766300045",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2017-08-07",
+    "website": "https://www.essaion-avignon.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4678582266,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "18",
+    "addr:postcode": "84000",
+    "addr:street": "Rue et Place des Trois Pilats",
+    "alt_name": "très p'tit théâtre",
+    "amenity": "theatre",
+    "festival:Avignon_Off:2015": "yes",
+    "mapillary": "316567823186177",
+    "name": "Isle 80",
+    "phone": "+33 4 88 07 91 68",
+    "phone_1": "0642690026",
+    "ref:FR:NAF": "90.01Z",
+    "ref:FR:SIREN": "508181807",
+    "ref:FR:SIRET": "50818180700019",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2023-02-10",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4678594338,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "27",
+    "addr:street": "Rue d'Annanelle",
+    "amenity": "theatre",
+    "email": "heidi.aubepart@orange.fr",
+    "festival": "yes",
+    "name": "La Lanterne d'Annanelle",
+    "phone": "+33678526249",
+    "ref:FR:SIRET": "95279335400012"
+  }
+},
+{
+  "type": "node",
+  "id": 4757787934,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:postcode": "84000",
+    "addr:street": "Boulevard Raspail",
+    "amenity": "theatre",
+    "name": "Théâtre 11 Avignon",
+    "ref:FR:NAF": "90.02Z",
+    "ref:FR:SIREN": "827482993",
+    "ref:FR:SIRET": "82748299300017",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2017-07-27",
+    "website": "https://www.11avignon.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4757802425,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:country": "FR",
+    "addr:housenumber": "11",
+    "addr:postcode": "84000",
+    "addr:street": "Boulevard Raspail",
+    "amenity": "bank",
+    "atm": "yes",
+    "branch": "Avignon Raspail",
+    "brand": "Banque Populaire",
+    "brand:wikidata": "Q846647",
+    "brand:wikipedia": "fr:Banque populaire",
+    "comment": "DAB intérieur uniquement / internal ATM only",
+    "drive_through": "no",
+    "name": "Banque Populaire",
+    "opening_hours": "Mo 08:45-12:15,13:30-17:30; Tu 08:45-12:15,14:00-17:30; We-Fr 08:45-12:15,13:30-17:30",
+    "phone": "+33 4 90 27 56 20",
+    "source": "survey",
+    "survey:date": "2023-10-03",
+    "website": "https://agences.banquepopulaire.fr/banque-assurance/agence-avignon-raspail-id1460700276"
+  }
+},
+{
+  "type": "node",
+  "id": 4778982939,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "35",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Saint-Jean le Vieux",
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "indoor_seating": "yes",
+    "mapillary": "464082968135115",
+    "name": "Mamma Corsica",
+    "opening_hours": "Mo-Su 11:00-15:00,18:00-01:30",
+    "outdoor_seating": "yes",
+    "phone": "+33 4 90 86 81 03",
+    "ref:FR:NAF": "56.10A",
+    "ref:FR:SIREN": "792363798",
+    "ref:FR:SIRET": "79236379800010",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2020-08-18",
+    "website": "https://www.mamma-corsica.fr/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4781522985,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "49",
+    "addr:postcode": "84000",
+    "addr:street": "Rue de la Grande Fusterie",
+    "amenity": "fast_food",
+    "cuisine": "french",
+    "facebook": "https://www.facebook.com/La-SouPape-restauration-rapide-sur-place-ou-%C3%A0-emporter-Avignon-823334244409609",
+    "indoor_seating": "yes",
+    "name": "La Sou'Pape",
+    "outdoor_seating": "yes",
+    "phone": "+33 9 81 46 23 34",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIREN": "808533491",
+    "ref:FR:SIRET": "80853349100011",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2019-04-18",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4786462824,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "6",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Général Leclerc",
+    "amenity": "restaurant",
+    "indoor_seating": "yes",
+    "name": "MAM'S",
+    "opening_hours": "Tu-Sa 09:00-19:00; Su 09:00-18:00",
+    "outdoor_seating": "yes",
+    "phone": "+33 9 86 22 13 22",
+    "ref:FR:NAF": "56.10C",
+    "ref:FR:SIRET": "83973429000019",
+    "source": "INSEE - 2026-06",
+    "survey:date": "2021-10-04",
+    "takeaway": "yes",
+    "was:amenity": "cafe",
+    "was:name": "Australia coffee shop",
+    "website": "www.facebook.com/MAMS-185802452248304/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4811615274,
+  "tags": {
+    "addr:city": "Avignon",
+    "addr:housenumber": "8",
+    "addr:postcode": "84000",
+    "addr:street": "Rue Frédéric Mistral",
+    "amenity": "school",
+    "email": "ce.0840372y@ac-aix-marseille.fr",
+    "name": "École primaire Frédéric Mistral",
+    "name:etymology:wikidata": "Q42596",
+    "operator:type": "public",
+    "ref:UAI": "0840372Y",
+    "school:FR": "primaire",
+    "source": "data.education.gouv.fr - 2026-06"
+  }
+}
+
+  ]
+}

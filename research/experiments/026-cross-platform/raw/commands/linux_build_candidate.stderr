@@ -1,0 +1,1905 @@
++ variant=candidate
++ case "$variant" in
++ src=/out/source/src
++ overlay=/workspace/research/final/021-l4/sources
++ dest=/out/artifacts/candidate
++ '[' -e /out/artifacts/candidate/build.complete ']'
++ mkdir -p /out/artifacts/candidate/obj
++ base=(-std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"')
++ switches=(-DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4)
++ changed='crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens'
++ libsrc='strndup libpostal expand address_dictionary transliterate tokens trie trie_search trie_utils string_utils file_utils utf8proc/utf8proc normalize numex features unicode_scripts address_parser address_parser_io averaged_perceptron crf crf_context sparse_matrix averaged_perceptron_tagger graph graph_builder language_classifier language_features logistic_regression logistic minibatch float_utils ngrams place near_dupe double_metaphone geohash/geohash dedupe string_similarity acronyms soft_tfidf jaccard'
++ scanner_opt=-O1
++ '[' candidate = baseline_upstream ']'
+++ clang --version
+++ head -1
++ printf '%s\n' variant=candidate 'compiler=Ubuntu clang version 18.1.3 (1ubuntu1)' 'base=-std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS -DLIBPOSTAL_DATA_DIR="/model"' 'switches=-DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4' library=-O2 scanner=-O1 link=-O2
++ for file in $libsrc
++ stem=strndup
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/strndup.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \s\t\r\n\d\u\p\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/strndup.c -o /out/artifacts/candidate/obj/strndup.o
++ for file in $libsrc
++ stem=libpostal
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/libpostal.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \l\i\b\p\o\s\t\a\l\ * ]]
++ path=/workspace/research/final/021-l4/sources/libpostal.c
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /workspace/research/final/021-l4/sources/libpostal.c -o /out/artifacts/candidate/obj/libpostal.o
+In file included from /workspace/research/final/021-l4/sources/libpostal.c:10:
+In file included from /out/source/src/address_parser.h:52:
+In file included from /out/source/src/averaged_perceptron.h:27:
+In file included from /out/source/src/sparse_matrix.h:46:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
++ for file in $libsrc
++ stem=expand
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/expand.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \e\x\p\a\n\d\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/expand.c -o /out/artifacts/candidate/obj/expand.o
+In file included from /out/source/src/expand.c:10:
+In file included from /out/source/src/language_classifier.h:13:
+In file included from /out/source/src/logistic_regression.h:26:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/out/source/src/expand.c:825:74: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  825 |                 log_debug("phrase.start = %zu, prev_phrase_end = %zu\n", phrase.start, prev_phrase_end);
+      |                                           ~~~                            ^~~~~~~~~~~~
+      |                                           %u
+/out/source/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/out/source/src/expand.c:872:89: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'bool' [-Wformat]
+  872 |                     log_debug("have_strictly_ignorable=%zu, phrase_is_canonical=%zu\n", have_strictly_ignorable, phrase_is_canonical);
+      |                                                        ~~~                              ^~~~~~~~~~~~~~~~~~~~~~~
+/out/source/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/out/source/src/expand.c:872:114: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'bool' [-Wformat]
+  872 |                     log_debug("have_strictly_ignorable=%zu, phrase_is_canonical=%zu\n", have_strictly_ignorable, phrase_is_canonical);
+      |                                                                                 ~~~                              ^~~~~~~~~~~~~~~~~~~
+/out/source/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/out/source/src/expand.c:932:26: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+  932 |                     bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                          ^~~~~~~~~~~~~~~~~~~
+/out/source/src/expand.c:1184:46: warning: unused variable 'start_index' [-Wunused-variable]
+ 1184 |                                     uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                                              ^~~~~~~~~~~
+/out/source/src/expand.c:1202:38: warning: unused variable 'start_index' [-Wunused-variable]
+ 1202 |                             uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                                      ^~~~~~~~~~~
+/out/source/src/expand.c:1235:26: warning: unused variable 'start_index' [-Wunused-variable]
+ 1235 |                 uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                          ^~~~~~~~~~~
+/out/source/src/expand.c:1310:22: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+ 1310 |                 bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                      ^~~~~~~~~~~~~~~~~~~
+/out/source/src/expand.c:1344:22: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+ 1344 |                 bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                      ^~~~~~~~~~~~~~~~~~~
+/out/source/src/expand.c:1440:11: warning: unused variable 'lang' [-Wunused-variable]
+ 1440 |     char *lang;
+      |           ^~~~
+11 warnings generated.
++ for file in $libsrc
++ stem=address_dictionary
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/address_dictionary.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \a\d\d\r\e\s\s\_\d\i\c\t\i\o\n\a\r\y\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/address_dictionary.c -o /out/artifacts/candidate/obj/address_dictionary.o
+/out/source/src/address_dictionary.c:63:47: warning: second argument to 'va_arg' is of promotable type 'uint16_t' (aka 'unsigned short'); this va_arg has undefined behavior because arguments will be promoted to 'int' [-Wvarargs]
+   63 |         uint16_t dictionary_id = va_arg(args, uint16_t);
+      |                                               ^~~~~~~~
+/usr/lib/llvm-18/lib/clang/18/include/__stdarg_va_arg.h:20:47: note: expanded from macro 'va_arg'
+   20 | #define va_arg(ap, type) __builtin_va_arg(ap, type)
+      |                                               ^~~~
+/out/source/src/address_dictionary.c:173:10: warning: variable 'is_phrase' set but not used [-Wunused-but-set-variable]
+  173 |     bool is_phrase = false;
+      |          ^
+2 warnings generated.
++ for file in $libsrc
++ stem=transliterate
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/transliterate.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \t\r\a\n\s\l\i\t\e\r\a\t\e\ * ]]
++ path=/workspace/research/final/021-l4/sources/transliterate.c
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /workspace/research/final/021-l4/sources/transliterate.c -o /out/artifacts/candidate/obj/transliterate.o
+/workspace/research/final/021-l4/sources/transliterate.c:614:12: warning: variable 'group_num_start' set but not used [-Wunused-but-set-variable]
+  614 |     size_t group_num_start = 0;
+      |            ^
+/workspace/research/final/021-l4/sources/transliterate.c:615:12: warning: variable 'group_num_len' set but not used [-Wunused-but-set-variable]
+  615 |     size_t group_num_len = 0;
+      |            ^
+/workspace/research/final/021-l4/sources/transliterate.c:1027:26: warning: variable 'added_previous_phrase' set but not used [-Wunused-but-set-variable]
+ 1027 |                     bool added_previous_phrase = false;
+      |                          ^
+3 warnings generated.
++ for file in $libsrc
++ stem=tokens
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/tokens.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \t\o\k\e\n\s\ * ]]
++ path=/workspace/research/final/021-l4/sources/tokens.c
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /workspace/research/final/021-l4/sources/tokens.c -o /out/artifacts/candidate/obj/tokens.o
++ for file in $libsrc
++ stem=trie
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/trie.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \t\r\i\e\ * ]]
++ path=/workspace/research/final/021-l4/sources/trie.c
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /workspace/research/final/021-l4/sources/trie.c -o /out/artifacts/candidate/obj/trie.o
+/workspace/research/final/021-l4/sources/trie.c:1074:13: warning: unused variable 'base' [-Wunused-variable]
+ 1074 |     int32_t base;
+      |             ^~~~
+/workspace/research/final/021-l4/sources/trie.c:1075:13: warning: unused variable 'check' [-Wunused-variable]
+ 1075 |     int32_t check;
+      |             ^~~~~
+2 warnings generated.
++ for file in $libsrc
++ stem=trie_search
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/trie_search.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \t\r\i\e\_\s\e\a\r\c\h\ * ]]
++ path=/workspace/research/final/021-l4/sources/trie_search.c
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /workspace/research/final/021-l4/sources/trie_search.c -o /out/artifacts/candidate/obj/trie_search.o
+/workspace/research/final/021-l4/sources/trie_search.c:184:16: warning: initialization of pointer of type 'phrase_array *' to null from a constant boolean expression [-Wbool-conversion]
+  184 |         return false;
+      |                ^~~~~
+/workspace/research/final/021-l4/sources/trie_search.c:842:72: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  842 |                     log_debug("No space transition, phrase_len=%zu\n", phrase_len);
+      |                                                                ~~~     ^~~~~~~~~~
+      |                                                                %u
+/out/source/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/workspace/research/final/021-l4/sources/trie_search.c:799:12: warning: variable 'separator_char_len' set but not used [-Wunused-but-set-variable]
+  799 |     size_t separator_char_len = 0;
+      |            ^
+3 warnings generated.
++ for file in $libsrc
++ stem=trie_utils
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/trie_utils.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \t\r\i\e\_\u\t\i\l\s\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/trie_utils.c -o /out/artifacts/candidate/obj/trie_utils.o
++ for file in $libsrc
++ stem=string_utils
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/string_utils.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \s\t\r\i\n\g\_\u\t\i\l\s\ * ]]
++ path=/workspace/research/final/021-l4/sources/string_utils.c
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /workspace/research/final/021-l4/sources/string_utils.c -o /out/artifacts/candidate/obj/string_utils.o
+/workspace/research/final/021-l4/sources/string_utils.c:116:17: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  116 |     for (size_t count = 0; (temp = strstr(start, replace)); count++) {
+      |                 ^
+/workspace/research/final/021-l4/sources/string_utils.c:193:18: warning: variable 'remaining' set but not used [-Wunused-but-set-variable]
+  193 |     ssize_t len, remaining;
+      |                  ^
+/workspace/research/final/021-l4/sources/string_utils.c:384:13: warning: unused variable 'num_utf8_chars' [-Wunused-variable]
+  384 |     ssize_t num_utf8_chars = 0;
+      |             ^~~~~~~~~~~~~~
+/workspace/research/final/021-l4/sources/string_utils.c:521:12: warning: unused variable 'remaining' [-Wunused-variable]
+  521 |     size_t remaining = len;
+      |            ^~~~~~~~~
+/workspace/research/final/021-l4/sources/string_utils.c:687:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  687 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/workspace/research/final/021-l4/sources/string_utils.c:713:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  713 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/workspace/research/final/021-l4/sources/string_utils.c:876:13: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  876 |     ssize_t index = 0;
+      |             ^
+7 warnings generated.
++ for file in $libsrc
++ stem=file_utils
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/file_utils.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \f\i\l\e\_\u\t\i\l\s\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/file_utils.c -o /out/artifacts/candidate/obj/file_utils.o
++ for file in $libsrc
++ stem=utf8proc
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/utf8proc/utf8proc.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \u\t\f\8\p\r\o\c\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/utf8proc/utf8proc.c -o /out/artifacts/candidate/obj/utf8proc_utf8proc.o
++ for file in $libsrc
++ stem=normalize
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/normalize.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \n\o\r\m\a\l\i\z\e\ * ]]
++ path=/workspace/research/final/021-l4/sources/normalize.c
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /workspace/research/final/021-l4/sources/normalize.c -o /out/artifacts/candidate/obj/normalize.o
+/workspace/research/final/021-l4/sources/normalize.c:269:22: warning: unused variable 'key' [-Wunused-variable]
+  269 |             khiter_t key = kh_put(int_set, scripts, (khint_t)script, &ret);
+      |                      ^~~
+/workspace/research/final/021-l4/sources/normalize.c:208:11: warning: unused variable 'numex_replaced' [-Wunused-variable]
+  208 |     char *numex_replaced = NULL;
+      |           ^~~~~~~~~~~~~~
+/workspace/research/final/021-l4/sources/normalize.c:374:14: warning: unused variable 'is_hyphen' [-Wunused-variable]
+  374 |         bool is_hyphen = utf8_is_hyphen(ch);
+      |              ^~~~~~~~~
+/workspace/research/final/021-l4/sources/normalize.c:367:10: warning: unused variable 'append_char' [-Wunused-variable]
+  367 |     bool append_char = true;
+      |          ^~~~~~~~~~~
+4 warnings generated.
++ for file in $libsrc
++ stem=numex
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/numex.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \n\u\m\e\x\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/numex.c -o /out/artifacts/candidate/obj/numex.o
+/out/source/src/numex.c:805:18: warning: unused variable 'rule_index' [-Wunused-variable]
+  805 |         uint32_t rule_index = phrase.data;
+      |                  ^~~~~~~~~~
+/out/source/src/numex.c:703:19: warning: unused variable 'ch' [-Wunused-variable]
+  703 |     unsigned char ch = '\0';
+      |                   ^~
+/out/source/src/numex.c:706:10: warning: unused variable 'advance_state' [-Wunused-variable]
+  706 |     bool advance_state = true;
+      |          ^~~~~~~~~~~~~
+/out/source/src/numex.c:714:17: warning: unused variable 'number_str' [-Wunused-variable]
+  714 |     char_array *number_str = NULL;
+      |                 ^~~~~~~~~~
+/out/source/src/numex.c:978:10: warning: unused variable 'whole_tokens_only' [-Wunused-variable]
+  978 |     bool whole_tokens_only = language->whole_tokens_only;
+      |          ^~~~~~~~~~~~~~~~~
+/out/source/src/numex.c:1073:10: warning: unused variable 'ignorable' [-Wunused-variable]
+ 1073 |     bool ignorable = true;
+      |          ^~~~~~~~~
+6 warnings generated.
++ for file in $libsrc
++ stem=features
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/features.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \f\e\a\t\u\r\e\s\ * ]]
++ path=/workspace/research/final/021-l4/sources/features.c
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /workspace/research/final/021-l4/sources/features.c -o /out/artifacts/candidate/obj/features.o
++ for file in $libsrc
++ stem=unicode_scripts
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/unicode_scripts.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \u\n\i\c\o\d\e\_\s\c\r\i\p\t\s\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/unicode_scripts.c -o /out/artifacts/candidate/obj/unicode_scripts.o
++ for file in $libsrc
++ stem=address_parser
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/address_parser.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \a\d\d\r\e\s\s\_\p\a\r\s\e\r\ * ]]
++ path=/workspace/research/final/021-l4/sources/address_parser.c
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /workspace/research/final/021-l4/sources/address_parser.c -o /out/artifacts/candidate/obj/address_parser.o
+In file included from /workspace/research/final/021-l4/sources/address_parser.c:1:
+In file included from /out/source/src/address_parser.h:52:
+In file included from /out/source/src/averaged_perceptron.h:27:
+In file included from /out/source/src/sparse_matrix.h:46:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/workspace/research/final/021-l4/sources/address_parser.c:399:10: warning: unused variable 'has_key' [-Wunused-variable]
+  399 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:861:14: warning: unused variable 'phrase' [-Wunused-variable]
+  861 |     phrase_t phrase;
+      |              ^~~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:947:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+  947 |     bool have_address_phrases = search_address_dictionaries_tokens_with_phrases(normalized_str, normalized_tokens, NULL, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:983:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+  983 |     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:1001:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+ 1001 |     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:1110:13: warning: unused variable 'token' [-Wunused-variable]
+ 1110 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:1199:13: warning: unused variable 'membership' [-Wunused-variable]
+ 1199 |     int64_t membership;
+      |             ^~~~~~~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:1227:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1227 |     phrase_t phrase;
+      |              ^~~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:1668:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 1668 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:1670:18: warning: unused variable 'k' [-Wunused-variable]
+ 1670 |         khiter_t k;
+      |                  ^
+/workspace/research/final/021-l4/sources/address_parser.c:1769:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable]
+ 1769 |             bool ngrams_added = false;
+      |                  ^
+/workspace/research/final/021-l4/sources/address_parser.c:1953:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 1953 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:1959:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 1959 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:1960:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 1960 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:1895:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable]
+ 1895 |         size_t next_word_len = 1;
+      |                ^
+/workspace/research/final/021-l4/sources/address_parser.c:1462:11: warning: unused variable 'language' [-Wunused-variable]
+ 1462 |     char *language = context->language;
+      |           ^~~~~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:1463:11: warning: unused variable 'country' [-Wunused-variable]
+ 1463 |     char *country = context->country;
+      |           ^~~~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:1473:19: warning: unused variable 'separators' [-Wunused-variable]
+ 1473 |     uint32_array *separators = context->separators;
+      |                   ^~~~~~~~~~
+/workspace/research/final/021-l4/sources/address_parser.c:1711:10: warning: variable 'is_unknown' set but not used [-Wunused-but-set-variable]
+ 1711 |     bool is_unknown = false;
+      |          ^
+/workspace/research/final/021-l4/sources/address_parser.c:1713:10: warning: variable 'known_prefix' set but not used [-Wunused-but-set-variable]
+ 1713 |     bool known_prefix = false;
+      |          ^
+/workspace/research/final/021-l4/sources/address_parser.c:1714:10: warning: variable 'known_suffix' set but not used [-Wunused-but-set-variable]
+ 1714 |     bool known_suffix = false;
+      |          ^
+22 warnings generated.
++ for file in $libsrc
++ stem=address_parser_io
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/address_parser_io.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \a\d\d\r\e\s\s\_\p\a\r\s\e\r\_\i\o\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/address_parser_io.c -o /out/artifacts/candidate/obj/address_parser_io.o
+In file included from /out/source/src/address_parser_io.c:1:
+In file included from /out/source/src/address_parser_io.h:8:
+In file included from /out/source/src/address_parser.h:52:
+In file included from /out/source/src/averaged_perceptron.h:27:
+In file included from /out/source/src/sparse_matrix.h:46:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/out/source/src/address_parser_io.c:105:16: warning: unused variable 'pair_len' [-Wunused-variable]
+  105 |         size_t pair_len = strlen(str);
+      |                ^~~~~~~~
+/out/source/src/string_utils.h:251:9: note: expanded from macro 'cstring_array_foreach'
+  251 |         code;                                                                           \
+      |         ^~~~
+/out/source/src/address_parser_io.c:99:12: warning: unused variable 'num_pairs' [-Wunused-variable]
+   99 |     size_t num_pairs = cstring_array_num_strings(pairs);
+      |            ^~~~~~~~~
+/out/source/src/address_parser_io.c:246:12: warning: unused variable 'len' [-Wunused-variable]
+  246 |     size_t len = strlen(normalized);
+      |            ^~~
+4 warnings generated.
++ for file in $libsrc
++ stem=averaged_perceptron
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/averaged_perceptron.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \a\v\e\r\a\g\e\d\_\p\e\r\c\e\p\t\r\o\n\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/averaged_perceptron.c -o /out/artifacts/candidate/obj/averaged_perceptron.o
+In file included from /out/source/src/averaged_perceptron.c:1:
+In file included from /out/source/src/averaged_perceptron.h:27:
+In file included from /out/source/src/sparse_matrix.h:46:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/out/source/src/averaged_perceptron.c:45:14: warning: unused variable 'i' [-Wunused-variable]
+   45 |     uint32_t i = 0;
+      |              ^
+2 warnings generated.
++ for file in $libsrc
++ stem=crf
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/crf.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \c\r\f\ * ]]
++ path=/workspace/research/final/021-l4/sources/crf.c
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /workspace/research/final/021-l4/sources/crf.c -o /out/artifacts/candidate/obj/crf.o
+In file included from /workspace/research/final/021-l4/sources/crf.c:1:
+In file included from /workspace/research/final/021-l4/sources/crf.h:20:
+In file included from /out/source/src/crf_context.h:20:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
++ for file in $libsrc
++ stem=crf_context
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/crf_context.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \c\r\f\_\c\o\n\t\e\x\t\ * ]]
++ path=/workspace/research/final/021-l4/sources/crf_context.c
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /workspace/research/final/021-l4/sources/crf_context.c -o /out/artifacts/candidate/obj/crf_context.o
+In file included from /workspace/research/final/021-l4/sources/crf_context.c:1:
+In file included from /out/source/src/crf_context.h:20:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/workspace/research/final/021-l4/sources/crf_context.c:241:18: warning: unused variable 'T' [-Wunused-variable]
+  241 |     const size_t T = context->num_items;
+      |                  ^
+/workspace/research/final/021-l4/sources/crf_context.c:242:18: warning: unused variable 'L' [-Wunused-variable]
+  242 |     const size_t L = context->num_labels;
+      |                  ^
+/workspace/research/final/021-l4/sources/crf_context.c:541:18: warning: unused variable 'L' [-Wunused-variable]
+  541 |     const size_t L = self->num_labels;
+      |                  ^
+/workspace/research/final/021-l4/sources/crf_context.c:543:19: warning: unused variable 'cur' [-Wunused-variable]
+  543 |     const double *cur = NULL;
+      |                   ^~~
+5 warnings generated.
++ for file in $libsrc
++ stem=sparse_matrix
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/sparse_matrix.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \s\p\a\r\s\e\_\m\a\t\r\i\x\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/sparse_matrix.c -o /out/artifacts/candidate/obj/sparse_matrix.o
+In file included from /out/source/src/sparse_matrix.c:1:
+In file included from /out/source/src/sparse_matrix.h:46:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/out/source/src/sparse_matrix.c:119:12: warning: unused variable 'val' [-Wunused-variable]
+  119 |     double val;
+      |            ^~~
+/out/source/src/sparse_matrix.c:159:12: warning: unused variable 'val' [-Wunused-variable]
+  159 |     double val;
+      |            ^~~
+/out/source/src/sparse_matrix.c:178:15: warning: unused variable 'indices' [-Wunused-variable]
+  178 |     uint32_t *indices = self->indices->a;
+      |               ^~~~~~~
+/out/source/src/sparse_matrix.c:201:12: warning: unused variable 'val' [-Wunused-variable]
+  201 |     double val;
+      |            ^~~
+/out/source/src/sparse_matrix.c:217:15: warning: unused variable 'indices' [-Wunused-variable]
+  217 |     uint32_t *indices = self->indices->a;
+      |               ^~~~~~~
+/out/source/src/sparse_matrix.c:239:15: warning: unused variable 'indptr' [-Wunused-variable]
+  239 |     uint32_t *indptr = self->indptr->a;
+      |               ^~~~~~
+/out/source/src/sparse_matrix.c:243:12: warning: unused variable 'm1_rows' [-Wunused-variable]
+  243 |     size_t m1_rows = self->m;
+      |            ^~~~~~~
+/out/source/src/sparse_matrix.c:244:12: warning: unused variable 'm1_cols' [-Wunused-variable]
+  244 |     size_t m1_cols = self->n;
+      |            ^~~~~~~
+/out/source/src/sparse_matrix.c:246:12: warning: unused variable 'm2_rows' [-Wunused-variable]
+  246 |     size_t m2_rows = matrix->m;
+      |            ^~~~~~~
+/out/source/src/sparse_matrix.c:275:15: warning: unused variable 'indptr' [-Wunused-variable]
+  275 |     uint32_t *indptr = self->indptr->a;
+      |               ^~~~~~
+/out/source/src/sparse_matrix.c:279:12: warning: unused variable 'm1_rows' [-Wunused-variable]
+  279 |     size_t m1_rows = self->m;
+      |            ^~~~~~~
+/out/source/src/sparse_matrix.c:280:12: warning: unused variable 'm1_cols' [-Wunused-variable]
+  280 |     size_t m1_cols = self->n;
+      |            ^~~~~~~
+13 warnings generated.
++ for file in $libsrc
++ stem=averaged_perceptron_tagger
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/averaged_perceptron_tagger.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \a\v\e\r\a\g\e\d\_\p\e\r\c\e\p\t\r\o\n\_\t\a\g\g\e\r\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/averaged_perceptron_tagger.c -o /out/artifacts/candidate/obj/averaged_perceptron_tagger.o
+In file included from /out/source/src/averaged_perceptron_tagger.c:1:
+In file included from /out/source/src/averaged_perceptron_tagger.h:20:
+In file included from /out/source/src/averaged_perceptron.h:27:
+In file included from /out/source/src/sparse_matrix.h:46:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
++ for file in $libsrc
++ stem=graph
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/graph.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \g\r\a\p\h\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/graph.c -o /out/artifacts/candidate/obj/graph.o
++ for file in $libsrc
++ stem=graph_builder
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/graph_builder.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \g\r\a\p\h\_\b\u\i\l\d\e\r\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/graph_builder.c -o /out/artifacts/candidate/obj/graph_builder.o
++ for file in $libsrc
++ stem=language_classifier
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/language_classifier.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \l\a\n\g\u\a\g\e\_\c\l\a\s\s\i\f\i\e\r\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/language_classifier.c -o /out/artifacts/candidate/obj/language_classifier.o
+In file included from /out/source/src/language_classifier.c:1:
+In file included from /out/source/src/language_classifier.h:13:
+In file included from /out/source/src/logistic_regression.h:26:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
++ for file in $libsrc
++ stem=language_features
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/language_features.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \l\a\n\g\u\a\g\e\_\f\e\a\t\u\r\e\s\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/language_features.c -o /out/artifacts/candidate/obj/language_features.o
+In file included from /out/source/src/language_features.c:2:
+In file included from /out/source/src/language_classifier.h:13:
+In file included from /out/source/src/logistic_regression.h:26:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/out/source/src/language_features.c:55:11: warning: unused variable 'feature_namespace' [-Wunused-variable]
+   55 |     char *feature_namespace;
+      |           ^~~~~~~~~~~~~~~~~
+/out/source/src/language_features.c:74:12: warning: variable 'consumed' set but not used [-Wunused-but-set-variable]
+   74 |     size_t consumed = 0;
+      |            ^
+/out/source/src/language_features.c:274:21: warning: unused variable 'prev_token' [-Wunused-variable]
+  274 |             token_t prev_token;
+      |                     ^~~~~~~~~~
+/out/source/src/language_features.c:275:19: warning: unused variable 'phrase' [-Wunused-variable]
+  275 |             char *phrase = NULL;
+      |                   ^~~~~~
+5 warnings generated.
++ for file in $libsrc
++ stem=logistic_regression
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/logistic_regression.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \l\o\g\i\s\t\i\c\_\r\e\g\r\e\s\s\i\o\n\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/logistic_regression.c -o /out/artifacts/candidate/obj/logistic_regression.o
+In file included from /out/source/src/logistic_regression.c:3:
+In file included from /out/source/src/logistic_regression.h:26:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/out/source/src/logistic_regression.c:45:12: warning: unused variable 'n' [-Wunused-variable]
+   45 |     size_t n = x->n;
+      |            ^
+/out/source/src/logistic_regression.c:63:13: warning: unused variable 'expected_values' [-Wunused-variable]
+   63 |     double *expected_values = p_y->values;
+      |             ^~~~~~~~~~~~~~~
+/out/source/src/logistic_regression.c:91:12: warning: unused variable 'num_features' [-Wunused-variable]
+   91 |     size_t num_features = n;
+      |            ^~~~~~~~~~~~
+/out/source/src/logistic_regression.c:93:14: warning: unused variable 'i' [-Wunused-variable]
+   93 |     uint32_t i, j;
+      |              ^
+/out/source/src/logistic_regression.c:95:12: warning: unused variable 'residual' [-Wunused-variable]
+   95 |     double residual;
+      |            ^~~~~~~~
+/out/source/src/logistic_regression.c:103:13: warning: unused variable 'theta_values' [-Wunused-variable]
+  103 |     double *theta_values = theta->values;
+      |             ^~~~~~~~~~~~
+/out/source/src/logistic_regression.c:104:13: warning: unused variable 'predicted_values' [-Wunused-variable]
+  104 |     double *predicted_values = p_y->values;
+      |             ^~~~~~~~~~~~~~~~
+/out/source/src/logistic_regression.c:105:13: warning: unused variable 'gradient_values' [-Wunused-variable]
+  105 |     double *gradient_values = gradient->values;
+      |             ^~~~~~~~~~~~~~~
+9 warnings generated.
++ for file in $libsrc
++ stem=logistic
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/logistic.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \l\o\g\i\s\t\i\c\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/logistic.c -o /out/artifacts/candidate/obj/logistic.o
+In file included from /out/source/src/logistic.c:1:
+In file included from /out/source/src/logistic.h:7:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/out/source/src/logistic.c:16:12: warning: unused variable 'sum' [-Wunused-variable]
+   16 |     double sum = 0.0;
+      |            ^~~
+2 warnings generated.
++ for file in $libsrc
++ stem=minibatch
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/minibatch.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \m\i\n\i\b\a\t\c\h\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/minibatch.c -o /out/artifacts/candidate/obj/minibatch.o
+In file included from /out/source/src/minibatch.c:1:
+In file included from /out/source/src/minibatch.h:9:
+In file included from /out/source/src/sparse_matrix.h:46:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/out/source/src/minibatch.c:8:14: warning: unused variable 'feature_id' [-Wunused-variable]
+    8 |     uint32_t feature_id;
+      |              ^~~~~~~~~~
+/out/source/src/minibatch.c:12:12: warning: unused variable 'm' [-Wunused-variable]
+   12 |     size_t m = minibatch->n;
+      |            ^
+/out/source/src/minibatch.c:53:17: warning: unused variable 'feature' [-Wunused-variable]
+   53 |     const char *feature;
+      |                 ^~~~~~~
+/out/source/src/minibatch.c:102:17: warning: unused variable 'label' [-Wunused-variable]
+  102 |     const char *label;
+      |                 ^~~~~
+5 warnings generated.
++ for file in $libsrc
++ stem=float_utils
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/float_utils.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \f\l\o\a\t\_\u\t\i\l\s\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/float_utils.c -o /out/artifacts/candidate/obj/float_utils.o
++ for file in $libsrc
++ stem=ngrams
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/ngrams.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \n\g\r\a\m\s\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/ngrams.c -o /out/artifacts/candidate/obj/ngrams.o
+/out/source/src/ngrams.c:37:22: warning: unused variable 'token_index' [-Wunused-variable]
+   37 |             uint32_t token_index = cstring_array_start_token(grams);
+      |                      ^~~~~~~~~~~
+/out/source/src/ngrams.c:18:12: warning: variable 'consumed' set but not used [-Wunused-but-set-variable]
+   18 |     size_t consumed = 0;
+      |            ^
+2 warnings generated.
++ for file in $libsrc
++ stem=place
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/place.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \p\l\a\c\e\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/place.c -o /out/artifacts/candidate/obj/place.o
+In file included from /out/source/src/place.c:1:
+In file included from /out/source/src/place.h:8:
+In file included from /out/source/src/language_classifier.h:13:
+In file included from /out/source/src/logistic_regression.h:26:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
++ for file in $libsrc
++ stem=near_dupe
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/near_dupe.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \n\e\a\r\_\d\u\p\e\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/near_dupe.c -o /out/artifacts/candidate/obj/near_dupe.o
+In file included from /out/source/src/near_dupe.c:14:
+In file included from /out/source/src/place.h:8:
+In file included from /out/source/src/language_classifier.h:13:
+In file included from /out/source/src/logistic_regression.h:26:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/out/source/src/near_dupe.c:436:18: warning: variable 'any_existing_acronyms' set but not used [-Wunused-but-set-variable]
+  436 |             bool any_existing_acronyms = false;
+      |                  ^
+2 warnings generated.
++ for file in $libsrc
++ stem=double_metaphone
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/double_metaphone.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \d\o\u\b\l\e\_\m\e\t\a\p\h\o\n\e\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/double_metaphone.c -o /out/artifacts/candidate/obj/double_metaphone.o
++ for file in $libsrc
++ stem=geohash
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/geohash/geohash.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \g\e\o\h\a\s\h\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/geohash/geohash.c -o /out/artifacts/candidate/obj/geohash_geohash.o
++ for file in $libsrc
++ stem=dedupe
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/dedupe.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \d\e\d\u\p\e\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/dedupe.c -o /out/artifacts/candidate/obj/dedupe.o
+In file included from /out/source/src/dedupe.c:2:
+In file included from /out/source/src/address_parser.h:52:
+In file included from /out/source/src/averaged_perceptron.h:27:
+In file included from /out/source/src/sparse_matrix.h:46:
+/out/source/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
++ for file in $libsrc
++ stem=string_similarity
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/string_similarity.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \s\t\r\i\n\g\_\s\i\m\i\l\a\r\i\t\y\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/string_similarity.c -o /out/artifacts/candidate/obj/string_similarity.o
+/out/source/src/string_similarity.c:122:17: warning: unused variable 'match_at' [-Wunused-variable]
+  122 |         ssize_t match_at = -1;
+      |                 ^~~~~~~~
+/out/source/src/string_similarity.c:124:16: warning: variable 'min_at' set but not used [-Wunused-but-set-variable]
+  124 |         size_t min_at = 0;
+      |                ^
+/out/source/src/string_similarity.c:101:10: warning: unused variable 'in_gap' [-Wunused-variable]
+  101 |     bool in_gap = false;
+      |          ^~~~~~
+/out/source/src/string_similarity.c:454:12: warning: unused variable 'i' [-Wunused-variable]
+  454 |     size_t i = 0;
+      |            ^
+/out/source/src/string_similarity.c:532:12: warning: unused variable 'j' [-Wunused-variable]
+  532 |     double j;
+      |            ^
+/out/source/src/string_similarity.c:647:51: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  647 |             if (utf8_compare_len_case_insensitive(ptr1 + ti.offset + ti_pos, ptr2 + tj.offset, tj.len) == 0) {
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/out/source/src/string_utils.h:82:51: note: passing argument to parameter 'str1' here
+   82 | int utf8_compare_len_case_insensitive(const char *str1, const char *str2, size_t len);
+      |                                                   ^
+/out/source/src/string_similarity.c:647:78: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  647 |             if (utf8_compare_len_case_insensitive(ptr1 + ti.offset + ti_pos, ptr2 + tj.offset, tj.len) == 0) {
+      |                                                                              ^~~~~~~~~~~~~~~~
+/out/source/src/string_utils.h:82:69: note: passing argument to parameter 'str2' here
+   82 | int utf8_compare_len_case_insensitive(const char *str1, const char *str2, size_t len);
+      |                                                                     ^
+/out/source/src/string_similarity.c:621:13: warning: variable 'phrase_token_pos' set but not used [-Wunused-but-set-variable]
+  621 |     ssize_t phrase_token_pos = -1;
+      |             ^
+8 warnings generated.
++ for file in $libsrc
++ stem=acronyms
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/acronyms.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \a\c\r\o\n\y\m\s\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/acronyms.c -o /out/artifacts/candidate/obj/acronyms.o
++ for file in $libsrc
++ stem=soft_tfidf
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/soft_tfidf.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \s\o\f\t\_\t\f\i\d\f\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/soft_tfidf.c -o /out/artifacts/candidate/obj/soft_tfidf.o
+/out/source/src/soft_tfidf.c:302:62: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  302 |         log_debug("p1.len = %zu, i = %zu, p1.start = %zu\n", p1.len, i, p1.start);
+      |                             ~~~                              ^~~~~~
+      |                             %u
+/out/source/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/out/source/src/soft_tfidf.c:302:73: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  302 |         log_debug("p1.len = %zu, i = %zu, p1.start = %zu\n", p1.len, i, p1.start);
+      |                                                      ~~~                ^~~~~~~~
+      |                                                      %u
+/out/source/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/out/source/src/soft_tfidf.c:273:14: warning: unused variable 'have_strict_abbreviation' [-Wunused-variable]
+  273 |         bool have_strict_abbreviation = false;
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
++ for file in $libsrc
++ stem=jaccard
++ '[' candidate = baseline_upstream ']'
++ path=/out/source/src/jaccard.c
++ '[' candidate = candidate ']'
++ [[  crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens  == *\ \j\a\c\c\a\r\d\ * ]]
++ includes=(-iquote "$src" -I/out/source)
++ flags=()
++ '[' candidate = candidate ']'
++ includes=(-iquote "$overlay" "${includes[@]}")
++ flags=("${switches[@]}")
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4 -O2 -iquote /workspace/research/final/021-l4/sources -iquote /out/source/src -I/out/source -c /out/source/src/jaccard.c -o /out/artifacts/candidate/obj/jaccard.o
+/out/source/src/jaccard.c:38:14: warning: variable 'k' set but not used [-Wunused-but-set-variable]
+   38 |     khiter_t k;
+      |              ^
+1 warning generated.
++ '[' candidate = candidate ']'
+++ seq 1 900
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ sleep 1
++ for _ in $(seq 1 900)
++ '[' -f /out/artifacts/baseline/obj/scanner.o ']'
++ '[' -f /out/artifacts/baseline/obj/drand48.o ']'
++ break
++ test -f /out/artifacts/baseline/obj/scanner.o
++ test -f /out/artifacts/baseline/obj/drand48.o
++ cp /out/artifacts/baseline/obj/scanner.o /out/artifacts/candidate/obj/scanner.o
++ cp /out/artifacts/baseline/obj/drand48.o /out/artifacts/candidate/obj/drand48.o
++ printf '%s\n' scanner_object=reused_baseline_identical_flags
++ llvm-ar rcs /out/artifacts/candidate/libpostal.a /out/artifacts/candidate/obj/acronyms.o /out/artifacts/candidate/obj/address_dictionary.o /out/artifacts/candidate/obj/address_parser.o /out/artifacts/candidate/obj/address_parser_io.o /out/artifacts/candidate/obj/averaged_perceptron.o /out/artifacts/candidate/obj/averaged_perceptron_tagger.o /out/artifacts/candidate/obj/crf.o /out/artifacts/candidate/obj/crf_context.o /out/artifacts/candidate/obj/dedupe.o /out/artifacts/candidate/obj/double_metaphone.o /out/artifacts/candidate/obj/drand48.o /out/artifacts/candidate/obj/expand.o /out/artifacts/candidate/obj/features.o /out/artifacts/candidate/obj/file_utils.o /out/artifacts/candidate/obj/float_utils.o /out/artifacts/candidate/obj/geohash_geohash.o /out/artifacts/candidate/obj/graph.o /out/artifacts/candidate/obj/graph_builder.o /out/artifacts/candidate/obj/jaccard.o /out/artifacts/candidate/obj/language_classifier.o /out/artifacts/candidate/obj/language_features.o /out/artifacts/candidate/obj/libpostal.o /out/artifacts/candidate/obj/logistic.o /out/artifacts/candidate/obj/logistic_regression.o /out/artifacts/candidate/obj/minibatch.o /out/artifacts/candidate/obj/near_dupe.o /out/artifacts/candidate/obj/ngrams.o /out/artifacts/candidate/obj/normalize.o /out/artifacts/candidate/obj/numex.o /out/artifacts/candidate/obj/place.o /out/artifacts/candidate/obj/scanner.o /out/artifacts/candidate/obj/soft_tfidf.o /out/artifacts/candidate/obj/sparse_matrix.o /out/artifacts/candidate/obj/string_similarity.o /out/artifacts/candidate/obj/string_utils.o /out/artifacts/candidate/obj/strndup.o /out/artifacts/candidate/obj/tokens.o /out/artifacts/candidate/obj/transliterate.o /out/artifacts/candidate/obj/trie.o /out/artifacts/candidate/obj/trie_search.o /out/artifacts/candidate/obj/trie_utils.o /out/artifacts/candidate/obj/unicode_scripts.o /out/artifacts/candidate/obj/utf8proc_utf8proc.o
++ clang -O2 -g -iquote /out/source/src /workspace/research/experiments/003-batched-lookups/tools/dump_outputs.c /out/artifacts/candidate/libpostal.a -lm -o /out/artifacts/candidate/dump_outputs
++ clang -O2 -g -iquote /out/source/src /out/bench_ext_linux.c /out/artifacts/candidate/libpostal.a -lm -o /out/artifacts/candidate/bench_ext
++ sha256sum /out/artifacts/candidate/libpostal.a /out/artifacts/candidate/dump_outputs /out/artifacts/candidate/bench_ext
++ date -Is

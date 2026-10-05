@@ -1,0 +1,26 @@
+samples 15471, warm µs/address 2.503 (OSM first 300, cycled)
+  5780  37.4% 0.935 µs  address_parser_parse
+  1269   8.2% 0.205 µs  trie_search_tokens_from_index
+  1151   7.4% 0.186 µs  _platform_memset
+   916   5.9% 0.148 µs  crf_dict_lookup_array
+   889   5.7% 0.144 µs  address_parser_features
+   844   5.5% 0.137 µs  _platform_memmove
+   648   4.2% 0.105 µs  fd_find_slot
+   588   3.8% 0.095 µs  feature_array_add_nb
+   476   3.1% 0.077 µs  _platform_strlen
+   327   2.1% 0.053 µs  scan_token
+   293   1.9% 0.047 µs  crf_ik_push
+   251   1.6% 0.041 µs  ap_canon_part
+   180   1.2% 0.029 µs  mach_absolute_time
+   125   0.8% 0.020 µs  token_phrase_memberships
+   123   0.8% 0.020 µs  word_or_phrase_memo
+   119   0.8% 0.019 µs  DYLD-STUB$$strlen
+   119   0.8% 0.019 µs  word_or_phrase_at_index
+   115   0.7% 0.019 µs  cstring_array_get_phrase
+   112   0.7% 0.018 µs  _platform_memcmp
+    99   0.6% 0.016 µs  cstring_array_add_string
+    92   0.6% 0.015 µs  search_address_dictionaries_suffix
+    91   0.6% 0.015 µs  DYLD-STUB$$memcpy
+    74   0.5% 0.012 µs  _platform_strncmp$VARIANT$Base
+    71   0.5% 0.011 µs  _platform_strcmp$VARIANT$Base
+    67   0.4% 0.011 µs  feature_array_add_nbl

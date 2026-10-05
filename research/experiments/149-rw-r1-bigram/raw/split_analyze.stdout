@@ -1,0 +1,18 @@
+dev
+   total_parse       css 6.431/2.562  r1as -0.179/+0.002  r1s -0.266/+0.023
+   context_fill      css 2.103/0.398  r1as -0.101/-0.007  r1s -0.167/-0.013
+   features          css 1.611/0.713  r1as +0.024/+0.035  r1s +0.048/+0.064
+   lookups           css 0.766/0.207  r1as -0.075/-0.013  r1s -0.106/-0.016
+   accumulate        css 0.909/0.482  r1as -0.026/-0.005  r1s -0.039/+0.001
+   viterbi_and_rest  css 0.491/0.441  r1as -0.002/-0.001  r1s -0.001/-0.002
+   r1as: features+lookups cold -0.051 warm +0.022
+   r1s: features+lookups cold -0.058 warm +0.047
+osm
+   total_parse       css 3.999/2.199  r1as +0.309/+0.030  r1s +0.139/+0.059
+   context_fill      css 1.118/0.349  r1as +0.140/+0.004  r1s +0.029/+0.007
+   features          css 0.930/0.574  r1as +0.108/+0.035  r1s +0.082/+0.053
+   lookups           css 0.454/0.168  r1as +0.011/-0.009  r1s -0.041/-0.013
+   accumulate        css 0.641/0.448  r1as +0.023/-0.006  r1s +0.026/+0.001
+   viterbi_and_rest  css 0.428/0.392  r1as +0.001/+0.000  r1s +0.005/+0.003
+   r1as: features+lookups cold +0.119 warm +0.026
+   r1s: features+lookups cold +0.042 warm +0.041

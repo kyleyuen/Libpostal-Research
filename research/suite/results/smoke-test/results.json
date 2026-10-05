@@ -1,0 +1,208 @@
+{
+ "run": "smoke-test",
+ "generated": "2026-10-04T22:34:11-0700",
+ "settings": {
+  "rounds": 2,
+  "passes": 3,
+  "settle_load_1min": 99,
+  "settle_max_wait_s": 1800,
+  "correctness_jobs": 3,
+  "fuzz_count": 2000,
+  "fuzz_seeds": [
+   1,
+   2
+  ],
+  "fuzz_corpora": [
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+  ],
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261004,
+  "steady_dataset": "golden-v1",
+  "steady_passes_before_sample": 2,
+  "thread_check_dataset": "golden-v1",
+  "sleep_between_runs_s": 2
+ },
+ "baseline": "original",
+ "datasets": {
+  "osm-v3": {
+   "source": "openstreetmap",
+   "kind": "screening/validation",
+   "variants": {
+    "original": {
+     "rounds": 2,
+     "warm_median_us": 24.88975,
+     "warm_min_us": 23.893,
+     "warm_max_us": 25.8865,
+     "cold_median_us": 28.712,
+     "setup_median_s": 2.817,
+     "peak_rss_max": 2613035008,
+     "peak_footprint_max": 2612775144
+    },
+    "cpi": {
+     "rounds": 2,
+     "warm_median_us": 3.5484999999999998,
+     "warm_min_us": 3.534,
+     "warm_max_us": 3.5629999999999997,
+     "cold_median_us": 4.0595,
+     "setup_median_s": 11.643,
+     "peak_rss_max": 2543124480,
+     "peak_footprint_max": 2543438224
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 7.015425847558246,
+     "ci95": [
+      6.705865843390402,
+      7.32498585172609
+     ],
+     "min": 6.705865843390402,
+     "max": 7.32498585172609,
+     "rounds": 2,
+     "per_round": [
+      7.32498585172609,
+      6.705865843390402
+     ],
+     "ratio_of_medians": 7.014160913061858,
+     "cold_median": 7.081436664339435,
+     "per_country": {
+      "n": 49,
+      "min": 5.7369439877680675,
+      "median": 7.1000410611792075,
+      "max": 7.941376414756892
+     }
+    }
+   }
+  },
+  "unseen-v11": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original": {
+     "rounds": 2,
+     "warm_median_us": 18.1235,
+     "warm_min_us": 18.107,
+     "warm_max_us": 18.14,
+     "cold_median_us": 19.5355,
+     "setup_median_s": 2.731,
+     "peak_rss_max": 2611773440,
+     "peak_footprint_max": 2611546320
+    },
+    "cpi": {
+     "rounds": 2,
+     "warm_median_us": 3.26125,
+     "warm_min_us": 3.2325,
+     "warm_max_us": 3.29,
+     "cold_median_us": 3.782,
+     "setup_median_s": 11.602,
+     "peak_rss_max": 2541387776,
+     "peak_footprint_max": 2541685112
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 5.557701511764305,
+     "ci95": [
+      5.503647416413374,
+      5.611755607115236
+     ],
+     "min": 5.503647416413374,
+     "max": 5.611755607115236,
+     "rounds": 2,
+     "per_round": [
+      5.503647416413374,
+      5.611755607115236
+     ],
+     "ratio_of_medians": 5.557224990417785,
+     "cold_median": 5.165570073190566,
+     "per_country": {
+      "n": 40,
+      "min": 2.6056323228114877,
+      "median": 5.737321086634812,
+      "max": 8.100611350232697
+     }
+    }
+   }
+  }
+ },
+ "aggregate": {
+  "cpi": {
+   "datasets": 2,
+   "geomean_all": 6.244168706773133,
+   "min": 5.557701511764305,
+   "max": 7.015425847558246,
+   "geomean_by_source": {
+    "openstreetmap": 6.244168706773133
+   }
+  }
+ },
+ "correctness": {
+  "dumps": {
+   "cpi/osm-v3": {
+    "identical": true,
+    "candidate_sha256": "e8a48875b12310ef77f41603d0c6e54edc48c25657596407769d8e4deadb051b",
+    "baseline_sha256": "e8a48875b12310ef77f41603d0c6e54edc48c25657596407769d8e4deadb051b",
+    "lines": 11405
+   },
+   "cpi/unseen-v11": {
+    "identical": true,
+    "candidate_sha256": "19fe8fcc105465535233e1362146d500ce462b39318caf34dfce74c06c6f2a8d",
+    "baseline_sha256": "19fe8fcc105465535233e1362146d500ce462b39318caf34dfce74c06c6f2a8d",
+    "lines": 7882
+   }
+  },
+  "frozen": {},
+  "fuzz": {
+   "cpi/s1": {
+    "identical": true,
+    "inputs": 2000
+   },
+   "cpi/s2": {
+    "identical": true,
+    "inputs": 2000
+   }
+  },
+  "negative_control": {
+   "dataset": "osm-v3",
+   "detected": true
+  }
+ },
+ "memory": {
+  "original": {
+   "steady_footprint": "2492 MB",
+   "dataset": "osm-v3",
+   "after_passes": 2
+  },
+  "cpi": {
+   "steady_footprint": "1926 MB",
+   "dataset": "osm-v3",
+   "after_passes": 2
+  }
+ },
+ "threads": {
+  "original": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  },
+  "cpi": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  }
+ },
+ "manifest": "manifest.json"
+}

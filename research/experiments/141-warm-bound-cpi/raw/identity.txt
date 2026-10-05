@@ -1,0 +1,15 @@
+# 2026-10-04T19:00:47-0700 input identity
+dev TSV col2 == golden-v1/development.txt (cmp exit 0)
+   10308 ../../profiling/golden-v1/development.txt
+6e97d10f413bb6bbd342e710d30ae3e52ef4b9196875c85180894153dac368b9  025-audit-next/data/development.tsv
+45b6b9b5244594e8c46ca2b8fb25cc6bcc8089eae36e78128a556539228a145f  ../../profiling/golden-v3-osm/osm.tsv
+1ddc587c2f3c9b25bb3ea2049cfb025929761c5f9f8f4e6a11b79e327848b898  ../../profiling/golden-v11-osm-unseen/unseen11.tsv
+252960e64ea3367d93c2064b0e46f0b3a8c4289bebef220e981aad8bc75eca25  ../../profiling/golden-v1/development.txt
+# binaries (compare with 119 artifacts/*/hashes.txt and 015)
+c5612825963a18be1f4e7869da2bb2dc6fedf3f098189d195bad765247b43c5a  119-component-phrase-ids/artifacts/cpi/bench_ext
+e56d3ae4799966543a5841ebce89f26fb5eeed396d862f6b31e4076354675a4e  119-component-phrase-ids/artifacts/cpi/libpostal.a
+a7f3ad0c0e04a99a5185c82ea7f7ab64bc2ec181d9cd6a321aac1205762b875d  119-component-phrase-ids/artifacts/css/bench_split
+0f2852cfc55e61e4a91bb22caa701d5409d25cd8ce0139efd164b046aa043db9  119-component-phrase-ids/artifacts/css/libpostal.a
+c2ce250646155d6eda91337cac9b9ddab11f3605ff56b70ba59fc1529932c77e  015-integer-keys/artifacts/bench_ext_baseline
+5fb0f4fb49745b5737170cf53de400415234ef586c540a2ddedf94472426a975  041-warm-bound/tools/bench_warm.c
+0c4988a2fc1aa00d511a39866b187ce3e8630fe210aad05f2de9eaeb2fe4bf0f  ../tools/bench_ext.c

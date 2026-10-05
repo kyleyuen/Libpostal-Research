@@ -1,0 +1,14 @@
+# 2026-10-04T19:27:29-0700 identity summary part 2 (dumps ON)
+orc_on_nv sha 806b8a81603ea9adf3af (expect 806b8a81603ea9adf3af)
+orc_on_osm IDENTICAL
+orc_on_fz1 IDENTICAL to first 200,000 lines of base_s1
+determinism v1 O1 IDENTICAL
+determinism v1 O2 IDENTICAL
+determinism v1 O3k IDENTICAL
+determinism v1 O3i IDENTICAL
+determinism v1 O4 IDENTICAL
+golden-v1 addresses(O1 N records)=12863 O4 S rows=75656
+novel addresses(O1 N records)=12863 O4 S rows=73749
+osm-v3 addresses(O1 N records)=11405 O4 S rows=61157
+fuzz-s1-200k addresses(O1 N records)=178955 O4 S rows=1361822
+fuzz INVALID_UTF8 skipped (no parse): 21045; NULL results: 0

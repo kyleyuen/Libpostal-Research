@@ -1,0 +1,5 @@
+start=2026-10-01T17:57:03-07:00
+cwd=/Users/kyle/Desktop/HW/CSCI 201 Reserach
+argv: <docker> <run> <--rm> <--platform> <linux/arm64> <-v> </Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/026-cross-platform/linux:/out:ro> <libpostal-audit-linux-arm64:026> <bash> <-c> <nm\ -g\ /out/artifacts/candidate_mi3/bench_ext\ \|\ grep\ -E\ \"\ \(malloc\|free\|mi_malloc\|mi_free\|mi_version\)\$\"\;\ ldd\ /out/artifacts/candidate_mi3/bench_ext>
+exit=0
+end=2026-10-01T17:57:03-07:00

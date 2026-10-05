@@ -1,0 +1,28 @@
+replica_vs_library: checked=10308 mismatches=0 shortcut_paths=3
+pass 1: library_call=33.591 us/addr staged=29.624 us/addr | normalize=2.568 tokenize+build tokens=0.528 context_fill (phrase/dict search)=3.517 crf ctx reset+trans copy=1.251 feature generation=5.338 trie lookup: state features=10.180 weight accumulate: state=1.225 trie lookup: prev-tag features=2.555 weight accumulate: prev-tag=0.758 viterbi=0.726 label strings=0.175 response build=0.502 free temporaries+response=0.152 
+pass 2: library_call=33.439 us/addr staged=29.746 us/addr | normalize=2.548 tokenize+build tokens=0.523 context_fill (phrase/dict search)=3.539 crf ctx reset+trans copy=1.251 feature generation=5.361 trie lookup: state features=10.275 weight accumulate: state=1.219 trie lookup: prev-tag features=2.580 weight accumulate: prev-tag=0.760 viterbi=0.722 label strings=0.173 response build=0.497 free temporaries+response=0.151 
+pass 3: library_call=37.231 us/addr staged=31.754 us/addr | normalize=2.535 tokenize+build tokens=0.547 context_fill (phrase/dict search)=3.994 crf ctx reset+trans copy=1.258 feature generation=5.620 trie lookup: state features=11.183 weight accumulate: state=1.361 trie lookup: prev-tag features=2.735 weight accumulate: prev-tag=0.830 viterbi=0.715 label strings=0.177 response build=0.505 free temporaries+response=0.149 
+pass 4: library_call=38.592 us/addr staged=32.285 us/addr | normalize=2.576 tokenize+build tokens=0.576 context_fill (phrase/dict search)=3.977 crf ctx reset+trans copy=1.284 feature generation=5.712 trie lookup: state features=11.474 weight accumulate: state=1.325 trie lookup: prev-tag features=2.830 weight accumulate: prev-tag=0.838 viterbi=0.705 label strings=0.183 response build=0.512 free temporaries+response=0.150 
+pass 5: library_call=40.531 us/addr staged=32.716 us/addr | normalize=2.575 tokenize+build tokens=0.572 context_fill (phrase/dict search)=4.046 crf ctx reset+trans copy=1.296 feature generation=5.782 trie lookup: state features=11.672 weight accumulate: state=1.364 trie lookup: prev-tag features=2.866 weight accumulate: prev-tag=0.854 viterbi=0.705 label strings=0.183 response build=0.509 free temporaries+response=0.149 
+pass 6: library_call=37.297 us/addr staged=33.182 us/addr | normalize=2.570 tokenize+build tokens=0.588 context_fill (phrase/dict search)=4.077 crf ctx reset+trans copy=1.300 feature generation=5.877 trie lookup: state features=11.894 weight accumulate: state=1.381 trie lookup: prev-tag features=2.938 weight accumulate: prev-tag=0.864 viterbi=0.703 label strings=0.184 response build=0.512 free temporaries+response=0.150 
+pass 7: library_call=37.604 us/addr staged=32.787 us/addr | normalize=2.568 tokenize+build tokens=0.579 context_fill (phrase/dict search)=4.032 crf ctx reset+trans copy=1.303 feature generation=5.805 trie lookup: state features=11.701 weight accumulate: state=1.352 trie lookup: prev-tag features=2.878 weight accumulate: prev-tag=0.864 viterbi=0.710 label strings=0.187 response build=0.513 free temporaries+response=0.151 
+pass 8: library_call=35.054 us/addr staged=30.737 us/addr | normalize=2.585 tokenize+build tokens=0.535 context_fill (phrase/dict search)=3.692 crf ctx reset+trans copy=1.269 feature generation=5.495 trie lookup: state features=10.707 weight accumulate: state=1.257 trie lookup: prev-tag features=2.685 weight accumulate: prev-tag=0.797 viterbi=0.730 label strings=0.175 response build=0.509 free temporaries+response=0.153 
+counts_last_8_passes: addresses=82464 shortcut=24 tokens=484744 state_feature_lookups=3781560 (hits 3181280) prevtag_lookups=720384 (hits 687120)
+per_address: tokens=5.88 state_lookups=45.86 (hit 84.1%) prevtag_lookups=8.74 (hit 95.4%)
+timer_resolution_note: CLOCK_UPTIME_RAW ticks are ~41.67 ns; the staged run adds ~30-60 timer reads per address
+recorded state_features=472695 prevtag_features=90048
+B1 corpus-order (all 472695): 191.8 ns/lookup hits=397660
+B2 shuffled (no token locality): 303.1 ns/lookup
+B3 each lookup done twice back-to-back: 157.6 ns/lookup (mean of 1st + 2nd)
+B4 hot working set (first 50 addrs, 2333 features repeated): 57.4 ns/lookup
+B1 corpus-order (all 472695): 188.9 ns/lookup hits=397660
+B2 shuffled (no token locality): 284.8 ns/lookup
+B3 each lookup done twice back-to-back: 138.9 ns/lookup (mean of 1st + 2nd)
+B4 hot working set (first 50 addrs, 2333 features repeated): 55.2 ns/lookup
+B1 corpus-order (all 472695): 189.3 ns/lookup hits=397660
+B2 shuffled (no token locality): 291.7 ns/lookup
+B3 each lookup done twice back-to-back: 160.5 ns/lookup (mean of 1st + 2nd)
+B4 hot working set (first 50 addrs, 2333 features repeated): 56.6 ns/lookup
+trie steps per state-feature lookup: mean=21.36 over 472695 (replica mismatches vs trie_get: 0)
+state_features trie: nodes=22140243 tail_bytes=68802960 data=11470624 | trans trie nodes=3818106
+mean state feature length=22.6 bytes

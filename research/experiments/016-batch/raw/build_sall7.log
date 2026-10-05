@@ -1,0 +1,171 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/crf.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/crf.h:20:
+In file included from ./crf_context.h:20:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/trie.c:1074:13: warning: unused variable 'base' [-Wunused-variable]
+ 1074 |     int32_t base;
+      |             ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/trie.c:1075:13: warning: unused variable 'check' [-Wunused-variable]
+ 1075 |     int32_t check;
+      |             ^~~~~
+2 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/string_utils.c:116:17: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  116 |     for (size_t count = 0; (temp = strstr(start, replace)); count++) {
+      |                 ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/string_utils.c:193:18: warning: variable 'remaining' set but not used [-Wunused-but-set-variable]
+  193 |     ssize_t len, remaining;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/string_utils.c:384:13: warning: unused variable 'num_utf8_chars' [-Wunused-variable]
+  384 |     ssize_t num_utf8_chars = 0;
+      |             ^~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/string_utils.c:521:12: warning: unused variable 'remaining' [-Wunused-variable]
+  521 |     size_t remaining = len;
+      |            ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/string_utils.c:687:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  687 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/string_utils.c:713:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  713 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/string_utils.c:876:13: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  876 |     ssize_t index = 0;
+      |             ^
+7 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1:
+In file included from ./address_parser.h:52:
+In file included from ./averaged_perceptron.h:27:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:389:10: warning: unused variable 'has_key' [-Wunused-variable]
+  389 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:835:14: warning: unused variable 'phrase' [-Wunused-variable]
+  835 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:921:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+  921 |     bool have_address_phrases = search_address_dictionaries_tokens_with_phrases(normalized_str, normalized_tokens, NULL, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:957:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+  957 |     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:975:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+  975 |     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1084:13: warning: unused variable 'token' [-Wunused-variable]
+ 1084 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1173:13: warning: unused variable 'membership' [-Wunused-variable]
+ 1173 |     int64_t membership;
+      |             ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1201:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1201 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1609:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 1609 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1611:18: warning: unused variable 'k' [-Wunused-variable]
+ 1611 |         khiter_t k;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1710:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable]
+ 1710 |             bool ngrams_added = false;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1894:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 1894 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1900:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 1900 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1901:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 1901 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1836:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable]
+ 1836 |         size_t next_word_len = 1;
+      |                ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1403:11: warning: unused variable 'language' [-Wunused-variable]
+ 1403 |     char *language = context->language;
+      |           ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1404:11: warning: unused variable 'country' [-Wunused-variable]
+ 1404 |     char *country = context->country;
+      |           ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1414:19: warning: unused variable 'separators' [-Wunused-variable]
+ 1414 |     uint32_array *separators = context->separators;
+      |                   ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1652:10: warning: variable 'is_unknown' set but not used [-Wunused-but-set-variable]
+ 1652 |     bool is_unknown = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1654:10: warning: variable 'known_prefix' set but not used [-Wunused-but-set-variable]
+ 1654 |     bool known_prefix = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/address_parser.c:1655:10: warning: variable 'known_suffix' set but not used [-Wunused-but-set-variable]
+ 1655 |     bool known_suffix = false;
+      |          ^
+22 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/trie_search.c:184:16: warning: initialization of pointer of type 'phrase_array *' to null from a constant boolean expression [-Wbool-conversion]
+  184 |         return false;
+      |                ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/trie_search.c:774:72: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  774 |                     log_debug("No space transition, phrase_len=%zu\n", phrase_len);
+      |                                                                ~~~     ^~~~~~~~~~
+      |                                                                %u
+./log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/trie_search.c:731:12: warning: variable 'separator_char_len' set but not used [-Wunused-but-set-variable]
+  731 |     size_t separator_char_len = 0;
+      |            ^
+3 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/transliterate.c:614:12: warning: variable 'group_num_start' set but not used [-Wunused-but-set-variable]
+  614 |     size_t group_num_start = 0;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/transliterate.c:615:12: warning: variable 'group_num_len' set but not used [-Wunused-but-set-variable]
+  615 |     size_t group_num_len = 0;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/transliterate.c:1027:26: warning: variable 'added_previous_phrase' set but not used [-Wunused-but-set-variable]
+ 1027 |                     bool added_previous_phrase = false;
+      |                          ^
+3 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/normalize.c:269:22: warning: unused variable 'key' [-Wunused-variable]
+  269 |             khiter_t key = kh_put(int_set, scripts, (khint_t)script, &ret);
+      |                      ^~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/normalize.c:208:11: warning: unused variable 'numex_replaced' [-Wunused-variable]
+  208 |     char *numex_replaced = NULL;
+      |           ^~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/normalize.c:374:14: warning: unused variable 'is_hyphen' [-Wunused-variable]
+  374 |         bool is_hyphen = utf8_is_hyphen(ch);
+      |              ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/normalize.c:367:10: warning: unused variable 'append_char' [-Wunused-variable]
+  367 |     bool append_char = true;
+      |          ^~~~~~~~~~~
+4 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/crf_context.c:1:
+In file included from ./crf_context.h:20:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/crf_context.c:238:18: warning: unused variable 'T' [-Wunused-variable]
+  238 |     const size_t T = context->num_items;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/crf_context.c:239:18: warning: unused variable 'L' [-Wunused-variable]
+  239 |     const size_t L = context->num_labels;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/crf_context.c:538:18: warning: unused variable 'L' [-Wunused-variable]
+  538 |     const size_t L = self->num_labels;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/crf_context.c:540:19: warning: unused variable 'cur' [-Wunused-variable]
+  540 |     const double *cur = NULL;
+      |                   ^~~
+5 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/016-batch/artifacts/sall7/src/libpostal.c:10:
+In file included from ./address_parser.h:52:
+In file included from ./averaged_perceptron.h:27:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+exit=0

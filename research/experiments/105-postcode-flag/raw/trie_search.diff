@@ -1,0 +1,54 @@
+--- ../101-prefix-suffix-flags/sources/trie_search.c	2026-10-03 22:18:44
++++ sources/trie_search.c	2026-10-03 23:05:02
+@@ -361,6 +361,24 @@
+     return 0;
+ }
+ #endif
++#ifdef EXP_PC_FLAG
++// Experiment 105. trie_word_falls_off: does the byte loop below, walking w from the root in a fresh state, take the "fell off trie" branch inside w (same
++// transitions and test; a tail or the end of w is "no")? The address parser stores the answer for every vocabulary word in bit 60 of its 056 entry
++// (postcode trie) and passes each admin token's slot. A flagged token in the fresh state (EXP_PHRASE_PREFILTER's condition) would fall off, after which the
++// original takes the NO_MATCH branch with no match pending: phrase_start = phrase_len = 0 and the walk restarts at the start node. The skip sets exactly that.
++bool trie_word_falls_off(trie_t *self, const char *w, size_t len) {
++    trie_node_t node = trie_get_node(self, ROOT_NODE_ID), last_node = node; uint32_t node_id = ROOT_NODE_ID, last_node_id = ROOT_NODE_ID;
++    if (node.base < 0 || len == 0) return false;
++    for (size_t j = 0; j < len; j++) {
++        node_id = trie_get_transition_index(self, node, (unsigned char)w[j]); node = trie_get_node(self, node_id);
++        if (node.check != (int32_t)last_node_id && last_node.base >= 0) return true;
++        if (node.base < 0) return false;
++        last_node = node; last_node_id = node_id;
++    }
++    return false;
++}
++const trie_t *trie_pcf_trie = NULL; const int32_t *trie_pcf_slot = NULL; size_t trie_pcf_n = 0;
++#endif
+ bool trie_search_tokens_from_index(trie_t *self, char *str, token_array *tokens, uint32_t start_node_id, phrase_array **phrases) {
+     if (str == NULL || tokens == NULL || tokens->n == 0) return false;
+ #ifdef EXP_PHRASE_PREFILTER
+@@ -412,6 +430,17 @@
+         log_debug("On %d, token=%.*s\n", i, (int)token_length, ptr);
+ 
+         bool check_continuation = true;
++#ifdef EXP_PC_FLAG
++        if (self == trie_pcf_trie && trie_pcf_slot != NULL && (size_t)i < trie_pcf_n && trie_pcf_slot[i] >= 0 && token.type != WHITESPACE && token_length > 0 &&
++            start_node_id == ROOT_NODE_ID && node_id == start_node_id && last_node_id == start_node_id && last_match_index == -1 &&
++            (last_state == SEARCH_STATE_NO_MATCH || last_state == SEARCH_STATE_BEGIN) && ((trie_ftt_tab[trie_pcf_slot[i]] >> 60) & 1)) {
++            state = SEARCH_STATE_NO_MATCH;
++            phrase_start = phrase_len = 0;
++            node_id = last_node_id = start_node_id;
++            node = last_node = trie_get_node(self, start_node_id);
++            continue;
++        }
++#endif
+ #ifdef EXP_SEARCH_STATS
+         bool ss_is_fresh = token.type != WHITESPACE && token_length > 0 && node_id == start_node_id && last_node_id == start_node_id && last_match_index == -1 &&
+             (last_state == SEARCH_STATE_NO_MATCH || last_state == SEARCH_STATE_BEGIN);
+@@ -446,7 +475,7 @@
+             if (e >> 63) {
+                 int kk = (int)((e >> 46) & 0xFF);
+ #ifdef EXP_FTT_VERIFY
+-                if (trie_ftt_walk(self, ptr, token_length) != (e & ~(3ULL << 61))) {   /* 101: bits 61-62 are prefix/suffix flags */ fprintf(stderr, "EXP_FTT_VERIFY MISMATCH token %d '%.*s'\n", i, (int)token_length, ptr); abort(); }
++                if (trie_ftt_walk(self, ptr, token_length) != (e & ~(7ULL << 60))) {   /* 101: bits 61-62 are prefix/suffix flags; 105: bit 60 postcode flag */ fprintf(stderr, "EXP_FTT_VERIFY MISMATCH token %d '%.*s'\n", i, (int)token_length, ptr); abort(); }
+                 trie_ftt_verified++;
+ #endif
+                 if (kk >= 1 && kk <= (int)token_length) {

@@ -1,0 +1,34 @@
+
+== _platform_memmove: exclusive 11.3% of samples; by caller:
+    3.05%  crf_key_batch_add_token
+    3.04%  char_array_add_vjoined
+    1.08%  crf_key_batch_lookup_dict
+    1.04%  xzm_realloc
+    0.75%  fd_split
+    0.68%  char_array_append
+    0.32%  char_array_cat_len
+    0.23%  cstring_array_append_string
+
+== _platform_strlen: exclusive 4.0% of samples; by caller:
+    1.80%  char_array_add_vjoined
+    0.76%  crf_key_batch_add_token
+    0.25%  char_array_append
+    0.16%  trie_get_from_index
+    0.16%  trie_get_data
+    0.16%  cstring_array_add_string
+    0.16%  strdup
+    0.12%  address_parser_features
+
+== _platform_memcmp: exclusive 2.1% of samples; by caller:
+    1.77%  crf_key_batch_lookup_dict
+    0.33%  fd_split
+
+== _platform_memset: exclusive 1.5% of samples; by caller:
+    1.17%  crf_context_set_num_items
+    0.33%  _xzm_free
+    0.02%  address_parser_context_fill
+
+== line-level exclusive inside crf_tagger_score:
+   13.29%  crf.c:287
+    0.05%  crf.c:380
+    0.00%  crf.c:278

@@ -1,0 +1,13 @@
+# 2026-10-04T18:13:28-0700 EXTRA_SW="$(cat raw/switches_itl.txt)" tools/build_cc.sh itl clang llvm ...
+# 2026-10-04T18:14:16-0700  VTAG=_A tools/verify_batch.sh itl
+# 2026-10-04T18:14:33-0700 AP_BATCH_N=4 AP_YIELD_MASK=7 VTAG=_B tools/verify_batch.sh itl
+# 2026-10-04T18:14:49-0700 AP_BATCH_N=4 AP_YIELD_MASK=7 AP_STRESS=12345 VTAG=_C tools/verify_batch.sh itl
+# 2026-10-04T18:15:05-0700 AP_BATCH_N=2 AP_YIELD_MASK=7 VTAG=_D tools/verify_batch.sh itl
+# 2026-10-04T18:15:37-0700 AP_STACK 8 MB; EXTRA_SW="$(cat raw/switches_itl2.txt)" tools/build_cc.sh itl2 clang llvm ...
+# 2026-10-04T18:17:16-0700 harness fix; EXTRA_SW="$(cat raw/switches_itl3.txt)" tools/build_cc.sh itl3 ...
+# 2026-10-04T18:17:55-0700  VTAG=_A tools/verify_batch.sh itl3
+# 2026-10-04T18:18:29-0700 AP_BATCH_N=4 AP_YIELD_MASK=7 VTAG=_B tools/verify_batch.sh itl3
+# 2026-10-04T18:19:02-0700 AP_BATCH_N=4 AP_YIELD_MASK=7 AP_STRESS=12345 VTAG=_C tools/verify_batch.sh itl3
+# 2026-10-04T18:19:35-0700 AP_BATCH_N=2 AP_YIELD_MASK=7 VTAG=_D tools/verify_batch.sh itl3
+# 2026-10-04T18:20:20-0700 tools/screen.sh
+# 2026-10-04T18:29:42-0700 tools/screen2.sh

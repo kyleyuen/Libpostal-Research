@@ -1,0 +1,24 @@
+dev psf clean (median of 3 runs): stage cold / warm / cold-warm us
+   total_parse          5.828 / 2.526 / 3.302
+   normalize            0.064 / 0.039 / 0.025
+   tokenize             0.214 / 0.126 / 0.088
+   context_fill         1.720 / 0.375 / 1.345
+   predict_total        3.577 / 1.856 / 1.721
+   response             0.221 / 0.114 / 0.107
+   features             1.349 / 0.722 / 0.627
+   lookups              0.801 / 0.255 / 0.546
+   accumulate           0.969 / 0.463 / 0.506
+   cf_postal_codes      0.390 / 0.056 / 0.334
+   viterbi_and_rest     0.460 / 0.416 / 0.044
+osm psf clean (median of 3 runs): stage cold / warm / cold-warm us
+   total_parse          3.937 / 2.234 / 1.703
+   normalize            0.072 / 0.029 / 0.043
+   tokenize             0.177 / 0.110 / 0.067
+   context_fill         1.024 / 0.344 / 0.680
+   predict_total        2.482 / 1.630 / 0.852
+   response             0.156 / 0.105 / 0.051
+   features             0.921 / 0.602 / 0.319
+   lookups              0.497 / 0.212 / 0.285
+   accumulate           0.651 / 0.437 / 0.214
+   cf_postal_codes      0.207 / 0.053 / 0.154
+   viterbi_and_rest     0.412 / 0.378 / 0.034

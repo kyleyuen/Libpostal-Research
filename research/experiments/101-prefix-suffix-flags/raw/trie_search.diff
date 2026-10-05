@@ -1,0 +1,11 @@
+--- ../098-norm-pair/sources/trie_search.c	2026-10-03 21:49:20
++++ sources/trie_search.c	2026-10-03 22:18:44
+@@ -446,7 +446,7 @@
+             if (e >> 63) {
+                 int kk = (int)((e >> 46) & 0xFF);
+ #ifdef EXP_FTT_VERIFY
+-                if (trie_ftt_walk(self, ptr, token_length) != e) { fprintf(stderr, "EXP_FTT_VERIFY MISMATCH token %d '%.*s'\n", i, (int)token_length, ptr); abort(); }
++                if (trie_ftt_walk(self, ptr, token_length) != (e & ~(3ULL << 61))) {   /* 101: bits 61-62 are prefix/suffix flags */ fprintf(stderr, "EXP_FTT_VERIFY MISMATCH token %d '%.*s'\n", i, (int)token_length, ptr); abort(); }
+                 trie_ftt_verified++;
+ #endif
+                 if (kk >= 1 && kk <= (int)token_length) {

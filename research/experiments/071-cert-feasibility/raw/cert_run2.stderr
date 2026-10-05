@@ -1,0 +1,14 @@
+MARGIN full-score best minus second-best path: p10=8.613 p50=30.215 p90=47.248
+BOUND group=0 2x path bound of skipped features: p10=567.826 p50=946.688 p90=1513.415
+BOUND group=1 2x path bound of skipped features: p10=293.890 p50=901.241 p90=1774.156
+BOUND group=2 2x path bound of skipped features: p10=1079.932 p50=1822.350 p90=2968.200
+BOUND group=3 2x path bound of skipped features: p10=415.704 p50=708.441 p90=1195.539
+BOUND group=4 2x path bound of skipped features: p10=1233.406 p50=2019.291 p90=3475.888
+BOUND group=5 2x path bound of skipped features: p10=56.073 p50=292.431 p90=292.431
+CERT addresses=10305 keys=562743 (54.6 per address)
+CERT group=0 [pairs] certified=0.0% group_keys=9.56/addr skippable_keys=0.00/addr (0.0% of all lookups) cert_but_wrong=0
+CERT group=1 [phrase-valued] certified=0.3% group_keys=16.20/addr skippable_keys=0.00/addr (0.0% of all lookups) cert_but_wrong=0
+CERT group=2 [context (prev/next word + pairs)] certified=0.0% group_keys=18.64/addr skippable_keys=0.00/addr (0.0% of all lookups) cert_but_wrong=0
+CERT group=3 [all transition features] certified=0.0% group_keys=8.42/addr skippable_keys=0.00/addr (0.0% of all lookups) cert_but_wrong=0
+CERT group=4 [all state features except bias/word roles] certified=0.0% group_keys=28.62/addr skippable_keys=0.00/addr (0.0% of all lookups) cert_but_wrong=0
+CERT group=5 [postcode] certified=3.5% group_keys=2.48/addr skippable_keys=0.00/addr (0.0% of all lookups) cert_but_wrong=0

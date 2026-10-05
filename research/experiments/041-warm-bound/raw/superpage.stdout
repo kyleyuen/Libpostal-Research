@@ -1,0 +1,3 @@
+mach_vm_allocate SUPERPAGE_SIZE_ANY: kr=4 ((os/kern) invalid argument)
+mach_vm_allocate SUPERPAGE_SIZE_2MB: kr=4 ((os/kern) invalid argument)
+mmap fd=VM_FLAGS_SUPERPAGE_SIZE_ANY: MAP_FAILED

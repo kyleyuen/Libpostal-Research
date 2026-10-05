@@ -1,0 +1,3 @@
+# 2026-10-03T23:00:02-0700 EXTRA_SW="$(cat ../101-prefix-suffix-flags/raw/switches_psf.txt) -DEXP_PCF_PROBE" tools/build_cc.sh pcf clang none "-O2" "-O1" ""
+# 2026-10-03T23:00:16-0700 probe runs: dump_outputs dev/osm/v1; fuzz_pipeline seed 1 2M
+# 2026-10-03T23:01:10-0700 rebuild pcf2 (+ fall-depth histogram), same switches; dump_outputs dev/osm

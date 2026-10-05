@@ -1,0 +1,33 @@
+## Q4. Vocabulary counts: coverage C(N), dense memory M(N), Zipf fit
+
+Vocabulary words: 3,694,560; sum of counts: 3,491,195,990; max count 330,797,339 ('DDDDD'); words with count > 50 (not n-gram words): 1,240,558; min count 5.
+Ranking: count descending, ties broken by word bytes ascending.
+
+| N | C(N) = top-N count share | C(N) among count>50 words only | M(N) dense = N*20*8 B | count of N-th word |
+|---:|---:|---:|---:|---:|
+| 2^10 = 1,024 | 0.6910 | 0.6994 | 0.2 MB (0.2 MiB) | 230,440 |
+| 2^11 = 2,048 | 0.7364 | 0.7453 | 0.3 MB (0.3 MiB) | 109,967 |
+| 2^12 = 4,096 | 0.7803 | 0.7898 | 0.7 MB (0.6 MiB) | 52,157 |
+| 2^13 = 8,192 | 0.8199 | 0.8299 | 1.3 MB (1.2 MiB) | 22,612 |
+| 2^14 = 16,384 | 0.8540 | 0.8643 | 2.6 MB (2.5 MiB) | 9,590 |
+| 2^15 = 32,768 | 0.8829 | 0.8936 | 5.2 MB (5.0 MiB) | 4,116 |
+| 2^16 = 65,536 | 0.9079 | 0.9189 | 10.5 MB (10.0 MiB) | 1,800 |
+| 2^17 = 131,072 | 0.9300 | 0.9413 | 21.0 MB (20.0 MiB) | 808 |
+| 2^18 = 262,144 | 0.9503 | 0.9619 | 41.9 MB (40.0 MiB) | 375 |
+| 2^19 = 524,288 | 0.9689 | 0.9807 | 83.9 MB (80.0 MiB) | 169 |
+| 2^20 = 1,048,576 | 0.9848 | 0.9968 | 167.8 MB (160.0 MiB) | 66 |
+| 2^21 = 2,097,152 | 0.9956 | 1.0000 | 335.5 MB (320.0 MiB) | 18 |
+| 2^22 = 4,194,304 | 1.0000 | 1.0000 | 671.1 MB (640.0 MiB) | 5 |
+
+Largest N with M(N) <= 40 MB (decimal, 40e6 B): 250,000 (C = 0.9490); <= 40 MiB: 262,144 (C = 0.9503). Headroom basis: 2.613 - 2.557 GB (decimal) = 56 MB.
+M(N) assumes dense 20-double vectors; a sparse layout would be smaller but its size depends on the rows' non-zeros (not computed).
+
+Zipf fit: least squares of ln(count) on ln(rank) (rank from 1).
+
+| Fit range (ranks) | s | R^2 | points |
+|---|---:|---:|---:|
+| all | 1.504 | 0.9687 | 3,694,560 |
+| count > 50 (1..1240558) | 1.194 | 0.9981 | 1,240,558 |
+| 10..1e5 | 1.183 | 0.9989 | 99,991 |
+| 100..1e6 | 1.174 | 0.9992 | 999,901 |
+| 1000..all | 1.509 | 0.9691 | 3,693,561 |

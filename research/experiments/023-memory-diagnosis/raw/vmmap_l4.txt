@@ -1,0 +1,68 @@
+Can't examine target process's malloc zone mimalloc_0x102974948, so memory analysis will be incomplete or incorrect.
+Reason: failed to resolve canonical path for /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/021-final-stack/artifacts/l4/bench_ext in dyld shared cache.
+
+Process:         bench_ext [31415]
+Path:            /Users/USER/Desktop/*/bench_ext
+Load Address:    0x10270c000
+Identifier:      bench_ext
+Version:         0
+Code Type:       ARM64
+Platform:        macOS
+Parent Process:  zsh [31371]
+Target Type:     live task
+
+Date/Time:       2026-10-01 11:56:43.017 -0700
+Launch Time:     2026-10-01 11:56:27.001 -0700
+OS Version:      macOS 26.5.2 (25F84)
+Report Version:  7
+Analysis Tool:   /usr/bin/vmmap
+
+Physical footprint:         2.2G
+Physical footprint (peak):  2.3G
+Idle exit:                  untracked
+----
+
+ReadOnly portion of Libraries: Total=581.1M resident=23.5M(4%) swapped_out_or_unallocated=557.6M(96%)
+Writable regions: Total=3.4G written=2.3G(68%) resident=2.3G(68%) swapped_out=0K(0%) unallocated=1.1G(32%)
+
+                                VIRTUAL RESIDENT    DIRTY  SWAPPED VOLATILE   NONVOL    EMPTY   REGION 
+REGION TYPE                        SIZE     SIZE     SIZE     SIZE     SIZE     SIZE     SIZE    COUNT (non-coalesced) 
+===========                     ======= ========    =====  ======= ========   ======    =====  ======= 
+IOAccelerator                      2.3G     2.1G     2.0G       0K       0K       0K       0K       37 
+IOAccelerator (reserved)         768.0M       0K       0K       0K       0K       0K       0K        1         reserved VM address space (unallocated)
+Kernel Alloc Once                   32K      16K      16K       0K       0K       0K       0K        1 
+MALLOC guard page                 3680K       0K       0K       0K       0K       0K       0K        4 
+MALLOC metadata                    960K     416K     416K       0K       0K       0K       0K        5 
+MALLOC_NANO metadata                32K      16K      16K       0K       0K       0K       0K        1         see MALLOC ZONE table below
+MALLOC_SMALL                      8192K      32K      32K       0K       0K       0K       0K        2         see MALLOC ZONE table below
+MALLOC_TINY                       4096K      32K      32K       0K       0K       0K       0K        1         see MALLOC ZONE table below
+Memory Tag 22                     64.0M      16K      16K       0K       0K       0K       0K        1 
+STACK GUARD                       56.0M       0K       0K       0K       0K       0K       0K        1 
+Stack                             8176K      32K      32K       0K       0K       0K       0K        1 
+VM_ALLOCATE                      243.0M   243.0M   243.0M       0K       0K       0K       0K        4 
+__AUTH                              35K      35K       0K       0K       0K       0K       0K       12 
+__AUTH_CONST                       224K     173K       0K       0K       0K       0K       0K       45 
+__DATA                             270K     253K     138K       0K       0K       0K       0K       35 
+__DATA_CONST                       426K     362K       0K       0K       0K       0K       0K       43 
+__DATA_DIRTY                       153K     153K     132K       0K       0K       0K       0K       35 
+__LINKEDIT                       573.0M    16.5M       0K       0K       0K       0K       0K        2 
+__OBJC_RO                         79.1M    41.6M       0K       0K       0K       0K       0K        1 
+__OBJC_RW                         2598K    2166K      22K       0K       0K       0K       0K        1 
+__TEXT                            8224K    7104K       0K       0K       0K       0K       0K       46 
+__TPRO_CONST                       128K      32K      32K       0K       0K       0K       0K        2 
+page table in kernel              1586K    1586K    1586K       0K       0K       0K       0K        1 
+shared memory                       32K      32K      32K       0K       0K       0K       0K        1 
+unused but dirty shlib __DATA       59K      59K      59K       0K       0K       0K       0K       19 
+===========                     ======= ========    =====  ======= ========   ======    =====  ======= 
+TOTAL                              4.1G     2.4G     2.2G       0K       0K       0K       0K      302 
+TOTAL, minus reserved VM space     3.4G     2.4G     2.2G       0K       0K       0K       0K      302 
+
+                                          VIRTUAL   RESIDENT      DIRTY    SWAPPED ALLOCATION      BYTES DIRTY+SWAP          REGION
+MALLOC ZONE                                  SIZE       SIZE       SIZE       SIZE      COUNT  ALLOCATED  FRAG SIZE  % FRAG   COUNT
+===========                               =======  =========  =========  =========  =========  =========  =========  ======  ======
+DefaultMallocZone_0x102f60000               12.8M       320K       320K         0K        181        10K       310K     97%       6
+DefaultPurgeableMallocZone_0x10302c000         0K         0K         0K         0K          0         0K         0K      0%       0
+===========                               =======  =========  =========  =========  =========  =========  =========  ======  ======
+TOTAL                                       12.8M       320K       320K         0K        181        10K       310K     97%       6
+
+    phys_footprint: 2250 MB

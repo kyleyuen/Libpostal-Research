@@ -1,0 +1,6263 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-01T07:26:50Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 21693791,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC4M 7DQ",
+    "addr:street": "Rose Steet",
+    "amenity": "bar",
+    "email": "thesaint@wearebar.com",
+    "fhrs:id": "294160",
+    "name": "The Saint",
+    "opening_hours": "Mo-Fr 10:00+",
+    "phone": "+44 20 7600 5500",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "website": "http://www.jamies.london/bars/the-saint"
+  }
+},
+{
+  "type": "node",
+  "id": 255396266,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housename": "Paternoster House",
+    "addr:housenumber": "65",
+    "addr:postcode": "EC4M 8AB",
+    "addr:street": "St. Paul's Churchyard",
+    "disused:amenity": "pharmacy",
+    "disused:healthcare": "pharmacy",
+    "old_name": "Superdrug"
+  }
+},
+{
+  "type": "node",
+  "id": 259253467,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "11",
+    "addr:postcode": "EC3V 0BP",
+    "addr:street": "Talbot Court",
+    "amenity": "pub",
+    "brand": "Nicholson's",
+    "brand:wikidata": "Q113130666",
+    "fhrs:id": "294227",
+    "name": "The Ship",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "website": "https://www.nicholsonspubs.co.uk/restaurants/london/theshiptalbotcourtlondon",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 276920899,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC2R 6AR",
+    "addr:street": "Moorgate",
+    "check_date": "2023-03-12",
+    "disused:amenity": "pub",
+    "fhrs:id": "294375",
+    "name": "The Gable",
+    "toilets": "yes",
+    "toilets:access": "customers"
+  }
+},
+{
+  "type": "node",
+  "id": 277906484,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "24",
+    "addr:postcode": "EC3V 3ND",
+    "addr:street": "Cornhill",
+    "amenity": "pub",
+    "check_date": "2026-01-04",
+    "fhrs:id": "293810",
+    "image": "https://archive.org/details/cityoflondon2018-11-21/City%20of%20London%202018-11-21/DSCN8602.JPG",
+    "name": "Forge",
+    "old_name": "Abacus",
+    "operator": "Stonegate",
+    "operator:wikidata": "Q7619176",
+    "website": "https://www.forgedinlondon.com/london",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 289830212,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "28",
+    "addr:postcode": "EC3V 3ND",
+    "addr:street": "Cornhill",
+    "amenity": "pub",
+    "brand": "Pitcher & Piano",
+    "brand:wikidata": "Q65930663",
+    "brand:wikipedia": "en:Pitcher & Piano",
+    "check_date": "2026-01-04",
+    "cuisine": "british",
+    "fhrs:id": "293811",
+    "name": "Pitcher and Piano",
+    "source:addr": "FHRS Open Data",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 292705417,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC3R 8BG",
+    "addr:street": "Monument Street",
+    "amenity": "pub",
+    "brand": "Fuller's",
+    "brand:wikidata": "Q5253950",
+    "check_date": "2024-09-29",
+    "cuisine": "regional",
+    "fhrs:id": "842915",
+    "fhrs:local_authority_id": "PI/000027767",
+    "live_sport": "yes",
+    "name": "The Hydrant",
+    "opening_hours": "Mo-Fr 08:00-23:00; Sa 10:00-23:00; Su 10:00-18:00",
+    "operator": "Fuller's",
+    "outdoor_seating": "yes",
+    "phone": "+44 20 7623 5446",
+    "source": "survey",
+    "toilets": "yes",
+    "toilets:access": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://www.thehydrant.co.uk/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 292705418,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "2B",
+    "addr:postcode": "EC3M 1AE",
+    "addr:street": "Eastcheap",
+    "amenity": "bar",
+    "fhrs:id": "950862",
+    "name": "London Cocktail Club",
+    "opening_hours": "Mo-We 16:00-00:00; Th 16:00-01:00; Fr-Sa 16:00-02:00",
+    "phone": "+44 20 7580 1969",
+    "source:postcode": "FHRS listing",
+    "website": "https://www.londoncocktailclub.co.uk/monument/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 295975600,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "14",
+    "addr:postcode": "EC3V 9AN",
+    "addr:street": "Lombard Street",
+    "brand": "Sainsbury's Local",
+    "brand:wikidata": "Q13218434",
+    "brand:wikipedia": "en:Sainsbury's Local",
+    "fhrs:id": "294551",
+    "name": "Sainsbury's Local",
+    "opening_hours": "Mo-Fr 06:00-22:00; Sa,Su 08:00-18:00",
+    "shop": "convenience",
+    "website": "https://stores.sainsburys.co.uk/4165/lombard-street-local",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 295975604,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "88",
+    "addr:postcode": "EC3V 0DN",
+    "addr:street": "Gracechurch Street",
+    "amenity": "pub",
+    "brewery": "Greene King",
+    "check_date": "2025-06-06",
+    "fhrs:id": "295271",
+    "live_sport": "yes",
+    "name": "The New Moon",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 295975928,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2R 8EJ",
+    "addr:street": "Poultry",
+    "amenity": "restaurant",
+    "fhrs:id": "294808",
+    "level": "7",
+    "name": "Coq d'Argent",
+    "note": "Rooftop Garden",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 296610106,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "6-7",
+    "addr:postcode": "EC4N 1SP",
+    "addr:street": "Queen Street",
+    "brand": "Robert Dyas",
+    "brand:wikidata": "Q7343720",
+    "brand:wikipedia": "en:Robert Dyas",
+    "fhrs:id": "294176",
+    "name": "Robert Dyas",
+    "shop": "hardware"
+  }
+},
+{
+  "type": "node",
+  "id": 296610125,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "29",
+    "addr:postcode": "EC4R 1BR",
+    "addr:street": "Queen Street",
+    "amenity": "fast_food",
+    "brand": "Domino's",
+    "brand:wikidata": "Q839466",
+    "brand:wikipedia": "en:Domino's Pizza",
+    "contact:website": "https://www.dominos.co.uk/pizza-near-me/london/30-queen-street",
+    "cuisine": "pizza",
+    "fhrs:id": "294311",
+    "indoor_seating": "no",
+    "name": "Domino's",
+    "outdoor_seating": "no",
+    "takeaway": "only"
+  }
+},
+{
+  "type": "node",
+  "id": 296610128,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "4",
+    "addr:postcode": "EC4V 2BH",
+    "addr:street": "Great St. Thomas Apostle",
+    "amenity": "restaurant",
+    "cuisine": "indian",
+    "name": "Chatora City",
+    "old_name": "Wagamama",
+    "phone": "+44 20 459 78339"
+  }
+},
+{
+  "type": "node",
+  "id": 296610596,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "168",
+    "addr:postcode": "EC3M 6DE",
+    "addr:street": "Fenchurch Street",
+    "disused:shop": "department_store",
+    "level": "0",
+    "was:name": "Marks & Spencer"
+  }
+},
+{
+  "type": "node",
+  "id": 306135216,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "52-53",
+    "addr:postcode": "EC2M 1RX",
+    "addr:street": "Old Broad Street",
+    "amenity": "fast_food",
+    "brand": "Wasabi",
+    "brand:wikidata": "Q23891278",
+    "brand:wikipedia": "en:Wasabi (restaurant)",
+    "cuisine": "japanese",
+    "name": "Wasabi",
+    "takeaway": "yes",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 306135577,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "26",
+    "addr:postcode": "EC2N 2AN",
+    "addr:street": "Throgmorton Street",
+    "addr:unit": "Retail Unit",
+    "amenity": "pub",
+    "fhrs:id": "294330",
+    "live_sport": "yes",
+    "name": "Phoenix",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 316763478,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "2-4",
+    "addr:postcode": "EC4M 7DZ",
+    "addr:street": "Queens Head Passage",
+    "amenity": "pub",
+    "check_date": "2026-01-08",
+    "fhrs:id": "294590",
+    "fhrs:local_authority_id": "PI/000016099",
+    "live_sport": "yes",
+    "name": "The Paternoster",
+    "source:addr": "FHRS Open Data",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 316763495,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Three Keys House",
+    "addr:housenumber": "130",
+    "addr:postcode": "EC2V 6DL",
+    "addr:street": "Wood Street",
+    "amenity": "bar",
+    "fhrs:id": "720402",
+    "name": "Dirty Martini St. Pauls",
+    "toilets": "yes",
+    "toilets:access": "customers"
+  }
+},
+{
+  "type": "node",
+  "id": 316763577,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Saddlers' Hall",
+    "addr:housenumber": "40",
+    "addr:postcode": "EC2V 6BR",
+    "addr:street": "Gutter Lane",
+    "amenity": "livery_hall",
+    "fhrs:id": "293975",
+    "name": "Saddlers' Hall",
+    "website": "https://www.saddlershall.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 319984690,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Bow Bells House",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC4M 9BE",
+    "addr:street": "Bread Street",
+    "amenity": "restaurant",
+    "fhrs:id": "294832",
+    "name": "Ping Pong",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 319984698,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC4V 2BH",
+    "addr:street": "Great St. Thomas Apostle",
+    "addr:unit": "Retail Unit",
+    "amenity": "restaurant",
+    "fhrs:id": "294301",
+    "name": "Thai Square"
+  }
+},
+{
+  "type": "node",
+  "id": 355416909,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "57",
+    "addr:postcode": "EC1A 9DS",
+    "addr:street": "West Smithfield",
+    "alt_name": "Club Gascon",
+    "amenity": "bar",
+    "fhrs:id": "294273",
+    "name": "Cellar Gascon",
+    "wheelchair": "no",
+    "wikidata": "Q5136253"
+  }
+},
+{
+  "type": "node",
+  "id": 368044073,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "5",
+    "addr:postcode": "EC4M 8AY",
+    "addr:street": "St Paul's Churchyard",
+    "amenity": "restaurant",
+    "brand": "YO! Sushi",
+    "brand:wikidata": "Q3105441",
+    "brand:wikipedia": "en:YO! Sushi",
+    "cuisine": "sushi",
+    "fhrs:id": "294411",
+    "name": "YO! Sushi",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 368044078,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "4",
+    "addr:postcode": "EC4M 8AY",
+    "addr:street": "St Paul's Churchyard",
+    "addr:unit": "Retail Unit",
+    "amenity": "fast_food",
+    "brand": "Five Guys",
+    "brand:wikidata": "Q1131810",
+    "brand:wikipedia": "en:Five Guys",
+    "contact:phone": "+44 20 7248 0690",
+    "contact:website": "https://restaurants.fiveguys.co.uk/greater-london/4-st-paul's-churchyard",
+    "cuisine": "burger",
+    "fhrs:id": "1182378",
+    "name": "Five Guys",
+    "official_name": "Five Guys Burgers and Fries",
+    "opening_hours": "Mo-Su 11:00-23:00",
+    "takeaway": "yes",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 369121154,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "20-22",
+    "addr:postcode": "EC3V 1LR",
+    "addr:street": "Leadenhall Market",
+    "amenity": "restaurant",
+    "brand": "PizzaExpress",
+    "brand:wikidata": "Q662845",
+    "brand:wikipedia": "en:PizzaExpress",
+    "cuisine": "pizza",
+    "diet:vegetarian": "yes",
+    "fhrs:id": "294008",
+    "name": "PizzaExpress",
+    "opening_hours": "Mo 12:00-21:00; Tu-Th 11:30-23:00; Fr 11:30-21:00; Sa 12:00-20:00",
+    "source": "Local knowledge",
+    "url": "https://www.pizzaexpress.com/london-leadenhall-market",
+    "website": "https://www.pizzaexpress.com/london-leadenhall-market",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 390073213,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 8DU",
+    "addr:street": "Saint Giles' Terrace",
+    "amenity": "kindergarten",
+    "education": "kindergarten",
+    "fhrs:id": "294212",
+    "layer": "-1",
+    "level": "-1",
+    "name": "Newpark Childcare Centre",
+    "note": "This is below the pedestrian area. It's possibly not accurate to describe it as underground, its appears to be the same level as the ground floor of the Postern, with the pedestrian area built over the top."
+  }
+},
+{
+  "type": "node",
+  "id": 441966150,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC4M 7DZ",
+    "addr:street": "Queens Head Passage",
+    "branch": "London Paternoster Square",
+    "check_date": "2026-01-08",
+    "fhrs:id": "294300",
+    "fhrs:local_authority_id": "PI/000012853",
+    "medical_supply": "yes",
+    "ref": "793",
+    "shop": "vacant",
+    "source:addr": "FHRS Open Data",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 476033502,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "125",
+    "addr:postcode": "EC2Y 5AS",
+    "addr:street": "London Wall",
+    "disused:amenity": "restaurant",
+    "level": "1",
+    "old_name": "PizzaExpress"
+  }
+},
+{
+  "type": "node",
+  "id": 479151681,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Juxon House",
+    "addr:housenumber": "100",
+    "addr:postcode": "EC4M 8BU",
+    "addr:street": "Saint Paul's Church Yard",
+    "fhrs:id": "293627",
+    "shop": "vacant",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 488443291,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Juxon House",
+    "addr:housenumber": "100",
+    "addr:postcode": "EC4M 8BU",
+    "addr:street": "Saint Paul's Church Yard",
+    "addr:unit": "Unit 4",
+    "brand": "Go Outdoors",
+    "brand:wikidata": "Q75293941",
+    "contact:phone": "+44 203 675 8797",
+    "name": "Go Outdoors Express",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:30-18:00; Su 12:00-18:00",
+    "shop": "outdoor",
+    "website": "https://www.gooutdoors.co.uk/stores/go-express-st-pauls"
+  }
+},
+{
+  "type": "node",
+  "id": 490946952,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:street": "Church Entry"
+  }
+},
+{
+  "type": "node",
+  "id": 534907516,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "30",
+    "addr:postcode": "EC1A 7HL",
+    "addr:street": "Newgate Street",
+    "amenity": "cafe",
+    "brand": "Caffè Nero",
+    "brand:wikidata": "Q675808",
+    "brand:wikipedia": "en:Caffè Nero",
+    "check_date": "2026-09-07",
+    "check_date:diet:halal": "2024-10-26",
+    "check_date:diet:kosher": "2024-10-26",
+    "check_date:diet:vegetarian": "2024-10-26",
+    "check_date:opening_hours": "2024-08-22",
+    "cuisine": "coffee_shop",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "diet:vegetarian": "no",
+    "fhrs:id": "295232",
+    "fhrs:local_authority_id": "PI/000102190",
+    "name": "Caffè Nero",
+    "opening_hours": "Mo-Fr 06:00-19:30; Sa 06:30-20:00; Su 07:00-20:00",
+    "source:addr": "FHRS Open Data",
+    "takeaway": "yes",
+    "website": "https://www.caffenero.com/uk/stores/paternoster-sq",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 560717334,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "80B",
+    "addr:postcode": "EC2V 6EE",
+    "addr:street": "Cheapside",
+    "brand": "Tesco Express",
+    "brand:wikidata": "Q98456772",
+    "contact:website": "https://www.tesco.com/store-locator/london/80b-cheapside",
+    "fhrs:id": "294431",
+    "name": "Tesco Express",
+    "name:fa": "تسکو مترو",
+    "opening_hours": "Su 11:00-17:00, Sa 06:00-23:00, Mo-Fr 06:00-24:00",
+    "operator": "Tesco",
+    "shop": "convenience",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 560751244,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "73A",
+    "addr:street": "Watling Street",
+    "amenity": "fast_food",
+    "cuisine": "sandwich",
+    "fixme": "Approximate location.",
+    "name": "Spianata"
+  }
+},
+{
+  "type": "node",
+  "id": 560751263,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "12",
+    "addr:street": "Moorfields",
+    "amenity": "fast_food",
+    "cuisine": "sandwich",
+    "fixme": "Approximate location.",
+    "name": "Spianata"
+  }
+},
+{
+  "type": "node",
+  "id": 591974938,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "18",
+    "addr:postcode": "EC3R 6DB",
+    "addr:street": "Fish Street Hill",
+    "amenity": "pub",
+    "brand": "Greene King",
+    "brand:wikidata": "Q5564162",
+    "contact:facebook": "114635315315234",
+    "contact:instagram": "themonumentpub",
+    "cuisine": "local",
+    "fhrs:id": "294403",
+    "internet_access": "wlan",
+    "name": "The Monument",
+    "opening_hours": "Mo-We, Fr-Sa 11:00-23:00; Th 11:00-00:00; Su 12:00-19:00",
+    "phone": "+44 20 7929 5880",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "website": "https://www.greeneking.co.uk/pubs/greater-london/monument",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 592029659,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "20",
+    "addr:postcode": "EC3R 8AJ",
+    "addr:street": "Monument Street",
+    "amenity": "pub",
+    "brewery": "various",
+    "check_date": "2025-04-24",
+    "cuisine": "international",
+    "diet:gluten_free": "yes",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "email": "britannia.london@stonegatepubs.com",
+    "fhrs:id": "294968",
+    "level": "0",
+    "name": "The Britannia",
+    "operator": "Stonegate",
+    "operator:wikidata": "Q7619176",
+    "phone": "+44 20 7623 8572",
+    "smoking": "isolated",
+    "website": "https://www.crafted-social.co.uk/britannia-monument-london",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 592642006,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "28",
+    "addr:postcode": "EC4R 9AT",
+    "addr:street": "King William Street",
+    "amenity": "bar",
+    "brand": "Be At One",
+    "brand:wikidata": "Q110016786",
+    "fhrs:id": "295104",
+    "indoor_seating": "yes",
+    "name": "Be At One Monument",
+    "operator": "Stonegate",
+    "operator:wikidata": "Q7619176",
+    "outdoor_seating": "no",
+    "website": "https://www.beatone.co.uk/monument",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 616343331,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "17",
+    "addr:postcode": "EC4V 5BD",
+    "addr:street": "Godliman Street",
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "fhrs:id": "293937",
+    "name": "Miyama"
+  }
+},
+{
+  "type": "node",
+  "id": 622062081,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "80",
+    "addr:postcode": "EC4N 6HL",
+    "addr:street": "Cannon Street",
+    "addr:unit": "Retail Unit",
+    "amenity": "pharmacy",
+    "branch": "London Cannon Street",
+    "brand": "Boots",
+    "brand:wikidata": "Q6123139",
+    "brand:wikipedia": "en:Boots (company)",
+    "contact:website": "http://www.boots.com/stores/1533-london-cannon-street-ec4n-6ae",
+    "dispensing": "yes",
+    "fhrs:id": "293712",
+    "fhrs:local_authority_id": "PI/000002082",
+    "healthcare": "pharmacy",
+    "name": "Boots",
+    "opening_hours": "Mo-Fr 07:00-19:00, Sa 10:00-18:00",
+    "operator": "Boots UK Limited",
+    "phone": "+44 20 7623 4676",
+    "ref": "1533",
+    "source:addr": "FHRS Open Data",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 640163796,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "200",
+    "addr:postcode": "EC1A 4HD",
+    "addr:street": "Aldersgate Street",
+    "amenity": "fast_food",
+    "brand": "Pret A Manger",
+    "brand:wikidata": "Q2109109",
+    "brand:wikipedia": "en:Pret a Manger",
+    "check_date": "2025-04-24",
+    "cuisine": "sandwich",
+    "fhrs:id": "294749",
+    "name": "Pret A Manger",
+    "short_name": "Pret",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 662260045,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "17",
+    "addr:postcode": "EC2M 7LA",
+    "addr:street": "Eldon Street",
+    "check_date": "2025-08-12",
+    "disused:amenity": "fast_food",
+    "fhrs:id": "293852",
+    "level": "0",
+    "old_name": "Pret A Manger"
+  }
+},
+{
+  "type": "node",
+  "id": 666475908,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC4M 9DQ",
+    "addr:street": "Bow Churchyard",
+    "amenity": "pub",
+    "brand": "Fuller's",
+    "brand:wikidata": "Q5253950",
+    "fhrs:id": "295161",
+    "name": "The Saint",
+    "old_name": "Fine Line",
+    "opening_hours": "Mo-Fr 12:00-23:00; Sa,Su off",
+    "operator": "Fullers",
+    "source:addr": "FSA Food Hygiene Rating Scheme open data",
+    "website": "https://www.thesaint-bow.co.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 666475927,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "60",
+    "addr:postcode": "EC2V 6AX",
+    "addr:street": "Cheapside",
+    "amenity": "fast_food",
+    "brand": "Pure",
+    "brand:wikidata": "Q30599327",
+    "check_date": "2025-06-28",
+    "cuisine": "breakfast;salad",
+    "fhrs:id": "537617",
+    "name": "Pure",
+    "takeaway": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 692162500,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC3V 0BL",
+    "addr:street": "Bell Inn Yard",
+    "amenity": "restaurant",
+    "brand": "Gaucho",
+    "brand:wikidata": "Q108443313",
+    "cuisine": "argentinian",
+    "fhrs:id": "293647",
+    "name": "Gaucho"
+  }
+},
+{
+  "type": "node",
+  "id": 692162507,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "7",
+    "addr:postcode": "EC3V 0DR",
+    "addr:street": "Gracechurch Street",
+    "name": "Club Quarters",
+    "phone": "+44 20 7666 1620",
+    "tourism": "hotel",
+    "url": "www.clubquarters.com/loc_londonGracechurch.php",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 692162534,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "27",
+    "addr:postcode": "EC3V 1LR",
+    "addr:street": "Leadenhall Market",
+    "amenity": "restaurant",
+    "fhrs:id": "709407",
+    "name": "La Tasca"
+  }
+},
+{
+  "type": "node",
+  "id": 692162535,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "10-12",
+    "addr:postcode": "EC3V 1LR",
+    "addr:street": "Leadenhall Market",
+    "amenity": "pub",
+    "fhrs:id": "294007",
+    "name": "Lamb Tavern",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 692162550,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "13-15",
+    "addr:postcode": "EC3V 1LR",
+    "addr:street": "Leadenhall Market",
+    "amenity": "restaurant",
+    "fhrs:id": "294622",
+    "name": "Osteria del Mercato"
+  }
+},
+{
+  "type": "node",
+  "id": 692162587,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "147",
+    "addr:postcode": "EC3V 4QT",
+    "addr:street": "Leadenhall Street",
+    "amenity": "events_venue",
+    "fhrs:id": "1097479",
+    "name": "Grace Hall",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 692162590,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "140-144",
+    "addr:postcode": "EC3V 4QT",
+    "addr:street": "Leadenhall Street",
+    "addr:unit": "Retail Unit",
+    "brand": "Revolution",
+    "brand:wikidata": "Q64024398",
+    "cocktails": "yes",
+    "disused:amenity": "bar",
+    "fhrs:id": "294520",
+    "name": "Revolution",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 692162591,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "145",
+    "addr:street": "Leadenhall Street"
+  }
+},
+{
+  "type": "node",
+  "id": 702735037,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "18",
+    "addr:postcode": "EC4N 7BP",
+    "addr:street": "King William Street",
+    "amenity": "bank",
+    "branch": "Totta",
+    "brand": "Santander",
+    "brand:wikidata": "Q7420065",
+    "name": "Santander",
+    "opening_hours": "Mo-Fr 09:30-16:00",
+    "phone": "+44 20 7929 2225"
+  }
+},
+{
+  "type": "node",
+  "id": 702773347,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "109",
+    "addr:postcode": "EC4N 5AD",
+    "addr:street": "Cannon Street",
+    "amenity": "pub",
+    "check_date": "2023-03-12",
+    "email": "cannicktapps.london@stonegatepubs.com",
+    "fhrs:id": "872177",
+    "name": "The Cannick Tapps",
+    "old_name": "London Stone",
+    "opening_hours": "Mo-We 11:00-00:00, 09:00-18:00; Th, Fr 11:00-01:00; Sa 11:00-22:00",
+    "operator": "Stonegate",
+    "operator:wikidata": "Q7619176",
+    "phone": "+44 20 7626 8246",
+    "source:addr": "FSA Food Hygiene Rating Scheme open data",
+    "website": "https://www.crafted-social.co.uk/cannick-tapps-london",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 702796635,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "38",
+    "addr:postcode": "EC4N 8BN",
+    "addr:street": "Walbrook",
+    "amenity": "cafe",
+    "brand": "Starbucks",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "en:Starbucks",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "294257",
+    "indoor_seating": "yes",
+    "name": "Starbucks",
+    "official_name": "Starbucks Coffee",
+    "opening_hours": "Mo-Fr 06:00-19:00",
+    "outdoor_seating": "no",
+    "phone": "+44 20 7626 1391",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 702806732,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "43",
+    "addr:postcode": "EC4R 9AN",
+    "addr:street": "King William Street",
+    "amenity": "fast_food",
+    "brand": "Pret A Manger",
+    "brand:wikidata": "Q2109109",
+    "brand:wikipedia": "en:Pret a Manger",
+    "check_date": "2025-12-24",
+    "contact:website": "https://locations.pret.co.uk/london/43-king-william-street",
+    "cuisine": "sandwich",
+    "diet:lacto_vegetarian": "yes",
+    "diet:organic": "yes",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "fhrs:id": "294509",
+    "internet_access": "wlan",
+    "name": "Pret A Manger",
+    "opening_hours": "Mo-Fr 06:30-21:00; Sa-Su 09:00-18:00",
+    "operator": "Pret A Manger",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "phone": "+44 20 7932 5217",
+    "short_name": "Pret",
+    "smoking": "no",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 708866091,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "23-25",
+    "addr:postcode": "EC3V 1LR",
+    "addr:street": "Leadenhall Market",
+    "addr:unit": "Retail Unit",
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "fhrs:id": "294009",
+    "name": "Chamberlain's",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 710474268,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "77",
+    "addr:street": "Gracechurch Street"
+  }
+},
+{
+  "type": "node",
+  "id": 710474270,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "45-52",
+    "addr:postcode": "EC3V 1LT",
+    "addr:street": "Leadenhall Market",
+    "addr:unit": "Basement Retail Unit",
+    "amenity": "restaurant",
+    "fhrs:id": "294472",
+    "name": "Giorgio",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 748068625,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "7",
+    "addr:postcode": "EC4M 8AY",
+    "addr:street": "St Paul's Churchyard",
+    "amenity": "restaurant",
+    "brand": "PizzaExpress",
+    "brand:wikidata": "Q662845",
+    "brand:wikipedia": "en:PizzaExpress",
+    "contact:phone": "+44 20 7248 9464",
+    "contact:website": "https://www.pizzaexpress.com/london-st-pauls",
+    "cuisine": "pizza",
+    "diet:gluten_free": "yes",
+    "diet:vegetarian": "yes",
+    "fhrs:id": "294451",
+    "name": "PizzaExpress",
+    "opening_hours": "Mo-Th 11:30-22:00; Fr,Sa 11:30-23:00; Su 12:00-21:00",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 763372900,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "110",
+    "addr:street": "Upper Thames Street",
+    "name": "Fishmongers' Chambers"
+  }
+},
+{
+  "type": "node",
+  "id": 796482320,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "6",
+    "addr:postcode": "EC3V 3NA",
+    "addr:street": "Finch Lane",
+    "amenity": "pub",
+    "check_date": "2026-01-04",
+    "fhrs:id": "293890",
+    "name": "Cock and Woolpack",
+    "toilets:wheelchair": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 796929017,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "17-19",
+    "addr:postcode": "EC3V 1LR",
+    "addr:street": "Leadenhall Market",
+    "fhrs:id": "690316",
+    "name": "Amathus",
+    "shop": "alcohol",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 865142077,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "6",
+    "addr:postcode": "EC3M 1AE",
+    "addr:street": "Eastcheap",
+    "brand": "Tesco Express",
+    "brand:wikidata": "Q98456772",
+    "check_date": "2025-06-28",
+    "contact:website": "https://www.tesco.com/store-locator/london/6-eastcheap",
+    "fhrs:id": "294345",
+    "name": "Tesco Express",
+    "opening_hours": "Mo-Fr 06:00-24:00; Sa 08:00-20:00; Su 11:00-17:00",
+    "shop": "convenience",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 865143232,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "15",
+    "addr:postcode": "EC3M 1BU",
+    "addr:street": "Eastcheap",
+    "amenity": "restaurant",
+    "name": "Zambrero",
+    "website": "https://www.zambrero.co.uk/locations/eastcheap"
+  }
+},
+{
+  "type": "node",
+  "id": 865144071,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "48",
+    "addr:postcode": "EC3V 0EJ",
+    "addr:street": "Gracechurch Street",
+    "check_date": "2023-10-28",
+    "disused:amenity": "cafe",
+    "old_name": "Starbucks",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 871982508,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "77",
+    "addr:postcode": "EC3V 9AY",
+    "addr:street": "Lombard Street",
+    "amenity": "cafe",
+    "fhrs:id": "430557",
+    "name": "Pod",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 871985013,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC3V 9AA",
+    "addr:street": "Lombard Street",
+    "amenity": "restaurant",
+    "check_date": "2023-03-12",
+    "fhrs:id": "294048",
+    "indoor_seating": "yes",
+    "name": "1 Lombard Street",
+    "outdoor_seating": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 877660350,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "126",
+    "addr:postcode": "EC4V 4BJ",
+    "addr:street": "Queen Victoria Street",
+    "amenity": "fast_food",
+    "brand": "Pret A Manger",
+    "brand:wikidata": "Q2109109",
+    "brand:wikipedia": "en:Pret a Manger",
+    "cuisine": "sandwich",
+    "fhrs:id": "294760",
+    "name": "Pret A Manger",
+    "outdoor_seating": "yes",
+    "short_name": "Pret",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 972235674,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "5",
+    "addr:postcode": "EC2R 8AY",
+    "addr:street": "Threadneedle Street",
+    "amenity": "restaurant",
+    "name": "Wheeler's Rib Room and Oyster Bar",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1144621346,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2R 8BP",
+    "addr:street": "Princes Street",
+    "check_date": "2023-03-12",
+    "old_name": "Natwest"
+  }
+},
+{
+  "type": "node",
+  "id": 1144626359,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "64",
+    "addr:postcode": "EC4N 4SJ",
+    "addr:street": "Queen Victoria Street",
+    "amenity": "pub",
+    "contact:facebook": "https://www.facebook.com/TheSeaHorseLondonFleetStreet/",
+    "fhrs:id": "1205494",
+    "live_sport": "yes",
+    "name": "The Sea Horse",
+    "website": "https://www.greatukpubs.co.uk/sea-horse-fleet-street",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1163954998,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "3",
+    "addr:postcode": "EC4M 7DX",
+    "addr:street": "Paternoster Square",
+    "amenity": "restaurant",
+    "name": "Paternoster Chop House"
+  }
+},
+{
+  "type": "node",
+  "id": 1169109466,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 9AW",
+    "addr:street": "Ropemaker Street",
+    "amenity": "restaurant",
+    "cuisine": "cuban",
+    "name": "The Cuban"
+  }
+},
+{
+  "type": "node",
+  "id": 1169109478,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "City Point",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 9AW",
+    "addr:street": "Ropemaker Street",
+    "addr:unit": "Kisok 1",
+    "amenity": "cafe",
+    "brand": "Notes",
+    "brand:wikidata": "Q111656694",
+    "cuisine": "coffee_shop",
+    "description": "Coffee shop and wine bar",
+    "fhrs:id": "688705",
+    "name": "Notes",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1236791523,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "55",
+    "addr:street": "Ludgate Hill",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 1271071236,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "14",
+    "addr:postcode": "EC3V 9AN",
+    "addr:street": "Lombard Street",
+    "amenity": "fast_food",
+    "brand": "Pret A Manger",
+    "brand:wikidata": "Q2109109",
+    "brand:wikipedia": "en:Pret a Manger",
+    "cuisine": "sandwich",
+    "fhrs:id": "294574",
+    "name": "Pret A Manger",
+    "opening_hours": "Mo-Th 06:30-18:00; Fr 06:30-17:00",
+    "short_name": "Pret",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1312335328,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Cheapside House",
+    "addr:housenumber": "138",
+    "addr:postcode": "EC2V 6BJ",
+    "addr:street": "Cheapside",
+    "addr:unit": "Dining Wall Retail Unit",
+    "amenity": "cafe",
+    "brand": "Blank Street Coffee",
+    "brand:wikidata": "Q114792509",
+    "check_date": "2025-06-28",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "1151380",
+    "name": "Blank Street Coffee",
+    "old_name": "Costa",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1446080708,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "28",
+    "addr:postcode": "EC3V 1LR",
+    "addr:street": "Leadenhall Market",
+    "amenity": "fast_food",
+    "brand": "Tortilla",
+    "brand:wikidata": "Q21006828",
+    "cuisine": "tex-mex",
+    "fhrs:id": "294914",
+    "name": "Tortilla",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1497452177,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "38 1/2",
+    "addr:postcode": "EC3V 9DR",
+    "addr:street": "Ball Court",
+    "amenity": "pub",
+    "email": "manager@simpsonstavern.co.uk",
+    "fhrs:id": "293812",
+    "indoor_seating": "yes",
+    "name": "Simpson's Tavern",
+    "opening_hours": "Tu-Fr 08:30-15:30; Mo 11:30-15:30",
+    "outdoor_seating": "no",
+    "website": "https://www.simpsonstavern.co.uk/",
+    "wikidata": "Q26486682",
+    "wikipedia": "en:Simpson's Tavern"
+  }
+},
+{
+  "type": "node",
+  "id": 1497452179,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "2-3",
+    "addr:postcode": "EC3V 9DL",
+    "addr:street": "Castle Court",
+    "amenity": "pub",
+    "fhrs:id": "293721",
+    "name": "George and Vulture",
+    "operator": "Samuel Smith",
+    "start_date": "1748",
+    "wikidata": "Q12404791",
+    "wikipedia": "en:George and Vulture"
+  }
+},
+{
+  "type": "node",
+  "id": 1569215828,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "33",
+    "addr:postcode": "EC3V 0BT",
+    "addr:street": "Gracechurch Street",
+    "brand": "TK Maxx",
+    "brand:wikidata": "Q23823668",
+    "brand:wikipedia": "en:TK Maxx",
+    "check_date": "2024-08-28",
+    "fhrs:authority": "City of London Corporation",
+    "fhrs:id": "295037",
+    "fhrs:local_authority_id": "PI/000020253",
+    "name": "TK Maxx",
+    "opening_hours": "Mo-Fr 08:30-20:00; Sa 10:00-19:00; Su 12:00-18:00",
+    "shop": "department_store",
+    "toilets": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1590789119,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housename": "Capital House",
+    "addr:housenumber": "85",
+    "addr:street": "King William Street",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1669409842,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "47-53",
+    "addr:street": "Cannon Street",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1669495370,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "64-65",
+    "addr:street": "London Wall"
+  }
+},
+{
+  "type": "node",
+  "id": 1684709914,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "2",
+    "addr:postcode": "EC2V 7JQ",
+    "addr:street": "Love Lane",
+    "amenity": "bar",
+    "brand": "Slug and Lettuce",
+    "brand:wikidata": "Q7542224",
+    "cocktails": "yes",
+    "fhrs:id": "295221",
+    "food": "yes",
+    "name": "Slug & Lettuce",
+    "operator": "Stonegate",
+    "operator:wikidata": "Q7619176",
+    "source": "photograph",
+    "website": "https://www.slugandlettuce.co.uk/st-pauls-london"
+  }
+},
+{
+  "type": "node",
+  "id": 1685277056,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "3",
+    "addr:postcode": "EC2R 7BH",
+    "addr:street": "Copthall Avenue",
+    "building": "office",
+    "name": "TIM Group"
+  }
+},
+{
+  "type": "node",
+  "id": 1686463380,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housename": "Andrewes House",
+    "addr:housenumber": "185-192",
+    "addr:street": "Andrewes Highwalk"
+  }
+},
+{
+  "type": "node",
+  "id": 1713257250,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC4V 3DX",
+    "addr:street": "Queenhithe",
+    "amenity": "cafe",
+    "name": "Etsu Cafe",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1717643410,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housename": "Bank Buildings",
+    "addr:housenumber": "1",
+    "addr:street": "Princes Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1717643411,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housename": "Bank Buildings",
+    "addr:housenumber": "9",
+    "addr:street": "Old Jewry",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1717643413,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "10",
+    "addr:street": "Old Jewry",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1717643414,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "11",
+    "addr:street": "Old Jewry",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1717643415,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "7",
+    "addr:street": "Princes Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1717643416,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "8",
+    "addr:street": "Princes Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1717643447,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "37",
+    "addr:postcode": "EC2R 8AJ",
+    "addr:street": "Poultry",
+    "disused:shop": "chemist",
+    "old_name": "Superdrug",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1717643485,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "8",
+    "addr:postcode": "EC2R 8DN",
+    "addr:street": "Old Jewry",
+    "amenity": "pub",
+    "fhrs:id": "1922384",
+    "name": "The Albatross",
+    "opening_hours": "Mo-We 07:00-23:00; Th-Fr 07:00-00:00",
+    "smoking": "no",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718233829,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "21",
+    "addr:street": "Ironmonger Lane",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718233836,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "23",
+    "addr:street": "Ironmonger Lane",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718233843,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "35",
+    "addr:street": "Old Jewry",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718233884,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "4a",
+    "addr:street": "Frederick's Place",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718233896,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "5",
+    "addr:street": "Frederick's Place",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718233909,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "6",
+    "addr:street": "Frederick's Place",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718234400,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "20",
+    "addr:street": "Ironmonger Lane",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718234446,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "17",
+    "addr:postcode": "EC2V 8EY",
+    "addr:street": "Ironmonger Lane",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718328112,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "30",
+    "addr:street": "King Street",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1718328146,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "34",
+    "addr:street": "King Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718328155,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "44",
+    "addr:street": "Gresham Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718328162,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "46",
+    "addr:street": "Gresham Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718328171,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "48",
+    "addr:street": "Gresham Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718328181,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "50",
+    "addr:street": "Gresham Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718390658,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "1",
+    "addr:street": "St. Olave's Court"
+  }
+},
+{
+  "type": "node",
+  "id": 1718390661,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "10",
+    "addr:street": "Ironmonger Lane",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718390668,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "11",
+    "addr:street": "Ironmonger Lane",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718390686,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "27",
+    "addr:street": "Old Jewry",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718390691,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "30",
+    "addr:street": "Old Jewry",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718390692,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "31",
+    "addr:street": "Old Jewry"
+  }
+},
+{
+  "type": "node",
+  "id": 1718390704,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "60",
+    "addr:street": "Gresham Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718438989,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "81-87",
+    "addr:street": "Gresham Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718566740,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "12",
+    "addr:street": "Mason's Avenue",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718566744,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "13-14",
+    "addr:street": "Basinghall Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718566748,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "15",
+    "addr:street": "Basinghall Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718566754,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "30",
+    "addr:street": "Coleman Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718566759,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "32",
+    "addr:street": "Coleman Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718566762,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "71",
+    "addr:street": "Basinghall Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718566768,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "80",
+    "addr:street": "Basinghall Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718566772,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "95",
+    "addr:street": "Gresham Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1718566776,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "99",
+    "addr:street": "Gresham Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1719421968,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "15",
+    "addr:street": "Moorgate",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1719421971,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "35-39",
+    "addr:street": "Moorgate"
+  }
+},
+{
+  "type": "node",
+  "id": 1719421972,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "7, 9 & 11",
+    "addr:street": "Moorgate",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 1723315600,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "28",
+    "addr:postcode": "EC2Y 9HD",
+    "addr:street": "Ropemaker Street",
+    "name": "Macquarie",
+    "office": "company",
+    "source": "photograph",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1723315603,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Ropemaker",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC2Y 9AJ",
+    "addr:street": "Ropemaker Street",
+    "name": "Ropemaker"
+  }
+},
+{
+  "type": "node",
+  "id": 1723388994,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "45",
+    "addr:street": "Beech Street",
+    "entrance": "yes",
+    "level": "0",
+    "note": "At ground (Beech St) level"
+  }
+},
+{
+  "type": "node",
+  "id": 1755265413,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "81",
+    "addr:street": "Coleman Street",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1755265414,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "81",
+    "addr:street": "Coleman Street",
+    "entrance": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1757440602,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "4",
+    "addr:street": "Coleman Street",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1759453983,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "2",
+    "addr:street": "Gresham Street",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1759453984,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "3",
+    "addr:street": "Noble Street"
+  }
+},
+{
+  "type": "node",
+  "id": 1759453986,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "45",
+    "addr:street": "Gresham Street",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 1763582361,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "72",
+    "addr:postcode": "EC4R 3TA",
+    "addr:street": "Upper Thames Street",
+    "brand": "F45 Training",
+    "brand:wikidata": "Q64390973",
+    "check_date": "2024-09-08",
+    "disused:shop": "yes",
+    "leisure": "fitness_centre",
+    "name": "F45 Training",
+    "short_name": "F45"
+  }
+},
+{
+  "type": "node",
+  "id": 1763600535,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "26-27",
+    "addr:postcode": "EC2M 7LA",
+    "addr:street": "Eldon Street",
+    "amenity": "bank",
+    "brand": "Nationwide",
+    "brand:wikidata": "Q846735",
+    "brand:wikipedia": "en:Nationwide Building Society",
+    "check_date": "2024-09-02",
+    "check_date:opening_hours": "2024-09-02",
+    "name": "Nationwide",
+    "opening_hours": "Mo closed; Tu 09:00-16:30; We 10:00-16:30; Th 09:00-16:30; Fr-Su closed",
+    "phone": "+44 345 266 0216",
+    "website": "https://www.nationwide.co.uk/branches/london/26-27-eldon-street",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1769294100,
+  "tags": {
+    "addr:city": "London",
+    "addr:floor": "G",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC4R 3AB",
+    "addr:street": "Angel Lane",
+    "air_conditioning": "yes",
+    "amenity": "bar",
+    "check_date": "2026-04-02",
+    "check_date:smoking": "2026-04-02",
+    "contact:facebook": "TheOysterShed",
+    "contact:instagram": "theoystershed",
+    "cuisine": "fish",
+    "email": "oystershedevents@youngs.co.uk",
+    "fhrs:id": "294706",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "level": "0",
+    "name": "The Oyster Shed",
+    "opening_hours": "Mo-Sa 10:00-23:00; Su 11:00-17:00",
+    "operator": "Youngs",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+44 20 7256 3240",
+    "smoking": "outside",
+    "website": "https://www.oystershed.co.uk/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1779091997,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "13-16",
+    "addr:postcode": "EC4R 3UL",
+    "addr:street": "All Hallows Lane",
+    "amenity": "nightclub",
+    "fhrs:id": "294969",
+    "name": "The Steel Yard"
+  }
+},
+{
+  "type": "node",
+  "id": 1779839257,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "75",
+    "addr:postcode": "EC4N 7BE",
+    "addr:street": "King William Street",
+    "amenity": "cafe",
+    "cuisine": "sandwich",
+    "name": "Pod",
+    "website": "https://www.podfood.co.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 1830558949,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "34",
+    "addr:postcode": "EC2V 6HD",
+    "addr:street": "Foster Lane",
+    "amenity": "restaurant",
+    "cuisine": "turkish",
+    "fhrs:id": "294734",
+    "name": "Haz St Paul's",
+    "opening_hours": "Mo-Su 11:30-23:30",
+    "phone": "+44 20 7600 4172",
+    "website": "https://www.hazrestaurant.co.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 2002787538,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "76-77",
+    "addr:postcode": "EC4M 9BJ",
+    "addr:street": "Watling Street",
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "fhrs:id": "294266",
+    "name": "Kurumaya",
+    "source": "Local Knowledge",
+    "website": "https://www.kurumaya.co.uk/stpauls/"
+  }
+},
+{
+  "type": "node",
+  "id": 2006372784,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "70",
+    "addr:postcode": "EC2A 1SA",
+    "addr:street": "Finsbury Pavement",
+    "brand": "Marks & Spencer",
+    "brand:short": "M&S",
+    "brand:wikidata": "Q714491",
+    "brand:wikipedia": "en:Marks & Spencer",
+    "check_date": "2024-07-21",
+    "check_date:opening_hours": "2024-07-21",
+    "contact:website": "https://www.marksandspencer.com/stores/finsbury-pavement-2529",
+    "fhrs:id": "417410",
+    "name": "Marks & Spencer",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa 08:00-19:00",
+    "shop": "department_store",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2006375680,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "35",
+    "addr:postcode": "EC2M 7BD",
+    "addr:street": "Blomfield Street",
+    "addr:unit": "4b-5",
+    "brand": "Whole Foods Market",
+    "brand:wikidata": "Q1809448",
+    "check_date": "2026-04-28",
+    "name": "Whole Foods Market",
+    "shop": "supermarket",
+    "was:brand": "Amazon Fresh",
+    "was:brand:wikidata": "Q4740834",
+    "was:fhrs:id": "1658923",
+    "was:name": "Amazon Fresh"
+  }
+},
+{
+  "type": "node",
+  "id": 2168949323,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 9AW",
+    "addr:street": "Ropemaker Street",
+    "amenity": "nightclub",
+    "contact:website": "http://www.amber-bar.co.uk/",
+    "name": "Amber Bar",
+    "opening_hours": "Mo-We 12:00-01:00, Th-Fr 12:00-02:00"
+  }
+},
+{
+  "type": "node",
+  "id": 2288601864,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "5",
+    "addr:postcode": "EC4M 7EJ",
+    "addr:street": "Paternoster Row",
+    "name": "Joy",
+    "opening_hours": "Mo-Fr 08:00-19:00; Sa 11:00-18:00; Su 12:00-18:00",
+    "phone": "+44 20 7489 7123",
+    "shop": "clothes",
+    "website": "https://www.joythestore.com/",
+    "wheelchair": "yes",
+    "wheelchair:description": "Wide step-free entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 2333230992,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "140",
+    "addr:postcode": "EC1A 9HA",
+    "addr:street": "Long Lane",
+    "check_date": "2023-05-24",
+    "disused:amenity": "toilets",
+    "fee": "yes",
+    "female": "yes",
+    "male": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2386586656,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "25",
+    "addr:street": "Moorgate",
+    "check_date": "2023-03-12",
+    "disused:amenity": "bar",
+    "name": "The Cellar"
+  }
+},
+{
+  "type": "node",
+  "id": 2389234328,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "155",
+    "addr:postcode": "EC2M 6XB",
+    "addr:street": "Moorgate",
+    "check_date": "2026-09-10",
+    "name": "Mace",
+    "office": "company",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2389890388,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "3-4",
+    "addr:postcode": "EC2N 1DW",
+    "addr:street": "Old Broad Street",
+    "addr:unit": "Unit 2",
+    "amenity": "pharmacy",
+    "brand": "Superdrug",
+    "brand:wikidata": "Q7643261",
+    "brand:wikipedia": "en:Superdrug",
+    "contact:website": "https://www.superdrug.com/store/lion-plaza",
+    "fhrs:id": "294393",
+    "healthcare": "pharmacy",
+    "name": "Superdrug"
+  }
+},
+{
+  "type": "node",
+  "id": 2489364566,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "63",
+    "addr:postcode": "EC4N 4UA",
+    "addr:street": "Queen Victoria Street",
+    "brand": "Sainsbury's Local",
+    "brand:wikidata": "Q13218434",
+    "brand:wikipedia": "en:Sainsbury's Local",
+    "contact:website": "https://stores.sainsburys.co.uk/4204/the-city-mansion-house-station-local",
+    "fhrs:id": "582622",
+    "name": "Sainsbury's Local",
+    "opening_hours": "Mo-Fr 06:00-21:30; Sa 08:00-19:30; Su 09:00-19:00",
+    "operator": "Sainsbury's Supermarkets Ltd.",
+    "phone": "+44 20 7248 1796",
+    "shop": "convenience",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2490735156,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "120",
+    "addr:postcode": "EC2N 1AR",
+    "addr:street": "Old Broad Street",
+    "amenity": "college",
+    "name": "Global Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 2502516623,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "23",
+    "addr:street": "London Wall",
+    "amenity": "bicycle_parking",
+    "capacity": "176",
+    "covered": "yes",
+    "fee": "no",
+    "layer": "-1",
+    "website": "http://www.tfl.gov.uk/roadusers/cycling/11947.aspx#city-of-london"
+  }
+},
+{
+  "type": "node",
+  "id": 2502516624,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "23",
+    "addr:street": "London Wall",
+    "amenity": "parking",
+    "capacity:disabled": "6",
+    "capacity:motorcycle": "128",
+    "fee": "yes",
+    "layer": "-1",
+    "parking": "underground",
+    "website": "https://www.cityoflondon.gov.uk/services/transport-and-streets/parking/where-to-park/car-parks/Pages/London-Wall-car-park.aspx"
+  }
+},
+{
+  "type": "node",
+  "id": 2537925374,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC3V 3ND",
+    "addr:street": "Cornhill"
+  }
+},
+{
+  "type": "node",
+  "id": 2537925375,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "14",
+    "addr:postcode": "EC3V 3ND",
+    "addr:street": "Cornhill"
+  }
+},
+{
+  "type": "node",
+  "id": 2554608346,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "64",
+    "addr:postcode": "EC2M 5TP",
+    "addr:street": "London Wall",
+    "addr:unit": "Retail Unit",
+    "amenity": "fast_food",
+    "brand": "Chilango",
+    "brand:wikidata": "Q107610595",
+    "cuisine": "mexican",
+    "fhrs:id": "521227",
+    "name": "Chilango",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2560785807,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "35",
+    "addr:street": "New Broad Street",
+    "name": "IoDhub",
+    "office": "research"
+  }
+},
+{
+  "type": "node",
+  "id": 2578027858,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "32",
+    "addr:postcode": "EC2R 8AY",
+    "addr:street": "Threadneedle Street",
+    "information": "Seems to be an accommodation address \"400 businesses found in 32 Threadneedle Street, London\" so nothing should be should mapped here without verifying a shop front or signage of equivalent size",
+    "not:name": "CEX.IO",
+    "not:website": "http://bit.ly/buyBTCs"
+  }
+},
+{
+  "type": "node",
+  "id": 2616939016,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "15",
+    "addr:postcode": "EC4N 1TX",
+    "addr:street": "Queen Street",
+    "amenity": "restaurant",
+    "cuisine": "sushi;japanese",
+    "email": "queen@k10.com",
+    "fhrs:id": "1031796",
+    "name": "K10",
+    "opening_hours": "Mo-Fr 11:00-15:30",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "takeaway": "yes",
+    "website": "https://k10.com"
+  }
+},
+{
+  "type": "node",
+  "id": 2617540404,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Abacus House",
+    "addr:housenumber": "33",
+    "addr:postcode": "EC2V 8AS",
+    "addr:street": "Gutter Lane",
+    "name": "JMP Consultants Lts",
+    "office": "company",
+    "phone": "+44 20 3714 4400",
+    "website": "http://www.jmp.co.uk/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2639375134,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 8HQ",
+    "addr:street": "Silk Street",
+    "name": "Linklaters",
+    "office": "lawyer"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857004,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "60",
+    "addr:postcode": "EC2R 8HP",
+    "addr:street": "Threadneedle Street",
+    "amenity": "restaurant",
+    "fhrs:id": "294727",
+    "name": "Brasserie Blanc",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857013,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Royal Exchange",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC3V 3LP",
+    "addr:street": "Threadneedle Street",
+    "name": "Tom Davies",
+    "shop": "optician",
+    "website": "https://www.theroyalexchange.co.uk/tom-davies-bespoke-opticians/"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857023,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "18",
+    "addr:street": "Royal Exchange",
+    "brand": "Tumi",
+    "brand:wikidata": "Q4465402",
+    "name": "Tumi",
+    "shop": "bag",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857032,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "125",
+    "addr:street": "Old Broad Street",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857036,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Royal Exchange",
+    "addr:housenumber": "26",
+    "addr:postcode": "EC3V 3LP",
+    "addr:street": "Threadneedle Street",
+    "name": "Crockett & Jones",
+    "shop": "shoes",
+    "website": "https://www.theroyalexchange.co.uk/Crockett-and-Jones/"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857046,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "24",
+    "addr:street": "Threadneedle Street",
+    "brand": "Jo Malone",
+    "brand:wikidata": "Q28940761",
+    "name": "Jo Malone",
+    "shop": "perfumery",
+    "website": "https://www.theroyalexchange.co.uk/Jo-Malone-London/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857055,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Royal Exchange",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC3V 3LL",
+    "addr:street": "Royal Exchange Buildings",
+    "luxury": "unknown",
+    "name": "Searle & Co",
+    "shop": "jewelry"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857058,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "23",
+    "addr:postcode": "EC3V 3LP",
+    "addr:street": "Threadneedle Street",
+    "name": "The Salad Kitchen",
+    "opening_hours": "Mo-Fr 10:00-18:00",
+    "website": "https://www.theroyalexchange.co.uk/The-Salad-Kitchen/"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857061,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Royal Exchange",
+    "addr:housenumber": "27",
+    "addr:postcode": "EC3V 3LP",
+    "addr:street": "Threadneedle Street",
+    "beauty": "aesthetic",
+    "name": "M&K",
+    "shop": "beauty",
+    "website": "https://www.theroyalexchange.co.uk/mk-aesthetics/"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857064,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "10/11",
+    "addr:postcode": "EC3V 3LL",
+    "addr:street": "Royal Exchange Buildings",
+    "luxury": "pens",
+    "name": "Montblanc",
+    "opening_hours": "Mo-Fr 09:30-18:00",
+    "operator": "Montblanc",
+    "shop": "pens",
+    "website": "https://www.theroyalexchange.co.uk/Montblanc/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857072,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "124-126",
+    "addr:postcode": "EC4N 6AS",
+    "addr:street": "Cannon Street",
+    "brand": "Paddy Power",
+    "brand:wikidata": "Q3888718",
+    "brand:wikipedia": "en:Paddy Power",
+    "name": "Paddy Power",
+    "shop": "bookmaker"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857073,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC3V 3LF",
+    "addr:street": "Royal Exchange Buildings",
+    "amenity": "restaurant",
+    "fhrs:id": "551207",
+    "name": "Panino Gusto",
+    "website": "https://www.paninogiusto.it/"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857074,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Royal Exchange",
+    "addr:housenumber": "2",
+    "addr:postcode": "EC3V 3LL",
+    "addr:street": "Royal Exchange Buildings",
+    "name": "Tomoka",
+    "shop": "alcohol",
+    "website": "https://www.theroyalexchange.co.uk/tomoka-fine-and-rare/"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857076,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "62-63",
+    "addr:postcode": "EC2R 8HP",
+    "addr:street": "Threadneedle Street",
+    "atm": "yes",
+    "brand": "RBS",
+    "brand:wikidata": "Q160126",
+    "brand:wikipedia": "en:Royal Bank of Scotland",
+    "disused:amenity": "bank",
+    "name": "RBS",
+    "official_name": "Royal Bank of Scotland"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857077,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Royal Exchange",
+    "addr:housenumber": "31",
+    "addr:postcode": "EC3V 3LP",
+    "addr:street": "Royal Exchange Buildings",
+    "name": "Chango",
+    "shop": "pastry",
+    "website": "https://www.theroyalexchange.co.uk/Chango/"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857085,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Royal Exchange",
+    "addr:housenumber": "22",
+    "addr:postcode": "EC3V 3LP",
+    "addr:street": "Royal Exchange",
+    "beauty": "aesthetic",
+    "name": "Dr David Jack",
+    "shop": "beauty",
+    "website": "https://drdavidjack.com/pages/the-city-clinic"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857090,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Royal Exchange",
+    "addr:housenumber": "8",
+    "addr:postcode": "EC3V 3LP",
+    "addr:street": "Royal Exchange Buildings"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857235,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Royal Exchange",
+    "addr:housenumber": "20",
+    "addr:postcode": "EC3V 3LP",
+    "addr:street": "Royal Exchange",
+    "amenity": "cafe",
+    "name": "Rosslyn",
+    "website": "https://www.theroyalexchange.co.uk/Rosslyn/"
+  }
+},
+{
+  "type": "node",
+  "id": 2642857238,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Phoenix House",
+    "addr:housenumber": "18",
+    "addr:postcode": "EC4N 7BP",
+    "addr:street": "King William Street",
+    "amenity": "cafe",
+    "fhrs:id": "591033",
+    "name": "Tossed",
+    "opening_hours": "Mo-Fr 07:00-16:00",
+    "phone": "+44 20 7626 1564",
+    "website": "https://www.tosseduk.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2642895018,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "25",
+    "addr:street": "Copthall Avenue",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2642895032,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "12",
+    "addr:postcode": "EC2N 2DL",
+    "addr:street": "Throgmorton Avenue",
+    "amenity": "cafe",
+    "brand": "Starbucks",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "en:Starbucks",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "295112",
+    "name": "Starbucks",
+    "official_name": "Starbucks Coffee",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2642895044,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "King House",
+    "addr:housenumber": "2",
+    "addr:postcode": "EC2R 7DA",
+    "addr:street": "Copthall Avenue",
+    "amenity": "fast_food",
+    "brand": "itsu",
+    "brand:wikidata": "Q6094914",
+    "brand:wikipedia": "en:Itsu",
+    "check_date": "2024-08-20",
+    "cuisine": "asian",
+    "fhrs:id": "295090",
+    "name": "itsu",
+    "takeaway": "yes",
+    "website": "https://www.itsu.com/location/city-of-london/copthall-avenue/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2644157774,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "12",
+    "addr:postcode": "EC3V 1LP",
+    "addr:street": "Leadenhall Street",
+    "name": "Berrymans Lace Mawer",
+    "office": "lawyer"
+  }
+},
+{
+  "type": "node",
+  "id": 2663943029,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "City Point",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 9AW",
+    "addr:street": "Ropemaker Street",
+    "addr:unit": "Kiosk 1",
+    "amenity": "cafe",
+    "brand": "Costa",
+    "brand:wikidata": "Q608845",
+    "brand:wikipedia": "en:Costa Coffee",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "294112",
+    "name": "Costa",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2737653447,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "41",
+    "addr:postcode": "EC3V 0BT",
+    "addr:street": "Gracechurch Street",
+    "alt_name": "Folly",
+    "amenity": "bar",
+    "check_date": "2024-08-28",
+    "fhrs:id": "294888",
+    "fhrs:local_authority_id": "PI/000018961",
+    "name": "The Folly",
+    "website": "http://www.thefollybar.co.uk",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2793892926,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "52",
+    "addr:postcode": "EC3V 3PD",
+    "addr:street": "Cornhill",
+    "leisure": "sports_centre",
+    "name": "Stone",
+    "sport": "fitness",
+    "website": "https://www.stonelondon.com/bank"
+  }
+},
+{
+  "type": "node",
+  "id": 2793892943,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "6",
+    "addr:postcode": "EC3V 0AT",
+    "addr:street": "Gracechurch Street",
+    "amenity": "fast_food",
+    "indoor_seating": "yes",
+    "name": "Pod",
+    "opening_hours": "Mo-Fr 06:30-20:30",
+    "outdoor_seating": "no",
+    "phone": "+44 20 3960 5653",
+    "website": "https://www.pod.co.uk",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2793904913,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "38",
+    "addr:postcode": "EC2R 8AY",
+    "addr:street": "Threadneedle Street",
+    "amenity": "restaurant",
+    "check_date": "2026-01-04",
+    "cuisine": "italian",
+    "fhrs:id": "1281610",
+    "name": "Piazza Italiana",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2793904914,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "52",
+    "addr:postcode": "EC2R 8AY",
+    "addr:street": "Threadneedle Street",
+    "amenity": "restaurant",
+    "brand": "Burger & Lobster",
+    "brand:wikidata": "Q113547162",
+    "check_date": "2026-01-04",
+    "cuisine": "burger;seafood",
+    "fhrs:id": "749810",
+    "name": "Burger & Lobster",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2793904915,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "34",
+    "addr:postcode": "EC2R 8AY",
+    "addr:street": "Threadneedle Street",
+    "addr:unit": "Retail Unit",
+    "contact:email": "admin.mailbox@perry-company.co.uk",
+    "contact:facebook": "https://www.facebook.com/perryscharteredaccountants/",
+    "contact:fax": "+44 20 7256 5500",
+    "contact:twitter": "https://twitter.com/PerrysAccs",
+    "fhrs:id": "294550",
+    "name": "Perrys Chartered Accountants",
+    "office": "accountant",
+    "opening_hours": "Mo-Fr 09:00-17:30",
+    "phone": "+44 20 7256 9339",
+    "website": "https://www.themercer.co.uk/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2793904916,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "74",
+    "addr:postcode": "EC3V 3QQ",
+    "addr:street": "Cornhill",
+    "check_date:opening_hours": "2025-11-01",
+    "fixme": "check spelling, FHRS have Abokad",
+    "male": "yes",
+    "name": "Adam",
+    "opening_hours:signed": "no",
+    "shop": "hairdresser",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "node",
+  "id": 2898949673,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "17",
+    "addr:postcode": "EC2V 8EY",
+    "addr:street": "Ironmonger Lane",
+    "amenity": "cafe",
+    "cuisine": "thai",
+    "fhrs:id": "294905",
+    "name": "City Càphê",
+    "opening_hours": "Mo-Fr 11:30-13:00",
+    "website": "https://www.citycaphe.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2924593992,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "110",
+    "addr:postcode": "EC4N 6EU",
+    "addr:street": "Cannon Street",
+    "check_date": "2025-04-24",
+    "cuisine": "italian",
+    "disused:amenity": "restaurant",
+    "fhrs:authority": "City of London Corporation",
+    "fhrs:id": "696563",
+    "fhrs:local_authority_id": "PI/000025692",
+    "name": "Scarpetta",
+    "opening_hours": "Mo-Fr 07:00-21:30",
+    "phone": "+44 20 3883 4031",
+    "website": "https://www.scarpetta.london/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2925607547,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "46",
+    "addr:postcode": "EC4R 9AN",
+    "addr:street": "King William Street",
+    "brand": "Little Waitrose",
+    "brand:wikidata": "Q771734",
+    "brand:wikipedia": "en:Waitrose & Partners",
+    "fhrs:id": "578600",
+    "name": "Little Waitrose",
+    "opening_hours": "Mo-Fr 07:00-21:00; Sa 10:00-18:00; Su off",
+    "shop": "convenience",
+    "source": "survey",
+    "website": "https://www.waitrose.com/find-a-store/monument",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3010425536,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "14",
+    "addr:postcode": "EC2N 2HE",
+    "addr:street": "Austin Friars",
+    "amenity": "cafe",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "594059",
+    "name": "SOHO Coffee co.",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3014255927,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "50",
+    "addr:street": "Bow Lane",
+    "name": "Interspersed city",
+    "opening_hours": "Mo-Fr 08:00-19:30;Sa 10:00-16:00",
+    "shop": "sports"
+  }
+},
+{
+  "type": "node",
+  "id": 3018116497,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "55",
+    "addr:postcode": "EC2N 3AS",
+    "addr:street": "Bishopsgate",
+    "amenity": "fast_food",
+    "brand": "Coco di Mama",
+    "brand:wikidata": "Q118146052",
+    "check_date": "2026-01-04",
+    "cuisine": "italian",
+    "fhrs:id": "1136184",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Coco di Mama",
+    "opening_hours": "Mo-Fr 07:00-17:00; Sa-Su off",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "source:addr": "FHRS Open Data",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3018116498,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "55",
+    "addr:postcode": "EC2N 3AS",
+    "addr:street": "Bishopsgate",
+    "amenity": "fast_food",
+    "brand": "Pret A Manger",
+    "brand:wikidata": "Q2109109",
+    "brand:wikipedia": "en:Pret a Manger",
+    "check_date": "2026-01-04",
+    "check_date:diet:vegetarian": "2026-01-04",
+    "cuisine": "sandwich",
+    "diet:vegetarian": "yes",
+    "fhrs:id": "660570",
+    "fhrs:local_authority_id": "PI/000025561",
+    "internet_access": "wlan",
+    "name": "Pret A Manger",
+    "short_name": "Pret",
+    "source:addr": "FHRS Open Data",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3061197975,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "8",
+    "addr:street": "Lombard Court",
+    "leisure": "fitness_centre",
+    "name": "Cyclebeat",
+    "old_amenity": "pub",
+    "old_name": "Red Lion",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 3066926052,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC4V 5BJ",
+    "addr:street": "Knightrider Court",
+    "name": "Natural Resource Governance Institute (NRGI)",
+    "office": "ngo",
+    "opening_hours": "09:30-17:30",
+    "phone": "+44 20 7332 2410",
+    "smoking": "no",
+    "source": "survey",
+    "website": "https://resourcegovernance.org/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3068849644,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housename": "Cheapside House",
+    "addr:housenumber": "138",
+    "addr:postcode": "EC2V 6BJ",
+    "addr:street": "Cheapside",
+    "name": "Barnett Waddingham",
+    "note": "3rd Floor and 8th Floor Reception on 8th Floor",
+    "office": "company",
+    "opening_hours": "09:00-17:15",
+    "phone": "+44 20 7776 2200",
+    "website": "https://www.barnett-waddingham.co.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 3108305729,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "33",
+    "addr:street": "Gracechurch Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3114630761,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Tower 42",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC2N 1HQ",
+    "addr:street": "Old Broad Street",
+    "amenity": "bar",
+    "fhrs:id": "693304",
+    "name": "City Social",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3144096202,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housename": "London Wall Buildings",
+    "addr:housenumber": "4",
+    "addr:postcode": "EC2M 5NT",
+    "addr:street": "Blomfield Street",
+    "check_date": "2025-06-13",
+    "was:amenity": "restaurant",
+    "was:fhrs:id": "676662",
+    "was:name": "Bierschenke"
+  }
+},
+{
+  "type": "node",
+  "id": 3227939099,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "150 Cheapside",
+    "addr:housenumber": "150",
+    "addr:postcode": "EC2V 6ET",
+    "addr:street": "Cheapside",
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "healthcare:speciality": "fertility",
+    "name": "CREATE Fertility",
+    "source": "www.createhealth.org"
+  }
+},
+{
+  "type": "node",
+  "id": 3239534784,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "72",
+    "addr:postcode": "EC4N 4SJ",
+    "addr:street": "Queen Victoria Street",
+    "amenity": "fast_food",
+    "fhrs:id": "1214017",
+    "name": "The Salad Kitchen",
+    "opening_hours": "Mo-Th 10:00-20:00; Fr 10:00-14:30",
+    "website": "https://www.thesaladkitchen.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 3239539398,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "2",
+    "addr:postcode": "EC4M 8AY",
+    "addr:street": "St Paul's Churchyard",
+    "amenity": "restaurant",
+    "brand": "Franco Manca",
+    "brand:wikidata": "Q28404417",
+    "brand:wikipedia": "en:Franco Manca",
+    "contact:phone": "+44 20 3026 7981",
+    "contact:website": "https://www.francomanca.co.uk/restaurants/st-pauls/",
+    "cuisine": "pizza",
+    "diet:gluten_free": "yes",
+    "diet:vegetarian": "yes",
+    "fhrs:id": "1151375",
+    "name": "Franco Manca",
+    "opening_hours": "Mo-Fr 11:30-22:00; Sa 12:00-22:00; Su 12:00-21:00",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3239541042,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "10 Condor House",
+    "addr:street": "St Paul's Churchyard"
+  }
+},
+{
+  "type": "node",
+  "id": 3239698461,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "70",
+    "addr:postcode": "EC4N 4SJ",
+    "addr:street": "Queen Victoria Street",
+    "name": "J Moriyama Hair Design",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 3269520661,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Roof Terrace Restaurant",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC4M 9AF",
+    "addr:street": "New Change",
+    "amenity": "restaurant",
+    "fhrs:id": "676661",
+    "level": "5",
+    "name": "Madison"
+  }
+},
+{
+  "type": "node",
+  "id": 3280460982,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "11",
+    "addr:postcode": "EC2R 8DU",
+    "addr:street": "Old Jewry",
+    "amenity": "restaurant",
+    "cuisine": "steak_house",
+    "fhrs:id": "294804",
+    "name": "Goodmans City",
+    "phone": "+44 20 7600 8220",
+    "smoking": "no",
+    "website": "https://www.goodmanrestaurants.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 3306596294,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "2A",
+    "addr:postcode": "EC3M 1AE",
+    "addr:street": "Eastcheap",
+    "addr:unit": "Retail Unit 1",
+    "amenity": "cafe",
+    "brand": "Blank Street Coffee",
+    "brand:wikidata": "Q114792509",
+    "check_date": "2023-10-28",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "294713",
+    "name": "Blank Street Coffee",
+    "opening_hours": "Mo-Fr 06:30-19:00; Sa 07:00-19:00; Su 07:30-18:00",
+    "takeaway": "yes",
+    "website": "https://www.blankstreet.com/en-GB/locations/london/LB9VF0QD2PKPT-monument",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3320738322,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "2",
+    "addr:postcode": "EC2R 7DA",
+    "addr:street": "Copthall Avenue",
+    "amenity": "dentist",
+    "branch": "Moorgate",
+    "brand": "Bupa",
+    "brand:wikidata": "Q931628",
+    "brand:wikipedia": "en:Bupa",
+    "contact:website": "https://www.bupa.co.uk/dental/dental-care/practices/moorgate",
+    "healthcare": "dentist",
+    "name": "Bupa Dental Care",
+    "operator": "Bupa Dental Services Limited",
+    "ref:GB:cqc_location": "1-1924800568",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3320744028,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "10",
+    "addr:postcode": "EC2N 2HG",
+    "addr:street": "Austin Friars",
+    "amenity": "bar",
+    "name": "Balls Brothers",
+    "website": "https://ballsbrothersaustinfriars.co.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 3322101578,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "2",
+    "addr:street": "Eastcheap",
+    "brand": "Flight Centre",
+    "brand:wikidata": "Q5459202",
+    "brand:wikipedia": "en:Flight Centre",
+    "check_date": "2025-06-28",
+    "name": "Flight Centre",
+    "shop": "travel_agency",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3334177782,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Winchester House",
+    "addr:housenumber": "75",
+    "addr:postcode": "EC2M 5NG",
+    "addr:street": "London Wall",
+    "addr:unit": "Unit 1",
+    "check_date": "2025-12-06",
+    "was:amenity": "cafe",
+    "was:fhrs:id": "295194",
+    "was:name": "Caffè Nero"
+  }
+},
+{
+  "type": "node",
+  "id": 3335138107,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "126",
+    "addr:postcode": "EC4N 6AS",
+    "addr:street": "Cannon Street",
+    "amenity": "cafe",
+    "brand": "Costa",
+    "brand:wikidata": "Q608845",
+    "brand:wikipedia": "en:Costa Coffee",
+    "check_date": "2023-03-12",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "608736",
+    "name": "Costa",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3340674786,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC4M 7DX",
+    "addr:street": "Paternoster Square",
+    "addr:unit": "Unit 8",
+    "amenity": "cafe",
+    "brand": "Notes",
+    "brand:wikidata": "Q111656694",
+    "cuisine": "coffee_shop",
+    "indoor_seating": "yes",
+    "name": "Notes",
+    "outdoor_seating": "yes",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3340683302,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Paternoster Lodge",
+    "addr:housenumber": "2",
+    "addr:postcode": "EC4M 7DX",
+    "addr:street": "Paternoster Square",
+    "brand": "Paul",
+    "brand:wikidata": "Q3370417",
+    "brand:wikipedia": "en:Paul (bakery)",
+    "fhrs:id": "294493",
+    "name": "Paul",
+    "opening_hours": "Mo-Fr 07:30-19:00; Sa 08:00-19:00; Su 08:00-18:00",
+    "shop": "bakery"
+  }
+},
+{
+  "type": "node",
+  "id": 3340684901,
+  "tags": {
+    "addr:city": "London",
+    "addr:country": "GB",
+    "addr:housename": "Paternoster House",
+    "addr:housenumber": "65",
+    "addr:postcode": "EC4M 8AB",
+    "addr:street": "St. Paul's Churchyard",
+    "addr:unit": "Retail Unit 2",
+    "amenity": "bar",
+    "check_date": "2025-06-28",
+    "fhrs:id": "295241",
+    "indoor_seating": "yes",
+    "name": "Dion",
+    "not:addr:postcode": "EC4M 8AA",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3356875069,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "14",
+    "addr:postcode": "EC1A 4EN",
+    "addr:street": "St. Martin's Le Grand",
+    "addr:unit": "Unit 5",
+    "brand": "Tesco Express",
+    "brand:wikidata": "Q98456772",
+    "brand:wikipedia": "en:Tesco",
+    "check_date": "2026-09-07",
+    "contact:website": "https://www.tesco.com/store-locator/london/14-16-st-martins-le-grand",
+    "fhrs:id": "294724",
+    "name": "Tesco Express",
+    "name:fa": "تسکو اکسپرس",
+    "not:addr:postcode": "EC2V 6BJ",
+    "opening_hours": "Mo-Su 06:00-23:00",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 3356884658,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "5A",
+    "addr:postcode": "EC2V 6AA",
+    "addr:street": "Cheapside",
+    "alt_name": "St Paul's Co-op",
+    "brand": "Co-op Food",
+    "brand:wikidata": "Q3277439",
+    "brand:wikipedia": "en:Co-op Food",
+    "check_date": "2026-09-07",
+    "check_date:opening_hours": "2024-07-15",
+    "fhrs:id": "711647",
+    "name": "Co-op Food",
+    "old_name": "The Co-operative Food",
+    "opening_hours": "Mo-Su 06:30-23:00",
+    "operator": "The Co-operative Group",
+    "operator:wikidata": "Q117202",
+    "shop": "convenience",
+    "website": "https://www.coop.co.uk/store-finder/EC2V-6AA/5-cheapside"
+  }
+},
+{
+  "type": "node",
+  "id": 3358741097,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "60",
+    "addr:postcode": "EC4N 4TR",
+    "addr:street": "Queen Victoria Street",
+    "name": "Accenture",
+    "office": "company",
+    "phone": "+44 20 7844 4000",
+    "website": "https://www.accenture.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 3375577905,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "10",
+    "addr:street": "Queen Street Place",
+    "entrance": "yes",
+    "name": "King & Wood Mallesons LLP",
+    "office": "lawyer"
+  }
+},
+{
+  "type": "node",
+  "id": 3397556275,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "22",
+    "addr:street": "Fish Street Hill",
+    "name": "Waagner Biro",
+    "office": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3455347503,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "200",
+    "addr:postcode": "EC1A 4HD",
+    "addr:street": "Aldersgate Street",
+    "branch": "St Paul's",
+    "brand": "Giant",
+    "brand:wikidata": "Q703557",
+    "check_date": "2025-04-24",
+    "name": "Giant",
+    "opening_hours": "Mo-Fr 09:30-18:30; Sa,PH 10:00-16:00",
+    "service": "repair",
+    "shop": "bicycle",
+    "source": "local_knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 3502830657,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "The Walbrook Building",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC4N 8AF",
+    "addr:street": "Walbrook",
+    "addr:unit": "Unit 3",
+    "amenity": "fast_food",
+    "brand": "Pret A Manger",
+    "brand:wikidata": "Q2109109",
+    "brand:wikipedia": "en:Pret a Manger",
+    "cuisine": "sandwich",
+    "fhrs:id": "747625",
+    "name": "Pret A Manger",
+    "operator": "Pret a Manger",
+    "short_name": "Pret",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3559146642,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "101",
+    "addr:postcode": "EC2A 1RS",
+    "addr:street": "Finsbury Pavement",
+    "name": "Orega Moorgate",
+    "office": "company",
+    "phone": "+44 800 840 5509",
+    "website": "https://www.orega.com/serviced-offices/london-moorgate/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3596425484,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "97",
+    "addr:postcode": "EC4N 5AE",
+    "addr:street": "Cannon Street",
+    "branch": "Walbrook",
+    "brand": "Virgin Active",
+    "brand:wikidata": "Q4013942",
+    "brand:wikipedia": "en:Virgin Active",
+    "leisure": "fitness_centre",
+    "name": "Virgin Active",
+    "opening_hours": "Mo-Th 06:00-22:30; Fr 06:00-22:00; Sa 10:00-18:00; Su off; PH 10:00-18:00",
+    "operator": "Virgin Active",
+    "phone": "+44 20 3284 5932",
+    "sport": "fitness",
+    "website": "https://www.virginactive.co.uk/clubs/walbrook",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3658985273,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "68",
+    "addr:postcode": "EC4N 7HR",
+    "addr:street": "King William Street",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 3702964040,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "90-94",
+    "addr:postcode": "EC2M 1JB",
+    "addr:street": "Old Broad Street",
+    "amenity": "cafe",
+    "fhrs:id": "543147",
+    "name": "Birley",
+    "toilets:wheelchair": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3768814125,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "60",
+    "addr:postcode": "EC2R 8HP",
+    "addr:street": "Threadneedle Street",
+    "amenity": "restaurant",
+    "fhrs:id": "690318",
+    "name": "M Bar & Grill",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3788896805,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "The Walbrook Building",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC4N 8AF",
+    "addr:street": "Walbrook",
+    "addr:unit": "Unit 4",
+    "amenity": "fast_food",
+    "check_date": "2025-03-24",
+    "cuisine": "sandwich",
+    "fhrs:id": "803156",
+    "name": "Birley",
+    "opening_hours": "Mo-Fr 07:00-17:00",
+    "operator": "Birley Sandwiches",
+    "phone": "+44 20 7283 6297",
+    "website": "https://www.birleysandwiches.co.uk/stores/cannon-street",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3788896806,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "The Walbrook Building",
+    "addr:housenumber": "23",
+    "addr:postcode": "EC4N 8AF",
+    "addr:street": "Walbrook",
+    "brand": "Little Waitrose",
+    "brand:wikidata": "Q771734",
+    "brand:wikipedia": "en:Waitrose & Partners",
+    "fhrs:id": "706954",
+    "name": "Little Waitrose",
+    "opening_hours": "Mo-Fr 06:30 - 21:00; Sa 12:00 - 17:00; Su off",
+    "operator": "Waitrose Ltd",
+    "payment:cash": "yes",
+    "phone": "+44 20 7929 4818",
+    "shop": "convenience",
+    "website": "https://www.waitrose.com/find-a-store/walbrook",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3799641431,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "146",
+    "addr:street": "Queen Victoria Street",
+    "amenity": "place_of_worship",
+    "entrance": "main",
+    "name": "Church of Scientology",
+    "note": "not sure if amenity=place_of_worship is the right tag but apparently religion=scientologist is a recognised tag value, so I guess it fits",
+    "religion": "scientologist",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3936798451,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 5EJ",
+    "addr:street": "Fore Street Avenue",
+    "leisure": "sports_centre",
+    "name": "Pure Ride",
+    "phone": "+44 333 234 0401",
+    "sport": "bicycling",
+    "website": "https://www.pureride.co.uk"
+  }
+},
+{
+  "type": "node",
+  "id": 3936798452,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 9AW",
+    "addr:street": "Ropemaker Street",
+    "addr:unit": "Retail Unit 1b",
+    "amenity": "restaurant",
+    "fhrs:id": "728839",
+    "name": "Bad Egg",
+    "opening_hours": "Mo-Fr 08:00-22:00; Sa 10:00-19:00; Su 10:00-17:00",
+    "phone": "+44 20 3006 6222"
+  }
+},
+{
+  "type": "node",
+  "id": 3970060997,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "23",
+    "addr:postcode": "EC3M 7HB",
+    "addr:street": "Lime Street",
+    "brand": "Cycle Republic",
+    "brand:wikidata": "Q65042920",
+    "brand:wikipedia": "en:Cycle Republic",
+    "name": "Cycle Republic",
+    "phone": "+44 20 7929 1294",
+    "was:opening_hours": "Mo-Fr 08:00-20:00, Sa 09:00-18:00",
+    "was:shop": "bicycle",
+    "website": "https://www.cyclerepublic.com/stores/fenchurch-store"
+  }
+},
+{
+  "type": "node",
+  "id": 3998968424,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "200",
+    "addr:postcode": "EC1A 4HD",
+    "addr:street": "Aldersgate Street",
+    "branch": "Health Club",
+    "brand": "Virgin Active",
+    "brand:wikidata": "Q4013942",
+    "check_date": "2025-04-24",
+    "leisure": "fitness_centre",
+    "name": "Virgin Active"
+  }
+},
+{
+  "type": "node",
+  "id": 4193848428,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 9DT",
+    "addr:street": "Fore Street Avenue",
+    "brand": "WeWork",
+    "brand:wikidata": "Q19995004",
+    "brand:wikipedia": "en:WeWork",
+    "fee": "yes",
+    "fhrs:id": "1128193",
+    "name": "WeWork",
+    "office": "coworking"
+  }
+},
+{
+  "type": "node",
+  "id": 4193848430,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "82",
+    "addr:postcode": "EC2M 5ND",
+    "addr:street": "London Wall",
+    "amenity": "dentist",
+    "healthcare": "dentist",
+    "name": "Boston House Dental Clinic",
+    "ref:GB:cqc_location": "1-1531123575",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4223463913,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "125",
+    "addr:postcode": "EC2N 1AR",
+    "addr:street": "Old Broad Street",
+    "addr:unit": "Retail Unit 3",
+    "amenity": "fast_food",
+    "brand": "Pret A Manger",
+    "brand:wikidata": "Q2109109",
+    "brand:wikipedia": "en:Pret a Manger",
+    "check_date": "2026-01-04",
+    "check_date:diet:vegetarian": "2026-01-04",
+    "cuisine": "sandwich",
+    "diet:vegetarian": "yes",
+    "fhrs:id": "727241",
+    "name": "Pret A Manger",
+    "opening_hours": "Mo 06:00-18:00; Tu-Th 06:00-18:30; Fr 06:00-16:30; Sa-Su off",
+    "short_name": "Pret",
+    "takeaway": "yes",
+    "website": "https://www.pret.co.uk/en-GB/shop-finder/l/london/125-old-broad-street/10466",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4231921521,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "4-6",
+    "addr:postcode": "EC4M 7EJ",
+    "addr:street": "Paternoster Row",
+    "amenity": "fast_food",
+    "brand": "itsu",
+    "brand:wikidata": "Q6094914",
+    "brand:wikipedia": "en:Itsu",
+    "check_date": "2025-08-21",
+    "check_date:diet:halal": "2025-08-21",
+    "cuisine": "asian",
+    "diet:halal": "no",
+    "fhrs:authority": "City of London Corporation",
+    "fhrs:id": "294548",
+    "fhrs:local_authority_id": "PI/000015517",
+    "indoor_seating": "yes",
+    "name": "itsu",
+    "opening_hours": "Mo-Fr 07:30-21:00; Sa 11:00-19:00; Su 11:00-17:00",
+    "outdoor_seating": "yes",
+    "takeaway": "yes",
+    "website": "https://www.itsu.com/location/city-of-london/paternoster-square/"
+  }
+},
+{
+  "type": "node",
+  "id": 4241081100,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "80",
+    "addr:postcode": "EC2V 6EE",
+    "addr:street": "Cheapside",
+    "amenity": "clinic",
+    "check_date:opening_hours": "2025-11-01",
+    "healthcare": "clinic",
+    "name": "One Heart Clinic City",
+    "opening_hours:signed": "no",
+    "ref:GB:cqc_location": "1-18281338465",
+    "was:name": "Medi Centre"
+  }
+},
+{
+  "type": "node",
+  "id": 4257914191,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "33",
+    "addr:postcode": "EC4M 7AU",
+    "addr:street": "Old Bailey",
+    "amenity": "restaurant",
+    "contact:instagram": "shugetsu_london",
+    "cuisine": "japanese;ramen",
+    "name": "Shugetsu",
+    "name:ja": "麺鮮醤油房 周月",
+    "name:zh": "麵鮮醬油房 周月",
+    "opening_hours": "Mo-Sa 11:30-14:30, 17:00-20:00"
+  }
+},
+{
+  "type": "node",
+  "id": 4260079401,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Warwick Court",
+    "addr:housenumber": "2",
+    "addr:postcode": "EC4M 7DX",
+    "addr:street": "Paternoster Square",
+    "amenity": "cafe",
+    "fhrs:id": "294322",
+    "name": "Birley",
+    "name:fa": "برلی",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4297211172,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1-3",
+    "addr:street": "Newbury Street"
+  }
+},
+{
+  "type": "node",
+  "id": 4312323533,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "The Heron",
+    "addr:housenumber": "5",
+    "addr:postcode": "EC2Y 9AP",
+    "addr:street": "Moor Lane",
+    "amenity": "restaurant",
+    "email": "theheron@phamsushi.com",
+    "name": "Pham Sushi",
+    "opening_hours": "Mo-Fr 12:00-02:30, 17:00-22:00; Sa 17:00-22:00",
+    "phone": "+44 20 7638 6668",
+    "website": "https://www.phamsushi.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4348232559,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "11",
+    "addr:postcode": "EC2M 2AQ",
+    "addr:street": "South Place",
+    "amenity": "restaurant",
+    "check_date": "2024-05-25",
+    "fhrs:id": "1416540",
+    "name": "Bread Street Kitchen & Bar",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4360076798,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "33-35",
+    "addr:postcode": "EC3V 3ND",
+    "addr:street": "Cornhill",
+    "alt_name": "Simmons Bank",
+    "amenity": "bar",
+    "brand": "Simmons Bars",
+    "brand:wikidata": "Q109991573",
+    "cocktails": "yes",
+    "fhrs:id": "1498027",
+    "indoor_seating": "yes",
+    "name": "Simmons",
+    "outdoor_seating": "no",
+    "website": "https://www.simmonsbar.co.uk/venues/bank/"
+  }
+},
+{
+  "type": "node",
+  "id": 4360329796,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Winchester House",
+    "addr:housenumber": "100",
+    "addr:street": "Old Broad Street",
+    "name": "Winchester House"
+  }
+},
+{
+  "type": "node",
+  "id": 4369519196,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "20",
+    "addr:postcode": "EC1A 7DH",
+    "addr:street": "Little Britain",
+    "branch": "London St Paul's",
+    "brand": "PureGym",
+    "brand:wikidata": "Q18345898",
+    "leisure": "fitness_centre",
+    "name": "PureGym",
+    "opening_hours": "24/7",
+    "operator": "Pure Gym"
+  }
+},
+{
+  "type": "node",
+  "id": 4377148225,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "2-3",
+    "addr:postcode": "EC2N 1DX",
+    "addr:street": "Adams Court",
+    "amenity": "fast_food",
+    "contact:website": "http://www.nusakitchen.co.uk/",
+    "cuisine": "asian",
+    "fhrs:id": "294565",
+    "name": "Nusa Kitchen",
+    "opening_hours": "Mo-Fr 07:00-16:00",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4379801324,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Lambert House",
+    "addr:housenumber": "2",
+    "addr:street": "Ludgate Square"
+  }
+},
+{
+  "type": "node",
+  "id": 4379801325,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:street": "Ludgate Square"
+  }
+},
+{
+  "type": "node",
+  "id": 4383369492,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "36A",
+    "addr:street": "St Andrew's Hill"
+  }
+},
+{
+  "type": "node",
+  "id": 4392786605,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "11",
+    "addr:street": "Pilgrim Street",
+    "name": "Bechtel Offices"
+  }
+},
+{
+  "type": "node",
+  "id": 4428611560,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "34",
+    "addr:postcode": "EC3V 3LP",
+    "addr:street": "Royal Exchange",
+    "amenity": "cafe",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "948352",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "internet_access:ssid": "Royal Exchange Grind customers",
+    "name": "Royal Exchange Grind",
+    "opening_hours": "Mo-Fr 06:30-19:00",
+    "smoking": "outside",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4453346094,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "4",
+    "addr:postcode": "EC2N 1DX",
+    "addr:street": "Adams Court",
+    "amenity": "fast_food",
+    "fhrs:id": "1649533",
+    "name": "Piada"
+  }
+},
+{
+  "type": "node",
+  "id": 4491692422,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "200",
+    "addr:postcode": "EC1A 4HD",
+    "addr:street": "Aldersgate Street",
+    "disused:shop": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4498589343,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "89-91",
+    "addr:postcode": "EC2V 7NQ",
+    "addr:street": "Gresham Street",
+    "amenity": "restaurant",
+    "name": "The Trading House"
+  }
+},
+{
+  "type": "node",
+  "id": 4500393142,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Woolgate Exchange",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC2V 5HA",
+    "addr:street": "Basinghall Street",
+    "amenity": "bar",
+    "fhrs:id": "294650",
+    "name": "Davy's at Woolgate Bar and Brasserie"
+  }
+},
+{
+  "type": "node",
+  "id": 4500601606,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "10",
+    "addr:postcode": "EC2V 5BQ",
+    "addr:street": "Basinghall Street",
+    "amenity": "restaurant",
+    "fhrs:id": "295076",
+    "name": "Enoteca da Luca",
+    "source:addr": "FSA Food Hygiene Rating Scheme open data"
+  }
+},
+{
+  "type": "node",
+  "id": 4500606584,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "10",
+    "addr:postcode": "EC2V 5BQ",
+    "addr:street": "Basinghall Street",
+    "amenity": "cafe",
+    "name": "Bacari",
+    "source:addr": "FSA Food Hygiene Rating Scheme open data"
+  }
+},
+{
+  "type": "node",
+  "id": 4500620450,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "97",
+    "addr:postcode": "EC2V 7NG",
+    "addr:street": "Gresham Street",
+    "amenity": "cafe",
+    "brand": "Costa",
+    "brand:wikidata": "Q608845",
+    "brand:wikipedia": "en:Costa Coffee",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "293969",
+    "name": "Costa",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4501136325,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "City Point",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 9AW",
+    "addr:street": "Ropemaker Street",
+    "disused:amenity": "cafe",
+    "name": "Notes"
+  }
+},
+{
+  "type": "node",
+  "id": 4503830991,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "111",
+    "addr:postcode": "EC2N 1AP",
+    "addr:street": "Old Broad Street",
+    "amenity": "bar",
+    "fhrs:id": "926272",
+    "name": "The Otherist",
+    "operator": "Drake and Morgan",
+    "website": "https://drakeandmorgan.co.uk/the-otherist",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4504408426,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "6",
+    "addr:postcode": "EC2R 7DA",
+    "addr:street": "Copthall Avenue",
+    "amenity": "cafe",
+    "brand": "Costa",
+    "brand:wikidata": "Q608845",
+    "brand:wikipedia": "en:Costa Coffee",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "639856",
+    "name": "Costa",
+    "takeaway": "yes",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4513208342,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Salisbury House",
+    "addr:housenumber": "156",
+    "addr:postcode": "EC2M 5QD",
+    "addr:street": "London Wall",
+    "amenity": "cafe",
+    "fhrs:authority": "City of London Corporation",
+    "fhrs:id": "653542",
+    "fhrs:local_authority_id": "PI/000025732",
+    "name": "Bagelmania",
+    "source:addr": "FHRS Open Data",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4519912166,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "City Point",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 9AW",
+    "addr:street": "Ropemaker Street",
+    "amenity": "cafe",
+    "brand": "Costa",
+    "brand:wikidata": "Q608845",
+    "brand:wikipedia": "en:Costa Coffee",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "294190",
+    "name": "Costa",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4534328536,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "66-67",
+    "addr:postcode": "EC3V 3NB",
+    "addr:street": "Cornhill",
+    "clothes": "men",
+    "name": "Oliver Brown",
+    "opening_hours": "Mo-Fr 09:00-18:00",
+    "shop": "clothes",
+    "website": "https://www.oliverbrownlondon.com"
+  }
+},
+{
+  "type": "node",
+  "id": 4552494180,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "146",
+    "addr:street": "Leadenhall Street",
+    "amenity": "bureau_de_change",
+    "name": "City Forex",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4566426324,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "6-7",
+    "addr:postcode": "EC3V 1LR",
+    "addr:street": "Leadenhall Market",
+    "amenity": "restaurant",
+    "name": "Butcher",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4566427252,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "6-9",
+    "addr:postcode": "EC3V 1LR",
+    "addr:street": "Leadenhall Market",
+    "amenity": "bar",
+    "fhrs:id": "295179",
+    "name": "Brokers",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4566433452,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "64-65",
+    "addr:street": "Lime Street Passage",
+    "brand": "Hobbs",
+    "brand:wikidata": "Q25108740",
+    "check_date": "2025-06-06",
+    "name": "Hobbs",
+    "shop": "clothes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4566488874,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "39",
+    "addr:postcode": "EC3V 1LR",
+    "addr:street": "Leadenhall Market",
+    "amenity": "fast_food",
+    "check_date": "2025-06-18",
+    "fhrs:id": "771813",
+    "name": "Bibimbap",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4577310106,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "16-18",
+    "addr:postcode": "EC3R 8AJ",
+    "addr:street": "Monument Street",
+    "amenity": "restaurant",
+    "check_date": "2025-04-24",
+    "cuisine": "italian",
+    "fhrs:id": "1416542",
+    "level": "0",
+    "name": "Al dente",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4580662705,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1A",
+    "addr:postcode": "EC3R 8AB",
+    "addr:street": "Pudding Lane",
+    "amenity": "bar",
+    "fhrs:id": "924323",
+    "name": "Mber"
+  }
+},
+{
+  "type": "node",
+  "id": 4584951680,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:parentstreet": "Gracechurch Street",
+    "addr:postcode": "EC3V 0AT",
+    "addr:street": "Corbet Court",
+    "amenity": "restaurant",
+    "fhrs:id": "564578",
+    "name": "Bangalore Express"
+  }
+},
+{
+  "type": "node",
+  "id": 4584963340,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "4-5",
+    "addr:street": "Castle Court",
+    "name": "The Birchin Lane Gold Coin Co",
+    "shop": "jewelry"
+  }
+},
+{
+  "type": "node",
+  "id": 4585441161,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Phoenix House",
+    "addr:housenumber": "18",
+    "addr:postcode": "EC4N 7BP",
+    "addr:street": "King William Street",
+    "amenity": "fast_food",
+    "branch": "Monument",
+    "brand": "Chilango",
+    "brand:wikidata": "Q107610595",
+    "cuisine": "mexican",
+    "fhrs:id": "688704",
+    "name": "Chilango",
+    "opening_hours": "Mo-Fr 11:00-22:00",
+    "phone": "+44 20 7920 6421",
+    "takeaway": "yes",
+    "website": "https://chilango.co.uk/restaurants/monument"
+  }
+},
+{
+  "type": "node",
+  "id": 4585441787,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Phoenix House",
+    "addr:housenumber": "18",
+    "addr:postcode": "EC4N 7BP",
+    "addr:street": "King William Street",
+    "amenity": "fast_food",
+    "brand": "itsu",
+    "brand:wikidata": "Q6094914",
+    "brand:wikipedia": "en:Itsu",
+    "check_date": "2019-12-18",
+    "cuisine": "asian",
+    "fhrs:id": "621705",
+    "fixme": "Is this Itsu still here? (Location not listed on its storefinder.)",
+    "name": "itsu",
+    "opening_hours": "Mo-Tu 11:00-18:00; We-Fr 10:00-20:00",
+    "phone": "+44 20 7929 0502",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4603537401,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "9",
+    "addr:postcode": "EC4M 9DQ",
+    "addr:street": "Bow Churchyard",
+    "amenity": "restaurant",
+    "fhrs:id": "293681",
+    "name": "Taberna Etrusca"
+  }
+},
+{
+  "type": "node",
+  "id": 4605187783,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "17",
+    "addr:postcode": "EC4M 9BB",
+    "addr:street": "Watling Street",
+    "amenity": "nightclub",
+    "check_date": "2023-11-06",
+    "fhrs:id": "295211",
+    "name": "Popworld",
+    "source:addr": "FSA Food Hygiene Rating Scheme open data"
+  }
+},
+{
+  "type": "node",
+  "id": 4618362930,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "30-32",
+    "addr:postcode": "EC4V 5BH",
+    "addr:street": "Knightrider Street",
+    "amenity": "restaurant",
+    "fhrs:id": "717398",
+    "indoor_seating": "yes",
+    "name": "Mangio",
+    "not:addr:postcode": "EC4V 5JT",
+    "outdoor_seating": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4621862206,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "116",
+    "addr:postcode": "EC4N 6AS",
+    "addr:street": "Cannon Street",
+    "amenity": "cafe",
+    "check_date": "2025-04-24",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "764783",
+    "name": "Rosslyn",
+    "source:addr": "FSA Food Hygiene Rating Scheme open data",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4627491649,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "145",
+    "addr:street": "Queen Victoria Street",
+    "disused:tourism": "museum",
+    "level": "1",
+    "name": "BT Museum",
+    "note": "This is long closed, but the abandoned entrance to the museum and a faded name sign can still be seen on the pedway path on the first floor",
+    "wikidata": "Q4836762",
+    "wikipedia": "en:BT Museum"
+  }
+},
+{
+  "type": "node",
+  "id": 4630856258,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "6",
+    "addr:street": "Friar Street"
+  }
+},
+{
+  "type": "node",
+  "id": 4630856261,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "5",
+    "addr:street": "Burgon Street"
+  }
+},
+{
+  "type": "node",
+  "id": 4639477431,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "40-42",
+    "addr:postcode": "EC4N 6JJ",
+    "addr:street": "Cannon Street",
+    "amenity": "fast_food",
+    "brand": "itsu",
+    "brand:wikidata": "Q6094914",
+    "brand:wikipedia": "en:Itsu",
+    "check_date": "2024-08-20",
+    "cuisine": "asian",
+    "fhrs:id": "294789",
+    "name": "itsu",
+    "opening_hours": "Mo-Fr 11:00-20:00",
+    "takeaway": "yes",
+    "website": "https://www.itsu.com/location/city-of-london/cannon-street/"
+  }
+},
+{
+  "type": "node",
+  "id": 4640157309,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "27",
+    "addr:postcode": "EC4V 2BA",
+    "addr:street": "Garlick Hill",
+    "amenity": "restaurant",
+    "cuisine": "pasta;italian",
+    "fhrs:id": "964702",
+    "name": "Nyokee",
+    "opening_hours": "Mo-Fr 07:00-19:00",
+    "phone": "+44 20 7248 0300",
+    "website": "https://www.nyokee.co.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 4643336688,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1a",
+    "addr:street": "Church Entry"
+  }
+},
+{
+  "type": "node",
+  "id": 4643337019,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:street": "Ireland Yard"
+  }
+},
+{
+  "type": "node",
+  "id": 4672184869,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "171-176",
+    "addr:postcode": "EC1A 4HT",
+    "addr:street": "Aldersgate Street",
+    "disused:shop": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4789950321,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "88",
+    "addr:street": "Wood Street",
+    "name": "HP Inc. UK",
+    "shop": "computer"
+  }
+},
+{
+  "type": "node",
+  "id": 4802012330,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "XL House",
+    "addr:housenumber": "23",
+    "addr:postcode": "EC3M 7HB",
+    "addr:street": "Lime Street",
+    "addr:unit": "Retail Unit A",
+    "amenity": "fast_food",
+    "brand": "Wasabi",
+    "brand:wikidata": "Q23891278",
+    "brand:wikipedia": "en:Wasabi (restaurant)",
+    "check_date": "2025-06-17",
+    "cuisine": "japanese",
+    "diet:vegetarian": "yes",
+    "fhrs:id": "875014",
+    "level": "0",
+    "name": "Wasabi",
+    "opening_hours": "Mo-Fr 10:30-20:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "takeaway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4899152038,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "44A",
+    "addr:postcode": "EC4N 6JJ",
+    "addr:street": "Cannon Street",
+    "disused:amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 4935127421,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Tower 42",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC2N 1HQ",
+    "addr:street": "Old Broad Street",
+    "amenity": "bar",
+    "email": "reservations@vertigo42.co.uk",
+    "fhrs:id": "295212",
+    "name": "Vertigo 42, Champagne Bar",
+    "phone": "+44 20 7877 7842",
+    "website": "http://www.vertigo42.co.uk",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4974958321,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "5",
+    "addr:postcode": "EC2N 1AD",
+    "addr:street": "Old Broad Street"
+  }
+},
+{
+  "type": "node",
+  "id": 4982761834,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "6",
+    "addr:postcode": "EC2V 6HH",
+    "addr:street": "Foster Lane",
+    "addr:unit": "Retail Unit",
+    "amenity": "fast_food",
+    "check_date": "2026-09-07",
+    "cuisine": "italian",
+    "fhrs:id": "295293",
+    "name": "Rustichino",
+    "operator": "Rucoletta Deli",
+    "outdoor_seating": "yes",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4982761835,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "5",
+    "addr:postcode": "EC2V 6HH",
+    "addr:street": "Foster Lane",
+    "addr:unit": "Retail Unit",
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "fhrs:id": "295292",
+    "name": "Rucoletta Deli"
+  }
+},
+{
+  "type": "node",
+  "id": 5024362560,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "New Broad Street House, 304",
+    "addr:housenumber": "35",
+    "addr:postcode": "EC2M 1NH",
+    "addr:street": "New Broad Street",
+    "check_date": "2026-01-04",
+    "name": "RapidMiner Ltd",
+    "office": "company",
+    "phone": "+44 20 3794 8865"
+  }
+},
+{
+  "type": "node",
+  "id": 5041453021,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 9DT",
+    "addr:street": "Fore Street Avenue",
+    "amenity": "cafe",
+    "name": "Pain Quotidien",
+    "name:en": "Pain Quotidien"
+  }
+},
+{
+  "type": "node",
+  "id": 5051453725,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "42",
+    "addr:postcode": "EC3R 6BR",
+    "addr:street": "Fish Street Hill",
+    "amenity": "fast_food",
+    "brand": "itsu",
+    "brand:wikidata": "Q6094914",
+    "check_date": "2024-08-20",
+    "cuisine": "asian",
+    "fhrs:id": "1743773",
+    "name": "itsu",
+    "takeaway": "yes",
+    "website": "https://www.itsu.com/location/city-of-london/monument/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5051453726,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "46",
+    "addr:postcode": "EC3R 6BR",
+    "addr:street": "Fish Street Hill",
+    "amenity": "fast_food",
+    "name": "EggRun",
+    "opening_hours": "Mo-Fr 07:00-19:00",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5051453727,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "5",
+    "addr:postcode": "EC3M 8AN",
+    "addr:street": "Philpot Lane",
+    "amenity": "fast_food",
+    "brand": "Pure",
+    "brand:wikidata": "Q30599327",
+    "check_date": "2025-08-10",
+    "cuisine": "breakfast;salad",
+    "fhrs:id": "928540",
+    "indoor_seating": "yes",
+    "name": "Pure",
+    "opening_hours": "Mo-Th 06:30-19:30; Fr 06:30-17:00",
+    "outdoor_seating": "no",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5051453728,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "21",
+    "addr:postcode": "EC3M 7HB",
+    "addr:street": "Lime Street",
+    "amenity": "fast_food",
+    "brand": "Coco di Mama",
+    "brand:wikidata": "Q118146052",
+    "cuisine": "italian",
+    "fhrs:id": "964704",
+    "name": "Coco di Mama",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5087519094,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "8-9",
+    "addr:street": "Well Court",
+    "name": "RJD Partners",
+    "office": "company"
+  }
+},
+{
+  "type": "node",
+  "id": 5087519095,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "8-9",
+    "addr:street": "Well Court",
+    "name": "Knox Cropper",
+    "office": "company"
+  }
+},
+{
+  "type": "node",
+  "id": 5087519096,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "8-9",
+    "addr:street": "Well Court",
+    "name": "Osmosis Capital",
+    "office": "company"
+  }
+},
+{
+  "type": "node",
+  "id": 5087519097,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "8-9",
+    "addr:street": "Well Court",
+    "name": "Mantis Partners",
+    "office": "company"
+  }
+},
+{
+  "type": "node",
+  "id": 5095547145,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:street": "Abchurch Yard"
+  }
+},
+{
+  "type": "node",
+  "id": 5104314329,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "8",
+    "addr:street": "Laurence Pountney Hill",
+    "name": "Parkwell Management Consultants Ltd",
+    "office": "company"
+  }
+},
+{
+  "type": "node",
+  "id": 5141216764,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "24",
+    "addr:postcode": "EC4R 0DR",
+    "addr:street": "Martin Lane"
+  }
+},
+{
+  "type": "node",
+  "id": 5141216789,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Shannon House",
+    "addr:housenumber": "5",
+    "addr:street": "Laurence Pountney Lane"
+  }
+},
+{
+  "type": "node",
+  "id": 5141876973,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "23",
+    "addr:street": "College Hill"
+  }
+},
+{
+  "type": "node",
+  "id": 5141876977,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "4",
+    "addr:street": "College Hill",
+    "name": "Vicarage Capital Limited",
+    "office": "company"
+  }
+},
+{
+  "type": "node",
+  "id": 5141876978,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "4",
+    "addr:street": "College Hill",
+    "name": "Pillay & Associates Limited",
+    "office": "company"
+  }
+},
+{
+  "type": "node",
+  "id": 5141876979,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "4",
+    "addr:street": "College Hill",
+    "name": "The Worshipful Company of Builders Merchants",
+    "office": "ngo"
+  }
+},
+{
+  "type": "node",
+  "id": 5141876980,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "4",
+    "addr:street": "College Hill",
+    "name": "The Worshipful Company of Solicitors of the City of London",
+    "office": "ngo"
+  }
+},
+{
+  "type": "node",
+  "id": 5146185399,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Cannon Bridge House",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC4R 2YA",
+    "addr:street": "Dowgate Hill",
+    "source:addr:postcode": "FSA Food Hygiene Rating Scheme open data"
+  }
+},
+{
+  "type": "node",
+  "id": 5147703991,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "35",
+    "addr:postcode": "EC2R 5EH",
+    "addr:street": "Coleman Street",
+    "amenity": "cafe",
+    "brand": "Black Sheep Coffee",
+    "brand:wikidata": "Q109745011",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "927056",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "internet_access:ssid": "Blacksheep FREE WiFi",
+    "name": "Black Sheep Coffee",
+    "opening_hours": "Mo-We 06:30-19:00; Th-Fr 06:30-22:00",
+    "takeaway": "yes",
+    "website": "https://blacksheepcoffee.co.uk/blogs/locations/coleman-street"
+  }
+},
+{
+  "type": "node",
+  "id": 5161384722,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Tower 42",
+    "addr:housenumber": "15",
+    "addr:postcode": "EC2N 3AR",
+    "addr:street": "Bishopsgate",
+    "addr:unit": "Unit 6",
+    "amenity": "cafe",
+    "brand": "Joe & The Juice",
+    "brand:wikidata": "Q26221514",
+    "brand:wikipedia": "en:Joe & The Juice",
+    "check_date": "2026-01-04",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "1066066",
+    "name": "Joe & The Juice",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5165768021,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Tower 42 International Financial Centre",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC2N 1HQ",
+    "addr:street": "Old Broad Street",
+    "addr:unit": "North Kiosk",
+    "fhrs:id": "294149",
+    "name": "Sweetie Plus",
+    "shop": "newsagent"
+  }
+},
+{
+  "type": "node",
+  "id": 5165768022,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Tower 42 International Financial Centre",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC2N 1HQ",
+    "addr:street": "Old Broad Street",
+    "amenity": "fast_food",
+    "fhrs:id": "1004780",
+    "name": "Vital Ingredient",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5165768023,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "60",
+    "addr:street": "Threadneedle Street"
+  }
+},
+{
+  "type": "node",
+  "id": 5165768121,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Tower 42",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC2N 1HQ",
+    "addr:street": "Old Broad Street",
+    "amenity": "cafe",
+    "fhrs:id": "833708",
+    "name": "Paul in Tower 42",
+    "wheelchair": "yes",
+    "wheelchair:description": "Step-free from pavement. Powered door. WC not checked today"
+  }
+},
+{
+  "type": "node",
+  "id": 5174812336,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "60",
+    "addr:postcode": "EC2M 1JJ",
+    "addr:street": "New Broad Street",
+    "amenity": "clinic",
+    "branch": "New Broad Street",
+    "healthcare": "clinic",
+    "name": "HCA Healthcare Medical Centre",
+    "operator": "Roodlane Medical Limited",
+    "ref:GB:cqc_location": "1-168489797",
+    "was:name": "Roodlane Medical",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5198351003,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "69-71",
+    "addr:postcode": "EC4R 1EE",
+    "addr:street": "Queen Street",
+    "amenity": "restaurant",
+    "branch": "City",
+    "brand": "Homeslice",
+    "brand:wikidata": "Q111528716",
+    "cuisine": "pizza",
+    "delivery": "yes",
+    "email": "city@homeslicepizza.co.uk",
+    "indoor_seating": "yes",
+    "name": "Homeslice",
+    "opening_hours": "Mo-Fr 11:00-23:00; Sa 12:00-23:00; Su 12:00-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+44 20 3034 0381",
+    "reservation": "yes",
+    "takeaway": "yes",
+    "website": "https://www.homeslicepizza.co.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 5198351005,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "22",
+    "addr:postcode": "EC4N 8AR",
+    "addr:street": "Bloomberg Arcade",
+    "amenity": "restaurant",
+    "brand": "Caravan",
+    "brand:wikidata": "Q114771226",
+    "cuisine": "coffee_shop;international",
+    "fhrs:id": "1012587",
+    "name": "Caravan",
+    "not:addr:postcode": "EC4N 4TQ",
+    "opening_hours": "Mo-Fr 07:00-22:30; Sa 10:00-22:30; Su 10:00-16:00",
+    "outdoor_seating": "yes",
+    "phone": "+44 20 3957 5555",
+    "website": "https://www.caravanrestaurants.co.uk/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 5198351009,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "14",
+    "addr:postcode": "EC4N 8AR",
+    "addr:street": "Bloomberg Arcade",
+    "amenity": "fast_food",
+    "brand": "Poke House",
+    "brand:wikidata": "Q123399421",
+    "check_date": "2025-10-22",
+    "check_date:opening_hours": "2025-10-22",
+    "cuisine": "poke",
+    "delivery": "yes",
+    "fhrs:id": "1057017",
+    "name": "Poke House",
+    "opening_hours": "Mo-Fr 11:00-21:00",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5198354565,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "21",
+    "addr:postcode": "EC4N 8AR",
+    "addr:street": "Bloomberg Arcade",
+    "amenity": "restaurant",
+    "check_date": "2025-03-24",
+    "email": "city@vinoteca.co.uk",
+    "fhrs:id": "1004784",
+    "name": "Vinoteca",
+    "opening_hours": "Mo-Fr 07:00-23:00; Sa,Su 10:00-16:00, 17:00-23:00",
+    "phone": "+44 20 3150 1292",
+    "website": "https://www.vinoteca.co.uk/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5198354569,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "16",
+    "addr:postcode": "EC4N 8AR",
+    "addr:street": "Bloomberg Arcade",
+    "amenity": "fast_food",
+    "check_date": "2026-06-11",
+    "cuisine": "burger",
+    "delivery": "yes",
+    "email": "bloomberg@bleecker.co.uk",
+    "fhrs:id": "1012589",
+    "name": "Bleecker",
+    "opening_hours": "Mo-Fr 11:00-22:30; Sa 10:30-21:00; Su 10:00-18:00",
+    "outdoor_seating": "yes",
+    "takeaway": "yes",
+    "website": "https://bleeckerburger.co.uk/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5198354570,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "3",
+    "addr:postcode": "EC4N 4TQ",
+    "addr:street": "Queen Victoria Street",
+    "automatic_door": "motion",
+    "door": "revolving",
+    "entrance": "main",
+    "kerb:height": "35",
+    "name": "Bloomberg",
+    "office": "company",
+    "website": "https://www.bloomberg.com/company/london/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5218910024,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:street": "Guildhall Buildings"
+  }
+},
+{
+  "type": "node",
+  "id": 5231189089,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "10",
+    "addr:postcode": "EC4M 8AL",
+    "addr:street": "St Paul's Churchyard",
+    "amenity": "cafe",
+    "fhrs:id": "975377",
+    "name": "Soho Coffee Co."
+  }
+},
+{
+  "type": "node",
+  "id": 5238500310,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "114",
+    "addr:postcode": "EC2M 5QA",
+    "addr:street": "London Wall",
+    "leisure": "fitness_centre",
+    "name": "Light Centre Moorgate",
+    "operator": "Light Centre",
+    "sport": "yoga;pilates",
+    "website": "http://www.lightcentremoorgate.co.uk"
+  }
+},
+{
+  "type": "node",
+  "id": 5289858642,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "10-12",
+    "addr:postcode": "EC4N 8AR",
+    "addr:street": "Bloomberg Arcade",
+    "amenity": "restaurant",
+    "cuisine": "udon;noodles;japanese",
+    "email": "info@koya.co.uk",
+    "fhrs:id": "1018960",
+    "name": "Koya",
+    "opening_hours": "Mo-Fr 07:00-22:30; Sa 10:00-22:30; Su 10:00-18:00",
+    "website": "https://www.koya.co.uk/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5305357622,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "114",
+    "addr:postcode": "EC4V 4BJ",
+    "addr:street": "Queen Victoria Street",
+    "amenity": "cafe",
+    "fhrs:id": "653535",
+    "name": "The Wren Coffee",
+    "opening_hours": "Mo-We, Fr 07:00-16:30; Th 07:00-10:00, 11:00-12:45, 14:00-16:30",
+    "outdoor_seating": "yes",
+    "website": "http://www.thewrencoffee.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5333988441,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "60",
+    "addr:postcode": "EC3V 1LT",
+    "addr:street": "Leadenhall Market",
+    "name": "Gino d'Acampo",
+    "shop": "deli",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 5333988909,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "59",
+    "addr:street": "Lime Street Passage",
+    "brand": "Timpson",
+    "brand:wikidata": "Q7807658",
+    "brand:wikipedia": "en:Timpson (retailer)",
+    "check_date": "2025-06-06",
+    "level": "0",
+    "name": "Timpson",
+    "opening_hours": "Mo-Fr 08:00-17:30",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "shop": "locksmith",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 5333988910,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "62",
+    "addr:street": "Lime Street Passage",
+    "check_date": "2025-06-06",
+    "craft": "mobile_phone",
+    "level": "0",
+    "name": "CellSmash",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "source": "survey",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 5333989372,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "58-58a",
+    "addr:street": "Lime Street Passage",
+    "brand": "Flying Tiger Copenhagen",
+    "brand:wikidata": "Q2786319",
+    "check_date": "2025-06-06",
+    "level": "0",
+    "name": "Flying Tiger Copenhagen",
+    "opening_hours": "Mo-Fr 11:00-17:00",
+    "shop": "variety_store",
+    "short_name": "Flying Tiger",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5333989373,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "61",
+    "addr:postcode": "EC3V 1LT",
+    "addr:street": "Leadenhall Market",
+    "check_date": "2024-10-26",
+    "disused:amenity": "fast_food",
+    "level": "0",
+    "name": "Rainbo",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5335199669,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "46-47",
+    "addr:postcode": "EC3V 1LT",
+    "addr:street": "Leadenhall Market",
+    "check_date": "2025-06-06",
+    "fhrs:id": "560512",
+    "name": "Kandies",
+    "shop": "newsagent",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 5335199671,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "21",
+    "addr:postcode": "EC3M 7HB",
+    "addr:street": "Lime Street",
+    "amenity": "fast_food",
+    "check_date": "2025-06-17",
+    "cuisine": "mediterranean",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "fhrs:id": "1027869",
+    "name": "Pilpel",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5335200242,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "48-51",
+    "addr:postcode": "EC3V 1LT",
+    "addr:street": "Leadenhall Market",
+    "amenity": "bar",
+    "check_date": "2025-06-06",
+    "fhrs:id": "1498013",
+    "level": "0",
+    "name": "Rocca",
+    "opening_hours": "Mo 08:00-20:00; Tu-Th 08:00-23:00; Fr 09:00-20:00",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5335200244,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "21",
+    "addr:postcode": "EC3M 7HB",
+    "addr:street": "Lime Street",
+    "amenity": "restaurant",
+    "fhrs:id": "1027868",
+    "name": "Badolina",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 5341306609,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "The Prow",
+    "addr:housenumber": "1",
+    "addr:street": "Poultry"
+  }
+},
+{
+  "type": "node",
+  "id": 5344789323,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "43-45",
+    "addr:street": "Bull's Head Passage",
+    "amenity": "cafe",
+    "name": "The Good Yard",
+    "website": "https://www.thegoodyard.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5413211373,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "72-74",
+    "addr:postcode": "EC3V 9AY",
+    "addr:street": "Lombard Street",
+    "amenity": "bar",
+    "fhrs:id": "482071",
+    "name": "Hispania",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5537425023,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "55",
+    "addr:postcode": "EC2N 3AS",
+    "addr:street": "Bishopsgate",
+    "amenity": "bank",
+    "internet_access": "wlan",
+    "name": "Hampshire Trust Bank",
+    "phone": "+44 20 7862 6200",
+    "website": "https://www.htb.co.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 5565387184,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "15",
+    "addr:postcode": "EC2N 3AR",
+    "addr:street": "Bishopsgate",
+    "amenity": "fast_food",
+    "fhrs:id": "1097478",
+    "name": "Scarpetta",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5565387243,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Tower 42 International Financial Centre",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC2N 1HQ",
+    "addr:street": "Old Broad Street",
+    "amenity": "bar",
+    "fhrs:id": "1095469",
+    "name": "Broadleaf",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5661998121,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1-5",
+    "addr:postcode": "EC4N 8AR",
+    "addr:street": "Bloomberg Arcade",
+    "amenity": "restaurant",
+    "check_date": "2024-10-12",
+    "cuisine": "indian;barbecue",
+    "email": "info@brigadierslondon.com",
+    "fhrs:id": "1031795",
+    "indoor_seating": "yes",
+    "name": "Brigadiers",
+    "operator": "JKS Restaurants",
+    "outdoor_seating": "yes",
+    "phone": "+44 20 3319 8140",
+    "website": "https://brigadierslondon.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5661998122,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "2-8",
+    "addr:postcode": "EC4N 8AR",
+    "addr:street": "Bloomberg Arcade",
+    "amenity": "restaurant",
+    "branch": "City",
+    "cuisine": "dumplings;taiwanese",
+    "delivery": "Deliveroo",
+    "fhrs:id": "1761507",
+    "name": "BAO City",
+    "opening_hours": "Mo-Sa 12:00-23:00",
+    "outdoor_seating": "yes",
+    "takeaway": "yes",
+    "website": "https://baolondon.com/restaurant/bao-city/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5681493139,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "28",
+    "addr:postcode": "EC2M 7DT",
+    "addr:street": "Finsbury Circus",
+    "entrance": "main",
+    "name": "FirstBank UK",
+    "office": "yes",
+    "website": "https://www.fbnbank.co.uk/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5686077722,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "31-33",
+    "addr:interpolation": "odd",
+    "addr:postcode": "EC2N 2AT",
+    "addr:street": "Throgmorton Street",
+    "amenity": "restaurant",
+    "fhrs:id": "958282",
+    "name": "Coya",
+    "website": "https://www.coyarestaurant.com/london-angel-court/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5696100032,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "54",
+    "addr:postcode": "EC4M 9DJ",
+    "addr:street": "Bow Lane",
+    "amenity": "fast_food",
+    "contact:facebook": "https://www.facebook.com/burritojoe123/",
+    "contact:instagram": "https://www.instagram.com/burritojoelondon/",
+    "contact:twitter": "https://twitter.com/burrito_joe",
+    "cuisine": "mexican",
+    "email": "burritojoe@hotmail.co.uk",
+    "fhrs:id": "1568297",
+    "name": "Burrito Joe",
+    "opening_hours": "Mo-Fr 10:00-15:30; Sa off; Su off",
+    "phone": "+44 7545 345622",
+    "website": "https://www.burritojoe.co.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 5817850003,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "45",
+    "addr:postcode": "EC2M 5TE",
+    "addr:street": "London Wall",
+    "amenity": "restaurant",
+    "cuisine": "indian",
+    "name": "Post Office (take away)",
+    "outdoor_seating": "no",
+    "takeaway": "only",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5838839085,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "47",
+    "addr:postcode": "EC4R 9AF",
+    "addr:street": "King William Street",
+    "name": "SAP",
+    "office": "company",
+    "phone": "+44 800 085 2631",
+    "website": "https://www.sap.com/uk",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5909919562,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Cannon Green",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC4R 0AT",
+    "addr:street": "Suffolk Lane",
+    "email": "cannonstreetenquiries@gymbox.co.uk",
+    "leisure": "fitness_centre",
+    "name": "Gymbox",
+    "opening_hours": "Mo-Fr 06:00-23:00; Sa-Su 10:00-18:00",
+    "phone": "+44 20 3955 7660",
+    "website": "https://gymbox.com"
+  }
+},
+{
+  "type": "node",
+  "id": 5927671180,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "125",
+    "addr:postcode": "EC2Y 5AS",
+    "addr:street": "London Wall",
+    "disused:amenity": "restaurant",
+    "level": "1",
+    "old_name": "Jamies Bar & Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 5927671181,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "2",
+    "addr:postcode": "EC2Y 5AP",
+    "addr:street": "Bastion Highwalk",
+    "check_date": "2022-11-19",
+    "disused:amenity": "cafe",
+    "fhrs:id": "1038405",
+    "level": "1",
+    "name": "Gallery Cafe",
+    "not:addr:postcode": "EC2Y 5AS"
+  }
+},
+{
+  "type": "node",
+  "id": 5927671182,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "3",
+    "addr:postcode": "EC2Y 5AP",
+    "addr:street": "Bastion Highwalk",
+    "disused:amenity": "pub",
+    "level": "1",
+    "old_name": "City Boot",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "node",
+  "id": 5927671183,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 5AP",
+    "addr:street": "Bastion Highwalk",
+    "check_date": "2024-07-02",
+    "disused:shop": "newsagent",
+    "fhrs:id": "295294",
+    "level": "1",
+    "name": "City News"
+  }
+},
+{
+  "type": "node",
+  "id": 5938625415,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 9AW",
+    "addr:street": "Ropemaker Street",
+    "addr:unit": "Retail Unit 2b",
+    "amenity": "restaurant",
+    "name": "Spagbowl"
+  }
+},
+{
+  "type": "node",
+  "id": 5938625417,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "City Point",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC2Y 9AW",
+    "addr:street": "Ropemaker Street",
+    "amenity": "bar",
+    "fhrs:id": "1105121",
+    "name": "The Refinery",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6016798685,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "45",
+    "addr:postcode": "EC4M 5SB",
+    "addr:street": "Cannon Street",
+    "amenity": "fast_food",
+    "brand": "Shake Shack",
+    "brand:wikidata": "Q1058722",
+    "brand:wikipedia": "en:Shake Shack",
+    "contact:website": "https://www.shakeshack.co.uk/locations/mansion-house/",
+    "cuisine": "burger",
+    "fhrs:id": "1072965",
+    "name": "Shake Shack",
+    "opening_hours": "Mo-Su 11:00-23:00; Th-Sa 11:00-23:30",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6142562733,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "4",
+    "addr:postcode": "EC3V 9AZ",
+    "addr:street": "Change Alley",
+    "amenity": "restaurant",
+    "contact:phone": "+44 20 4542 5760",
+    "contact:website": "https://www.honestburgers.co.uk/locations/bank/",
+    "cuisine": "burger",
+    "fhrs:id": "872175",
+    "name": "Honest Burger",
+    "opening_hours": "Mo-Sa 11:00-23:00",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6149944924,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Tower 42, 5th Floor",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC2N 1HN",
+    "addr:street": "Old Broad Street",
+    "email": "info@physicalgold.com",
+    "name": "Physical Gold",
+    "office": "financial",
+    "phone": "+44 20 7060 9992",
+    "website": "https://www.physicalgold.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 6294631704,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Riverscape",
+    "addr:housenumber": "10",
+    "addr:street": "Queen Street Place"
+  }
+},
+{
+  "type": "node",
+  "id": 6364948068,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "20",
+    "addr:postcode": "EC2V 7BB",
+    "addr:street": "Gresham Street",
+    "description": "Holding Company",
+    "name": "ROKITA GROUP INC.",
+    "source": "local knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 6366050131,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "24",
+    "addr:postcode": "EC4R 9AT",
+    "addr:street": "King William Street",
+    "amenity": "fast_food",
+    "fhrs:id": "1097489",
+    "indoor_seating": "yes",
+    "name": "Farmer J",
+    "outdoor_seating": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 6366051000,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Squarebrook",
+    "addr:housenumber": "24",
+    "addr:street": "King William Street",
+    "check_date": "2024-07-13",
+    "name": "24 King William Street",
+    "office": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6366051094,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "24",
+    "addr:postcode": "EC4R 9AT",
+    "addr:street": "King William Street",
+    "amenity": "fast_food",
+    "fhrs:id": "1101367",
+    "indoor_seating": "yes",
+    "name": "Spianata Bakery",
+    "outdoor_seating": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 6512138841,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "16-18",
+    "addr:street": "Monument Street"
+  }
+},
+{
+  "type": "node",
+  "id": 6558486186,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "10-12",
+    "addr:postcode": "EC3V 1LR",
+    "addr:street": "Leadenhall Market",
+    "amenity": "bar",
+    "name": "Old Toms Bar",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6679924186,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "27",
+    "addr:postcode": "EC2R 8AJ",
+    "addr:street": "Poultry",
+    "amenity": "restaurant",
+    "check_date": "2023-03-12",
+    "name": "The Ned",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 6802989524,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "1A",
+    "addr:postcode": "EC2R 7HJ",
+    "addr:street": "Angel Court",
+    "amenity": "restaurant",
+    "fhrs:id": "952108",
+    "name": "Natural Kitchen",
+    "reservation": "recommended",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6802993456,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "11",
+    "addr:postcode": "EC2R 7AR",
+    "addr:street": "Telegraph Street",
+    "amenity": "pub",
+    "brand": "Fuller's",
+    "brand:wikidata": "Q5253950",
+    "fhrs:id": "295266",
+    "live_sport": "yes",
+    "name": "The Telegraph",
+    "website": "https://www.telegraphmoorgate.co.uk/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6804141556,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "17",
+    "addr:postcode": "EC2R 6AR",
+    "addr:street": "Moorgate",
+    "addr:unit": "Retail Unit",
+    "brand": "Co-op Food",
+    "brand:wikidata": "Q3277439",
+    "brand:wikipedia": "en:Co-op Food",
+    "check_date": "2024-07-15",
+    "fhrs:id": "1222548",
+    "name": "Co-op On The Go",
+    "opening_hours": "Mo-Fr 07:00-22:00; Sa,Su 08:00-20:00",
+    "operator": "The Co-operative Group",
+    "operator:wikidata": "Q117202",
+    "shop": "convenience",
+    "website": "https://www.coop.co.uk/store-finder/EC2R-6AR/17-moorgate"
+  }
+},
+{
+  "type": "node",
+  "id": 6875761529,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "12",
+    "addr:postcode": "EC1A 4EN",
+    "addr:street": "St. Martin's Le Grand",
+    "check_date": "2022-02-20",
+    "note": "These two units were previously occupied by Maplin but are now (as of 2021) being marketed as units for A1/A3 use.",
+    "shop": "vacant"
+  }
+},
+{
+  "type": "node",
+  "id": 6875761530,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "10",
+    "addr:postcode": "EC1A 4EN",
+    "addr:street": "St. Martin's Le Grand",
+    "amenity": "fast_food",
+    "brand": "Coco di Mama",
+    "brand:wikidata": "Q118146052",
+    "check_date": "2026-09-07",
+    "cuisine": "italian",
+    "fhrs:id": "1228602",
+    "name": "Coco di Mama",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6875761531,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "12",
+    "addr:postcode": "EC1A 4EN",
+    "addr:street": "St. Martin's Le Grand",
+    "amenity": "restaurant",
+    "cuisine": "sushi",
+    "indoor_seating": "yes",
+    "name": "rolled",
+    "note": "These two units were previously occupied by Maplin but are now (as of 2021) being marketed as units for A1/A3 use.",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6966040417,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "4th Floor, Cannon Bridge House",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC4R 2YA",
+    "addr:street": "Dowgate Hill",
+    "air_conditioning": "yes",
+    "email": "enquire@heritagefund.org.uk",
+    "government": "public_service",
+    "level": "4",
+    "name": "The National Lottery Heritage Fund",
+    "office": "quango",
+    "opening_hours": "Mo-Fr 09:00-17:00",
+    "toilets:wheelchair": "designated",
+    "website": "https://www.heritagefund.org.uk/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6976586585,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "30",
+    "addr:postcode": "EC2V 7PG",
+    "addr:street": "Gresham Street",
+    "email": "gresham@bespokecycling.com",
+    "name": "Bespoke Cycling",
+    "opening_hours": "Mo-Fr 08:00-19:00; Sa 10:00-18:00",
+    "phone": "+44 20 7796 1263",
+    "shop": "bicycle",
+    "website": "https://www.bespokecycling.com"
+  }
+},
+{
+  "type": "node",
+  "id": 6976603085,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "30",
+    "addr:postcode": "EC2V 7PG",
+    "addr:street": "Gresham Street",
+    "amenity": "cafe",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "1097483",
+    "internet_access": "wlan",
+    "name": "V69 Coffee",
+    "opening_hours": "Mo-Fr 08:00-16:00",
+    "website": "http://v69coffee.com"
+  }
+},
+{
+  "type": "node",
+  "id": 6977910185,
+  "tags": {
+    "addr:city": "London",
+    "addr:housenumber": "200",
+    "addr:postcode": "EC1A 4HD",
+    "addr:street": "Aldersgate Street",
+    "amenity": "cafe",
+    "cuisine": "coffee_shop",
+    "fhrs:id": "1035143",
+    "name": "Giddy Up Coffee",
+    "opening_hours": "Mo-Fr 07:00-16:00"
+  }
+},
+{
+  "type": "node",
+  "id": 6992533995,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Thames Court",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC4V 3RL",
+    "addr:street": "Queenhithe",
+    "name": "Rabobank",
+    "office": "company"
+  }
+},
+{
+  "type": "node",
+  "id": 6992533996,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Thames Court",
+    "addr:housenumber": "1",
+    "addr:postcode": "EC4V 3DQ",
+    "addr:street": "Queenhithe",
+    "name": "RBC",
+    "office": "company"
+  }
+},
+{
+  "type": "node",
+  "id": 6992539851,
+  "tags": {
+    "addr:city": "London",
+    "addr:housename": "Cannon Bridge House",
+    "addr:housenumber": "25",
+    "addr:postcode": "EC4R 2YA",
+    "addr:street": "Dowgate Hill",
+    "name": "IG",
+    "office": "company"
+  }
+}
+
+  ]
+}

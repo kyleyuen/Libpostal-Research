@@ -1,0 +1,30 @@
+--- address_parser.c.orig	2026-09-29 19:10:07
++++ address_parser.c	2026-09-29 19:10:07
+@@ -1086,6 +1086,10 @@
+ 
+ */
+ 
++#ifdef EXP_DIRECT_KEYS
++extern int crf_features_accumulate;   // defined in crf.c
++#endif
++
+ bool address_parser_features(void *self, void *ctx, tokenized_string_t *tokenized, uint32_t idx) {
+     if (self == NULL || ctx == NULL) return false;
+ 
+@@ -1108,9 +1112,16 @@
+ 
+     uint32_array *separators = context->separators;
+ 
++#ifdef EXP_DIRECT_KEYS
++    // crf_tagger_score accumulates every token's features in these arrays (no per-token copy) and clears them itself.
++    if (!crf_features_accumulate) {
++#endif
+     cstring_array_clear(features);
+     cstring_array_clear(prev_tag_features);
+     cstring_array_clear(prev2_tag_features);
++#ifdef EXP_DIRECT_KEYS
++    }
++#endif
+ 
+     token_array *tokens = tokenized->tokens;
+ 

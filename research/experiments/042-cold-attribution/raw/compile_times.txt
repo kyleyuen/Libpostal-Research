@@ -1,0 +1,4 @@
+dupl_gen: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 8s
+dupl: clang lib -O2 -flto scanner -O1 link -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o: 7s
+nnz: clang lib -O2 scanner -O1 link  : 6s
+nnz: clang lib -O2 scanner -O1 link  : 5s

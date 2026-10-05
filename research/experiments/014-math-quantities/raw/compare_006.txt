@@ -1,0 +1,10 @@
+006 sha256: 636ee2300b35b15331d9c780ab6e74f011a7e54c9c4ac069fcd540bc61798243
+014 sha256 (uncompressed): 636ee2300b35b15331d9c780ab6e74f011a7e54c9c4ac069fcd540bc61798243
+IDENTICAL: 014 regenerated dump == 006 dev_features.tsv
+negative control (one byte changed in a copy of the 014 stream):
+negative rc=0
+negative control v1 was INVALID: sed '100s/bias/biaz/' matched nothing (line 100 has no 'bias'), so the stream was unchanged and cmp correctly passed; kept for the record.
+negative control v2 (line 1 is 'S 0 0 bias'):
+S	0	0	bias
+stdin ../006-feature-dict/raw/dev_features.tsv differ: char 10, line 1
+negative v2 rc=1 (nonzero = check can fail)

@@ -1,0 +1,25 @@
+185a186,203
+> #ifdef EXP_PHRASE_UNITS
+> // 149 (REWRITE_PLAN M3/R1): ids for strings that occur as a part of a model bigram key but are not vocabulary words (mostly phrases).
+> // Model-derived at load (crf_int_keys_enable); ids start at the vocabulary dictionary size, so they never collide with vocabulary slots.
+> // Used only for pair (arity 2) keys, at load and at parse time alike, so a pair key is integer-routed iff both parts have an id.
+> typedef struct { uint32_t *off, *len, *id; char *arena; uint64_t mask; uint32_t n; } fd_pu_t;
+> extern fd_pu_t fd_pu;
+> static inline uint64_t fd_pu_hash(const char *s, size_t n) { uint64_t h = 1469598103934665603ULL; for (size_t i = 0; i < n; i++) { h ^= (uint8_t)s[i]; h *= 1099511628211ULL; } return h ^ (h >> 29); }
+> static inline uint32_t fd_pu_get(const char *s, size_t n) {
+>     if (fd_pu.off == NULL || n == 0) return FDI_NONE;
+>     for (uint64_t i = fd_pu_hash(s, n) & fd_pu.mask;; i = (i + 1) & fd_pu.mask) {
+>         uint32_t o = fd_pu.off[i]; if (o == 0) return FDI_NONE;
+>         if (fd_pu.len[i] == n && memcmp(fd_pu.arena + o - 1, s, n) == 0) return fd_pu.id[i];
+>     }
+> }
+> static inline uint32_t fd_pair_unit(const feature_dict_t *vocab, const char *s, size_t n) { uint32_t c = fd_canon(vocab, s, n); return c != FDI_NONE ? c : fd_pu_get(s, n); }
+> #else
+> static inline uint32_t fd_pair_unit(const feature_dict_t *vocab, const char *s, size_t n) { return fd_canon(vocab, s, n); }
+> #endif
+199,200c217,218
+<     uint32_t c1 = fd_canon(d->vocab, rest, l1); if (c1 == FDI_NONE) return false;
+<     uint32_t c2 = fd_canon(d->vocab, p2, l2); if (c2 == FDI_NONE) return false;
+---
+>     uint32_t c1 = fd_pair_unit(d->vocab, rest, l1); if (c1 == FDI_NONE) return false;
+>     uint32_t c2 = fd_pair_unit(d->vocab, p2, l2); if (c2 == FDI_NONE) return false;

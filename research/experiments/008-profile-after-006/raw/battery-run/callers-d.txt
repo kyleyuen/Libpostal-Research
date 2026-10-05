@@ -1,0 +1,54 @@
+
+== _platform_memmove: exclusive 11.1% of samples; by caller:
+    3.22%  char_array_add_vjoined
+    2.52%  crf_key_batch_add_token
+    1.06%  crf_key_batch_lookup_dict
+    0.94%  xzm_realloc
+    0.71%  fd_split
+    0.70%  char_array_append
+    0.30%  char_array_cat_len
+    0.29%  cstring_array_to_strings
+
+== _platform_strlen: exclusive 4.1% of samples; by caller:
+    1.79%  char_array_add_vjoined
+    0.88%  crf_key_batch_add_token
+    0.27%  char_array_append
+    0.21%  trie_get_from_index
+    0.15%  address_parser_features
+    0.15%  address_parser_context_fill
+    0.13%  cstring_array_add_string
+    0.13%  address_parser_parse
+
+== _platform_memcmp: exclusive 2.1% of samples; by caller:
+    1.63%  crf_key_batch_lookup_dict
+    0.44%  fd_split
+
+== _platform_memchr: exclusive 1.0% of samples; by caller:
+    0.98%  fd_split
+
+== _platform_strncmp$VARIANT$Base: exclusive 2.5% of samples; by caller:
+    1.14%  trie_get_from_index
+    0.86%  trie_search_tokens_from_index
+    0.38%  char_array_add_vjoined
+    0.07%  trie_search_suffixes_from_index
+
+== _platform_memset: exclusive 1.9% of samples; by caller:
+    1.25%  crf_context_set_num_items
+    0.57%  _xzm_free
+    0.03%  address_parser_context_fill
+
+== line-level exclusive inside crf_tagger_score:
+   13.21%  crf.c:287
+    0.00%  crf.c:278
+
+== line-level exclusive inside trie_search_tokens_from_index:
+    2.88%  trie_search.c:283
+    2.23%  trie_search.c:0
+    2.09%  trie_search.c:288
+    0.48%  trie_search.c:285
+    0.38%  trie_search.c:266
+    0.20%  trie_search.c:385
+    0.16%  trie_search.c:270
+    0.14%  trie_search.c:437
+    0.10%  trie_search.c:334
+    0.07%  trie_search.c:256

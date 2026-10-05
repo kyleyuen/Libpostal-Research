@@ -1,0 +1,12 @@
++ src=/out/source/src
++ dest=/out/artifacts/candidate_mi3
++ test '!' -e /out/artifacts/candidate_mi3/build.complete
++ mkdir -p /out/artifacts/candidate_mi3
++ cp /out/artifacts/candidate/libpostal.a /out/artifacts/candidate_mi3/libpostal.a
++ obj=/out/mimalloc-build/mimalloc.o
++ test -s /out/mimalloc-build/mimalloc.o
++ clang -O2 -g -iquote /out/source/src /out/mimalloc-build/mimalloc.o /workspace/research/experiments/003-batched-lookups/tools/dump_outputs.c /out/artifacts/candidate_mi3/libpostal.a -lm -pthread -o /out/artifacts/candidate_mi3/dump_outputs
++ clang -O2 -g -iquote /out/source/src /out/mimalloc-build/mimalloc.o /out/bench_ext_linux.c /out/artifacts/candidate_mi3/libpostal.a -lm -pthread -o /out/artifacts/candidate_mi3/bench_ext
++ sha256sum /out/mimalloc-build/mimalloc.o /out/artifacts/candidate_mi3/libpostal.a /out/artifacts/candidate_mi3/dump_outputs /out/artifacts/candidate_mi3/bench_ext
++ printf '%s\n' 'source=021 l4 Linux candidate archive' 'allocator=mimalloc 3.5.3 static override object, clang Release build' 'link=-O2 -g -pthread -lm'
++ date -Is

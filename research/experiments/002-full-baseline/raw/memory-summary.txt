@@ -1,0 +1,24 @@
+### all
+t=0s phase=load                        footprint=    47 MB dirty/clean/reclaim TOTAL=('47 MB', '160 KB', '0 B') MALLOC_LARGE=30 MB; MALLOC_SMALL=16 MB; __DATA_DIRTY=132 KB
+t=2s phase=load                        footprint=  2282 MB dirty/clean/reclaim TOTAL=('2282 MB', '208 KB', '0 B') MALLOC_LARGE=2222 MB; MALLOC_SMALL=58 MB; __DATA_DIRTY=132 KB
+after_READY=1s phase=steady            footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1696 KB', '0 B') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+after_READY=3s phase=steady            footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1696 KB', '0 B') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+after_READY=6s phase=steady            footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1696 KB', '0 B') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+after_READY=10s phase=steady           footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1696 KB', '0 B') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+after_READY=15s phase=steady           footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1696 KB', '0 B') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+after_READY=20s phase=steady           footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1696 KB', '0 B') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+after_READY=25s phase=steady           footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1696 KB', '0 B') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+after_READY=30s phase=steady           footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1696 KB', '0 B') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+exit=0 | addresses=1106218 wall_seconds=40.066591 cpu_seconds=38.562731 addresses_per_second=27609.49 us_per_address=36.22 peak_rss_bytes=2305310720 components=4733182
+### development
+t=0s phase=load                        footprint=    21 MB dirty/clean/reclaim TOTAL=('21 MB', '144 KB', '0 B') MALLOC_LARGE=16 MB; MALLOC_SMALL=4320 KB; __DATA_DIRTY=132 KB
+t=2s phase=load                        footprint=  2316 MB dirty/clean/reclaim TOTAL=('2316 MB', '208 KB', '0 B') MALLOC_LARGE=2256 MB; MALLOC_SMALL=57 MB; __DATA_DIRTY=132 KB
+after_READY=1s phase=steady            footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1680 KB', '1344 KB') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+after_READY=3s phase=steady            footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1680 KB', '1344 KB') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+after_READY=6s phase=steady            footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1680 KB', '1344 KB') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+after_READY=10s phase=steady           footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1680 KB', '1344 KB') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+after_READY=15s phase=steady           footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1680 KB', '1344 KB') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+after_READY=20s phase=steady           footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1680 KB', '1344 KB') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+after_READY=25s phase=steady           footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1680 KB', '1344 KB') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+after_READY=30s phase=steady           footprint=  2172 MB dirty/clean/reclaim TOTAL=('2172 MB', '1680 KB', '1344 KB') MALLOC_LARGE=2110 MB; MALLOC_SMALL=59 MB; __DATA_DIRTY=132 KB
+exit=0 | addresses=1154496 wall_seconds=40.078251 cpu_seconds=39.163413 addresses_per_second=28806.05 us_per_address=34.71 peak_rss_bytes=2613641216 components=4942784

@@ -1,0 +1,48 @@
+2026-10-03T22:36:14-0700 START dump_orig: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/017-loadtime-precompute/artifacts/dump_outputs_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.txt
+2026-10-03T22:36:17-0700 END dump_orig exit=0
+2026-10-03T22:36:17-0700 START dump_vmx: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/091-viterbi-maxonly/artifacts/vmx/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.txt
+2026-10-03T22:36:27-0700 END dump_vmx exit=0
+2026-10-03T22:36:27-0700 START dump_npr: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/098-norm-pair/artifacts/npr/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.txt
+2026-10-03T22:36:37-0700 END dump_npr exit=0
+2026-10-03T22:36:37-0700 START dump_psf: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/101-prefix-suffix-flags/artifacts/psf/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.txt
+2026-10-03T22:36:47-0700 END dump_psf exit=0
+2026-10-03T22:36:47-0700 START timing/u_r1_vmx: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/091-viterbi-maxonly/artifacts/vmx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:36:57-0700 END timing/u_r1_vmx exit=0
+2026-10-03T22:36:59-0700 START timing/u_r1_npr: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/098-norm-pair/artifacts/npr/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:37:10-0700 END timing/u_r1_npr exit=0
+2026-10-03T22:37:12-0700 START timing/u_r1_psf: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/101-prefix-suffix-flags/artifacts/psf/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:37:22-0700 END timing/u_r1_psf exit=0
+2026-10-03T22:37:25-0700 START timing/u_r1_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:37:31-0700 END timing/u_r1_orig exit=0
+2026-10-03T22:37:34-0700 START timing/u_r2_npr: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/098-norm-pair/artifacts/npr/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:37:44-0700 END timing/u_r2_npr exit=0
+2026-10-03T22:37:46-0700 START timing/u_r2_psf: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/101-prefix-suffix-flags/artifacts/psf/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:37:57-0700 END timing/u_r2_psf exit=0
+2026-10-03T22:37:59-0700 START timing/u_r2_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:38:06-0700 END timing/u_r2_orig exit=0
+2026-10-03T22:38:08-0700 START timing/u_r2_vmx: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/091-viterbi-maxonly/artifacts/vmx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:38:18-0700 END timing/u_r2_vmx exit=0
+2026-10-03T22:38:20-0700 START timing/u_r3_psf: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/101-prefix-suffix-flags/artifacts/psf/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:38:31-0700 END timing/u_r3_psf exit=0
+2026-10-03T22:38:33-0700 START timing/u_r3_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:38:40-0700 END timing/u_r3_orig exit=0
+2026-10-03T22:38:42-0700 START timing/u_r3_vmx: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/091-viterbi-maxonly/artifacts/vmx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:38:52-0700 END timing/u_r3_vmx exit=0
+2026-10-03T22:38:54-0700 START timing/u_r3_npr: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/098-norm-pair/artifacts/npr/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:39:05-0700 END timing/u_r3_npr exit=0
+2026-10-03T22:39:07-0700 START timing/u_r4_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:39:13-0700 END timing/u_r4_orig exit=0
+2026-10-03T22:39:16-0700 START timing/u_r4_vmx: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/091-viterbi-maxonly/artifacts/vmx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:39:26-0700 END timing/u_r4_vmx exit=0
+2026-10-03T22:39:28-0700 START timing/u_r4_npr: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/098-norm-pair/artifacts/npr/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:39:38-0700 END timing/u_r4_npr exit=0
+2026-10-03T22:39:41-0700 START timing/u_r4_psf: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/101-prefix-suffix-flags/artifacts/psf/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:39:51-0700 END timing/u_r4_psf exit=0
+2026-10-03T22:39:53-0700 START timing/u_r5_vmx: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/091-viterbi-maxonly/artifacts/vmx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:40:04-0700 END timing/u_r5_vmx exit=0
+2026-10-03T22:40:06-0700 START timing/u_r5_npr: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/098-norm-pair/artifacts/npr/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:40:16-0700 END timing/u_r5_npr exit=0
+2026-10-03T22:40:18-0700 START timing/u_r5_psf: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/101-prefix-suffix-flags/artifacts/psf/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:40:29-0700 END timing/u_r5_psf exit=0
+2026-10-03T22:40:31-0700 START timing/u_r5_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv 20
+2026-10-03T22:40:38-0700 END timing/u_r5_orig exit=0

@@ -1,0 +1,10 @@
+# 2026-10-04T21:46:51-0700 EXTRA_SW="$(cat raw/switches_r1a.txt)" tools/build_cc.sh r1a clang llvm "-O2 -flto" "-O1" "-flto" mimalloc.o
+# 2026-10-04T21:51:43-0700 EXTRA_SW="$(cat raw/switches_r1.txt)" tools/build_cc.sh r1 clang llvm "-O2 -flto" "-O1" "-flto" mimalloc.o
+# 2026-10-04T21:52:59-0700 tools/verify.sh r1a
+# 2026-10-04T21:53:35-0700 tools/verify.sh r1
+# 2026-10-04T21:54:25-0700 r1 dumps on unseen v5-v11 vs original dump_orig (4 at a time)
+# 2026-10-04T21:54:55-0700 tools/verify_unseen.sh r1
+# 2026-10-04T21:55:31-0700 tools/verify_unseen.sh r1a
+# 2026-10-04T21:56:14-0700 EXTRA_SW="$(cat raw/switches_r1as.txt)" tools/build_cc.sh r1as ...; link bench_split
+# 2026-10-04T21:57:10-0700 EXTRA_SW="$(cat raw/switches_r1s.txt)" tools/build_cc.sh r1s ...; link bench_split
+# 2026-10-04T21:58:30-0700 tools/screen_split.sh (background)

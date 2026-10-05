@@ -1,0 +1,26 @@
+-- The C compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/homebrew/bin/x86_64-w64-mingw32-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found Git: /opt/homebrew/bin/git (found version "2.51.0")
+-- 
+-- Architecture:  (64 bit)
+-- Override standard malloc (MI_OVERRIDE=ON)
+-- Disable assertion checks (MI_DEBUG=OFF)
+-- Enable detailed statistics (MI_STATS=ON)
+-- Enable sampled profiling (MI_PROFILE=ON)
+-- 
+-- Library name     : mimalloc
+-- Version          : 3.5.3
+-- Build type       : release
+-- C Compiler       : /opt/homebrew/bin/x86_64-w64-mingw32-gcc
+-- Compiler flags   : -Wall;-Wextra;-Wno-unknown-pragmas;-fvisibility=hidden;-Wstrict-prototypes;-ftls-model=initial-exec;-fno-builtin-malloc
+-- Compiler defines : MI_WIN_NOREDIRECT=1;NDEBUG=1;MI_GUARDED=0;MI_STATS=1;MI_PROFILE=1;MI_CMAKE_BUILD_TYPE=release;MI_BUILD_RELEASE
+-- Link libraries   : psapi;shell32;user32;advapi32;bcrypt
+-- Build targets    : static;object
+-- 
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/026-cross-platform/windows/mimalloc-build

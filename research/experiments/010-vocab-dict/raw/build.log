@@ -1,0 +1,642 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/crf.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/crf.h:20:
+In file included from ./crf_context.h:20:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/trie.c:1074:13: warning: unused variable 'base' [-Wunused-variable]
+ 1074 |     int32_t base;
+      |             ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/trie.c:1075:13: warning: unused variable 'check' [-Wunused-variable]
+ 1075 |     int32_t check;
+      |             ^~~~~
+2 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/string_utils.c:116:17: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  116 |     for (size_t count = 0; (temp = strstr(start, replace)); count++) {
+      |                 ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/string_utils.c:193:18: warning: variable 'remaining' set but not used [-Wunused-but-set-variable]
+  193 |     ssize_t len, remaining;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/string_utils.c:384:13: warning: unused variable 'num_utf8_chars' [-Wunused-variable]
+  384 |     ssize_t num_utf8_chars = 0;
+      |             ^~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/string_utils.c:521:12: warning: unused variable 'remaining' [-Wunused-variable]
+  521 |     size_t remaining = len;
+      |            ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/string_utils.c:687:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  687 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/string_utils.c:713:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  713 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/string_utils.c:876:13: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  876 |     ssize_t index = 0;
+      |             ^
+7 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1:
+In file included from ./address_parser.h:52:
+In file included from ./averaged_perceptron.h:27:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:374:10: warning: unused variable 'has_key' [-Wunused-variable]
+  374 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:715:14: warning: unused variable 'phrase' [-Wunused-variable]
+  715 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:787:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+  787 |     bool have_address_phrases = search_address_dictionaries_tokens_with_phrases(normalized_str, normalized_tokens, NULL, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:823:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+  823 |     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:841:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+  841 |     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:950:13: warning: unused variable 'token' [-Wunused-variable]
+  950 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:998:13: warning: unused variable 'membership' [-Wunused-variable]
+  998 |     int64_t membership;
+      |             ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1026:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1026 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1319:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 1319 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1321:18: warning: unused variable 'k' [-Wunused-variable]
+ 1321 |         khiter_t k;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1420:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable]
+ 1420 |             bool ngrams_added = false;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1604:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 1604 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1610:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 1610 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1611:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 1611 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1546:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable]
+ 1546 |         size_t next_word_len = 1;
+      |                ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1127:11: warning: unused variable 'language' [-Wunused-variable]
+ 1127 |     char *language = context->language;
+      |           ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1128:11: warning: unused variable 'country' [-Wunused-variable]
+ 1128 |     char *country = context->country;
+      |           ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1138:19: warning: unused variable 'separators' [-Wunused-variable]
+ 1138 |     uint32_array *separators = context->separators;
+      |                   ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1362:10: warning: variable 'is_unknown' set but not used [-Wunused-but-set-variable]
+ 1362 |     bool is_unknown = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1364:10: warning: variable 'known_prefix' set but not used [-Wunused-but-set-variable]
+ 1364 |     bool known_prefix = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/f0/src/address_parser.c:1365:10: warning: variable 'known_suffix' set but not used [-Wunused-but-set-variable]
+ 1365 |     bool known_suffix = false;
+      |          ^
+22 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/crf.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/crf.h:20:
+In file included from ./crf_context.h:20:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/trie.c:1074:13: warning: unused variable 'base' [-Wunused-variable]
+ 1074 |     int32_t base;
+      |             ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/trie.c:1075:13: warning: unused variable 'check' [-Wunused-variable]
+ 1075 |     int32_t check;
+      |             ^~~~~
+2 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/string_utils.c:116:17: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  116 |     for (size_t count = 0; (temp = strstr(start, replace)); count++) {
+      |                 ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/string_utils.c:193:18: warning: variable 'remaining' set but not used [-Wunused-but-set-variable]
+  193 |     ssize_t len, remaining;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/string_utils.c:384:13: warning: unused variable 'num_utf8_chars' [-Wunused-variable]
+  384 |     ssize_t num_utf8_chars = 0;
+      |             ^~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/string_utils.c:521:12: warning: unused variable 'remaining' [-Wunused-variable]
+  521 |     size_t remaining = len;
+      |            ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/string_utils.c:687:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  687 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/string_utils.c:713:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  713 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/string_utils.c:876:13: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  876 |     ssize_t index = 0;
+      |             ^
+7 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1:
+In file included from ./address_parser.h:52:
+In file included from ./averaged_perceptron.h:27:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:374:10: warning: unused variable 'has_key' [-Wunused-variable]
+  374 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:715:14: warning: unused variable 'phrase' [-Wunused-variable]
+  715 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:787:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+  787 |     bool have_address_phrases = search_address_dictionaries_tokens_with_phrases(normalized_str, normalized_tokens, NULL, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:823:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+  823 |     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:841:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+  841 |     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:950:13: warning: unused variable 'token' [-Wunused-variable]
+  950 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:998:13: warning: unused variable 'membership' [-Wunused-variable]
+  998 |     int64_t membership;
+      |             ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1026:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1026 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1319:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 1319 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1321:18: warning: unused variable 'k' [-Wunused-variable]
+ 1321 |         khiter_t k;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1420:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable]
+ 1420 |             bool ngrams_added = false;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1604:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 1604 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1610:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 1610 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1611:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 1611 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1546:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable]
+ 1546 |         size_t next_word_len = 1;
+      |                ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1127:11: warning: unused variable 'language' [-Wunused-variable]
+ 1127 |     char *language = context->language;
+      |           ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1128:11: warning: unused variable 'country' [-Wunused-variable]
+ 1128 |     char *country = context->country;
+      |           ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1138:19: warning: unused variable 'separators' [-Wunused-variable]
+ 1138 |     uint32_array *separators = context->separators;
+      |                   ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1362:10: warning: variable 'is_unknown' set but not used [-Wunused-but-set-variable]
+ 1362 |     bool is_unknown = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1364:10: warning: variable 'known_prefix' set but not used [-Wunused-but-set-variable]
+ 1364 |     bool known_prefix = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fJ/src/address_parser.c:1365:10: warning: variable 'known_suffix' set but not used [-Wunused-but-set-variable]
+ 1365 |     bool known_suffix = false;
+      |          ^
+22 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/crf.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/crf.h:20:
+In file included from ./crf_context.h:20:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/trie.c:1074:13: warning: unused variable 'base' [-Wunused-variable]
+ 1074 |     int32_t base;
+      |             ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/trie.c:1075:13: warning: unused variable 'check' [-Wunused-variable]
+ 1075 |     int32_t check;
+      |             ^~~~~
+2 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/string_utils.c:116:17: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  116 |     for (size_t count = 0; (temp = strstr(start, replace)); count++) {
+      |                 ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/string_utils.c:193:18: warning: variable 'remaining' set but not used [-Wunused-but-set-variable]
+  193 |     ssize_t len, remaining;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/string_utils.c:384:13: warning: unused variable 'num_utf8_chars' [-Wunused-variable]
+  384 |     ssize_t num_utf8_chars = 0;
+      |             ^~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/string_utils.c:521:12: warning: unused variable 'remaining' [-Wunused-variable]
+  521 |     size_t remaining = len;
+      |            ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/string_utils.c:687:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  687 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/string_utils.c:713:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  713 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/string_utils.c:876:13: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  876 |     ssize_t index = 0;
+      |             ^
+7 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1:
+In file included from ./address_parser.h:52:
+In file included from ./averaged_perceptron.h:27:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:374:10: warning: unused variable 'has_key' [-Wunused-variable]
+  374 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:715:14: warning: unused variable 'phrase' [-Wunused-variable]
+  715 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:787:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+  787 |     bool have_address_phrases = search_address_dictionaries_tokens_with_phrases(normalized_str, normalized_tokens, NULL, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:823:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+  823 |     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:841:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+  841 |     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:950:13: warning: unused variable 'token' [-Wunused-variable]
+  950 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:998:13: warning: unused variable 'membership' [-Wunused-variable]
+  998 |     int64_t membership;
+      |             ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1026:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1026 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1319:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 1319 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1321:18: warning: unused variable 'k' [-Wunused-variable]
+ 1321 |         khiter_t k;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1420:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable]
+ 1420 |             bool ngrams_added = false;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1604:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 1604 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1610:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 1610 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1611:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 1611 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1546:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable]
+ 1546 |         size_t next_word_len = 1;
+      |                ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1127:11: warning: unused variable 'language' [-Wunused-variable]
+ 1127 |     char *language = context->language;
+      |           ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1128:11: warning: unused variable 'country' [-Wunused-variable]
+ 1128 |     char *country = context->country;
+      |           ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1138:19: warning: unused variable 'separators' [-Wunused-variable]
+ 1138 |     uint32_array *separators = context->separators;
+      |                   ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1362:10: warning: variable 'is_unknown' set but not used [-Wunused-but-set-variable]
+ 1362 |     bool is_unknown = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1364:10: warning: variable 'known_prefix' set but not used [-Wunused-but-set-variable]
+ 1364 |     bool known_prefix = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fC/src/address_parser.c:1365:10: warning: variable 'known_suffix' set but not used [-Wunused-but-set-variable]
+ 1365 |     bool known_suffix = false;
+      |          ^
+22 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/crf.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/crf.h:20:
+In file included from ./crf_context.h:20:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/trie.c:1074:13: warning: unused variable 'base' [-Wunused-variable]
+ 1074 |     int32_t base;
+      |             ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/trie.c:1075:13: warning: unused variable 'check' [-Wunused-variable]
+ 1075 |     int32_t check;
+      |             ^~~~~
+2 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/string_utils.c:116:17: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  116 |     for (size_t count = 0; (temp = strstr(start, replace)); count++) {
+      |                 ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/string_utils.c:193:18: warning: variable 'remaining' set but not used [-Wunused-but-set-variable]
+  193 |     ssize_t len, remaining;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/string_utils.c:384:13: warning: unused variable 'num_utf8_chars' [-Wunused-variable]
+  384 |     ssize_t num_utf8_chars = 0;
+      |             ^~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/string_utils.c:521:12: warning: unused variable 'remaining' [-Wunused-variable]
+  521 |     size_t remaining = len;
+      |            ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/string_utils.c:687:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  687 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/string_utils.c:713:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  713 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/string_utils.c:876:13: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  876 |     ssize_t index = 0;
+      |             ^
+7 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1:
+In file included from ./address_parser.h:52:
+In file included from ./averaged_perceptron.h:27:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:374:10: warning: unused variable 'has_key' [-Wunused-variable]
+  374 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:715:14: warning: unused variable 'phrase' [-Wunused-variable]
+  715 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:787:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+  787 |     bool have_address_phrases = search_address_dictionaries_tokens_with_phrases(normalized_str, normalized_tokens, NULL, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:823:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+  823 |     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:841:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+  841 |     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:950:13: warning: unused variable 'token' [-Wunused-variable]
+  950 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:998:13: warning: unused variable 'membership' [-Wunused-variable]
+  998 |     int64_t membership;
+      |             ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1026:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1026 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1319:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 1319 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1321:18: warning: unused variable 'k' [-Wunused-variable]
+ 1321 |         khiter_t k;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1420:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable]
+ 1420 |             bool ngrams_added = false;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1604:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 1604 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1610:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 1610 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1611:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 1611 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1546:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable]
+ 1546 |         size_t next_word_len = 1;
+      |                ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1127:11: warning: unused variable 'language' [-Wunused-variable]
+ 1127 |     char *language = context->language;
+      |           ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1128:11: warning: unused variable 'country' [-Wunused-variable]
+ 1128 |     char *country = context->country;
+      |           ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1138:19: warning: unused variable 'separators' [-Wunused-variable]
+ 1138 |     uint32_array *separators = context->separators;
+      |                   ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1362:10: warning: variable 'is_unknown' set but not used [-Wunused-but-set-variable]
+ 1362 |     bool is_unknown = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1364:10: warning: variable 'known_prefix' set but not used [-Wunused-but-set-variable]
+ 1364 |     bool known_prefix = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fE/src/address_parser.c:1365:10: warning: variable 'known_suffix' set but not used [-Wunused-but-set-variable]
+ 1365 |     bool known_suffix = false;
+      |          ^
+22 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/crf.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/crf.h:20:
+In file included from ./crf_context.h:20:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/trie.c:1074:13: warning: unused variable 'base' [-Wunused-variable]
+ 1074 |     int32_t base;
+      |             ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/trie.c:1075:13: warning: unused variable 'check' [-Wunused-variable]
+ 1075 |     int32_t check;
+      |             ^~~~~
+2 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/string_utils.c:116:17: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  116 |     for (size_t count = 0; (temp = strstr(start, replace)); count++) {
+      |                 ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/string_utils.c:193:18: warning: variable 'remaining' set but not used [-Wunused-but-set-variable]
+  193 |     ssize_t len, remaining;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/string_utils.c:384:13: warning: unused variable 'num_utf8_chars' [-Wunused-variable]
+  384 |     ssize_t num_utf8_chars = 0;
+      |             ^~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/string_utils.c:521:12: warning: unused variable 'remaining' [-Wunused-variable]
+  521 |     size_t remaining = len;
+      |            ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/string_utils.c:687:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  687 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/string_utils.c:713:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  713 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/string_utils.c:876:13: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  876 |     ssize_t index = 0;
+      |             ^
+7 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1:
+In file included from ./address_parser.h:52:
+In file included from ./averaged_perceptron.h:27:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:374:10: warning: unused variable 'has_key' [-Wunused-variable]
+  374 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:715:14: warning: unused variable 'phrase' [-Wunused-variable]
+  715 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:787:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+  787 |     bool have_address_phrases = search_address_dictionaries_tokens_with_phrases(normalized_str, normalized_tokens, NULL, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:823:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+  823 |     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:841:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+  841 |     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:950:13: warning: unused variable 'token' [-Wunused-variable]
+  950 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:998:13: warning: unused variable 'membership' [-Wunused-variable]
+  998 |     int64_t membership;
+      |             ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1026:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1026 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1319:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 1319 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1321:18: warning: unused variable 'k' [-Wunused-variable]
+ 1321 |         khiter_t k;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1420:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable]
+ 1420 |             bool ngrams_added = false;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1604:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 1604 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1610:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 1610 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1611:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 1611 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1546:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable]
+ 1546 |         size_t next_word_len = 1;
+      |                ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1127:11: warning: unused variable 'language' [-Wunused-variable]
+ 1127 |     char *language = context->language;
+      |           ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1128:11: warning: unused variable 'country' [-Wunused-variable]
+ 1128 |     char *country = context->country;
+      |           ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1138:19: warning: unused variable 'separators' [-Wunused-variable]
+ 1138 |     uint32_array *separators = context->separators;
+      |                   ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1362:10: warning: variable 'is_unknown' set but not used [-Wunused-but-set-variable]
+ 1362 |     bool is_unknown = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1364:10: warning: variable 'known_prefix' set but not used [-Wunused-but-set-variable]
+ 1364 |     bool known_prefix = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/fV/src/address_parser.c:1365:10: warning: variable 'known_suffix' set but not used [-Wunused-but-set-variable]
+ 1365 |     bool known_suffix = false;
+      |          ^
+22 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/crf.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/crf.h:20:
+In file included from ./crf_context.h:20:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/trie.c:1074:13: warning: unused variable 'base' [-Wunused-variable]
+ 1074 |     int32_t base;
+      |             ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/trie.c:1075:13: warning: unused variable 'check' [-Wunused-variable]
+ 1075 |     int32_t check;
+      |             ^~~~~
+2 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/string_utils.c:116:17: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  116 |     for (size_t count = 0; (temp = strstr(start, replace)); count++) {
+      |                 ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/string_utils.c:193:18: warning: variable 'remaining' set but not used [-Wunused-but-set-variable]
+  193 |     ssize_t len, remaining;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/string_utils.c:384:13: warning: unused variable 'num_utf8_chars' [-Wunused-variable]
+  384 |     ssize_t num_utf8_chars = 0;
+      |             ^~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/string_utils.c:521:12: warning: unused variable 'remaining' [-Wunused-variable]
+  521 |     size_t remaining = len;
+      |            ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/string_utils.c:687:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  687 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/string_utils.c:713:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  713 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/string_utils.c:876:13: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  876 |     ssize_t index = 0;
+      |             ^
+7 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1:
+In file included from ./address_parser.h:52:
+In file included from ./averaged_perceptron.h:27:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:374:10: warning: unused variable 'has_key' [-Wunused-variable]
+  374 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:715:14: warning: unused variable 'phrase' [-Wunused-variable]
+  715 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:787:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+  787 |     bool have_address_phrases = search_address_dictionaries_tokens_with_phrases(normalized_str, normalized_tokens, NULL, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:823:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+  823 |     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:841:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+  841 |     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:950:13: warning: unused variable 'token' [-Wunused-variable]
+  950 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:998:13: warning: unused variable 'membership' [-Wunused-variable]
+  998 |     int64_t membership;
+      |             ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1026:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1026 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1319:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 1319 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1321:18: warning: unused variable 'k' [-Wunused-variable]
+ 1321 |         khiter_t k;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1420:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable]
+ 1420 |             bool ngrams_added = false;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1604:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 1604 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1610:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 1610 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1611:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 1611 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1546:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable]
+ 1546 |         size_t next_word_len = 1;
+      |                ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1127:11: warning: unused variable 'language' [-Wunused-variable]
+ 1127 |     char *language = context->language;
+      |           ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1128:11: warning: unused variable 'country' [-Wunused-variable]
+ 1128 |     char *country = context->country;
+      |           ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1138:19: warning: unused variable 'separators' [-Wunused-variable]
+ 1138 |     uint32_array *separators = context->separators;
+      |                   ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1362:10: warning: variable 'is_unknown' set but not used [-Wunused-but-set-variable]
+ 1362 |     bool is_unknown = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1364:10: warning: variable 'known_prefix' set but not used [-Wunused-but-set-variable]
+ 1364 |     bool known_prefix = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/010-vocab-dict/artifacts/g/src/address_parser.c:1365:10: warning: variable 'known_suffix' set but not used [-Wunused-but-set-variable]
+ 1365 |     bool known_suffix = false;
+      |          ^
+22 warnings generated.

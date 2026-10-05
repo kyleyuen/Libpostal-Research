@@ -1,0 +1,4 @@
+validation split (2,555 addresses, 58.4% fast-path eligible), frozen parser_profile harness, AC gate on, 7 rounds + burn-in, alternating order
+baseline  median 27,760 addr/s (36.02 us/addr)  min 26,459 max 28,276  (max-min)/median 6.5%
+h         median 75,024 addr/s (13.33 us/addr)  min 74,431 max 75,408  (max-min)/median 1.3%
+speedup by medians 2.703x ; paired median 2.705x (min 2.632 max 2.850); h faster in 7/7 rounds

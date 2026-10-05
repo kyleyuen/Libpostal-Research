@@ -1,0 +1,6777 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-04T05:43:21Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 21769883,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "5-7",
+    "addr:postcode": "79098",
+    "addr:street": "Bismarckallee",
+    "departures_board": "realtime",
+    "departures_board:speech_output": "no",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "internet_access:operator": "DB Systel",
+    "internet_access:operator:wikidata": "Q1152117",
+    "internet_access:ssid": "WIFI@DB",
+    "name": "Freiburg (Breisgau) Hauptbahnhof",
+    "name:fr": "Fribourg-en-Brisgau Gare Centrale",
+    "operator": "DB InfraGO AG",
+    "operator:service:class": "2",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "RF",
+    "railway:station_category": "2",
+    "ref:FR:sncf:resarail": "DEFGB",
+    "ref:FR:uic8": "80143503",
+    "ref:IFOPT": "de:08311:6508",
+    "ref:ibnr": "8000107",
+    "ref:station": "1893",
+    "source:internet_access": "survey",
+    "station:mode": "passengers;through;partial_juncted",
+    "toilets:wheelchair": "yes",
+    "train": "yes",
+    "uic_name": "Freiburg (Breisgau) Hauptbahnhof",
+    "uic_ref": "8014350",
+    "website": "https://www.bahnhof.de/en/freiburg-breisgau-hbf",
+    "wheelchair": "limited",
+    "wikidata": "Q473572",
+    "wikipedia": "de:Freiburg (Breisgau) Hauptbahnhof"
+  }
+},
+{
+  "type": "node",
+  "id": 26982576,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "1",
+    "addr:postcode": "79098",
+    "addr:street": "Schnewlinstraße",
+    "amenity": "nightclub",
+    "architect": "Ferdinand Merkenthaler, Freiburg",
+    "contact:email": "info@jazzhaus.de",
+    "contact:fax": "+49 761 72935",
+    "contact:phone": "+49 761 7919780",
+    "contact:website": "https://www.jazzhaus.de/",
+    "name": "Jazzhaus",
+    "opening_hours": "\"Abhängig von Veranstaltungskalender, siehe Website\"",
+    "start_date": "1987",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes",
+    "wikidata": "Q1562841",
+    "wikipedia": "de:Jazzhaus Freiburg"
+  }
+},
+{
+  "type": "node",
+  "id": 31449333,
+  "tags": {
+    "addr:housenumber": "16",
+    "addr:postcode": "79106",
+    "addr:street": "Egonstraße",
+    "amenity": "restaurant",
+    "brewery": "yes",
+    "check_date": "2025-11-04",
+    "check_date:diet:vegan": "2025-11-04",
+    "check_date:opening_hours": "2025-11-04",
+    "contact:email": "babeuf@arcor.de",
+    "contact:phone": "+49 761 273613",
+    "contact:website": "https://babeuf.de/",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "name": "Babeuf",
+    "note": "Ganter Bier",
+    "opening_hours": "Su-Th 18:00-01:00, Fr,Sa 18:00-02:00",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 31449381,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "15",
+    "addr:postcode": "79106",
+    "addr:street": "Wentzingerstraße",
+    "amenity": "cafe",
+    "check_date": "2026-05-27",
+    "contact:website": "https://www.radstation-freiburg.de/cafe-hermann",
+    "cuisine": "breakfast",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "level": "2",
+    "name": "Café Hermann",
+    "opening_hours": "Mo-Th 09:00-24:00, Su 10:00-22:00, Fr,Sa 09:00-01:00",
+    "outdoor_seating": "balcony",
+    "payment:american_express": "yes",
+    "payment:apple_pay": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:girocard": "yes",
+    "payment:google_pay": "yes",
+    "payment:mastercard": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "phone": "+49 761 61257024",
+    "reservation": "no",
+    "smoking": "outside",
+    "toilets": "yes",
+    "toilets:access": "yes",
+    "toilets:changing_table": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://hermannfreiburg.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 31573902,
+  "tags": {
+    "addr:housenumber": "60",
+    "addr:street": "Eisenbahnstraße",
+    "amenity": "post_office",
+    "check_date:opening_hours": "2023-10-17",
+    "level": "0",
+    "name": "Hauptpost",
+    "opening_hours": "Mo-Fr 09:30-13:00, 14:00-18:00; Sa 09:00-12:00; Su, PH off",
+    "operator": "Deutsche Post",
+    "operator:wikidata": "Q157645",
+    "operator:wikipedia": "de:Deutsche Post AG",
+    "source": "survey",
+    "source:opening_hours": "entrance",
+    "surveillance": "indoor",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 31576670,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:street": "Bismarckallee",
+    "amenity": "bank",
+    "atm": "yes",
+    "check_date": "2026-03-25",
+    "description": "Filiale Freiburg-Bismarckallee",
+    "level": "0",
+    "name": "Volksbank",
+    "opening_hours": "Mo-Fr 09:00-17:00; Th 09:00-18:00; PH off",
+    "opening_hours:atm": "00:00-01:00,06:00-24:00",
+    "phone": "+49 761 21821111",
+    "ref": "39430",
+    "ref:type": "Filialnummer",
+    "surveillance": "indoor",
+    "website": "https://www.volksbank-freiburg.de/ihre-volksbank/filialen-und-ansprechpartner/filialen-volksbank-freiburg/filiale-bismarckallee.html"
+  }
+},
+{
+  "type": "node",
+  "id": 31577417,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "28",
+    "addr:postcode": "79106",
+    "addr:street": "Mathildenstraße",
+    "amenity": "restaurant",
+    "changing_table": "yes",
+    "changing_table:location": "female_toilet",
+    "contact:email": "info@paradies-freiburg.de",
+    "contact:fax": "+49 761 275038",
+    "contact:phone": "+49 761 273700",
+    "contact:website": "https://www.paradies-freiburg.de/de/restaurant",
+    "cuisine": "regional",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "highchair": "yes",
+    "name": "Paradies",
+    "opening_hours": "Mo 07:00-24:00, Tu-Sa 00:00-01:00,07:00-24:00, Su 09:30-24:00",
+    "opening_hours:kitchen": "11:30-22:00",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 31589525,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:postcode": "79098",
+    "addr:street": "Niemensstraße",
+    "alt_name": "UniCafé",
+    "amenity": "cafe",
+    "check_date:opening_hours": "2026-07-16",
+    "contact:facebook": "https://www.facebook.com/UC-Cafe-128453020515846/",
+    "contact:phone": "+49 761 383355",
+    "indoor_seating": "yes",
+    "name": "UC Uni Café",
+    "opening_hours": "Su-Th 09:00-24:00, Fr,Sa 09:00-01:00",
+    "opening_hours:kitchen": "Mo-Sa 08:00-23:00, Su 09:00-23:00",
+    "outdoor_seating": "pedestrian_zone",
+    "source:opening_hours": "website",
+    "toilets:wheelchair": "no",
+    "website": "https://unicafe-freiburg.de",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 31589539,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "17",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "check_date": "2018-09-22, 2020-02-08",
+    "disused:amenity": "restaurant",
+    "source": "https://www.badische-zeitung.de/gastronomie-1/traditionsgaststaette-erzherzog-albrecht-in-der-universitaetstrasse-schliesst--149652423.html"
+  }
+},
+{
+  "type": "node",
+  "id": 31589566,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "8",
+    "addr:postcode": "79098",
+    "addr:street": "Poststraße",
+    "check_date": "2025-08-05",
+    "contact:email": "info@minerva-freiburg.de",
+    "contact:fax": "+49 761 3864944",
+    "contact:phone": "+49 761 386490",
+    "contact:website": "http://www.minerva-freiburg.de/",
+    "name": "Hotel Minerva",
+    "tourism": "hotel",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 31589594,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "35-37",
+    "addr:street": "Eisenbahnstraße",
+    "air_conditioning": "yes",
+    "alt_name": "Parkhotel Post",
+    "email": "info@park-hotel-post.de",
+    "fax": "+49 761 31680",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Park Hotel Post",
+    "phone": "+49 761 385480",
+    "stars": "4",
+    "tourism": "hotel",
+    "website": "https://www.park-hotel-post.de/de/"
+  }
+},
+{
+  "type": "node",
+  "id": 31680192,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "3",
+    "addr:postcode": "79098",
+    "addr:street": "Universitätsstraße",
+    "amenity": "cafe",
+    "contact:facebook": "https://www.facebook.com/Caf%C3%A9-Journal-Caf%C3%A9-Bistro-Bar-128968270461669/",
+    "indoor_seating": "yes",
+    "name": "Café Journal",
+    "opening_hours": "Mo,Tu,Su 08:00-19:00, We-Sa 08:00-24:00",
+    "outdoor_seating": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://journal-freiburg.de/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 31680250,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "26",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "pub",
+    "brewery": "yes",
+    "check_date": "2025-09-06",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "email": "info@schwarzer-kater.net",
+    "indoor_seating": "yes",
+    "name": "Schwarzer Kater",
+    "opening_hours": "Mo-Th 11:00-01:00; Fr 11:00-03:00; Sa 10:00-03:00; Su 10:00-01:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 761 36747",
+    "smoking": "isolated",
+    "website": "https://www.schwarzer-kater.net/",
+    "website:menu": "https://linktr.ee/schwarzerkaterfreiburg",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 59596799,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "56",
+    "addr:postcode": "79115",
+    "addr:street": "Eschholzstraße",
+    "amenity": "bank",
+    "atm": "yes",
+    "check_date:opening_hours": "2026-07-01",
+    "entrance": "yes",
+    "level": "0",
+    "name": "Sparkasse",
+    "opening_hours": "Mo,We,Fr 09:00-12:00; Tu 14:00-16:30; Th 14:00-18:00",
+    "source": "survey",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 59646817,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "19",
+    "addr:postcode": "79106",
+    "addr:street": "Engelbergerstraße",
+    "brand": "Edeka",
+    "brand:wikidata": "Q701755",
+    "check_date:opening_hours": "2025-10-12",
+    "contact:fax": "+49 761 382874",
+    "contact:phone": "+49 761 382838",
+    "level": "-1",
+    "name": "Edeka",
+    "opening_hours": "Mo-Sa 08:00-20:00",
+    "operator": "Edeka",
+    "organic": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "shop": "supermarket",
+    "source": "photo",
+    "source_ref": "http://picasaweb.google.de/Marcus.Wolschon/Georeferences/photo#5115280802696039874",
+    "surveillance": "indoor",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 248594095,
+  "tags": {
+    "addr:housenumber": "8",
+    "addr:postcode": "79098",
+    "addr:street": "Sedanstraße",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2022-07-29",
+    "contact:phone": "+49 761 32647",
+    "cuisine": "italian;pizza",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "diet:pescetarian": "yes",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Ristorante Pizzeria Bürgerstube",
+    "opening_hours": "Mo-Sa 11:30-14:30,17:30-24:00; PH,Su 12:30-14:30,17:30-24:00",
+    "outdoor_seating": "yes",
+    "smoking": "no",
+    "smoking:outside": "yes",
+    "wheelchair": "limited",
+    "wheelchair:description": "the bathroom is only reachable via stairs"
+  }
+},
+{
+  "type": "node",
+  "id": 248594108,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "54",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "restaurant",
+    "check_date": "2025-03-14",
+    "cuisine": "turkish",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Divan",
+    "opening_hours": "Mo-Su 11:30-23:30",
+    "outdoor_seating": "yes",
+    "phone": "+49 761 2927151",
+    "website": "https://divan-freiburg.de",
+    "website:menu": "https://www.divan-freiburg.de/menu",
+    "wheelchair": "limited",
+    "wheelchair:description": "Ebenerdig kein Behinderten WC"
+  }
+},
+{
+  "type": "node",
+  "id": 248594110,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "38",
+    "addr:postcode": "79098",
+    "addr:street": "Belfortstraße",
+    "amenity": "restaurant",
+    "contact:facebook": "BodegaDerGeier",
+    "contact:instagram": "bodegageier",
+    "email": "post@bodega-geier.de",
+    "loc_name": "Geier",
+    "name": "Bodega Geier",
+    "opening_hours": "Mo-Fr 12:00-14:00, 18:00-00:00; Sa 18:00-00:00",
+    "phone": "+49 761 42968050",
+    "website": "https://www.bodega-geier.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 248594114,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "64",
+    "addr:postcode": "79098",
+    "addr:street": "Eisenbahnstraße",
+    "amenity": "cafe",
+    "check_date": "2026-08-22",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Café Melange",
+    "opening_hours": "07:00-18:00; Sa 08:00-16:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 761 2922255",
+    "smoking": "outside",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 248594115,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "44",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "disused:amenity": "cafe",
+    "level": "0",
+    "opening_hours": "Mo-Su 09:00-01:00",
+    "source": "Homepage"
+  }
+},
+{
+  "type": "node",
+  "id": 248594116,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "19 a",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "air_conditioning": "no",
+    "amenity": "cafe",
+    "check_date:opening_hours": "2025-08-09",
+    "contact:email": "kontakt@cafeschmidt.de",
+    "contact:fax": "+49 761 2021927",
+    "contact:phone": "+49 761 36967",
+    "contact:website": "http://www.cafeschmidt.de",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "ice_cream": "yes",
+    "indoor_seating": "yes",
+    "name": "Café Schmidt",
+    "opening_hours": "Mo-Sa 09:00-18:00",
+    "outdoor_seating": "yes",
+    "smoking": "outside",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 248594121,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "1",
+    "addr:postcode": "79098",
+    "addr:street": "Milchstraße",
+    "amenity": "pub",
+    "brewery": "Ganter;Guinness;Kilkenny;Stowford_Press_Cider;O'Hara's_IPA;yes",
+    "cuisine": "irish",
+    "email": "info@okellys.de",
+    "internet_access": "wlan",
+    "level": "0",
+    "name": "O'Kellys Irish Pub",
+    "note": "Eingang liegt in Sedanstr. 2, aber Geschäftadresse is Milchstr. 1, deswegen auf diesem Gebäude platziert",
+    "opening_hours": "Su-Th 17:00-24:00, Fr,Sa 17:00-02:00",
+    "outdoor_seating": "yes",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "phone": "+49 761 2855774",
+    "smoking": "outside",
+    "theme": "irish",
+    "toilets:wheelchair": "no",
+    "website": "https://www.okellys.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 248594122,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "51-53",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "restaurant",
+    "contact:phone": "+49 761 47974399",
+    "contact:website": "https://www.seoul99.de/",
+    "cuisine": "korean",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "email": "seoul99-freiburg@web.de",
+    "indoor_seating": "yes",
+    "name": "Seoul 99",
+    "opening_hours": "Mo-Su 11:30-15:00,17:00-23:00",
+    "outdoor_seating": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 248594123,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7",
+    "addr:postcode": "79098",
+    "addr:street": "Niemensstraße",
+    "amenity": "fast_food",
+    "cuisine": "german",
+    "internet_access": "no",
+    "name": "Mensa 3",
+    "opening_hours": "Mo-Th 11:30-22:00; Fr,Sa 11:30-23:00",
+    "operator": "UniCafé",
+    "outdoor_seating": "yes",
+    "website": "https://mensadrei.de/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 248594129,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "50",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "amenity": "restaurant",
+    "check_date": "2025-01-07",
+    "check_date:diet:vegetarian": "2021-03-27",
+    "check_date:opening_hours": "2018-09-22",
+    "contact:email": "lapiazza.freiburg@gmail.com",
+    "cuisine": "italian",
+    "diet:vegetarian": "yes",
+    "fax": "+49 761 2172797",
+    "name": "La Piazza",
+    "opening_hours": "Mo-Su 11:00-24:00",
+    "opening_hours:kitchen": "Mo-Su 11:00-23:30",
+    "opening_hours:url": "https://www.lapiazza-freiburg.de/pizzeria-la-piazza/%C3%B6ffnungszeiten/",
+    "operator": "Guastella Gastronomie GmbH",
+    "outdoor_seating": "patio",
+    "phone": "+49 761 276696",
+    "source:opening_hours": "website",
+    "website": "https://www.lapiazza-freiburg.de",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 248594130,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "13",
+    "addr:postcode": "79098",
+    "addr:street": "Niemensstraße",
+    "amenity": "restaurant",
+    "cuisine": "vietnamese",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "level": "0",
+    "name": "Mai's vietnam street food",
+    "opening_hours": "Su-Th 11:00-22:00; Fr,Sa 11:00-23:00",
+    "outdoor_seating": "sidewalk",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 248594131,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:postcode": "79098",
+    "addr:street": "Bismarckallee",
+    "name": "XTIP Sportwetten",
+    "shop": "bookmaker",
+    "source": "survey",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 248594132,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "48",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "amenity": "cafe",
+    "check_date:opening_hours": "2023-09-18",
+    "contact:website": "http://www.schwarzes-kloster.com",
+    "cuisine": "cake;soup;salad;bistro",
+    "name": "Café Schwarzes Kloster",
+    "opening_hours": "Mo-Fr 08:30-18:30; Sa 08:30-18:00; Su, PH off",
+    "opening_hours:url": "https://www.lapiazza-freiburg.de/pizzeria-la-piazza/%C3%B6ffnungszeiten/",
+    "operator": "Guastella Gastronomie GmbH",
+    "outdoor_seating": "patio",
+    "phone": "+49 761 39622",
+    "source:opening_hours": "https://www.schwarzes-kloster.com/",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 248594134,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "65",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "fast_food",
+    "check_date:opening_hours": "2024-04-14",
+    "cuisine": "asian",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Wok & more",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes",
+    "source": "survey",
+    "takeaway": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 248594135,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "53",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "restaurant",
+    "cuisine": "ramen",
+    "indoor_seating": "yes",
+    "name": "Muho",
+    "opening_hours": "Su-Th 11:00-23:00; Fr,Sa 11:00-23:30",
+    "outdoor_seating": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 248594140,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "42",
+    "addr:postcode": "79098",
+    "addr:street": "Moltkestraße",
+    "air_conditioning": "no",
+    "alt_name": "Café Moltke",
+    "amenity": "cafe",
+    "check_date": "2026-06-01",
+    "contact:instagram": "cafe_moltke",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Wilhelm Moltke",
+    "opening_hours": "Mo-Fr 08:00-18:00; Sa-Su 10:00-18:00; Nov-Mar: Su 10:00-18:00",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "smoking": "outside",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 248594141,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:postcode": "79098",
+    "addr:street": "Löwenstraße",
+    "amenity": "cafe",
+    "name": "Auditorium Minimum",
+    "opening_hours": "Mo-Th 10:00-01:00, Fr 10:00-02:00, Sa 11:00-02:00, Su 13:00-00:00",
+    "phone": "+4976124961",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 248594142,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "53",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "restaurant",
+    "cuisine": "asian;wok",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Mai Wok",
+    "opening_hours": "Fr,Sa 11:00-23:30; Su-Th 11:00-23:00",
+    "outdoor_seating": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 248594144,
+  "tags": {
+    "addr:housenumber": "17",
+    "addr:street": "Moltkestraße",
+    "amenity": "pub",
+    "check_date": "2026-02-11",
+    "contact:instagram": "litfassfreiburg",
+    "cuisine": "pasta",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "email": "info@litfass-freiburg.com",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Litfass",
+    "opening_hours": "Mo-Th 11:00-03:00; Fr 11:00-04:00; Sa 17:00-04:00; Su 17:00-03:00",
+    "outdoor_seating": "no",
+    "phone": "+49 761 25148",
+    "smoking": "yes",
+    "source:opening_hours": "website",
+    "toilets:access": "yes",
+    "toilets:changing_table": "no",
+    "toilets:wheelchair": "no",
+    "website": "https://litfass-freiburg.jimdo.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 248594145,
+  "tags": {
+    "addr:housenumber": "31",
+    "addr:postcode": "79098",
+    "addr:street": "Belfortstraße",
+    "amenity": "bar",
+    "cuisine": "coffee_shop",
+    "name": "Come Inn",
+    "opening_hours": "Su-Th 15:00-03:00, Fr-Sa 15:00-05:00",
+    "phone": "+4917624216163",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 248594146,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7",
+    "addr:postcode": "79098",
+    "addr:street": "Wilhelmstraße",
+    "amenity": "bar",
+    "dog": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Woods",
+    "opening_hours": "Mo-Su 16:00-22:00",
+    "payment:cash": "only",
+    "smoking": "yes",
+    "website": "https://woods-coctailhookah.eatbu.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 248594152,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "14",
+    "addr:postcode": "79098",
+    "addr:street": "Rotteckring",
+    "amenity": "restaurant",
+    "check_date": "2026-07-23",
+    "check_date:opening_hours": "2024-04-06",
+    "cuisine": "italian",
+    "indoor_seating": "yes",
+    "name": "Tizio Caffé",
+    "opening_hours": "Mo-Sa 10:30-23:00",
+    "opening_hours:url": "http://www.tizio-freiburg.de",
+    "outdoor_seating": "yes",
+    "phone": "+49 761 2925711",
+    "source:opening_hours": "website",
+    "website": "http://www.tizio-freiburg.de",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 248594158,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "11",
+    "addr:postcode": "79098",
+    "addr:street": "Niemensstraße",
+    "amenity": "fast_food",
+    "check_date": "2024-05-13",
+    "check_date:diet:vegetarian": "2021-03-27",
+    "cuisine": "kebab",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "internet_access": "no",
+    "name": "Euphrat",
+    "opening_hours": "Su off; Mo-Th 11:00-00:00; Fr,Sa 11:00-01:00",
+    "outdoor_seating": "sidewalk",
+    "payment:cards": "no",
+    "payment:cash": "yes",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "phone": "+49 761 29098900",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes",
+    "wheelchair:description": "3cm Schwelle am Eingang, nur sehr enges WC"
+  }
+},
+{
+  "type": "node",
+  "id": 248594159,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "19",
+    "addr:postcode": "79098",
+    "addr:street": "Moltkestraße",
+    "amenity": "cafe",
+    "changing_table": "yes",
+    "check_date": "2026-03-17",
+    "cuisine": "sandwich;breakfast;bread",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "email": "auszeitfreiburg@gmail.com",
+    "indoor_seating": "yes",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Café Auszeit",
+    "opening_hours": "Mo-Fr 06:30-18:00; Sa 07:00-18:00; Su off",
+    "outdoor_seating": "sidewalk",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+49 761 24264",
+    "smoking": "outside",
+    "toilets": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://cafeauszeit.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 248594163,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "40",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "amenity": "fast_food",
+    "brand": "Nordsee",
+    "brand:wikidata": "Q74866",
+    "brand:wikipedia": "en:Nordsee",
+    "check_date": "2025-08-27",
+    "contact:website": "http://www.nordsee.com/",
+    "cuisine": "seafood",
+    "drive_through": "no",
+    "fax": "+49 761382655",
+    "name": "Nordsee",
+    "opening_hours": "Mo-Fr 10:00-19:30, Sa 10:00-19:00",
+    "outdoor_seating": "no",
+    "phone": "+49 761 22411",
+    "smoking": "no",
+    "takeaway": "yes",
+    "website": "https://www.nordsee.com/",
+    "wheelchair": "limited",
+    "wheelchair:description": "hinterm Bächle"
+  }
+},
+{
+  "type": "node",
+  "id": 248594166,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "65",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "fast_food",
+    "check_date:opening_hours": "2024-04-14",
+    "cuisine": "kebab;pizza",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Sofra",
+    "opening_hours": "Su-Th 10:00-01:00, Fr,Sa 10:00-05:00",
+    "outdoor_seating": "yes",
+    "source": "survey",
+    "source:opening_hours": "entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 248594169,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "46",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2026-02-09",
+    "contact:email": "info@quadrille-freiburg.de",
+    "contact:facebook": "https://www.facebook.com/LaCulinariaFreiburg",
+    "contact:fax": "+49 761 2172223",
+    "contact:instagram": "https://www.instagram.com/laculinariafreiburg/",
+    "contact:phone": "+49 761 2172220",
+    "contact:website": "http://www.laculinaria.de/",
+    "cuisine": "spanish",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "level": "1",
+    "name": "La Culinaria im Theater",
+    "opening_hours": "Mo-Su 12:00-23:00",
+    "outdoor_seating": "terrace",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 248594175,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "61",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "check_date": "2025-03-14",
+    "check_date:opening_hours": "2023-03-13",
+    "name": "Nails Center",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "shop": "beauty",
+    "source": "survey",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 248594178,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "39",
+    "addr:postcode": "79098",
+    "addr:street": "Belfortstraße",
+    "beer_brand": "Fürstenberg",
+    "disused:amenity": "pub"
+  }
+},
+{
+  "type": "node",
+  "id": 251575655,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "18-20",
+    "addr:postcode": "79106",
+    "addr:street": "Kreuzstraße",
+    "brand": "Netto Marken-Discount",
+    "brand:wikidata": "Q879858",
+    "check_date:opening_hours": "2024-01-22",
+    "name": "Netto Marken-Discount",
+    "opening_hours": "Mo-Sa 07:00-21:00",
+    "shop": "supermarket",
+    "website": "https://www.netto-online.de/filialen/Freiburg/Kreuzstr-18-20/3699/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 286877450,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "3a",
+    "addr:postcode": "79098",
+    "addr:street": "Wilhelmstraße",
+    "alt_name": "Institut für Grenzgebiete der Psychologie und Psychohygiene e.V.",
+    "name": "IGPP",
+    "wikidata": "Q337908"
+  }
+},
+{
+  "type": "node",
+  "id": 288353883,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "48",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "cafe",
+    "check_date:opening_hours": "2024-02-16",
+    "contact:email": "info@bertolds.de",
+    "contact:facebook": "https://www.facebook.com/people/Bertolds-Caf%C3%A9-Bar/100092707346146/",
+    "contact:phone": "+49 761 38493619",
+    "level": "0",
+    "name": "Bertolds Café & Bar",
+    "opening_hours": "Mo-Th 08:00-22:00; Fr 08:00-24:00; Sa 00:00-01:00, 08:00-24:00; Su 00:00-01:00, 11:00-18:00",
+    "outdoor_seating": "yes",
+    "source:opening_hours": "entrance",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes",
+    "wheelchair:description": "Die Toilette ist im Untergeschoss und nur über eine Treppe erreichbar."
+  }
+},
+{
+  "type": "node",
+  "id": 296300055,
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:street": "Wentzingerstraße",
+    "amenity": "bicycle_rental",
+    "bicycle_rental": "shop",
+    "description": "Renting a bicycle costs €15 for 24 hours with a €50 deposit. Ausleihe mit Handy-App 24/7",
+    "level": "2",
+    "name": "FREIBURG bikes",
+    "opening_hours": "Mo-Fr 10:00-12:30, 14:00-17:00; Sa 10:00-12:30",
+    "opening_hours:workshop": "Mo-Fr 14:00-17:00; PH closed",
+    "rental": "e-bike;city_bike",
+    "service:bicycle:pump": "no",
+    "service:bicycle:rental": "yes",
+    "service:bicycle:repair": "yes",
+    "service:bicycle:retail": "no",
+    "shop": "bicycle",
+    "website": "https://www.freiburgbikes.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 298927532,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12",
+    "addr:postcode": "79098",
+    "addr:street": "Sedanstraße",
+    "brand": "Norma",
+    "brand:wikidata": "Q450180",
+    "brand:wikipedia": "de:Norma (Supermarkt)",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "name": "Norma",
+    "opening_hours": "Mo-Sa 07:00-20:00",
+    "shop": "supermarket",
+    "surveillance": "indoor",
+    "wheelchair": "no",
+    "wheelchair:description": "Wenn man sich als Einkaufswagen verkleidet und unter dem Drehkreuz durch kriecht geht es"
+  }
+},
+{
+  "type": "node",
+  "id": 305455015,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "68",
+    "addr:postcode": "79098",
+    "addr:street": "Eisenbahnstraße",
+    "email": "info@moskito-schmuck.de",
+    "level": "0",
+    "name": "Moskito",
+    "opening_hours": "Mo-Fr 10:00-18:00; Sa 10:00-15:00",
+    "phone": "+49 761 21714466",
+    "shop": "jewelry",
+    "source": "survey",
+    "website": "https://www.moskito-schmuck.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 305455042,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "45",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "brand": "BackWerk",
+    "brand:wikidata": "Q798298",
+    "brand:wikipedia": "de:BackWerk",
+    "check_date:opening_hours": "2025-09-10",
+    "indoor_seating": "no",
+    "name": "Backwerk",
+    "opening_hours": "Mo-Fr 06:30-20:00; Sa 07:00-20:00",
+    "outdoor_seating": "no",
+    "shop": "bakery",
+    "surveillance": "indoor",
+    "takeaway": "only",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 305457059,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "44",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "check_date:opening_hours": "2026-02-09",
+    "female": "yes",
+    "level": "0",
+    "male": "yes",
+    "name": "Friseur Roth",
+    "opening_hours": "Tu-Fr 09:00-18:00; Sa 08:00-15:00; Mo off",
+    "phone": "+49 7612021020",
+    "shop": "hairdresser",
+    "surveillance": "indoor",
+    "website": "http://www.friseur-roth-freiburg.de",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 306422463,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "5",
+    "addr:postcode": "79098",
+    "addr:street": "Schnewlinstraße",
+    "check_date": "2025-10-23",
+    "check_date:opening_hours": "2024-07-15",
+    "contact:email": "info@radgeber-freiburg.de",
+    "contact:fax": "+49 761 2927671",
+    "contact:phone": "+49 761 2927670",
+    "contact:website": "http://www.radgeber-freiburg.de",
+    "email": "info@radgeber-freiburg.de",
+    "name": "Die Radgeber",
+    "opening_hours": "Mo-Fr 10:00-18:30; Sa 10:00-14:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "service:bicycle:pump": "yes",
+    "service:bicycle:repair": "yes",
+    "shop": "bicycle",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 307184342,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "55",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "asb": "21",
+    "note:de": "http://wiki.openstreetmap.org/index.php/DE:DSL_Hauptverteiler",
+    "onkz": "761",
+    "operator": "Deutsche Telekom",
+    "operator:wikidata": "Q9396",
+    "source": "Deutsche Telekom AG",
+    "telecom": "exchange"
+  }
+},
+{
+  "type": "node",
+  "id": 307621610,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "21",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "check_date": "2026-06-07",
+    "check_date:opening_hours": "2026-06-05",
+    "contact:phone": "+49 761 25832",
+    "contact:website": "http://www.bb-faller.de",
+    "indoor_seating": "no",
+    "name": "Brotboutique Faller",
+    "note": "Auf die Kameras wird nicht hingewiesen.",
+    "opening_hours": "Mo off; Tu-Fr 07:00-18:30; Sa 07:00-16:00",
+    "organic": "only",
+    "outdoor_seating": "no",
+    "payment:cards": "no",
+    "payment:cash": "yes",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "shop": "bakery",
+    "surveillance": "indoor",
+    "takeaway": "only",
+    "website": "http://www.bb-faller.de",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 320091895,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "79098",
+    "addr:street": "Bismarckallee",
+    "amenity": "fast_food",
+    "brand": "McDonald's",
+    "brand:wikidata": "Q38076",
+    "brand:wikipedia": "en:McDonald's",
+    "check_date:opening_hours": "2025-09-12",
+    "cuisine": "burger",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "level": "0",
+    "man_made": "surveillance",
+    "name": "McDonald's",
+    "note:de": ">3 drehbare Kameras",
+    "note:en": ">3 turnable cameras",
+    "opening_hours": "Fr,Sa 07:00-05:00, Su-Th,PH 07:00-02:00",
+    "operator": "Thomas Sieberer Familien Restaurant KG",
+    "outdoor_seating": "no",
+    "phone": "+49 761 20268850",
+    "smoking": "no",
+    "surveillance": "indoor",
+    "takeaway": "yes",
+    "website": "https://www.mcdonalds.de/de/restaurant/freiburg-bismarck-allee-5",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 358484329,
+  "tags": {
+    "addr:housenumber": "9",
+    "addr:postcode": "79098",
+    "addr:street": "Sedanstraße",
+    "air_conditioning": "no",
+    "amenity": "cafe",
+    "check_date": "2026-02-11",
+    "contact:instagram": "sedancafe",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "internet_access": "wlan",
+    "level": "0",
+    "name": "Sedan",
+    "opening_hours": "Mo-Fr 07:30-18:00; Sa 08:30-18:00; Su 09:00-17:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 179 6810726",
+    "smoking": "no",
+    "takeaway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 361345081,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "9",
+    "addr:postcode": "79098",
+    "addr:street": "Wilhelmstraße",
+    "amenity": "restaurant",
+    "contact:email": "agora-freiburg@web.de",
+    "contact:fax": "+49 761 2169225",
+    "contact:phone": "+49 761 2169224",
+    "contact:website": "http://www.agora-freiburg.de/",
+    "diet:vegetarian": "yes",
+    "name": "Agora Vinothek",
+    "opening_hours": "Sa 10:30-16:00; Tu,We 11:00-20:00; Th,Fr 11:00-21:00",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 361346549,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "1",
+    "addr:postcode": "79098",
+    "addr:street": "Im Grün"
+  }
+},
+{
+  "type": "node",
+  "id": 361346551,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "3",
+    "addr:postcode": "79098",
+    "addr:street": "Im Grün"
+  }
+},
+{
+  "type": "node",
+  "id": 365981022,
+  "tags": {
+    "addr:housenumber": "18",
+    "addr:street": "Barbarastraße",
+    "amenity": "restaurant",
+    "check_date": "2025-10-27",
+    "cuisine": "vietnamese",
+    "name": "Pho Kien Giang",
+    "opening_hours": "Mo-Su 11:30-14:30, 17:30-22:30",
+    "phone": "+49 761 48998232",
+    "toilets:wheelchair": "no",
+    "website": "https://www.phokiengiang.de/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 367145795,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "5",
+    "addr:postcode": "79098",
+    "addr:street": "Wasserstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 367145950,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7a",
+    "addr:postcode": "79098",
+    "addr:street": "Weberstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 367146013,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7",
+    "addr:postcode": "79098",
+    "addr:street": "Weberstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 367146605,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "10",
+    "addr:postcode": "79098",
+    "addr:street": "Weberstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 367146696,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "16",
+    "addr:postcode": "79098",
+    "addr:street": "Weberstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 367146712,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "14",
+    "addr:postcode": "79098",
+    "addr:street": "Weberstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 367146739,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12",
+    "addr:postcode": "79098",
+    "addr:street": "Weberstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 454135427,
+  "tags": {
+    "addr:city": "Freiburg",
+    "addr:housenumber": "31",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring",
+    "contact:phone": "+49 761 274244",
+    "contact:website": "http://www.zweirad-hanser.de",
+    "name": "Zweirad Hanser",
+    "opening_hours": "Mo-Fr 09:00-12:00,13:00-18:00; Sa 10:00-14:00",
+    "repair": "yes",
+    "service:bicycle:repair": "yes",
+    "service:bicycle:retail": "yes",
+    "shop": "bicycle",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 457417973,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "15",
+    "addr:postcode": "79104",
+    "addr:street": "Rheinstraße",
+    "amenity": "restaurant",
+    "capacity": "50",
+    "check_date:opening_hours": "2023-09-22",
+    "contact:phone": "+49 761 61254465",
+    "contact:website": "https://www.cumlaude-freiburg.de",
+    "cuisine": "italian",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "lunch": "Tu-Fr 11:30-17:30",
+    "name": "Cum Laude",
+    "official_name": "Trattoria Pizzeria Cum Laude",
+    "opening_hours": "Tu-Fr 11:30-14:00,17:30-22:00; Sa,Su 17:30-22:00",
+    "outdoor_seating": "yes",
+    "smoking": "outside",
+    "source:opening_hours": "entrance",
+    "takeaway": "yes",
+    "website:menu": "https://www.cumlaude-freiburg.de/en/menu",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 512068263,
+  "tags": {
+    "addr:city": "Freiburg",
+    "addr:housenumber": "19",
+    "addr:postcode": "79098",
+    "addr:street": "Gauchstraße",
+    "contact:email": "hilmerszweirad@web.de",
+    "contact:fax": "+49 761 31315",
+    "contact:phone": "+49 761 31314",
+    "contact:website": "http://www.hilmers.de",
+    "level": "0;-1",
+    "name": "Hilmers Zweiräder",
+    "opening_hours": "Tu-Fr 10:00-18:00; Sa 10:00-15:00",
+    "service:bicycle:pump": "no",
+    "service:bicycle:rental": "yes",
+    "shop": "bicycle",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 521312873,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "34",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "door": "yes",
+    "entrance": "yes",
+    "name": "Dimitra"
+  }
+},
+{
+  "type": "node",
+  "id": 521312875,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "34",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "addr:suburb": "Stühlinger",
+    "amenity": "restaurant",
+    "beer_brand": "Fürstenberg",
+    "check_date:opening_hours": "2025-01-01",
+    "cuisine": "greek",
+    "level": "0",
+    "name": "Dimitra",
+    "opening_hours": "Mo-We,Fr-Sa 11:30-14:30,17:00-22:30; Su 11:30-14:30,17:00-22:00; PH Th 11:30-14:30,17:00-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 761 32372",
+    "smoking": "isolated",
+    "website": "https://dimitra-freiburg.de/",
+    "wheelchair": "limited",
+    "wheelchair:description": "Kein Behinderten WC"
+  }
+},
+{
+  "type": "node",
+  "id": 521312904,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "28",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 521312912,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "32",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "door": "yes",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 521312938,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "30",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 521312945,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "24",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "amenity": "restaurant",
+    "beer_brand": "Alpirsbacher Klosterbräu;Ganter",
+    "cuisine": "afghan",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "email": "azim.raschidi@gmx.de",
+    "fax": "+49 761 2927860",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Kucci",
+    "opening_hours": "Tu 17:00-24:00, We-Su 00:00-01:00,17:00-24:00, Mo 00:00-01:00",
+    "opening_hours:kitchen": "18:00-23:00",
+    "outdoor_seating": "terrace",
+    "phone": "+49 761 2927860",
+    "website": "https://kuccifreiburg.blogspot.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 521312959,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "26",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 521313016,
+  "tags": {
+    "addr:housenumber": "71",
+    "addr:street": "Klarastraße",
+    "amenity": "police",
+    "check_date": "2026-04-13",
+    "emergency:phone": "110",
+    "fixme": "Genaue Position? Hausnummer 71a?",
+    "name": "Polizeiposten Freiburg-Stühlinger"
+  }
+},
+{
+  "type": "node",
+  "id": 521313075,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "37",
+    "addr:postcode": "79106",
+    "addr:street": "Engelbergerstraße",
+    "amenity": "fast_food",
+    "check_date:opening_hours": "2026-03-24",
+    "contact:facebook": "https://www.facebook.com/pages/Amara-Schlemmer-St%C3%BCble/363697680397151",
+    "cuisine": "kebab;pizza",
+    "delivery": "yes",
+    "diet:halal": "yes",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "email": "info@amara-freiburg.de",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Amara Schlemmer Stüble",
+    "opening_hours": "Mo-Su 11:00-23:00",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "sidewalk",
+    "phone": "+49 761 1567326",
+    "smoking": "outside",
+    "website": "https://www.amara-freiburg.de",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 530614812,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "30",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "brand": "Penny",
+    "brand:wikidata": "Q284688",
+    "check_date": "2024-06-21",
+    "entrance": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "internet_access:ssid": "-PENNY gratis WLAN-",
+    "name": "Penny",
+    "opening_hours": "08:00-22:00; Su,PH off",
+    "shop": "supermarket",
+    "website": "https://www.penny.de/markt/freiburg-im-breisgau/830808/penny-stuehlinger-stuehlingerstr-28",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 561143575,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "24b",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "fixme": "recheck | das kann nicht stimmen. Das Götheinstitut ist laut Homepage an einer andere Stelle.",
+    "note": "Goethe-Institute"
+  }
+},
+{
+  "type": "node",
+  "id": 568979520,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "23",
+    "addr:postcode": "79106",
+    "addr:street": "Wentzingerstraße",
+    "amenity": "police",
+    "level": "0",
+    "name": "Bundespolizei",
+    "operator": "Bundespolizei",
+    "operator:short": "BPOL",
+    "operator:wikidata": "Q56026"
+  }
+},
+{
+  "type": "node",
+  "id": 571123133,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "96a",
+    "addr:postcode": "79106",
+    "addr:street": "Klarastraße",
+    "healthcare": "psychotherapist",
+    "name": "Eva Wörner",
+    "note:de": "Diplom-Psychologin"
+  }
+},
+{
+  "type": "node",
+  "id": 571123134,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "96a",
+    "addr:postcode": "79106",
+    "addr:street": "Klarastraße",
+    "healthcare": "psychotherapist",
+    "name": "Nicole Eiermann",
+    "note:de": "Diplom-Psychologin, psychologische Psychotherapeutin, Supervisorin",
+    "phone": "+49 761 8817961"
+  }
+},
+{
+  "type": "node",
+  "id": 571123142,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "96a",
+    "addr:postcode": "79106",
+    "addr:street": "Klarastraße",
+    "healthcare": "psychotherapist",
+    "name": "Alexandra Hipfner-Sonntag",
+    "note:de": "Diplom-Psychologin, psychologische Psychotherapeutin, Kinder- und Jugendlichen-Psychotherapeutin",
+    "phone": "+49 761 2020206"
+  }
+},
+{
+  "type": "node",
+  "id": 571123183,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "6",
+    "addr:postcode": "79106",
+    "addr:street": "Kanalstraße",
+    "name": "Art & Deko",
+    "note:de": "Kunst und Deko",
+    "shop": "art"
+  }
+},
+{
+  "type": "node",
+  "id": 571123214,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "79b",
+    "addr:postcode": "79106",
+    "addr:street": "Klarastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 571123218,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "79c",
+    "addr:postcode": "79106",
+    "addr:street": "Klarastraße",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 571123262,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "79d",
+    "addr:postcode": "79106",
+    "addr:street": "Klarastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 575881694,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "19",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "check_date": "2025-07-30",
+    "contact:phone": "+49 761 4564660",
+    "contact:website": "https://cab-systemhaus.de",
+    "door": "yes",
+    "entrance": "shop",
+    "level": "0",
+    "name": "CAB IT-Systemhaus",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-16:00; Su,PH off",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "shop": "computer",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 575881727,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "19",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 575881887,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "1",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "amenity": "doctors",
+    "contact:phone": "+49 761 289228",
+    "healthcare": "doctor",
+    "healthcare:speciality": "general;psychotherapy;homeopaty",
+    "level": "0",
+    "name": "Felizita Bantle",
+    "note:de": "Fachärztin für Allgemeinmedizin, Homeopathie und Psychotherapie",
+    "opening_hours": "Mo,We,Fr 08:30-12:00; Tu,Th 14:30-18:00"
+  }
+},
+{
+  "type": "node",
+  "id": 575881924,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "1",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "contact:phone": "+49 761 4002936",
+    "healthcare": "physiotherapist",
+    "name": "Christiane Neumann",
+    "note:de": "Physiotherapie, Krankengymnastik, manuelle Therapie, Botah-Therapie"
+  }
+},
+{
+  "type": "node",
+  "id": 575881997,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "23",
+    "addr:postcode": "79106",
+    "addr:street": "Wentzingerstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 575882010,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "17",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 575882035,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "13",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 575882058,
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:street": "Stühlingerstraße",
+    "check_date": "2026-09-04",
+    "check_date:opening_hours": "2024-08-21",
+    "contact:email": "mailorder@flight13.com",
+    "contact:phone": "+49 761 208 990",
+    "contact:website": "https://www.flight13.com",
+    "level": "0",
+    "name": "Flight 13 Records",
+    "opening_hours": "Mo-Th,Sa 12:00-18:00; Fr 12:00-19:00; Su,PH off",
+    "shop": "music",
+    "source:opening_hours": "entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 575882069,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "15",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 575882144,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "71",
+    "addr:postcode": "79106",
+    "addr:street": "Klarastraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 575882153,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "11",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "door": "yes",
+    "entrance": "main",
+    "fixme": "recheck position",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 575882379,
+  "tags": {
+    "addr:floor": "0",
+    "addr:housenumber": "63",
+    "addr:street": "Klarastraße",
+    "check_date": "2026-05-14",
+    "check_date:opening_hours": "2025-10-12",
+    "level": "0",
+    "name": "Criterium",
+    "opening_hours": "Mo-Fr 10:00-19:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "service:bicycle:pump": "yes",
+    "service:bicycle:repair": "yes",
+    "shop": "bicycle",
+    "website": "http://www.criterium-das-radgeschaeft.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 575883280,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "60",
+    "addr:postcode": "79115",
+    "addr:street": "Eschholzstraße",
+    "check_date": "2026-08-05",
+    "check_date:opening_hours": "2023-11-16",
+    "level": "0",
+    "lottery": "Lotto Baden-Württemberg",
+    "name": "Kiosk 315",
+    "opening_hours": "Mo-Sa 08:30-20:00; Su,PH off",
+    "shop": "kiosk",
+    "source:opening_hours": "entrance",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 575883375,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "64",
+    "addr:postcode": "79115",
+    "addr:street": "Eschholzstraße",
+    "female": "yes",
+    "male": "yes",
+    "name": "Million Hair and Beauty Salon",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-17:00",
+    "operator": "www.hairkiller.com",
+    "shop": "hairdresser",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 575883712,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "14",
+    "addr:postcode": "79106",
+    "addr:street": "Stürtzelstraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 575883778,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12",
+    "addr:postcode": "79106",
+    "addr:street": "Stürtzelstraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 575884051,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "4",
+    "addr:postcode": "79106",
+    "addr:street": "Wannerstraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 575884058,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "6",
+    "addr:postcode": "79106",
+    "addr:street": "Wannerstraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 575884066,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "8",
+    "addr:postcode": "79106",
+    "addr:street": "Wannerstraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 575884096,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12",
+    "addr:postcode": "79106",
+    "addr:street": "Wannerstraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 575884196,
+  "tags": {
+    "addr:housenumber": "54",
+    "addr:street": "Egonstraße",
+    "amenity": "pub",
+    "brewery": "yes",
+    "check_date": "2025-10-24",
+    "check_date:opening_hours": "2025-10-24",
+    "cuisine": "italian;regional",
+    "diet:vegan": "yes",
+    "email": "peterlischke@arcor.de",
+    "level": "0",
+    "name": "Egon 54",
+    "opening_hours": "Mo-Th 18:00-01:00, Fr,Sa 18:00-02:00, Su 18:00-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 761 276646",
+    "toilets": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://www.egon54.de/",
+    "website:menu": "http://www.egon54.de/speisekarte/",
+    "wheelchair": "limited",
+    "wikidata": "Q117116483"
+  }
+},
+{
+  "type": "node",
+  "id": 582009288,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "67-69",
+    "addr:postcode": "79106",
+    "addr:street": "Klarastraße",
+    "amenity": "kindergarten",
+    "check_date": "2026-04-13",
+    "education": "kindergarten",
+    "level": "0",
+    "name": "Kleine Löwen"
+  }
+},
+{
+  "type": "node",
+  "id": 582009291,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "3a",
+    "addr:postcode": "79106",
+    "addr:street": "Grete-Borgmann-Straße",
+    "amenity": "kindergarten",
+    "check_date": "2023-10-13",
+    "door": "yes",
+    "entrance": "yes",
+    "level": "0",
+    "name": "Kleine Bären",
+    "note:de": "Ja, es gibt 2 Häuser mit Hausnummer 3",
+    "note:en": "yes, there exist 2 houses no 3"
+  }
+},
+{
+  "type": "node",
+  "id": 585142141,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "3a",
+    "addr:postcode": "79106",
+    "addr:street": "Grete-Borgmann-Straße",
+    "amenity": "kindergarten",
+    "check_date": "2023-10-13",
+    "door": "yes",
+    "entrance": "yes",
+    "fixme": "recheck",
+    "level": "0",
+    "name": "Kleine Bären",
+    "note:de": "Ja, es gibt 2 Häuser mit Hausnummer 3",
+    "note:en": "yes, there exist 2 houses no 3"
+  }
+},
+{
+  "type": "node",
+  "id": 585142176,
+  "tags": {
+    "addr:housenumber": "57",
+    "addr:street": "Guntramstraße",
+    "amenity": "cafe",
+    "check_date": "2026-07-16",
+    "cuisine": "bagel",
+    "level": "0",
+    "name": "Berthas Bagels",
+    "opening_date": "2026-06",
+    "opening_hours": "We-Mo 09:00-16:00"
+  }
+},
+{
+  "type": "node",
+  "id": 585142246,
+  "tags": {
+    "addr:city": "Freiburg",
+    "addr:housenumber": "29",
+    "addr:postcode": "79106",
+    "addr:street": "Guntramstraße",
+    "contact:fax": "+49 761 277657",
+    "contact:phone": "+49 761 273683",
+    "contact:website": "http://www.metzgerei-huegle.de/",
+    "description": "Bioland Metzgerei",
+    "door": "yes",
+    "level": "0",
+    "name": "Hügle",
+    "note:de": "Bioland",
+    "opening_hours": "Tu,Th,Fr 08:00-18:30; We 08:00-13:30; Sa 08:00-13:00; Mo off",
+    "organic": "only",
+    "shop": "butcher",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 585142450,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "23",
+    "addr:postcode": "79106",
+    "addr:street": "Fehrenbachallee",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 585142456,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "21",
+    "addr:postcode": "79106",
+    "addr:street": "Fehrenbachallee",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 585142484,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "46",
+    "addr:postcode": "79106",
+    "addr:street": "Eschholzstraße",
+    "check_date": "2026-07-20",
+    "check_date:opening_hours": "2026-07-20",
+    "level": "0",
+    "name": "Lebensrad",
+    "opening_hours": "Tu, Th 11:00-14:00, 15:00-18:30; Mo, We, Fr 15:00-18:30",
+    "phone": "+49 761 2855993",
+    "service:bicycle:pump": "yes",
+    "shop": "bicycle",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 585142503,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "45",
+    "addr:postcode": "79106",
+    "addr:street": "Egonstraße",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2025-10-25",
+    "contact:email": "hunger@ciaopinsa-freiburg.de",
+    "contact:phone": "+49 761 51473724",
+    "contact:website": "https://ciaopinsa-freiburg.de",
+    "cuisine": "pinsa;italian",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "level": "0",
+    "name": "Ciao Pinsa",
+    "opening_hours": "Mo off; Tu-Fr 12:00-14:30,17:00-22:00; Sa,Su 17:00-22:00",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 585142523,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "36",
+    "addr:postcode": "79106",
+    "addr:street": "Egonstraße",
+    "check_date": "2025-02-02",
+    "contact:email": "info@lindle.de",
+    "contact:phone": "+49 761 272518",
+    "contact:website": "http://www.haarstudio-marina-lindle.de/",
+    "female": "yes",
+    "male": "yes",
+    "name": "Haarstudio Marina Lindle",
+    "opening_hours": "07:00-17:00; Sa 07:00-13:00; Mo,PH off",
+    "owner": "Marina Lindle",
+    "shop": "hairdresser",
+    "source:opening_hours": "entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 585142534,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "34",
+    "addr:postcode": "79106",
+    "addr:street": "Eschholzstraße",
+    "email": "TC-TATTOO-CIRCLE@gmx.de",
+    "level": "0",
+    "name": "Tattoo Circle",
+    "note": "tattoo, piercing",
+    "opening_hours": "Mo-Fr 14:00-20:00; Sa 12:00-16:00",
+    "shop": "tattoo",
+    "website": "https://www.tattoo-circle-freiburg.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 585142546,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "19",
+    "addr:postcode": "79106",
+    "addr:street": "Eschholzstraße",
+    "amenity": "fast_food",
+    "check_date": "2025-10-30",
+    "cuisine": "falafel",
+    "level": "0",
+    "name": "Ghanam Bros. Falafel",
+    "opening_hours": "Mo-Th 11:00-14:00,17:00-22:00; Fr-Sa 16:30-22:00",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 585142553,
+  "tags": {
+    "addr:housenumber": "26",
+    "addr:street": "Eschholzstraße",
+    "amenity": "pub",
+    "brewery": "yes",
+    "check_date": "2025-09-08",
+    "check_date:opening_hours": "2025-09-08",
+    "level": "0",
+    "name": "Daniela's Eschholzstüble",
+    "opening_hours": "Su-Fr 16:00-24:00+; Sa 14:00-24:00+",
+    "smoking": "yes",
+    "toilets": "yes",
+    "toilets:wheelchair": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 585142700,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7",
+    "addr:postcode": "79106",
+    "addr:street": "Guntramstraße",
+    "check_date": "2025-09-05",
+    "email": "praxis@hochinform.de",
+    "healthcare": "physiotherapist",
+    "level": "0",
+    "name": "hochinform",
+    "opening_hours": "Termine nach Vereinbarung",
+    "operator": "Christoph Hoch",
+    "phone": "+49 176 23398533",
+    "website": "https://hochinform.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 585142710,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "27",
+    "addr:postcode": "79106",
+    "addr:street": "Lehener Straße",
+    "alt_name": "Waschcenter",
+    "name": "30° Grad",
+    "opening_hours": "Mo-Sa 06:00-23:00; Su,PH off",
+    "self_service": "yes",
+    "shop": "laundry",
+    "website": "https://www.30grad-waschsalons.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 585142784,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "5",
+    "addr:postcode": "79106",
+    "addr:street": "Fedderstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 585142785,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7",
+    "addr:postcode": "79106",
+    "addr:street": "Fedderstraße",
+    "door": "yes",
+    "entrance": "main",
+    "fixme": "recheck position"
+  }
+},
+{
+  "type": "node",
+  "id": 585142788,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "9",
+    "addr:postcode": "79106",
+    "addr:street": "Fedderstraße",
+    "door": "yes",
+    "entrance": "main",
+    "fixme": "recheck position"
+  }
+},
+{
+  "type": "node",
+  "id": 585142790,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "5a",
+    "addr:postcode": "79106",
+    "addr:street": "Fedderstraße",
+    "door": "yes",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 601524544,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:postcode": "79098",
+    "addr:street": "Niemensstraße",
+    "amenity": "bar",
+    "contact:email": "freiburg@shooterstars.de",
+    "contact:website": "http://www.shooterstars.de",
+    "level": "0",
+    "name": "Shooter Stars",
+    "opening_hours": "Mo-Th 19:00-02:00, Fr-Sa 19:00-03:00",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 611621854,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "21",
+    "addr:postcode": "79106",
+    "addr:street": "Wentzingerstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 611621867,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "60",
+    "addr:postcode": "79106",
+    "addr:street": "Wentzingerstraße",
+    "contact:email": "info@sylvia-lafrenz.de",
+    "contact:phone": "+49 761 15624904",
+    "contact:website": "http://www.terra-luna-sol.de/",
+    "doctors:de": "Heilpraktikerin für Psychotherapie",
+    "doctors:en": "psychologist",
+    "healthcare": "alternative",
+    "note:de": "Heilpraktikerin für Psychotherapie; Praxis für Gesang- und Musiktherapie, psychologische Begleitung, Körperpsychotherapie, Gesang- und Atemstimmbildung",
+    "opening_hours": "\"nach Vereinbarung\"",
+    "operator": "Sylvia Lafrenz"
+  }
+},
+{
+  "type": "node",
+  "id": 611621870,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "17",
+    "addr:postcode": "79106",
+    "addr:street": "Wentzingerstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 611621877,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "19",
+    "addr:postcode": "79106",
+    "addr:street": "Wentzingerstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 611621878,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "60",
+    "addr:postcode": "79106",
+    "addr:street": "Wentzingerstraße",
+    "contact:phone": "+49 761 15624904",
+    "contact:website": "http://www.kreativraum.de/",
+    "name": "KreativRaum",
+    "office": "consulting"
+  }
+},
+{
+  "type": "node",
+  "id": 611621935,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "33",
+    "addr:postcode": "79106",
+    "addr:street": "Engelbergerstraße",
+    "amenity": "doctors",
+    "check_date": "2026-03-24",
+    "contact:phone": "+49 761 277881",
+    "healthcare": "doctor",
+    "name": "Gemeinschaftspraxis Müller",
+    "note:de": "Fachärzte für Allgemeinmedizin",
+    "opening_hours": "Mo-Fr 08:00-12:30; Tu,Th 17:00-18:30",
+    "operator": "Dr med Knut Müller, Dr med Arne Müller",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 631496431,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:postcode": "79098",
+    "addr:street": "Schnewlinstraße",
+    "amenity": "nightclub",
+    "check_date": "2024-06-23",
+    "level": "-1",
+    "name": "Crash",
+    "opening_hours": "Fr-Sa 22:00-05:00",
+    "phone": "+49 761 382916",
+    "website": "https://crash-freiburg.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 631496434,
+  "tags": {
+    "addr:housenumber": "7-9",
+    "addr:postcode": "79098",
+    "addr:street": "Schnewlinstraße",
+    "amenity": "nightclub",
+    "level": "0",
+    "name": "Drifter's Club",
+    "opening_hours": "Th 23:00-03:00, Fr-Sa 23:00-05:00",
+    "phone": "+49 761 383234",
+    "website": "http://www.drifters-club.de",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 653314127,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "28",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "amenity": "dentist",
+    "check_date": "2024-06-21",
+    "contact:phone": "+49 761 274380",
+    "healthcare": "dentist",
+    "name": "Dr A. Lange, Dr Vorberger",
+    "opening_hours": "Mo,Tu,Th 08:00-12:00,14:00-18:00; We 08:00-12:00; Fr 08:00-16:00"
+  }
+},
+{
+  "type": "node",
+  "id": 653314135,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "22",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "check_date": "2024-06-21",
+    "healthcare": "occupational_therapist",
+    "level": "1",
+    "name": "Ergotherapie Hadel Staudenrausch",
+    "old_name": "Schröck & Ziehler"
+  }
+},
+{
+  "type": "node",
+  "id": 653314136,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "22",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "healthcare": "physiotherapist",
+    "level": "0",
+    "name": "Physiotherapie Hoffmann & Trabitzsch",
+    "old_name": "Brutschin & Hoffmann",
+    "operator": "Annette Hoffmann-Dufner, Claudia Trabitzsch",
+    "phone": "+49 761 36966",
+    "website": "http://www.hoffmann-trabitzsch.de"
+  }
+},
+{
+  "type": "node",
+  "id": 653314137,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "22",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "amenity": "dentist",
+    "healthcare": "dentist",
+    "level": "2",
+    "name": "Dr. Philipp Krämer",
+    "old_name": "Dr Herbert Huber",
+    "phone": "+49 761 277800"
+  }
+},
+{
+  "type": "node",
+  "id": 653314156,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "13",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "amenity": "doctors",
+    "check_date": "2026-09-04",
+    "contact:phone": "+49 761 277050",
+    "doctors:de": "Kinder- und Jugendarzt",
+    "door": "yes",
+    "entrance": "yes",
+    "healthcare": "doctor",
+    "healthcare:for": "child;youth",
+    "level": "1",
+    "name": "Dr. Bernhard Warmbrunn",
+    "office": "physician",
+    "opening_hours": "Mo-Fr 08:30-11:30,14:30-17:30; We 08:30-11:30",
+    "operator": "Dr. Bernhard Warmbrunn"
+  }
+},
+{
+  "type": "node",
+  "id": 661692434,
+  "tags": {
+    "addr:housenumber": "15-17",
+    "addr:street": "Rheinstraße",
+    "check_date": "2026-07-07",
+    "check_date:opening_hours": "2026-07-07",
+    "contact:email": "info@kopierladen-freiburg.de",
+    "contact:fax": "+49 761 31133",
+    "contact:phone": "+49 761 278833",
+    "contact:website": "https://kopierladen-freiburg.de",
+    "internet_access": "terminal",
+    "name": "Kopierladen im Institutsviertel",
+    "old_name": "Kopierladen Kapp",
+    "opening_hours": "Mo-Fr 09:00-17:00; Sa,Su off",
+    "self_service": "yes",
+    "service:computer": "yes",
+    "service:copy": "yes",
+    "service:print": "yes",
+    "service:scan": "yes",
+    "shop": "copyshop",
+    "source:opening_hours": "entrance",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 662881651,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "4",
+    "addr:postcode": "79098",
+    "addr:street": "Rotteckring",
+    "check_date": "2026-06-06",
+    "closed:shop": "stationery",
+    "name": "Kiosk Stadttheater",
+    "old_name": "Walter Rose Schreibwaren",
+    "post_office": "post_partner",
+    "post_office:brand": "Hermes",
+    "post_office:brand:wikidata": "Q105702843",
+    "post_office:packaging": "yes",
+    "post_office:parcel_from": "yes",
+    "post_office:parcel_pickup": "yes",
+    "post_office:parcel_to": "yes",
+    "post_office:website": "https://paketshop.myhermes.de/int/hpsf.html?shopid=666311",
+    "ref:Hermes": "666311",
+    "shop": "kiosk",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 685214539,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "58-62",
+    "addr:postcode": "79098",
+    "addr:street": "Eisenbahnstraße",
+    "brand": "Edeka",
+    "brand:wikidata": "Q701755",
+    "brand:wikipedia": "de:Edeka",
+    "check_date:opening_hours": "2024-11-17",
+    "level": "0",
+    "name": "Edeka",
+    "opening_hours": "Mo-Sa 07:00-22:00",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 690150062,
+  "tags": {
+    "addr:housenumber": "37",
+    "addr:street": "Lehener Straße",
+    "check_date": "2025-09-07",
+    "female": "yes",
+    "level": "0",
+    "male": "yes",
+    "name": "Via Style",
+    "opening_hours": "Tu-Fr 09:00-18:00; Sa 09:00-14:00",
+    "phone": "+49 761 38450688",
+    "shop": "hairdresser",
+    "website": "http://www.viastyle.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 690150154,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "21",
+    "addr:postcode": "79106",
+    "addr:street": "Breisacher Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 690150155,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "23",
+    "addr:postcode": "79106",
+    "addr:street": "Breisacher Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 809686332,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "5-9",
+    "addr:postcode": "79098",
+    "addr:street": "Schiffstraße",
+    "brand": "MediaMarkt",
+    "brand:wikidata": "Q2381223",
+    "brand:wikipedia": "de:MediaMarktSaturn",
+    "check_date:opening_hours": "2025-09-08",
+    "contact:phone": "+49 221 22 243333",
+    "contact:website": "https://www.mediamarkt.de/de/store/freiburg-city-47",
+    "level": "1",
+    "name": "MediaMarkt",
+    "opening_hours": "Mo-Sa 10:00-19:00; PH off",
+    "shop": "electronics",
+    "source:opening_hours": "entrance;website",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 834986181,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "6",
+    "addr:postcode": "79098",
+    "addr:street": "Fahnenbergplatz",
+    "brand": "AOK Baden-Württemberg",
+    "brand:wikidata": "Q295933",
+    "brand:wikipedia": "de:Allgemeine Ortskrankenkasse",
+    "check_date:opening_hours": "2025-05-08",
+    "contact:email": "aok.suedlicher-oberrhein@bw.aok.de",
+    "contact:fax": "+49 761 2103 211",
+    "contact:phone": "+49 781 2035 1858",
+    "contact:website": "https://www.aok.de/pk/bw/kontakt/aok-vor-ort/",
+    "insurance": "health",
+    "name": "AOK",
+    "office": "insurance",
+    "opening_hours": "Tu,We,Fr 08:30-13:00; Mo 08:30-17:00; Th 08:30-18:00",
+    "source:opening_hours": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 861265627,
+  "tags": {
+    "addr:housenumber": "8",
+    "addr:street": "Albertstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 861265630,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:street": "Albertstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 861265685,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "18",
+    "addr:postcode": "79104",
+    "addr:street": "Albertstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 861265686,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "16",
+    "addr:postcode": "79104",
+    "addr:street": "Albertstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 861265693,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "14",
+    "addr:postcode": "79104",
+    "addr:street": "Albertstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 861265695,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12",
+    "addr:postcode": "79104",
+    "addr:street": "Albertstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 963478395,
+  "tags": {
+    "addr:housenumber": "14",
+    "addr:postcode": "79098",
+    "addr:street": "Unterlinden",
+    "amenity": "fast_food",
+    "check_date": "2026-04-22",
+    "cuisine": "kebab;pizza",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Fresh Food",
+    "opening_hours": "Mo-Sa 10:30-22:00; Su,PH off",
+    "payment:cash": "yes",
+    "payment:girocard": "yes",
+    "phone": "+49 761 33868",
+    "website": "https://fresh-food-freiburg.eatbu.com",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1033618414,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "55",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "check_date:opening_hours": "2023-08-06",
+    "email": "freiburg@lpb.bwl.de",
+    "fax": "+49 761 20773 99",
+    "name": "Landeszentrale für politische Bildung",
+    "office": "educational_institution",
+    "opening_hours": "Tu,Th 09:00-17:00; PH off",
+    "operator:wikidata": "Q1802766",
+    "phone": "+49 761 20773 0",
+    "website": "https://www.lpb-freiburg.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1038108010,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12",
+    "addr:postcode": "79098",
+    "addr:street": "Adlerstraße",
+    "amenity": "kindergarten",
+    "check_date": "2024-09-30",
+    "contact:email": "fki-lagerini@t-online.de",
+    "contact:phone": "+49 761 381881",
+    "contact:website": "http://www.freiburger-kinderhausinitiative.de/",
+    "education": "kindergarten",
+    "max_age": "6",
+    "min_age": "3",
+    "name": "Kita LagerIni",
+    "opening_hours": "Mo-Th 07:30-17:00; Fr 07:30-14:00"
+  }
+},
+{
+  "type": "node",
+  "id": 1038108011,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12",
+    "addr:postcode": "79098",
+    "addr:street": "Adlerstraße",
+    "lgbtq": "welcome",
+    "name": "Erogene Zone",
+    "nobrand": "yes",
+    "opening_hours": "We-Sa 13:00-19:00; PH off",
+    "operator": "EZSBK gbr",
+    "shop": "erotic",
+    "website": "https://erogene-zone.org/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1041216985,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "79098",
+    "addr:street": "Bismarckallee",
+    "check_date": "2026-04-22",
+    "check_date:opening_hours": "2026-04-22",
+    "email": "freiburgbase@schmitt-hahn.de",
+    "layer": "-1",
+    "level": "-1",
+    "name": "Schmitt & Hahn Presse Center",
+    "opening_hours": "Mo-Fr 06:00-21:00; Su 07:00-21:00; Sa 06:00-21:00",
+    "operator": "Karl Schmitt & Co. KG Bahnhofsbuchhandlungen",
+    "phone": "+49 761 2923358",
+    "shop": "newsagent",
+    "source": "survey",
+    "website": "http://www.schmitt-hahn.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 1045825209,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "22",
+    "addr:postcode": "79098",
+    "addr:street": "Sedanstraße",
+    "check_date": "2025-12-13",
+    "description:de": "Second-Hand-Kleidung kaufen oder gegen monatliche Gebühr leihen.",
+    "name": "Kleiderei",
+    "old_name": "Waschbär",
+    "opening_hours": "Tu-Fr 11:00-19:00; Sa 10:00-18:00",
+    "shop": "clothes",
+    "website": "https://kleiderei.com/stores/",
+    "wheelchair": "limited",
+    "wheelchair:description": "Eingang durch die Seitentür Türen nicht alleine zu öffnen"
+  }
+},
+{
+  "type": "node",
+  "id": 1144117444,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12",
+    "addr:postcode": "79098",
+    "addr:street": "Adlerstraße",
+    "contact:email": "info@syndikat.org",
+    "contact:fax": "+49 761 22407",
+    "contact:mastodon": "@syndikat@chaos.social",
+    "contact:phone": "+49 761 281892",
+    "identity": "commons",
+    "interaction": "renting;cousing",
+    "mode_of_organisation:ownership_structure": "foundation",
+    "mode_of_organisation:purpose": "for_members",
+    "mode_of_organisation:scale_of_activity": "national",
+    "name": "Mietshäuser Syndikat",
+    "production_input:money:ethical_banking": "yes",
+    "production_input:money:gift": "partially",
+    "production_input:money:others": "private",
+    "production_input:natural_recources:democratic": "yes",
+    "production_input:natural_recources:fair": "yes",
+    "provides": "community",
+    "provides:land": "urban",
+    "topic": "housing;land",
+    "website": "https://www.syndikat.org/",
+    "wheelchair": "limited",
+    "wikidata": "Q1432684",
+    "wikipedia": "de:Mietshäuser Syndikat"
+  }
+},
+{
+  "type": "node",
+  "id": 1144623624,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12",
+    "addr:postcode": "79098",
+    "addr:street": "Adlerstraße",
+    "amenity": "social_facility",
+    "contact:email": "info@rasthaus-freiburg.org",
+    "name": "rasthaus",
+    "official_name": "mini-rasthaus",
+    "social_facility": "outreach",
+    "social_facility:for": "refugee",
+    "website": "https://rasthaus-freiburg.org/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1172869549,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "4",
+    "addr:postcode": "79098",
+    "addr:street": "Hans-Sachs-Gasse",
+    "source:addr:housenumber": "Maps4BW, LGL, www.lgl-bw.de"
+  }
+},
+{
+  "type": "node",
+  "id": 1184642939,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "check_date:opening_hours": "2025-11-29",
+    "contact:email": "info@buero-sutter.de",
+    "contact:fax": "+49 761 8969799",
+    "contact:phone": "+49 761 896970",
+    "contact:website": "http://www.buero-sutter.de/",
+    "email": "info@buero-sutter.de",
+    "name": "Sutter",
+    "opening_hours": "Mo-Fr 10:00-18:30; Sa 10:00-18:00; Su,PH off",
+    "shop": "stationery",
+    "source:opening_hours": "website",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1188214130,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "9",
+    "addr:postcode": "79098",
+    "addr:street": "Hans-Sachs-Gasse"
+  }
+},
+{
+  "type": "node",
+  "id": 1188214131,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7",
+    "addr:postcode": "79098",
+    "addr:street": "Hans-Sachs-Gasse"
+  }
+},
+{
+  "type": "node",
+  "id": 1204201739,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "16",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "name": "Rheinische Scheidestätte",
+    "official_name": "Rheinische Scheidestätte GmbH",
+    "opening_hours": "Mo-Th 09:30-18:30; Sa 09:30-14:00; Fr,Su,PH closed",
+    "operator": "Rheinische Scheidestätte GmbH",
+    "phone": "+49 761 21718620",
+    "shop": "gold_buyer",
+    "website": "https://rheinische-scheidestaette.de/unternehmen/filialen/freiburg/"
+  }
+},
+{
+  "type": "node",
+  "id": 1234806023,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "2",
+    "addr:postcode": "79106",
+    "addr:street": "Antoniterstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 1234806097,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "2a",
+    "addr:postcode": "79106",
+    "addr:street": "Antoniterstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 1240334659,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:postcode": "79098",
+    "addr:street": "Fahnenbergplatz",
+    "brand": "Go Asia",
+    "brand:website": "https://goasia.net",
+    "brand:wikidata": "Q102381911",
+    "check_date": "2025-03-28",
+    "contact:phone": "+49 761 61299922",
+    "contact:website": "https://goasia.net/de/store_list/freiburg",
+    "level": "-1",
+    "name": "Go Asia",
+    "opening_hours": "Mo-Sa 09:00-20:00",
+    "origin": "asian",
+    "shop": "supermarket",
+    "start_date": "2022-06-09",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1240334664,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:postcode": "79098",
+    "addr:street": "Fahnenbergplatz",
+    "brand": "Alnatura",
+    "brand:wikidata": "Q876811",
+    "brand:wikipedia": "en:Alnatura",
+    "check_date": "2025-03-23",
+    "check_date:opening_hours": "2024-03-08",
+    "contact:fax": "+49 761 76656940",
+    "contact:phone": "+49 761 76656941",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "level": "0",
+    "name": "Alnatura Super Natur Markt",
+    "opening_hours": "Mo-Sa 08:00-21:00",
+    "operator": "Alnatura",
+    "organic": "only",
+    "payment:cash": "yes",
+    "payment:girocard": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "shop": "supermarket",
+    "short_name": "Alnatura",
+    "website": "https://www.alnatura.de/de-de/maerkte/marktseiten/freiburg/freiburg-alnatura-super-natur-markt-fr058/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1240334671,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "3",
+    "addr:postcode": "79098",
+    "addr:street": "Merianstraße",
+    "amenity": "fast_food",
+    "check_date": "2025-06-12",
+    "check_date:diet:vegan": "2025-06-12",
+    "check_date:diet:vegetarian": "2025-06-12",
+    "contact:email": "brsg.flammkuchen@gmail.com",
+    "contact:facebook": "https://www.facebook.com/brsgFlammkuchen",
+    "contact:phone": "+49 7664 9249696;+49 761 488 955 01",
+    "contact:website": "https://www.breisgauer-flammkuchen.de/",
+    "cuisine": "regional",
+    "delivery": "yes",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Breisgauer Flammkuchen",
+    "opening_hours": "Mo-Sa 11:30-20:00, Su closed",
+    "outdoor_seating": "sidewalk",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "start_date": "2021-12",
+    "takeaway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1244906119,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "19",
+    "addr:postcode": "79106",
+    "addr:street": "Wannerstraße",
+    "level": "0",
+    "name": "Platzer's Bäckerei",
+    "opening_hours": "Tu-Fr 06:00-18:00; Mo 06:00-14:00; Sa 07:00-13:00",
+    "shop": "bakery",
+    "website": "https://www.instagram.com/platzers_baeckerei/?hl=de"
+  }
+},
+{
+  "type": "node",
+  "id": 1255289328,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "amenity": "cafe",
+    "check_date:opening_hours": "2026-09-08",
+    "cuisine": "ice_cream",
+    "indoor_seating": "yes",
+    "name": "Eiscafe Lazzarin",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "phone": "+49 761 35319",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1265141308,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "3",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "brand": "OROVIVO",
+    "brand:wikidata": "Q107064745",
+    "check_date": "2025-01-09",
+    "name": "OROVIVO",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00",
+    "shop": "jewelry",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1265141320,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7-9",
+    "addr:postcode": "79098",
+    "addr:street": "Schiffstraße",
+    "contact:email": "info@cityoptik.de",
+    "contact:fax": "+49 761 26211",
+    "contact:phone": "+49 761 24479",
+    "contact:website": "http://www.cityoptik.de/",
+    "level": "0",
+    "name": "City Optik",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00",
+    "shop": "optician",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1273419693,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "46",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "nightclub",
+    "contact:email": "info@theaterbar-freiburg.de",
+    "contact:facebook": "https://facebook.com/theaterbar.freiburg/",
+    "contact:phone": "+49 761 21172813",
+    "level": "0",
+    "lgbtq": "welcome",
+    "name": "TheaterBar",
+    "old_name": "Passage 46",
+    "opening_hours": "Mo-Su,PH 00:00-00:00",
+    "operator": "Vincenzo Esposito & Nicodemo Esposito GbR",
+    "ref:vatin": "DE326211213",
+    "source": "https://www.inqueery.de/guide/freiburg/passage46;https://www.theaterbar-freiburg.de/",
+    "website": "https://www.theaterbar-freiburg.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 1273419701,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "11",
+    "addr:postcode": "79098",
+    "addr:street": "Franziskanerstraße",
+    "amenity": "bar",
+    "check_date": "2026-07-23",
+    "check_date:opening_hours": "2018-09-04",
+    "contact:facebook": "https://www.facebook.com/hacklfreiburg",
+    "contact:phone": "+49 171 5242327",
+    "name": "Hackls Zapfbar",
+    "opening_hours": "Su-Th off; Fr-Sa 20:00-05:00",
+    "wheelchair": "no",
+    "wheelchair:description": "Lokal und Toiletten sind aber nur über eine steile Wendeltreppe erreichbar."
+  }
+},
+{
+  "type": "node",
+  "id": 1273423926,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Bismarckallee",
+    "check_date": "2026-07-19",
+    "disused:amenity": "pharmacy",
+    "level": "0",
+    "name": "easy apotheke",
+    "note": "Aktuell geschlossen wg. Insolvenz. / Currently closed due to insolvency.",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1309258654,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "7-9",
+    "addr:postcode": "79098",
+    "addr:street": "Schiffstraße",
+    "level": "-1",
+    "shop": "vacant",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1310092496,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "2",
+    "addr:postcode": "79098",
+    "addr:street": "Unterlinden",
+    "amenity": "pharmacy",
+    "check_date:opening_hours": "2023-12-09",
+    "contact:phone": "+49 761 34300",
+    "contact:website": "http://www.unterlinden-apotheke.de",
+    "dispensing": "yes",
+    "healthcare": "pharmacy",
+    "name": "Unterlinden Apotheke",
+    "opening_hours": "Mo-Fr 08:30-19:00; Sa 09:00-16:00",
+    "source:opening_hours": "entrance",
+    "website": "https://www.unterlinden-apotheke.de",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1310092497,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7-9",
+    "addr:postcode": "79098",
+    "addr:street": "Schiffstraße",
+    "amenity": "pharmacy",
+    "check_date": "2025-01-09",
+    "dispensing": "yes",
+    "healthcare": "pharmacy",
+    "level": "0",
+    "name": "City-Apotheke",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-18:00",
+    "website": "https://www.city-apotheke-freiburg.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1323896142,
+  "tags": {
+    "addr:housenumber": "24 a",
+    "addr:postcode": "79098",
+    "addr:street": "Wilhelmstraße",
+    "brand": "BUND",
+    "brand:wikidata": "Q897009",
+    "brand:wikipedia": "de:Bund für Umwelt und Naturschutz Deutschland",
+    "name": "BUND Freiburg",
+    "office": "association",
+    "official_name": "Bund für Umwelt und Naturschutz Deutschland",
+    "operator": "BUND-Landesverband Baden-Württemberg",
+    "website": "http://www.bund-rvso.de"
+  }
+},
+{
+  "type": "node",
+  "id": 1363487613,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Bertoldstraße",
+    "brand": "Urban Outfitters",
+    "brand:wikidata": "Q3552193",
+    "brand:wikipedia": "en:Superdry",
+    "check_date": "2025-08-02",
+    "check_date:opening_hours": "2025-08-02",
+    "level": "1",
+    "name": "Urban Outfitters",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "shop": "clothes",
+    "source": "survey",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1363487647,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "10",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "check_date:opening_hours": "2025-08-01",
+    "email": "service@rombach.de",
+    "fax": "+49 7614 5002499",
+    "level": "-1;0;1;2",
+    "name": "Buchhandlung Rombach",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "operator": "Buchhandlung Rombach GmbH",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+49 7614 5002400",
+    "shop": "books",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.rombach.de",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1363487650,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "17",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "check_date:opening_hours": "2021-08-15",
+    "contact:website": "http://www.uniseum.uni-freiburg.de/",
+    "fee": "no",
+    "museum": "history;local",
+    "name": "Uniseum",
+    "opening_hours": "Th 14:00-18:00; Fr 14:00-18:00; Sa 14:00-18:00",
+    "phone": "+49 761 2033835",
+    "toilets:wheelchair": "yes",
+    "tourism": "museum",
+    "website": "https://www.uniseum.uni-freiburg.de/",
+    "wheelchair": "limited",
+    "wheelchair:description": "UG nicht barrierefrei",
+    "wikidata": "Q598975",
+    "wikipedia": "de:Uniseum"
+  }
+},
+{
+  "type": "node",
+  "id": 1363553652,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:postcode": "79098",
+    "addr:street": "Unterlinden",
+    "air_conditioning": "no",
+    "amenity": "restaurant",
+    "cuisine": "coffee_shop;tea",
+    "email": "kontakt@safaran-freiburg.de",
+    "indoor_seating": "yes",
+    "name": "Safaran",
+    "opening_hours": "Mo-Sa 10:00-18:00",
+    "outdoor_seating": "yes",
+    "phone": "+4976115430585",
+    "website": "http://www.safaran-freiburg.de"
+  }
+},
+{
+  "type": "node",
+  "id": 1368467139,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "11",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 1442021212,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "50",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "cinema",
+    "brand": "Cinemaxx",
+    "brand:wikidata": "Q881860",
+    "brand:wikipedia": "de:CinemaxX",
+    "name": "Cinemaxx",
+    "opening_hours": "Mo-Fr 13:45-23:30; Sa,Su 10:14-23:30",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.cinemaxx.de/",
+    "wheelchair": "yes",
+    "wheelchair:description": "Aufzug zu den Etagen vorhanden, 8 von 9 Kinosälen barrierefrei",
+    "wikidata": "Q34378422"
+  }
+},
+{
+  "type": "node",
+  "id": 1485850226,
+  "tags": {
+    "addr:housenumber": "43",
+    "addr:postcode": "79098",
+    "addr:street": "Eisenbahnstraße",
+    "amenity": "restaurant",
+    "check_date": "2026-05-22",
+    "cuisine": "italian",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Ristorante Pizzeria Antica",
+    "opening_hours": "Mo-Sa 11:30-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 761 22773",
+    "website": "https://antica-restaurant.de/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1583902659,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "7g",
+    "addr:postcode": "79098",
+    "addr:street": "Bismarckallee",
+    "amenity": "planetarium",
+    "check_date": "2025-10-27",
+    "description": "Das Planetarium Freiburg am Nordende des Hauptbahnhofs Freiburg ist das größte Planetarium in Südbaden. Es bietet öffentliche Veranstaltungen für alle Altersstufen, sowie Schul- und Kindergartenprogramme.",
+    "email": "service@planetarium-freiburg.de",
+    "fax": "+49 761 3890659",
+    "level": "3",
+    "name": "Planetarium Freiburg",
+    "opening_hours": "\"Veranstaltungszeiten siehe Webseite\"",
+    "operator": "Stadt Freiburg",
+    "phone": "+49 761 3890630",
+    "reservation": "recommended",
+    "toilets:wheelchair": "yes",
+    "tourism": "attraction",
+    "website": "https://www.planetarium-freiburg.de/",
+    "wheelchair": "yes",
+    "wikidata": "Q30092246",
+    "wikipedia": "de:Planetarium Freiburg"
+  }
+},
+{
+  "type": "node",
+  "id": 1583914378,
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:street": "Wentzingerstraße",
+    "fax": "+49 761 205513197",
+    "level": "2",
+    "name": "Gleisnost",
+    "opening_hours": "Mo-Fr 09:30-17:00",
+    "operator": "Gleisnost",
+    "shop": "travel_agency",
+    "website": "https://www.gleisnost.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1585800860,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "2",
+    "addr:postcode": "79106",
+    "addr:street": "Kleineschholzweg"
+  }
+},
+{
+  "type": "node",
+  "id": 1595554073,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "38",
+    "addr:postcode": "79106",
+    "addr:street": "Eschholzstraße",
+    "amenity": "pub",
+    "check_date": "2023-12-20",
+    "level": "0",
+    "name": "Delirium",
+    "opening_hours": "Mo 00:00-01:00,18:00-24:00, Tu-Fr 00:00-02:00,18:00-24:00, Sa-Su 00:00-03:00,18:00-24:00",
+    "toilets": "yes",
+    "toilets:wheelchair": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1595590512,
+  "tags": {
+    "addr:housenumber": "40",
+    "addr:street": "Eschholzstraße",
+    "amenity": "fast_food",
+    "cuisine": "kebab;pizza",
+    "diet:vegetarian": "yes",
+    "level": "0",
+    "name": "Havîn Grillhaus",
+    "opening_hours": "Mo-Fr 11:00-03:00, Sa,Su,PH 11:00-05:00",
+    "phone": "+49 761 21175771"
+  }
+},
+{
+  "type": "node",
+  "id": 1595598578,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:postcode": "79098",
+    "addr:street": "Niemensstraße",
+    "amenity": "bar",
+    "check_date:opening_hours": "2016-01-31",
+    "contact:phone": "+49 761 2025973",
+    "name": "NOYA",
+    "outdoor_seating": "yes",
+    "source:opening_hours": "website",
+    "toilets:wheelchair": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1595624257,
+  "tags": {
+    "addr:housenumber": "6",
+    "addr:street": "Wasserstraße",
+    "air_conditioning": "yes",
+    "check_in": "15:00",
+    "check_out": "11:00",
+    "contact:email": "info@central-freiburg.de",
+    "contact:fax": "+49 761 3197100",
+    "contact:phone": "+49 761 31970",
+    "contact:website": "https://www.central-freiburg.de/",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Central-Hotel",
+    "opening_hours:reception": "24/7",
+    "stars": "4",
+    "tourism": "hotel",
+    "website": "https://www.central-freiburg.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 1610385711,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "37",
+    "addr:postcode": "79098",
+    "addr:street": "Belfortstraße",
+    "contact:fax": "+49 761 76628767",
+    "contact:phone": "+49 761 281513",
+    "contact:website": "https://www.aka-filmclub.de",
+    "description": "Büro des akademischen Filmclubs an der Universität Freiburg e.V.\n\nHier finden keine Filmvorführungen statt!\nDas Kino befindet sich im großen Hörsaal der Biologie. Dieser befindet sich in der Schänzlestraße 1.",
+    "name": "aka-Filmclub e.V. Büro",
+    "office": "association",
+    "website": "https://www.aka-filmclub.de",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1783790114,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "51",
+    "addr:postcode": "79106",
+    "addr:street": "Egonstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 1783790115,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "53",
+    "addr:postcode": "79106",
+    "addr:street": "Egonstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 1816989987,
+  "tags": {
+    "addr:housenumber": "21",
+    "addr:postcode": "79106",
+    "addr:street": "Eschholzstraße",
+    "check_date:opening_hours": "2024-11-25",
+    "female": "yes",
+    "male": "yes",
+    "name": "Ihr Friseursalon Annette Zimmermann",
+    "opening_hours": "Tu,We,Fr 09:00-18:00; Th 09:00-13:00; Sa 08:00-12:00",
+    "shop": "hairdresser",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2039087779,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "21",
+    "addr:postcode": "79106",
+    "addr:street": "Wentzingerstraße",
+    "contact:email": "info@teconcept.de",
+    "contact:fax": "+49 761 214436-31",
+    "contact:phone": "+49 761 214436-40",
+    "contact:website": "http://teconcept.de/",
+    "name": "TEConcept",
+    "office": "company"
+  }
+},
+{
+  "type": "node",
+  "id": 2207529614,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "51",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "indoor_seating": "yes",
+    "name": "M9",
+    "opening_hours": "Mo-Su 11:30-22:30",
+    "outdoor_seating": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+49 761 51467035",
+    "website": "https://m9restaurant.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 2244828704,
+  "tags": {
+    "addr:housenumber": "82",
+    "addr:street": "Klarastraße",
+    "air_conditioning": "no",
+    "amenity": "bar",
+    "check_date": "2026-04-13",
+    "name": "Alt Freiburg",
+    "opening_hours": "Mo-Su 00:00-03:00,14:00-24:00"
+  }
+},
+{
+  "type": "node",
+  "id": 2244843441,
+  "tags": {
+    "addr:housenumber": "17",
+    "addr:street": "Wentzingerstraße",
+    "amenity": "restaurant",
+    "contact:email": "freiburg@my-mauritius.com",
+    "contact:facebook": "https://www.facebook.com/Mauritius.Freiburg",
+    "contact:instagram": "https://www.instagram.com/my_mauritius/",
+    "contact:phone": "+49 761 61250391",
+    "contact:website": "https://www.my-mauritius.com/restaurants/freiburg-im-breisgau/",
+    "cuisine": "international",
+    "diet:vegetarian": "yes",
+    "name": "Mauritius",
+    "opening_hours": "Mo-Th 12:00-23:00; Fr,Sa 12:00-01:00, Su 12:00-23:00",
+    "outdoor_seating": "yes",
+    "strapline": "The Beach Restaurant",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes",
+    "wheelchair:description": "Behindertentoilette gibt es eventuell bei der Küche, in der Praxis ist der Zugang blockiert."
+  }
+},
+{
+  "type": "node",
+  "id": 2291004207,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "8-10",
+    "addr:postcode": "79098",
+    "addr:street": "Rotteckring",
+    "brand": "C&A",
+    "brand:wikidata": "Q701338",
+    "brand:wikipedia": "en:C&A",
+    "check_date": "2026-07-23",
+    "name": "C&A",
+    "opening_hours": "Mo-Sa 09:30-20:00",
+    "shop": "clothes",
+    "website": "https://www.c-and-a.com/de",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2357253726,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "9",
+    "addr:postcode": "79098",
+    "addr:street": "Rosastraße",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2020-02-08",
+    "contact:email": "info@drexlers-restaurant.de",
+    "contact:phone": "+49 761 59 57 203",
+    "contact:website": "http://www.drexlers-restaurant.de",
+    "cuisine": "regional;international;fine_dining",
+    "name": "Drexlers",
+    "opening_hours": "Mo-Fr 11:30-14:30, 18:00-24:00; Sa 18:00-24:00; Su,PH off",
+    "opening_hours:kitchen": "Mo-Fr 11:30-14:00, 18:00-22:30; Sa 18:00-22:30; Su,PH off",
+    "source:opening_hours": "website"
+  }
+},
+{
+  "type": "node",
+  "id": 2360471553,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "58-60",
+    "addr:postcode": "79098",
+    "addr:street": "Eisenbahnstraße",
+    "disused:amenity": "restaurant",
+    "name": "Shahaneh",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2360485476,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "44",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "fast_food",
+    "check_date:opening_hours": "2024-06-16",
+    "cuisine": "kebab",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Greencity Mr. Döner",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes",
+    "takeaway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2360498545,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "15",
+    "addr:postcode": "79098",
+    "addr:street": "Universitätsstraße",
+    "disused:shop": "travel_agency"
+  }
+},
+{
+  "type": "node",
+  "id": 2404428289,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:postcode": "79098",
+    "addr:street": "Merianstraße",
+    "amenity": "restaurant",
+    "cuisine": "japanese",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "email": "kontakt@bashoan.com",
+    "fax": "+49 761 2853406",
+    "name": "Basho-An",
+    "opening_hours": "Tu-Sa 12:00-15:00,18:00-22:00; PH 18:00-22:00; Su off; Mo off",
+    "opening_hours:kitchen": "Tu-Sa 12:00-14:00,18:00-22:00; PH 18:00-22:00; Su off, Mo off",
+    "outdoor_seating": "no",
+    "payment:cash": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "phone": "+49 761 2853405",
+    "reservation": "yes",
+    "smoking": "no",
+    "website": "https://www.bashoan.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2405174172,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "24",
+    "addr:postcode": "79106",
+    "addr:street": "Stühlingerstraße",
+    "addr:suburb": "Stühlinger",
+    "name": "axnovia GmbH Software Solutions",
+    "office": "it"
+  }
+},
+{
+  "type": "node",
+  "id": 2452705496,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "13-15",
+    "addr:postcode": "79098",
+    "addr:street": "Merianstraße",
+    "amenity": "doctors",
+    "contact:email": "info@hno-freiburg.com",
+    "contact:fax": "+49 761 23371",
+    "contact:phone": "+49 761 23351",
+    "contact:website": "http://www.hno-freiburg.com",
+    "description": "Rollstuhlzugang ebenerdig über Rückseite",
+    "healthcare": "doctor",
+    "healthcare:speciality": "otolaryngology",
+    "name": "HNO Praxis Dr. Allert und Dr. Heinert",
+    "opening_hours": "Mo,Tu,Th 08:00-18:00; We 08:00-17:00; Fr 08:00-13:30; PH off",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2459967443,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "1a",
+    "addr:postcode": "79106",
+    "addr:street": "Lortzingstraße",
+    "amenity": "community_centre",
+    "community_centre": "youth_centre",
+    "name": "Jugendtreff Brühl-Beurbarung",
+    "website": "https://www.jbb-freiburg.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 2512641014,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "20",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "name": "Flac",
+    "opening_hours": "Mo-Sa 10:00-18:00",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "yes",
+    "shop": "bag",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2512642136,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "22",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "fast_food",
+    "brand": "Haus des Döners",
+    "brand:wikidata": "Q133461235",
+    "cuisine": "kebab",
+    "disused:shop": "travel_agency",
+    "drive_through": "no",
+    "name": "Haus des Döners",
+    "opening_hours": "Mo-Th 10:00-24:00, Fr,Sa 10:00-05:00, Su 11:00-24:00",
+    "start_date": "2024-01-09",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2512650864,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "28",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 2512677576,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "17-19",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "brand": "Apple Store",
+    "brand:wikidata": "Q421253",
+    "name": "Apple Store",
+    "shop": "electronics",
+    "short_name": "Apple"
+  }
+},
+{
+  "type": "node",
+  "id": 2512680435,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "23",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "name": "HandyWelt",
+    "post_office": "post_partner",
+    "post_office:brand": "DPD",
+    "post_office:brand:wikidata": "Q541030",
+    "post_office:parcel_from": "yes",
+    "post_office:parcel_pickup": "yes",
+    "post_office:parcel_to": "yes",
+    "shop": "mobile_phone",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2512685516,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "23",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "level": "0",
+    "name": "Heartlight Vintage",
+    "opening_hours": "Mo-Th 11:00-19:00; Fr,Sa 10:00-19:00",
+    "second_hand": "yes",
+    "shop": "second_hand",
+    "website": "https://www.heartlight-vintage.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2560507561,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "57",
+    "addr:postcode": "79104",
+    "addr:street": "Stefan-Meier-Straße",
+    "source:addr:housenumber": "Maps4BW, LGL, www.lgl-bw.de"
+  }
+},
+{
+  "type": "node",
+  "id": 2560507565,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "63",
+    "addr:postcode": "79104",
+    "addr:street": "Stefan-Meier-Straße",
+    "source:addr:housenumber": "Maps4BW, LGL, www.lgl-bw.de"
+  }
+},
+{
+  "type": "node",
+  "id": 2560639294,
+  "tags": {
+    "addr:housenumber": "10a",
+    "addr:street": "Schnewlinstraße",
+    "brand": "Swiss Sense",
+    "brand:wikidata": "Q110908101",
+    "check_date:opening_hours": "2024-05-23",
+    "name": "Swiss Sense",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "opening_hours:url": "https://www.swisssense.de/bettenfachgeschaeft/l/freiburg-im-breisgau/schnewlinstrasse-10/4015",
+    "shop": "bed",
+    "source": "survey",
+    "source:opening_hours": "website",
+    "website": "https://www.swisssense.de/bettenfachgeschaeft/l/freiburg-im-breisgau/schnewlinstrasse-10/4015",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2560639295,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "79098",
+    "addr:street": "Schnewlinstraße",
+    "old_name": "Gravis",
+    "shop": "vacant",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2570658324,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "10",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "brand": "Butlers",
+    "brand:wikidata": "Q1017972",
+    "check_date": "2026-09-08",
+    "check_date:opening_hours": "2026-09-08",
+    "name": "Butlers",
+    "opening_hours": "Mo-Sa 09:30-20:00",
+    "phone": "+49 761 2024829",
+    "shop": "interior_decoration",
+    "source": "survey",
+    "website": "https://www.butlers.com/butlers-freiburg-rathausgasse-10",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2570803884,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "4",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "check_date": "2025-09-10",
+    "check_date:opening_hours": "2025-09-10",
+    "contact:email": "info@freiburger-leder-haus.de",
+    "contact:phone": "+49 761 31201",
+    "contact:website": "https://www.freiburger-leder-haus.de/",
+    "name": "Freiburger Leder Haus",
+    "opening_hours": "Mo-Fr 10:00-18:30; Sa 10:00-18:00",
+    "opening_hours:url": "http://www.freiburger-leder-haus.de/",
+    "ref:vatin": "DE 813 002 895",
+    "shop": "bag",
+    "source:opening_hours": "website"
+  }
+},
+{
+  "type": "node",
+  "id": 2571875160,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:postcode": "79098",
+    "addr:street": "Unterlinden",
+    "check_date": "2025-01-09",
+    "name": "Betten Striebel",
+    "opening_hours": "Mo-Fr 09:30-18:30; Sa 10:00-17:00",
+    "phone": "+49 761 386630",
+    "shop": "bed",
+    "source": "survey",
+    "website": "https://www.betten-striebel.com"
+  }
+},
+{
+  "type": "node",
+  "id": 2571875161,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:postcode": "79098",
+    "addr:street": "Unterlinden",
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "email": "info@toms-freiburg.de",
+    "name": "Tom's",
+    "opening_hours": "Mo-Sa 11:00-24:00+; Su 12:00-23:00+",
+    "outdoor_seating": "yes",
+    "phone": "+49 761 1375588",
+    "source": "survey",
+    "start_date": "2015-12",
+    "website": "https://www.toms-freiburg.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 2571875178,
+  "tags": {
+    "addr:housenumber": "5a",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "amenity": "theatre",
+    "check_date": "2026-06-05",
+    "name": "Wallgraben Theater",
+    "phone": "+49 761 25656",
+    "website": "https://www.wallgraben-theater.com/",
+    "wheelchair": "no",
+    "wikidata": "Q432338"
+  }
+},
+{
+  "type": "node",
+  "id": 2620871432,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "70",
+    "addr:postcode": "79106",
+    "addr:street": "Klarastraße",
+    "amenity": "cafe",
+    "check_date": "2026-08-29",
+    "diet:vegetarian": "yes",
+    "name": "JC",
+    "opening_hours": "Mo-Fr 10:00-18:00; Sa 10:00-16:00"
+  }
+},
+{
+  "type": "node",
+  "id": 2643394333,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "3",
+    "addr:postcode": "79098",
+    "addr:street": "Wilhelmstraße",
+    "alt_name": "adco",
+    "check_date:opening_hours": "2025-06-18",
+    "contact:phone": "+49 761 286918",
+    "contact:website": "https://adco-fr.de/",
+    "description": "Outdoor Bekleidung und Ausrüstung",
+    "email": "info@outdoorshop.de",
+    "level": "0",
+    "name": "Adventure Company",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "opening_hours:url": "http://adco-fr.de/#filialen",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "shop": "outdoor",
+    "source:opening_hours": "website",
+    "website": "https://adco-fr.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2747765023,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "65",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "email": "info@physiotherapie-harloff.de",
+    "fax": "+49 761 35811",
+    "healthcare": "physiotherapist",
+    "name": "Harloff Physiotherapie",
+    "opening_hours": "Mo-Fr 09:00-12:00",
+    "phone": "+49 761 2 48 61",
+    "source": "Homepage",
+    "website": "https://www.physiotherapie-harloff.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 2795000576,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "44",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "brand": "GEERS",
+    "brand:wikidata": "Q1497707",
+    "check_date:opening_hours": "2025-05-18",
+    "name": "GEERS Hörgeräte",
+    "opening_hours": "Mo-Fr 09:00-13:00,14:00-18:00",
+    "opening_hours:url": "https://standorte.geers.de/freiburg/bertoldstr.-44.html",
+    "shop": "hearing_aids",
+    "source:opening_hours": "website",
+    "website": "https://standorte.geers.de/freiburg/bertoldstr.-44.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2876782914,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "2a",
+    "addr:postcode": "79098",
+    "addr:street": "Bismarckallee",
+    "source:address": "Maps4BW, LGL, www.lgl-bw.de"
+  }
+},
+{
+  "type": "node",
+  "id": 2876782915,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "4",
+    "addr:postcode": "79098",
+    "addr:street": "Bismarckallee",
+    "source:address": "Maps4BW, LGL, www.lgl-bw.de"
+  }
+},
+{
+  "type": "node",
+  "id": 2876782917,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "6",
+    "addr:postcode": "79098",
+    "addr:street": "Hans-Sachs-Gasse",
+    "source:addr:housenumber": "Maps4BW, LGL, www.lgl-bw.de"
+  }
+},
+{
+  "type": "node",
+  "id": 2916982672,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "15",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring",
+    "name": "Cosmetix",
+    "shop": "cosmetics",
+    "source:addr:housenumber": "maps4bw (LGL, www.lgl-bw.de)"
+  }
+},
+{
+  "type": "node",
+  "id": 2916982673,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "17",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring",
+    "air_conditioning": "yes",
+    "beauty": "cosmetics;waxing;eyelash;spa;skin_care;eyebrow;cosmetic_studio;hair_removal",
+    "description": "Kosmetikstudio - Wimpern und Waxing Studio",
+    "email": "info@beautykings.de",
+    "level": "0",
+    "name": "Beautykings Kosmetikstudio",
+    "opening_hours": "Mo-Fr 10:00-18:00",
+    "operator": "Familie Keil",
+    "payment:cash": "yes",
+    "phone": "+49 761 888 999 8",
+    "shop": "beauty",
+    "source:addr:housenumber": "maps4bw (LGL, www.lgl-bw.de)",
+    "start_date": "2010",
+    "website": "https://www.beautykings.de"
+  }
+},
+{
+  "type": "node",
+  "id": 2916982674,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "19",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring",
+    "name": "SAYAM Thai-Massage",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "phone": "+49 761 28547285",
+    "shop": "massage",
+    "source:addr:housenumber": "maps4bw (LGL, www.lgl-bw.de)",
+    "website": "https://sayam-massage-freiburg.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 2916982675,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "21",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring",
+    "amenity": "driving_school",
+    "education": "driving_school",
+    "name": "Fahrschule am Tor",
+    "source:addr:housenumber": "maps4bw (LGL, www.lgl-bw.de)"
+  }
+},
+{
+  "type": "node",
+  "id": 2916982676,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "23",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring",
+    "source:addr:housenumber": "maps4bw (LGL, www.lgl-bw.de)"
+  }
+},
+{
+  "type": "node",
+  "id": 2926986062,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "79104",
+    "addr:street": "Merianhof",
+    "source:addr:housenumber": "maps4bw (LGL, www.lgl-bw.de)"
+  }
+},
+{
+  "type": "node",
+  "id": 2926986064,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:postcode": "79104",
+    "addr:street": "Röderstraße",
+    "source:addr:housenumber": "maps4bw (LGL, www.lgl-bw.de)"
+  }
+},
+{
+  "type": "node",
+  "id": 2926986066,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "79104",
+    "addr:street": "Merianhof",
+    "source:addr:housenumber": "maps4bw (LGL, www.lgl-bw.de)"
+  }
+},
+{
+  "type": "node",
+  "id": 2926986071,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "4",
+    "addr:postcode": "79104",
+    "addr:street": "Röderstraße",
+    "source:addr:housenumber": "maps4bw (LGL, www.lgl-bw.de)"
+  }
+},
+{
+  "type": "node",
+  "id": 2926986072,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "79104",
+    "addr:street": "Merianhof",
+    "source:addr:housenumber": "maps4bw (LGL, www.lgl-bw.de)"
+  }
+},
+{
+  "type": "node",
+  "id": 2926986078,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "9",
+    "addr:postcode": "79104",
+    "addr:street": "Merianhof",
+    "source:addr:housenumber": "maps4bw (LGL, www.lgl-bw.de)"
+  }
+},
+{
+  "type": "node",
+  "id": 2952009062,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7",
+    "addr:street": "Sedanstraße",
+    "door": "yes",
+    "entrance": "main",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 2952878525,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "59",
+    "addr:postcode": "79104",
+    "addr:street": "Stefan-Meier-Straße",
+    "source:addr:housenumber": "Maps4BW, LGL, www.lgl-bw.de"
+  }
+},
+{
+  "type": "node",
+  "id": 2952878526,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "61",
+    "addr:postcode": "79104",
+    "addr:street": "Stefan-Meier-Straße",
+    "source:addr:housenumber": "Maps4BW, LGL, www.lgl-bw.de"
+  }
+},
+{
+  "type": "node",
+  "id": 2998256230,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "22",
+    "addr:postcode": "79106",
+    "addr:street": "Guntramstraße",
+    "alt_name": "Curryhaus",
+    "amenity": "restaurant",
+    "check_date": "2025-09-05",
+    "cuisine": "indian",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Indian Curryhouse",
+    "note": "Teilweise schreiben sie sich \"Indian Curryhouse\", teilweise \"Curryhaus\".",
+    "opening_hours": "Tu-Sa 11:30-14:00, 17:30-22:00; Su 17:30-22:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+49 761 38427701",
+    "smoking": "no",
+    "website": "https://www.curryhouse-freiburg.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2998298946,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "46",
+    "addr:postcode": "79106",
+    "addr:street": "Wentzingerstraße",
+    "amenity": "cafe",
+    "check_date": "2026-05-14",
+    "check_date:opening_hours": "2023-08-31",
+    "diet:gluten_free": "yes",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "email": "info@huber-freiburg.com",
+    "name": "Café Huber",
+    "opening_hours": "We-Sa 09:00-16:00; Su 10:00-16:00",
+    "opening_hours:url": "http://www.huber-freiburg.com/welcome/",
+    "outdoor_seating": "yes",
+    "phone": "+49 761 61024145",
+    "smoking": "no",
+    "source:opening_hours": "website",
+    "website": "https://www.huber-freiburg.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3069405353,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "65",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3069405354,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "2a",
+    "addr:postcode": "79098",
+    "addr:street": "Bismarckallee",
+    "check_date": "2025-05-08",
+    "leisure": "adult_gaming_centre",
+    "name": "Megapark Casino",
+    "opening_hours": "08:00-24:00",
+    "operator": "HS Gast- uns Spielstätten Gmbh",
+    "website": "https://www.spielcasino-freiburg.de/unsere-casinos/megapark-casino/"
+  }
+},
+{
+  "type": "node",
+  "id": 3085856411,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "1",
+    "addr:postcode": "79106",
+    "addr:street": "Klarastraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3085856412,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "17",
+    "addr:postcode": "79106",
+    "addr:street": "Lehener Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3089854246,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "9",
+    "addr:postcode": "79098",
+    "addr:street": "Schiffstraße",
+    "brand": "Bijou Brigitte",
+    "brand:wikidata": "Q599545",
+    "brand:wikipedia": "de:Bijou Brigitte",
+    "check_date": "2025-01-09",
+    "level": "0",
+    "name": "Bijou Brigitte",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00",
+    "shop": "jewelry",
+    "website": "https://www.bijou-brigitte.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 3089854249,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:postcode": "79098",
+    "addr:street": "Schiffstraße",
+    "amenity": "cafe",
+    "check_date": "2025-01-09",
+    "cuisine": "ice_cream",
+    "level": "0",
+    "name": "Eis-Cafe Venezia",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-18:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 761 33518",
+    "toilets:access": "yes",
+    "toilets:changing_table": "no",
+    "toilets:wheelchair": "no",
+    "website": "https://www.schwarzwald-city.de/geschaefte/eis-venezia",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3089854254,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "5-9",
+    "addr:postcode": "79098",
+    "addr:street": "Schiffstraße",
+    "level": "0",
+    "name": "Leder & Form",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-17:00",
+    "shop": "bag",
+    "website": "https://www.leder-und-form.de",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3089854260,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7",
+    "addr:postcode": "79098",
+    "addr:street": "Schiffstraße",
+    "check_date": "2025-01-09",
+    "level": "0",
+    "name": "Memories",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00",
+    "shop": "gift",
+    "website": "https://www.freiburg-memories.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396588,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "10",
+    "addr:postcode": "79098",
+    "addr:street": "Merianstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396589,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "10",
+    "addr:postcode": "79104",
+    "addr:street": "Rheinstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396590,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "11",
+    "addr:postcode": "79104",
+    "addr:street": "Rheinstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396591,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12",
+    "addr:postcode": "79104",
+    "addr:street": "Rheinstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396592,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "13",
+    "addr:postcode": "79098",
+    "addr:street": "Merianstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396593,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "13",
+    "addr:postcode": "79104",
+    "addr:street": "Rheinstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396594,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "13",
+    "addr:postcode": "79104",
+    "addr:street": "Katharinenstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396595,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "15",
+    "addr:postcode": "79098",
+    "addr:street": "Merianstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396596,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "15",
+    "addr:postcode": "79104",
+    "addr:street": "Rheinstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396597,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "15",
+    "addr:postcode": "79104",
+    "addr:street": "Katharinenstraße",
+    "amenity": "doctors",
+    "check_date:opening_hours": "2025-10-20",
+    "healthcare": "doctor",
+    "healthcare:speciality": "orthopaedics;trauma;physiatry",
+    "name": "praxis dr. aust",
+    "opening_hours:signed": "no",
+    "operator": "Dr. med. Andreas Aust",
+    "website": "https://praxisdraust.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396598,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "16",
+    "addr:postcode": "79104",
+    "addr:street": "Merianstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396599,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "17",
+    "addr:postcode": "79104",
+    "addr:street": "Rheinstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396602,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "34",
+    "addr:postcode": "79104",
+    "addr:street": "Merianstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396603,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "34a",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396604,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "36",
+    "addr:postcode": "79104",
+    "addr:street": "Merianstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396605,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "6",
+    "addr:postcode": "79104",
+    "addr:street": "Rheinstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3104396606,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "8",
+    "addr:postcode": "79104",
+    "addr:street": "Rheinstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3117015500,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "18",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring"
+  }
+},
+{
+  "type": "node",
+  "id": 3117015503,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "20",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring"
+  }
+},
+{
+  "type": "node",
+  "id": 3117015504,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "22",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring"
+  }
+},
+{
+  "type": "node",
+  "id": 3117015505,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "24",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring"
+  }
+},
+{
+  "type": "node",
+  "id": 3117015506,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "26",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring"
+  }
+},
+{
+  "type": "node",
+  "id": 3117015507,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "28",
+    "addr:postcode": "79098",
+    "addr:street": "Weberstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3117015508,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "28",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring"
+  }
+},
+{
+  "type": "node",
+  "id": 3117015509,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "30",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring"
+  }
+},
+{
+  "type": "node",
+  "id": 3117015510,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "32",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring"
+  }
+},
+{
+  "type": "node",
+  "id": 3117015513,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7",
+    "addr:postcode": "79098",
+    "addr:street": "Wasserstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130100701,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "11",
+    "addr:postcode": "79106",
+    "addr:street": "Draisstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130100702,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "13",
+    "addr:postcode": "79106",
+    "addr:street": "Draisstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130100703,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "14",
+    "addr:postcode": "79106",
+    "addr:street": "Wannerstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130100704,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "15",
+    "addr:postcode": "79106",
+    "addr:street": "Draisstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130100705,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "16",
+    "addr:postcode": "79106",
+    "addr:street": "Wannerstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130100706,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "17",
+    "addr:postcode": "79106",
+    "addr:street": "Draisstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130100707,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "18",
+    "addr:postcode": "79106",
+    "addr:street": "Wannerstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130100709,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "3",
+    "addr:postcode": "79106",
+    "addr:street": "Stürtzelstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130100710,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "3a",
+    "addr:postcode": "79106",
+    "addr:street": "Stürtzelstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130100711,
+  "tags": {
+    "addr:housenumber": "51",
+    "addr:postcode": "79106",
+    "addr:street": "Egonstraße",
+    "int_name": "lawyers Möllinger, Schandl, Hartmann, Göttler,",
+    "level": "1",
+    "name": "Rechtsanwälte Möllinger, Schandl, Hartman, Göttler",
+    "office": "lawyer",
+    "website": "https://www.ihr-rechtsberater.eu"
+  }
+},
+{
+  "type": "node",
+  "id": 3130328005,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "1",
+    "addr:postcode": "79106",
+    "addr:street": "Wentzingerstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130328006,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "1",
+    "addr:postcode": "79106",
+    "addr:street": "Colmarer Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130328007,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "13",
+    "addr:postcode": "79106",
+    "addr:street": "Colmarer Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130328008,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "15",
+    "addr:postcode": "79106",
+    "addr:street": "Colmarer Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130328009,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "3",
+    "addr:postcode": "79106",
+    "addr:street": "Lehener Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130328010,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "3",
+    "addr:postcode": "79106",
+    "addr:street": "Colmarer Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3130328012,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7",
+    "addr:postcode": "79106",
+    "addr:street": "Colmarer Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3142710358,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12",
+    "addr:postcode": "79106",
+    "addr:street": "Büggenreuterstraße",
+    "amenity": "social_facility",
+    "check_date": "2025-02-02",
+    "contact:email": "kontakt@checkpointaidshilfe.de",
+    "contact:phone": "+49 761 15146640",
+    "contact:website": "https://aids-hilfe-freiburg.de/",
+    "level": "1",
+    "name": "Checkpoint Aidshilfe Freiburg",
+    "opening_hours": "Mo,Tu,Th,Fr 10:00-13:00; Mo 15:00-17:00",
+    "operator": "Checkpoint Aidshilfe Freiburg e.V.",
+    "social_facility": "outreach",
+    "social_facility:for": "diseased",
+    "source": "survey",
+    "source:opening_hours": "website"
+  }
+},
+{
+  "type": "node",
+  "id": 3142710359,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "52",
+    "addr:postcode": "79106",
+    "addr:street": "Breisacher Straße",
+    "amenity": "pharmacy",
+    "check_date:opening_hours": "2025-02-02",
+    "dispensing": "yes",
+    "drive_through": "no",
+    "healthcare": "pharmacy",
+    "level": "0",
+    "name": "Aeskulap Apotheke",
+    "opening_hours": "Mo-Fr 08:30-18:30; Sa 09:00-13:00",
+    "phone": "+49 761 273410",
+    "source:opening_hours": "website",
+    "website": "http://www.aeskulap-apo.de"
+  }
+},
+{
+  "type": "node",
+  "id": 3161995865,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "32",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "brand": "engbers",
+    "brand:wikidata": "Q1290088",
+    "name": "engbers",
+    "shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 3258937380,
+  "tags": {
+    "addr:housenumber": "11",
+    "addr:postcode": "79098",
+    "addr:street": "Universitätsstraße",
+    "amenity": "fast_food",
+    "check_date:opening_hours": "2018-09-22",
+    "cuisine": "german",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Curry & Fritz",
+    "opening_hours": "Mo-Sa 11:00-21:00; Su,PH off",
+    "outdoor_seating": "yes",
+    "source:opening_hours": "website",
+    "website": "https://www.curryundfritz.eu/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3258937382,
+  "tags": {
+    "addr:housenumber": "17",
+    "addr:postcode": "79098",
+    "addr:street": "Gauchstraße",
+    "check_date:opening_hours": "2026-09-29",
+    "email": "hifi-market-specials@t-online.de",
+    "name": "Hifi Market Esser",
+    "opening_hours": "Mo,Tu,Th,Fr 10:00-13:00,14:30-18:00; Sa 10:00-15:00; We off",
+    "opening_hours:url": "http://www.hifi-market.de/",
+    "phone": "+49 761 22202",
+    "shop": "hifi",
+    "source:opening_hours": "website",
+    "website": "https://www.hifi-market.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3258937383,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7",
+    "addr:postcode": "79098",
+    "addr:street": "Universitätsstraße",
+    "amenity": "pub",
+    "brewery": "Rothaus;Paulaner",
+    "indoor_seating": "yes",
+    "level": "0",
+    "min_age": "18",
+    "name": "Cafe Movie",
+    "outdoor_seating": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "smoking": "yes",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3280609840,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "2",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausplatz",
+    "check_date:opening_hours": "2026-08-11",
+    "information": "office",
+    "name": "Touristeninformation Freiburg",
+    "name:en": "Tourist Information Freiburg",
+    "opening_hours": "Mo-Fr 08:00-17:30; Su,PH 10:00-15:00; Sa 09:30-16:00",
+    "operator": "FWTM",
+    "tourism": "information",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3283156644,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "1",
+    "addr:postcode": "79098",
+    "addr:street": "Am Predigertor",
+    "check_date": "2025-01-09",
+    "club": "automobile",
+    "contact:website": "http://www.adac.de",
+    "name": "ADAC Geschäftsstelle",
+    "office": "travel_agent",
+    "opening_hours": "Mo-Fr 10:00-18:30; Sa 09:30-13:30",
+    "shop": "travel_agency",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3283156645,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "3",
+    "addr:postcode": "79098",
+    "addr:street": "Gauchstraße",
+    "name": "S-Immobilien Freiburg",
+    "office": "estate_agent",
+    "opening_hours": "\"Nach Vereinbarung\"",
+    "phone": "+49 761 2190",
+    "website": "https://www.s-immobilien-freiburg.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3283156650,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12",
+    "addr:postcode": "79098",
+    "addr:street": "Turmstraße",
+    "contact:email": "fasnetmuseum@breisgauer-narrenzunft.de",
+    "description": "Im Freiburger Fasnetmuseum werden seit 1979 die Narrentypen der Breisgauer Narrenzunft präsentiert. Neben den von den einzelnen Zünften selbst arrangierten Darstellungen der „Häs“, finden sich auch Leihgaben des Augustinermuseums und Exponate, die vom För",
+    "name": "Fasnetmuseum",
+    "opening_hours": "Sa 10:00-14:00",
+    "operator": "Freiburger Narrenzunft",
+    "phone": "+49 761 22611",
+    "subject:wikidata": "Q537225",
+    "tourism": "museum",
+    "website": "https://www.breisgauer-narrenzunft.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3283156653,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:street": "Unterlinden",
+    "check_date": "2026-04-28",
+    "level": "0",
+    "name": "Abram Friseure",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "shop": "hairdresser",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3283156654,
+  "tags": {
+    "addr:housenumber": "9",
+    "addr:postcode": "79098",
+    "addr:street": "Unterlinden",
+    "check_date": "2025-01-09",
+    "check_date:opening_hours": "2022-10-01",
+    "clothes": "wedding",
+    "contact:facebook": "https://www.facebook.com/Brautmode-Hochzeitsmode-At-Moda-Sposa-129019910482840/",
+    "contact:instagram": "https://www.instagram.com/atmodasposa/",
+    "contact:phone": "+49 761 2115771",
+    "contact:website": "https://www.at-moda-sposa.de",
+    "level": "0",
+    "name": "A.T. Moda Sposa",
+    "opening_hours": "Mo-Fr 10:00-13:00,14:00-18:30; Sa 10:00-16:00",
+    "shop": "clothes",
+    "source:opening_hours": "website"
+  }
+},
+{
+  "type": "node",
+  "id": 3283156656,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "6",
+    "addr:postcode": "79098",
+    "addr:street": "Turmstraße",
+    "female": "yes",
+    "male": "yes",
+    "name": "K & M",
+    "opening_hours": "Mo-Sa 09:00-19:00",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 3328941106,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "49",
+    "addr:postcode": "79106",
+    "addr:street": "Beurbarungsstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3328941108,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "51",
+    "addr:postcode": "79106",
+    "addr:street": "Beurbarungsstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3328941109,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "53",
+    "addr:postcode": "79106",
+    "addr:street": "Beurbarungsstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3328941110,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "55",
+    "addr:postcode": "79106",
+    "addr:street": "Beurbarungsstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3328941111,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "57",
+    "addr:postcode": "79106",
+    "addr:street": "Beurbarungsstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3328941112,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "59",
+    "addr:postcode": "79106",
+    "addr:street": "Beurbarungsstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3329188303,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "1",
+    "addr:postcode": "79106",
+    "addr:street": "Marchstraße",
+    "operator": "Mieterverein Regio Freiburg e.V."
+  }
+},
+{
+  "type": "node",
+  "id": 3329188304,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "11",
+    "addr:postcode": "79106",
+    "addr:street": "Marchstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3329188305,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "13",
+    "addr:postcode": "79106",
+    "addr:street": "Marchstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3329188306,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "15",
+    "addr:postcode": "79106",
+    "addr:street": "Hugstetter Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3329188307,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "17",
+    "addr:postcode": "79106",
+    "addr:street": "Hugstetter Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3329188308,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "2",
+    "addr:postcode": "79106",
+    "addr:street": "Breisacher Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3329188309,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "4",
+    "addr:postcode": "79106",
+    "addr:street": "Breisacher Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3329188310,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "9",
+    "addr:postcode": "79106",
+    "addr:street": "Marchstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3344424253,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "40",
+    "addr:postcode": "79106",
+    "addr:street": "Breisacher Straße",
+    "check_date": "2026-07-04",
+    "name": "Auto Schneider",
+    "opening_hours": "Mo-Fr 08:00-12:00, 13:00-18:00",
+    "payment:american_express": "yes",
+    "payment:cash": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "phone": "+49 761 2022411",
+    "service:vehicle:air_conditioning": "yes",
+    "service:vehicle:alignment": "yes",
+    "service:vehicle:car_repair": "yes",
+    "service:vehicle:diagnostics": "yes",
+    "service:vehicle:electrical": "yes",
+    "service:vehicle:glass": "yes",
+    "service:vehicle:inspection": "yes",
+    "service:vehicle:motor": "yes",
+    "service:vehicle:oil_change": "yes",
+    "service:vehicle:tyres": "yes",
+    "shop": "car_repair"
+  }
+},
+{
+  "type": "node",
+  "id": 3378429735,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "6",
+    "addr:postcode": "79098",
+    "addr:street": "Adlerstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3378429736,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "6a",
+    "addr:postcode": "79098",
+    "addr:street": "Adlerstraße"
+  }
+},
+{
+  "type": "node",
+  "id": 3378944234,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "52",
+    "addr:postcode": "79106",
+    "addr:street": "Breisacher Straße"
+  }
+},
+{
+  "type": "node",
+  "id": 3378944507,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "54",
+    "addr:postcode": "79106",
+    "addr:street": "Hugstetter Straße",
+    "amenity": "childcare",
+    "check_date": "2025-08-23",
+    "name": "Luther Kindergarten"
+  }
+},
+{
+  "type": "node",
+  "id": 3631591429,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "17",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "university",
+    "education": "university",
+    "internet_access": "wlan",
+    "level": "1",
+    "name": "University College Freiburg",
+    "opening_hours": "Mo-Fr 07:00-22:00, Sa 07:00-13:00",
+    "website": "https://www.ucf.uni-freiburg.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3657392351,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "38",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring",
+    "amenity": "coworking_space",
+    "contact:instagram": "https://www.instagram.com/diefriedrich.freiburg",
+    "email": "hallo@die-friedrich.de",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "level": "0",
+    "name": "Die Friedrich",
+    "opening_hours": "We-Mo 09:00-17:00; Tu,PH off",
+    "operator": "König & Kurz GmbH",
+    "phone": "+49 157 34452086",
+    "source": "survey",
+    "website": "https://www.die-friedrich.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3659061891,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "48",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "name": "Schmuckatelier+Galerie WILPERT",
+    "note": "info@wilpert-schmuck.de",
+    "opening_hours": "Mo-Fr 10:00-13:30,14:30-18:30; Sa 10:00-17:00",
+    "operator": "Oliver Wilpert",
+    "phone": "+49 761 25593",
+    "shop": "jewelry",
+    "website": "http://www.wilpert-schmuck.de"
+  }
+},
+{
+  "type": "node",
+  "id": 3766014194,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7a",
+    "addr:postcode": "79106",
+    "addr:street": "Wentzingerstraße",
+    "amenity": "restaurant",
+    "check_date": "2025-12-29",
+    "description:de": "Öffentliche Kantine",
+    "diet:vegetarian": "yes",
+    "name": "Casino Service Milz",
+    "opening_hours": "Mo-Fr 07:30-15:00",
+    "outdoor_seating": "yes",
+    "smoking": "no",
+    "website": "https://casino-service-milz.com",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3793559810,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "10",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "amenity": "dentist",
+    "healthcare": "dentist",
+    "name": "Zahnarztpraxis am Rathausplatz"
+  }
+},
+{
+  "type": "node",
+  "id": 3799957455,
+  "tags": {
+    "addr:housenumber": "21",
+    "addr:street": "Wentzingerstraße",
+    "name": "Inxmail GmbH",
+    "office": "it",
+    "phone": "+49 761 2969790",
+    "website": "https://www.inxmail.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3815436657,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "4a",
+    "addr:postcode": "79098",
+    "addr:street": "Schnewlinstraße",
+    "check_date:opening_hours": "2024-05-23",
+    "name": "Golf House",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00",
+    "opening_hours:url": "http://www.golfhouse.de/filialen/freiburg",
+    "shop": "sports",
+    "source:opening_hours": "website",
+    "website": "http://www.golfhouse.de/filialen/freiburg",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3846853666,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "49",
+    "addr:postcode": "79106",
+    "addr:street": "Lehener Straße",
+    "amenity": "restaurant",
+    "check_date": "2026-02-11",
+    "check_date:opening_hours": "2026-02-11",
+    "contact:instagram": "la_lucila_freiburg",
+    "email": "info@lalucila.de",
+    "level": "0",
+    "name": "La Lucila",
+    "opening_hours": "Tu-Th 12:00-14:00, 18:00-22:00; Fr 12:00-14:00, 18:00-23:00; Sa 18:00-23:00",
+    "phone": "+4976151467666",
+    "self_service": "no",
+    "website": "https://www.lalucila.de/",
+    "website:menu": "https://lalucila.de/speisekarte-menue/"
+  }
+},
+{
+  "type": "node",
+  "id": 3892714652,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "47",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "check_date:opening_hours": "2023-03-13",
+    "email": "thomasnonnenmacher@gmail.com",
+    "name": "Antiquariat Nonnenmacher",
+    "opening_hours": "Mo-Sa 10:00-20:00",
+    "opening_hours:signed": "no",
+    "phone": "+49 761 2925789",
+    "shop": "books",
+    "website": "http://www.antiquariatnonnenmacher.de",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3903774961,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "6",
+    "addr:postcode": "79098",
+    "addr:street": "Brunnenstraße",
+    "air_conditioning": "yes",
+    "check_date:opening_hours": "2024-04-23",
+    "email": "kapuzeundco@gmx.de",
+    "name": "Kapuze & Co",
+    "opening_hours": "Mo-Sa 09:30-18:00",
+    "phone": "+4976115159808",
+    "shop": "clothes",
+    "source:opening_hours": "website",
+    "stroller": "yes",
+    "website": "https://www.kapuzeundco.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3903836751,
+  "tags": {
+    "addr:housenumber": "8",
+    "addr:street": "Merianstraße",
+    "alt_name": "Pho - 1986",
+    "amenity": "restaurant",
+    "cuisine": "vietnamese",
+    "description": "Vietnamesische Küche",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Phở - 1986",
+    "opening_hours": "Mo-Sa 10:30-21:00",
+    "phone": "+49761 21495901",
+    "website": "https://pho-1986.eatbu.com/?lang=de"
+  }
+},
+{
+  "type": "node",
+  "id": 3903836753,
+  "tags": {
+    "addr:city": "Freiburg",
+    "addr:housenumber": "21",
+    "addr:postcode": "79098",
+    "addr:street": "Gauchstraße",
+    "email": "freiburg@gea-online.de",
+    "level": "0",
+    "name": "GEA Freiburg",
+    "opening_hours": "Tu-Fr 11:00-18:00; Sa 11:00-16:00",
+    "phone": "+49 761 21772612",
+    "shop": "shoes",
+    "website": "https://www.gea-freiburg.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3903836865,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "11",
+    "addr:postcode": "79098",
+    "addr:street": "Franziskanerstraße",
+    "check_date": "2024-08-15",
+    "contact:email": "info@papaya-freiburg.de",
+    "contact:facebook": "https://www.facebook.com/papayafreiburg",
+    "contact:instagram": "https://www.instagram.com/papaya_freiburg/",
+    "contact:website": "http://www.papaya-freiburg.de/",
+    "name": "PaPaYa",
+    "opening_hours": "Mo-Sa 10:00-18:00",
+    "shop": "health_food",
+    "start_date": "2020-09",
+    "strapline": "Dried fruits, tea & more",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3913744199,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12",
+    "addr:postcode": "79098",
+    "addr:street": "Unterlinden",
+    "check_date:opening_hours": "2023-12-09",
+    "contact:phone": "+49 761 38693476",
+    "contact:website": "https://www.stadtbaeckerei-dreher.de/standorte/dreher-unterlinden",
+    "name": "Stadtbäckerei Dreher",
+    "opening_hours": "Mo-Fr 06:30-15:00; Sa,Su,PH off",
+    "opening_hours:url": "https://www.stadtbaeckerei-dreher.de/Aktuelle-Oeffnungszeiten.pdf",
+    "operator": "Markus Dreher e.K.",
+    "shop": "bakery",
+    "source:opening_hours": "entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 3913744209,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "4",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "fast_food",
+    "cuisine": "juice;smoothie",
+    "drive_through": "no",
+    "name": "Royal Juice",
+    "opening_hours": "Mo-Sa 09:00-18:30"
+  }
+},
+{
+  "type": "node",
+  "id": 3913744212,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "9",
+    "addr:postcode": "79098",
+    "addr:street": "Unterlinden",
+    "brand": "dm",
+    "brand:wikidata": "Q266572",
+    "brand:wikipedia": "en:Dm-drogerie markt",
+    "check_date": "2025-04-25",
+    "contact:phone": "+49 761 76992890",
+    "contact:website": "https://www.dm.de/store/d5de/freiburg-im-breisgau/unterlinden-9",
+    "level": "0",
+    "name": "dm",
+    "opening_hours": "Mo-Sa 08:00-20:00; Su, PH off",
+    "shop": "chemist",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3913744213,
+  "tags": {
+    "addr:city": "Freiburg",
+    "addr:housenumber": "10",
+    "addr:postcode": "79098",
+    "addr:street": "Unterlinden",
+    "check_date": "2026-08-19",
+    "check_date:opening_hours": "2026-08-19",
+    "name": "'s Fachl",
+    "opening_hours": "Mo-Sa 10:00-18:00",
+    "operator": "Anja Bannwarth",
+    "phone": "+49 157 56775487",
+    "shop": "gift",
+    "website": "https://www.sfachl.de/freiburg"
+  }
+},
+{
+  "type": "node",
+  "id": 3923654644,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "5-9",
+    "addr:postcode": "79098",
+    "addr:street": "Schiffstraße",
+    "brand": "freenet",
+    "brand:wikidata": "Q344744",
+    "brand:wikipedia": "en:Debitel",
+    "level": "0",
+    "name": "freenet",
+    "opening_hours": "Mo-Fr 10:00-18:00; Sa 10:00-15:00",
+    "shop": "telecommunication",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3923659158,
+  "tags": {
+    "addr:housenumber": "1-3",
+    "addr:postcode": "79098",
+    "addr:street": "Gauchstraße",
+    "amenity": "cafe",
+    "contact:facebook": "https://www.facebook.com/Fili-Caf%C3%A9-1274724369238503/",
+    "diet:vegetarian": "yes",
+    "name": "Fili Café",
+    "opening_hours": "Mo-Fr 08:00-18:00; Sa 09:00-18:00",
+    "smoking": "outside",
+    "source:opening_hours": "facebook",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3924372719,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "2",
+    "addr:postcode": "79098",
+    "addr:street": "Platz der Universität",
+    "air_conditioning": "yes",
+    "amenity": "cafe",
+    "check_date:opening_hours": "2026-09-07",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "fax": "+49 761 2101-303",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Café Libresso",
+    "opening_hours": "Mo-Fr 08:00-18:00; Sa 10:00-17:00",
+    "outdoor_seating": "seasonal",
+    "payment:cash": "yes",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "limited",
+    "phone": "+49 761 2101-200",
+    "self_service": "yes",
+    "smoking": "outside",
+    "source": "survey",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.swfr.de/essen/mensen-cafes-speiseplaene/freiburg/cafe-libresso/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3924372733,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "68",
+    "addr:postcode": "79098",
+    "addr:street": "Eisenbahnstraße",
+    "description": "Abteilung 7: Schule und Bildung",
+    "government": "administrative",
+    "name": "Regierungspräsidium Freiburg",
+    "office": "government",
+    "phone": "+49 761 208 0",
+    "website": "https://rp.baden-wuerttemberg.de/rpf/abt7/"
+  }
+},
+{
+  "type": "node",
+  "id": 3932205392,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housename": "Radio Dreyeckland",
+    "addr:housenumber": "12",
+    "addr:postcode": "79098",
+    "addr:street": "Adlerstraße",
+    "amenity": "studio",
+    "contact:email": "verwaltung@rdl.de",
+    "contact:mastodon": "@RDL@freiburg.social",
+    "description": "Freies Radio",
+    "image": "File:Radio Dreyeckland 1.jpg",
+    "logo": "File:Rdl-logo.svg",
+    "name": "Radio Dreyeckland",
+    "phone": "+49 761 31028",
+    "short_name": "RDL",
+    "studio": "radio",
+    "website": "https://rdl.de/",
+    "wheelchair": "yes",
+    "wikidata": "Q1278329",
+    "wikimedia_commons": "Category:Radio Dreyeckland (Freiburg im Breisgau)",
+    "wikipedia": "de:Radio Dreyeckland (Freiburg im Breisgau)"
+  }
+},
+{
+  "type": "node",
+  "id": 3937927456,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "51",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichstraße",
+    "amenity": "school",
+    "check_date": "2024-01-24",
+    "education": "school",
+    "name": "Richard-Fehrenbach-Gewerbeschule",
+    "note": "2 schools in one building",
+    "toilets:wheelchair": "yes",
+    "website": "http://www.rfg.fr.bw.schule.de",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3937929358,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "51",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichstraße",
+    "amenity": "school",
+    "education": "school",
+    "name": "Walther-Rathenau-Gewerbeschule",
+    "note": "2 schools in one building",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.wara.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3938212555,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "9",
+    "addr:postcode": "79098",
+    "addr:street": "Niemensstraße",
+    "contact:email": "info@hifi-gogler.de",
+    "contact:fax": "+49 761 2 17 14 16",
+    "contact:phone": "+49 761 2 66 66",
+    "contact:website": "http://www.hifi-gogler.de",
+    "level": "1",
+    "name": "Hifi Gogler",
+    "shop": "hifi",
+    "source": "survey",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3945085528,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "2",
+    "addr:postcode": "79098",
+    "addr:street": "Adlerstraße",
+    "air_conditioning": "no",
+    "amenity": "cafe",
+    "changing_table": "no",
+    "check_date": "2026-06-09",
+    "email": "interym@riseup.net",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "internet_access:ssid": "freiburg.freifunk.net",
+    "level": "0",
+    "name": "Kyosk Interym",
+    "opening_hours": "Tu-Th 17:00-22:00; Fr-Sa 17:00-23:00; Su 13:15-17:00",
+    "operator": "Interym n.e.v.",
+    "outdoor_seating": "yes",
+    "owner": "Freiburger Stadtbau GmbH (FSB)",
+    "payment:cards": "no",
+    "payment:cash": "yes",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "phone": "+49 761 2023911",
+    "reservation": "no",
+    "smoking": "yes",
+    "source": "survey",
+    "takeaway": "yes",
+    "toilets": "yes",
+    "toilets:menstrual_products": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://kyo.sk/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3945085530,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "31",
+    "addr:postcode": "79098",
+    "addr:street": "Moltkestraße",
+    "check_date:opening_hours": "2026-06-09",
+    "level": "0",
+    "name": "Zündstoff Clothing",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00; Su,PH off",
+    "opening_hours:url": "https://www.zuendstoff-clothing.de/About/Freiburger-Stores/Fair-Organic-Clothing/",
+    "phone": "+49 761 21430584",
+    "shop": "clothes",
+    "source:opening_hours": "entrance",
+    "website": "https://www.zuendstoff-clothing.de/About/Freiburger-Stores/Fair-Organic-Clothing/",
+    "wheelchair": "no",
+    "wheelchair:description:en": "several steps at entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858165,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "31",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "brand": "Apollo-Optik",
+    "brand:short": "Apollo",
+    "brand:wikidata": "Q618940",
+    "brand:wikipedia": "de:Apollo-Optik",
+    "check_date": "2025-01-07",
+    "check_date:opening_hours": "2016-01-15",
+    "name": "Apollo-Optik",
+    "opening_hours": "Mo-Fr 09:30-19:00; Sa 09:30-18:00",
+    "phone": "+49 761 37345",
+    "shop": "optician",
+    "short_name": "Apollo",
+    "source": "survey",
+    "source:opening_hours": "entrance",
+    "website": "https://www.apollo.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858168,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "7f",
+    "addr:postcode": "79098",
+    "addr:street": "Bismarckallee",
+    "amenity": "social_facility",
+    "brand": "Bahnhofsmission",
+    "brand:wikidata": "Q801713",
+    "check_date": "2025-10-27",
+    "name": "Bahnhofsmission",
+    "opening_hours": "Mo-Fr 08:00-20:00; Sa, Su, PH 14:00-18:00",
+    "operator": "Evangelische Stadtmission Freiburg e.V.;IN VIA Katholischer Verband für Mädchen- und Frauensozialarbeit in der Erzdiözese Freiburg e. V",
+    "operator:type": "private_non_profit",
+    "phone": "+49 761 22877",
+    "social_facility": "outreach",
+    "social_facility:for": "homeless;underprivileged",
+    "source": "survey",
+    "toilets:wheelchair": "no",
+    "website": "https://bahnhofsmission-freiburg.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858171,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "38",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring",
+    "air_conditioning": "no",
+    "amenity": "cafe",
+    "bar": "yes",
+    "contact:instagram": "https://www.instagram.com/baechlefreiburg/",
+    "cuisine": "breakfast;cake;coffee_shop",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "level": "0",
+    "name": "Bächle",
+    "opening_hours": "We-Mo 09:00-17:00; Tu,PH off",
+    "outdoor_seating": "sidewalk",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:mastercard": "yes",
+    "phone": "+4915734452086",
+    "smoking": "outside",
+    "source": "survey",
+    "toilets": "yes",
+    "website": "https://www.baechlefreiburg.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858172,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "60",
+    "addr:postcode": "79098",
+    "addr:street": "Eisenbahnstraße",
+    "name": "Carl-Schurz-Haus",
+    "office": "ngo",
+    "source": "survey",
+    "wheelchair": "yes",
+    "wikidata": "Q1036594",
+    "wikipedia": "de:Carl-Schurz-Haus"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858175,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "31",
+    "addr:postcode": "79098",
+    "addr:street": "Moltkestraße",
+    "check_date": "2026-06-09",
+    "contact:phone": "+49 761 2170007",
+    "contact:website": "https://www.ml-frisuren.de/salon",
+    "female": "yes",
+    "level": "1",
+    "male": "yes",
+    "name": "Max Lui",
+    "opening_hours": "Mo 10:00-16:00; Tu-Fr 09:00-18:00; Sa 10:00-16:00; Su,PH off || \"nach Vereinbarung\"",
+    "opening_hours:url": "https://www.ml-frisuren.de/salon/moltkestrasse/oeffnungszeiten.html",
+    "shop": "hairdresser",
+    "source": "survey",
+    "source:opening_hours": "website",
+    "wheelchair": "no",
+    "wheelchair:description:en": "several steps at entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858178,
+  "tags": {
+    "addr:housenumber": "41",
+    "addr:postcode": "79098",
+    "addr:street": "Eisenbahnstraße",
+    "amenity": "cafe",
+    "check_date": "2026-06-01",
+    "cuisine": "breakfast;pancake",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Chloe",
+    "old_name": "Dettlinger",
+    "opening_hours": "Mo-Th 09:00-21:00; Fr 09:00-22:00; Sa 09:00-18:00; Su 09:00-20:00",
+    "outdoor_seating": "yes",
+    "source": "local knowledge",
+    "toilets:wheelchair": "no",
+    "website": "https://cafechloe.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858183,
+  "tags": {
+    "addr:housenumber": "9",
+    "addr:postcode": "79098",
+    "addr:street": "Bismarckallee",
+    "check_date:opening_hours": "2025-11-27",
+    "female": "yes",
+    "level": "1",
+    "male": "yes",
+    "name": "Friseur the Best",
+    "opening_hours": "Mo-Fr 09:30-18:00; Sa 09:00-16:00",
+    "phone": "+49 761 1379469",
+    "shop": "hairdresser",
+    "source": "survey",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858188,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "61",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "fast_food",
+    "check_date": "2026-07-29",
+    "cuisine": "dessert",
+    "name": "Berrywelt",
+    "source": "survey",
+    "source:opening_hours": "website"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858198,
+  "tags": {
+    "addr:housenumber": "34",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichring",
+    "level": "0",
+    "note": "2019-10-08 im Umbau, Friseur memo hat schräg gegenüber neu aufgemacht wird daher wohl nicht hierher zurück kehren, deshalb entsprechende Tags entfernt",
+    "source": "survey",
+    "toilets:wheelchair": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858199,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "43",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "check_date": "2025-11-29",
+    "check_date:opening_hours": "2025-11-29",
+    "contact:phone": "+49 761 35000",
+    "level": "0",
+    "name": "Werner Nosch",
+    "opening_hours": "Mo-Sa 10:00-18:00; Su,PH off",
+    "shop": "weapons"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858200,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "30",
+    "addr:postcode": "79104",
+    "addr:street": "Merianstraße",
+    "amenity": "fast_food",
+    "check_date": "2025-09-04",
+    "check_date:currency:XBT": "2025-11-29",
+    "check_date:opening_hours": "2023-11-17",
+    "contact:email": "hola@yepayepa.de",
+    "contact:facebook": "yepayepa2015",
+    "contact:instagram": "yepayepa_freiburg",
+    "contact:phone": "+49 761 217 1964",
+    "contact:website": "http://www.yepayepa.de",
+    "cuisine": "mexican",
+    "currency:XBT": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Yepa Yepa",
+    "opening_hours": "Mo-Sa 12:00-21:00",
+    "outdoor_seating": "yes",
+    "payment:lightning": "yes",
+    "payment:lightning_contactless": "yes",
+    "payment:onchain": "no",
+    "source": "survey",
+    "source:opening_hours": "entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858202,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "51",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "amenity": "restaurant",
+    "cuisine": "kebab;pizza",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Olivia",
+    "name:de": "Olivia Pizza",
+    "opening_hours": "Mo-Su 10:00-24:00",
+    "outdoor_seating": "yes",
+    "source": "survey",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858203,
+  "tags": {
+    "addr:housenumber": "29",
+    "addr:street": "Friedrichring",
+    "amenity": "doctors",
+    "healthcare": "doctor",
+    "healthcare:speciality": "ophthalmology",
+    "name": "Optical Express",
+    "opening_hours": "Mo-Fr 09:00-16:00",
+    "source": "survey",
+    "website": "https://www.opticalexpress.de/zentren/deutschland/freiburg",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858222,
+  "tags": {
+    "addr:housenumber": "8",
+    "addr:postcode": "79098",
+    "addr:street": "Bismarckallee",
+    "check_date:opening_hours": "2026-06-23",
+    "name": "Samba",
+    "opening_hours:signed": "no",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "shop": "clothes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858225,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "45",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "check_date": "2026-01-03",
+    "check_date:opening_hours": "2025-09-10",
+    "email": "info@schaub-freiburg.de",
+    "name": "Schaub",
+    "opening_hours": "Mo-Fr 09:00-18:30; Sa 09:30-13:00",
+    "opening_hours:url": "http://www.schaub-freiburg.de/filialen.html",
+    "shop": "medical_supply",
+    "source": "survey",
+    "source:opening_hours": "website",
+    "website": "http://www.schaub-freiburg.de",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858233,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "2",
+    "addr:postcode": "79098",
+    "addr:street": "Rotteckring",
+    "amenity": "restaurant",
+    "check_date": "2026-06-01",
+    "check_date:opening_hours": "2026-06-01",
+    "contact:instagram": "casa_ribelle",
+    "cuisine": "pizza",
+    "indoor_seating": "yes",
+    "name": "Casa Ribelle",
+    "opening_hours": "Mo-Th 11:00-22:30; Fr-Sa 11:00-23:00; Su 11:00-21:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 1521 0310056",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858238,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "52",
+    "addr:postcode": "79098",
+    "addr:street": "Friedrichstraße",
+    "amenity": "college",
+    "education": "college",
+    "fixme": "amenity=college passend?",
+    "name": "Volkshochschule Freiburg",
+    "operator": "Volkshochschule Freiburg e.V.",
+    "source": "survey",
+    "toilets:wheelchair": "yes",
+    "website": "https://vhs-freiburg.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858239,
+  "tags": {
+    "addr:housenumber": "43",
+    "addr:postcode": "79098",
+    "addr:street": "Bertoldstraße",
+    "check_date:opening_hours": "2025-11-29",
+    "description": "Haushaltsgeräte-Ersatzteile, Reparatur",
+    "level": "0",
+    "name": "Elektro Walter",
+    "opening_hours": "Mo-Fr 11:00-14:30; Sa 11:00-13:00",
+    "operator": "Walter GmbH",
+    "phone": "+49 761 23272",
+    "shop": "houseware",
+    "source:opening_hours": "entrance",
+    "website": "https://www.walter-direct.com/",
+    "wikimedia_commons": "File:Walter Elektrogeräte-Kundendienst in der Freiburger Bertoldstraße 43.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 3952858240,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "27",
+    "addr:street": "Belfortstraße",
+    "check_date:opening_hours": "2025-02-22",
+    "description": "Fair Fashion Store für nachhaltige Schuhe und Rucksäcke",
+    "level": "0",
+    "name": "Zündstoff Footwear",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00; Su,PH off",
+    "opening_hours:url": "https://www.zuendstoff-clothing.de/About/Freiburger-Stores/Fair-Organic-Footwear/",
+    "shop": "shoes",
+    "source:opening_hours": "entrance",
+    "website": "https://www.zuendstoff-clothing.de/About/Freiburger-Stores/Fair-Organic-Footwear/"
+  }
+},
+{
+  "type": "node",
+  "id": 3957475776,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:country": "DE",
+    "addr:housenumber": "15",
+    "addr:postcode": "79098",
+    "addr:street": "Moltkestraße",
+    "bulk_purchase": "yes",
+    "check_date": "2026-06-05",
+    "check_date:opening_hours": "2026-06-05",
+    "description": "Verkauft einige Produkte ohne Verpackung zum Selbstabfüllen",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "diet:vegan": "yes",
+    "email": "public@glaskiste-unverpackt.de",
+    "fair_trade": "yes",
+    "level": "0",
+    "name": "Glaskiste",
+    "opening_hours": "Mo,We-Fr 10:00-19:00; Tu 10:00-13:00,16:00-19:00; Sa 09:00-15:00",
+    "organic": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:girocard": "yes",
+    "regional": "yes",
+    "reusable_packaging:accept": "yes",
+    "reusable_packaging:offer": "yes",
+    "shop": "convenience",
+    "source": "survey",
+    "start_date": "2017-04-01",
+    "website": "https://glaskiste.com/",
+    "wheelchair": "yes",
+    "zero_waste": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3957475787,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "38",
+    "addr:postcode": "79106",
+    "addr:street": "Egonstraße",
+    "check_date": "2025-02-02",
+    "name": "wakeup page design",
+    "office": "it",
+    "phone": "+49 761 7048521",
+    "website": "https://www.wake.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3963705894,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "6",
+    "addr:postcode": "79098",
+    "addr:street": "Fahnenbergplatz",
+    "amenity": "restaurant",
+    "check_date": "2025-10-09",
+    "check_date:opening_hours": "2024-05-15",
+    "contact:email": "info@holgers.bio",
+    "contact:instagram": "https://www.instagram.com/aok_restaurant_freiburg/",
+    "contact:phone": "+49 711 6525 22886",
+    "description": "Betriebsrestaurant AOK, offen für externe Gäste",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "level": "5",
+    "name": "holgers",
+    "opening_hours": "Mo-Fr 11:30-13:30; Sa,Su,PH off",
+    "outdoor_seating": "terrace",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:debit_cards": "yes",
+    "self_service": "yes",
+    "toilets": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://holgers.bio",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3979040086,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "11",
+    "addr:postcode": "79106",
+    "addr:street": "Hohenzollernstraße",
+    "check_date": "2026-08-04",
+    "disused:amenity": "cafe",
+    "disused:name": "Contrast",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 3979040095,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "36",
+    "addr:postcode": "79106",
+    "addr:street": "Wentzingerstraße",
+    "check_date:opening_hours": "2025-09-12",
+    "contact:website": "http://www.farben-thon.de/kontakt.html",
+    "name": "Farben Thon",
+    "opening_hours": "Mo-Fr 08:30-17:00; Sa 09:00-12:00",
+    "shop": "paint",
+    "source": "survey",
+    "source:opening_hours": "entrance",
+    "website": "https://www.farben-thon.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3979040098,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "13",
+    "addr:postcode": "79106",
+    "addr:street": "Lehener Straße",
+    "check_date": "2025-10-27",
+    "description": "Afro-Latino-Shop",
+    "level": "0",
+    "name": "Zion-Africa",
+    "opening_hours": "Mo-Sa 10:00-19:30",
+    "origin": "african;latin_american",
+    "shop": "convenience",
+    "toilets": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3979040108,
+  "tags": {
+    "addr:housenumber": "14",
+    "addr:street": "Schiffstraße",
+    "amenity": "restaurant",
+    "cuisine": "barbecue",
+    "name": "Urban BBQ",
+    "source": "survey",
+    "toilets": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3979040110,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "30",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "level": "0",
+    "name": "Gschenklelädele",
+    "opening_hours": "Mo-Sa",
+    "shop": "gift",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3979040121,
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:street": "Unterlinden",
+    "amenity": "cafe",
+    "check_date": "2026-04-28",
+    "check_date:opening_hours": "2023-07-19",
+    "cuisine": "coffee_shop",
+    "email": "info@kolombiankoffee.de",
+    "level": "0",
+    "name": "KOLKOF kolombian koffee",
+    "outdoor_seating": "no",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+49 1522 1396996",
+    "source": "survey",
+    "source:opening_hours": "https://www.djanastore.com/kontakt/hier-finden-sie-uns/",
+    "website": "https://kolombiankoffee.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3979040124,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "23",
+    "addr:postcode": "79104",
+    "addr:street": "Merianstraße",
+    "check_date": "2023-07-19",
+    "check_date:opening_hours": "2016-01-24",
+    "craft": "jeweller",
+    "name": "Merian 23",
+    "opening_hours": "Tu-Fr 10:00-13:30; Tu-Fr 14:30-18:00; Sa 10:00-14:00",
+    "shop": "jewelry",
+    "source": "survey",
+    "source:opening_hours": "entrance",
+    "website": "https://merian23.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3979040139,
+  "tags": {
+    "addr:city": "Freiburg im Breisgau",
+    "addr:housenumber": "12a",
+    "addr:postcode": "79104",
+    "addr:street": "Merianstraße",
+    "check_date:opening_hours": "2022-10-04",
+    "name": "City Änderungsschneiderei Sarikayk",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-16:00; PH off",
+    "phone": "+4976125581",
+    "shop": "tailor",
+    "source": "survey",
+    "source:opening_hours": "entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 3979040156,
+  "tags": {
+    "addr:housenumber": "29-31",
+    "addr:postcode": "79098",
+    "addr:street": "Rathausgasse",
+    "brand": "Gabor",
+    "brand:wikidata": "Q1488760",
+    "check_date": "2024-09-21",
+    "check_date:opening_hours": "2016-01-24",
+    "email": "mail@schuh-klaus.de",
+    "name": "Gabor",
+    "opening_hours": "Mo-Sa 10:00-18:30",
+    "operator": "Schuh Klaus",
+    "phone": "+49 761 2028540",
+    "shop": "shoes",
+    "source": "survey",
+    "source:opening_hours": "entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 3979040660,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:postcode": "79098",
+    "addr:street": "Wasserstraße",
+    "name": "mona&lisa Hörgeräte-Akustik für Frauen",
+    "opening_hours": "Mo-Fr 09:00-17:30",
+    "shop": "hearing_aids",
+    "source:opening_hours": "entrance",
+    "website": "https://www.monalisa-hoeren.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 3979040673,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Hohenzollernstraße",
+    "amenity": "pub",
+    "name": "Zur Tränke",
+    "opening_hours": "Sa 17:00-01:00+, Mo-Th 14:00-01:00+, Fr 13:00-01:00+",
+    "smoking": "yes"
+  }
+}
+
+  ]
+}

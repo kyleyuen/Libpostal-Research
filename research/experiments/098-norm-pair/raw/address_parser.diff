@@ -1,0 +1,43 @@
+--- ../091-viterbi-maxonly/sources/address_parser.c	2026-10-03 10:07:03
++++ sources/address_parser.c	2026-10-03 21:50:22
+@@ -931,6 +931,9 @@
+     return valid;
+ }
+ 
++#ifdef EXP_NORM_PAIR
++void add_normalized_token_pair(char_array *std, char_array *adm, char *str, token_t token);   // normalize.c (experiment 098)
++#endif
+ void address_parser_context_fill(address_parser_context_t *context, address_parser_t *parser, tokenized_string_t *tokenized_str, char *language, char *country) {
+     uint32_t token_index;
+     char *word;
+@@ -956,7 +959,14 @@
+         token_t token = tokens->a[token_index];
+ 
+         size_t token_offset = normalized->str->n;
++#ifdef EXP_NORM_PAIR
++        size_t admin_token_offset = normalized_admin->str->n;
++        cstring_array_start_token(normalized);
++        cstring_array_start_token(normalized_admin);
++        add_normalized_token_pair(normalized->str, normalized_admin->str, str, token);
++#else
+         address_parser_normalize_token(normalized, str, token);
++#endif
+         size_t token_len;
+         if (normalized->str->n > token_offset) {
+            token_len = normalized->str->n - 1 - token_offset;
+@@ -969,6 +979,7 @@
+         normalized_token.type = token.type;
+         token_array_push(normalized_tokens, normalized_token);
+ 
++#ifndef EXP_NORM_PAIR
+         size_t admin_token_offset = normalized_admin->str->n;
+ #ifdef EXP_ADMIN_SHARE
+         // The admin options equal the standard token options minus NORMALIZE_TOKEN_REPLACE_DIGITS, which only acts on digit characters (normalize.c). For an
+@@ -985,6 +996,7 @@
+         } else
+ #endif
+         address_parser_normalize_phrase_token(normalized_admin, str, token);
++#endif
+         size_t admin_token_len;
+         if (normalized_admin->str->n > admin_token_offset) {
+            admin_token_len = normalized_admin->str->n - 1 - admin_token_offset;

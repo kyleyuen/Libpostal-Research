@@ -1,0 +1,9 @@
+Corrected summary (written after the run from the raw files; the script's own summary.txt left exit/frozen/thread fields empty because of unquoted
+paths containing spaces — see raw/outer.stderr; summary.txt is kept unchanged):
+binary identity: SAME as 021 record (raw/l3_hashes_now.txt vs raw/l3_hashes_021.txt)
+dump v1 exit=0 sha=45574ee2b1972f1acf2d = original
+dump novel exit=0 sha=806b8a81603ea9adf3af = original
+dump osm exit=0 IDENTICAL to original OSM dump (017 v3check)
+frozen v1: RESULT: IDENTICAL (exit 0); frozen novel: RESULT: IDENTICAL (exit 0)
+fuzz seed1 exit=0 IDENTICAL; fuzz seed2 exit=0 IDENTICAL (vs original 011 base files)
+threads: 1 at t=3,6,9,12,15,18 s (raw/threads.txt)

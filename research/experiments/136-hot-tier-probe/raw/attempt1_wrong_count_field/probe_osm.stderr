@@ -1,0 +1,8 @@
+HOT_PROBE_LOAD budget 1 MB: 24618 most frequent words of 3694560, 1.0 MB of rows
+HOT_PROBE_LOAD budget 4 MB: 96468 most frequent words of 3694560, 4.0 MB of rows
+HOT_PROBE_LOAD budget 16 MB: 386329 most frequent words of 3694560, 16.0 MB of rows
+HOT_PROBE state per address: rows read 35.9, records 454.5; lookup keys 40.2, not found 4.2 (10.5%)
+HOT_PROBE trans per address: rows read 7.5, records 587.4; lookup keys 7.8, not found 0.2 (2.9%)
+HOT_PROBE budget 1 MB                 hot rows: state 0.1% (records 0.0%), trans 0.2% (records 0.1%)
+HOT_PROBE budget 4 MB (design point)  hot rows: state 0.4% (records 0.4%), trans 1.6% (records 0.8%)
+HOT_PROBE budget 16 MB                hot rows: state 1.9% (records 1.9%), trans 7.2% (records 4.3%)

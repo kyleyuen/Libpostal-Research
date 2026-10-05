@@ -1,0 +1,79 @@
+timing (µs/address; per-run median of passes 2-20; median [min-max] over runs)
+  dev  orig_ext    31.141 [30.534-31.150] n=3
+  dev  cpi_ext      5.103 [5.089-5.600] n=3
+  dev  cpi_warm     2.421 [2.397-2.443] n=3
+  dev  cpi_first    5.564 [5.417-5.904] n=3
+  dev  orig_warm   13.534 [13.339-13.839] n=3
+  dev  orig_first  32.017 [30.600-34.189] n=3
+  osm  orig_ext    18.429 [18.428-18.867] n=3
+  osm  cpi_ext      3.803 [3.441-4.054] n=3
+  osm  cpi_warm     2.134 [2.130-2.137] n=3
+  osm  cpi_first    3.590 [3.590-3.795] n=3
+  osm  orig_warm   12.051 [11.878-12.104] n=3
+  osm  orig_first  21.065 [19.038-21.147] n=3
+  u11  orig_ext    18.228 [17.629-19.835] n=3
+  u11  cpi_ext      3.270 [3.201-3.384] n=3
+  u11  cpi_warm     2.145 [2.143-2.156] n=3
+  u11  cpi_first    3.416 [3.383-3.488] n=3
+  u11  orig_warm   11.909 [11.898-11.935] n=3
+  u11  orig_first  19.180 [18.506-19.745] n=3
+
+speedups vs original bench_ext (per-round ratios in brackets)
+  dev  cpi normal  6.10x [6.10 5.56 6.00]  warm bound 12.86x [12.99 12.75 12.61]  | same-harness warm/warm  5.59x | 7.8x needs 3.992 us (cpi 5.103, warm 2.421) | first-touch share 53%
+  osm  cpi normal  4.85x [5.48 4.55 4.85]  warm bound  8.64x [8.86 8.64 8.62]  | same-harness warm/warm  5.65x | 7.8x needs 2.363 us (cpi 3.803, warm 2.134) | first-touch share 44%
+  u11  cpi normal  5.57x [6.20 5.39 5.39]  warm bound  8.50x [9.20 8.22 8.51]  | same-harness warm/warm  5.55x | 7.8x needs 2.337 us (cpi 3.270, warm 2.145) | first-touch share 34%
+
+peak RSS (bytes, max over runs, /usr/bin/time -l)
+  dev  orig_ext  2613968896
+  dev  cpi_ext   2538192896
+  dev  cpi_warm  2543403008
+  dev  orig_warm 2614034432
+  osm  orig_ext  2613166080
+  osm  cpi_ext   2543140864
+  osm  cpi_warm  2543403008
+  osm  orig_warm 2612854784
+  u11  orig_ext  2612232192
+  u11  cpi_ext   2541387776
+  u11  cpi_warm  2541338624
+  u11  orig_warm 2612101120
+
+stage split (bench_split = cpi + EXP_STAGE_STATS; µs/address; median over runs; cold / warm)
+  dev (runs=4)
+    total_parse         5.566 /  2.465   cold-warm  3.101
+    normalize           0.062 /  0.039   cold-warm  0.024
+    tokenize            0.214 /  0.126   cold-warm  0.088
+    context_fill        1.723 /  0.375   cold-warm  1.348
+    features            1.375 /  0.687   cold-warm  0.688
+    lookups             0.668 /  0.201   cold-warm  0.468
+    accumulate          0.807 /  0.471   cold-warm  0.336
+    viterbi_and_rest    0.475 /  0.428   cold-warm  0.046
+    response            0.221 /  0.120   cold-warm  0.101
+    predict_total       3.325 /  1.789   cold-warm  1.536
+    cold: front 3.766 (68%)  fixed(acc+vit) 1.282 (23%)  other 0.498 (9%)  sum 5.546 vs total 5.566 (unattributed +0.020)
+    warm: front 1.263 (51%)  fixed(acc+vit) 0.900 (37%)  other 0.285 (12%)  sum 2.448 vs total 2.465 (unattributed +0.017)
+  osm (runs=4)
+    total_parse         3.736 /  2.169   cold-warm  1.567
+    normalize           0.067 /  0.028   cold-warm  0.039
+    tokenize            0.176 /  0.109   cold-warm  0.067
+    context_fill        0.990 /  0.345   cold-warm  0.644
+    features            0.879 /  0.567   cold-warm  0.312
+    lookups             0.415 /  0.167   cold-warm  0.248
+    accumulate          0.610 /  0.441   cold-warm  0.169
+    viterbi_and_rest    0.419 /  0.384   cold-warm  0.035
+    response            0.161 /  0.112   cold-warm  0.049
+    predict_total       2.324 /  1.558   cold-warm  0.766
+    cold: front 2.284 (61%)  fixed(acc+vit) 1.030 (28%)  other 0.404 (11%)  sum 3.717 vs total 3.736 (unattributed +0.019)
+    warm: front 1.079 (50%)  fixed(acc+vit) 0.825 (38%)  other 0.249 (11%)  sum 2.152 vs total 2.169 (unattributed +0.017)
+  u11 (runs=4)
+    total_parse         3.437 /  2.191   cold-warm  1.246
+    normalize           0.045 /  0.028   cold-warm  0.017
+    tokenize            0.167 /  0.107   cold-warm  0.060
+    context_fill        0.843 /  0.336   cold-warm  0.507
+    features            0.845 /  0.593   cold-warm  0.253
+    lookups             0.385 /  0.172   cold-warm  0.213
+    accumulate          0.567 /  0.420   cold-warm  0.147
+    viterbi_and_rest    0.407 /  0.378   cold-warm  0.029
+    response            0.154 /  0.139   cold-warm  0.016
+    predict_total       2.205 /  1.564   cold-warm  0.641
+    cold: front 2.074 (60%)  fixed(acc+vit) 0.974 (28%)  other 0.366 (11%)  sum 3.414 vs total 3.437 (unattributed +0.023)
+    warm: front 1.101 (50%)  fixed(acc+vit) 0.798 (36%)  other 0.274 (12%)  sum 2.172 vs total 2.191 (unattributed +0.018)

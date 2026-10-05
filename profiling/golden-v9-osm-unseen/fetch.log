@@ -1,0 +1,90 @@
+ok Salt Lake City 400
+retry Tampa 0 <HTTPError 504: 'Gateway Time-out'>
+ok Tampa 186
+retry Indianapolis 0 <HTTPError 504: 'Gateway Time-out'>
+ok Indianapolis 400
+retry Detroit 0 <HTTPError 504: 'Gateway Time-out'>
+ok Detroit 400
+ok Louisville 400
+ok Regina 400
+ok Leicester 400
+retry Southampton 0 <HTTPError 504: 'Gateway Timeout'>
+ok Southampton 400
+retry Sligo 0 <HTTPError 504: 'Gateway Timeout'>
+ok Sligo 269
+retry Darwin 0 <HTTPError 504: 'Gateway Time-out'>
+ok Darwin 93
+ok Nelson 400
+retry Pietermaritzburg 0 <HTTPError 504: 'Gateway Timeout'>
+ok Pietermaritzburg 19
+ok Clermont-Ferrand 316
+ok Le Mans 400
+retry Brest 0 <HTTPError 504: 'Gateway Timeout'>
+ok Brest 400
+ok Charleroi 400
+ok Freiburg 400
+retry Regensburg 0 <HTTPError 504: 'Gateway Timeout'>
+ok Regensburg 400
+retry Rostock 0 <HTTPError 504: 'Gateway Timeout'>
+ok Rostock 400
+ok St. Polten 400
+retry St. Gallen 0 <HTTPError 504: 'Gateway Timeout'>
+ok St. Gallen 400
+ok Maastricht 400
+ok Vejle 400
+retry Vasteras 0 <HTTPError 504: 'Gateway Time-out'>
+ok Vasteras 400
+retry Kristiansand 0 <HTTPError 504: 'Gateway Timeout'>
+ok Kristiansand 400
+retry Kuopio 0 <HTTPError 504: 'Gateway Time-out'>
+ok Kuopio 400
+retry Kielce 0 <HTTPError 504: 'Gateway Timeout'>
+ok Kielce 400
+retry Olsztyn 0 <HTTPError 504: 'Gateway Timeout'>
+ok Olsztyn 400
+retry Liberec 0 <HTTPError 504: 'Gateway Time-out'>
+ok Liberec 400
+retry Nyiregyhaza 0 <HTTPError 504: 'Gateway Timeout'>
+ok Nyiregyhaza 400
+retry Varazdin 0 <HTTPError 504: 'Gateway Timeout'>
+ok Varazdin 400
+ok Trieste 400
+retry Parma 0 <HTTPError 504: 'Gateway Time-out'>
+ok Parma 400
+retry Pamplona 0 <HTTPError 504: 'Gateway Time-out'>
+retry Pamplona 1 <HTTPError 504: 'Gateway Timeout'>
+ok Pamplona 400
+retry Santander 0 <HTTPError 504: 'Gateway Time-out'>
+ok Santander 400
+ok Funchal 400
+ok Ioannina 111
+retry Craiova 0 <HTTPError 504: 'Gateway Timeout'>
+ok Craiova 400
+ok Pleven 161
+retry Konya 0 <HTTPError 504: 'Gateway Timeout'>
+ok Konya 86
+ok Vinnytsia 400
+retry Samara 0 <HTTPError 504: 'Gateway Timeout'>
+retry Samara 1 <HTTPError 504: 'Gateway Timeout'>
+ok Samara 400
+ok Rezekne 400
+retry Marijampole 0 <HTTPError 504: 'Gateway Timeout'>
+ok Marijampole 400
+retry Fortaleza 0 <HTTPError 504: 'Gateway Timeout'>
+ok Fortaleza 400
+retry Salta 0 <HTTPError 504: 'Gateway Timeout'>
+ok Salta 400
+retry Leon 0 <HTTPError 504: 'Gateway Timeout'>
+ok Leon 400
+ok La Serena 326
+retry Manizales 0 <HTTPError 504: 'Gateway Timeout'>
+ok Manizales 45
+retry Piura 0 <HTTPError 504: 'Gateway Time-out'>
+ok Piura 28
+ok Okayama 0
+ok Kumamoto 2
+ok Chiayi 229
+ok Ulsan 11
+retry Rishon LeZion 0 <HTTPError 504: 'Gateway Timeout'>
+ok Rishon LeZion 400
+fetch exit 0

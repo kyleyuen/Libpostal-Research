@@ -1,0 +1,19 @@
+upstream_novel peak= 1960681472 late_rss_median= 1960697856 max_vm_swap= 0 samples= 246
+t2_upstream peak= 1960439808 late_rss_median= 1960706048 max_vm_swap= 0 samples= 255
+t3_upstream peak= 1960488960 late_rss_median= 1960701952 max_vm_swap= 0 samples= 243
+upstream peak_max= 1960681472 peak_all= [1960681472, 1960439808, 1960488960]
+candidate_dense_novel peak= 1945812992 late_rss_median= 1945878528 max_vm_swap= 0 samples= 102
+t2_dense peak= 1945743360 late_rss_median= 1945882624 max_vm_swap= 0 samples= 110
+t3_dense peak= 1945669632 late_rss_median= 1945886720 max_vm_swap= 0 samples= 104
+dense peak_max= 1945812992 peak_all= [1945812992, 1945743360, 1945669632]
+candidate_novel peak= 2347384832 late_rss_median= 2347495424 max_vm_swap= 0 samples= 105
+l4_glibc peak_max= 2347384832 peak_all= [2347384832]
+candidate_mi_novel peak= 2456395776 late_rss_median= 2456526848 max_vm_swap= 0 samples= 96
+l4_mi2 peak_max= 2456395776 peak_all= [2456395776]
+candidate_mi3_novel peak= 2501840896 late_rss_median= 2386833408 max_vm_swap= 0 samples= 102
+l4_mi3 peak_max= 2501840896 peak_all= [2501840896]
+dense max_peak_diff_bytes= -14868480
+dense paired_peak_diff_bytes= [-14868480, -14696448, -14819328]
+l4_glibc max_peak_diff_bytes= 386703360
+l4_mi2 max_peak_diff_bytes= 495714304
+l4_mi3 max_peak_diff_bytes= 541159424

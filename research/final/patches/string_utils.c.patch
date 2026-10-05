@@ -1,0 +1,48 @@
+--- ../libpostal/src/string_utils.c	2026-09-28 15:50:15
++++ experiments/011-normalize-fastpaths/candidate/string_utils.c	2026-09-29 20:15:10
+@@ -945,8 +945,37 @@
+     } else {
+         return array->n;
+     }
++}
++
++#ifdef EXP_FAST_APPEND
++// Reserve once (same doubling policy as char_array_push), then memcpy. Produces the same bytes as the per-byte push loops.
++static inline void char_array_reserve_extra(char_array *array, size_t extra) {
++    size_t need = array->n + extra;
++    if (need <= array->m) return;
++    size_t size = array->m ? array->m : 2;
++    while (size < need) size <<= 1;
++    char *ptr = realloc(array->a, sizeof(char) * size);
++    if (ptr == NULL) {
++        fprintf(stderr, "realloc failed during char_array_push\n");
++        exit(EXIT_FAILURE);
++    }
++    array->a = ptr;
++    array->m = size;
++}
++
++inline void char_array_append(char_array *array, char *str) {
++    size_t len = strlen(str);
++    char_array_reserve_extra(array, len);
++    memcpy(array->a + array->n, str, len);
++    array->n += len;
+ }
+ 
++inline void char_array_append_len(char_array *array, char *str, size_t len) {
++    char_array_reserve_extra(array, len);
++    memcpy(array->a + array->n, str, len);
++    array->n += len;
++}
++#else
+ inline void char_array_append(char_array *array, char *str) {
+     while(*str) {
+         char_array_push(array, *str++);
+@@ -958,6 +987,7 @@
+         char_array_push(array, *str++);
+     }
+ }
++#endif
+ 
+ inline void char_array_append_reversed_len(char_array *array, char *str, size_t len) {
+     int32_t unich;

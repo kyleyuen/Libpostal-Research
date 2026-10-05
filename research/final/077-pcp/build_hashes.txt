@@ -1,0 +1,20 @@
+194da3409f4c31fbe6e67ab5bdf450818db610f1ae23082a9103d0d3b94ca548  src/address_parser.c
+be78fef8a9153d1d2a38935681a64a31e2fd9aed9dbc7c7ec7dc9ab17a25d2ac  src/crf_context.c
+1ea4efa284b7fbcbc93e7d35c63ba7b80c0ee98a7ded5d0f7a5ef2c817850f79  src/crf.c
+c08f12d3494fb7e107782846ab28dc006d14fe6f5864e6cd63d2b30287c2e2d3  src/crf.h
+a00091aea099ebb6dac9ea6931722e5cf9d039944fec161580a46d03dfa55a50  src/fa_nb.h
+00eec5160f2771d3a48df8a37fa5418f1f23b6782be431d0766950a8ddc4c0e2  src/feature_dict.h
+ef295fcc0f6dce7fcc83827b098e74b14848d6d9592fe6a09f50643e856281bd  src/features.c
+bc9ebaf81d689d72fa693f6452018a59ccb1f88ca9d7c2436ef6d3bc27b3e0c2  src/libpostal.c
+794ef648f706f8e5f7ed4d1ab61f9fa47fd110a991ee246557495999c37f7995  src/normalize.c
+166b520ba48a214b6cf0cfce15c2161fd878e901ea92da916df02239a5e6a51d  src/string_utils.c
+1f39a53c540f4983cfe16a6c625d2b367179647f8da9d34aadec7d204362ba71  src/tokens.c
+80103da3b7787ee13b172b28c8a728e40ab7050b5c09a1c9883f5c0e864c9d60  src/transliterate.c
+7943b49975b468bdf863245fe06fdf2ed22ef29e21fabb306b5a6db0ba7fea11  src/trie_search.c
+bf71364e55a8c13302191c24962827426cf66e5be66a0ae6fc415e07e64390ad  src/trie.c
+6129948e1a9dc4a791a91e895eb56fb85823d64cd44a0670fd3047ca8dfda5e2  src/trie.h
+20c225faa5e590ee5c575c2239b8ed08011a2c78c1bdd6776397bd8cee71aa43  libpostal.a
+007b7a402bbbdc1360dffd02e0e38c19a96545af31db1f87b459a5f353c941fa  dump_outputs
+4fe36ed6278373fff54546980b01578d3bb18c49c1bc4ea5f4516bd5ae857e0c  bench_ext
+f9d583a4b1fa9f6c8c3b55d523628f09e730d31d40d05aeba9b5499134604227  fuzz_pipeline
+cc: clang | lib: -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=3 -DEXP_VITERBI20 -DEXP_TRANS_ALIAS -DEXP_PC_COMPRESS -DEXP_FTT -DEXP_FTT_ROLE_PREFETCH -DEXP_NAME_BYTE -DEXP_LETTERS_FAST -DEXP_FA_LEN -DEXP_DIGITS_FAST -DEXP_FTT_PF1 -DEXP_FTT_PF2 -DEXP_PC_PREFETCH -O2 -flto -fprofile-instr-use=/Users/kyle/.cache/libpostal-020-pgo/pcp/dev.profdata -Wno-profile-instr-unprofiled -Wno-profile-instr-out-of-date | scanner: -O1 | link: -flto /opt/homebrew/opt/mimalloc/lib/mimalloc.o -fprofile-instr-use=/Users/kyle/.cache/libpostal-020-pgo/pcp/dev.profdata -Wno-profile-instr-unprofiled -Wno-profile-instr-out-of-date

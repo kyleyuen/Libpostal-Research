@@ -1,0 +1,5121 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-03T10:42:01Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 367798437,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "1",
+    "addr:postcode": "21222",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 845372088,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "299",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street",
+    "light_rail": "yes",
+    "name": "Lexington Market",
+    "network": "Baltimore Light RailLink",
+    "network:wikidata": "Q3333820",
+    "not:network:wikidata": "Q6714458",
+    "operator": "Maryland Transit Administration",
+    "operator:short": "MTA",
+    "operator:wikidata": "Q1863801",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "light_rail",
+    "wheelchair": "yes",
+    "wikidata": "Q18153577",
+    "wikipedia": "en:Lexington Market station (Light RailLink)"
+  }
+},
+{
+  "type": "node",
+  "id": 845911138,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "12",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "South Howard Street",
+    "light_rail": "yes",
+    "name": "Baltimore Arena",
+    "network": "Baltimore Light RailLink",
+    "network:wikidata": "Q3333820",
+    "not:network:wikidata": "Q6714458",
+    "old_name": "University Center / Baltimore Street",
+    "operator": "Maryland Transit Administration",
+    "operator:short": "MTA",
+    "operator:wikidata": "Q1863801",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "light_rail",
+    "wikidata": "Q7894542",
+    "wikipedia": "en:Baltimore Arena station"
+  }
+},
+{
+  "type": "node",
+  "id": 1406336765,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "10",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Franklin Street",
+    "amenity": "restaurant",
+    "check_date": "2026-08-25",
+    "check_date:opening_hours": "2026-08-25",
+    "cuisine": "mediterranean;spanish",
+    "name": "Restaurante Tío Pepe",
+    "opening_hours": "Su-Th 15:00-20:30; Fr 15:00-21:00; Sa 16:00-21:00",
+    "phone": "+14105394675",
+    "source": "Bing",
+    "website": "https://www.tiopepe.us/",
+    "website:menu": "https://www.tiopepe.us/menu"
+  }
+},
+{
+  "type": "node",
+  "id": 1733706642,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "20",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Market Place",
+    "amenity": "nightclub",
+    "name": "Rams Head Live",
+    "wikidata": "Q7290098",
+    "wikipedia": "en:Nevermore Hall"
+  }
+},
+{
+  "type": "node",
+  "id": 1734226002,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "500",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Pratt Street",
+    "amenity": "restaurant",
+    "cuisine": "steak_house",
+    "name": "The Capital Grill",
+    "opening_hours": "Mo-Th 11:30-20:30; Sa 16:00-21:30; Su 16:00-20:30",
+    "phone": "+1 443-703-4064",
+    "website": "https://www.thecapitalgrille.com/locations/md/baltimore/baltimore/8023"
+  }
+},
+{
+  "type": "node",
+  "id": 2083201746,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "2",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street",
+    "amenity": "restaurant",
+    "check_date": "2025-11-17",
+    "name": "B&O American Brasserie",
+    "opening_hours": "Mo-Fr 11:00-14:00,16:00-21:00; Sa,Su 16:00-21:00",
+    "website": "https://www.bandorestaurant.com"
+  }
+},
+{
+  "type": "node",
+  "id": 2083201748,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "37",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "South Charles Street",
+    "addr:unit": "1",
+    "amenity": "fast_food",
+    "brand": "Subway",
+    "brand:wikidata": "Q244457",
+    "cuisine": "sandwich",
+    "name": "Subway",
+    "opening_hours": "Mo-Fr 07:00-21:00; Sa 09:00-20:00; Su 10:00-19:00",
+    "phone": "+1 410-962-5548",
+    "source": "survey",
+    "takeaway": "yes",
+    "website": "https://restaurants.subway.com/united-states/md/baltimore/37-s-charles-street"
+  }
+},
+{
+  "type": "node",
+  "id": 2083365647,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "300",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street",
+    "atm": "yes",
+    "brand": "7-Eleven",
+    "brand:wikidata": "Q259340",
+    "diet:halal": "no",
+    "fast_food": "yes",
+    "fuel:propane": "yes",
+    "name": "7-Eleven",
+    "phone": "+1 410-962-1098",
+    "ref": "37043",
+    "shop": "convenience",
+    "website": "https://www.7-eleven.com/locations/md/baltimore/300-n-charles-st-37043"
+  }
+},
+{
+  "type": "node",
+  "id": 2125977725,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "1",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "South Street",
+    "addr:unit": "1A",
+    "amenity": "fast_food",
+    "brand": "Au Bon Pain",
+    "brand:wikidata": "Q4818942",
+    "cuisine": "sandwich",
+    "name": "Au Bon Pain",
+    "phone": "+1-410-837-9814",
+    "takeaway": "yes",
+    "website": "http://www.aubonpain.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2125977806,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "219",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street",
+    "amenity": "restaurant",
+    "cuisine": "chinese",
+    "name": "Taste of China",
+    "phone": "+1 410-659-5466",
+    "website": "http://www.tasteofchinamenu.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2126250283,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "44",
+    "addr:state": "MD",
+    "addr:street": "South Street",
+    "amenity": "restaurant",
+    "cuisine": "chinese",
+    "fax": "+1-410-625-1425",
+    "name": "Uncle Lee's Restaurant",
+    "opening_hours": "Mo-Fr 11:30-15:00,17:00-22:00; Sa 12:00-24:00; Su 17:00-22:00",
+    "phone": "+1-410-727-6666",
+    "website": "https://www.uncleleesharbor.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2149052888,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "22",
+    "addr:state": "MD",
+    "addr:street": "Market Place",
+    "amenity": "nightclub",
+    "name": "Howl at the Moon",
+    "website": "https://www.howlatthemoon.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2149755451,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "55",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Market Place",
+    "addr:unit": "9",
+    "amenity": "fast_food",
+    "brand": "Subway",
+    "brand:wikidata": "Q244457",
+    "cuisine": "sandwich",
+    "indoor_seating": "yes",
+    "name": "Subway",
+    "opening_hours": "Mo-We 07:00-22:00; Th-Sa 07:00-03:00; Su 08:00-20:00",
+    "outdoor_seating": "no",
+    "phone": "+1 410-779-6361",
+    "takeaway": "yes",
+    "website": "https://restaurants.subway.com/united-states/md/baltimore/55-market-place"
+  }
+},
+{
+  "type": "node",
+  "id": 2149755452,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "55",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Market Place",
+    "atm": "yes",
+    "brand": "7-Eleven",
+    "brand:wikidata": "Q259340",
+    "fast_food": "yes",
+    "fuel:propane": "yes",
+    "name": "7-Eleven",
+    "phone": "+1 410-685-0368",
+    "ref": "34345",
+    "shop": "convenience",
+    "website": "https://www.7-eleven.com/locations/md/baltimore/55-market-place-34345"
+  }
+},
+{
+  "type": "node",
+  "id": 2390247516,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "328",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street",
+    "amenity": "pub",
+    "check_date": "2025-08-04",
+    "name": "Mick O'Shea's",
+    "opening_hours": "Mo-Fr 11:30-02:00; Sa-Su 11:00-02:00; Mo-Fr 11:30-24:00 open \"Kitchen\"; Sa-Su 11:00-24:00 open \"Kitchen\"",
+    "phone": "+14105397504",
+    "smoking": "no",
+    "takeaway": "yes",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "website": "https://www.mickosheas.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2409844789,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "1",
+    "addr:postcode": "21202-1127",
+    "addr:state": "MD",
+    "addr:street": "East Pratt Street",
+    "amenity": "restaurant",
+    "brand": "Kona Grill",
+    "brand:wikidata": "Q6428706",
+    "check_date": "2023-07-11",
+    "cuisine": "sushi;cocktails",
+    "diet:halal": "no",
+    "name": "Kona Grill",
+    "phone": "+1-410-244-8994",
+    "website": "https://www.konagrill.com/restaurants/baltimore-md.aspx"
+  }
+},
+{
+  "type": "node",
+  "id": 2409846334,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "100",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Pratt Street",
+    "air_conditioning": "yes",
+    "amenity": "cafe",
+    "branch": "100 East Pratt Street",
+    "brand": "Starbucks",
+    "brand:wikidata": "Q37158",
+    "cuisine": "coffee_shop",
+    "diet:vegetarian": "yes",
+    "name": "Starbucks",
+    "official_name": "Starbucks Coffee",
+    "opening_hours": "Mo-Su 06:00-20:00",
+    "phone": "+1 410-244-8697",
+    "ref": "87278",
+    "takeaway": "yes",
+    "website": "https://www.starbucks.com/store-locator/store/87278/100-e-pratt-street-100-e-pratt-street-baltimore-md-212021009-us",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2480610216,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "820",
+    "addr:postcode": "21202",
+    "addr:street": "East Baltimore Street",
+    "name": "Patisserie Poupon",
+    "opening_hours": "Mo-Sa 07:00-18:00",
+    "phone": "+1-410-332-0390",
+    "shop": "bakery",
+    "website": "https://www.patisseriepoupon.net/"
+  }
+},
+{
+  "type": "node",
+  "id": 2501948978,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "333",
+    "addr:postcode": "21201",
+    "addr:street": "North Charles Street",
+    "amenity": "restaurant",
+    "cuisine": "sausage;lunch",
+    "name": "Jack and Zach",
+    "note": "hours Tuesday - Friday 0730-1630, Sunday 1000-1600",
+    "opening_hours": "Tu- Fr 07:30-16:30; Su 10:00-16:00",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2607608509,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "111",
+    "addr:postcode": "21202",
+    "addr:street": "South Calvert Street",
+    "name": "TradeRiver USA",
+    "office": "consulting",
+    "phone": "+1-410-385-5255",
+    "source": "TradeRiver USA",
+    "website": "https://traderiverusa.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2918406739,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "30",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Franklin Street",
+    "brand": "Hotel Indigo",
+    "brand:wikidata": "Q5911596",
+    "name": "Hotel Indigo",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 3294595913,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "600",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Pratt Street",
+    "amenity": "restaurant",
+    "brand": "IHOP",
+    "brand:wikidata": "Q1185675",
+    "check_date": "2024-08-27",
+    "cuisine": "breakfast;pancake",
+    "name": "IHOP",
+    "opening_hours": "Mo-Su 05:00-24:00",
+    "phone": "+1 833-920-1668",
+    "website": "https://restaurants.ihop.com/en-us/md/baltimore/breakfast-600-e.-pratt-st-3642"
+  }
+},
+{
+  "type": "node",
+  "id": 3423552833,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "111",
+    "addr:postcode": "21202",
+    "addr:street": "Water Street",
+    "amenity": "restaurant",
+    "cuisine": "american",
+    "name": "Saturday Morning Cafe",
+    "opening_hours": "Mo-Th 07:30-15:30;Fr-Su 07:30-16:00",
+    "phone": "+1 410 528 7789",
+    "website": "https://www.saturdaymorningcafe.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 3423587999,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "36",
+    "addr:postcode": "21202",
+    "addr:street": "Light Street",
+    "brand": "Royal Farms",
+    "brand:wikidata": "Q7374169",
+    "name": "Royal Farms",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 3423588000,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "106",
+    "addr:postcode": "21202",
+    "addr:street": "Water Street",
+    "name": "Monica's Spa Salon",
+    "phone": "+1-410-625-2565",
+    "shop": "beauty"
+  }
+},
+{
+  "type": "node",
+  "id": 3423588001,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "25",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Light Street",
+    "alt_name": "Dunkin' Donuts",
+    "amenity": "fast_food",
+    "brand": "Dunkin'",
+    "brand:wikidata": "Q847743",
+    "cuisine": "donut;coffee_shop",
+    "drive_through": "no",
+    "name": "Dunkin'",
+    "opening_hours": "05:00-20:00",
+    "phone": "+1 410-617-8705",
+    "ref": "341360",
+    "takeaway": "yes",
+    "website": "https://locations.dunkindonuts.com/en/md/baltimore/25-light-st/341360"
+  }
+},
+{
+  "type": "node",
+  "id": 3423588002,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "102-104",
+    "addr:postcode": "21202",
+    "addr:street": "Water Street",
+    "amenity": "bar",
+    "name": "The Water Street Tavern"
+  }
+},
+{
+  "type": "node",
+  "id": 3423588003,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "110",
+    "addr:postcode": "21202",
+    "addr:street": "Water Street",
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "name": "Supano's",
+    "phone": "+1 410 986 4445",
+    "website": "https://www.supanossteakhouse.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 3432394053,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "6",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North High Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432394077,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "10",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Albemarle Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432394078,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "16",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North High Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432394091,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "6",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North High Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432394395,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "29",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "South Front Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432394439,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "807",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432394610,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "300",
+    "addr:postcode": "21221",
+    "addr:state": "MD",
+    "addr:street": "North Exeter Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432394679,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "314",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Exeter Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432394740,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "300",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North High Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432394745,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "405",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Exeter Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432394748,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "701",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432395441,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "611",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Pratt Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432395442,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "408",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Exeter Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432395822,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "313",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432395827,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "211",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Fallsway"
+  }
+},
+{
+  "type": "node",
+  "id": 3432395833,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "412",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Exeter Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432395847,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "301",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Fallsway Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396640,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "500",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396686,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "300",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396701,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "10",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "South Frederick Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396729,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "501",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Pratt Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396767,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "218",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396791,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "11",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "South Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396838,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "14",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "South Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396846,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "164",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396852,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "162",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396855,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "405",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Pratt Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396859,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "160",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396863,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "158",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396868,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "156",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396871,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "154",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432396887,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "150",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397011,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "148",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397039,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "550",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Front Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397058,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "11",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Custom House Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397094,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "560",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North High Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397130,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "401",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Bath Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397132,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "437",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Fallsway"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397139,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "400",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Bath Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397157,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "101",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Holliday Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397381,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "10",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Holliday Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397445,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "330",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Holliday Street",
+    "addr:street:prefix": "North"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397602,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "301",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "East Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397603,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "305",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Guilford Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397620,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "213",
+    "addr:postcode": "21217",
+    "addr:state": "MD",
+    "addr:street": "Water Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397654,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "202",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Guilford Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397657,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "215",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397658,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "298",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Pratt Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397676,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "220",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Bath Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397711,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "203",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Davis Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397715,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "208",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397725,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "206",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397727,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "210",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Bath Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397759,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "301",
+    "addr:postcode": "21223",
+    "addr:state": "MD",
+    "addr:street": "North Calvert Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397769,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "200",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Bath Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397775,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "401",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Calvert Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397800,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "426",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Calvert Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397812,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "1",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "East Conway Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397822,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "410",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Hargrove Alley"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397827,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "100",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Pleasant Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397830,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "411",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Saint Paul Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397853,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "30",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Light Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397883,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "314",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Saint Paul Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397886,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "316",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Saint Paul Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397894,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "412",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Saint Paul Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397896,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "414",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Saint Paul Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397937,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "8",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397940,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "401",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Lovegrove Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397942,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "10",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Hamilton Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432397973,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "219",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398114,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "111",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "South Hanover Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398314,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "12",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "South Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398343,
+  "tags": {
+    "access": "private",
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "100",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "South Hanover Street",
+    "amenity": "parking",
+    "layer": "-1",
+    "parking": "underground"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398367,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "210",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Liberty Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398373,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "100",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Pratt Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398496,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "105",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Clay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398505,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "114",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Clay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398547,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "130",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Pleasant Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398549,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "215",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398554,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "115",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Library Court"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398568,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "213",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398572,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "124",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Hopkins Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398583,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "106",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398709,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "204",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Clay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398715,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "209",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Pleasant Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398725,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "319",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Tyson Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398726,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "311",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Tyson Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398739,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "221",
+    "addr:postcode": "21236",
+    "addr:state": "MD",
+    "addr:street": "Marion Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432398754,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "309",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412763,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "305",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412764,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "119 H",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412765,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "15",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412766,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "224",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412767,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "222 H",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412769,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "220",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412770,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "227",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412774,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "208",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412776,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "202",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412784,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "207",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412785,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "115",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412788,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "111",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412790,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "109",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412796,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "100",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412797,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "111",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Liberty Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412809,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "9",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Mulberry Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412811,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "16",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Franklin Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412813,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "3",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Franklin Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412814,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "20",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412816,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "336",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street",
+    "amenity": "restaurant",
+    "check_date": "2025-08-04",
+    "cuisine": "pizza",
+    "name": "HomeSlyce Pizza Bar",
+    "phone": "+1 443-501-4000",
+    "website": "http://slycethebar.com"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412821,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "339",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412823,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "2",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "East Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412824,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "14",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Franklin Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412825,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "10",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412827,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "15",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Franklin Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412828,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "9",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412829,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "200",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Saint Paul Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412835,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "33",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Grant Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412837,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "112",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lombard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412845,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "204",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412848,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "312",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Guilford Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412850,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "301",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "East Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432412857,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "229",
+    "addr:postcode": "21202-3612",
+    "addr:state": "MD",
+    "addr:street": "Holliday Street",
+    "addr:street:prefix": "North"
+  }
+},
+{
+  "type": "node",
+  "id": 3432413891,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "300",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432413998,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "235",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414003,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "23",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414009,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "220",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414010,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "221",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414011,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "219",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414012,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "218",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414014,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "304",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414016,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "232",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414017,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "236",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414019,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "325",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414021,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "117",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414022,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "119",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Mulberry Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414023,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "116",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414029,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "129",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414033,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "104",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414036,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "102",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414057,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "214",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414058,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "341",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414062,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "17",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Franklin Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414064,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "520",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Saint Paul Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414075,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "35",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Grant Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414077,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "317",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Calvert Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414087,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "328",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Guilford Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414088,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "322",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Guilford Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414089,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "318",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Guilford Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414094,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "235",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Holliday Street",
+    "addr:street:prefix": "North",
+    "name": "Word on the Street",
+    "office": "newspaper"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414101,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "407",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "East Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414608,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "308",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414618,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "229",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414621,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "216",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414625,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "226",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414630,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "118",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414631,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "111",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414635,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "124",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Liberty Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414641,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "104",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Clay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414642,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "102",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Clay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414645,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "128",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Cathedral Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414651,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "30",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414653,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "7",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Mulberry Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414655,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "114",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Franklin Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414660,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "7",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Centre Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414665,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "22",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414667,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "524",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Saint Paul Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414679,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "112",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414682,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "313",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Calvert Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414684,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "311",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Calvert Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414698,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "316",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Guilford Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414701,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "220",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432414735,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "349",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415429,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "302",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415435,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "307",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415437,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "17",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415438,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "222",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415443,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "207",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415444,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "204",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415445,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "214",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415457,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "101",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415476,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "24",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Franklin Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415481,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "14",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415482,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "342",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415484,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "12",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Franklin Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415486,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "16",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415487,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "12",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415488,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "19",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Franklin Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415489,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "14",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415490,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "18",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415495,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "36",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Light Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415499,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "110",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415500,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "108",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Water Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415508,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "16",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "South Calvert Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415509,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "315",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Calvert Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415513,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "206",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street",
+    "amenity": "restaurant",
+    "name": "Royal Restaurant Carry Out",
+    "phone": "+1 410 727 5757"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415514,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "218",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street",
+    "name": "Law Offices Holtzman & Associates LLC",
+    "office": "lawyer",
+    "phone": "+1 410 539 4222"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415521,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "227",
+    "addr:postcode": "21202-3612",
+    "addr:state": "MD",
+    "addr:street": "Holliday Street",
+    "addr:street:prefix": "North",
+    "consulting": "finance",
+    "name": "Prism Compliance Management",
+    "office": "consulting",
+    "website": "https://www.prismcompliance.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 3432415545,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "220",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416399,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "220 H",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416400,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "214",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416401,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "213",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416402,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "210",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416403,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "400",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416406,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "212",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416407,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "222",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416410,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "323",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue",
+    "amenity": "restaurant",
+    "cuisine": "chinese",
+    "name": "Zhongshan Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416413,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "121",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Mulberry Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416415,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "113",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416421,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "103",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416429,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "411",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Cathedral Street",
+    "amenity": "social_facility",
+    "check_date": "2025-10-09",
+    "name": "Our Daily Bread",
+    "opening_hours": "07:30-08:20",
+    "phone": "+1-410-659-4022",
+    "social_facility": "shelter",
+    "social_facility:for": "elderly"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416430,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "13",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Hamilton Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416441,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "339",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street",
+    "name": "Same Gender Love",
+    "opening_hours": "Mo-Fr 11:00-19:00;Sa 10:00-19:00;Su 12:00-18:00",
+    "shop": "gift"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416445,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "13",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Franklin Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416446,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "7",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street",
+    "amenity": "restaurant",
+    "cuisine": "chinese",
+    "name": "Peking House"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416449,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "18",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416450,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "19",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street",
+    "name": "Between the Bread",
+    "shop": "bakery"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416456,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "18",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Light Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416474,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "239",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Holliday Street",
+    "addr:street:prefix": "North"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416503,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "413",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Exeter Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416504,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "55",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Market Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3432416505,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "710",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Market Place",
+    "amenity": "college",
+    "level": "0",
+    "name": "BCCC Workforce Development and Continuing Education",
+    "operator": "Baltimore City Community College",
+    "operator:type": "government",
+    "operator:wikidata": "Q4852809",
+    "website": "https://www.bccc.edu/bccc"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417798,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "13",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417799,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "21",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417802,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "224",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417803,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "218",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417807,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "313",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Tyson Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417809,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "200",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417815,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "120",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417825,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "109",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Clay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417828,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "115",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Liberty Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417840,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "14",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Franklin Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417846,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "334",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street",
+    "amenity": "dentist",
+    "healthcare": "dentist",
+    "name": "Dental Group Baltimore City"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417848,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "210",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417849,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "101",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street",
+    "branch": "Baltimore - Inner Harbor",
+    "brand": "Candlewood Suites",
+    "brand:wikidata": "Q5032010",
+    "name": "Candlewood Suites",
+    "phone": "+1 410-244-8181",
+    "ref": "BWICH",
+    "tourism": "hotel",
+    "website": "https://www.ihg.com/candlewood/hotels/us/en/baltimore/bwich/hoteldetail"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417852,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "20",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417859,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "423",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Saint Paul Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417862,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "434",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Franklin Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417873,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "208",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417876,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "314",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Guilford Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417877,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "310",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Guilford Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417883,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "237",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Holliday Street",
+    "addr:street:prefix": "North"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417900,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "222",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432417911,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "411",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Exeter Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418451,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "233",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418454,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "226",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418457,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "220",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418458,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "225",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418459,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "221",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418462,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "216",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418463,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "404",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418465,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "206",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418466,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "306",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418467,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "218",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418468,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "216",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418469,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "210",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418470,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "230",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418484,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "105",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418504,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "332",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418505,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "340",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street",
+    "amenity": "restaurant",
+    "cuisine": "thai",
+    "name": "Rod Dee Thai",
+    "phone": "+1 443-708-4260",
+    "website": "https://www.roddeethaibaltimore.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418507,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "310",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418508,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "200",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418513,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "11",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Franklin Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418516,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "17",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418521,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "425",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Saint Paul Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418523,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "428",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Calvert Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418527,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "31",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Grant Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418528,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "108",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lombard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418532,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "319",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Calvert Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418534,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "18",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "South Calvert Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418549,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "300",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418554,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "233",
+    "addr:postcode": "21202-3612",
+    "addr:state": "MD",
+    "addr:street": "Holliday Street",
+    "addr:street:prefix": "North"
+  }
+},
+{
+  "type": "node",
+  "id": 3432418555,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:housenumber": "231",
+    "addr:postcode": "21202-3612",
+    "addr:state": "MD",
+    "addr:street": "Holliday Street",
+    "addr:street:prefix": "North"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419301,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "306",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419304,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "303",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419305,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "301",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419308,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "119",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419312,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "11",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419313,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "231",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419317,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "216",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419319,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "317",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Tyson Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419321,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "214",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419323,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "208",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419325,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "202",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Clay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419326,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "204",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419328,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "234",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Park Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419334,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "123",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419339,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "107",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419355,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "126",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "Cathedral Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419363,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "330",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419369,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "16",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419370,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "522",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Saint Paul Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419381,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "110",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Water Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419392,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "200",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419398,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "15",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Guilford Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419414,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "421",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "East Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3432419430,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "347",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3445777698,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "100",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Market Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3445777703,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "101",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Constellation Way"
+  }
+},
+{
+  "type": "node",
+  "id": 3445777705,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "109",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Market Place",
+    "amenity": "fast_food",
+    "cuisine": "sandwich",
+    "name": "Bon Fresco"
+  }
+},
+{
+  "type": "node",
+  "id": 3445777706,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "115",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Market Place"
+  }
+},
+{
+  "type": "node",
+  "id": 3445777785,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "399",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Pratt Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3445780215,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "621",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Pratt Street",
+    "name": "The Baltimore Banner",
+    "office": "newspaper"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643415,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "13",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Custom House Avenue"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643416,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "200",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643417,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "204",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643418,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "22",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "South Gay Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643419,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "227",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643420,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "229",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643421,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "233",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Redwood Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643422,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "239",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Redwood Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643424,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "38",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "South Street",
+    "name": "ABC Imaging",
+    "shop": "copyshop"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643426,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "400",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643427,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "400",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lombard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643428,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "401",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Water Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643429,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "402",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643430,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "404",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643431,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "406",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643432,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "408",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street",
+    "amenity": "nightclub",
+    "name": "Lust Baltimore"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643433,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "409",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643434,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "410",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street",
+    "amenity": "restaurant",
+    "name": "Crazy Johns"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643435,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "414",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Water Street",
+    "landuse": "residential",
+    "name": "414 Water Street",
+    "phone": "+1 410 752 2794",
+    "residential": "apartments"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643436,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "414",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street",
+    "amenity": "nightclub",
+    "name": "2 O’Clock Club"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643437,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "416",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street",
+    "amenity": "nightclub",
+    "name": "Down Town"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643438,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "417",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643439,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "420",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643440,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "422",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643441,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "5",
+    "addr:postcode": "21229",
+    "addr:state": "MD",
+    "addr:street": "North Calvert Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3447643442,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "9",
+    "addr:postcode": "21229",
+    "addr:state": "MD",
+    "addr:street": "North Calvert Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3448651846,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "12",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Franklin Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449740421,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "300",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Saratoga Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449740422,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "309",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Fallsway Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449740423,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "320",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Front Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798657,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "1",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798660,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "106",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798661,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "110",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Saint Paul Street",
+    "brand": "Quality Inn",
+    "brand:wikidata": "Q113152195",
+    "name": "Quality Inn",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798662,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "108",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Mulberry Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798663,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "11",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798664,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "12",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Light Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798665,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "13",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798666,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "19",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "South Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798667,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "201",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798668,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "215",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798669,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "3",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798670,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "302",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798671,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "304",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798672,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "306",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798673,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "308",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Charles Street",
+    "amenity": "dentist",
+    "healthcare": "dentist",
+    "name": "Baltimore City Dental Group",
+    "phone": "+1 410 685 0002",
+    "website": "https://baltimorecitydentalgroup.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 3449798674,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "6",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "East Lexington Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3450917682,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "100",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3450917683,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "102",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3450917686,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "114",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3450917687,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "116",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3450917895,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "206",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Fayette Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3450917897,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "25",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3450917899,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "300",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3450917900,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "302",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3450917901,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "307",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3450917902,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "309",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3450917903,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "311",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3450917904,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "313",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3450917905,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "315",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "West Baltimore Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3450917933,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "6",
+    "addr:postcode": "21201",
+    "addr:state": "MD",
+    "addr:street": "North Howard Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3451170447,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "18",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North High Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3451170448,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "20",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North High Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3451170450,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "235",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3451170451,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "237",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3451170452,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "239",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Gay Street",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3451170453,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "332",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Front Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3451170454,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "334",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "North Front Street"
+  }
+},
+{
+  "type": "node",
+  "id": 3523748306,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:description": "Beneath Jones Falls Expressway at Holliday Street and Saratoga Street",
+    "addr:housenumber": "400",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "East Saratoga Street",
+    "amenity": "marketplace",
+    "contact:facebook": "https://www.facebook.com/BmoreFarmersMarket/",
+    "email": "bmorefarmersmarketandbazaar@gmail.com",
+    "name": "Baltimore Farmers Market & Bazaar",
+    "opening_hours": "Apr-Dec: Su 07:00-12:00",
+    "operator": "Baltimore Office of Promotion and the Arts",
+    "phone": "+1 410-752-8632",
+    "shop": "farm",
+    "website": "http://www.promotionandarts.org/events-festivals/baltimore-farmers-market"
+  }
+},
+{
+  "type": "node",
+  "id": 3523871006,
+  "tags": {
+    "addr:city": "Baltimore",
+    "addr:country": "US",
+    "addr:housenumber": "410",
+    "addr:postcode": "21202",
+    "addr:state": "MD",
+    "addr:street": "Fallsway",
+    "amenity": "parking",
+    "description": "Towing Lot",
+    "name": "Fallsway Impound Lot",
+    "operator": "Baltimore City Department of Transportation",
+    "operator:type": "government",
+    "parking": "surface"
+  }
+}
+
+  ]
+}

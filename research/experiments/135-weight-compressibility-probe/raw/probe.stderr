@@ -1,0 +1,22 @@
+WD_PROBE state rows=11470623 nonempty=11470623 records=33799350 mean_row=2.9 | distinct values=22123311 (65.4548% of records) most_common_value_count=132 | top256 cover 0.0% top4096 0.3% top65536 2.1% | float32-exact 0.0% zero 18
+WD_PROBE state bits per record: class 5 + value index 25 = 30 (now 80) | total 322.3 MB -> 120.9 MB (+ 168.8 MB value table) | expected 128-B lines per row (uniform start) 1.22 -> 1.08
+WD_PROBE trans rows=2086474 nonempty=2086474 records=13369573 mean_row=6.4 | distinct values=12450028 (93.1221% of records) most_common_value_count=1052 | top256 cover 0.0% top4096 0.2% top65536 1.6% | float32-exact 0.0% zero 1052
+WD_PROBE trans bits per record: class 9 + value index 24 = 33 (now 80) | total 127.5 MB -> 52.6 MB (+ 95.0 MB value table) | expected 128-B lines per row (uniform start) 1.49 -> 1.20
+       17.77 real        16.83 user         0.61 sys
+          3160571904  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              214431  page reclaims
+                  20  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                7033  involuntary context switches
+        202468960522  instructions retired
+         76414860529  cycles elapsed
+          3235744456  peak memory footprint

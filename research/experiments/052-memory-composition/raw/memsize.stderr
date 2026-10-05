@@ -1,0 +1,10 @@
+MEMSIZE trie_component_phrases nodes=62.7 MB data=30.6 MB tail=22.5 MB (nodes 8220951)
+MEMSIZE trie_postal_codes      nodes=57.2 MB data=41.8 MB tail=6.3 MB (nodes 7498166)
+MEMSIZE postal_code_contexts     indptr=20.9 MB indices=466.5 MB (rows 5483893, edges 122300179)
+MEMSIZE phrase_types             15.3 MB
+MEMSIZE vocab_dict               slots=56.4 MB arena=58.9 MB keys=3694560
+MEMSIZE state_weights            rows=11470623 nnz=33799350 indptr=43.8 MB records=322.3 MB
+MEMSIZE trans_weights            rows=2086474 nnz=13369573 indptr=8.0 MB records=127.5 MB
+MEMSIZE state_dict             slots=225.0 MB arena=173.2 MB int_slots=56.4 MB keys=9828574 int_keys=1642049
+MEMSIZE trans_dict             slots=15.2 MB arena=10.8 MB int_slots=48.9 MB keys=662231 int_keys=1424243
+MEMSIZE role_ids                 169.1 MB (vocab slots 7389122 x 6 x 4 B)

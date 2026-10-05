@@ -1,0 +1,7 @@
+verify v1: EXP_FTT_VERIFY: 63743 tokens checked, 0 mismatches
+verify nv: EXP_FTT_VERIFY: 60582 tokens checked, 0 mismatches
+verify osm: EXP_FTT_VERIFY: 52496 tokens checked, 0 mismatches
+verify fuzz1: EXP_FTT_VERIFY: 10494403 tokens checked, 0 mismatches
+nv-build v1 45574ee2b1972f1acf2d nv 806b8a81603ea9adf3af | nt v1 45574ee2b1972f1acf2d
+osm IDENTICAL
+fuzz1 IDENTICAL

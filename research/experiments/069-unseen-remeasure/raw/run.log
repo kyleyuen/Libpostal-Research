@@ -1,0 +1,50 @@
+2026-10-02T23:52:29-0700 START build_set: python3 /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/build_unseen.py build
+2026-10-02T23:52:30-0700 END build_set exit=0
+2026-10-02T23:52:30-0700 START dump_orig: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/017-loadtime-precompute/artifacts/dump_outputs_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.txt
+2026-10-02T23:52:33-0700 END dump_orig exit=0
+2026-10-02T23:52:33-0700 START dump_va: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/048-viterbi20-alias/artifacts/va/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.txt
+2026-10-02T23:52:42-0700 END dump_va exit=0
+2026-10-02T23:52:42-0700 START dump_lf: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/062-letters-fastpath/artifacts/lf/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.txt
+2026-10-02T23:52:51-0700 END dump_lf exit=0
+2026-10-02T23:52:51-0700 START dump_pl: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/067-phrase-memo-len/artifacts/pl/dump_outputs /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.txt
+2026-10-02T23:53:01-0700 END dump_pl exit=0
+2026-10-02T23:53:01-0700 START timing/u_r1_va: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/048-viterbi20-alias/artifacts/va/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:53:11-0700 END timing/u_r1_va exit=0
+2026-10-02T23:53:13-0700 START timing/u_r1_lf: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/062-letters-fastpath/artifacts/lf/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:53:23-0700 END timing/u_r1_lf exit=0
+2026-10-02T23:53:25-0700 START timing/u_r1_pl: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/067-phrase-memo-len/artifacts/pl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:53:36-0700 END timing/u_r1_pl exit=0
+2026-10-02T23:53:38-0700 START timing/u_r1_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:53:45-0700 END timing/u_r1_orig exit=0
+2026-10-02T23:53:47-0700 START timing/u_r2_lf: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/062-letters-fastpath/artifacts/lf/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:53:58-0700 END timing/u_r2_lf exit=0
+2026-10-02T23:54:00-0700 START timing/u_r2_pl: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/067-phrase-memo-len/artifacts/pl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:54:10-0700 END timing/u_r2_pl exit=0
+2026-10-02T23:54:12-0700 START timing/u_r2_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:54:19-0700 END timing/u_r2_orig exit=0
+2026-10-02T23:54:22-0700 START timing/u_r2_va: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/048-viterbi20-alias/artifacts/va/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:54:31-0700 END timing/u_r2_va exit=0
+2026-10-02T23:54:33-0700 START timing/u_r3_pl: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/067-phrase-memo-len/artifacts/pl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:54:44-0700 END timing/u_r3_pl exit=0
+2026-10-02T23:54:46-0700 START timing/u_r3_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:54:53-0700 END timing/u_r3_orig exit=0
+2026-10-02T23:54:55-0700 START timing/u_r3_va: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/048-viterbi20-alias/artifacts/va/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:55:04-0700 END timing/u_r3_va exit=0
+2026-10-02T23:55:07-0700 START timing/u_r3_lf: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/062-letters-fastpath/artifacts/lf/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:55:17-0700 END timing/u_r3_lf exit=0
+2026-10-02T23:55:19-0700 START timing/u_r4_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:55:27-0700 END timing/u_r4_orig exit=0
+2026-10-02T23:55:29-0700 START timing/u_r4_va: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/048-viterbi20-alias/artifacts/va/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:55:38-0700 END timing/u_r4_va exit=0
+2026-10-02T23:55:40-0700 START timing/u_r4_lf: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/062-letters-fastpath/artifacts/lf/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:55:51-0700 END timing/u_r4_lf exit=0
+2026-10-02T23:55:53-0700 START timing/u_r4_pl: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/067-phrase-memo-len/artifacts/pl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:56:03-0700 END timing/u_r4_pl exit=0
+2026-10-02T23:56:05-0700 START timing/u_r5_va: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/048-viterbi20-alias/artifacts/va/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:56:15-0700 END timing/u_r5_va exit=0
+2026-10-02T23:56:17-0700 START timing/u_r5_lf: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/062-letters-fastpath/artifacts/lf/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:56:28-0700 END timing/u_r5_lf exit=0
+2026-10-02T23:56:30-0700 START timing/u_r5_pl: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/067-phrase-memo-len/artifacts/pl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:56:40-0700 END timing/u_r5_pl exit=0
+2026-10-02T23:56:43-0700 START timing/u_r5_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv 20
+2026-10-02T23:56:50-0700 END timing/u_r5_orig exit=0

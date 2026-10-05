@@ -1,0 +1,195 @@
+{
+  "created_utc": "2026-09-28T23:12:49.575056+00:00",
+  "libpostal_commit": "25099c506612b34b23b1bfe286ca6321fcf06f35",
+  "dataset": {
+    "repository": "https://github.com/Senzing/libpostal-data",
+    "commit": "5113929832ac06619d18a4816f78a90fef8cc7a3",
+    "version": "1.2.0",
+    "source_url": "https://raw.githubusercontent.com/Senzing/libpostal-data/5113929832ac06619d18a4816f78a90fef8cc7a3/files/tests/v1.2.0/test_data.csv"
+  },
+  "model_sources": [
+    "https://github.com/openvenues/libpostal/releases/download/v1.0.0/libpostal_data.tar.gz",
+    "https://github.com/openvenues/libpostal/releases/download/v1.0.0/parser.tar.gz"
+  ],
+  "model_files": [
+    {
+      "path": "/Users/kyle/.cache/libpostal-profile/base.tar.gz",
+      "bytes": 10190140,
+      "sha256": "d2ec50587bf3a7e46e18e5dcde32419134266f90774e3956f2c2f90d818ff9a1"
+    },
+    {
+      "path": "/Users/kyle/.cache/libpostal-profile/libpostal/address_expansions/address_dictionary.dat",
+      "bytes": 8737530,
+      "sha256": "9fbf8779942bcc84841ac948ebd0c910b37edc7ff812125f09b6c39018747b1d"
+    },
+    {
+      "path": "/Users/kyle/.cache/libpostal-profile/libpostal/address_parser/address_parser_crf.dat",
+      "bytes": 1014429504,
+      "sha256": "e44b308e9e1942efe8ad8226929e29ca49e9ea2900ed36625c601c53509ba5c1"
+    },
+    {
+      "path": "/Users/kyle/.cache/libpostal-profile/libpostal/address_parser/address_parser_phrases.dat",
+      "bytes": 137484586,
+      "sha256": "739643ea06d8c492ba57bd51ba1dc1243853e7f8c6130e3a7bd30150221119e6"
+    },
+    {
+      "path": "/Users/kyle/.cache/libpostal-profile/libpostal/address_parser/address_parser_postal_codes.dat",
+      "bytes": 621588636,
+      "sha256": "7c5b20c541c16758cc73c41025f2327be525831dff272a6b4c3aeb901e481b1b"
+    },
+    {
+      "path": "/Users/kyle/.cache/libpostal-profile/libpostal/address_parser/address_parser_vocab.trie",
+      "bytes": 99219597,
+      "sha256": "962a985f29530440035bd379826f38e35f0f0fc718926444658d89bbd70829b1"
+    },
+    {
+      "path": "/Users/kyle/.cache/libpostal-profile/libpostal/numex/numex.dat",
+      "bytes": 396966,
+      "sha256": "269630109fac796ab576b7fb29a36f3279c0c194e46a9abe91684653bf082a38"
+    },
+    {
+      "path": "/Users/kyle/.cache/libpostal-profile/libpostal/transliteration/transliteration.dat",
+      "bytes": 19570085,
+      "sha256": "db75453e1d8a24302be0831304f9bb4792d41ea4e5a5e645c3839ee04763e64c"
+    },
+    {
+      "path": "/Users/kyle/.cache/libpostal-profile/parser.tar.gz",
+      "bytes": 752483239,
+      "sha256": "7194e9b0095f71aecb861269f675e50703e73e352a0b9d41c60f8d8ef5a03624"
+    }
+  ],
+  "hardware": {
+    "cpu": "Apple M4 Pro",
+    "memory_bytes": 25769803776,
+    "architecture": "arm64",
+    "os": "macOS 26.5.2"
+  },
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "build": {
+    "configure": [
+      "--disable-data-download",
+      "--disable-sse2",
+      "--datadir=/Users/kyle/.cache/libpostal-profile"
+    ],
+    "library_optimization": "-O2",
+    "scanner_optimization": "-O0",
+    "harness_optimization": "-O2",
+    "debug_symbols": true
+  },
+  "library_files": [
+    {
+      "path": "libpostal/src/.libs/libpostal.a",
+      "sha256": "30de6ef223346735ac3035654ff0d435e5e621dccc94dc77869807dbf146fe22"
+    },
+    {
+      "path": "libpostal/src/.libs/libpostal.dylib",
+      "sha256": "734ab40beee3c02a64afd35ae468fca6df7deafdcce354da0814343625e557c1"
+    }
+  ],
+  "baseline_harness_sha256": "0c85b75a71f8af8043a407c366065f1d34ce6d778d54fb920af96f6e8815ce96",
+  "statistics": {
+    "raw_records": 12868,
+    "unique_addresses": 12863,
+    "duplicate_records": 5,
+    "countries": 88,
+    "development": 10308,
+    "validation": 2555,
+    "non_ascii_addresses": 5399,
+    "max_utf8_bytes": 191,
+    "country_counts": {
+      "ae": 50,
+      "am": 50,
+      "ar": 75,
+      "at": 227,
+      "au": 76,
+      "az": 50,
+      "ba": 50,
+      "bd": 50,
+      "be": 121,
+      "bg": 50,
+      "br": 51,
+      "by": 50,
+      "ca": 432,
+      "ch": 136,
+      "cl": 50,
+      "cn": 52,
+      "co": 54,
+      "cy": 50,
+      "cz": 50,
+      "de": 2020,
+      "dk": 303,
+      "ec": 49,
+      "ee": 52,
+      "eg": 50,
+      "es": 86,
+      "fi": 52,
+      "fo": 50,
+      "fr": 136,
+      "gb": 255,
+      "ge": 50,
+      "gr": 50,
+      "gt": 50,
+      "hr": 50,
+      "hu": 101,
+      "id": 50,
+      "ie": 51,
+      "il": 52,
+      "im": 50,
+      "in": 54,
+      "is": 49,
+      "it": 343,
+      "jm": 50,
+      "jp": 37,
+      "kg": 50,
+      "kr": 52,
+      "kw": 50,
+      "kz": 58,
+      "li": 51,
+      "lt": 126,
+      "lu": 50,
+      "lv": 50,
+      "md": 50,
+      "mk": 50,
+      "mx": 52,
+      "my": 51,
+      "nc": 51,
+      "nl": 1151,
+      "no": 287,
+      "nz": 51,
+      "pe": 50,
+      "ph": 50,
+      "pk": 50,
+      "pl": 628,
+      "pr": 50,
+      "pt": 50,
+      "qa": 1,
+      "re": 50,
+      "ro": 52,
+      "rs": 50,
+      "ru": 529,
+      "se": 62,
+      "sg": 49,
+      "si": 50,
+      "sk": 50,
+      "sm": 50,
+      "sr": 50,
+      "tj": 50,
+      "tr": 50,
+      "tt": 50,
+      "tw": 177,
+      "tz": 50,
+      "ua": 50,
+      "us": 2233,
+      "uy": 88,
+      "uz": 49,
+      "vn": 48,
+      "xk": 50,
+      "za": 53
+    },
+    "raw_source_counts": {
+      "libpostal": 140,
+      "Libpostal-bug": 36,
+      "osm": 12692
+    }
+  }
+}

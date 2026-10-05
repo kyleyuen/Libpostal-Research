@@ -1,0 +1,6 @@
+start=2026-10-01T18:36:54-07:00
+trials=3
+passes=150
+variants=upstream(glibc),candidate(exact l4 glibc),dense(default 0.75 load factor glibc)
+image=libpostal-audit-linux-arm64:026
+interpretation=noisy diagnostic only; not accepted Linux speed evidence

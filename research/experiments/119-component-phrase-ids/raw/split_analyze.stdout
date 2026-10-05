@@ -1,0 +1,14 @@
+dev
+   total_parse        rt8 5.842/2.582  cpi 5.636/2.471  Δcold -0.206 Δwarm -0.111
+   context_fill       rt8 1.782/0.380  cpi 1.755/0.377  Δcold -0.027 Δwarm -0.003
+   features           rt8 1.385/0.742  cpi 1.397/0.688  Δcold +0.011 Δwarm -0.054
+   lookups            rt8 0.845/0.259  cpi 0.677/0.202  Δcold -0.167 Δwarm -0.057
+   accumulate         rt8 0.825/0.469  cpi 0.818/0.472  Δcold -0.007 Δwarm +0.003
+   viterbi_and_rest   rt8 0.480/0.429  cpi 0.475/0.430  Δcold -0.005 Δwarm +0.001
+osm
+   total_parse        rt8 3.940/2.275  cpi 3.837/2.176  Δcold -0.103 Δwarm -0.099
+   context_fill       rt8 1.016/0.347  cpi 1.041/0.347  Δcold +0.024 Δwarm -0.000
+   features           rt8 0.933/0.615  cpi 0.901/0.571  Δcold -0.032 Δwarm -0.043
+   lookups            rt8 0.520/0.217  cpi 0.428/0.166  Δcold -0.092 Δwarm -0.051
+   accumulate         rt8 0.617/0.442  cpi 0.623/0.442  Δcold +0.005 Δwarm +0.000
+   viterbi_and_rest   rt8 0.423/0.387  cpi 0.422/0.386  Δcold -0.002 Δwarm -0.001

@@ -1,0 +1,5 @@
+itl 0
+(itl attempt1: 1 MB coroutine stacks; fuzz_pipeline_batch bus error in every mode incl. no switching; corpora identical in all 4 modes; logs in raw/attempt1_stack_1mb. Stack raised to 8 MB.)
+itl2 0
+(fuzz_pipeline_batch attempt 1: buffer overflow in fz_add after EMPTY/INVALID items, bus error; harness fixed. itl2 = 8 MB stacks, not the cause.)
+itl3 0

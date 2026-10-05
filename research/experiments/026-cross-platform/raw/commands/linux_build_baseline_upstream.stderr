@@ -1,0 +1,230 @@
++ variant=baseline_upstream
++ case "$variant" in
++ src=/out/source/src
++ overlay=/workspace/research/final/021-l4/sources
++ dest=/out/artifacts/baseline_upstream
++ '[' -e /out/artifacts/baseline_upstream/build.complete ']'
++ mkdir -p /out/artifacts/baseline_upstream/obj
++ base=(-std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"')
++ switches=(-DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4)
++ changed='crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens'
++ libsrc='strndup libpostal expand address_dictionary transliterate tokens trie trie_search trie_utils string_utils file_utils utf8proc/utf8proc normalize numex features unicode_scripts address_parser address_parser_io averaged_perceptron crf crf_context sparse_matrix averaged_perceptron_tagger graph graph_builder language_classifier language_features logistic_regression logistic minibatch float_utils ngrams place near_dupe double_metaphone geohash/geohash dedupe string_similarity acronyms soft_tfidf jaccard'
++ scanner_opt=-O1
++ '[' baseline_upstream = baseline_upstream ']'
++ scanner_opt=-O0
+++ clang --version
+++ head -1
++ printf '%s\n' variant=baseline_upstream 'compiler=Ubuntu clang version 18.1.3 (1ubuntu1)' 'base=-std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS -DLIBPOSTAL_DATA_DIR="/model"' 'switches=-DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4' library=-O2 scanner=-O0 link=-O2
++ for file in $libsrc
++ stem=strndup
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/strndup.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=libpostal
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/libpostal.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=expand
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/expand.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=address_dictionary
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/address_dictionary.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=transliterate
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/transliterate.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=tokens
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/tokens.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=trie
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/trie.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=trie_search
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/trie_search.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=trie_utils
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/trie_utils.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=string_utils
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/string_utils.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=file_utils
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/file_utils.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=utf8proc
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/utf8proc_utf8proc.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=normalize
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/normalize.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=numex
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/numex.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=features
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/features.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=unicode_scripts
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/unicode_scripts.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=address_parser
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/address_parser.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=address_parser_io
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/address_parser_io.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=averaged_perceptron
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/averaged_perceptron.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=crf
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/crf.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=crf_context
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/crf_context.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=sparse_matrix
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/sparse_matrix.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=averaged_perceptron_tagger
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/averaged_perceptron_tagger.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=graph
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/graph.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=graph_builder
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/graph_builder.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=language_classifier
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/language_classifier.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=language_features
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/language_features.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=logistic_regression
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/logistic_regression.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=logistic
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/logistic.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=minibatch
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/minibatch.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=float_utils
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/float_utils.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=ngrams
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/ngrams.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=place
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/place.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=near_dupe
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/near_dupe.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=double_metaphone
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/double_metaphone.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=geohash
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/geohash_geohash.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=dedupe
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/dedupe.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=string_similarity
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/string_similarity.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=acronyms
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/acronyms.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=soft_tfidf
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/soft_tfidf.o /out/artifacts/baseline_upstream/obj/
++ continue
++ for file in $libsrc
++ stem=jaccard
++ '[' baseline_upstream = baseline_upstream ']'
++ cp /out/artifacts/baseline/obj/jaccard.o /out/artifacts/baseline_upstream/obj/
++ continue
++ '[' baseline_upstream = candidate ']'
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -O0 -iquote /out/source/src -I/out/source -c /out/source/src/scanner.c -o /out/artifacts/baseline_upstream/obj/scanner.o
++ clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS '-DLIBPOSTAL_DATA_DIR="/model"' -O0 -iquote /out/source/src -I/out/source -c /out/source/src/klib/drand48.c -o /out/artifacts/baseline_upstream/obj/drand48.o
++ llvm-ar rcs /out/artifacts/baseline_upstream/libpostal.a /out/artifacts/baseline_upstream/obj/acronyms.o /out/artifacts/baseline_upstream/obj/address_dictionary.o /out/artifacts/baseline_upstream/obj/address_parser.o /out/artifacts/baseline_upstream/obj/address_parser_io.o /out/artifacts/baseline_upstream/obj/averaged_perceptron.o /out/artifacts/baseline_upstream/obj/averaged_perceptron_tagger.o /out/artifacts/baseline_upstream/obj/crf.o /out/artifacts/baseline_upstream/obj/crf_context.o /out/artifacts/baseline_upstream/obj/dedupe.o /out/artifacts/baseline_upstream/obj/double_metaphone.o /out/artifacts/baseline_upstream/obj/drand48.o /out/artifacts/baseline_upstream/obj/expand.o /out/artifacts/baseline_upstream/obj/features.o /out/artifacts/baseline_upstream/obj/file_utils.o /out/artifacts/baseline_upstream/obj/float_utils.o /out/artifacts/baseline_upstream/obj/geohash_geohash.o /out/artifacts/baseline_upstream/obj/graph.o /out/artifacts/baseline_upstream/obj/graph_builder.o /out/artifacts/baseline_upstream/obj/jaccard.o /out/artifacts/baseline_upstream/obj/language_classifier.o /out/artifacts/baseline_upstream/obj/language_features.o /out/artifacts/baseline_upstream/obj/libpostal.o /out/artifacts/baseline_upstream/obj/logistic.o /out/artifacts/baseline_upstream/obj/logistic_regression.o /out/artifacts/baseline_upstream/obj/minibatch.o /out/artifacts/baseline_upstream/obj/near_dupe.o /out/artifacts/baseline_upstream/obj/ngrams.o /out/artifacts/baseline_upstream/obj/normalize.o /out/artifacts/baseline_upstream/obj/numex.o /out/artifacts/baseline_upstream/obj/place.o /out/artifacts/baseline_upstream/obj/scanner.o /out/artifacts/baseline_upstream/obj/soft_tfidf.o /out/artifacts/baseline_upstream/obj/sparse_matrix.o /out/artifacts/baseline_upstream/obj/string_similarity.o /out/artifacts/baseline_upstream/obj/string_utils.o /out/artifacts/baseline_upstream/obj/strndup.o /out/artifacts/baseline_upstream/obj/tokens.o /out/artifacts/baseline_upstream/obj/transliterate.o /out/artifacts/baseline_upstream/obj/trie.o /out/artifacts/baseline_upstream/obj/trie_search.o /out/artifacts/baseline_upstream/obj/trie_utils.o /out/artifacts/baseline_upstream/obj/unicode_scripts.o /out/artifacts/baseline_upstream/obj/utf8proc_utf8proc.o
++ clang -O2 -g -iquote /out/source/src /workspace/research/experiments/003-batched-lookups/tools/dump_outputs.c /out/artifacts/baseline_upstream/libpostal.a -lm -o /out/artifacts/baseline_upstream/dump_outputs
++ clang -O2 -g -iquote /out/source/src /out/bench_ext_linux.c /out/artifacts/baseline_upstream/libpostal.a -lm -o /out/artifacts/baseline_upstream/bench_ext
++ sha256sum /out/artifacts/baseline_upstream/libpostal.a /out/artifacts/baseline_upstream/dump_outputs /out/artifacts/baseline_upstream/bench_ext
++ date -Is

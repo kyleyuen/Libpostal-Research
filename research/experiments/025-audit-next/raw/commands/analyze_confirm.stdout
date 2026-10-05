@@ -1,0 +1,24 @@
+
+v1-all
+| variant | warm median µs | warm P10 µs | CPU median µs | clean median µs (n) | cold median µs | peak max MB | setup median s |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| fixes | 7.988 | 7.772 | 7.986 | 7.797 (20) | 8.652 | 2470.7 | 9.064 |
+| borrow | 8.045 | 7.819 | 8.042 | 7.852 (19) | 8.917 | 2470.7 | 8.759 |
+| trial | fixes warm median µs | borrow warm median µs | borrow speedup |
+|---:|---:|---:|---:|
+| 1 | 7.864 | 7.871 | 0.9991x |
+| 2 | 7.847 | 8.040 | 0.9760x |
+| 3 | 8.306 | 8.206 | 1.0122x |
+paired_median_speedup=0.99911x range=0.97600..1.01219x
+
+novel
+| variant | warm median µs | warm P10 µs | CPU median µs | clean median µs (n) | cold median µs | peak max MB | setup median s |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| fixes | 8.105 | 7.914 | 8.102 | 7.954 (13) | 8.524 | 2470.7 | 9.118 |
+| borrow | 8.306 | 8.074 | 8.292 | 8.066 (19) | 9.307 | 2470.7 | 9.116 |
+| trial | fixes warm median µs | borrow warm median µs | borrow speedup |
+|---:|---:|---:|---:|
+| 1 | 8.087 | 8.448 | 0.9573x |
+| 2 | 8.165 | 8.159 | 1.0007x |
+| 3 | 8.057 | 8.131 | 0.9909x |
+paired_median_speedup=0.99090x range=0.95727..1.00074x

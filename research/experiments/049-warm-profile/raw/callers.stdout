@@ -1,0 +1,76 @@
+
+== _platform_memmove: exclusive 6.0% of samples; by caller:
+    1.40%  cstring_array_add_string
+    0.85%  normalize_token
+    0.75%  feature_array_add
+    0.65%  address_parser_parse
+    0.59%  cstring_array_get_phrase
+    0.37%  add_ngrams
+    0.37%  cstring_array_add_string_len
+    0.27%  feature_array_add_named
+
+== _platform_memset: exclusive 5.7% of samples; by caller:
+    5.70%  address_parser_parse
+
+== _platform_strlen: exclusive 4.2% of samples; by caller:
+    1.09%  feature_array_add
+    0.87%  feature_array_add_named
+    0.58%  address_parser_parse
+    0.51%  address_parser_features
+    0.30%  cstring_array_add_string
+    0.26%  cstring_array_get_phrase
+    0.22%  ap_ik_emit1
+    0.21%  word_or_phrase_memo
+
+== DYLD-STUB$$strlen: exclusive 1.1% of samples; by caller:
+    0.41%  feature_array_add
+    0.25%  feature_array_add_named
+    0.11%  address_parser_features
+    0.10%  address_parser_parse
+    0.07%  cstring_array_add_string
+    0.05%  cstring_array_get_phrase
+    0.02%  word_or_phrase_memo
+    0.02%  ap_ik_emit1
+
+== _platform_memchr: exclusive 1.4% of samples; by caller:
+    1.03%  crf_dict_lookup_array
+    0.20%  ap_ik_emit1
+    0.19%  address_parser_features
+
+== _platform_memcmp: exclusive 1.3% of samples; by caller:
+    1.34%  crf_dict_lookup_array
+    0.01%  fd_find_slot
+
+== DYLD-STUB$$memcpy: exclusive 0.7% of samples; by caller:
+    0.17%  normalize_token
+    0.10%  address_parser_parse
+    0.09%  cstring_array_add_string
+    0.06%  feature_array_add
+    0.05%  add_ngrams
+    0.05%  feature_array_add_named
+    0.05%  ap_response_block
+    0.05%  cstring_array_add_string_len
+
+== line-level exclusive inside address_parser_parse:
+   28.42%  address_parser.c:2256
+    4.47%  address_parser.c:2159
+    0.39%  address_parser.c:2099
+    0.09%  address_parser.c:2294
+    0.08%  address_parser.c:2276
+    0.08%  address_parser.c:2278
+    0.05%  address_parser.c:2126
+    0.05%  address_parser.c:2295
+    0.05%  address_parser.c:2137
+    0.04%  address_parser.c:2127
+
+== line-level exclusive inside crf_dict_lookup_array:
+    2.23%  crf.c:464
+    1.84%  crf.c:501
+    1.51%  crf.c:0
+    1.42%  crf.c:466
+    0.58%  crf.c:446
+    0.39%  crf.c:490
+    0.16%  crf.c:452
+    0.13%  crf.c:441
+    0.13%  crf.c:451
+    0.10%  crf.c:467

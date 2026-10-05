@@ -1,0 +1,17 @@
+# Experiment 070 — compiler re-tune of the current stack (`pl`): -mcpu=native, -O3
+
+Date/time/timezone: created 2026-10-03T01:02:21-0700, America/Los_Angeles. Status: **no gain (neither adopted)**
+
+Same sources and switches as `pl` (067); builds `nat` (library and link with `-mcpu=native`, which this Apple clang resolves to `apple-m3`) and `o3` (library at -O3); PGO/LTO/mimalloc as before. Outputs identical (golden-v1 sha, OSM; `raw/verify_summary.txt`).
+Screen (6 rounds, `raw/screen_analyze.stdout`):
+    v1 pl [6.838, 6.81, 6.813, 6.844, 6.847, 6.826] median 6.832
+    v1 nat [6.811, 6.831, 6.82, 6.818, 6.862, 6.826] median 6.823
+    v1 o3 [6.809, 6.827, 6.858, 6.839, 6.831, 6.836] median 6.834
+    v1 nat vs pl per round [1.004, 0.9969, 0.999, 1.0038, 0.9978, 1.0]
+    v1 o3 vs pl per round [1.0043, 0.9975, 0.9934, 1.0007, 1.0023, 0.9985]
+    osm pl [4.284, 4.301, 4.317, 4.312, 4.349, 4.32] median 4.315
+    osm nat [4.286, 4.301, 4.319, 4.305, 4.342, 4.31] median 4.307
+    osm o3 [4.315, 4.316, 4.319, 4.308, 4.35, 4.324] median 4.317
+    osm nat vs pl per round [0.9995, 1.0, 0.9995, 1.0016, 1.0016, 1.0023]
+    osm o3 vs pl per round [0.9928, 0.9965, 0.9995, 1.0009, 0.9998, 0.9991]
+Both within ±0.4% of `pl` on both datasets (as in 018 for earlier code).

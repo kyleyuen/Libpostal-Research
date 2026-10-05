@@ -1,0 +1,44 @@
+1. Datasets (original vs cpi; warm µs/address = median over rounds)
+
+dataset      source          orig µs   cpi µs  speedup  chars  words non-ASCII%  digit%
+golden-v1    senzing          32.870    5.133    6.40x   35.7   5.63       42.0    17.0
+novel        senzing-style    31.585    5.343    5.91x   35.4   5.59       40.0    17.1
+osm-v3       openstreetmap    18.719    3.332    5.62x   31.7   5.08       45.2    17.1
+unseen-v4    openstreetmap    18.022    3.205    5.62x   30.9   4.87       45.1    16.5
+unseen-v5    openstreetmap    18.548    3.426    5.41x   31.4   4.96       42.0    17.3
+unseen-v6    openstreetmap    17.929    3.288    5.45x   31.6   4.97       41.9    15.9
+unseen-v7    openstreetmap    17.889    3.252    5.50x   30.8   4.93       43.0    16.5
+unseen-v8    openstreetmap    17.544    3.201    5.48x   31.5   5.02       39.5    15.9
+unseen-v9    openstreetmap    18.105    3.292    5.50x   33.0   5.18       42.2    15.8
+unseen-v10   openstreetmap    17.303    3.081    5.62x   31.3   4.90       42.6    16.5
+unseen-v11   openstreetmap    18.028    3.217    5.60x   31.5   5.05       42.2    16.1
+
+2. Fit over 499 (dataset, country) cells with >= 50 addresses:  cpi_us = 0.530 + 0.1494 * original_us   (R^2 = 0.918)
+   => speedup(x) = x / (0.530 + 0.1494 x): 0.530 µs of cpi's time per address does not shrink with address cost; the rest is 14.9% of the original's.
+   => ceiling for very expensive addresses 1/c1 = 6.69x; speedup at original 10 / 18 / 32 / 50 µs: 4.94x, 5.59x, 6.02x, 6.25x
+
+3. Predicted vs measured speedup per dataset (prediction uses only the dataset's original µs and the one line above)
+
+   golden-v1    orig  32.87 µs  predicted  6.04x  measured  6.40x  residual +0.36
+   novel        orig  31.59 µs  predicted  6.02x  measured  5.91x  residual -0.11
+   osm-v3       orig  18.72 µs  predicted  5.63x  measured  5.62x  residual -0.01
+   unseen-v4    orig  18.02 µs  predicted  5.59x  measured  5.62x  residual +0.03
+   unseen-v5    orig  18.55 µs  predicted  5.62x  measured  5.41x  residual -0.20
+   unseen-v6    orig  17.93 µs  predicted  5.59x  measured  5.45x  residual -0.13
+   unseen-v7    orig  17.89 µs  predicted  5.59x  measured  5.50x  residual -0.08
+   unseen-v8    orig  17.54 µs  predicted  5.57x  measured  5.48x  residual -0.09
+   unseen-v9    orig  18.11 µs  predicted  5.60x  measured  5.50x  residual -0.10
+   unseen-v10   orig  17.30 µs  predicted  5.55x  measured  5.62x  residual +0.06
+   unseen-v11   orig  18.03 µs  predicted  5.59x  measured  5.60x  residual +0.01
+
+4. Country cells sorted by original µs (cheapest and most expensive five): speedup rises with address cost
+   unseen-v8    dk  n=  200  orig  10.64 µs  cpi  2.04 µs  speedup  5.22x
+   unseen-v4    il  n=  200  orig  10.91 µs  cpi  1.86 µs  speedup  5.86x
+   unseen-v10   il  n=  200  orig  11.03 µs  cpi  2.03 µs  speedup  5.44x
+   unseen-v5    il  n=  200  orig  11.07 µs  cpi  1.97 µs  speedup  5.61x
+   unseen-v6    fi  n=  200  orig  11.15 µs  cpi  2.16 µs  speedup  5.16x
+   golden-v1    kr  n=   52  orig  53.04 µs  cpi  9.91 µs  speedup  5.35x
+   golden-v1    cn  n=   52  orig  53.44 µs  cpi 10.01 µs  speedup  5.34x
+   novel        in  n=   54  orig  53.61 µs  cpi  8.88 µs  speedup  6.04x
+   golden-v1    in  n=   54  orig  59.63 µs  cpi  9.04 µs  speedup  6.60x
+   golden-v1    eg  n=   50  orig  71.79 µs  cpi 11.11 µs  speedup  6.46x

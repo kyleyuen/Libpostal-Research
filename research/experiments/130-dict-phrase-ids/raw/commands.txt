@@ -1,0 +1,6 @@
+# 2026-10-04T02:51:04-0700 EXTRA_SW="$(cat raw/switches_dpv.txt)" tools/build_cc.sh dpv clang llvm ...
+# 2026-10-04T02:51:37-0700 EXTRA_SW="$(cat raw/switches_dpi.txt)" tools/build_cc.sh dpi clang llvm ...
+# 2026-10-04T02:52:34-0700 seen-flag fix; rebuild dpv, dpi
+# 2026-10-04T02:53:40-0700 tools/verify.sh dpv
+# 2026-10-04T02:54:14-0700 tools/verify.sh dpi
+# 2026-10-04T02:54:50-0700 tools/screen.sh

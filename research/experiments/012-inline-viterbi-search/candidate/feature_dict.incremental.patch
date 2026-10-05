@@ -1,0 +1,55 @@
+--- feature_dict.h.011	2026-09-29 21:20:23
++++ feature_dict.h	2026-09-29 21:20:23
+@@ -34,11 +34,33 @@
+ } feature_dict_t;
+ 
+ static inline uint64_t fd_mix(uint64_t h, uint64_t w) { h = (h ^ w) * 0xFF51AFD7ED558CCDULL; return h ^ (h >> 32); }
++
++#ifdef EXP_FD_INLINE
++// The last 0-7 bytes as one word without a libc call: overlapping fixed-size loads cover every byte. The hash function is only ever used inside this dictionary
++// (built and probed with the same code), so changing it cannot change any lookup result, only the slot layout.
++static inline uint64_t fd_tail_word(const char *s, size_t len) {
++    if (len >= 4) { uint32_t a, b; memcpy(&a, s, 4); memcpy(&b, s + len - 4, 4); return (uint64_t)a | ((uint64_t)b << 32); }
++    if (len >= 2) { uint16_t a, b; memcpy(&a, s, 2); memcpy(&b, s + len - 2, 2); return (uint64_t)a | ((uint64_t)b << 16); }
++    return len ? (uint64_t)(unsigned char)s[0] : 0;
++}
++// Equality of n >= 1 bytes with fixed-size overlapping loads (exact: every byte is covered).
++static inline int fd_eq(const void *pa, const void *pb, size_t n) {
++    const char *a = (const char *)pa, *b = (const char *)pb;
++    if (n >= 16) return memcmp(a, b, n) == 0;
++    if (n >= 8) { uint64_t x1, y1, x2, y2; memcpy(&x1, a, 8); memcpy(&y1, b, 8); memcpy(&x2, a + n - 8, 8); memcpy(&y2, b + n - 8, 8); return x1 == y1 && x2 == y2; }
++    if (n >= 4) { uint32_t x1, y1, x2, y2; memcpy(&x1, a, 4); memcpy(&y1, b, 4); memcpy(&x2, a + n - 4, 4); memcpy(&y2, b + n - 4, 4); return x1 == y1 && x2 == y2; }
++    if (n >= 2) { uint16_t x1, y1, x2, y2; memcpy(&x1, a, 2); memcpy(&y1, b, 2); memcpy(&x2, a + n - 2, 2); memcpy(&y2, b + n - 2, 2); return x1 == y1 && x2 == y2; }
++    return a[0] == b[0];
++}
++#else
++static inline uint64_t fd_tail_word(const char *s, size_t len) { uint64_t w = 0; if (len) memcpy(&w, s, len); return w; }
++static inline int fd_eq(const void *a, const void *b, size_t n) { return memcmp(a, b, n) == 0; }
++#endif
+ 
+ static inline uint64_t fd_hash_bytes(uint64_t seed, const char *s, size_t len) {
+     uint64_t h = seed ^ len;
+     while (len >= 8) { uint64_t w; memcpy(&w, s, 8); h = fd_mix(h, w); s += 8; len -= 8; }
+-    uint64_t w = 0; if (len) memcpy(&w, s, len);
++    uint64_t w = fd_tail_word(s, len);
+     h = fd_mix(h, w);
+     h *= 0xC4CEB9FE1A85EC53ULL;
+     return h ^ (h >> 29);
+@@ -96,7 +118,7 @@
+         if (!s) return false;
+         if ((uint8_t)(s >> 56) == tag) {
+             const uint8_t *e = d->arena + (uint32_t)s;
+-            if (e[0] == name_byte && memcmp(e + 1, rest, rest_len + 1) == 0) {
++            if (e[0] == name_byte && fd_eq(e + 1, rest, rest_len + 1)) {
+                 if (d->wide_value) memcpy(id, e + 2 + rest_len, sizeof(uint32_t));
+                 else *id = (uint32_t)((s >> 32) & 0xFFFFFF) - 1;
+                 return true;
+@@ -144,7 +166,7 @@
+         uint64_t s = d->slots[i];
+         if (!s) break;
+         const uint8_t *e = d->arena + (uint32_t)s;
+-        if ((uint8_t)(s >> 56) == (uint8_t)h && e[0] == nb && memcmp(e + 1, rest, rl + 1) == 0) return false;
++        if ((uint8_t)(s >> 56) == (uint8_t)h && e[0] == nb && fd_eq(e + 1, rest, rl + 1)) return false;
+     }
+     uint32_t off = (uint32_t)d->arena_used;
+     d->arena[off] = nb; memcpy(d->arena + off + 1, rest, rl); d->arena[off + 1 + rl] = 0;

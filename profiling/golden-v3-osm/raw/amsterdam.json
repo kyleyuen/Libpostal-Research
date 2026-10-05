@@ -1,0 +1,6068 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-01T08:09:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 34032855,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "15-17",
+    "addr:street": "Reguliersbreestraat",
+    "amenity": "fast_food",
+    "brand": "Burger King",
+    "brand:wikidata": "Q177054",
+    "brand:wikipedia": "en:Burger King",
+    "check_date": "2025-02-12",
+    "cuisine": "burger",
+    "indoor_seating": "yes",
+    "name": "Burger King",
+    "note": "odbl clean: geen copyright op winkelgegevens aangetroffen",
+    "opening_hours": "Mo-Th 09:00-03:00; Fr-Su 09:00-04:00",
+    "operator": "Burger King",
+    "outdoor_seating": "no",
+    "takeaway": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 34044767,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "18",
+    "addr:postcode": "1012CR",
+    "addr:street": "Nieuwmarkt",
+    "brand": "Albert Heijn",
+    "brand:wikidata": "Q1653985",
+    "brand:wikipedia": "nl:Albert Heijn (supermarkt)",
+    "designation": "Supermarket",
+    "name": "Albert Heijn",
+    "opening_hours": "Mo-Sa 08:00-22:00; Su 10:00-22:00",
+    "phone": "+31 20 623 2461",
+    "ref": "1314",
+    "shop": "supermarket",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.ah.nl/winkel/1314",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 34050744,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "605",
+    "addr:postcode": "1017CE",
+    "addr:street": "Herengracht",
+    "fee": "yes",
+    "name": "Willet-Holthuysen",
+    "name:nl": "Willet-Holthuysen",
+    "name:uk": "Музей Віллет-Голтгейзен",
+    "opening_hours": "Mo-Fr 10:00-17:00; Sa-Su 11:00-17:00",
+    "payment:museumkaart": "yes",
+    "phone": "+31 20 523 1822",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "tourism": "museum",
+    "website": "https://www.willetholthuysen.nl/",
+    "wheelchair": "no",
+    "wikidata": "Q1886176",
+    "wikimedia_commons": "Category:Museum Willet-Holthuysen",
+    "wikipedia": "nl:Huis Willet-Holthuysen"
+  }
+},
+{
+  "type": "node",
+  "id": 60868596,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "289",
+    "addr:postcode": "1011PG",
+    "addr:street": "Waterlooplein",
+    "amenity": "bicycle_rental",
+    "name": "MacBike",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "toilets:wheelchair": "no",
+    "website": "https://www.macbike.nl/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 60868602,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "61",
+    "addr:postcode": "1018VN",
+    "addr:street": "Weesperstraat",
+    "toilets:wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 60893354,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "96",
+    "addr:postcode": "1011NS",
+    "addr:street": "Jodenbreestraat",
+    "amenity": "atm",
+    "brand": "Geldmaat",
+    "brand:wikidata": "Q74051230",
+    "cash_in": "yes",
+    "check_date": "2025-08-18",
+    "indoor": "no",
+    "name": "Geldmaat",
+    "operator": "Geldmaat",
+    "operator:wikidata": "Q74051230",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 250624673,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "4",
+    "addr:postcode": "1011NK",
+    "addr:street": "Jodenbreestraat",
+    "check_date": "2025-02-12",
+    "check_date:opening_hours": "2021-08-17",
+    "description": "The house where Rembrandt van Rijn lived.",
+    "designation": "Historical Museum",
+    "fee": "yes",
+    "fixme": "Add opening hours for 2027",
+    "name": "Rembrandthuis",
+    "name:da": "Rembrandt-museet",
+    "name:de": "Rembrandthaus",
+    "name:en": "Rembrandt House",
+    "name:lb": "Rembrandthaus",
+    "name:nl": "Rembrandthuis",
+    "name:ru": "Дом-музей Рембрандта",
+    "name:uk": "Музей Рембрандта",
+    "name:zh": "伦勃朗故居",
+    "opening_hours": "Mo-Su 10:00-17:00; Jan 05-Feb 13 10:00-17:00; Feb 14-Mar 27 10:00-18:00; Mar 28-May 10 10:00-19:00; May 11-Nov 01 10:00-18:00; Nov 02-Dec 18 10:00-17:00; Dec 19-31 10:00-18:00; Apr 27 off; Dec 25 off; Dec 24 10:00-17:00; Dec 31 10:00-17:00",
+    "payment:museumkaart": "yes",
+    "phone": "+31 20 520 0400",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "toilets:wheelchair": "yes",
+    "tourism": "museum",
+    "website": "https://www.rembrandthuis.nl",
+    "wheelchair": "limited",
+    "wheelchair:description": "Museum is niet volledig rolstoeltoegankelijk, maar de tentoonstellingen zijn toegankelijk met de lift",
+    "wheelchair:description:de": "Das Museum ist nicht überall barrierefrei;die Ausstellungen sind mit dem Aufzug erreichbar. Allerdings ist das alte Haus von Rembrandt nur über enge, steile Wendeltreppen erreichbar, wie sie im 17. Jahrhundert üblich waren.",
+    "wheelchair:description:en": "Museum not fully accessible - but the exhibitions are accessible by lift",
+    "wikidata": "Q277316",
+    "wikimedia_commons": "Category:Rembrandt House Museum",
+    "wikipedia": "nl:Rembrandthuis"
+  }
+},
+{
+  "type": "node",
+  "id": 251165502,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "123",
+    "addr:postcode": "1011EN",
+    "addr:street": "Geldersekade",
+    "amenity": "pub",
+    "name": "Cafe Stevens",
+    "opening_hours": "Su-Th 09:00-01:00, Fr,Sa 09:00-03:00",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 251165503,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "117",
+    "addr:postcode": "1011EN",
+    "addr:street": "Geldersekade",
+    "amenity": "restaurant",
+    "cuisine": "chinese;cantonese",
+    "name": "Nam Kee",
+    "opening_hours": "Mo-Fr 16:00-23:30; Sa 14:30-23:30; Su 14:30-23:30",
+    "phone": "+31 20 639 2848",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://namkee.nl/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 251168503,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "27",
+    "addr:street": "Nieuwmarkt",
+    "brand:website": "https://amazingoriental.com",
+    "cuisine": "chinese",
+    "name": "Amazing Oriental",
+    "name:zh-Hans": "东方行",
+    "name:zh-Hant": "東方行",
+    "opening_hours": "Mo-Sa 09:30-18:00",
+    "shop": "supermarket",
+    "website": "https://amazingoriental.com/Location/winkels-nieuwmarkt",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 251168504,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "16",
+    "addr:postcode": "1012CT",
+    "addr:street": "Kloveniersburgwal",
+    "alt_name": "Tofani",
+    "amenity": "ice_cream",
+    "diet:vegan": "yes",
+    "name": "IJssalon Tofani",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 251168505,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "14",
+    "addr:postcode": "1012CT",
+    "addr:street": "Kloveniersburgwal",
+    "amenity": "restaurant",
+    "cuisine": "thai",
+    "name": "Song Kwae",
+    "website": "https://www.songkwae.nl",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 251168506,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2",
+    "addr:street": "Kloveniersburgwal",
+    "amenity": "pub",
+    "brewery": "Guinness;Heineken;Magners;Kilkenny;Hertog Jan",
+    "check_date": "2025-01-28",
+    "diet:pescetarian": "yes",
+    "diet:vegetarian": "yes",
+    "microbrewery": "no",
+    "name": "Temple Bar",
+    "opening_hours": "Mo-Th,Su 11:00-01:00; Fr-Sa 11:00-03:00",
+    "outdoor_seating": "yes",
+    "real_fire": "no",
+    "source": "survey",
+    "toilets": "yes",
+    "toilets:menstrual_products": "no",
+    "toilets:wheelchair": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 251168507,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "6-8",
+    "addr:postcode": "1012CT",
+    "addr:street": "Kloveniersburgwal",
+    "amenity": "pub",
+    "microbrewery": "yes",
+    "name": "De Bekeerde Suster",
+    "outdoor_seating": "street",
+    "phone": "+31 20 423 0112",
+    "website": "https://debekeerdesuster.nl/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 251168511,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "26",
+    "addr:postcode": "1012CS",
+    "addr:street": "Nieuwmarkt",
+    "amenity": "fast_food",
+    "contact:facebook": "downtownburgernl",
+    "contact:instagram": "downtownburgernl",
+    "email": "info@downtownburger.nl",
+    "name": "Downtown Burger",
+    "phone": "+31 20 422 02 55",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.downtownburger.nl/",
+    "website:menu": "https://www.downtownburger.nl/menu/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 251169841,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "20",
+    "addr:postcode": "1012CR",
+    "addr:street": "Nieuwmarkt",
+    "amenity": "atm",
+    "brand": "Geldmaat",
+    "brand:wikidata": "Q74051230",
+    "brand:wikipedia": "nl:Geldmaat",
+    "cash_in": "yes",
+    "cash_in:notes": "yes",
+    "cash_out": "yes",
+    "cash_out:notes": "yes",
+    "description": "Geld opnemen en storten; In Geldmaat-winkel",
+    "indoor": "yes",
+    "located_in:wikidata": "Q74051230",
+    "name": "Geldmaat",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Geldmaat",
+    "operator:wikidata": "Q74051230",
+    "ref": "1012020",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "speech_output": "yes",
+    "website": "https://locatiewijzer.geldmaat.nl/nl/location/1012020",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 251169842,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "16",
+    "addr:postcode": "1012CR",
+    "addr:street": "Nieuwmarkt",
+    "amenity": "pub",
+    "name": "Gewaeght Café",
+    "note": "Adres opgeheven volgens BAG, wordt wel nog gebruikt door het bedrijf.",
+    "outdoor_seating": "yes",
+    "website": "http://gewaeght.nl/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 251187545,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "7",
+    "addr:postcode": "1012CR",
+    "addr:street": "Nieuwmarkt"
+  }
+},
+{
+  "type": "node",
+  "id": 251187547,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "93",
+    "addr:postcode": "1012DD",
+    "addr:street": "Oudezijds Achterburgwal",
+    "check_date": "2025-08-16",
+    "email": "info@torenzicht.com",
+    "name": "Torenzicht",
+    "phone": "+31 20 623 2900",
+    "stars": "1",
+    "tourism": "hotel",
+    "website": "https://www.hoteltorenzicht.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 251187722,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "21",
+    "addr:postcode": "1012BV",
+    "addr:street": "Barndesteeg",
+    "disused:tourism": "hostel",
+    "name": "Shelter City Hostel",
+    "operator": "Shelter Christian",
+    "website": "https://www.shelterhostelamsterdam.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 251528269,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "11",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "amenity": "nightclub",
+    "check_date": "2024-07-19",
+    "email": "contact@escape.nl",
+    "name": "Escape",
+    "phone": "+31 20 622 1111",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 251528272,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "22A",
+    "addr:postcode": "1017CN",
+    "addr:street": "Reguliersbreestraat",
+    "brand": "Albert Heijn to go",
+    "brand:wikidata": "Q77971185",
+    "name": "Albert Heijn to go",
+    "official_name": "AH to go",
+    "opening_hours": "Mo-Sa 08:00-22:00; Su 09:00-22:00",
+    "phone": "+31 20 330 7799",
+    "ref": "5602",
+    "shop": "convenience",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.ah.nl/winkel/5602",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 251528277,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "25",
+    "addr:postcode": "1017CL",
+    "addr:street": "Reguliersbreestraat",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2023-04-26",
+    "cuisine": "argentinian;steak_house;burger",
+    "indoor_seating": "yes",
+    "name": "El Torado Grill",
+    "opening_hours": "Mo-Su 12:00-00:00",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "no",
+    "phone": "+31 20 625 6600",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "toilets:wheelchair": "no",
+    "website": "https://eltorado.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 251528283,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "27",
+    "addr:postcode": "1017CL",
+    "addr:street": "Reguliersbreestraat",
+    "amenity": "fast_food",
+    "brand": "Subway",
+    "brand:wikidata": "Q244457",
+    "brand:wikipedia": "en:Subway (restaurant)",
+    "check_date:opening_hours": "2023-04-26",
+    "cuisine": "sandwich",
+    "diet:vegetarian": "yes",
+    "name": "Subway",
+    "opening_hours": "Mo-Th 09:00-24:00, Fr,Sa 09:00-03:45, Su 09:30-24:00",
+    "opening_hours:signed": "no",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "takeaway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 251528284,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "26",
+    "addr:postcode": "1017CV",
+    "addr:street": "Rembrandtplein",
+    "check_date": "2026-07-12",
+    "check_date:internet_access": "2025-03-15",
+    "email": "nhschiller@nh-hotels.com",
+    "internet_access": "wlan",
+    "name": "NH Schiller",
+    "operator": "NH",
+    "phone": "+31 20 554 0700",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "toilets:wheelchair": "yes",
+    "tourism": "hotel",
+    "website": "https://www.nh-hotels.nl/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 251528291,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "46",
+    "addr:postcode": "1017CV",
+    "addr:street": "Rembrandtplein",
+    "amenity": "pub",
+    "check_date": "2026-04-28",
+    "food": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "The Old Bell",
+    "opening_hours": "Su-Th 11:00-01:00; Fr-Sa 11:00-03:00",
+    "outdoor_seating": "yes",
+    "smoking": "outside",
+    "takeaway": "no",
+    "toilets:wheelchair": "no",
+    "website": "https://www.oldbell.nl/",
+    "website:menu": "https://www.oldbell.nl/menu/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 251528295,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2",
+    "addr:postcode": "1017VN",
+    "addr:street": "Utrechtsestraat",
+    "check_date": "2026-04-28",
+    "email": "info@city-hotel.nl",
+    "fax": "+31 20 330 9323",
+    "name": "City Hotel",
+    "phone": "+31 20 627 2323",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "tourism": "hotel",
+    "website": "https://www.city-hotel.nl/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 251528296,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "8-10",
+    "addr:street": "Rembrandtplein",
+    "check_date": "2026-07-12",
+    "email": "info@atlantahotel.nl",
+    "fax": "+31 20 624 9141",
+    "name": "Atlanta",
+    "phone": "+31 20 625 3585",
+    "tourism": "hotel",
+    "website": "http://www.atlantahotel.nl",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 251530295,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "19",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "email": "nhcaransa@nh-hotels.com",
+    "name": "NH Caransa",
+    "operator": "NH",
+    "phone": "+31 20 554 0800",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "toilets:wheelchair": "no",
+    "tourism": "hotel",
+    "website": "https://www.nh-hotels.nl/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 251823631,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "20",
+    "addr:postcode": "1012CP",
+    "addr:street": "Nieuwe Doelenstraat",
+    "amenity": "restaurant",
+    "check_date": "2025-09-27",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "De Jaren",
+    "opening_hours": "Mo-Su 09:00-23:00",
+    "outdoor_seating": "yes",
+    "payment:cash": "no",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.cafedejaren.nl",
+    "wheelchair": "no",
+    "wikidata": "Q28656899",
+    "wikipedia": "nl:De Jaren"
+  }
+},
+{
+  "type": "node",
+  "id": 251823632,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2-14",
+    "addr:postcode": "1012CP",
+    "addr:street": "Nieuwe Doelenstraat",
+    "check_date": "2026-09-09",
+    "contact:facebook": "https://www.facebook.com/DeLEuropeAms",
+    "contact:instagram": "leuropeams",
+    "email": "hotel@deleurope.com",
+    "name": "Hotel de l'Europe",
+    "phone": "+31 20 531 1777",
+    "stars": "5",
+    "toilets:wheelchair": "yes",
+    "tourism": "hotel",
+    "website": "https://www.deleurope.com",
+    "wheelchair": "yes",
+    "wikidata": "Q2463682",
+    "wikimedia_commons": "Category:Hotel de l'Europe",
+    "wikipedia": "nl:De L'Europe Amsterdam"
+  }
+},
+{
+  "type": "node",
+  "id": 252143854,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "197",
+    "addr:postcode": "1011TD",
+    "addr:street": "Prins Hendrikkade",
+    "amenity": "post_box",
+    "collection_times": "Tu 17:00",
+    "operator": "PostNL",
+    "operator:wikidata": "Q5921598"
+  }
+},
+{
+  "type": "node",
+  "id": 252147577,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2",
+    "addr:postcode": "1011TA",
+    "addr:street": "IJ-tunnel",
+    "amenity": "police",
+    "name": "Politiebureau IJ-tunnel",
+    "opening_hours": "\"op afspraak\"",
+    "operator": "Nationale Politie",
+    "operator:wikidata": "Q1920305",
+    "phone:NL": "0900 8844",
+    "politie:basisteam": "Centrum Amstel",
+    "politie:district": "Amsterdam Centrum/Noord",
+    "politie:eenheid": "Amsterdam",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.politie.nl/mijn-buurt/politiebureaus/05/centrumamstel.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 267424900,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "65",
+    "addr:postcode": "1018DZ",
+    "addr:street": "Nieuwe Kerkstraat",
+    "brand": "SPAR city",
+    "brand:website": "https://www.spar.nl/city/",
+    "brand:wikidata": "Q124630664",
+    "check_date": "2023-12-13",
+    "email": "vankempen@despar.info",
+    "name": "SPAR city Van Kempen",
+    "opening_hours": "Mo-Sa 08:00-20:00; Su 11:00-18:00",
+    "phone": "+31 20 4234659",
+    "shop": "convenience",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "website": "https://www.spar.nl/winkels/spar-city-van-kempen-493/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 355242642,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "45",
+    "addr:postcode": "1017CM",
+    "addr:street": "Reguliersbreestraat",
+    "amenity": "fast_food",
+    "brand": "Wok to Walk",
+    "brand:wikidata": "Q4020634",
+    "cuisine": "asian",
+    "designation": "Quality Asian Fast Food",
+    "name": "Wok to Walk",
+    "opening_hours:signed": "no",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "takeaway": "yes",
+    "website": "https://www.woktowalk.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 363719080,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "1",
+    "addr:postcode": "1012ED",
+    "addr:street": "Oude Doelenstraat",
+    "amenity": "restaurant",
+    "cuisine": "chinese",
+    "name": "Xiang Hunan Kitchen",
+    "name:zh": "湘",
+    "opening_hours": "Mo-Th,Su 12:00-22:30; Fr-Sa 12:00-23:30",
+    "phone": "+31 20 620 7040",
+    "reservation": "yes",
+    "website": "https://xiangamsterdam.com"
+  }
+},
+{
+  "type": "node",
+  "id": 366362386,
+  "tags": {
+    "addr:housenumber": "13-15",
+    "addr:postcode": "1018WZ",
+    "addr:street": "Weesperplein",
+    "amenity": "fast_food",
+    "check_date": "2026-03-31",
+    "cuisine": "friture",
+    "name": "Cantarell",
+    "phone": "+31 20 330 7973",
+    "website": "https://www.cantarell.nl/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 408396551,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "113",
+    "addr:postcode": "1018VN",
+    "addr:street": "Weesperstraat",
+    "amenity": "community_centre",
+    "name": "Concern Congres Centrum"
+  }
+},
+{
+  "type": "node",
+  "id": 416030643,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "48",
+    "addr:postcode": "1018DH",
+    "addr:street": "Plantage Middenlaan",
+    "email": "info.lancaster@edenhotels.nl",
+    "name": "Lancaster Hotel Amsterdam",
+    "phone": "+31 20 535 6888",
+    "tourism": "hotel",
+    "website": "https://www.thelancasterhotelamsterdam.com/nl/"
+  }
+},
+{
+  "type": "node",
+  "id": 416568030,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "24",
+    "addr:postcode": "1012CP",
+    "addr:street": "Nieuwe Doelenstraat",
+    "check_date": "2025-08-24",
+    "check_date:internet_access": "2025-08-24",
+    "internet_access": "wlan",
+    "name": "Tivoli Doelen Amsterdam",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "tourism": "hotel",
+    "website": "https://www.nh-collection.com/en/hotel/nh-collection-amsterdam-doelen",
+    "wheelchair": "no",
+    "wikidata": "Q2737085",
+    "wikimedia_commons": "Category:Doelen Hotel",
+    "wikipedia": "nl:Doelen Hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 430686827,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "30",
+    "addr:street": "Plantage Middenlaan",
+    "amenity": "restaurant",
+    "check_date": "2024-08-18",
+    "cuisine": "chinese",
+    "name": "Happy Corner",
+    "website": "https://www.restauranthappycorner.nl/"
+  }
+},
+{
+  "type": "node",
+  "id": 432506872,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "26",
+    "addr:postcode": "1018DE",
+    "addr:street": "Plantage Middenlaan",
+    "email": "info@hotelparkplantage.com",
+    "name": "Hotel Park Plantage",
+    "phone": "+31 20 623 5783",
+    "stars": "3",
+    "tourism": "hotel",
+    "website": "https://www.hotelparkplantage.com"
+  }
+},
+{
+  "type": "node",
+  "id": 432506873,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "24",
+    "addr:postcode": "1018DE",
+    "addr:street": "Plantage Middenlaan",
+    "fee": "no",
+    "historic": "memorial",
+    "memorial": "obelisk",
+    "name": "Hollandsche Schouwburg",
+    "opening_hours": "Mo-Su 10:00-17:00",
+    "phone": "+31 20 531 0310",
+    "toilets:wheelchair": "no",
+    "tourism": "museum",
+    "website": "https://www.hollandscheschouwburg.nl/en",
+    "wheelchair": "yes",
+    "wikidata": "Q2206529",
+    "wikimedia_commons": "Category:Hollandsche Schouwburg",
+    "wikipedia": "nl:Hollandsche Schouwburg"
+  }
+},
+{
+  "type": "node",
+  "id": 432547425,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "8",
+    "addr:postcode": "1017AA",
+    "addr:street": "Amstel"
+  }
+},
+{
+  "type": "node",
+  "id": 432860310,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "24A",
+    "addr:postcode": "1017CV",
+    "addr:street": "Rembrandtplein",
+    "amenity": "pub",
+    "check_date": "2026-07-12",
+    "email": "info@cafeschiller.nl",
+    "food": "yes",
+    "indoor_seating": "yes",
+    "name": "Schiller",
+    "opening_hours": "Mo 16:00-00:00, Tu-Th 16:00-01:00, Fr 16:00-02:00, Sa 15:00-02:00, Su 15:00-00:00",
+    "outdoor_seating": "yes",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://cafeschiller.nl",
+    "wheelchair": "no",
+    "wikidata": "Q29046898",
+    "wikipedia": "nl:Schiller (café)"
+  }
+},
+{
+  "type": "node",
+  "id": 432860311,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "17",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 440009810,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "37",
+    "addr:postcode": "1018DB",
+    "addr:street": "Plantage Middenlaan",
+    "amenity": "pub",
+    "check_date": "2024-08-18",
+    "name": "Cafe Koosje",
+    "phone": "+31 20 320 0817",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "website": "https://www.koosjeamsterdam.nl"
+  }
+},
+{
+  "type": "node",
+  "id": 440009812,
+  "tags": {
+    "addr:housenumber": "28",
+    "addr:street": "Plantage Kerklaan",
+    "amenity": "restaurant",
+    "check_date": "2024-08-18",
+    "cuisine": "ramen",
+    "name": "Vatten Ramen",
+    "website": "https://www.instagram.com/vattenramen/"
+  }
+},
+{
+  "type": "node",
+  "id": 440108459,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "44",
+    "addr:postcode": "1018DH",
+    "addr:street": "Plantage Middenlaan",
+    "amenity": "cafe",
+    "name": "Coffee & Bites",
+    "opening_hours": "Mo-Fr 08:00-17:00; Sa, Su 08:00-16:00",
+    "website": "https://coffeeandbites.amsterdam"
+  }
+},
+{
+  "type": "node",
+  "id": 440419242,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "61",
+    "addr:street": "Plantage Kerklaan",
+    "alt_name": "Verzetsmuseum Amsterdam",
+    "fee": "yes",
+    "name": "Verzetsmuseum",
+    "name:en": "Dutch Resistance Museum",
+    "name:nl": "Verzetsmuseum",
+    "name:ru": "Музей сопротивления",
+    "opening_hours": "Mo-Fr 10:00-17:00; Sa,Su 11:00-17:00",
+    "payment:museumkaart": "yes",
+    "phone": "+31 20 620 2535",
+    "source": "http://www.verzetsmuseum.org/",
+    "tourism": "museum",
+    "website": "https://www.verzetsmuseum.org/",
+    "wheelchair": "yes",
+    "wikidata": "Q828307",
+    "wikimedia_commons": "Category:Verzetsmuseum Amsterdam",
+    "wikipedia": "nl:Verzetsmuseum Amsterdam"
+  }
+},
+{
+  "type": "node",
+  "id": 440440100,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "9",
+    "addr:street": "Henri Polaklaan",
+    "name": "De Burcht",
+    "website": "https://www.deburcht.nl/"
+  }
+},
+{
+  "type": "node",
+  "id": 441241372,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "97",
+    "addr:postcode": "1011KB",
+    "addr:street": "Kloveniersburgwal",
+    "brand": "Stayokay",
+    "brand:wikidata": "Q732984",
+    "check_date": "2025-06-12",
+    "name": "Stayokay Amsterdam Stadsdoelen",
+    "operator": "Stayokay",
+    "phone": "+31 20 624 6832",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "tourism": "hostel",
+    "website": "https://www.stayokay.com/en/hostel/amsterdam-stadsdoelen",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 441674928,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "3",
+    "addr:postcode": "1011RD",
+    "addr:street": "Meester Visserplein",
+    "amenity": "place_of_worship",
+    "denomination": "sephardi",
+    "name": "Portugees-Israelitische Gemeente",
+    "phone": "+31 20 531 0380",
+    "religion": "jewish",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "website": "https://www.portugesesynagoge.nl/eng",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 441674929,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "68",
+    "addr:postcode": "1011LZ",
+    "addr:street": "Valkenburgerstraat",
+    "branch": "Amsterdam Centre Stopera",
+    "brand": "Ibis",
+    "brand:website": "https://www.ibis.com",
+    "brand:wikidata": "Q920166",
+    "check_date": "2026-03-06",
+    "internet_access": "wlan",
+    "name": "Ibis",
+    "phone": "+31 20 721 9173",
+    "stars": "3",
+    "toilets:wheelchair": "yes",
+    "tourism": "hotel",
+    "website": "https://www.ibis.com/nl/hotel-3044-ibis-amsterdam-centre-stopera/index.shtml#overview",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 441754254,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "16",
+    "addr:postcode": "1018DR",
+    "addr:street": "Nieuwe Keizersgracht",
+    "alt_name": "Hotel Hermitage",
+    "email": "info@hotelhermitageamsterdam.nl",
+    "name": "Hermitage Hotel",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "tourism": "hotel",
+    "website": "https://www.hotelhermitage.nl/en/",
+    "wikidata": "Q111114810"
+  }
+},
+{
+  "type": "node",
+  "id": 447561379,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "75",
+    "addr:postcode": "1017VJ",
+    "addr:street": "Utrechtsestraat",
+    "amenity": "cafe",
+    "check_date": "2023-11-20",
+    "cuisine": "coffee_shop",
+    "diet:vegetarian": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Screaming Beans",
+    "opening_hours": "Mo-Su 09:00-16:00",
+    "outdoor_seating": "no",
+    "payment:cash": "no",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "reusable_packaging:accept": "yes",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://screamingbeans.bl"
+  }
+},
+{
+  "type": "node",
+  "id": 447561385,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "89-H",
+    "addr:postcode": "1017VK",
+    "addr:street": "Utrechtsestraat",
+    "amenity": "restaurant",
+    "cuisine": "indonesian",
+    "name": "Soenda Kelapa",
+    "opening_hours": "We-Mo 18:00-23:00",
+    "phone": "+31 20 627 9416",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.soendakelapa.com",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 461796303,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "65",
+    "addr:postcode": "1017VJ",
+    "addr:street": "Utrechtsestraat",
+    "amenity": "restaurant",
+    "cuisine": "tibetan;indonesian",
+    "name": "Tashi Deleg",
+    "opening_hours": "Mo-Su 14:00-22:30",
+    "phone": "+31 20 620 6624",
+    "website": "http://tashideleg.nl/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 467095852,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "21",
+    "addr:postcode": "1017CL",
+    "addr:street": "Reguliersbreestraat",
+    "alt_name": "Dunkin' Donuts",
+    "amenity": "fast_food",
+    "brand": "Dunkin'",
+    "brand:wikidata": "Q847743",
+    "brand:wikipedia": "nl:Dunkin'",
+    "cuisine": "donut;coffee_shop",
+    "dispensing": "no",
+    "drive_through": "no",
+    "name": "Dunkin'",
+    "opening_hours": "Mo-Su 08:00-22:00",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "takeaway": "yes",
+    "website": "https://www.dunkin.nl"
+  }
+},
+{
+  "type": "node",
+  "id": 474752594,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "12A-14",
+    "addr:postcode": "1017CV",
+    "addr:street": "Rembrandtplein",
+    "amenity": "restaurant",
+    "check_date": "2025-03-15",
+    "cuisine": "italian",
+    "indoor_seating": "yes",
+    "name": "La Madonnina",
+    "outdoor_seating": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 476448747,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "5-7-9",
+    "addr:postcode": "1017BH",
+    "addr:street": "Korte Reguliersdwarsstraat",
+    "amenity": "fast_food",
+    "check_date": "2023-04-12",
+    "name": "Eetsalon Van Dobben",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 483553139,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "23",
+    "addr:postcode": "1011NH",
+    "addr:street": "Jodenbreestraat",
+    "brand": "Gall & Gall",
+    "brand:wikidata": "Q13639185",
+    "brand:wikipedia": "nl:Gall & Gall",
+    "check_date": "2025-02-16",
+    "check_date:opening_hours": "2021-08-17",
+    "drive_through": "no",
+    "name": "Gall & Gall",
+    "opening_hours": "Mo-We 10:00-20:00; Su 11:00-19:00; Th-Sa 10:00-21:00",
+    "ref": "6556",
+    "shop": "alcohol",
+    "website": "https://www.gall.nl/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 483553142,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "67",
+    "addr:street": "Utrechtsestraat",
+    "brand": "Gall & Gall",
+    "brand:wikidata": "Q13639185",
+    "brand:wikipedia": "nl:Gall & Gall",
+    "check_date": "2023-04-11",
+    "name": "Gall & Gall",
+    "opening_hours": "Mo-We 11:00-19:00; Th-Sa 10:00-20:00",
+    "ref": "6557",
+    "shop": "alcohol",
+    "website": "https://www.gall.nl/winkels/details/?storeId=6557",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 489363728,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "3",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "amenity": "pub",
+    "check_date": "2025-03-15",
+    "indoor_seating": "yes",
+    "name": "Rembrandt Bar",
+    "outdoor_seating": "yes",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 489447049,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "22",
+    "addr:postcode": "1011PG",
+    "addr:street": "Waterlooplein",
+    "amenity": "theatre",
+    "check_date": "2024-06-28",
+    "email": "info@operaballet.nl",
+    "name": "Opera & Ballet",
+    "name:en": "Dutch National Opera & Ballet",
+    "name:nl": "Opera & Ballet",
+    "old_name": "Muziektheater Amsterdam",
+    "phone": "+31 20 551 8117",
+    "toilets:wheelchair": "no",
+    "website": "https://www.operaballet.nl/",
+    "wheelchair": "yes",
+    "wikidata": "Q1325514",
+    "wikimedia_commons": "Category:Stopera",
+    "wikipedia": "nl:Nationale Opera en Ballet"
+  }
+},
+{
+  "type": "node",
+  "id": 496436641,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "27",
+    "addr:postcode": "1011HR",
+    "addr:street": "Groenburgwal",
+    "name": "Rembrandtplein Hotel",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "tourism": "hotel",
+    "website": "https://rembrandtpleinhotel.nl/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 513521940,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "76",
+    "addr:postcode": "1017VR",
+    "addr:street": "Utrechtsestraat",
+    "amenity": "pub",
+    "check_date": "2024-08-18",
+    "contact:facebook": "https://www.facebook.com/cafekrom",
+    "contact:instagram": "https://www.instagram.com/cafekrom/",
+    "email": "info@cafekrom.nl",
+    "name": "Krom",
+    "opening_hours": "Mo-Th 09:00-01:00, Fr 09:00-02:00, Sa 10:00-02:00, Su 10:00-01:00",
+    "phone": "+31 20 624 5343",
+    "smoking": "outside",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "toilets:wheelchair": "no",
+    "website": "https://cafekrom.com",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 520290181,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "17-I",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "amenity": "pub",
+    "fax": "+31 20 427 6833",
+    "name": "De Kroon",
+    "phone": "+31 20 625 2011",
+    "website": "https://www.dekroon.nl",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 582834916,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "38-H",
+    "addr:postcode": "1012CW",
+    "addr:street": "Kloveniersburgwal",
+    "amenity": "restaurant",
+    "cuisine": "malaysian",
+    "name": "Nyonya",
+    "opening_hours": "Th-Su 12:00-21:00",
+    "phone": "+31 20 422 2447",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.nyonyamalaysiarest.nl",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 679722873,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10A",
+    "addr:postcode": "1018WC",
+    "addr:street": "Roetersstraat",
+    "amenity": "restaurant",
+    "branch": "Amsterdam Roeterseiland",
+    "brand": "The Breakfast Club",
+    "brand:website": "https://thebreakfastclub.nl",
+    "brand:wikidata": "Q138774027",
+    "cuisine": "breakfast",
+    "email": "roetersstraat@thebreakfastclub.nl",
+    "name": "The Breakfast Club",
+    "opening_hours": "Mo-Su 08:00-18:00",
+    "phone": "+31 20 7220505",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "website": "https://www.thebreakfastclub.nl/amsterdam/roeterseiland"
+  }
+},
+{
+  "type": "node",
+  "id": 679749862,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "4-H",
+    "addr:postcode": "1018WC",
+    "addr:street": "Roetersstraat",
+    "amenity": "restaurant",
+    "cuisine": "asian;bubble_tea",
+    "name": "Jen's Bing",
+    "opening_hours": "Mo-Su 11:00-20:00",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "website": "https://www.jensbing.nl/"
+  }
+},
+{
+  "type": "node",
+  "id": 855243398,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "51",
+    "addr:postcode": "1018EJ",
+    "addr:street": "Amstel",
+    "check_date": "2024-05-12",
+    "fee": "yes",
+    "museum": "history",
+    "name": "Amsterdam Museum",
+    "note": "tijdelijke huisvesting/temporary location",
+    "payment:apple_pay": "yes",
+    "payment:cash": "no",
+    "payment:girocard": "yes",
+    "payment:google_pay": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:museumkaart": "yes",
+    "payment:visa": "yes",
+    "tourism": "museum",
+    "website": "https://www.amsterdammuseum.nl/"
+  }
+},
+{
+  "type": "node",
+  "id": 858193791,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "1",
+    "addr:postcode": "1011NG",
+    "addr:street": "Jodenbreestraat",
+    "alt_name": "Café de Sluyswacht",
+    "amenity": "pub",
+    "check_date": "2023-08-07",
+    "name": "Sluyswacht",
+    "name:lt": "kreivas baras",
+    "name:nl": "Sluyswacht",
+    "outdoor_seating": "yes",
+    "scenic": "yes",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "website": "https://www.sluyswacht.nl",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 858197959,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "19",
+    "addr:postcode": "1011NH",
+    "addr:street": "Jodenbreestraat",
+    "check_date": "2025-02-12",
+    "disused:shop": "vacant",
+    "opening_hours": "Mo 11:00-18:00; Tu-Sa 09:00-18:00; Su 12:00-18:00",
+    "source": "BAG",
+    "source:date": "2014-03-24"
+  }
+},
+{
+  "type": "node",
+  "id": 858208357,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "59-H",
+    "addr:postcode": "1011JZ",
+    "addr:street": "Kloveniersburgwal",
+    "amenity": "pub",
+    "contact:facebook": "https://www.facebook.com/cafedeengelbewaarder",
+    "contact:instagram": "cafedeengelbewaarder",
+    "food": "yes",
+    "name": "De Engelbewaarder",
+    "opening_hours": "Su-Th 12:00-01:00; Fr-Sa 12:00-02:00",
+    "outdoor_seating": "yes",
+    "phone": "+31 20 625 3772",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.cafedeengelbewaarder.nl",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 866516424,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2",
+    "addr:postcode": "1012CR",
+    "addr:street": "Nieuwmarkt",
+    "amenity": "pub",
+    "check_date": "2024-08-20",
+    "name": "Cafe de Zon",
+    "outdoor_seating": "yes",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 963495583,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "573",
+    "addr:postcode": "1017CD",
+    "addr:street": "Herengracht",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 963498491,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "17",
+    "addr:postcode": "1017VH",
+    "addr:street": "Utrechtsestraat",
+    "brand": "Albert Heijn",
+    "brand:wikidata": "Q1653985",
+    "brand:wikipedia": "nl:Albert Heijn (supermarkt)",
+    "check_date": "2025-03-15",
+    "name": "Albert Heijn",
+    "opening_hours": "Mo-Su 08:00-22:00",
+    "operator": "Albert Heijn",
+    "organic": "yes",
+    "phone": "+31 88 659 2213",
+    "shop": "supermarket",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "toilets:wheelchair": "no",
+    "website": "https://www.ah.nl/winkel/2213",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 963802742,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "9",
+    "addr:postcode": "1017CL",
+    "addr:street": "Reguliersbreestraat",
+    "air_conditioning": "yes",
+    "alt_name": "Burger Bar",
+    "amenity": "fast_food",
+    "check_date": "2025-05-03",
+    "check_date:diet:halal": "2025-05-03",
+    "check_date:diet:kosher": "2025-05-03",
+    "check_date:diet:vegetarian": "2025-05-03",
+    "contact:facebook": "BurgerBarNL",
+    "contact:instagram": "burgerbarnl",
+    "contact:website": "https://www.burgerbar.nl/locations/",
+    "cuisine": "burger",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "diet:vegetarian": "no",
+    "name": "Burgerbar",
+    "opening_hours": "Su-Th 11:00-03:00; Fr-Sa 11:00-04:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+31 20 330 5968",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.burgerbar.nl/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 976615026,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "41",
+    "addr:street": "Plantage Kerklaan",
+    "amenity": "restaurant",
+    "check_date": "2026-03-31",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "email": "info@borrl.kitchen",
+    "name": "De Deli",
+    "old_name": "Amsterdam Borrl Kitchen",
+    "opening_hours": "Mo-Su 10:00-18:00",
+    "phone": "+31 20 354 2669",
+    "website": "https://borrl.kitchen/"
+  }
+},
+{
+  "type": "node",
+  "id": 1055573894,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "23",
+    "addr:postcode": "1011TJ",
+    "addr:street": "Peperstraat",
+    "amenity": "restaurant",
+    "name": "R21",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1083536032,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housename": "Plancius",
+    "addr:housenumber": "61C",
+    "addr:postcode": "1018CX",
+    "addr:street": "Plantage Kerklaan",
+    "amenity": "restaurant",
+    "check_date": "2026-03-31",
+    "cuisine": "international",
+    "name": "Plancius",
+    "phone": "+31 20 223 6946",
+    "website": "https://www.restaurantplancius.nl/"
+  }
+},
+{
+  "type": "node",
+  "id": 1083536033,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "49A",
+    "addr:postcode": "1018CV",
+    "addr:street": "Plantage Kerklaan",
+    "amenity": "fast_food",
+    "name": "Bread and Salt"
+  }
+},
+{
+  "type": "node",
+  "id": 1083668064,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "125",
+    "addr:postcode": "1011KC",
+    "addr:street": "Kloveniersburgwal",
+    "alt_name": "Oorlam",
+    "amenity": "pub",
+    "check_date": "2025-06-12",
+    "name": "Café de Doelen",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1083682481,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "17",
+    "addr:postcode": "1012CK",
+    "addr:street": "Rusland",
+    "brand": "Radisson Blu",
+    "brand:wikidata": "Q7281341",
+    "brand:wikipedia": "en:Radisson Blu",
+    "check_date": "2025-09-23",
+    "email": "guest.amsterdam@radissonblu.com",
+    "fax": "+31 20 520 8200",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Radisson BLU Hotel",
+    "operator": "Radisson SAS",
+    "phone": "+31 20 623 1231",
+    "rooms": "252",
+    "smoking": "no",
+    "stars": "4",
+    "tourism": "hotel",
+    "website": "https://www.radissonblu.com/de/hotel-amsterdam",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1139360975,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "4",
+    "addr:postcode": "1011TA",
+    "addr:street": "IJ-tunnel",
+    "alt_name": "Kazerne Amsterdam Nico",
+    "amenity": "fire_station",
+    "name": "Kazerne Nico",
+    "operator": "Veiligheidsregio Amsterdam-Amstelland",
+    "operator:website": "https://veiligheidsregioaa.nl",
+    "operator:wikidata": "Q3934608",
+    "phone": "+31 20 5556666",
+    "source": "BAG",
+    "website": "https://www.brandweer.nl/kazerne/amsterdam-nico/"
+  }
+},
+{
+  "type": "node",
+  "id": 1221258124,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "153",
+    "addr:postcode": "1012GC",
+    "addr:street": "Oude Turfmarkt",
+    "amenity": "pub",
+    "check_date": "2025-09-05",
+    "check_date:opening_hours": "2025-09-05",
+    "name": "Café Katoen",
+    "opening_hours": "Mo-Th 09:00-01:00, Fr 09:00-03:00, Sa 10:00-03:00, Su 10:00-01:00",
+    "phone": "+31 20 626 2635",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1221258139,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "9",
+    "addr:postcode": "1017DA",
+    "addr:street": "Amstelstraat",
+    "amenity": "restaurant",
+    "cuisine": "french",
+    "name": "Brasserie Flo",
+    "phone": "+31 20 890 4757",
+    "website": "https://www.floamsterdam.nl",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1221433734,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "11",
+    "addr:postcode": "1012ED",
+    "addr:street": "Oude Doelenstraat",
+    "amenity": "cafe",
+    "brand": "Coffee Company",
+    "brand:wikidata": "Q108927063",
+    "cuisine": "coffee_shop",
+    "indoor_seating": "yes",
+    "name": "Coffee Company",
+    "opening_hours": "Mo-Fr 07:30-20:30; Sa-Su 08:30-20:00",
+    "outdoor_seating": "yes",
+    "phone": "+31 20 303 2453",
+    "takeaway": "yes",
+    "website": "https://www.coffeecompany.nl/locations/oude-doelenstraat-11",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1250800936,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "143",
+    "addr:street": "Kloveniersburgwal",
+    "roof_garden": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1250800970,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "137",
+    "addr:postcode": "1011KE",
+    "addr:street": "Kloveniersburgwal",
+    "check_date": "2025-06-12",
+    "email": "info@hotelnes.nl",
+    "name": "Hotel Nes",
+    "phone": "+31 20 624 4773",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "stars": "3",
+    "toilets:wheelchair": "yes",
+    "tourism": "hotel",
+    "website": "https://www.hotelnes.nl/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1299724230,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "69-71",
+    "addr:postcode": "1018TM",
+    "addr:street": "Plantage Muidergracht",
+    "amenity": "cafe",
+    "brand": "Coffee Company",
+    "brand:wikidata": "Q108927063",
+    "check_date": "2024-08-18",
+    "cuisine": "coffee_shop",
+    "name": "Coffee Company",
+    "opening_hours": "Mo-Fr 07:30-17:00; Sa-Su 08:30-17:00",
+    "phone": "+31 20 237 4330",
+    "takeaway": "yes",
+    "website": "https://www.coffeecompany.nl/locations/plantage-muidergracht-69-71"
+  }
+},
+{
+  "type": "node",
+  "id": 1310911717,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "7-9",
+    "addr:postcode": "1017CS",
+    "addr:street": "Thorbeckeplein",
+    "amenity": "restaurant",
+    "check_date": "2023-04-12",
+    "cuisine": "italian",
+    "name": "Ristorante Isola Bella",
+    "phone": "+31 20 626 9582",
+    "website": "https://restaurantisolabella.nl/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1310911723,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "144",
+    "addr:postcode": "1017AE",
+    "addr:street": "Amstel",
+    "email": "info.edenhotel@edenhotels.nl",
+    "name": "Eden Hotel Amsterdam",
+    "operator": "Hampshire Hotel",
+    "phone": "+31 20 530 7878",
+    "stars": "4s",
+    "tourism": "hotel",
+    "website": "https://www.edenhotelamsterdam.com/en/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1310911724,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "713-715",
+    "addr:postcode": "1017DX",
+    "addr:street": "Keizersgracht",
+    "email": "info@armadahotel.nl",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Hotel Armada",
+    "note": "No dogs",
+    "phone": "+31 20 623 5829",
+    "stars": "2",
+    "tourism": "hotel",
+    "website": "https://www.ozo-hotels.com/hotels/ozo-hotels-armada-amsterdam",
+    "wheelchair": "no",
+    "wikidata": "Q111875734"
+  }
+},
+{
+  "type": "node",
+  "id": 1310911737,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "129",
+    "addr:postcode": "1011PG",
+    "addr:street": "Waterlooplein",
+    "amenity": "cafe",
+    "brand": "Coffee Company",
+    "brand:wikidata": "Q108927063",
+    "check_date": "2025-07-28",
+    "cuisine": "coffee_shop",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Screaming Beans",
+    "opening_hours": "Mo-Sa 08:00-18:00; Su 09:00-18:00",
+    "takeaway": "yes",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1310911745,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "104",
+    "addr:postcode": "1017AD",
+    "addr:street": "Amstel",
+    "email": "info@hotelamstelzicht.com",
+    "name": "Hotel Amstelzicht",
+    "phone": "+31 20 623 6693",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "tourism": "hotel",
+    "website": "https://www.hotelamstelzicht.com/nl/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1310974734,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "4",
+    "addr:postcode": "1011KM",
+    "addr:street": "'s-Gravelandse Veer",
+    "check_date": "2026-07-12",
+    "email": "info@amsterdamhouse.com",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Amsterdam House Hotel",
+    "phone": "+31 20 624 6607",
+    "smoking": "no",
+    "source": "BAG",
+    "source:date": "2021-01-08",
+    "stars": "3",
+    "toilets:wheelchair": "no",
+    "tourism": "hotel",
+    "website": "https://www.amsterdamhouse.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1310974815,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2-14",
+    "addr:postcode": "1012CP",
+    "addr:street": "Nieuwe Doelenstraat",
+    "amenity": "restaurant",
+    "award:michelin": "2",
+    "contact:facebook": "restaurantflore",
+    "contact:instagram": "restaurant.flore",
+    "name": "Flore",
+    "opening_hours": "We-Th 18:30-22:00; Fr-Sa 12:00-16:00, 18:30-22:00",
+    "phone": "+31 20 531 1619",
+    "stars": "2",
+    "toilets:wheelchair": "yes",
+    "website": "https://restaurantflore.com",
+    "wheelchair": "yes",
+    "wikidata": "Q124246755",
+    "wikipedia": "nl:Flore (restaurant)"
+  }
+},
+{
+  "type": "node",
+  "id": 1310974825,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "148",
+    "addr:postcode": "1012DV",
+    "addr:street": "Oudezijds Achterburgwal",
+    "description": "This is an information centre cq attraction, that does not conform to the museum definitions of Unesco, ICOM and Museumvereniging.",
+    "fee": "yes",
+    "name": "Hash Marihuana & Hemp Museum",
+    "name:en": "Hash Marihuana & Hemp Museum",
+    "name:nl": "Hash Marihuana & Hemp Museum",
+    "name:ru": "Музей гашиша и марихуаны",
+    "name:zh": "大麻博物館",
+    "opening_hours": "10:00-22:00",
+    "tourism": "museum",
+    "website": "https://hashmuseum.com/amsterdam",
+    "wheelchair": "yes",
+    "wikidata": "Q3783595",
+    "wikimedia_commons": "Category:Hash, Marihuana & Hemp Museum",
+    "wikipedia": "nl:Hash Marihuana & Hemp Museum"
+  }
+},
+{
+  "type": "node",
+  "id": 1350821472,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "20",
+    "addr:postcode": "1012CR",
+    "addr:street": "Nieuwmarkt",
+    "amenity": "atm",
+    "brand": "Geldmaat",
+    "brand:wikidata": "Q74051230",
+    "brand:wikipedia": "nl:Geldmaat",
+    "cash_in": "yes",
+    "cash_in:notes": "yes",
+    "cash_out": "yes",
+    "cash_out:notes": "yes",
+    "description": "Geld opnemen en storten; In Geldmaat-winkel",
+    "indoor": "yes",
+    "located_in:wikidata": "Q74051230",
+    "name": "Geldmaat",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Geldmaat",
+    "operator:wikidata": "Q74051230",
+    "ref": "1012020",
+    "speech_output": "yes",
+    "website": "https://locatiewijzer.geldmaat.nl/nl/location/1012020",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1453672123,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "107-109",
+    "addr:postcode": "1017WD",
+    "addr:street": "Utrechtsedwarsstraat",
+    "amenity": "restaurant",
+    "check_date": "2023-04-17",
+    "contact:facebook": "https://www.facebook.com/utrechtsedwarstafel",
+    "contact:instagram": "https://www.instagram.com/deutrechtsedwarstafel/",
+    "name": "Utrechtsedwarstafel",
+    "phone": "+31 6 2044 7559",
+    "reservation": "required",
+    "website": "https://www.utrechtsedwarstafel.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1504115535,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "47",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "amenity": "restaurant",
+    "check_date": "2026-04-28",
+    "cuisine": "sushi",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Shisho",
+    "opening_hours": "Mo-Su 13:00-22:00; Th-Su 22:00-22:30",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://shiso.nl/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1519491674,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "124",
+    "addr:postcode": "1012DT",
+    "addr:street": "Oudezijds Achterburgwal",
+    "contact:phone": "+31 20 423 4420",
+    "contact:website": "https://www.cannabiscollege.com",
+    "information": "office",
+    "name": "Cannabis College",
+    "source": "own GPS survey (Garmin Etrex 30)",
+    "tourism": "information",
+    "wikidata": "Q5032583",
+    "wikipedia": "en:Cannabis College"
+  }
+},
+{
+  "type": "node",
+  "id": 1611202691,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "21",
+    "addr:postcode": "1011NH",
+    "addr:street": "Jodenbreestraat",
+    "brand": "Albert Heijn",
+    "brand:wikidata": "Q1653985",
+    "brand:wikipedia": "nl:Albert Heijn (supermarkt)",
+    "check_date": "2025-02-12",
+    "check_date:opening_hours": "2021-08-17",
+    "description": "AH [Amsterdam] Jodenbreestraat 21",
+    "name": "Albert Heijn",
+    "opening_hours": "Mo-Su 08:00-22:00",
+    "payment:debit_cards": "yes",
+    "payment:maestro": "yes",
+    "phone": "+31 20 624 1249",
+    "ref": "1567",
+    "shop": "supermarket",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "website": "https://www.ah.nl/winkel/1567",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1611202845,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "207",
+    "addr:postcode": "1011PG",
+    "addr:street": "Waterlooplein",
+    "alt_name": "Mozes & Aaron",
+    "amenity": "place_of_worship",
+    "check_date": "2025-02-06",
+    "denomination": "roman_catholic",
+    "name": "Mozes en Aäronkerk",
+    "name:es": "Iglesia de Moises y Aaron",
+    "name:nl": "Mozes en Aäronkerk",
+    "religion": "christian",
+    "website": "https://www.santegidio.nl/amsterdam",
+    "wheelchair": "no",
+    "wikidata": "Q1125814",
+    "wikimedia_commons": "Category:Mozes en Aäronkerk (Amsterdam)",
+    "wikipedia": "nl:Mozes en Aäronkerk"
+  }
+},
+{
+  "type": "node",
+  "id": 1623897542,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "45",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "amenity": "nightclub",
+    "name": "Cooldown Cafe Rembrandtplein",
+    "opening_hours": "Mo closed; Tu-Th 22:00-04:00; Fr-Sa 22:00-05:00",
+    "phone": "+31 20 421 2284",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.cooldowncafe.nl/"
+  }
+},
+{
+  "type": "node",
+  "id": 1623897546,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "108-114",
+    "addr:postcode": "1017BN",
+    "addr:street": "Rembrandtplein",
+    "amenity": "nightclub",
+    "check_date": "2025-03-15",
+    "name": "Jantjes Verjaardag",
+    "phone": "+31 20 331 2126",
+    "website": "https://www.jantjesverjaardag.nl/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1667131140,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "9",
+    "addr:postcode": "1017VH",
+    "addr:street": "Utrechtsestraat",
+    "amenity": "cafe",
+    "brand": "Starbucks",
+    "brand:wikidata": "Q37158",
+    "brand:wikipedia": "en:Starbucks",
+    "check_date": "2025-02-12",
+    "cuisine": "coffee_shop",
+    "drive_through": "no",
+    "name": "Starbucks",
+    "official_name": "Starbucks Coffee",
+    "opening_hours": "Mo-Fr 07:30-20:00; Sa-Su 08:30-20:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+31 20 528 7755",
+    "smoking": "outside",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "takeaway": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.starbucks.com/store/87056/nl/utrechtsestraat-9-the-bank/starbucks-the-bank-rembrandtplein-utrechtsestraat",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1696415629,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "7",
+    "addr:postcode": "1017DA",
+    "addr:street": "Amstelstraat",
+    "check_date": "2023-05-24",
+    "shop": "vacant",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1713421202,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "14-16",
+    "addr:street": "Muiderstraat",
+    "disused:shop": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1719407858,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "51",
+    "addr:postcode": "1017CM",
+    "addr:street": "Reguliersbreestraat",
+    "amenity": "fast_food",
+    "brand": "New York Pizza",
+    "brand:website": "https://www.newyorkpizza.nl/",
+    "brand:wikidata": "Q2639128",
+    "brand:wikipedia": "nl:New York Pizza",
+    "check_date": "2025-03-15",
+    "cuisine": "pizza",
+    "fax": "+31 20 638 6839",
+    "name": "New York Pizza",
+    "opening_hours": "Mo-Su 11:00-20:00",
+    "phone": "+31 20 625 6354",
+    "takeaway": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://www.newyorkpizza.nl/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1719407868,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "38",
+    "addr:postcode": "1017CN",
+    "addr:street": "Reguliersbreestraat",
+    "amenity": "fast_food",
+    "brand": "FEBO",
+    "brand:wikidata": "Q582245",
+    "brand:wikipedia": "nl:Febo (snackbar)",
+    "check_date": "2025-02-12",
+    "cuisine": "friture",
+    "indoor_seating": "yes",
+    "name": "FEBO",
+    "opening_hours": "Mo-Tu,Su 11:00-03:00; Fr,Sa 11:00-06:00",
+    "operator": "FEBO",
+    "outdoor_seating": "no",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+31 20 623 5304",
+    "takeaway": "yes",
+    "website": "https://www.febodelekkerste.nl",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1719407892,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "47",
+    "addr:postcode": "1017CM",
+    "addr:street": "Reguliersbreestraat",
+    "description": "Casino",
+    "name": "Fair Play center",
+    "phone": "+31 20 625 9165",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.fairplaycasino.nl"
+  }
+},
+{
+  "type": "node",
+  "id": 1719407896,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "1",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "amenity": "cafe",
+    "check_date": "2025-03-15",
+    "indoor_seating": "yes",
+    "name": "Los",
+    "opening_hours": "Mo-Tu,Su 15:00-01:00; Fr-Sa 15:00-03:00",
+    "outdoor_seating": "yes",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1724295894,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "54",
+    "addr:postcode": "1017AB",
+    "addr:street": "Amstel",
+    "amenity": "bar",
+    "check_date": "2025-06-12",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "level": "0",
+    "lgbtq": "primary",
+    "name": "Café aan de Amstel",
+    "name:en": "Cafe on the Amstel",
+    "name:nl": "Café aan de Amstel",
+    "opening_hours": "Mo-Su 16:00+",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1724299807,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "14",
+    "addr:street": "Amstel",
+    "amenity": "bar",
+    "name": "Wapen van Londen",
+    "website": "https://www.hetwapenvanlonden.nl/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1724319376,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "102",
+    "addr:postcode": "1017AD",
+    "addr:street": "Amstel",
+    "amenity": "restaurant",
+    "contact:instagram": "blinqueen.amsterdam",
+    "cuisine": "breakfast;cake;coffee_shop;crepe;diner;pancake",
+    "diet:gluten_free": "yes",
+    "diet:vegetarian": "yes",
+    "internet_access": "wlan",
+    "lgbtq": "welcome",
+    "name": "Blin Queen",
+    "opening_hours": "Mo-Th 09:00-21:00; Fr 09:00-22:00; Sa-Su 09:00-18:00",
+    "website": "https://www.blinqueen.com",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1724331883,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "50",
+    "addr:street": "Amstel",
+    "disused:shop": "yes",
+    "lgbtq": "primary"
+  }
+},
+{
+  "type": "node",
+  "id": 1724352586,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "34",
+    "addr:postcode": "1017DA",
+    "addr:street": "Amstelstraat",
+    "amenity": "pub",
+    "brewery": "yes",
+    "check_date": "2023-04-11",
+    "description": "Formerly known as the Krokodil, this bar know attracts a slightly younger audience and is not the hang out of grey gays any more.",
+    "internet_access": "wlan",
+    "name": "Gollem",
+    "opening_hours": "Mo-Th 16:00-01:00, Fr-Sa 14:00-03:00, Su 14:00-01:00",
+    "website": "https://cafegollem.nl/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1724362291,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "17",
+    "addr:postcode": "1017CR",
+    "addr:street": "Halvemaansteeg",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 1724376305,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "9",
+    "addr:street": "Paardenstraat",
+    "disused:shop": "yes",
+    "lgbtq": "primary"
+  }
+},
+{
+  "type": "node",
+  "id": 1724392117,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "14",
+    "addr:street": "Halvemaansteeg",
+    "amenity": "bar",
+    "lgbtq": "welcome",
+    "name": "Lunar Bar",
+    "opening_hours": "Mo-Su 21:00+",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1727146529,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "178",
+    "addr:postcode": "1017AE",
+    "addr:street": "Amstel",
+    "amenity": "bar",
+    "check_date": "2026-02-01",
+    "description": "Gay naturist bar and lounge with pool table for all men. Free Willie, let it all hang out! Check website for weekly program.",
+    "level": "0",
+    "lgbtq": "primary",
+    "lgbtq:cruising": "yes",
+    "lgbtq:gay": "yes",
+    "min_age": "18",
+    "name": "Free Willie",
+    "opening_hours": "Th 20:00-02:00; Fr 20:00-03:00; Sa 22:00-03:00; Su 17:00-01:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://freewillie.nl",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1742697746,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "129",
+    "addr:street": "Reguliersdwarsstraat",
+    "amenity": "pub",
+    "check_date": "2025-02-12",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "level": "0",
+    "lgbtq": "primary",
+    "name": "Café Montmartre",
+    "opening_hours": "Mo-Tu off; We-Th 17:00-01:00; Fr-Sa 17:00-04:00; Su 15:00-01:00",
+    "payment:cash": "no",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+31 6 52004763",
+    "website": "https://cafemontmartre.nl",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1742697756,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "121",
+    "addr:street": "Reguliersdwarsstraat",
+    "lgbtq": "primary",
+    "office": "foundation"
+  }
+},
+{
+  "type": "node",
+  "id": 1742704487,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "105",
+    "addr:postcode": "1017BL",
+    "addr:street": "Reguliersdwarsstraat",
+    "amenity": "cafe",
+    "name": "Bar Bacán",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.bacan.amsterdam/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1749038791,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10-huis",
+    "addr:postcode": "1011TL",
+    "addr:street": "Peperstraat",
+    "amenity": "restaurant",
+    "contact:facebook": "https://www.facebook.com/Gebr.Hartering/",
+    "contact:instagram": "https://www.instagram.com/gebrhartering/",
+    "cuisine": "meat",
+    "name": "Gebr. Hartering",
+    "opening_hours": "Mo-Su 18:00-22:00",
+    "phone": "+31 20 421 0699",
+    "website": "https://www.gebr-hartering.nl",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1759851506,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "4",
+    "addr:street": "Utrechtsestraat",
+    "amenity": "pub",
+    "check_date": "2023-04-11",
+    "contact:facebook": "https://www.facebook.com/dragshowbarLellebel/",
+    "description": "Small cozy bar with stage annex dance floor, drag queen contests, karaoke, jazz nights and wonderfull authentic art deco lights. Before entering check the Barbi & Ken collection in the window.",
+    "lgbtq": "primary",
+    "name": "Lellebel",
+    "opening_hours": "Mo-Th,Su 20:00-03:00; Fr-Sa 20:00-04:00",
+    "website": "https://www.lellebel.nl",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1796008490,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "597",
+    "addr:postcode": "1017CE",
+    "addr:street": "Herengracht",
+    "check_date": "2023-07-03",
+    "description": "Rembrandt Square Office",
+    "name": "Booking.com",
+    "office": "it",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.booking.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 1908229548,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "29",
+    "addr:postcode": "1011ET",
+    "addr:street": "Koningsstraat",
+    "amenity": "restaurant",
+    "contact:email": "info@restaurantkyo.nl",
+    "contact:phone": "+31 20 354 1219",
+    "cuisine": "japanese",
+    "name": "Kyo",
+    "opening_hours": "We-Su",
+    "website": "https://restaurantkyo.nl/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1935816836,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "144",
+    "addr:postcode": "1012DV",
+    "addr:street": "Oudezijds Achterburgwal",
+    "name": "B&B 1680",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "tourism": "guest_house",
+    "website": "https://www.bb1680.com"
+  }
+},
+{
+  "type": "node",
+  "id": 1976834530,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "18",
+    "addr:street": "Kloveniersburgwal",
+    "amenity": "fast_food",
+    "name": "Franz Sausages",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1984268502,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "3",
+    "addr:postcode": "1017BH",
+    "addr:street": "Korte Reguliersdwarsstraat",
+    "amenity": "cafe",
+    "email": "info@cafebollejan.nl",
+    "name": "Bolle Jan",
+    "opening_hours": "Su-Th 21:00-03:00; Fr 21:00-04:00; Sa 20:00-04:00",
+    "phone": "+31 20 625 9376",
+    "website": "https://www.cafebollejan.nl",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1984268515,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "19",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "amenity": "pub",
+    "name": "Three Sisters Pub",
+    "opening_hours": "Su-Th 10:00-01:00, Fr,Sa 10:00-04:00",
+    "outdoor_seating": "yes",
+    "phone": "+31 20 626 3346",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1984268522,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "7",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "amenity": "restaurant",
+    "changing_table": "yes",
+    "check_date": "2026-07-28",
+    "check_date:diet:vegetarian": "2026-07-28",
+    "check_date:opening_hours": "2026-07-28",
+    "check_date:toilets:wheelchair": "2026-07-28",
+    "cuisine": "argentinian",
+    "diet:vegetarian": "no",
+    "email": "Haagen-Dazs.Rembrandtplein@genmills.com",
+    "indoor_seating": "yes",
+    "name": "Titus Parrilla",
+    "opening_hours": "Mo-Su 12:00-24:00",
+    "outdoor_seating": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "smoking": "outside",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1984268536,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "5",
+    "addr:postcode": "1017DA",
+    "addr:street": "Amstelstraat",
+    "amenity": "cafe",
+    "cuisine": "coffee_shop",
+    "name": "Screaming Beans",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "toilets:wheelchair": "no",
+    "website": "https://screamingbeans.nl",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1984268551,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "31",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 1984268556,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "17",
+    "addr:postcode": "1017DA",
+    "addr:street": "Amstelstraat",
+    "email": "info.edenhotel@edenhotels.nl",
+    "internet_access": "wlan",
+    "name": "Eden Hotel Amsterdam",
+    "phone": "+31 20 530 7878",
+    "toilets:wheelchair": "yes",
+    "tourism": "hotel",
+    "website": "https://www.edenhotelamsterdam.com/en/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1984268561,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:country": "NL",
+    "addr:housenumber": "35",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "name": "TomTom Sales B.V.",
+    "phone": "+31 20 850 0800",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.tomtom.com"
+  }
+},
+{
+  "type": "node",
+  "id": 2063343438,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "43",
+    "addr:postcode": "1011HD",
+    "addr:street": "Nieuwe Hoogstraat",
+    "name": "Kiosk 43",
+    "shop": "newsagent",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2166556166,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "100",
+    "addr:postcode": "1018WT",
+    "addr:street": "Nieuwe Achtergracht",
+    "amenity": "health_centre",
+    "healthcare": "centre",
+    "internet_access": "wlan",
+    "name": "GGD Amsterdam",
+    "phone": "+31 20 555 5911",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "website": "https://www.gezond.amsterdam.nl"
+  }
+},
+{
+  "type": "node",
+  "id": 2285522454,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "9",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "amenity": "pub",
+    "check_date": "2026-07-12",
+    "indoor_seating": "yes",
+    "name": "Café Monico",
+    "outdoor_seating": "yes",
+    "toilets": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2285522455,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "5",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "amenity": "pub",
+    "check_date": "2026-01-03",
+    "contact:facebook": "https://tanteroosje.nl/",
+    "contact:instagram": "https://www.instagram.com/tanteroosjeamsterdam/",
+    "indoor_seating": "yes",
+    "name": "Tante Roosje",
+    "old_name": "Hof van Holland",
+    "opening_hours": "Su-We 09:00-00:00, Th 09:00-01:00, Fr,Sa 09:00-02:00",
+    "outdoor_seating": "yes",
+    "phone": "+31 20 820 8257",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.facebook.com/cafetanteroosje",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2285525429,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "27-29",
+    "addr:postcode": "1017CT",
+    "addr:street": "Rembrandtplein",
+    "amenity": "restaurant",
+    "check_date": "2026-04-28",
+    "cuisine": "burger",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "highchair": "yes",
+    "level": "0",
+    "name": "Hans im Glück",
+    "opening_hours": "Su-Th 10:30 - 23:30; Fr-Sa 10:30 - 01:00",
+    "outdoor_seating": "yes",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://hansimgluck.nl/burger-restaurant/amsterdam-rembrandtplein/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2285599320,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "38-H",
+    "addr:postcode": "1017CV",
+    "addr:street": "Rembrandtplein",
+    "amenity": "restaurant",
+    "check_date": "2026-04-28",
+    "cuisine": "steak_house",
+    "indoor_seating": "yes",
+    "name": "De Maria",
+    "old_name": "Cave",
+    "outdoor_seating": "yes",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2285609625,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "22-H",
+    "addr:postcode": "1017CV",
+    "addr:street": "Rembrandtplein",
+    "amenity": "nightclub",
+    "check_date": "2025-03-15",
+    "cuisine": "italian",
+    "name": "Prime",
+    "old_name": "Restaurant Pinocchio",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2296970879,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "11",
+    "addr:postcode": "1018AC",
+    "addr:street": "Kadijksplein",
+    "alt_name": "Café Orloff Amsterdam",
+    "amenity": "cafe",
+    "cuisine": "Regional;breakfast;lunch;dinner",
+    "internet_access": "wlan",
+    "name": "Café Orloff",
+    "outdoor_seating": "yes",
+    "phone": "+31 20 320 3347",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "website": "https://orloffamsterdam.nl",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2326847088,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2",
+    "addr:postcode": "1017CV",
+    "addr:street": "Rembrandtplein",
+    "branch": "Amsterdam Rembrandtplein",
+    "brand": "Flying Tiger Copenhagen",
+    "brand:website": "https://flyingtiger.com",
+    "brand:wikidata": "Q2786319",
+    "check_date": "2026-07-12",
+    "name": "Flying Tiger Copenhagen",
+    "opening_hours": "Mo 11:00-20:00; Tu-Sa 10:00-20:00; Su 10:00-18:00",
+    "phone": "+31 85 079 7410",
+    "shop": "variety_store",
+    "short_name": "Flying Tiger",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://flyingtiger.com/nl-nl/pages/store-locator#!/l/nl/amsterdam/rembrandtplein-2/nl01010"
+  }
+},
+{
+  "type": "node",
+  "id": 2376930912,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "110",
+    "addr:postcode": "1018WT",
+    "addr:street": "Nieuwe Achtergracht",
+    "amenity": "bar",
+    "contact:email": "info@indegracht.nl",
+    "contact:facebook": "https://www.facebook.com/poollokaaldegracht/",
+    "name": "De Gracht",
+    "name:prefix": "Poollokaal",
+    "opening_hours": "Su-Th 12:00-01:00; Fr-Sa 12:00-03:00",
+    "phone": "+31 20 620 1908",
+    "sport": "pool;billiards;darts;chess",
+    "website": "https://indegracht.nl",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2410006769,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2",
+    "addr:street": "Staalkade",
+    "name": "Amstel Canal Guest House",
+    "tourism": "hotel",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2428677526,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2",
+    "addr:postcode": "1011PG",
+    "addr:street": "Waterlooplein",
+    "amenity": "cafe",
+    "brand": "Bagels & Beans",
+    "brand:wikidata": "Q13433690",
+    "brand:wikipedia": "nl:Bagels & Beans",
+    "check_date": "2024-08-18",
+    "cuisine": "coffee_shop",
+    "indoor_seating": "yes",
+    "name": "Bagels & Beans",
+    "not:brand:wikidata": "Q5140923",
+    "opening_hours": "Mo-Sa 09:00-17:00; Su 11:00-17:00",
+    "outdoor_seating": "yes",
+    "phone": "+31 20 428 8906",
+    "takeaway": "yes",
+    "website": "https://www.bagelsbeans.nl",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2574351950,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "19",
+    "addr:postcode": "1017VH",
+    "addr:street": "Utrechtsestraat",
+    "amenity": "pub",
+    "bar": "yes",
+    "capacity": "22",
+    "check_date": "2025-02-12",
+    "description": "LGBTQ friendly café. Recently under new ownership.",
+    "internet_access": "yes",
+    "level": "0",
+    "lgbtq": "primary",
+    "name": "Brug34",
+    "note": "Also LGBTs-friendly, as evidenced by outdoor flag on 2022-04-07.",
+    "opening_hours": "Mo-We 08:00-21:00; Th 08:00-24:00; Fr 08:00-02:00; Sa 09:00-02:00; Su 09:00-21:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+31 20 223 6793",
+    "source": "BAG;local knowledge",
+    "source:date": "2014-04-07",
+    "toilets:wheelchair": "no",
+    "website": "https://www.brug34.nl",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2649956399,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "52",
+    "addr:postcode": "1017VP",
+    "addr:street": "Utrechtsestraat"
+  }
+},
+{
+  "type": "node",
+  "id": 2649956400,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "60",
+    "addr:postcode": "1017VP",
+    "addr:street": "Utrechtsestraat",
+    "email": "info@concerto.nl",
+    "name": "Concerto",
+    "opening_hours": "Su-Mo 12:00-18:00; Tu-Sa 10:00-18:00",
+    "phone": "+31 20 261 2610",
+    "shop": "music",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2708539685,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10",
+    "addr:postcode": "1018ST",
+    "addr:street": "Plantage Parklaan",
+    "air_conditioning": "yes",
+    "amenity": "pub",
+    "brewery": "swinkels;mighty mouth;le fort;la trappe",
+    "check_date": "2024-10-26",
+    "cuisine": "regional",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Cafe Smit & Voogt",
+    "opening_hours": "Mo-Th,Su 09:00-01:00; Fr-Sa 09:00-03:00",
+    "outdoor_seating": "sidewalk",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+31 20 737 0829",
+    "toilets": "yes",
+    "toilets:menstrual_products": "no",
+    "toilets:wheelchair": "no",
+    "website": "https://www.cafesmitenvoogt.nl",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2708542899,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "5",
+    "addr:postcode": "1018AB",
+    "addr:street": "Kadijksplein",
+    "amenity": "restaurant",
+    "check_date": "2026-03-06",
+    "cuisine": "indonesian",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Cafe Kadijk",
+    "opening_hours": "Mo-Su 17:00-01:00",
+    "phone": "+31 6 1774 4411",
+    "source": "BAG",
+    "source:date": "2014-03-24",
+    "website": "https://www.cafekadijk.nl"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102090,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10",
+    "addr:postcode": "1012CP",
+    "addr:street": "Nieuwe Doelenstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102102,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "100",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102113,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "102",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102125,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "104",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102136,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "106",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102148,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "108",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102157,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "110",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102164,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "112",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102173,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "114",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102185,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "116",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102194,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "118",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102205,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "12",
+    "addr:postcode": "1012CP",
+    "addr:street": "Nieuwe Doelenstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102221,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "120",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102238,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "122",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102249,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "124",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102271,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "126",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102298,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "128",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102322,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "130",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102334,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "132",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102347,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "134",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102358,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "136",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102369,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "138",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102393,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "140",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102414,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "142",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102432,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "144",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102441,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "145",
+    "addr:postcode": "1012GC",
+    "addr:street": "Oude Turfmarkt",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102450,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "146",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102458,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "147",
+    "addr:postcode": "1012GC",
+    "addr:street": "Oude Turfmarkt",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102466,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "148",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102476,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "149",
+    "addr:postcode": "1012GC",
+    "addr:street": "Oude Turfmarkt",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102495,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "150",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102505,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "151",
+    "addr:postcode": "1012GC",
+    "addr:street": "Oude Turfmarkt",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102513,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "156",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102522,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "158",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102531,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "16",
+    "addr:postcode": "1012CP",
+    "addr:street": "Nieuwe Doelenstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102552,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "160",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102561,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "162",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102570,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "164",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102578,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "166",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102583,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "168",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102591,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "17",
+    "addr:postcode": "1012XT",
+    "addr:street": "Turfdraagsterpad",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102599,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "170",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102608,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "172",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102616,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "174",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102625,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "176",
+    "addr:postcode": "1012ZG",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102629,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "1A",
+    "addr:postcode": "1012CP",
+    "addr:street": "Nieuwe Doelenstraat",
+    "amenity": "dentist",
+    "check_date": "2025-08-24",
+    "healthcare": "dentist",
+    "name": "Studentist",
+    "opening_hours": "Mo-Fr 09:00-17:00",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102636,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2",
+    "addr:postcode": "1012CP",
+    "addr:street": "Nieuwe Doelenstraat",
+    "consulate": "honorary_consul",
+    "country": "MC",
+    "diplomatic": "consulate",
+    "name": "Honorair Consulaat van Monaco",
+    "name:en": "Honorary Consulate of Monaco",
+    "name:fr": "Consulat de Monaco",
+    "name:nl": "Honorair Consulaat van Monaco",
+    "office": "diplomatic",
+    "official_name": "Honorair Consulaat van het Vorstendom Monaco",
+    "official_name:en": "Honorary Consulate of The Principality of Monaco",
+    "opening_hours": "\"by appointment\"",
+    "phone": "+31 20 531 1604",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "target": "NL"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102669,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "30",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102678,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "32",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102687,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "34",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102695,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "36",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102703,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "38",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102723,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "40",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102731,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "42",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102739,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "44",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102746,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "46",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "amenity": "library",
+    "internet_access": "yes",
+    "name": "CEDLA Library",
+    "official_name": "Centre for Latin American Research and Documentation Library",
+    "opening_hours": "Mo 11:00-17:00; Tu-Fr 10:00-17:00",
+    "operator": "CEDLA",
+    "operator:website": "https://www.cedla.nl",
+    "operator:wikidata": "Q122675146",
+    "phone": "+31 20 525 3498",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.cedla.nl/library",
+    "wikidata": "Q122675082"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102754,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "48",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102775,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "5",
+    "addr:postcode": "1012CP",
+    "addr:street": "Nieuwe Doelenstraat",
+    "check_date": "2025-08-24",
+    "name": "Hotel Résidence Le Coin",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "tourism": "hotel",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102782,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "50",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102787,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "52",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102792,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "54",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102801,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "55",
+    "addr:postcode": "1012CP",
+    "addr:street": "Nieuwe Doelenstraat",
+    "branch": "Amsterdam Nieuwe Doelenstraat",
+    "brand": "SPAR city",
+    "brand:website": "https://www.spar.nl/city/",
+    "brand:wikidata": "Q124630664",
+    "email": "sparcitynieuwedoelen@despar.info",
+    "name": "SPAR city",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-22:00",
+    "operator": "SPAR",
+    "operator:wikidata": "Q610492",
+    "phone": "+31 20 2366529",
+    "shop": "convenience",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://www.spar.nl/winkels/spar-city-a'dam-n.-doelenstraat-211/"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102808,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "56",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102812,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "58",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102822,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "60",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102831,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "62",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102839,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "64",
+    "addr:postcode": "1012ZD",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102848,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "66",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102856,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "68",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102866,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "7",
+    "addr:postcode": "1012CP",
+    "addr:street": "Nieuwe Doelenstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102874,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "70",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102882,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "72",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102891,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "74",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102899,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "76",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102908,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "78",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102919,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "80",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102927,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "82",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102936,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "84",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102944,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "86",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102952,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "88",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102961,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "9",
+    "addr:postcode": "1012CP",
+    "addr:street": "Nieuwe Doelenstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102989,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "90",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102991,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "92",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724102994,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "94",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724103003,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "96",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724103010,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "98",
+    "addr:postcode": "1012ZE",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145342,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "1",
+    "addr:postcode": "1012CN",
+    "addr:street": "Oudemanhuispoort",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145343,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "1",
+    "addr:postcode": "1012CM",
+    "addr:street": "Slijkstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145344,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145345,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "100",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145346,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "102",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145347,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "104",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145348,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "106",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145349,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "108",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145352,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "110",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145356,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "112",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145361,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "114",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145362,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "116",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145363,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "118",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145364,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "120",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145365,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "122",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145366,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "124",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145367,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "126",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145368,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "128",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145369,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "12A",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145370,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "12B",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145371,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "130",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145372,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "132",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145373,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "134",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145374,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "136",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145375,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "138",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145378,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "140",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145379,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "142",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145380,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "144",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145381,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "146",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145382,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "148",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145383,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "15",
+    "addr:postcode": "1012CP",
+    "addr:street": "Nieuwe Doelenstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145384,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "150",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145385,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "152",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145386,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "154",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145387,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "156",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145388,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "158",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145389,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "16",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "amenity": "cannabis",
+    "name": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145390,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "160",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145391,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "162",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145392,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "164",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145393,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "166",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145394,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "18A",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145395,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "18B",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145396,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "19",
+    "addr:postcode": "1012ZA",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145397,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "1A",
+    "addr:postcode": "1012CN",
+    "addr:street": "Oudemanhuispoort",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145398,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2",
+    "addr:postcode": "1012XX",
+    "addr:street": "Vendelstraat",
+    "amenity": "library",
+    "contact:instagram": "uva_library",
+    "internet_access": "wlan",
+    "name": "Bibliotheek Universiteit van Amsterdam",
+    "name:en": "University of Amsterdam Library",
+    "name:nl": "Bibliotheek Universiteit van Amsterdam",
+    "opening_hours": "Mo-Fr 08:30-00:00; Sa-Su 08:30-22:00",
+    "phone": "+31 20 525 1405",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "website": "https://uba.uva.nl/contact/locaties-en-openingstijden/universiteitskwartier/universiteitsbibliotheek-vendelstraat.html"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145399,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2-1",
+    "addr:postcode": "1012CN",
+    "addr:street": "Oudemanhuispoort",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145400,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2-H",
+    "addr:postcode": "1012CN",
+    "addr:street": "Oudemanhuispoort",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145401,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "20",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145402,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "203A",
+    "addr:postcode": "1012DL",
+    "addr:street": "Oudezijds Achterburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145403,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "203B",
+    "addr:postcode": "1012DL",
+    "addr:street": "Oudezijds Achterburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145404,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "203C",
+    "addr:postcode": "1012DL",
+    "addr:street": "Oudezijds Achterburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145405,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "203D",
+    "addr:postcode": "1012DL",
+    "addr:street": "Oudezijds Achterburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145406,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "205-1",
+    "addr:postcode": "1012DL",
+    "addr:street": "Oudezijds Achterburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145407,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "205-2",
+    "addr:postcode": "1012DL",
+    "addr:street": "Oudezijds Achterburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145408,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "205-3",
+    "addr:postcode": "1012DL",
+    "addr:street": "Oudezijds Achterburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145409,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "22",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "name": "Red Stamp",
+    "shop": "art",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145410,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "229",
+    "addr:postcode": "1012DL",
+    "addr:street": "Oudezijds Achterburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145411,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "231",
+    "addr:postcode": "1012DL",
+    "addr:street": "Oudezijds Achterburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145412,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "233",
+    "addr:postcode": "1012DL",
+    "addr:street": "Oudezijds Achterburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145413,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "235",
+    "addr:postcode": "1012DL",
+    "addr:street": "Oudezijds Achterburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145414,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "26",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145415,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2A",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145416,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2B",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145417,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2C",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145418,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2D",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145419,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2E",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145420,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2F",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145421,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2G",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145422,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2H",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145423,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2K",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145424,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "2L",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145425,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "3",
+    "addr:postcode": "1012CN",
+    "addr:street": "Oudemanhuispoort",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145426,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "3-1",
+    "addr:postcode": "1012CN",
+    "addr:street": "Oudemanhuispoort",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145427,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "3-H",
+    "addr:postcode": "1012CN",
+    "addr:street": "Oudemanhuispoort",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145428,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "4",
+    "addr:postcode": "1012CN",
+    "addr:street": "Oudemanhuispoort",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145432,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "6A",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145433,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "6B",
+    "addr:postcode": "1012CL",
+    "addr:street": "Rusland",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145434,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "7",
+    "addr:postcode": "1012CM",
+    "addr:street": "Slijkstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145435,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "7",
+    "addr:postcode": "1012XX",
+    "addr:street": "Vendelstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145437,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "8",
+    "addr:postcode": "1012XX",
+    "addr:street": "Vendelstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145438,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "80",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145439,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "82A",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145440,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "82B",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145441,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "82C",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145442,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "82D",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145444,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "82E",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145447,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "82F",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145450,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "82G",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145455,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "84A",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145459,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "84B",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145464,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "84C",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145468,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "84D",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145473,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "84E",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145477,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "84F",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145483,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "84G",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145488,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "86",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145493,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "88",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "amenity": "arts_centre",
+    "name": "Perdu",
+    "source": "BAG",
+    "source:date": "2014-02-11",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145498,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "9",
+    "addr:postcode": "1012ZA",
+    "addr:street": "Binnengasthuisstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145513,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "90",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145518,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "92",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145523,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "94",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145527,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "96",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724145532,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "98",
+    "addr:postcode": "1012CZ",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184887,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "1",
+    "addr:postcode": "1011KM",
+    "addr:street": "'s-Gravelandse Veer",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184890,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "1",
+    "addr:postcode": "1011HR",
+    "addr:street": "Groenburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184893,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "1",
+    "addr:postcode": "1011JJ",
+    "addr:street": "Staalstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184896,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10",
+    "addr:postcode": "1011JC",
+    "addr:street": "Zwanenburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184898,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10-1",
+    "addr:postcode": "1011KN",
+    "addr:street": "'s-Gravelandse Veer",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184899,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10-1",
+    "addr:postcode": "1011KK",
+    "addr:street": "Raamgracht",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184902,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10-2",
+    "addr:postcode": "1011KN",
+    "addr:street": "'s-Gravelandse Veer",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184905,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10-2",
+    "addr:postcode": "1011KK",
+    "addr:street": "Raamgracht",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184906,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10-3",
+    "addr:postcode": "1011KN",
+    "addr:street": "'s-Gravelandse Veer",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184907,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10-3",
+    "addr:postcode": "1011KK",
+    "addr:street": "Raamgracht",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184908,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10-H",
+    "addr:postcode": "1011KN",
+    "addr:street": "'s-Gravelandse Veer",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184910,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10-H",
+    "addr:postcode": "1011KK",
+    "addr:street": "Raamgracht",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184914,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10-O",
+    "addr:postcode": "1011KN",
+    "addr:street": "'s-Gravelandse Veer",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184915,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "100",
+    "addr:postcode": "1011KK",
+    "addr:street": "Raamgracht",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184916,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "100",
+    "addr:postcode": "1011JH",
+    "addr:street": "Zwanenburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184917,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "101",
+    "addr:postcode": "1011HZ",
+    "addr:street": "Verversstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184918,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "101A",
+    "addr:postcode": "1011KB",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184919,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "101B",
+    "addr:postcode": "1011KB",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184920,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "101C",
+    "addr:postcode": "1011KB",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184924,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "102",
+    "addr:postcode": "1011KK",
+    "addr:street": "Raamgracht",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184925,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "102",
+    "addr:postcode": "1011JH",
+    "addr:street": "Zwanenburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184926,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "103-1A",
+    "addr:postcode": "1011KB",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184927,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "103-1V",
+    "addr:postcode": "1011KB",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184928,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "103-2A",
+    "addr:postcode": "1011KB",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184929,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "103-2V",
+    "addr:postcode": "1011KB",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184930,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "103-HA",
+    "addr:postcode": "1011KB",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184931,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "103-HV",
+    "addr:postcode": "1011KB",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184932,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "103-OA",
+    "addr:postcode": "1011KB",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184933,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "103-OV",
+    "addr:postcode": "1011KB",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184934,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "104",
+    "addr:postcode": "1011KK",
+    "addr:street": "Raamgracht",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184935,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "104",
+    "addr:postcode": "1011JH",
+    "addr:street": "Zwanenburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184942,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "105",
+    "addr:postcode": "1011HZ",
+    "addr:street": "Verversstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184946,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "106",
+    "addr:postcode": "1011KK",
+    "addr:street": "Raamgracht",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184949,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "106",
+    "addr:postcode": "1011JH",
+    "addr:street": "Zwanenburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184953,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "107",
+    "addr:postcode": "1011HZ",
+    "addr:street": "Verversstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184956,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "107-1",
+    "addr:postcode": "1011KB",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184960,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "107-H",
+    "addr:postcode": "1011KB",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184963,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "108",
+    "addr:postcode": "1011KK",
+    "addr:street": "Raamgracht",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184967,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "108",
+    "addr:postcode": "1011JH",
+    "addr:street": "Zwanenburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184970,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "109",
+    "addr:postcode": "1011HZ",
+    "addr:street": "Verversstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184974,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "109A",
+    "addr:postcode": "1011KC",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184978,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "109B",
+    "addr:postcode": "1011KC",
+    "addr:street": "Kloveniersburgwal",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184981,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10A",
+    "addr:postcode": "1011JL",
+    "addr:street": "Staalstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184985,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10A",
+    "addr:postcode": "1011JA",
+    "addr:street": "Verversstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184991,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10B",
+    "addr:postcode": "1011JL",
+    "addr:street": "Staalstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184994,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10B",
+    "addr:postcode": "1011JA",
+    "addr:street": "Verversstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724184997,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10C",
+    "addr:postcode": "1011JL",
+    "addr:street": "Staalstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724185001,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10C",
+    "addr:postcode": "1011JA",
+    "addr:street": "Verversstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724185004,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10D",
+    "addr:postcode": "1011JL",
+    "addr:street": "Staalstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724185007,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10D",
+    "addr:postcode": "1011JA",
+    "addr:street": "Verversstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724185010,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10E",
+    "addr:postcode": "1011JL",
+    "addr:street": "Staalstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724185013,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10F",
+    "addr:postcode": "1011JL",
+    "addr:street": "Staalstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2724185023,
+  "tags": {
+    "addr:city": "Amsterdam",
+    "addr:housenumber": "10G",
+    "addr:postcode": "1011JL",
+    "addr:street": "Staalstraat",
+    "source": "BAG",
+    "source:date": "2014-02-11"
+  }
+}
+
+  ]
+}

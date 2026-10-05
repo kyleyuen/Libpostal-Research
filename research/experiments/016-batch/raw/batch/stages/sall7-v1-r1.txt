@@ -1,0 +1,13 @@
+file=/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv addresses=12863 passes=5
+total_us=12.164 (parse+destroy per address, timers included)
+normalize_us=0.101
+tokenize_us=0.550
+context_fill_us=3.404
+features_us=2.776
+lookups_us=2.256
+accumulate_us=1.204
+viterbi_and_rest_of_predict_us=1.010
+response_build_us=0.739
+response_destroy_us=0.073
+unattributed_us=0.052 (setup of parse call, bypass paths, timer overhead)
+per_address: bytes=39.04 tokens=5.882 state_features=45.87 transition_features=8.73 bypassed=0.0002

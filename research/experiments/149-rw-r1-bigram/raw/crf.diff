@@ -1,0 +1,43 @@
+366a367,404
+> #ifdef EXP_PHRASE_UNITS
+> // 149: phrase-unit ids (see feature_dict.h). Every part of every single-bar bigram key that is not a vocabulary word gets an id >= vocab->size.
+> fd_pu_t fd_pu = {0};
+> static bool crf_pu_add(const char *s, size_t n, uint32_t *next, size_t *au, size_t *am) {
+>     for (uint64_t i = fd_pu_hash(s, n) & fd_pu.mask;; i = (i + 1) & fd_pu.mask) {
+>         uint32_t o = fd_pu.off[i];
+>         if (o == 0) {
+>             if ((uint64_t)fd_pu.n + 1 > (fd_pu.mask + 1) / 2 || *next >= FDI_WNONE) return false;
+>             if (*au + n + 1 > *am) { size_t m = *am * 2; while (m < *au + n + 1) m *= 2; char *a = realloc(fd_pu.arena, m); if (!a) return false; fd_pu.arena = a; *am = m; }
+>             if (*au + n + 1 >= UINT32_MAX) return false;
+>             memcpy(fd_pu.arena + *au, s, n); fd_pu.arena[*au + n] = 0;
+>             fd_pu.off[i] = (uint32_t)*au + 1; fd_pu.len[i] = (uint32_t)n; fd_pu.id[i] = (*next)++; fd_pu.n++; *au += n + 1;
+>             return true;
+>         }
+>         if (fd_pu.len[i] == n && memcmp(fd_pu.arena + o - 1, s, n) == 0) return true;
+>     }
+> }
+> static void crf_pu_build(const feature_dict_t *old, const feature_dict_t *vocab, int name_a, int name_b) {
+>     double t0 = fd_now(); uint64_t cap = 1ULL << 21; size_t au = 0, am = 1 << 24; uint32_t next = (uint32_t)vocab->size;
+>     fd_pu.off = calloc(cap, 4); fd_pu.len = malloc(cap * 4); fd_pu.id = malloc(cap * 4); fd_pu.arena = malloc(am); fd_pu.mask = cap - 1; fd_pu.n = 0;
+>     bool ok = fd_pu.off && fd_pu.len && fd_pu.id && fd_pu.arena && vocab->size < FDI_WNONE;
+>     for (uint64_t i = 0; ok && i < old->size; i++) {
+>         uint64_t sl = old->slots[i]; if (!sl) continue;
+>         const uint8_t *e = old->arena + (uint32_t)sl; uint8_t nb = e[0];
+>         if (!(nb & 0x80) || ((nb & 0x7F) != (uint8_t)name_a && (nb & 0x7F) != (uint8_t)name_b)) continue;
+>         const char *rest = (const char *)e + 1; size_t rl = strlen(rest);
+>         const char *bar = memchr(rest, FD_SEP, rl); if (!bar) continue;
+>         size_t l1 = (size_t)(bar - rest); const char *p2 = bar + 1; size_t l2 = rl - l1 - 1;
+>         if (memchr(p2, FD_SEP, l2)) continue;                                   // fd_int_classify rejects these keys: they stay strings
+>         if (l1 > 0 && fd_canon(vocab, rest, l1) == FDI_NONE && !crf_pu_add(rest, l1, &next, &au, &am)) ok = false;
+>         if (ok && l2 > 0 && fd_canon(vocab, p2, l2) == FDI_NONE && !crf_pu_add(p2, l2, &next, &au, &am)) ok = false;
+>     }
+>     if (getenv("CRF_DICT_VERBOSE") != NULL) fprintf(stderr, "phrase units: ok=%d units=%u ids %zu..%u (limit %u) table=%.1f MB arena=%.1f MB build=%.2fs\n", ok, fd_pu.n,
+>         vocab->size, next, FDI_WNONE, cap * 12 / 1048576.0, au / 1048576.0, fd_now() - t0);
+>     if (!ok) { free(fd_pu.off); free(fd_pu.len); free(fd_pu.id); free(fd_pu.arena); memset(&fd_pu, 0, sizeof fd_pu); return; }   // falls back to vocabulary-only pairs
+>     char *a = realloc(fd_pu.arena, au ? au : 1); if (a) fd_pu.arena = a;
+> }
+> #endif
+382a421,423
+> #ifdef EXP_PHRASE_UNITS
+>         if (w == 0 && names[0][4] >= 0 && names[0][5] >= 0) crf_pu_build(old[0], vocab, names[0][4], names[0][5]);
+> #endif

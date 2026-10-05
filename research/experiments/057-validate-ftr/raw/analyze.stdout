@@ -1,0 +1,7 @@
+| binary (PGO training) | v1 µs | v1 speedup (range) | nv µs | nv speedup (range) | osm µs | osm speedup (range) |
+|---|---:|---:|---:|---:|---:|---:|
+| original | 33.572 | 1.000× (1.00–1.00) | 34.215 | 1.000× (1.00–1.00) | 21.207 | 1.000× (1.00–1.00) |
+| va (deliverable) | 7.431 | 4.513× (4.50–4.54) | 7.517 | 4.554× (4.53–4.56) | 4.613 | 4.585× (4.56–4.62) |
+| ftr = va + postcode compression + first-token table + role prefetch | 7.256 | 4.624× (4.62–4.65) | 7.398 | 4.624× (4.60–4.63) | 4.662 | 4.551× (4.51–4.56) |
+
+peak footprint bytes (max over rounds): orig 2613807360/2613430504/2612725968; va 2380335336/2380335336/2370291920; ftr 2537376120/2537392528/2543438200

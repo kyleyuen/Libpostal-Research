@@ -1,0 +1,393 @@
+--- research/final/021-l4/sources/feature_dict.h
++++ research/experiments/026-cross-platform/windows/sources/feature_dict.h
+@@ -9,8 +9,12 @@
+ #include <stdlib.h>
+ #include <string.h>
+ #include <stdio.h>
++#include <time.h>
++#ifdef _WIN32
++#include "win_vm.h"
++#else
+ #include <sys/mman.h>
+-#include <time.h>
++#endif
+ #include "trie.h"
+ 
+ #define FD_MAX_NAMES 127
+@@ -26,6 +30,9 @@
+     uint64_t size;                 // number of slots (any size >= 2; indexed by fast range reduction, not a power of two)
+     uint8_t *arena;                // mmap'd; only the used prefix is kept
+     size_t arena_used, arena_map;
++#ifdef _WIN32
++    size_t arena_committed;        // VirtualAlloc reserve is sparse until pages are committed
++#endif
+     fd_name_t names[FD_MAX_NAMES];
+     uint32_t num_names;
+     uint8_t name_table[256];       // open addressing over names: index+1, 0 = empty
+@@ -219,11 +226,34 @@
+ #ifdef EXP_INT_KEYS
+     free(d->islots);
+ #endif
++#ifdef _WIN32
++    if (d->arena) fd_win_release(d->arena);
++#else
+     if (d->arena) munmap(d->arena, d->arena_map);
++#endif
+     free(d);
+ }
+ 
++#ifdef _WIN32
++// Reserve the large address range without committing physical memory. Commit only the prefix that holds model-derived keys.
++static inline bool fd_arena_reserve(feature_dict_t *d) {
++    d->arena = (uint8_t *)fd_win_reserve(d->arena_map);
++    d->arena_committed = 0;
++    return d->arena != NULL;
++}
++static inline bool fd_arena_ensure(feature_dict_t *d, size_t used) {
++    if (used > d->arena_map) return false;
++    const size_t gran = 65536; // Win64 allocation granularity; also page aligned.
++    size_t want = (used + gran - 1) & ~(gran - 1);
++    if (want <= d->arena_committed) return true;
++    if (!fd_win_commit(d->arena, d->arena_committed, want - d->arena_committed)) return false;
++    d->arena_committed = want;
++    return true;
++}
++static inline double fd_now(void) { return fd_win_now(); }
++#else
+ static inline double fd_now(void) { struct timespec t; clock_gettime(CLOCK_MONOTONIC, &t); return t.tv_sec + t.tv_nsec / 1e9; }
++#endif
+ 
+ static bool fd_insert(feature_dict_t *d, const char *key, size_t len, uint32_t data) {
+     uint8_t nb; const char *rest; size_t rl;
+@@ -238,6 +268,9 @@
+     if (!d->wide_value && data >= 0xFFFFFE) return false;
+     size_t entry = rl + 2 + (d->wide_value ? sizeof(uint32_t) : 0);
+     if (d->arena_used + entry > d->arena_map || d->arena_used + entry > 0xFFFFFFF0ULL) return false;
++#ifdef _WIN32
++    if (!fd_arena_ensure(d, d->arena_used + entry)) return false;
++#endif
+     uint64_t h = fd_hash_key(nb, rest, rl);
+     uint64_t i = fd_index(d, h);
+     for (;; i = fd_next(d, i)) {                     // a trie never stores a key twice; refuse (=> keep the trie) if one appears
+@@ -336,8 +369,12 @@
+     d->size = size;
+     d->slots = calloc(size, sizeof(uint64_t)); if (!d->slots) { free(d); return NULL; }
+     d->arena_map = (size_t)0xFFFFFFF0ULL;
++#ifdef _WIN32
++    if (!fd_arena_reserve(d)) { fd_destroy(d); return NULL; }
++#else
+     d->arena = mmap(NULL, d->arena_map, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, -1, 0);
+     if (d->arena == MAP_FAILED) { d->arena = NULL; fd_destroy(d); return NULL; }
++#endif
+     d->leaves_total = leaves_total;
+ 
+     bool ok = fd_for_each_key(trie, fd_insert_cb, d, &d->leaves_visited, &d->skipped_unreachable);
+@@ -345,8 +382,12 @@
+         (unsigned long long)d->leaves_total, (unsigned long long)d->leaves_visited, (unsigned long long)d->skipped_unreachable, (unsigned long long)d->num_keys, d->num_names, d->arena_used);
+     if (!ok || d->leaves_visited != d->leaves_total) { fd_destroy(d); return NULL; }        // enumeration must reach every valid leaf
+     size_t page = 16384, keep = (d->arena_used + page - 1) / page * page;                   // give back the unused reservation
++#ifndef _WIN32
+     if (keep < d->arena_map) munmap(d->arena + keep, d->arena_map - keep);
+     d->arena_map = keep;
++#else
++    (void)keep; // uncommitted reserved pages consume address space, not committed memory
++#endif
+     d->build_seconds = fd_now() - t0;
+     return d;
+ }
+@@ -385,9 +426,14 @@
+ #endif
+     d->slots = calloc(d->size, sizeof(uint64_t)); d->islots = calloc(d->isize, sizeof(fdi_slot_t));
+     size_t page = 16384; d->arena_map = (old->arena_used + page - 1) / page * page;
++#ifdef _WIN32
++    if (d->slots && d->islots && fd_arena_reserve(d) && fd_arena_ensure(d, d->arena_map)) { /* ready */ }
++    else { fd_destroy(d); return NULL; }
++#else
+     d->arena = mmap(NULL, d->arena_map, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, -1, 0);
+     if (d->arena == MAP_FAILED) d->arena = NULL;
+     if (!d->slots || !d->islots || !d->arena) { fd_destroy(d); return NULL; }
++#endif
+     for (uint64_t i = 0; i < old->size; i++) {                                     // pass 2: insert
+         uint64_t s = old->slots[i]; if (!s) continue;
+         const uint8_t *e = old->arena + (uint32_t)s; const char *rest = (const char *)e + 1; size_t rl = strlen(rest);
+@@ -408,7 +454,11 @@
+     }
+     if (d->inum != moved || d->num_keys != kept) { fd_destroy(d); return NULL; }
+     size_t keep = (d->arena_used + page - 1) / page * page;
++#ifndef _WIN32
+     if (keep < d->arena_map) { munmap(d->arena + keep, d->arena_map - keep); d->arena_map = keep; }
++#else
++    (void)keep;
++#endif
+     d->leaves_total = old->num_keys;
+     d->build_seconds = fd_now() - t0;
+     return d;
+--- libpostal/src/Makefile.am
++++ research/experiments/026-cross-platform/windows/src.Makefile.am
+@@ -12,7 +12,7 @@
+ CFLAGS =
+ 
+ lib_LTLIBRARIES = libpostal.la
+-libpostal_la_SOURCES = strndup.c libpostal.c expand.c address_dictionary.c transliterate.c tokens.c trie.c trie_search.c trie_utils.c string_utils.c file_utils.c utf8proc/utf8proc.c normalize.c numex.c features.c unicode_scripts.c address_parser.c address_parser_io.c averaged_perceptron.c crf.c crf_context.c sparse_matrix.c averaged_perceptron_tagger.c graph.c graph_builder.c language_classifier.c language_features.c logistic_regression.c logistic.c minibatch.c float_utils.c ngrams.c place.c near_dupe.c double_metaphone.c geohash/geohash.c dedupe.c string_similarity.c acronyms.c soft_tfidf.c jaccard.c
++libpostal_la_SOURCES = win_vm.c strndup.c libpostal.c expand.c address_dictionary.c transliterate.c tokens.c trie.c trie_search.c trie_utils.c string_utils.c file_utils.c utf8proc/utf8proc.c normalize.c numex.c features.c unicode_scripts.c address_parser.c address_parser_io.c averaged_perceptron.c crf.c crf_context.c sparse_matrix.c averaged_perceptron_tagger.c graph.c graph_builder.c language_classifier.c language_features.c logistic_regression.c logistic.c minibatch.c float_utils.c ngrams.c place.c near_dupe.c double_metaphone.c geohash/geohash.c dedupe.c string_similarity.c acronyms.c soft_tfidf.c jaccard.c
+ libpostal_la_LIBADD = libscanner.la $(CBLAS_LIBS)
+ libpostal_la_CFLAGS = $(CFLAGS_O2) -D LIBPOSTAL_EXPORTS
+ libpostal_la_LDFLAGS = -version-info @LIBPOSTAL_SO_VERSION@ -no-undefined
+--- /dev/null
++++ research/experiments/026-cross-platform/windows/sources/win_vm.h
+@@ -0,0 +1,9 @@
++#ifndef FD_WIN_VM_H
++#define FD_WIN_VM_H
++#include <stdbool.h>
++#include <stddef.h>
++void *fd_win_reserve(size_t bytes);
++bool fd_win_commit(void *base, size_t offset, size_t bytes);
++void fd_win_release(void *base);
++double fd_win_now(void);
++#endif
+--- /dev/null
++++ research/experiments/026-cross-platform/windows/sources/win_vm.c
+@@ -0,0 +1,22 @@
++#define WIN32_LEAN_AND_MEAN
++#include <windows.h>
++#include <stdint.h>
++#include "win_vm.h"
++
++void *fd_win_reserve(size_t bytes) {
++    const size_t gran = 65536;
++    if (bytes > SIZE_MAX - (gran - 1)) return NULL;
++    size_t rounded = (bytes + gran - 1) & ~(gran - 1);
++    return VirtualAlloc(NULL, rounded, MEM_RESERVE, PAGE_NOACCESS);
++}
++bool fd_win_commit(void *base, size_t offset, size_t bytes) {
++    return VirtualAlloc((char *)base + offset, bytes, MEM_COMMIT, PAGE_READWRITE) != NULL;
++}
++void fd_win_release(void *base) {
++    VirtualFree(base, 0, MEM_RELEASE);
++}
++double fd_win_now(void) {
++    LARGE_INTEGER freq, ticks;
++    QueryPerformanceFrequency(&freq); QueryPerformanceCounter(&ticks);
++    return (double)ticks.QuadPart / (double)freq.QuadPart;
++}
+--- /dev/null
++++ research/experiments/026-cross-platform/windows/bench_ext_win.c
+@@ -0,0 +1,104 @@
++// Windows counterpart of research/tools/bench_ext.c. One parsing thread, same input/order/API work.
++// usage: bench_ext_win target.tsv passes [other-dataset-warmup.tsv]
++#define WIN32_LEAN_AND_MEAN
++#include <windows.h>
++#include <psapi.h>
++#include <tlhelp32.h>
++#include <stdint.h>
++#include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
++#include "libpostal.h"
++
++#define MAXC 256
++static LARGE_INTEGER freq;
++static double now_us(void) { LARGE_INTEGER t; QueryPerformanceCounter(&t); return (double)t.QuadPart * 1e6 / (double)freq.QuadPart; }
++static uint64_t filetime_us(FILETIME t) { ULARGE_INTEGER u; u.LowPart = t.dwLowDateTime; u.HighPart = t.dwHighDateTime; return u.QuadPart / 10; }
++static uint64_t cpu_us(void) {
++    FILETIME created, exited, kernel, user;
++    if (!GetProcessTimes(GetCurrentProcess(), &created, &exited, &kernel, &user)) return 0;
++    return filetime_us(kernel) + filetime_us(user);
++}
++static unsigned thread_count(void) {
++    unsigned n = 0; DWORD pid = GetCurrentProcessId();
++    HANDLE snap = CreateToolhelp32Snapshot(TH32CS_SNAPTHREAD, 0);
++    if (snap == INVALID_HANDLE_VALUE) return 0;
++    THREADENTRY32 e = { .dwSize = sizeof e };
++    if (Thread32First(snap, &e)) do { if (e.th32OwnerProcessID == pid) n++; } while (Thread32Next(snap, &e));
++    CloseHandle(snap); return n;
++}
++static char *read_line(FILE *f) {
++    size_t n = 0, cap = 256; int c; char *s = malloc(cap);
++    if (!s) return NULL;
++    while ((c = fgetc(f)) != EOF && c != '\n') {
++        if (n + 1 == cap) { char *p = realloc(s, cap *= 2); if (!p) { free(s); return NULL; } s = p; }
++        s[n++] = (char)c;
++    }
++    if (c == EOF && n == 0) { free(s); return NULL; }
++    if (n && s[n - 1] == '\r') n--;
++    s[n] = 0; return s;
++}
++static int warmup(const char *path, libpostal_address_parser_options_t o) {
++    FILE *f = fopen(path, "rb"); if (!f) return -1;
++    int count = 0; char *line;
++    while ((line = read_line(f))) {
++        char *tab = strchr(line, '\t');
++        if (tab) { libpostal_address_parser_response_t *r = libpostal_parse_address(tab + 1, o);
++            if (!r) { free(line); fclose(f); return -1; }
++            libpostal_address_parser_response_destroy(r); count++; }
++        free(line);
++    }
++    fclose(f); return count;
++}
++int main(int argc, char **argv) {
++    if (argc != 3 && argc != 4) return 2;
++    QueryPerformanceFrequency(&freq);
++    int passes = atoi(argv[2]); if (passes < 1) return 2;
++    FILE *f = fopen(argv[1], "rb"); if (!f) return 2;
++    char **addr = NULL, cnames[MAXC][8] = {{0}}; int *cid = NULL;
++    size_t n = 0, cap = 0; int nc = 0; char *line;
++    while ((line = read_line(f))) {
++        char *tab = strchr(line, '\t'); if (!tab) { free(line); return 2; }
++        *tab++ = 0;
++        int c = -1; for (int i = 0; i < nc; i++) if (!strcmp(cnames[i], line)) { c = i; break; }
++        if (c < 0) { if (nc == MAXC) { free(line); return 2; } strncpy(cnames[nc], line, 7); c = nc++; }
++        if (n == cap) {
++            size_t next = cap ? cap * 2 : 1024;
++            char **a = realloc(addr, next * sizeof *addr); if (!a) return 2; addr = a;
++            int *ids = realloc(cid, next * sizeof *cid); if (!ids) return 2; cid = ids; cap = next;
++        }
++        addr[n] = strdup(tab); if (!addr[n]) return 2; cid[n++] = c; free(line);
++    }
++    fclose(f); if (!n) return 2;
++    double s0 = now_us();
++    if (!libpostal_setup() || !libpostal_setup_parser()) return 2;
++    printf("setup_seconds=%.3f corpus=%zu countries=%d\n", (now_us() - s0) / 1e6, n, nc);
++    libpostal_address_parser_options_t o = libpostal_get_address_parser_default_options();
++    if (argc == 4) { int w = warmup(argv[3], o); if (w < 0) return 2; printf("warmup_addresses=%d file=%s\n", w, argv[3]); }
++    double *ct = calloc((size_t)nc, sizeof *ct); size_t *cn = calloc((size_t)nc, sizeof *cn);
++    if (!ct || !cn) return 2;
++    uint64_t comps = 0; unsigned max_threads = thread_count();
++    for (int p = 1; p <= passes; p++) {
++        memset(ct, 0, (size_t)nc * sizeof *ct); memset(cn, 0, (size_t)nc * sizeof *cn);
++        uint64_t c0 = cpu_us(); double t0 = now_us();
++        for (size_t i = 0; i < n; i++) {
++            double a = now_us();
++            libpostal_address_parser_response_t *r = libpostal_parse_address(addr[i], o);
++            if (!r || !r->num_components) return 3;
++            comps += r->num_components; libpostal_address_parser_response_destroy(r);
++            ct[cid[i]] += now_us() - a; cn[cid[i]]++;
++        }
++        double total = now_us() - t0; uint64_t cpu = cpu_us() - c0;
++        unsigned threads = thread_count(); if (threads > max_threads) max_threads = threads;
++        printf("pass=%d us_per_addr=%.3f addresses_per_second=%.1f cpu_us_per_addr=%.3f threads=%u\n",
++               p, total / n, n * 1e6 / total, (double)cpu / n, threads);
++        if (p == 1 || p == passes) for (int c = 0; c < nc; c++)
++            printf("country pass=%d cc=%s n=%zu us_per_addr=%.3f\n", p, cnames[c], cn[c], ct[c] / cn[c]);
++    }
++    PROCESS_MEMORY_COUNTERS_EX m = { .cb = sizeof m };
++    if (!GetProcessMemoryInfo(GetCurrentProcess(), (PROCESS_MEMORY_COUNTERS *)&m, sizeof m)) return 4;
++    printf("components=%llu peak_working_set_bytes=%zu working_set_bytes=%zu peak_commit_bytes=%zu private_usage_bytes=%zu max_threads_sampled=%u\n",
++           (unsigned long long)comps, (size_t)m.PeakWorkingSetSize, (size_t)m.WorkingSetSize,
++           (size_t)m.PeakPagefileUsage, (size_t)m.PrivateUsage, max_threads);
++    return 0;
++}
+--- /dev/null
++++ research/experiments/026-cross-platform/windows/dump_outputs_win.c
+@@ -0,0 +1,35 @@
++// Prints ordered (label, component) pairs for every address, one JSON line per input. Correctness only, never timed.
++#include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
++#include "libpostal.h"
++static char *read_line(FILE *f) {
++    size_t n = 0, cap = 256; int c; char *s = malloc(cap);
++    if (!s) return NULL;
++    while ((c = fgetc(f)) != EOF && c != '\n') {
++        if (n + 1 == cap) { char *p = realloc(s, cap *= 2); if (!p) { free(s); return NULL; } s = p; }
++        s[n++] = (char)c;
++    }
++    if (c == EOF && n == 0) { free(s); return NULL; }
++    if (n && s[n - 1] == '\r') n--;
++    s[n] = 0; return s;
++}
++static void esc(const char *s) { putchar('"'); for (; *s; s++) { unsigned char c = *s; if (c == '"' || c == '\\') { putchar('\\'); putchar(c); } else if (c < 0x20) printf("\\u%04x", c); else putchar(c); } putchar('"'); }
++int main(int argc, char **argv) {
++    if (argc != 2) return 2;
++    FILE *f = fopen(argv[1], "rb"); char *line;
++    if (!f || !libpostal_setup() || !libpostal_setup_parser()) return 2;
++    libpostal_address_parser_options_t o = libpostal_get_address_parser_default_options();
++    while ((line = read_line(f))) {
++        if (!*line) { free(line); continue; }
++        libpostal_address_parser_response_t *r = libpostal_parse_address(line, o);
++        if (!r) return 3;
++        printf("{\"address\":"); esc(line); printf(",\"components\":[");
++        for (size_t i = 0; i < r->num_components; i++) { if (i) putchar(','); putchar('['); esc(r->labels[i]); putchar(','); esc(r->components[i]); putchar(']'); }
++        printf("]}\n");
++        libpostal_address_parser_response_destroy(r);
++        free(line);
++    }
++    libpostal_teardown_parser(); libpostal_teardown();
++    return 0;
++}
+--- /dev/null
++++ research/experiments/026-cross-platform/windows/configure_candidate.sh
+@@ -0,0 +1,6 @@
++#!/usr/bin/env bash
++set -euo pipefail
++# Re-run from windows/candidate after overlaying windows/sources into src/.
++export CFLAGS='-std=gnu2x -DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE -DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=4'
++printf 'CFLAGS=%s\n' "$CFLAGS"
++./configure --host=x86_64-w64-mingw32 --disable-data-download --datadir=C:/libpostal-profile
+--- /dev/null
++++ research/experiments/026-cross-platform/windows/inspect_binaries.sh
+@@ -0,0 +1,13 @@
++#!/usr/bin/env bash
++set -euo pipefail
++W="$(cd "$(dirname "$0")" && pwd)"
++for variant in original l4 l4_r2; do
++  for target in libpostal-1.dll bench_ext_win_r1.exe dump_outputs_win.exe; do
++    path="$W/artifacts/$variant/$target"
++    file "$path"
++    x86_64-w64-mingw32-objdump -f "$path" | sed -n '1,5p'
++    x86_64-w64-mingw32-objdump -p "$path" | rg '^\s*DLL Name:' || true
++  done
++done
++printf 'mimalloc override symbols:\n'
++x86_64-w64-mingw32-nm -g "$W/mimalloc-build/mimalloc.obj" | rg ' (malloc|free|mi_malloc|mi_free)$' || true
+--- /dev/null
++++ research/experiments/026-cross-platform/windows/hash_artifacts.sh
+@@ -0,0 +1,18 @@
++#!/usr/bin/env bash
++set -euo pipefail
++R="$(cd "$(dirname "$0")/../../../.." && pwd)"
++W=research/experiments/026-cross-platform/windows
++cd "$R"
++printf 'mimalloc_source_commit=%s\n' "$(git -C "$W/mimalloc" rev-parse HEAD)" > "$W/SOURCE_COMMITS.txt"
++printf 'libpostal_source_commit=25099c506612b34b23b1bfe286ca6321fcf06f35\n' >> "$W/SOURCE_COMMITS.txt"
++shasum -a 256 \
++  research/final/021-l4/sources/* \
++  "$W"/sources/* "$W"/src.Makefile.am "$W"/configure_candidate.sh \
++  "$W"/bench_ext_win.c "$W"/dump_outputs_win.c "$W"/inspect_binaries.sh \
++  "$W"/make_port_patch.py "$W"/hash_artifacts.sh "$W"/SOURCE_COMMITS.txt "$W"/port.patch "$W"/README.md \
++  "$W"/artifacts/original/* "$W"/artifacts/l4/* "$W"/artifacts/l4_r2/* \
++  "$W"/mimalloc-build/mimalloc.obj \
++  profiling/golden-v1/all.txt profiling/golden-v1/baseline-outputs.jsonl \
++  profiling/golden-v2-novel/novel.txt profiling/golden-v2-novel/novel.tsv \
++  profiling/golden-v2-novel/baseline-outputs.jsonl profiling/manifest.json \
++  > "$W/SHA256SUMS"
+--- /dev/null
++++ research/experiments/026-cross-platform/windows/make_port_patch.py
+@@ -0,0 +1,27 @@
++#!/usr/bin/env python3
++"""Capture every 026 Windows source change relative to the frozen 021 package."""
++from difflib import unified_diff
++from pathlib import Path
++
++base = Path(__file__).resolve().parent
++repo = base.parents[3]
++pairs = [
++    (repo / "research/final/021-l4/sources/feature_dict.h", base / "sources/feature_dict.h"),
++    (repo / "libpostal/src/Makefile.am", base / "src.Makefile.am"),
++]
++new = [
++    base / "sources/win_vm.h",
++    base / "sources/win_vm.c",
++    base / "bench_ext_win.c",
++    base / "dump_outputs_win.c",
++    base / "configure_candidate.sh",
++    base / "inspect_binaries.sh",
++    base / "hash_artifacts.sh",
++    base / "make_port_patch.py",
++]
++out = []
++for a, b in pairs:
++    out.extend(unified_diff(a.read_text().splitlines(True), b.read_text().splitlines(True), fromfile=str(a.relative_to(repo)), tofile=str(b.relative_to(repo))))
++for b in new:
++    out.extend(unified_diff([], b.read_text().splitlines(True), fromfile="/dev/null", tofile=str(b.relative_to(repo))))
++(base / "port.patch").write_text("".join(out))

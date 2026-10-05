@@ -1,0 +1,85 @@
+-- The C compiler identification is Clang 18.1.3
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- 
+-- Architecture: arm64 (64 bit)
+-- Override standard malloc (MI_OVERRIDE=ON)
+-- Disable assertion checks (MI_DEBUG=OFF)
+-- Enable detailed statistics (MI_STATS=ON)
+-- Enable sampled profiling (MI_PROFILE=ON)
+-- Enable full transparent huge pages support, where purging avoids splitting huge pages (MI_ALLOW_THP=FULL)
+-- Looking for include file execinfo.h
+-- Looking for include file execinfo.h - found
+-- Architecture specific optimization is enabled (with -march=armv8.1-a) (MI_OPT_ARCH=armv8.1)
+-- Performing Test mi_has_libpthread
+-- Performing Test mi_has_libpthread - Success
+-- Performing Test mi_has_librt
+-- Performing Test mi_has_librt - Success
+-- Performing Test mi_has_libatomic
+-- Performing Test mi_has_libatomic - Success
+-- 
+-- Library name     : mimalloc
+-- Version          : 3.5.3
+-- Build type       : release
+-- C Compiler       : /usr/bin/clang
+-- Compiler flags   : -Wall;-Wextra;-Wpedantic;-Wno-unknown-pragmas;-fvisibility=hidden;-Wstrict-prototypes;-Wno-static-in-inline;-mno-outline;-ftls-model=initial-exec;-fno-builtin-malloc;-march=armv8.1-a
+-- Compiler defines : NDEBUG=1;MI_GUARDED=0;MI_STATS=1;MI_PROFILE=1;MI_DEFAULT_ALLOW_THP=2;MI_HAS_EXECINFOH=1;MI_CMAKE_BUILD_TYPE=release;MI_BUILD_RELEASE
+-- Link libraries   : pthread;rt;atomic
+-- Build targets    : shared;static;object
+-- 
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /out/mimalloc-build
+[  2%] Building C object CMakeFiles/mimalloc-obj.dir/src/static.c.o
+[  8%] Building C object CMakeFiles/mimalloc.dir/src/alloc.c.o
+[  8%] Building C object CMakeFiles/mimalloc.dir/src/alloc-aligned.c.o
+[  8%] Building C object CMakeFiles/mimalloc-static.dir/src/alloc.c.o
+[ 10%] Building C object CMakeFiles/mimalloc.dir/src/alloc-posix.c.o
+[ 13%] Building C object CMakeFiles/mimalloc.dir/src/arena.c.o
+[ 15%] Building C object CMakeFiles/mimalloc-static.dir/src/alloc-aligned.c.o
+[ 17%] Building C object CMakeFiles/mimalloc.dir/src/bitmap.c.o
+[ 19%] Building C object CMakeFiles/mimalloc-static.dir/src/alloc-posix.c.o
+[ 21%] Building C object CMakeFiles/mimalloc-static.dir/src/arena.c.o
+[ 23%] Building C object CMakeFiles/mimalloc.dir/src/heap.c.o
+[ 26%] Building C object CMakeFiles/mimalloc.dir/src/init.c.o
+[ 28%] Building C object CMakeFiles/mimalloc.dir/src/libc.c.o
+[ 30%] Building C object CMakeFiles/mimalloc.dir/src/options.c.o
+[ 34%] Building C object CMakeFiles/mimalloc-static.dir/src/bitmap.c.o
+[ 34%] Building C object CMakeFiles/mimalloc.dir/src/os.c.o
+[ 36%] Building C object CMakeFiles/mimalloc.dir/src/page.c.o
+[ 39%] Building C object CMakeFiles/mimalloc.dir/src/page-map.c.o
+[ 41%] Building C object CMakeFiles/mimalloc-static.dir/src/heap.c.o
+[ 43%] Building C object CMakeFiles/mimalloc.dir/src/prim/prim.c.o
+[ 45%] Building C object CMakeFiles/mimalloc-static.dir/src/init.c.o
+[ 47%] Building C object CMakeFiles/mimalloc-static.dir/src/libc.c.o
+[ 50%] Building C object CMakeFiles/mimalloc.dir/src/prim/prim-tls.c.o
+[ 52%] Building C object CMakeFiles/mimalloc-static.dir/src/options.c.o
+[ 54%] Building C object CMakeFiles/mimalloc.dir/src/random.c.o
+[ 56%] Building C object CMakeFiles/mimalloc-static.dir/src/os.c.o
+[ 58%] Building C object CMakeFiles/mimalloc-static.dir/src/page.c.o
+[ 60%] Building C object CMakeFiles/mimalloc.dir/src/sample-guarded.c.o
+[ 63%] Building C object CMakeFiles/mimalloc.dir/src/sample-profile.c.o
+[ 65%] Building C object CMakeFiles/mimalloc-static.dir/src/page-map.c.o
+[ 67%] Building C object CMakeFiles/mimalloc.dir/src/stats.c.o
+[ 69%] Building C object CMakeFiles/mimalloc-static.dir/src/prim/prim.c.o
+[ 71%] Building C object CMakeFiles/mimalloc-static.dir/src/prim/prim-tls.c.o
+[ 73%] Building C object CMakeFiles/mimalloc-static.dir/src/random.c.o
+[ 76%] Building C object CMakeFiles/mimalloc-static.dir/src/sample-guarded.c.o
+[ 78%] Building C object CMakeFiles/mimalloc-static.dir/src/sample-profile.c.o
+[ 80%] Building C object CMakeFiles/mimalloc-static.dir/src/stats.c.o
+[ 82%] Building C object CMakeFiles/mimalloc-static.dir/src/subproc.c.o
+[ 84%] Building C object CMakeFiles/mimalloc-static.dir/src/theap.c.o
+[ 86%] Building C object CMakeFiles/mimalloc-static.dir/src/threadlocal.c.o
+[ 89%] Building C object CMakeFiles/mimalloc.dir/src/subproc.c.o
+[ 89%] Built target mimalloc-obj
+[ 91%] Building C object CMakeFiles/mimalloc.dir/src/theap.c.o
+[ 93%] Building C object CMakeFiles/mimalloc.dir/src/threadlocal.c.o
+[ 95%] Linking C shared library libmimalloc.so
+[ 95%] Built target mimalloc
+[ 97%] Linking C static library libmimalloc.a
+[ 97%] Built target mimalloc-static
+[100%] Generating mimalloc.o
+[100%] Built target mimalloc-obj-target

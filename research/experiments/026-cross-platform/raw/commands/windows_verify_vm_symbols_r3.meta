@@ -1,0 +1,5 @@
+start=2026-10-01T18:13:31-07:00
+cwd=/Users/kyle/Desktop/HW/CSCI 201 Reserach
+argv: <bash> <-lc> <set\ -euo\ pipefail\;\ W=research/experiments/026-cross-platform/windows\;\ x86_64-w64-mingw32-nm\ -g\ \"\$W/artifacts/l4_r3/libpostal-1.dll\"\ \|\ rg\ \"\ fd_win_\(reserve\|commit\|release\|now\)\$\"\;\ x86_64-w64-mingw32-objdump\ -p\ \"\$W/artifacts/l4_r3/libpostal-1.dll\"\ \|\ rg\ \"\ QueryPerformance\(Counter\|Frequency\)\$\|\ Virtual\(Alloc\|Free\)\$\">
+exit=0
+end=2026-10-01T18:13:31-07:00

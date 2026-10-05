@@ -1,0 +1,12 @@
+--- ../114-trans-rows-prefetch/sources/crf.c	2026-10-04 00:42:52
++++ sources/crf.c	2026-10-04 01:21:46
+@@ -361,6 +361,9 @@
+ static const int8_t crf_ik_role_arity[2][6] = {{1, 1, 1, 1, 2, 2}, {1, 1, 0, 0, 0, 0}};
+ 
+ // Called once after the vocabulary dictionary exists. Any doubt leaves the dictionaries of `h` in place (crf_ik_active stays 0).
++#ifdef EXP_CP_IDS
++const void *crf_state_dict_of(crf_t *c) { return c == NULL ? NULL : (const void *)c->state_dict; }   // 119: address_parser.c sees the original crf.h
++#endif
+ bool crf_int_keys_enable(crf_t *crf, const feature_dict_t *vocab) {
+     if (getenv("CRF_INT_KEYS_DISABLE") != NULL || crf == NULL || vocab == NULL || crf->state_dict == NULL || crf->trans_dict == NULL) return false;
+     feature_dict_t *old[2] = {(feature_dict_t *)crf->state_dict, (feature_dict_t *)crf->trans_dict}, *nd[2] = {NULL, NULL};

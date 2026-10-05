@@ -1,0 +1,20 @@
+
+v1-all
+| variant | warm median µs | P10 µs | CPU median µs | cold median µs | peak max bytes |
+|---|---:|---:|---:|---:|---:|
+| control | 8.155 | 7.869 | 8.147 | 9.079 | 2470709576 |
+| fixes | 8.023 | 7.762 | 8.017 | 8.825 | 2470693168 |
+trial=1 control_us=8.593 fixes_us=9.378 fixes_speedup=0.91629x
+trial=2 control_us=8.052 fixes_us=8.041 fixes_speedup=1.00137x
+trial=3 control_us=8.212 fixes_us=7.812 fixes_speedup=1.05120x
+paired_median_speedup=1.00137x range=0.91629..1.05120x
+
+novel
+| variant | warm median µs | P10 µs | CPU median µs | cold median µs | peak max bytes |
+|---|---:|---:|---:|---:|---:|
+| control | 7.953 | 7.785 | 7.951 | 7.981 | 2470709576 |
+| fixes | 7.989 | 7.808 | 7.983 | 8.160 | 2470709576 |
+trial=1 control_us=7.970 fixes_us=8.013 fixes_speedup=0.99463x
+trial=2 control_us=7.944 fixes_us=8.025 fixes_speedup=0.98991x
+trial=3 control_us=7.947 fixes_us=7.944 fixes_speedup=1.00038x
+paired_median_speedup=0.99463x range=0.98991..1.00038x

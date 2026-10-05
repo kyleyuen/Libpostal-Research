@@ -1,0 +1,38 @@
+--- ../119-component-phrase-ids/sources/address_parser.c	2026-10-04 01:21:46
++++ sources/address_parser.c	2026-10-04 01:54:26
+@@ -1707,13 +1707,20 @@
+ #endif
+ #ifdef EXP_CONST_IDS
+ extern uint32_t crf_const_ids[2]; extern int crf_const_ready;
++#ifdef EXP_INT_KEYS_VERIFY
++// 122: the int-key verifier pairs every integer push with its text key; constant pushes now record theirs too (crf_const_ids: 0 "bias", 1 "postcode have context").
++#define AP_CONST(a, q) (crf_ik_active && crf_features_accumulate && crf_const_ready ? (crf_ik_push((a), 0, (1ULL << 63) | crf_const_ids[(q)]), \
++    ap_vstr_const((q)), true) : false)
++#else
+ #define AP_CONST(a, q) (crf_ik_active && crf_features_accumulate && crf_const_ready ? (crf_ik_push((a), 0, (1ULL << 63) | crf_const_ids[(q)]), true) : false)
++#endif
+ #else
+ #define AP_CONST(a, q) false
+ #endif
+ void crf_ik_push(cstring_array *a, int which, uint64_t key);
+ #ifdef EXP_INT_KEYS_VERIFY
+ extern cstring_array *crf_ik_verify_str[2];
++static inline void ap_vstr_const(int q) { cstring_array_add_string(crf_ik_verify_str[0], q == 0 ? "bias" : "postcode have context"); }   // 122
+ #endif
+ 
+ // canon() of one value part as feature_array_add will write it: a non-last part loses one trailing '|' (strip_separator).
+@@ -1957,6 +1964,14 @@
+             cp_len[component_phrase_index] == component_phrase_string_len && component_phrase_string != NULL) {
+             const uint32_t *q = cp_pool + cp_start[component_phrase_index]; uint32_t qn = cp_cnt[component_phrase_index];
+             for (uint32_t k = 0; k < qn; k++) crf_ik_push(features, 0, (1ULL << 63) | q[k]);
++#ifdef EXP_INT_KEYS_VERIFY
++            {   // 122: record the text key of every pushed id for the int-key verifier (the found keys of ap_cp_emit, in order, as at load)
++                static cstring_array *vv = NULL; if (vv == NULL) vv = cstring_array_new(); cstring_array_clear(vv);
++                ap_cp_emit(vv, component_phrase_types, most_common, component_phrase_string, component_phrase_string_len);
++                for (uint32_t k = 0; k < vv->indices->n; k++) { char *ks = cstring_array_get_string(vv, k); uint32_t id;
++                    if (fd_lookup(cp_dict, ks, strlen(ks), &id)) cstring_array_add_string(crf_ik_verify_str[0], ks); }
++            }
++#endif
+ #ifdef EXP_CP_IDS_VERIFY
+             cp_verify(component_phrase_types, most_common, component_phrase_string, component_phrase_string_len, q, qn);
+ #endif

@@ -1,0 +1,34 @@
+--- ../101-prefix-suffix-flags/sources/address_parser.c	2026-10-03 22:18:32
++++ sources/address_parser.c	2026-10-04 00:12:18
+@@ -251,6 +251,16 @@
+ #endif
+     }
+     trie_ftt_tab = tab; trie_ftt_trie = parser->phrases;
++#ifdef EXP_PDT
++    if (parser->postal_codes != NULL) {   // 111: every ASCII digit string of 1..4 bytes walked in the postcode trie
++        extern const trie_t *trie_pdt_trie; extern uint64_t trie_pdt_tab[11110]; size_t k = 0, nz = 0; char d[5];
++        for (int len = 1; len <= 4; len++) { uint32_t lim = 1; for (int q = 0; q < len; q++) lim *= 10;
++            for (uint32_t v = 0; v < lim; v++) { uint32_t x = v; for (int q = len - 1; q >= 0; q--) { d[q] = (char)('0' + x % 10); x /= 10; }
++                trie_pdt_tab[k] = trie_ftt_walk(parser->postal_codes, d, (size_t)len); nz += trie_pdt_tab[k] != 0; k++; } }
++        trie_pdt_trie = parser->postal_codes;
++        if (getenv("FTT_VERBOSE") != NULL) fprintf(stderr, "PDT entries=%zu of %zu\n", nz, k);
++    }
++#endif
+     if (getenv("FTT_VERBOSE") != NULL) fprintf(stderr, "FTT entries=%zu of %zu slots, table=%.1f MB\n", n, V, V * 8.0 / 1048576);
+ }
+ #endif
+@@ -1165,6 +1175,14 @@
+     int64_array *postal_code_phrase_memberships = context->postal_code_phrase_memberships;
+ 
+     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
++#ifdef EXP_PDT_VERIFY
++    {   extern const trie_t *trie_pdt_trie; const trie_t *keep = trie_pdt_trie; trie_pdt_trie = NULL;   // re-run without the table and compare
++        static phrase_array *pdv = NULL; if (pdv == NULL) pdv = phrase_array_new(); phrase_array_clear(pdv);
++        bool hv = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &pdv); trie_pdt_trie = keep;
++        if (hv != have_postal_code_phrases || pdv->n != postal_code_phrases->n || (pdv->n && memcmp(pdv->a, postal_code_phrases->a, pdv->n * sizeof *pdv->a))) { fprintf(stderr, "EXP_PDT_VERIFY search MISMATCH\n"); abort(); }
++        static unsigned long long nv = 0; if ((++nv & 0x3FFFF) == 0) fprintf(stderr, "EXP_PDT_VERIFY %llu searches ok\n", nv);
++    }
++#endif
+     token_phrase_memberships(postal_code_phrases, postal_code_phrase_memberships, num_tokens);
+ #if defined(EXP_PC_PREFETCH) && defined(EXP_PC_COMPRESS)
+     // 077: hint only. Feature generation tests each postal-code phrase's postcode-context row; prefetch its row-index entry, then read it and prefetch the row start.

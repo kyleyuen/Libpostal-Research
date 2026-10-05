@@ -1,0 +1,18 @@
+median over 28 passes in 3 runs (development.txt, 10,308 addresses, 1 thread)
+library_call us/addr: median 35.47 min 33.44 max 40.53
+staged_timed us/addr: median 31.69 | staged_untimed (20 passes) 30.72 | staged_interleaved_untimed (10 passes) 35.20
+stage                                 us/addr   share
+trie lookup: state features            11.242   35.7%
+feature generation                      5.575   17.7%
+context_fill (phrase/dict search)       3.900   12.4%
+trie lookup: prev-tag features          2.712    8.6%
+normalize                               2.563    8.1%
+crf ctx reset+trans copy                1.316    4.2%
+weight accumulate: state                1.293    4.1%
+weight accumulate: prev-tag             0.825    2.6%
+viterbi                                 0.704    2.2%
+tokenize+build tokens                   0.548    1.7%
+response build                          0.509    1.6%
+label strings                           0.177    0.6%
+free temporaries+response               0.148    0.5%
+sum of stage medians 31.51

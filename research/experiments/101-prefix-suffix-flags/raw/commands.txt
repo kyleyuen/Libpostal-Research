@@ -1,0 +1,9 @@
+# 2026-10-03T22:18:44-0700 EXTRA_SW="$(cat raw/switches_psv.txt)" tools/build_cc.sh psv clang llvm "-O2 -flto" "-O1" "-flto" /opt/homebrew/opt/mimalloc/lib/mimalloc.o
+# 2026-10-03T22:19:16-0700 EXTRA_SW="$(cat raw/switches_psf.txt)" tools/build_cc.sh psf clang llvm "-O2 -flto" "-O1" "-flto" /opt/homebrew/opt/mimalloc/lib/mimalloc.o
+# 2026-10-03T22:19:47-0700 tools/verify.sh psv
+# 2026-10-03T22:20:23-0700 tools/verify.sh psf
+# 2026-10-03T22:21:04-0700 tools/screen.sh (golden-v8 fetch running concurrently, network only)
+# 2026-10-03T22:26:31-0700 tools/screen2.sh (repeat)
+# 2026-10-03T22:32:00-0700 EXTRA_SW="-DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=3 -DEXP_VITERBI20 -DEXP_TRANS_ALIAS -DEXP_PC_COMPRESS -DEXP_FTT -DEXP_FTT_ROLE_PREFETCH -DEXP_NAME_BYTE -DEXP_LETTERS_FAST -DEXP_FA_LEN -DEXP_DIGITS_FAST -DEXP_FTT_PF1 -DEXP_FTT_PF2 -DEXP_PC_PREFETCH -DEXP_VITERBI_MAXONLY -DEXP_VITERBI_FMAX -DEXP_NORM_PAIR -DEXP_STAGE_STATS" tools/build_cc.sh nss clang llvm ...; link tools/bench_split_vt.c
+# 2026-10-03T22:32:33-0700 EXTRA_SW="-DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=3 -DEXP_VITERBI20 -DEXP_TRANS_ALIAS -DEXP_PC_COMPRESS -DEXP_FTT -DEXP_FTT_ROLE_PREFETCH -DEXP_NAME_BYTE -DEXP_LETTERS_FAST -DEXP_FA_LEN -DEXP_DIGITS_FAST -DEXP_FTT_PF1 -DEXP_FTT_PF2 -DEXP_PC_PREFETCH -DEXP_VITERBI_MAXONLY -DEXP_VITERBI_FMAX -DEXP_NORM_PAIR -DEXP_PS_FLAGS -DEXP_STAGE_STATS" tools/build_cc.sh fss clang llvm ...; link tools/bench_split_vt.c
+# 2026-10-03T22:33:05-0700 split runs nss/fss alternating, dev + osm, 3 passes, 3 rounds

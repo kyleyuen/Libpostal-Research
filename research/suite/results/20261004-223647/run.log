@@ -1,0 +1,140 @@
+2026-10-04T22:36:47-0700 === stage integrity
+2026-10-04T22:36:48-0700 integrity: 11 datasets (110,551 addresses), 2 variants, 7 model files hashed
+2026-10-04T22:36:48-0700 === stage correctness
+2026-10-04T22:36:48-0700 correctness: 13 jobs, 3 in parallel
+2026-10-04T22:37:01-0700   cpi dump golden-v1: exit 0 (14s)
+2026-10-04T22:37:01-0700   cpi dump novel: exit 0 (14s)
+2026-10-04T22:37:01-0700   cpi dump osm-v3: exit 0 (13s)
+2026-10-04T22:37:14-0700   cpi dump unseen-v4: exit 0 (13s)
+2026-10-04T22:37:14-0700   cpi dump unseen-v5: exit 0 (13s)
+2026-10-04T22:37:14-0700   cpi dump unseen-v6: exit 0 (13s)
+2026-10-04T22:37:27-0700   cpi dump unseen-v7: exit 0 (13s)
+2026-10-04T22:37:27-0700   cpi dump unseen-v8: exit 0 (13s)
+2026-10-04T22:37:28-0700   cpi dump unseen-v9: exit 0 (13s)
+2026-10-04T22:37:40-0700   cpi dump unseen-v10: exit 0 (13s)
+2026-10-04T22:37:40-0700   cpi dump unseen-v11: exit 0 (13s)
+2026-10-04T22:37:57-0700   cpi fuzz s1: exit 0 (29s)
+2026-10-04T22:38:09-0700   cpi fuzz s2: exit 0 (29s)
+2026-10-04T22:38:09-0700 correctness: 11 dumps, 2 fuzz runs, mismatches: none
+2026-10-04T22:38:09-0700 === stage timing
+2026-10-04T22:39:09-0700 settle: load 2.44 < 2.5 after 60s
+2026-10-04T22:39:24-0700 timing 1/110 golden-v1__cpi__r1 exit 0 load 2.81
+2026-10-04T22:39:39-0700 timing 2/110 golden-v1__original__r1 exit 0 load 2.76
+2026-10-04T22:39:55-0700 timing 3/110 novel__cpi__r1 exit 0 load 2.76
+2026-10-04T22:40:10-0700 timing 4/110 novel__original__r1 exit 0 load 2.37
+2026-10-04T22:40:26-0700 timing 5/110 osm-v3__cpi__r1 exit 0 load 2.18
+2026-10-04T22:40:36-0700 timing 6/110 osm-v3__original__r1 exit 0 load 2.24
+2026-10-04T22:40:53-0700 timing 7/110 unseen-v4__cpi__r1 exit 0 load 2.40
+2026-10-04T22:41:03-0700 timing 8/110 unseen-v4__original__r1 exit 0 load 2.57
+2026-10-04T22:41:18-0700 timing 9/110 unseen-v5__cpi__r1 exit 0 load 2.81
+2026-10-04T22:41:28-0700 timing 10/110 unseen-v5__original__r1 exit 0 load 2.68
+2026-10-04T22:41:44-0700 timing 11/110 unseen-v6__cpi__r1 exit 0 load 2.47
+2026-10-04T22:41:54-0700 timing 12/110 unseen-v6__original__r1 exit 0 load 2.71
+2026-10-04T22:42:10-0700 timing 13/110 unseen-v7__cpi__r1 exit 0 load 2.79
+2026-10-04T22:42:19-0700 timing 14/110 unseen-v7__original__r1 exit 0 load 2.82
+2026-10-04T22:42:35-0700 timing 15/110 unseen-v8__cpi__r1 exit 0 load 2.62
+2026-10-04T22:42:45-0700 timing 16/110 unseen-v8__original__r1 exit 0 load 2.37
+2026-10-04T22:43:01-0700 timing 17/110 unseen-v9__cpi__r1 exit 0 load 2.89
+2026-10-04T22:43:11-0700 timing 18/110 unseen-v9__original__r1 exit 0 load 2.68
+2026-10-04T22:43:27-0700 timing 19/110 unseen-v10__cpi__r1 exit 0 load 2.52
+2026-10-04T22:43:36-0700 timing 20/110 unseen-v10__original__r1 exit 0 load 2.98
+2026-10-04T22:43:52-0700 timing 21/110 unseen-v11__cpi__r1 exit 0 load 2.85
+2026-10-04T22:44:02-0700 timing 22/110 unseen-v11__original__r1 exit 0 load 2.65
+2026-10-04T22:44:17-0700 timing 23/110 golden-v1__original__r2 exit 0 load 3.42
+2026-10-04T22:44:34-0700 timing 24/110 golden-v1__cpi__r2 exit 0 load 3.17
+2026-10-04T22:44:49-0700 timing 25/110 novel__original__r2 exit 0 load 3.30
+2026-10-04T22:45:06-0700 timing 26/110 novel__cpi__r2 exit 0 load 3.19
+2026-10-04T22:45:17-0700 timing 27/110 osm-v3__original__r2 exit 0 load 3.08
+2026-10-04T22:45:33-0700 timing 28/110 osm-v3__cpi__r2 exit 0 load 2.92
+2026-10-04T22:45:43-0700 timing 29/110 unseen-v4__original__r2 exit 0 load 2.63
+2026-10-04T22:45:59-0700 timing 30/110 unseen-v4__cpi__r2 exit 0 load 2.62
+2026-10-04T22:46:09-0700 timing 31/110 unseen-v5__original__r2 exit 0 load 2.52
+2026-10-04T22:46:25-0700 timing 32/110 unseen-v5__cpi__r2 exit 0 load 2.40
+2026-10-04T22:46:34-0700 timing 33/110 unseen-v6__original__r2 exit 0 load 2.43
+2026-10-04T22:46:50-0700 timing 34/110 unseen-v6__cpi__r2 exit 0 load 2.19
+2026-10-04T22:47:00-0700 timing 35/110 unseen-v7__original__r2 exit 0 load 2.93
+2026-10-04T22:47:16-0700 timing 36/110 unseen-v7__cpi__r2 exit 0 load 2.65
+2026-10-04T22:47:27-0700 timing 37/110 unseen-v8__original__r2 exit 0 load 3.06
+2026-10-04T22:47:43-0700 timing 38/110 unseen-v8__cpi__r2 exit 0 load 3.07
+2026-10-04T22:47:53-0700 timing 39/110 unseen-v9__original__r2 exit 0 load 2.68
+2026-10-04T22:48:09-0700 timing 40/110 unseen-v9__cpi__r2 exit 0 load 2.55
+2026-10-04T22:48:19-0700 timing 41/110 unseen-v10__original__r2 exit 0 load 2.77
+2026-10-04T22:48:35-0700 timing 42/110 unseen-v10__cpi__r2 exit 0 load 2.67
+2026-10-04T22:48:44-0700 timing 43/110 unseen-v11__original__r2 exit 0 load 2.88
+2026-10-04T22:49:00-0700 timing 44/110 unseen-v11__cpi__r2 exit 0 load 2.46
+2026-10-04T22:49:17-0700 timing 45/110 golden-v1__cpi__r3 exit 0 load 2.27
+2026-10-04T22:49:31-0700 timing 46/110 golden-v1__original__r3 exit 0 load 2.16
+2026-10-04T22:49:48-0700 timing 47/110 novel__cpi__r3 exit 0 load 2.56
+2026-10-04T22:50:03-0700 timing 48/110 novel__original__r3 exit 0 load 2.15
+2026-10-04T22:50:19-0700 timing 49/110 osm-v3__cpi__r3 exit 0 load 2.12
+2026-10-04T22:50:30-0700 timing 50/110 osm-v3__original__r3 exit 0 load 2.25
+2026-10-04T22:50:46-0700 timing 51/110 unseen-v4__cpi__r3 exit 0 load 2.18
+2026-10-04T22:50:56-0700 timing 52/110 unseen-v4__original__r3 exit 0 load 1.92
+2026-10-04T22:51:12-0700 timing 53/110 unseen-v5__cpi__r3 exit 0 load 2.20
+2026-10-04T22:51:22-0700 timing 54/110 unseen-v5__original__r3 exit 0 load 2.17
+2026-10-04T22:51:38-0700 timing 55/110 unseen-v6__cpi__r3 exit 0 load 2.19
+2026-10-04T22:51:48-0700 timing 56/110 unseen-v6__original__r3 exit 0 load 2.47
+2026-10-04T22:52:04-0700 timing 57/110 unseen-v7__cpi__r3 exit 0 load 2.52
+2026-10-04T22:52:14-0700 timing 58/110 unseen-v7__original__r3 exit 0 load 2.97
+2026-10-04T22:52:30-0700 timing 59/110 unseen-v8__cpi__r3 exit 0 load 2.79
+2026-10-04T22:52:40-0700 timing 60/110 unseen-v8__original__r3 exit 0 load 2.51
+2026-10-04T22:52:56-0700 timing 61/110 unseen-v9__cpi__r3 exit 0 load 2.68
+2026-10-04T22:53:06-0700 timing 62/110 unseen-v9__original__r3 exit 0 load 2.49
+2026-10-04T22:53:22-0700 timing 63/110 unseen-v10__cpi__r3 exit 0 load 2.46
+2026-10-04T22:53:31-0700 timing 64/110 unseen-v10__original__r3 exit 0 load 2.47
+2026-10-04T22:53:47-0700 timing 65/110 unseen-v11__cpi__r3 exit 0 load 2.28
+2026-10-04T22:53:56-0700 timing 66/110 unseen-v11__original__r3 exit 0 load 2.30
+2026-10-04T22:54:11-0700 timing 67/110 golden-v1__original__r4 exit 0 load 2.37
+2026-10-04T22:54:28-0700 timing 68/110 golden-v1__cpi__r4 exit 0 load 2.13
+2026-10-04T22:54:43-0700 timing 69/110 novel__original__r4 exit 0 load 2.47
+2026-10-04T22:55:00-0700 timing 70/110 novel__cpi__r4 exit 0 load 2.59
+2026-10-04T22:55:11-0700 timing 71/110 osm-v3__original__r4 exit 0 load 2.58
+2026-10-04T22:55:27-0700 timing 72/110 osm-v3__cpi__r4 exit 0 load 2.37
+2026-10-04T22:55:38-0700 timing 73/110 unseen-v4__original__r4 exit 0 load 2.07
+2026-10-04T22:55:54-0700 timing 74/110 unseen-v4__cpi__r4 exit 0 load 2.34
+2026-10-04T22:56:04-0700 timing 75/110 unseen-v5__original__r4 exit 0 load 2.22
+2026-10-04T22:56:20-0700 timing 76/110 unseen-v5__cpi__r4 exit 0 load 2.50
+2026-10-04T22:56:31-0700 timing 77/110 unseen-v6__original__r4 exit 0 load 2.65
+2026-10-04T22:56:47-0700 timing 78/110 unseen-v6__cpi__r4 exit 0 load 2.63
+2026-10-04T22:56:57-0700 timing 79/110 unseen-v7__original__r4 exit 0 load 3.06
+2026-10-04T22:57:13-0700 timing 80/110 unseen-v7__cpi__r4 exit 0 load 3.24
+2026-10-04T22:57:23-0700 timing 81/110 unseen-v8__original__r4 exit 0 load 3.13
+2026-10-04T22:57:39-0700 timing 82/110 unseen-v8__cpi__r4 exit 0 load 2.73
+2026-10-04T22:57:48-0700 timing 83/110 unseen-v9__original__r4 exit 0 load 2.46
+2026-10-04T22:58:04-0700 timing 84/110 unseen-v9__cpi__r4 exit 0 load 2.43
+2026-10-04T22:58:14-0700 timing 85/110 unseen-v10__original__r4 exit 0 load 2.21
+2026-10-04T22:58:30-0700 timing 86/110 unseen-v10__cpi__r4 exit 0 load 2.28
+2026-10-04T22:58:39-0700 timing 87/110 unseen-v11__original__r4 exit 0 load 2.47
+2026-10-04T22:58:55-0700 timing 88/110 unseen-v11__cpi__r4 exit 0 load 2.37
+2026-10-04T22:59:12-0700 timing 89/110 golden-v1__cpi__r5 exit 0 load 2.67
+2026-10-04T22:59:28-0700 timing 90/110 golden-v1__original__r5 exit 0 load 4.12
+2026-10-04T22:59:44-0700 timing 91/110 novel__cpi__r5 exit 0 load 3.87
+2026-10-04T22:59:59-0700 timing 92/110 novel__original__r5 exit 0 load 3.98
+2026-10-04T23:00:15-0700 timing 93/110 osm-v3__cpi__r5 exit 0 load 3.46
+2026-10-04T23:00:26-0700 timing 94/110 osm-v3__original__r5 exit 0 load 3.16
+2026-10-04T23:00:42-0700 timing 95/110 unseen-v4__cpi__r5 exit 0 load 2.89
+2026-10-04T23:00:53-0700 timing 96/110 unseen-v4__original__r5 exit 0 load 2.85
+2026-10-04T23:01:09-0700 timing 97/110 unseen-v5__cpi__r5 exit 0 load 2.84
+2026-10-04T23:01:19-0700 timing 98/110 unseen-v5__original__r5 exit 0 load 2.55
+2026-10-04T23:01:36-0700 timing 99/110 unseen-v6__cpi__r5 exit 0 load 2.50
+2026-10-04T23:01:46-0700 timing 100/110 unseen-v6__original__r5 exit 0 load 2.73
+2026-10-04T23:02:02-0700 timing 101/110 unseen-v7__cpi__r5 exit 0 load 2.94
+2026-10-04T23:02:11-0700 timing 102/110 unseen-v7__original__r5 exit 0 load 2.86
+2026-10-04T23:02:27-0700 timing 103/110 unseen-v8__cpi__r5 exit 0 load 2.59
+2026-10-04T23:02:37-0700 timing 104/110 unseen-v8__original__r5 exit 0 load 2.57
+2026-10-04T23:02:53-0700 timing 105/110 unseen-v9__cpi__r5 exit 0 load 2.20
+2026-10-04T23:03:04-0700 timing 106/110 unseen-v9__original__r5 exit 0 load 2.24
+2026-10-04T23:03:20-0700 timing 107/110 unseen-v10__cpi__r5 exit 0 load 2.42
+2026-10-04T23:03:29-0700 timing 108/110 unseen-v10__original__r5 exit 0 load 2.20
+2026-10-04T23:03:45-0700 timing 109/110 unseen-v11__cpi__r5 exit 0 load 1.87
+2026-10-04T23:03:55-0700 timing 110/110 unseen-v11__original__r5 exit 0 load 1.89
+2026-10-04T23:03:57-0700 === stage memory
+2026-10-04T23:04:18-0700 memory: original steady footprint 2492 MB
+2026-10-04T23:04:33-0700 memory: cpi steady footprint 1927 MB
+2026-10-04T23:04:33-0700 === stage threads
+2026-10-04T23:04:51-0700 threads: original [1, 1, 1, 1, 1, 1]
+2026-10-04T23:05:09-0700 threads: cpi [1, 1, 1, 1, 1, 1]
+2026-10-04T23:05:09-0700 === stage report
+2026-10-04T23:05:10-0700 report: results.json and report.md written
+2026-10-04T23:05:10-0700 done: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261004-223647
+2026-10-04T23:07:24-0700 report: results.json and report.md written

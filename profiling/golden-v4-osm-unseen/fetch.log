@@ -1,0 +1,100 @@
+ok Boston 400
+ok San Francisco 400
+ok Philadelphia 400
+ok Denver 400
+retry Minneapolis 0 <HTTPError 504: 'Gateway Timeout'>
+ok Minneapolis 398
+ok Vancouver 400
+retry Ottawa 0 <HTTPError 504: 'Gateway Timeout'>
+ok Ottawa 400
+ok Edinburgh 400
+retry Bristol 0 <HTTPError 504: 'Gateway Time-out'>
+retry Bristol 1 <HTTPError 504: 'Gateway Timeout'>
+retry Bristol 2 <HTTPError 504: 'Gateway Time-out'>
+retry Bristol 3 <HTTPError 504: 'Gateway Timeout'>
+ok Cork 400
+ok Brisbane 400
+ok Perth 400
+retry Wellington 0 <HTTPError 504: 'Gateway Timeout'>
+ok Wellington 400
+retry Johannesburg 0 <HTTPError 504: 'Gateway Timeout'>
+ok Johannesburg 114
+ok Marseille 256
+retry Toulouse 0 <HTTPError 504: 'Gateway Timeout'>
+ok Toulouse 400
+ok Lille 302
+ok Antwerp 400
+retry Cologne 0 <HTTPError 504: 'Gateway Timeout'>
+retry Cologne 1 <HTTPError 504: 'Gateway Timeout'>
+retry Cologne 2 <HTTPError 504: 'Gateway Time-out'>
+ok Cologne 400
+ok Frankfurt 400
+retry Leipzig 0 <HTTPError 504: 'Gateway Timeout'>
+ok Leipzig 400
+ok Graz 400
+ok Geneva 400
+retry Utrecht 0 <HTTPError 504: 'Gateway Time-out'>
+ok Utrecht 400
+ok Aarhus 400
+retry Gothenburg 0 <HTTPError 504: 'Gateway Timeout'>
+ok Gothenburg 400
+ok Bergen 400
+retry Tampere 0 <HTTPError 504: 'Gateway Timeout'>
+ok Tampere 400
+ok Gdansk 400
+ok Wroclaw 400
+retry Brno 0 <HTTPError 504: 'Gateway Time-out'>
+ok Brno 400
+retry Kosice 0 <HTTPError 504: 'Gateway Time-out'>
+ok Kosice 400
+ok Debrecen 400
+retry Split 0 <HTTPError 504: 'Gateway Time-out'>
+ok Split 400
+ok Turin 400
+retry Naples 0 <HTTPError 504: 'Gateway Timeout'>
+ok Naples 218
+ok Valencia 400
+retry Seville 0 <HTTPError 504: 'Gateway Timeout'>
+ok Seville 400
+retry Porto 0 <HTTPError 504: 'Gateway Time-out'>
+retry Porto 1 <HTTPError 504: 'Gateway Timeout'>
+retry Porto 2 <HTTPError 504: 'Gateway Timeout'>
+retry Porto 3 <HTTPError 504: 'Gateway Timeout'>
+retry Thessaloniki 0 <HTTPError 504: 'Gateway Time-out'>
+retry Thessaloniki 1 <HTTPError 504: 'Gateway Timeout'>
+retry Thessaloniki 2 <HTTPError 504: 'Gateway Timeout'>
+ok Thessaloniki 400
+ok Cluj-Napoca 400
+retry Plovdiv 0 <HTTPError 504: 'Gateway Timeout'>
+ok Plovdiv 400
+ok Izmir 66
+ok Lviv 400
+ok Saint Petersburg 400
+retry Kaunas 0 <HTTPError 504: 'Gateway Timeout'>
+retry Kaunas 1 <HTTPError 504: 'Gateway Timeout'>
+ok Kaunas 400
+ok Tartu 400
+retry Rio de Janeiro 0 <HTTPError 504: 'Gateway Timeout'>
+ok Rio de Janeiro 400
+ok Cordoba 400
+retry Guadalajara 0 <HTTPError 504: 'Gateway Timeout'>
+ok Guadalajara 269
+ok Medellin 69
+retry Lima 0 <HTTPError 504: 'Gateway Time-out'>
+ok Lima 376
+retry Montevideo 0 <HTTPError 504: 'Gateway Timeout'>
+ok Montevideo 400
+ok Nagoya 0
+retry Fukuoka 0 <HTTPError 504: 'Gateway Timeout'>
+ok Fukuoka 33
+retry Kaohsiung 0 <HTTPError 504: 'Gateway Time-out'>
+retry Kaohsiung 1 <HTTPError 504: 'Gateway Timeout'>
+retry Kaohsiung 2 <HTTPError 504: 'Gateway Timeout'>
+ok Kaohsiung 400
+retry Busan 0 <HTTPError 504: 'Gateway Timeout'>
+ok Busan 71
+retry Haifa 0 <HTTPError 504: 'Gateway Time-out'>
+retry Haifa 1 <HTTPError 504: 'Gateway Timeout'>
+retry Haifa 2 <HTTPError 504: 'Gateway Timeout'>
+ok Haifa 349
+fetch exit 0

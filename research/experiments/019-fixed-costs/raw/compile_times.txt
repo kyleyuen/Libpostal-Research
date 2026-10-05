@@ -1,0 +1,37 @@
+u2p: library -O2 5s, scanner -O1 0s, link 1s, total 6s
+r1_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+r1: library -O2 -flto 4s, scanner -O1 0s, link 3s, total 7s
+v1_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+v1: library -O2 -flto 4s, scanner -O1 0s, link 3s, total 7s
+n1_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+n1: library -O2 -flto 4s, scanner -O1 0s, link 3s, total 7s
+f1_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+f1: library -O2 -flto 3s, scanner -O1 0s, link 3s, total 6s
+a1_gen: library -O2 -flto 4s, scanner -O1 1s, link 3s, total 8s
+a1: library -O2 -flto 4s, scanner -O1 0s, link 2s, total 6s
+2026-10-01T02:07:40-07:00 brew install mimalloc llvm gcc started (alternative allocator/compilers for 019+; reversible with brew uninstall)
+u3_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+u3: library -O2 -flto 4s, scanner -O1 0s, link 3s, total 7s
+b1_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+b1: library -O2 -flto 4s, scanner -O1 0s, link 3s, total 7s
+b2_gen: library -O2 -flto 5s, scanner -O1 0s, link 5s, total 10s
+b2: library -O2 -flto 5s, scanner -O1 0s, link 3s, total 8s
+h1_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+h1: library -O2 -flto 4s, scanner -O1 0s, link 3s, total 7s
+p1_gen: library -O2 -flto 5s, scanner -O1 0s, link 5s, total 10s
+p1: library -O2 -flto 4s, scanner -O1 1s, link 3s, total 8s
+sst: library -O2 7s, scanner -O1 1s, link 2s, total 10s
+sst: library -O2 7s, scanner -O1 0s, link 1s, total 8s
+q1_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+q1: library -O2 -flto 4s, scanner -O1 0s, link 3s, total 7s
+p1p: library -O2 5s, scanner -O1 0s, link 1s, total 6s
+q2_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+q2: library -O2 -flto 4s, scanner -O1 0s, link 2s, total 6s
+g1_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+g1: library -O2 -flto 4s, scanner -O1 0s, link 3s, total 7s
+g1v: library -O2 5s, scanner -O1 0s, link 1s, total 6s
+g2_gen: library -O2 -flto 4s, scanner -O1 0s, link 4s, total 8s
+g2: library -O2 -flto 4s, scanner -O1 0s, link 3s, total 7s
+dst: library -O2 5s, scanner -O1 0s, link 0s, total 5s
+dst: library -O2 5s, scanner -O1 0s, link 0s, total 5s
+s1p: library -O2 5s, scanner -O1 0s, link 1s, total 6s

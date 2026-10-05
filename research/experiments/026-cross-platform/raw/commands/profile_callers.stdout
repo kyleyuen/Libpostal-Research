@@ -1,0 +1,86 @@
+
+== _platform_memmove: exclusive 5.5% of samples; by caller:
+    1.09%  address_parser_parse
+    0.99%  cstring_array_get_phrase
+    0.87%  cstring_array_add_string
+    0.50%  cstring_array_add_string_len
+    0.40%  feature_array_add
+    0.32%  normalize_token
+    0.27%  word_or_phrase_memo
+    0.23%  char_array_cat
+
+== _platform_strlen: exclusive 3.5% of samples; by caller:
+    0.80%  feature_array_add_named
+    0.73%  address_parser_parse
+    0.63%  feature_array_add
+    0.36%  cstring_array_get_phrase
+    0.36%  address_parser_features
+    0.25%  cstring_array_add_string
+    0.12%  word_or_phrase_memo
+    0.12%  ap_ik_emit1
+
+== _platform_memset: exclusive 3.4% of samples; by caller:
+    3.42%  address_parser_parse
+    0.01%  address_parser_features
+
+== _platform_memchr: exclusive 1.4% of samples; by caller:
+    1.18%  crf_dict_lookup_array
+    0.13%  address_parser_features
+    0.13%  ap_ik_emit1
+
+== fd_find_slot: exclusive 3.5% of samples; by caller:
+    1.84%  address_parser_features
+    1.67%  ap_ik_emit1
+    0.03%  address_parser_parse
+
+== trie_search_tokens_from_index: exclusive 16.7% of samples; by caller:
+   16.71%  address_parser_parse
+    0.03%  main
+
+== line-level exclusive inside address_parser_parse:
+   23.74%  address_parser.c:2256
+    3.29%  address_parser.c:2159
+    0.20%  address_parser.c:2099
+    0.08%  address_parser.c:2126
+    0.07%  address_parser.c:0
+    0.06%  address_parser.c:2276
+    0.06%  address_parser.c:2295
+    0.04%  address_parser.c:2262
+    0.04%  address_parser.c:2278
+    0.02%  address_parser.c:2294
+
+== line-level exclusive inside address_parser_features:
+    2.07%  address_parser.c:1689
+    0.88%  address_parser.c:1678
+    0.78%  address_parser.c:0
+    0.32%  address_parser.c:1615
+    0.23%  address_parser.c:1699
+    0.19%  address_parser.c:1616
+    0.13%  address_parser.c:1706
+    0.10%  address_parser.c:1494
+    0.09%  address_parser.c:1453
+    0.08%  address_parser.c:1507
+
+== line-level exclusive inside crf_dict_lookup_array:
+    3.82%  crf.c:501
+    2.04%  crf.c:466
+    1.45%  crf.c:464
+    1.43%  crf.c:0
+    0.50%  feature_dict.h:0
+    0.37%  crf.c:490
+    0.34%  crf.c:508
+    0.23%  crf.c:446
+    0.15%  crf.c:441
+    0.12%  crf.c:488
+
+== line-level exclusive inside trie_search_tokens_from_index:
+    7.75%  trie_search.c:0
+    4.97%  trie_search.c:491
+    1.00%  trie_search.c:578
+    0.47%  trie_search.c:416
+    0.38%  trie_search.c:421
+    0.35%  trie_search.c:590
+    0.32%  trie_search.c:538
+    0.31%  trie_search.c:487
+    0.20%  trie_search.c:420
+    0.17%  trie_search.c:458

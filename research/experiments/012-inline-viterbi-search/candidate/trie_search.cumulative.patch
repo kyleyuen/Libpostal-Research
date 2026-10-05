@@ -1,0 +1,33 @@
+--- trie_search.c.orig	2026-09-29 21:20:23
++++ trie_search.c	2026-09-29 21:20:23
+@@ -246,6 +246,30 @@
+     uint32_t data;
+ 
+     int phrase_len = 0, phrase_start = 0, last_match_index = -1;
++
++#ifdef EXP_SEARCH_PREFETCH
++    // Pure hint (no effect on results): most tokens restart the walk at start_node_id and leave the trie after one or two characters, and those walks are independent
++    // of each other, so touch the second-level node (or the leaf's data entry) of every token up front to overlap the cache misses.
++    if (node.base >= 0) {
++        uint32_t nn = (uint32_t)self->nodes->n;
++        for (size_t k = 0; k < tokens->n; k++) {
++            token_t tk = tokens->a[k];
++            if (tk.type == WHITESPACE || tk.len == 0) continue;
++            uint32_t i1 = node.base + trie_get_char_index(self, (unsigned char)str[tk.offset]);
++            if (i1 >= nn) continue;
++            trie_node_t n1 = self->nodes->a[i1];
++            if (n1.check != start_node_id) continue;
++            if (n1.base >= 0) {
++                if (tk.len > 1) {
++                    uint32_t i2 = n1.base + trie_get_char_index(self, (unsigned char)str[tk.offset + 1]);
++                    if (i2 < nn) __builtin_prefetch(&self->nodes->a[i2]);
++                }
++            } else {
++                __builtin_prefetch(&self->data->a[-n1.base]);
++            }
++        }
++    }
++#endif
+ 
+     trie_search_state_t state = SEARCH_STATE_BEGIN, last_state = SEARCH_STATE_BEGIN;
+ 
