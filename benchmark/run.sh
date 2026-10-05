@@ -34,6 +34,9 @@ if [ -n "$MISSING" ]; then
   if [ $DEPS = 1 ]; then run_logged brew_install brew install $MISSING; else echo "missing Homebrew packages:$MISSING  -> run: brew install$MISSING  (or rerun with --deps)"; exit 1; fi
 fi
 MIMALLOC="$(brew --prefix mimalloc)/lib/mimalloc.o"; [ -f "$MIMALLOC" ] || { echo "mimalloc.o not found at $MIMALLOC"; exit 1; }
+case " ${SUITE_ARGS[*]-} " in *" --no-gate "*) ;; *)
+  pmset -g batt | head -1 | grep -q "AC Power" || say "WARNING: on battery. Timed runs wait for AC power (research/tools/env_gate.sh); plug in, or rerun with --no-gate (noisier numbers).";;
+esac
 
 say "2/6 libpostal $COMMIT -> $W/libpostal"
 if [ ! -d "$W/libpostal/.git" ]; then run_logged clone git clone -q https://github.com/openvenues/libpostal.git "$W/libpostal"; fi
@@ -81,7 +84,7 @@ LLVM_PROFILE_FILE="$P/p-%p.profraw" "$W/build/cpi_gen/dump_outputs" "$ROOT/profi
 run_logged pgo_merge xcrun llvm-profdata merge -output="$P/dev.profdata" "$P"/*.profraw
 run_logged build_cpi build_cpi "$W/build/cpi" "-fprofile-instr-use=$P/dev.profdata -Wno-profile-instr-unprofiled -Wno-profile-instr-out-of-date"
 for n in bench_ext dump_outputs fuzz_pipeline; do cp "$W/build/cpi/$n" "$W/bin/cpi/$n"; done
-( cd "$W/bin" && shasum -a 256 original/* cpi/* > "$W/logs/binaries.sha256" )
+( cd "$W/bin" && find original cpi -maxdepth 1 -type f -exec shasum -a 256 {} + > "$W/logs/binaries.sha256" )
 
 say "6/6 benchmark suite (correctness, timing, memory, threads, report)"
 python3 - "$ROOT" "$W" <<'PY'
