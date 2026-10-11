@@ -1,0 +1,60 @@
+{
+  "_comment": "203 streamed CPI paired timing/peak cohort v14; three rotating rounds, 2300 passes per dataset and role.",
+  "workspace": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "model_dir": "/Users/kyle/.cache/libpostal-profile/libpostal",
+  "baseline": "original-000",
+  "settings": {
+    "rounds": 3,
+    "passes": 2300,
+    "settle_load_1min": 2.5,
+    "settle_max_wait_s": 180,
+    "correctness_jobs": 1,
+    "fuzz_count": 0,
+    "fuzz_seeds": [],
+    "fuzz_corpora": [
+      "profiling/golden-v1/all.txt",
+      "profiling/golden-v2-novel/novel.txt"
+    ],
+    "bootstrap_resamples": 1000,
+    "bootstrap_seed": 20261004,
+    "steady_dataset": "golden-v1",
+    "steady_passes_before_sample": 3,
+    "thread_check_dataset": "golden-v1",
+    "sleep_between_runs_s": 2,
+    "country_min_n": 50
+  },
+  "variants": [
+    {
+      "name": "original-000",
+      "role": "baseline",
+      "enabled": true,
+      "desc": "preserved 000 baseline",
+      "bench_ext": "research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+      "dump_outputs": "research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+      "fuzz_pipeline": "research/tools/fuzz_baseline",
+      "fuzz_reference": {
+        "1": "research/experiments/011-normalize-fastpaths/raw/fuzz/base_s1.txt",
+        "2": "research/experiments/011-normalize-fastpaths/raw/fuzz/base_s2.txt"
+      }
+    },
+    {
+      "name": "cpi-stream-203",
+      "role": "candidate",
+      "enabled": true,
+      "desc": "203 streaming postcode graph candidate",
+      "bench_ext": "research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext",
+      "dump_outputs": "research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/dump_outputs",
+      "fuzz_pipeline": "research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/fuzz_pipeline"
+    }
+  ],
+  "datasets": [
+    {
+      "name": "unseen-v14",
+      "source": "openstreetmap",
+      "kind": "spent unseen (observed in experiment 202)",
+      "reserved": false,
+      "txt": "profiling/golden-v14-osm-unseen/unseen14.txt",
+      "tsv": "profiling/golden-v14-osm-unseen/unseen14.tsv"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/features.c:66:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/feature_dict.h:141:17: warning: unused variable 'op' [-Wunused-variable]
+  141 |     const char *op = d->split ? "feature_hash" : diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/feature_dict.h:142:17: warning: unused variable 'result_kind' [-Wunused-variable]
+  142 |     const char *result_kind = d->split ? "feature_id" : "vocab_frequency";
+      |                 ^~~~~~~~~~~
+2 warnings generated.

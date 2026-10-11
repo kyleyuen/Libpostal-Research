@@ -1,0 +1,23 @@
+{
+ "argv": [
+  "research/suite/run_suite.py",
+  "--config",
+  "research/experiments/203-cpi-memory-regression/raw/stream-timing-v1/osm-v3-v13.json",
+  "--datasets",
+  "osm-v3",
+  "--variants",
+  "cpi-stream-203",
+  "--run-id",
+  "203-stream-steady-osm-v3-v1",
+  "--stages",
+  "memory"
+ ],
+ "start": "2026-10-10T18:32:50-0700",
+ "variants": [
+  "original-000",
+  "cpi-stream-203"
+ ],
+ "datasets": [
+  "osm-v3"
+ ]
+}

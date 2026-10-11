@@ -1,0 +1,18 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/crf_context.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/crf_context.h:20:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/crf_context.c:238:18: warning: unused variable 'T' [-Wunused-variable]
+  238 |     const size_t T = context->num_items;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/crf_context.c:239:18: warning: unused variable 'L' [-Wunused-variable]
+  239 |     const size_t L = context->num_labels;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/crf_context.c:538:18: warning: unused variable 'L' [-Wunused-variable]
+  538 |     const size_t L = self->num_labels;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/crf_context.c:540:19: warning: unused variable 'cur' [-Wunused-variable]
+  540 |     const double *cur = NULL;
+      |                   ^~~
+5 warnings generated.

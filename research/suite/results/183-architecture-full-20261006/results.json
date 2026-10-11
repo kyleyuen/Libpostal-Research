@@ -1,0 +1,1633 @@
+{
+ "run": "183-architecture-full-20261006",
+ "generated": "2026-10-06T12:23:36-0700",
+ "settings": {
+  "rounds": 5,
+  "passes": 20,
+  "settle_load_1min": 2.5,
+  "settle_max_wait_s": 1800,
+  "correctness_jobs": 1,
+  "fuzz_count": 2000000,
+  "fuzz_seeds": [
+   1,
+   2
+  ],
+  "fuzz_corpora": [
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+  ],
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261004,
+  "steady_dataset": "golden-v1",
+  "steady_passes_before_sample": 3,
+  "thread_check_dataset": "golden-v1",
+  "sleep_between_runs_s": 2,
+  "country_min_n": 50
+ },
+ "baseline": "original-000",
+ "datasets": {
+  "golden-v1": {
+   "source": "senzing",
+   "kind": "development+validation (PGO trained on its development split)",
+   "variants": {
+    "original-000": {
+     "rounds": 5,
+     "warm_median_us": 32.253,
+     "warm_min_us": 31.115,
+     "warm_max_us": 34.668,
+     "cold_median_us": 34.163,
+     "setup_median_s": 2.756,
+     "peak_rss_max": 2614067200,
+     "peak_footprint_max": 2613266688
+    },
+    "cpi": {
+     "rounds": 5,
+     "warm_median_us": 5.341,
+     "warm_min_us": 4.971,
+     "warm_max_us": 5.496,
+     "cold_median_us": 6.075,
+     "setup_median_s": 11.656,
+     "peak_rss_max": 2537046016,
+     "peak_footprint_max": 2537359760
+    },
+    "release-candidate": {
+     "rounds": 5,
+     "warm_median_us": 28.302,
+     "warm_min_us": 27.223,
+     "warm_max_us": 29.41,
+     "cold_median_us": 30.324,
+     "setup_median_s": 2.776,
+     "peak_rss_max": 2615934976,
+     "peak_footprint_max": 2615118056
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 6.059539412095113,
+     "geomean": 6.167975657452175,
+     "ci95": [
+      5.935077770733839,
+      6.410012670519509
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.98941504178273,
+      6.437940052303359
+     ],
+     "min": 5.98941504178273,
+     "max": 6.437940052303359,
+     "rounds": 5,
+     "per_round": [
+      6.437940052303359,
+      6.059539412095113,
+      5.98941504178273,
+      6.307860262008733,
+      6.057037181234183
+     ],
+     "ratio_of_medians": 6.038756787118517,
+     "cold_median": 5.402298850574713,
+     "per_country": {
+      "n": 81,
+      "min_addresses": 50,
+      "min": 4.659578030810449,
+      "median": 5.964912280701754,
+      "max": 7.131052956933855
+     }
+    },
+    "release-candidate": {
+     "median": 1.1435234259062963,
+     "geomean": 1.1527007690865014,
+     "ci95": [
+      1.132329124941322,
+      1.1734389178777567
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      1.1387162830108741,
+      1.1787827269636177
+     ],
+     "min": 1.1387162830108741,
+     "max": 1.1787827269636177,
+     "rounds": 5,
+     "per_round": [
+      1.1599913008807858,
+      1.1435234259062963,
+      1.1387162830108741,
+      1.1787827269636177,
+      1.1429673437901775
+     ],
+     "ratio_of_medians": 1.1396014415942337,
+     "cold_median": 1.1404984521091968,
+     "per_country": {
+      "n": 81,
+      "min_addresses": 50,
+      "min": 1.1070833333333332,
+      "median": 1.150537634408602,
+      "max": 1.2216062386813025
+     }
+    }
+   }
+  },
+  "novel": {
+   "source": "senzing-style",
+   "kind": "screening/validation",
+   "variants": {
+    "original-000": {
+     "rounds": 5,
+     "warm_median_us": 32.919,
+     "warm_min_us": 31.916,
+     "warm_max_us": 33.382,
+     "cold_median_us": 34.816,
+     "setup_median_s": 2.751,
+     "peak_rss_max": 2614198272,
+     "peak_footprint_max": 2613397736
+    },
+    "cpi": {
+     "rounds": 5,
+     "warm_median_us": 6.057,
+     "warm_min_us": 5.533,
+     "warm_max_us": 6.146,
+     "cold_median_us": 6.607,
+     "setup_median_s": 11.603,
+     "peak_rss_max": 2537046016,
+     "peak_footprint_max": 2537343352
+    },
+    "release-candidate": {
+     "rounds": 5,
+     "warm_median_us": 28.491,
+     "warm_min_us": 27.009,
+     "warm_max_us": 29.284,
+     "cold_median_us": 32.925,
+     "setup_median_s": 2.775,
+     "peak_rss_max": 2614050816,
+     "peak_footprint_max": 2613299432
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 5.415199868399408,
+     "geomean": 5.5132434484365005,
+     "ci95": [
+      5.1555198958909685,
+      5.895788191207249
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.269275218755159,
+      5.985179830110247
+     ],
+     "min": 5.269275218755159,
+     "max": 5.985179830110247,
+     "rounds": 5,
+     "per_round": [
+      5.275951838594208,
+      5.985179830110247,
+      5.415199868399408,
+      5.653175275190516,
+      5.269275218755159
+     ],
+     "ratio_of_medians": 5.4348687469044075,
+     "cold_median": 5.308006659603451,
+     "per_country": {
+      "n": 81,
+      "min_addresses": 50,
+      "min": 4.062093762965012,
+      "median": 5.306224066390041,
+      "max": 6.18716577540107
+     }
+    },
+    "release-candidate": {
+     "median": 1.1678970017143058,
+     "geomean": 1.1580930890625356,
+     "ci95": [
+      1.1305305627717013,
+      1.1863275944051084
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      1.1308564403769976,
+      1.181680180680514
+     ],
+     "min": 1.1308564403769976,
+     "max": 1.181680180680514,
+     "rounds": 5,
+     "per_round": [
+      1.1381137903197502,
+      1.1308564403769976,
+      1.172788485517831,
+      1.1678970017143058,
+      1.181680180680514
+     ],
+     "ratio_of_medians": 1.155417500263241,
+     "cold_median": 1.0574335611237664,
+     "per_country": {
+      "n": 81,
+      "min_addresses": 50,
+      "min": 1.1220582810770934,
+      "median": 1.174994269997708,
+      "max": 1.2272925004350097
+     }
+    }
+   }
+  },
+  "osm-v3": {
+   "source": "openstreetmap",
+   "kind": "screening/validation",
+   "variants": {
+    "original-000": {
+     "rounds": 5,
+     "warm_median_us": 20.159,
+     "warm_min_us": 18.935,
+     "warm_max_us": 25.81,
+     "cold_median_us": 24.468,
+     "setup_median_s": 2.785,
+     "peak_rss_max": 2613100544,
+     "peak_footprint_max": 2612840680
+    },
+    "cpi": {
+     "rounds": 5,
+     "warm_median_us": 3.521,
+     "warm_min_us": 3.313,
+     "warm_max_us": 3.863,
+     "cold_median_us": 4.361,
+     "setup_median_s": 11.646,
+     "peak_rss_max": 2543108096,
+     "peak_footprint_max": 2543405432
+    },
+    "release-candidate": {
+     "rounds": 5,
+     "warm_median_us": 18.531,
+     "warm_min_us": 17.482,
+     "warm_max_us": 22.749,
+     "cold_median_us": 19.491,
+     "setup_median_s": 2.75,
+     "peak_rss_max": 2613149696,
+     "peak_footprint_max": 2612922600
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 5.725362113036069,
+     "geomean": 5.853496392068334,
+     "ci95": [
+      5.31899485970808,
+      6.441709555221767
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.4540512555009055,
+      6.681335749417551
+     ],
+     "min": 5.4540512555009055,
+     "max": 6.681335749417551,
+     "rounds": 5,
+     "per_round": [
+      5.715363718683972,
+      5.762984218077475,
+      5.725362113036069,
+      6.681335749417551,
+      5.4540512555009055
+     ],
+     "ratio_of_medians": 5.725362113036069,
+     "cold_median": 5.353278484168537,
+     "per_country": {
+      "n": 44,
+      "min_addresses": 50,
+      "min": 4.640863719698513,
+      "median": 5.86679239946737,
+      "max": 6.569444444444444
+     }
+    },
+    "release-candidate": {
+     "median": 1.0878527872214128,
+     "geomean": 1.0791801125459721,
+     "ci95": [
+      1.0215956619298951,
+      1.1400104353562313
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      1.00462521457181,
+      1.134555365070992
+     ],
+     "min": 1.00462521457181,
+     "max": 1.134555365070992,
+     "rounds": 5,
+     "per_round": [
+      1.0831140601761813,
+      1.089922396483421,
+      1.0878527872214128,
+      1.134555365070992,
+      1.00462521457181
+     ],
+     "ratio_of_medians": 1.0878527872214128,
+     "cold_median": 1.1046972269383135,
+     "per_country": {
+      "n": 44,
+      "min_addresses": 50,
+      "min": 1.0046995908114897,
+      "median": 1.0812890984192927,
+      "max": 1.1303259963012655
+     }
+    }
+   }
+  },
+  "unseen-v4": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 5,
+     "warm_median_us": 19.248,
+     "warm_min_us": 18.049,
+     "warm_max_us": 19.581,
+     "cold_median_us": 21.122,
+     "setup_median_s": 2.763,
+     "peak_rss_max": 2612822016,
+     "peak_footprint_max": 2612431056
+    },
+    "cpi": {
+     "rounds": 5,
+     "warm_median_us": 3.298,
+     "warm_min_us": 3.166,
+     "warm_max_us": 3.658,
+     "cold_median_us": 4.131,
+     "setup_median_s": 11.584,
+     "peak_rss_max": 2543026176,
+     "peak_footprint_max": 2543323512
+    },
+    "release-candidate": {
+     "rounds": 5,
+     "warm_median_us": 17.592,
+     "warm_min_us": 16.968,
+     "warm_max_us": 18.022,
+     "cold_median_us": 19.796,
+     "setup_median_s": 2.759,
+     "peak_rss_max": 2612756480,
+     "peak_footprint_max": 2612414696
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 5.7008843967150975,
+     "geomean": 5.571985358484523,
+     "ci95": [
+      5.2651360601909145,
+      5.896717668876372
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.2618917441224715,
+      5.838386901152213
+     ],
+     "min": 5.2618917441224715,
+     "max": 5.838386901152213,
+     "rounds": 5,
+     "per_round": [
+      5.7008843967150975,
+      5.2618917441224715,
+      5.838386901152213,
+      5.354388843314192,
+      5.727471156844403
+     ],
+     "ratio_of_medians": 5.836264402668284,
+     "cold_median": 5.113047688211086,
+     "per_country": {
+      "n": 41,
+      "min_addresses": 50,
+      "min": 4.474607817069928,
+      "median": 5.903851333153784,
+      "max": 6.750403225806451
+     }
+    },
+    "release-candidate": {
+     "median": 1.0684163799800244,
+     "geomean": 1.077943182814749,
+     "ci95": [
+      1.0491048419276277,
+      1.1075742470521828
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      1.0535734771136858,
+      1.1109156927266537
+     ],
+     "min": 1.0535734771136858,
+     "max": 1.1109156927266537,
+     "rounds": 5,
+     "per_round": [
+      1.0637081565299387,
+      1.0941336971350615,
+      1.0684163799800244,
+      1.1109156927266537,
+      1.0535734771136858
+     ],
+     "ratio_of_medians": 1.0941336971350615,
+     "cold_median": 1.0669832289351384,
+     "per_country": {
+      "n": 41,
+      "min_addresses": 50,
+      "min": 0.9857581922860482,
+      "median": 1.0382479950647747,
+      "max": 1.1050689118274608
+     }
+    }
+   }
+  },
+  "unseen-v5": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 5,
+     "warm_median_us": 18.693,
+     "warm_min_us": 17.902,
+     "warm_max_us": 21.092,
+     "cold_median_us": 21.484,
+     "setup_median_s": 2.766,
+     "peak_rss_max": 2613084160,
+     "peak_footprint_max": 2612676816
+    },
+    "cpi": {
+     "rounds": 5,
+     "warm_median_us": 3.293,
+     "warm_min_us": 3.193,
+     "warm_max_us": 3.802,
+     "cold_median_us": 4.111,
+     "setup_median_s": 11.407,
+     "peak_rss_max": 2538045440,
+     "peak_footprint_max": 2538359184
+    },
+    "release-candidate": {
+     "rounds": 5,
+     "warm_median_us": 18.068,
+     "warm_min_us": 17.147,
+     "warm_max_us": 19.846,
+     "cold_median_us": 19.501,
+     "setup_median_s": 2.828,
+     "peak_rss_max": 2613067776,
+     "peak_footprint_max": 2612775144
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 5.594650205761317,
+     "geomean": 5.626102473715562,
+     "ci95": [
+      5.46393516520738,
+      5.793082840057272
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.5133969818293815,
+      5.8543689320388355
+     ],
+     "min": 5.5133969818293815,
+     "max": 5.8543689320388355,
+     "rounds": 5,
+     "per_round": [
+      5.8543689320388355,
+      5.547606522882693,
+      5.594650205761317,
+      5.626784087458245,
+      5.5133969818293815
+     ],
+     "ratio_of_medians": 5.67658669905861,
+     "cold_median": 5.225979080515691,
+     "per_country": {
+      "n": 35,
+      "min_addresses": 50,
+      "min": 4.685506104765655,
+      "median": 5.937438261442213,
+      "max": 6.916373239436621
+     }
+    },
+    "release-candidate": {
+     "median": 1.0440310258354233,
+     "geomean": 1.0320954374121343,
+     "ci95": [
+      0.9299630655440859,
+      1.1454444067665468
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      0.9336390204575229,
+      1.1673677219393401
+     ],
+     "min": 0.9336390204575229,
+     "max": 1.1673677219393401,
+     "rounds": 5,
+     "per_round": [
+      1.0489898989898991,
+      1.1673677219393401,
+      0.9811330480952627,
+      0.9336390204575229,
+      1.0440310258354233
+     ],
+     "ratio_of_medians": 1.0345915430595527,
+     "cold_median": 1.0902111872146119,
+     "per_country": {
+      "n": 35,
+      "min_addresses": 50,
+      "min": 0.9224287938455902,
+      "median": 0.9781015333423264,
+      "max": 1.036675448111989
+     }
+    }
+   }
+  },
+  "unseen-v6": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 5,
+     "warm_median_us": 18.419,
+     "warm_min_us": 17.899,
+     "warm_max_us": 24.053,
+     "cold_median_us": 20.897,
+     "setup_median_s": 2.751,
+     "peak_rss_max": 2612379648,
+     "peak_footprint_max": 2612136144
+    },
+    "cpi": {
+     "rounds": 5,
+     "warm_median_us": 3.309,
+     "warm_min_us": 3.199,
+     "warm_max_us": 3.638,
+     "cold_median_us": 4.105,
+     "setup_median_s": 11.655,
+     "peak_rss_max": 2538045440,
+     "peak_footprint_max": 2538342776
+    },
+    "release-candidate": {
+     "rounds": 5,
+     "warm_median_us": 17.039,
+     "warm_min_us": 16.551,
+     "warm_max_us": 17.327,
+     "cold_median_us": 19.405,
+     "setup_median_s": 2.765,
+     "peak_rss_max": 2613329920,
+     "peak_footprint_max": 2613168360
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 5.5343003928679355,
+     "geomean": 5.726604781686962,
+     "ci95": [
+      4.735297246201082,
+      6.925436909361741
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      4.920010995052227,
+      7.378220858895706
+     ],
+     "min": 4.920010995052227,
+     "max": 7.378220858895706,
+     "rounds": 5,
+     "per_round": [
+      5.7577367927477345,
+      5.5343003928679355,
+      7.378220858895706,
+      4.920010995052227,
+      5.324193087689232
+     ],
+     "ratio_of_medians": 5.566334239951647,
+     "cold_median": 4.934713763702801,
+     "per_country": {
+      "n": 36,
+      "min_addresses": 50,
+      "min": 4.369850528618301,
+      "median": 5.463206675018798,
+      "max": 6.0442176870748305
+     }
+    },
+    "release-candidate": {
+     "median": 1.0846190083617948,
+     "geomean": 1.1378588796039726,
+     "ci95": [
+      0.9874288373384545,
+      1.311206216524365
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      1.0466027365220443,
+      1.3881802966468517
+     ],
+     "min": 1.0466027365220443,
+     "max": 1.3881802966468517,
+     "rounds": 5,
+     "per_round": [
+      1.0846190083617948,
+      1.074769646105992,
+      1.3881802966468517,
+      1.0466027365220443,
+      1.1262159386139812
+     ],
+     "ratio_of_medians": 1.0809906684664592,
+     "cold_median": 1.153319719631326,
+     "per_country": {
+      "n": 36,
+      "min_addresses": 50,
+      "min": 1.066941716543669,
+      "median": 1.1211312529637012,
+      "max": 1.1685615126854956
+     }
+    }
+   }
+  },
+  "unseen-v7": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 5,
+     "warm_median_us": 18.655,
+     "warm_min_us": 17.896,
+     "warm_max_us": 23.48,
+     "cold_median_us": 19.925,
+     "setup_median_s": 2.768,
+     "peak_rss_max": 2612756480,
+     "peak_footprint_max": 2613004520
+    },
+    "cpi": {
+     "rounds": 5,
+     "warm_median_us": 3.24,
+     "warm_min_us": 3.204,
+     "warm_max_us": 3.729,
+     "cold_median_us": 4.115,
+     "setup_median_s": 11.601,
+     "peak_rss_max": 2538045440,
+     "peak_footprint_max": 2538342776
+    },
+    "release-candidate": {
+     "rounds": 5,
+     "warm_median_us": 17.148,
+     "warm_min_us": 16.897,
+     "warm_max_us": 19.968,
+     "cold_median_us": 18.636,
+     "setup_median_s": 2.769,
+     "peak_rss_max": 2612592640,
+     "peak_footprint_max": 2612398288
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 5.632548309178745,
+     "geomean": 5.766704545570083,
+     "ci95": [
+      4.770922271885962,
+      6.970325530529529
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      4.7991418610887635,
+      7.3283395755305865
+     ],
+     "min": 4.7991418610887635,
+     "max": 7.3283395755305865,
+     "rounds": 5,
+     "per_round": [
+      5.803161810291383,
+      5.632548309178745,
+      4.7991418610887635,
+      5.5475308641975305,
+      7.3283395755305865
+     ],
+     "ratio_of_medians": 5.757716049382716,
+     "cold_median": 4.862843488649941,
+     "per_country": {
+      "n": 37,
+      "min_addresses": 50,
+      "min": 4.5314297045409475,
+      "median": 5.753213367609255,
+      "max": 6.727129956811935
+     }
+    },
+    "release-candidate": {
+     "median": 1.0713260207890656,
+     "geomean": 1.089425342060199,
+     "ci95": [
+      1.0304586443627664,
+      1.1517663347440068
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      1.0535138620245004,
+      1.1758814102564104
+     ],
+     "min": 1.0535138620245004,
+     "max": 1.1758814102564104,
+     "rounds": 5,
+     "per_round": [
+      1.0917308140891067,
+      1.0713260207890656,
+      1.0591229212286206,
+      1.0535138620245004,
+      1.1758814102564104
+     ],
+     "ratio_of_medians": 1.0878819687427106,
+     "cold_median": 1.0691672032625028,
+     "per_country": {
+      "n": 37,
+      "min_addresses": 50,
+      "min": 1.042178873757821,
+      "median": 1.0845121773370279,
+      "max": 1.145246129416435
+     }
+    }
+   }
+  },
+  "unseen-v8": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 5,
+     "warm_median_us": 18.185,
+     "warm_min_us": 17.56,
+     "warm_max_us": 18.338,
+     "cold_median_us": 20.369,
+     "setup_median_s": 2.778,
+     "peak_rss_max": 2612445184,
+     "peak_footprint_max": 2612201704
+    },
+    "cpi": {
+     "rounds": 5,
+     "warm_median_us": 3.227,
+     "warm_min_us": 3.171,
+     "warm_max_us": 3.809,
+     "cold_median_us": 3.787,
+     "setup_median_s": 11.519,
+     "peak_rss_max": 2543009792,
+     "peak_footprint_max": 2543323536
+    },
+    "release-candidate": {
+     "rounds": 5,
+     "warm_median_us": 17.025,
+     "warm_min_us": 16.627,
+     "warm_max_us": 17.953,
+     "cold_median_us": 17.964,
+     "setup_median_s": 2.772,
+     "peak_rss_max": 2612330496,
+     "peak_footprint_max": 2612168936
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 5.617701290719115,
+     "geomean": 5.431207251587769,
+     "ci95": [
+      4.9168891058674316,
+      5.999324283010357
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      4.711472827513783,
+      5.682677409358538
+     ],
+     "min": 4.711472827513783,
+     "max": 5.682677409358538,
+     "rounds": 5,
+     "per_round": [
+      5.673946957878314,
+      5.682677409358538,
+      5.617701290719115,
+      4.711472827513783,
+      5.537685272784611
+     ],
+     "ratio_of_medians": 5.6352649519677716,
+     "cold_median": 5.281786941580757,
+     "per_country": {
+      "n": 40,
+      "min_addresses": 50,
+      "min": 4.399339933993399,
+      "median": 5.535780620113759,
+      "max": 6.222407330279051
+     }
+    },
+    "release-candidate": {
+     "median": 1.0713239172478464,
+     "geomean": 1.0573473744910116,
+     "ci95": [
+      1.0150351824397716,
+      1.1014233690460007
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      0.9996100930206652,
+      1.0848296844240288
+     ],
+     "min": 0.9996100930206652,
+     "max": 1.0848296844240288,
+     "rounds": 5,
+     "per_round": [
+      1.0848296844240288,
+      1.07712187958884,
+      1.0713239172478464,
+      0.9996100930206652,
+      1.056113550249594
+     ],
+     "ratio_of_medians": 1.0681350954478708,
+     "cold_median": 1.1427208976157084,
+     "per_country": {
+      "n": 40,
+      "min_addresses": 50,
+      "min": 0.9958586416344561,
+      "median": 1.0576666644832948,
+      "max": 1.1115476824720298
+     }
+    }
+   }
+  },
+  "unseen-v9": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 5,
+     "warm_median_us": 19.228,
+     "warm_min_us": 18.305,
+     "warm_max_us": 21.375,
+     "cold_median_us": 21.138,
+     "setup_median_s": 2.807,
+     "peak_rss_max": 2613002240,
+     "peak_footprint_max": 2612725992
+    },
+    "cpi": {
+     "rounds": 5,
+     "warm_median_us": 3.385,
+     "warm_min_us": 3.348,
+     "warm_max_us": 3.563,
+     "cold_median_us": 4.071,
+     "setup_median_s": 11.552,
+     "peak_rss_max": 2542993408,
+     "peak_footprint_max": 2543290744
+    },
+    "release-candidate": {
+     "rounds": 5,
+     "warm_median_us": 17.834,
+     "warm_min_us": 17.208,
+     "warm_max_us": 18.021,
+     "cold_median_us": 19.232,
+     "setup_median_s": 2.781,
+     "peak_rss_max": 2612330496,
+     "peak_footprint_max": 2612136144
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 5.703945416790271,
+     "geomean": 5.678345751576747,
+     "ci95": [
+      5.3506748761462415,
+      6.0260829186603
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.261569416498994,
+      5.999158012910469
+     ],
+     "min": 5.261569416498994,
+     "max": 5.999158012910469,
+     "rounds": 5,
+     "per_round": [
+      5.999158012910469,
+      5.780167264038232,
+      5.703945416790271,
+      5.672673559822749,
+      5.261569416498994
+     ],
+     "ratio_of_medians": 5.680354505169868,
+     "cold_median": 5.138810921153355,
+     "per_country": {
+      "n": 37,
+      "min_addresses": 50,
+      "min": 4.295105394783851,
+      "median": 5.807640449438202,
+      "max": 6.851083883129124
+     }
+    },
+    "release-candidate": {
+     "median": 1.0742159311684707,
+     "geomean": 1.0984928207626277,
+     "ci95": [
+      1.0219254246176155,
+      1.1807970016193237
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      1.063749418874942,
+      1.2184347033004617
+     ],
+     "min": 1.063749418874942,
+     "max": 1.2184347033004617,
+     "rounds": 5,
+     "per_round": [
+      1.2184347033004617,
+      1.0742159311684707,
+      1.0781653022316924,
+      1.0655346540147606,
+      1.063749418874942
+     ],
+     "ratio_of_medians": 1.0781653022316924,
+     "cold_median": 1.078854693002603,
+     "per_country": {
+      "n": 37,
+      "min_addresses": 50,
+      "min": 1.045207146058782,
+      "median": 1.0749703087885987,
+      "max": 1.1302144824872098
+     }
+    }
+   }
+  },
+  "unseen-v10": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 5,
+     "warm_median_us": 18.136,
+     "warm_min_us": 17.449,
+     "warm_max_us": 18.699,
+     "cold_median_us": 19.877,
+     "setup_median_s": 2.784,
+     "peak_rss_max": 2612166656,
+     "peak_footprint_max": 2611955920
+    },
+    "cpi": {
+     "rounds": 5,
+     "warm_median_us": 3.429,
+     "warm_min_us": 3.074,
+     "warm_max_us": 3.607,
+     "cold_median_us": 3.912,
+     "setup_median_s": 11.742,
+     "peak_rss_max": 2538012672,
+     "peak_footprint_max": 2538310008
+    },
+    "release-candidate": {
+     "rounds": 5,
+     "warm_median_us": 16.576,
+     "warm_min_us": 16.382,
+     "warm_max_us": 17.491,
+     "cold_median_us": 19.564,
+     "setup_median_s": 2.786,
+     "peak_rss_max": 2612330496,
+     "peak_footprint_max": 2612201704
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 5.453193350831147,
+     "geomean": 5.410415379044408,
+     "ci95": [
+      4.976600498221333,
+      5.882046305356929
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      4.868311616301635,
+      5.779477374123646
+     ],
+     "min": 4.868311616301635,
+     "max": 5.779477374123646,
+     "rounds": 5,
+     "per_round": [
+      5.676317501626546,
+      5.323147881233785,
+      5.779477374123646,
+      4.868311616301635,
+      5.453193350831147
+     ],
+     "ratio_of_medians": 5.289005540974045,
+     "cold_median": 4.936614645858343,
+     "per_country": {
+      "n": 36,
+      "min_addresses": 50,
+      "min": 4.271362817690615,
+      "median": 5.489630961452975,
+      "max": 6.070453134698945
+     }
+    },
+    "release-candidate": {
+     "median": 1.0662278422541718,
+     "geomean": 1.0725692985083246,
+     "ci95": [
+      1.0323613355137335,
+      1.1143432638632906
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      1.036876107712538,
+      1.1280767374517375
+     ],
+     "min": 1.036876107712538,
+     "max": 1.1280767374517375,
+     "rounds": 5,
+     "per_round": [
+      1.0651324624587963,
+      1.0662278422541718,
+      1.036876107712538,
+      1.0685815128095904,
+      1.1280767374517375
+     ],
+     "ratio_of_medians": 1.094111969111969,
+     "cold_median": 1.0103064822348793,
+     "per_country": {
+      "n": 36,
+      "min_addresses": 50,
+      "min": 1.0268369424393857,
+      "median": 1.0674401976437151,
+      "max": 1.1309046293237697
+     }
+    }
+   }
+  },
+  "unseen-v11": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 5,
+     "warm_median_us": 18.504,
+     "warm_min_us": 17.97,
+     "warm_max_us": 23.591,
+     "cold_median_us": 20.069,
+     "setup_median_s": 2.762,
+     "peak_rss_max": 2612101120,
+     "peak_footprint_max": 2611874000
+    },
+    "cpi": {
+     "rounds": 5,
+     "warm_median_us": 3.489,
+     "warm_min_us": 3.254,
+     "warm_max_us": 3.913,
+     "cold_median_us": 4.171,
+     "setup_median_s": 11.699,
+     "peak_rss_max": 2541371392,
+     "peak_footprint_max": 2541685136
+    },
+    "release-candidate": {
+     "rounds": 5,
+     "warm_median_us": 19.709,
+     "warm_min_us": 17.079,
+     "warm_max_us": 21.582,
+     "cold_median_us": 26.351,
+     "setup_median_s": 2.884,
+     "peak_rss_max": 2612133888,
+     "peak_footprint_max": 2611988712
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 5.6068222621184916,
+     "geomean": 5.422923149501403,
+     "ci95": [
+      4.845488840786474,
+      6.069169995369337
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      4.7727624451895805,
+      6.028878098645541
+     ],
+     "min": 4.7727624451895805,
+     "max": 6.028878098645541,
+     "rounds": 5,
+     "per_round": [
+      5.6441303011677935,
+      6.028878098645541,
+      5.6068222621184916,
+      5.150472914875322,
+      4.7727624451895805
+     ],
+     "ratio_of_medians": 5.303525365434222,
+     "cold_median": 4.811555981778949,
+     "per_country": {
+      "n": 31,
+      "min_addresses": 50,
+      "min": 4.63768115942029,
+      "median": 5.505696026674076,
+      "max": 5.93531948255586
+     }
+    },
+    "release-candidate": {
+     "median": 1.0753556999824345,
+     "geomean": 1.0050820635155304,
+     "ci95": [
+      0.8837853424195885,
+      1.1430263729368753
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      0.8843856043588397,
+      1.0930868316189417
+     ],
+     "min": 0.8843856043588397,
+     "max": 1.0930868316189417,
+     "rounds": 5,
+     "per_round": [
+      1.0753556999824345,
+      1.0930868316189417,
+      1.0821205821205822,
+      0.911766198183571,
+      0.8843856043588397
+     ],
+     "ratio_of_medians": 0.9388604190978741,
+     "cold_median": 1.0111570718378808,
+     "per_country": {
+      "n": 31,
+      "min_addresses": 50,
+      "min": 0.931360585723002,
+      "median": 0.9922959909710977,
+      "max": 1.0270901447921532
+     }
+    }
+   }
+  },
+  "unseen-v12": {
+   "source": "openstreetmap",
+   "kind": "RESERVED unseen (never used)",
+   "variants": {
+    "original-000": {
+     "rounds": 5,
+     "warm_median_us": 18.066,
+     "warm_min_us": 17.136,
+     "warm_max_us": 23.269,
+     "cold_median_us": 21.408,
+     "setup_median_s": 2.776,
+     "peak_rss_max": 2612264960,
+     "peak_footprint_max": 2612119784
+    },
+    "cpi": {
+     "rounds": 5,
+     "warm_median_us": 3.15,
+     "warm_min_us": 3.131,
+     "warm_max_us": 3.396,
+     "cold_median_us": 3.975,
+     "setup_median_s": 11.612,
+     "peak_rss_max": 2538029056,
+     "peak_footprint_max": 2538326392
+    },
+    "release-candidate": {
+     "rounds": 5,
+     "warm_median_us": 18.095,
+     "warm_min_us": 16.468,
+     "warm_max_us": 18.501,
+     "cold_median_us": 20.55,
+     "setup_median_s": 2.766,
+     "peak_rss_max": 2612723712,
+     "peak_footprint_max": 2612627664
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 5.740705433746426,
+     "geomean": 5.8160903837486595,
+     "ci95": [
+      5.112095061685329,
+      6.617034101236324
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.186440677966102,
+      6.85188457008245
+     ],
+     "min": 5.186440677966102,
+     "max": 6.85188457008245,
+     "rounds": 5,
+     "per_round": [
+      6.85188457008245,
+      5.9121686362184604,
+      5.740705433746426,
+      5.186440677966102,
+      5.517777777777778
+     ],
+     "ratio_of_medians": 5.7352380952380955,
+     "cold_median": 5.363083164300202,
+     "per_country": {
+      "n": 34,
+      "min_addresses": 50,
+      "min": 4.916951469583048,
+      "median": 5.875119643256225,
+      "max": 6.2007968127490045
+     }
+    },
+    "release-candidate": {
+     "median": 1.0405635171241194,
+     "geomean": 1.0636178941553243,
+     "ci95": [
+      0.9358772502821123,
+      1.20879423495591
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      0.960541586073501,
+      1.257715799145992
+     ],
+     "min": 0.960541586073501,
+     "max": 1.257715799145992,
+     "rounds": 5,
+     "per_round": [
+      1.257715799145992,
+      1.0040136681672722,
+      1.0785027759536743,
+      1.0405635171241194,
+      0.960541586073501
+     ],
+     "ratio_of_medians": 0.9983973473335176,
+     "cold_median": 1.13245873889124,
+     "per_country": {
+      "n": 34,
+      "min_addresses": 50,
+      "min": 1.0215237862296687,
+      "median": 1.0595506541617798,
+      "max": 1.0995855755551431
+     }
+    }
+   }
+  },
+  "unseen-v13": {
+   "source": "openstreetmap",
+   "kind": "RESERVED unseen (never used)",
+   "variants": {
+    "original-000": {
+     "rounds": 5,
+     "warm_median_us": 18.548,
+     "warm_min_us": 18.32,
+     "warm_max_us": 19.525,
+     "cold_median_us": 20.575,
+     "setup_median_s": 2.777,
+     "peak_rss_max": 2612396032,
+     "peak_footprint_max": 2611988688
+    },
+    "cpi": {
+     "rounds": 5,
+     "warm_median_us": 3.242,
+     "warm_min_us": 3.156,
+     "warm_max_us": 3.534,
+     "cold_median_us": 3.878,
+     "setup_median_s": 11.618,
+     "peak_rss_max": 2542960640,
+     "peak_footprint_max": 2543274384
+    },
+    "release-candidate": {
+     "rounds": 5,
+     "warm_median_us": 17.027,
+     "warm_min_us": 16.474,
+     "warm_max_us": 17.196,
+     "cold_median_us": 18.344,
+     "setup_median_s": 2.755,
+     "peak_rss_max": 2612314112,
+     "peak_footprint_max": 2612005096
+    }
+   },
+   "speedup": {
+    "cpi": {
+     "median": 5.69120844982914,
+     "geomean": 5.66134945765377,
+     "ci95": [
+      5.43999744049862,
+      5.891708228219114
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.457556935817807,
+      5.923637515842839
+     ],
+     "min": 5.457556935817807,
+     "max": 5.923637515842839,
+     "rounds": 5,
+     "per_round": [
+      5.457556935817807,
+      5.721159777914867,
+      5.69120844982914,
+      5.923637515842839,
+      5.524900962082626
+     ],
+     "ratio_of_medians": 5.721159777914867,
+     "cold_median": 5.087809917355372,
+     "per_country": {
+      "n": 37,
+      "min_addresses": 50,
+      "min": 4.560032017075773,
+      "median": 5.705489398780133,
+      "max": 6.484297108673979
+     }
+    },
+    "release-candidate": {
+     "median": 1.0836906090327127,
+     "geomean": 1.1085284421123014,
+     "ci95": [
+      1.051149898637257,
+      1.1690390766959364
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      1.0699684616283145,
+      1.1852009226660192
+     ],
+     "min": 1.0699684616283145,
+     "max": 1.1852009226660192,
+     "rounds": 5,
+     "per_round": [
+      1.0836906090327127,
+      1.0786229355664105,
+      1.0699684616283145,
+      1.129266082754455,
+      1.1852009226660192
+     ],
+     "ratio_of_medians": 1.0893287132201797,
+     "cold_median": 1.0862972153294732,
+     "per_country": {
+      "n": 37,
+      "min_addresses": 50,
+      "min": 1.0335660580021482,
+      "median": 1.0773392013936645,
+      "max": 1.11166816190828
+     }
+    }
+   }
+  }
+ },
+ "aggregate": {
+  "cpi": {
+   "datasets": 13,
+   "source_weighted_geomean": 5.697328807672573,
+   "geomean_all_datasets": 5.649981500732123,
+   "min": 5.415199868399408,
+   "max": 6.059539412095113,
+   "geomean_by_source": {
+    "senzing": 6.059539412095114,
+    "senzing-style": 5.415199868399408,
+    "openstreetmap": 5.63585418596356
+   },
+   "datasets_by_source": {
+    "senzing": 1,
+    "senzing-style": 1,
+    "openstreetmap": 11
+   }
+  },
+  "release-candidate": {
+   "datasets": 13,
+   "source_weighted_geomean": 1.126250672882967,
+   "geomean_all_datasets": 1.0824804883381722,
+   "min": 1.0405635171241194,
+   "max": 1.1678970017143058,
+   "geomean_by_source": {
+    "senzing": 1.1435234259062963,
+    "senzing-style": 1.1678970017143058,
+    "openstreetmap": 1.0696841999893236
+   },
+   "datasets_by_source": {
+    "senzing": 1,
+    "senzing-style": 1,
+    "openstreetmap": 11
+   }
+  }
+ },
+ "correctness": {
+  "dumps": {
+   "cpi/golden-v1": {
+    "identical": true,
+    "candidate_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+    "baseline_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+    "lines": 12863
+   },
+   "release-candidate/golden-v1": {
+    "identical": true,
+    "candidate_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+    "baseline_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+    "lines": 12863
+   },
+   "cpi/novel": {
+    "identical": true,
+    "candidate_sha256": "806b8a81603ea9adf3af788334dc9b7d577cbb8a13753dd591b535f4fb896aae",
+    "baseline_sha256": "806b8a81603ea9adf3af788334dc9b7d577cbb8a13753dd591b535f4fb896aae",
+    "lines": 12863
+   },
+   "release-candidate/novel": {
+    "identical": true,
+    "candidate_sha256": "806b8a81603ea9adf3af788334dc9b7d577cbb8a13753dd591b535f4fb896aae",
+    "baseline_sha256": "806b8a81603ea9adf3af788334dc9b7d577cbb8a13753dd591b535f4fb896aae",
+    "lines": 12863
+   },
+   "cpi/osm-v3": {
+    "identical": true,
+    "candidate_sha256": "e8a48875b12310ef77f41603d0c6e54edc48c25657596407769d8e4deadb051b",
+    "baseline_sha256": "e8a48875b12310ef77f41603d0c6e54edc48c25657596407769d8e4deadb051b",
+    "lines": 11405
+   },
+   "release-candidate/osm-v3": {
+    "identical": true,
+    "candidate_sha256": "e8a48875b12310ef77f41603d0c6e54edc48c25657596407769d8e4deadb051b",
+    "baseline_sha256": "e8a48875b12310ef77f41603d0c6e54edc48c25657596407769d8e4deadb051b",
+    "lines": 11405
+   },
+   "cpi/unseen-v4": {
+    "identical": true,
+    "candidate_sha256": "78e2db753f9d127d3e7dedf0a6b3859029b16f0437b923140f037e9bc58b1f0a",
+    "baseline_sha256": "78e2db753f9d127d3e7dedf0a6b3859029b16f0437b923140f037e9bc58b1f0a",
+    "lines": 10293
+   },
+   "release-candidate/unseen-v4": {
+    "identical": true,
+    "candidate_sha256": "78e2db753f9d127d3e7dedf0a6b3859029b16f0437b923140f037e9bc58b1f0a",
+    "baseline_sha256": "78e2db753f9d127d3e7dedf0a6b3859029b16f0437b923140f037e9bc58b1f0a",
+    "lines": 10293
+   },
+   "cpi/unseen-v5": {
+    "identical": true,
+    "candidate_sha256": "288e002d3b5556c542a66f774b9cf93a9c6b45123b2e35a5b16cf3d173e40775",
+    "baseline_sha256": "288e002d3b5556c542a66f774b9cf93a9c6b45123b2e35a5b16cf3d173e40775",
+    "lines": 8794
+   },
+   "release-candidate/unseen-v5": {
+    "identical": true,
+    "candidate_sha256": "288e002d3b5556c542a66f774b9cf93a9c6b45123b2e35a5b16cf3d173e40775",
+    "baseline_sha256": "288e002d3b5556c542a66f774b9cf93a9c6b45123b2e35a5b16cf3d173e40775",
+    "lines": 8794
+   },
+   "cpi/unseen-v6": {
+    "identical": true,
+    "candidate_sha256": "e494544de8beaa78eb483c2b59e52f0c25c6fdd30825fb81547e8a0b3fb4e7b8",
+    "baseline_sha256": "e494544de8beaa78eb483c2b59e52f0c25c6fdd30825fb81547e8a0b3fb4e7b8",
+    "lines": 9450
+   },
+   "release-candidate/unseen-v6": {
+    "identical": true,
+    "candidate_sha256": "e494544de8beaa78eb483c2b59e52f0c25c6fdd30825fb81547e8a0b3fb4e7b8",
+    "baseline_sha256": "e494544de8beaa78eb483c2b59e52f0c25c6fdd30825fb81547e8a0b3fb4e7b8",
+    "lines": 9450
+   },
+   "cpi/unseen-v7": {
+    "identical": true,
+    "candidate_sha256": "df345ddd9dffa20eced9768c5757a955d0dc655bc0641e2dc0de76fe637116d0",
+    "baseline_sha256": "df345ddd9dffa20eced9768c5757a955d0dc655bc0641e2dc0de76fe637116d0",
+    "lines": 8973
+   },
+   "release-candidate/unseen-v7": {
+    "identical": true,
+    "candidate_sha256": "df345ddd9dffa20eced9768c5757a955d0dc655bc0641e2dc0de76fe637116d0",
+    "baseline_sha256": "df345ddd9dffa20eced9768c5757a955d0dc655bc0641e2dc0de76fe637116d0",
+    "lines": 8973
+   },
+   "cpi/unseen-v8": {
+    "identical": true,
+    "candidate_sha256": "f7a19baf900da2cd9907cbebe7bbc4c6decce9e7b9600bb7bdc21999afb5fdc5",
+    "baseline_sha256": "f7a19baf900da2cd9907cbebe7bbc4c6decce9e7b9600bb7bdc21999afb5fdc5",
+    "lines": 9981
+   },
+   "release-candidate/unseen-v8": {
+    "identical": true,
+    "candidate_sha256": "f7a19baf900da2cd9907cbebe7bbc4c6decce9e7b9600bb7bdc21999afb5fdc5",
+    "baseline_sha256": "f7a19baf900da2cd9907cbebe7bbc4c6decce9e7b9600bb7bdc21999afb5fdc5",
+    "lines": 9981
+   },
+   "cpi/unseen-v9": {
+    "identical": true,
+    "candidate_sha256": "c8f1b109cac1922b3d5eb3619738d8d41d7fa1169d0b3bf2fb8839852ad8d129",
+    "baseline_sha256": "c8f1b109cac1922b3d5eb3619738d8d41d7fa1169d0b3bf2fb8839852ad8d129",
+    "lines": 9480
+   },
+   "release-candidate/unseen-v9": {
+    "identical": true,
+    "candidate_sha256": "c8f1b109cac1922b3d5eb3619738d8d41d7fa1169d0b3bf2fb8839852ad8d129",
+    "baseline_sha256": "c8f1b109cac1922b3d5eb3619738d8d41d7fa1169d0b3bf2fb8839852ad8d129",
+    "lines": 9480
+   },
+   "cpi/unseen-v10": {
+    "identical": true,
+    "candidate_sha256": "1afaf108f3807349441cc2fc60ca2ed3ccdbfb1cead729b929f840d480c2d855",
+    "baseline_sha256": "1afaf108f3807349441cc2fc60ca2ed3ccdbfb1cead729b929f840d480c2d855",
+    "lines": 8567
+   },
+   "release-candidate/unseen-v10": {
+    "identical": true,
+    "candidate_sha256": "1afaf108f3807349441cc2fc60ca2ed3ccdbfb1cead729b929f840d480c2d855",
+    "baseline_sha256": "1afaf108f3807349441cc2fc60ca2ed3ccdbfb1cead729b929f840d480c2d855",
+    "lines": 8567
+   },
+   "cpi/unseen-v11": {
+    "identical": true,
+    "candidate_sha256": "19fe8fcc105465535233e1362146d500ce462b39318caf34dfce74c06c6f2a8d",
+    "baseline_sha256": "19fe8fcc105465535233e1362146d500ce462b39318caf34dfce74c06c6f2a8d",
+    "lines": 7882
+   },
+   "release-candidate/unseen-v11": {
+    "identical": true,
+    "candidate_sha256": "19fe8fcc105465535233e1362146d500ce462b39318caf34dfce74c06c6f2a8d",
+    "baseline_sha256": "19fe8fcc105465535233e1362146d500ce462b39318caf34dfce74c06c6f2a8d",
+    "lines": 7882
+   },
+   "cpi/unseen-v12": {
+    "identical": true,
+    "candidate_sha256": "8318467ba747fb0d28f0c458e7778e860c542a21a580ca5a0a8eebf41e89477c",
+    "baseline_sha256": "8318467ba747fb0d28f0c458e7778e860c542a21a580ca5a0a8eebf41e89477c",
+    "lines": 8273
+   },
+   "release-candidate/unseen-v12": {
+    "identical": true,
+    "candidate_sha256": "8318467ba747fb0d28f0c458e7778e860c542a21a580ca5a0a8eebf41e89477c",
+    "baseline_sha256": "8318467ba747fb0d28f0c458e7778e860c542a21a580ca5a0a8eebf41e89477c",
+    "lines": 8273
+   },
+   "cpi/unseen-v13": {
+    "identical": true,
+    "candidate_sha256": "8689549e16085748630aef379bca1dcd5be7a012b2c15902c1b07b088dd1e130",
+    "baseline_sha256": "8689549e16085748630aef379bca1dcd5be7a012b2c15902c1b07b088dd1e130",
+    "lines": 9716
+   },
+   "release-candidate/unseen-v13": {
+    "identical": true,
+    "candidate_sha256": "8689549e16085748630aef379bca1dcd5be7a012b2c15902c1b07b088dd1e130",
+    "baseline_sha256": "8689549e16085748630aef379bca1dcd5be7a012b2c15902c1b07b088dd1e130",
+    "lines": 9716
+   }
+  },
+  "frozen": {
+   "cpi/golden-v1": "RESULT: IDENTICAL",
+   "release-candidate/golden-v1": "RESULT: IDENTICAL",
+   "cpi/novel": "RESULT: IDENTICAL",
+   "release-candidate/novel": "RESULT: IDENTICAL"
+  },
+  "fuzz": {
+   "cpi/s1": {
+    "identical": true,
+    "inputs": 2000000
+   },
+   "release-candidate/s1": {
+    "identical": true,
+    "inputs": 2000000
+   },
+   "cpi/s2": {
+    "identical": true,
+    "inputs": 2000000
+   },
+   "release-candidate/s2": {
+    "identical": true,
+    "inputs": 2000000
+   }
+  },
+  "negative_control": {
+   "dataset": "golden-v1",
+   "detected": true
+  }
+ },
+ "memory": {
+  "original-000": {
+   "steady_footprint": "2492 MB",
+   "dataset": "golden-v1",
+   "after_passes": 3
+  },
+  "cpi": {
+   "steady_footprint": "1927 MB",
+   "dataset": "golden-v1",
+   "after_passes": 3
+  },
+  "release-candidate": {
+   "steady_footprint": "2492 MB",
+   "dataset": "golden-v1",
+   "after_passes": 3
+  }
+ },
+ "threads": {
+  "original-000": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  },
+  "cpi": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  },
+  "release-candidate": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  }
+ },
+ "manifest": "manifest.json"
+}

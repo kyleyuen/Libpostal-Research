@@ -1,0 +1,169 @@
+{
+  "_comment": "203 output and digest correctness validation only; suite config staged from recorded 202 and suite dataset registry, candidate stream active marker enabled.",
+  "workspace": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "model_dir": "/Users/kyle/.cache/libpostal-profile/libpostal",
+  "baseline": "original-000",
+  "settings": {
+    "rounds": 3,
+    "passes": 200,
+    "settle_load_1min": 2.5,
+    "settle_max_wait_s": 180,
+    "correctness_jobs": 1,
+    "fuzz_count": 2000000,
+    "fuzz_seeds": [
+      1,
+      2
+    ],
+    "fuzz_corpora": [
+      "profiling/golden-v1/all.txt",
+      "profiling/golden-v2-novel/novel.txt"
+    ],
+    "bootstrap_resamples": 1000,
+    "bootstrap_seed": 20261004,
+    "steady_dataset": "golden-v1",
+    "steady_passes_before_sample": 3,
+    "thread_check_dataset": "golden-v1",
+    "sleep_between_runs_s": 2,
+    "country_min_n": 50
+  },
+  "variants": [
+    {
+      "name": "original-000",
+      "role": "baseline",
+      "enabled": true,
+      "desc": "preserved 000 baseline",
+      "bench_ext": "research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+      "dump_outputs": "research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+      "fuzz_pipeline": "research/tools/fuzz_baseline",
+      "fuzz_reference": {
+        "1": "research/experiments/011-normalize-fastpaths/raw/fuzz/base_s1.txt",
+        "2": "research/experiments/011-normalize-fastpaths/raw/fuzz/base_s2.txt"
+      }
+    },
+    {
+      "name": "cpi-stream-203",
+      "role": "candidate",
+      "enabled": true,
+      "desc": "203 streaming postcode graph candidate",
+      "bench_ext": "research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext",
+      "dump_outputs": "research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/dump_outputs",
+      "fuzz_pipeline": "research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/fuzz_pipeline"
+    }
+  ],
+  "datasets": [
+    {
+      "name": "golden-v1",
+      "source": "senzing",
+      "kind": "development+validation (PGO trained on its development split)",
+      "reserved": false,
+      "txt": "profiling/golden-v1/all.txt",
+      "tsv": "profiling/golden-v2-novel/v1-all.tsv",
+      "frozen_reference": "profiling/golden-v1/baseline-outputs.jsonl"
+    },
+    {
+      "name": "novel",
+      "source": "senzing-style",
+      "kind": "screening/validation",
+      "reserved": false,
+      "txt": "profiling/golden-v2-novel/novel.txt",
+      "tsv": "profiling/golden-v2-novel/novel.tsv",
+      "frozen_reference": "profiling/golden-v2-novel/baseline-outputs.jsonl"
+    },
+    {
+      "name": "osm-v3",
+      "source": "openstreetmap",
+      "kind": "screening/validation",
+      "reserved": false,
+      "txt": "profiling/golden-v3-osm/osm.txt",
+      "tsv": "profiling/golden-v3-osm/osm.tsv"
+    },
+    {
+      "name": "unseen-v4",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v4-osm-unseen/unseen.txt",
+      "tsv": "profiling/golden-v4-osm-unseen/unseen.tsv"
+    },
+    {
+      "name": "unseen-v5",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v5-osm-unseen/unseen5.txt",
+      "tsv": "profiling/golden-v5-osm-unseen/unseen5.tsv"
+    },
+    {
+      "name": "unseen-v6",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v6-osm-unseen/unseen6.txt",
+      "tsv": "profiling/golden-v6-osm-unseen/unseen6.tsv"
+    },
+    {
+      "name": "unseen-v7",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v7-osm-unseen/unseen7.txt",
+      "tsv": "profiling/golden-v7-osm-unseen/unseen7.tsv"
+    },
+    {
+      "name": "unseen-v8",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v8-osm-unseen/unseen8.txt",
+      "tsv": "profiling/golden-v8-osm-unseen/unseen8.tsv"
+    },
+    {
+      "name": "unseen-v9",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v9-osm-unseen/unseen9.txt",
+      "tsv": "profiling/golden-v9-osm-unseen/unseen9.tsv"
+    },
+    {
+      "name": "unseen-v10",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v10-osm-unseen/unseen10.txt",
+      "tsv": "profiling/golden-v10-osm-unseen/unseen10.tsv"
+    },
+    {
+      "name": "unseen-v11",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v11-osm-unseen/unseen11.txt",
+      "tsv": "profiling/golden-v11-osm-unseen/unseen11.tsv"
+    },
+    {
+      "name": "unseen-v12",
+      "source": "openstreetmap",
+      "kind": "spent unseen (observed in experiments 183 and 202)",
+      "reserved": false,
+      "txt": "profiling/golden-v12-osm-unseen/unseen12.txt",
+      "tsv": "profiling/golden-v12-osm-unseen/unseen12.tsv"
+    },
+    {
+      "name": "unseen-v13",
+      "source": "openstreetmap",
+      "kind": "spent unseen (observed in experiments 183 and 202)",
+      "reserved": false,
+      "txt": "profiling/golden-v13-osm-unseen/unseen13.txt",
+      "tsv": "profiling/golden-v13-osm-unseen/unseen13.tsv"
+    },
+    {
+      "name": "unseen-v14",
+      "source": "openstreetmap",
+      "kind": "spent unseen (observed in experiment 202)",
+      "reserved": false,
+      "txt": "profiling/golden-v14-osm-unseen/unseen14.txt",
+      "tsv": "profiling/golden-v14-osm-unseen/unseen14.tsv"
+    }
+  ]
+}

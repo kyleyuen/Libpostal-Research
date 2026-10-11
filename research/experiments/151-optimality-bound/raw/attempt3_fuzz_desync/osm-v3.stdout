@@ -1,0 +1,9 @@
+model L=20 state_rows=11470623 state_nnz=33799350 (mean 2.947/row) state_trans_rows=2086474 state_trans_nnz=13369573 (mean 6.41/row)
+model CSR MB: state 451.5 (indptr 45.9, indices 135.2, data 270.4); state_trans 168.8
+model packed MB: state f64 365.6, f32 205.4; state_trans f64 143.8, f32 86.7
+model state-row nnz histogram (all rows, n:count): 0:0 1:0 2:5889871 3:3257027 4:1139158 5:486037 6:267512 7:165244 8:105659 9:66018 10:39323 11:23957 12:14135 13:7965 14:4211 15:2361 16:1071 17:547 18:278 19:214 20:35 21:0
+addresses_predicted 11405  O4 state-bit mismatches 0  O4 state-trans-bit mismatches 0  label disagreements 0  exact ties on path 0
+per address: tokens 5.362  S keys 40.193  S hits 35.938  S adds 454.48  P keys 7.759  P hits 7.531  P adds 587.37
+per address distinct weight lines (128 B): CSR 161.56  packed-f64 98.74  packed-f32 67.12
+hit state-row nnz histogram (n:count): 0:0 1:0 2:15085 3:18960 4:19001 5:17933 6:17338 7:15236 8:15413 9:13082 10:13763 11:16875 12:25054 13:24151 14:26272 15:21347 16:9712 17:19224 18:15887 19:25931 20:79609 21:0
+certified (no fallback needed): E1 double-any-order 11405 (100.0000%)  E2 f32 weights+sums 11405 (100.0000%)  E3 f32 all 11405 (100.0000%)

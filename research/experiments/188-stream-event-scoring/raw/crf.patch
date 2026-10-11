@@ -1,0 +1,68 @@
+--- research/experiments/181-release-180/sources/crf.c	2026-10-06 00:09:56
++++ research/experiments/188-stream-event-scoring/sources/crf.c	2026-10-07 18:55:13
+@@ -78,18 +78,6 @@
+ direct_word_fallback++;
+ #endif
+ }
+-typedef struct { uint32_t id; uint8_t trans; } original_event_t;
+-static original_event_t *original_events = NULL;
+-static size_t original_events_cap = 0;
+-static bool original_events_reserve(size_t n) {
+-    if (n <= original_events_cap) return true;
+-    size_t cap = original_events_cap ? original_events_cap : 128;
+-    while (cap < n) cap *= 2;
+-    original_event_t *p = realloc(original_events, cap * sizeof(*p));
+-    if (p == NULL) return false;
+-    original_events = p; original_events_cap = cap;
+-    return true;
+-}
+ #endif
+ 
+ bool crf_tagger_score(crf_t *self, void *tagger, void *tagger_context, cstring_array *features, cstring_array *prev_tag_features, tagger_feature_function feature_function, tokenized_string_t *tokenized, bool print_features) {
+@@ -140,25 +128,29 @@
+         uint32_t feature_id;
+ 
+ #ifdef EXP_EVENT_FLOW
+-        // Resolve in original feature order, retain misses, then consume exactly
+-        // state followed by transition events. Allocation failure uses old code.
+-        size_t event_n = cstring_array_num_strings(features) + cstring_array_num_strings(prev_tag_features) + (direct_word_id != UINT32_MAX);
+-        if (original_events_reserve(event_n)) {
+-            size_t e = 0;
+-            for (fidx = 0; fidx < cstring_array_num_strings(features); fidx++) { if (direct_word_id != UINT32_MAX && direct_word_array == features && direct_word_pos == fidx) { original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX; } feature = cstring_array_get_string(features, fidx); original_events[e].id = crf_get_feature_id(self, feature, &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 0; }
+-            if (direct_word_id != UINT32_MAX && direct_word_array == features) { original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX; }
+-            cstring_array_foreach(prev_tag_features, fidx, feature, { original_events[e].id = crf_get_state_trans_feature_id(self, feature, &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 1; })
+-            uint32_t *sindptr = self->weights->indptr->a, *sindices = self->weights->indices->a;
+-            double *sdata = self->weights->data->a, *state_scores = state_score(crf_context, t);
+-            uint32_t *tindptr = self->state_trans_weights->indptr->a, *tindices = self->state_trans_weights->indices->a;
+-            double *tdata = self->state_trans_weights->data->a, *state_trans_scores = state_trans_score_all(crf_context, t);
+-            for (size_t i = 0; i < e; i++) {
+-                original_event_t ev = original_events[i]; if (ev.id == UINT32_MAX) continue;
+-                if (!ev.trans) for (int col = sindptr[ev.id]; col < sindptr[ev.id + 1]; col++) state_scores[sindices[col]] += sdata[col];
+-                else for (int col = tindptr[ev.id]; col < tindptr[ev.id + 1]; col++) state_trans_scores[tindices[col]] += tdata[col];
++        // Resolve and score in original state-then-transition order without staging IDs.
++        uint32_t *sindptr = self->weights->indptr->a, *sindices = self->weights->indices->a;
++        double *sdata = self->weights->data->a, *state_scores_stream = state_score(crf_context, t);
++        for (fidx = 0; fidx < cstring_array_num_strings(features); fidx++) {
++            if (direct_word_id != UINT32_MAX && direct_word_array == features && direct_word_pos == fidx) {
++                for (int col = sindptr[direct_word_id]; col < sindptr[direct_word_id + 1]; col++) state_scores_stream[sindices[col]] += sdata[col];
++                direct_word_id = UINT32_MAX;
+             }
+-            goto original_event_scored;
++            feature = cstring_array_get_string(features, fidx);
++            if (!crf_get_feature_id(self, feature, &feature_id)) continue;
++            for (int col = sindptr[feature_id]; col < sindptr[feature_id + 1]; col++) state_scores_stream[sindices[col]] += sdata[col];
++        }
++        if (direct_word_id != UINT32_MAX && direct_word_array == features) {
++            for (int col = sindptr[direct_word_id]; col < sindptr[direct_word_id + 1]; col++) state_scores_stream[sindices[col]] += sdata[col];
++            direct_word_id = UINT32_MAX;
+         }
++        uint32_t *tindptr = self->state_trans_weights->indptr->a, *tindices = self->state_trans_weights->indices->a;
++        double *tdata = self->state_trans_weights->data->a, *state_trans_scores_stream = state_trans_score_all(crf_context, t);
++        cstring_array_foreach(prev_tag_features, fidx, feature, {
++            if (!crf_get_state_trans_feature_id(self, feature, &feature_id)) continue;
++            for (int col = tindptr[feature_id]; col < tindptr[feature_id + 1]; col++) state_trans_scores_stream[tindices[col]] += tdata[col];
++        })
++        goto original_event_scored;
+ #endif
+ 
+         double *state_scores = state_score(crf_context, t);

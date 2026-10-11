@@ -1,0 +1,1 @@
+/Users/kyle/Library/Application\ Support/Headroom/headroom/bin/rtk cmp -s research/experiments/179-phrase-recognition-flow/raw/control-fuzz20k.stdout research/experiments/179-phrase-recognition-flow/raw/root-gate-fuzz20k.stdout 

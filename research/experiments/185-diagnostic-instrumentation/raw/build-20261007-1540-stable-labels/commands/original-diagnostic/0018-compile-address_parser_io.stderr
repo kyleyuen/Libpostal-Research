@@ -1,0 +1,21 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser_io.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser_io.h:8:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.h:52:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/averaged_perceptron.h:27:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser_io.c:105:16: warning: unused variable 'pair_len' [-Wunused-variable]
+  105 |         size_t pair_len = strlen(str);
+      |                ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/string_utils.h:251:9: note: expanded from macro 'cstring_array_foreach'
+  251 |         code;                                                                           \
+      |         ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser_io.c:99:12: warning: unused variable 'num_pairs' [-Wunused-variable]
+   99 |     size_t num_pairs = cstring_array_num_strings(pairs);
+      |            ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser_io.c:246:12: warning: unused variable 'len' [-Wunused-variable]
+  246 |     size_t len = strlen(normalized);
+      |            ^~~
+4 warnings generated.

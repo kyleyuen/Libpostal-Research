@@ -1,0 +1,566 @@
+2c2
+< 158ctl/dump_outputs:	file format mach-o arm64
+---
+> 158fp/dump_outputs:	file format mach-o arm64
+210c210
+<                	stp	x21, x28, [sp, #ADDR]
+---
+>                	str	x21, [sp, #ADDR]
+214a215
+>                	str	x28, [sp, #ADDR]
+604c605,606
+<                	ldp	x26, x28, [sp, #ADDR]
+---
+>                	ldr	x26, [sp, #ADDR]
+>                	ldr	x28, [sp, #ADDR]
+978,979c980,981
+<                	ldr	x22, [sp, #ADDR]
+<                	ldr	x8, [x22, #ADDR]
+---
+>                	ldp	x1, x20, [sp, #ADDR]
+>                	ldr	x8, [x20, #ADDR]
+981c983
+<                	ldr	x21, [x22, #ADDR]
+---
+>                	ldr	x21, [x20, #ADDR]
+984,985c986,987
+<                	ldr	x20, [sp, #ADDR]
+<                	ldr	x0, [x20, #ADDR]
+---
+>                	ldr	x24, [sp, #ADDR]
+>                	ldr	x0, [x24, #ADDR]
+987d988
+<                	ldr	x1, [sp, #ADDR]
+1023c1024
+<                	ldr	x9, [x22, #ADDR]
+---
+>                	ldr	x9, [x20, #ADDR]
+1028c1029
+<                	ldr	x9, [x22, #ADDR]
+---
+>                	ldr	x9, [x20, #ADDR]
+1044c1045
+<                	ldr	w8, [x20, #ADDR]
+---
+>                	ldr	w8, [x24, #ADDR]
+1049c1050
+<                	ldr	x9, [x20, #ADDR]
+---
+>                	ldr	x9, [x24, #ADDR]
+1051,1053c1052,1055
+<                	ldp	x8, x10, [sp, #ADDR]
+<                	ldp	x25, x24, [x10, #ADDR]
+<                	ldrb	w22, [x20, #ADDR]
+---
+>                	ldr	x8, [sp, #ADDR]
+>                	ldp	x27, x26, [x8, #ADDR]
+>                	ldrb	w22, [x24, #ADDR]
+>                	ldr	x8, [sp, #ADDR]
+1056,1057c1058,1059
+<                	ldr	x27, [x9, #ADDR]
+<                	ldr	x26, [x27, #ADDR]
+---
+>                	ldr	x25, [x9, #ADDR]
+>                	ldr	x28, [x25, #ADDR]
+1063,1071c1065,1073
+<                	mul	x19, x26, x26
+<                	ldr	x8, [x27, #ADDR]
+<                	stp	x20, x26, [x8]
+<                	ldr	x9, [x27, #ADDR]
+<                	stp	x20, x19, [x9]
+<                	ldr	x9, [x27, #ADDR]
+<                	stp	x20, x26, [x9]
+<                	ldr	x9, [x27, #ADDR]
+<                	stp	x20, x26, [x9]
+---
+>                	mul	x19, x28, x28
+>                	ldr	x8, [x25, #ADDR]
+>                	stp	x20, x28, [x8]
+>                	ldr	x9, [x25, #ADDR]
+>                	stp	x20, x19, [x9]
+>                	ldr	x9, [x25, #ADDR]
+>                	stp	x20, x28, [x9]
+>                	ldr	x9, [x25, #ADDR]
+>                	stp	x20, x28, [x9]
+1073c1075
+<                	mul	x21, x26, x20
+---
+>                	mul	x21, x28, x20
+1078c1080
+<                	ldr	x8, [x27, #ADDR]
+---
+>                	ldr	x8, [x25, #ADDR]
+1083c1085
+<                	mul	x9, x26, x26
+---
+>                	mul	x9, x28, x28
+1086c1088
+<                	ldr	x8, [x27, #ADDR]
+---
+>                	ldr	x8, [x25, #ADDR]
+1090,1091c1092
+<                	str	x20, [x27, #ADDR]
+<                	ldr	x12, [sp, #ADDR]
+---
+>                	str	x20, [x25, #ADDR]
+1092a1094
+>                	ldr	x12, [sp, #ADDR]
+1097,1098c1099
+<                	str	x27, [sp, #ADDR]
+<                	ldr	x8, [x27, #ADDR]
+---
+>                	ldr	x8, [x25, #ADDR]
+1105c1106
+<                	adrp	x27, ADDR <SYM>
+---
+>                	adrp	x28, ADDR <SYM>
+1109,1111c1110,1111
+<                	ldr	x26, [sp, #ADDR]
+<                	cbz	x25, ADDR <SYM>
+<                	ldr	x8, [x25]
+---
+>                	cbz	x27, ADDR <SYM>
+>                	ldr	x8, [x27]
+1114c1114
+<                	ldr	x8, [x25, #ADDR]
+---
+>                	ldr	x8, [x27, #ADDR]
+1117,1118c1117,1118
+<                	cbz	x24, ADDR <SYM>
+<                	ldr	x8, [x24]
+---
+>                	cbz	x26, ADDR <SYM>
+>                	ldr	x8, [x26]
+1121c1121
+<                	ldr	x8, [x24, #ADDR]
+---
+>                	ldr	x8, [x26, #ADDR]
+1132c1132
+<                	stp	x25, x24, [x21]
+---
+>                	stp	x27, x26, [x21]
+1138c1138
+<                	ldr	x8, [x25]
+---
+>                	ldr	x8, [x27]
+1143c1143
+<                	ldr	x8, [x24]
+---
+>                	ldr	x8, [x26]
+1145c1145
+<                	ldr	x9, [x27, #ADDR]
+---
+>                	ldr	x9, [x28, #ADDR]
+1147,1149c1147,1149
+<                	mov	x0, x26
+<                	ldr	x1, [sp, #ADDR]
+<                	mov	x2, x23
+---
+>                	mov	x0, x24
+>                	mov	x1, x23
+>                	ldr	x2, [sp, #ADDR]
+1158,1160c1158,1159
+<                	ldr	x8, [x25]
+<                	mov	x9, x27
+<                	ldr	x27, [x8]
+---
+>                	ldr	x8, [x27]
+>                	ldr	x24, [x8]
+1163,1164c1162,1163
+<                	str	w27, [x8, x20, lsl #2]
+<                	ldr	x8, [x24]
+---
+>                	str	w24, [x8, x20, lsl #2]
+>                	ldr	x8, [x26]
+1166c1165
+<                	ldr	x8, [x9, #ADDR]
+---
+>                	ldr	x8, [x28, #ADDR]
+1171c1170
+<                	cmp	x27, x8
+---
+>                	cmp	x24, x8
+1175c1174
+<                	adrp	x28, ADDR <SYM>
+---
+>                	adrp	x11, ADDR <SYM>
+1178a1178
+>                	str	x25, [sp, #ADDR]
+1186c1186
+<                	ldr	x26, [x8, #ADDR]
+---
+>                	ldr	x28, [x8, #ADDR]
+1191c1191
+<                	mov	x1, x25
+---
+>                	mov	x1, x27
+1194c1194,1195
+<                	mov	x25, x9
+---
+>                	mov	x27, x9
+>                	mov	x25, x11
+1196,1198c1197,1199
+<                	ldr	x0, [x25, #ADDR]
+<                	ldr	x2, [x28, #ADDR]
+<                	mov	x1, x24
+---
+>                	ldr	x0, [x27, #ADDR]
+>                	ldr	x2, [x25, #ADDR]
+>                	mov	x1, x26
+1202,1206c1203,1207
+<                	adrp	x16, ADDR <SYM>
+<                	cbz	x27, ADDR <SYM>
+<                	ldr	x9, [x16, #ADDR]
+<                	and	x8, x27, #ADDR
+<                	cmp	x27, #ADDR
+---
+>                	adrp	x15, ADDR <SYM>
+>                	cbz	x24, ADDR <SYM>
+>                	ldr	x9, [x15, #ADDR]
+>                	and	x8, x24, #ADDR
+>                	cmp	x24, #ADDR
+1209c1210
+<                	and	x11, x27, #ADDR
+---
+>                	and	x11, x24, #ADDR
+1216c1217
+<                	umaddl	x14, w14, w13, x26
+---
+>                	umaddl	x14, w14, w13, x28
+1222c1223
+<                	umaddl	x14, w14, w13, x26
+---
+>                	umaddl	x14, w14, w13, x28
+1228c1229
+<                	umaddl	x14, w14, w13, x26
+---
+>                	umaddl	x14, w14, w13, x28
+1234c1235
+<                	umaddl	x14, w14, w13, x26
+---
+>                	umaddl	x14, w14, w13, x28
+1240c1241
+<                	umaddl	x14, w14, w13, x26
+---
+>                	umaddl	x14, w14, w13, x28
+1246c1247
+<                	umaddl	x14, w14, w13, x26
+---
+>                	umaddl	x14, w14, w13, x28
+1252c1253
+<                	umaddl	x14, w14, w13, x26
+---
+>                	umaddl	x14, w14, w13, x28
+1258c1259
+<                	umaddl	x14, w14, w13, x26
+---
+>                	umaddl	x14, w14, w13, x28
+1265,1266c1266,1267
+<                	ldp	x13, x30, [sp, #ADDR]
+<                	adrp	x15, ADDR <SYM>
+---
+>                	ldp	x30, x13, [sp, #ADDR]
+>                	adrp	x27, ADDR <SYM>
+1268c1269
+<                	ldr	x8, [x28, #ADDR]
+---
+>                	ldr	x8, [x27, #ADDR]
+1320c1321
+<                	ldr	x12, [x16, #ADDR]
+---
+>                	ldr	x12, [x15, #ADDR]
+1321a1323
+>                	adrp	x15, ADDR <SYM>
+1323,1324c1325,1326
+<                	ldr	x16, [x28, #ADDR]
+<                	add	x17, x26, #ADDR
+---
+>                	ldr	x16, [x27, #ADDR]
+>                	add	x17, x28, #ADDR
+1399c1401
+<                	ldr	x26, [x22, #ADDR]
+---
+>                	ldr	x27, [x22, #ADDR]
+1404c1406
+<                	lsl	x2, x26, #3
+---
+>                	lsl	x2, x27, #3
+1408c1410
+<                	cmp	x26, #ADDR
+---
+>                	cmp	x27, #ADDR
+1425c1427
+<                	mov	x25, #ADDR               ; =0
+---
+>                	mov	x26, #ADDR               ; =0
+1430c1432
+<                	lsr	x8, x26, #1
+---
+>                	lsr	x8, x27, #1
+1444,1446c1446,1448
+<                	ldp	x27, x24, [x9, #ADDR]
+<                	mul	x9, x27, x21
+<                	add	x9, x24, x9, lsl #3
+---
+>                	ldp	x24, x25, [x9, #ADDR]
+>                	mul	x9, x24, x21
+>                	add	x9, x25, x9, lsl #3
+1452c1454
+<                	madd	x11, x23, x25, x20
+---
+>                	madd	x11, x23, x26, x20
+1558c1560
+<                	add	x25, x25, #ADDR
+---
+>                	add	x26, x26, #ADDR
+1567c1569
+<                	cbz	x26, ADDR <SYM>
+---
+>                	cbz	x27, ADDR <SYM>
+1579c1581
+<                	cmp	x26, x9
+---
+>                	cmp	x27, x9
+1655c1657,1658
+<                	ldp	x7, x22, [sp, #ADDR]
+---
+>                	ldr	x7, [sp, #ADDR]
+>                	ldr	x24, [sp, #ADDR]
+1687,1688d1689
+<                	bl	ADDR <SYM>
+<                	mov	x19, x21
+1724c1725
+<                	umaddl	x11, w11, w10, x26
+---
+>                	umaddl	x11, w11, w10, x28
+1849,1857d1849
+<                	adrp	x8, ADDR <SYM>
+<                	ldr	x8, [x8, #ADDR]
+<                	ldr	x3, [x8]
+<                	adrp	x0, ADDR <SYM>
+<                	add	x0, x0, #ADDR
+<                	mov	w1, #ADDR               ; =108
+<                	mov	w2, #ADDR                ; =1
+<                	bl	ADDR <SYM>
+<                	bl	ADDR <SYM>
+1992c1984
+<                	mov	x19, #ADDR               ; =0
+---
+>                	mov	x21, #ADDR               ; =0
+2027,2030c2019,2022
+<                	ldr	x0, [x20, #ADDR]
+<                	ldp	x3, x4, [x22, #ADDR]
+<                	ldr	x5, [x22, #ADDR]
+<                	ldrb	w8, [x20, #ADDR]
+---
+>                	ldr	x0, [x24, #ADDR]
+>                	ldp	x3, x4, [x20, #ADDR]
+>                	ldr	x5, [x20, #ADDR]
+>                	ldrb	w8, [x24, #ADDR]
+2032,2033c2024,2025
+<                	mov	x1, x20
+<                	mov	x2, x22
+---
+>                	mov	x1, x24
+>                	mov	x2, x20
+2063,2064c2055
+<                	mov	x28, x27
+<                	ldr	x0, [x27, #ADDR]
+---
+>                	ldr	x0, [x25, #ADDR]
+2066c2057
+<                	mov	x2, x26
+---
+>                	mov	x2, x28
+2069,2070c2060,2061
+<                	ldr	x0, [x28, #ADDR]
+<                	mul	x19, x26, x26
+---
+>                	ldr	x0, [x25, #ADDR]
+>                	mul	x19, x28, x28
+2075c2066
+<                	ldr	x0, [x28, #ADDR]
+---
+>                	ldr	x0, [x25, #ADDR]
+2077c2068
+<                	mov	x2, x26
+---
+>                	mov	x2, x28
+2080c2071
+<                	ldr	x0, [x28, #ADDR]
+---
+>                	ldr	x0, [x25, #ADDR]
+2082c2073
+<                	mov	x2, x26
+---
+>                	mov	x2, x28
+2086d2076
+<                	mov	x27, x28
+2087a2078,2086
+>                	adrp	x8, ADDR <SYM>
+>                	ldr	x8, [x8, #ADDR]
+>                	ldr	x3, [x8]
+>                	adrp	x0, ADDR <SYM>
+>                	add	x0, x0, #ADDR
+>                	mov	w1, #ADDR               ; =100
+>                	mov	w2, #ADDR                ; =1
+>                	bl	ADDR <SYM>
+>                	bl	ADDR <SYM>
+2098,2099c2097
+<                	ldr	x8, [sp, #ADDR]
+<                	str	x9, [x8, #ADDR]
+---
+>                	str	x9, [x25, #ADDR]
+2116c2114
+<                	ldr	x0, [x27, #ADDR]
+---
+>                	ldr	x0, [x28, #ADDR]
+2121c2119
+<                	str	x0, [x27, #ADDR]
+---
+>                	str	x0, [x28, #ADDR]
+2129c2127
+<                	cmp	x22, x27
+---
+>                	cmp	x22, x24
+2134d2131
+<                	cbz	x0, ADDR <SYM>
+2135a2133
+>                	cbz	x0, ADDR <SYM>
+2146c2144
+<                	ldr	x0, [x28, #ADDR]
+---
+>                	ldr	x0, [x11, #ADDR]
+2147a2146
+>                	mov	x23, x11
+2149a2149
+>                	adrp	x10, ADDR <SYM>
+2151c2151,2152
+<                	str	x0, [x28, #ADDR]
+---
+>                	mov	x11, x23
+>                	str	x0, [x23, #ADDR]
+2153d2153
+<                	adrp	x10, ADDR <SYM>
+2172,2173c2172
+<                	ldr	x30, [sp, #ADDR]
+<                	ldr	x3, [sp, #ADDR]
+---
+>                	ldp	x30, x3, [sp, #ADDR]
+2272c2271,2272
+<                	ldp	x26, x28, [sp, #ADDR]
+---
+>                	ldr	x26, [sp, #ADDR]
+>                	ldr	x28, [sp, #ADDR]
+2279a2280,2293
+>                	b	ADDR <SYM>
+>                	str	x20, [sp]
+>                	adrp	x5, ADDR <SYM>
+>                	add	x5, x5, #ADDR
+>                	ldp	x19, x2, [sp, #ADDR]
+>                	mov	x0, x19
+>                	mov	x1, x24
+>                	mov	x3, x27
+>                	mov	x4, x26
+>                	ldr	x6, [sp, #ADDR]
+>                	mov	x7, x25
+>                	bl	ADDR <SYM>
+>                	mov	x30, x19
+>                	cbnz	w0, ADDR <SYM>
+2313d2326
+<                	ldr	w21, [sp, #ADDR]
+2325c2338
+<                	mov	x19, #ADDR               ; =0
+---
+>                	mov	x21, #ADDR               ; =0
+2340c2353
+<                	cmp	x26, #ADDR
+---
+>                	cmp	x27, #ADDR
+2346c2359
+<                	madd	x12, x23, x25, x20
+---
+>                	madd	x12, x23, x26, x20
+2572,2573c2585
+<                	ldr	x30, [sp, #ADDR]
+<                	ldr	x3, [sp, #ADDR]
+---
+>                	ldp	x30, x3, [sp, #ADDR]
+2582,2583c2594
+<                	ldr	x30, [sp, #ADDR]
+<                	ldr	x3, [sp, #ADDR]
+---
+>                	ldp	x30, x3, [sp, #ADDR]
+2879,2880c2890,2891
+<                	ldr	x19, [sp, #ADDR]
+<                	mov	x0, x19
+---
+>                	ldr	x21, [sp, #ADDR]
+>                	mov	x0, x21
+2886,2887c2897,2898
+<                	ldr	w21, [sp, #ADDR]
+<                	tbnz	w21, #ADDR, ADDR <SYM>
+---
+>                	ldr	w8, [sp, #ADDR]
+>                	tbnz	w8, #ADDR, ADDR <SYM>
+2895c2906
+<                	mov	x0, x19
+---
+>                	mov	x0, x21
+2930c2941
+<                	mov	x0, x19
+---
+>                	mov	x0, x21
+2932c2943
+<                	mov	x19, #ADDR               ; =0
+---
+>                	mov	x21, #ADDR               ; =0
+2965c2976
+<                	cmp	x26, #ADDR
+---
+>                	cmp	x27, #ADDR
+2967,2968c2978,2979
+<                	tbnz	w26, #ADDR, ADDR <SYM>
+<                	cbz	x26, ADDR <SYM>
+---
+>                	tbnz	w27, #ADDR, ADDR <SYM>
+>                	cbz	x27, ADDR <SYM>
+3016c3027
+<                	cmp	x8, x26
+---
+>                	cmp	x8, x27
+3021c3032
+<                	madd	x9, x27, x28, x24
+---
+>                	madd	x9, x24, x28, x25
+3097,3098c3108
+<                	ldr	x30, [sp, #ADDR]
+<                	ldr	x3, [sp, #ADDR]
+---
+>                	ldp	x30, x3, [sp, #ADDR]
+3105c3115
+<                	cbz	x26, ADDR <SYM>
+---
+>                	cbz	x27, ADDR <SYM>
+3111c3121
+<                	madd	x13, x23, x25, x20
+---
+>                	madd	x13, x23, x26, x20
+3132c3142
+<                	cmp	x26, x0
+---
+>                	cmp	x27, x0
+3142c3152
+<                	cmp	x11, x26
+---
+>                	cmp	x11, x27
+3251c3261,3262
+<                	ldp	x7, x22, [sp, #ADDR]
+---
+>                	ldr	x7, [sp, #ADDR]
+>                	ldr	x24, [sp, #ADDR]
+3260c3271,3272
+<                	ldp	x7, x22, [sp, #ADDR]
+---
+>                	ldr	x7, [sp, #ADDR]
+>                	ldr	x24, [sp, #ADDR]

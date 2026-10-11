@@ -1,0 +1,19 @@
+{
+  "start_utc": "2026-10-08T01:20:58.735769+00:00",
+  "end_utc": "2026-10-08T01:20:58.782619+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "research/experiments/187-cpi-reuse-flow/tools",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "cwd": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_answer_disagreement_does_not_become_reuse_candidate (test_cpi_reuse_flow.ReuseFlowTests.test_answer_disagreement_does_not_become_reuse_candidate) ... ok\ntest_answer_reuse_requires_exact_producer_identity (test_cpi_reuse_flow.ReuseFlowTests.test_answer_reuse_requires_exact_producer_identity) ... ok\ntest_bool_is_not_numeric_answer_equality (test_cpi_reuse_flow.ReuseFlowTests.test_bool_is_not_numeric_answer_equality) ... ok\ntest_different_model_generations_do_not_form_a_repeat_group (test_cpi_reuse_flow.ReuseFlowTests.test_different_model_generations_do_not_form_a_repeat_group) ... ok\ntest_gzip_archive_is_verified_before_raw_removal (test_cpi_reuse_flow.ReuseFlowTests.test_gzip_archive_is_verified_before_raw_removal) ... ok\ntest_gzip_trace_is_stream_analyzable (test_cpi_reuse_flow.ReuseFlowTests.test_gzip_trace_is_stream_analyzable) ... ok\ntest_missing_consumer_is_explicit (test_cpi_reuse_flow.ReuseFlowTests.test_missing_consumer_is_explicit) ... ok\ntest_overflow_rejected (test_cpi_reuse_flow.ReuseFlowTests.test_overflow_rejected) ... ok\ntest_phrase_boolean_miss_has_unknown_result_shape (test_cpi_reuse_flow.ReuseFlowTests.test_phrase_boolean_miss_has_unknown_result_shape) ... ok\ntest_repeated_answer_links_to_matching_consumers_and_liveness (test_cpi_reuse_flow.ReuseFlowTests.test_repeated_answer_links_to_matching_consumers_and_liveness) ... ok\ntest_source_proof_is_within_parse_only_and_separate_from_epoch (test_cpi_reuse_flow.ReuseFlowTests.test_source_proof_is_within_parse_only_and_separate_from_epoch) ... ok\ntest_unknown_generation_stays_unproven (test_cpi_reuse_flow.ReuseFlowTests.test_unknown_generation_stays_unproven) ... ok\ntest_unknown_record_rejected (test_cpi_reuse_flow.ReuseFlowTests.test_unknown_record_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.007s\n\nOK\n"
+}

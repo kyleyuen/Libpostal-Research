@@ -1,0 +1,60 @@
+{
+  "_comment": "Experiment 203 CP_IDS runtime-ablation memory diagnostic only; 3 timed passes are not eligible speed trials.",
+  "workspace": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "model_dir": "/Users/kyle/.cache/libpostal-profile/libpostal",
+  "baseline": "original-000",
+  "settings": {
+    "rounds": 3,
+    "passes": 3,
+    "settle_load_1min": 2.5,
+    "settle_max_wait_s": 180,
+    "correctness_jobs": 1,
+    "fuzz_count": 0,
+    "fuzz_seeds": [],
+    "fuzz_corpora": [],
+    "bootstrap_resamples": 1000,
+    "bootstrap_seed": 20261010,
+    "steady_dataset": "golden-v1",
+    "steady_passes_before_sample": 3,
+    "thread_check_dataset": "golden-v1",
+    "sleep_between_runs_s": 2,
+    "country_min_n": 50
+  },
+  "variants": [
+    {
+      "name": "original-000",
+      "role": "baseline",
+      "enabled": true,
+      "desc": "preserved 000 baseline",
+      "bench_ext": "research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+      "dump_outputs": "research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs"
+    },
+    {
+      "name": "cpi-119",
+      "role": "candidate",
+      "enabled": true,
+      "desc": "accepted experiment 119 CPI, default environment",
+      "bench_ext": "research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext",
+      "dump_outputs": "research/experiments/119-component-phrase-ids/artifacts/cpi/dump_outputs"
+    },
+    {
+      "name": "cpi-119-no-cp-ids",
+      "role": "candidate",
+      "enabled": true,
+      "desc": "same immutable experiment 119 binary with CP_IDS_DISABLE=1",
+      "bench_ext": "research/experiments/203-cpi-memory-regression/tools/cpi_no_cpids_bench.sh",
+      "dump_outputs": "research/experiments/203-cpi-memory-regression/tools/cpi_no_cpids_dump.sh"
+    }
+  ],
+  "datasets": [
+    {
+      "name": "golden-v1",
+      "source": "senzing",
+      "kind": "development+validation (PGO trained on its development split)",
+      "reserved": false,
+      "txt": "profiling/golden-v1/all.txt",
+      "tsv": "profiling/golden-v2-novel/v1-all.tsv",
+      "frozen_reference": "profiling/golden-v1/baseline-outputs.jsonl"
+    }
+  ]
+}

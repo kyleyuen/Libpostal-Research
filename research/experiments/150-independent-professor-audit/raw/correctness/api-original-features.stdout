@@ -1,0 +1,14 @@
+{ postcode no context|DDD, bias, word|DDD, first word|DDD, next word|main street, word+next word|DDD|main street }
+{ phrase|main street, phrase type+phrase|suburb|main street, phrase type+phrase|city|main street, commonly suburb|main street, prev word|DDD, prev word+word|DDD|main street, next word|springfield, word+next word|main street|springfield, prev tag+word|main street, prev tag+prev word|DDD }
+{ phrase|main street, phrase type+phrase|suburb|main street, phrase type+phrase|city|main street, commonly suburb|main street, prev word|DDD, prev word+word|DDD|main street, next word|springfield, word+next word|main street|springfield }
+{ phrase|springfield, phrase type+phrase|suburb|springfield, phrase type+phrase|city|springfield, phrase type+phrase|state|springfield, commonly city|springfield, prev word|main street, prev word+word|main street|springfield, next word|illinois, word+next word|springfield|illinois, prev tag+word|springfield, prev tag+prev word|main street }
+{ phrase|illinois, phrase type+phrase|city|illinois, phrase type+phrase|island|illinois, phrase type+phrase|state|illinois, commonly state|illinois, prev word|springfield, prev word+word|springfield|illinois, next word|DDDDD, word+next word|illinois|DDDDD, prev tag+word|illinois, prev tag+prev word|springfield }
+{ postcode have context, postcode have context|DDDDD, bias, word|DDDDD, prev word|illinois, prev word+word|illinois|DDDDD, next word|usa, word+next word|DDDDD|usa, prev tag+word|DDDDD, prev tag+prev word|illinois }
+{ phrase|usa, phrase type+phrase|suburb|usa, phrase type+phrase|city|usa, phrase type+phrase|city_district|usa, phrase type+phrase|country|usa, commonly country|usa, prev word|DDDDD, prev word+word|DDDDD|usa, prev tag+word|usa, prev tag+prev word|DDDDD }
+components=6
+house_number	123
+road	main street
+city	springfield
+state	illinois
+postcode	62704
+country	usa

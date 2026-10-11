@@ -1,0 +1,23 @@
+{
+  "status": "cancelled_by_user",
+  "cancelled_at_utc": "2026-10-10T05:32:36Z",
+  "run_id": "202-final-osm-observed13-v1",
+  "config": "research/experiments/202-cpi-final-validation/raw/osm-observed13-timing-v1.json",
+  "completed_timing_captures": 23,
+  "planned_timing_captures": 54,
+  "last_completed_capture": {
+    "dataset": "unseen-v5",
+    "variant": "original-000",
+    "round": 2,
+    "exit_code": 0,
+    "load": 3.71
+  },
+  "in_progress_capture": null,
+  "last_gate_failure": "GATE FAIL: not on AC power (Now drawing from 'Battery Power')",
+  "session_id": 9530,
+  "cancel_signal": "SIGINT",
+  "wrapper_exit_code": 130,
+  "completed_capture_failures": 0,
+  "process_check": "No matching 202 suite, run_locked, or bench_ext processes remained after cancellation.",
+  "raw_logs_preserved": true
+}

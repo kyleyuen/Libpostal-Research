@@ -1,0 +1,144 @@
+--- libpostal/src/crf.c	2026-09-28 15:50:15
++++ research/experiments/181-release-180/sources/crf.c	2026-10-06 00:09:56
+@@ -10,7 +10,87 @@
+ 
+ static inline bool crf_get_state_trans_feature_id(crf_t *self, char *feature, uint32_t *feature_id) {
+     return trie_get_data(self->state_trans_features, feature, feature_id);
++}
++
++#ifdef EXP_EVENT_FLOW
++static uint32_t direct_word_id = UINT32_MAX; static cstring_array *direct_word_array = NULL; static uint32_t direct_word_pos = 0;
++#ifdef EXP_ORACLE
++static uint32_t oracle_direct_id = UINT32_MAX, oracle_direct_pos = 0; static const char *oracle_direct_word = NULL;
++#endif
++#ifdef EXP_EVENT_STATS
++static uint64_t direct_word_count = 0, direct_word_fallback = 0;
++#endif
++#endif
++#ifdef EXP_ORACLE
++// 142 stage oracles (see address_parser.c). O3k/O3i: every key in emission order (duplicates kept) and its id or '-'.
++// O4: state row dense, state-transition row sparse (index:bits for every entry whose bits are not +0.0). fprintf only.
++FILE *oracle_file(int k);
++void oracle_str(FILE *f, const char *s);
++extern uint64_t oracle_addr;
++static inline unsigned long long oracle_bits(double d) { uint64_t u; memcpy(&u, &d, sizeof u); return (unsigned long long)u; }
++static void oracle_features(crf_t *self, cstring_array *list, char kind, uint32_t t) {
++    FILE *fk = oracle_file(2), *fi = oracle_file(3);
++    if (fk == NULL) return;
++    unsigned long long oa = (unsigned long long)oracle_addr - 1;
++    uint32_t i, offset = 0; char *key;
++    for (i = 0; i < cstring_array_num_strings(list); i++) {
++#ifdef EXP_EVENT_FLOW
++        if (kind == 'S' && oracle_direct_id != UINT32_MAX && oracle_direct_pos == i) { fprintf(fk, "%llu\t%u\tS\t%u\tword|", oa, t, i + offset); oracle_str(fk, oracle_direct_word); fputc('\n', fk); fprintf(fi, "%llu\t%u\tS\t%u\t%u\n", oa, t, i + offset, oracle_direct_id); oracle_direct_id = UINT32_MAX; offset++; }
++#endif
++        key = cstring_array_get_string(list, i);
++        uint32_t id;
++        bool found = kind == 'S' ? crf_get_feature_id(self, key, &id) : crf_get_state_trans_feature_id(self, key, &id);
++        fprintf(fk, "%llu\t%u\t%c\t%u\t", oa, t, kind, i + offset); oracle_str(fk, key); fputc('\n', fk);
++        if (found) fprintf(fi, "%llu\t%u\t%c\t%u\t%u\n", oa, t, kind, i + offset, id); else fprintf(fi, "%llu\t%u\t%c\t%u\t-\n", oa, t, kind, i + offset);
++    }
++#ifdef EXP_EVENT_FLOW
++    if (kind == 'S' && oracle_direct_id != UINT32_MAX) { fprintf(fk, "%llu\t%u\tS\t%u\tword|", oa, t, i); oracle_str(fk, oracle_direct_word); fputc('\n', fk); fprintf(fi, "%llu\t%u\tS\t%u\t%u\n", oa, t, i, oracle_direct_id); oracle_direct_id = UINT32_MAX; }
++#endif
++}
++static void oracle_scores(crf_t *self, crf_context_t *ctx, uint32_t t) {
++    FILE *f = oracle_file(4);
++    if (f == NULL) return;
++    unsigned long long oa = (unsigned long long)oracle_addr - 1;
++    size_t L = self->num_classes;
++    double *s = state_score(ctx, t), *st = state_trans_score_all(ctx, t);
++    fprintf(f, "%llu\t%u\tS", oa, t);
++    for (size_t c = 0; c < L; c++) fprintf(f, "\t%016llx", oracle_bits(s[c]));
++    fprintf(f, "\n%llu\t%u\tT", oa, t);
++    for (size_t c = 0; c < L * L; c++) if (oracle_bits(st[c]) != 0) fprintf(f, "\t%zu:%016llx", c, oracle_bits(st[c]));
++    fputc('\n', f);
++}
++#endif
++
++#ifdef EXP_EVENT_FLOW
++bool crf_state_word_id(crf_t *self, const char *word, uint32_t *id) { size_t n = strlen(word); char *key = malloc(n + 6); if (!key) return false; memcpy(key, "word|", 5); memcpy(key + 5, word, n + 1); bool ok = crf_get_feature_id(self, key, id); free(key); return ok; }
++void crf_direct_state_word(cstring_array *a, uint32_t id, const char *word) { direct_word_array = a; direct_word_pos = cstring_array_num_strings(a); direct_word_id = id;
++#ifdef EXP_ORACLE
++oracle_direct_id = id; oracle_direct_pos = direct_word_pos; oracle_direct_word = word;
++#else
++(void)word;
++#endif
++#ifdef EXP_EVENT_STATS
++direct_word_count++;
++#endif
+ }
++void crf_direct_state_word_fallback(void) {
++#ifdef EXP_EVENT_STATS
++direct_word_fallback++;
++#endif
++}
++typedef struct { uint32_t id; uint8_t trans; } original_event_t;
++static original_event_t *original_events = NULL;
++static size_t original_events_cap = 0;
++static bool original_events_reserve(size_t n) {
++    if (n <= original_events_cap) return true;
++    size_t cap = original_events_cap ? original_events_cap : 128;
++    while (cap < n) cap *= 2;
++    original_event_t *p = realloc(original_events, cap * sizeof(*p));
++    if (p == NULL) return false;
++    original_events = p; original_events_cap = cap;
++    return true;
++}
++#endif
+ 
+ bool crf_tagger_score(crf_t *self, void *tagger, void *tagger_context, cstring_array *features, cstring_array *prev_tag_features, tagger_feature_function feature_function, tokenized_string_t *tokenized, bool print_features) {
+     if (self == NULL || feature_function == NULL || tokenized == NULL ) {
+@@ -27,6 +107,7 @@
+     }
+ 
+     for (uint32_t t = 0; t < num_tokens; t++) {
++        direct_word_id = UINT32_MAX; direct_word_array = NULL;
+         cstring_array_clear(features);
+         cstring_array_clear(prev_tag_features);
+ 
+@@ -58,6 +139,28 @@
+ 
+         uint32_t feature_id;
+ 
++#ifdef EXP_EVENT_FLOW
++        // Resolve in original feature order, retain misses, then consume exactly
++        // state followed by transition events. Allocation failure uses old code.
++        size_t event_n = cstring_array_num_strings(features) + cstring_array_num_strings(prev_tag_features) + (direct_word_id != UINT32_MAX);
++        if (original_events_reserve(event_n)) {
++            size_t e = 0;
++            for (fidx = 0; fidx < cstring_array_num_strings(features); fidx++) { if (direct_word_id != UINT32_MAX && direct_word_array == features && direct_word_pos == fidx) { original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX; } feature = cstring_array_get_string(features, fidx); original_events[e].id = crf_get_feature_id(self, feature, &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 0; }
++            if (direct_word_id != UINT32_MAX && direct_word_array == features) { original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX; }
++            cstring_array_foreach(prev_tag_features, fidx, feature, { original_events[e].id = crf_get_state_trans_feature_id(self, feature, &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 1; })
++            uint32_t *sindptr = self->weights->indptr->a, *sindices = self->weights->indices->a;
++            double *sdata = self->weights->data->a, *state_scores = state_score(crf_context, t);
++            uint32_t *tindptr = self->state_trans_weights->indptr->a, *tindices = self->state_trans_weights->indices->a;
++            double *tdata = self->state_trans_weights->data->a, *state_trans_scores = state_trans_score_all(crf_context, t);
++            for (size_t i = 0; i < e; i++) {
++                original_event_t ev = original_events[i]; if (ev.id == UINT32_MAX) continue;
++                if (!ev.trans) for (int col = sindptr[ev.id]; col < sindptr[ev.id + 1]; col++) state_scores[sindices[col]] += sdata[col];
++                else for (int col = tindptr[ev.id]; col < tindptr[ev.id + 1]; col++) state_trans_scores[tindices[col]] += tdata[col];
++            }
++            goto original_event_scored;
++        }
++#endif
++
+         double *state_scores = state_score(crf_context, t);
+ 
+         uint32_t *indptr = self->weights->indptr->a;
+@@ -93,7 +196,16 @@
+             }
+         })
+ 
++original_event_scored:
++#ifdef EXP_ORACLE
++        oracle_features(self, features, 'S', t);
++        oracle_features(self, prev_tag_features, 'P', t);
++        oracle_scores(self, crf_context, t);
++#endif
+     }
++#ifdef EXP_EVENT_STATS
++    if (getenv("EXP180_STATS") != NULL) fprintf(stderr, "EXP180 direct_word=%llu fallback_word=%llu\n", (unsigned long long)direct_word_count, (unsigned long long)direct_word_fallback);
++#endif
+     return true;
+ }
+ 

@@ -1,0 +1,72 @@
+{
+ "run": "202-fresh-v14-correctness-v1",
+ "generated": "2026-10-09T21:51:28-0700",
+ "settings": {
+  "rounds": 3,
+  "passes": 1800,
+  "settle_load_1min": 2.5,
+  "settle_max_wait_s": 180,
+  "correctness_jobs": 1,
+  "fuzz_count": 0,
+  "fuzz_seeds": [],
+  "fuzz_corpora": [],
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261004,
+  "steady_dataset": "golden-v1",
+  "steady_passes_before_sample": 3,
+  "thread_check_dataset": "golden-v1",
+  "sleep_between_runs_s": 2,
+  "country_min_n": 50
+ },
+ "baseline": "original-000",
+ "datasets": {
+  "unseen-v14": {
+   "source": "openstreetmap",
+   "kind": "fresh unseen frozen 2026-10-10",
+   "variants": {},
+   "speedup": {}
+  }
+ },
+ "aggregate": {},
+ "correctness": {
+  "dumps": {
+   "cpi-packaged/unseen-v14": {
+    "identical": true,
+    "candidate_sha256": "1e4ef581bc7cc021ea5a9cd474e0cfead96dce539582bb6e1e004e2f01e62b6f",
+    "baseline_sha256": "1e4ef581bc7cc021ea5a9cd474e0cfead96dce539582bb6e1e004e2f01e62b6f",
+    "lines": 1801
+   }
+  },
+  "frozen": {},
+  "fuzz": {},
+  "negative_control": {
+   "dataset": "unseen-v14",
+   "detected": true
+  }
+ },
+ "threads": {
+  "original-000": {
+   "samples": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "max_threads": 1
+  },
+  "cpi-packaged": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "max_threads": 1
+  }
+ },
+ "manifest": "manifest.json"
+}

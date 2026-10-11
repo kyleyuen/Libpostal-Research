@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/usr/bin/clang",
+    "-dynamiclib",
+    "-Wl,-all_load",
+    "-flto",
+    "/opt/homebrew/opt/mimalloc/lib/mimalloc.o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi_201_matched_v1/libpostal.a",
+    "-lm",
+    "-o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/artifacts/api-cpi-archive-v1/cpi-profilematched-no-pgo.dylib"
+  ],
+  "cwd": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "start_utc": "2026-10-09T08:20:11.012909+00:00",
+  "inputs": {
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi_201_matched_v1/libpostal.a": "f7438a5f27bc2903bfdadea82ad3caf90778b0bc2b152fc2536c91c34d53a068",
+    "/opt/homebrew/opt/mimalloc/lib/mimalloc.o": "03460b36edb0f104270109d33d96f8e7fc03c08d326cc5c2182c34b0a4900b82"
+  },
+  "output": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/artifacts/api-cpi-archive-v1/cpi-profilematched-no-pgo.dylib"
+}

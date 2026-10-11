@@ -1,0 +1,56 @@
+{
+  "roles": [
+    {
+      "role": "original-000",
+      "binary": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-v1/original-000/fuzz_pipeline_exact",
+      "binary_sha256": "89f39cba96861f8a82e092d13ae1a91fa5af3f624476038f8da6010b083984dc",
+      "gate_start_utc": "2026-10-08T04:57:02.189468+00:00",
+      "gate_end_utc": "2026-10-08T04:57:02.275543+00:00",
+      "gate_exit": 0,
+      "argv": [
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-v1/original-000/fuzz_pipeline_exact",
+        "1",
+        "200000",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+      ],
+      "start_utc": "2026-10-08T04:57:02.275570+00:00",
+      "end_utc": "2026-10-08T04:57:14.347396+00:00",
+      "exit": 0,
+      "stdout_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/fuzz-exact-200k-seed1-mimalloc-v2/original-000/stdout",
+      "stdout_sha256": "d9331f364b6ed77c56e3bb695599c308162da54ed13442384c7f69f155d73030",
+      "stdout_bytes": 57956637,
+      "output_rows": 200000,
+      "threads_observed": [
+        1
+      ],
+      "command_record": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/fuzz-exact-200k-seed1-mimalloc-v2/original-000/command.json"
+    },
+    {
+      "role": "candidate",
+      "binary": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-candidates-v1/candidate-199-mimalloc-v2/fuzz_pipeline_exact",
+      "binary_sha256": "f3a42eaa9df3975313d2e97c9b2677d6a74e803c292d01e1255c31e4801b6a17",
+      "gate_start_utc": "2026-10-08T04:57:14.403837+00:00",
+      "gate_end_utc": "2026-10-08T04:57:14.479757+00:00",
+      "gate_exit": 0,
+      "argv": [
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-candidates-v1/candidate-199-mimalloc-v2/fuzz_pipeline_exact",
+        "1",
+        "200000",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+      ],
+      "start_utc": "2026-10-08T04:57:14.479780+00:00",
+      "end_utc": "2026-10-08T04:57:29.780142+00:00",
+      "exit": 0,
+      "stdout_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/fuzz-exact-200k-seed1-mimalloc-v2/candidate/stdout",
+      "stdout_sha256": "d9331f364b6ed77c56e3bb695599c308162da54ed13442384c7f69f155d73030",
+      "stdout_bytes": 57956637,
+      "output_rows": 200000,
+      "threads_observed": [
+        1
+      ],
+      "command_record": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/fuzz-exact-200k-seed1-mimalloc-v2/candidate/command.json"
+    }
+  ]
+}

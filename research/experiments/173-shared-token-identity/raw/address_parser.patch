@@ -1,0 +1,93 @@
+--- research/final/119-cpi/sources/address_parser.c	2026-10-04 01:51:07
++++ research/experiments/173-shared-token-identity/sources/address_parser.c	2026-10-05 22:55:47
+@@ -241,6 +241,16 @@
+ #endif
+ #ifdef EXP_FTT
+ extern const trie_t *trie_ftt_trie; extern const uint64_t *trie_ftt_tab; extern const int32_t *trie_ftt_slot; extern size_t trie_ftt_n;
++#ifdef EXP_SHARED_SLOT_SEED
++static int32_t *ap_seed_slots = NULL;
++static size_t ap_seed_cap = 0, ap_seed_n = 0;
++static uint64_t ap_seed_reused = 0, ap_seed_fallback = 0, ap_seed_checks = 0;
++__attribute__((destructor)) static void ap_seed_report(void) {
++    fprintf(stderr, "SHARED_SLOT_SEED reused=%llu fallback=%llu checked=%llu\n",
++            (unsigned long long)ap_seed_reused, (unsigned long long)ap_seed_fallback,
++            (unsigned long long)ap_seed_checks);
++}
++#endif
+ uint64_t trie_ftt_walk(trie_t *self, const char *w, size_t len);
+ static void ap_ftt_build(address_parser_t *parser) {   // experiment 056: walk every vocabulary key through the component-phrase trie (model data only)
+     if (getenv("FTT_DISABLE") != NULL || vocab_dict == NULL || parser->phrases == NULL) return;
+@@ -955,6 +965,9 @@
+ __attribute__((destructor)) static void ps_report(void) { fprintf(stderr, "EXP_PS_FLAGS_VERIFY: %llu flagged searches re-run, 0 mismatches\n", ps_verified); }
+ #endif
+ void address_parser_context_fill(address_parser_context_t *context, address_parser_t *parser, tokenized_string_t *tokenized_str, char *language, char *country) {
++#ifdef EXP_SHARED_SLOT_SEED
++    ap_seed_n = 0;
++#endif
+     uint32_t token_index;
+     char *word;
+     phrase_t phrase;
+@@ -1094,6 +1107,9 @@
+     {   // vocabulary slot of each admin token's bytes (or -1) for the component-phrase search's first-token table
+         static int32_t *ftt_slots = NULL; static size_t ftt_cap = 0; size_t nt = normalized_admin_tokens->n;
+         if (nt > ftt_cap) { size_t m = ftt_cap ? ftt_cap : 64; while (m < nt) m *= 2; int32_t *q = realloc(ftt_slots, m * sizeof *q); if (q) { ftt_slots = q; ftt_cap = m; } }
++#ifdef EXP_SHARED_SLOT_SEED
++        if (nt > ap_seed_cap) { size_t m = ap_seed_cap ? ap_seed_cap : 64; while (m < nt) m *= 2; int32_t *q = realloc(ap_seed_slots, m * sizeof *q); if (q) { ap_seed_slots = q; ap_seed_cap = m; } }
++#endif
+         if (trie_ftt_tab != NULL && vocab_dict != NULL && nt <= ftt_cap) {
+ #ifdef EXP_FTT_PFV
+             // 074: hint only. Prefetch every admin token's first vocabulary slot before the (unchanged) lookups below, so their misses overlap.
+@@ -1105,6 +1121,15 @@
+             for (size_t j = 0; j < nt; j++) {
+                 token_t tk = normalized_admin_tokens->a[j]; const char *ts = normalized_str_admin + tk.offset; uint64_t sl;
+                 ftt_slots[j] = (tk.type != WHITESPACE && tk.len > 0 && tk.len <= 255 && ts[tk.len] == '\0' && fd_find_slot(vocab_dict, 0, ts, tk.len, &sl) != NULL) ? (int32_t)sl : -1;
++#ifdef EXP_SHARED_SLOT_SEED
++                if (nt <= ap_seed_cap) {
++                    token_t regular = normalized_tokens->a[j];
++                    const char *rs = normalized_str + regular.offset;
++                    ap_seed_slots[j] = ftt_slots[j] >= 0 && regular.len == tk.len &&
++                                       memchr(rs, '|', regular.len) == NULL &&
++                                       memcmp(rs, ts, regular.len) == 0 ? ftt_slots[j] : -1;
++                }
++#endif
+ #ifdef EXP_FTT_ROLE_PREFETCH
+                 if (ftt_slots[j] >= 0 && ap_role_ids_ext != NULL) __builtin_prefetch(&ap_role_ids_ext[(size_t)ftt_slots[j] * 6]);   // features read this row later
+ #endif
+@@ -1112,6 +1137,9 @@
+                 if (ftt_slots[j] >= 0) __builtin_prefetch(&trie_ftt_tab[ftt_slots[j]]);   // 074: hint only; the search reads this entry later
+ #endif
+             }
++#ifdef EXP_SHARED_SLOT_SEED
++            if (nt <= ap_seed_cap) ap_seed_n = nt;
++#endif
+ #ifdef EXP_FTT_PF2
+             // 074: hint only. Read each token's entry (independent loads) and prefetch the node the search will load first for an assisted walk.
+             if (parser->phrases == trie_ftt_trie) {
+@@ -1679,7 +1707,26 @@
+     ap_vmemo_t *m = &ap_vm[j];
+     if (!m->filled) {
+         size_t len = strlen(s); uint64_t slot;
+-        const uint8_t *e = fd_find_slot(vocab_dict, 0, s, len, &slot);
++        const uint8_t *e;
++#ifdef EXP_SHARED_SLOT_SEED
++        if ((size_t)j < ap_seed_n && ap_seed_slots[j] >= 0) {
++            slot = (uint32_t)ap_seed_slots[j];
++            uint64_t sv = vocab_dict->slots[slot];
++            e = vocab_dict->arena + (uint32_t)sv;
++            ap_seed_reused++;
++            if (getenv("AP_SEED_VERIFY") != NULL) {
++                uint64_t check_slot = 0;
++                const uint8_t *check = fd_find_slot(vocab_dict, 0, s, len, &check_slot);
++                if (check != e || check_slot != slot) abort();
++                ap_seed_checks++;
++            }
++        } else {
++            e = fd_find_slot(vocab_dict, 0, s, len, &slot);
++            ap_seed_fallback++;
++        }
++#else
++        e = fd_find_slot(vocab_dict, 0, s, len, &slot);
++#endif
+         m->len = (uint32_t)len; m->count = 0; m->canon = 0xFFFFFFFFu;
+         if (e != NULL) {
+             memcpy(&m->count, e + 2 + len, sizeof(uint32_t));                     // wide value, as fd_lookup reads it

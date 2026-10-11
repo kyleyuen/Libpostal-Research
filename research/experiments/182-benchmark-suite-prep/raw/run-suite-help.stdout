@@ -1,0 +1,39 @@
+usage: run_suite.py [-h] [--config CONFIG] [--stages STAGES]
+                    [--datasets DATASETS] [--variants VARIANTS]
+                    [--include-reserved] [--rounds ROUNDS] [--passes PASSES]
+                    [--fuzz-count FUZZ_COUNT] [--no-gate] [--run-id RUN_ID]
+                    [--report-only RUN_DIR]
+
+Benchmark suite for the libpostal parser research (see README.md). Python 3.9+, standard library only.
+
+For every dataset ("test suite") it runs the baseline (original libpostal) and each candidate (by default the best version, cpi) and reports
+the speedup multiplier per dataset = baseline µs/address ÷ candidate µs/address, with a bootstrap 95% CI over rounds.
+
+Stages (run in this order; pick with --stages):
+  integrity    SHA-256 manifest of every dataset, binary and model file (and existence checks).
+  correctness  every candidate's dump_outputs vs the baseline's (byte-identical) on every dataset, frozen references where configured,
+               fuzz seeds vs the baseline's fuzz outputs. Correctness runs may run in parallel (never during timing).
+  timing       serial, gated (research/tools/env_gate.sh), rotating variant order per round, /usr/bin/time -l, environment snapshot per run.
+  memory       steady-state footprint (footprint -p after N warm passes) per variant; peak RSS / peak footprint come from the timing runs.
+  threads      thread count of each variant while parsing (ps -M).
+  report       results.json + report.md from the raw files (also: --report-only RUN_DIR re-analyses an existing run).
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG
+  --stages STAGES       comma list from:
+                        integrity,correctness,timing,memory,threads,report
+  --datasets DATASETS   comma list of dataset names (default: all enabled,
+                        non-reserved)
+  --variants VARIANTS   comma list of candidate names (baseline always
+                        included; default: all enabled)
+  --include-reserved    also run reserved (never-used) unseen sets: this
+                        SPENDS them
+  --rounds ROUNDS
+  --passes PASSES
+  --fuzz-count FUZZ_COUNT
+  --no-gate             skip research/tools/env_gate.sh before timed runs
+                        (recorded in results.json settings)
+  --run-id RUN_ID
+  --report-only RUN_DIR
+                        re-analyse an existing run directory

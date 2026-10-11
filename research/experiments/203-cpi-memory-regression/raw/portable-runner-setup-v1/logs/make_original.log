@@ -1,0 +1,734 @@
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-strndup.lo -MD -MP -MF .deps/libpostal_la-strndup.Tpo -c -o libpostal_la-strndup.lo `test -f 'strndup.c' || echo './'`strndup.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-libpostal.lo -MD -MP -MF .deps/libpostal_la-libpostal.Tpo -c -o libpostal_la-libpostal.lo `test -f 'libpostal.c' || echo './'`libpostal.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-expand.lo -MD -MP -MF .deps/libpostal_la-expand.Tpo -c -o libpostal_la-expand.lo `test -f 'expand.c' || echo './'`expand.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-address_dictionary.lo -MD -MP -MF .deps/libpostal_la-address_dictionary.Tpo -c -o libpostal_la-address_dictionary.lo `test -f 'address_dictionary.c' || echo './'`address_dictionary.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-transliterate.lo -MD -MP -MF .deps/libpostal_la-transliterate.Tpo -c -o libpostal_la-transliterate.lo `test -f 'transliterate.c' || echo './'`transliterate.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-tokens.lo -MD -MP -MF .deps/libpostal_la-tokens.Tpo -c -o libpostal_la-tokens.lo `test -f 'tokens.c' || echo './'`tokens.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-trie.lo -MD -MP -MF .deps/libpostal_la-trie.Tpo -c -o libpostal_la-trie.lo `test -f 'trie.c' || echo './'`trie.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-trie_search.lo -MD -MP -MF .deps/libpostal_la-trie_search.Tpo -c -o libpostal_la-trie_search.lo `test -f 'trie_search.c' || echo './'`trie_search.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-trie_utils.lo -MD -MP -MF .deps/libpostal_la-trie_utils.Tpo -c -o libpostal_la-trie_utils.lo `test -f 'trie_utils.c' || echo './'`trie_utils.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-string_utils.lo -MD -MP -MF .deps/libpostal_la-string_utils.Tpo -c -o libpostal_la-string_utils.lo `test -f 'string_utils.c' || echo './'`string_utils.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-file_utils.lo -MD -MP -MF .deps/libpostal_la-file_utils.Tpo -c -o libpostal_la-file_utils.lo `test -f 'file_utils.c' || echo './'`file_utils.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-normalize.lo -MD -MP -MF .deps/libpostal_la-normalize.Tpo -c -o libpostal_la-normalize.lo `test -f 'normalize.c' || echo './'`normalize.c
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-libpostal.lo -MD -MP -MF .deps/libpostal_la-libpostal.Tpo -c libpostal.c  -fno-common -DPIC -o .libs/libpostal_la-libpostal.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-address_dictionary.lo -MD -MP -MF .deps/libpostal_la-address_dictionary.Tpo -c address_dictionary.c  -fno-common -DPIC -o .libs/libpostal_la-address_dictionary.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-trie_utils.lo -MD -MP -MF .deps/libpostal_la-trie_utils.Tpo -c trie_utils.c  -fno-common -DPIC -o .libs/libpostal_la-trie_utils.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-expand.lo -MD -MP -MF .deps/libpostal_la-expand.Tpo -c expand.c  -fno-common -DPIC -o .libs/libpostal_la-expand.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-transliterate.lo -MD -MP -MF .deps/libpostal_la-transliterate.Tpo -c transliterate.c  -fno-common -DPIC -o .libs/libpostal_la-transliterate.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-strndup.lo -MD -MP -MF .deps/libpostal_la-strndup.Tpo -c strndup.c  -fno-common -DPIC -o .libs/libpostal_la-strndup.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-string_utils.lo -MD -MP -MF .deps/libpostal_la-string_utils.Tpo -c string_utils.c  -fno-common -DPIC -o .libs/libpostal_la-string_utils.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-trie.lo -MD -MP -MF .deps/libpostal_la-trie.Tpo -c trie.c  -fno-common -DPIC -o .libs/libpostal_la-trie.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-file_utils.lo -MD -MP -MF .deps/libpostal_la-file_utils.Tpo -c file_utils.c  -fno-common -DPIC -o .libs/libpostal_la-file_utils.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-trie_search.lo -MD -MP -MF .deps/libpostal_la-trie_search.Tpo -c trie_search.c  -fno-common -DPIC -o .libs/libpostal_la-trie_search.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-tokens.lo -MD -MP -MF .deps/libpostal_la-tokens.Tpo -c tokens.c  -fno-common -DPIC -o .libs/libpostal_la-tokens.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-normalize.lo -MD -MP -MF .deps/libpostal_la-normalize.Tpo -c normalize.c  -fno-common -DPIC -o .libs/libpostal_la-normalize.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-strndup.lo -MD -MP -MF .deps/libpostal_la-strndup.Tpo -c strndup.c -o libpostal_la-strndup.o >/dev/null 2>&1
+In file included from expand.c:10:
+In file included from ./language_classifier.h:13:
+In file included from ./logistic_regression.h:26:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+string_utils.c:116:17: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  116 |     for (size_t count = 0; (temp = strstr(start, replace)); count++) {
+      |                 ^
+string_utils.c:193:18: warning: variable 'remaining' set but not used [-Wunused-but-set-variable]
+  193 |     ssize_t len, remaining;
+      |                  ^
+transliterate.c:614:12: warning: variable 'group_num_start' set but not used [-Wunused-but-set-variable]
+  614 |     size_t group_num_start =string_utils.c:384:13 0;
+: warning: unused variable 'num_utf8_chars' [-Wunused-variable]
+      |            ^
+  384 |     ssize_t num_uttransliterate.c:615:f8_chars = 0;
+      |             ^~~~~~~~~~~~~~
+12: warning: variable 'group_num_len' set but not used [-Wunused-but-set-variable]
+  615 |     size_t group_num_len = 0;
+      |            ^
+string_utils.c:505:85: warning: unused parameter 'len' [-Wunused-parameter]
+  505 | inline inttransliterate.c:933:26: warning:  utf8_compare_case_insensitive(const char *str1, const char *str2, size_t len) {
+      |                                                                                     ^
+variable 'added_previous_phrase' set but not used [-Wunused-but-set-variable]
+  933 |                     bool added_previous_phrase = false;
+      |                          ^
+string_utils.c:521:12: warning: unused variable 'remaining' [-Wunused-variable]
+  521 |     size_t remaining = len;
+      |            ^~~~~~~~~
+address_dictionary.c:63:47: warning: second argument to 'va_arg' is of promotable type 'uint16_t' (aka 'unsigned short'); this va_arg has undefined behavior because arguments will be promoted to 'int' [-Wvarargs]
+   63 |         uint16_t dictionary_id = va_arg(args, uint16_t);
+      |                                               ^~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/__stdarg_va_arg.h:20:47: note: expanded from macro 'va_arg'
+   20 | #define va_arg(ap, type) __builtin_va_arg(ap, type)
+      |                                               ^~~~
+trie.c:1031:13: warning: unused variable 'base' [-Wunused-variable]
+ 1031 |     int32_t base;
+      |             ^~~~
+trie.c:1032:13: warning: unused variable 'check' [-Wunused-variable]
+ 1032 |     int32_t check;
+      |             ^~~~~
+string_utils.c:687:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  687 |     bool ignorable = true;
+      |          ^~~~~~~~~
+address_dictionary.c:173:10: warning: variable 'is_phrase' set but not used [-Wunused-but-set-variable]
+  173 |     bool is_phrase = false;
+      |          ^
+normalize.c:269:22: warning: unused variable 'key' [-Wunused-variable]
+  269 |             khiter_t key = kh_put(int_set, scripts, (khint_t)script, &ret);
+      |                      ^~~
+normalize.c:208:11: warning: string_utils.c:713:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  713 |     bool ignorable = true;
+      |          ^~~~~~~~~
+unused variable 'numex_replaced' [-Wunused-variable]
+  208 |     char *numex_replaced = NULL;
+      |           ^~~~~~~~~~~~~~
+tokens.c:13:66: warning: unused parameter 'num_tokens' [-Wunused-parameter]
+   13 | tokenized_string_t *tokenized_string_new_size(size_t len, size_t num_tokens) {
+      |                                                                  ^
+string_utils.c:876:13: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  876 |     ssize_t index = 0;
+      |             ^
+normalize.c:374:14: warning: unused variable 'is_hyphen' [-Wunused-variable]
+  374 |         bool is_hyphen = utf8_is_hyphen(ch);
+      |              ^~~~~~~~~
+normalize.c:367:10: warning: unused variable 'append_char' [-Wunused-variable]
+expand.c:179:65: warning: unused parameter 'lang' [-Wunused-parameter]
+    179 | bool 367 |     bool append_char = true;
+      |          ^~~~~~~~~~~
+add_affix_expansions(string_tree_t *tree, char *str, char *lang, token_t token, phrase_t prefix, phrase_t suffix, libpostal_normalize_options_t options, bool with_period) {
+      |                                                                 ^
+In file included from libpostal.c:10:
+In file included from ./address_parser.h:52:
+In file included from ./averaged_perceptron.h:27:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warntrie_search.c:184:16: warning: initialization of pointer of type 'phrase_array *' to null from a constant boolean expression [-Wbool-conversion]
+i  184 |         retng "No CBurn false;
+      LAS"
+      |  ^|                ^~~~~
+
+expand.c:825:74: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  825 |                 log_debug("phrase.start = %zu, prev_phrase_end = %zu\n", phrase.start, prev_phrase_end);
+      |                                           ~~~                            ^~~~~~~~~~~~
+      |                                           %u
+./log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+expand.c:872:89: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'bool' [-Wformat]
+  872 |                     log_debug("have_strictly_ignorable=%zu, phrase_is_canonical=%zu\n", have_strictly_ignorable, phrase_is_canonical);
+      |                                                        ~~~                              ^~~~~~~~~~~~~~~~~~~~~~~
+./log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+expand.c:872:114: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'bool' [-Wformat]
+  872 |                     log_debug("have_strictly_ignorable=%zu, phrase_is_canonical=%zu\n", have_strictly_ignorable, phrase_is_canonical);
+      |                                                                                 ~~~                              ^~~~~~~~~~~~~~~~~~~
+./log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+expand.c:932:26: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+  932 |                     bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                          ^~~~~~~~~~~~~~~~~~~
+trie_search.c:670:72: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  670 |                     log_debug("No space transition, phrase_len=%zu\n", phrase_len);
+      |                                                                ~~~     ^~~~~~~~~~
+      |                                                                %u
+./log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+expand.c:1184:46: warning: unused variable 'start_index' [-Wunused-variable]
+ 1184 |                                     uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                                              ^~~~~~~~~~~
+trie_search.c:627:12: warning: variable 'separator_char_len' set but not used [-Wunused-but-set-variable]
+  627 |     size_t separator_char_len = 0;
+      |            ^
+expand.c:1202:38: warning: unused variable 'start_index' [-Wunused-variable]
+ 1202 |                             uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                                      ^~~~~~~~~~~
+expand.c:1235:26: warning: unused variable 'start_index' [-Wunused-variable]
+ 1235 |                 uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                          ^~~~~~~~~~~
+expand.c:1310:22: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+ 1310 |                 bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                      ^~~~~~~~~~~~~~~~~~~
+expand.c:1344:22: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+ 1344 |                 bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                      ^~~~~~~~~~~~~~~~~~~
+expand.c:1368:106: warning: unused parameter 'i' [-Wunused-parameter]
+ 1368 | inline bool normalize_ordinal_suffixes(string_tree_t *tree, char *str, char *lang, token_t token, size_t i, token_t prev_token, libpostal_normalize_options_t options) {
+      |                                                                                                          ^
+expand.c:1440:11: warning: unused variable 'lang' [-Wunused-variable]
+ 1440 |     char *lang;
+      |           ^~~~
+1 warning generated.
+mv -f .deps/libpostal_la-strndup.Tpo .deps/libpostal_la-strndup.Plo
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-tokens.lo -MD -MP -MF .deps/libpostal_la-tokens.Tpo -c tokens.c -o libpostal_la-tokens.o >/dev/null 2>&1
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-numex.lo -MD -MP -MF .deps/libpostal_la-numex.Tpo -c -o libpostal_la-numex.lo `test -f 'numex.c' || echo './'`numex.c
+1 warning generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-file_utils.lo -MD -MP -MF .deps/libpostal_la-file_utils.Tpo -c file_utils.c -o libpostal_la-file_utils.o >/dev/null 2>&1
+4 warnings generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-libpostal.lo -MD -MP -MF .deps/libpostal_la-libpostal.Tpo -c libpostal.c -o libpostal_la-libpostal.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-normalize.lo -MD -MP -MF .deps/libpostal_la-normalize.Tpo -c normalize.c -o libpostal_la-normalize.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-trie_utils.lo -MD -MP -MF .deps/libpostal_la-trie_utils.Tpo -c trie_utils.c -o libpostal_la-trie_utils.o >/dev/null 2>&1
+2 warnings generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-address_dictionary.lo -MD -MP -MF .deps/libpostal_la-address_dictionary.Tpo -c address_dictionary.c -o libpostal_la-address_dictionary.o >/dev/null 2>&1
+3 warnings generated.
+2 warnings generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-trie_search.lo -MD -MP -MF .deps/libpostal_la-trie_search.Tpo -c trie_search.c -o libpostal_la-trie_search.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-trie.lo -MD -MP -MF .deps/libpostal_la-trie.Tpo -c trie.c -o libpostal_la-trie.o >/dev/null 2>&1
+8 warnings generated.
+mv -f .deps/libpostal_la-tokens.Tpo .deps/libpostal_la-tokens.Plo
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-string_utils.lo -MD -MP -MF .deps/libpostal_la-string_utils.Tpo -c string_utils.c -o libpostal_la-string_utils.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-numex.lo -MD -MP -MF .deps/libpostal_la-numex.Tpo -c numex.c  -fno-common -DPIC -o .libs/libpostal_la-numex.o
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-features.lo -MD -MP -MF .deps/libpostal_la-features.Tpo -c -o libpostal_la-features.lo `test -f 'features.c' || echo './'`features.c
+mv -f .deps/libpostal_la-file_utils.Tpo .deps/libpostal_la-file_utils.Plo
+mv -f .deps/libpostal_la-libpostal.Tpo .deps/libpostal_la-libpostal.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-unicode_scripts.lo -MD -MP -MF .deps/libpostal_la-unicode_scripts.Tpo -c -o libpostal_la-unicode_scripts.lo `test -f 'unicode_scripts.c' || echo './'`unicode_scripts.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-address_parser.lo -MD -MP -MF .deps/libpostal_la-address_parser.Tpo -c -o libpostal_la-address_parser.lo `test -f 'address_parser.c' || echo './'`address_parser.c
+3 warnings generated.
+mv -f .deps/libpostal_la-trie_utils.Tpo .deps/libpostal_la-trie_utils.Plo
+mv -f .deps/libpostal_la-normalize.Tpo .deps/libpostal_la-normalize.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-address_parser_io.lo -MD -MP -MF .deps/libpostal_la-address_parser_io.Tpo -c -o libpostal_la-address_parser_io.lo `test -f 'address_parser_io.c' || echo './'`address_parser_io.c
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-transliterate.lo -MD -MP -MF .deps/libpostal_la-transliterate.Tpo -c transliterate.c -o libpostal_la-transliterate.o >/dev/null 2>&1
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-averaged_perceptron.lo -MD -MP -MF .deps/libpostal_la-averaged_perceptron.Tpo -c -o libpostal_la-averaged_perceptron.lo `test -f 'averaged_perceptron.c' || echo './'`averaged_perceptron.c
+mv -f .deps/libpostal_la-address_dictionary.Tpo .deps/libpostal_la-address_dictionary.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-crf.lo -MD -MP -MF .deps/libpostal_la-crf.Tpo -c -o libpostal_la-crf.lo `test -f 'crf.c' || echo './'`crf.c
+numex.c:805:18: warning: unused variable 'rule_index' [-Wunused-variable]
+  805 |         uint32_t rule_index = phrase.data;
+      |                  ^~~~~~~~~~
+numex.c:703:19: warning: unused variable 'ch' [-Wunused-variable]
+  703 |     unsigned char ch = '\0';
+      |                   ^~
+numex.c:706:10: warning: unused variable 'advance_state' [-Wunused-variable]
+  706 |     bool advance_state = true;
+      |          ^~~~~~~~~~~~~
+numex.c:714:17: warning: unused variable 'number_str' [-Wunused-variable]
+  714 |     char_array *number_str = NULL;
+      |                 ^~~~~~~~~~
+numex.c:978:10: warning: unused variable 'whole_tokens_only' [-Wunused-variable]
+  978 |     bool whole_tokens_only = language->whole_tokens_only;
+      |          ^~~~~~~~~~~~~~~~~
+numex.c:1073:10: warning: unused variable 'ignorable' [-Wunused-variable]
+ 1073 |     bool ignorable = true;
+      |          ^~~~~~~~~
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-features.lo -MD -MP -MF .deps/libpostal_la-features.Tpo -c features.c  -fno-common -DPIC -o .libs/libpostal_la-features.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-unicode_scripts.lo -MD -MP -MF .deps/libpostal_la-unicode_scripts.Tpo -c unicode_scripts.c  -fno-common -DPIC -o .libs/libpostal_la-unicode_scripts.o
+13 warnings generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-address_parser.lo -MD -MP -MF .deps/libpostal_la-address_parser.Tpo -c address_parser.c  -fno-common -DPIC -o .libs/libpostal_la-address_parser.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-expand.lo -MD -MP -MF .deps/libpostal_la-expand.Tpo -c expand.c -o libpostal_la-expand.o >/dev/null 2>&1
+mv -f .deps/libpostal_la-trie_search.Tpo .deps/libpostal_la-trie_search.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-crf_context.lo -MD -MP -MF .deps/libpostal_la-crf_context.Tpo -c -o libpostal_la-crf_context.lo `test -f 'crf_context.c' || echo './'`crf_context.c
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-address_parser_io.lo -MD -MP -MF .deps/libpostal_la-address_parser_io.Tpo -c address_parser_io.c  -fno-common -DPIC -o .libs/libpostal_la-address_parser_io.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-averaged_perceptron.lo -MD -MP -MF .deps/libpostal_la-averaged_perceptron.Tpo -c averaged_perceptron.c  -fno-common -DPIC -o .libs/libpostal_la-averaged_perceptron.o
+mv -f .deps/libpostal_la-trie.Tpo .deps/libpostal_la-trie.Plo
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-crf.lo -MD -MP -MF .deps/libpostal_la-crf.Tpo -c crf.c  -fno-common -DPIC -o .libs/libpostal_la-crf.o
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-sparse_matrix.lo -MD -MP -MF .deps/libpostal_la-sparse_matrix.Tpo -c -o libpostal_la-sparse_matrix.lo `test -f 'sparse_matrix.c' || echo './'`sparse_matrix.c
+6 warnings generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-numex.lo -MD -MP -MF .deps/libpostal_la-numex.Tpo -c numex.c -o libpostal_la-numex.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-features.lo -MD -MP -MF .deps/libpostal_la-features.Tpo -c features.c -o libpostal_la-features.o >/dev/null 2>&1
+In file included from address_parser.c:1:
+In file included from ./address_parser.h:52:
+In file included from ./averaged_perceptron.h:27:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+mv -f .deps/libpostal_la-string_utils.Tpo .deps/libpostal_la-string_utils.Plo
+address_parser.c:349:10: warning: unused variable 'has_key' [-Wunused-variable]
+  349 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+address_parser.c:690:14: warning: unused variable 'phrase' [-Wunused-variable]
+  690 |     phrase_t phrase;
+      |              ^~~~~~
+address_parser.c:762:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+  762 |     bool have_address_phrases = search_address_dictionaries_tokens_with_phrases(normalized_str, normalized_tokens, NULL, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+address_parser.c:798:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+  798 |     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+address_parser.c:816:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+  816 |     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+address_parser.c:835:40: warning: unused parameter 'len' [-Wunused-parameter]
+  835 | char *phrase_prefix(char *word, size_t len, phrase_t prefix_phrase, char_array *prefix_phrase_array) {
+      |                                        ^
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-averaged_perceptron_tagger.lo -MD -MP -MF .deps/libpostal_la-averaged_perceptron_tagger.Tpo -c -o libpostal_la-averaged_perceptron_tagger.lo `test -f 'averaged_perceptron_tagger.c' || echo './'`averaged_perceptron_tagger.c
+address_parser.c:925:13: warning: unused variable 'token' [-Wunused-variable]
+  925 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+address_parser.c:883:74: warning: unused parameter 'parser' [-Wunused-parameter]
+  883 | static address_parser_phrase_t word_or_phrase_at_index(address_parser_t *parser, tokenized_string_t *tokenized, address_parser_context_t *context, uint32_t i, bool long_context) {
+      |                                                                          ^
+address_parser.c:973:13: warning: unused variable 'membership' [-Wunused-variable]
+  973 |     int64_t membership;
+      |             ^~~~~~~~~~
+address_parser.c:1001:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1001 |     phrase_t phrase;
+      |              ^~~~~~
+address_parser.c:1283:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 1283 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+address_parser.c:1285:18: warning: unused variable 'k' [-Wunused-variable]
+ 1285 |         khiter_t k;
+      |                  ^
+address_parser.c:1384:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable]
+ 1384 |             bool ngrams_added = false;
+      |                  ^
+address_parser.c:1568:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 1568 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+address_parser.c:1574:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 1574 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+address_parser.c:1575:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 1575 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+address_parser.c:1510:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable]
+ 1510 |         size_t next_word_len = 1;
+      |                ^
+address_parser.c:1098:11: warning: unused variable 'language' [-Wunused-variable]
+ 1098 |     char *language = context->language;
+      |           ^~~~~~~~
+address_parser.c:1099:11: warning: unused variable 'country' [-Wunused-variable]
+ 1099 |     char *country = context->country;
+      |           ^~~~~~~
+address_parser.c:1109:19: warning: unused variable 'separators' [-Wunused-variable]
+ 1109 |     uint32_array *separators = context->separators;
+      |                   ^~~~~~~~~~
+address_parser.c:1326:10: warning: variable 'is_unknown' set but not used [-Wunused-but-set-variable]
+ 1326 |     bool is_unknown = false;
+      |          ^
+address_parser.c:1328:10: warning: variable 'known_prefix' set but not used [-Wunused-but-set-variable]
+ 1328 |     bool known_prefix = false;
+      |          ^
+address_parser.c:1329:10: warning: variable 'known_suffix' set but not used [-Wunused-but-set-variable]
+ 1329 |     bool known_suffix = false;
+      |          ^
+In file included from averaged_perceptron.c:1:
+In file included from ./averaged_perceptron.h:27:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+In file included from address_parser_io.c:1:
+In file included from ./address_parser_io.h:8:
+In file included from ./address_parser.h:52:
+In file included from ./averaged_perceptron.h:27:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-crf_context.lo -MD -MP -MF .deps/libpostal_la-crf_context.Tpo -c crf_context.c  -fno-common -DPIC -o .libs/libpostal_la-crf_context.o
+averaged_perceptron.c:45:14: warning: unused variable 'i' [-Wunused-variable]
+   45 |     uint32_t i = 0;
+      |              ^
+In file included from crf.c:1:
+In file included from ./crf.h:20:
+In file included from ./crf_context.h:20:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-sparse_matrix.lo -MD -MP -MF .deps/libpostal_la-sparse_matrix.Tpo -c sparse_matrix.c  -fno-common -DPIC -o .libs/libpostal_la-sparse_matrix.o
+address_parser_io.c:105:16: warning: unused variable 'pair_len' [-Wunused-variable]
+  105 |         size_t pair_len = strlen(str);
+      |                ^~~~~~~~
+./string_utils.h:251:9: note: expanded from macro 'cstring_array_foreach'
+  251 |         code;                                                                           \
+      |         ^~~~
+address_parser_io.c:99:12: warning: unused variable 'num_pairs' [-Wunused-variable]
+   99 |     size_t num_pairs = cstring_array_num_strings(pairs);
+      |            ^~~~~~~~~
+address_parser_io.c:246:12: warning: unused variable 'len' [-Wunused-variable]
+  246 |     size_t len = strlen(normalized);
+      |            ^~~
+2 warnings generated.
+mv -f .deps/libpostal_la-features.Tpo .deps/libpostal_la-features.Plo
+1 warning generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-averaged_perceptron.lo -MD -MP -MF .deps/libpostal_la-averaged_perceptron.Tpo -c averaged_perceptron.c -o libpostal_la-averaged_perceptron.o >/dev/null 2>&1
+4 warnings generated.
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-graph.lo -MD -MP -MF .deps/libpostal_la-graph.Tpo -c -o libpostal_la-graph.lo `test -f 'graph.c' || echo './'`graph.c
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-crf.lo -MD -MP -MF .deps/libpostal_la-crf.Tpo -c crf.c -o libpostal_la-crf.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-address_parser_io.lo -MD -MP -MF .deps/libpostal_la-address_parser_io.Tpo -c address_parser_io.c -o libpostal_la-address_parser_io.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-averaged_perceptron_tagger.lo -MD -MP -MF .deps/libpostal_la-averaged_perceptron_tagger.Tpo -c averaged_perceptron_tagger.c  -fno-common -DPIC -o .libs/libpostal_la-averaged_perceptron_tagger.o
+In file included from crf_context.c:1:
+In file included from ./crf_context.h:20:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+crf_context.c:238:18: warning: unused variable 'T' [-Wunused-variable]
+  238 |     const size_t T = context->num_items;
+      |                  ^
+crf_context.c:239:18: warning: unused variable 'L' [-Wunused-variable]
+  239 |     const size_t L = context->num_labels;
+      |                  ^
+crf_context.c:538:18: warning: unused variable 'L' [-Wunused-variable]
+  538 |     const size_t L = self->num_labels;
+      |                  ^
+crf_context.c:540:19: warning: unused variable 'cur' [-Wunused-variable]
+  540 |     const double *cur = NULL;
+      |                   ^~~
+In file included from sparse_matrix.c:1:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+sparse_matrix.c:119:12: warning: unused variable 'val' [-Wunused-variable]
+  119 |     double val;
+      |            ^~~
+sparse_matrix.c:159:12: warning: unused variable 'val' [-Wunused-variable]
+  159 |     double val;
+      |            ^~~
+sparse_matrix.c:178:15: warning: unused variable 'indices' [-Wunused-variable]
+  178 |     uint32_t *indices = self->indices->a;
+      |               ^~~~~~~
+sparse_matrix.c:201:12: warning: unused variable 'val' [-Wunused-variable]
+  201 |     double val;
+      |            ^~~
+sparse_matrix.c:217:15: warning: unused variable 'indices' [-Wunused-variable]
+  217 |     uint32_t *indices = self->indices->a;
+      |               ^~~~~~~
+sparse_matrix.c:239:15: warning: unused variable 'indptr' [-Wunused-variable]
+  239 |     uint32_t *indptr = self->indptr->a;
+      |               ^~~~~~
+sparse_matrix.c:243:12: warning: unused variable 'm1_rows' [-Wunused-variable]
+  243 |     size_t m1_rows = self->m;
+      |            ^~~~~~~
+sparse_matrix.c:244:12: warning: unused variable 'm1_cols' [-Wunused-variable]
+  244 |     size_t m1_cols = self->n;
+      |            ^~~~~~~
+sparse_matrix.c:246:12: warning: unused variable 'm2_rows' [-Wunused-variable]
+  246 |     size_t m2_rows = matrix->m;
+      |            ^~~~~~~
+sparse_matrix.c:275:15: warning: unused variable 'indptr' [-Wunused-variable]
+  275 |     uint32_t *indptr = self->indptr->a;
+      |               ^~~~~~
+sparse_matrix.c:279:12: warning: unused variable 'm1_rows' [-Wunused-variable]
+  279 |     size_t m1_rows = self->m;
+      |            ^~~~~~~
+sparse_matrix.c:280:12: warning: unused variable 'm1_cols' [-Wunused-variable]
+  280 |     size_t m1_cols = self->n;
+      |            ^~~~~~~
+24 warnings generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-address_parser.lo -MD -MP -MF .deps/libpostal_la-address_parser.Tpo -c address_parser.c -o libpostal_la-address_parser.o >/dev/null 2>&1
+mv -f .deps/libpostal_la-numex.Tpo .deps/libpostal_la-numex.Plo
+mv -f .deps/libpostal_la-transliterate.Tpo .deps/libpostal_la-transliterate.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-graph_builder.lo -MD -MP -MF .deps/libpostal_la-graph_builder.Tpo -c -o libpostal_la-graph_builder.lo `test -f 'graph_builder.c' || echo './'`graph_builder.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-language_classifier.lo -MD -MP -MF .deps/libpostal_la-language_classifier.Tpo -c -o libpostal_la-language_classifier.lo `test -f 'language_classifier.c' || echo './'`language_classifier.c
+5 warnings generated.
+In file included from averaged_perceptron_tagger.c:1:
+In file included from ./averaged_perceptron_tagger.h:20:
+In file included from ./averaged_perceptron.h:27:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+mv -f .deps/libpostal_la-averaged_perceptron.Tpo .deps/libpostal_la-averaged_perceptron.Plo
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-graph.lo -MD -MP -MF .deps/libpostal_la-graph.Tpo -c graph.c  -fno-common -DPIC -o .libs/libpostal_la-graph.o
+13 warnings generated.
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-language_features.lo -MD -MP -MF .deps/libpostal_la-language_features.Tpo -c -o libpostal_la-language_features.lo `test -f 'language_features.c' || echo './'`language_features.c
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-crf_context.lo -MD -MP -MF .deps/libpostal_la-crf_context.Tpo -c crf_context.c -o libpostal_la-crf_context.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-sparse_matrix.lo -MD -MP -MF .deps/libpostal_la-sparse_matrix.Tpo -c sparse_matrix.c -o libpostal_la-sparse_matrix.o >/dev/null 2>&1
+1 warning generated.
+mv -f .deps/libpostal_la-crf.Tpo .deps/libpostal_la-crf.Plo
+mv -f .deps/libpostal_la-address_parser_io.Tpo .deps/libpostal_la-address_parser_io.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-logistic_regression.lo -MD -MP -MF .deps/libpostal_la-logistic_regression.Tpo -c -o libpostal_la-logistic_regression.lo `test -f 'logistic_regression.c' || echo './'`logistic_regression.c
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-averaged_perceptron_tagger.lo -MD -MP -MF .deps/libpostal_la-averaged_perceptron_tagger.Tpo -c averaged_perceptron_tagger.c -o libpostal_la-averaged_perceptron_tagger.o >/dev/null 2>&1
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-logistic.lo -MD -MP -MF .deps/libpostal_la-logistic.Tpo -c -o libpostal_la-logistic.lo `test -f 'logistic.c' || echo './'`logistic.c
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-graph_builder.lo -MD -MP -MF .deps/libpostal_la-graph_builder.Tpo -c graph_builder.c  -fno-common -DPIC -o .libs/libpostal_la-graph_builder.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-language_classifier.lo -MD -MP -MF .deps/libpostal_la-language_classifier.Tpo -c language_classifier.c  -fno-common -DPIC -o .libs/libpostal_la-language_classifier.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-language_features.lo -MD -MP -MF .deps/libpostal_la-language_features.Tpo -c language_features.c  -fno-common -DPIC -o .libs/libpostal_la-language_features.o
+mv -f .deps/libpostal_la-expand.Tpo .deps/libpostal_la-expand.Plo
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-logistic_regression.lo -MD -MP -MF .deps/libpostal_la-logistic_regression.Tpo -c logistic_regression.c  -fno-common -DPIC -o .libs/libpostal_la-logistic_regression.o
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-minibatch.lo -MD -MP -MF .deps/libpostal_la-minibatch.Tpo -c -o libpostal_la-minibatch.lo `test -f 'minibatch.c' || echo './'`minibatch.c
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-logistic.lo -MD -MP -MF .deps/libpostal_la-logistic.Tpo -c logistic.c  -fno-common -DPIC -o .libs/libpostal_la-logistic.o
+mv -f .deps/libpostal_la-averaged_perceptron_tagger.Tpo .deps/libpostal_la-averaged_perceptron_tagger.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-float_utils.lo -MD -MP -MF .deps/libpostal_la-float_utils.Tpo -c -o libpostal_la-float_utils.lo `test -f 'float_utils.c' || echo './'`float_utils.c
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-graph.lo -MD -MP -MF .deps/libpostal_la-graph.Tpo -c graph.c -o libpostal_la-graph.o >/dev/null 2>&1
+In file included from language_features.c:2:
+In file included from ./language_classifier.h:13:
+In file included from ./logistic_regression.h:26:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+In file included from language_classifier.c:1:
+In file included from ./language_classifier.h:13:
+In file included from ./logistic_regression.h:26:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+language_features.c:55:11: warning: unused variable 'feature_namespace' [-Wunused-variable]
+   55 |     char *feature_namespace;
+      |           ^~~~~~~~~~~~~~~~~
+language_features.c:74:12: warning: variable 'consumed' set but not used [-Wunused-but-set-variable]
+   74 |     size_t consumed = 0;
+      |            ^
+language_features.c:216:69: warning: unused parameter 'prefix' [-Wunused-parameter]
+  216 | static void add_script_feature(khash_t(str_double) *features, char *prefix, char_array *feature_array, script_t script) {
+      |                                                                     ^
+language_features.c:274:21: warning: unused variable 'prev_token' [-Wunused-variable]
+  274 |             token_t prev_token;
+      |                     ^~~~~~~~~~
+language_features.c:275:19: warning: unused variable 'phrase' [-Wunused-variable]
+  275 |             char *phrase = NULL;
+      |                   ^~~~~~
+In file included from logistic_regression.c:3:
+In file included from ./logistic_regression.h:26:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+logistic_regression.c:45:12: warning: unused variable 'n' [-Wunused-variable]
+   45 |     size_t n = x->n;
+      |            ^
+logistic_regression.c:63:13: warning: unused variable 'expected_values' [-Wunused-variable]
+   63 |     double *expected_values = p_y->values;
+      |             ^~~~~~~~~~~~~~~
+mv -f .deps/libpostal_la-sparse_matrix.Tpo .deps/libpostal_la-sparse_matrix.Plo
+logistic_regression.c:91:12: warning: unused variable 'num_features' [-Wunused-variable]
+   91 |     size_t num_features = n;
+      |            ^~~~~~~~~~~~
+logistic_regression.c:93:14: warning: unused variable 'i' [-Wunused-variable]
+   93 |     uint32_t i, j;
+      |              ^
+logistic_regression.c:95:12: warning: unused variable 'residual' [-Wunused-variable]
+   95 |     double residual;
+      |            ^~~~~~~~
+logistic_regression.c:103:13: warning: unused variable 'theta_values' [-Wunused-variable]
+  103 |     double *theta_values = theta->values;
+      |             ^~~~~~~~~~~~
+logistic_regression.c:104:13: warning: unused variable 'predicted_values' [-Wunused-variable]
+  104 |     double *predicted_values = p_y->values;
+      |             ^~~~~~~~~~~~~~~~
+logistic_regression.c:105:13: warning: unused variable 'gradient_values' [-Wunused-variable]
+  105 |     double *gradient_values = gradient->values;
+      |             ^~~~~~~~~~~~~~~
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-unicode_scripts.lo -MD -MP -MF .deps/libpostal_la-unicode_scripts.Tpo -c unicode_scripts.c -o libpostal_la-unicode_scripts.o >/dev/null 2>&1
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-ngrams.lo -MD -MP -MF .deps/libpostal_la-ngrams.Tpo -c -o libpostal_la-ngrams.lo `test -f 'ngrams.c' || echo './'`ngrams.c
+mv -f .deps/libpostal_la-crf_context.Tpo .deps/libpostal_la-crf_context.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-place.lo -MD -MP -MF .deps/libpostal_la-place.Tpo -c -o libpostal_la-place.lo `test -f 'place.c' || echo './'`place.c
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-minibatch.lo -MD -MP -MF .deps/libpostal_la-minibatch.Tpo -c minibatch.c  -fno-common -DPIC -o .libs/libpostal_la-minibatch.o
+In file included from logistic.c:1:
+In file included from ./logistic.h:76 warnings generated.
+:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+logistic.c:16:12: warning: unused variable 'sum' [-Wunused-variable]
+   16 |     double sum = 0.0;
+      |            ^~~
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-graph_builder.lo -MD -MP -MF .deps/libpostal_la-graph_builder.Tpo -c graph_builder.c -o libpostal_la-graph_builder.o >/dev/null 2>&1
+9 warnings generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-language_features.lo -MD -MP -MF .deps/libpostal_la-language_features.Tpo -c language_features.c -o libpostal_la-language_features.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-logistic_regression.lo -MD -MP -MF .deps/libpostal_la-logistic_regression.Tpo -c logistic_regression.c -o libpostal_la-logistic_regression.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-float_utils.lo -MD -MP -MF .deps/libpostal_la-float_utils.Tpo -c float_utils.c  -fno-common -DPIC -o .libs/libpostal_la-float_utils.o
+2 warnings generated.
+mv -f .deps/libpostal_la-address_parser.Tpo .deps/libpostal_la-address_parser.Plo
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-logistic.lo -MD -MP -MF .deps/libpostal_la-logistic.Tpo -c logistic.c -o libpostal_la-logistic.o >/dev/null 2>&1
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-near_dupe.lo -MD -MP -MF .deps/libpostal_la-near_dupe.Tpo -c -o libpostal_la-near_dupe.lo `test -f 'near_dupe.c' || echo './'`near_dupe.c
+1 warning generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-language_classifier.lo -MD -MP -MF .deps/libpostal_la-language_classifier.Tpo -c language_classifier.c -o libpostal_la-language_classifier.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-ngrams.lo -MD -MP -MF .deps/libpostal_la-ngrams.Tpo -c ngrams.c  -fno-common -DPIC -o .libs/libpostal_la-ngrams.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-place.lo -MD -MP -MF .deps/libpostal_la-place.Tpo -c place.c  -fno-common -DPIC -o .libs/libpostal_la-place.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-float_utils.lo -MD -MP -MF .deps/libpostal_la-float_utils.Tpo -c float_utils.c -o libpostal_la-float_utils.o >/dev/null 2>&1
+In file included from minibatch.c:1:
+In file included from ./minibatch.h:9:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+minibatch.c:8:14: warning: unused variable 'feature_id' [-Wunused-variable]
+    8 |     uint32_t feature_id;
+      |              ^~~~~~~~~~
+minibatch.c:12:12: warning: unused variable 'm' [-Wunused-variable]
+   12 |     size_t m = minibatch->n;
+      |            ^
+minibatch.c:53:17: warning: unused variable 'feature' [-Wunused-variable]
+   53 |     const char *feature;
+      |                 ^~~~~~~
+minibatch.c:102:17: warning: unused variable 'label' [-Wunused-variable]
+  102 |     const char *label;
+      |                 ^~~~~
+mv -f .deps/libpostal_la-graph.Tpo .deps/libpostal_la-graph.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-double_metaphone.lo -MD -MP -MF .deps/libpostal_la-double_metaphone.Tpo -c -o libpostal_la-double_metaphone.lo `test -f 'double_metaphone.c' || echo './'`double_metaphone.c
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-near_dupe.lo -MD -MP -MF .deps/libpostal_la-near_dupe.Tpo -c near_dupe.c  -fno-common -DPIC -o .libs/libpostal_la-near_dupe.o
+mv -f .deps/libpostal_la-logistic.Tpo .deps/libpostal_la-logistic.Plo
+mv -f .deps/libpostal_la-logistic_regression.Tpo .deps/libpostal_la-logistic_regression.Plo
+mv -f .deps/libpostal_la-graph_builder.Tpo .deps/libpostal_la-graph_builder.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-dedupe.lo -MD -MP -MF .deps/libpostal_la-dedupe.Tpo -c -o libpostal_la-dedupe.lo `test -f 'dedupe.c' || echo './'`dedupe.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-string_similarity.lo -MD -MP -MF .deps/libpostal_la-string_similarity.Tpo -c -o libpostal_la-string_similarity.lo `test -f 'string_similarity.c' || echo './'`string_similarity.c
+mv -f .deps/libpostal_la-language_features.Tpo .deps/libpostal_la-language_features.Plo
+In file included from place.c:1:
+In file included from ./place.h:8:
+In file included from ./language_classifier.h:13:
+In file included from ./logistic_regression.h:26:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-acronyms.lo -MD -MP -MF .deps/libpostal_la-acronyms.Tpo -c -o libpostal_la-acronyms.lo `test -f 'acronyms.c' || echo './'`acronyms.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-soft_tfidf.lo -MD -MP -MF .deps/libpostal_la-soft_tfidf.Tpo -c -o libpostal_la-soft_tfidf.lo `test -f 'soft_tfidf.c' || echo './'`soft_tfidf.c
+mv -f .deps/libpostal_la-float_utils.Tpo .deps/libpostal_la-float_utils.Plo
+ngrams.c:37:22: warning: unused variable 'token_index' [-Wunused-variable]
+   37 |             uint32_t token_index = cstring_array_start_token(grams);
+      |                      ^~~~~~~~~~~
+ngrams.c:18:12: warning: variable 'consumed' set but not used [-Wunused-but-set-variable]
+   18 |     size_t consumed = 0;
+      |            ^
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT libpostal_la-jaccard.lo -MD -MP -MF .deps/libpostal_la-jaccard.Tpo -c -o libpostal_la-jaccard.lo `test -f 'jaccard.c' || echo './'`jaccard.c
+2 warnings generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-ngrams.lo -MD -MP -MF .deps/libpostal_la-ngrams.Tpo -c ngrams.c -o libpostal_la-ngrams.o >/dev/null 2>&1
+1 warning generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-place.lo -MD -MP -MF .deps/libpostal_la-place.Tpo -c place.c -o libpostal_la-place.o >/dev/null 2>&1
+5 warnings generated.
+mv -f .deps/libpostal_la-language_classifier.Tpo .deps/libpostal_la-language_classifier.Plo
+In file included from near_dupe.c:14:
+In file included from ./place.h:8:
+In file included from ./language_classifier.h:13:
+In file included from ./logistic_regression.h:26:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-minibatch.lo -MD -MP -MF .deps/libpostal_la-minibatch.Tpo -c minibatch.c -o libpostal_la-minibatch.o >/dev/null 2>&1
+near_dupe.c:436:18: warning: variable 'any_existing_acronyms' set but not used [-Wunused-but-set-variable]
+  436 |             bool any_existing_acronyms = false;
+      |                  ^
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-double_metaphone.lo -MD -MP -MF .deps/libpostal_la-double_metaphone.Tpo -c double_metaphone.c  -fno-common -DPIC -o .libs/libpostal_la-double_metaphone.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-dedupe.lo -MD -MP -MF .deps/libpostal_la-dedupe.Tpo -c dedupe.c  -fno-common -DPIC -o .libs/libpostal_la-dedupe.o
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O0 -D LIBPOSTAL_EXPORTS   -MT libscanner_la-scanner.lo -MD -MP -MF .deps/libscanner_la-scanner.Tpo -c -o libscanner_la-scanner.lo `test -f 'scanner.c' || echo './'`scanner.c
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-string_similarity.lo -MD -MP -MF .deps/libpostal_la-string_similarity.Tpo -c string_similarity.c  -fno-common -DPIC -o .libs/libpostal_la-string_similarity.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-soft_tfidf.lo -MD -MP -MF .deps/libpostal_la-soft_tfidf.Tpo -c soft_tfidf.c  -fno-common -DPIC -o .libs/libpostal_la-soft_tfidf.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-jaccard.lo -MD -MP -MF .deps/libpostal_la-jaccard.Tpo -c jaccard.c  -fno-common -DPIC -o .libs/libpostal_la-jaccard.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-acronyms.lo -MD -MP -MF .deps/libpostal_la-acronyms.Tpo -c acronyms.c  -fno-common -DPIC -o .libs/libpostal_la-acronyms.o
+mv -f .deps/libpostal_la-ngrams.Tpo .deps/libpostal_la-ngrams.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT utf8proc/libpostal_la-utf8proc.lo -MD -MP -MF utf8proc/.deps/libpostal_la-utf8proc.Tpo -c -o utf8proc/libpostal_la-utf8proc.lo `test -f 'utf8proc/utf8proc.c' || echo './'`utf8proc/utf8proc.c
+mv -f .deps/libpostal_la-place.Tpo .deps/libpostal_la-place.Plo
+jaccard.c:38:14: warning: variable 'k' set but not used [-Wunused-but-set-variable]
+   38 |     khiter_t k;
+      |              ^
+In file included from dedupe.c:2:
+In file included from ./address_parser.h:52:
+In file included from ./averaged_perceptron.h:27:
+In file included from ./sparse_matrix.h:46:
+./matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -MT geohash/libpostal_la-geohash.lo -MD -MP -MF geohash/.deps/libpostal_la-geohash.Tpo -c -o geohash/libpostal_la-geohash.lo `test -f 'geohash/geohash.c' || echo './'`geohash/geohash.c
+string_similarity.c:122:17: warning: unused variable 'match_at' [-Wunused-variable]
+  122 |         ssize_t match_at = -1;
+      |                 ^~~~~~~~
+string_similarity.c:124:16: warning: variable 'min_at' set but not used [-Wunused-but-set-variable]
+  124 |         size_t min_at = 0;
+      |                ^
+string_similarity.c:101:10: warning: unused variable 'in_gap' [-Wunused-variable]
+  101 |     bool in_gap = false;
+      |          ^~~~~~
+string_similarity.c:356:101: warning: unused parameter 'replace_cost' [-Wunused-parameter]
+  356 | ssize_t damerau_levenshtein_distance_unicode(uint32_array *u1_array, uint32_array *u2_array, size_t replace_cost) {
+      |                                                                                                     ^
+string_similarity.c:454:12: warning: unused variable 'i' [-Wunused-variable]
+  454 |     size_t i = 0;
+      |            ^
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O0 -D LIBPOSTAL_EXPORTS -MT libscanner_la-scanner.lo -MD -MP -MF .deps/libscanner_la-scanner.Tpo -c scanner.c  -fno-common -DPIC -o .libs/libscanner_la-scanner.o
+string_similarity.c:532:12: warning: unused variable 'j' [-Wunused-variable]
+  532 |     double j;
+      |            ^
+string_similarity.c:647:51: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  647 |             if (utf8_compare_len_case_insensitive(ptr1 + ti.offset + ti_pos, ptr2 + tj.offset, tj.len) == 0) {
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+./string_utils.h:82:51: note: passing argument to parameter 'str1' here
+   82 | int utf8_compare_len_case_insensitive(const char *str1, const char *str2, size_t len);
+      |                                                   ^
+string_similarity.c:647:78: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  647 |             if (utf8_compare_len_case_insensitive(ptr1 + ti.offset + ti_pos, ptr2 + tj.offset, tj.len) == 0) {
+      |                                                                              ^~~~~~~~~~~~~~~~
+./string_utils.h:82:69: note: passing argument to parameter 'str2' here
+   82 | int utf8_compare_len_case_insensitive(const char *str1, const ch2ar *str2, size_t len);
+      |                                                                     ^
+string_similarity.c:621:13: warning: variable 'phrase_token_pos' set but not used [-Wunused-but-set-variable]
+  621 |     ssize_t phrase_token_pos = -1;
+      |  warnings generated.
+            ^
+1 warning generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-near_dupe.lo -MD -MP -MF .deps/libpostal_la-near_dupe.Tpo -c near_dupe.c -o libpostal_la-near_dupe.o >/dev/null 2>&1
+soft_tfidf.c:72:41: warning: unused parameter 'num_tokens1' [-Wunused-parameter]
+   72 | bool phrases_have_same_canonical(size_t num_tokens1, char **tokens1, size_t num_tokens2, char **tokens2, phrase_t match1, phrase_t match2, canonical_match_t *response) {
+      |                                         ^
+soft_tfidf.c:72:77: warning: unused parameter 'num_tokens2' [-Wunused-parameter]
+   72 | bool phrases_have_same_canonical(size_t num_tokens1, char **tokens1, size_t num_tokens2, char **tokens2, phrase_t match1, phrase_t match2, canonical_match_t *response) {
+      |                                                                             ^
+soft_tfidf.c:302:62: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  302 |         log_debug("p1.len = %zu, i = %zu, p1.start = %zu\n", p1.len, i, p1.start);
+      |                             ~~~                              ^~~~~~
+      |                             %u
+./log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+soft_tfidf.c:302:73: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  302 |         log_debug("p1.len = %zu, i = %zu, p1.start = %zu\n", p1.len, i, p1.start);
+      |                                                      ~~~                ^~~~~~~~
+      |                                                      %u
+./log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+soft_tfidf.c:344:57: warning: format specifies type 'ssize_t' (aka 'long') but the argument has type 'int64_t' (aka 'long long') [-Wformat]
+  344 |                 log_debug("acronym_membership = %zd\n", acronym_membership);
+      |                                                 ~~~     ^~~~~~~~~~~~~~~~~~
+      |                                                 %lld
+./log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+soft_tfidf.c:360:60: warning: format specifies type 'ssize_t' (aka 'long') but the argument has type 'int64_t' (aka 'long long') [-Wformat]
+  360 |                 log_debug("multi_word_membership = %zd\n", multi_word_membership);
+      |                                                    ~~~     ^~~~~~~~~~~~~~~~~~~~~
+      |                                                    %lld
+./log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+soft_tfidf.c:273:14: warning: unused variable 'have_strict_abbreviation' [-Wunused-variable]
+  273 |         bool have_strict_abbreviation = false;
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-jaccard.lo -MD -MP -MF .deps/libpostal_la-jaccard.Tpo -c jaccard.c -o libpostal_la-jaccard.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-acronyms.lo -MD -MP -MF .deps/libpostal_la-acronyms.Tpo -c acronyms.c -o libpostal_la-acronyms.o >/dev/null 2>&1
+9 warnings generated.
+1 warning generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT utf8proc/libpostal_la-utf8proc.lo -MD -MP -MF utf8proc/.deps/libpostal_la-utf8proc.Tpo -c utf8proc/utf8proc.c  -fno-common -DPIC -o utf8proc/.libs/libpostal_la-utf8proc.o
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-string_similarity.lo -MD -MP -MF .deps/libpostal_la-string_similarity.Tpo -c string_similarity.c -o libpostal_la-string_similarity.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-dedupe.lo -MD -MP -MF .deps/libpostal_la-dedupe.Tpo -c dedupe.c -o libpostal_la-dedupe.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-double_metaphone.lo -MD -MP -MF .deps/libpostal_la-double_metaphone.Tpo -c double_metaphone.c -o libpostal_la-double_metaphone.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT geohash/libpostal_la-geohash.lo -MD -MP -MF geohash/.deps/libpostal_la-geohash.Tpo -c geohash/geohash.c  -fno-common -DPIC -o geohash/.libs/libpostal_la-geohash.o
+7 warnings generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT libpostal_la-soft_tfidf.lo -MD -MP -MF .deps/libpostal_la-soft_tfidf.Tpo -c soft_tfidf.c -o libpostal_la-soft_tfidf.o >/dev/null 2>&1
+mv -f .deps/libpostal_la-minibatch.Tpo .deps/libpostal_la-minibatch.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include    -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O0 -D LIBPOSTAL_EXPORTS   -MT klib/libscanner_la-drand48.lo -MD -MP -MF klib/.deps/libscanner_la-drand48.Tpo -c -o klib/libscanner_la-drand48.lo `test -f 'klib/drand48.c' || echo './'`klib/drand48.c
+mv -f .deps/libpostal_la-unicode_scripts.Tpo .deps/libpostal_la-unicode_scripts.Plo
+mv -f .deps/libpostal_la-jaccard.Tpo .deps/libpostal_la-jaccard.Plo
+geohash/geohash.c:154:68: warning: unused parameter 'length' [-Wunused-parameter]
+  154 | static int interleaved_to_geohashstr(uint16_t *interleaved, size_t length, char *dst, size_t dst_length) {
+      |                                                                    ^
+geohash/geohash.c:488:57: warning: unused parameter 'dst_length' [-Wunused-parameter]
+  488 | int geohash_neighbors(char *hashcode, char *dst, size_t dst_length, int *string_count) {
+      |                                                         ^
+mv -f .deps/libpostal_la-acronyms.Tpo .deps/libpostal_la-acronyms.Plo
+mv -f .deps/libpostal_la-near_dupe.Tpo .deps/libpostal_la-near_dupe.Plo
+mv -f .deps/libpostal_la-string_similarity.Tpo .deps/libpostal_la-string_similarity.Plo
+2 warnings generated.
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT geohash/libpostal_la-geohash.lo -MD -MP -MF geohash/.deps/libpostal_la-geohash.Tpo -c geohash/geohash.c -o geohash/libpostal_la-geohash.o >/dev/null 2>&1
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O0 -D LIBPOSTAL_EXPORTS -MT klib/libscanner_la-drand48.lo -MD -MP -MF klib/.deps/libscanner_la-drand48.Tpo -c klib/drand48.c  -fno-common -DPIC -o klib/.libs/libscanner_la-drand48.o
+mv -f .deps/libpostal_la-double_metaphone.Tpo .deps/libpostal_la-double_metaphone.Plo
+mv -f .deps/libpostal_la-dedupe.Tpo .deps/libpostal_la-dedupe.Plo
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O0 -D LIBPOSTAL_EXPORTS -MT klib/libscanner_la-drand48.lo -MD -MP -MF klib/.deps/libscanner_la-drand48.Tpo -c klib/drand48.c -o klib/libscanner_la-drand48.o >/dev/null 2>&1
+mv -f .deps/libpostal_la-soft_tfidf.Tpo .deps/libpostal_la-soft_tfidf.Plo
+mv -f klib/.deps/libscanner_la-drand48.Tpo klib/.deps/libscanner_la-drand48.Plo
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS -MT utf8proc/libpostal_la-utf8proc.lo -MD -MP -MF utf8proc/.deps/libpostal_la-utf8proc.Tpo -c utf8proc/utf8proc.c -o utf8proc/libpostal_la-utf8proc.o >/dev/null 2>&1
+mv -f geohash/.deps/libpostal_la-geohash.Tpo geohash/.deps/libpostal_la-geohash.Plo
+mv -f utf8proc/.deps/libpostal_la-utf8proc.Tpo utf8proc/.deps/libpostal_la-utf8proc.Plo
+libtool: compile:  gcc -std=gnu23 -DHAVE_CONFIG_H -I.. -I/usr/local/include -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR=\"/tmp/libpostal-speedup-203-setup/data/libpostal\" -g -g -O2 -O0 -D LIBPOSTAL_EXPORTS -MT libscanner_la-scanner.lo -MD -MP -MF .deps/libscanner_la-scanner.Tpo -c scanner.c -o libscanner_la-scanner.o >/dev/null 2>&1
+mv -f .deps/libscanner_la-scanner.Tpo .deps/libscanner_la-scanner.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -std=gnu23 -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O0 -D LIBPOSTAL_EXPORTS    -L/usr/local/lib -o libscanner.la  klib/libscanner_la-drand48.lo libscanner_la-scanner.lo  
+libtool: link: ar cr .libs/libscanner.a klib/.libs/libscanner_la-drand48.o .libs/libscanner_la-scanner.o 
+libtool: link: ranlib .libs/libscanner.a
+libtool: link: ( cd ".libs" && rm -f "libscanner.la" && ln -s "../libscanner.la" "libscanner.la" )
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -std=gnu23 -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"/tmp/libpostal-speedup-203-setup/data/libpostal"' -g -g -O2 -O2 -D LIBPOSTAL_EXPORTS  -version-info 1:1:0 -no-undefined -L/usr/local/lib -o libpostal.la -rpath /usr/local/lib libpostal_la-strndup.lo libpostal_la-libpostal.lo libpostal_la-expand.lo libpostal_la-address_dictionary.lo libpostal_la-transliterate.lo libpostal_la-tokens.lo libpostal_la-trie.lo libpostal_la-trie_search.lo libpostal_la-trie_utils.lo libpostal_la-string_utils.lo libpostal_la-file_utils.lo utf8proc/libpostal_la-utf8proc.lo libpostal_la-normalize.lo libpostal_la-numex.lo libpostal_la-features.lo libpostal_la-unicode_scripts.lo libpostal_la-address_parser.lo libpostal_la-address_parser_io.lo libpostal_la-averaged_perceptron.lo libpostal_la-crf.lo libpostal_la-crf_context.lo libpostal_la-sparse_matrix.lo libpostal_la-averaged_perceptron_tagger.lo libpostal_la-graph.lo libpostal_la-graph_builder.lo libpostal_la-language_classifier.lo libpostal_la-language_features.lo libpostal_la-logistic_regression.lo libpostal_la-logistic.lo libpostal_la-minibatch.lo libpostal_la-float_utils.lo libpostal_la-ngrams.lo libpostal_la-place.lo libpostal_la-near_dupe.lo libpostal_la-double_metaphone.lo geohash/libpostal_la-geohash.lo libpostal_la-dedupe.lo libpostal_la-string_similarity.lo libpostal_la-acronyms.lo libpostal_la-soft_tfidf.lo libpostal_la-jaccard.lo libscanner.la  
+libtool: link: gcc -std=gnu23 -dynamiclib  -o .libs/libpostal.1.dylib  .libs/libpostal_la-strndup.o .libs/libpostal_la-libpostal.o .libs/libpostal_la-expand.o .libs/libpostal_la-address_dictionary.o .libs/libpostal_la-transliterate.o .libs/libpostal_la-tokens.o .libs/libpostal_la-trie.o .libs/libpostal_la-trie_search.o .libs/libpostal_la-trie_utils.o .libs/libpostal_la-string_utils.o .libs/libpostal_la-file_utils.o utf8proc/.libs/libpostal_la-utf8proc.o .libs/libpostal_la-normalize.o .libs/libpostal_la-numex.o .libs/libpostal_la-features.o .libs/libpostal_la-unicode_scripts.o .libs/libpostal_la-address_parser.o .libs/libpostal_la-address_parser_io.o .libs/libpostal_la-averaged_perceptron.o .libs/libpostal_la-crf.o .libs/libpostal_la-crf_context.o .libs/libpostal_la-sparse_matrix.o .libs/libpostal_la-averaged_perceptron_tagger.o .libs/libpostal_la-graph.o .libs/libpostal_la-graph_builder.o .libs/libpostal_la-language_classifier.o .libs/libpostal_la-language_features.o .libs/libpostal_la-logistic_regression.o .libs/libpostal_la-logistic.o .libs/libpostal_la-minibatch.o .libs/libpostal_la-float_utils.o .libs/libpostal_la-ngrams.o .libs/libpostal_la-place.o .libs/libpostal_la-near_dupe.o .libs/libpostal_la-double_metaphone.o geohash/.libs/libpostal_la-geohash.o .libs/libpostal_la-dedupe.o .libs/libpostal_la-string_similarity.o .libs/libpostal_la-acronyms.o .libs/libpostal_la-soft_tfidf.o .libs/libpostal_la-jaccard.o   -Wl,-force_load,./.libs/libscanner.a  -L/usr/local/lib  -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -g -O2 -O2   -install_name  /usr/local/lib/libpostal.1.dylib -compatibility_version 2 -current_version 2.1 
+libtool: link: (cd ".libs" && rm -f "libpostal.dylib" && ln -s "libpostal.1.dylib" "libpostal.dylib")
+libtool: link: (cd .libs/libpostal.lax/libscanner.a && ar x "/private/tmp/libpostal-speedup-203-setup/libpostal/src/./.libs/libscanner.a")
+libtool: link: ar cr .libs/libpostal.a libpostal_la-strndup.o libpostal_la-libpostal.o libpostal_la-expand.o libpostal_la-address_dictionary.o libpostal_la-transliterate.o libpostal_la-tokens.o libpostal_la-trie.o libpostal_la-trie_search.o libpostal_la-trie_utils.o libpostal_la-string_utils.o libpostal_la-file_utils.o utf8proc/libpostal_la-utf8proc.o libpostal_la-normalize.o libpostal_la-numex.o libpostal_la-features.o libpostal_la-unicode_scripts.o libpostal_la-address_parser.o libpostal_la-address_parser_io.o libpostal_la-averaged_perceptron.o libpostal_la-crf.o libpostal_la-crf_context.o libpostal_la-sparse_matrix.o libpostal_la-averaged_perceptron_tagger.o libpostal_la-graph.o libpostal_la-graph_builder.o libpostal_la-language_classifier.o libpostal_la-language_features.o libpostal_la-logistic_regression.o libpostal_la-logistic.o libpostal_la-minibatch.o libpostal_la-float_utils.o libpostal_la-ngrams.o libpostal_la-place.o libpostal_la-near_dupe.o libpostal_la-double_metaphone.o geohash/libpostal_la-geohash.o libpostal_la-dedupe.o libpostal_la-string_similarity.o libpostal_la-acronyms.o libpostal_la-soft_tfidf.o libpostal_la-jaccard.o  .libs/libpostal.lax/libscanner.a/libscanner_la-drand48.o .libs/libpostal.lax/libscanner.a/libscanner_la-scanner.o 
+libtool: link: ranlib .libs/libpostal.a
+libtool: link: rm -fr .libs/libpostal.lax
+libtool: link: ( cd ".libs" && rm -f "libpostal.la" && ln -s "../libpostal.la" "libpostal.la" )

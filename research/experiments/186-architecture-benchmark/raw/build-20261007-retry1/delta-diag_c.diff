@@ -1,0 +1,192 @@
+--- /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/diag.c	2026-10-07 15:30:22
++++ /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/diag.c	2026-10-07 16:44:58
+@@ -4,6 +4,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <string.h>
++#include <inttypes.h>
+ 
+ #define MAX_METRICS 1024
+ #define MAX_QUERIES 4096
+@@ -12,7 +13,7 @@
+ #define MAX_LABELS 512
+ #define MAX_LABEL_LENGTH 64
+ typedef struct { char metric[48], stage[40], family[40]; uint64_t value; } metric_t;
+-typedef struct { const void *dict; char op[40], stage[40], family[40]; unsigned char *key; size_t len; uint64_t executed, reused; } query_t;
++typedef struct { const void *dict; char op[40], stage[40], family[40]; unsigned char *key; size_t len; uint64_t executed, reused, first_query_index; } query_t;
+ typedef struct { char op[40], family[40], stages[MAX_DIMS][40]; uint64_t stage_counts[MAX_DIMS]; unsigned nstages; unsigned char *key; size_t len; uint64_t queries, executed, reused, address_groups; } pattern_t;
+ static metric_t metrics[MAX_METRICS]; static size_t nmetrics;
+ static query_t queries[MAX_QUERIES]; static size_t nqueries;
+@@ -26,7 +27,66 @@
+ static int label_pool_error;
+ static const char *current_stage = "unclassified", *current_family = "unclassified", *current_operation = "trie_key_lookup";
+ static int active, current_address_overflow;
++static FILE *trace_file;
++static uint64_t trace_event_cap = 1000000, trace_events, trace_address_index;
++static uint64_t trace_query_index, trace_search_index, trace_reuse_count, trace_hit_count, trace_miss_count;
++static uint64_t trace_input_len, trace_feature_keys, trace_feature_bytes, trace_model_rows, trace_weights;
++static uint64_t trace_alloc_calls, trace_alloc_bytes, trace_normalized_bytes, trace_tokens, trace_output_bytes;
++static uint64_t trace_key_bytes, trace_tracker_peak;
++static int trace_overflow;
++static unsigned char trace_address_hash[CC_SHA256_DIGEST_LENGTH];
++static char trace_case_id[128] = "unspecified";
+ 
++static void trace_open(void) {
++    if (trace_file || trace_overflow) return;
++    const char *path = getenv("TRACE_JSONL");
++    if (!path || !*path) return;
++    trace_file = fopen(path, "wb");
++    if (!trace_file) { trace_overflow = 1; return; }
++    const char *cap = getenv("TRACE_EVENT_CAP");
++    if (cap && *cap) { char *end = NULL; unsigned long long n = strtoull(cap, &end, 10); if (end && !*end && n) trace_event_cap = n; }
++    const char *case_id = getenv("TRACE_CASE_ID");
++    if (case_id && *case_id) snprintf(trace_case_id, sizeof trace_case_id, "%s", case_id);
++    fprintf(trace_file, "{\"record_type\":\"trace_header\",\"schema_version\":1,\"source_variant\":\"original\",\"case_id\":\"%s\",\"expected_addresses\":%s,\"event_cap\":%" PRIu64 ",\"overflow_policy\":\"fail_closed\",\"key_encoding\":\"hex\",\"query_identity\":[\"dictionary_id\",\"operation\",\"family\",\"canonical_key_bytes\"],\"dictionary_generation\":null,\"generation_reason\":\"original dictionary APIs expose no mutation or reset generation\",\"safe_reuse_proof\":\"unknown unless independently established\"}\n", trace_case_id, getenv("TRACE_EXPECTED_ADDRESSES") ? getenv("TRACE_EXPECTED_ADDRESSES") : "null", trace_event_cap);
++}
++static void trace_hash_hex(char out[2 * CC_SHA256_DIGEST_LENGTH + 1], const unsigned char *hash) {
++    for (size_t i = 0; i < CC_SHA256_DIGEST_LENGTH; i++) snprintf(out + 2 * i, 3, "%02x", hash[i]);
++}
++static void trace_bytes_hex(FILE *f, const unsigned char *p, size_t n) {
++    static const char hex[] = "0123456789abcdef";
++    for (size_t i = 0; i < n; i++) { fputc(hex[p[i] >> 4], f); fputc(hex[p[i] & 15], f); }
++}
++static int trace_room(void) {
++    trace_open();
++    if (!trace_file || trace_overflow) return 0;
++    if (trace_events >= trace_event_cap) {
++        trace_overflow = 1;
++        fprintf(trace_file, "{\"record_type\":\"trace_overflow\",\"after_event_count\":%" PRIu64 ",\"event_cap\":%" PRIu64 "}\n", trace_events, trace_event_cap);
++        return 0;
++    }
++    trace_events++;
++    return 1;
++}
++static void trace_query(const void *dict, const char *op, const char *stage, const char *family,
++                        const unsigned char *key, size_t len, int hit, int reused, query_t *identity) {
++    if (!trace_room()) return;
++    char address_hex[2 * CC_SHA256_DIGEST_LENGTH + 1]; trace_hash_hex(address_hex, trace_address_hash);
++    uint64_t qidx = ++trace_query_index;
++    const char *kind = reused ? "answer_reuse" : "physical_search";
++    if (reused) trace_reuse_count++; else { trace_search_index++; if (hit) trace_hit_count++; else trace_miss_count++; }
++    if (identity && !identity->first_query_index) identity->first_query_index = qidx;
++    uint64_t producer = identity ? identity->first_query_index : 0;
++    uintptr_t ptr = (uintptr_t)dict;
++    fprintf(trace_file, "{\"record_type\":\"query\",\"address_index\":%" PRIu64 ",\"address_key\":\"%s\",\"query_index\":%" PRIu64 ",\"physical_search_index\":", trace_address_index, address_hex, qidx);
++    if (reused) fputs("null", trace_file); else fprintf(trace_file, "%" PRIu64, trace_search_index);
++    fprintf(trace_file, ",\"query_kind\":\"%s\",\"dictionary_id\":\"ptr:%" PRIxPTR "\",\"dictionary_generation\":null,\"generation_reason\":\"not exposed by original dictionary API\",\"operation\":\"%s\",\"family\":\"%s\",\"key_hex\":\"", kind, ptr, op, family);
++    trace_bytes_hex(trace_file, key, len); trace_key_bytes += len;
++    fprintf(trace_file, "\",\"hit\":%s,\"producer_stage\":", hit ? "true" : "false");
++    if (producer && producer != qidx) fprintf(trace_file, "\"%s\",\"producer_query_index\":%" PRIu64, identity->stage, producer);
++    else fputs("null,\"producer_query_index\":null", trace_file);
++    fprintf(trace_file, ",\"request_stage\":\"%s\",\"safe_reuse_proof\":\"unknown\",\"reuse_basis\":%s}\n", stage, reused ? "\"explicit diag_reuse hook; cache validity not independently proved\"" : "null");
++}
++
+ static void cp(char *d, size_t n, const char *s) { snprintf(d, n, "%s", s ? s : "unclassified"); }
+ static const char *intern_label(const char *s) {
+     if (!s || !*s) s = "unclassified";
+@@ -48,6 +108,15 @@
+ 
+ void diag_count(const char *metric, const char *stage, const char *family, uint64_t value) {
+     if (!active || !value) return;
++    if (!strcmp(metric, "feature_keys_materialized")) trace_feature_keys += value;
++    else if (!strcmp(metric, "feature_key_bytes_materialized")) trace_feature_bytes += value;
++    else if (!strcmp(metric, "model_rows")) trace_model_rows += value;
++    else if (!strcmp(metric, "weights_accumulated")) trace_weights += value;
++    else if (!strcmp(metric, "allocation_calls")) trace_alloc_calls += value;
++    else if (!strcmp(metric, "allocation_requested_bytes")) trace_alloc_bytes += value;
++    else if (!strcmp(metric, "normalized_bytes")) trace_normalized_bytes += value;
++    else if (!strcmp(metric, "tokens")) trace_tokens += value;
++    else if (!strcmp(metric, "output_bytes")) trace_output_bytes += value;
+     for (size_t i = 0; i < nmetrics; i++) if (!strcmp(metrics[i].metric, metric) && !strcmp(metrics[i].stage, stage) && !strcmp(metrics[i].family, family)) { metrics[i].value += value; return; }
+     if (nmetrics == MAX_METRICS) return;
+     metric_t *m = &metrics[nmetrics++]; cp(m->metric, sizeof m->metric, metric); cp(m->stage, sizeof m->stage, stage); cp(m->family, sizeof m->family, family); m->value = value;
+@@ -61,7 +130,7 @@
+     if (p->nstages < MAX_DIMS) { unsigned i=p->nstages++; cp(p->stages[i], sizeof p->stages[0], stage); p->stage_counts[i]=count; }
+ }
+ static void repeat_event(const void *dict, const char *op, const char *stage, const char *family,
+-                         const unsigned char *key, size_t len, int reused) {
++                         const unsigned char *key, size_t len, int hit, int reused) {
+     size_t i;
+     for (i = 0; i < nqueries; i++) if (queries[i].dict == dict && !strcmp(queries[i].op, op) && !strcmp(queries[i].family, family) && queries[i].len == len && (!len || !memcmp(queries[i].key, key, len))) break;
+     if (i == nqueries) {
+@@ -70,11 +139,13 @@
+             query_overflow_events++;
+             if (!current_address_overflow) { query_overflow_addresses++; current_address_overflow = 1; }
+             diag_count(reused ? "untracked_answer_reuses" : "untracked_lookup_calls", stage, family, 1);
++            trace_query(dict, op, stage, family, key, len, hit, reused, NULL);
+             return;
+         }
+         query_t *q = &queries[nqueries++]; memset(q, 0, sizeof *q); q->dict = dict; cp(q->op, sizeof q->op, op); cp(q->stage, sizeof q->stage, stage); cp(q->family, sizeof q->family, family); q->len = len; q->key = malloc(len ? len : 1); if (len) memcpy(q->key, key, len); track(len ? len : 1);
+     }
+     query_t *q = &queries[i];
++    trace_query(dict, op, stage, family, key, len, hit, reused, q);
+     uint64_t previous = q->executed + q->reused;
+     if (reused) q->reused++; else q->executed++;
+     if (previous && !reused) { diag_count("tracked_repeated_queries", stage, family, 1); diag_count("repeated_queries", stage, family, 1); }
+@@ -101,7 +172,7 @@
+     unsigned char *key = malloc(n ? n : 1); uint64_t lens[2] = {na, nb};
+     memcpy(key, lens, sizeof lens); if (na) memcpy(key + sizeof lens, a, na); if (nb) memcpy(key + sizeof lens + na, b, nb); track(n ? n : 1);
+     diag_count("lookup_calls", stage, family, 1); diag_count(hit ? "lookup_hits" : "lookup_misses", stage, family, 1);
+-    repeat_event(dict, op, stage, family, key, n, 0); tracker_current_bytes -= n ? n : 1; free(key);
++    repeat_event(dict, op, stage, family, key, n, hit, 0); tracker_current_bytes -= n ? n : 1; free(key);
+ }
+ void diag_lookup(const void *dict, const char *op, const char *stage, const char *family, const void *key, size_t len, int hit) {
+     diag_lookup_parts(dict, op, stage, family, key, len, NULL, 0, hit);
+@@ -111,10 +182,10 @@
+ }
+ void diag_reuse_parts(const void *dict, const char *op, const char *stage, const char *family,
+                       const void *a, size_t na, const void *b, size_t nb, int hit) {
+-    (void)hit; if (!active) return; size_t n = na + nb + 2 * sizeof(uint64_t);
++    if (!active) return; size_t n = na + nb + 2 * sizeof(uint64_t);
+     unsigned char *key = malloc(n ? n : 1); uint64_t lens[2] = {na, nb};
+     memcpy(key, lens, sizeof lens); if (na) memcpy(key + sizeof lens, a, na); if (nb) memcpy(key + sizeof lens + na, b, nb); track(n ? n : 1);
+-    diag_count("answers_reused", stage, family, 1); repeat_event(dict, op, stage, family, key, n, 1);
++    diag_count("answers_reused", stage, family, 1); repeat_event(dict, op, stage, family, key, n, hit, 1);
+     tracker_current_bytes -= n ? n : 1; free(key);
+ }
+ void diag_address_begin(void) {
+@@ -122,7 +193,43 @@
+     nqueries = 0; current_address_overflow = 0; active = 1;
+     diag_set_stage("unclassified"); diag_set_family("unclassified"); diag_set_operation("trie_key_lookup");
+ }
+-void diag_address_end(void) { active = 0; }
++void diag_address_begin_input(const void *input, size_t input_len) {
++    diag_address_begin();
++    trace_open();
++    trace_address_index++;
++    trace_input_len = input_len;
++    CC_SHA256(input, (CC_LONG)input_len, trace_address_hash);
++    trace_query_index = trace_search_index = trace_reuse_count = trace_hit_count = trace_miss_count = 0;
++    trace_feature_keys = trace_feature_bytes = trace_model_rows = trace_weights = 0;
++    trace_alloc_calls = trace_alloc_bytes = trace_normalized_bytes = trace_tokens = trace_output_bytes = 0;
++    trace_key_bytes = trace_tracker_peak = 0;
++    if (trace_file) fflush(trace_file);
++}
++void diag_address_end(void) {
++    if (trace_file) {
++        char address_hex[2 * CC_SHA256_DIGEST_LENGTH + 1]; trace_hash_hex(address_hex, trace_address_hash);
++        trace_tracker_peak = tracker_current_bytes > trace_tracker_peak ? tracker_current_bytes : trace_tracker_peak;
++        fprintf(trace_file, "{\"record_type\":\"address_summary\",\"address_index\":%" PRIu64 ",\"address_key\":\"%s\",\"input_bytes\":%" PRIu64 ",\"normalized_bytes\":%" PRIu64 ",\"tokens\":%" PRIu64 ",\"logical_requests\":%" PRIu64 ",\"physical_searches\":%" PRIu64 ",\"answer_reuses\":%" PRIu64 ",\"hits\":%" PRIu64 ",\"misses\":%" PRIu64 ",\"feature_keys_materialized\":%" PRIu64 ",\"feature_key_bytes_materialized\":%" PRIu64 ",\"model_rows\":%" PRIu64 ",\"weights_accumulated\":%" PRIu64 ",\"scoped_allocation_calls\":%" PRIu64 ",\"scoped_allocation_requested_bytes\":%" PRIu64 ",\"output_bytes\":%" PRIu64 ",\"diagnostic_tracker_bytes_current\":%" PRIu64 ",\"diagnostic_tracker_peak_bytes\":%" PRIu64 ",\"trace_key_bytes_written\":%" PRIu64 ",\"dictionary_generation_complete\":false,\"safe_reuse_proof_complete\":false,\"query_coverage\":\"all instrumented 185 sites in copied original source; not all internal library lookups\"}\n",
++            trace_address_index, address_hex, trace_input_len, trace_normalized_bytes, trace_tokens, trace_query_index, trace_search_index, trace_reuse_count, trace_hit_count, trace_miss_count, trace_feature_keys, trace_feature_bytes, trace_model_rows, trace_weights, trace_alloc_calls, trace_alloc_bytes, trace_output_bytes, tracker_current_bytes, trace_tracker_peak, trace_key_bytes);
++        fflush(trace_file);
++    }
++    active = 0;
++}
++int diag_trace_finish(void) {
++    if (!trace_file) return 0;
++    const char *expected = getenv("TRACE_EXPECTED_ADDRESSES");
++    char *end = NULL; uint64_t expected_count = expected ? strtoull(expected, &end, 10) : 0;
++    int count_mismatch = expected && end && !*end && expected_count != trace_address_index;
++    fprintf(trace_file, "{\"record_type\":\"trace_end\",\"addresses\":%" PRIu64 ",\"expected_addresses\":", trace_address_index);
++    if (expected && end && !*end) fprintf(trace_file, "%" PRIu64, expected_count); else fputs("null", trace_file);
++    fprintf(trace_file, ",\"query_events\":%" PRIu64 ",\"trace_key_bytes_written\":%" PRIu64 ",\"overflow\":%s,\"address_count_mismatch\":%s,\"complete\":%s}\n",
++        trace_events, trace_key_bytes, trace_overflow ? "true" : "false", count_mismatch ? "true" : "false",
++        (!trace_overflow && !count_mismatch) ? "true" : "false");
++    int rc = fflush(trace_file);
++    if (fclose(trace_file)) rc = 1;
++    trace_file = NULL;
++    return trace_overflow || count_mismatch || rc ? -1 : 0;
++}
+ 
+ void *diag_malloc(size_t bytes, const char *family) {
+     diag_count("allocation_calls", current_stage, family, 1);

@@ -1,0 +1,111 @@
+probe=166 offline CRF re-encoding evidence
+timestamp=2026-10-05T22:38:08-0700
+181737d30977adc9d287e3f7a1cfafd7277525d4
+a5acf000adcd932e580cfc5c6e3437845fa92b00afafb03689d8159b69de90c1  research/experiments/160-p2-records-in-cpi/raw/gen_records/stdout.txt
+8403c3c6da23485bb7c35ea10d63815df0205e1510aa2e859d75d154840e585b  research/experiments/160-p2-records-in-cpi/raw/verify_160c.stdout
+fe702afae74badb2ea95d7ebe4e3c3ef46e2fa53f5d219c527adf8953b46ffe3  research/oracles/v1/SHA256SUMS
+fuzz-s1-200k/O1.txt.gz: OK
+fuzz-s1-200k/O2.txt.gz: OK
+fuzz-s1-200k/O3i.txt.gz: OK
+fuzz-s1-200k/O3k.txt.gz: OK
+fuzz-s1-200k/O4.txt.gz: OK
+golden-v1/O1.txt.gz: OK
+golden-v1/O2.txt.gz: OK
+golden-v1/O3i.txt.gz: OK
+golden-v1/O3k.txt.gz: OK
+golden-v1/O4.txt.gz: OK
+novel/O1.txt.gz: OK
+novel/O2.txt.gz: OK
+novel/O3i.txt.gz: OK
+novel/O3k.txt.gz: OK
+novel/O4.txt.gz: OK
+osm-v3/O1.txt.gz: OK
+osm-v3/O2.txt.gz: OK
+osm-v3/O3i.txt.gz: OK
+osm-v3/O3k.txt.gz: OK
+osm-v3/O4.txt.gz: OK
+O3i corpus=golden-v1 rows=702370 hits=603376 misses=98994
+O3i corpus=novel rows=713995 hits=601405 misses=112590
+O3i corpus=osm-v3 rows=546890 hits=495762 misses=51128
+O3i corpus=fuzz-s1-200k rows=14030294 hits=11738082 misses=2292212
+state_features.tsv: 11470623 keys
+trans_features.tsv: 2086474 keys
+vocab.tsv: 3694560 keys
+records 10025721 slots 13557097 vocab 3694560 families 57 | arena 834.1 MB index 268.4 MB vlist 14.8 MB file 1117.3 MB
+family 0: own
+family 1: next word
+family 2: sub_word
+family 3: suffix
+family 4: unambiguous phrase type+phrase|entrance
+family 5: unambiguous phrase type+phrase|island
+family 6: unambiguous phrase type+phrase|name
+family 7: unambiguous phrase type+phrase|level
+family 8: unambiguous phrase type+phrase|staircase
+family 9: unambiguous phrase type+phrase|state
+family 10: unambiguous phrase type+phrase|state_district
+family 11: unambiguous phrase type+phrase|street
+family 12: unambiguous phrase type+phrase|suburb
+family 13: unambiguous phrase type+phrase|unit
+family 14: unambiguous phrase type+phrase|house_number
+family 15: unambiguous phrase type+phrase|city
+family 16: unambiguous phrase type+phrase|city_district
+family 17: unambiguous phrase type+phrase|country
+family 18: unambiguous phrase type+phrase|country_region
+family 19: unambiguous phrase type+phrase|postal_code
+family 20: unambiguous phrase type+phrase|po_box
+family 21: unambiguous phrase type+phrase|world_region
+family 22: commonly island
+family 23: commonly state
+family 24: commonly state_district
+family 25: commonly suburb
+family 26: commonly city
+family 27: commonly city_district
+family 28: commonly country
+family 29: commonly country_region
+family 30: postcode no context
+family 31: postcode have context
+family 32: prefix
+family 33: prev word+word
+family 34: prev word
+family 35: phrase type+phrase|entrance
+family 36: phrase type+phrase|island
+family 37: phrase type+phrase|name
+family 38: phrase type+phrase|level
+family 39: phrase type+phrase|staircase
+family 40: phrase type+phrase|state
+family 41: phrase type+phrase|state_district
+family 42: phrase type+phrase|street
+family 43: phrase type+phrase|suburb
+family 44: phrase type+phrase|unit
+family 45: phrase type+phrase|house_number
+family 46: phrase type+phrase|city
+family 47: phrase type+phrase|city_district
+family 48: phrase type+phrase|country
+family 49: phrase type+phrase|country_region
+family 50: phrase type+phrase|postal_code
+family 51: phrase type+phrase|po_box
+family 52: phrase type+phrase|world_region
+family 53: phrase
+family 54: first word
+family 55: word+next word
+family 56: word
+verify (written file): rows bit-identical 13557097 mismatched 0 unmapped 0 | vocab ok 3694560 bad 0 | records flagged vocab 3694560 of vocab keys 3694560 | model keys state 11470623 trans 2086474
+VERIFY PASS
+v1 45574ee2b1972f1acf2d (expect 45574ee2b1972f1acf2d)
+nv 806b8a81603ea9adf3af (expect 806b8a81603ea9adf3af)
+osm-v3 IDENTICAL (11405 lines)
+unseen-v4 IDENTICAL (10293 lines)
+unseen-v5 IDENTICAL (8794 lines)
+unseen-v6 IDENTICAL (9450 lines)
+unseen-v7 IDENTICAL (8973 lines)
+unseen-v8 IDENTICAL (9981 lines)
+unseen-v9 IDENTICAL (9480 lines)
+unseen-v10 IDENTICAL (8567 lines)
+unseen-v11 IDENTICAL (7882 lines)
+holdout-150 IDENTICAL (3298 lines)
+dad-150 IDENTICAL (45 lines)
+frozen golden-v1: RESULT: IDENTICAL
+frozen novel: RESULT: IDENTICAL
+fuzz s1 IDENTICAL (2000000 lines)
+fuzz s2 IDENTICAL (2000000 lines)
+stderr bytes: 0

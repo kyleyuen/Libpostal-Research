@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "source": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/fuzz_pipeline_exact.c",
+  "source_sha256": "3a0f666f1ce394261a46df11dcfbc361d41adf9e8a174568660ca9f49ed27c29",
+  "original_binary_reused": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-v1/original-000/fuzz_pipeline_exact",
+  "started_utc": "2026-10-08T04:56:07.201328+00:00",
+  "variants": [
+    {
+      "name": "candidate-197",
+      "archive": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/197-combined-query-removal/artifacts/release/libpostal.a",
+      "archive_sha256": "6adb04370fdeb835239c8a1130d97d98769c29b466f817102416c2a7d061eecf",
+      "argv": [
+        "/usr/bin/clang",
+        "-O2",
+        "-g",
+        "-I",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/fuzz_pipeline_exact.c",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/197-combined-query-removal/artifacts/release/libpostal.a",
+        "-lm",
+        "-o",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-candidates-v1/candidate-197/fuzz_pipeline_exact"
+      ],
+      "start_utc": "2026-10-08T04:56:07.209428+00:00",
+      "end_utc": "2026-10-08T04:56:07.724609+00:00",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "binary_sha256": "b9efff5bc350f29c7e3d2976fb1f0f60fd18011e7c5bb5b5023ffcc573dc81b8"
+    },
+    {
+      "name": "candidate-199-mimalloc-v2",
+      "archive": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release/libpostal.a",
+      "archive_sha256": "447e00b40cff2dbb2c4b388b8a844fd01bfc1610463f93432de3a2eb4960f576",
+      "argv": [
+        "/usr/bin/clang",
+        "-O2",
+        "-g",
+        "-I",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src",
+        "/opt/homebrew/opt/mimalloc/lib/mimalloc.o",
+        "-flto",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/fuzz_pipeline_exact.c",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release/libpostal.a",
+        "-lm",
+        "-o",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-candidates-v1/candidate-199-mimalloc-v2/fuzz_pipeline_exact"
+      ],
+      "start_utc": "2026-10-08T04:56:07.732793+00:00",
+      "end_utc": "2026-10-08T04:56:08.760127+00:00",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "binary_sha256": "f3a42eaa9df3975313d2e97c9b2677d6a74e803c292d01e1255c31e4801b6a17"
+    }
+  ],
+  "ended_utc": "2026-10-08T04:56:08.762612+00:00",
+  "status": "pass"
+}

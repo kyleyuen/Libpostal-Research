@@ -1,0 +1,2 @@
+argv=/usr/bin/clang -std=gnu2x -Wall -Wextra -DEXP185_DIAG -I/Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/187-cpi-reuse-flow/source /Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/187-cpi-reuse-flow/source/diag.c /Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/187-cpi-reuse-flow/tools/calibrate_trace_events.c -o /Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/187-cpi-reuse-flow/artifacts/calibration-event-contract-3/calibrate_trace_events 
+exit=0

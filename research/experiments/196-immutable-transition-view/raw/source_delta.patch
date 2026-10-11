@@ -1,0 +1,78 @@
+--- a/crf.c
++++ b/crf.c
+@@ -1,3 +1,4 @@
++#include "crf_context.h"
+ #include "crf.h"
+ #include "log/log.h"
+ 
+@@ -92,7 +93,7 @@
+ }
+ #endif
+ 
+-bool crf_tagger_score(crf_t *self, void *tagger, void *tagger_context, cstring_array *features, cstring_array *prev_tag_features, tagger_feature_function feature_function, tokenized_string_t *tokenized, bool print_features) {
++static bool crf_tagger_score_internal(crf_t *self, void *tagger, void *tagger_context, cstring_array *features, cstring_array *prev_tag_features, tagger_feature_function feature_function, tokenized_string_t *tokenized, bool print_features, bool inference_viterbi) {
+     if (self == NULL || feature_function == NULL || tokenized == NULL ) {
+         return false;
+     }
+@@ -102,7 +103,7 @@
+     crf_context_set_num_items(crf_context, num_tokens);
+     crf_context_reset(crf_context, CRF_CONTEXT_RESET_ALL);
+ 
+-    if (!double_matrix_copy(self->trans_weights, crf_context->trans)) {
++    if (!inference_viterbi && !double_matrix_copy(self->trans_weights, crf_context->trans)) {
+         return false;
+     }
+ 
+@@ -209,15 +210,19 @@
+     return true;
+ }
+ 
++bool crf_tagger_score(crf_t *self, void *tagger, void *tagger_context, cstring_array *features, cstring_array *prev_tag_features, tagger_feature_function feature_function, tokenized_string_t *tokenized, bool print_features) {
++    return crf_tagger_score_internal(self, tagger, tagger_context, features, prev_tag_features, feature_function, tokenized, print_features, false);
++}
++
+ bool crf_tagger_score_viterbi(crf_t *self, void *tagger, void *tagger_context, cstring_array *features, cstring_array *prev_tag_features, tagger_feature_function feature_function, tokenized_string_t *tokenized, double *score, bool print_features) {
+-    if (!crf_tagger_score(self, tagger, tagger_context, features, prev_tag_features, feature_function, tokenized, print_features)) {
++    if (!crf_tagger_score_internal(self, tagger, tagger_context, features, prev_tag_features, feature_function, tokenized, print_features, true)) {
+         return false;
+     }
+ 
+     size_t num_tokens = tokenized->tokens->n;
+ 
+     uint32_array_resize_fixed(self->viterbi, num_tokens);
+-    double viterbi_score = crf_context_viterbi(self->context, self->viterbi->a);
++    double viterbi_score = crf_context_viterbi_with_trans(self->context, self->viterbi->a, self->trans_weights->values);
+ 
+     *score = viterbi_score;
+ 
+--- a/crf_context.c
++++ b/crf_context.c
+@@ -565,6 +565,10 @@
+ }
+ 
+ double crf_context_viterbi(crf_context_t *self, uint32_t *labels) {
++    return crf_context_viterbi_with_trans(self, labels, NULL);
++}
++
++double crf_context_viterbi_with_trans(crf_context_t *self, uint32_t *labels, const double *transition_values) {
+     uint32_t *back = NULL;
+ 
+     double max_score = -DBL_MAX;
+@@ -621,7 +625,7 @@
+ 
+             for (i = 0; i < L; i++) {
+                 state_trans = state_trans_score(self, t, i);
+-                trans = trans_score(self, i);
++                trans = transition_values ? transition_values + (size_t)i * L : trans_score(self, i);
+                 score = prev[i] + state_trans[j] + trans[j];
+ 
+                 /* Store this path if it has the maximum score. */
+--- a/crf_context.h
++++ b/crf_context.h
+@@ -202,5 +202,6 @@
+ double crf_context_score(crf_context_t *self, const uint32_t *labels);
+ double crf_context_lognorm(crf_context_t *self);
+ double crf_context_viterbi(crf_context_t *self, uint32_t *labels);
++double crf_context_viterbi_with_trans(crf_context_t *self, uint32_t *labels, const double *transition_values);
+ 
+ #endif

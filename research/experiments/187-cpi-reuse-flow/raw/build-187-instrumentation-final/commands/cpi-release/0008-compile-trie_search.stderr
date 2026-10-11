@@ -1,0 +1,20 @@
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/trie_search.c:185:16: warning: initialization of pointer of type 'phrase_array *' to null from a constant boolean expression [-Wbool-conversion]
+  185 |         return false;
+      |                ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/trie_search.c:693:12: warning: unused variable 'before' [-Wunused-variable]
+  693 |     size_t before = *phrases ? (*phrases)->n : 0;
+      |            ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/trie_search.c:695:12: warning: unused variable 'after' [-Wunused-variable]
+  695 |     size_t after = *phrases ? (*phrases)->n : 0;
+      |            ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/trie_search.c:904:72: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  904 |                     log_debug("No space transition, phrase_len=%zu\n", phrase_len);
+      |                                                                ~~~     ^~~~~~~~~~
+      |                                                                %u
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/trie_search.c:861:12: warning: variable 'separator_char_len' set but not used [-Wunused-but-set-variable]
+  861 |     size_t separator_char_len = 0;
+      |            ^
+5 warnings generated.

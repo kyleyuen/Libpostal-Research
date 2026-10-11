@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/tools/validate_diag_calibration.py", line 77, in <module>
+    check_nested_labels(sys.argv[4])
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/tools/validate_diag_calibration.py", line 41, in check_nested_labels
+    assert data["breakdowns"]["by_family"]["lookup_calls"]["address_phrase"]["value"] == 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

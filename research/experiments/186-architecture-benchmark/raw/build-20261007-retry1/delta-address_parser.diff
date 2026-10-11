@@ -1,0 +1,11 @@
+--- /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c	2026-10-07 14:24:49
++++ /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/address_parser.c	2026-10-07 16:38:01
+@@ -1691,7 +1691,7 @@
+ 
+ libpostal_address_parser_response_t *address_parser_parse(char *address, char *language, char *country) {
+     if (address == NULL) return NULL;
+-    diag_address_begin();
++    diag_address_begin_input(address, strlen(address));
+     diag_set_stage("normalization");
+     diag_count("input_bytes", "normalization", "address", strlen(address));
+ 

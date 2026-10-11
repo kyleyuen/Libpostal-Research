@@ -1,0 +1,167 @@
+--- libpostal/src/address_parser.c	2026-09-28 15:50:15
++++ research/experiments/181-release-180/sources/address_parser.c	2026-10-06 00:09:36
+@@ -20,6 +20,39 @@
+ 
+ #define DEFAULT_RARE_WORD_THRESHOLD 50
+ 
++#ifdef EXP_ORACLE
++// 142 stage oracles: fprintf-only dumps of the ORIGINAL parser's intermediate state. No computation is changed.
++// Active only when ORACLE_DIR is set. Format: research/plans/REWRITE_PLAN_2026-10-04.md §3.3 (+ sparse T rows, 142 README).
++FILE *oracle_fp[5];
++uint64_t oracle_addr = 0;   // number of address_parser_parse calls so far; current address = oracle_addr - 1
++static int oracle_ready = 0;
++FILE *oracle_file(int k) {
++    if (!oracle_ready) {
++        oracle_ready = 1;
++        const char *d = getenv("ORACLE_DIR");
++        if (d != NULL) {
++            static const char *nm[5] = {"O1.txt", "O2.txt", "O3k.txt", "O3i.txt", "O4.txt"};
++            char p[4096];
++            for (int i = 0; i < 5; i++) { snprintf(p, sizeof p, "%s/%s", d, nm[i]); oracle_fp[i] = fopen(p, "w"); if (oracle_fp[i] == NULL) abort(); }
++        }
++    }
++    return oracle_fp[k];
++}
++void oracle_str(FILE *f, const char *s) {
++    if (s == NULL) { fputs("(null)", f); return; }
++    for (; *s; s++) {
++        unsigned char c = (unsigned char)*s;
++        if (c == '\\') fputs("\\\\", f); else if (c == '\t') fputs("\\t", f); else if (c == '\n') fputs("\\n", f); else if (c == '\r') fputs("\\r", f); else fputc(c, f);
++    }
++}
++static void oracle_member(FILE *f, phrase_array *phrases, int64_array *memberships, size_t i) {
++    int64_t m = (memberships != NULL && i < memberships->n) ? memberships->a[i] : -1;
++    if (m < 0 || phrases == NULL || (size_t)m >= phrases->n) { fputs("\t-", f); return; }
++    phrase_t ph = phrases->a[m];
++    fprintf(f, "\t%u,%u,%u", ph.start, ph.len, ph.data);
++}
++#endif
++
+ static address_parser_t *parser = NULL;
+ 
+ typedef enum {
+@@ -362,7 +395,25 @@
+     return normalize_string_latin(str, strlen(str), ADDRESS_PARSER_NORMALIZE_STRING_OPTIONS);
+ }
+ 
++/* 177: one front-half record is produced after normalization and phrase search,
++   then consumed directly by feature generation. It carries only identities the
++   old feature function reads independently: normalized word and three phrase
++   memberships. The parser remains single-threaded; allocation failure falls
++   back to the original context arrays. */
++extern bool crf_state_word_id(crf_t *, const char *, uint32_t *);
++extern void crf_direct_state_word(cstring_array *, uint32_t, const char *);
++extern void crf_direct_state_word_fallback(void);
++typedef struct { char *word; int64_t address, component, postal; uint32_t freq, word_id; } ap_front_t;
++static ap_front_t *ap_front = NULL;
++static size_t ap_front_cap = 0, ap_front_n = 0;
++static bool ap_front_fill(address_parser_context_t *c, address_parser_t *p) {
++    size_t n = c->normalized_tokens->n;
++    if (n > ap_front_cap) { ap_front_t *p = realloc(ap_front, n * sizeof(*p)); if (!p) { ap_front_n = 0; return false; } ap_front = p; ap_front_cap = n; }
++    for (size_t i = 0; i < n; i++) { char *w = cstring_array_get_string(c->normalized, i); uint32_t f = word_vocab_frequency(p, w), id = UINT32_MAX; if (f) crf_state_word_id(p->model.crf, w, &id); ap_front[i] = (ap_front_t){w, c->address_phrase_memberships->a[i], c->component_phrase_memberships->a[i], c->postal_code_phrase_memberships->a[i], f, id}; }
++    ap_front_n = n; return true;
++}
+ 
++
+ void address_parser_context_destroy(address_parser_context_t *self) {
+     if (self == NULL) return;
+ 
+@@ -816,6 +867,10 @@
+     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+     token_phrase_memberships(postal_code_phrases, postal_code_phrase_memberships, num_tokens);
+ 
++#ifdef EXP_FUSED_FRONT
++    ap_front_fill(context, parser);
++#endif
++
+ }
+ 
+ static inline phrase_t phrase_at_index(phrase_array *phrases, int64_array *phrase_memberships, uint32_t i) {
+@@ -1121,7 +1176,11 @@
+ 
+     char *word_pre_norm = tokenized_string_get_token(tokenized, idx);
+ 
+-    char *word = cstring_array_get_string(normalized, idx);
++    ap_front_t *front = NULL;
++#ifdef EXP_FUSED_FRONT
++    if (idx < ap_front_n) front = &ap_front[idx];
++#endif
++    char *word = front ? front->word : cstring_array_get_string(normalized, idx);
+     if (word == NULL) {
+         log_error("got NULL word at %d\n", idx);
+         return false;
+@@ -1137,8 +1196,8 @@
+     char *phrase_string = NULL;
+     char *component_phrase_string = NULL;
+ 
+-    int64_t address_phrase_index = address_phrase_memberships->a[idx];
+-    int64_t component_phrase_index = component_phrase_memberships->a[idx];
++    int64_t address_phrase_index = front ? front->address : address_phrase_memberships->a[idx];
++    int64_t component_phrase_index = front ? front->component : component_phrase_memberships->a[idx];
+     
+     if (address_phrase_index != NULL_PHRASE_MEMBERSHIP) {
+         phrase = address_dictionary_phrases->a[address_phrase_index];
+@@ -1261,7 +1320,7 @@
+ 
+     bool possible_postal_code = false;
+     bool postal_code_have_admin = false;
+-    int64_t postal_code_phrase_index = postal_code_phrase_memberships->a[idx];
++    int64_t postal_code_phrase_index = front ? front->postal : postal_code_phrase_memberships->a[idx];
+     phrase_t postal_code_phrase = NULL_PHRASE;
+ 
+     if (postal_code_phrase_index != NULL_PHRASE_MEMBERSHIP) {
+@@ -1318,7 +1377,7 @@
+         }
+     }
+ 
+-    uint32_t word_freq = word_vocab_frequency(parser, word);
++    uint32_t word_freq = front ? front->freq : word_vocab_frequency(parser, word);
+ 
+     bool is_word = is_word_token(token.type);
+ 
+@@ -1440,7 +1499,7 @@
+ 
+         if (word_freq > 0) {
+             // The individual word
+-            feature_array_add(features, 2, "word", word);
++            if (front && front->word_id != UINT32_MAX) crf_direct_state_word(features, front->word_id, word); else { crf_direct_state_word_fallback(); feature_array_add(features, 2, "word", word); }
+         } else {
+             log_debug("word not in vocab: %s\n", word);
+ 
+@@ -1712,6 +1771,36 @@
+     language = NULL;
+     country = NULL;
+     address_parser_context_fill(context, parser, tokenized_str, language, country);
++
++#ifdef EXP_ORACLE
++    {
++        unsigned long long oa = (unsigned long long)oracle_addr++;
++        FILE *f1 = oracle_file(0), *f2 = oracle_file(1);
++        size_t nt = tokenized_str->tokens->n;
++        if (f1 != NULL) {
++            fprintf(f1, "%llu\tN\t%zu\n", oa, nt);
++            for (size_t t = 0; t < nt; t++) {
++                token_t tk = tokenized_str->tokens->a[t];
++                fprintf(f1, "%llu\t%zu\t%u\t%zu\t%zu\t%u\n", oa, t, (unsigned)tk.type, tk.offset, tk.len, t < context->separators->n ? context->separators->a[t] : 0xffffffffu);
++            }
++        }
++        if (f2 != NULL) {
++            size_t nn = cstring_array_num_strings(context->normalized), na = cstring_array_num_strings(context->normalized_admin);
++            fprintf(f2, "%llu\tN\t%zu\t%zu\t%zu\t%zu\t%zu\t%zu\n", oa, nt, nn, na, context->address_dictionary_phrases->n, context->component_phrases->n, context->postal_code_phrases->n);
++            for (size_t t = 0; t < nt; t++) {
++                fprintf(f2, "%llu\t%zu\t", oa, t);
++                oracle_str(f2, t < nn ? cstring_array_get_string(context->normalized, t) : NULL); fputc('\t', f2);
++                oracle_str(f2, t < na ? cstring_array_get_string(context->normalized_admin, t) : NULL);
++                oracle_member(f2, context->address_dictionary_phrases, context->address_phrase_memberships, t);
++                oracle_member(f2, context->component_phrases, context->component_phrase_memberships, t);
++                oracle_member(f2, context->postal_code_phrases, context->postal_code_phrase_memberships, t);
++                phrase_t pp = t < context->prefix_phrases->n ? context->prefix_phrases->a[t] : NULL_PHRASE;
++                phrase_t sp = t < context->suffix_phrases->n ? context->suffix_phrases->a[t] : NULL_PHRASE;
++                fprintf(f2, "\t%u,%u,%u\t%u,%u,%u\n", pp.start, pp.len, pp.data, sp.start, sp.len, sp.data);
++            }
++        }
++    }
++#endif
+ 
+     libpostal_address_parser_response_t *response = NULL;
+ 

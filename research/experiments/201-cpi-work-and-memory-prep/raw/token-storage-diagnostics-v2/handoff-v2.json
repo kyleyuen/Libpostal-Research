@@ -1,0 +1,59 @@
+{
+  "handoff_version": 2,
+  "correction_of": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v1/handoff.json",
+  "correction_reason": "v1 copied 98275... from the 199 candidate diagnostic archive field; it is not the CPI185 base archive identity.",
+  "source_tree": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/source-token-storage-v1",
+  "source_manifest_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v1/source-manifest.sha256",
+  "source_manifest_sha256": "d19c0e2ddf64791ca81cfcd217a03e7665520c5609ac95cad2bc05f88464d089",
+  "source_patch_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v1/source.patch",
+  "source_patch_sha256": "2814988360b77c9cfa0d39fe465bec5da30c1b94f08cc8f0fb173378739ce7cf",
+  "base_archive": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1625-pattern-summary-fix/cpi/diagnostic/libpostal.a",
+  "base_archive_sha256_verified": "c0700a8b99e0f575fe98d8af913435c1d18e24d7896ef98e7e4f91dcc5684b56",
+  "base_archive_provenance": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/raw/build-20261007-1625-pattern-summary-fix/provenance/cpi.txt",
+  "base_archive_provenance_sha256": "951a5e7236ffbe89cca5dfc7468d50f2b17cd9b373cd2bc1e201ffe9499be097",
+  "full13_manifest": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/results/full13-retry3/manifest.json",
+  "full13_manifest_sha256": "1b9e65369825ef37421481f0964914b25bafe040668ebbd787c83f4c0270f540",
+  "cpi_source_hash_inventory": "provenance/cpi.txt source_sha256 block; lists all source/cpi/* files and source/diag.c, dumper, build script hashes. The source tree itself is not a frozen copy in the artifact directory.",
+  "cpi_archive_members_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v2/cpi185-diagnostic-archive-members.txt",
+  "cpi_archive_members_sha256": "8312059ea8c5c29030620d90547c7b69c65041b548ac7e3f841d733fbc87a459",
+  "cpi_archive_member_count": 45,
+  "cpi_flags": {
+    "common": "provenance/cpi.txt flags_release: -std=gnu2x, -DHAVE_CONFIG_H, warnings, -DLIBPOSTAL_EXPORTS, all listed VARIANT_FLAGS and 119_DELIVERY_EXTRA_FLAGS; CPI includes -DEXP_REUSE and -DEXP_FAST_APPEND; no EXP_TOKEN_SLICES",
+    "diagnostic_mode": "-DEXP185_DIAG",
+    "library_optimization": "-O2",
+    "scanner_optimization": "-O0",
+    "link_flags": "-O2 -g",
+    "compiler": "Apple clang 17.0.0 (clang-1700.6.3.2)"
+  },
+  "misidentified_hash": {
+    "sha256": "98275eb29cb6378632fc02f923b90e3c1505f191be696e0452cb19d57b2c69dc",
+    "actual_artifact": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/derivatives/199/artifacts/diagnostic-v9/libpostal.a",
+    "meaning": "199 candidate diagnostic v9 archive output, as recorded by derivatives/199/raw build-manifest.json archive_sha256; must not be used as the CPI base archive."
+  },
+  "diagnostic_translation_units_from_v1": [
+    "address_parser.c",
+    "tokens.c",
+    "string_utils.c",
+    "diag.c"
+  ],
+  "paired_headers_from_v1": [
+    "tokens.h",
+    "diag.h",
+    "original/diag.h"
+  ],
+  "build_mode_delta": {
+    "control": "omit EXP_TOKEN_SLICES",
+    "candidate": "define EXP_TOKEN_SLICES"
+  },
+  "no_source_or_archive_changes": true,
+  "no_build_or_parser_run": true,
+  "cpi_source_sha256": {
+    "address_parser.c": "6a699a28479a29d1f10d534b270d2a518a404e502f05bf607a1e8888708a492d",
+    "address_parser.h": "949d0741728ffc0e71d0fc344e3c4728ea31815e219e02a77dcc89d27a706c06",
+    "string_utils.c": "166b520ba48a214b6cf0cfce15c2161fd878e901ea92da916df02239a5e6a51d",
+    "tokens.c": "1f39a53c540f4983cfe16a6c625d2b367179647f8da9d34aadec7d204362ba71",
+    "tokens.h": "fc31dd56039c657a29f64df8498e91e25216c558d2c36337dadf55f403653fdb",
+    "diag.c": "e5d6105d730e5e8f8689188707a3304616dcc81ec8b0d45fc4d3c7f8370ec72a"
+  },
+  "archive_member_note": "ar -t output has 45 lines including __.SYMDEF SORTED; remaining entries are the immutable CPI185 objects."
+}

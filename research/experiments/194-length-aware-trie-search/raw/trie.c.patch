@@ -1,0 +1,26 @@
+--- a/trie.c
++++ b/trie.c
+@@ -759,6 +759,11 @@
+      return trie_get_data_at_index(self, node_id, data);
+ }
+ 
++inline bool trie_get_data_len(trie_t *self, char *key, size_t len, uint32_t *data) {
++     uint32_t node_id = trie_get_len(self, key, len);
++     return trie_get_data_at_index(self, node_id, data);
++}
++
+ inline bool trie_set_data_at_index(trie_t *self, uint32_t index, uint32_t data) {
+     if (index == NULL_NODE_ID) return false;
+      trie_node_t node = trie_get_node(self, index);
+@@ -866,8 +871,9 @@
+             trie_data_node_t data_node = trie_get_data_node(self, node);
+ 
+             char *query_tail = *ptr ? (char *) ptr + 1 : (char *) ptr;
+-
+-            if (data_node.tail != 0 && trie_compare_tail(self, query_tail, strlen(query_tail) + 1, data_node.tail)) {
++            size_t query_tail_len = *ptr ? len - i : 1;
++
++            if (data_node.tail != 0 && trie_compare_tail(self, query_tail, query_tail_len, data_node.tail)) {
+                 return next_id;
+             } else {
+                 return NULL_NODE_ID;

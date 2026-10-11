@@ -1,0 +1,32 @@
+research/suite/run_suite.py | 13 ++++++++++---
+ 1 file changed, 10 insertions(+), 3 deletions(-)
+
+Changes:
+
+research/suite/run_suite.py
+  @@ -349,7 +349,12 @@ def stage_report(cfg, run):
+  -def write_md(cfg, run, R):
+  +def format_address_count(value):
+  +    """Format an optional manifest count without assuming the manifest has it."""
+  +    return f"{value:,}" if isinstance(value, int) and not isinstance(value, bool) else "—"
+  +
+  +
+  +def write_md(cfg, run, R, filename="report.md"):
+       base = R["baseline"]; s = R["settings"]
+       cands = [v["name"] for v in cfg["variants"] if v["name"] != base]
+       L = [f"# Benchmark suite report — {R['run']}", "",
+  @@ -374,7 +379,9 @@ def write_md(cfg, run, R):
+  -            L.append(f"| {n} | {d['source']} | {man['datasets'].get(n, {}).get('addresses', '—'):,} | {bv['warm_median_us']:.3f} | {cv['warm_median_us']:.3f} | "
+  +            address_count = man["datasets"].get(n, {}).get("addresses")
+  +            address_count_text = format_address_count(address_count)
+  +            L.append(f"| {n} | {d['source']} | {address_count_text} | {bv['warm_median_us']:.3f} | {cv['warm_median_us']:.3f} | "
+                        f"**{sp['geomean']:.2f}×** | {ci} | {sp['median']:.2f}× | {sp['min']:.2f}–{sp['max']:.2f} | {sp['cold_median']:.2f}× | "
+                        + (f"{pc['min']:.2f} / {pc['median']:.2f} / {pc['max']:.2f} (n={pc['n']})" if pc["n"] else "—") + " |")
+       L += ["", "## Memory and setup", "", "| variant | max peak RSS (bytes) | max peak footprint (bytes) | setup s (median) | steady footprint |", "|---|---:|---:|---:|---|"]
+  @@ -398,7 +405,7 @@ def write_md(cfg, run, R):
+  -    open(os.path.join(run, "report.md"), "w").write("\n".join(L) + "\n")
+  +    open(os.path.join(run, filename), "w").write("\n".join(L) + "\n")
+   
+   
+   def main():
+  +10 -3

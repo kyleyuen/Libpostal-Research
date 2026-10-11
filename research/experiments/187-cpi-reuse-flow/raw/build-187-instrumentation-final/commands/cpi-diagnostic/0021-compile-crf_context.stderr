@@ -1,0 +1,18 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf_context.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf_context.h:20:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf_context.c:241:18: warning: unused variable 'T' [-Wunused-variable]
+  241 |     const size_t T = context->num_items;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf_context.c:242:18: warning: unused variable 'L' [-Wunused-variable]
+  242 |     const size_t L = context->num_labels;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf_context.c:541:18: warning: unused variable 'L' [-Wunused-variable]
+  541 |     const size_t L = self->num_labels;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf_context.c:543:19: warning: unused variable 'cur' [-Wunused-variable]
+  543 |     const double *cur = NULL;
+      |                   ^~~
+5 warnings generated.

@@ -1,0 +1,20 @@
+{
+ "argv": [
+  "research/suite/run_suite.py",
+  "--config",
+  "research/experiments/203-cpi-memory-regression/raw/stream-timing-v1/gold-novel.json",
+  "--run-id",
+  "203-stream-gold-novel-v1",
+  "--stages",
+  "integrity,timing,report"
+ ],
+ "start": "2026-10-10T17:08:22-0700",
+ "variants": [
+  "original-000",
+  "cpi-stream-203"
+ ],
+ "datasets": [
+  "golden-v1",
+  "novel"
+ ]
+}

@@ -1,0 +1,33 @@
+--- a/address_parser.c
++++ b/address_parser.c
+@@ -1543,7 +1543,14 @@
+         char *prev_word = prev_word_or_phrase.str;
+ 
+         if (is_plain_word_phrase_type(prev_word_or_phrase.type)) {
+-            uint32_t prev_word_freq = word_vocab_frequency(parser, prev_word);
++            uint32_t prev_word_freq;
++#ifdef EXP_FUSED_FRONT
++            /* Reuse only the same normalized token from this address's front pass. */
++            if (ap_front_n == num_tokens && (size_t)last_index < ap_front_n &&
++                ap_front[last_index].word == prev_word) prev_word_freq = ap_front[last_index].freq;
++            else
++#endif
++            prev_word_freq = word_vocab_frequency(parser, prev_word);
+             token_t prev_token = tokenized->tokens->a[last_index];
+             bool prev_token_numeric = is_numeric_token(prev_token.type);
+             if (prev_word_freq == 0) {
+@@ -1569,7 +1576,13 @@
+         size_t next_word_len = 1;
+ 
+         if (is_plain_word_phrase_type(next_word_or_phrase.type)) {
+-            uint32_t next_word_freq = word_vocab_frequency(parser, next_word);
++            uint32_t next_word_freq;
++#ifdef EXP_FUSED_FRONT
++            if (ap_front_n == num_tokens && (size_t)next_index < ap_front_n &&
++                ap_front[next_index].word == next_word) next_word_freq = ap_front[next_index].freq;
++            else
++#endif
++            next_word_freq = word_vocab_frequency(parser, next_word);
+             token_t next_token = tokenized->tokens->a[next_index];
+             bool next_token_numeric = is_numeric_token(next_token.type);
+             if (next_word_freq == 0) {

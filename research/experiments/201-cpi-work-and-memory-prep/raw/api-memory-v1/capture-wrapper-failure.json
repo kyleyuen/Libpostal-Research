@@ -1,0 +1,13 @@
+{
+  "kind": "raw collection wrapper failure",
+  "observed_utc": "2026-10-09T08:13:45.444628+00:00",
+  "outer_tool_exit": 1,
+  "failure": "Python capture wrapper raised FileNotFoundError while hashing a link that had already exited 0; it derived `no.dylib` instead of the declared output path `cpi-no-mimalloc.dylib`.",
+  "compiler_exit_file": "research/experiments/201-cpi-work-and-memory-prep/raw/api-memory-v1/cpi-archive-no-mimalloc.exit",
+  "compiler_exit": "0",
+  "stdout_file": "research/experiments/201-cpi-work-and-memory-prep/raw/api-memory-v1/cpi-archive-no-mimalloc.stdout",
+  "stderr_file": "research/experiments/201-cpi-work-and-memory-prep/raw/api-memory-v1/cpi-archive-no-mimalloc.stderr",
+  "output": "research/experiments/201-cpi-work-and-memory-prep/artifacts/api-cpi-archive-v1/cpi-no-mimalloc.dylib",
+  "output_sha256": "810ec86b8771c6481b862bdd9a6d9a47df8f46e7c23af3deb42a2289611ff685",
+  "start_end_times": "not captured by the failed wrapper; not reconstructed"
+}

@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/usr/bin/caffeinate",
+    "-dims",
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/tools/run_cpi_reuse_flow.py",
+    "--run",
+    "--mode",
+    "smoke",
+    "--output",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/results/smoke-build-187-instrumentation-final3-rerun2"
+  ],
+  "cwd": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "start_utc": "2026-10-08T00:40:02.586304+00:00",
+  "end_utc": "2026-10-08T00:40:34.495475+00:00",
+  "elapsed_seconds": 31.908860875060782,
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/tools/run_cpi_reuse_flow.py\", line 298, in <module>\n    raise SystemExit(main())\n                     ~~~~^^\n  File \"/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/tools/run_cpi_reuse_flow.py\", line 292, in main\n    collect(cfg, mode, destination)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/tools/run_cpi_reuse_flow.py\", line 235, in collect\n    analysis = analyzer_module.analyze(folder / 'diagnostic.trace.jsonl', address_rows,\n                                       expected_addresses=count, expected_input_hashes=expected_hashes,\n                                       expected_stability_proof=cfg.get('within_parse_stability_proof'))\n  File \"/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/tools/analyze_cpi_reuse_flow.py\", line 326, in analyze\n    raise ValueError('configured source bundle digest is missing or differs from trace proof')\nValueError: configured source bundle digest is missing or differs from trace proof\n"
+}

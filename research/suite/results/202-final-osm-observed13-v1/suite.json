@@ -1,0 +1,140 @@
+{
+  "_comment": "Experiment 202 accepted-CPI final validation; original plus accepted packaged CPI only. Reserved datasets intentionally included.",
+  "workspace": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "model_dir": "/Users/kyle/.cache/libpostal-profile/libpostal",
+  "baseline": "original-000",
+  "settings": {
+    "rounds": 3,
+    "passes": 500,
+    "settle_load_1min": 2.5,
+    "settle_max_wait_s": 180,
+    "correctness_jobs": 1,
+    "fuzz_count": 0,
+    "fuzz_seeds": [],
+    "fuzz_corpora": [
+      "profiling/golden-v1/all.txt",
+      "profiling/golden-v2-novel/novel.txt"
+    ],
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20261004,
+    "steady_dataset": "osm-v3",
+    "steady_passes_before_sample": 3,
+    "thread_check_dataset": "osm-v3",
+    "sleep_between_runs_s": 2,
+    "country_min_n": 50
+  },
+  "variants": [
+    {
+      "name": "original-000",
+      "role": "baseline",
+      "enabled": true,
+      "desc": "preserved 000 baseline",
+      "bench_ext": "research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+      "dump_outputs": "research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+      "fuzz_pipeline": "research/tools/fuzz_baseline",
+      "fuzz_reference": {
+        "1": "research/experiments/011-normalize-fastpaths/raw/fuzz/base_s1.txt",
+        "2": "research/experiments/011-normalize-fastpaths/raw/fuzz/base_s2.txt"
+      }
+    },
+    {
+      "name": "cpi-packaged",
+      "role": "candidate",
+      "enabled": true,
+      "desc": "accepted packaged experiment119 CPI",
+      "bench_ext": "research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext",
+      "dump_outputs": "research/experiments/119-component-phrase-ids/artifacts/cpi/dump_outputs",
+      "fuzz_pipeline": "research/experiments/119-component-phrase-ids/artifacts/cpi/fuzz_pipeline"
+    }
+  ],
+  "datasets": [
+    {
+      "name": "osm-v3",
+      "source": "openstreetmap",
+      "kind": "screening/validation",
+      "reserved": false,
+      "txt": "profiling/golden-v3-osm/osm.txt",
+      "tsv": "profiling/golden-v3-osm/osm.tsv"
+    },
+    {
+      "name": "unseen-v4",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v4-osm-unseen/unseen.txt",
+      "tsv": "profiling/golden-v4-osm-unseen/unseen.tsv"
+    },
+    {
+      "name": "unseen-v5",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v5-osm-unseen/unseen5.txt",
+      "tsv": "profiling/golden-v5-osm-unseen/unseen5.tsv"
+    },
+    {
+      "name": "unseen-v6",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v6-osm-unseen/unseen6.txt",
+      "tsv": "profiling/golden-v6-osm-unseen/unseen6.tsv"
+    },
+    {
+      "name": "unseen-v7",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v7-osm-unseen/unseen7.txt",
+      "tsv": "profiling/golden-v7-osm-unseen/unseen7.tsv"
+    },
+    {
+      "name": "unseen-v8",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v8-osm-unseen/unseen8.txt",
+      "tsv": "profiling/golden-v8-osm-unseen/unseen8.tsv"
+    },
+    {
+      "name": "unseen-v9",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v9-osm-unseen/unseen9.txt",
+      "tsv": "profiling/golden-v9-osm-unseen/unseen9.tsv"
+    },
+    {
+      "name": "unseen-v10",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v10-osm-unseen/unseen10.txt",
+      "tsv": "profiling/golden-v10-osm-unseen/unseen10.tsv"
+    },
+    {
+      "name": "unseen-v11",
+      "source": "openstreetmap",
+      "kind": "spent unseen",
+      "reserved": false,
+      "txt": "profiling/golden-v11-osm-unseen/unseen11.txt",
+      "tsv": "profiling/golden-v11-osm-unseen/unseen11.tsv"
+    },
+    {
+      "name": "unseen-v12",
+      "source": "openstreetmap",
+      "kind": "RESERVED unseen (never used)",
+      "reserved": true,
+      "txt": "profiling/golden-v12-osm-unseen/unseen12.txt",
+      "tsv": "profiling/golden-v12-osm-unseen/unseen12.tsv"
+    },
+    {
+      "name": "unseen-v13",
+      "source": "openstreetmap",
+      "kind": "RESERVED unseen (never used)",
+      "reserved": true,
+      "txt": "profiling/golden-v13-osm-unseen/unseen13.txt",
+      "tsv": "profiling/golden-v13-osm-unseen/unseen13.tsv"
+    }
+  ]
+}

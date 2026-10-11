@@ -1,0 +1,31 @@
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/string_similarity.c:122:17: warning: unused variable 'match_at' [-Wunused-variable]
+  122 |         ssize_t match_at = -1;
+      |                 ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/string_similarity.c:124:16: warning: variable 'min_at' set but not used [-Wunused-but-set-variable]
+  124 |         size_t min_at = 0;
+      |                ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/string_similarity.c:101:10: warning: unused variable 'in_gap' [-Wunused-variable]
+  101 |     bool in_gap = false;
+      |          ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/string_similarity.c:454:12: warning: unused variable 'i' [-Wunused-variable]
+  454 |     size_t i = 0;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/string_similarity.c:532:12: warning: unused variable 'j' [-Wunused-variable]
+  532 |     double j;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/string_similarity.c:647:51: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  647 |             if (utf8_compare_len_case_insensitive(ptr1 + ti.offset + ti_pos, ptr2 + tj.offset, tj.len) == 0) {
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/string_utils.h:82:51: note: passing argument to parameter 'str1' here
+   82 | int utf8_compare_len_case_insensitive(const char *str1, const char *str2, size_t len);
+      |                                                   ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/string_similarity.c:647:78: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  647 |             if (utf8_compare_len_case_insensitive(ptr1 + ti.offset + ti_pos, ptr2 + tj.offset, tj.len) == 0) {
+      |                                                                              ^~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/string_utils.h:82:69: note: passing argument to parameter 'str2' here
+   82 | int utf8_compare_len_case_insensitive(const char *str1, const char *str2, size_t len);
+      |                                                                     ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/string_similarity.c:621:13: warning: variable 'phrase_token_pos' set but not used [-Wunused-but-set-variable]
+  621 |     ssize_t phrase_token_pos = -1;
+      |             ^
+8 warnings generated.

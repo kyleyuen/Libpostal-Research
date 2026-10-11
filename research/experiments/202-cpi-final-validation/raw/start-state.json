@@ -1,0 +1,22 @@
+{
+  "experiment": "202",
+  "purpose": "final validation of accepted packaged CPI against preserved original 000",
+  "created_local": "2026-10-09T21:33:04-07:00",
+  "created_utc": "2026-10-10T04:33:04Z",
+  "deadline_utc": "2026-10-10T07:30:41Z",
+  "workspace_commit": "181737d30977adc9d287e3f7a1cfafd7277525d4",
+  "env_gate_log": "raw/start-state/env-gate-20261010T0430Z.log",
+  "env_gate_result": "GATE OK: AC Power",
+  "input_mutated": false,
+  "parser_or_model_invoked": false,
+  "known_sha256": {
+    "original_dylib": "734ab40beee3c02a64afd35ae468fca6df7deafdcce354da0814343625e557c1",
+    "original_bench_ext": "a4968702ab9415f3fc71f509d73284e5d228073c49c825aeb7798b5b6e061a50",
+    "accepted_cpi_archive": "e56d3ae4799966543a5841ebce89f26fb5eeed396d862f6b31e4076354675a4e",
+    "accepted_cpi_bench_ext": "c5612825963a18be1f4e7869da2bb2dc6fedf3f098189d195bad765247b43c5a",
+    "golden_v1_input": "02252919fc2a24a3f0af41f3f7c5d6f8aaed6a5eb9548a2dcff6a4fcfe5f6c91",
+    "golden_v1_frozen_reference": "c2d9ce7e6a014f6f5fd0ecf644f09c7863f4e028993acd21b7a1344f172bf084",
+    "model_manifest": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad"
+  },
+  "source_changes_to_cpi": false
+}

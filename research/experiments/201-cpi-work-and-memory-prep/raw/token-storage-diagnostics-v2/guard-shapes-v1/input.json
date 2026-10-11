@@ -1,0 +1,22 @@
+{
+  "source_corpus": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/development.txt",
+  "source_sha256": "252960e64ea3367d93c2064b0e46f0b3a8c4289bebef220e981aad8bc75eca25",
+  "selected_rows": "first 512 non-empty development rows, followed by explicit punctuation, adjacent-token, UTF-8 and 240-character-token cases",
+  "extra_cases": [
+    "12 Main Street",
+    "123rd Main St",
+    "Apt5 6B Road",
+    "POBox123",
+    "99stra\u00dfe 4",
+    "\u00c9cole 12, rue de la Paix",
+    "Stra\u00dfe des 17. Juni 135",
+    "10-12 Main Street",
+    "Unit#12B Main Road",
+    "17 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Avenue",
+    "8/10 Via Roma",
+    "12 Main-Street"
+  ],
+  "row_count": 524,
+  "input_sha256": "0fb70dfbfabd9d4ddc71b715d664ca7b0ecad03b33cc826cea9b6eee1497b230",
+  "input_bytes": 20931
+}

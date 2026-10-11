@@ -1,0 +1,65 @@
+{
+  "experiment_id": 199,
+  "attempt_version": "mimalloc-relink-v2",
+  "status": "executed_pass",
+  "purpose": "Allocator-only relink of the existing experiment 199 release archive using the accepted experiment 119 mimalloc object. This is not the full accepted PGO/scanner profile.",
+  "inputs": {
+    "candidate_archive": {
+      "path": "research/experiments/199-token-span-storage/artifacts/release/libpostal.a",
+      "sha256": "447e00b40cff2dbb2c4b388b8a844fd01bfc1610463f93432de3a2eb4960f576"
+    },
+    "mimalloc_object": {
+      "path": "/opt/homebrew/opt/mimalloc/lib/mimalloc.o",
+      "bytes": 228920,
+      "sha256": "03460b36edb0f104270109d33d96f8e7fc03c08d326cc5c2182c34b0a4900b82"
+    },
+    "dumper_translation_unit": {
+      "path": "research/experiments/003-batched-lookups/tools/dump_outputs.c",
+      "sha256": "541001efaaefff97ddc15dc415d5bd893d5ec5cc333a83ca1570f31ae2017752"
+    },
+    "candidate_source_manifest_sha256": "eb83c36944062bb8db12add9ded4789b12d7f2b3f993463c3654cc6822b3c0fb",
+    "model_manifest_sha256": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad"
+  },
+  "output": {
+    "path": "research/experiments/199-token-span-storage/artifacts/release-mimalloc-v2/dump_outputs",
+    "log_directory": "research/experiments/199-token-span-storage/raw/mimalloc-relink-v2/"
+  },
+  "link_argv": [
+    "/usr/bin/clang",
+    "-O2",
+    "-g",
+    "-flto",
+    "-I",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src",
+    "/opt/homebrew/opt/mimalloc/lib/mimalloc.o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/003-batched-lookups/tools/dump_outputs.c",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release/libpostal.a",
+    "-lm",
+    "-o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release-mimalloc-v2/dump_outputs"
+  ],
+  "profile_use": false,
+  "scanner": {
+    "candidate_archive_scanner_object_sha256": "06cfaf25be695731afa6e0b63a9f773a7d2a6e52c7315325767aeef6a442a381",
+    "optimization": "O0",
+    "changed": false
+  },
+  "diagnostics": {
+    "exp185_diag": false,
+    "derivative_source_used": false
+  },
+  "execution": {
+    "command_run": true,
+    "parser_invoked": false,
+    "build_exit_code": 0,
+    "start_utc": "2026-10-08T04:38:14.053990+00:00",
+    "end_utc": "2026-10-08T04:38:17.071244+00:00",
+    "actual_outputs": {
+      "dump_outputs_sha256": "5a36b9dbc3fb3623e8799fadd7b73b58d3b137b75a66a75a7ab07df6310ca84d",
+      "bench_ext_sha256": "7c14b07087cefb15052880fa7846c099a394c9e87b66fcd03d257bfd0d295dd4",
+      "fuzz_pipeline_sha256": "6621fb6fa4f3a7a7b9af34821ec0689afbd7686ae0448c34ac879f9cc137fd86"
+    },
+    "raw_manifest": "research/experiments/199-token-span-storage/raw/mimalloc-relink-v2/manifest.json",
+    "note": "Candidate archive unchanged; relink is allocator-only, with O0 scanner and no PGO."
+  }
+}

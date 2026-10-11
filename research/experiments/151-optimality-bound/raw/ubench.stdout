@@ -1,0 +1,5 @@
+dependent int add: 0.2238 ns/op => effective clock 4.468 GHz
+dependent f64 fadd latency: 0.558 ns = 2.49 cycles
+independent 128-bit fadd (8 chains): 0.0838 ns/instr = 2.67 instr/cycle (f64x2: 5.34 f64 adds/cycle, f32x4 same pipe: 10.69 f32 adds/cycle)
+exit 0
+2026-10-05T14:51:19-0700

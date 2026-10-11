@@ -1,0 +1,532 @@
+diff -ruN ../../final/119-cpi/sources/address_parser.c sources/address_parser.c
+--- ../../final/119-cpi/sources/address_parser.c	2026-10-04 01:51:07
++++ sources/address_parser.c	2026-10-05 18:04:14
+@@ -9,6 +9,12 @@
+ #include "klib/ksort.h"
+ #include "log/log.h"
+ 
++#ifdef EXP_RECORDS
++#include "rec_runtime.h"   // 160
++#ifdef EXP_RECORDS_ORACLE
++extern uint64_t rec_oracle_addr;
++#endif
++#endif
+ #define ADDRESS_PARSER_MODEL_FILENAME "address_parser.dat"
+ #define ADDRESS_PARSER_MODEL_FILENAME_CRF "address_parser_crf.dat"
+ #ifdef EXP_VOCAB_DICT
+@@ -259,6 +265,26 @@
+     if (getenv("FTT_VERBOSE") != NULL) fprintf(stderr, "FTT entries=%zu of %zu slots, table=%.1f MB\n", n, V, V * 8.0 / 1048576);
+ }
+ #endif
++#if defined(EXP_FTT) && defined(EXP_RECORDS)
++// 160: 056's table indexed by vocabulary ordinal (stored in each vocabulary record) instead of the vocabulary dictionary's slot. Same walk, same flags.
++static void ap_ftt_build_rec(address_parser_t *parser) {
++    if (getenv("FTT_DISABLE") != NULL || !rec_ready() || parser->phrases == NULL) return;
++    size_t V = rec_db.nvocab; uint64_t *tab = calloc(V ? V : 1, sizeof *tab); char *buf = malloc(65537); if (tab == NULL || buf == NULL) { free(tab); free(buf); return; } size_t n = 0;
++    for (size_t v = 0; v < V; v++) {
++        const uint8_t *r = rec_db.ar + 8ull * rec_db.vlist[v]; size_t wl = rec_keylen(r) - 1;
++        memcpy(buf, r + REC_HDR + 1, wl); buf[wl] = 0; const char *w = buf;
++        tab[v] = trie_ftt_walk(parser->phrases, w, wl); if (tab[v]) n++;
++#ifdef EXP_PS_FLAGS
++        { phrase_t pp = search_address_dictionaries_prefix((char *)w, wl, NULL), sp = search_address_dictionaries_suffix((char *)w, wl, NULL);
++          if (pp.start == 0 && pp.len == 0 && pp.data == 0) tab[v] |= 1ULL << 61;
++          if (sp.start == 0 && sp.len == 0 && sp.data == 0) tab[v] |= 1ULL << 62; }
++#endif
++    }
++    free(buf);
++    trie_ftt_tab = tab; trie_ftt_trie = parser->phrases;
++    if (getenv("FTT_VERBOSE") != NULL) fprintf(stderr, "FTT (records) entries=%zu of %zu vocabulary ordinals, table=%.1f MB\n", n, V, V * 8.0 / 1048576);
++}
++#endif
+ bool address_parser_load(char *dir) {
+     if (parser != NULL) return false;
+     if (dir == NULL) {
+@@ -318,6 +344,12 @@
+ 
+     char *vocab_path = char_array_get_string(path);
+ 
++#ifdef EXP_RECORDS
++    // 160: the vocabulary counts come from the record file (generated from this model); the trie is not loaded. Missing file => setup fails, as trie_load would.
++    if (!file_exists(vocab_path) || !rec_open(dir)) {
++        goto exit_address_parser_created;
++    }
++#else
+     trie_t *vocab = trie_load(vocab_path);
+ 
+     if (vocab == NULL) {
+@@ -325,7 +357,8 @@
+     }
+ 
+     parser->vocab = vocab;
+-#ifdef EXP_VOCAB_DICT
++#endif
++#if defined(EXP_VOCAB_DICT) && !defined(EXP_RECORDS)
+     if (getenv("CRF_DICT_DISABLE") == NULL) {   // experiment switch; any doubt keeps the trie
+         feature_dict_t *vd = fd_build_ex(vocab, false, true);
+         if (vd != NULL) {
+@@ -418,7 +451,9 @@
+ 
+     fclose(postal_codes_file);
+ 
+-#ifdef EXP_FTT
++#if defined(EXP_FTT) && defined(EXP_RECORDS)
++    ap_ftt_build_rec(parser);
++#elif defined(EXP_FTT)
+     ap_ftt_build(parser);
+ #endif
+ #ifdef EXP_CP_IDS
+@@ -454,6 +489,14 @@
+ #ifdef EXP_VOCAB_DICT
+     if (self == parser) { fd_destroy(vocab_dict); vocab_dict = NULL; }
+ #endif
++#ifdef EXP_RECORDS
++    if (self == parser) {
++#ifdef EXP_FTT
++        free((void *)trie_ftt_tab); trie_ftt_tab = NULL; trie_ftt_trie = NULL;
++#endif
++        rec_close();
++    }
++#endif
+     if (self->vocab != NULL) {
+         trie_destroy(self->vocab);
+     }
+@@ -482,6 +525,9 @@
+ 
+ static inline uint32_t word_vocab_frequency(address_parser_t *parser, char *word) {   
+     uint32_t count = 0;
++#ifdef EXP_RECORDS
++    if (rec_ready()) return rec_vocab_freq(word, strlen(word));   // 160
++#endif
+ #ifdef EXP_VOCAB_DICT
+     if (vocab_dict != NULL) {
+         if (!fd_lookup(vocab_dict, word, strlen(word), &count)) count = 0;
+@@ -1094,7 +1140,11 @@
+     {   // vocabulary slot of each admin token's bytes (or -1) for the component-phrase search's first-token table
+         static int32_t *ftt_slots = NULL; static size_t ftt_cap = 0; size_t nt = normalized_admin_tokens->n;
+         if (nt > ftt_cap) { size_t m = ftt_cap ? ftt_cap : 64; while (m < nt) m *= 2; int32_t *q = realloc(ftt_slots, m * sizeof *q); if (q) { ftt_slots = q; ftt_cap = m; } }
++#ifdef EXP_RECORDS
++        if (trie_ftt_tab != NULL && rec_ready() && nt <= ftt_cap) {
++#else
+         if (trie_ftt_tab != NULL && vocab_dict != NULL && nt <= ftt_cap) {
++#endif
+ #ifdef EXP_FTT_PFV
+             // 074: hint only. Prefetch every admin token's first vocabulary slot before the (unchanged) lookups below, so their misses overlap.
+             for (size_t j = 0; j < nt; j++) {
+@@ -1104,7 +1154,12 @@
+ #endif
+             for (size_t j = 0; j < nt; j++) {
+                 token_t tk = normalized_admin_tokens->a[j]; const char *ts = normalized_str_admin + tk.offset; uint64_t sl;
++#ifdef EXP_RECORDS
++                const uint8_t *vr = (tk.type != WHITESPACE && tk.len > 0 && tk.len <= 255 && ts[tk.len] == '\0') ? rec_find('U', ts, tk.len) : NULL; (void)sl;
++                ftt_slots[j] = (vr != NULL && rec_vord(vr) != REC_NOVOCAB) ? (int32_t)rec_vord(vr) : -1;   // 160: vocabulary ordinal
++#else
+                 ftt_slots[j] = (tk.type != WHITESPACE && tk.len > 0 && tk.len <= 255 && ts[tk.len] == '\0' && fd_find_slot(vocab_dict, 0, ts, tk.len, &sl) != NULL) ? (int32_t)sl : -1;
++#endif
+ #ifdef EXP_FTT_ROLE_PREFETCH
+                 if (ftt_slots[j] >= 0 && ap_role_ids_ext != NULL) __builtin_prefetch(&ap_role_ids_ext[(size_t)ftt_slots[j] * 6]);   // features read this row later
+ #endif
+@@ -2516,6 +2571,9 @@
+     uint64_t ss2 = SS_NOW(); ss_t[1] += ss2 - ss1;
+ #endif
+     address_parser_context_fill(context, parser, tokenized_str, language, country);
++#ifdef EXP_RECORDS_ORACLE
++    rec_oracle_addr++;   // same point as 142's oracle_addr
++#endif
+ #ifdef EXP_STAGE_STATS
+     uint64_t ss3 = SS_NOW(); ss_t[2] += ss3 - ss2;
+ #endif
+diff -ruN ../../final/119-cpi/sources/crf.c sources/crf.c
+--- ../../final/119-cpi/sources/crf.c	2026-10-04 01:51:07
++++ sources/crf.c	2026-10-05 18:03:16
+@@ -50,6 +50,27 @@
+ #ifdef EXP_FEATURE_DICT
+ #include "feature_dict.h"
+ #endif
++#ifdef EXP_RECORDS
++#define REC_RUNTIME_DEFINE
++#include "rec_runtime.h"
++#include "file_utils.h"
++// 160: the record file replaces the feature tries/dictionaries, the weight rows and indptr. crf_read seeks past them (never allocated).
++static bool crf_skip_trie(FILE *f) {
++    uint32_t sig, as, nk, nn, nd, tl;
++    if (!file_read_uint32(f, &sig) || sig != TRIE_SIGNATURE || !file_read_uint32(f, &as) || as > 256 || fseeko(f, as, SEEK_CUR) != 0) return false;
++    if (!file_read_uint32(f, &nk) || !file_read_uint32(f, &nn) || fseeko(f, (off_t)nn * 8, SEEK_CUR) != 0) return false;
++    if (!file_read_uint32(f, &nd) || fseeko(f, (off_t)nd * 8, SEEK_CUR) != 0) return false;
++    if (!file_read_uint32(f, &tl) || fseeko(f, (off_t)tl, SEEK_CUR) != 0) return false;
++    return true;
++}
++static bool crf_skip_sparse(FILE *f) {
++    uint32_t m, n; uint64_t a, b, c;
++    if (!file_read_uint32(f, &m) || !file_read_uint32(f, &n) || !file_read_uint64(f, &a) || fseeko(f, (off_t)(4 * a), SEEK_CUR) != 0) return false;
++    if (!file_read_uint64(f, &b) || fseeko(f, (off_t)(4 * b), SEEK_CUR) != 0) return false;
++    if (!file_read_uint64(f, &c) || c != b || fseeko(f, (off_t)(8 * c), SEEK_CUR) != 0) return false;
++    return true;
++}
++#endif
+ 
+ #define CRF_SIGNATURE 0xCFCFCFCF
+ 
+@@ -722,6 +743,132 @@
+ #endif
+ 
+ 
++#ifdef EXP_RECORDS
++// 160: scoring from compiled records. Every emitted feature becomes one slot pointer (NULL = absent from the model) in emission order;
++// rows are then added per token in that order (state rows into the state row, transition rows into the L*L row), which is the original
++// order of every addition into each cell (152 PROOF §6), so the doubles are bit-identical.
++const uint8_t **rec_emit[2] = {NULL, NULL}; size_t rec_emit_n[2] = {0, 0}, rec_emit_m[2] = {0, 0};
++static uint32_t *rec_tok[2] = {NULL, NULL}; static size_t rec_tok_m = 0;
++static bool rec_emit_reserve(int w, size_t n) {
++    if (n <= rec_emit_m[w]) return true;
++    size_t m = rec_emit_m[w] ? rec_emit_m[w] : 256; while (m < n) m *= 2;
++    const uint8_t **p = realloc(rec_emit[w], m * sizeof *p); if (p == NULL) return false;
++    rec_emit[w] = p; rec_emit_m[w] = m; return true;
++}
++// resolves the plain-text keys a[from..) into slots appended to rec_emit[w]
++static bool rec_resolve_strings(cstring_array *a, size_t from, int w) {
++    size_t n = a->indices->n; char *chars = a->str->a; uint32_t *off = a->indices->a; size_t chars_n = a->str->n;
++    if (!rec_emit_reserve(w, rec_emit_n[w] + (n - from))) return false;
++    for (size_t i = from; i < n; i++) {
++        size_t len = (i + 1 < n ? off[i + 1] : chars_n) - off[i] - 1;
++        rec_emit[w][rec_emit_n[w]++] = rec_lookup_str(w ? 'P' : 'S', chars + off[i], len);
++    }
++    return true;
++}
++static inline void rec_add_row(double *scores, const uint8_t *s) {
++    uint32_t n = slot_nnz(s); const double *v = slot_values(s);
++    if (s[1] == 'S') { const uint8_t *lab = s + 4; for (uint32_t c = 0; c < n; c++) scores[lab[c]] += v[c]; }
++    else { const uint8_t *lab = s + 4; for (uint32_t c = 0; c < n; c++) { uint16_t l; memcpy(&l, lab + 2 * c, 2); scores[l] += v[c]; } }
++}
++static inline void rec_prefetch_slot(const uint8_t *s) {
++    if (s == NULL) return;
++    if (s[1] == 'S') { __builtin_prefetch(s); return; }
++    const char *a = (const char *)s, *b = (const char *)slot_next(s); int c = 0;   // transition rows: every 128-byte line, up to 8 (as cpi's EXP_ROW_LINES)
++    for (uintptr_t q = (uintptr_t)a & ~(uintptr_t)127; q < (uintptr_t)b && c < 8; q += 128, c++) __builtin_prefetch((const void *)q);
++}
++#ifdef EXP_RECORDS_ORACLE
++// Oracle-dump build only: O3i lines "a t S|P i id|-" from the slot pointers. The original feature id of a slot comes from the
++// generator's side file (u32 per slot in arena order); slot offsets are collected by walking the arena once.
++uint64_t rec_oracle_addr = 0;
++static FILE *rec_oracle_fp = NULL; static uint32_t *rec_oracle_off = NULL, *rec_oracle_id = NULL; static size_t rec_oracle_n = 0; static int rec_oracle_state = 0;
++static void rec_oracle_init(void) {
++    rec_oracle_state = -1;
++    const char *d = getenv("REC_ORACLE_DIR"), *ids = getenv("REC_ORACLE_IDS"); if (d == NULL || ids == NULL) return;
++    char p[4096]; snprintf(p, sizeof p, "%s/O3i.txt", d); rec_oracle_fp = fopen(p, "w");
++    FILE *fi = fopen(ids, "rb"); if (rec_oracle_fp == NULL || fi == NULL) abort();
++    rec_oracle_n = rec_db.nslot; rec_oracle_id = malloc(4 * rec_oracle_n); rec_oracle_off = malloc(4 * rec_oracle_n);
++    if (fread(rec_oracle_id, 4, rec_oracle_n, fi) != rec_oracle_n) abort(); fclose(fi);
++    const uint8_t *r = rec_db.ar; size_t k = 0;
++    for (uint64_t q = 0; q < rec_db.nrec; q++) { const uint8_t *s = rec_first_slot(r); for (uint32_t j = 0, ns = rec_nslots(r); j < ns; j++, s = slot_next(s)) rec_oracle_off[k++] = (uint32_t)((s - rec_db.ar) / 8); r = s; }
++    if (k != rec_oracle_n) { fprintf(stderr, "REC_ORACLE: slot walk %zu != %zu\n", k, rec_oracle_n); abort(); }
++    rec_oracle_state = 1;
++}
++static void rec_oracle_list(uint32_t t, char kind, const uint8_t **sl, size_t n) {
++    unsigned long long a = (unsigned long long)rec_oracle_addr - 1;
++    for (size_t i = 0; i < n; i++) {
++        if (sl[i] == NULL) { fprintf(rec_oracle_fp, "%llu\t%u\t%c\t%zu\t-\n", a, t, kind, i); continue; }
++        uint32_t o = (uint32_t)((sl[i] - rec_db.ar) / 8); size_t lo = 0, hi = rec_oracle_n;
++        while (lo < hi) { size_t mid = (lo + hi) / 2; if (rec_oracle_off[mid] < o) lo = mid + 1; else hi = mid; }
++        if (lo >= rec_oracle_n || rec_oracle_off[lo] != o) abort();
++        fprintf(rec_oracle_fp, "%llu\t%u\t%c\t%zu\t%u\n", a, t, kind, i, rec_oracle_id[lo]);
++    }
++}
++#endif
++static bool crf_tagger_score_records(crf_t *self, void *tagger, void *tagger_context, cstring_array *features, cstring_array *prev_tag_features, tagger_feature_function feature_function, tokenized_string_t *tokenized, crf_context_t *crf_context, size_t num_tokens, bool print_features) {
++#if defined(EXP_ALLOC_LEAN) || defined(EXP_TRANS_ALIAS)
++    if (crf_context->trans != self->trans_weights) {
++        if (crf_context->trans->m != self->trans_weights->m || crf_context->trans->n != self->trans_weights->n) return false;
++        crf_trans_saved = crf_context->trans; crf_context->trans = self->trans_weights;
++    }
++#else
++    if (!double_matrix_copy(self->trans_weights, crf_context->trans)) return false;
++#endif
++    if (num_tokens + 1 > rec_tok_m) {
++        size_t m = rec_tok_m ? rec_tok_m : 32; while (m < num_tokens + 1) m *= 2;
++        for (int w = 0; w < 2; w++) { uint32_t *p = realloc(rec_tok[w], m * sizeof *p); if (p == NULL) return false; rec_tok[w] = p; }
++        rec_tok_m = m;
++    }
++    rec_emit_n[0] = rec_emit_n[1] = 0;
++    cstring_array_clear(features);
++    cstring_array_clear(prev_tag_features);
++    if (print_features) {
++        // the original per-token loop: the feature function clears and refills the arrays, which are printed exactly as the original prints them
++        for (uint32_t t = 0; t < num_tokens; t++) {
++            if (!feature_function(tagger, tagger_context, tokenized, t)) { log_error("Could not add address parser features\n"); return false; }
++            uint32_t fidx; char *feature;
++            printf("{ ");
++            size_t num_features = cstring_array_num_strings(features);
++            cstring_array_foreach(features, fidx, feature, { printf("%s", feature); if (fidx < num_features - 1) printf(", "); })
++            size_t num_prev_tag_features = cstring_array_num_strings(prev_tag_features);
++            if (num_prev_tag_features > 0) printf(", ");
++            cstring_array_foreach(prev_tag_features, fidx, feature, { printf("prev tag+%s", feature); if (fidx < num_prev_tag_features - 1) printf(", "); })
++            printf(" }\n");
++            rec_tok[0][t] = (uint32_t)rec_emit_n[0]; rec_tok[1][t] = (uint32_t)rec_emit_n[1];
++            if (!rec_resolve_strings(features, 0, 0) || !rec_resolve_strings(prev_tag_features, 0, 1)) return false;
++        }
++    } else {
++        crf_features_accumulate = 1;
++        bool ok = true;
++        for (size_t t = 0; t < num_tokens; t++) {
++            rec_tok[0][t] = (uint32_t)features->indices->n; rec_tok[1][t] = (uint32_t)prev_tag_features->indices->n;
++            if (!feature_function(tagger, tagger_context, tokenized, (uint32_t)t)) { log_error("Could not add address parser features\n"); ok = false; break; }
++        }
++        crf_features_accumulate = 0;
++        if (!ok) return false;
++        if (!rec_resolve_strings(features, 0, 0) || !rec_resolve_strings(prev_tag_features, 0, 1)) return false;
++    }
++    rec_tok[0][num_tokens] = (uint32_t)rec_emit_n[0]; rec_tok[1][num_tokens] = (uint32_t)rec_emit_n[1];
++    for (size_t k = 0; k < rec_emit_n[0]; k++) rec_prefetch_slot(rec_emit[0][k]);
++    for (size_t k = 0; k < rec_emit_n[1]; k++) rec_prefetch_slot(rec_emit[1][k]);
++#ifdef EXP_RECORDS_ORACLE
++    if (rec_oracle_state == 0) rec_oracle_init();
++#endif
++    for (size_t t = 0; t < num_tokens; t++) {
++        double *state_scores = state_score(crf_context, (uint32_t)t);
++        for (uint32_t k = rec_tok[0][t]; k < rec_tok[0][t + 1]; k++) if (rec_emit[0][k] != NULL) rec_add_row(state_scores, rec_emit[0][k]);
++        double *state_trans_scores = state_trans_score_all(crf_context, (uint32_t)t);
++        for (uint32_t k = rec_tok[1][t]; k < rec_tok[1][t + 1]; k++) if (rec_emit[1][k] != NULL) rec_add_row(state_trans_scores, rec_emit[1][k]);
++#ifdef EXP_RECORDS_ORACLE
++        if (rec_oracle_state > 0) {
++            rec_oracle_list((uint32_t)t, 'S', rec_emit[0] + rec_tok[0][t], rec_tok[0][t + 1] - rec_tok[0][t]);
++            rec_oracle_list((uint32_t)t, 'P', rec_emit[1] + rec_tok[1][t], rec_tok[1][t + 1] - rec_tok[1][t]);
++        }
++#endif
++    }
++    return true;
++}
++#endif
++
+ #ifdef EXP_LEAN_CONTEXT
+ // Viterbi-only replacement for crf_context_set_num_items. The library version resizes and zeroes 8 matrices per address (alpha, beta, state, state_trans,
+ // four marginal arrays, backward edges) and, because double_matrix_resize compares against the *current* dimensions, re-allocates whenever an address is longer
+@@ -784,6 +931,9 @@
+     // EXP_NO_RESET: crf_context_set_num_items already zeroed state and state_trans, trans is overwritten by the copy below,
+     // and the marginal arrays reset() would also clear are never read by Viterbi decoding.
+ 
++#ifdef EXP_RECORDS
++    if (rec_ready()) return crf_tagger_score_records(self, tagger, tagger_context, features, prev_tag_features, feature_function, tokenized, crf_context, num_tokens, print_features);
++#endif
+ #ifdef EXP_DIRECT_KEYS
+     if (!print_features && self->state_dict != NULL && self->trans_dict != NULL) {
+         return crf_tagger_score_direct(self, tagger, tagger_context, features, prev_tag_features, feature_function, tokenized, crf_context, num_tokens);
+@@ -1099,6 +1249,9 @@
+         goto exit_crf_created;
+     }
+ 
++#ifdef EXP_RECORDS
++    if (!crf_skip_trie(f) || !crf_skip_sparse(f) || !crf_skip_trie(f) || !crf_skip_sparse(f)) goto exit_crf_created;
++#else
+     crf->state_features = trie_read(f);
+     if (crf->state_features == NULL) {
+         goto exit_crf_created;
+@@ -1133,6 +1286,7 @@
+         goto exit_crf_created;
+     }
+ 
++#endif
+     crf->trans_weights = double_matrix_read(f);
+     if (crf->trans_weights == NULL) {
+         goto exit_crf_created;
+diff -ruN ../../final/119-cpi/sources/rec_format.h sources/rec_format.h
+--- ../../final/119-cpi/sources/rec_format.h	1969-12-31 16:00:00
++++ sources/rec_format.h	2026-10-05 17:32:33
+@@ -0,0 +1,91 @@
++// Experiment 160 (P2): compiled-record file shared by the offline generator (tools/gen_records.c) and the parser (EXP_RECORDS).
++// One header for both sides, so the grouping rule and the index hash cannot drift apart.
++//
++// Grouping rule (153's a2_records.c, unchanged): a model feature key "family|value" lives in one record keyed by a string the parser has:
++//   unit  'U'+value   families word, prev word, next word, first word, phrase, sub_word, prefix, suffix, postcode have context,
++//                     postcode no context, commonly *; "phrase type+phrase|T|P" and "unambiguous phrase type+phrase|T|P" have
++//                     unit P and family "<name>|T"
++//   pair  'B'+value   prev word+word, word+next word (value = "a|b" exactly as joined)
++//   own   'K'+key     everything else, family "own"
++// The vocabulary frequency of word w sits in the unit record 'U'+w (vord != REC_NOVOCAB marks a vocabulary key).
++// The map key -> (record key, family, kind) is injective (key = family "|" value for U/B, the record key itself for K), so a
++// lookup hits iff the exact key is a model key.
++//
++// File: rec_header_t | family table | arena (16 KiB aligned) | index (16 KiB aligned) | vocabulary list (u32 record offset / 8 per vocab ordinal)
++// Record (8-aligned): u32 freq | u32 vord | u16 nslots | u16 keylen | key (keylen bytes, first byte = U/B/K) | pad to 8 | slots
++// Slot (8-aligned):   u8 family | u8 kind ('S' state, 'P' transition) | u16 nnz | labels (u8 per entry for S, u16 for P) | pad to 8 | f64 x nnz
++// Slots of a record are sorted by (kind, family). Values are the model's doubles, bit for bit, in the model's row order.
++// Index: power-of-two open addressing, linear probing, u64 entries = (hash >> 32) << 32 | (record offset / 8 + 1); 0 = empty.
++#ifndef REC_FORMAT_H
++#define REC_FORMAT_H
++#include <stdint.h>
++#include <stddef.h>
++#include <string.h>
++
++#define REC_MAGIC "LPREC160"
++#define REC_VERSION 1u
++#define REC_NOVOCAB 0xFFFFFFFFu
++#define REC_HDR 12u          // record header bytes before the key
++
++typedef struct {
++    char magic[8];
++    uint32_t version, nfam;
++    uint64_t nrec, nslot, nvocab;
++    uint64_t fam_off, fam_bytes;
++    uint64_t arena_off, arena_bytes;
++    uint64_t index_off, index_slots;
++    uint64_t vlist_off;
++    uint64_t model_size, vocab_size;   // byte sizes of address_parser_crf.dat / address_parser_vocab.trie (cheap fingerprint)
++    uint64_t file_size;
++} rec_header_t;
++
++// 8-byte-chunk multiplicative hash of (prefix byte, bytes); the prefix is folded into the seed so no joined copy is needed.
++static inline uint64_t rec_hash(char pfx, const char *s, size_t n) {
++    uint64_t h = 0x9E3779B97F4A7C15ull ^ ((uint64_t)(uint8_t)pfx << 56) ^ n;
++    while (n >= 8) { uint64_t w; memcpy(&w, s, 8); h = (h ^ w) * 0xff51afd7ed558ccdull; h ^= h >> 32; s += 8; n -= 8; }
++    uint64_t w = 0;
++    if (n >= 4) { uint32_t a, b; memcpy(&a, s, 4); memcpy(&b, s + n - 4, 4); w = (uint64_t)a | ((uint64_t)b << 32); }
++    else if (n) { w = (uint8_t)s[0] | ((uint64_t)(uint8_t)s[n / 2] << 8) | ((uint64_t)(uint8_t)s[n - 1] << 16); }
++    h = (h ^ w) * 0xc4ceb9fe1a85ec53ull; h ^= h >> 29; return h;
++}
++
++static inline int rec_is_unit_family(const char *f, size_t n) {
++    static const char *u[] = { "word", "prev word", "next word", "first word", "phrase", "sub_word", "prefix", "suffix",
++                               "postcode have context", "postcode no context", NULL };
++    for (int i = 0; u[i]; i++) if (strlen(u[i]) == n && !memcmp(u[i], f, n)) return 1;
++    return n > 9 && !memcmp(f, "commonly ", 9);
++}
++
++// Groups a plain-text feature key. Out: record prefix, record value (*rk, *rkl; without the prefix byte), family name (*fam, *fl).
++// The family name is either a prefix of `key` or the literal "own".
++static inline void rec_group(const char *key, size_t kl, char *pfx, const char **rk, size_t *rkl, const char **fam, size_t *fl) {
++    const char *bar = (const char *)memchr(key, '|', kl);
++    if (!bar) { *pfx = 'K'; *rk = key; *rkl = kl; *fam = "own"; *fl = 3; return; }
++    size_t f = (size_t)(bar - key); const char *arg = bar + 1; size_t al = kl - f - 1;
++    if ((f == 18 && !memcmp(key, "phrase type+phrase", 18)) || (f == 30 && !memcmp(key, "unambiguous phrase type+phrase", 30))) {
++        const char *b2 = (const char *)memchr(arg, '|', al);
++        if (!b2) { *pfx = 'K'; *rk = key; *rkl = kl; *fam = "own"; *fl = 3; return; }
++        size_t tl = (size_t)(b2 - arg);
++        *pfx = 'U'; *rk = b2 + 1; *rkl = al - tl - 1; *fam = key; *fl = f + 1 + tl; return;
++    }
++    if (f == 14 && (!memcmp(key, "prev word+word", 14) || !memcmp(key, "word+next word", 14))) { *pfx = 'B'; *rk = arg; *rkl = al; *fam = key; *fl = f; return; }
++    if (rec_is_unit_family(key, f)) { *pfx = 'U'; *rk = arg; *rkl = al; *fam = key; *fl = f; return; }
++    *pfx = 'K'; *rk = key; *rkl = kl; *fam = "own"; *fl = 3;
++}
++
++// Record accessors (r points at a record header in the arena)
++static inline uint32_t rec_freq(const uint8_t *r) { uint32_t v; memcpy(&v, r, 4); return v; }
++static inline uint32_t rec_vord(const uint8_t *r) { uint32_t v; memcpy(&v, r + 4, 4); return v; }
++static inline uint16_t rec_nslots(const uint8_t *r) { uint16_t v; memcpy(&v, r + 8, 2); return v; }
++static inline uint16_t rec_keylen(const uint8_t *r) { uint16_t v; memcpy(&v, r + 10, 2); return v; }
++static inline const uint8_t *rec_first_slot(const uint8_t *r) { return r + ((REC_HDR + rec_keylen(r) + 7u) & ~7u); }
++static inline uint16_t slot_nnz(const uint8_t *s) { uint16_t v; memcpy(&v, s + 2, 2); return v; }
++static inline const double *slot_values(const uint8_t *s) { uint32_t n = slot_nnz(s); return (const double *)(s + ((4u + (s[1] == 'S' ? n : 2u * n) + 7u) & ~7u)); }
++static inline const uint8_t *slot_next(const uint8_t *s) { return (const uint8_t *)(slot_values(s) + slot_nnz(s)); }
++static inline const uint8_t *rec_slot(const uint8_t *r, uint8_t fam, uint8_t kind) {
++    if (r == NULL) return NULL;
++    const uint8_t *s = rec_first_slot(r);
++    for (uint32_t q = 0, ns = rec_nslots(r); q < ns; q++, s = slot_next(s)) if (s[0] == fam && s[1] == kind) return s;
++    return NULL;
++}
++#endif
+diff -ruN ../../final/119-cpi/sources/rec_runtime.h sources/rec_runtime.h
+--- ../../final/119-cpi/sources/rec_runtime.h	1969-12-31 16:00:00
++++ sources/rec_runtime.h	2026-10-05 18:02:35
+@@ -0,0 +1,104 @@
++// Experiment 160 (P2, EXP_RECORDS): parser-side access to the compiled-record file (format: rec_format.h).
++// The file is produced offline from the model by tools/gen_records.c, memory-mapped read-only at setup and prefaulted there.
++// Globals are defined once in crf.c (REC_RUNTIME_DEFINE); address_parser.c uses the same ones.
++#ifndef REC_RUNTIME_H
++#define REC_RUNTIME_H
++#include <stdbool.h>
++#include <stdio.h>
++#include <stdlib.h>
++#include <time.h>
++#include <sys/mman.h>
++#include <sys/stat.h>
++#include <fcntl.h>
++#include <unistd.h>
++#include "rec_format.h"
++
++// ponytail: the default path is this experiment's artifact (a C literal, so the spaces never pass through the shell);
++// LIBPOSTAL_RECORDS_FILE overrides it. A packaged build would place the file next to the model instead.
++#define REC_DEFAULT_PATH "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/records/address_parser_records.dat"
++
++typedef struct {
++    const uint8_t *map; size_t map_size;
++    const uint8_t *ar; const uint64_t *idx; uint64_t mask;
++    const uint32_t *vlist; uint64_t nvocab, nrec, nslot;
++    uint32_t nfam; const char *fam_name[256]; uint8_t fam_len[256];
++    double open_seconds;
++} rec_db_t;
++#ifdef REC_RUNTIME_DEFINE
++rec_db_t rec_db;
++#else
++extern rec_db_t rec_db;
++#endif
++#define REC_NONE 0xFFu
++
++static inline bool rec_ready(void) { return rec_db.ar != NULL; }
++
++static inline const uint8_t *rec_find_h(char pfx, const char *s, size_t n, uint64_t h) {
++    const uint64_t *idx = rec_db.idx; uint64_t mask = rec_db.mask, pos = h & mask, tag = h >> 32;
++    for (;; pos = (pos + 1) & mask) {
++        uint64_t e = idx[pos];
++        if (!e) return NULL;
++        if ((e >> 32) == tag) {
++            const uint8_t *c = rec_db.ar + ((e & 0xffffffffu) - 1) * 8;
++            if (rec_keylen(c) == n + 1 && c[REC_HDR] == (uint8_t)pfx && memcmp(c + REC_HDR + 1, s, n) == 0) return c;
++        }
++    }
++}
++static inline const uint8_t *rec_find(char pfx, const char *s, size_t n) { return rec_find_h(pfx, s, n, rec_hash(pfx, s, n)); }
++
++// family code of a name, REC_NONE if no model key uses it (then every lookup of that family misses, as in the original)
++static inline uint8_t rec_fam(const char *name, size_t n) {
++    for (uint32_t i = 0; i < rec_db.nfam; i++) if (rec_db.fam_len[i] == n && memcmp(rec_db.fam_name[i], name, n) == 0) return (uint8_t)i;
++    return REC_NONE;
++}
++
++// Slot of a plain-text feature key ('S' state / 'P' transition), NULL iff the original dictionary lookup misses.
++static inline const uint8_t *rec_lookup_str(uint8_t kind, const char *key, size_t kl) {
++    char pfx; const char *rk, *fam; size_t rkl, fl;
++    rec_group(key, kl, &pfx, &rk, &rkl, &fam, &fl);
++    uint8_t f = rec_fam(fam, fl);
++    if (f == REC_NONE) return NULL;
++    return rec_slot(rec_find(pfx, rk, rkl), f, kind);
++}
++
++// vocabulary count of exactly these bytes (0 when absent), as trie_get_data on the vocabulary trie returns it
++static inline uint32_t rec_vocab_freq(const char *s, size_t n) { const uint8_t *r = rec_find('U', s, n); return r ? rec_freq(r) : 0; }
++
++static inline uint64_t rec_file_size(const char *path) { struct stat st; return stat(path, &st) == 0 ? (uint64_t)st.st_size : 0; }
++
++static inline void rec_close(void) {
++    if (rec_db.map != NULL) munmap((void *)rec_db.map, rec_db.map_size);
++    memset(&rec_db, 0, sizeof rec_db);
++}
++
++// Maps the record file, checks it against the model files in dir (cheap fingerprint: sizes), prefaults every page. false on any doubt.
++static inline bool rec_open(const char *dir) {
++    struct timespec t0, t1; clock_gettime(CLOCK_MONOTONIC, &t0);
++    rec_close();
++    const char *path = getenv("LIBPOSTAL_RECORDS_FILE"); if (path == NULL) path = REC_DEFAULT_PATH;
++    int fd = open(path, O_RDONLY); struct stat st;
++    if (fd < 0 || fstat(fd, &st) != 0 || (size_t)st.st_size < sizeof(rec_header_t)) { if (fd >= 0) close(fd); fprintf(stderr, "EXP_RECORDS: cannot open %s\n", path); return false; }
++    const uint8_t *m = (const uint8_t *)mmap(NULL, (size_t)st.st_size, PROT_READ, MAP_PRIVATE, fd, 0); close(fd);
++    if (m == MAP_FAILED) { fprintf(stderr, "EXP_RECORDS: mmap failed\n"); return false; }
++    rec_header_t H; memcpy(&H, m, sizeof H);
++    char p[4096];
++    snprintf(p, sizeof p, "%s/address_parser_crf.dat", dir); uint64_t ms = rec_file_size(p);
++    snprintf(p, sizeof p, "%s/address_parser_vocab.trie", dir); uint64_t vs = rec_file_size(p);
++    if (memcmp(H.magic, REC_MAGIC, 8) != 0 || H.version != REC_VERSION || H.file_size != (uint64_t)st.st_size || H.model_size != ms || H.vocab_size != vs ||
++        H.index_slots == 0 || (H.index_slots & (H.index_slots - 1)) != 0 || H.nfam > 255) {
++        munmap((void *)m, (size_t)st.st_size); fprintf(stderr, "EXP_RECORDS: %s does not match the model in %s\n", path, dir); return false;
++    }
++    madvise((void *)m, (size_t)st.st_size, MADV_WILLNEED);
++    volatile uint8_t sink = 0; for (size_t o = 0; o < (size_t)st.st_size; o += 16384) sink ^= m[o];   // prefault at setup, not in the first parse
++    (void)sink;
++    rec_db.map = m; rec_db.map_size = (size_t)st.st_size;
++    rec_db.ar = m + H.arena_off; rec_db.idx = (const uint64_t *)(m + H.index_off); rec_db.mask = H.index_slots - 1;
++    rec_db.vlist = (const uint32_t *)(m + H.vlist_off); rec_db.nvocab = H.nvocab; rec_db.nfam = H.nfam; rec_db.nrec = H.nrec; rec_db.nslot = H.nslot;
++    const uint8_t *f = m + H.fam_off;
++    for (uint32_t i = 0; i < H.nfam; i++) { rec_db.fam_len[i] = f[0]; rec_db.fam_name[i] = (const char *)f + 1; f += 1 + f[0]; }
++    clock_gettime(CLOCK_MONOTONIC, &t1); rec_db.open_seconds = (t1.tv_sec - t0.tv_sec) + (t1.tv_nsec - t0.tv_nsec) / 1e9;
++    if (getenv("REC_VERBOSE") != NULL) fprintf(stderr, "EXP_RECORDS: %s records=%llu slots=%llu vocab=%llu families=%u file=%.1f MB open+prefault=%.2fs\n", path,
++        (unsigned long long)H.nrec, (unsigned long long)H.nslot, (unsigned long long)H.nvocab, H.nfam, st.st_size / 1e6, rec_db.open_seconds);
++    return true;
++}
++#endif

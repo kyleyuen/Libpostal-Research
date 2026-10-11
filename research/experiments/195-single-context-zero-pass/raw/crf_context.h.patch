@@ -1,0 +1,16 @@
+--- a/crf_context.h
++++ b/crf_context.h
+@@ -188,6 +188,8 @@
+ 
+ crf_context_t *crf_context_new(int flag, size_t L, size_t T);
+ bool crf_context_set_num_items(crf_context_t *self, size_t T);
++/* Caller will immediately reset state/state-transition/transition scores. */
++bool crf_context_set_num_items_for_reset(crf_context_t *self, size_t T);
+ void crf_context_destroy(crf_context_t *self);
+ void crf_context_reset(crf_context_t *self, int flag);
+ bool crf_context_exp_state(crf_context_t *self);
+@@ -203,4 +205,4 @@
+ double crf_context_lognorm(crf_context_t *self);
+ double crf_context_viterbi(crf_context_t *self, uint32_t *labels);
+ 
+-#endif+#endif

@@ -1,0 +1,178 @@
+2026-10-05T20:12:12-0700 START warm_orig: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 1
+2026-10-05T20:12:15-0700 END warm_orig exit=0
+2026-10-05T20:12:15-0700 START warm_cpi: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 1
+2026-10-05T20:12:27-0700 END warm_cpi exit=0
+2026-10-05T20:12:27-0700 START warm_ctl158: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 1
+2026-10-05T20:12:39-0700 END warm_ctl158 exit=0
+2026-10-05T20:12:39-0700 START warm_fp158: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158fp/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 1
+2026-10-05T20:12:51-0700 END warm_fp158 exit=0
+2026-10-05T20:12:51-0700 START warm_fx161: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/161-resetup-defect/artifacts/161fx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 1
+2026-10-05T20:13:03-0700 END warm_fx161 exit=0
+2026-10-05T20:13:03-0700 START warm_ctl160: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 1
+2026-10-05T20:13:15-0700 END warm_ctl160 exit=0
+2026-10-05T20:13:15-0700 START warm_b160: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160b/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 1
+2026-10-05T20:13:19-0700 END warm_b160 exit=0
+2026-10-05T20:13:19-0700 START warm_c160: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160c/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 1
+2026-10-05T20:13:22-0700 END warm_c160 exit=0
+2026-10-05T20:13:22-0700 START timing/v1_r1_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:13:36-0700 END timing/v1_r1_cpi exit=0
+2026-10-05T20:13:38-0700 START timing/v1_r1_ctl158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:13:51-0700 END timing/v1_r1_ctl158 exit=0
+2026-10-05T20:13:53-0700 START timing/v1_r1_fp158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158fp/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:14:06-0700 END timing/v1_r1_fp158 exit=0
+2026-10-05T20:14:08-0700 START timing/v1_r1_fx161: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/161-resetup-defect/artifacts/161fx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:14:22-0700 END timing/v1_r1_fx161 exit=0
+2026-10-05T20:14:24-0700 START timing/v1_r1_ctl160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:14:37-0700 END timing/v1_r1_ctl160 exit=0
+2026-10-05T20:14:39-0700 START timing/v1_r1_b160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160b/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:14:44-0700 END timing/v1_r1_b160 exit=0
+2026-10-05T20:14:46-0700 START timing/v1_r1_c160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160c/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:14:51-0700 END timing/v1_r1_c160 exit=0
+2026-10-05T20:14:53-0700 START timing/v1_r1_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:15:04-0700 END timing/v1_r1_orig exit=0
+2026-10-05T20:15:06-0700 START timing/osm_r1_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:15:19-0700 END timing/osm_r1_cpi exit=0
+2026-10-05T20:15:21-0700 START timing/osm_r1_ctl158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:15:34-0700 END timing/osm_r1_ctl158 exit=0
+2026-10-05T20:15:36-0700 START timing/osm_r1_fp158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158fp/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:15:50-0700 END timing/osm_r1_fp158 exit=0
+2026-10-05T20:15:52-0700 START timing/osm_r1_fx161: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/161-resetup-defect/artifacts/161fx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:16:05-0700 END timing/osm_r1_fx161 exit=0
+2026-10-05T20:16:07-0700 START timing/osm_r1_ctl160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:16:19-0700 END timing/osm_r1_ctl160 exit=0
+2026-10-05T20:16:22-0700 START timing/osm_r1_b160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160b/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:16:26-0700 END timing/osm_r1_b160 exit=0
+2026-10-05T20:16:28-0700 START timing/osm_r1_c160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160c/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:16:33-0700 END timing/osm_r1_c160 exit=0
+2026-10-05T20:16:35-0700 START timing/osm_r1_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:16:42-0700 END timing/osm_r1_orig exit=0
+2026-10-05T20:16:45-0700 START timing/v1_r2_ctl158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:16:58-0700 END timing/v1_r2_ctl158 exit=0
+2026-10-05T20:17:00-0700 START timing/v1_r2_fp158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158fp/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:17:13-0700 END timing/v1_r2_fp158 exit=0
+2026-10-05T20:17:15-0700 START timing/v1_r2_fx161: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/161-resetup-defect/artifacts/161fx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:17:29-0700 END timing/v1_r2_fx161 exit=0
+2026-10-05T20:17:31-0700 START timing/v1_r2_ctl160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:17:44-0700 END timing/v1_r2_ctl160 exit=0
+2026-10-05T20:17:46-0700 START timing/v1_r2_b160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160b/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:17:52-0700 END timing/v1_r2_b160 exit=0
+2026-10-05T20:17:54-0700 START timing/v1_r2_c160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160c/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:17:59-0700 END timing/v1_r2_c160 exit=0
+2026-10-05T20:18:01-0700 START timing/v1_r2_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:18:13-0700 END timing/v1_r2_orig exit=0
+2026-10-05T20:18:15-0700 START timing/v1_r2_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:18:28-0700 END timing/v1_r2_cpi exit=0
+2026-10-05T20:18:30-0700 START timing/osm_r2_ctl158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:18:43-0700 END timing/osm_r2_ctl158 exit=0
+2026-10-05T20:18:45-0700 START timing/osm_r2_fp158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158fp/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:18:58-0700 END timing/osm_r2_fp158 exit=0
+2026-10-05T20:19:00-0700 START timing/osm_r2_fx161: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/161-resetup-defect/artifacts/161fx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:19:14-0700 END timing/osm_r2_fx161 exit=0
+2026-10-05T20:19:17-0700 START timing/osm_r2_ctl160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:19:30-0700 END timing/osm_r2_ctl160 exit=0
+2026-10-05T20:19:32-0700 START timing/osm_r2_b160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160b/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:19:37-0700 END timing/osm_r2_b160 exit=0
+2026-10-05T20:19:39-0700 START timing/osm_r2_c160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160c/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:19:43-0700 END timing/osm_r2_c160 exit=0
+2026-10-05T20:19:45-0700 START timing/osm_r2_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:19:53-0700 END timing/osm_r2_orig exit=0
+2026-10-05T20:19:55-0700 START timing/osm_r2_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:20:08-0700 END timing/osm_r2_cpi exit=0
+2026-10-05T20:20:10-0700 START timing/v1_r3_fp158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158fp/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:20:23-0700 END timing/v1_r3_fp158 exit=0
+2026-10-05T20:20:26-0700 START timing/v1_r3_fx161: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/161-resetup-defect/artifacts/161fx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:20:39-0700 END timing/v1_r3_fx161 exit=0
+2026-10-05T20:20:41-0700 START timing/v1_r3_ctl160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:20:55-0700 END timing/v1_r3_ctl160 exit=0
+2026-10-05T20:20:57-0700 START timing/v1_r3_b160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160b/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:21:03-0700 END timing/v1_r3_b160 exit=0
+2026-10-05T20:21:05-0700 START timing/v1_r3_c160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160c/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:21:10-0700 END timing/v1_r3_c160 exit=0
+2026-10-05T20:21:12-0700 START timing/v1_r3_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:21:25-0700 END timing/v1_r3_orig exit=0
+2026-10-05T20:21:27-0700 START timing/v1_r3_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:21:41-0700 END timing/v1_r3_cpi exit=0
+2026-10-05T20:21:43-0700 START timing/v1_r3_ctl158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:21:56-0700 END timing/v1_r3_ctl158 exit=0
+2026-10-05T20:21:59-0700 START timing/osm_r3_fp158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158fp/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:22:11-0700 END timing/osm_r3_fp158 exit=0
+2026-10-05T20:22:14-0700 START timing/osm_r3_fx161: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/161-resetup-defect/artifacts/161fx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:22:26-0700 END timing/osm_r3_fx161 exit=0
+2026-10-05T20:22:28-0700 START timing/osm_r3_ctl160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:22:41-0700 END timing/osm_r3_ctl160 exit=0
+2026-10-05T20:22:43-0700 START timing/osm_r3_b160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160b/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:22:48-0700 END timing/osm_r3_b160 exit=0
+2026-10-05T20:22:50-0700 START timing/osm_r3_c160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160c/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:22:54-0700 END timing/osm_r3_c160 exit=0
+2026-10-05T20:22:56-0700 START timing/osm_r3_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:23:05-0700 END timing/osm_r3_orig exit=0
+2026-10-05T20:23:07-0700 START timing/osm_r3_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:23:20-0700 END timing/osm_r3_cpi exit=0
+2026-10-05T20:23:22-0700 START timing/osm_r3_ctl158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:23:35-0700 END timing/osm_r3_ctl158 exit=0
+2026-10-05T20:23:37-0700 START timing/v1_r4_fx161: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/161-resetup-defect/artifacts/161fx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:23:50-0700 END timing/v1_r4_fx161 exit=0
+2026-10-05T20:23:52-0700 START timing/v1_r4_ctl160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:24:06-0700 END timing/v1_r4_ctl160 exit=0
+2026-10-05T20:24:08-0700 START timing/v1_r4_b160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160b/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:24:14-0700 END timing/v1_r4_b160 exit=0
+2026-10-05T20:24:16-0700 START timing/v1_r4_c160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160c/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:24:21-0700 END timing/v1_r4_c160 exit=0
+2026-10-05T20:24:23-0700 START timing/v1_r4_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:24:34-0700 END timing/v1_r4_orig exit=0
+2026-10-05T20:24:36-0700 START timing/v1_r4_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:24:50-0700 END timing/v1_r4_cpi exit=0
+2026-10-05T20:24:52-0700 START timing/v1_r4_ctl158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:25:05-0700 END timing/v1_r4_ctl158 exit=0
+2026-10-05T20:25:07-0700 START timing/v1_r4_fp158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158fp/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:25:21-0700 END timing/v1_r4_fp158 exit=0
+2026-10-05T20:25:23-0700 START timing/osm_r4_fx161: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/161-resetup-defect/artifacts/161fx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:25:36-0700 END timing/osm_r4_fx161 exit=0
+2026-10-05T20:25:38-0700 START timing/osm_r4_ctl160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:25:51-0700 END timing/osm_r4_ctl160 exit=0
+2026-10-05T20:25:53-0700 START timing/osm_r4_b160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160b/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:25:58-0700 END timing/osm_r4_b160 exit=0
+2026-10-05T20:26:00-0700 START timing/osm_r4_c160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160c/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:26:04-0700 END timing/osm_r4_c160 exit=0
+2026-10-05T20:26:06-0700 START timing/osm_r4_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:26:14-0700 END timing/osm_r4_orig exit=0
+2026-10-05T20:26:16-0700 START timing/osm_r4_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:26:29-0700 END timing/osm_r4_cpi exit=0
+2026-10-05T20:26:31-0700 START timing/osm_r4_ctl158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:26:44-0700 END timing/osm_r4_ctl158 exit=0
+2026-10-05T20:26:46-0700 START timing/osm_r4_fp158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158fp/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:26:59-0700 END timing/osm_r4_fp158 exit=0
+2026-10-05T20:27:01-0700 START timing/v1_r5_ctl160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:27:14-0700 END timing/v1_r5_ctl160 exit=0
+2026-10-05T20:27:17-0700 START timing/v1_r5_b160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160b/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:27:22-0700 END timing/v1_r5_b160 exit=0
+2026-10-05T20:27:24-0700 START timing/v1_r5_c160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160c/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:27:29-0700 END timing/v1_r5_c160 exit=0
+2026-10-05T20:27:31-0700 START timing/v1_r5_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:27:42-0700 END timing/v1_r5_orig exit=0
+2026-10-05T20:27:44-0700 START timing/v1_r5_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:27:58-0700 END timing/v1_r5_cpi exit=0
+2026-10-05T20:28:00-0700 START timing/v1_r5_ctl158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:28:13-0700 END timing/v1_r5_ctl158 exit=0
+2026-10-05T20:28:15-0700 START timing/v1_r5_fp158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158fp/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:28:29-0700 END timing/v1_r5_fp158 exit=0
+2026-10-05T20:28:31-0700 START timing/v1_r5_fx161: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/161-resetup-defect/artifacts/161fx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 20
+2026-10-05T20:28:44-0700 END timing/v1_r5_fx161 exit=0
+2026-10-05T20:28:46-0700 START timing/osm_r5_ctl160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:28:59-0700 END timing/osm_r5_ctl160 exit=0
+2026-10-05T20:29:01-0700 START timing/osm_r5_b160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160b/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:29:05-0700 END timing/osm_r5_b160 exit=0
+2026-10-05T20:29:08-0700 START timing/osm_r5_c160: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/160-p2-records-in-cpi/artifacts/160c/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:29:12-0700 END timing/osm_r5_c160 exit=0
+2026-10-05T20:29:14-0700 START timing/osm_r5_orig: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/artifacts/bench_ext_baseline /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:29:22-0700 END timing/osm_r5_orig exit=0
+2026-10-05T20:29:24-0700 START timing/osm_r5_cpi: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:29:37-0700 END timing/osm_r5_cpi exit=0
+2026-10-05T20:29:39-0700 START timing/osm_r5_ctl158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158ctl/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:29:51-0700 END timing/osm_r5_ctl158 exit=0
+2026-10-05T20:29:54-0700 START timing/osm_r5_fp158: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/158-r0-feature-print/artifacts/158fp/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:30:06-0700 END timing/osm_r5_fp158 exit=0
+2026-10-05T20:30:08-0700 START timing/osm_r5_fx161: /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/161-resetup-defect/artifacts/161fx/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 20
+2026-10-05T20:30:22-0700 END timing/osm_r5_fx161 exit=0
+2026-10-05T20:34:34-0700 bench_ext variants done; starting 159 T1/T2
+2026-10-05T20:36:59-0700 159 done

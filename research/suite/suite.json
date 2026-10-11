@@ -153,18 +153,26 @@
     {
       "name": "unseen-v12",
       "source": "openstreetmap",
-      "kind": "RESERVED unseen (never used)",
-      "reserved": true,
+      "kind": "spent unseen (observed in experiments 183 and 202)",
+      "reserved": false,
       "txt": "profiling/golden-v12-osm-unseen/unseen12.txt",
       "tsv": "profiling/golden-v12-osm-unseen/unseen12.tsv"
     },
     {
       "name": "unseen-v13",
       "source": "openstreetmap",
-      "kind": "RESERVED unseen (never used)",
-      "reserved": true,
+      "kind": "spent unseen (observed in experiments 183 and 202)",
+      "reserved": false,
       "txt": "profiling/golden-v13-osm-unseen/unseen13.txt",
       "tsv": "profiling/golden-v13-osm-unseen/unseen13.tsv"
+    },
+    {
+      "name": "unseen-v14",
+      "source": "openstreetmap",
+      "kind": "spent unseen (observed in experiment 202)",
+      "reserved": false,
+      "txt": "profiling/golden-v14-osm-unseen/unseen14.txt",
+      "tsv": "profiling/golden-v14-osm-unseen/unseen14.tsv"
     }
   ]
 }

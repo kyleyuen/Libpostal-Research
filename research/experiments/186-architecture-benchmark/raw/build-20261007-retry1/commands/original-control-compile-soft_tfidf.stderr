@@ -1,0 +1,32 @@
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/soft_tfidf.c:302:62: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  302 |         log_debug("p1.len = %zu, i = %zu, p1.start = %zu\n", p1.len, i, p1.start);
+      |                             ~~~                              ^~~~~~
+      |                             %u
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/soft_tfidf.c:302:73: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  302 |         log_debug("p1.len = %zu, i = %zu, p1.start = %zu\n", p1.len, i, p1.start);
+      |                                                      ~~~                ^~~~~~~~
+      |                                                      %u
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/soft_tfidf.c:344:57: warning: format specifies type 'ssize_t' (aka 'long') but the argument has type 'int64_t' (aka 'long long') [-Wformat]
+  344 |                 log_debug("acronym_membership = %zd\n", acronym_membership);
+      |                                                 ~~~     ^~~~~~~~~~~~~~~~~~
+      |                                                 %lld
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/soft_tfidf.c:360:60: warning: format specifies type 'ssize_t' (aka 'long') but the argument has type 'int64_t' (aka 'long long') [-Wformat]
+  360 |                 log_debug("multi_word_membership = %zd\n", multi_word_membership);
+      |                                                    ~~~     ^~~~~~~~~~~~~~~~~~~~~
+      |                                                    %lld
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/soft_tfidf.c:273:14: warning: unused variable 'have_strict_abbreviation' [-Wunused-variable]
+  273 |         bool have_strict_abbreviation = false;
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.

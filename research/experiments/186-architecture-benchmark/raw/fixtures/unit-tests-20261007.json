@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "research/experiments/186-architecture-benchmark/tools/test_architecture_benchmark.py"
+  ],
+  "started_utc": "2026-10-08T00:00:11.053182+00:00",
+  "ended_utc": "2026-10-08T00:00:11.206119+00:00",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_byte_comparison_rejects_mismatch (__main__.ArchitectureBenchmarkTests.test_byte_comparison_rejects_mismatch) ... ok\ntest_empty_trace_workload_rejected (__main__.ArchitectureBenchmarkTests.test_empty_trace_workload_rejected) ... ok\ntest_fake_end_to_end_collection_and_manifest (__main__.ArchitectureBenchmarkTests.test_fake_end_to_end_collection_and_manifest) ... ok\ntest_generation_change_is_not_a_repeat (__main__.ArchitectureBenchmarkTests.test_generation_change_is_not_a_repeat) ... ok\ntest_nearest_rank_p95_distribution (__main__.ArchitectureBenchmarkTests.test_nearest_rank_p95_distribution) ... ok\ntest_overflow_rejected_even_with_complete_footer (__main__.ArchitectureBenchmarkTests.test_overflow_rejected_even_with_complete_footer) ... ok\ntest_unknown_generation_repeat_is_unproven (__main__.ArchitectureBenchmarkTests.test_unknown_generation_repeat_is_unproven) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.112s\n\nOK\n"
+}

@@ -1,0 +1,65 @@
+state_features.tsv: 11470623 keys
+trans_features.tsv: 2086474 keys
+vocab.tsv: 3694560 keys
+entries 17251657 = state 11470623 + trans 2086474 + vocab; records 10025721 (unit 5893398, pair 4130025, own 2298; vocab-only 2687878); families 58; duplicate slots 0
+verify: rows bit-identical 13557097  mismatched 0  unmapped 0 | vocab freq ok 3694560 bad 0 | mean index probes per lookup 1.246
+sizes MB: arena f64 795.9, f32 577.9 (record key bytes 160.1); index 268.4 => total f64 1064.4, f32 846.4
+original CSR arrays MB 620.3; cpi structures these replace (143 raw/cpi_dict_verbose: 398.2 + 56.4 + 26.0 + 48.9 + vocab 115.3) = 644.8
+family 0: next word
+family 1: sub_word
+family 2: suffix
+family 3: unambiguous phrase type+phrase|entrance
+family 4: unambiguous phrase type+phrase|island
+family 5: unambiguous phrase type+phrase|name
+family 6: unambiguous phrase type+phrase|level
+family 7: unambiguous phrase type+phrase|staircase
+family 8: unambiguous phrase type+phrase|state
+family 9: unambiguous phrase type+phrase|state_district
+family 10: unambiguous phrase type+phrase|street
+family 11: unambiguous phrase type+phrase|suburb
+family 12: unambiguous phrase type+phrase|unit
+family 13: unambiguous phrase type+phrase|house_number
+family 14: unambiguous phrase type+phrase|city
+family 15: unambiguous phrase type+phrase|city_district
+family 16: unambiguous phrase type+phrase|country
+family 17: unambiguous phrase type+phrase|country_region
+family 18: unambiguous phrase type+phrase|postal_code
+family 19: unambiguous phrase type+phrase|po_box
+family 20: unambiguous phrase type+phrase|world_region
+family 21: own
+family 22: commonly island
+family 23: commonly state
+family 24: commonly state_district
+family 25: commonly suburb
+family 26: commonly city
+family 27: commonly city_district
+family 28: commonly country
+family 29: commonly country_region
+family 30: postcode no context
+family 31: postcode have context
+family 32: prefix
+family 33: prev word+word
+family 34: prev word
+family 35: phrase type+phrase|entrance
+family 36: phrase type+phrase|island
+family 37: phrase type+phrase|name
+family 38: phrase type+phrase|level
+family 39: phrase type+phrase|staircase
+family 40: phrase type+phrase|state
+family 41: phrase type+phrase|state_district
+family 42: phrase type+phrase|street
+family 43: phrase type+phrase|suburb
+family 44: phrase type+phrase|unit
+family 45: phrase type+phrase|house_number
+family 46: phrase type+phrase|city
+family 47: phrase type+phrase|city_district
+family 48: phrase type+phrase|country
+family 49: phrase type+phrase|country_region
+family 50: phrase type+phrase|postal_code
+family 51: phrase type+phrase|po_box
+family 52: phrase type+phrase|world_region
+family 53: phrase
+family 54: first word
+family 55: word+next word
+family 56: word
+family 57: freq

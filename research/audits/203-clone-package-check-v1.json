@@ -1,0 +1,35 @@
+{
+  "scope": "Saved evidence and staged paths; no parser workload",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "research/tools/verify_203_clone_evidence.py",
+        "--require-tracked"
+      ],
+      "timestamp_utc": "2026-10-11T02:25:22.327695+00:00",
+      "exit": 0,
+      "stdout": "203 clone evidence verification: PASS\npackage files: 95; promoted source/header files: 16\ninputs/output JSONLs: 14 datasets, 130,341 rows; original/candidate byte-equal\ntimings: 84 exit-0 captures (42 active candidates), 42 negative footprint/RSS pairs; minimum parse-only 10.552s\nlive threads: 6 intentional post-sample terminations, 36 samples, one thread each\nGit tracked-path check: PASS (458 paths)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "shasum",
+        "-a",
+        "256",
+        "-c",
+        "research/package/CLONE_REVIEW_MANIFEST-v1.sha256"
+      ],
+      "timestamp_utc": "2026-10-11T02:25:22.327695+00:00",
+      "exit": 0,
+      "stdout": "README.md: OK\nSETUP.md: OK\nREVIEW_GUIDE.md: OK\nbenchmark/run.sh: OK\nresearch/METHOD.md: OK\nresearch/package/RELEASE_PLAN.md: OK\nresearch/package/build_inventory.py: OK\nresearch/package/git-add-candidates.tsv: OK\nresearch/package/inventory-summary.json: OK\nresearch/tools/verify_203_clone_evidence.py: OK\nresearch/suite/suite.json: OK\nresearch/suite/results/203-stream-output-v1/manifest.json: OK\nresearch/suite/results/203-stream-output-v1/correctness.json: OK\nresearch/suite/results/203-stream-output-v1/clone-evidence/manifest.json: OK\nresearch/experiments/202-cpi-final-validation/README.md: OK\nresearch/experiments/202-cpi-final-validation/FINAL_VALIDATION_REPORT.md: OK\nresearch/experiments/203-cpi-memory-regression/FINAL_VALIDATION_REPORT.md: OK\nresearch/final/203-cpi-memory/SHA256SUMS: OK\nresearch/final/203-cpi-memory/SHA256SUMS.sha256: OK\nresearch/final/203-cpi-memory/SOURCE_MANIFEST.sha256: OK\nresearch/suite/results/203-stream-gold-novel-v1/results.json: OK\nresearch/suite/results/203-stream-osm-v3-v13-v1/results.json: OK\nresearch/suite/results/203-stream-v14-v1/results.json: OK\nresearch/experiments/203-cpi-memory-regression/raw/stream-steady-thread-v1/thread-captures/results.json: OK\n",
+      "stderr": ""
+    }
+  ],
+  "separate_checkout": {
+    "path": "/var/folders/1j/qs56sm5x07n313fqb_98q31h0000gn/T/libpostal-final-checkout-bflsobmq",
+    "verifier_cwd": "/tmp",
+    "verifier_exit": 0,
+    "runner_help_exit": 0
+  }
+}

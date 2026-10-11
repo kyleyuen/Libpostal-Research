@@ -1,0 +1,7 @@
+K3 tables: dense rows 35 (0.006 MB), transition masks 8.3 MB
+addresses 11405 tokens/addr 5.362  label mismatches vs K0: K1 0 K2 0 K3 0  K2 fallbacks 0 (0.0000%)
+K0 original CSR f64    pass1 2.300  cold median p2..60 2.215 [2.125-4.932]  warm 1.721 [1.675-1.737] us/addr
+K1 packed f64 exact    pass1 1.747  cold median p2..60 1.331 [1.281-1.405]  warm 1.070 [1.052-1.110] us/addr
+K2 certified f32       pass1 1.486  cold median p2..60 0.977 [0.926-0.987]  warm 0.755 [0.628-0.949] us/addr
+K3 exact f64 engineered pass1 1.495  cold median p2..60 1.168 [1.114-1.187]  warm 0.866 [0.802-0.926] us/addr
+K2 fallbacks incl. timing passes: 0

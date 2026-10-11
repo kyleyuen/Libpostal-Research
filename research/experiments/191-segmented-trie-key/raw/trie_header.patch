@@ -1,0 +1,10 @@
+--- libpostal/src/trie.h	2026-09-28 15:50:15
++++ research/experiments/191-segmented-trie-key/sources/trie.h	2026-10-07 19:14:25
+@@ -98,6 +98,7 @@
+ 
+ bool trie_get_data_at_index(trie_t *self, uint32_t index,  uint32_t *data);
+ bool trie_get_data(trie_t *self, char *key, uint32_t *data);
++bool trie_get_data_concat(trie_t *self, const char *prefix, size_t prefix_len, const char *suffix, size_t suffix_len, uint32_t *data);
+ bool trie_set_data_at_index(trie_t *self, uint32_t index, uint32_t data);
+ bool trie_set_data(trie_t *self, char *key, uint32_t data);
+ 

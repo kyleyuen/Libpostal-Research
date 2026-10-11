@@ -1,0 +1,380 @@
+{
+  "dataset_id": "golden-v14-osm-unseen",
+  "built_at_utc": "2026-10-10T04:49:30.161815+00:00",
+  "source": "OpenStreetMap via Overpass API; raw city responses in raw/",
+  "selection": "fixed SELECTED_CITY_NAMES subset of the original 67-city pool, narrowed to bound acquisition time; chosen without parser outputs or candidate measurements; all selected cities absent from prior v3-v13 city lists",
+  "input_sets_checked": 13,
+  "input_set_paths": [
+    "../golden-v1/all.txt",
+    "../golden-v2-novel/novel.tsv",
+    "../golden-v3-osm/osm.txt",
+    "../golden-v4-osm-unseen/unseen.txt",
+    "../golden-v5-osm-unseen/unseen5.txt",
+    "../golden-v6-osm-unseen/unseen6.txt",
+    "../golden-v7-osm-unseen/unseen7.txt",
+    "../golden-v8-osm-unseen/unseen8.txt",
+    "../golden-v9-osm-unseen/unseen9.txt",
+    "../golden-v10-osm-unseen/unseen10.txt",
+    "../golden-v11-osm-unseen/unseen11.txt",
+    "../golden-v12-osm-unseen/unseen12.txt",
+    "../golden-v13-osm-unseen/unseen13.txt"
+  ],
+  "selected_cities": [
+    {
+      "city": "Fort Collins",
+      "country": "us",
+      "coordinates": [
+        40.5853,
+        -105.0844
+      ]
+    },
+    {
+      "city": "Eugene",
+      "country": "us",
+      "coordinates": [
+        44.0521,
+        -123.0868
+      ]
+    },
+    {
+      "city": "Gatineau",
+      "country": "ca",
+      "coordinates": [
+        45.4765,
+        -75.7013
+      ]
+    },
+    {
+      "city": "Launceston",
+      "country": "au",
+      "coordinates": [
+        -41.4332,
+        147.1448
+      ]
+    },
+    {
+      "city": "New Plymouth",
+      "country": "nz",
+      "coordinates": [
+        -39.0556,
+        174.0752
+      ]
+    },
+    {
+      "city": "Troyes",
+      "country": "fr",
+      "coordinates": [
+        48.2973,
+        4.0744
+      ]
+    },
+    {
+      "city": "Mainz",
+      "country": "de",
+      "coordinates": [
+        49.9929,
+        8.2473
+      ]
+    },
+    {
+      "city": "Plock",
+      "country": "pl",
+      "coordinates": [
+        52.5463,
+        19.7065
+      ]
+    },
+    {
+      "city": "Niteroi",
+      "country": "br",
+      "coordinates": [
+        -22.8832,
+        -43.1034
+      ]
+    },
+    {
+      "city": "Popayan",
+      "country": "co",
+      "coordinates": [
+        2.4448,
+        -76.6147
+      ]
+    },
+    {
+      "city": "Nara",
+      "country": "jp",
+      "coordinates": [
+        34.6851,
+        135.8049
+      ]
+    },
+    {
+      "city": "Jaipur",
+      "country": "in",
+      "coordinates": [
+        26.9124,
+        75.7873
+      ]
+    },
+    {
+      "city": "Chengdu",
+      "country": "cn",
+      "coordinates": [
+        30.5728,
+        104.0668
+      ]
+    },
+    {
+      "city": "Da Nang",
+      "country": "vn",
+      "coordinates": [
+        16.0544,
+        108.2022
+      ]
+    },
+    {
+      "city": "Nakuru",
+      "country": "ke",
+      "coordinates": [
+        -0.3031,
+        36.08
+      ]
+    }
+  ],
+  "raw_sources": [
+    {
+      "city": "Fort Collins",
+      "country": "us",
+      "coordinates": [
+        40.5853,
+        -105.0844
+      ],
+      "raw_file": "raw/fort_collins.json",
+      "raw_sha256": "9c25cadf1eaee3ac0f2398f4701f93bcbfa80fbe94bf9d6e97db5c015ad05938",
+      "raw_bytes": 96595,
+      "response_elements": 400,
+      "file_mtime_utc": "2026-10-10T04:37:19.424747+00:00"
+    },
+    {
+      "city": "Eugene",
+      "country": "us",
+      "coordinates": [
+        44.0521,
+        -123.0868
+      ],
+      "raw_file": "raw/eugene.json",
+      "raw_sha256": "c48a4a4c010ed654b3d121b8ba02dfd5852147f6e5e7e851527aa228c3b926c2",
+      "raw_bytes": 143429,
+      "response_elements": 400,
+      "file_mtime_utc": "2026-10-10T04:38:34.224308+00:00"
+    },
+    {
+      "city": "Gatineau",
+      "country": "ca",
+      "coordinates": [
+        45.4765,
+        -75.7013
+      ],
+      "raw_file": "raw/gatineau.json",
+      "raw_sha256": "bb4be72ee84391bf316a5a8b161470d1ef970ebec82c653942f636f1fa40c9ff",
+      "raw_bytes": 116383,
+      "response_elements": 400,
+      "file_mtime_utc": "2026-10-10T04:41:45.859994+00:00"
+    },
+    {
+      "city": "Launceston",
+      "country": "au",
+      "coordinates": [
+        -41.4332,
+        147.1448
+      ],
+      "raw_file": "raw/launceston.json",
+      "raw_sha256": "2f820a8e4c7128175a878961f7aec3324e85178f7d137058d5d205710d01125e",
+      "raw_bytes": 102343,
+      "response_elements": 400,
+      "file_mtime_utc": "2026-10-10T04:43:00.776203+00:00"
+    },
+    {
+      "city": "New Plymouth",
+      "country": "nz",
+      "coordinates": [
+        -39.0556,
+        174.0752
+      ],
+      "raw_file": "raw/new_plymouth.json",
+      "raw_sha256": "98d1566cdff3962abb7023a5878d6cf67b2af2631c80f0b829d2aa85d965395e",
+      "raw_bytes": 84269,
+      "response_elements": 400,
+      "file_mtime_utc": "2026-10-10T04:43:28.386000+00:00"
+    },
+    {
+      "city": "Troyes",
+      "country": "fr",
+      "coordinates": [
+        48.2973,
+        4.0744
+      ],
+      "raw_file": "raw/troyes.json",
+      "raw_sha256": "baee7545d05a0d0dc48d53ba5ab22b4a1142bfd30bb9f6576d7f9dd9edc8ce12",
+      "raw_bytes": 132351,
+      "response_elements": 400,
+      "file_mtime_utc": "2026-10-10T04:43:57.616031+00:00"
+    },
+    {
+      "city": "Mainz",
+      "country": "de",
+      "coordinates": [
+        49.9929,
+        8.2473
+      ],
+      "raw_file": "raw/mainz.json",
+      "raw_sha256": "f07c9c15ab391adc5768e2a09b3bbfb9bf2ae55acf458f6b4064bd97a50602f4",
+      "raw_bytes": 128629,
+      "response_elements": 400,
+      "file_mtime_utc": "2026-10-10T04:44:14.592057+00:00"
+    },
+    {
+      "city": "Plock",
+      "country": "pl",
+      "coordinates": [
+        52.5463,
+        19.7065
+      ],
+      "raw_file": "raw/plock.json",
+      "raw_sha256": "a0855e838885e61ba1df117a2ef49ee24670e219498416b2dd3bb10b2fd295e5",
+      "raw_bytes": 114008,
+      "response_elements": 400,
+      "file_mtime_utc": "2026-10-10T04:44:44.047510+00:00"
+    },
+    {
+      "city": "Niteroi",
+      "country": "br",
+      "coordinates": [
+        -22.8832,
+        -43.1034
+      ],
+      "raw_file": "raw/niteroi.json",
+      "raw_sha256": "dcc08cba6688ed7381e09ff08d1e1aa7a5d3a38fdf44d0bdc315df8f924574e0",
+      "raw_bytes": 26830,
+      "response_elements": 116,
+      "file_mtime_utc": "2026-10-10T04:45:05.408712+00:00"
+    },
+    {
+      "city": "Popayan",
+      "country": "co",
+      "coordinates": [
+        2.4448,
+        -76.6147
+      ],
+      "raw_file": "raw/popayan.json",
+      "raw_sha256": "c67d7bc7b02c70c50c5fcefafe365acb7695526da9dac6b97276408622ea7a3a",
+      "raw_bytes": 19847,
+      "response_elements": 75,
+      "file_mtime_utc": "2026-10-10T04:46:17.309194+00:00"
+    },
+    {
+      "city": "Nara",
+      "country": "jp",
+      "coordinates": [
+        34.6851,
+        135.8049
+      ],
+      "raw_file": "raw/nara.json",
+      "raw_sha256": "05b85ae610d7752175eb3ad44916c75f5885202e0d08b3702a05191bc7c9a459",
+      "raw_bytes": 286,
+      "response_elements": 0,
+      "file_mtime_utc": "2026-10-10T04:46:39.759613+00:00"
+    },
+    {
+      "city": "Jaipur",
+      "country": "in",
+      "coordinates": [
+        26.9124,
+        75.7873
+      ],
+      "raw_file": "raw/jaipur.json",
+      "raw_sha256": "206b393afa1cb8c22d9eccf760daa0010dffb029244be4e4a28585f10796ef9a",
+      "raw_bytes": 3976,
+      "response_elements": 9,
+      "file_mtime_utc": "2026-10-10T04:47:06.672129+00:00"
+    },
+    {
+      "city": "Chengdu",
+      "country": "cn",
+      "coordinates": [
+        30.5728,
+        104.0668
+      ],
+      "raw_file": "raw/chengdu.json",
+      "raw_sha256": "df2fbc6737539468124bdfeaa4ae9786ef939b377687a4b20330969b837b2b5f",
+      "raw_bytes": 2505,
+      "response_elements": 4,
+      "file_mtime_utc": "2026-10-10T04:47:25.085845+00:00"
+    },
+    {
+      "city": "Da Nang",
+      "country": "vn",
+      "coordinates": [
+        16.0544,
+        108.2022
+      ],
+      "raw_file": "raw/da_nang.json",
+      "raw_sha256": "1177daa6bb759c32f0fda4c90878ed43070d68be5811afd984d460f0b955c974",
+      "raw_bytes": 2479,
+      "response_elements": 6,
+      "file_mtime_utc": "2026-10-10T04:47:47.947545+00:00"
+    },
+    {
+      "city": "Nakuru",
+      "country": "ke",
+      "coordinates": [
+        -0.3031,
+        36.08
+      ],
+      "raw_file": "raw/nakuru.json",
+      "raw_sha256": "3582ec1d76e49ed1c81c951b35435c3871ccfde62003eef4a30baa0c0afbeffe",
+      "raw_bytes": 287,
+      "response_elements": 0,
+      "file_mtime_utc": "2026-10-10T04:49:00.297278+00:00"
+    }
+  ],
+  "prior_unique_address_count": 128540,
+  "new_rows": 1801,
+  "country_count": 12,
+  "city_count_with_rows": 13,
+  "rows_by_country": {
+    "au": 200,
+    "br": 107,
+    "ca": 200,
+    "cn": 4,
+    "co": 75,
+    "de": 200,
+    "fr": 200,
+    "in": 9,
+    "nz": 200,
+    "pl": 200,
+    "us": 400,
+    "vn": 6
+  },
+  "rows_by_city": {
+    "Chengdu": 4,
+    "Da Nang": 6,
+    "Eugene": 200,
+    "Fort Collins": 200,
+    "Gatineau": 200,
+    "Jaipur": 9,
+    "Launceston": 200,
+    "Mainz": 200,
+    "New Plymouth": 200,
+    "Niteroi": 107,
+    "Plock": 200,
+    "Popayan": 75,
+    "Troyes": 200
+  },
+  "exact_overlap_candidates_removed": 0,
+  "missing_city_responses": [],
+  "output_sha256": {
+    "unseen14.txt": "68e60e0da7e28258489f492c8682aed25c66a3054bbc56a29b5413711398d61b",
+    "unseen14.tsv": "c795d62b629390c7ddf01d416f0d030e0bd9f075cb33d514ce10792b5b05e977"
+  }
+}

@@ -1,0 +1,59 @@
+=================================================================
+==79415==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x00016b3cb508 at pc 0x000100787dcc bp 0x00016f68e650 sp 0x00016f68e648
+WRITE of size 4 at 0x00016b3cb508 thread T0
+    #0 0x000100787dc8 in cp_ids_for address_parser.c:1527
+    #1 0x000100787dc8 in cp_dfs address_parser.c:1545
+    #2 0x0001007878a4 in cp_dfs address_parser.c:1551
+    #3 0x0001007878a4 in cp_dfs address_parser.c:1551
+    #4 0x0001007878a4 in cp_dfs address_parser.c:1551
+    #5 0x000100779cfc in cp_build address_parser.c:1560
+    #6 0x00010077789c in address_parser_load address_parser.c:425
+    #7 0x0001007c62c8 in libpostal_setup_parser_datadir libpostal.c:451
+    #8 0x0001007c62c8 in libpostal_setup_parser libpostal.c:464
+    #9 0x000100770ec8 in main api_probe2.c:70
+    #10 0x000187063dfc in start+0x1b4c (dyld:arm64e+0x1fdfc)
+
+0x00016b3cb508 is located 0 bytes after 26078472-byte region [0x000169aec800,0x00016b3cb508)
+allocated by thread T0 here:
+    #0 0x0001016ad5f0 in realloc+0x78 (libclang_rt.asan_osx_dynamic.dylib:arm64+0x555f0)
+    #1 0x000100779d3c in cp_build address_parser.c:1563
+    #2 0x00010077789c in address_parser_load address_parser.c:425
+    #3 0x0001007c62c8 in libpostal_setup_parser_datadir libpostal.c:451
+    #4 0x0001007c62c8 in libpostal_setup_parser libpostal.c:464
+    #5 0x000100770e64 in main api_probe2.c:67
+    #6 0x000187063dfc in start+0x1b4c (dyld:arm64e+0x1fdfc)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow address_parser.c:1527 in cp_ids_for
+Shadow bytes around the buggy address:
+  0x00016b3cb280: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00016b3cb300: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00016b3cb380: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00016b3cb400: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00016b3cb480: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x00016b3cb500: 00[fa]fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x00016b3cb580: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x00016b3cb600: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x00016b3cb680: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x00016b3cb700: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x00016b3cb780: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==79415==ABORTING
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/model_slot.sh: line 7: 79415 Abort trap: 6           "$@"

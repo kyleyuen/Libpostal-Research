@@ -1,0 +1,13 @@
+47a48,51
+> #ifdef EXP_CERT
+> #include "cert_block.h"
+> #endif
+> 
+128a133,135
+> #ifdef EXP_CERT
+>         cert_token(self, features, prev_tag_features, t);
+> #endif
+146a154,156
+> #ifdef EXP_CERT
+>     cert_address(self, self->viterbi->a, num_tokens);
+> #endif

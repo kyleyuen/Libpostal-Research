@@ -1,0 +1,14 @@
+{
+  "attempt": "202-final-senzing-v1",
+  "started_utc": "2026-10-10T04:44:53Z",
+  "interrupted_utc": "2026-10-10T04:48:08Z",
+  "config": "research/experiments/202-cpi-final-validation/raw/senzing-timing-v1.json",
+  "suite_run": "research/suite/results/202-final-senzing-v1",
+  "environment_gate": "passed AC; no parser-process gate failure",
+  "settle": "failed after 180s at load 3.948/3.454/3.589; run_suite logs that it continues after timeout",
+  "partial_work": "golden-v1 cpi-packaged round 1 started and produced pass=1 through pass=45 of 200 before Ctrl-C",
+  "eligibility": "incomplete and excluded from all timing summaries",
+  "command_exit": 130,
+  "command_exit_record": "wrapper was interrupted before writing command.exit; suite KeyboardInterrupt traceback is retained in raw/senzing-timing-v1/stderr.log and partial per-pass capture in the suite run directory",
+  "no_orphan_check": "At 2026-10-10T04:55:19Z, process inventory showed only the independent v2 run; no v1 run_suite or bench_ext process remained. See raw/senzing-timing-v2/process-tree-check.txt"
+}

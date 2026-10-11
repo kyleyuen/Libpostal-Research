@@ -1,0 +1,185 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.h:52:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/averaged_perceptron.h:27:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:22:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/feature_dict.h:141:17: warning: unused variable 'op' [-Wunused-variable]
+  141 |     const char *op = d->split ? "feature_hash" : diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/feature_dict.h:142:17: warning: unused variable 'result_kind' [-Wunused-variable]
+  142 |     const char *result_kind = d->split ? "feature_id" : "vocab_frequency";
+      |                 ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:506:18: warning: unused variable 'qi' [-Wunused-variable]
+  506 |         uint64_t qi = diag_current_query_index();
+      |                  ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:498:17: warning: unused variable 'ps' [-Wunused-variable]
+  498 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:498:45: warning: unused variable 'pf' [-Wunused-variable]
+  498 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                             ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:498:74: warning: unused variable 'po' [-Wunused-variable]
+  498 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                                                          ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:499:17: warning: unused variable 'old_site' [-Wunused-variable]
+  499 |     const char *old_site = diag_current_site();
+      |                 ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:513:10: warning: unused variable 'has_key' [-Wunused-variable]
+  513 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:527:85: warning: incompatible pointer types passing 'phrase_array *' to parameter of type 'phrase_array **'; take the address with & [-Wincompatible-pointer-types]
+  527 |     bool found = search_address_dictionaries_tokens_with_phrases(str, tokens, NULL, out);
+      |                                                                                     ^~~
+      |                                                                                     &
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_dictionary.h:64:113: note: passing argument to parameter 'phrases' here
+   64 | bool search_address_dictionaries_tokens_with_phrases(char *str, token_array *tokens, char *lang, phrase_array **phrases);
+      |                                                                                                                 ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:524:17: warning: unused variable 'ps' [-Wunused-variable]
+  524 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:524:45: warning: unused variable 'pf' [-Wunused-variable]
+  524 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                             ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:524:74: warning: unused variable 'po' [-Wunused-variable]
+  524 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                                                          ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:525:17: warning: unused variable 'site' [-Wunused-variable]
+  525 |     const char *site = diag_current_site(); diag_set_site("address_parser.address_phrase_tokens");
+      |                 ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:531:17: warning: unused variable 'ps' [-Wunused-variable]
+  531 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:531:45: warning: unused variable 'pf' [-Wunused-variable]
+  531 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                             ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:531:74: warning: unused variable 'po' [-Wunused-variable]
+  531 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                                                          ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:532:17: warning: unused variable 'site' [-Wunused-variable]
+  532 |     const char *site = diag_current_site(); diag_set_site("address_parser.address_prefix");
+      |                 ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:538:17: warning: unused variable 'ps' [-Wunused-variable]
+  538 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:538:45: warning: unused variable 'pf' [-Wunused-variable]
+  538 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                             ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:538:74: warning: unused variable 'po' [-Wunused-variable]
+  538 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                                                          ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:539:17: warning: unused variable 'site' [-Wunused-variable]
+  539 |     const char *site = diag_current_site(); diag_set_site("address_parser.address_suffix");
+      |                 ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:548:69: warning: incompatible pointer types passing 'phrase_array *' to parameter of type 'phrase_array **'; take the address with & [-Wincompatible-pointer-types]
+  548 |     bool found = trie_search_tokens_with_phrases(trie, str, tokens, out);
+      |                                                                     ^~~
+      |                                                                     &
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/trie_search.h:36:100: note: passing argument to parameter 'phrases' here
+   36 | bool trie_search_tokens_with_phrases(trie_t *self, char *text, token_array *tokens, phrase_array **phrases);
+      |                                                                                                    ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:545:17: warning: unused variable 'ps' [-Wunused-variable]
+  545 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:545:45: warning: unused variable 'pf' [-Wunused-variable]
+  545 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                             ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:545:74: warning: unused variable 'po' [-Wunused-variable]
+  545 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                                                          ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:546:17: warning: unused variable 'site' [-Wunused-variable]
+  546 |     const char *site = diag_current_site(); diag_set_site("address_parser.model_phrase_tokens");
+      |                 ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1112:95: warning: incompatible pointer types passing 'phrase_array **' to parameter of type 'phrase_array *'; remove & [-Wincompatible-pointer-types]
+ 1112 |     bool have_address_phrases = diag_address_phrase_search(normalized_str, normalized_tokens, &address_dictionary_phrases);
+      |                                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:523:93: note: passing argument to parameter 'out' here
+  523 | static inline bool diag_address_phrase_search(char *str, token_array *tokens, phrase_array *out) {
+      |                                                                                             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1214:124: warning: incompatible pointer types passing 'phrase_array **' to parameter of type 'phrase_array *'; remove & [-Wincompatible-pointer-types]
+ 1214 |     bool have_component_phrases = diag_model_phrase_search(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases, "component_phrase");
+      |                                                                                                                            ^~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:544:105: note: passing argument to parameter 'out' here
+  544 | static inline bool diag_model_phrase_search(trie_t *trie, char *str, token_array *tokens, phrase_array *out, const char *family) {
+      |                                                                                                         ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1235:131: warning: incompatible pointer types passing 'phrase_array **' to parameter of type 'phrase_array *'; remove & [-Wincompatible-pointer-types]
+ 1235 |     bool have_postal_code_phrases = diag_model_phrase_search(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases, "postal_phrase");
+      |                                                                                                                                   ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:544:105: note: passing argument to parameter 'out' here
+  544 | static inline bool diag_model_phrase_search(trie_t *trie, char *str, token_array *tokens, phrase_array *out, const char *family) {
+      |                                                                                                         ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1017:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1017 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1112:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+ 1112 |     bool have_address_phrases = diag_address_phrase_search(normalized_str, normalized_tokens, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1214:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+ 1214 |     bool have_component_phrases = diag_model_phrase_search(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases, "component_phrase");
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1235:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+ 1235 |     bool have_postal_code_phrases = diag_model_phrase_search(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases, "postal_phrase");
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1351:13: warning: unused variable 'token' [-Wunused-variable]
+ 1351 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1440:13: warning: unused variable 'membership' [-Wunused-variable]
+ 1440 |     int64_t membership;
+      |             ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1468:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1468 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1746:21: warning: unused variable 'prior_site' [-Wunused-variable]
+ 1746 |         const char *prior_site = diag_current_site();
+      |                     ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1760:21: warning: unused variable 'site' [-Wunused-variable]
+ 1760 |         const char *site = diag_current_site();
+      |                     ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1762:18: warning: unused variable 'qi' [-Wunused-variable]
+ 1762 |         uint64_t qi = diag_reuse_linked(vocab_dict, "word_vocab_lookup", diag_current_stage(), "word_vocab",
+      |                  ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:2105:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 2105 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:2107:18: warning: unused variable 'k' [-Wunused-variable]
+ 2107 |         khiter_t k;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:2206:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable]
+ 2206 |             bool ngrams_added = false;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:2390:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 2390 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:2396:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 2396 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:2397:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 2397 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:2332:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable]
+ 2332 |         size_t next_word_len = 1;
+      |                ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1872:11: warning: unused variable 'language' [-Wunused-variable]
+ 1872 |     char *language = context->language;
+      |           ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1873:11: warning: unused variable 'country' [-Wunused-variable]
+ 1873 |     char *country = context->country;
+      |           ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:1883:19: warning: unused variable 'separators' [-Wunused-variable]
+ 1883 |     uint32_array *separators = context->separators;
+      |                   ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:2148:10: warning: variable 'is_unknown' set but not used [-Wunused-but-set-variable]
+ 2148 |     bool is_unknown = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:2150:10: warning: variable 'known_prefix' set but not used [-Wunused-but-set-variable]
+ 2150 |     bool known_prefix = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:2151:10: warning: variable 'known_suffix' set but not used [-Wunused-but-set-variable]
+ 2151 |     bool known_suffix = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/address_parser.c:2775:14: warning: variable 'response_bytes' set but not used [-Wunused-but-set-variable]
+ 2775 |     uint64_t response_bytes = 0;
+      |              ^
+54 warnings generated.

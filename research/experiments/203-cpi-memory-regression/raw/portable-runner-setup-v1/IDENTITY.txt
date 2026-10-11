@@ -1,0 +1,21 @@
+Portable runner setup identity (2026-10-11 UTC)
+
+Command: WORK_DIR=/tmp/libpostal-speedup-203-setup benchmark/run.sh --model-dir /Users/kyle/.cache/libpostal-profile/libpostal --setup-only
+Serialization wrapper: python3 research/tools/run_locked.py -- env WORK_DIR=... benchmark/run.sh ...
+Power gate: research/tools/env_gate.sh -> exit 0, GATE OK on AC Power; checked again before smoke.
+Setup terminal interval: local 2026-10-10 18:48:15 to 19:00:08 (UTC 2026-10-11 01:48:15 to 02:00:08). Setup ended with `setup complete; benchmark suite was not run` and generated suite.json.
+Model files: reused existing cached directory; all seven checks in logs/model_check.log are OK. benchmark/model_sha256.txt SHA-256: 1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad.
+Promoted final package SHA256SUMS content digest: f07e629014014066442c50d21592a6e4937a6d3d5a3c2ee359ddfee1b4717914; SOURCE_MANIFEST.sha256 SHA-256: d16742a07b1f8434d3edc14f00739386d029c04d0496296b86b42403bf8965dc.
+Promoted parser SHA-256: ca2e56f6d2f814954ae7d9b6e5189486997fa0a7d0239e14586a3ee21d8ef992.
+Promoted stream_postcode_graph.h SHA-256: ba25c92864cdec353c0529119ced00a780940bdf4569f3dbc74a81201c3c56b6.
+BUILD_SWITCHES.txt SHA-256: b936bcd9b2b89b9aeb013acb4caf6c1cdb3e88ab53a74236b42594b9dc54e0e7.
+Fresh PGO profile SHA-256: 2112e4abf9b8ae58c81b0424792dba269f1d9fa60511b220e62d201f0c0ebfdb.
+Fresh candidate static library SHA-256: 8bff0e734f800e5d265b07127f6e3f0ead34c590b731dc96f4a53e3c1cbf9f2b.
+Fresh candidate dump_outputs SHA-256: bc6c1c10f54b8e9b2075964dfef0230a866abfe5f65287d104452e0bc24c6602.
+Fresh original dump_outputs SHA-256: 4193371cd87b8eed16e041b5398320b28b12848217438637bef7b8a63d970295.
+
+Output smoke: first eight golden-v1 development inputs (8 records). Original and candidate dump_outputs stdout JSONL compare byte-for-byte (`cmp` exit 0); SHA-256 for original, candidate, and verbose candidate: 813db192107fd01edd04f341094361e3db70adeee939f58031355c040586e37f. Both ordinary role stderr files are empty. The verbose candidate stderr proves active streamed loading: `PC_COMPRESS_STREAM active=1 rows=5483892 edges=122300179 bytes=151033002`.
+
+Parser command statuses: original smoke exit 0; candidate smoke exit 0; verbose candidate smoke exit 0. The failed redirection attempt is recorded separately in cpi203-attempt1.txt and did not start a parser process.
+
+Runner source SHA-256 after change: ed7c4833deccf2e117ccdba109e70bf9a126dc558206ae9bf63e6c899ff2aefa.

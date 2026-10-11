@@ -1,0 +1,70 @@
+--- a/crf.c
++++ b/crf.c
+@@ -4,12 +4,12 @@
+ #define CRF_SIGNATURE 0xCFCFCFCF
+ 
+ 
+-static inline bool crf_get_feature_id(crf_t *self, char *feature, uint32_t *feature_id) {
+-    return trie_get_data(self->state_features, feature, feature_id);
+-}
+-
+-static inline bool crf_get_state_trans_feature_id(crf_t *self, char *feature, uint32_t *feature_id) {
+-    return trie_get_data(self->state_trans_features, feature, feature_id);
++static inline bool crf_get_feature_id_len(crf_t *self, char *feature, size_t len, uint32_t *feature_id) {
++    return trie_get_data_len(self->state_features, feature, len, feature_id);
++}
++
++static inline bool crf_get_state_trans_feature_id_len(crf_t *self, char *feature, size_t len, uint32_t *feature_id) {
++    return trie_get_data_len(self->state_trans_features, feature, len, feature_id);
+ }
+ 
+ #ifdef EXP_EVENT_FLOW
+@@ -39,7 +39,8 @@
+ #endif
+         key = cstring_array_get_string(list, i);
+         uint32_t id;
+-        bool found = kind == 'S' ? crf_get_feature_id(self, key, &id) : crf_get_state_trans_feature_id(self, key, &id);
++        size_t key_len = cstring_array_token_length(list, i);
++        bool found = kind == 'S' ? crf_get_feature_id_len(self, key, key_len, &id) : crf_get_state_trans_feature_id_len(self, key, key_len, &id);
+         fprintf(fk, "%llu\t%u\t%c\t%u\t", oa, t, kind, i + offset); oracle_str(fk, key); fputc('\n', fk);
+         if (found) fprintf(fi, "%llu\t%u\t%c\t%u\t%u\n", oa, t, kind, i + offset, id); else fprintf(fi, "%llu\t%u\t%c\t%u\t-\n", oa, t, kind, i + offset);
+     }
+@@ -62,7 +63,7 @@
+ #endif
+ 
+ #ifdef EXP_EVENT_FLOW
+-bool crf_state_word_id(crf_t *self, const char *word, uint32_t *id) { size_t n = strlen(word); char *key = malloc(n + 6); if (!key) return false; memcpy(key, "word|", 5); memcpy(key + 5, word, n + 1); bool ok = crf_get_feature_id(self, key, id); free(key); return ok; }
++bool crf_state_word_id(crf_t *self, const char *word, uint32_t *id) { size_t n = strlen(word); char *key = malloc(n + 6); if (!key) return false; memcpy(key, "word|", 5); memcpy(key + 5, word, n + 1); bool ok = crf_get_feature_id_len(self, key, n + 5, id); free(key); return ok; }
+ void crf_direct_state_word(cstring_array *a, uint32_t id, const char *word) { direct_word_array = a; direct_word_pos = cstring_array_num_strings(a); direct_word_id = id;
+ #ifdef EXP_ORACLE
+ oracle_direct_id = id; oracle_direct_pos = direct_word_pos; oracle_direct_word = word;
+@@ -145,9 +146,9 @@
+         size_t event_n = cstring_array_num_strings(features) + cstring_array_num_strings(prev_tag_features) + (direct_word_id != UINT32_MAX);
+         if (original_events_reserve(event_n)) {
+             size_t e = 0;
+-            for (fidx = 0; fidx < cstring_array_num_strings(features); fidx++) { if (direct_word_id != UINT32_MAX && direct_word_array == features && direct_word_pos == fidx) { original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX; } feature = cstring_array_get_string(features, fidx); original_events[e].id = crf_get_feature_id(self, feature, &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 0; }
++            for (fidx = 0; fidx < cstring_array_num_strings(features); fidx++) { if (direct_word_id != UINT32_MAX && direct_word_array == features && direct_word_pos == fidx) { original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX; } feature = cstring_array_get_string(features, fidx); size_t feature_len = cstring_array_token_length(features, fidx); original_events[e].id = crf_get_feature_id_len(self, feature, feature_len, &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 0; }
+             if (direct_word_id != UINT32_MAX && direct_word_array == features) { original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX; }
+-            cstring_array_foreach(prev_tag_features, fidx, feature, { original_events[e].id = crf_get_state_trans_feature_id(self, feature, &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 1; })
++            cstring_array_foreach(prev_tag_features, fidx, feature, { original_events[e].id = crf_get_state_trans_feature_id_len(self, feature, cstring_array_token_length(prev_tag_features, fidx), &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 1; })
+             uint32_t *sindptr = self->weights->indptr->a, *sindices = self->weights->indices->a;
+             double *sdata = self->weights->data->a, *state_scores = state_score(crf_context, t);
+             uint32_t *tindptr = self->state_trans_weights->indptr->a, *tindices = self->state_trans_weights->indices->a;
+@@ -168,7 +169,7 @@
+         double *data = self->weights->data->a;
+ 
+         cstring_array_foreach(features, fidx, feature, {
+-            if (!crf_get_feature_id(self, feature, &feature_id)) {
++            if (!crf_get_feature_id_len(self, feature, cstring_array_token_length(features, fidx), &feature_id)) {
+                 continue;
+             }
+ 
+@@ -185,7 +186,7 @@
+         data = self->state_trans_weights->data->a;
+ 
+         cstring_array_foreach(prev_tag_features, fidx, feature, {
+-            if (!crf_get_state_trans_feature_id(self, feature, &feature_id)) {
++            if (!crf_get_state_trans_feature_id_len(self, feature, cstring_array_token_length(prev_tag_features, fidx), &feature_id)) {
+                 continue;
+             }
+ 

@@ -1,0 +1,126 @@
+{
+  "check": "offline bytewise comparison of complete original-generated dump JSONL vs accepted CPI output",
+  "started_local": "2026-10-09T21:39:56.781024-07:00",
+  "parser_or_model_invoked": false,
+  "datasets": [
+    {
+      "dataset": "golden-v1",
+      "rows": 12863,
+      "baseline_output_path": "research/suite/results/cache/dump_578a62678e98_02252919fc2a.jsonl",
+      "candidate_output_path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_golden-v1.jsonl",
+      "baseline_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+      "candidate_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+      "bytewise_equal": true
+    },
+    {
+      "dataset": "novel",
+      "rows": 12863,
+      "baseline_output_path": "research/suite/results/cache/dump_578a62678e98_a424c53e75d3.jsonl",
+      "candidate_output_path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_novel.jsonl",
+      "baseline_sha256": "806b8a81603ea9adf3af788334dc9b7d577cbb8a13753dd591b535f4fb896aae",
+      "candidate_sha256": "806b8a81603ea9adf3af788334dc9b7d577cbb8a13753dd591b535f4fb896aae",
+      "bytewise_equal": true
+    },
+    {
+      "dataset": "osm-v3",
+      "rows": 11405,
+      "baseline_output_path": "research/suite/results/cache/dump_578a62678e98_43594f43a39b.jsonl",
+      "candidate_output_path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_osm-v3.jsonl",
+      "baseline_sha256": "e8a48875b12310ef77f41603d0c6e54edc48c25657596407769d8e4deadb051b",
+      "candidate_sha256": "e8a48875b12310ef77f41603d0c6e54edc48c25657596407769d8e4deadb051b",
+      "bytewise_equal": true
+    },
+    {
+      "dataset": "unseen-v4",
+      "rows": 10293,
+      "baseline_output_path": "research/suite/results/cache/dump_578a62678e98_7d6ae0bd3da7.jsonl",
+      "candidate_output_path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_unseen-v4.jsonl",
+      "baseline_sha256": "78e2db753f9d127d3e7dedf0a6b3859029b16f0437b923140f037e9bc58b1f0a",
+      "candidate_sha256": "78e2db753f9d127d3e7dedf0a6b3859029b16f0437b923140f037e9bc58b1f0a",
+      "bytewise_equal": true
+    },
+    {
+      "dataset": "unseen-v5",
+      "rows": 8794,
+      "baseline_output_path": "research/suite/results/cache/dump_578a62678e98_1d2c61777ea3.jsonl",
+      "candidate_output_path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_unseen-v5.jsonl",
+      "baseline_sha256": "288e002d3b5556c542a66f774b9cf93a9c6b45123b2e35a5b16cf3d173e40775",
+      "candidate_sha256": "288e002d3b5556c542a66f774b9cf93a9c6b45123b2e35a5b16cf3d173e40775",
+      "bytewise_equal": true
+    },
+    {
+      "dataset": "unseen-v6",
+      "rows": 9450,
+      "baseline_output_path": "research/suite/results/cache/dump_578a62678e98_5d84824e3e3c.jsonl",
+      "candidate_output_path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_unseen-v6.jsonl",
+      "baseline_sha256": "e494544de8beaa78eb483c2b59e52f0c25c6fdd30825fb81547e8a0b3fb4e7b8",
+      "candidate_sha256": "e494544de8beaa78eb483c2b59e52f0c25c6fdd30825fb81547e8a0b3fb4e7b8",
+      "bytewise_equal": true
+    },
+    {
+      "dataset": "unseen-v7",
+      "rows": 8973,
+      "baseline_output_path": "research/suite/results/cache/dump_578a62678e98_9377e25c9802.jsonl",
+      "candidate_output_path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_unseen-v7.jsonl",
+      "baseline_sha256": "df345ddd9dffa20eced9768c5757a955d0dc655bc0641e2dc0de76fe637116d0",
+      "candidate_sha256": "df345ddd9dffa20eced9768c5757a955d0dc655bc0641e2dc0de76fe637116d0",
+      "bytewise_equal": true
+    },
+    {
+      "dataset": "unseen-v8",
+      "rows": 9981,
+      "baseline_output_path": "research/suite/results/cache/dump_578a62678e98_f2928154d081.jsonl",
+      "candidate_output_path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_unseen-v8.jsonl",
+      "baseline_sha256": "f7a19baf900da2cd9907cbebe7bbc4c6decce9e7b9600bb7bdc21999afb5fdc5",
+      "candidate_sha256": "f7a19baf900da2cd9907cbebe7bbc4c6decce9e7b9600bb7bdc21999afb5fdc5",
+      "bytewise_equal": true
+    },
+    {
+      "dataset": "unseen-v9",
+      "rows": 9480,
+      "baseline_output_path": "research/suite/results/cache/dump_578a62678e98_15ef8f0552f2.jsonl",
+      "candidate_output_path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_unseen-v9.jsonl",
+      "baseline_sha256": "c8f1b109cac1922b3d5eb3619738d8d41d7fa1169d0b3bf2fb8839852ad8d129",
+      "candidate_sha256": "c8f1b109cac1922b3d5eb3619738d8d41d7fa1169d0b3bf2fb8839852ad8d129",
+      "bytewise_equal": true
+    },
+    {
+      "dataset": "unseen-v10",
+      "rows": 8567,
+      "baseline_output_path": "research/suite/results/cache/dump_578a62678e98_75df7735bb21.jsonl",
+      "candidate_output_path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_unseen-v10.jsonl",
+      "baseline_sha256": "1afaf108f3807349441cc2fc60ca2ed3ccdbfb1cead729b929f840d480c2d855",
+      "candidate_sha256": "1afaf108f3807349441cc2fc60ca2ed3ccdbfb1cead729b929f840d480c2d855",
+      "bytewise_equal": true
+    },
+    {
+      "dataset": "unseen-v11",
+      "rows": 7882,
+      "baseline_output_path": "research/suite/results/cache/dump_578a62678e98_3ee15729bf85.jsonl",
+      "candidate_output_path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_unseen-v11.jsonl",
+      "baseline_sha256": "19fe8fcc105465535233e1362146d500ce462b39318caf34dfce74c06c6f2a8d",
+      "candidate_sha256": "19fe8fcc105465535233e1362146d500ce462b39318caf34dfce74c06c6f2a8d",
+      "bytewise_equal": true
+    },
+    {
+      "dataset": "unseen-v12",
+      "rows": 8273,
+      "baseline_output_path": "research/suite/results/cache/dump_578a62678e98_78b80c180873.jsonl",
+      "candidate_output_path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_unseen-v12.jsonl",
+      "baseline_sha256": "8318467ba747fb0d28f0c458e7778e860c542a21a580ca5a0a8eebf41e89477c",
+      "candidate_sha256": "8318467ba747fb0d28f0c458e7778e860c542a21a580ca5a0a8eebf41e89477c",
+      "bytewise_equal": true
+    },
+    {
+      "dataset": "unseen-v13",
+      "rows": 9716,
+      "baseline_output_path": "research/suite/results/cache/dump_578a62678e98_0f5462fadcfe.jsonl",
+      "candidate_output_path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_unseen-v13.jsonl",
+      "baseline_sha256": "8689549e16085748630aef379bca1dcd5be7a012b2c15902c1b07b088dd1e130",
+      "candidate_sha256": "8689549e16085748630aef379bca1dcd5be7a012b2c15902c1b07b088dd1e130",
+      "bytewise_equal": true
+    }
+  ],
+  "result": "13/13 bytewise equal",
+  "ended_local": "2026-10-09T21:39:56.781246-07:00"
+}

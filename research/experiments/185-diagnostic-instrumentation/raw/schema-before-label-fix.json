@@ -1,0 +1,184 @@
+{
+  "families": [
+    "word_vocab",
+    "state_feature",
+    "transition_feature",
+    "phrase_dictionary",
+    "feature_key",
+    "transition_feature_key",
+    "model_row",
+    "direct_id",
+    "address_phrase",
+    "component_phrase",
+    "postal_phrase",
+    "other_trie",
+    "address",
+    "parser_token",
+    "parser_output",
+    "prefix_suffix_flag",
+    "unclassified",
+    "diagnostic_tracker",
+    "parser_alloc",
+    "crf_alloc"
+  ],
+  "metrics": [
+    {
+      "definition": "v1: actual search invocations at instrumented trie key, phrase-token, feature-hash, feature-integer and vocabulary-canonicalization APIs during parsing; excludes setup",
+      "name": "lookup_calls"
+    },
+    {
+      "definition": "v1: instrumented lookup_calls whose exact key was present; phrase-token hit means at least one new phrase emitted",
+      "name": "lookup_hits"
+    },
+    {
+      "definition": "v1: instrumented lookup_calls whose exact key was absent; phrase-token miss means no new phrase emitted",
+      "name": "lookup_misses"
+    },
+    {
+      "definition": "v1: executed instrumented searches repeating the same dictionary pointer, operation semantics, and exact query bytes within one address; excludes first occurrence; null if identity table overflows",
+      "name": "repeated_queries"
+    },
+    {
+      "definition": "v1: logical queries answered without a new search at exact same-address batch deduplication sites; excludes first-use precomputed/direct IDs",
+      "name": "answers_reused"
+    },
+    {
+      "definition": "v1: state and transition feature strings present at the scorer boundary; excludes intermediate copies",
+      "name": "feature_keys_materialized"
+    },
+    {
+      "definition": "v1: bytes in state and transition feature strings at the scorer boundary; excludes NUL terminators and intermediate copies",
+      "name": "feature_key_bytes_materialized"
+    },
+    {
+      "definition": "v1: carried state-word IDs consumed directly during feature generation without rebuilding and searching the feature key",
+      "name": "direct_word_ids_consumed"
+    },
+    {
+      "definition": "v1: direct state-word ID path entered its original string-key fallback during feature generation",
+      "name": "direct_word_fallbacks"
+    },
+    {
+      "definition": "v1: carried state-word IDs offered to feature generation from the context record",
+      "name": "direct_word_ids_offered"
+    },
+    {
+      "definition": "v1: input address bytes passed to parser, excluding line terminators",
+      "name": "input_bytes"
+    },
+    {
+      "definition": "v1: normalized address bytes emitted by the instrumented normalization boundary, excluding NUL",
+      "name": "normalized_bytes"
+    },
+    {
+      "definition": "v1: tokens emitted by the instrumented tokenizer during parsing",
+      "name": "tokens"
+    },
+    {
+      "definition": "v1: response bytes produced at the instrumented response-build boundary; excludes terminator",
+      "name": "output_bytes"
+    },
+    {
+      "definition": "unavailable: no complete count of intermediate lookup key construction sites",
+      "name": "keys_constructed"
+    },
+    {
+      "definition": "unavailable: parser text copy/append sites are not comprehensively instrumented",
+      "name": "bytes_copied"
+    },
+    {
+      "definition": "v1: malloc/calloc/realloc calls made in instrumented address_parser.c and crf.c source bodies during parsing; excludes setup, other translation units, and diagnostic tracker",
+      "name": "allocation_calls"
+    },
+    {
+      "definition": "v1: requested bytes for instrumented address_parser.c and crf.c malloc/calloc/realloc calls; realloc counts full new size, excludes setup and diagnostic tracker",
+      "name": "allocation_requested_bytes"
+    },
+    {
+      "definition": "unavailable: parser buffer capacity growth sites are not comprehensively instrumented",
+      "name": "buffer_growths"
+    },
+    {
+      "definition": "unavailable: lookup probe slots are not counted consistently across trie, hash and integer structures",
+      "name": "hash_probes"
+    },
+    {
+      "definition": "unavailable: phrase-trie edge transitions are not instrumented",
+      "name": "trie_edges"
+    },
+    {
+      "definition": "v1: state and transition feature weight rows visited at instrumented accumulation sites",
+      "name": "model_rows"
+    },
+    {
+      "definition": "v1: state and transition feature weight contributions added at instrumented accumulation sites",
+      "name": "weights_accumulated"
+    },
+    {
+      "definition": "v1: cpi-only EXP_PS_FLAGS prefix/suffix per-token filter checks; unavailable for original and prototype181 builds where this path is not enabled",
+      "name": "filter_checks"
+    },
+    {
+      "definition": "v1: cpi-only EXP_PS_FLAGS prefix/suffix searches skipped by those checks; unavailable for original and prototype181 builds where this path is not enabled",
+      "name": "searches_avoided"
+    },
+    {
+      "definition": "unavailable: use direct_word_fallbacks for the instrumented prototype181 path",
+      "name": "fallback_calls"
+    },
+    {
+      "definition": "v1: exact repeated search calls counted before per-address query identity table overflow; lower bound if overflow occurs",
+      "name": "tracked_repeated_queries"
+    },
+    {
+      "definition": "v1: actual search calls for which exact per-address query identity could not be retained due to table capacity",
+      "name": "untracked_lookup_calls"
+    },
+    {
+      "definition": "v1: no-search answer reuses for which exact per-address query identity could not be retained due to table capacity",
+      "name": "untracked_answer_reuses"
+    },
+    {
+      "definition": "v1: peak bytes of dynamically allocated exact-query and retained-pattern key storage; excludes static arrays and allocator metadata",
+      "name": "diagnostic_tracker_peak_bytes"
+    }
+  ],
+  "repeated_pattern_fields": [
+    "pattern_id",
+    "dictionary_id",
+    "operation",
+    "stages",
+    "stage_occurrences",
+    "families",
+    "address_groups",
+    "queries",
+    "executed",
+    "reused",
+    "definition"
+  ],
+  "repeated_patterns_summary_fields": [
+    "distinct_patterns_total",
+    "observations_total",
+    "retained_patterns",
+    "omitted_patterns",
+    "omitted_observations",
+    "coverage",
+    "truncated",
+    "query_table_overflow_addresses",
+    "untracked_lookup_calls",
+    "untracked_query_events",
+    "summary_definition"
+  ],
+  "schema_version": 1,
+  "stages": [
+    "normalization",
+    "tokenization",
+    "context_fill",
+    "feature_generation",
+    "crf_state_lookup",
+    "crf_transition_lookup",
+    "phrase_search",
+    "response_build",
+    "unclassified"
+  ]
+}

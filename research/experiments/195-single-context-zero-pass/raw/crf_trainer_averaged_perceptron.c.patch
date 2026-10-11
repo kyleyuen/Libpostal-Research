@@ -1,0 +1,11 @@
+--- a/crf_trainer_averaged_perceptron.c
++++ b/crf_trainer_averaged_perceptron.c
+@@ -623,7 +623,7 @@
+     }
+     uint32_array_clear(self->label_ids);
+ 
+-    if (!crf_context_set_num_items(crf_context, num_tokens)) {
++    if (!crf_context_set_num_items_for_reset(crf_context, num_tokens)) {
+         return false;
+     }
+ 

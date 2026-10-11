@@ -1,0 +1,139 @@
+--- sources_base/crf.c	2026-10-05 19:15:56
++++ sources/crf.c	2026-10-05 19:41:38
+@@ -1239,6 +1239,47 @@
+     return crf;
+ }
+ 
++// Experiment 161: teardown-only. Every file-scope value that setup or a parse derives from the loaded model goes back to its initial state, so a
++// later setup (any datadir) starts exactly like the first one. Per-address scratch with no model data (crf_feature_ids, crf_state/trans_ids/tok,
++// the batch arrays) keeps its capacity; it is rebuilt for every address.
++static void crf_statics_reset(void) {
++#ifdef EXP_LEAN_CONTEXT
++    crf_lean_cap_items = 0;                       // the next context is new (CRF_CONTEXT_DEFAULT_NUM_ITEMS rows); a stale capacity skipped its resize
++#endif
++#ifdef EXP_INT_KEYS
++    crf_ik_active = 0;
++    for (int w = 0; w < 2; w++) {
++        free(crf_ik_keys[w]); crf_ik_keys[w] = NULL; crf_ik_n[w] = crf_ik_m[w] = 0;
++        for (int r = 0; r < 6; r++) crf_ik_name[w][r] = -1;
++    }
++#ifdef EXP_ROLE_IDS
++    free(crf_role_ids); crf_role_ids = NULL;      // was leaked and kept answering after its dictionaries were freed
++#endif
++#ifdef EXP_CONST_IDS
++    crf_const_ready = 0; crf_const_ids[0] = crf_const_ids[1] = CRF_NO_FEATURE;
++#endif
++#endif
++#ifdef EXP_BACK_NOCLEAR
++    crf_weights_finite = 0;
++#endif
++}
++#if defined(EXP_FEATURE_DICT) && defined(EXP_NAME_BYTE)
++// The per-call-site name caches of features.c (fa_nb_cache_t) are keyed by dictionary address. Freeing a dictionary would let a later setup's
++// dictionary reuse the address and match a stale cache entry (wrong name id if that setup loads a different model). So the contents are freed and
++// the header is kept, which makes every dictionary address unique for the life of the process.
++// ponytail: leaks 2 headers (~7 KB) per teardown; a cache-invalidation hook in features.c would avoid it but touches the parse path.
++static void crf_dict_retire(feature_dict_t *d) {
++    if (d == NULL) return;
++    for (uint32_t i = 0; i < d->num_names; i++) free(d->names[i].str);
++    free(d->slots);
++#ifdef EXP_INT_KEYS
++    free(d->islots);
++#endif
++    if (d->arena) munmap(d->arena, d->arena_map);
++    memset(d, 0, sizeof *d);
++}
++#endif
++
+ void crf_destroy(crf_t *self) {
+     if (self == NULL) return;
+ #ifdef EXP_ROW_PACK
+@@ -1253,9 +1294,14 @@
+         trie_destroy(self->state_features);
+     }
+ #ifdef EXP_FEATURE_DICT
++#ifdef EXP_NAME_BYTE
++    crf_dict_retire((feature_dict_t *)self->state_dict);
++    crf_dict_retire((feature_dict_t *)self->trans_dict);
++#else
+     fd_destroy((feature_dict_t *)self->state_dict);
+     fd_destroy((feature_dict_t *)self->trans_dict);
+ #endif
++#endif
+ 
+     if (self->weights != NULL) {
+         sparse_matrix_destroy(self->weights);
+@@ -1285,4 +1331,5 @@
+     }
+ 
+     free(self);
++    crf_statics_reset();
+ }
+--- sources_base/address_parser.c	2026-10-05 19:15:56
++++ sources/address_parser.c	2026-10-05 19:42:08
+@@ -237,6 +237,9 @@
+ #ifdef EXP_CP_IDS
+ #include <time.h>
+ static void cp_build(address_parser_t *p);   // experiment 119, defined below
++#endif
++static void ap_statics_reset(void);   // experiment 161, defined at the end of this file
++#ifdef EXP_CP_IDS
+ const void *crf_state_dict_of(crf_t *c);   // crf.c (119)
+ #endif
+ #ifdef EXP_FTT
+@@ -454,6 +457,7 @@
+ #ifdef EXP_VOCAB_DICT
+     if (self == parser) { fd_destroy(vocab_dict); vocab_dict = NULL; }
+ #endif
++    if (self == parser) ap_statics_reset();   // 161
+     if (self->vocab != NULL) {
+         trie_destroy(self->vocab);
+     }
+@@ -1559,7 +1563,7 @@
+     if (cp_tmp == NULL || cp_start == NULL || cp_cnt == NULL || cp_len == NULL) { cp_n = 0; return; }
+     cp_dfs(p->phrases, ROOT_NODE_ID, 0, p);
+     cstring_array_destroy(cp_tmp); cp_tmp = NULL;
+-    if (cp_n == 0) { free(cp_start); free(cp_cnt); free(cp_len); free(cp_pool); return; }
++    if (cp_n == 0) { free(cp_start); free(cp_cnt); free(cp_len); free(cp_pool); cp_start = cp_pool = NULL; cp_cnt = cp_len = NULL; cp_pool_n = cp_pool_m = 0; return; }   // 161: no dangling pointers for teardown
+     uint32_t *sh = realloc(cp_pool, (cp_pool_n ? cp_pool_n : 1) * sizeof *sh); if (sh != NULL) cp_pool = sh;
+     cp_ready = true; clock_gettime(CLOCK_MONOTONIC, &t1);
+     if (getenv("FTT_VERBOSE") != NULL) { size_t usable = 0; for (size_t d = 0; d < cp_n; d++) usable += cp_len[d] != 0;
+@@ -2703,3 +2707,26 @@
+     }
+     parser = NULL;
+ }
++
++// Experiment 161: teardown-only. Every file-scope value that address_parser_load (or a parse) derives from the loaded model goes back to its initial
++// state, so the next setup rebuilds it from the model it loads. Called by address_parser_destroy for the module's parser. Per-address scratch with no
++// model data (ap_wm, ap_vm, ap_pm, rs_*, ftt_slots) keeps its capacity; its contents are rebuilt for every address.
++static void ap_statics_reset(void) {
++#ifdef EXP_CP_IDS
++    free(cp_start); free(cp_cnt); free(cp_len); free(cp_pool);   // cp_pool_m was left at the pre-shrink capacity: re-setup wrote past cp_pool
++    cp_start = cp_pool = NULL; cp_cnt = cp_len = NULL; cp_n = cp_pool_n = cp_pool_m = 0; cp_ready = false; cp_dict = NULL;
++    if (cp_tmp != NULL) { cstring_array_destroy(cp_tmp); cp_tmp = NULL; }
++#endif
++#ifdef EXP_FTT
++    free((void *)trie_ftt_tab); trie_ftt_tab = NULL; trie_ftt_trie = NULL; trie_ftt_slot = NULL; trie_ftt_n = 0;   // the table leaked before
++#endif
++#ifdef EXP_CANON_CONST
++    ap_canon_unknown = ap_canon_unknown_numeric = 0xFFFFFFFFu; ap_canon_const_ready = false;
++#endif
++#ifdef EXP_NORM_TABLE
++    free(nt_table); nt_table = NULL; nt_state = 0;   // rebuilt by the next setup from the transliteration state then current
++#endif
++#ifdef EXP_PC_COMPRESS
++    pc_rows = 0; pc_m = pc_n = 0;                    // pc_bytes/pc_off/pc_on are already cleared in address_parser_destroy
++#endif
++}
+--- sources_base/transliterate.c	2026-10-05 19:15:56
++++ sources/transliterate.c	2026-10-05 19:42:39
+@@ -2094,5 +2094,9 @@
+ void transliteration_module_teardown(void) {
+     transliteration_table_destroy();
+     trans_table = NULL;
++#ifdef EXP_TRANS_SKIP
++    // 161: the skip facts (ts_init) were derived from this table; the next setup re-derives them from its own table.
++    ts_state = 0; ts_n_amp = ts_n_cp = 0; memset(ts_cp_bitmap, 0, sizeof ts_cp_bitmap); ts_prefix = NULL; ts_plen = 0; ts_ok = false; ts_mode = 0;
++#endif
+ }
+ 

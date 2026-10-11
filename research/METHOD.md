@@ -1,5 +1,56 @@
 # Measurement and evidence protocol
 
+## Research diagnostics and final benchmarks (effective 2026-10-06)
+
+New experiments after 183 (184 onward) use operation-based diagnostics to guide
+optimization. The plan and metric definitions are in
+[`plans/MEASUREMENT_PLAN_2026-10-06.md`](plans/MEASUREMENT_PLAN_2026-10-06.md).
+Record actual lookups/repeats/hits/misses, traversal work, text construction and
+byte movement, allocation/growth, model accesses, filters and fallback work as
+applicable to the hypothesis; explicitly mark unavailable or inapplicable metrics.
+Define units, counting locations, coverage and denominators. Compare whole-pipeline
+counts so moving a lookup between stages is not mistaken for eliminating it.
+
+These diagnostics guide architectural decisions; the existing benchmark protocol
+below remains the final acceptance and final-reporting protocol for both the
+original and candidate. It is not restricted to measuring the original alone.
+Byte-identical output, one parsing thread and peak/steady footprint no higher
+than original remain mandatory. An exploratory result may be promising without
+a measured speed gain, but cannot be promoted or reported as an achieved gain.
+
+Use separately identified diagnostic builds and matching unchanged-source
+controls. Compile instrumentation out of final timing/memory builds, verify
+diagnostic output preservation, and collect profiles separately. Retain raw
+counts and normalized rates alongside coverage, added bookkeeping/storage and
+fallback costs; fewer operations alone are not proof of a faster architecture.
+Historical experiments retain their original measurement definitions.
+
+## Architecture research coverage (experiment 186 onward)
+
+Use the [architecture research benchmark](experiments/186-architecture-benchmark/README.md)
+for explanatory traces, per-address work distributions and the original behaviour
+contract. Its [design](experiments/186-architecture-benchmark/DESIGN.md) separates
+behaviour, research diagnostics and uninstrumented acceptance. Counts alone do
+not rank optimal architectures; include work added, data lifetimes, coverage and
+bookkeeping costs. Unknown equivalence/lifetime remains unproven.
+
+A replacement may change internal algorithms, representations, intermediate
+events and arithmetic order; intermediate score-bit identity is not an
+acceptance requirement. Required observable parser outputs, faster execution,
+peak/steady memory no higher than the original and one parsing thread remain
+the gates. Research diagnostics explain architectural differences rather than
+requiring the original internal pipeline to be reproduced.
+
+All thirteen existing datasets are observed. No country/source-specific paths,
+corpus-derived lookup tables, result caches or thresholds are permitted. New
+structural cases and later independent validation get versioned identities.
+Original outputs are the oracle for each case and mutation; do not assume text
+transformations preserve outputs. A finite test corpus cannot certify all possible
+strings or public API states. Document source invariants and exact fallbacks as
+well as tested examples. Public parser options and lifecycle/debug/error behaviour
+are separate coverage from the default string harness. Mark untested surfaces
+explicitly; preserve original references and model identities.
+
 ## Comparison contract
 
 One-thread address parsing with the same model, input bytes, input order and
@@ -11,7 +62,34 @@ The target is 3.5× throughput. Calculate:
 
 `speedup = median(candidate addresses/s) / median(baseline addresses/s)`
 
-`memory difference = max(candidate peak RSS) - max(baseline peak RSS)`
+`memory difference = max(candidate peak footprint) - max(baseline peak footprint)`
+
+This aggregate maximum difference is the historical suite-level metric and must
+remain reported for comparability. Starting with experiment 203, it is not by
+itself sufficient for acceptance: apply the stronger paired gate below as well.
+Older results, including experiment 202's suite-level pass and its Senzing
+per-dataset peak regressions, retain their original measurements and verdicts;
+do not retroactively collapse either into the other.
+
+### Strengthened memory gate (experiment 203 onward)
+
+For every declared dataset and every valid matched capture, compare the
+candidate with the original from the same dataset, session and corresponding
+round/trial. Record paired deltas for both peak physical footprint and maximum
+resident set size (RSS) from the capture; neither metric may be hidden by a
+different dataset's lower value or by the suite-level maximum. A positive
+paired delta is a memory-gate failure when the capture is valid. If measurement
+noise or a capture problem makes the sign uncertain, report the result as
+inconclusive and resolve it with the declared repeat procedure; do not round an
+increase away or change the criterion after seeing results.
+
+Steady-state footprint is a separate check: sample it after the declared warm
+passes using the same mechanism for candidate and original, while recording
+live thread samples. It cannot cancel a peak footprint or RSS regression, and a
+peak pass cannot substitute for steady-state evidence. Report each dataset's
+paired peak footprint and RSS, the separate representative steady-state result,
+and the historical aggregate metric. Incomplete datasets or captures leave
+acceptance incomplete.
 
 For equal work, 3.5× throughput corresponds to approximately 71.4% less elapsed
 time. Report actual measurements even if the target is missed.
@@ -32,19 +110,24 @@ time. Report actual measurements even if the target is missed.
 4. Run exact output comparisons and tests appropriate to the change. A mismatch
    means the behavior-preserving claim fails unless investigated and separately
    authorized as a behavior change. Never overwrite the baseline reference.
-5. Time baseline and candidate sequentially, preferably alternating their order,
+5. For a final benchmark or an explicitly declared timing experiment, time baseline and candidate sequentially, preferably alternating their order,
    on the same machine and session. Use at least three trials each (preferably
    five for final reporting), at least ten seconds per trial, same warm-up and
    corpus. Run no profiler or competing benchmark during timing. Retain all
    results, explain any exclusion, and report spread as well as median.
-6. Measure peak RSS using the same mechanism and compare steady-state memory as
-   well before the final no-increase claim. Current historical evidence is peak
-   RSS only. If allocator/OS noise makes small differences ambiguous, repeat and
-   mark inconclusive rather than round away an increase or change the criterion.
-7. Profile separately to explain measured gains. Inclusive stack shares overlap;
+6. Measure peak and steady-state footprint using the same mechanism. For
+   experiment 203 onward, also compare peak RSS in every matched dataset/run
+   pair under the strengthened gate above. Some early historical experiments
+   have RSS only; preserve their original metric scope. If allocator/OS noise
+   makes small differences ambiguous, repeat and mark inconclusive rather than
+   round away an increase or change the criterion.
+7. Collect the declared operation diagnostics to test the hypothesis, with raw
+   totals and per-address/per-token rates, a matching control and an ablation when
+   attributing a combined change. Profile separately to explain measured gains. Inclusive stack shares overlap;
    they are estimates, not exact cycle counts or proof of cache misses.
-8. Update the experiment ledger, activity log and professor report with evidence
-   links. Keep incremental gains distinct from the combined final improvement.
+8. Update the experiment ledger and activity log with evidence links. Update the
+   final report when verified results change; label diagnostic findings and
+   projections separately from achieved improvement. Keep incremental gains distinct from the combined final improvement.
 
 ## Final presentation checklist
 

@@ -1,0 +1,46 @@
+{
+  "argv": [
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v7-osm-unseen/unseen7.txt"
+  ],
+  "cwd": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "start": "2026-10-07T21:45:09.474844-07:00",
+  "env_overrides": {},
+  "timing_use": "command provenance only; not a performance measurement",
+  "monitored_argv": [
+    "/usr/bin/time",
+    "-l",
+    "-o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/mimalloc-all13-v2/unseen-v7/original-000/time-l.txt",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v7-osm-unseen/unseen7.txt"
+  ],
+  "resource_log": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/mimalloc-all13-v2/unseen-v7/original-000/time-l.txt",
+  "exit": 0,
+  "end": "2026-10-07T21:45:12.552376-07:00",
+  "duration_seconds": 3.0775680830702186,
+  "thread_sample_count": 14,
+  "thread_counts_observed": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "resource_summary": {
+    "peak_rss_bytes": 2611281920,
+    "peak_rss_reason": null,
+    "peak_footprint_bytes": 2611022056,
+    "peak_footprint_reason": null,
+    "raw_time_log": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/mimalloc-all13-v2/unseen-v7/original-000/time-l.txt"
+  }
+}

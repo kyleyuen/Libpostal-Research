@@ -1,0 +1,33 @@
+{
+ "argv": [
+  "research/suite/run_suite.py",
+  "--config",
+  "research/experiments/182-benchmark-suite-prep/run-suite-3way-181.json",
+  "--include-reserved",
+  "--run-id",
+  "183-architecture-full-20261006",
+  "--stages",
+  "timing,memory,threads,report"
+ ],
+ "start": "2026-10-06T11:39:59-0700",
+ "variants": [
+  "original-000",
+  "cpi",
+  "release-candidate"
+ ],
+ "datasets": [
+  "golden-v1",
+  "novel",
+  "osm-v3",
+  "unseen-v4",
+  "unseen-v5",
+  "unseen-v6",
+  "unseen-v7",
+  "unseen-v8",
+  "unseen-v9",
+  "unseen-v10",
+  "unseen-v11",
+  "unseen-v12",
+  "unseen-v13"
+ ]
+}

@@ -1,0 +1,80 @@
+{
+  "experiment_id": 200,
+  "name": "fused ASCII normalization/tokenization pipeline",
+  "hypothesis": "Drive the unchanged scanner once over conservative ASCII letters/digits/spaces, lower/copy scanner-consumed bytes and record spans in the same traversal. Unsupported bytes or scanner behavior discard partial work and use original normalization plus tokenization.",
+  "base_source": "experiment 119 source snapshot (commit 181737d30977adc9d287e3f7a1cfafd7277525d4)",
+  "source_tree": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/sources-v2",
+  "source_manifest_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/source-v2-manifest.sha256",
+  "source_manifest_sha256": "061defea0b177973ee7cb8911a78e6270d4cf761f492f902d319eea0553c6a8d",
+  "patch_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/source-v2.patch",
+  "patch_sha256": "c44337db4b324ac54915de7c9d6b0ba2f4ff39ae1879b7069d62369b2aa9090f",
+  "builds": {
+    "release": {
+      "library": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/artifacts/release-v2/libpostal.a",
+      "dumper": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/artifacts/release-v2/dump_outputs",
+      "flags": "clang; experiment 119/CPI switch set plus -DEXP_FUSED_ASCII_PIPE; library -O2 -flto; scanner -O0; link -flto; no PGO; no EXP_CERT_F32_VITERBI or EXP_TOKEN_SLICES",
+      "command_log": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/build-v2.command",
+      "binary_sha256": "f07af993a9ed278903514f4097fa59e4bdac71256acae492054d787e933cfe42",
+      "dumper_sha256": "27423c4fffc35e09ba2b07244336e686e6786f7caf004d11d8744f43bd5b2896",
+      "build_stdout": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/build-v2.stdout",
+      "build_stderr": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/build-v2.stderr",
+      "build_exit_code": 0,
+      "start": "2026-10-07 19:47:07 PDT -0700",
+      "end": "2026-10-07 19:47:14 PDT -0700",
+      "scanner_object_reused_from": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/198-certified-viterbi/artifacts/release-v3/obj/scanner.o",
+      "scanner_object_sha256": "06cfaf25be695731afa6e0b63a9f773a7d2a6e52c7315325767aeef6a442a381",
+      "scanner_source_sha256": "3c985905ac4c0b5f05de8515e9851c7ea927e832f4dfbddf92ad5f3fb93902a8",
+      "scanner_compile_flags": "clang -O0; exact unchanged generated scanner object reuse",
+      "compiler_lock": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/WORKLOAD.lock"
+    },
+    "diagnostic": {
+      "library": null,
+      "dumper": null,
+      "flags": null,
+      "command_log": null,
+      "binary_sha256": null
+    }
+  },
+  "metrics": {
+    "supported": [
+      "candidate source implementation",
+      "release build exit code",
+      "release library/dumper SHA-256",
+      "model-free scanner span/type equivalence"
+    ],
+    "unavailable": {
+      "exact_output": "Parser not invoked; benchmark worker owns golden-v1 screen.",
+      "speed": "No parser/model benchmark run by implementation worker.",
+      "memory": "No parser/model benchmark run by implementation worker.",
+      "eligible_input_coverage": "No corpus/model workload run.",
+      "diagnostic_counters": "No diagnostic derivative built."
+    }
+  },
+  "model_manifest_sha256": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad",
+  "build_exit_code": 0,
+  "parser_invoked": false,
+  "implementation_kind": "runnable structural implementation; exactness/performance pending benchmark worker",
+  "artifacts_sha256": {
+    "libpostal.a": "f07af993a9ed278903514f4097fa59e4bdac71256acae492054d787e933cfe42",
+    "dump_outputs": "27423c4fffc35e09ba2b07244336e686e6786f7caf004d11d8744f43bd5b2896",
+    "bench_ext": "f0859637f06e98e60e49b0bfe1587da2fda0a85ffb507266948a76dbe3d89f29",
+    "fuzz_pipeline": "815231bba99bbda8569b06e55e70072591e70841e5b3da0e243bade41428a90e"
+  },
+  "source_versions": {
+    "v1_source_manifest_sha256": "5931eb4479db88cbc6e1342700581b93c0d3616f8aca5cc8cf62a42c7c3c568d",
+    "v1_patch_sha256": "aaedd8ac5b6bad78dfa7383e8e87b07dd8ed9f5493062647e689845d7b7cff59",
+    "v1_handoff": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/handoff-v1.json",
+    "active_v2_source_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/sources-v2"
+  },
+  "model_free_helper": {
+    "source": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/tools/model_free_scanner_test.py",
+    "generated_harness": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c",
+    "harness_sha256": "167c6f1d6947b24add15460fd94439b47cb7c18884585cdac2b026840f0d2e79",
+    "test_binary": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test-v2",
+    "test_sha256": "d8d299358d2bf93ce255400f3b41e87bc91cf95fe7457bb96220f098ce79c359",
+    "result_exit_code": 0,
+    "stdout": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/scanner-test-v2.stdout",
+    "stderr": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/scanner-test-v2.stderr",
+    "scope": "exhaustive reduced alphabet lengths 1..6; targeted case-sensitive semantic examples; 4096-byte stress; unsupported inputs verify fallback clears state; no parser/model calls"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "argv": [
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v2/calibration-small-v1/input.txt"
+  ],
+  "cwd": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "start": "2026-10-09T01:35:23.691219-07:00",
+  "env_overrides": {},
+  "timing_use": "command provenance only; not a performance measurement",
+  "monitored_argv": [
+    "/usr/bin/time",
+    "-l",
+    "-o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v2/calibration-small-v1/original/time-l.txt",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v2/calibration-small-v1/input.txt"
+  ],
+  "resource_log": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v2/calibration-small-v1/original/time-l.txt",
+  "exit": 0,
+  "end": "2026-10-09T01:35:27.016015-07:00",
+  "duration_seconds": 3.324823417002335,
+  "thread_sample_count": 15,
+  "thread_counts_observed": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "resource_summary": {
+    "peak_rss_bytes": 1991262208,
+    "peak_rss_reason": null,
+    "peak_footprint_bytes": 2352941072,
+    "peak_footprint_reason": null,
+    "raw_time_log": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v2/calibration-small-v1/original/time-l.txt"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "suite_registry": "research/suite/suite.json",
+  "baseline_library": "research/experiments/000-baseline/artifacts/libpostal.a",
+  "baseline_dump": "research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+  "datasets": [
+    "golden-v1",
+    "novel",
+    "osm-v3",
+    "unseen-v4",
+    "unseen-v5",
+    "unseen-v6",
+    "unseen-v7",
+    "unseen-v8",
+    "unseen-v9",
+    "unseen-v10",
+    "unseen-v11",
+    "unseen-v12",
+    "unseen-v13"
+  ],
+  "variants": [
+    {
+      "name": "original",
+      "diagnostic_dump": "research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1540-stable-labels/original/diagnostic/dump_outputs",
+      "release_dump": "research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1540-stable-labels/original/release/dump_outputs",
+      "diagnostic_library": "research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1540-stable-labels/original/diagnostic/libpostal.a",
+      "release_library": "research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1540-stable-labels/original/release/libpostal.a",
+      "provenance": "research/experiments/185-diagnostic-instrumentation/raw/build-20261007-1540-stable-labels/provenance/original.txt"
+    },
+    {
+      "name": "cpi",
+      "diagnostic_dump": "research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1540-stable-labels/cpi/diagnostic/dump_outputs",
+      "release_dump": "research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1540-stable-labels/cpi/release/dump_outputs",
+      "diagnostic_library": "research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1540-stable-labels/cpi/diagnostic/libpostal.a",
+      "release_library": "research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1540-stable-labels/cpi/release/libpostal.a",
+      "provenance": "research/experiments/185-diagnostic-instrumentation/raw/build-20261007-1540-stable-labels/provenance/cpi.txt"
+    },
+    {
+      "name": "prototype181",
+      "diagnostic_dump": "research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1540-stable-labels/prototype181/diagnostic/dump_outputs",
+      "release_dump": "research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1540-stable-labels/prototype181/release/dump_outputs",
+      "diagnostic_library": "research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1540-stable-labels/prototype181/diagnostic/libpostal.a",
+      "release_library": "research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1540-stable-labels/prototype181/release/libpostal.a",
+      "provenance": "research/experiments/185-diagnostic-instrumentation/raw/build-20261007-1540-stable-labels/provenance/prototype181.txt"
+    }
+  ],
+  "metrics": {
+    "lookup_calls": {
+      "definition": "v1: actual search invocations at instrumented trie key, phrase-token, feature-hash, feature-integer and vocabulary-canonicalization APIs during parsing; excludes setup",
+      "unit": "count"
+    },
+    "lookup_hits": {
+      "definition": "v1: instrumented lookup_calls whose exact key was present; phrase-token hit means at least one new phrase emitted",
+      "unit": "count"
+    },
+    "lookup_misses": {
+      "definition": "v1: instrumented lookup_calls whose exact key was absent; phrase-token miss means no new phrase emitted",
+      "unit": "count"
+    },
+    "repeated_queries": {
+      "definition": "v1: executed instrumented searches repeating the same dictionary pointer, operation semantics, and exact query bytes within one address; excludes first occurrence; null if identity table overflows",
+      "unit": "count"
+    },
+    "answers_reused": {
+      "definition": "v1: logical queries answered without a new search at exact same-address batch deduplication sites; excludes first-use precomputed/direct IDs",
+      "unit": "count"
+    },
+    "feature_keys_materialized": {
+      "definition": "v1: state and transition feature strings present at the scorer boundary; excludes intermediate copies",
+      "unit": "count"
+    },
+    "feature_key_bytes_materialized": {
+      "definition": "v1: bytes in state and transition feature strings at the scorer boundary; excludes NUL terminators and intermediate copies",
+      "unit": "bytes"
+    },
+    "direct_word_ids_consumed": {
+      "definition": "v1: carried state-word IDs consumed directly during feature generation without rebuilding and searching the feature key",
+      "unit": "count"
+    },
+    "direct_word_fallbacks": {
+      "definition": "v1: direct state-word ID path entered its original string-key fallback during feature generation",
+      "unit": "count"
+    },
+    "direct_word_ids_offered": {
+      "definition": "v1: carried state-word IDs offered to feature generation from the context record",
+      "unit": "count"
+    },
+    "input_bytes": {
+      "definition": "v1: input address bytes passed to parser, excluding line terminators",
+      "unit": "bytes"
+    },
+    "normalized_bytes": {
+      "definition": "v1: normalized address bytes emitted by the instrumented normalization boundary, excluding NUL",
+      "unit": "bytes"
+    },
+    "tokens": {
+      "definition": "v1: tokens emitted by the instrumented tokenizer during parsing",
+      "unit": "count"
+    },
+    "output_bytes": {
+      "definition": "v1: response bytes produced at the instrumented response-build boundary; excludes terminator",
+      "unit": "bytes"
+    },
+    "keys_constructed": {
+      "definition": "unavailable: no complete count of intermediate lookup key construction sites",
+      "unit": "count"
+    },
+    "bytes_copied": {
+      "definition": "unavailable: parser text copy/append sites are not comprehensively instrumented",
+      "unit": "count"
+    },
+    "allocation_calls": {
+      "definition": "v1: malloc/calloc/realloc calls made in instrumented address_parser.c and crf.c source bodies during parsing; excludes setup, other translation units, and diagnostic tracker",
+      "unit": "count"
+    },
+    "allocation_requested_bytes": {
+      "definition": "v1: requested bytes for instrumented address_parser.c and crf.c malloc/calloc/realloc calls; realloc counts full new size, excludes setup and diagnostic tracker",
+      "unit": "bytes"
+    },
+    "buffer_growths": {
+      "definition": "unavailable: parser buffer capacity growth sites are not comprehensively instrumented",
+      "unit": "count"
+    },
+    "hash_probes": {
+      "definition": "unavailable: lookup probe slots are not counted consistently across trie, hash and integer structures",
+      "unit": "count"
+    },
+    "trie_edges": {
+      "definition": "unavailable: phrase-trie edge transitions are not instrumented",
+      "unit": "count"
+    },
+    "model_rows": {
+      "definition": "v1: state and transition feature weight rows visited at instrumented accumulation sites",
+      "unit": "count"
+    },
+    "weights_accumulated": {
+      "definition": "v1: state and transition feature weight contributions added at instrumented accumulation sites",
+      "unit": "count"
+    },
+    "filter_checks": {
+      "definition": "v1: cpi-only EXP_PS_FLAGS prefix/suffix per-token filter checks; unavailable for original and prototype181 builds where this path is not enabled",
+      "unit": "count"
+    },
+    "searches_avoided": {
+      "definition": "v1: cpi-only EXP_PS_FLAGS prefix/suffix searches skipped by those checks; unavailable for original and prototype181 builds where this path is not enabled",
+      "unit": "count"
+    },
+    "fallback_calls": {
+      "definition": "unavailable: use direct_word_fallbacks for the instrumented prototype181 path",
+      "unit": "count"
+    },
+    "tracked_repeated_queries": {
+      "definition": "v1: exact repeated search calls counted before per-address query identity table overflow; lower bound if overflow occurs",
+      "unit": "count"
+    },
+    "untracked_lookup_calls": {
+      "definition": "v1: actual search calls for which exact per-address query identity could not be retained due to table capacity",
+      "unit": "count"
+    },
+    "untracked_answer_reuses": {
+      "definition": "v1: no-search answer reuses for which exact per-address query identity could not be retained due to table capacity",
+      "unit": "count"
+    },
+    "diagnostic_tracker_peak_bytes": {
+      "definition": "v1: peak bytes of dynamically allocated exact-query and retained-pattern key storage; excludes static arrays and allocator metadata",
+      "unit": "bytes"
+    }
+  },
+  "breakdown_dimensions": {
+    "by_stage": [
+      "normalization",
+      "tokenization",
+      "context_fill",
+      "feature_generation",
+      "crf_state_lookup",
+      "crf_transition_lookup",
+      "phrase_search",
+      "response_build",
+      "unclassified"
+    ],
+    "by_family": [
+      "word_vocab",
+      "state_feature",
+      "transition_feature",
+      "phrase_dictionary",
+      "feature_key",
+      "transition_feature_key",
+      "model_row",
+      "direct_id",
+      "address_phrase",
+      "component_phrase",
+      "postal_phrase",
+      "other_trie",
+      "address",
+      "parser_token",
+      "parser_output",
+      "prefix_suffix_flag",
+      "unclassified",
+      "diagnostic_tracker",
+      "parser_alloc",
+      "crf_alloc"
+    ]
+  },
+  "breakdown_complete": {
+    "by_stage": [
+      "lookup_calls",
+      "lookup_hits",
+      "lookup_misses",
+      "repeated_queries"
+    ],
+    "by_family": []
+  },
+  "require_repeat_pattern_summary": true,
+  "build_id": "20261007-1540-stable-labels",
+  "build_record_dir": "research/experiments/185-diagnostic-instrumentation/raw/build-20261007-1540-stable-labels",
+  "build_artifacts_dir": "research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1540-stable-labels",
+  "schema_source": "research/experiments/185-diagnostic-instrumentation/diag-schema.json",
+  "config_generator": "research/experiments/185-diagnostic-instrumentation/tools/generate_config.py",
+  "repeated_pattern_aggregation_note": "Pattern rows aggregate semantic family, operation, and exact key bytes across addresses; per-address repeated-query identity remains dictionary-pointer exact. Distinct same-family dictionary instances can therefore share an exported row.",
+  "runtime_interpretation": "Diagnostic and release process durations are provenance and diagnostic-overhead evidence only; they are not product-speed measurements."
+}

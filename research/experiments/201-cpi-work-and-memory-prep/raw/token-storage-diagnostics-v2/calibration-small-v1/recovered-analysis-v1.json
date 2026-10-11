@@ -1,0 +1,161 @@
+{
+  "status": "pass",
+  "recovered_analysis": true,
+  "original_wrapper_failure": "calibration driver raised AttributeError after all parser roles finished; parser results retained and not rerun",
+  "roles": {
+    "original": {
+      "exit": 0,
+      "output_rows": 4,
+      "output_sha256": "bdaf5a5bf825eec4f3c5f0bf57e9c1a70fb21f498ae1d113c6b4b0aaa9cdb2e7",
+      "identical_to_original": true,
+      "threads": [
+        1
+      ],
+      "start": "2026-10-09T01:35:23.691219-07:00",
+      "end": "2026-10-09T01:35:27.016015-07:00"
+    },
+    "cpi-control-release": {
+      "exit": 0,
+      "output_rows": 4,
+      "output_sha256": "bdaf5a5bf825eec4f3c5f0bf57e9c1a70fb21f498ae1d113c6b4b0aaa9cdb2e7",
+      "identical_to_original": true,
+      "threads": [
+        1
+      ],
+      "start": "2026-10-09T01:35:27.238569-07:00",
+      "end": "2026-10-09T01:35:39.795224-07:00"
+    },
+    "199-release": {
+      "exit": 0,
+      "output_rows": 4,
+      "output_sha256": "bdaf5a5bf825eec4f3c5f0bf57e9c1a70fb21f498ae1d113c6b4b0aaa9cdb2e7",
+      "identical_to_original": true,
+      "threads": [
+        1
+      ],
+      "start": "2026-10-09T01:35:40.010248-07:00",
+      "end": "2026-10-09T01:35:52.132455-07:00"
+    },
+    "cpi-control-diagnostic": {
+      "exit": 0,
+      "output_rows": 4,
+      "output_sha256": "bdaf5a5bf825eec4f3c5f0bf57e9c1a70fb21f498ae1d113c6b4b0aaa9cdb2e7",
+      "identical_to_original": true,
+      "threads": [
+        1
+      ],
+      "start": "2026-10-09T01:35:52.351950-07:00",
+      "end": "2026-10-09T01:36:06.260893-07:00"
+    },
+    "199-diagnostic": {
+      "exit": 0,
+      "output_rows": 4,
+      "output_sha256": "bdaf5a5bf825eec4f3c5f0bf57e9c1a70fb21f498ae1d113c6b4b0aaa9cdb2e7",
+      "identical_to_original": true,
+      "threads": [
+        1
+      ],
+      "start": "2026-10-09T01:36:06.475285-07:00",
+      "end": "2026-10-09T01:36:20.141106-07:00"
+    }
+  },
+  "metric_checks": {
+    "candidate_view_plus_copy_records_equal_control_copy_records": true,
+    "candidate_view_plus_copy_payload_equal_control_copy_payload": true,
+    "candidate_view_plus_copy_nul_writes_equal_control_copy_nul_writes": true,
+    "eligible_opportunity_equal_between_modes": true,
+    "unsafe_opportunity_equal_between_modes": true,
+    "candidate_actual_eligible_matches_opportunity": true,
+    "candidate_actual_fallback_matches_opportunity": true,
+    "normalized_copy_calls_equal": true,
+    "normalized_copy_bytes_equal": true,
+    "normalized_copy_nul_writes_equal": true
+  },
+  "metric_values": {
+    "token_copy_calls": {
+      "control": 14,
+      "candidate": 0
+    },
+    "token_copy_bytes": {
+      "control": 61,
+      "candidate": 0
+    },
+    "token_copy_nul_writes": {
+      "control": 14,
+      "candidate": 0
+    },
+    "token_view_records": {
+      "control": 0,
+      "candidate": 14
+    },
+    "token_view_bytes": {
+      "control": 0,
+      "candidate": 61
+    },
+    "token_view_nul_writes": {
+      "control": 0,
+      "candidate": 14
+    },
+    "token_slice_opportunity_eligible_addresses": {
+      "control": 4,
+      "candidate": 4
+    },
+    "token_slice_opportunity_unsafe_fallbacks": {
+      "control": 0,
+      "candidate": 0
+    },
+    "token_slice_eligible_addresses": {
+      "control": 0,
+      "candidate": 4
+    },
+    "token_slice_unsafe_fallbacks": {
+      "control": 0,
+      "candidate": 0
+    },
+    "normalized_copy_calls": {
+      "control": 4,
+      "candidate": 4
+    },
+    "normalized_copy_bytes": {
+      "control": 74,
+      "candidate": 74
+    },
+    "normalized_copy_nul_writes": {
+      "control": 4,
+      "candidate": 4
+    },
+    "token_offset_growth_events": {
+      "control": 0,
+      "candidate": 0
+    },
+    "token_record_growth_events": {
+      "control": 0,
+      "candidate": 0
+    },
+    "char_buffer_growth_events": {
+      "control": 5,
+      "candidate": 2
+    },
+    "char_buffer_requested_bytes": {
+      "control": 192,
+      "candidate": 80
+    },
+    "token_payload_capacity_peak_bytes": {
+      "control": 64,
+      "candidate": 8
+    },
+    "token_offset_capacity_peak_entries": {
+      "control": 8,
+      "candidate": 8
+    },
+    "token_record_capacity_peak_entries": {
+      "control": 8,
+      "candidate": 8
+    },
+    "normalized_text_capacity_peak_bytes": {
+      "control": 64,
+      "candidate": 64
+    }
+  },
+  "created_utc": "2026-10-09T08:37:09.215590+00:00"
+}

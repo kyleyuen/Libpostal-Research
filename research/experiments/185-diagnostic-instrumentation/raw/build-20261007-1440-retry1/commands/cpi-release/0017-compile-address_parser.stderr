@@ -1,0 +1,203 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.h:52:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/averaged_perceptron.h:27:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:498:17: warning: unused variable 'ps' [-Wunused-variable]
+  498 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:498:45: warning: unused variable 'pf' [-Wunused-variable]
+  498 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                             ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:498:74: warning: unused variable 'po' [-Wunused-variable]
+  498 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                                                          ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:507:10: warning: unused variable 'has_key' [-Wunused-variable]
+  507 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:515:85: warning: incompatible pointer types passing 'phrase_array *' to parameter of type 'phrase_array **'; take the address with & [-Wincompatible-pointer-types]
+  515 |     bool found = search_address_dictionaries_tokens_with_phrases(str, tokens, NULL, out);
+      |                                                                                     ^~~
+      |                                                                                     &
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_dictionary.h:64:113: note: passing argument to parameter 'phrases' here
+   64 | bool search_address_dictionaries_tokens_with_phrases(char *str, token_array *tokens, char *lang, phrase_array **phrases);
+      |                                                                                                                 ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:513:17: warning: unused variable 'ps' [-Wunused-variable]
+  513 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:513:45: warning: unused variable 'pf' [-Wunused-variable]
+  513 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                             ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:513:74: warning: unused variable 'po' [-Wunused-variable]
+  513 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                                                          ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:519:17: warning: unused variable 'ps' [-Wunused-variable]
+  519 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:519:45: warning: unused variable 'pf' [-Wunused-variable]
+  519 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                             ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:519:74: warning: unused variable 'po' [-Wunused-variable]
+  519 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                                                          ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:525:17: warning: unused variable 'ps' [-Wunused-variable]
+  525 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:525:45: warning: unused variable 'pf' [-Wunused-variable]
+  525 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                             ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:525:74: warning: unused variable 'po' [-Wunused-variable]
+  525 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                                                          ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:533:69: warning: incompatible pointer types passing 'phrase_array *' to parameter of type 'phrase_array **'; take the address with & [-Wincompatible-pointer-types]
+  533 |     bool found = trie_search_tokens_with_phrases(trie, str, tokens, out);
+      |                                                                     ^~~
+      |                                                                     &
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/trie_search.h:36:100: note: passing argument to parameter 'phrases' here
+   36 | bool trie_search_tokens_with_phrases(trie_t *self, char *text, token_array *tokens, phrase_array **phrases);
+      |                                                                                                    ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:531:17: warning: unused variable 'ps' [-Wunused-variable]
+  531 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:531:45: warning: unused variable 'pf' [-Wunused-variable]
+  531 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                             ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:531:74: warning: unused variable 'po' [-Wunused-variable]
+  531 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                                                          ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1097:95: warning: incompatible pointer types passing 'phrase_array **' to parameter of type 'phrase_array *'; remove & [-Wincompatible-pointer-types]
+ 1097 |     bool have_address_phrases = diag_address_phrase_search(normalized_str, normalized_tokens, &address_dictionary_phrases);
+      |                                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:512:93: note: passing argument to parameter 'out' here
+  512 | static inline bool diag_address_phrase_search(char *str, token_array *tokens, phrase_array *out) {
+      |                                                                                             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1199:124: warning: incompatible pointer types passing 'phrase_array **' to parameter of type 'phrase_array *'; remove & [-Wincompatible-pointer-types]
+ 1199 |     bool have_component_phrases = diag_model_phrase_search(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases, "component_phrase");
+      |                                                                                                                            ^~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:530:105: note: passing argument to parameter 'out' here
+  530 | static inline bool diag_model_phrase_search(trie_t *trie, char *str, token_array *tokens, phrase_array *out, const char *family) {
+      |                                                                                                         ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1220:131: warning: incompatible pointer types passing 'phrase_array **' to parameter of type 'phrase_array *'; remove & [-Wincompatible-pointer-types]
+ 1220 |     bool have_postal_code_phrases = diag_model_phrase_search(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases, "postal_phrase");
+      |                                                                                                                                   ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:530:105: note: passing argument to parameter 'out' here
+  530 | static inline bool diag_model_phrase_search(trie_t *trie, char *str, token_array *tokens, phrase_array *out, const char *family) {
+      |                                                                                                         ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1002:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1002 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1097:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+ 1097 |     bool have_address_phrases = diag_address_phrase_search(normalized_str, normalized_tokens, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1199:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+ 1199 |     bool have_component_phrases = diag_model_phrase_search(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases, "component_phrase");
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1220:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+ 1220 |     bool have_postal_code_phrases = diag_model_phrase_search(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases, "postal_phrase");
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1336:13: warning: unused variable 'token' [-Wunused-variable]
+ 1336 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1425:13: warning: unused variable 'membership' [-Wunused-variable]
+ 1425 |     int64_t membership;
+      |             ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1453:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1453 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1952:13: error: use of undeclared identifier 'APF'
+ 1952 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_STREET, "street", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1952:100: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1952 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_STREET, "street", phrase_string, phrase_string_len);
+      |                                                                                                    ^~~~~~~~~~~~~~~~~
+      |                                                                                                    phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1902:11: note: 'phrase_string' declared here
+ 1902 |     char *phrase_string = NULL;
+      |           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1953:13: error: use of undeclared identifier 'APF'
+ 1953 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_NAME, "name", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1953:96: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1953 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_NAME, "name", phrase_string, phrase_string_len);
+      |                                                                                                ^~~~~~~~~~~~~~~~~
+      |                                                                                                phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1902:11: note: 'phrase_string' declared here
+ 1902 |     char *phrase_string = NULL;
+      |           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1954:13: error: use of undeclared identifier 'APF'
+ 1954 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_CATEGORY, "category", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1954:104: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1954 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_CATEGORY, "category", phrase_string, phrase_string_len);
+      |                                                                                                        ^~~~~~~~~~~~~~~~~
+      |                                                                                                        phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1902:11: note: 'phrase_string' declared here
+ 1902 |     char *phrase_string = NULL;
+      |           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1955:13: error: use of undeclared identifier 'APF'
+ 1955 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_UNIT, "unit", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1955:96: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1955 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_UNIT, "unit", phrase_string, phrase_string_len);
+      |                                                                                                ^~~~~~~~~~~~~~~~~
+      |                                                                                                phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1902:11: note: 'phrase_string' declared here
+ 1902 |     char *phrase_string = NULL;
+      |           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1956:13: error: use of undeclared identifier 'APF'
+ 1956 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_PO_BOX, "po_box", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1956:100: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1956 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_PO_BOX, "po_box", phrase_string, phrase_string_len);
+      |                                                                                                    ^~~~~~~~~~~~~~~~~
+      |                                                                                                    phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1902:11: note: 'phrase_string' declared here
+ 1902 |     char *phrase_string = NULL;
+      |           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1957:13: error: use of undeclared identifier 'APF'
+ 1957 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_LEVEL, "level", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1957:98: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1957 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_LEVEL, "level", phrase_string, phrase_string_len);
+      |                                                                                                  ^~~~~~~~~~~~~~~~~
+      |                                                                                                  phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1902:11: note: 'phrase_string' declared here
+ 1902 |     char *phrase_string = NULL;
+      |           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1958:13: error: use of undeclared identifier 'APF'
+ 1958 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_ENTRANCE, "entrance", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1958:104: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1958 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_ENTRANCE, "entrance", phrase_string, phrase_string_len);
+      |                                                                                                        ^~~~~~~~~~~~~~~~~
+      |                                                                                                        phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1902:11: note: 'phrase_string' declared here
+ 1902 |     char *phrase_string = NULL;
+      |           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1959:13: error: use of undeclared identifier 'APF'
+ 1959 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_STAIRCASE, "staircase", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1959:106: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1959 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_STAIRCASE, "staircase", phrase_string, phrase_string_len);
+      |                                                                                                          ^~~~~~~~~~~~~~~~~
+      |                                                                                                          phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1902:11: note: 'phrase_string' declared here
+ 1902 |     char *phrase_string = NULL;
+      |           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1960:13: error: use of undeclared identifier 'APF'
+ 1960 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_HOUSE_NUMBER, "house_number", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1960:112: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1960 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_HOUSE_NUMBER, "house_number", phrase_string, phrase_string_len);
+      |                                                                                                                ^~~~~~~~~~~~~~~~~
+      |                                                                                                                phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1902:11: note: 'phrase_string' declared here
+ 1902 |     char *phrase_string = NULL;
+      |           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/address_parser.c:1961:13: error: use of undeclared identifier 'APF'
+ 1961 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_POSTAL_CODE, "postal_code", phrase_string, phrase_string_len);
+      |             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+29 warnings and 20 errors generated.

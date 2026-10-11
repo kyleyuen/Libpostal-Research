@@ -1,0 +1,20 @@
+--- a/address_parser.c
++++ b/address_parser.c
+@@ -402,6 +402,7 @@
+    back to the original context arrays. */
+ extern bool crf_state_word_id(crf_t *, const char *, uint32_t *);
+ extern void crf_direct_state_word(cstring_array *, uint32_t, const char *);
++extern void crf_direct_state_word_missing(cstring_array *);
+ extern void crf_direct_state_word_fallback(void);
+ typedef struct { char *word; int64_t address, component, postal; uint32_t freq, word_id; } ap_front_t;
+ static ap_front_t *ap_front = NULL;
+@@ -1499,7 +1500,8 @@
+ 
+         if (word_freq > 0) {
+             // The individual word
+-            if (front && front->word_id != UINT32_MAX) crf_direct_state_word(features, front->word_id, word); else { crf_direct_state_word_fallback(); feature_array_add(features, 2, "word", word); }
++            /* UINT32_MAX-1 is the CRF helper's checked, completed-miss marker. */
++            if (front && front->word_id < UINT32_MAX - 1u) crf_direct_state_word(features, front->word_id, word); else if (front && front->word_id == UINT32_MAX - 1u) { crf_direct_state_word_missing(features); feature_array_add(features, 2, "word", word); } else { crf_direct_state_word_fallback(); feature_array_add(features, 2, "word", word); }
+         } else {
+             log_debug("word not in vocab: %s\n", word);
+ 

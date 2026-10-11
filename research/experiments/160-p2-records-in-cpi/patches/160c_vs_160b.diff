@@ -1,0 +1,215 @@
+diff -ruN sources/address_parser.c sources_c/address_parser.c
+--- sources/address_parser.c	2026-10-05 18:04:14
++++ sources_c/address_parser.c	2026-10-05 19:21:32
+@@ -526,7 +526,11 @@
+ static inline uint32_t word_vocab_frequency(address_parser_t *parser, char *word) {   
+     uint32_t count = 0;
+ #ifdef EXP_RECORDS
++#ifdef EXP_RECORDS_DIRECT
++    if (rec_ready()) { if (rec_direct_on) { const uint8_t *r = rec_find_memo('U', word, strlen(word)); return r ? rec_freq(r) : 0; } return rec_vocab_freq(word, strlen(word)); }   // 160c: memo only inside the accumulate pass
++#else
+     if (rec_ready()) return rec_vocab_freq(word, strlen(word));   // 160
++#endif
+ #endif
+ #ifdef EXP_VOCAB_DICT
+     if (vocab_dict != NULL) {
+diff -ruN sources/crf.c sources_c/crf.c
+--- sources/crf.c	2026-10-05 18:03:16
++++ sources_c/crf.c	2026-10-05 19:26:38
+@@ -755,6 +755,71 @@
+     const uint8_t **p = realloc(rec_emit[w], m * sizeof *p); if (p == NULL) return false;
+     rec_emit[w] = p; rec_emit_m[w] = m; return true;
+ }
++#ifdef EXP_RECORDS_DIRECT
++#include "fa_nb.h"
++// 160c: the feature function's emitters (features.c) call this instead of appending "name|v1|v2" to the key array.
++#ifdef EXP_RECORDS_ORACLE
++unsigned long long rec_dstat[8];
++__attribute__((destructor)) static void rec_dstat_report(void) {
++    if (getenv("REC_VERBOSE") != NULL) fprintf(stderr, "REC_DIRECT classes generic=%llu own=%llu unit=%llu pair=%llu ptype=%llu | memo hits=%llu index lookups=%llu index hits=%llu\n",
++        rec_dstat[0], rec_dstat[1], rec_dstat[2], rec_dstat[3], rec_dstat[4], rec_dstat[5], rec_dstat[6], rec_dstat[7]);
++}
++#endif
++rec_memo_t rec_memo[REC_MEMO_N]; uint32_t rec_memo_gen = 0; int rec_direct_on = 0; const void *rec_direct_arr[2] = {NULL, NULL};
++static char *rd_buf = NULL; static size_t rd_cap = 0;
++// joins part[i0..count) with '|' (lengths are final), returns length; the buffer is reused
++static size_t rd_join(size_t i0, size_t count, const char **part, const size_t *len) {
++    size_t need = 1; for (size_t i = i0; i < count; i++) need += len[i] + 1;
++    if (need > rd_cap) { size_t m = rd_cap ? rd_cap : 256; while (m < need) m *= 2; char *p = realloc(rd_buf, m); if (p == NULL) { fprintf(stderr, "rec_direct: out of memory\n"); abort(); } rd_buf = p; rd_cap = m; }
++    char *p = rd_buf;
++    for (size_t i = i0; i < count; i++) { memcpy(p, part[i], len[i]); p += len[i]; if (i + 1 < count) *p++ = '|'; }
++    *p = 0; return (size_t)(p - rd_buf);
++}
++// call-site class, cached in the site's fa_nb_cache_t (fa_nb_dict is NULL in a records build, so its fields are otherwise unused)
++enum { RD_GENERIC = 1, RD_OWN, RD_UNIT, RD_PAIR, RD_PTYPE };
++static int rd_classify(size_t count, const char *name, size_t nl, uint8_t *fam) {
++    *fam = REC_NONE;
++    if (nl == 0 || memchr(name, '|', nl) != NULL) return RD_GENERIC;          // rec_group would split inside the name
++    if (count == 1) return RD_OWN;                                            // key == name, no '|': an own key
++    if ((nl == 18 && !memcmp(name, "phrase type+phrase", 18)) || (nl == 30 && !memcmp(name, "unambiguous phrase type+phrase", 30)))
++        return count == 3 ? RD_PTYPE : RD_GENERIC;
++    if (nl == 14 && (!memcmp(name, "prev word+word", 14) || !memcmp(name, "word+next word", 14))) { *fam = rec_fam(name, nl); return RD_PAIR; }
++    if (rec_is_unit_family(name, nl)) { *fam = rec_fam(name, nl); return RD_UNIT; }
++    return RD_OWN;
++}
++static inline void rd_push(int w, const uint8_t *slot) {
++    if (rec_emit_n[w] == rec_emit_m[w] && !rec_emit_reserve(w, rec_emit_n[w] + 1)) { fprintf(stderr, "rec_direct: out of memory\n"); abort(); }
++    rec_emit[w][rec_emit_n[w]++] = slot;
++}
++void rec_direct_emit(int w, size_t count, const char **part, const size_t *len, void *site) {
++    uint8_t kind = w ? 'P' : 'S', fam; int cls;
++    fa_nb_cache_t *c = (fa_nb_cache_t *)site;
++    if (c != NULL && c->d[w] == (const void *)(uintptr_t)rec_gen) { cls = c->nb[w] >> 8; fam = (uint8_t)(c->nb[w] & 0xFF); }
++    else { cls = rd_classify(count, part[0], len[0], &fam); if (c != NULL) { c->d[w] = (const void *)(uintptr_t)rec_gen; c->nb[w] = (int16_t)(cls << 8 | fam); } }
++    REC_DSTAT(cls - 1);
++    switch (cls) {
++    case RD_UNIT: case RD_PAIR: {
++        if (fam == REC_NONE) { rd_push(w, NULL); return; }                  // no model key has this family: the original lookup misses
++        const char *v; size_t vl;
++        if (count == 2) { v = part[1]; vl = len[1]; } else { vl = rd_join(1, count, part, len); v = rd_buf; }
++        rd_push(w, rec_slot(rec_find_memo(cls == RD_UNIT ? 'U' : 'B', v, vl), fam, kind)); return;
++    }
++    case RD_PTYPE: {                                                          // "<name>|T|P": family "<name>|T", unit record P
++        if (memchr(part[1], '|', len[1]) != NULL) break;                      // T with a '|': let rec_group decide
++        size_t fl = rd_join(0, 2, part, len); uint8_t f = rec_fam(rd_buf, fl);
++        if (f == REC_NONE) { rd_push(w, NULL); return; }
++        rd_push(w, rec_slot(rec_find_memo('U', part[2], len[2]), f, kind)); return;
++    }
++    case RD_OWN: {
++        size_t kl = rd_join(0, count, part, len); uint8_t f = rec_fam("own", 3);
++        rd_push(w, f == REC_NONE ? NULL : rec_slot(rec_find_memo('K', rd_buf, kl), f, kind)); return;
++    }
++    default: break;
++    }
++    size_t kl = rd_join(0, count, part, len);                                 // generic: the full key through rec_group, as stage B
++    rd_push(w, rec_lookup_str(kind, rd_buf, kl));
++}
++#endif
+ // resolves the plain-text keys a[from..) into slots appended to rec_emit[w]
+ static bool rec_resolve_strings(cstring_array *a, size_t from, int w) {
+     size_t n = a->indices->n; char *chars = a->str->a; uint32_t *off = a->indices->a; size_t chars_n = a->str->n;
+@@ -839,13 +904,29 @@
+     } else {
+         crf_features_accumulate = 1;
+         bool ok = true;
++#ifdef EXP_RECORDS_DIRECT
++        // 160c: emitters push slots straight into rec_emit (no key strings); per-token boundaries come from rec_emit_n
++        if (++rec_memo_gen == 0) { memset(rec_memo, 0, sizeof rec_memo); rec_memo_gen = 1; }
++        rec_direct_arr[0] = features; rec_direct_arr[1] = prev_tag_features; rec_direct_on = 1;
+         for (size_t t = 0; t < num_tokens; t++) {
++            rec_tok[0][t] = (uint32_t)rec_emit_n[0]; rec_tok[1][t] = (uint32_t)rec_emit_n[1];
++            if (!feature_function(tagger, tagger_context, tokenized, (uint32_t)t)) { log_error("Could not add address parser features\n"); ok = false; break; }
++        }
++        rec_direct_on = 0; rec_direct_arr[0] = rec_direct_arr[1] = NULL;
++        crf_features_accumulate = 0;
++        if (!ok) return false;
++        if (features->indices->n != 0 || prev_tag_features->indices->n != 0) {   // a key bypassed the emitters: order could not be kept
++            fprintf(stderr, "EXP_RECORDS_DIRECT: %zu/%zu string keys bypassed direct emission\n", (size_t)features->indices->n, (size_t)prev_tag_features->indices->n); abort();
++        }
++#else
++        for (size_t t = 0; t < num_tokens; t++) {
+             rec_tok[0][t] = (uint32_t)features->indices->n; rec_tok[1][t] = (uint32_t)prev_tag_features->indices->n;
+             if (!feature_function(tagger, tagger_context, tokenized, (uint32_t)t)) { log_error("Could not add address parser features\n"); ok = false; break; }
+         }
+         crf_features_accumulate = 0;
+         if (!ok) return false;
+         if (!rec_resolve_strings(features, 0, 0) || !rec_resolve_strings(prev_tag_features, 0, 1)) return false;
++#endif
+     }
+     rec_tok[0][num_tokens] = (uint32_t)rec_emit_n[0]; rec_tok[1][num_tokens] = (uint32_t)rec_emit_n[1];
+     for (size_t k = 0; k < rec_emit_n[0]; k++) rec_prefetch_slot(rec_emit[0][k]);
+diff -ruN sources/features.c sources_c/features.c
+--- sources/features.c	2026-10-05 17:18:09
++++ sources_c/features.c	2026-10-05 19:21:32
+@@ -66,6 +66,14 @@
+ #include "feature_dict.h"
+ #include "fa_nb.h"
+ const void *fa_nb_dict[2] = {NULL, NULL}; const void *fa_nb_arr[2] = {NULL, NULL};
++#ifdef EXP_RECORDS_DIRECT
++#include "rec_runtime.h"   // 160c
++#define REC_DIRECT_HOOK(features, count, part, len, cache) do { if (rec_direct_on) { \
++    int rw_ = (const void *)(features) == rec_direct_arr[0] ? 0 : (const void *)(features) == rec_direct_arr[1] ? 1 : -1; \
++    if (rw_ >= 0) { rec_direct_emit(rw_, (count), (part), (len), (cache)); return; } } } while (0)
++#else
++#define REC_DIRECT_HOOK(features, count, part, len, cache) do { } while (0)
++#endif
+ void feature_array_add_nb(cstring_array *features, size_t count, const char *name, size_t name_len, fa_nb_cache_t *cache, ...) {
+     if (count <= 0) return;
+     if (count > 8) { fprintf(stderr, "feature_array_add_nb: count > 8 unsupported\n"); abort(); }
+@@ -83,6 +91,7 @@
+     for (size_t i = 0; i < count; i++) {               // the original strip rule: a non-last part loses one trailing separator
+         if (i + 1 < count && len[i] > 0 && part[i][len[i] - 1] == FEATURE_SEPARATOR_CHAR[0]) len[i]--;
+     }
++    REC_DIRECT_HOOK(features, count, part, len, cache);   // 160c: after the strip rule, before any byte is written
+     size_t first = nb >= 0 ? 1 : 0;
+     total = nb >= 0 ? 2 : 0;
+     for (size_t i = first; i < count; i++) total += len[i] + (i + 1 < count ? 1 : 0);
+@@ -119,6 +128,7 @@
+     }
+     const char *part[3] = {name, v1, v2}; size_t len[3] = {name_len, l1, l2};
+     for (size_t i = 0; i < count; i++) if (i + 1 < count && len[i] > 0 && part[i][len[i] - 1] == FEATURE_SEPARATOR_CHAR[0]) len[i]--;
++    REC_DIRECT_HOOK(features, count, part, len, cache);   // 160c
+     size_t first = nb >= 0 ? 1 : 0, total = nb >= 0 ? 2 : 0;
+     for (size_t i = first; i < count; i++) total += len[i] + (i + 1 < count ? 1 : 0);
+     cstring_array_start_token(features);
+diff -ruN sources/rec_runtime.h sources_c/rec_runtime.h
+--- sources/rec_runtime.h	2026-10-05 18:02:35
++++ sources_c/rec_runtime.h	2026-10-05 19:26:38
+@@ -26,8 +26,10 @@
+ } rec_db_t;
+ #ifdef REC_RUNTIME_DEFINE
+ rec_db_t rec_db;
++uint32_t rec_gen = 0;
+ #else
+ extern rec_db_t rec_db;
++extern uint32_t rec_gen;
+ #endif
+ #define REC_NONE 0xFFu
+ 
+@@ -64,6 +66,37 @@
+ // vocabulary count of exactly these bytes (0 when absent), as trie_get_data on the vocabulary trie returns it
+ static inline uint32_t rec_vocab_freq(const char *s, size_t n) { const uint8_t *r = rec_find('U', s, n); return r ? rec_freq(r) : 0; }
+ 
++#ifdef EXP_RECORDS_DIRECT
++// 160c: records found during ONE address's feature pass, so neighbour words (word / prev word / next word / vocabulary frequency of the
++// same token) reuse the record instead of probing the 268 MB index again. A hit is returned only after its key bytes compare equal, so
++// the result is exactly rec_find's; misses are not memoized. rec_memo_gen is bumped before every address (crf.c), so no entry survives
++// into the next address; entries are only consulted while rec_direct_on (inside that address's accumulate loop).
++typedef struct { const uint8_t *rec; uint32_t gen, tag; } rec_memo_t;
++#define REC_MEMO_N 1024   // ponytail: direct-mapped; a collision just costs a normal lookup
++extern rec_memo_t rec_memo[REC_MEMO_N]; extern uint32_t rec_memo_gen; extern int rec_direct_on; extern const void *rec_direct_arr[2];
++#ifdef EXP_RECORDS_ORACLE
++extern unsigned long long rec_dstat[8];   // diagnostic build only: [0..4] classes 1..5, [5] memo hits, [6] index lookups, [7] index hits
++#define REC_DSTAT(i) (rec_dstat[(i)]++)
++#else
++#define REC_DSTAT(i) ((void)0)
++#endif
++static inline const uint8_t *rec_find_memo(char pfx, const char *s, size_t n) {
++    uint64_t h = rec_hash(pfx, s, n); rec_memo_t *e = &rec_memo[(h >> 7) & (REC_MEMO_N - 1)];
++    if (e->gen == rec_memo_gen && e->tag == (uint32_t)h) {
++        const uint8_t *c = e->rec;
++        if (rec_keylen(c) == n + 1 && c[REC_HDR] == (uint8_t)pfx && memcmp(c + REC_HDR + 1, s, n) == 0) { REC_DSTAT(5); return c; }
++    }
++    REC_DSTAT(6);
++    const uint8_t *r = rec_find_h(pfx, s, n, h);
++    if (r != NULL) REC_DSTAT(7);
++    if (r != NULL) { e->rec = r; e->gen = rec_memo_gen; e->tag = (uint32_t)h; }
++    return r;
++}
++// features.c: one feature (parts already under the strip rule: non-last lengths lost one trailing '|') resolved to a slot and appended
++// to rec_emit[w] in emission order. site = the call site's fa_nb_cache_t (NULL for a non-literal name).
++void rec_direct_emit(int w, size_t count, const char **part, const size_t *len, void *site);
++#endif
++
+ static inline uint64_t rec_file_size(const char *path) { struct stat st; return stat(path, &st) == 0 ? (uint64_t)st.st_size : 0; }
+ 
+ static inline void rec_close(void) {
+@@ -91,7 +124,7 @@
+     madvise((void *)m, (size_t)st.st_size, MADV_WILLNEED);
+     volatile uint8_t sink = 0; for (size_t o = 0; o < (size_t)st.st_size; o += 16384) sink ^= m[o];   // prefault at setup, not in the first parse
+     (void)sink;
+-    rec_db.map = m; rec_db.map_size = (size_t)st.st_size;
++    rec_db.map = m; rec_db.map_size = (size_t)st.st_size; rec_gen++;
+     rec_db.ar = m + H.arena_off; rec_db.idx = (const uint64_t *)(m + H.index_off); rec_db.mask = H.index_slots - 1;
+     rec_db.vlist = (const uint32_t *)(m + H.vlist_off); rec_db.nvocab = H.nvocab; rec_db.nfam = H.nfam; rec_db.nrec = H.nrec; rec_db.nslot = H.nslot;
+     const uint8_t *f = m + H.fam_off;

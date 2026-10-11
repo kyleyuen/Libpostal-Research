@@ -1,0 +1,46 @@
+{
+  "argv": [
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v2/guard-shapes-v1/input.txt"
+  ],
+  "cwd": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "start": "2026-10-09T01:50:45.411869-07:00",
+  "env_overrides": {},
+  "timing_use": "command provenance only; not a performance measurement",
+  "monitored_argv": [
+    "/usr/bin/time",
+    "-l",
+    "-o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v2/guard-shapes-v1/capture/original-000/time-l.txt",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v2/guard-shapes-v1/input.txt"
+  ],
+  "resource_log": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v2/guard-shapes-v1/capture/original-000/time-l.txt",
+  "exit": 0,
+  "end": "2026-10-09T01:50:48.470001-07:00",
+  "duration_seconds": 3.05816683312878,
+  "thread_sample_count": 14,
+  "thread_counts_observed": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "resource_summary": {
+    "peak_rss_bytes": 2339897344,
+    "peak_rss_reason": null,
+    "peak_footprint_bytes": 2499053704,
+    "peak_footprint_reason": null,
+    "raw_time_log": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v2/guard-shapes-v1/capture/original-000/time-l.txt"
+  }
+}

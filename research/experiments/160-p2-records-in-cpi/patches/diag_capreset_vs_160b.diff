@@ -1,0 +1,13 @@
+diff -ruN sources/crf.c sources_diag_capreset/crf.c
+--- sources/crf.c	2026-10-05 18:03:16
++++ sources_diag_capreset/crf.c	2026-10-05 19:40:56
+@@ -1370,6 +1370,9 @@
+         if (crf_trans_saved != NULL) { self->context->trans = crf_trans_saved; crf_trans_saved = NULL; }
+ #endif
+         crf_context_destroy(self->context);
++#ifdef EXP_LEAN_CONTEXT
++        crf_lean_cap_items = 0;   // 160 DIAGNOSTIC ONLY (sources_diag_capreset): tests the stale-capacity hypothesis; not a candidate
++#endif
+     }
+ 
+     free(self);

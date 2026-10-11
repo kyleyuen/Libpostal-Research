@@ -1,0 +1,62 @@
+{
+ "datasets": {
+  "golden-v1": {
+   "txt": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+    "sha256": "02252919fc2a24a3f0af41f3f7c5d6f8aaed6a5eb9548a2dcff6a4fcfe5f6c91"
+   },
+   "tsv": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv",
+    "sha256": "43224e8b6381bf5b72f18601a28750ac500c6f40c30a739183b56a3f60cd57db"
+   },
+   "frozen_reference": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/baseline-outputs.jsonl",
+    "sha256": "c2d9ce7e6a014f6f5fd0ecf644f09c7863f4e028993acd21b7a1344f172bf084"
+   },
+   "addresses": 12863
+  }
+ },
+ "variants": {
+  "original-000": {
+   "bench_ext": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+    "sha256": "a4968702ab9415f3fc71f509d73284e5d228073c49c825aeb7798b5b6e061a50"
+   },
+   "dump_outputs": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+    "sha256": "578a62678e98af38909bd112f8ac859852f0936dab9deeacf10eedd2f4b86a0d"
+   },
+   "fuzz_pipeline": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/fuzz_pipeline",
+    "sha256": "7c762382e1571a58b1d2550d8187c0247838a0766b749eb7a4d1b2602ab79bc5"
+   }
+  },
+  "199-token-span-storage-mimalloc-v2": {
+   "bench_ext": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release-mimalloc-v2/bench_ext",
+    "sha256": "7c14b07087cefb15052880fa7846c099a394c9e87b66fcd03d257bfd0d295dd4"
+   },
+   "dump_outputs": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release-mimalloc-v2/dump_outputs",
+    "sha256": "5a36b9dbc3fb3623e8799fadd7b73b58d3b137b75a66a75a7ab07df6310ca84d"
+   },
+   "fuzz_pipeline": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release-mimalloc-v2/fuzz_pipeline",
+    "sha256": "6621fb6fa4f3a7a7b9af34821ec0689afbd7686ae0448c34ac879f9cc137fd86"
+   }
+  }
+ },
+ "model": {
+  "address_expansions/address_dictionary.dat": "9fbf8779942bcc84841ac948ebd0c910b37edc7ff812125f09b6c39018747b1d",
+  "address_parser/address_parser_crf.dat": "e44b308e9e1942efe8ad8226929e29ca49e9ea2900ed36625c601c53509ba5c1",
+  "address_parser/address_parser_phrases.dat": "739643ea06d8c492ba57bd51ba1dc1243853e7f8c6130e3a7bd30150221119e6",
+  "address_parser/address_parser_postal_codes.dat": "7c5b20c541c16758cc73c41025f2327be525831dff272a6b4c3aeb901e481b1b",
+  "address_parser/address_parser_vocab.trie": "962a985f29530440035bd379826f38e35f0f0fc718926444658d89bbd70829b1",
+  "numex/numex.dat": "269630109fac796ab576b7fb29a36f3279c0c194e46a9abe91684653bf082a38",
+  "transliteration/transliteration.dat": "db75453e1d8a24302be0831304f9bb4792d41ea4e5a5e645c3839ee04763e64c"
+ },
+ "suite": {
+  "run_suite.py": "ac07848b1adcb7d403998a3f4615d144ed86cc88e9086d320e0c01ce96e86652",
+  "suite.json": "54a066ead53825c3b9a48f6ee535fbad66c740df8de8d8aac5d07d7f30f1da67"
+ }
+}

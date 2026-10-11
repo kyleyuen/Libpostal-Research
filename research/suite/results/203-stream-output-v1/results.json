@@ -1,0 +1,222 @@
+{
+ "run": "203-stream-output-v1",
+ "generated": "2026-10-10T17:07:28-0700",
+ "settings": {
+  "rounds": 3,
+  "passes": 200,
+  "settle_load_1min": 2.5,
+  "settle_max_wait_s": 180,
+  "correctness_jobs": 1,
+  "fuzz_count": 2000000,
+  "fuzz_seeds": [
+   1,
+   2
+  ],
+  "fuzz_corpora": [
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+  ],
+  "bootstrap_resamples": 1000,
+  "bootstrap_seed": 20261004,
+  "steady_dataset": "golden-v1",
+  "steady_passes_before_sample": 3,
+  "thread_check_dataset": "golden-v1",
+  "sleep_between_runs_s": 2,
+  "country_min_n": 50
+ },
+ "baseline": "original-000",
+ "datasets": {
+  "golden-v1": {
+   "source": "senzing",
+   "kind": "development+validation (PGO trained on its development split)",
+   "variants": {},
+   "speedup": {}
+  },
+  "novel": {
+   "source": "senzing-style",
+   "kind": "screening/validation",
+   "variants": {},
+   "speedup": {}
+  },
+  "osm-v3": {
+   "source": "openstreetmap",
+   "kind": "screening/validation",
+   "variants": {},
+   "speedup": {}
+  },
+  "unseen-v4": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {},
+   "speedup": {}
+  },
+  "unseen-v5": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {},
+   "speedup": {}
+  },
+  "unseen-v6": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {},
+   "speedup": {}
+  },
+  "unseen-v7": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {},
+   "speedup": {}
+  },
+  "unseen-v8": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {},
+   "speedup": {}
+  },
+  "unseen-v9": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {},
+   "speedup": {}
+  },
+  "unseen-v10": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {},
+   "speedup": {}
+  },
+  "unseen-v11": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {},
+   "speedup": {}
+  },
+  "unseen-v12": {
+   "source": "openstreetmap",
+   "kind": "spent unseen (observed in experiments 183 and 202)",
+   "variants": {},
+   "speedup": {}
+  },
+  "unseen-v13": {
+   "source": "openstreetmap",
+   "kind": "spent unseen (observed in experiments 183 and 202)",
+   "variants": {},
+   "speedup": {}
+  },
+  "unseen-v14": {
+   "source": "openstreetmap",
+   "kind": "spent unseen (observed in experiment 202)",
+   "variants": {},
+   "speedup": {}
+  }
+ },
+ "aggregate": {},
+ "correctness": {
+  "dumps": {
+   "cpi-stream-203/golden-v1": {
+    "identical": true,
+    "candidate_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+    "baseline_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+    "lines": 12863
+   },
+   "cpi-stream-203/novel": {
+    "identical": true,
+    "candidate_sha256": "806b8a81603ea9adf3af788334dc9b7d577cbb8a13753dd591b535f4fb896aae",
+    "baseline_sha256": "806b8a81603ea9adf3af788334dc9b7d577cbb8a13753dd591b535f4fb896aae",
+    "lines": 12863
+   },
+   "cpi-stream-203/osm-v3": {
+    "identical": true,
+    "candidate_sha256": "e8a48875b12310ef77f41603d0c6e54edc48c25657596407769d8e4deadb051b",
+    "baseline_sha256": "e8a48875b12310ef77f41603d0c6e54edc48c25657596407769d8e4deadb051b",
+    "lines": 11405
+   },
+   "cpi-stream-203/unseen-v4": {
+    "identical": true,
+    "candidate_sha256": "78e2db753f9d127d3e7dedf0a6b3859029b16f0437b923140f037e9bc58b1f0a",
+    "baseline_sha256": "78e2db753f9d127d3e7dedf0a6b3859029b16f0437b923140f037e9bc58b1f0a",
+    "lines": 10293
+   },
+   "cpi-stream-203/unseen-v5": {
+    "identical": true,
+    "candidate_sha256": "288e002d3b5556c542a66f774b9cf93a9c6b45123b2e35a5b16cf3d173e40775",
+    "baseline_sha256": "288e002d3b5556c542a66f774b9cf93a9c6b45123b2e35a5b16cf3d173e40775",
+    "lines": 8794
+   },
+   "cpi-stream-203/unseen-v6": {
+    "identical": true,
+    "candidate_sha256": "e494544de8beaa78eb483c2b59e52f0c25c6fdd30825fb81547e8a0b3fb4e7b8",
+    "baseline_sha256": "e494544de8beaa78eb483c2b59e52f0c25c6fdd30825fb81547e8a0b3fb4e7b8",
+    "lines": 9450
+   },
+   "cpi-stream-203/unseen-v7": {
+    "identical": true,
+    "candidate_sha256": "df345ddd9dffa20eced9768c5757a955d0dc655bc0641e2dc0de76fe637116d0",
+    "baseline_sha256": "df345ddd9dffa20eced9768c5757a955d0dc655bc0641e2dc0de76fe637116d0",
+    "lines": 8973
+   },
+   "cpi-stream-203/unseen-v8": {
+    "identical": true,
+    "candidate_sha256": "f7a19baf900da2cd9907cbebe7bbc4c6decce9e7b9600bb7bdc21999afb5fdc5",
+    "baseline_sha256": "f7a19baf900da2cd9907cbebe7bbc4c6decce9e7b9600bb7bdc21999afb5fdc5",
+    "lines": 9981
+   },
+   "cpi-stream-203/unseen-v9": {
+    "identical": true,
+    "candidate_sha256": "c8f1b109cac1922b3d5eb3619738d8d41d7fa1169d0b3bf2fb8839852ad8d129",
+    "baseline_sha256": "c8f1b109cac1922b3d5eb3619738d8d41d7fa1169d0b3bf2fb8839852ad8d129",
+    "lines": 9480
+   },
+   "cpi-stream-203/unseen-v10": {
+    "identical": true,
+    "candidate_sha256": "1afaf108f3807349441cc2fc60ca2ed3ccdbfb1cead729b929f840d480c2d855",
+    "baseline_sha256": "1afaf108f3807349441cc2fc60ca2ed3ccdbfb1cead729b929f840d480c2d855",
+    "lines": 8567
+   },
+   "cpi-stream-203/unseen-v11": {
+    "identical": true,
+    "candidate_sha256": "19fe8fcc105465535233e1362146d500ce462b39318caf34dfce74c06c6f2a8d",
+    "baseline_sha256": "19fe8fcc105465535233e1362146d500ce462b39318caf34dfce74c06c6f2a8d",
+    "lines": 7882
+   },
+   "cpi-stream-203/unseen-v12": {
+    "identical": true,
+    "candidate_sha256": "8318467ba747fb0d28f0c458e7778e860c542a21a580ca5a0a8eebf41e89477c",
+    "baseline_sha256": "8318467ba747fb0d28f0c458e7778e860c542a21a580ca5a0a8eebf41e89477c",
+    "lines": 8273
+   },
+   "cpi-stream-203/unseen-v13": {
+    "identical": true,
+    "candidate_sha256": "8689549e16085748630aef379bca1dcd5be7a012b2c15902c1b07b088dd1e130",
+    "baseline_sha256": "8689549e16085748630aef379bca1dcd5be7a012b2c15902c1b07b088dd1e130",
+    "lines": 9716
+   },
+   "cpi-stream-203/unseen-v14": {
+    "identical": true,
+    "candidate_sha256": "1e4ef581bc7cc021ea5a9cd474e0cfead96dce539582bb6e1e004e2f01e62b6f",
+    "baseline_sha256": "1e4ef581bc7cc021ea5a9cd474e0cfead96dce539582bb6e1e004e2f01e62b6f",
+    "lines": 1801
+   }
+  },
+  "frozen": {
+   "cpi-stream-203/golden-v1": "RESULT: IDENTICAL",
+   "cpi-stream-203/novel": "RESULT: IDENTICAL"
+  },
+  "fuzz": {
+   "cpi-stream-203/s1": {
+    "identical": true,
+    "inputs": 2000000
+   },
+   "cpi-stream-203/s2": {
+    "identical": true,
+    "inputs": 2000000
+   }
+  },
+  "negative_control": {
+   "dataset": "golden-v1",
+   "detected": true
+  }
+ },
+ "manifest": "manifest.json"
+}

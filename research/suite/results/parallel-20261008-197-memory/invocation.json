@@ -1,0 +1,23 @@
+{
+ "argv": [
+  "research/suite/run_suite.py",
+  "--config",
+  "research/analysis/parallel-exploration-2026-10-07/raw/memory-gate-197-config.json",
+  "--stages",
+  "integrity,memory,threads,report",
+  "--datasets",
+  "golden-v1",
+  "--variants",
+  "197-combined-query-removal",
+  "--run-id",
+  "parallel-20261008-197-memory"
+ ],
+ "start": "2026-10-07T21:30:27-0700",
+ "variants": [
+  "original-000",
+  "197-combined-query-removal"
+ ],
+ "datasets": [
+  "golden-v1"
+ ]
+}

@@ -1,0 +1,20 @@
+--- /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/tools/dump_outputs.c	2026-10-07 14:16:19
++++ /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/tools/dump_outputs.c	2026-10-07 16:39:53
+@@ -14,9 +14,7 @@
+     while ((len = getline(&line, &cap, f)) >= 0) {
+         while (len && (line[len - 1] == '\n' || line[len - 1] == '\r')) line[--len] = 0;
+         if (!len) continue;
+-        diag_address_begin();
+         libpostal_address_parser_response_t *r = libpostal_parse_address(line, o);
+-        diag_address_end();
+         if (!r) return 3;
+         addresses++;
+         printf("{\"address\":"); esc(line); printf(",\"components\":[");
+@@ -26,6 +24,7 @@
+     }
+     const char *metrics = getenv("MEASUREMENTS_JSON");
+     if (metrics && diag_write_metrics(metrics, addresses, 0)) return 4;
++    if (diag_trace_finish()) return 5;
+     libpostal_teardown_parser(); libpostal_teardown();
+     return 0;
+ }

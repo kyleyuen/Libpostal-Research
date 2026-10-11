@@ -1,0 +1,103 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.h:52:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/averaged_perceptron.h:27:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:354:10: warning: unused variable 'has_key' [-Wunused-variable]
+  354 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:362:85: warning: incompatible pointer types passing 'phrase_array *' to parameter of type 'phrase_array **'; take the address with & [-Wincompatible-pointer-types]
+  362 |     bool found = search_address_dictionaries_tokens_with_phrases(str, tokens, NULL, out);
+      |                                                                                     ^~~
+      |                                                                                     &
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_dictionary.h:64:113: note: passing argument to parameter 'phrases' here
+   64 | bool search_address_dictionaries_tokens_with_phrases(char *str, token_array *tokens, char *lang, phrase_array **phrases);
+      |                                                                                                                 ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:380:69: warning: incompatible pointer types passing 'phrase_array *' to parameter of type 'phrase_array **'; take the address with & [-Wincompatible-pointer-types]
+  380 |     bool found = trie_search_tokens_with_phrases(trie, str, tokens, out);
+      |                                                                     ^~~
+      |                                                                     &
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/trie_search.h:36:100: note: passing argument to parameter 'phrases' here
+   36 | bool trie_search_tokens_with_phrases(trie_t *self, char *text, token_array *tokens, phrase_array **phrases);
+      |                                                                                                    ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:793:95: warning: incompatible pointer types passing 'phrase_array **' to parameter of type 'phrase_array *'; remove & [-Wincompatible-pointer-types]
+  793 |     bool have_address_phrases = diag_address_phrase_search(normalized_str, normalized_tokens, &address_dictionary_phrases);
+      |                                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:359:93: note: passing argument to parameter 'out' here
+  359 | static inline bool diag_address_phrase_search(char *str, token_array *tokens, phrase_array *out) {
+      |                                                                                             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:829:124: warning: incompatible pointer types passing 'phrase_array **' to parameter of type 'phrase_array *'; remove & [-Wincompatible-pointer-types]
+  829 |     bool have_component_phrases = diag_model_phrase_search(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases, "component_phrase");
+      |                                                                                                                            ^~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:377:105: note: passing argument to parameter 'out' here
+  377 | static inline bool diag_model_phrase_search(trie_t *trie, char *str, token_array *tokens, phrase_array *out, const char *family) {
+      |                                                                                                         ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:847:131: warning: incompatible pointer types passing 'phrase_array **' to parameter of type 'phrase_array *'; remove & [-Wincompatible-pointer-types]
+  847 |     bool have_postal_code_phrases = diag_model_phrase_search(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases, "postal_phrase");
+      |                                                                                                                                   ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:377:105: note: passing argument to parameter 'out' here
+  377 | static inline bool diag_model_phrase_search(trie_t *trie, char *str, token_array *tokens, phrase_array *out, const char *family) {
+      |                                                                                                         ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:721:14: warning: unused variable 'phrase' [-Wunused-variable]
+  721 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:793:10: warning: unused variable 'have_address_phrases' [-Wunused-variable]
+  793 |     bool have_address_phrases = diag_address_phrase_search(normalized_str, normalized_tokens, &address_dictionary_phrases);
+      |          ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:829:10: warning: unused variable 'have_component_phrases' [-Wunused-variable]
+  829 |     bool have_component_phrases = diag_model_phrase_search(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases, "component_phrase");
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:847:10: warning: unused variable 'have_postal_code_phrases' [-Wunused-variable]
+  847 |     bool have_postal_code_phrases = diag_model_phrase_search(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases, "postal_phrase");
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:956:13: warning: unused variable 'token' [-Wunused-variable]
+  956 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1004:13: warning: unused variable 'membership' [-Wunused-variable]
+ 1004 |     int64_t membership;
+      |             ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1032:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1032 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1314:18: warning: unused variable 'postal_code_context' [-Wunused-variable]
+ 1314 |         uint64_t postal_code_context;
+      |                  ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1316:18: warning: unused variable 'k' [-Wunused-variable]
+ 1316 |         khiter_t k;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1415:18: warning: variable 'ngrams_added' set but not used [-Wunused-but-set-variable]
+ 1415 |             bool ngrams_added = false;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1599:26: warning: unused variable 'suffix_phrase' [-Wunused-variable]
+ 1599 |                 phrase_t suffix_phrase = context->suffix_phrases->a[right_idx];
+      |                          ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1605:22: warning: unused variable 'right_context_name' [-Wunused-variable]
+ 1605 |                 bool right_context_name = false;
+      |                      ^~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1606:22: warning: unused variable 'right_context_street' [-Wunused-variable]
+ 1606 |                 bool right_context_street = false;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1541:16: warning: variable 'next_word_len' set but not used [-Wunused-but-set-variable]
+ 1541 |         size_t next_word_len = 1;
+      |                ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1129:11: warning: unused variable 'language' [-Wunused-variable]
+ 1129 |     char *language = context->language;
+      |           ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1130:11: warning: unused variable 'country' [-Wunused-variable]
+ 1130 |     char *country = context->country;
+      |           ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1140:19: warning: unused variable 'separators' [-Wunused-variable]
+ 1140 |     uint32_array *separators = context->separators;
+      |                   ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1357:10: warning: variable 'is_unknown' set but not used [-Wunused-but-set-variable]
+ 1357 |     bool is_unknown = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1359:10: warning: variable 'known_prefix' set but not used [-Wunused-but-set-variable]
+ 1359 |     bool known_prefix = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/address_parser.c:1360:10: warning: variable 'known_suffix' set but not used [-Wunused-but-set-variable]
+ 1360 |     bool known_suffix = false;
+      |          ^
+27 warnings generated.

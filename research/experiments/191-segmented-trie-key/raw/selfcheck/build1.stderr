@@ -1,0 +1,9 @@
+In file included from research/experiments/191-segmented-trie-key/tools/test_segmented_key.c:4:
+In file included from research/experiments/191-segmented-trie-key/sources/trie.h:32:
+libpostal/src/file_utils.h:59:30: warning: declaration of 'struct direct' will not be visible outside of this function [-Wvisibility]
+   59 | bool is_relative_path(struct dirent *ent);
+      |                              ^
+libpostal/src/file_utils.h:20:16: note: expanded from macro 'dirent'
+   20 | #define dirent direct
+      |                ^
+1 warning generated.

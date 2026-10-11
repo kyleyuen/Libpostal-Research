@@ -1,0 +1,11 @@
+--- a/crf.c
++++ b/crf.c
+@@ -99,7 +99,7 @@
+     size_t num_tokens = tokenized->tokens->n;
+ 
+     crf_context_t *crf_context = self->context;
+-    crf_context_set_num_items(crf_context, num_tokens);
++    crf_context_set_num_items_for_reset(crf_context, num_tokens);
+     crf_context_reset(crf_context, CRF_CONTEXT_RESET_ALL);
+ 
+     if (!double_matrix_copy(self->trans_weights, crf_context->trans)) {

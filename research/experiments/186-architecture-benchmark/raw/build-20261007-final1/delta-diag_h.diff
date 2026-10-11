@@ -1,0 +1,20 @@
+--- /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/diag.h	2026-10-07 15:11:47
++++ /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/diag.h	2026-10-07 16:37:53
+@@ -5,6 +5,8 @@
+ #ifdef EXP185_DIAG
+ void diag_address_begin(void);
+ void diag_address_end(void);
++void diag_address_begin_input(const void *input, size_t input_len);
++int diag_trace_finish(void);
+ void diag_set_stage(const char *stage);
+ void diag_set_family(const char *family);
+ /* Getter strings are immutable snapshots stable across setters and address resets. */
+@@ -28,6 +30,8 @@
+ #else
+ #define diag_address_begin() ((void)0)
+ #define diag_address_end() ((void)0)
++#define diag_address_begin_input(i,n) ((void)0)
++#define diag_trace_finish() (0)
+ #define diag_set_stage(s) ((void)0)
+ #define diag_set_family(f) ((void)0)
+ #define diag_current_stage() ("unclassified")

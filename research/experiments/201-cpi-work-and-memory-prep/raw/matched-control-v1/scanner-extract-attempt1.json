@@ -1,0 +1,13 @@
+{
+  "start_utc": null,
+  "end_utc": "2026-10-09T08:18:28.247675+00:00",
+  "argv": [
+    "python3",
+    "-c",
+    "ar -t <incorrect path release-mimalloc-v2/libpostal.a>"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "CalledProcessError: ar -t .../artifacts/release-mimalloc-v2/libpostal.a returned non-zero exit status 1; follow-up file check established that this path does not exist. Correct archive is artifacts/release/libpostal.a. No file was created or modified.",
+  "classification": "operator path error; no build/parser invocation"
+}

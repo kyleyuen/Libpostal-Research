@@ -1,0 +1,1 @@
+caffeinate -i python3 research/suite/run_suite.py --config research/experiments/182-benchmark-suite-prep/run-suite-3way-181.json --include-reserved --run-id 183-architecture-full-20261006 --stages timing,memory,threads,report

@@ -1,0 +1,13 @@
+{
+  "status": "interrupted_partial_not_used_for_timing_summary",
+  "started_run_id": "201-token-storage-matched-golden-screen-v1",
+  "reason": "Coordinator stopped the suite after noticing run_suite.py does not acquire shared WORKLOAD.lock. This first attempt was not serialized through the required lock. The packaged CPI round-1 capture completed; the next role was interrupted before completion. No child parser process remained. Preserve this folder, but do not include its timing sample in the screening summary.",
+  "recorded_at": "2026-10-09T09:06:01.492375+00:00",
+  "completed_roles": [
+    "golden-v1__cpi-packaged__r1"
+  ],
+  "incomplete_roles": [
+    "golden-v1__cpi-source-matched-o2__r1"
+  ],
+  "raw_command": "caffeinate -i rtk python3 research/suite/run_suite.py --config research/experiments/201-cpi-work-and-memory-prep/raw/timing-screen-v1/config.json --stages timing,memory,threads,report --datasets golden-v1 --variants cpi-packaged,cpi-source-matched-o2,199-token-span-mimalloc-v2 --rounds 3 --passes 200 --run-id 201-token-storage-matched-golden-screen-v1"
+}

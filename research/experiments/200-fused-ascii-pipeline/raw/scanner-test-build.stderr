@@ -1,0 +1,1798 @@
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:43:1: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+   43 | VECTOR_INIT_NUMERIC(int32_array, int32_t, uint32_t, abs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:257:19: note: expanded from macro 'KSORT_INIT'
+  257 |             if (k != n - pop - 1) tmp = a[k], a[k] = a[n-pop-1], a[n-pop-1] = tmp; \
+      |                 ~ ^  ~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:43:1: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+   43 | VECTOR_INIT_NUMERIC(int32_array, int32_t, uint32_t, abs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:257:19: note: expanded from macro 'KSORT_INIT'
+  257 |             if (k != n - pop - 1) tmp = a[k], a[k] = a[n-pop-1], a[n-pop-1] = tmp; \
+      |                 ~ ^  ~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:44:1: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+   44 | VECTOR_INIT_NUMERIC(uint32_array, uint32_t, uint32_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:257:19: note: expanded from macro 'KSORT_INIT'
+  257 |             if (k != n - pop - 1) tmp = a[k], a[k] = a[n-pop-1], a[n-pop-1] = tmp; \
+      |                 ~ ^  ~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:44:1: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+   44 | VECTOR_INIT_NUMERIC(uint32_array, uint32_t, uint32_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:257:19: note: expanded from macro 'KSORT_INIT'
+  257 |             if (k != n - pop - 1) tmp = a[k], a[k] = a[n-pop-1], a[n-pop-1] = tmp; \
+      |                 ~ ^  ~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:45:1: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+   45 | VECTOR_INIT_NUMERIC(int64_array, int64_t, uint64_t, llabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:257:19: note: expanded from macro 'KSORT_INIT'
+  257 |             if (k != n - pop - 1) tmp = a[k], a[k] = a[n-pop-1], a[n-pop-1] = tmp; \
+      |                 ~ ^  ~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:45:1: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+   45 | VECTOR_INIT_NUMERIC(int64_array, int64_t, uint64_t, llabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:257:19: note: expanded from macro 'KSORT_INIT'
+  257 |             if (k != n - pop - 1) tmp = a[k], a[k] = a[n-pop-1], a[n-pop-1] = tmp; \
+      |                 ~ ^  ~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:46:1: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+   46 | VECTOR_INIT_NUMERIC(uint64_array, uint64_t, uint64_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:257:19: note: expanded from macro 'KSORT_INIT'
+  257 |             if (k != n - pop - 1) tmp = a[k], a[k] = a[n-pop-1], a[n-pop-1] = tmp; \
+      |                 ~ ^  ~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:46:1: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+   46 | VECTOR_INIT_NUMERIC(uint64_array, uint64_t, uint64_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:257:19: note: expanded from macro 'KSORT_INIT'
+  257 |             if (k != n - pop - 1) tmp = a[k], a[k] = a[n-pop-1], a[n-pop-1] = tmp; \
+      |                 ~ ^  ~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:47:1: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+   47 | VECTOR_INIT_NUMERIC_FLOAT(float_array, float, fabsf)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:257:19: note: expanded from macro 'KSORT_INIT'
+  257 |             if (k != n - pop - 1) tmp = a[k], a[k] = a[n-pop-1], a[n-pop-1] = tmp; \
+      |                 ~ ^  ~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:47:1: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+   47 | VECTOR_INIT_NUMERIC_FLOAT(float_array, float, fabsf)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:257:19: note: expanded from macro 'KSORT_INIT'
+  257 |             if (k != n - pop - 1) tmp = a[k], a[k] = a[n-pop-1], a[n-pop-1] = tmp; \
+      |                 ~ ^  ~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:48:1: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+   48 | VECTOR_INIT_NUMERIC_DOUBLE(double_array, double, fabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:522:36: note: expanded from macro 'VECTOR_INIT_NUMERIC_DOUBLE'
+  522 | #define VECTOR_INIT_NUMERIC_DOUBLE VECTOR_INIT_NUMERIC_FLOAT
+      |                                    ^
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:257:19: note: expanded from macro 'KSORT_INIT'
+  257 |             if (k != n - pop - 1) tmp = a[k], a[k] = a[n-pop-1], a[n-pop-1] = tmp; \
+      |                 ~ ^  ~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:48:1: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+   48 | VECTOR_INIT_NUMERIC_DOUBLE(double_array, double, fabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:522:36: note: expanded from macro 'VECTOR_INIT_NUMERIC_DOUBLE'
+  522 | #define VECTOR_INIT_NUMERIC_DOUBLE VECTOR_INIT_NUMERIC_FLOAT
+      |                                    ^
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:257:19: note: expanded from macro 'KSORT_INIT'
+  257 |             if (k != n - pop - 1) tmp = a[k], a[k] = a[n-pop-1], a[n-pop-1] = tmp; \
+      |                 ~ ^  ~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:56:1: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+   56 | KSORT_INIT_STR
+      | ^~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:277:24: note: expanded from macro 'KSORT_INIT_STR'
+  277 | #define KSORT_INIT_STR KSORT_INIT(str, ksstr_t, ks_lt_str)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:257:19: note: expanded from macro 'KSORT_INIT'
+  257 |             if (k != n - pop - 1) tmp = a[k], a[k] = a[n-pop-1], a[n-pop-1] = tmp; \
+      |                 ~ ^  ~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:43:1: warning: unused function 'ks_mergesort_int32_t' [-Wunused-function]
+   43 | VECTOR_INIT_NUMERIC(int32_array, int32_t, uint32_t, abs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:58:17: note: expanded from macro 'KSORT_INIT'
+   58 |     static void ks_mergesort_##name(size_t n, type_t array[], type_t temp[])   \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:223:1: note: expanded from here
+  223 | ks_mergesort_int32_t
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:43:1: warning: unused function 'ks_heapmake_int32_t' [-Wunused-function]
+   43 | VECTOR_INIT_NUMERIC(int32_array, int32_t, uint32_t, abs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:117:17: note: expanded from macro 'KSORT_INIT'
+  117 |     static void ks_heapmake_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:225:1: note: expanded from here
+  225 | ks_heapmake_int32_t
+      | ^~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:43:1: warning: unused function 'ks_heapsort_int32_t' [-Wunused-function]
+   43 | VECTOR_INIT_NUMERIC(int32_array, int32_t, uint32_t, abs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:123:17: note: expanded from macro 'KSORT_INIT'
+  123 |     static void ks_heapsort_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:227:1: note: expanded from here
+  227 | ks_heapsort_int32_t
+      | ^~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:43:1: warning: unused function 'ks_ksmall_int32_t' [-Wunused-function]
+   43 | VECTOR_INIT_NUMERIC(int32_array, int32_t, uint32_t, abs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:214:19: note: expanded from macro 'KSORT_INIT'
+  214 |     static type_t ks_ksmall_##name(size_t n, type_t arr[], size_t kk)          \
+      |                   ^~~~~~~~~~~~~~~~
+<scratch space>:235:1: note: expanded from here
+  235 | ks_ksmall_int32_t
+      | ^~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:43:1: warning: unused function 'ks_shuffle_int32_t' [-Wunused-function]
+   43 | VECTOR_INIT_NUMERIC(int32_array, int32_t, uint32_t, abs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:241:17: note: expanded from macro 'KSORT_INIT'
+  241 |     static void ks_shuffle_##name(size_t n, type_t a[])                        \
+      |                 ^~~~~~~~~~~~~~~~~
+<scratch space>:236:1: note: expanded from here
+  236 | ks_shuffle_int32_t
+      | ^~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:43:1: warning: unused function 'ks_sample_int32_t' [-Wunused-function]
+   43 | VECTOR_INIT_NUMERIC(int32_array, int32_t, uint32_t, abs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:250:17: note: expanded from macro 'KSORT_INIT'
+  250 |     static void ks_sample_##name(size_t n, size_t r, type_t a[]) /* FIXME: NOT TESTED!!! */ \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:237:1: note: expanded from here
+  237 | ks_sample_int32_t
+      | ^~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:43:1: warning: unused function 'ks_mergesort_int32_t_indices' [-Wunused-function]
+   43 | VECTOR_INIT_NUMERIC(int32_array, int32_t, uint32_t, abs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:58:17: note: expanded from macro 'KSORT_INIT'
+   58 |     static void ks_mergesort_##name(size_t n, type_t array[], type_t temp[])   \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:2:1: note: expanded from here
+    2 | ks_mergesort_int32_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:43:1: warning: unused function 'ks_heapmake_int32_t_indices' [-Wunused-function]
+   43 | VECTOR_INIT_NUMERIC(int32_array, int32_t, uint32_t, abs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:117:17: note: expanded from macro 'KSORT_INIT'
+  117 |     static void ks_heapmake_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:4:1: note: expanded from here
+    4 | ks_heapmake_int32_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:43:1: warning: unused function 'ks_heapsort_int32_t_indices' [-Wunused-function]
+   43 | VECTOR_INIT_NUMERIC(int32_array, int32_t, uint32_t, abs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:123:17: note: expanded from macro 'KSORT_INIT'
+  123 |     static void ks_heapsort_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:6:1: note: expanded from here
+    6 | ks_heapsort_int32_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:43:1: warning: unused function 'ks_ksmall_int32_t_indices' [-Wunused-function]
+   43 | VECTOR_INIT_NUMERIC(int32_array, int32_t, uint32_t, abs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:214:19: note: expanded from macro 'KSORT_INIT'
+  214 |     static type_t ks_ksmall_##name(size_t n, type_t arr[], size_t kk)          \
+      |                   ^~~~~~~~~~~~~~~~
+<scratch space>:14:1: note: expanded from here
+   14 | ks_ksmall_int32_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:43:1: warning: unused function 'ks_shuffle_int32_t_indices' [-Wunused-function]
+   43 | VECTOR_INIT_NUMERIC(int32_array, int32_t, uint32_t, abs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:241:17: note: expanded from macro 'KSORT_INIT'
+  241 |     static void ks_shuffle_##name(size_t n, type_t a[])                        \
+      |                 ^~~~~~~~~~~~~~~~~
+<scratch space>:15:1: note: expanded from here
+   15 | ks_shuffle_int32_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:43:1: warning: unused function 'ks_sample_int32_t_indices' [-Wunused-function]
+   43 | VECTOR_INIT_NUMERIC(int32_array, int32_t, uint32_t, abs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:250:17: note: expanded from macro 'KSORT_INIT'
+  250 |     static void ks_sample_##name(size_t n, size_t r, type_t a[]) /* FIXME: NOT TESTED!!! */ \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:16:1: note: expanded from here
+   16 | ks_sample_int32_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:44:1: warning: unused function 'ks_mergesort_uint32_t' [-Wunused-function]
+   44 | VECTOR_INIT_NUMERIC(uint32_array, uint32_t, uint32_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:58:17: note: expanded from macro 'KSORT_INIT'
+   58 |     static void ks_mergesort_##name(size_t n, type_t array[], type_t temp[])   \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:95:1: note: expanded from here
+   95 | ks_mergesort_uint32_t
+      | ^~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:44:1: warning: unused function 'ks_heapmake_uint32_t' [-Wunused-function]
+   44 | VECTOR_INIT_NUMERIC(uint32_array, uint32_t, uint32_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:117:17: note: expanded from macro 'KSORT_INIT'
+  117 |     static void ks_heapmake_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:97:1: note: expanded from here
+   97 | ks_heapmake_uint32_t
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:44:1: warning: unused function 'ks_heapsort_uint32_t' [-Wunused-function]
+   44 | VECTOR_INIT_NUMERIC(uint32_array, uint32_t, uint32_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:123:17: note: expanded from macro 'KSORT_INIT'
+  123 |     static void ks_heapsort_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:99:1: note: expanded from here
+   99 | ks_heapsort_uint32_t
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:44:1: warning: unused function 'ks_ksmall_uint32_t' [-Wunused-function]
+   44 | VECTOR_INIT_NUMERIC(uint32_array, uint32_t, uint32_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:214:19: note: expanded from macro 'KSORT_INIT'
+  214 |     static type_t ks_ksmall_##name(size_t n, type_t arr[], size_t kk)          \
+      |                   ^~~~~~~~~~~~~~~~
+<scratch space>:107:1: note: expanded from here
+  107 | ks_ksmall_uint32_t
+      | ^~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:44:1: warning: unused function 'ks_shuffle_uint32_t' [-Wunused-function]
+   44 | VECTOR_INIT_NUMERIC(uint32_array, uint32_t, uint32_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:241:17: note: expanded from macro 'KSORT_INIT'
+  241 |     static void ks_shuffle_##name(size_t n, type_t a[])                        \
+      |                 ^~~~~~~~~~~~~~~~~
+<scratch space>:108:1: note: expanded from here
+  108 | ks_shuffle_uint32_t
+      | ^~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:44:1: warning: unused function 'ks_sample_uint32_t' [-Wunused-function]
+   44 | VECTOR_INIT_NUMERIC(uint32_array, uint32_t, uint32_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:250:17: note: expanded from macro 'KSORT_INIT'
+  250 |     static void ks_sample_##name(size_t n, size_t r, type_t a[]) /* FIXME: NOT TESTED!!! */ \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:109:1: note: expanded from here
+  109 | ks_sample_uint32_t
+      | ^~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:44:1: warning: unused function 'ks_mergesort_uint32_t_indices' [-Wunused-function]
+   44 | VECTOR_INIT_NUMERIC(uint32_array, uint32_t, uint32_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:58:17: note: expanded from macro 'KSORT_INIT'
+   58 |     static void ks_mergesort_##name(size_t n, type_t array[], type_t temp[])   \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:112:1: note: expanded from here
+  112 | ks_mergesort_uint32_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:44:1: warning: unused function 'ks_heapmake_uint32_t_indices' [-Wunused-function]
+   44 | VECTOR_INIT_NUMERIC(uint32_array, uint32_t, uint32_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:117:17: note: expanded from macro 'KSORT_INIT'
+  117 |     static void ks_heapmake_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:114:1: note: expanded from here
+  114 | ks_heapmake_uint32_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:44:1: warning: unused function 'ks_heapsort_uint32_t_indices' [-Wunused-function]
+   44 | VECTOR_INIT_NUMERIC(uint32_array, uint32_t, uint32_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:123:17: note: expanded from macro 'KSORT_INIT'
+  123 |     static void ks_heapsort_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:116:1: note: expanded from here
+  116 | ks_heapsort_uint32_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:44:1: warning: unused function 'ks_ksmall_uint32_t_indices' [-Wunused-function]
+   44 | VECTOR_INIT_NUMERIC(uint32_array, uint32_t, uint32_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:214:19: note: expanded from macro 'KSORT_INIT'
+  214 |     static type_t ks_ksmall_##name(size_t n, type_t arr[], size_t kk)          \
+      |                   ^~~~~~~~~~~~~~~~
+<scratch space>:124:1: note: expanded from here
+  124 | ks_ksmall_uint32_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:44:1: warning: unused function 'ks_shuffle_uint32_t_indices' [-Wunused-function]
+   44 | VECTOR_INIT_NUMERIC(uint32_array, uint32_t, uint32_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:241:17: note: expanded from macro 'KSORT_INIT'
+  241 |     static void ks_shuffle_##name(size_t n, type_t a[])                        \
+      |                 ^~~~~~~~~~~~~~~~~
+<scratch space>:125:1: note: expanded from here
+  125 | ks_shuffle_uint32_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:44:1: warning: unused function 'ks_sample_uint32_t_indices' [-Wunused-function]
+   44 | VECTOR_INIT_NUMERIC(uint32_array, uint32_t, uint32_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:250:17: note: expanded from macro 'KSORT_INIT'
+  250 |     static void ks_sample_##name(size_t n, size_t r, type_t a[]) /* FIXME: NOT TESTED!!! */ \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:126:1: note: expanded from here
+  126 | ks_sample_uint32_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:45:1: warning: unused function 'ks_mergesort_int64_t' [-Wunused-function]
+   45 | VECTOR_INIT_NUMERIC(int64_array, int64_t, uint64_t, llabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:58:17: note: expanded from macro 'KSORT_INIT'
+   58 |     static void ks_mergesort_##name(size_t n, type_t array[], type_t temp[])   \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:35:1: note: expanded from here
+   35 | ks_mergesort_int64_t
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:45:1: warning: unused function 'ks_heapmake_int64_t' [-Wunused-function]
+   45 | VECTOR_INIT_NUMERIC(int64_array, int64_t, uint64_t, llabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:117:17: note: expanded from macro 'KSORT_INIT'
+  117 |     static void ks_heapmake_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:37:1: note: expanded from here
+   37 | ks_heapmake_int64_t
+      | ^~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:45:1: warning: unused function 'ks_heapsort_int64_t' [-Wunused-function]
+   45 | VECTOR_INIT_NUMERIC(int64_array, int64_t, uint64_t, llabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:123:17: note: expanded from macro 'KSORT_INIT'
+  123 |     static void ks_heapsort_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:39:1: note: expanded from here
+   39 | ks_heapsort_int64_t
+      | ^~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:45:1: warning: unused function 'ks_ksmall_int64_t' [-Wunused-function]
+   45 | VECTOR_INIT_NUMERIC(int64_array, int64_t, uint64_t, llabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:214:19: note: expanded from macro 'KSORT_INIT'
+  214 |     static type_t ks_ksmall_##name(size_t n, type_t arr[], size_t kk)          \
+      |                   ^~~~~~~~~~~~~~~~
+<scratch space>:47:1: note: expanded from here
+   47 | ks_ksmall_int64_t
+      | ^~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:45:1: warning: unused function 'ks_shuffle_int64_t' [-Wunused-function]
+   45 | VECTOR_INIT_NUMERIC(int64_array, int64_t, uint64_t, llabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:241:17: note: expanded from macro 'KSORT_INIT'
+  241 |     static void ks_shuffle_##name(size_t n, type_t a[])                        \
+      |                 ^~~~~~~~~~~~~~~~~
+<scratch space>:48:1: note: expanded from here
+   48 | ks_shuffle_int64_t
+      | ^~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:45:1: warning: unused function 'ks_sample_int64_t' [-Wunused-function]
+   45 | VECTOR_INIT_NUMERIC(int64_array, int64_t, uint64_t, llabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:250:17: note: expanded from macro 'KSORT_INIT'
+  250 |     static void ks_sample_##name(size_t n, size_t r, type_t a[]) /* FIXME: NOT TESTED!!! */ \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:49:1: note: expanded from here
+   49 | ks_sample_int64_t
+      | ^~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:45:1: warning: unused function 'ks_mergesort_int64_t_indices' [-Wunused-function]
+   45 | VECTOR_INIT_NUMERIC(int64_array, int64_t, uint64_t, llabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:58:17: note: expanded from macro 'KSORT_INIT'
+   58 |     static void ks_mergesort_##name(size_t n, type_t array[], type_t temp[])   \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:52:1: note: expanded from here
+   52 | ks_mergesort_int64_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:45:1: warning: unused function 'ks_heapmake_int64_t_indices' [-Wunused-function]
+   45 | VECTOR_INIT_NUMERIC(int64_array, int64_t, uint64_t, llabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:117:17: note: expanded from macro 'KSORT_INIT'
+  117 |     static void ks_heapmake_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:54:1: note: expanded from here
+   54 | ks_heapmake_int64_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:45:1: warning: unused function 'ks_heapsort_int64_t_indices' [-Wunused-function]
+   45 | VECTOR_INIT_NUMERIC(int64_array, int64_t, uint64_t, llabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:123:17: note: expanded from macro 'KSORT_INIT'
+  123 |     static void ks_heapsort_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:56:1: note: expanded from here
+   56 | ks_heapsort_int64_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:45:1: warning: unused function 'ks_ksmall_int64_t_indices' [-Wunused-function]
+   45 | VECTOR_INIT_NUMERIC(int64_array, int64_t, uint64_t, llabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:214:19: note: expanded from macro 'KSORT_INIT'
+  214 |     static type_t ks_ksmall_##name(size_t n, type_t arr[], size_t kk)          \
+      |                   ^~~~~~~~~~~~~~~~
+<scratch space>:64:1: note: expanded from here
+   64 | ks_ksmall_int64_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:45:1: warning: unused function 'ks_shuffle_int64_t_indices' [-Wunused-function]
+   45 | VECTOR_INIT_NUMERIC(int64_array, int64_t, uint64_t, llabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:241:17: note: expanded from macro 'KSORT_INIT'
+  241 |     static void ks_shuffle_##name(size_t n, type_t a[])                        \
+      |                 ^~~~~~~~~~~~~~~~~
+<scratch space>:65:1: note: expanded from here
+   65 | ks_shuffle_int64_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:45:1: warning: unused function 'ks_sample_int64_t_indices' [-Wunused-function]
+   45 | VECTOR_INIT_NUMERIC(int64_array, int64_t, uint64_t, llabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:250:17: note: expanded from macro 'KSORT_INIT'
+  250 |     static void ks_sample_##name(size_t n, size_t r, type_t a[]) /* FIXME: NOT TESTED!!! */ \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:66:1: note: expanded from here
+   66 | ks_sample_int64_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:46:1: warning: unused function 'ks_mergesort_uint64_t' [-Wunused-function]
+   46 | VECTOR_INIT_NUMERIC(uint64_array, uint64_t, uint64_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:58:17: note: expanded from macro 'KSORT_INIT'
+   58 |     static void ks_mergesort_##name(size_t n, type_t array[], type_t temp[])   \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:145:1: note: expanded from here
+  145 | ks_mergesort_uint64_t
+      | ^~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:46:1: warning: unused function 'ks_heapmake_uint64_t' [-Wunused-function]
+   46 | VECTOR_INIT_NUMERIC(uint64_array, uint64_t, uint64_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:117:17: note: expanded from macro 'KSORT_INIT'
+  117 |     static void ks_heapmake_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:147:1: note: expanded from here
+  147 | ks_heapmake_uint64_t
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:46:1: warning: unused function 'ks_heapsort_uint64_t' [-Wunused-function]
+   46 | VECTOR_INIT_NUMERIC(uint64_array, uint64_t, uint64_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:123:17: note: expanded from macro 'KSORT_INIT'
+  123 |     static void ks_heapsort_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:149:1: note: expanded from here
+  149 | ks_heapsort_uint64_t
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:46:1: warning: unused function 'ks_ksmall_uint64_t' [-Wunused-function]
+   46 | VECTOR_INIT_NUMERIC(uint64_array, uint64_t, uint64_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:214:19: note: expanded from macro 'KSORT_INIT'
+  214 |     static type_t ks_ksmall_##name(size_t n, type_t arr[], size_t kk)          \
+      |                   ^~~~~~~~~~~~~~~~
+<scratch space>:157:1: note: expanded from here
+  157 | ks_ksmall_uint64_t
+      | ^~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:46:1: warning: unused function 'ks_shuffle_uint64_t' [-Wunused-function]
+   46 | VECTOR_INIT_NUMERIC(uint64_array, uint64_t, uint64_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:241:17: note: expanded from macro 'KSORT_INIT'
+  241 |     static void ks_shuffle_##name(size_t n, type_t a[])                        \
+      |                 ^~~~~~~~~~~~~~~~~
+<scratch space>:158:1: note: expanded from here
+  158 | ks_shuffle_uint64_t
+      | ^~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:46:1: warning: unused function 'ks_sample_uint64_t' [-Wunused-function]
+   46 | VECTOR_INIT_NUMERIC(uint64_array, uint64_t, uint64_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:250:17: note: expanded from macro 'KSORT_INIT'
+  250 |     static void ks_sample_##name(size_t n, size_t r, type_t a[]) /* FIXME: NOT TESTED!!! */ \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:159:1: note: expanded from here
+  159 | ks_sample_uint64_t
+      | ^~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:46:1: warning: unused function 'ks_mergesort_uint64_t_indices' [-Wunused-function]
+   46 | VECTOR_INIT_NUMERIC(uint64_array, uint64_t, uint64_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:58:17: note: expanded from macro 'KSORT_INIT'
+   58 |     static void ks_mergesort_##name(size_t n, type_t array[], type_t temp[])   \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:162:1: note: expanded from here
+  162 | ks_mergesort_uint64_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:46:1: warning: unused function 'ks_heapmake_uint64_t_indices' [-Wunused-function]
+   46 | VECTOR_INIT_NUMERIC(uint64_array, uint64_t, uint64_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:117:17: note: expanded from macro 'KSORT_INIT'
+  117 |     static void ks_heapmake_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:164:1: note: expanded from here
+  164 | ks_heapmake_uint64_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:46:1: warning: unused function 'ks_heapsort_uint64_t_indices' [-Wunused-function]
+   46 | VECTOR_INIT_NUMERIC(uint64_array, uint64_t, uint64_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:123:17: note: expanded from macro 'KSORT_INIT'
+  123 |     static void ks_heapsort_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:166:1: note: expanded from here
+  166 | ks_heapsort_uint64_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:46:1: warning: unused function 'ks_ksmall_uint64_t_indices' [-Wunused-function]
+   46 | VECTOR_INIT_NUMERIC(uint64_array, uint64_t, uint64_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:214:19: note: expanded from macro 'KSORT_INIT'
+  214 |     static type_t ks_ksmall_##name(size_t n, type_t arr[], size_t kk)          \
+      |                   ^~~~~~~~~~~~~~~~
+<scratch space>:174:1: note: expanded from here
+  174 | ks_ksmall_uint64_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:46:1: warning: unused function 'ks_shuffle_uint64_t_indices' [-Wunused-function]
+   46 | VECTOR_INIT_NUMERIC(uint64_array, uint64_t, uint64_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:241:17: note: expanded from macro 'KSORT_INIT'
+  241 |     static void ks_shuffle_##name(size_t n, type_t a[])                        \
+      |                 ^~~~~~~~~~~~~~~~~
+<scratch space>:175:1: note: expanded from here
+  175 | ks_shuffle_uint64_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:46:1: warning: unused function 'ks_sample_uint64_t_indices' [-Wunused-function]
+   46 | VECTOR_INIT_NUMERIC(uint64_array, uint64_t, uint64_t, nop)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:250:17: note: expanded from macro 'KSORT_INIT'
+  250 |     static void ks_sample_##name(size_t n, size_t r, type_t a[]) /* FIXME: NOT TESTED!!! */ \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:2:1: note: expanded from here
+    2 | ks_sample_uint64_t_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:47:1: warning: unused function 'ks_mergesort_float' [-Wunused-function]
+   47 | VECTOR_INIT_NUMERIC_FLOAT(float_array, float, fabsf)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:58:17: note: expanded from macro 'KSORT_INIT'
+   58 |     static void ks_mergesort_##name(size_t n, type_t array[], type_t temp[])   \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:81:1: note: expanded from here
+   81 | ks_mergesort_float
+      | ^~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:47:1: warning: unused function 'ks_heapmake_float' [-Wunused-function]
+   47 | VECTOR_INIT_NUMERIC_FLOAT(float_array, float, fabsf)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:117:17: note: expanded from macro 'KSORT_INIT'
+  117 |     static void ks_heapmake_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:83:1: note: expanded from here
+   83 | ks_heapmake_float
+      | ^~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:47:1: warning: unused function 'ks_heapsort_float' [-Wunused-function]
+   47 | VECTOR_INIT_NUMERIC_FLOAT(float_array, float, fabsf)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:123:17: note: expanded from macro 'KSORT_INIT'
+  123 |     static void ks_heapsort_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:85:1: note: expanded from here
+   85 | ks_heapsort_float
+      | ^~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:47:1: warning: unused function 'ks_ksmall_float' [-Wunused-function]
+   47 | VECTOR_INIT_NUMERIC_FLOAT(float_array, float, fabsf)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:214:19: note: expanded from macro 'KSORT_INIT'
+  214 |     static type_t ks_ksmall_##name(size_t n, type_t arr[], size_t kk)          \
+      |                   ^~~~~~~~~~~~~~~~
+<scratch space>:93:1: note: expanded from here
+   93 | ks_ksmall_float
+      | ^~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:47:1: warning: unused function 'ks_shuffle_float' [-Wunused-function]
+   47 | VECTOR_INIT_NUMERIC_FLOAT(float_array, float, fabsf)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:241:17: note: expanded from macro 'KSORT_INIT'
+  241 |     static void ks_shuffle_##name(size_t n, type_t a[])                        \
+      |                 ^~~~~~~~~~~~~~~~~
+<scratch space>:94:1: note: expanded from here
+   94 | ks_shuffle_float
+      | ^~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:47:1: warning: unused function 'ks_sample_float' [-Wunused-function]
+   47 | VECTOR_INIT_NUMERIC_FLOAT(float_array, float, fabsf)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:250:17: note: expanded from macro 'KSORT_INIT'
+  250 |     static void ks_sample_##name(size_t n, size_t r, type_t a[]) /* FIXME: NOT TESTED!!! */ \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:95:1: note: expanded from here
+   95 | ks_sample_float
+      | ^~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:47:1: warning: unused function 'ks_mergesort_float_indices' [-Wunused-function]
+   47 | VECTOR_INIT_NUMERIC_FLOAT(float_array, float, fabsf)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:58:17: note: expanded from macro 'KSORT_INIT'
+   58 |     static void ks_mergesort_##name(size_t n, type_t array[], type_t temp[])   \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:98:1: note: expanded from here
+   98 | ks_mergesort_float_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:47:1: warning: unused function 'ks_heapmake_float_indices' [-Wunused-function]
+   47 | VECTOR_INIT_NUMERIC_FLOAT(float_array, float, fabsf)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:117:17: note: expanded from macro 'KSORT_INIT'
+  117 |     static void ks_heapmake_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:100:1: note: expanded from here
+  100 | ks_heapmake_float_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:47:1: warning: unused function 'ks_heapsort_float_indices' [-Wunused-function]
+   47 | VECTOR_INIT_NUMERIC_FLOAT(float_array, float, fabsf)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:123:17: note: expanded from macro 'KSORT_INIT'
+  123 |     static void ks_heapsort_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:102:1: note: expanded from here
+  102 | ks_heapsort_float_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:47:1: warning: unused function 'ks_ksmall_float_indices' [-Wunused-function]
+   47 | VECTOR_INIT_NUMERIC_FLOAT(float_array, float, fabsf)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:214:19: note: expanded from macro 'KSORT_INIT'
+  214 |     static type_t ks_ksmall_##name(size_t n, type_t arr[], size_t kk)          \
+      |                   ^~~~~~~~~~~~~~~~
+<scratch space>:110:1: note: expanded from here
+  110 | ks_ksmall_float_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:47:1: warning: unused function 'ks_shuffle_float_indices' [-Wunused-function]
+   47 | VECTOR_INIT_NUMERIC_FLOAT(float_array, float, fabsf)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:241:17: note: expanded from macro 'KSORT_INIT'
+  241 |     static void ks_shuffle_##name(size_t n, type_t a[])                        \
+      |                 ^~~~~~~~~~~~~~~~~
+<scratch space>:111:1: note: expanded from here
+  111 | ks_shuffle_float_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:47:1: warning: unused function 'ks_sample_float_indices' [-Wunused-function]
+   47 | VECTOR_INIT_NUMERIC_FLOAT(float_array, float, fabsf)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:250:17: note: expanded from macro 'KSORT_INIT'
+  250 |     static void ks_sample_##name(size_t n, size_t r, type_t a[]) /* FIXME: NOT TESTED!!! */ \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:112:1: note: expanded from here
+  112 | ks_sample_float_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:48:1: warning: unused function 'ks_mergesort_double' [-Wunused-function]
+   48 | VECTOR_INIT_NUMERIC_DOUBLE(double_array, double, fabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:522:36: note: expanded from macro 'VECTOR_INIT_NUMERIC_DOUBLE'
+  522 | #define VECTOR_INIT_NUMERIC_DOUBLE VECTOR_INIT_NUMERIC_FLOAT
+      |                                    ^
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:58:17: note: expanded from macro 'KSORT_INIT'
+   58 |     static void ks_mergesort_##name(size_t n, type_t array[], type_t temp[])   \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:13:1: note: expanded from here
+   13 | ks_mergesort_double
+      | ^~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:48:1: warning: unused function 'ks_heapmake_double' [-Wunused-function]
+   48 | VECTOR_INIT_NUMERIC_DOUBLE(double_array, double, fabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:522:36: note: expanded from macro 'VECTOR_INIT_NUMERIC_DOUBLE'
+  522 | #define VECTOR_INIT_NUMERIC_DOUBLE VECTOR_INIT_NUMERIC_FLOAT
+      |                                    ^
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:117:17: note: expanded from macro 'KSORT_INIT'
+  117 |     static void ks_heapmake_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:15:1: note: expanded from here
+   15 | ks_heapmake_double
+      | ^~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:48:1: warning: unused function 'ks_heapsort_double' [-Wunused-function]
+   48 | VECTOR_INIT_NUMERIC_DOUBLE(double_array, double, fabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:522:36: note: expanded from macro 'VECTOR_INIT_NUMERIC_DOUBLE'
+  522 | #define VECTOR_INIT_NUMERIC_DOUBLE VECTOR_INIT_NUMERIC_FLOAT
+      |                                    ^
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:123:17: note: expanded from macro 'KSORT_INIT'
+  123 |     static void ks_heapsort_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:17:1: note: expanded from here
+   17 | ks_heapsort_double
+      | ^~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:48:1: warning: unused function 'ks_ksmall_double' [-Wunused-function]
+   48 | VECTOR_INIT_NUMERIC_DOUBLE(double_array, double, fabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:522:36: note: expanded from macro 'VECTOR_INIT_NUMERIC_DOUBLE'
+  522 | #define VECTOR_INIT_NUMERIC_DOUBLE VECTOR_INIT_NUMERIC_FLOAT
+      |                                    ^
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:214:19: note: expanded from macro 'KSORT_INIT'
+  214 |     static type_t ks_ksmall_##name(size_t n, type_t arr[], size_t kk)          \
+      |                   ^~~~~~~~~~~~~~~~
+<scratch space>:25:1: note: expanded from here
+   25 | ks_ksmall_double
+      | ^~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:48:1: warning: unused function 'ks_shuffle_double' [-Wunused-function]
+   48 | VECTOR_INIT_NUMERIC_DOUBLE(double_array, double, fabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:522:36: note: expanded from macro 'VECTOR_INIT_NUMERIC_DOUBLE'
+  522 | #define VECTOR_INIT_NUMERIC_DOUBLE VECTOR_INIT_NUMERIC_FLOAT
+      |                                    ^
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:241:17: note: expanded from macro 'KSORT_INIT'
+  241 |     static void ks_shuffle_##name(size_t n, type_t a[])                        \
+      |                 ^~~~~~~~~~~~~~~~~
+<scratch space>:26:1: note: expanded from here
+   26 | ks_shuffle_double
+      | ^~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:48:1: warning: unused function 'ks_sample_double' [-Wunused-function]
+   48 | VECTOR_INIT_NUMERIC_DOUBLE(double_array, double, fabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:522:36: note: expanded from macro 'VECTOR_INIT_NUMERIC_DOUBLE'
+  522 | #define VECTOR_INIT_NUMERIC_DOUBLE VECTOR_INIT_NUMERIC_FLOAT
+      |                                    ^
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:143:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  143 |     KSORT_INIT_GENERIC(type)                                                                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:276:36: note: expanded from macro 'KSORT_INIT_GENERIC'
+  276 | #define KSORT_INIT_GENERIC(type_t) KSORT_INIT(type_t, type_t, ks_lt_generic)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:250:17: note: expanded from macro 'KSORT_INIT'
+  250 |     static void ks_sample_##name(size_t n, size_t r, type_t a[]) /* FIXME: NOT TESTED!!! */ \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:27:1: note: expanded from here
+   27 | ks_sample_double
+      | ^~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:48:1: warning: unused function 'ks_mergesort_double_indices' [-Wunused-function]
+   48 | VECTOR_INIT_NUMERIC_DOUBLE(double_array, double, fabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:522:36: note: expanded from macro 'VECTOR_INIT_NUMERIC_DOUBLE'
+  522 | #define VECTOR_INIT_NUMERIC_DOUBLE VECTOR_INIT_NUMERIC_FLOAT
+      |                                    ^
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:58:17: note: expanded from macro 'KSORT_INIT'
+   58 |     static void ks_mergesort_##name(size_t n, type_t array[], type_t temp[])   \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:30:1: note: expanded from here
+   30 | ks_mergesort_double_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:48:1: warning: unused function 'ks_heapmake_double_indices' [-Wunused-function]
+   48 | VECTOR_INIT_NUMERIC_DOUBLE(double_array, double, fabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:522:36: note: expanded from macro 'VECTOR_INIT_NUMERIC_DOUBLE'
+  522 | #define VECTOR_INIT_NUMERIC_DOUBLE VECTOR_INIT_NUMERIC_FLOAT
+      |                                    ^
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:117:17: note: expanded from macro 'KSORT_INIT'
+  117 |     static void ks_heapmake_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:32:1: note: expanded from here
+   32 | ks_heapmake_double_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:48:1: warning: unused function 'ks_heapsort_double_indices' [-Wunused-function]
+   48 | VECTOR_INIT_NUMERIC_DOUBLE(double_array, double, fabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:522:36: note: expanded from macro 'VECTOR_INIT_NUMERIC_DOUBLE'
+  522 | #define VECTOR_INIT_NUMERIC_DOUBLE VECTOR_INIT_NUMERIC_FLOAT
+      |                                    ^
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:123:17: note: expanded from macro 'KSORT_INIT'
+  123 |     static void ks_heapsort_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:34:1: note: expanded from here
+   34 | ks_heapsort_double_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:48:1: warning: unused function 'ks_ksmall_double_indices' [-Wunused-function]
+   48 | VECTOR_INIT_NUMERIC_DOUBLE(double_array, double, fabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:522:36: note: expanded from macro 'VECTOR_INIT_NUMERIC_DOUBLE'
+  522 | #define VECTOR_INIT_NUMERIC_DOUBLE VECTOR_INIT_NUMERIC_FLOAT
+      |                                    ^
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:214:19: note: expanded from macro 'KSORT_INIT'
+  214 |     static type_t ks_ksmall_##name(size_t n, type_t arr[], size_t kk)          \
+      |                   ^~~~~~~~~~~~~~~~
+<scratch space>:42:1: note: expanded from here
+   42 | ks_ksmall_double_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:48:1: warning: unused function 'ks_shuffle_double_indices' [-Wunused-function]
+   48 | VECTOR_INIT_NUMERIC_DOUBLE(double_array, double, fabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:522:36: note: expanded from macro 'VECTOR_INIT_NUMERIC_DOUBLE'
+  522 | #define VECTOR_INIT_NUMERIC_DOUBLE VECTOR_INIT_NUMERIC_FLOAT
+      |                                    ^
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:241:17: note: expanded from macro 'KSORT_INIT'
+  241 |     static void ks_shuffle_##name(size_t n, type_t a[])                        \
+      |                 ^~~~~~~~~~~~~~~~~
+<scratch space>:43:1: note: expanded from here
+   43 | ks_shuffle_double_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:48:1: warning: unused function 'ks_sample_double_indices' [-Wunused-function]
+   48 | VECTOR_INIT_NUMERIC_DOUBLE(double_array, double, fabs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:522:36: note: expanded from macro 'VECTOR_INIT_NUMERIC_DOUBLE'
+  522 | #define VECTOR_INIT_NUMERIC_DOUBLE VECTOR_INIT_NUMERIC_FLOAT
+      |                                    ^
+libpostal/src/vector_math.h:308:5: note: expanded from macro 'VECTOR_INIT_NUMERIC_FLOAT'
+  308 |     VECTOR_INIT_NUMERIC(name, type, type, type_abs)                            \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/vector_math.h:144:5: note: expanded from macro 'VECTOR_INIT_NUMERIC'
+  144 |     KSORT_INIT(type##_indices, type##_index_t, ks_lt_index)                                             \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:250:17: note: expanded from macro 'KSORT_INIT'
+  250 |     static void ks_sample_##name(size_t n, size_t r, type_t a[]) /* FIXME: NOT TESTED!!! */ \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:44:1: note: expanded from here
+   44 | ks_sample_double_indices
+      | ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:56:1: warning: unused function 'ks_mergesort_str' [-Wunused-function]
+   56 | KSORT_INIT_STR
+      | ^~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:277:24: note: expanded from macro 'KSORT_INIT_STR'
+  277 | #define KSORT_INIT_STR KSORT_INIT(str, ksstr_t, ks_lt_str)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:58:17: note: expanded from macro 'KSORT_INIT'
+   58 |     static void ks_mergesort_##name(size_t n, type_t array[], type_t temp[])   \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:157:1: note: expanded from here
+  157 | ks_mergesort_str
+      | ^~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:56:1: warning: unused function 'ks_heapmake_str' [-Wunused-function]
+   56 | KSORT_INIT_STR
+      | ^~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:277:24: note: expanded from macro 'KSORT_INIT_STR'
+  277 | #define KSORT_INIT_STR KSORT_INIT(str, ksstr_t, ks_lt_str)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:117:17: note: expanded from macro 'KSORT_INIT'
+  117 |     static void ks_heapmake_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:159:1: note: expanded from here
+  159 | ks_heapmake_str
+      | ^~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:56:1: warning: unused function 'ks_heapsort_str' [-Wunused-function]
+   56 | KSORT_INIT_STR
+      | ^~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:277:24: note: expanded from macro 'KSORT_INIT_STR'
+  277 | #define KSORT_INIT_STR KSORT_INIT(str, ksstr_t, ks_lt_str)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:123:17: note: expanded from macro 'KSORT_INIT'
+  123 |     static void ks_heapsort_##name(size_t lsize, type_t l[])                   \
+      |                 ^~~~~~~~~~~~~~~~~~
+<scratch space>:161:1: note: expanded from here
+  161 | ks_heapsort_str
+      | ^~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:56:1: warning: unused function 'ks_introsort_str' [-Wunused-function]
+   56 | KSORT_INIT_STR
+      | ^~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:277:24: note: expanded from macro 'KSORT_INIT_STR'
+  277 | #define KSORT_INIT_STR KSORT_INIT(str, ksstr_t, ks_lt_str)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:161:17: note: expanded from macro 'KSORT_INIT'
+  161 |     static void ks_introsort_##name(size_t n, type_t a[])                      \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:166:1: note: expanded from here
+  166 | ks_introsort_str
+      | ^~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:56:1: warning: unused function 'ks_ksmall_str' [-Wunused-function]
+   56 | KSORT_INIT_STR
+      | ^~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:277:24: note: expanded from macro 'KSORT_INIT_STR'
+  277 | #define KSORT_INIT_STR KSORT_INIT(str, ksstr_t, ks_lt_str)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:214:19: note: expanded from macro 'KSORT_INIT'
+  214 |     static type_t ks_ksmall_##name(size_t n, type_t arr[], size_t kk)          \
+      |                   ^~~~~~~~~~~~~~~~
+<scratch space>:169:1: note: expanded from here
+  169 | ks_ksmall_str
+      | ^~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:56:1: warning: unused function 'ks_shuffle_str' [-Wunused-function]
+   56 | KSORT_INIT_STR
+      | ^~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:277:24: note: expanded from macro 'KSORT_INIT_STR'
+  277 | #define KSORT_INIT_STR KSORT_INIT(str, ksstr_t, ks_lt_str)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:241:17: note: expanded from macro 'KSORT_INIT'
+  241 |     static void ks_shuffle_##name(size_t n, type_t a[])                        \
+      |                 ^~~~~~~~~~~~~~~~~
+<scratch space>:170:1: note: expanded from here
+  170 | ks_shuffle_str
+      | ^~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:56:1: warning: unused function 'ks_sample_str' [-Wunused-function]
+   56 | KSORT_INIT_STR
+      | ^~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:277:24: note: expanded from macro 'KSORT_INIT_STR'
+  277 | #define KSORT_INIT_STR KSORT_INIT(str, ksstr_t, ks_lt_str)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/klib/ksort.h:250:17: note: expanded from macro 'KSORT_INIT'
+  250 |     static void ks_sample_##name(size_t n, size_t r, type_t a[]) /* FIXME: NOT TESTED!!! */ \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:171:1: note: expanded from here
+  171 | ks_sample_str
+      | ^~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:87:1: warning: unused function 'str_uint32_hash_sort_keys_by_value' [-Wunused-function]
+   87 | KHASH_SORT_BY_VALUE(str_uint32, char *, uint32_t, uint32_array)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:61:22: note: expanded from macro 'KHASH_SORT_BY_VALUE'
+   61 |     static key_type *name##_hash_sort_keys_by_value(khash_t(name) *h, bool reversed) {      \
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<scratch space>:172:1: note: expanded from here
+  172 | str_uint32_hash_sort_keys_by_value
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:88:1: warning: unused function 'str_double_hash_sort_keys_by_value' [-Wunused-function]
+   88 | KHASH_SORT_BY_VALUE(str_double, char *, double, double_array)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:61:22: note: expanded from macro 'KHASH_SORT_BY_VALUE'
+   61 |     static key_type *name##_hash_sort_keys_by_value(khash_t(name) *h, bool reversed) {      \
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<scratch space>:176:1: note: expanded from here
+  176 | str_double_hash_sort_keys_by_value
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:101:1: warning: unused function 'str_uint32_hash_get' [-Wunused-function]
+  101 | KHASH_GET(str_uint32, kh_cstr_t, uint32_t)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:91:17: note: expanded from macro 'KHASH_GET'
+   91 |     static bool name##_hash_get(khash_t(name) *h, key_type key, val_type *val) {                            \
+      |                 ^~~~~~~~~~~~~~~
+<scratch space>:180:1: note: expanded from here
+  180 | str_uint32_hash_get
+      | ^~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:102:1: warning: unused function 'int_uint32_hash_get' [-Wunused-function]
+  102 | KHASH_GET(int_uint32, khint32_t, uint32_t)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:91:17: note: expanded from macro 'KHASH_GET'
+   91 |     static bool name##_hash_get(khash_t(name) *h, key_type key, val_type *val) {                            \
+      |                 ^~~~~~~~~~~~~~~
+<scratch space>:184:1: note: expanded from here
+  184 | int_uint32_hash_get
+      | ^~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:139:1: warning: unused function 'str_uint32_hash_incr_exists' [-Wunused-function]
+  139 | KHASH_STR_INCR(str_uint32, uint32_t)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:127:17: note: expanded from macro 'KHASH_STR_INCR'
+  127 |     static bool name##_hash_incr_exists(khash_t(name) *h, const char *key, bool *exists) {                  \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+<scratch space>:9:1: note: expanded from here
+    9 | str_uint32_hash_incr_exists
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:139:1: warning: unused function 'str_uint32_hash_incr_by' [-Wunused-function]
+  139 | KHASH_STR_INCR(str_uint32, uint32_t)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:130:17: note: expanded from macro 'KHASH_STR_INCR'
+  130 |     static bool name##_hash_incr_by(khash_t(name) *h, const char *key, val_type val) {                      \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:13:1: note: expanded from here
+   13 | str_uint32_hash_incr_by
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:139:1: warning: unused function 'str_uint32_hash_incr' [-Wunused-function]
+  139 | KHASH_STR_INCR(str_uint32, uint32_t)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:134:17: note: expanded from macro 'KHASH_STR_INCR'
+  134 |     static bool name##_hash_incr(khash_t(name) *h, const char *key) {                                       \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:17:1: note: expanded from here
+   17 | str_uint32_hash_incr
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:172:1: warning: unused function 'str_uint32_hash_to_id' [-Wunused-function]
+  172 | KHASH_STR_TO_ID(str_uint32, uint32_t)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:167:17: note: expanded from macro 'KHASH_STR_TO_ID'
+  167 |     static bool name##_hash_to_id(khash_t(name) *h, const char *key, val_type *val) {                       \
+      |                 ^~~~~~~~~~~~~~~~~
+<scratch space>:26:1: note: expanded from here
+   26 | str_uint32_hash_to_id
+      | ^~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:204:1: warning: unused function 'int_uint32_hash_incr_exists' [-Wunused-function]
+  204 | KHASH_INCR(int_uint32, khint32_t, uint32_t)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:192:17: note: expanded from macro 'KHASH_INCR'
+  192 |     static bool name##_hash_incr_exists(khash_t(name) *h, key_type key, bool *exists) {                     \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+<scratch space>:35:1: note: expanded from here
+   35 | int_uint32_hash_incr_exists
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:204:1: warning: unused function 'int_uint32_hash_incr_by' [-Wunused-function]
+  204 | KHASH_INCR(int_uint32, khint32_t, uint32_t)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:195:17: note: expanded from macro 'KHASH_INCR'
+  195 |     static bool name##_hash_incr_by(khash_t(name) *h, key_type key, val_type val) {                         \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:39:1: note: expanded from here
+   39 | int_uint32_hash_incr_by
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:204:1: warning: unused function 'int_uint32_hash_incr' [-Wunused-function]
+  204 | KHASH_INCR(int_uint32, khint32_t, uint32_t)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:199:17: note: expanded from macro 'KHASH_INCR'
+  199 |     static bool name##_hash_incr(khash_t(name) *h, key_type key) {                                          \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:43:1: note: expanded from here
+   43 | int_uint32_hash_incr
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:205:1: warning: unused function 'int64_uint32_hash_incr_exists' [-Wunused-function]
+  205 | KHASH_INCR(int64_uint32, khint64_t, uint32_t)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:192:17: note: expanded from macro 'KHASH_INCR'
+  192 |     static bool name##_hash_incr_exists(khash_t(name) *h, key_type key, bool *exists) {                     \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+<scratch space>:52:1: note: expanded from here
+   52 | int64_uint32_hash_incr_exists
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:205:1: warning: unused function 'int64_uint32_hash_incr_by' [-Wunused-function]
+  205 | KHASH_INCR(int64_uint32, khint64_t, uint32_t)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:195:17: note: expanded from macro 'KHASH_INCR'
+  195 |     static bool name##_hash_incr_by(khash_t(name) *h, key_type key, val_type val) {                         \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:56:1: note: expanded from here
+   56 | int64_uint32_hash_incr_by
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:205:1: warning: unused function 'int64_uint32_hash_incr' [-Wunused-function]
+  205 | KHASH_INCR(int64_uint32, khint64_t, uint32_t)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:199:17: note: expanded from macro 'KHASH_INCR'
+  199 |     static bool name##_hash_incr(khash_t(name) *h, key_type key) {                                          \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:60:1: note: expanded from here
+   60 | int64_uint32_hash_incr
+      | ^~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:206:1: warning: unused function 'int64_double_hash_incr_exists' [-Wunused-function]
+  206 | KHASH_INCR(int64_double, khint64_t, double)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:192:17: note: expanded from macro 'KHASH_INCR'
+  192 |     static bool name##_hash_incr_exists(khash_t(name) *h, key_type key, bool *exists) {                     \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+<scratch space>:69:1: note: expanded from here
+   69 | int64_double_hash_incr_exists
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:206:1: warning: unused function 'int64_double_hash_incr_by' [-Wunused-function]
+  206 | KHASH_INCR(int64_double, khint64_t, double)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:195:17: note: expanded from macro 'KHASH_INCR'
+  195 |     static bool name##_hash_incr_by(khash_t(name) *h, key_type key, val_type val) {                         \
+      |                 ^~~~~~~~~~~~~~~~~~~
+<scratch space>:73:1: note: expanded from here
+   73 | int64_double_hash_incr_by
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from research/experiments/200-fused-ascii-pipeline/raw/scanner-helper-test.c:6:
+In file included from libpostal/src/scanner.h:11:
+In file included from libpostal/src/tokens.h:10:
+libpostal/src/collections.h:206:1: warning: unused function 'int64_double_hash_incr' [-Wunused-function]
+  206 | KHASH_INCR(int64_double, khint64_t, double)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libpostal/src/collections.h:199:17: note: expanded from macro 'KHASH_INCR'
+  199 |     static bool name##_hash_incr(khash_t(name) *h, key_type key) {                                          \
+      |                 ^~~~~~~~~~~~~~~~
+<scratch space>:77:1: note: expanded from here
+   77 | int64_double_hash_incr
+      | ^~~~~~~~~~~~~~~~~~~~~~
+109 warnings generated.

@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/usr/bin/clang",
+    "-O2",
+    "-g",
+    "-flto",
+    "-I",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src",
+    "/opt/homebrew/opt/mimalloc/lib/mimalloc.o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/003-batched-lookups/tools/dump_outputs.c",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release/libpostal.a",
+    "-lm",
+    "-o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release-mimalloc-v2/dump_outputs"
+  ],
+  "start_utc": "2026-10-08T04:38:14.054367+00:00",
+  "end_utc": "2026-10-08T04:38:15.280523+00:00"
+}

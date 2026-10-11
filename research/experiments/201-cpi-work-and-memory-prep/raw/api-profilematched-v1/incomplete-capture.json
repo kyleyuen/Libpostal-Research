@@ -1,0 +1,17 @@
+{
+  "run_directory": "capture",
+  "status": "incomplete",
+  "start_utc": "2026-10-09T08:22:08.751799+00:00",
+  "exit": null,
+  "completed_roles": [
+    "original-000",
+    "cpi-profilematched"
+  ],
+  "incomplete_roles": [
+    "199-mimalloc-v2",
+    "cpi-archive-mimalloc",
+    "cpi-archive-no-mimalloc"
+  ],
+  "reason": "outer command session was not retained by the orchestration call; per-role logs for completed roles are intact, remaining roles were not run, no final manifest exists. This is an incomplete capture, not a comparison result.",
+  "preserve": "all created capture role directories retained; do not overwrite"
+}

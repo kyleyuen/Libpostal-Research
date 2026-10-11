@@ -1,0 +1,59 @@
+{
+  "verification_type": "post_run_metadata_integrity_check_no_parser_invocation",
+  "timestamp_local": "2026-10-09T02:21:59.445230-07:00",
+  "integrity_stage_in_suite": "skipped (timing,memory,threads,report only)",
+  "suite_run": "research/suite/results/201-token-storage-matched-golden-screen-v2",
+  "suite_results_sha256": "3c4b903dec67f9c67151a54de1ac22a905d897e443b8723d1a2966ae6ac4c528",
+  "config": {
+    "path": "research/experiments/201-cpi-work-and-memory-prep/raw/timing-screen-v1/config.json",
+    "sha256": "0440bbdb9562d99d3ab8c38390fea8d548d2633723dffe83948e1c2671c578a4"
+  },
+  "dataset": {
+    "path": "profiling/golden-v2-novel/v1-all.tsv",
+    "sha256": "43224e8b6381bf5b72f18601a28750ac500c6f40c30a739183b56a3f60cd57db",
+    "rows": 128540
+  },
+  "frozen_reference": {
+    "path": "profiling/golden-v1/baseline-outputs.jsonl",
+    "sha256": "c2d9ce7e6a014f6f5fd0ecf644f09c7863f4e028993acd21b7a1344f172bf084"
+  },
+  "model_manifest": {
+    "path": "research/experiments/186-architecture-benchmark/raw/build-20261007-final3/model_sha256.txt",
+    "sha256_file": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad",
+    "expected_manifest_identity": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad"
+  },
+  "executables": [
+    {
+      "name": "original-000",
+      "bench_ext": "research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+      "sha256": "a4968702ab9415f3fc71f509d73284e5d228073c49c825aeb7798b5b6e061a50",
+      "bytes": 9929528,
+      "role": "baseline",
+      "desc": "preserved original benchmark executable"
+    },
+    {
+      "name": "cpi-packaged",
+      "bench_ext": "research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext",
+      "sha256": "c5612825963a18be1f4e7869da2bb2dc6fedf3f098189d195bad765247b43c5a",
+      "bytes": 2611336,
+      "role": "candidate",
+      "desc": "accepted packaged CPI profile; PGO and scanner O1, mimalloc"
+    },
+    {
+      "name": "cpi-source-matched-o2",
+      "bench_ext": "research/experiments/119-component-phrase-ids/artifacts/cpi_201_matched_v1/bench_ext",
+      "sha256": "a1f6204d47c710ee9cdf94262d52bcdee206c93a7787627c05da21f64e7b9ee6",
+      "bytes": 5290968,
+      "role": "candidate",
+      "desc": "CPI source matched to 199: O2/LTO, scanner O0, no PGO, mimalloc"
+    },
+    {
+      "name": "199-token-span-mimalloc-v2",
+      "bench_ext": "research/experiments/199-token-span-storage/artifacts/release-mimalloc-v2/bench_ext",
+      "sha256": "7c14b07087cefb15052880fa7846c099a394c9e87b66fcd03d257bfd0d295dd4",
+      "bytes": 5290952,
+      "role": "candidate",
+      "desc": "199 token-span source, same no-PGO O2/LTO, scanner O0, mimalloc"
+    }
+  ]
+}

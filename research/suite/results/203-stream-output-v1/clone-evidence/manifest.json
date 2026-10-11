@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "purpose": "clone-resident full JSONL output evidence for the 203 14-dataset byte-parity check",
+  "source_correctness_record": "research/suite/results/203-stream-output-v1/correctness.json",
+  "manifest": "research/suite/results/203-stream-output-v1/manifest.json",
+  "datasets": [
+    {
+      "dataset": "golden-v1",
+      "input_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+      "input_sha256": "02252919fc2a24a3f0af41f3f7c5d6f8aaed6a5eb9548a2dcff6a4fcfe5f6c91",
+      "expected_rows": 12863,
+      "original_source_cache": "research/suite/results/cache/dump_578a62678e98_02252919fc2a.jsonl",
+      "original_clone_path": "research/suite/results/203-stream-output-v1/clone-evidence/original/golden-v1.original-000.jsonl",
+      "original": {
+        "sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+        "bytes": 2153786,
+        "lines": 12863
+      },
+      "candidate_path": "research/suite/results/203-stream-output-v1/correctness/cpi-stream-203_golden-v1.jsonl",
+      "candidate": {
+        "sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+        "bytes": 2153786,
+        "lines": 12863
+      },
+      "byte_identical": true
+    },
+    {
+      "dataset": "novel",
+      "input_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt",
+      "input_sha256": "a424c53e75d3d55f4172f7b13a59bf5ece961bf0f4acd7b85e214ce0aee09d47",
+      "expected_rows": 12863,
+      "original_source_cache": "research/suite/results/cache/dump_578a62678e98_a424c53e75d3.jsonl",
+      "original_clone_path": "research/suite/results/203-stream-output-v1/clone-evidence/original/novel.original-000.jsonl",
+      "original": {
+        "sha256": "806b8a81603ea9adf3af788334dc9b7d577cbb8a13753dd591b535f4fb896aae",
+        "bytes": 2075916,
+        "lines": 12863
+      },
+      "candidate_path": "research/suite/results/203-stream-output-v1/correctness/cpi-stream-203_novel.jsonl",
+      "candidate": {
+        "sha256": "806b8a81603ea9adf3af788334dc9b7d577cbb8a13753dd591b535f4fb896aae",
+        "bytes": 2075916,
+        "lines": 12863
+      },
+      "byte_identical": true
+    },
+    {
+      "dataset": "osm-v3",
+      "input_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.txt",
+      "input_sha256": "43594f43a39b30c46ef6adf99f70a8e435c0fa7d59fce8199611c8d927027c80",
+      "expected_rows": 11405,
+      "original_source_cache": "research/suite/results/cache/dump_578a62678e98_43594f43a39b.jsonl",
+      "original_clone_path": "research/suite/results/203-stream-output-v1/clone-evidence/original/osm-v3.original-000.jsonl",
+      "original": {
+        "sha256": "e8a48875b12310ef77f41603d0c6e54edc48c25657596407769d8e4deadb051b",
+        "bytes": 1709015,
+        "lines": 11405
+      },
+      "candidate_path": "research/suite/results/203-stream-output-v1/correctness/cpi-stream-203_osm-v3.jsonl",
+      "candidate": {
+        "sha256": "e8a48875b12310ef77f41603d0c6e54edc48c25657596407769d8e4deadb051b",
+        "bytes": 1709015,
+        "lines": 11405
+      },
+      "byte_identical": true
+    },
+    {
+      "dataset": "unseen-v4",
+      "input_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.txt",
+      "input_sha256": "7d6ae0bd3da7c731e3842e55ba06981d17530e2e0d483f08ca24d815336e5013",
+      "expected_rows": 10293,
+      "original_source_cache": "research/suite/results/cache/dump_578a62678e98_7d6ae0bd3da7.jsonl",
+      "original_clone_path": "research/suite/results/203-stream-output-v1/clone-evidence/original/unseen-v4.original-000.jsonl",
+      "original": {
+        "sha256": "78e2db753f9d127d3e7dedf0a6b3859029b16f0437b923140f037e9bc58b1f0a",
+        "bytes": 1514964,
+        "lines": 10293
+      },
+      "candidate_path": "research/suite/results/203-stream-output-v1/correctness/cpi-stream-203_unseen-v4.jsonl",
+      "candidate": {
+        "sha256": "78e2db753f9d127d3e7dedf0a6b3859029b16f0437b923140f037e9bc58b1f0a",
+        "bytes": 1514964,
+        "lines": 10293
+      },
+      "byte_identical": true
+    },
+    {
+      "dataset": "unseen-v5",
+      "input_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v5-osm-unseen/unseen5.txt",
+      "input_sha256": "1d2c61777ea36c5d640cc6b4022411812272ef1d4e71063a915c027ef246221a",
+      "expected_rows": 8794,
+      "original_source_cache": "research/suite/results/cache/dump_578a62678e98_1d2c61777ea3.jsonl",
+      "original_clone_path": "research/suite/results/203-stream-output-v1/clone-evidence/original/unseen-v5.original-000.jsonl",
+      "original": {
+        "sha256": "288e002d3b5556c542a66f774b9cf93a9c6b45123b2e35a5b16cf3d173e40775",
+        "bytes": 1319468,
+        "lines": 8794
+      },
+      "candidate_path": "research/suite/results/203-stream-output-v1/correctness/cpi-stream-203_unseen-v5.jsonl",
+      "candidate": {
+        "sha256": "288e002d3b5556c542a66f774b9cf93a9c6b45123b2e35a5b16cf3d173e40775",
+        "bytes": 1319468,
+        "lines": 8794
+      },
+      "byte_identical": true
+    },
+    {
+      "dataset": "unseen-v6",
+      "input_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v6-osm-unseen/unseen6.txt",
+      "input_sha256": "5d84824e3e3c4c7f3b3b28210f3a668e199ac698d8b1a0f51d40285d8d4c4acb",
+      "expected_rows": 9450,
+      "original_source_cache": "research/suite/results/cache/dump_578a62678e98_5d84824e3e3c.jsonl",
+      "original_clone_path": "research/suite/results/203-stream-output-v1/clone-evidence/original/unseen-v6.original-000.jsonl",
+      "original": {
+        "sha256": "e494544de8beaa78eb483c2b59e52f0c25c6fdd30825fb81547e8a0b3fb4e7b8",
+        "bytes": 1403686,
+        "lines": 9450
+      },
+      "candidate_path": "research/suite/results/203-stream-output-v1/correctness/cpi-stream-203_unseen-v6.jsonl",
+      "candidate": {
+        "sha256": "e494544de8beaa78eb483c2b59e52f0c25c6fdd30825fb81547e8a0b3fb4e7b8",
+        "bytes": 1403686,
+        "lines": 9450
+      },
+      "byte_identical": true
+    },
+    {
+      "dataset": "unseen-v7",
+      "input_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v7-osm-unseen/unseen7.txt",
+      "input_sha256": "9377e25c9802e4fb9b8853646d766aab5075b258b57c107d32161c861dfdebd1",
+      "expected_rows": 8973,
+      "original_source_cache": "research/suite/results/cache/dump_578a62678e98_9377e25c9802.jsonl",
+      "original_clone_path": "research/suite/results/203-stream-output-v1/clone-evidence/original/unseen-v7.original-000.jsonl",
+      "original": {
+        "sha256": "df345ddd9dffa20eced9768c5757a955d0dc655bc0641e2dc0de76fe637116d0",
+        "bytes": 1316468,
+        "lines": 8973
+      },
+      "candidate_path": "research/suite/results/203-stream-output-v1/correctness/cpi-stream-203_unseen-v7.jsonl",
+      "candidate": {
+        "sha256": "df345ddd9dffa20eced9768c5757a955d0dc655bc0641e2dc0de76fe637116d0",
+        "bytes": 1316468,
+        "lines": 8973
+      },
+      "byte_identical": true
+    },
+    {
+      "dataset": "unseen-v8",
+      "input_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.txt",
+      "input_sha256": "f2928154d081d3520e937defad7d22794cdd99a777743b511ee766ad50455563",
+      "expected_rows": 9981,
+      "original_source_cache": "research/suite/results/cache/dump_578a62678e98_f2928154d081.jsonl",
+      "original_clone_path": "research/suite/results/203-stream-output-v1/clone-evidence/original/unseen-v8.original-000.jsonl",
+      "original": {
+        "sha256": "f7a19baf900da2cd9907cbebe7bbc4c6decce9e7b9600bb7bdc21999afb5fdc5",
+        "bytes": 1477261,
+        "lines": 9981
+      },
+      "candidate_path": "research/suite/results/203-stream-output-v1/correctness/cpi-stream-203_unseen-v8.jsonl",
+      "candidate": {
+        "sha256": "f7a19baf900da2cd9907cbebe7bbc4c6decce9e7b9600bb7bdc21999afb5fdc5",
+        "bytes": 1477261,
+        "lines": 9981
+      },
+      "byte_identical": true
+    },
+    {
+      "dataset": "unseen-v9",
+      "input_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v9-osm-unseen/unseen9.txt",
+      "input_sha256": "15ef8f0552f2f74c9c3d996593103c3750d9b931233f4e46837906d7f452fe90",
+      "expected_rows": 9480,
+      "original_source_cache": "research/suite/results/cache/dump_578a62678e98_15ef8f0552f2.jsonl",
+      "original_clone_path": "research/suite/results/203-stream-output-v1/clone-evidence/original/unseen-v9.original-000.jsonl",
+      "original": {
+        "sha256": "c8f1b109cac1922b3d5eb3619738d8d41d7fa1169d0b3bf2fb8839852ad8d129",
+        "bytes": 1440075,
+        "lines": 9480
+      },
+      "candidate_path": "research/suite/results/203-stream-output-v1/correctness/cpi-stream-203_unseen-v9.jsonl",
+      "candidate": {
+        "sha256": "c8f1b109cac1922b3d5eb3619738d8d41d7fa1169d0b3bf2fb8839852ad8d129",
+        "bytes": 1440075,
+        "lines": 9480
+      },
+      "byte_identical": true
+    },
+    {
+      "dataset": "unseen-v10",
+      "input_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.txt",
+      "input_sha256": "75df7735bb21334069ee79585783bbd7e37bbad28156adf6a6a4229eafc7ba07",
+      "expected_rows": 8567,
+      "original_source_cache": "research/suite/results/cache/dump_578a62678e98_75df7735bb21.jsonl",
+      "original_clone_path": "research/suite/results/203-stream-output-v1/clone-evidence/original/unseen-v10.original-000.jsonl",
+      "original": {
+        "sha256": "1afaf108f3807349441cc2fc60ca2ed3ccdbfb1cead729b929f840d480c2d855",
+        "bytes": 1277321,
+        "lines": 8567
+      },
+      "candidate_path": "research/suite/results/203-stream-output-v1/correctness/cpi-stream-203_unseen-v10.jsonl",
+      "candidate": {
+        "sha256": "1afaf108f3807349441cc2fc60ca2ed3ccdbfb1cead729b929f840d480c2d855",
+        "bytes": 1277321,
+        "lines": 8567
+      },
+      "byte_identical": true
+    },
+    {
+      "dataset": "unseen-v11",
+      "input_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.txt",
+      "input_sha256": "3ee15729bf8527e67896f4d0b588da26bfa30ef8b658a2086625da00029b0773",
+      "expected_rows": 7882,
+      "original_source_cache": "research/suite/results/cache/dump_578a62678e98_3ee15729bf85.jsonl",
+      "original_clone_path": "research/suite/results/203-stream-output-v1/clone-evidence/original/unseen-v11.original-000.jsonl",
+      "original": {
+        "sha256": "19fe8fcc105465535233e1362146d500ce462b39318caf34dfce74c06c6f2a8d",
+        "bytes": 1174098,
+        "lines": 7882
+      },
+      "candidate_path": "research/suite/results/203-stream-output-v1/correctness/cpi-stream-203_unseen-v11.jsonl",
+      "candidate": {
+        "sha256": "19fe8fcc105465535233e1362146d500ce462b39318caf34dfce74c06c6f2a8d",
+        "bytes": 1174098,
+        "lines": 7882
+      },
+      "byte_identical": true
+    },
+    {
+      "dataset": "unseen-v12",
+      "input_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v12-osm-unseen/unseen12.txt",
+      "input_sha256": "78b80c180873d9638692219c930f3e48d3cc45b5eff304311c4ed5d0ce9e2834",
+      "expected_rows": 8273,
+      "original_source_cache": "research/suite/results/cache/dump_578a62678e98_78b80c180873.jsonl",
+      "original_clone_path": "research/suite/results/203-stream-output-v1/clone-evidence/original/unseen-v12.original-000.jsonl",
+      "original": {
+        "sha256": "8318467ba747fb0d28f0c458e7778e860c542a21a580ca5a0a8eebf41e89477c",
+        "bytes": 1246440,
+        "lines": 8273
+      },
+      "candidate_path": "research/suite/results/203-stream-output-v1/correctness/cpi-stream-203_unseen-v12.jsonl",
+      "candidate": {
+        "sha256": "8318467ba747fb0d28f0c458e7778e860c542a21a580ca5a0a8eebf41e89477c",
+        "bytes": 1246440,
+        "lines": 8273
+      },
+      "byte_identical": true
+    },
+    {
+      "dataset": "unseen-v13",
+      "input_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v13-osm-unseen/unseen13.txt",
+      "input_sha256": "0f5462fadcfe2884412a643e8e2b222dfe8e5528e3d5698533b3abb849e26c3c",
+      "expected_rows": 9716,
+      "original_source_cache": "research/suite/results/cache/dump_578a62678e98_0f5462fadcfe.jsonl",
+      "original_clone_path": "research/suite/results/203-stream-output-v1/clone-evidence/original/unseen-v13.original-000.jsonl",
+      "original": {
+        "sha256": "8689549e16085748630aef379bca1dcd5be7a012b2c15902c1b07b088dd1e130",
+        "bytes": 1427237,
+        "lines": 9716
+      },
+      "candidate_path": "research/suite/results/203-stream-output-v1/correctness/cpi-stream-203_unseen-v13.jsonl",
+      "candidate": {
+        "sha256": "8689549e16085748630aef379bca1dcd5be7a012b2c15902c1b07b088dd1e130",
+        "bytes": 1427237,
+        "lines": 9716
+      },
+      "byte_identical": true
+    },
+    {
+      "dataset": "unseen-v14",
+      "input_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.txt",
+      "input_sha256": "68e60e0da7e28258489f492c8682aed25c66a3054bbc56a29b5413711398d61b",
+      "expected_rows": 1801,
+      "original_source_cache": "research/suite/results/cache/dump_578a62678e98_68e60e0da7e2.jsonl",
+      "original_clone_path": "research/suite/results/203-stream-output-v1/clone-evidence/original/unseen-v14.original-000.jsonl",
+      "original": {
+        "sha256": "1e4ef581bc7cc021ea5a9cd474e0cfead96dce539582bb6e1e004e2f01e62b6f",
+        "bytes": 277911,
+        "lines": 1801
+      },
+      "candidate_path": "research/suite/results/203-stream-output-v1/correctness/cpi-stream-203_unseen-v14.jsonl",
+      "candidate": {
+        "sha256": "1e4ef581bc7cc021ea5a9cd474e0cfead96dce539582bb6e1e004e2f01e62b6f",
+        "bytes": 277911,
+        "lines": 1801
+      },
+      "byte_identical": true
+    }
+  ],
+  "total_rows": 130341,
+  "total_original_bytes": 19813646,
+  "total_candidate_bytes": 19813646
+}

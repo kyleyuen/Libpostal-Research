@@ -1,0 +1,70 @@
+diff --git a/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/142-stage-oracles/src/address_parser.c b/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/177-original-fused-front-half/sources/address_parser.c
+index 742c7607..953001b0 100644
+--- a/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/142-stage-oracles/src/address_parser.c	
++++ b/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/177-original-fused-front-half/sources/address_parser.c	
+@@ -395,6 +395,21 @@ inline char *address_parser_normalize_string(char *str) {
+     return normalize_string_latin(str, strlen(str), ADDRESS_PARSER_NORMALIZE_STRING_OPTIONS);
+ }
+ 
++/* 177: one front-half record is produced after normalization and phrase search,
++   then consumed directly by feature generation. It carries only identities the
++   old feature function reads independently: normalized word and three phrase
++   memberships. The parser remains single-threaded; allocation failure falls
++   back to the original context arrays. */
++typedef struct { char *word; int64_t address, component, postal; } ap_front_t;
++static ap_front_t *ap_front = NULL;
++static size_t ap_front_cap = 0, ap_front_n = 0;
++static bool ap_front_fill(address_parser_context_t *c) {
++    size_t n = c->normalized_tokens->n;
++    if (n > ap_front_cap) { ap_front_t *p = realloc(ap_front, n * sizeof(*p)); if (!p) { ap_front_n = 0; return false; } ap_front = p; ap_front_cap = n; }
++    for (size_t i = 0; i < n; i++) ap_front[i] = (ap_front_t){ cstring_array_get_string(c->normalized, i), c->address_phrase_memberships->a[i], c->component_phrase_memberships->a[i], c->postal_code_phrase_memberships->a[i] };
++    ap_front_n = n; return true;
++}
++
+ 
+ void address_parser_context_destroy(address_parser_context_t *self) {
+     if (self == NULL) return;
+@@ -849,6 +864,10 @@ void address_parser_context_fill(address_parser_context_t *context, address_pars
+     bool have_postal_code_phrases = trie_search_tokens_with_phrases(parser->postal_codes, normalized_str_admin, normalized_admin_tokens, &postal_code_phrases);
+     token_phrase_memberships(postal_code_phrases, postal_code_phrase_memberships, num_tokens);
+ 
++#ifdef EXP_FUSED_FRONT
++    ap_front_fill(context);
++#endif
++
+ }
+ 
+ static inline phrase_t phrase_at_index(phrase_array *phrases, int64_array *phrase_memberships, uint32_t i) {
+@@ -1154,7 +1173,11 @@ bool address_parser_features(void *self, void *ctx, tokenized_string_t *tokenize
+ 
+     char *word_pre_norm = tokenized_string_get_token(tokenized, idx);
+ 
+-    char *word = cstring_array_get_string(normalized, idx);
++    ap_front_t *front = NULL;
++#ifdef EXP_FUSED_FRONT
++    if (idx < ap_front_n) front = &ap_front[idx];
++#endif
++    char *word = front ? front->word : cstring_array_get_string(normalized, idx);
+     if (word == NULL) {
+         log_error("got NULL word at %d\n", idx);
+         return false;
+@@ -1170,8 +1193,8 @@ bool address_parser_features(void *self, void *ctx, tokenized_string_t *tokenize
+     char *phrase_string = NULL;
+     char *component_phrase_string = NULL;
+ 
+-    int64_t address_phrase_index = address_phrase_memberships->a[idx];
+-    int64_t component_phrase_index = component_phrase_memberships->a[idx];
++    int64_t address_phrase_index = front ? front->address : address_phrase_memberships->a[idx];
++    int64_t component_phrase_index = front ? front->component : component_phrase_memberships->a[idx];
+     
+     if (address_phrase_index != NULL_PHRASE_MEMBERSHIP) {
+         phrase = address_dictionary_phrases->a[address_phrase_index];
+@@ -1294,7 +1317,7 @@ bool address_parser_features(void *self, void *ctx, tokenized_string_t *tokenize
+ 
+     bool possible_postal_code = false;
+     bool postal_code_have_admin = false;
+-    int64_t postal_code_phrase_index = postal_code_phrase_memberships->a[idx];
++    int64_t postal_code_phrase_index = front ? front->postal : postal_code_phrase_memberships->a[idx];
+     phrase_t postal_code_phrase = NULL_PHRASE;
+ 
+     if (postal_code_phrase_index != NULL_PHRASE_MEMBERSHIP) {

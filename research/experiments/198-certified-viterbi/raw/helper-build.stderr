@@ -1,0 +1,13 @@
+research/experiments/198-certified-viterbi/raw/helper-test.c:69:19: warning: comparison of integers of different signs: 'int' and 'const size_t' (aka 'const unsigned long') [-Wsign-compare]
+   69 |     for (t = 1; t < T; t++) {
+      |                 ~ ^ ~
+research/experiments/198-certified-viterbi/raw/helper-test.c:159:23: warning: comparison of integers of different signs: 'int' and 'const size_t' (aka 'const unsigned long') [-Wsign-compare]
+  159 |         for (j = 0; j < L; j++) {
+      |                     ~ ^ ~
+research/experiments/198-certified-viterbi/raw/helper-test.c:163:27: warning: comparison of integers of different signs: 'int' and 'const size_t' (aka 'const unsigned long') [-Wsign-compare]
+  163 |             for (i = 0; i < L; i++) {
+      |                         ~ ^ ~
+research/experiments/198-certified-viterbi/raw/helper-test.c:194:19: warning: comparison of integers of different signs: 'int' and 'const size_t' (aka 'const unsigned long') [-Wsign-compare]
+  194 |     for (i = 0; i < L; i++) {
+      |                 ~ ^ ~
+4 warnings generated.

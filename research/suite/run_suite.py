@@ -178,11 +178,18 @@ def stage_correctness(cfg, run):
 def gate(cfg, run):
     if cfg["settings"].get("no_gate"):
         return
-    g = cfg["_abs"]("research/tools/env_gate.sh"); told = False
+    # A config may select a narrowly scoped, versioned gate for an explicitly
+    # authorized environment exception (for example an AC-only waiver). The
+    # default remains the normal project gate; --no-gate still skips all gates.
+    g = cfg["_abs"](cfg["settings"].get("environment_gate_script", "research/tools/env_gate.sh")); told = False
     while True:
         r = subprocess.run([g], capture_output=True, text=True)
         with open(os.path.join(run, "gate.log"), "a") as f: f.write(f"{now()} {r.stdout.strip()}\n")
         if r.returncode == 0: return
+        if cfg["settings"].get("gate_fail_fast"):
+            message = r.stdout.strip() or r.stderr.strip() or f"gate exit {r.returncode}"
+            log(run, f"environment gate failed; stopping dependent stages: {message}")
+            raise SystemExit(message)
         if not told: log(run, f"waiting for the environment gate: {r.stdout.strip()} (rerun with --no-gate to skip)"); told = True
         time.sleep(30)
 
@@ -349,7 +356,12 @@ def stage_report(cfg, run):
     write_md(cfg, run, R); log(run, "report: results.json and report.md written")
 
 
-def write_md(cfg, run, R):
+def format_address_count(value):
+    """Format an optional manifest count without assuming the manifest has it."""
+    return f"{value:,}" if isinstance(value, int) and not isinstance(value, bool) else "—"
+
+
+def write_md(cfg, run, R, filename="report.md"):
     base = R["baseline"]; s = R["settings"]
     cands = [v["name"] for v in cfg["variants"] if v["name"] != base]
     L = [f"# Benchmark suite report — {R['run']}", "",
@@ -374,7 +386,9 @@ def write_md(cfg, run, R):
             if not (sp and bv and cv): continue
             ci = f"{sp['ci95'][0]:.2f}–{sp['ci95'][1]:.2f}" if sp["ci95"][0] else "—"
             pc = sp["per_country"]
-            L.append(f"| {n} | {d['source']} | {man['datasets'].get(n, {}).get('addresses', '—'):,} | {bv['warm_median_us']:.3f} | {cv['warm_median_us']:.3f} | "
+            address_count = man["datasets"].get(n, {}).get("addresses")
+            address_count_text = format_address_count(address_count)
+            L.append(f"| {n} | {d['source']} | {address_count_text} | {bv['warm_median_us']:.3f} | {cv['warm_median_us']:.3f} | "
                      f"**{sp['geomean']:.2f}×** | {ci} | {sp['median']:.2f}× | {sp['min']:.2f}–{sp['max']:.2f} | {sp['cold_median']:.2f}× | "
                      + (f"{pc['min']:.2f} / {pc['median']:.2f} / {pc['max']:.2f} (n={pc['n']})" if pc["n"] else "—") + " |")
     L += ["", "## Memory and setup", "", "| variant | max peak RSS (bytes) | max peak footprint (bytes) | setup s (median) | steady footprint |", "|---|---:|---:|---:|---|"]
@@ -398,7 +412,7 @@ def write_md(cfg, run, R):
     L += ["", "## Limitations", "",
           "- One laptop; load, swap, thermal and power state per run are in `env.txt`. Interactive load inflates cold numbers more than warm ones.",
           "- The OSM sets share one generator; golden-v1's development split trained PGO. Reserved unseen sets are excluded unless `--include-reserved`."]
-    open(os.path.join(run, "report.md"), "w").write("\n".join(L) + "\n")
+    open(os.path.join(run, filename), "w").write("\n".join(L) + "\n")
 
 
 def main():

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "created_at_local": "2026-10-09T02:31:25-0700",
+  "purpose": "Final inventory of 201 reports, audits, and compact evidence summaries after the bounded screen.",
+  "hash_algorithm": "SHA-256",
+  "scope_note": "This is a curated document/evidence manifest, not a full workspace integrity manifest. The suite integrity stage was not selected; its separate post-run identity record and row-count correction are listed below. No claim is made that source remained unchanged: 201 diagnostic source and binaries are separately manifested, and a report-rendering-only patch was applied to research/suite/run_suite.py after the measured run without rerunning the parser.",
+  "documents": [
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/README.md", "sha256": "a8ebf24e250e20c24413db07acca37e9be19ab93253f5a7a29d49d9522b2c36f"},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/REPORT.md", "sha256": "ba5997d02b257234e5c26311a6ce7982dc69c55a100aa3960af1b4dcc01196f1"},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/AUDIT.md", "sha256": "c1e32e560475c5458c01592da8d0490464361475805788c57ae526fb20d70489", "note": "Preserved pre-run/source-review snapshot."},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/AUDIT-DIAGNOSTICS-v1.md", "sha256": "9ac096ef14f3443a4f68fa3f918057002a0fe19ff141c0b98c40d104ebff2faf"},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/AUDIT-FINAL-v1.md", "sha256": "ebd1535a8017590f2e038d12cbb0ec580e73c9458da3020f073fb8ec4ad8d29d"},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/CPI_WORK_PLAN.md", "sha256": "be1ddf93b0bff725cb33b4fe8d238cf357cab52db95acc8dc2a863fcf7f5e86b"},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/MEMORY_CHECK_PLAN.md", "sha256": "0bd7b0356d82f6637bd0a9655c395e0ea06a3ad6f287163ae2bd3d26afdc2a75"},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/raw/suite-report-fix-v1/report_recovered.md", "sha256": "ed65d8711835594739fd830dda368ee7cfff7f5c6df9810729899bd235984306"},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/raw/suite-report-fix-v1/source.patch", "sha256": "2c275e2d8fc4e6b8a0518f6c2d68e504755fca93496a9683a19bdf1511f57e4c", "note": "Report-rendering fix applied after measurement; no parser rerun."},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/raw/suite-report-fix-v1/postrun-integrity.json", "sha256": "c7f71f2ab93a8eaa5e978a9c82edafbf05a31fd83bef6e467cc13571276659b9", "note": "Original metadata retained, including incorrect dataset.rows=128540."},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/raw/suite-report-fix-v1/postrun-integrity-correction-v1.json", "sha256": "14ac9076ff052afcf39b425ff35fa082117f123d18c72f1c23c83224761b77c4", "note": "Corrects screen dataset row count to 12863; no input or capture changed."},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/raw/timing-screen-v1/config.json", "sha256": "0440bbdb9562d99d3ab8c38390fea8d548d2633723dffe83948e1c2671c578a4"},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v2/all13-diagnostic-v1/batch.json", "sha256": "172446918db736b97fd31b1d9eebe2db61f083d7bdfd46b1c04bb61e3f9eb7a2"},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v2/HANDOFF-v2.md", "sha256": "8e64cb904d967516b46702fa759dcf3b52cbde49fefd42ef3149ec7ba3582b93"},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/raw/native-api-memory-v1-execution-v1/manifest.json", "sha256": "e0f4785e822d6c07ebf8dd94864e368f33e777c950aed3c73ee10a811212200d"},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/raw/native-api-memory-v1-execution-v1/rotated-repeats-v3/manifest.json", "sha256": "fb2bcbd2d1af4342ab69880af77f5d61d1f441c269f6e0785ea76fbd93a176ef", "note": "Round 2 and round 3 entries are duplicated metadata snapshots; unique captures are identified by command path."},
+    {"path": "research/experiments/201-cpi-work-and-memory-prep/raw/native-api-memory-v1-execution-v1/rotated-repeats-v3/analysis-recovered-v1.json", "sha256": "dc52aacbf17a5b91894f5e1aa2250b7bb558480980af73a34ad1adda2a11fd61", "note": "Recovered summary of 10 unique API captures; parser captures were not rerun for analysis recovery."},
+    {"path": "research/suite/results/201-token-storage-matched-golden-screen-v2/results.json", "sha256": "3c4b903dec67f9c67151a54de1ac22a905d897e443b8723d1a2966ae6ac4c528", "note": "Suite manifest field is null because integrity stage was not selected."},
+    {"path": "research/suite/results/201-token-storage-matched-golden-screen-v2/memory.json", "sha256": "d26e8cc461076c8993373ed948c17d3321bb053a14750de514696bc013dc5056"},
+    {"path": "research/suite/results/201-token-storage-matched-golden-screen-v2/threads.json", "sha256": "c2801612cfb373849a9c4dc31b4f5e62daeef5df4339e29bf41edaf7e837203a"},
+    {"path": "research/experiments/README.md", "sha256": "4e0e679476b3ebfc1bfa6a906fcddaee49f653fa30fda97b361b8339eab17bb6"},
+    {"path": "research/ACTIVITY_LOG.md", "sha256": "201b392da692eb6b7f7be90afa7b6be2ad05c2b6c4b59065869bb027c3112207"},
+    {"path": "research/HANDOFF_2026-10-07.md", "sha256": "e79420074f7eba97d178681face7d90e80f3142e1caec4a0ec4e088231eb803a"},
+    {"path": "research/HANDOFF.md", "sha256": "25e448b55438b1e90da09dfbbbc360b994569462019143174172f3a8502a76c9"}
+  ],
+  "final_status": {
+    "verdict": "Bounded research measurement; no promotion.",
+    "screen_dataset_rows": 12863,
+    "diagnostic_rows_across_13_datasets": 128540,
+    "timing_screen": "3 rounds x 200 passes; 199 vs matched CPI attribution inconclusive under variable system load.",
+    "memory_limit": "Peak screen below original; steady values rounded; native API whole-process difference small and host-sensitive.",
+    "workload_processes_running": false,
+    "future_runs_queued": false
+  }
+}

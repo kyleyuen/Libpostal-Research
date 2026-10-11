@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/usr/bin/clang",
+    "-O2",
+    "-g",
+    "-flto",
+    "-I",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src",
+    "/opt/homebrew/opt/mimalloc/lib/mimalloc.o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/fuzz_pipeline.c",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release/libpostal.a",
+    "-lm",
+    "-o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release-mimalloc-v2/fuzz_pipeline"
+  ],
+  "start_utc": "2026-10-08T04:38:16.150859+00:00",
+  "end_utc": "2026-10-08T04:38:17.068898+00:00"
+}

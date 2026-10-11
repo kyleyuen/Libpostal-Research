@@ -1,0 +1,94 @@
+--- a/crf.c
++++ b/crf.c
+@@ -1,3 +1,4 @@
++#include "crf_context.h"
+ #include "crf.h"
+ #include "log/log.h"
+ 
+@@ -99,7 +100,7 @@
+     size_t num_tokens = tokenized->tokens->n;
+ 
+     crf_context_t *crf_context = self->context;
+-    crf_context_set_num_items(crf_context, num_tokens);
++    crf_context_set_num_items_for_reset(crf_context, num_tokens);
+     crf_context_reset(crf_context, CRF_CONTEXT_RESET_ALL);
+ 
+     if (!double_matrix_copy(self->trans_weights, crf_context->trans)) {
+--- a/crf_context.c
++++ b/crf_context.c
+@@ -95,10 +95,11 @@
+ }
+ 
+ /*
+-Makes it possible to reuse the same context for many
+-different sequences.
++Resize for reuse. Keep alpha/beta and backward edges initialized here; both
++in-repository callers reset state/state-transition scores immediately after
++this function succeeds, so those score matrices are cleared there once.
+ */
+-bool crf_context_set_num_items(crf_context_t *self, size_t T) {
++static bool crf_context_set_num_items_internal(crf_context_t *self, size_t T, bool clear_state_scores) {
+     const size_t L = self->num_labels;
+ 
+     if (!double_array_resize_fixed(self->scale_factor, T)) {
+@@ -117,9 +118,10 @@
+ 
+     double_matrix_zero(self->alpha_score);
+     double_matrix_zero(self->beta_score);
+-    double_matrix_zero(self->state);
+-    double_matrix_zero(self->state_trans);
+-
++    if (clear_state_scores) {
++        double_matrix_zero(self->state);
++        double_matrix_zero(self->state_trans);
++    }
+     if (self->flag & CRF_CONTEXT_VITERBI && self->backward_edges != NULL) {
+         if (!uint32_matrix_resize(self->backward_edges, T, L)) {
+             return false;
+@@ -154,6 +156,14 @@
+     self->num_items = T;
+ 
+     return true;
++}
++
++bool crf_context_set_num_items(crf_context_t *self, size_t T) {
++    return crf_context_set_num_items_internal(self, T, true);
++}
++
++bool crf_context_set_num_items_for_reset(crf_context_t *self, size_t T) {
++    return crf_context_set_num_items_internal(self, T, false);
+ }
+ 
+ void crf_context_destroy(crf_context_t *self) {
+--- a/crf_context.h
++++ b/crf_context.h
+@@ -188,6 +188,8 @@
+ 
+ crf_context_t *crf_context_new(int flag, size_t L, size_t T);
+ bool crf_context_set_num_items(crf_context_t *self, size_t T);
++/* Caller will immediately reset state/state-transition/transition scores. */
++bool crf_context_set_num_items_for_reset(crf_context_t *self, size_t T);
+ void crf_context_destroy(crf_context_t *self);
+ void crf_context_reset(crf_context_t *self, int flag);
+ bool crf_context_exp_state(crf_context_t *self);
+@@ -203,4 +205,4 @@
+ double crf_context_lognorm(crf_context_t *self);
+ double crf_context_viterbi(crf_context_t *self, uint32_t *labels);
+ 
+-#endif+#endif
+--- a/crf_trainer_averaged_perceptron.c
++++ b/crf_trainer_averaged_perceptron.c
+@@ -1,3 +1,4 @@
++#include "crf_context.h"
+ #include "crf_trainer_averaged_perceptron.h"
+ 
+ void crf_averaged_perceptron_trainer_destroy(crf_averaged_perceptron_trainer_t *self) {
+@@ -623,7 +624,7 @@
+     }
+     uint32_array_clear(self->label_ids);
+ 
+-    if (!crf_context_set_num_items(crf_context, num_tokens)) {
++    if (!crf_context_set_num_items_for_reset(crf_context, num_tokens)) {
+         return false;
+     }
+ 

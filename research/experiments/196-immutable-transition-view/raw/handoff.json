@@ -1,0 +1,64 @@
+{
+  "experiment_id": 196,
+  "name": "immutable-transition-view",
+  "hypothesis": "Avoid copying the immutable 20x20 CRF transition matrix in the combined parser score-plus-Viterbi path by supplying the model array explicitly as const to Viterbi; preserve standalone scorer/context behavior.",
+  "base_source": "181 source for crf.c; original libpostal crf_context.c/.h and AP trainer",
+  "source_tree": "research/experiments/196-immutable-transition-view/sources",
+  "source_manifest_path": "research/experiments/196-immutable-transition-view/raw/source_manifest.sha256",
+  "source_manifest_sha256": "7b038aab1d57ebe0b103a467cecf40a143a4ec4bb4dccadabdaa2fc8689772e0",
+  "patch_path": "research/experiments/196-immutable-transition-view/raw/source_delta.patch",
+  "patch_sha256": "4c334c1c2c667f714fbd2ad92ba245550785fec05f9ae464c15689706b351986",
+  "builds": {
+    "release": {
+      "library": "research/experiments/196-immutable-transition-view/artifacts/release/libpostal.a",
+      "dumper": "research/experiments/196-immutable-transition-view/artifacts/release/dump_outputs",
+      "flags": "-DHAVE_CONFIG_H -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS -O2 -DEXP_FUSED_FRONT -DEXP_EVENT_FLOW -DLIBPOSTAL_DATA_DIR=\"/Users/kyle/.cache/libpostal-profile/libpostal\"",
+      "command_log": "research/experiments/196-immutable-transition-view/raw/build_release_attempt4.*",
+      "binary_sha256": "2f890c6f4e83df326d53ab72cf5649454c4bcbe15953bd0ed0dea649f9a98954"
+    },
+    "diagnostic": {
+      "library": null,
+      "dumper": null,
+      "flags": null,
+      "command_log": null,
+      "binary_sha256": null,
+      "unavailable_reason": "benchmark_186 builds the isolated diagnostic derivative from the immutable release delta."
+    }
+  },
+  "metrics": {
+    "supported": [
+      "inference-path transition matrix copy calls and logical bytes removed",
+      "context allocation/size delta (no storage added)",
+      "state/trans/weight work counters"
+    ],
+    "unavailable": {
+      "speed": "pending serialized parser screen",
+      "memory": "pending serialized benchmark screen"
+    }
+  },
+  "model_manifest_sha256": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad",
+  "build_exit_code": 0,
+  "parser_invoked": false,
+  "selfcheck": {
+    "command": "artifacts/test_transition_view",
+    "exit_code": 0,
+    "stdout": "raw/selfcheck.stdout"
+  },
+  "preserved_failed_builds": [
+    {
+      "attempt": "raw/build_release.*",
+      "exit_code": 1,
+      "cause": "unchanged address_parser.c missing from experiment source tree"
+    },
+    {
+      "attempt": "raw/build_release_attempt2.*",
+      "exit_code": 1,
+      "cause": "crf.h exposed original context header before new declaration"
+    },
+    {
+      "attempt": "raw/build_release_attempt3.*",
+      "exit_code": 1,
+      "cause": "build script compatibility check needed unchanged AP trainer source"
+    }
+  ]
+}

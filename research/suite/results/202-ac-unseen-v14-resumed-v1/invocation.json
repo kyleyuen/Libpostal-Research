@@ -1,0 +1,19 @@
+{
+ "argv": [
+  "research/suite/run_suite.py",
+  "--config",
+  "research/experiments/202-cpi-final-validation/raw/v14-ac-resumed-v1.json",
+  "--run-id",
+  "202-ac-unseen-v14-resumed-v1",
+  "--stages",
+  "integrity,timing,memory,threads,report"
+ ],
+ "start": "2026-10-10T00:07:38-0700",
+ "variants": [
+  "original-000",
+  "cpi-packaged"
+ ],
+ "datasets": [
+  "unseen-v14"
+ ]
+}

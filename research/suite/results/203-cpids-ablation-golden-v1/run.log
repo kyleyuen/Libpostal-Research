@@ -1,0 +1,29 @@
+2026-10-10T01:11:22-0700 === stage integrity
+2026-10-10T01:11:22-0700 integrity: 1 datasets (12,863 addresses), 3 variants, 7 model files hashed
+2026-10-10T01:11:22-0700 === stage correctness
+2026-10-10T01:11:22-0700 correctness: 2 jobs, 1 in parallel
+2026-10-10T01:11:34-0700   cpi-119 dump golden-v1: exit 0 (12s)
+2026-10-10T01:11:44-0700   cpi-119-no-cp-ids dump golden-v1: exit 0 (10s)
+2026-10-10T01:11:44-0700 correctness: 2 dumps, 0 fuzz runs, mismatches: none
+2026-10-10T01:11:44-0700 === stage timing
+2026-10-10T01:14:14-0700 settle: load 2.23 < 2.5 after 150s
+2026-10-10T01:14:29-0700 timing 1/9 golden-v1__cpi-119__r1 exit 0 load 2.32
+2026-10-10T01:14:42-0700 timing 2/9 golden-v1__cpi-119-no-cp-ids__r1 exit 0 load 2.43
+2026-10-10T01:14:50-0700 timing 3/9 golden-v1__original-000__r1 exit 0 load 2.75
+2026-10-10T01:15:04-0700 timing 4/9 golden-v1__cpi-119-no-cp-ids__r2 exit 0 load 2.72
+2026-10-10T01:15:12-0700 timing 5/9 golden-v1__original-000__r2 exit 0 load 2.66
+2026-10-10T01:15:27-0700 timing 6/9 golden-v1__cpi-119__r2 exit 0 load 2.80
+2026-10-10T01:15:35-0700 timing 7/9 golden-v1__original-000__r3 exit 0 load 2.75
+2026-10-10T01:15:51-0700 timing 8/9 golden-v1__cpi-119__r3 exit 0 load 2.68
+2026-10-10T01:16:04-0700 timing 9/9 golden-v1__cpi-119-no-cp-ids__r3 exit 0 load 3.32
+2026-10-10T01:16:06-0700 === stage memory
+2026-10-10T01:16:29-0700 memory: original-000 steady footprint 2492 MB
+2026-10-10T01:16:44-0700 memory: cpi-119 steady footprint 1927 MB
+2026-10-10T01:16:57-0700 memory: cpi-119-no-cp-ids steady footprint 1878 MB
+2026-10-10T01:16:57-0700 === stage threads
+2026-10-10T01:17:15-0700 threads: original-000 [1, 1, 1, 1, 1, 1]
+2026-10-10T01:17:33-0700 threads: cpi-119 [1, 1, 1, 1, 1, 1]
+2026-10-10T01:17:51-0700 threads: cpi-119-no-cp-ids [1, 1, 1, 1, 1, 1]
+2026-10-10T01:17:51-0700 === stage report
+2026-10-10T01:17:51-0700 report: results.json and report.md written
+2026-10-10T01:17:51-0700 done: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/203-cpids-ablation-golden-v1

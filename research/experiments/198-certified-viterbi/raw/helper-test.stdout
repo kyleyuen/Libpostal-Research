@@ -1,0 +1,19 @@
+one-item clear winner: certified=1 exact_labels_match=1 inputs_unchanged=1
+multi-item clear winner: certified=1 exact_labels_match=1 inputs_unchanged=1
+256-item clear winner: certified=1 exact_labels_match=1 inputs_unchanged=1
+long context, no hard length cutoff: certified=0 exact_labels_match=1 inputs_unchanged=1
+predecessor tie: certified=0 exact_labels_match=1 inputs_unchanged=1
+final-label tie: certified=0 exact_labels_match=1 inputs_unchanged=1
+sub-f32 near tie: certified=0 exact_labels_match=1 inputs_unchanged=1
+NaN operand: certified=0 exact_labels_match=1 inputs_unchanged=1
+infinite transition: certified=0 exact_labels_match=1 inputs_unchanged=1
+operand below float normal range: certified=0 exact_labels_match=1 inputs_unchanged=1
+actual double subnormal: certified=0 exact_labels_match=1 inputs_unchanged=1
+float conversion overflow: certified=0 exact_labels_match=1 inputs_unchanged=1
+float intermediate overflow: certified=0 exact_labels_match=1 inputs_unchanged=1
+NaN state-transition operand: certified=0 exact_labels_match=1 inputs_unchanged=1
+unsupported label count: certified=0 exact_labels_match=1 inputs_unchanged=1
+empty sequence: certified=0 exact_labels_match=1 inputs_unchanged=1
+non-RN fenv: certified=0 exact_labels_match=1 inputs_unchanged=1
+FPCR FZ and FZ16: certified=0 exact_labels_match=1 inputs_unchanged=1
+all model-free certifier helper checks passed

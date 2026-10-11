@@ -1,0 +1,42 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/sparse_matrix.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/sparse_matrix.c:119:12: warning: unused variable 'val' [-Wunused-variable]
+  119 |     double val;
+      |            ^~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/sparse_matrix.c:159:12: warning: unused variable 'val' [-Wunused-variable]
+  159 |     double val;
+      |            ^~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/sparse_matrix.c:178:15: warning: unused variable 'indices' [-Wunused-variable]
+  178 |     uint32_t *indices = self->indices->a;
+      |               ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/sparse_matrix.c:201:12: warning: unused variable 'val' [-Wunused-variable]
+  201 |     double val;
+      |            ^~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/sparse_matrix.c:217:15: warning: unused variable 'indices' [-Wunused-variable]
+  217 |     uint32_t *indices = self->indices->a;
+      |               ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/sparse_matrix.c:239:15: warning: unused variable 'indptr' [-Wunused-variable]
+  239 |     uint32_t *indptr = self->indptr->a;
+      |               ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/sparse_matrix.c:243:12: warning: unused variable 'm1_rows' [-Wunused-variable]
+  243 |     size_t m1_rows = self->m;
+      |            ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/sparse_matrix.c:244:12: warning: unused variable 'm1_cols' [-Wunused-variable]
+  244 |     size_t m1_cols = self->n;
+      |            ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/sparse_matrix.c:246:12: warning: unused variable 'm2_rows' [-Wunused-variable]
+  246 |     size_t m2_rows = matrix->m;
+      |            ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/sparse_matrix.c:275:15: warning: unused variable 'indptr' [-Wunused-variable]
+  275 |     uint32_t *indptr = self->indptr->a;
+      |               ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/sparse_matrix.c:279:12: warning: unused variable 'm1_rows' [-Wunused-variable]
+  279 |     size_t m1_rows = self->m;
+      |            ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/sparse_matrix.c:280:12: warning: unused variable 'm1_cols' [-Wunused-variable]
+  280 |     size_t m1_cols = self->n;
+      |            ^~~~~~~
+13 warnings generated.

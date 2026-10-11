@@ -1,0 +1,5 @@
+start=2026-10-07T15:17:15-0700
+cwd=/Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/libpostal/src
+argv=/usr/bin/clang -std=gnu2x -DHAVE_CONFIG_H -Wall -Wextra -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS -O2 -DEXP_FUSED_FRONT -DEXP_EVENT_FLOW -DEXP185_DIAG -DLIBPOSTAL_DATA_DIR=\"/Users/kyle/.cache/libpostal-profile/libpostal\" -I/Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181 -I/Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/.. -I/Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/libpostal/src -I/Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/libpostal/src/.. -c /Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/185-diagnostic-instrumentation/source/prototype181/geohash/geohash.c -o /Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1540-stable-labels/prototype181/diagnostic/obj/geohash_geohash.o 
+end=2026-10-07T15:17:15-0700
+exit=0

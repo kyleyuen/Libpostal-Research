@@ -1,0 +1,103 @@
+{
+  "start_utc": "2026-10-08T00:55:10.779226+00:00",
+  "end_utc": "2026-10-08T00:55:23.553963+00:00",
+  "elapsed_seconds": 12.77482858300209,
+  "golden_trace": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/results/golden-preservation-build-187-final3/golden-v1/diagnostic.trace.jsonl",
+    "bytes": 1177797290,
+    "sha256": "9870f0be58e7106264a154f366d42760b003f22305af9b8e3b5cc29ab008bff9"
+  },
+  "gzip_probe": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/raw/verification/golden-trace-compression-probe.jsonl.gz",
+    "bytes": 36865595,
+    "sha256": "c95a74b2a91c6228f9f54ae2c721b8919d1502566b4c9da432e30e289a667005",
+    "ratio": 0.03130045833268983,
+    "expansion_verified_by_analyzer": {
+      "complete": true,
+      "addresses": 12863,
+      "query_events": 989085,
+      "consumer_events": 738383
+    }
+  },
+  "corpora": [
+    {
+      "name": "golden-v1",
+      "addresses": 12863,
+      "input_bytes": 502190
+    },
+    {
+      "name": "novel",
+      "addresses": 12863,
+      "input_bytes": 494008
+    },
+    {
+      "name": "osm-v3",
+      "addresses": 11405,
+      "input_bytes": 388815
+    },
+    {
+      "name": "unseen-v4",
+      "addresses": 10293,
+      "input_bytes": 343765
+    },
+    {
+      "name": "unseen-v5",
+      "addresses": 8794,
+      "input_bytes": 300364
+    },
+    {
+      "name": "unseen-v6",
+      "addresses": 9450,
+      "input_bytes": 318936
+    },
+    {
+      "name": "unseen-v7",
+      "addresses": 8973,
+      "input_bytes": 300566
+    },
+    {
+      "name": "unseen-v8",
+      "addresses": 9981,
+      "input_bytes": 337214
+    },
+    {
+      "name": "unseen-v9",
+      "addresses": 9480,
+      "input_bytes": 334139
+    },
+    {
+      "name": "unseen-v10",
+      "addresses": 8567,
+      "input_bytes": 289952
+    },
+    {
+      "name": "unseen-v11",
+      "addresses": 7882,
+      "input_bytes": 267309
+    },
+    {
+      "name": "unseen-v12",
+      "addresses": 8273,
+      "input_bytes": 284768
+    },
+    {
+      "name": "unseen-v13",
+      "addresses": 9716,
+      "input_bytes": 320599
+    }
+  ],
+  "total_addresses": 128540,
+  "total_input_bytes": 4482625,
+  "golden_address_metrics_bytes": 139989490,
+  "projection_count_scaled": {
+    "raw_trace_bytes": 11769732073,
+    "address_metrics_bytes": 1398915419,
+    "combined_bytes": 13168647492,
+    "combined_gib": 12.264258686453104
+  },
+  "projection_input_byte_scaled_trace_bytes": 10513199341,
+  "available_bytes_at_projection": 15997837312,
+  "available_gib_at_projection": 14.899147033691406,
+  "count_scaled_margin_gib": 2.6348883472383022,
+  "retention_plan": "Each remaining12 corpus is analyzed from raw trace, then gzip archived and verified by expansion SHA/length before deleting only that run-created raw trace. Golden and failed smoke traces retained."
+}

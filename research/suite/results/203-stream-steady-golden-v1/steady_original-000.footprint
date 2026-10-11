@@ -1,0 +1,32 @@
+======================================================================
+bench_ext [25191]: 64-bit    Footprint: 2492 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+2429 MB        0 B          0 B         42    MALLOC_LARGE
+  60 MB        0 B          0 B         19    MALLOC_SMALL
+1522 KB        0 B          0 B          1    page table
+1056 KB        0 B          0 B          9    MALLOC metadata
+ 132 KB        0 B          0 B         35    __DATA_DIRTY
+ 128 KB        0 B          0 B          1    MALLOC_TINY
+  74 KB      16 KB          0 B         34    __DATA
+  50 KB        0 B          0 B        126    unused dyld shared cache area
+  32 KB        0 B          0 B          3    untagged (VM_ALLOCATE)
+  32 KB        0 B          0 B          2    stack
+  32 KB        0 B          0 B          2    __TPRO_CONST
+  16 KB        0 B          0 B          1    os_alloc_once
+  16 KB        0 B          0 B          1    tag 22
+    0 B    1536 KB          0 B         46    __TEXT
+    0 B     160 KB          0 B         43    __DATA_CONST
+    0 B      16 KB          0 B          3    __LINKEDIT
+    0 B        0 B          0 B         45    __AUTH_CONST
+    0 B        0 B          0 B         12    __AUTH
+    0 B        0 B          0 B          1    mapped file
+    ---        ---          ---        ---    ---
+2492 MB    1728 KB          0 B        428    TOTAL
+
+Auxiliary data:
+    phys_footprint: 2492 MB
+    phys_footprint_peak: 2492 MB
+

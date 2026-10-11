@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "source_registry": "research/experiments/186-architecture-benchmark/edge-cases.json",
+  "selection": "first manifest-order safe ordinary C strings with NULL/NULL options; empty/newline inputs excluded",
+  "trace_options": {
+    "language": null,
+    "country": null
+  },
+  "records": [
+    {
+      "manifest_safe_position": 0,
+      "case_id": "ascii-typical",
+      "category": "shape",
+      "text_line": 1,
+      "input_utf8": "123 Main St, Springfield, IL 62704",
+      "options": {
+        "language": null,
+        "country": null
+      },
+      "input_sha256": "31bf0d4acace27628bf2acf9741b6b64c9e42622635536a443a24430fd9aa814",
+      "input_bytes": 34
+    },
+    {
+      "manifest_safe_position": 1,
+      "case_id": "ascii-house-range",
+      "category": "number-boundary",
+      "text_line": 2,
+      "input_utf8": "12-14 North 5th Ave Apt 3B",
+      "options": {
+        "language": null,
+        "country": null
+      },
+      "input_sha256": "c3e9bfb6706c7742a238b1c52429f0197735ffefdbc4cfe3279436862ca1ca75",
+      "input_bytes": 26
+    },
+    {
+      "manifest_safe_position": 2,
+      "case_id": "ascii-po-box",
+      "category": "phrase-overlap",
+      "text_line": 3,
+      "input_utf8": "PO Box 123, Smalltown 99999",
+      "options": {
+        "language": null,
+        "country": null
+      },
+      "input_sha256": "34c41a5e20d1a5f4aa74ad48fdbafc4a693f9646e66dc4350cab5f4100542625",
+      "input_bytes": 27
+    },
+    {
+      "manifest_safe_position": 3,
+      "case_id": "ascii-intersection",
+      "category": "punctuation",
+      "text_line": 4,
+      "input_utf8": "Main & First St / Rear",
+      "options": {
+        "language": null,
+        "country": null
+      },
+      "input_sha256": "6d84eb5d6ac7e7ef5f2bb8bc72821eba92c245b89523c879e0f0b3977bc17140",
+      "input_bytes": 22
+    },
+    {
+      "manifest_safe_position": 4,
+      "case_id": "ascii-hyphen",
+      "category": "punctuation",
+      "text_line": 5,
+      "input_utf8": "10-20B O'Connell-Smith Rd",
+      "options": {
+        "language": null,
+        "country": null
+      },
+      "input_sha256": "503f756aa1d73134051356e2813bed0b652a71c9de57e5455c264503b2884ea4",
+      "input_bytes": 25
+    }
+  ]
+}

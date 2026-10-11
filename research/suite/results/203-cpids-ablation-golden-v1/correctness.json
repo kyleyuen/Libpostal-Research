@@ -1,0 +1,25 @@
+{
+ "dumps": {
+  "cpi-119/golden-v1": {
+   "identical": true,
+   "candidate_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+   "baseline_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+   "lines": 12863
+  },
+  "cpi-119-no-cp-ids/golden-v1": {
+   "identical": true,
+   "candidate_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+   "baseline_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+   "lines": 12863
+  }
+ },
+ "frozen": {
+  "cpi-119/golden-v1": "RESULT: IDENTICAL",
+  "cpi-119-no-cp-ids/golden-v1": "RESULT: IDENTICAL"
+ },
+ "fuzz": {},
+ "negative_control": {
+  "dataset": "golden-v1",
+  "detected": true
+ }
+}

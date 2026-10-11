@@ -1,0 +1,33 @@
+{
+  "check": "offline suite report formatter and recovered render",
+  "started_local": "2026-10-09T02:22:18.862407-07:00",
+  "ended_local": "2026-10-09T02:22:18.886645-07:00",
+  "parser_or_model_invoked": false,
+  "exit_code": 0,
+  "cases": {
+    "missing": {
+      "input": "None",
+      "expected": "\u2014",
+      "actual": "\u2014"
+    },
+    "zero": {
+      "input": "0",
+      "expected": "0",
+      "actual": "0"
+    },
+    "positive": {
+      "input": "12863",
+      "expected": "12,863",
+      "actual": "12,863"
+    },
+    "bool_is_not_a_count": {
+      "input": "True",
+      "expected": "\u2014",
+      "actual": "\u2014"
+    }
+  },
+  "rendered_from": "research/suite/results/201-token-storage-matched-golden-screen-v2/results.json",
+  "output": "report_recovered.md",
+  "output_contains_missing_count_marker": true,
+  "command": "RTK python3 inline: import run_suite.py; assert format_address_count(None) == em dash; assert 0 == \"0\"; assert 12863 == \"12,863\"; assert bool is not accepted as int; call write_md(config, raw/suite-report-fix-v1, retained results.json, filename=report_recovered.md)."
+}

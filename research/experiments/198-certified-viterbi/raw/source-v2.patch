@@ -1,0 +1,115 @@
+diff -ru research/experiments/119-component-phrase-ids/sources/crf.c research/experiments/198-certified-viterbi/sources-v2/crf.c
+--- research/experiments/119-component-phrase-ids/sources/crf.c	2026-10-04 01:21:46
++++ research/experiments/198-certified-viterbi/sources-v2/crf.c	2026-10-07 19:04:18
+@@ -960,7 +960,11 @@
+     size_t num_tokens = tokenized->tokens->n;
+ 
+     uint32_array_resize_fixed(self->viterbi, num_tokens);
+-#ifdef EXP_FAST_VITERBI
++#ifdef EXP_CERT_F32_VITERBI
++    double viterbi_score;
++    if (!crf_context_viterbi_f32_certified(self->context, self->viterbi->a, &viterbi_score))
++        viterbi_score = crf_context_viterbi(self->context, self->viterbi->a);
++#elif defined(EXP_FAST_VITERBI)
+     double viterbi_score = crf_context_viterbi_fast(self->context, self->viterbi->a);
+ #else
+     double viterbi_score = crf_context_viterbi(self->context, self->viterbi->a);
+diff -ru research/experiments/119-component-phrase-ids/sources/crf_context.c research/experiments/198-certified-viterbi/sources-v2/crf_context.c
+--- research/experiments/119-component-phrase-ids/sources/crf_context.c	2026-10-04 01:21:21
++++ research/experiments/198-certified-viterbi/sources-v2/crf_context.c	2026-10-07 19:04:23
+@@ -775,3 +775,94 @@
+ 
+     return max_score;
+ }
++
++// 198: run the max-plus recurrence in float only when a conservative bound
++// certifies the selected backpointers and final label. False means the caller
++// must run the original f64 decoder over the unchanged exact score matrices.
++bool crf_context_viterbi_f32_certified(crf_context_t *self, uint32_t *labels, double *score) {
++    const size_t T = self->num_items, L = self->num_labels;
++    const double u64 = 0x1p-53, u32 = 0x1p-24;
++    if (T == 0 || L != 20) return false;
++    const double *tr = self->trans->values;
++    double trmax = 0.0;
++    for (size_t k = 0; k < L * L; k++) {
++        if (!isfinite(tr[k]) || (tr[k] != 0.0 && fabs(tr[k]) < FLT_MIN)) return false;
++        trmax = fmax(trmax, fabs(tr[k]));
++    }
++    double *a0 = alpha_score(self, 0), *s0 = state_score(self, 0);
++    double eS0 = 0.0;
++    for (size_t j = 0; j < L; j++) {
++        double x = s0[j];
++        if (!isfinite(x) || (x != 0.0 && fabs(x) < FLT_MIN)) return false;
++        eS0 = fmax(eS0, u32 * fabs(x) * 1.001);
++        float xf = (float)x;
++        if (!isfinite(xf) || (xf != 0.0f && fabsf(xf) < FLT_MIN)) return false;
++        a0[j] = (double)xf;
++    }
++    for (size_t t = 1; t < T; t++) {
++        const double *prev = alpha_score(self, t - 1), *s = state_score(self, t);
++        const double *st = state_trans_score_all(self, t);
++        double *cur = alpha_score(self, t);
++        uint32_t *back = backward_edge_at(self, t);
++        for (size_t j = 0; j < L; j++) {
++            float best = -FLT_MAX;
++            uint32_t arg = 0;
++            for (size_t i = 0; i < L; i++) {
++                double xpi = prev[i], xps = st[i * L + j], xpt = tr[i * L + j];
++                if (!isfinite(xpi) || !isfinite(xps) || !isfinite(xpt) ||
++                    (xpi != 0.0 && fabs(xpi) < FLT_MIN) ||
++                    (xps != 0.0 && fabs(xps) < FLT_MIN) ||
++                    (xpt != 0.0 && fabs(xpt) < FLT_MIN)) return false;
++                float pi = (float)xpi, ps = (float)xps, pt = (float)xpt;
++                float v = (pi + ps) + pt;
++                if (!isfinite(v) || (v != 0.0f && fabsf(v) < FLT_MIN)) return false;
++                if (best < v) { best = v; arg = (uint32_t)i; }
++            }
++            double xs = s[j];
++            if (!isfinite(xs) || (xs != 0.0 && fabs(xs) < FLT_MIN)) return false;
++            float next = best + (float)xs;
++            if (!isfinite(next) || (next != 0.0f && fabsf(next) < FLT_MIN)) return false;
++            cur[j] = (double)next;
++            back[j] = arg;
++        }
++    }
++    double best = -DBL_MAX;
++    uint32_t last = 0;
++    double *lastrow = alpha_score(self, T - 1);
++    for (size_t j = 0; j < L; j++) if (best < lastrow[j]) { best = lastrow[j]; last = (uint32_t)j; }
++    for (size_t t = T; t-- > 0;) { labels[t] = last; if (t) last = backward_edge_at(self, t)[last]; }
++    // Recompute the proof's propagated error and verify the runtime path's
++    // selected predecessor at each step. Unknown arithmetic conditions fail closed.
++    double D = eS0;
++    for (size_t t = 1; t < T; t++) {
++        const double *prev = alpha_score(self, t - 1), *s = state_score(self, t);
++        const double *st = state_trans_score_all(self, t);
++        double eS = 0.0, eP = 0.0, ma = 0.0, mst = 0.0, ms = 0.0;
++        for (size_t j = 0; j < L; j++) {
++            eS = fmax(eS, u32 * fabs(s[j]) * 1.001);
++            ms = fmax(ms, fabs(s[j]));
++        }
++        for (size_t c = 0; c < L * L; c++) {
++            eP = fmax(eP, u32 * fabs(st[c]) * 1.001);
++            mst = fmax(mst, fabs(st[c]));
++        }
++        for (size_t i = 0; i < L; i++) ma = fmax(ma, fabs(prev[i]));
++        double M = (ma + mst + trmax + ms + D + eP + eS) * (1.0 + 4.0 * (u32 + u64));
++        double rnd = 3.0 * (u32 + u64) * M * 1.001;
++        double delta = D + eP + u32 * trmax * 1.001 + rnd;
++        uint32_t from = labels[t - 1], to = labels[t];
++        double chosen = -DBL_MAX, other = -DBL_MAX;
++        for (size_t i = 0; i < L; i++) {
++            double v = ((float)prev[i] + (float)st[i * L + to]) + (float)tr[i * L + to];
++            if (i == from) chosen = v; else other = fmax(other, v);
++        }
++        if (!(chosen - other > 2.0 * delta)) return false;
++        D = delta + eS + rnd;
++    }
++    double other = -DBL_MAX;
++    last = labels[T - 1];
++    for (size_t j = 0; j < L; j++) if (j != last) other = fmax(other, lastrow[j]);
++    if (!(lastrow[last] - other > 2.0 * D)) return false;
++    *score = best;
++    return true;
++}
+Only in research/experiments/198-certified-viterbi/sources-v2: crf_context.h

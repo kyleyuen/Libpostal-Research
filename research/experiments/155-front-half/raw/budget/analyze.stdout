@@ -1,0 +1,8 @@
+v1 r1: O 31.34 C 5.210 (6.02x) s 0.887 | cpi B (predict) 3.107 cold, 1.793 warm(split) | budget necessary 3.495 hybrid 1.832 | B_new cold 2.084 warm 1.438
+v1 r2: O 32.21 C 5.437 (5.92x) s 0.964 | cpi B (predict) 3.272 cold, 1.802 warm(split) | budget necessary 3.566 hybrid 1.880 | B_new cold 2.279 warm 1.438
+v1 r3: O 31.82 C 5.247 (6.06x) s 0.925 | cpi B (predict) 3.155 cold, 1.804 warm(split) | budget necessary 3.535 hybrid 1.903 | B_new cold 2.111 warm 1.465
+v1 MEDIAN: O 31.82  C 5.247  O/8 3.977  cpi: ntr 0.442 cf 1.662 B 3.155 | NECESSARY budget 3.535  HYBRID budget 1.880  | B_new 2.111 (warm 1.438)  -> necessary PASS, hybrid FAIL
+osm r1: O 19.53 C 3.858 (5.06x) s 0.885 | cpi B (predict) 2.308 cold, 1.536 warm(split) | budget necessary 2.077 hybrid 0.910 | B_new cold 1.470 warm 1.239
+osm r2: O 19.72 C 3.514 (5.61x) s 0.849 | cpi B (predict) 2.137 cold, 1.572 warm(split) | budget necessary 2.115 hybrid 1.105 | B_new cold 1.511 warm 1.251
+osm r3: O 21.78 C 4.295 (5.07x) s 0.991 | cpi B (predict) 2.603 cold, 1.650 warm(split) | budget necessary 2.298 hybrid 1.053 | B_new cold 1.509 warm 1.371
+osm MEDIAN: O 19.72  C 3.858  O/8 2.465  cpi: ntr 0.364 cf 1.168 B 2.308 | NECESSARY budget 2.115  HYBRID budget 1.053  | B_new 1.509 (warm 1.251)  -> necessary PASS, hybrid FAIL

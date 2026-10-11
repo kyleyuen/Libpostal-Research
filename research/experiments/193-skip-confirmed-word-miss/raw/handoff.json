@@ -1,0 +1,43 @@
+{
+  "experiment_id": 193,
+  "name": "skip-confirmed-word-miss",
+  "hypothesis": "Avoid the second identical state-feature trie miss when the prefiller already checked the exact same word|TOKEN key and recorded a confirmed miss; keep the normal feature emission and multiplicity.",
+  "base_source": "research/experiments/181-release-180/sources (base commit 181737d30977adc9d287e3f7a1cfafd7277525d)",
+  "source_tree": "research/experiments/193-skip-confirmed-word-miss/sources",
+  "source_manifest_path": "research/experiments/193-skip-confirmed-word-miss/raw/source_manifest.sha256",
+  "source_manifest_sha256": "93783275cc5692fa4e659998126dcc8b26c48ddac902feb2ac15a767af45145b",
+  "patch_path": "research/experiments/193-skip-confirmed-word-miss/raw/source_delta.patch",
+  "patch_sha256": "f8eeb3e3f9c8671a97b9eb280f02a4dc602cd17f6ba38dbae95bf3b98124a6da",
+  "builds": {
+    "release": {
+      "library": "research/experiments/193-skip-confirmed-word-miss/artifacts/release/libpostal.a",
+      "dumper": "research/experiments/193-skip-confirmed-word-miss/artifacts/release/dump_outputs",
+      "flags": "-DHAVE_CONFIG_H -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS -O2 -DEXP_FUSED_FRONT -DEXP_EVENT_FLOW -DLIBPOSTAL_DATA_DIR=\"/Users/kyle/.cache/libpostal-profile/libpostal\"",
+      "command_log": "research/experiments/193-skip-confirmed-word-miss/raw/build_release.command",
+      "binary_sha256": "594b84ac7146ce20f4a67922cf680dc193ad57747cca60846236f0ff49179b0e"
+    },
+    "diagnostic": {
+      "library": null,
+      "dumper": null,
+      "flags": null,
+      "command_log": null,
+      "binary_sha256": null,
+      "unavailable_reason": "benchmark_186 will build an isolated diagnostic derivative from this immutable source delta with the shared 185 instrumentation."
+    }
+  },
+  "metrics": {
+    "supported": [
+      "confirmed front-word misses",
+      "duplicate scorer misses skipped",
+      "fallback lookups",
+      "state-score row multiplicity"
+    ],
+    "unavailable": {
+      "speed": "pending serialized parser screen",
+      "memory": "pending serialized benchmark screen"
+    }
+  },
+  "model_manifest_sha256": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad",
+  "build_exit_code": 0,
+  "parser_invoked": false
+}

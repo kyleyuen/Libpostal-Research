@@ -4,15 +4,40 @@
 
 Requirements: Python 3.9+ (standard library only), macOS on Apple Silicon, and the binaries and model listed in `suite.json`.
 
+## Role under the 2026-10-06 measurement policy
+
+This suite retains the final benchmark protocol: original versus candidate,
+uninstrumented timing/memory, exact output and single-thread evidence. Future
+optimization research uses the separate [operation measurement plan](../plans/MEASUREMENT_PLAN_2026-10-06.md)
+and [METHOD.md](../METHOD.md). Operation instrumentation is planned, not implemented
+in this runner; diagnostic counts cannot replace acceptance evidence. Inspect
+the correctness, thread and memory results explicitly rather than relying on
+runner exit status alone.
+
+All 14 registered datasets have now been observed: experiments 183 and 202
+covered v12/v13, and experiment 202 covered v14. These sets are not unseen
+validation data anymore, and the current registry marks them as nonreserved.
+
+From the workspace root, prepare a fresh checkout with:
+
+```sh
+benchmark/run.sh --setup-only
+```
+
+This checks dependencies, obtains the pinned source and model, builds the
+original and CPI harnesses, and writes the suite config without running the
+benchmark suite. It prints the command to run the suite afterward. Homebrew
+package installation is opt-in: pass `--deps` to install missing packages.
+
 ## Run
 
 ```sh
 cd research/suite
-python3 run_suite.py                         # everything: all enabled datasets except reserved ones, all stages
+python3 run_suite.py                         # all enabled, nonreserved datasets (currently all 14), all stages
 python3 run_suite.py --datasets osm-v3,novel --rounds 3          # a subset
 python3 run_suite.py --stages correctness                        # one stage only
 python3 run_suite.py --report-only results/<run-id>              # re-analyse raw files (e.g. after editing the report code)
-python3 run_suite.py --include-reserved                          # ALSO runs the never-used unseen sets: this spends them
+python3 run_suite.py --include-reserved                          # also includes any datasets explicitly marked reserved
 ```
 
 Each run writes `results/<run-id>/`:
@@ -58,7 +83,7 @@ Baseline reference dumps are cached in `results/cache/`, keyed by binary hash an
 - `txt` holds one address per line (used by `dump_outputs`).
 - `tsv` holds `country<TAB>address` (used by `bench_ext`).
 - `frozen_reference` (optional) points to a frozen `baseline-outputs.jsonl`.
-- `reserved: true` keeps the set out of normal runs until `--include-reserved`.
+- `reserved: true` keeps a dataset out of normal runs until `--include-reserved`. No datasets are currently reserved.
 - `enabled: false` disables the set.
 - Put new data under a new `profiling/<name>/` directory, and never overwrite existing sets.
 
@@ -73,4 +98,4 @@ Baseline reference dumps are cached in `results/cache/`, keyed by binary hash an
 - Nothing is ever timed concurrently. Correctness work runs before timing.
 - The baseline and candidates are measured in the same session, with rotated order.
 - Every number traces back to a raw file, and failed runs keep their exit codes.
-- The reserved unseen sets are not spent by default.
+- Only datasets explicitly marked reserved stay out of default runs. Do not describe v12–v14 as unseen; they were observed in experiments 183 and 202.

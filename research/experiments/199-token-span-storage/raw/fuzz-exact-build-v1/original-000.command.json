@@ -1,0 +1,23 @@
+{
+  "name": "original-000",
+  "archive": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/000-baseline/artifacts/libpostal.a",
+  "archive_sha256": "30de6ef223346735ac3035654ff0d435e5e621dccc94dc77869807dbf146fe22",
+  "argv": [
+    "/usr/bin/clang",
+    "-O2",
+    "-g",
+    "-I",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/fuzz_pipeline_exact.c",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/000-baseline/artifacts/libpostal.a",
+    "-lm",
+    "-o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-v1/original-000/fuzz_pipeline_exact"
+  ],
+  "start_utc": "2026-10-08T04:45:13.647963+00:00",
+  "end_utc": "2026-10-08T04:46:11.438319+00:00",
+  "exit": 0,
+  "stdout": "",
+  "stderr": "",
+  "binary_sha256": "89f39cba96861f8a82e092d13ae1a91fa5af3f624476038f8da6010b083984dc"
+}

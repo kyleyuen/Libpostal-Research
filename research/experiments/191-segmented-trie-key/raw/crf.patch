@@ -1,0 +1,16 @@
+--- research/experiments/181-release-180/sources/crf.c	2026-10-06 00:09:56
++++ research/experiments/191-segmented-trie-key/sources/crf.c	2026-10-07 19:15:12
+@@ -1,3 +1,4 @@
++#include "trie.h"
+ #include "crf.h"
+ #include "log/log.h"
+ 
+@@ -62,7 +63,7 @@
+ #endif
+ 
+ #ifdef EXP_EVENT_FLOW
+-bool crf_state_word_id(crf_t *self, const char *word, uint32_t *id) { size_t n = strlen(word); char *key = malloc(n + 6); if (!key) return false; memcpy(key, "word|", 5); memcpy(key + 5, word, n + 1); bool ok = crf_get_feature_id(self, key, id); free(key); return ok; }
++bool crf_state_word_id(crf_t *self, const char *word, uint32_t *id) { return trie_get_data_concat(self->state_features, "word|", 5, word, strlen(word), id); }
+ void crf_direct_state_word(cstring_array *a, uint32_t id, const char *word) { direct_word_array = a; direct_word_pos = cstring_array_num_strings(a); direct_word_id = id;
+ #ifdef EXP_ORACLE
+ oracle_direct_id = id; oracle_direct_pos = direct_word_pos; oracle_direct_word = word;

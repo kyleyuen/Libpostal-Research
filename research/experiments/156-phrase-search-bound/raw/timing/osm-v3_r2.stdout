@@ -1,0 +1,5 @@
+set address_dictionary.tsv: keys 153670 (of 153670 lines) entries 158765  table 25.2 MB + keys 1.5 MB = 26.7 MB
+set component_phrases.tsv: keys 4012750 (of 4012750 lines) entries 4766947  table 402.7 MB + keys 72.2 MB = 474.8 MB
+set postal_codes.tsv: keys 5483892 (of 5483892 lines) entries 5490775  table 402.7 MB + keys 41.8 MB = 444.4 MB
+addresses 11405 (skipped T>=16384: 0) tokens 61157 | token mismatches: dictionary 19 component 19 postal 0 | addresses with any mismatch 28
+PS_new phrase search: pass1 0.450  cold median p2..60 0.421 [0.410-0.565]  warm 0.265 [0.210-0.520] us/addr

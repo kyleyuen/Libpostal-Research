@@ -1,0 +1,30 @@
+{
+  "name": "cpi-archive-mimalloc",
+  "argv": [
+    "/usr/bin/clang",
+    "-dynamiclib",
+    "-Wl,-all_load",
+    "-flto",
+    "/opt/homebrew/opt/mimalloc/lib/mimalloc.o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/libpostal.a",
+    "-lm",
+    "-o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/artifacts/api-cpi-archive-v1/cpi-mimalloc.dylib"
+  ],
+  "start_utc": "2026-10-09T08:13:45.478928+00:00",
+  "inputs_sha256": {
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/libpostal.a": "e56d3ae4799966543a5841ebce89f26fb5eeed396d862f6b31e4076354675a4e",
+    "/opt/homebrew/opt/mimalloc/lib/mimalloc.o": "03460b36edb0f104270109d33d96f8e7fc03c08d326cc5c2182c34b0a4900b82"
+  },
+  "gate_exit": 0,
+  "wrapper_argv": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/run_locked.py",
+    "--"
+  ],
+  "exit": 0,
+  "stdout_file": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/api-memory-v1/cpi-archive-mimalloc.stdout",
+  "stderr_file": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/api-memory-v1/cpi-archive-mimalloc.stderr",
+  "output_sha256": "f0c46ba3e77d5e32baee897bf968c0ad1ed5fef9d28ecffe7e52d3dcbe68a696",
+  "end_utc": "2026-10-09T08:13:47.742434+00:00"
+}

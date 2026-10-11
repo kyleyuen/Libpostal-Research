@@ -1,0 +1,74 @@
+{
+  "_comment": "Benchmark-suite registry. Paths are relative to the workspace root. Add a dataset or variant by adding an entry; see README.md.",
+  "workspace": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "model_dir": "/Users/kyle/.cache/libpostal-profile/libpostal",
+  "baseline": "original-000",
+  "settings": {
+    "rounds": 3,
+    "passes": 200,
+    "settle_load_1min": 2.5,
+    "settle_max_wait_s": 1800,
+    "correctness_jobs": 1,
+    "fuzz_count": 0,
+    "fuzz_seeds": [
+      1,
+      2
+    ],
+    "fuzz_corpora": [
+      "profiling/golden-v1/all.txt",
+      "profiling/golden-v2-novel/novel.txt"
+    ],
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20261004,
+    "steady_dataset": "golden-v1",
+    "steady_passes_before_sample": 3,
+    "thread_check_dataset": "golden-v1",
+    "sleep_between_runs_s": 2,
+    "country_min_n": 50
+  },
+  "variants": [
+    {
+      "name": "original-000",
+      "role": "baseline",
+      "enabled": true,
+      "desc": "preserved original benchmark executable",
+      "bench_ext": "research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+      "dump_outputs": "research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs"
+    },
+    {
+      "name": "cpi-packaged",
+      "role": "candidate",
+      "enabled": true,
+      "desc": "accepted packaged CPI profile; PGO and scanner O1, mimalloc",
+      "bench_ext": "research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext",
+      "dump_outputs": "research/experiments/119-component-phrase-ids/artifacts/cpi/dump_outputs"
+    },
+    {
+      "name": "cpi-source-matched-o2",
+      "role": "candidate",
+      "enabled": true,
+      "desc": "CPI source matched to 199: O2/LTO, scanner O0, no PGO, mimalloc",
+      "bench_ext": "research/experiments/119-component-phrase-ids/artifacts/cpi_201_matched_v1/bench_ext",
+      "dump_outputs": "research/experiments/119-component-phrase-ids/artifacts/cpi_201_matched_v1/dump_outputs"
+    },
+    {
+      "name": "199-token-span-mimalloc-v2",
+      "role": "candidate",
+      "enabled": true,
+      "desc": "199 token-span source, same no-PGO O2/LTO, scanner O0, mimalloc",
+      "bench_ext": "research/experiments/199-token-span-storage/artifacts/release-mimalloc-v2/bench_ext",
+      "dump_outputs": "research/experiments/199-token-span-storage/artifacts/release-mimalloc-v2/dump_outputs"
+    }
+  ],
+  "datasets": [
+    {
+      "name": "golden-v1",
+      "source": "senzing",
+      "kind": "development+validation (PGO trained on its development split)",
+      "reserved": false,
+      "txt": "profiling/golden-v1/all.txt",
+      "tsv": "profiling/golden-v2-novel/v1-all.tsv",
+      "frozen_reference": "profiling/golden-v1/baseline-outputs.jsonl"
+    }
+  ]
+}

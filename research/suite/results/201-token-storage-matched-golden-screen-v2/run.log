@@ -1,0 +1,25 @@
+2026-10-09T02:06:15-0700 === stage timing
+2026-10-09T02:06:15-0700 settle: load 2.37 < 2.5 after 0s
+2026-10-09T02:06:42-0700 timing 1/12 golden-v1__cpi-packaged__r1 exit 0 load 2.55
+2026-10-09T02:07:12-0700 timing 2/12 golden-v1__cpi-source-matched-o2__r1 exit 0 load 2.76
+2026-10-09T02:07:42-0700 timing 3/12 golden-v1__199-token-span-mimalloc-v2__r1 exit 0 load 2.64
+2026-10-09T02:09:12-0700 timing 4/12 golden-v1__original-000__r1 exit 0 load 3.43
+2026-10-09T02:09:42-0700 timing 5/12 golden-v1__cpi-source-matched-o2__r2 exit 0 load 3.39
+2026-10-09T02:10:12-0700 timing 6/12 golden-v1__199-token-span-mimalloc-v2__r2 exit 0 load 3.33
+2026-10-09T02:11:42-0700 timing 7/12 golden-v1__original-000__r2 exit 0 load 3.54
+2026-10-09T02:12:11-0700 timing 8/12 golden-v1__cpi-packaged__r2 exit 0 load 3.56
+2026-10-09T02:12:42-0700 timing 9/12 golden-v1__199-token-span-mimalloc-v2__r3 exit 0 load 3.15
+2026-10-09T02:14:12-0700 timing 10/12 golden-v1__original-000__r3 exit 0 load 3.75
+2026-10-09T02:14:42-0700 timing 11/12 golden-v1__cpi-packaged__r3 exit 0 load 3.47
+2026-10-09T02:15:15-0700 timing 12/12 golden-v1__cpi-source-matched-o2__r3 exit 0 load 3.90
+2026-10-09T02:15:17-0700 === stage memory
+2026-10-09T02:15:40-0700 memory: original-000 steady footprint 2172 MB
+2026-10-09T02:15:57-0700 memory: cpi-packaged steady footprint 1927 MB
+2026-10-09T02:16:14-0700 memory: cpi-source-matched-o2 steady footprint 1927 MB
+2026-10-09T02:16:32-0700 memory: 199-token-span-mimalloc-v2 steady footprint 1927 MB
+2026-10-09T02:16:32-0700 === stage threads
+2026-10-09T02:16:50-0700 threads: original-000 [1, 1, 1, 1, 1, 1]
+2026-10-09T02:17:08-0700 threads: cpi-packaged [1, 1, 1, 1, 1, 1]
+2026-10-09T02:17:26-0700 threads: cpi-source-matched-o2 [1, 1, 1, 1, 1, 1]
+2026-10-09T02:17:44-0700 threads: 199-token-span-mimalloc-v2 [1, 1, 1, 1, 1, 1]
+2026-10-09T02:17:44-0700 === stage report

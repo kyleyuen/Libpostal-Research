@@ -1,0 +1,1 @@
+/opt/homebrew/bin/python3 research/experiments/182-benchmark-suite-prep/tools/make_run_config.py /Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000 /Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/182-benchmark-suite-prep/raw/config-generator-selfcheck.json 

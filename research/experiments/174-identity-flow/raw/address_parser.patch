@@ -1,0 +1,59 @@
+diff --git a/research/final/119-cpi/sources/address_parser.c b/research/experiments/174-identity-flow/sources/address_parser.c
+index 81467bbb..32b7953c 100644
+--- a/research/final/119-cpi/sources/address_parser.c
++++ b/research/experiments/174-identity-flow/sources/address_parser.c
+@@ -955,6 +955,11 @@ static unsigned long long ps_verified = 0;
+ __attribute__((destructor)) static void ps_report(void) { fprintf(stderr, "EXP_PS_FLAGS_VERIFY: %llu flagged searches re-run, 0 mismatches\n", ps_verified); }
+ #endif
+ void address_parser_context_fill(address_parser_context_t *context, address_parser_t *parser, tokenized_string_t *tokenized_str, char *language, char *country) {
++#ifdef EXP_SHARED_FTT_IDENTITY
++    /* The FTT slot buffer is owned by context fill. Do not retain its old contents
++       while the next address overwrites it. */
++    trie_ftt_slot = NULL; trie_ftt_n = 0;
++#endif
+     uint32_t token_index;
+     char *word;
+     phrase_t phrase;
+@@ -1152,7 +1157,7 @@ void address_parser_context_fill(address_parser_context_t *context, address_pars
+     }
+ #endif
+     bool have_component_phrases = trie_search_tokens_with_phrases(parser->phrases, normalized_str_admin, normalized_admin_tokens, &component_phrases);
+-#ifdef EXP_FTT
++#if defined(EXP_FTT) && !defined(EXP_SHARED_FTT_IDENTITY)
+     trie_ftt_slot = NULL; trie_ftt_n = 0;
+ #endif
+     token_phrase_memberships(component_phrases, component_phrase_memberships, num_tokens);
+@@ -1679,7 +1684,32 @@ static inline ap_vmemo_t *ap_vm_get(address_parser_context_t *context, ssize_t j
+     ap_vmemo_t *m = &ap_vm[j];
+     if (!m->filled) {
+         size_t len = strlen(s); uint64_t slot;
+-        const uint8_t *e = fd_find_slot(vocab_dict, 0, s, len, &slot);
++        const uint8_t *e = NULL;
++#ifdef EXP_SHARED_FTT_IDENTITY
++        /* Reuse the existing FTT slot only while the two independently generated
++           normalized token strings are exactly equal. Every array index is guarded;
++           otherwise use the original lookup. This keeps the slot buffer's lifetime
++           inside the same single-threaded address flow and adds no per-address store. */
++        if ((size_t)j < trie_ftt_n && trie_ftt_slot != NULL && trie_ftt_slot[j] >= 0 &&
++            (size_t)j < context->normalized_tokens->n &&
++            (size_t)j < context->normalized_admin_tokens->n) {
++            token_t regular = context->normalized_tokens->a[j];
++            token_t admin = context->normalized_admin_tokens->a[j];
++            const char *admin_s = context->normalized_admin->str->a + admin.offset;
++            if (regular.len == admin.len && regular.len == len &&
++                memchr(s, '|', len) == NULL && memcmp(s, admin_s, len) == 0) {
++                slot = (uint32_t)trie_ftt_slot[j];
++                uint64_t sv = vocab_dict->slots[slot];
++                e = sv ? vocab_dict->arena + (uint32_t)sv : NULL;
++                if (getenv("AP_IDENTITY_VERIFY") != NULL) {
++                    uint64_t checked_slot = 0;
++                    const uint8_t *checked = fd_find_slot(vocab_dict, 0, s, len, &checked_slot);
++                    if (checked != e || checked_slot != slot) abort();
++                }
++            }
++        }
++#endif
++        if (e == NULL) e = fd_find_slot(vocab_dict, 0, s, len, &slot);
+         m->len = (uint32_t)len; m->count = 0; m->canon = 0xFFFFFFFFu;
+         if (e != NULL) {
+             memcpy(&m->count, e + 2 + len, sizeof(uint32_t));                     // wide value, as fd_lookup reads it

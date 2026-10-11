@@ -1,0 +1,398 @@
+{
+  "passes": 5000,
+  "ready_pass": 50,
+  "samples": 6,
+  "interval_seconds": 3,
+  "records": [
+    {
+      "tag": "golden-v1__original-000",
+      "dataset": "golden-v1",
+      "role": "original-000",
+      "command": [
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv",
+        "5000"
+      ],
+      "binary_sha256": "a4968702ab9415f3fc71f509d73284e5d228073c49c825aeb7798b5b6e061a50",
+      "tsv_sha256": "43224e8b6381bf5b72f18601a28750ac500c6f40c30a739183b56a3f60cd57db",
+      "stdout": "research/experiments/203-cpi-memory-regression/raw/stream-steady-thread-v1/thread-captures/golden-v1__original-000.stdout",
+      "stderr": "research/experiments/203-cpi-memory-regression/raw/stream-steady-thread-v1/thread-captures/golden-v1__original-000.stderr",
+      "gate_exit": 0,
+      "ready_pass": 50,
+      "samples": [
+        {
+          "sample": 1,
+          "timestamp": "2026-10-10T18:37:12-0700",
+          "threads": 1,
+          "pass_seen": 86,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 26741   ??  100.0 R    31T   0:00.39   0:37.12 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 5000\n"
+        },
+        {
+          "sample": 2,
+          "timestamp": "2026-10-10T18:37:15-0700",
+          "threads": 1,
+          "pass_seen": 86,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 26741   ??  100.0 R    31T   0:00.39   0:40.12 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 5000\n"
+        },
+        {
+          "sample": 3,
+          "timestamp": "2026-10-10T18:37:18-0700",
+          "threads": 1,
+          "pass_seen": 86,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 26741   ??  100.0 R    31T   0:00.39   0:43.14 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 5000\n"
+        },
+        {
+          "sample": 4,
+          "timestamp": "2026-10-10T18:37:21-0700",
+          "threads": 1,
+          "pass_seen": 86,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 26741   ??   99.4 R    31T   0:00.40   0:46.15 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 5000\n"
+        },
+        {
+          "sample": 5,
+          "timestamp": "2026-10-10T18:37:24-0700",
+          "threads": 1,
+          "pass_seen": 86,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 26741   ??  100.0 R    31T   0:00.40   0:49.16 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 5000\n"
+        },
+        {
+          "sample": 6,
+          "timestamp": "2026-10-10T18:37:27-0700",
+          "threads": 1,
+          "pass_seen": 86,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 26741   ??   99.7 R    31T   0:00.40   0:52.17 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 5000\n"
+        }
+      ],
+      "termination": "SIGKILL after six live samples (intentional)",
+      "pid": 26741,
+      "readiness": "pass marker observed while process alive",
+      "returncode": -9,
+      "active_stream_marker": false
+    },
+    {
+      "tag": "golden-v1__cpi-stream-203",
+      "dataset": "golden-v1",
+      "role": "cpi-stream-203",
+      "command": [
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv",
+        "5000"
+      ],
+      "binary_sha256": "8bb0a15c7dad2ae21bb660189007b263be27567e61d4fa4ec18feff2c479fd04",
+      "tsv_sha256": "43224e8b6381bf5b72f18601a28750ac500c6f40c30a739183b56a3f60cd57db",
+      "stdout": "research/experiments/203-cpi-memory-regression/raw/stream-steady-thread-v1/thread-captures/golden-v1__cpi-stream-203.stdout",
+      "stderr": "research/experiments/203-cpi-memory-regression/raw/stream-steady-thread-v1/thread-captures/golden-v1__cpi-stream-203.stderr",
+      "gate_exit": 0,
+      "ready_pass": 50,
+      "samples": [
+        {
+          "sample": 1,
+          "timestamp": "2026-10-10T18:37:45-0700",
+          "threads": 1,
+          "pass_seen": 88,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27024   ??   98.8 R    31T   0:00.31   0:15.00 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 5000\n"
+        },
+        {
+          "sample": 2,
+          "timestamp": "2026-10-10T18:37:48-0700",
+          "threads": 1,
+          "pass_seen": 131,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27024   ??   99.4 R    31T   0:00.32   0:18.02 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 5000\n"
+        },
+        {
+          "sample": 3,
+          "timestamp": "2026-10-10T18:37:51-0700",
+          "threads": 1,
+          "pass_seen": 174,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27024   ??  100.0 R    31T   0:00.32   0:21.03 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 5000\n"
+        },
+        {
+          "sample": 4,
+          "timestamp": "2026-10-10T18:37:54-0700",
+          "threads": 1,
+          "pass_seen": 216,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27024   ??   98.2 R    31T   0:00.45   0:23.87 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 5000\n"
+        },
+        {
+          "sample": 5,
+          "timestamp": "2026-10-10T18:37:57-0700",
+          "threads": 1,
+          "pass_seen": 259,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27024   ??   99.3 R    31T   0:00.45   0:26.88 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 5000\n"
+        },
+        {
+          "sample": 6,
+          "timestamp": "2026-10-10T18:38:00-0700",
+          "threads": 1,
+          "pass_seen": 302,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27024   ??   99.7 R    31T   0:00.45   0:29.90 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv 5000\n"
+        }
+      ],
+      "termination": "SIGKILL after six live samples (intentional)",
+      "pid": 27024,
+      "readiness": "pass marker observed while process alive",
+      "returncode": -9,
+      "active_stream_marker": true
+    },
+    {
+      "tag": "osm-v3__original-000",
+      "dataset": "osm-v3",
+      "role": "original-000",
+      "command": [
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv",
+        "5000"
+      ],
+      "binary_sha256": "a4968702ab9415f3fc71f509d73284e5d228073c49c825aeb7798b5b6e061a50",
+      "tsv_sha256": "45b6b9b5244594e8c46ca2b8fb25cc6bcc8089eae36e78128a556539228a145f",
+      "stdout": "research/experiments/203-cpi-memory-regression/raw/stream-steady-thread-v1/thread-captures/osm-v3__original-000.stdout",
+      "stderr": "research/experiments/203-cpi-memory-regression/raw/stream-steady-thread-v1/thread-captures/osm-v3__original-000.stderr",
+      "gate_exit": 0,
+      "ready_pass": 50,
+      "samples": [
+        {
+          "sample": 1,
+          "timestamp": "2026-10-10T18:38:18-0700",
+          "threads": 1,
+          "pass_seen": 62,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27224   ??  100.0 R    31T   0:00.28   0:16.01 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 5000\n"
+        },
+        {
+          "sample": 2,
+          "timestamp": "2026-10-10T18:38:21-0700",
+          "threads": 1,
+          "pass_seen": 62,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27224   ??   99.6 R    31T   0:00.28   0:19.03 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 5000\n"
+        },
+        {
+          "sample": 3,
+          "timestamp": "2026-10-10T18:38:24-0700",
+          "threads": 1,
+          "pass_seen": 62,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27224   ??  100.0 R    31T   0:00.28   0:22.03 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 5000\n"
+        },
+        {
+          "sample": 4,
+          "timestamp": "2026-10-10T18:38:27-0700",
+          "threads": 1,
+          "pass_seen": 62,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27224   ??  100.0 R    31T   0:00.28   0:25.04 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 5000\n"
+        },
+        {
+          "sample": 5,
+          "timestamp": "2026-10-10T18:38:30-0700",
+          "threads": 1,
+          "pass_seen": 104,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27224   ??  100.0 R    31T   0:00.28   0:28.05 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 5000\n"
+        },
+        {
+          "sample": 6,
+          "timestamp": "2026-10-10T18:38:33-0700",
+          "threads": 1,
+          "pass_seen": 104,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27224   ??   99.3 R    31T   0:00.33   0:30.98 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 5000\n"
+        }
+      ],
+      "termination": "SIGKILL after six live samples (intentional)",
+      "pid": 27224,
+      "readiness": "pass marker observed while process alive",
+      "returncode": -9,
+      "active_stream_marker": false
+    },
+    {
+      "tag": "osm-v3__cpi-stream-203",
+      "dataset": "osm-v3",
+      "role": "cpi-stream-203",
+      "command": [
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv",
+        "5000"
+      ],
+      "binary_sha256": "8bb0a15c7dad2ae21bb660189007b263be27567e61d4fa4ec18feff2c479fd04",
+      "tsv_sha256": "45b6b9b5244594e8c46ca2b8fb25cc6bcc8089eae36e78128a556539228a145f",
+      "stdout": "research/experiments/203-cpi-memory-regression/raw/stream-steady-thread-v1/thread-captures/osm-v3__cpi-stream-203.stdout",
+      "stderr": "research/experiments/203-cpi-memory-regression/raw/stream-steady-thread-v1/thread-captures/osm-v3__cpi-stream-203.stderr",
+      "gate_exit": 0,
+      "ready_pass": 50,
+      "samples": [
+        {
+          "sample": 1,
+          "timestamp": "2026-10-10T18:38:47-0700",
+          "threads": 1,
+          "pass_seen": 63,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27431   ??  100.0 R    31T   0:00.32   0:11.69 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 5000\n"
+        },
+        {
+          "sample": 2,
+          "timestamp": "2026-10-10T18:38:50-0700",
+          "threads": 1,
+          "pass_seen": 106,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27431   ??   98.9 R    31T   0:00.32   0:14.71 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 5000\n"
+        },
+        {
+          "sample": 3,
+          "timestamp": "2026-10-10T18:38:53-0700",
+          "threads": 1,
+          "pass_seen": 191,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27431   ??   99.3 R    31T   0:00.32   0:17.72 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 5000\n"
+        },
+        {
+          "sample": 4,
+          "timestamp": "2026-10-10T18:38:56-0700",
+          "threads": 1,
+          "pass_seen": 277,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27431   ??  100.0 R    31T   0:00.33   0:20.72 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 5000\n"
+        },
+        {
+          "sample": 5,
+          "timestamp": "2026-10-10T18:38:59-0700",
+          "threads": 1,
+          "pass_seen": 362,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27431   ??  100.0 R    31T   0:00.33   0:23.74 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 5000\n"
+        },
+        {
+          "sample": 6,
+          "timestamp": "2026-10-10T18:39:02-0700",
+          "threads": 1,
+          "pass_seen": 447,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27431   ??   99.1 R    31T   0:00.33   0:26.75 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv 5000\n"
+        }
+      ],
+      "termination": "SIGKILL after six live samples (intentional)",
+      "pid": 27431,
+      "readiness": "pass marker observed while process alive",
+      "returncode": -9,
+      "active_stream_marker": true
+    },
+    {
+      "tag": "unseen-v14__original-000",
+      "dataset": "unseen-v14",
+      "role": "original-000",
+      "command": [
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv",
+        "5000"
+      ],
+      "binary_sha256": "a4968702ab9415f3fc71f509d73284e5d228073c49c825aeb7798b5b6e061a50",
+      "tsv_sha256": "c795d62b629390c7ddf01d416f0d030e0bd9f075cb33d514ce10792b5b05e977",
+      "stdout": "research/experiments/203-cpi-memory-regression/raw/stream-steady-thread-v1/thread-captures/unseen-v14__original-000.stdout",
+      "stderr": "research/experiments/203-cpi-memory-regression/raw/stream-steady-thread-v1/thread-captures/unseen-v14__original-000.stderr",
+      "gate_exit": 0,
+      "ready_pass": 50,
+      "samples": [
+        {
+          "sample": 1,
+          "timestamp": "2026-10-10T18:39:09-0700",
+          "threads": 1,
+          "pass_seen": 80,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27592   ??  100.0 R    31T   0:00.25   0:04.78 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv 5000\n"
+        },
+        {
+          "sample": 2,
+          "timestamp": "2026-10-10T18:39:12-0700",
+          "threads": 1,
+          "pass_seen": 164,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27592   ??  100.0 R    31T   0:00.25   0:07.79 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv 5000\n"
+        },
+        {
+          "sample": 3,
+          "timestamp": "2026-10-10T18:39:15-0700",
+          "threads": 1,
+          "pass_seen": 291,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27592   ??  100.0 R    31T   0:00.25   0:10.80 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv 5000\n"
+        },
+        {
+          "sample": 4,
+          "timestamp": "2026-10-10T18:39:18-0700",
+          "threads": 1,
+          "pass_seen": 418,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27592   ??  100.0 R    31T   0:00.25   0:13.81 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv 5000\n"
+        },
+        {
+          "sample": 5,
+          "timestamp": "2026-10-10T18:39:21-0700",
+          "threads": 1,
+          "pass_seen": 502,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27592   ??  100.0 R    31T   0:00.25   0:16.83 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv 5000\n"
+        },
+        {
+          "sample": 6,
+          "timestamp": "2026-10-10T18:39:24-0700",
+          "threads": 1,
+          "pass_seen": 629,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27592   ??   99.6 R    31T   0:00.26   0:19.84 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv 5000\n"
+        }
+      ],
+      "termination": "SIGKILL after six live samples (intentional)",
+      "pid": 27592,
+      "readiness": "pass marker observed while process alive",
+      "returncode": -9,
+      "active_stream_marker": false
+    },
+    {
+      "tag": "unseen-v14__cpi-stream-203",
+      "dataset": "unseen-v14",
+      "role": "cpi-stream-203",
+      "command": [
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv",
+        "5000"
+      ],
+      "binary_sha256": "8bb0a15c7dad2ae21bb660189007b263be27567e61d4fa4ec18feff2c479fd04",
+      "tsv_sha256": "c795d62b629390c7ddf01d416f0d030e0bd9f075cb33d514ce10792b5b05e977",
+      "stdout": "research/experiments/203-cpi-memory-regression/raw/stream-steady-thread-v1/thread-captures/unseen-v14__cpi-stream-203.stdout",
+      "stderr": "research/experiments/203-cpi-memory-regression/raw/stream-steady-thread-v1/thread-captures/unseen-v14__cpi-stream-203.stderr",
+      "gate_exit": 0,
+      "ready_pass": 50,
+      "samples": [
+        {
+          "sample": 1,
+          "timestamp": "2026-10-10T18:39:36-0700",
+          "threads": 1,
+          "pass_seen": 81,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27729   ??  100.0 R    31T   0:00.33   0:09.81 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv 5000\n"
+        },
+        {
+          "sample": 2,
+          "timestamp": "2026-10-10T18:39:39-0700",
+          "threads": 1,
+          "pass_seen": 721,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27729   ??  100.0 R    31T   0:00.33   0:12.81 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv 5000\n"
+        },
+        {
+          "sample": 3,
+          "timestamp": "2026-10-10T18:39:42-0700",
+          "threads": 1,
+          "pass_seen": 1357,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27729   ??  100.0 R    31T   0:00.34   0:15.82 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv 5000\n"
+        },
+        {
+          "sample": 4,
+          "timestamp": "2026-10-10T18:39:45-0700",
+          "threads": 1,
+          "pass_seen": 1948,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27729   ??  100.0 R    31T   0:00.34   0:18.83 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv 5000\n"
+        },
+        {
+          "sample": 5,
+          "timestamp": "2026-10-10T18:39:48-0700",
+          "threads": 1,
+          "pass_seen": 2624,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27729   ??  100.0 R    31T   0:00.34   0:21.85 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv 5000\n"
+        },
+        {
+          "sample": 6,
+          "timestamp": "2026-10-10T18:39:51-0700",
+          "threads": 1,
+          "pass_seen": 3257,
+          "ps_output": "USER   PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND\nkyle 27729   ??   99.1 R    31T   0:00.34   0:24.86 /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext /Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv 5000\n"
+        }
+      ],
+      "termination": "SIGKILL after six live samples (intentional)",
+      "pid": 27729,
+      "readiness": "pass marker observed while process alive",
+      "returncode": -9,
+      "active_stream_marker": true
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+/opt/homebrew/bin/python3 -m py_compile research/suite/run_suite.py research/experiments/182-benchmark-suite-prep/tools/audit_registry.py research/experiments/182-benchmark-suite-prep/tools/make_run_config.py 

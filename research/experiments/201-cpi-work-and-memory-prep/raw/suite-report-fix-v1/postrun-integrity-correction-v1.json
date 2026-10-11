@@ -1,0 +1,26 @@
+{
+  "correction_type": "metadata_only_row_count_correction_no_parser_invocation",
+  "timestamp_local": "2026-10-09T02:28:08-0700",
+  "supersedes_field": "postrun-integrity.json:dataset.rows",
+  "original_record_preserved": true,
+  "original_value": 128540,
+  "original_value_meaning": "sum of input addresses across the 13 diagnostic corpora; incorrect for this single-dataset screen",
+  "corrected_dataset": "golden-v1",
+  "corrected_rows": 12863,
+  "direct_evidence": [
+    {
+      "path": "profiling/golden-v1/all.txt",
+      "line_count": 12863
+    },
+    {
+      "path": "profiling/golden-v2-novel/v1-all.tsv",
+      "line_count": 12863
+    },
+    {
+      "path": "research/suite/results/201-token-storage-matched-golden-screen-v2/timing/*.stdout",
+      "observation": "All 12 timing captures identify the corpus as 12863."
+    }
+  ],
+  "scope": "Corrects the row-count metadata only. It does not alter benchmark inputs, output captures, hashes, measurements, or the all-13 diagnostic aggregate.",
+  "verification": "Read-only file line counts and captured bench_ext stdout inspection; no parser or workload invoked."
+}

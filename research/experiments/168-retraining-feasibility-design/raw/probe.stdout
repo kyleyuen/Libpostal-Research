@@ -1,0 +1,43 @@
+probe=168 retraining boundary evidence
+timestamp=2026-10-05T22:39:11-0700
+181737d30977adc9d287e3f7a1cfafd7277525d4
+f10457ed721475eda4a5098264d8f3ed929b16eac535faa835b9bcbe254725aa  research/experiments/026-cross-platform/windows/upstream/src/address_parser_train.c
+65a49a8b246442dea8418491ff82060c029e8256a17c50da2760b5d729d4c3d3  research/experiments/026-cross-platform/windows/upstream/src/crf_trainer.c
+15fe3bd7103f6398aa082439d4ca368a6c198ff17ed50aae5fc4fa43753354f1  research/experiments/026-cross-platform/windows/upstream/src/crf_trainer_averaged_perceptron.c
+f0de4777d35512a368faae3f402995145e12fd720914a2874b9e7b7c48b730d4  research/experiments/153-record-format/raw/a2.stdout
+8403c3c6da23485bb7c35ea10d63815df0205e1510aa2e859d75d154840e585b  research/experiments/160-p2-records-in-cpi/raw/verify_160c.stdout
+29:#define DEFAULT_ITERATIONS 5
+30:#define DEFAULT_MIN_UPDATES 5
+31:#define DEFAULT_MODEL_TYPE ADDRESS_PARSER_TYPE_CRF
+992:static inline bool address_parser_finalize_model(address_parser_t *self, void *trainer) {
+1043:bool address_parser_train_epoch(address_parser_t *self, void *trainer, char *filename) {
+1104:bool address_parser_train(address_parser_t *self, char *filename, address_parser_model_type_t model_type, uint32_t num_iterations, size_t min_updates) {
+1123:        if (!shuffle_file_chunked_size(filename, DEFAULT_SHUFFLE_CHUNK_SIZE)) {
+1132:        if (!address_parser_train_epoch(self, trainer, filename)) {
+1141:    if (!address_parser_finalize_model(self, trainer)) {
+1156:#define USAGE "Usage: ./address_parser_train filename output_dir [--iterations number --min-updates number --model (crf|greedyap)]\n"
+1160:        printf(USAGE);
+1172:    size_t num_iterations = DEFAULT_ITERATIONS;
+1173:    uint64_t min_updates = DEFAULT_MIN_UPDATES;
+1182:    address_parser_model_type_t model_type = DEFAULT_MODEL_TYPE;
+1236:        printf(USAGE);
+1264:    if (!address_parser_train(parser, filename, model_type, num_iterations, min_updates)) {
+state_features.tsv: 11470623 keys
+trans_features.tsv: 2086474 keys
+vocab.tsv: 3694560 keys
+verify: rows bit-identical 13557097  mismatched 0  unmapped 0 | vocab freq ok 3694560 bad 0 | mean index probes per lookup 1.246
+osm-v3 IDENTICAL (11405 lines)
+unseen-v4 IDENTICAL (10293 lines)
+unseen-v5 IDENTICAL (8794 lines)
+unseen-v6 IDENTICAL (9450 lines)
+unseen-v7 IDENTICAL (8973 lines)
+unseen-v8 IDENTICAL (9981 lines)
+unseen-v9 IDENTICAL (9480 lines)
+holdout-150 IDENTICAL (3298 lines)
+dad-150 IDENTICAL (45 lines)
+frozen golden-v1: RESULT: IDENTICAL
+frozen novel: RESULT: IDENTICAL
+fuzz s1 IDENTICAL (2000000 lines)
+fuzz s2 IDENTICAL (2000000 lines)
+tsv_or_jsonl_resource_files=      35
+labeled_parser_training_files_by_name=       4

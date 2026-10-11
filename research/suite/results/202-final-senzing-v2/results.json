@@ -1,0 +1,197 @@
+{
+ "run": "202-final-senzing-v2",
+ "generated": "2026-10-09T22:05:46-0700",
+ "settings": {
+  "rounds": 3,
+  "passes": 200,
+  "settle_load_1min": 2.5,
+  "settle_max_wait_s": 180,
+  "correctness_jobs": 1,
+  "fuzz_count": 0,
+  "fuzz_seeds": [],
+  "fuzz_corpora": [
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+  ],
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261004,
+  "steady_dataset": "golden-v1",
+  "steady_passes_before_sample": 3,
+  "thread_check_dataset": "golden-v1",
+  "sleep_between_runs_s": 2,
+  "country_min_n": 50
+ },
+ "baseline": "original-000",
+ "datasets": {
+  "golden-v1": {
+   "source": "senzing",
+   "kind": "development+validation (PGO trained on its development split)",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 31.453,
+     "warm_min_us": 31.242,
+     "warm_max_us": 31.553,
+     "cold_median_us": 34.884,
+     "setup_median_s": 2.835,
+     "peak_rss_max": 2383380480,
+     "peak_footprint_max": 2406107200
+    },
+    "cpi-packaged": {
+     "rounds": 3,
+     "warm_median_us": 5.213,
+     "warm_min_us": 5.067,
+     "warm_max_us": 5.24,
+     "cold_median_us": 8.152,
+     "setup_median_s": 11.725,
+     "peak_rss_max": 2438922240,
+     "peak_footprint_max": 2537343352
+    }
+   },
+   "speedup": {
+    "cpi-packaged": {
+     "median": 6.03356992135047,
+     "geomean": 6.073288073077073,
+     "ci95": [
+      5.743557483432532,
+      6.421948091400782
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.962213740458015,
+      6.22715610815078
+     ],
+     "min": 5.962213740458015,
+     "max": 6.22715610815078,
+     "rounds": 3,
+     "per_round": [
+      6.22715610815078,
+      6.03356992135047,
+      5.962213740458015
+     ],
+     "ratio_of_medians": 6.03356992135047,
+     "cold_median": 4.740309126594701,
+     "per_country": {
+      "n": 81,
+      "min_addresses": 50,
+      "min": 4.795245270383392,
+      "median": 6.147423764458465,
+      "max": 7.438743918620079
+     }
+    }
+   }
+  },
+  "novel": {
+   "source": "senzing-style",
+   "kind": "screening/validation",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 31.825,
+     "warm_min_us": 31.708,
+     "warm_max_us": 32.04,
+     "cold_median_us": 37.19,
+     "setup_median_s": 2.85,
+     "peak_rss_max": 2474016768,
+     "peak_footprint_max": 2478360712
+    },
+    "cpi-packaged": {
+     "rounds": 3,
+     "warm_median_us": 5.425,
+     "warm_min_us": 5.373,
+     "warm_max_us": 5.492,
+     "cold_median_us": 9.244,
+     "setup_median_s": 11.672,
+     "peak_rss_max": 2537046016,
+     "peak_footprint_max": 2537343352
+    }
+   },
+   "speedup": {
+    "cpi-packaged": {
+     "median": 5.8663594470046085,
+     "geomean": 5.867154876584308,
+     "ci95": [
+      5.783993507820025,
+      5.951511926713965
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.833940276766206,
+      5.901358645077237
+     ],
+     "min": 5.833940276766206,
+     "max": 5.901358645077237,
+     "rounds": 3,
+     "per_round": [
+      5.901358645077237,
+      5.833940276766206,
+      5.8663594470046085
+     ],
+     "ratio_of_medians": 5.8663594470046085,
+     "cold_median": 3.986066452304394,
+     "per_country": {
+      "n": 81,
+      "min_addresses": 50,
+      "min": 4.402044805292437,
+      "median": 5.927609427609427,
+      "max": 7.057333086739412
+     }
+    }
+   }
+  }
+ },
+ "aggregate": {
+  "cpi-packaged": {
+   "datasets": 2,
+   "source_weighted_geomean": 5.949377270544974,
+   "geomean_all_datasets": 5.949377270544974,
+   "min": 5.8663594470046085,
+   "max": 6.03356992135047,
+   "geomean_by_source": {
+    "senzing": 6.03356992135047,
+    "senzing-style": 5.866359447004608
+   },
+   "datasets_by_source": {
+    "senzing": 1,
+    "senzing-style": 1
+   }
+  }
+ },
+ "memory": {
+  "original-000": {
+   "steady_footprint": "2172 MB",
+   "dataset": "golden-v1",
+   "after_passes": 3
+  },
+  "cpi-packaged": {
+   "steady_footprint": "1927 MB",
+   "dataset": "golden-v1",
+   "after_passes": 3
+  }
+ },
+ "threads": {
+  "original-000": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  },
+  "cpi-packaged": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  }
+ },
+ "manifest": "manifest.json"
+}

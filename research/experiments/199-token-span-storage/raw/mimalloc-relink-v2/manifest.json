@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "variant": "199-release-mimalloc-v2",
+  "source_manifest_sha256": "eb83c36944062bb8db12add9ded4789b12d7f2b3f993463c3654cc6822b3c0fb",
+  "build_profile": "candidate archive unchanged; O2/LTO dumper relink with canonical static mimalloc; scanner O0; no PGO",
+  "inputs": {
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/003-batched-lookups/tools/dump_outputs.c": "541001efaaefff97ddc15dc415d5bd893d5ec5cc333a83ca1570f31ae2017752",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release/libpostal.a": "447e00b40cff2dbb2c4b388b8a844fd01bfc1610463f93432de3a2eb4960f576",
+    "/opt/homebrew/opt/mimalloc/lib/mimalloc.o": "03460b36edb0f104270109d33d96f8e7fc03c08d326cc5c2182c34b0a4900b82"
+  },
+  "commands": [
+    {
+      "name": "dump_outputs",
+      "argv": [
+        "/usr/bin/clang",
+        "-O2",
+        "-g",
+        "-flto",
+        "-I",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src",
+        "/opt/homebrew/opt/mimalloc/lib/mimalloc.o",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/003-batched-lookups/tools/dump_outputs.c",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release/libpostal.a",
+        "-lm",
+        "-o",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release-mimalloc-v2/dump_outputs"
+      ],
+      "start_utc": "2026-10-08T04:38:14.054367+00:00",
+      "end_utc": "2026-10-08T04:38:15.280523+00:00",
+      "exit": 0,
+      "stdout": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/mimalloc-relink-v2/dump_outputs.stdout",
+      "stderr": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/mimalloc-relink-v2/dump_outputs.stderr",
+      "binary_sha256": "5a36b9dbc3fb3623e8799fadd7b73b58d3b137b75a66a75a7ab07df6310ca84d"
+    },
+    {
+      "name": "bench_ext",
+      "argv": [
+        "/usr/bin/clang",
+        "-O2",
+        "-g",
+        "-flto",
+        "-I",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src",
+        "/opt/homebrew/opt/mimalloc/lib/mimalloc.o",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/bench_ext.c",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release/libpostal.a",
+        "-lm",
+        "-o",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release-mimalloc-v2/bench_ext"
+      ],
+      "start_utc": "2026-10-08T04:38:15.283058+00:00",
+      "end_utc": "2026-10-08T04:38:16.148120+00:00",
+      "exit": 0,
+      "stdout": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/mimalloc-relink-v2/bench_ext.stdout",
+      "stderr": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/mimalloc-relink-v2/bench_ext.stderr",
+      "binary_sha256": "7c14b07087cefb15052880fa7846c099a394c9e87b66fcd03d257bfd0d295dd4"
+    },
+    {
+      "name": "fuzz_pipeline",
+      "argv": [
+        "/usr/bin/clang",
+        "-O2",
+        "-g",
+        "-flto",
+        "-I",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src",
+        "/opt/homebrew/opt/mimalloc/lib/mimalloc.o",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/fuzz_pipeline.c",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release/libpostal.a",
+        "-lm",
+        "-o",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release-mimalloc-v2/fuzz_pipeline"
+      ],
+      "start_utc": "2026-10-08T04:38:16.150859+00:00",
+      "end_utc": "2026-10-08T04:38:17.068898+00:00",
+      "exit": 0,
+      "stdout": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/mimalloc-relink-v2/fuzz_pipeline.stdout",
+      "stderr": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/mimalloc-relink-v2/fuzz_pipeline.stderr",
+      "binary_sha256": "6621fb6fa4f3a7a7b9af34821ec0689afbd7686ae0448c34ac879f9cc137fd86"
+    }
+  ],
+  "started_utc": "2026-10-08T04:38:14.053990+00:00",
+  "ended_utc": "2026-10-08T04:38:17.071244+00:00",
+  "status": "pass",
+  "artifacts": {
+    "dump_outputs": "5a36b9dbc3fb3623e8799fadd7b73b58d3b137b75a66a75a7ab07df6310ca84d",
+    "fuzz_pipeline": "6621fb6fa4f3a7a7b9af34821ec0689afbd7686ae0448c34ac879f9cc137fd86",
+    "bench_ext": "7c14b07087cefb15052880fa7846c099a394c9e87b66fcd03d257bfd0d295dd4"
+  },
+  "original_release_untouched": true
+}

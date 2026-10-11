@@ -1,0 +1,136 @@
+{
+ "run": "202-ac-unseen-v14-resumed-v1",
+ "generated": "2026-10-10T00:13:57-0700",
+ "settings": {
+  "rounds": 3,
+  "passes": 2300,
+  "settle_load_1min": 2.5,
+  "settle_max_wait_s": 30,
+  "correctness_jobs": 1,
+  "fuzz_count": 0,
+  "fuzz_seeds": [],
+  "fuzz_corpora": [],
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261004,
+  "steady_dataset": "unseen-v14",
+  "steady_passes_before_sample": 3,
+  "thread_check_dataset": "unseen-v14",
+  "sleep_between_runs_s": 2,
+  "country_min_n": 50,
+  "environment_gate_script": "research/tools/env_gate.sh",
+  "gate_fail_fast": true
+ },
+ "baseline": "original-000",
+ "datasets": {
+  "unseen-v14": {
+   "source": "openstreetmap",
+   "kind": "fresh unseen frozen 2026-10-10",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 15.271,
+     "warm_min_us": 15.211,
+     "warm_max_us": 15.298,
+     "cold_median_us": 20.631,
+     "setup_median_s": 2.764,
+     "peak_rss_max": 2611281920,
+     "peak_footprint_max": 2611349712
+    },
+    "cpi-packaged": {
+     "rounds": 3,
+     "warm_median_us": 2.672,
+     "warm_min_us": 2.657,
+     "warm_max_us": 2.711,
+     "cold_median_us": 4.981,
+     "setup_median_s": 11.715,
+     "peak_rss_max": 2517024768,
+     "peak_footprint_max": 2517322104
+    }
+   },
+   "speedup": {
+    "cpi-packaged": {
+     "median": 5.715194610778443,
+     "geomean": 5.6942184576592165,
+     "ci95": [
+      5.509167273314031,
+      5.885485452693875
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.610844706750277,
+      5.757621377493414
+     ],
+     "min": 5.610844706750277,
+     "max": 5.757621377493414,
+     "rounds": 3,
+     "per_round": [
+      5.757621377493414,
+      5.715194610778443,
+      5.610844706750277
+     ],
+     "ratio_of_medians": 5.715194610778443,
+     "cold_median": 4.141939369604497,
+     "per_country": {
+      "n": 9,
+      "min_addresses": 50,
+      "min": 5.178481806775408,
+      "median": 5.7713558705925125,
+      "max": 6.218490566037736
+     }
+    }
+   }
+  }
+ },
+ "aggregate": {
+  "cpi-packaged": {
+   "datasets": 1,
+   "source_weighted_geomean": 5.715194610778443,
+   "geomean_all_datasets": 5.715194610778443,
+   "min": 5.715194610778443,
+   "max": 5.715194610778443,
+   "geomean_by_source": {
+    "openstreetmap": 5.715194610778443
+   },
+   "datasets_by_source": {
+    "openstreetmap": 1
+   }
+  }
+ },
+ "memory": {
+  "original-000": {
+   "steady_footprint": "2490 MB",
+   "dataset": "unseen-v14",
+   "after_passes": 3
+  },
+  "cpi-packaged": {
+   "steady_footprint": "1926 MB",
+   "dataset": "unseen-v14",
+   "after_passes": 3
+  }
+ },
+ "threads": {
+  "original-000": {
+   "samples": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "max_threads": 1
+  },
+  "cpi-packaged": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "max_threads": 1
+  }
+ },
+ "manifest": "manifest.json"
+}

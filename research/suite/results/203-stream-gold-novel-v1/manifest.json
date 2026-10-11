@@ -1,0 +1,77 @@
+{
+ "datasets": {
+  "golden-v1": {
+   "txt": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+    "sha256": "02252919fc2a24a3f0af41f3f7c5d6f8aaed6a5eb9548a2dcff6a4fcfe5f6c91"
+   },
+   "tsv": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv",
+    "sha256": "43224e8b6381bf5b72f18601a28750ac500c6f40c30a739183b56a3f60cd57db"
+   },
+   "frozen_reference": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/baseline-outputs.jsonl",
+    "sha256": "c2d9ce7e6a014f6f5fd0ecf644f09c7863f4e028993acd21b7a1344f172bf084"
+   },
+   "addresses": 12863
+  },
+  "novel": {
+   "txt": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt",
+    "sha256": "a424c53e75d3d55f4172f7b13a59bf5ece961bf0f4acd7b85e214ce0aee09d47"
+   },
+   "tsv": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv",
+    "sha256": "0b4c11201bd6fff7d959d1c0e124ea20bcac3364a811b3b73c5538003a0c5815"
+   },
+   "frozen_reference": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/baseline-outputs.jsonl",
+    "sha256": "806b8a81603ea9adf3af788334dc9b7d577cbb8a13753dd591b535f4fb896aae"
+   },
+   "addresses": 12863
+  }
+ },
+ "variants": {
+  "original-000": {
+   "bench_ext": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+    "sha256": "a4968702ab9415f3fc71f509d73284e5d228073c49c825aeb7798b5b6e061a50"
+   },
+   "dump_outputs": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+    "sha256": "578a62678e98af38909bd112f8ac859852f0936dab9deeacf10eedd2f4b86a0d"
+   },
+   "fuzz_pipeline": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/fuzz_baseline",
+    "sha256": "5a657303e17cc2c48a6eaa92add370d2cd40f0dff4c9c21eeac1175d116fe95c"
+   }
+  },
+  "cpi-stream-203": {
+   "bench_ext": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/bench_ext",
+    "sha256": "8bb0a15c7dad2ae21bb660189007b263be27567e61d4fa4ec18feff2c479fd04"
+   },
+   "dump_outputs": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/dump_outputs",
+    "sha256": "50e769bcbffd0ffc174dccde603f095ec79f410413ebb9a3ee5aca31fb6d90e8"
+   },
+   "fuzz_pipeline": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/203-cpi-memory-regression/artifacts/cpi-stream-203-v2/fuzz_pipeline",
+    "sha256": "76d3943c8483d563d0d099b1cc6f9bc397bc99d024d07531370d3b2fbe2c205c"
+   }
+  }
+ },
+ "model": {
+  "address_expansions/address_dictionary.dat": "9fbf8779942bcc84841ac948ebd0c910b37edc7ff812125f09b6c39018747b1d",
+  "address_parser/address_parser_crf.dat": "e44b308e9e1942efe8ad8226929e29ca49e9ea2900ed36625c601c53509ba5c1",
+  "address_parser/address_parser_phrases.dat": "739643ea06d8c492ba57bd51ba1dc1243853e7f8c6130e3a7bd30150221119e6",
+  "address_parser/address_parser_postal_codes.dat": "7c5b20c541c16758cc73c41025f2327be525831dff272a6b4c3aeb901e481b1b",
+  "address_parser/address_parser_vocab.trie": "962a985f29530440035bd379826f38e35f0f0fc718926444658d89bbd70829b1",
+  "numex/numex.dat": "269630109fac796ab576b7fb29a36f3279c0c194e46a9abe91684653bf082a38",
+  "transliteration/transliteration.dat": "db75453e1d8a24302be0831304f9bb4792d41ea4e5a5e645c3839ee04763e64c"
+ },
+ "suite": {
+  "run_suite.py": "ded4a5c064cc1c71e3eaacc2fc98cea0358933955dad6e9f8d9e7bde574156b8",
+  "suite.json": "99143fabe963df77a1cc10123cf402caa2214fcf5001fe2248d5dc1e30fe7f3e"
+ }
+}

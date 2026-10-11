@@ -1,0 +1,37 @@
+{
+  "experiment_id": 190,
+  "name": "compact-front-record",
+  "hypothesis": "Keep only `freq` and `word_id` in each per-token front record; read word and phrase memberships from their already-existing context arrays, reducing front storage from 40 to 8 bytes/token.",
+  "base_source": "research/experiments/181-release-180/sources",
+  "source_tree": "research/experiments/190-compact-front-record/sources",
+  "source_manifest_path": "research/experiments/190-compact-front-record/raw/source_manifest.sha256",
+  "source_manifest_sha256": "85d2f2ed5629677bfe9a20cab6c3d7e421885834f430aa582b23bb6683b57d6e",
+  "patch_path": "research/experiments/190-compact-front-record/raw/address_parser.patch",
+  "patch_sha256": "c937b31f867c9fd022c7eefb0464c6bdaef6ca8e9b5c108d06d7c2fc41a2928f",
+  "builds": {
+    "release": {
+      "library": "research/experiments/190-compact-front-record/artifacts/release/libpostal.a",
+      "dumper": "research/experiments/190-compact-front-record/artifacts/release/dump_outputs",
+      "flags": "research/experiments/190-compact-front-record/raw/build_flags.txt",
+      "command_log": "research/experiments/190-compact-front-record/raw/build_release.*",
+      "binary_sha256": "b8d6c9d2cc855db874a69a56c1a65c91e9619720196beb0e63c1c97d640eca5c"
+    },
+    "diagnostic": {
+      "library": null,
+      "dumper": null,
+      "flags": null,
+      "command_log": null,
+      "binary_sha256": null,
+      "build_request": "Apply exact address_parser.patch to fresh 185 prototype181 diagnostic source; instrument front-record bytes written and realloc bytes/calls before and after compaction, preserving 185 aggregate hooks."
+    }
+  },
+  "metrics": {
+    "supported": ["front record allocation bytes/calls", "lookups/hits/misses", "output parity, one parsing thread, throughput and peak/steady footprint"],
+    "unavailable": {
+      "context-array direct loads versus copied member loads": "Not a shared aggregate metric; optional source-level count in the diagnostic derivative."
+    }
+  },
+  "model_manifest_sha256": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad",
+  "build_exit_code": 0,
+  "parser_invoked": false
+}

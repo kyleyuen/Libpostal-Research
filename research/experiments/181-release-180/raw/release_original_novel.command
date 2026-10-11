@@ -1,0 +1,1 @@
+/Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/tools/model_slot.sh /Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/181-release-180/artifacts/release/dump_outputs /Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/profiling/golden-v2-novel/novel.txt 

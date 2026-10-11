@@ -1,0 +1,269 @@
+diff -ruN /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/derivatives/199/source-v8/address_parser.c /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/source-token-storage-v1/address_parser.c
+--- /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/derivatives/199/source-v8/address_parser.c	2026-10-07 20:52:54
++++ /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/source-token-storage-v1/address_parser.c	2026-10-09 01:17:24
+@@ -2438,21 +2438,17 @@
+     return false;
+ }
+ 
+-#ifdef EXP_TOKEN_SLICES
++#if defined(EXP_TOKEN_SLICES) || defined(EXP185_DIAG)
+ static bool address_parser_token_spans_are_separated(token_array *tokens) {
+     bool have_previous = false;
+     size_t previous_end = 0;
+     for (size_t i = 0; i < tokens->n; i++) {
+         token_t token = tokens->a[i];
+         if (ADDRESS_PARSER_IS_SEPARATOR(token.type) || ADDRESS_PARSER_IS_IGNORABLE(token.type)) continue;
+-        if (have_previous && token.offset <= previous_end) {
+-            diag_count("token_slice_unsafe_fallbacks", "tokenization", "parser_token", 1);
+-            return false;
+-        }
++        if (have_previous && token.offset <= previous_end) return false;
+         previous_end = token.offset + token.len;
+         have_previous = true;
+     }
+-    diag_count("token_slice_eligible_addresses", "tokenization", "parser_token", 1);
+     return true;
+ }
+ #endif
+@@ -2541,9 +2537,21 @@
+ #ifdef EXP_REUSE
+     tokenized_string_t *tokenized_str = rs_ts;
+     cstring_array_clear(tokenized_str->strings); token_array_clear(tokenized_str->tokens);
++    diag_count("normalized_copy_calls", "tokenization", "normalized_text", 1);
++    diag_count("normalized_copy_bytes", "tokenization", "normalized_text", strlen(normalized));
++    diag_count("normalized_copy_nul_writes", "tokenization", "normalized_text", 1);
++    diag_track_char_buffer(rs_str, "normalized_text");
+     char_array_clear(rs_str); char_array_add_len(rs_str, normalized, strlen(normalized)); tokenized_str->str = char_array_get_string(rs_str);
++    diag_track_char_buffer(NULL, "unclassified");
++#if defined(EXP_TOKEN_SLICES) || defined(EXP185_DIAG)
++    bool token_views = address_parser_token_spans_are_separated(tokens);
++#endif
++#ifdef EXP185_DIAG
++    diag_count(token_views ? "token_slice_opportunity_eligible_addresses" : "token_slice_opportunity_unsafe_fallbacks", "tokenization", "parser_token", 1);
++#endif
+ #ifdef EXP_TOKEN_SLICES
+-    tokenized_str->view_tokens = address_parser_token_spans_are_separated(tokens);
++    tokenized_str->view_tokens = token_views;
++    diag_count(token_views ? "token_slice_eligible_addresses" : "token_slice_unsafe_fallbacks", "tokenization", "parser_token", 1);
+ #endif
+ #else
+ #ifdef EXP_TOKEN_SLICES
+@@ -2578,6 +2586,16 @@
+         uint32_array_push(context->separators, ADDRESS_SEPARATOR_NONE);
+     }
+     diag_count("tokens", "tokenization", "parser_token", tokenized_str->tokens->n);
++#ifdef EXP185_DIAG
++    diag_observe_max("token_payload_used_peak_bytes", "tokenization", "parser_token", tokenized_str->strings->str->n);
++    diag_observe_max("token_payload_capacity_peak_bytes", "tokenization", "parser_token", tokenized_str->strings->str->m);
++    diag_observe_max("token_offset_used_peak_entries", "tokenization", "parser_token", tokenized_str->strings->indices->n);
++    diag_observe_max("token_offset_capacity_peak_entries", "tokenization", "parser_token", tokenized_str->strings->indices->m);
++    diag_observe_max("token_record_used_peak_entries", "tokenization", "parser_token", tokenized_str->tokens->n);
++    diag_observe_max("token_record_capacity_peak_entries", "tokenization", "parser_token", tokenized_str->tokens->m);
++    diag_observe_max("normalized_text_used_peak_bytes", "tokenization", "normalized_text", rs_str->n);
++    diag_observe_max("normalized_text_capacity_peak_bytes", "tokenization", "normalized_text", rs_str->m);
++#endif
+ 
+     // This parser was trained without knowing language/country.
+     // If at some point we build country-specific/language-specific
+diff -ruN /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/derivatives/199/source-v8/diag.c /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/source-token-storage-v1/diag.c
+--- /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/derivatives/199/source-v8/diag.c	2026-10-07 20:24:17
++++ /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/source-token-storage-v1/diag.c	2026-10-09 01:17:11
+@@ -26,6 +26,8 @@
+ static int label_pool_error;
+ static const char *current_stage = "unclassified", *current_family = "unclassified", *current_operation = "trie_key_lookup";
+ static int active, current_address_overflow;
++static const void *tracked_char_buffer;
++static char tracked_char_family[40] = "unclassified";
+ 
+ static void cp(char *d, size_t n, const char *s) { snprintf(d, n, "%s", s ? s : "unclassified"); }
+ static const char *intern_label(const char *s) {
+@@ -53,6 +55,27 @@
+     metric_t *m = &metrics[nmetrics++]; cp(m->metric, sizeof m->metric, metric); cp(m->stage, sizeof m->stage, stage); cp(m->family, sizeof m->family, family); m->value = value;
+ }
+ 
++void diag_observe_max(const char *metric, const char *stage, const char *family, uint64_t value) {
++    if (!active) return;
++    for (size_t i = 0; i < nmetrics; i++) if (!strcmp(metrics[i].metric, metric) && !strcmp(metrics[i].stage, stage) && !strcmp(metrics[i].family, family)) {
++        if (value > metrics[i].value) metrics[i].value = value;
++        return;
++    }
++    if (nmetrics == MAX_METRICS) return;
++    metric_t *m = &metrics[nmetrics++]; cp(m->metric, sizeof m->metric, metric); cp(m->stage, sizeof m->stage, stage); cp(m->family, sizeof m->family, family); m->value = value;
++}
++
++void diag_track_char_buffer(const void *buffer, const char *family) {
++    tracked_char_buffer = active ? buffer : NULL;
++    cp(tracked_char_family, sizeof tracked_char_family, family);
++}
++
++void diag_char_buffer_growth(const void *buffer, size_t requested_bytes) {
++    if (!active || !buffer || buffer != tracked_char_buffer) return;
++    diag_count("char_buffer_growth_events", "tokenization", tracked_char_family, 1);
++    diag_count("char_buffer_requested_bytes", "tokenization", tracked_char_family, requested_bytes);
++}
++
+ static int same_pattern(const pattern_t *p, const char *op, const char *family, const void *key, size_t len) {
+     return !strcmp(p->op, op) && !strcmp(p->family, family) && p->len == len && (!len || !memcmp(p->key, key, len));
+ }
+@@ -179,6 +202,26 @@
+  {"token_view_records", "v1: retained tokens represented by offset/length/type records without copying token payload bytes."},
+  {"token_view_bytes", "v1: source token payload bytes referenced through view records; denotes avoided token-payload copies only."},
+  {"token_view_nul_writes", "v1: NUL writes at safe token-end gaps used to expose token views as C strings."},
++ {"token_copy_nul_writes", "201 diagnostic: NUL terminator stores performed by the original copied-token path; one per retained token copy."},
++ {"token_slice_opportunity_eligible_addresses", "201 diagnostic: addresses whose retained scanner spans satisfy the existing strict-gap view guard, measured in both control and candidate."},
++ {"token_slice_opportunity_unsafe_fallbacks", "201 diagnostic: addresses whose retained spans touch or overlap and therefore require copied tokens in the candidate."},
++ {"token_offset_growth_events", "201 diagnostic: observed uint32 offset-vector capacity increases at token insertion; one push can cause at most one realloc."},
++ {"token_offset_requested_bytes", "201 diagnostic: requested bytes for token offset-vector growth, computed as new capacity times sizeof(uint32_t)."},
++ {"token_record_growth_events", "201 diagnostic: observed token-record vector capacity increases at token insertion; one push can cause at most one realloc."},
++ {"token_record_requested_bytes", "201 diagnostic: requested bytes for token-record vector growth, computed as new capacity times sizeof(token_t)."},
++ {"char_buffer_growth_events", "201 diagnostic: exact realloc growth events at instrumented char-array reserve/push sites, grouped by token_payload or normalized_text."},
++ {"char_buffer_requested_bytes", "201 diagnostic: exact byte requests passed to realloc at instrumented char-array growth sites, grouped by token_payload or normalized_text."},
++ {"token_payload_used_peak_bytes", "201 diagnostic: maximum token cstring payload-buffer used length during parsing; includes per-token NULs."},
++ {"token_payload_capacity_peak_bytes", "201 diagnostic: maximum retained capacity of the token cstring payload buffer during parsing."},
++ {"token_offset_used_peak_entries", "201 diagnostic: maximum used offset-vector entries during parsing."},
++ {"token_offset_capacity_peak_entries", "201 diagnostic: maximum retained offset-vector capacity during parsing."},
++ {"token_record_used_peak_entries", "201 diagnostic: maximum used token-record entries during parsing."},
++ {"token_record_capacity_peak_entries", "201 diagnostic: maximum retained token-record capacity during parsing."},
++ {"normalized_text_used_peak_bytes", "201 diagnostic: maximum reusable normalized-text buffer length during parsing; includes its terminating NUL."},
++ {"normalized_text_capacity_peak_bytes", "201 diagnostic: maximum retained capacity of the reusable normalized-text buffer during parsing."},
++ {"normalized_copy_calls", "201 diagnostic: calls that append the normalized address bytes into reusable rs_str."},
++ {"normalized_copy_bytes", "201 diagnostic: normalized address payload bytes appended into reusable rs_str, excluding its NUL."},
++ {"normalized_copy_nul_writes", "201 diagnostic: terminating NUL stores for normalized address copies into reusable rs_str."},
+  {NULL, NULL}
+ };
+ static void jsonstr(FILE *f, const char *s) { fputc('"', f); for (; *s; s++) { if (*s == '"' || *s == '\\') fputc('\\', f); if ((unsigned char)*s >= 0x20) fputc(*s, f); } fputc('"', f); }
+@@ -187,7 +230,7 @@
+     uint64_t v = sum(metric, stage, family); int found=0;
+     for (size_t i=0;i<nmetrics;i++) if (!strcmp(metrics[i].metric,metric) && (!stage || !strcmp(metrics[i].stage,stage)) && (!family || !strcmp(metrics[i].family,family))) found=1;
+     int lookup_metric=!strcmp(metric,"lookup_calls") || !strcmp(metric,"lookup_hits") || !strcmp(metric,"lookup_misses") || !strcmp(metric,"repeated_queries");
+-    if (!stage && !family && (!strcmp(metric,"lookup_calls") || !strcmp(metric,"lookup_hits") || !strcmp(metric,"lookup_misses") || !strcmp(metric,"repeated_queries") || !strcmp(metric,"tracked_repeated_queries") || !strcmp(metric,"answers_reused") || !strcmp(metric,"allocation_calls") || !strcmp(metric,"allocation_requested_bytes") || !strcmp(metric,"input_bytes") || !strcmp(metric,"normalized_bytes") || !strcmp(metric,"tokens") || !strcmp(metric,"output_bytes") || !strcmp(metric,"feature_keys_materialized") || !strcmp(metric,"feature_key_bytes_materialized") || !strcmp(metric,"direct_word_ids_offered") || !strcmp(metric,"direct_word_ids_consumed") || !strcmp(metric,"direct_word_fallbacks") || !strcmp(metric,"model_rows") || !strcmp(metric,"weights_accumulated") || !strcmp(metric,"diagnostic_tracker_peak_bytes"))) found=1;
++    if (!stage && !family && (!strcmp(metric,"lookup_calls") || !strcmp(metric,"lookup_hits") || !strcmp(metric,"lookup_misses") || !strcmp(metric,"repeated_queries") || !strcmp(metric,"tracked_repeated_queries") || !strcmp(metric,"answers_reused") || !strcmp(metric,"allocation_calls") || !strcmp(metric,"allocation_requested_bytes") || !strcmp(metric,"input_bytes") || !strcmp(metric,"normalized_bytes") || !strcmp(metric,"tokens") || !strcmp(metric,"output_bytes") || !strcmp(metric,"feature_keys_materialized") || !strcmp(metric,"feature_key_bytes_materialized") || !strcmp(metric,"direct_word_ids_offered") || !strcmp(metric,"direct_word_ids_consumed") || !strcmp(metric,"direct_word_fallbacks") || !strcmp(metric,"model_rows") || !strcmp(metric,"weights_accumulated") || !strcmp(metric,"diagnostic_tracker_peak_bytes") || !strcmp(metric,"token_slice_eligible_addresses") || !strcmp(metric,"token_slice_unsafe_fallbacks") || !strcmp(metric,"token_copy_calls") || !strcmp(metric,"token_copy_bytes") || !strcmp(metric,"token_view_records") || !strcmp(metric,"token_view_bytes") || !strcmp(metric,"token_view_nul_writes") || !strcmp(metric,"token_copy_nul_writes") || !strcmp(metric,"token_slice_opportunity_eligible_addresses") || !strcmp(metric,"token_slice_opportunity_unsafe_fallbacks") || !strcmp(metric,"token_offset_growth_events") || !strcmp(metric,"token_offset_requested_bytes") || !strcmp(metric,"token_record_growth_events") || !strcmp(metric,"token_record_requested_bytes") || !strcmp(metric,"char_buffer_growth_events") || !strcmp(metric,"char_buffer_requested_bytes") || !strcmp(metric,"token_payload_used_peak_bytes") || !strcmp(metric,"token_payload_capacity_peak_bytes") || !strcmp(metric,"token_offset_used_peak_entries") || !strcmp(metric,"token_offset_capacity_peak_entries") || !strcmp(metric,"token_record_used_peak_entries") || !strcmp(metric,"token_record_capacity_peak_entries") || !strcmp(metric,"normalized_text_used_peak_bytes") || !strcmp(metric,"normalized_text_capacity_peak_bytes") || !strcmp(metric,"normalized_copy_calls") || !strcmp(metric,"normalized_copy_bytes") || !strcmp(metric,"normalized_copy_nul_writes"))) found=1;
+     if (lookup_metric && !strcmp(metric,"repeated_queries") && query_overflow_addresses) { fputs("{\"value\":null,\"reason\":",f); jsonstr(f,"Exact per-address identity table overflowed; tracked_repeated_queries is a lower bound."); fputc('}',f); return; }
+     if (lookup_metric && stage && !family) found=1; /* instrumented lookup stages are an exhaustive partition; absent cells are measured zero */
+     if (found) { fprintf(f, "{\"value\":%llu,\"definition\":", (unsigned long long)v); }
+@@ -209,7 +252,7 @@
+     for(size_t i=0;defs[i][0];i++) { if(i) fputc(',',f); jsonstr(f,defs[i][0]); fputc(':',f); item(f,defs[i][0],NULL,NULL); }
+     fputs("},\"breakdowns\":{\"by_stage\":{",f);
+     const char *stages[]={"normalization","tokenization","context_fill","feature_generation","crf_state_lookup","crf_transition_lookup","phrase_search","response_build","unclassified"};
+-    const char *families[]={"word_vocab","state_feature","transition_feature","phrase_dictionary","feature_key","transition_feature_key","model_row","direct_id","address_phrase","component_phrase","postal_phrase","other_trie","address","parser_token","parser_output","prefix_suffix_flag","unclassified","diagnostic_tracker","parser_alloc","crf_alloc"};
++    const char *families[]={"word_vocab","state_feature","transition_feature","phrase_dictionary","feature_key","transition_feature_key","model_row","direct_id","address_phrase","component_phrase","postal_phrase","other_trie","address","parser_token","parser_output","prefix_suffix_flag","token_payload","normalized_text","unclassified","diagnostic_tracker","parser_alloc","crf_alloc"};
+     int firstm=1;
+     for(size_t m=0;defs[m][0];m++){ if(!firstm)fputc(',',f);firstm=0;jsonstr(f,defs[m][0]);fputs(":{",f);for(size_t j=0;j<sizeof(stages)/sizeof(*stages);j++){if(j)fputc(',',f);jsonstr(f,stages[j]);fputc(':',f);item(f,defs[m][0],stages[j],NULL);}fputc('}',f); }
+     fputs("},\"by_family\":{",f); firstm=1;
+diff -ruN /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/derivatives/199/source-v8/diag.h /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/source-token-storage-v1/diag.h
+--- /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/derivatives/199/source-v8/diag.h	2026-10-07 15:11:51
++++ /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/source-token-storage-v1/diag.h	2026-10-09 01:14:55
+@@ -13,6 +13,9 @@
+ const char *diag_current_operation(void);
+ void diag_set_operation(const char *operation);
+ void diag_count(const char *metric, const char *stage, const char *family, uint64_t value);
++void diag_observe_max(const char *metric, const char *stage, const char *family, uint64_t value);
++void diag_track_char_buffer(const void *buffer, const char *family);
++void diag_char_buffer_growth(const void *buffer, size_t requested_bytes);
+ void diag_lookup(const void *dict, const char *operation, const char *stage, const char *family,
+                  const void *key, size_t key_len, int hit);
+ void diag_lookup_parts(const void *dict, const char *operation, const char *stage, const char *family,
+@@ -35,6 +38,9 @@
+ #define diag_current_operation() ("trie_key_lookup")
+ #define diag_set_operation(o) ((void)0)
+ #define diag_count(m,s,f,v) ((void)0)
++#define diag_observe_max(m,s,f,v) ((void)0)
++#define diag_track_char_buffer(p,f) ((void)0)
++#define diag_char_buffer_growth(p,n) ((void)0)
+ #define diag_lookup(d,o,s,f,k,n,h) ((void)0)
+ #define diag_lookup_parts(d,o,s,f,k,n,k2,n2,h) ((void)0)
+ #define diag_reuse(d,o,s,f,k,n,h) ((void)0)
+diff -ruN /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/derivatives/199/source-v8/original/diag.h /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/source-token-storage-v1/original/diag.h
+--- /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/derivatives/199/source-v8/original/diag.h	2026-10-07 15:11:47
++++ /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/source-token-storage-v1/original/diag.h	2026-10-09 01:14:55
+@@ -13,6 +13,9 @@
+ const char *diag_current_operation(void);
+ void diag_set_operation(const char *operation);
+ void diag_count(const char *metric, const char *stage, const char *family, uint64_t value);
++void diag_observe_max(const char *metric, const char *stage, const char *family, uint64_t value);
++void diag_track_char_buffer(const void *buffer, const char *family);
++void diag_char_buffer_growth(const void *buffer, size_t requested_bytes);
+ void diag_lookup(const void *dict, const char *operation, const char *stage, const char *family,
+                  const void *key, size_t key_len, int hit);
+ void diag_lookup_parts(const void *dict, const char *operation, const char *stage, const char *family,
+@@ -35,6 +38,9 @@
+ #define diag_current_operation() ("trie_key_lookup")
+ #define diag_set_operation(o) ((void)0)
+ #define diag_count(m,s,f,v) ((void)0)
++#define diag_observe_max(m,s,f,v) ((void)0)
++#define diag_track_char_buffer(p,f) ((void)0)
++#define diag_char_buffer_growth(p,n) ((void)0)
+ #define diag_lookup(d,o,s,f,k,n,h) ((void)0)
+ #define diag_lookup_parts(d,o,s,f,k,n,k2,n2,h) ((void)0)
+ #define diag_reuse(d,o,s,f,k,n,h) ((void)0)
+diff -ruN /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/derivatives/199/source-v8/string_utils.c /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/source-token-storage-v1/string_utils.c
+--- /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/derivatives/199/source-v8/string_utils.c	2026-10-07 19:11:12
++++ /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/source-token-storage-v1/string_utils.c	2026-10-09 01:17:11
+@@ -1,6 +1,7 @@
+ #include <stdio.h>
+ #include "log/log.h"
+ #include "string_utils.h"
++#include "diag.h"
+ #include "strndup.h"
+ 
+ #define INVALID_INDEX(i, n) ((i) < 0 || (i) >= (n))
+@@ -961,6 +962,7 @@
+     }
+     array->a = ptr;
+     array->m = size;
++    diag_char_buffer_growth(array, size * sizeof(char));
+ }
+ 
+ inline void char_array_append(char_array *array, char *str) {
+@@ -1012,7 +1014,9 @@
+ }
+ 
+ inline void char_array_terminate(char_array *array) {
++    size_t old_capacity = array->m;
+     char_array_push(array, '\0');
++    if (array->m != old_capacity) diag_char_buffer_growth(array, array->m * sizeof(char));
+ }
+ 
+ inline void char_array_cat(char_array *array, char *str) {
+diff -ruN /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/derivatives/199/source-v8/tokens.c /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/source-token-storage-v1/tokens.c
+--- /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/derivatives/199/source-v8/tokens.c	2026-10-07 20:26:57
++++ /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/source-token-storage-v1/tokens.c	2026-10-09 01:15:42
+@@ -47,12 +47,25 @@
+ void tokenized_string_add_token(tokenized_string_t *self, const char *src, size_t len, uint16_t token_type, size_t position) {
+     char *ptr = (char *) (src + position);
+ 
++    size_t old_offset_capacity = self->strings->indices->m;
++    diag_track_char_buffer(self->strings->str, "token_payload");
+     diag_count("token_copy_calls", "tokenization", "parser_token", 1);
+     diag_count("token_copy_bytes", "tokenization", "parser_token", len);
++    diag_count("token_copy_nul_writes", "tokenization", "parser_token", 1);
+     cstring_array_add_string_len(self->strings, ptr, len);
++    diag_track_char_buffer(NULL, "unclassified");
++    if (self->strings->indices->m != old_offset_capacity) {
++        diag_count("token_offset_growth_events", "tokenization", "parser_token", 1);
++        diag_count("token_offset_requested_bytes", "tokenization", "parser_token", self->strings->indices->m * sizeof(uint32_t));
++    }
+ 
+     token_t token = (token_t){position, len, token_type};
++    size_t old_token_capacity = self->tokens->m;
+     token_array_push(self->tokens, token);
++    if (self->tokens->m != old_token_capacity) {
++        diag_count("token_record_growth_events", "tokenization", "parser_token", 1);
++        diag_count("token_record_requested_bytes", "tokenization", "parser_token", self->tokens->m * sizeof(token_t));
++    }
+ 
+ }
+ 
+@@ -61,7 +74,12 @@
+     diag_count("token_view_bytes", "tokenization", "parser_token", len);
+     diag_count("token_view_nul_writes", "tokenization", "parser_token", 1);
+     self->str[position + len] = '\0';
++    size_t old_token_capacity = self->tokens->m;
+     token_array_push(self->tokens, (token_t){position, len, token_type});
++    if (self->tokens->m != old_token_capacity) {
++        diag_count("token_record_growth_events", "tokenization", "parser_token", 1);
++        diag_count("token_record_requested_bytes", "tokenization", "parser_token", self->tokens->m * sizeof(token_t));
++    }
+ }
+ 
+ tokenized_string_t *tokenized_string_from_tokens(char *src, token_array *tokens, bool copy_tokens) {

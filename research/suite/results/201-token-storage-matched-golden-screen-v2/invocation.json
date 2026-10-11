@@ -1,0 +1,29 @@
+{
+ "argv": [
+  "research/suite/run_suite.py",
+  "--config",
+  "research/experiments/201-cpi-work-and-memory-prep/raw/timing-screen-v1/config.json",
+  "--stages",
+  "timing,memory,threads,report",
+  "--datasets",
+  "golden-v1",
+  "--variants",
+  "cpi-packaged,cpi-source-matched-o2,199-token-span-mimalloc-v2",
+  "--rounds",
+  "3",
+  "--passes",
+  "200",
+  "--run-id",
+  "201-token-storage-matched-golden-screen-v2"
+ ],
+ "start": "2026-10-09T02:06:15-0700",
+ "variants": [
+  "original-000",
+  "cpi-packaged",
+  "cpi-source-matched-o2",
+  "199-token-span-mimalloc-v2"
+ ],
+ "datasets": [
+  "golden-v1"
+ ]
+}

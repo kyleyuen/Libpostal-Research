@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/run_suite.py", line 431, in <module>
+    main()
+    ~~~~^^
+  File "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/run_suite.py", line 425, in main
+    {"integrity": stage_integrity, "correctness": stage_correctness, "timing": stage_timing, "memory": stage_memory,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     "threads": stage_threads, "report": stage_report}[name](cfg, run)
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/run_suite.py", line 202, in stage_timing
+    settle(cfg, run)
+    ~~~~~~^^^^^^^^^^
+  File "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/run_suite.py", line 195, in settle
+    time.sleep(30)
+    ~~~~~~~~~~^^^^
+KeyboardInterrupt

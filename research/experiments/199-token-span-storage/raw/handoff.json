@@ -1,0 +1,58 @@
+{
+  "experiment_id": 199,
+  "name": "token-span storage",
+  "hypothesis": "Store retained scanner tokens as offset/length/type spans in the owned normalized buffer, eliminating per-token string copies/allocations when token boundaries have safe delimiter gaps; exact old-copy fallback for touching/overlapping spans.",
+  "base_source": "experiment 119 source snapshot (commit 181737d30977adc9d287e3f7a1cfafd7277525d4)",
+  "source_tree": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/sources",
+  "source_manifest_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/source-manifest.sha256",
+  "source_manifest_sha256": "eb83c36944062bb8db12add9ded4789b12d7f2b3f993463c3654cc6822b3c0fb",
+  "patch_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/source.patch",
+  "patch_sha256": "779abc346e7483f15817941c95d9e82b0a77477782034bf61d2e27508450a0b3",
+  "builds": {
+    "release": {
+      "library": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release/libpostal.a",
+      "dumper": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release/dump_outputs",
+      "flags": "clang; experiment 119/CPI switch set plus -DEXP_TOKEN_SLICES; library -O2 -flto; scanner -O0; link -flto; no PGO; no EXP_CERT_F32_VITERBI",
+      "command_log": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/build.command",
+      "binary_sha256": "447e00b40cff2dbb2c4b388b8a844fd01bfc1610463f93432de3a2eb4960f576",
+      "dumper_sha256": "b061a4895a236156c9aece07e7f5f5cb81ff5446a5f01e7b9db43b584c234f91",
+      "build_stdout": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/build.stdout",
+      "build_stderr": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/build.stderr",
+      "build_exit_code": 0,
+      "scanner_object_reused_from": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/198-certified-viterbi/artifacts/release-v3/obj/scanner.o",
+      "scanner_object_sha256": "06cfaf25be695731afa6e0b63a9f773a7d2a6e52c7315325767aeef6a442a381",
+      "scanner_source_sha256": "3c985905ac4c0b5f05de8515e9851c7ea927e832f4dfbddf92ad5f3fb93902a8",
+      "scanner_compile_flags": "clang -O0 (source unchanged); reused to avoid repeating multi-minute generated scanner compile"
+    },
+    "diagnostic": {
+      "library": null,
+      "dumper": null,
+      "flags": null,
+      "command_log": null,
+      "binary_sha256": null
+    }
+  },
+  "metrics": {
+    "supported": [
+      "candidate source implementation",
+      "release build exit code",
+      "release library/dumper SHA-256"
+    ],
+    "unavailable": {
+      "exact_output": "Parser was not invoked; benchmark worker owns golden-v1 screen.",
+      "speed": "No parser/model benchmark run by this implementation worker.",
+      "memory": "No parser/model benchmark run by this implementation worker.",
+      "diagnostic_counters": "No diagnostic-instrumented derivative built yet."
+    }
+  },
+  "model_manifest_sha256": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad",
+  "build_exit_code": 0,
+  "parser_invoked": false,
+  "implementation_kind": "runnable structural implementation; exactness/performance pending benchmark worker",
+  "artifacts_sha256": {
+    "libpostal.a": "447e00b40cff2dbb2c4b388b8a844fd01bfc1610463f93432de3a2eb4960f576",
+    "dump_outputs": "b061a4895a236156c9aece07e7f5f5cb81ff5446a5f01e7b9db43b584c234f91",
+    "bench_ext": "f687c0a4c5d4aa525de490bc9cd677d103ea7943d326b0e50edc0e5983063369",
+    "fuzz_pipeline": "125fc1d63b553cdcf1c3357e92a5fc1c14066e7cf5b05f420d9549313ecdc1b9"
+  }
+}

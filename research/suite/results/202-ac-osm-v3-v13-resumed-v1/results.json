@@ -1,0 +1,719 @@
+{
+ "run": "202-ac-osm-v3-v13-resumed-v1",
+ "generated": "2026-10-10T00:07:22-0700",
+ "settings": {
+  "rounds": 3,
+  "passes": 420,
+  "settle_load_1min": 2.5,
+  "settle_max_wait_s": 30,
+  "correctness_jobs": 1,
+  "fuzz_count": 0,
+  "fuzz_seeds": [],
+  "fuzz_corpora": [
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+  ],
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261004,
+  "steady_dataset": "osm-v3",
+  "steady_passes_before_sample": 3,
+  "thread_check_dataset": "osm-v3",
+  "sleep_between_runs_s": 2,
+  "country_min_n": 50,
+  "environment_gate_script": "research/tools/env_gate.sh",
+  "gate_fail_fast": true
+ },
+ "baseline": "original-000",
+ "datasets": {
+  "osm-v3": {
+   "source": "openstreetmap",
+   "kind": "screening/validation",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 20.292,
+     "warm_min_us": 20.2,
+     "warm_max_us": 20.318,
+     "cold_median_us": 24.225,
+     "setup_median_s": 2.81,
+     "peak_rss_max": 2613100544,
+     "peak_footprint_max": 2612840656
+    },
+    "cpi-packaged": {
+     "rounds": 3,
+     "warm_median_us": 3.464,
+     "warm_min_us": 3.411,
+     "warm_max_us": 3.483,
+     "cold_median_us": 4.378,
+     "setup_median_s": 11.593,
+     "peak_rss_max": 2543108096,
+     "peak_footprint_max": 2543405432
+    }
+   },
+   "speedup": {
+    "cpi-packaged": {
+     "median": 5.8579676674364904,
+     "geomean": 5.87103542183474,
+     "ci95": [
+      5.677462061740219,
+      6.071208675566734
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.799598047660063,
+      5.956610964526532
+     ],
+     "min": 5.799598047660063,
+     "max": 5.956610964526532,
+     "rounds": 3,
+     "per_round": [
+      5.956610964526532,
+      5.8579676674364904,
+      5.799598047660063
+     ],
+     "ratio_of_medians": 5.8579676674364904,
+     "cold_median": 6.117013086989993,
+     "per_country": {
+      "n": 44,
+      "min_addresses": 50,
+      "min": 4.684710159563725,
+      "median": 5.979150720361747,
+      "max": 6.633886255924171
+     }
+    }
+   }
+  },
+  "unseen-v4": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 19.783,
+     "warm_min_us": 19.105,
+     "warm_max_us": 19.885,
+     "cold_median_us": 22.443,
+     "setup_median_s": 2.806,
+     "peak_rss_max": 2604285952,
+     "peak_footprint_max": 2612496592
+    },
+    "cpi-packaged": {
+     "rounds": 3,
+     "warm_median_us": 3.404,
+     "warm_min_us": 3.294,
+     "warm_max_us": 3.556,
+     "cold_median_us": 6.715,
+     "setup_median_s": 11.878,
+     "peak_rss_max": 2543026176,
+     "peak_footprint_max": 2543323512
+    }
+   },
+   "speedup": {
+    "cpi-packaged": {
+     "median": 5.811692126909518,
+     "geomean": 5.733633953320627,
+     "ci95": [
+      4.946505310516001,
+      6.646016985119092
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.372609673790776,
+      6.036733454766242
+     ],
+     "min": 5.372609673790776,
+     "max": 6.036733454766242,
+     "rounds": 3,
+     "per_round": [
+      6.036733454766242,
+      5.811692126909518,
+      5.372609673790776
+     ],
+     "ratio_of_medians": 5.811692126909518,
+     "cold_median": 3.3362620997766195,
+     "per_country": {
+      "n": 41,
+      "min_addresses": 50,
+      "min": 4.556740289413557,
+      "median": 5.699658703071672,
+      "max": 6.503917267314322
+     }
+    }
+   }
+  },
+  "unseen-v5": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 19.646,
+     "warm_min_us": 19.628,
+     "warm_max_us": 20.586,
+     "cold_median_us": 35.144,
+     "setup_median_s": 2.93,
+     "peak_rss_max": 2613051392,
+     "peak_footprint_max": 2612758760
+    },
+    "cpi-packaged": {
+     "rounds": 3,
+     "warm_median_us": 3.287,
+     "warm_min_us": 3.25,
+     "warm_max_us": 3.375,
+     "cold_median_us": 4.745,
+     "setup_median_s": 11.737,
+     "peak_rss_max": 2538045440,
+     "peak_footprint_max": 2538359184
+    }
+   },
+   "speedup": {
+    "cpi-packaged": {
+     "median": 6.0449230769230775,
+     "geomean": 6.03839851588263,
+     "ci95": [
+      5.507423369338453,
+      6.620565406249739
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.815703703703703,
+      6.262853665956799
+     ],
+     "min": 5.815703703703703,
+     "max": 6.262853665956799,
+     "rounds": 3,
+     "per_round": [
+      5.815703703703703,
+      6.0449230769230775,
+      6.262853665956799
+     ],
+     "ratio_of_medians": 5.976878612716764,
+     "cold_median": 7.406533192834562,
+     "per_country": {
+      "n": 35,
+      "min_addresses": 50,
+      "min": 4.736209613869189,
+      "median": 5.989320920043812,
+      "max": 6.977582417582418
+     }
+    }
+   }
+  },
+  "unseen-v6": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 18.976,
+     "warm_min_us": 18.231,
+     "warm_max_us": 19.105,
+     "cold_median_us": 21.267,
+     "setup_median_s": 2.811,
+     "peak_rss_max": 2612215808,
+     "peak_footprint_max": 2612021456
+    },
+    "cpi-packaged": {
+     "rounds": 3,
+     "warm_median_us": 3.226,
+     "warm_min_us": 3.204,
+     "warm_max_us": 3.343,
+     "cold_median_us": 4.813,
+     "setup_median_s": 11.641,
+     "peak_rss_max": 2538045440,
+     "peak_footprint_max": 2538342776
+    }
+   },
+   "speedup": {
+    "cpi-packaged": {
+     "median": 5.714926712533653,
+     "geomean": 5.761775323260004,
+     "ci95": [
+      5.509152708278558,
+      6.025981967397905
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.690074906367041,
+      5.882207067575945
+     ],
+     "min": 5.690074906367041,
+     "max": 5.882207067575945,
+     "rounds": 3,
+     "per_round": [
+      5.714926712533653,
+      5.690074906367041,
+      5.882207067575945
+     ],
+     "ratio_of_medians": 5.882207067575945,
+     "cold_median": 4.418657801786828,
+     "per_country": {
+      "n": 36,
+      "min_addresses": 50,
+      "min": 4.563018867924528,
+      "median": 5.737930793283802,
+      "max": 6.502409638554216
+     }
+    }
+   }
+  },
+  "unseen-v7": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 19.244,
+     "warm_min_us": 18.778,
+     "warm_max_us": 20.766,
+     "cold_median_us": 36.599,
+     "setup_median_s": 2.967,
+     "peak_rss_max": 2497773568,
+     "peak_footprint_max": 2612136144
+    },
+    "cpi-packaged": {
+     "rounds": 3,
+     "warm_median_us": 3.355,
+     "warm_min_us": 3.268,
+     "warm_max_us": 3.527,
+     "cold_median_us": 5.588,
+     "setup_median_s": 11.652,
+     "peak_rss_max": 2538045440,
+     "peak_footprint_max": 2538342776
+    }
+   },
+   "speedup": {
+    "cpi-packaged": {
+     "median": 5.746022031823745,
+     "geomean": 5.789474786143507,
+     "ci95": [
+      5.583247455389574,
+      6.003319495903064
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.73591654247392,
+      5.8877232775730075
+     ],
+     "min": 5.73591654247392,
+     "max": 5.8877232775730075,
+     "rounds": 3,
+     "per_round": [
+      5.73591654247392,
+      5.746022031823745,
+      5.8877232775730075
+     ],
+     "ratio_of_medians": 5.73591654247392,
+     "cold_median": 6.549570508231925,
+     "per_country": {
+      "n": 37,
+      "min_addresses": 50,
+      "min": 4.69277566539924,
+      "median": 5.892929292929293,
+      "max": 6.655490051584377
+     }
+    }
+   }
+  },
+  "unseen-v8": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 18.528,
+     "warm_min_us": 18.169,
+     "warm_max_us": 18.697,
+     "cold_median_us": 34.598,
+     "setup_median_s": 2.896,
+     "peak_rss_max": 2479276032,
+     "peak_footprint_max": 2613905616
+    },
+    "cpi-packaged": {
+     "rounds": 3,
+     "warm_median_us": 3.283,
+     "warm_min_us": 3.195,
+     "warm_max_us": 3.328,
+     "cold_median_us": 4.953,
+     "setup_median_s": 11.817,
+     "peak_rss_max": 2543009792,
+     "peak_footprint_max": 2543307128
+    }
+   },
+   "speedup": {
+    "cpi-packaged": {
+     "median": 5.686697965571206,
+     "geomean": 5.649397638361142,
+     "ci95": [
+      5.4739658341017305,
+      5.830451749898028
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.5673076923076925,
+      5.695095948827292
+     ],
+     "min": 5.5673076923076925,
+     "max": 5.695095948827292,
+     "rounds": 3,
+     "per_round": [
+      5.695095948827292,
+      5.686697965571206,
+      5.5673076923076925
+     ],
+     "ratio_of_medians": 5.643618641486445,
+     "cold_median": 6.465483714146816,
+     "per_country": {
+      "n": 40,
+      "min_addresses": 50,
+      "min": 4.33153735632184,
+      "median": 5.3006488966362735,
+      "max": 5.963206816421379
+     }
+    }
+   }
+  },
+  "unseen-v9": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 19.391,
+     "warm_min_us": 18.974,
+     "warm_max_us": 19.585,
+     "cold_median_us": 29.008,
+     "setup_median_s": 2.944,
+     "peak_rss_max": 2612264960,
+     "peak_footprint_max": 2612168912
+    },
+    "cpi-packaged": {
+     "rounds": 3,
+     "warm_median_us": 3.497,
+     "warm_min_us": 3.41,
+     "warm_max_us": 3.506,
+     "cold_median_us": 5.353,
+     "setup_median_s": 11.735,
+     "peak_rss_max": 2542993408,
+     "peak_footprint_max": 2543290744
+    }
+   },
+   "speedup": {
+    "cpi-packaged": {
+     "median": 5.530804335424985,
+     "geomean": 5.565107848761535,
+     "ci95": [
+      5.178995762467575,
+      5.980005929487597
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.425793537317701,
+      5.743401759530792
+     ],
+     "min": 5.425793537317701,
+     "max": 5.743401759530792,
+     "rounds": 3,
+     "per_round": [
+      5.743401759530792,
+      5.530804335424985,
+      5.425793537317701
+     ],
+     "ratio_of_medians": 5.545038604518158,
+     "cold_median": 4.509620773398095,
+     "per_country": {
+      "n": 37,
+      "min_addresses": 50,
+      "min": 4.4314002828854315,
+      "median": 5.669939358937338,
+      "max": 6.482960893854749
+     }
+    }
+   }
+  },
+  "unseen-v10": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 19.127,
+     "warm_min_us": 18.538,
+     "warm_max_us": 20.296,
+     "cold_median_us": 24.507,
+     "setup_median_s": 2.922,
+     "peak_rss_max": 2612346880,
+     "peak_footprint_max": 2612152552
+    },
+    "cpi-packaged": {
+     "rounds": 3,
+     "warm_median_us": 3.142,
+     "warm_min_us": 3.079,
+     "warm_max_us": 3.231,
+     "cold_median_us": 4.006,
+     "setup_median_s": 11.511,
+     "peak_rss_max": 2538012672,
+     "peak_footprint_max": 2538326416
+    }
+   },
+   "speedup": {
+    "cpi-packaged": {
+     "median": 6.087523870146404,
+     "geomean": 6.128992935371526,
+     "ci95": [
+      5.8028976894592015,
+      6.4734131828774135
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      6.020785969470607,
+      6.28164654905602
+     ],
+     "min": 6.020785969470607,
+     "max": 6.28164654905602,
+     "rounds": 3,
+     "per_round": [
+      6.087523870146404,
+      6.020785969470607,
+      6.28164654905602
+     ],
+     "ratio_of_medians": 6.087523870146404,
+     "cold_median": 5.617823265102346,
+     "per_country": {
+      "n": 36,
+      "min_addresses": 50,
+      "min": 5.098643649815043,
+      "median": 6.54064322633266,
+      "max": 7.422993492407809
+     }
+    }
+   }
+  },
+  "unseen-v11": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 18.452,
+     "warm_min_us": 18.2,
+     "warm_max_us": 19.412,
+     "cold_median_us": 26.668,
+     "setup_median_s": 2.806,
+     "peak_rss_max": 2612314112,
+     "peak_footprint_max": 2612119784
+    },
+    "cpi-packaged": {
+     "rounds": 3,
+     "warm_median_us": 3.319,
+     "warm_min_us": 3.242,
+     "warm_max_us": 3.579,
+     "cold_median_us": 4.544,
+     "setup_median_s": 11.712,
+     "peak_rss_max": 2541371392,
+     "peak_footprint_max": 2541685136
+    }
+   },
+   "speedup": {
+    "cpi-packaged": {
+     "median": 5.691548426896977,
+     "geomean": 5.531815901936185,
+     "ci95": [
+      4.6009932643665525,
+      6.650952395412187
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.0852193350097785,
+      5.848749623380536
+     ],
+     "min": 5.0852193350097785,
+     "max": 5.848749623380536,
+     "rounds": 3,
+     "per_round": [
+      5.848749623380536,
+      5.0852193350097785,
+      5.691548426896977
+     ],
+     "ratio_of_medians": 5.559505875263635,
+     "cold_median": 4.354753521126761,
+     "per_country": {
+      "n": 31,
+      "min_addresses": 50,
+      "min": 4.631333177679196,
+      "median": 5.435981615233093,
+      "max": 5.9794303797468356
+     }
+    }
+   }
+  },
+  "unseen-v12": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 18.607,
+     "warm_min_us": 17.438,
+     "warm_max_us": 18.646,
+     "cold_median_us": 24.048,
+     "setup_median_s": 2.93,
+     "peak_rss_max": 2612232192,
+     "peak_footprint_max": 2612136168
+    },
+    "cpi-packaged": {
+     "rounds": 3,
+     "warm_median_us": 3.095,
+     "warm_min_us": 3.084,
+     "warm_max_us": 3.208,
+     "cold_median_us": 3.973,
+     "setup_median_s": 11.57,
+     "peak_rss_max": 2538029056,
+     "peak_footprint_max": 2538326392
+    }
+   },
+   "speedup": {
+    "cpi-packaged": {
+     "median": 5.800187032418952,
+     "geomean": 5.824380995945478,
+     "ci95": [
+      5.333315994354555,
+      6.3606608012425285
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.634248788368335,
+      6.046044098573281
+     ],
+     "min": 5.634248788368335,
+     "max": 6.046044098573281,
+     "rounds": 3,
+     "per_round": [
+      5.800187032418952,
+      6.046044098573281,
+      5.634248788368335
+     ],
+     "ratio_of_medians": 6.011954765751211,
+     "cold_median": 4.9227284168134915,
+     "per_country": {
+      "n": 34,
+      "min_addresses": 50,
+      "min": 4.828845369237046,
+      "median": 5.66980828578912,
+      "max": 6.002790178571428
+     }
+    }
+   }
+  },
+  "unseen-v13": {
+   "source": "openstreetmap",
+   "kind": "spent unseen",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 18.665,
+     "warm_min_us": 17.806,
+     "warm_max_us": 18.694,
+     "cold_median_us": 22.591,
+     "setup_median_s": 2.856,
+     "peak_rss_max": 2612477952,
+     "peak_footprint_max": 2612086992
+    },
+    "cpi-packaged": {
+     "rounds": 3,
+     "warm_median_us": 3.234,
+     "warm_min_us": 3.176,
+     "warm_max_us": 3.264,
+     "cold_median_us": 4.855,
+     "setup_median_s": 11.851,
+     "peak_rss_max": 2542960640,
+     "peak_footprint_max": 2543257976
+    }
+   },
+   "speedup": {
+    "cpi-packaged": {
+     "median": 5.727328431372549,
+     "geomean": 5.70131864252334,
+     "ci95": [
+      5.492295584275281,
+      5.91829659653565
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.606423173803527,
+      5.771490414347557
+     ],
+     "min": 5.606423173803527,
+     "max": 5.771490414347557,
+     "rounds": 3,
+     "per_round": [
+      5.727328431372549,
+      5.771490414347557,
+      5.606423173803527
+     ],
+     "ratio_of_medians": 5.771490414347557,
+     "cold_median": 5.055991892576641,
+     "per_country": {
+      "n": 37,
+      "min_addresses": 50,
+      "min": 4.672077922077922,
+      "median": 5.967570183930301,
+      "max": 6.816862088218873
+     }
+    }
+   }
+  }
+ },
+ "aggregate": {
+  "cpi-packaged": {
+   "datasets": 11,
+   "source_weighted_geomean": 5.788870233016504,
+   "geomean_all_datasets": 5.788870233016504,
+   "min": 5.530804335424985,
+   "max": 6.087523870146404,
+   "geomean_by_source": {
+    "openstreetmap": 5.788870233016504
+   },
+   "datasets_by_source": {
+    "openstreetmap": 11
+   }
+  }
+ },
+ "memory": {
+  "original-000": {
+   "steady_footprint": "2492 MB",
+   "dataset": "osm-v3",
+   "after_passes": 3
+  },
+  "cpi-packaged": {
+   "steady_footprint": "1926 MB",
+   "dataset": "osm-v3",
+   "after_passes": 3
+  }
+ },
+ "threads": {
+  "original-000": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  },
+  "cpi-packaged": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  }
+ },
+ "manifest": "manifest.json"
+}

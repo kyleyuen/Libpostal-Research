@@ -1,0 +1,75 @@
+setup_datadir=1
+setup_parser_datadir=1
+components=6
+house_number	123
+road	main street
+city	springfield
+state	illinois
+postcode	62704
+country	usa
+parse=1
+components=9
+house_number	123
+road	main street
+unit	apartment five
+suburb	near central park
+city	springfield
+state_district	sangamon county
+state	illinois
+postcode	62704
+country	usa
+parse=1
+setup_parser_datadir#2=1
+components=9
+house_number	123
+road	main street
+unit	apartment five
+suburb	near central park
+city	springfield
+state_district	sangamon county
+state	illinois
+postcode	62704
+country	usa
+parse=1
+setup_parser_datadir#3=1
+print_features(true)=1
+{ postcode no context|DDD, bias, word|DDD, first word|DDD, next word|main street, word+next word|DDD|main street }
+{ phrase|main street, phrase type+phrase|suburb|main street, phrase type+phrase|city|main street, commonly suburb|main street, prev word|DDD, prev word+word|DDD|main street, next word|springfield, word+next word|main street|springfield, prev tag+word|main street, prev tag+prev word|DDD }
+{ phrase|main street, phrase type+phrase|suburb|main street, phrase type+phrase|city|main street, commonly suburb|main street, prev word|DDD, prev word+word|DDD|main street, next word|springfield, word+next word|main street|springfield }
+{ phrase|springfield, phrase type+phrase|suburb|springfield, phrase type+phrase|city|springfield, phrase type+phrase|state|springfield, commonly city|springfield, prev word|main street, prev word+word|main street|springfield, next word|illinois, word+next word|springfield|illinois, prev tag+word|springfield, prev tag+prev word|main street }
+{ phrase|illinois, phrase type+phrase|city|illinois, phrase type+phrase|island|illinois, phrase type+phrase|state|illinois, commonly state|illinois, prev word|springfield, prev word+word|springfield|illinois, next word|DDDDD, word+next word|illinois|DDDDD, prev tag+word|illinois, prev tag+prev word|springfield }
+{ postcode have context, postcode have context|DDDDD, bias, word|DDDDD, prev word|illinois, prev word+word|illinois|DDDDD, next word|usa, word+next word|DDDDD|usa, prev tag+word|DDDDD, prev tag+prev word|illinois }
+{ phrase|usa, phrase type+phrase|suburb|usa, phrase type+phrase|city|usa, phrase type+phrase|city_district|usa, phrase type+phrase|country|usa, commonly country|usa, prev word|DDDDD, prev word+word|DDDDD|usa, prev tag+word|usa, prev tag+prev word|DDDDD }
+components=6
+house_number	123
+road	main street
+city	springfield
+state	illinois
+postcode	62704
+country	usa
+parse=1
+{ postcode no context|DDD, bias, word|DDD, first word|DDD, next word|main street, word+next word|DDD|main street }
+{ phrase|main street, phrase type+phrase|suburb|main street, phrase type+phrase|city|main street, commonly suburb|main street, prev word|DDD, prev word+word|DDD|main street, next word|apartment, word+next word|main street|apartment, prev tag+word|main street, prev tag+prev word|DDD }
+{ phrase|main street, phrase type+phrase|suburb|main street, phrase type+phrase|city|main street, commonly suburb|main street, prev word|DDD, prev word+word|DDD|main street, next word|apartment, word+next word|main street|apartment }
+{ phrase type+phrase|street|apartment, phrase type+phrase|name|apartment, phrase type+phrase|unit|apartment, phrase type+phrase|house_number|apartment, prev word|main street, prev word+word|main street|apartment, next word|five, word+next word|apartment|five, prev tag+word|apartment, prev tag+prev word|main street }
+{ bias, word|five, prev word|apartment, prev word+word|apartment|five, next word|near, word+next word|five|near, prev tag+word|five, prev tag+prev word|apartment }
+{ phrase|near, unambiguous phrase type|city, unambiguous phrase type+phrase|city|near, commonly city|near, prev word|five, prev word+word|five|near, next word|central park, word+next word|near|central park, prev tag+word|near, prev tag+prev word|five }
+{ phrase|central park, phrase type+phrase|suburb|central park, phrase type+phrase|city|central park, commonly suburb|central park, prev word|near, prev word+word|near|central park, next word|springfield, word+next word|central park|springfield, prev tag+word|central park, prev tag+prev word|near }
+{ phrase|central park, phrase type+phrase|suburb|central park, phrase type+phrase|city|central park, commonly suburb|central park, prev word|near, prev word+word|near|central park, next word|springfield, word+next word|central park|springfield }
+{ phrase|springfield, phrase type+phrase|suburb|springfield, phrase type+phrase|city|springfield, phrase type+phrase|state|springfield, commonly city|springfield, prev word|central park, prev word+word|central park|springfield, next word|sangamon county, word+next word|springfield|sangamon county, prev tag+word|springfield, prev tag+prev word|central park }
+{ phrase|sangamon county, unambiguous phrase type|state_district, unambiguous phrase type+phrase|state_district|sangamon county, commonly state_district|sangamon county, prev word|springfield, prev word+word|springfield|sangamon county, next word|illinois, word+next word|sangamon county|illinois, prev tag+word|sangamon county, prev tag+prev word|springfield }
+{ phrase|sangamon county, unambiguous phrase type|state_district, unambiguous phrase type+phrase|state_district|sangamon county, commonly state_district|sangamon county, prev word|springfield, prev word+word|springfield|sangamon county, next word|illinois, word+next word|sangamon county|illinois }
+{ phrase|illinois, phrase type+phrase|city|illinois, phrase type+phrase|island|illinois, phrase type+phrase|state|illinois, commonly state|illinois, prev word|sangamon county, prev word+word|sangamon county|illinois, next word|DDDDD, word+next word|illinois|DDDDD, prev tag+word|illinois, prev tag+prev word|sangamon county }
+{ postcode have context, postcode have context|DDDDD, bias, word|DDDDD, prev word|illinois, prev word+word|illinois|DDDDD, next word|usa, word+next word|DDDDD|usa, prev tag+word|DDDDD, prev tag+prev word|illinois }
+{ phrase|usa, phrase type+phrase|suburb|usa, phrase type+phrase|city|usa, phrase type+phrase|city_district|usa, phrase type+phrase|country|usa, commonly country|usa, prev word|DDDDD, prev word+word|DDDDD|usa, prev tag+word|usa, prev tag+prev word|DDDDD }
+components=9
+house_number	123
+road	main street
+unit	apartment five
+suburb	near central park
+city	springfield
+state_district	sangamon county
+state	illinois
+postcode	62704
+country	usa
+parse=1

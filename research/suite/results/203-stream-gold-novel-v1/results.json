@@ -1,0 +1,161 @@
+{
+ "run": "203-stream-gold-novel-v1",
+ "generated": "2026-10-10T17:20:09-0700",
+ "settings": {
+  "rounds": 3,
+  "passes": 200,
+  "settle_load_1min": 2.5,
+  "settle_max_wait_s": 180,
+  "correctness_jobs": 1,
+  "fuzz_count": 0,
+  "fuzz_seeds": [],
+  "fuzz_corpora": [
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+  ],
+  "bootstrap_resamples": 1000,
+  "bootstrap_seed": 20261004,
+  "steady_dataset": "golden-v1",
+  "steady_passes_before_sample": 3,
+  "thread_check_dataset": "golden-v1",
+  "sleep_between_runs_s": 2,
+  "country_min_n": 50
+ },
+ "baseline": "original-000",
+ "datasets": {
+  "golden-v1": {
+   "source": "senzing",
+   "kind": "development+validation (PGO trained on its development split)",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 31.86,
+     "warm_min_us": 31.269,
+     "warm_max_us": 31.987,
+     "cold_median_us": 35.957,
+     "setup_median_s": 2.818,
+     "peak_rss_max": 2614018048,
+     "peak_footprint_max": 2613184720
+    },
+    "cpi-stream-203": {
+     "rounds": 3,
+     "warm_median_us": 5.283,
+     "warm_min_us": 5.003,
+     "warm_max_us": 5.293,
+     "cold_median_us": 6.159,
+     "setup_median_s": 9.871,
+     "peak_rss_max": 2111242240,
+     "peak_footprint_max": 2110326824
+    }
+   },
+   "speedup": {
+    "cpi-stream-203": {
+     "median": 6.043264689212166,
+     "geomean": 6.10717112028892,
+     "ci95": [
+      5.8103513671308225,
+      6.419153805995852
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      6.030664395229983,
+      6.250049970017988
+     ],
+     "min": 6.030664395229983,
+     "max": 6.250049970017988,
+     "rounds": 3,
+     "per_round": [
+      6.250049970017988,
+      6.030664395229983,
+      6.043264689212166
+     ],
+     "ratio_of_medians": 6.030664395229983,
+     "cold_median": 5.838123071927261,
+     "per_country": {
+      "n": 81,
+      "min_addresses": 50,
+      "min": 4.958736187845304,
+      "median": 6.362598770851624,
+      "max": 7.662585034013605
+     }
+    }
+   }
+  },
+  "novel": {
+   "source": "senzing-style",
+   "kind": "screening/validation",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 32.367,
+     "warm_min_us": 32.285,
+     "warm_max_us": 32.463,
+     "cold_median_us": 34.486,
+     "setup_median_s": 2.789,
+     "peak_rss_max": 2614149120,
+     "peak_footprint_max": 2613348584
+    },
+    "cpi-stream-203": {
+     "rounds": 3,
+     "warm_median_us": 5.456,
+     "warm_min_us": 5.393,
+     "warm_max_us": 5.812,
+     "cold_median_us": 7.72,
+     "setup_median_s": 9.849,
+     "peak_rss_max": 2111258624,
+     "peak_footprint_max": 2110326824
+    }
+   },
+   "speedup": {
+    "cpi-stream-203": {
+     "median": 5.932368035190615,
+     "geomean": 5.832040092902222,
+     "ci95": [
+      5.243868987367137,
+      6.486182573812965
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.554886441844459,
+      6.019469682922307
+     ],
+     "min": 5.554886441844459,
+     "max": 6.019469682922307,
+     "rounds": 3,
+     "per_round": [
+      6.019469682922307,
+      5.932368035190615,
+      5.554886441844459
+     ],
+     "ratio_of_medians": 5.932368035190615,
+     "cold_median": 4.462694300518135,
+     "per_country": {
+      "n": 81,
+      "min_addresses": 50,
+      "min": 4.648785575920131,
+      "median": 5.837419959394035,
+      "max": 6.80093808630394
+     }
+    }
+   }
+  }
+ },
+ "aggregate": {
+  "cpi-stream-203": {
+   "datasets": 2,
+   "source_weighted_geomean": 5.987559625630329,
+   "geomean_all_datasets": 5.987559625630329,
+   "min": 5.932368035190615,
+   "max": 6.043264689212166,
+   "geomean_by_source": {
+    "senzing": 6.043264689212166,
+    "senzing-style": 5.932368035190615
+   },
+   "datasets_by_source": {
+    "senzing": 1,
+    "senzing-style": 1
+   }
+  }
+ },
+ "manifest": "manifest.json"
+}

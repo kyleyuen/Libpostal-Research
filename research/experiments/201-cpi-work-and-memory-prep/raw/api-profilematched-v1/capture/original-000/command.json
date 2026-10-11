@@ -1,0 +1,62 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/tools/edge_api_dump.py",
+    "--library",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/000-baseline/artifacts/libpostal.dylib",
+    "--datadir",
+    "/Users/kyle/.cache/libpostal-profile/libpostal",
+    "--cases",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/edge-cases.json",
+    "--output-jsonl",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/api-profilematched-v1/capture/original-000/edge-output.jsonl"
+  ],
+  "cwd": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "start": "2026-10-09T01:21:04.554417-07:00",
+  "env_overrides": {},
+  "timing_use": "command provenance only; not a performance measurement",
+  "monitored_argv": [
+    "/usr/bin/time",
+    "-l",
+    "-o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/api-profilematched-v1/capture/original-000/time-l.txt",
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/tools/edge_api_dump.py",
+    "--library",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/000-baseline/artifacts/libpostal.dylib",
+    "--datadir",
+    "/Users/kyle/.cache/libpostal-profile/libpostal",
+    "--cases",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/edge-cases.json",
+    "--output-jsonl",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/api-profilematched-v1/capture/original-000/edge-output.jsonl"
+  ],
+  "resource_log": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/api-profilematched-v1/capture/original-000/time-l.txt",
+  "exit": 0,
+  "end": "2026-10-09T01:21:07.670491-07:00",
+  "duration_seconds": 3.1161052498500794,
+  "thread_sample_count": 14,
+  "thread_counts_observed": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "resource_summary": {
+    "peak_rss_bytes": 1657257984,
+    "peak_rss_reason": null,
+    "peak_footprint_bytes": 2417051784,
+    "peak_footprint_reason": null,
+    "raw_time_log": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/api-profilematched-v1/capture/original-000/time-l.txt"
+  }
+}

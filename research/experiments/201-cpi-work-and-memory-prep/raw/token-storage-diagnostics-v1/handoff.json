@@ -1,0 +1,80 @@
+{
+  "experiment_id": 201,
+  "derivative_id": "token-storage-diagnostics-v1",
+  "status": "source-only handoff; build/parser/model/test not run by preparer",
+  "base_source_tree": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/derivatives/199/source-v8",
+  "base_source_manifest_file_sha256": "7d47969a4396c18b5f520ecf948f217212c87f9eceb7edc2afccdede0218b4ff",
+  "source_tree": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/source-token-storage-v1",
+  "source_manifest_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v1/source-manifest.sha256",
+  "source_manifest_sha256": "d19c0e2ddf64791ca81cfcd217a03e7665520c5609ac95cad2bc05f88464d089",
+  "source_tree_sha256": "8ac38d453d59a4c1836a8e38af076ba4293e36415b342a54c3c06d086e1c80d4",
+  "patch_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/raw/token-storage-diagnostics-v1/source.patch",
+  "patch_sha256": "2814988360b77c9cfa0d39fe465bec5da30c1b94f08cc8f0fb173378739ce7cf",
+  "patch_bytes": 22934,
+  "patch_diff_exit_code": 1,
+  "base_archive": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1625-pattern-summary-fix/cpi/diagnostic/libpostal.a",
+  "base_archive_sha256_expected": "98275eb29cb6378632fc02f923b90e3c1505f191be696e0452cb19d57b2c69dc",
+  "translation_units_to_compile_and_replace": [
+    "address_parser.c",
+    "tokens.c",
+    "string_utils.c",
+    "diag.c"
+  ],
+  "paired_headers": [
+    "tokens.h",
+    "diag.h",
+    "original/diag.h"
+  ],
+  "build_common_switches": [
+    "EXP_REUSE",
+    "EXP_FAST_APPEND",
+    "EXP185_DIAG",
+    "all 119/CPI switches exactly as in CPI185 v9 build manifest"
+  ],
+  "build_mode_delta": {
+    "control": "omit EXP_TOKEN_SLICES",
+    "candidate": "define EXP_TOKEN_SLICES"
+  },
+  "counter_families": [
+    "token_copy_calls",
+    "token_copy_bytes",
+    "token_copy_nul_writes",
+    "token_view_records",
+    "token_view_bytes",
+    "token_view_nul_writes",
+    "token_slice_opportunity_eligible_addresses",
+    "token_slice_opportunity_unsafe_fallbacks",
+    "token_slice_eligible_addresses",
+    "token_slice_unsafe_fallbacks",
+    "token_offset_growth_events",
+    "token_offset_requested_bytes",
+    "token_record_growth_events",
+    "token_record_requested_bytes",
+    "char_buffer_growth_events",
+    "char_buffer_requested_bytes",
+    "token_payload_used_peak_bytes",
+    "token_payload_capacity_peak_bytes",
+    "token_offset_used_peak_entries",
+    "token_offset_capacity_peak_entries",
+    "token_record_used_peak_entries",
+    "token_record_capacity_peak_entries",
+    "normalized_copy_calls",
+    "normalized_copy_bytes",
+    "normalized_copy_nul_writes",
+    "normalized_text_used_peak_bytes",
+    "normalized_text_capacity_peak_bytes"
+  ],
+  "calibration_shapes": [
+    "separated retained tokens",
+    "touching/overlapping retained spans",
+    "separator and ignorable spans between retained tokens",
+    "final retained token ending at normalized buffer NUL",
+    "long inter-token gaps"
+  ],
+  "unavailable": [
+    "allocator metadata and allocation costs outside tracked array growth points",
+    "memory/performance/output results until benchmark owner runs paired derivative"
+  ],
+  "parser_invoked": false,
+  "build_exit_code": null
+}

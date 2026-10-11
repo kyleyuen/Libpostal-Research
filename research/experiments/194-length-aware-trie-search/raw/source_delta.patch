@@ -1,0 +1,181 @@
+--- a/address_parser.c
++++ b/address_parser.c
+@@ -1,4 +1,6 @@
++#include "trie.h"
+ #include "address_parser.h"
++
+ #include "address_dictionary.h"
+ #include "features.h"
+ #include "ngrams.h"
+@@ -377,10 +379,14 @@
+     free(self);
+ }
+ 
+-static inline uint32_t word_vocab_frequency(address_parser_t *parser, char *word) {   
++static inline uint32_t word_vocab_frequency_len(address_parser_t *parser, char *word, size_t len) {
+     uint32_t count = 0;
+-    bool has_key = trie_get_data(parser->vocab, word, &count);
++    bool has_key = trie_get_data_len(parser->vocab, word, len, &count);
+     return count;
++}
++
++static inline uint32_t word_vocab_frequency(address_parser_t *parser, char *word) {
++    return word_vocab_frequency_len(parser, word, strlen(word));
+ }
+ 
+ inline void address_parser_normalize_token(cstring_array *array, char *str, token_t token) {
+@@ -409,7 +415,7 @@
+ static bool ap_front_fill(address_parser_context_t *c, address_parser_t *p) {
+     size_t n = c->normalized_tokens->n;
+     if (n > ap_front_cap) { ap_front_t *p = realloc(ap_front, n * sizeof(*p)); if (!p) { ap_front_n = 0; return false; } ap_front = p; ap_front_cap = n; }
+-    for (size_t i = 0; i < n; i++) { char *w = cstring_array_get_string(c->normalized, i); uint32_t f = word_vocab_frequency(p, w), id = UINT32_MAX; if (f) crf_state_word_id(p->model.crf, w, &id); ap_front[i] = (ap_front_t){w, c->address_phrase_memberships->a[i], c->component_phrase_memberships->a[i], c->postal_code_phrase_memberships->a[i], f, id}; }
++    for (size_t i = 0; i < n; i++) { char *w = cstring_array_get_string(c->normalized, i); uint32_t f = word_vocab_frequency_len(p, w, (size_t)cstring_array_token_length(c->normalized, i)), id = UINT32_MAX; if (f) crf_state_word_id(p->model.crf, w, &id); ap_front[i] = (ap_front_t){w, c->address_phrase_memberships->a[i], c->component_phrase_memberships->a[i], c->postal_code_phrase_memberships->a[i], f, id}; }
+     ap_front_n = n; return true;
+ }
+ 
+@@ -1377,7 +1383,7 @@
+         }
+     }
+ 
+-    uint32_t word_freq = front ? front->freq : word_vocab_frequency(parser, word);
++    uint32_t word_freq = front ? front->freq : word_vocab_frequency_len(parser, word, word_len);
+ 
+     bool is_word = is_word_token(token.type);
+ 
+@@ -1475,7 +1481,7 @@
+ 
+                 uint32_t sub_word_freq = word_freq;
+                 if (is_hyphenated) {
+-                    sub_word_freq = word_vocab_frequency(parser, sub_word);
++                    sub_word_freq = word_vocab_frequency_len(parser, sub_word, sub_word_len);
+                     if (sub_word_freq > 0) {
+                         feature_array_add(features, 2, "sub_word", sub_word);
+                     }
+@@ -1543,7 +1549,7 @@
+         char *prev_word = prev_word_or_phrase.str;
+ 
+         if (is_plain_word_phrase_type(prev_word_or_phrase.type)) {
+-            uint32_t prev_word_freq = word_vocab_frequency(parser, prev_word);
++            uint32_t prev_word_freq = word_vocab_frequency_len(parser, prev_word, (size_t)cstring_array_token_length(normalized, (uint32_t)last_index));
+             token_t prev_token = tokenized->tokens->a[last_index];
+             bool prev_token_numeric = is_numeric_token(prev_token.type);
+             if (prev_word_freq == 0) {
+@@ -1569,7 +1575,7 @@
+         size_t next_word_len = 1;
+ 
+         if (is_plain_word_phrase_type(next_word_or_phrase.type)) {
+-            uint32_t next_word_freq = word_vocab_frequency(parser, next_word);
++            uint32_t next_word_freq = word_vocab_frequency_len(parser, next_word, (size_t)cstring_array_token_length(normalized, (uint32_t)next_index));
+             token_t next_token = tokenized->tokens->a[next_index];
+             bool next_token_numeric = is_numeric_token(next_token.type);
+             if (next_word_freq == 0) {
+--- a/crf.c
++++ b/crf.c
+@@ -1,15 +1,16 @@
++#include "trie.h"
+ #include "crf.h"
+ #include "log/log.h"
+ 
+ #define CRF_SIGNATURE 0xCFCFCFCF
+ 
+ 
+-static inline bool crf_get_feature_id(crf_t *self, char *feature, uint32_t *feature_id) {
+-    return trie_get_data(self->state_features, feature, feature_id);
+-}
+-
+-static inline bool crf_get_state_trans_feature_id(crf_t *self, char *feature, uint32_t *feature_id) {
+-    return trie_get_data(self->state_trans_features, feature, feature_id);
++static inline bool crf_get_feature_id_len(crf_t *self, char *feature, size_t len, uint32_t *feature_id) {
++    return trie_get_data_len(self->state_features, feature, len, feature_id);
++}
++
++static inline bool crf_get_state_trans_feature_id_len(crf_t *self, char *feature, size_t len, uint32_t *feature_id) {
++    return trie_get_data_len(self->state_trans_features, feature, len, feature_id);
+ }
+ 
+ #ifdef EXP_EVENT_FLOW
+@@ -39,7 +40,8 @@
+ #endif
+         key = cstring_array_get_string(list, i);
+         uint32_t id;
+-        bool found = kind == 'S' ? crf_get_feature_id(self, key, &id) : crf_get_state_trans_feature_id(self, key, &id);
++        size_t key_len = cstring_array_token_length(list, i);
++        bool found = kind == 'S' ? crf_get_feature_id_len(self, key, key_len, &id) : crf_get_state_trans_feature_id_len(self, key, key_len, &id);
+         fprintf(fk, "%llu\t%u\t%c\t%u\t", oa, t, kind, i + offset); oracle_str(fk, key); fputc('\n', fk);
+         if (found) fprintf(fi, "%llu\t%u\t%c\t%u\t%u\n", oa, t, kind, i + offset, id); else fprintf(fi, "%llu\t%u\t%c\t%u\t-\n", oa, t, kind, i + offset);
+     }
+@@ -62,7 +64,7 @@
+ #endif
+ 
+ #ifdef EXP_EVENT_FLOW
+-bool crf_state_word_id(crf_t *self, const char *word, uint32_t *id) { size_t n = strlen(word); char *key = malloc(n + 6); if (!key) return false; memcpy(key, "word|", 5); memcpy(key + 5, word, n + 1); bool ok = crf_get_feature_id(self, key, id); free(key); return ok; }
++bool crf_state_word_id(crf_t *self, const char *word, uint32_t *id) { size_t n = strlen(word); char *key = malloc(n + 6); if (!key) return false; memcpy(key, "word|", 5); memcpy(key + 5, word, n + 1); bool ok = crf_get_feature_id_len(self, key, n + 5, id); free(key); return ok; }
+ void crf_direct_state_word(cstring_array *a, uint32_t id, const char *word) { direct_word_array = a; direct_word_pos = cstring_array_num_strings(a); direct_word_id = id;
+ #ifdef EXP_ORACLE
+ oracle_direct_id = id; oracle_direct_pos = direct_word_pos; oracle_direct_word = word;
+@@ -145,9 +147,9 @@
+         size_t event_n = cstring_array_num_strings(features) + cstring_array_num_strings(prev_tag_features) + (direct_word_id != UINT32_MAX);
+         if (original_events_reserve(event_n)) {
+             size_t e = 0;
+-            for (fidx = 0; fidx < cstring_array_num_strings(features); fidx++) { if (direct_word_id != UINT32_MAX && direct_word_array == features && direct_word_pos == fidx) { original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX; } feature = cstring_array_get_string(features, fidx); original_events[e].id = crf_get_feature_id(self, feature, &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 0; }
++            for (fidx = 0; fidx < cstring_array_num_strings(features); fidx++) { if (direct_word_id != UINT32_MAX && direct_word_array == features && direct_word_pos == fidx) { original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX; } feature = cstring_array_get_string(features, fidx); size_t feature_len = cstring_array_token_length(features, fidx); original_events[e].id = crf_get_feature_id_len(self, feature, feature_len, &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 0; }
+             if (direct_word_id != UINT32_MAX && direct_word_array == features) { original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX; }
+-            cstring_array_foreach(prev_tag_features, fidx, feature, { original_events[e].id = crf_get_state_trans_feature_id(self, feature, &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 1; })
++            cstring_array_foreach(prev_tag_features, fidx, feature, { original_events[e].id = crf_get_state_trans_feature_id_len(self, feature, cstring_array_token_length(prev_tag_features, fidx), &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 1; })
+             uint32_t *sindptr = self->weights->indptr->a, *sindices = self->weights->indices->a;
+             double *sdata = self->weights->data->a, *state_scores = state_score(crf_context, t);
+             uint32_t *tindptr = self->state_trans_weights->indptr->a, *tindices = self->state_trans_weights->indices->a;
+@@ -168,7 +170,7 @@
+         double *data = self->weights->data->a;
+ 
+         cstring_array_foreach(features, fidx, feature, {
+-            if (!crf_get_feature_id(self, feature, &feature_id)) {
++            if (!crf_get_feature_id_len(self, feature, cstring_array_token_length(features, fidx), &feature_id)) {
+                 continue;
+             }
+ 
+@@ -185,7 +187,7 @@
+         data = self->state_trans_weights->data->a;
+ 
+         cstring_array_foreach(prev_tag_features, fidx, feature, {
+-            if (!crf_get_state_trans_feature_id(self, feature, &feature_id)) {
++            if (!crf_get_state_trans_feature_id_len(self, feature, cstring_array_token_length(prev_tag_features, fidx), &feature_id)) {
+                 continue;
+             }
+ 
+--- a/trie.c
++++ b/trie.c
+@@ -759,6 +759,11 @@
+      return trie_get_data_at_index(self, node_id, data);
+ }
+ 
++inline bool trie_get_data_len(trie_t *self, char *key, size_t len, uint32_t *data) {
++     uint32_t node_id = trie_get_len(self, key, len);
++     return trie_get_data_at_index(self, node_id, data);
++}
++
+ inline bool trie_set_data_at_index(trie_t *self, uint32_t index, uint32_t data) {
+     if (index == NULL_NODE_ID) return false;
+      trie_node_t node = trie_get_node(self, index);
+@@ -866,8 +871,9 @@
+             trie_data_node_t data_node = trie_get_data_node(self, node);
+ 
+             char *query_tail = *ptr ? (char *) ptr + 1 : (char *) ptr;
+-
+-            if (data_node.tail != 0 && trie_compare_tail(self, query_tail, strlen(query_tail) + 1, data_node.tail)) {
++            size_t query_tail_len = *ptr ? len - i : 1;
++
++            if (data_node.tail != 0 && trie_compare_tail(self, query_tail, query_tail_len, data_node.tail)) {
+                 return next_id;
+             } else {
+                 return NULL_NODE_ID;
+--- a/trie.h
++++ b/trie.h
+@@ -98,6 +98,7 @@
+ 
+ bool trie_get_data_at_index(trie_t *self, uint32_t index,  uint32_t *data);
+ bool trie_get_data(trie_t *self, char *key, uint32_t *data);
++bool trie_get_data_len(trie_t *self, char *key, size_t len, uint32_t *data);
+ bool trie_set_data_at_index(trie_t *self, uint32_t index, uint32_t data);
+ bool trie_set_data(trie_t *self, char *key, uint32_t data);
+ 

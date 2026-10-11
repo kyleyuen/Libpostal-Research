@@ -1,0 +1,64 @@
+--- a/crf.c
++++ b/crf.c
+@@ -13,7 +13,9 @@
+ }
+ 
+ #ifdef EXP_EVENT_FLOW
++#define CRF_WORD_ID_CONFIRMED_MISS (UINT32_MAX - 1u)
+ static uint32_t direct_word_id = UINT32_MAX; static cstring_array *direct_word_array = NULL; static uint32_t direct_word_pos = 0;
++static bool direct_word_missing = false;
+ #ifdef EXP_ORACLE
+ static uint32_t oracle_direct_id = UINT32_MAX, oracle_direct_pos = 0; static const char *oracle_direct_word = NULL;
+ #endif
+@@ -62,8 +64,9 @@
+ #endif
+ 
+ #ifdef EXP_EVENT_FLOW
+-bool crf_state_word_id(crf_t *self, const char *word, uint32_t *id) { size_t n = strlen(word); char *key = malloc(n + 6); if (!key) return false; memcpy(key, "word|", 5); memcpy(key + 5, word, n + 1); bool ok = crf_get_feature_id(self, key, id); free(key); return ok; }
+-void crf_direct_state_word(cstring_array *a, uint32_t id, const char *word) { direct_word_array = a; direct_word_pos = cstring_array_num_strings(a); direct_word_id = id;
++/* Returns true when lookup completed: hit ID on success, CRF_WORD_ID_CONFIRMED_MISS on exact miss. */
++bool crf_state_word_id(crf_t *self, const char *word, uint32_t *id) { size_t n = strlen(word); char *key = malloc(n + 6); if (!key) return false; memcpy(key, "word|", 5); memcpy(key + 5, word, n + 1); uint32_t found_id; bool ok = crf_get_feature_id(self, key, &found_id); free(key); if (!ok) { *id = CRF_WORD_ID_CONFIRMED_MISS; return true; } if (found_id >= CRF_WORD_ID_CONFIRMED_MISS) return false; *id = found_id; return true; }
++void crf_direct_state_word(cstring_array *a, uint32_t id, const char *word) { direct_word_array = a; direct_word_pos = cstring_array_num_strings(a); direct_word_id = id; direct_word_missing = false;
+ #ifdef EXP_ORACLE
+ oracle_direct_id = id; oracle_direct_pos = direct_word_pos; oracle_direct_word = word;
+ #else
+@@ -73,6 +76,7 @@
+ direct_word_count++;
+ #endif
+ }
++void crf_direct_state_word_missing(cstring_array *a) { direct_word_array = a; direct_word_pos = cstring_array_num_strings(a); direct_word_missing = true; }
+ void crf_direct_state_word_fallback(void) {
+ #ifdef EXP_EVENT_STATS
+ direct_word_fallback++;
+@@ -107,7 +111,7 @@
+     }
+ 
+     for (uint32_t t = 0; t < num_tokens; t++) {
+-        direct_word_id = UINT32_MAX; direct_word_array = NULL;
++        direct_word_id = UINT32_MAX; direct_word_array = NULL; direct_word_missing = false;
+         cstring_array_clear(features);
+         cstring_array_clear(prev_tag_features);
+ 
+@@ -145,8 +149,21 @@
+         size_t event_n = cstring_array_num_strings(features) + cstring_array_num_strings(prev_tag_features) + (direct_word_id != UINT32_MAX);
+         if (original_events_reserve(event_n)) {
+             size_t e = 0;
+-            for (fidx = 0; fidx < cstring_array_num_strings(features); fidx++) { if (direct_word_id != UINT32_MAX && direct_word_array == features && direct_word_pos == fidx) { original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX; } feature = cstring_array_get_string(features, fidx); original_events[e].id = crf_get_feature_id(self, feature, &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 0; }
++            for (fidx = 0; fidx < cstring_array_num_strings(features); fidx++) {
++                if (direct_word_id != UINT32_MAX && direct_word_array == features && direct_word_pos == fidx) {
++                    original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX;
++                }
++                feature = cstring_array_get_string(features, fidx);
++                if (direct_word_missing && direct_word_array == features && direct_word_pos == fidx) {
++                    /* Front-fill already queried this exact `word|TOKEN` key and confirmed it absent. */
++                    original_events[e].id = UINT32_MAX; direct_word_missing = false;
++                } else {
++                    original_events[e].id = crf_get_feature_id(self, feature, &feature_id) ? feature_id : UINT32_MAX;
++                }
++                original_events[e++].trans = 0;
++            }
+             if (direct_word_id != UINT32_MAX && direct_word_array == features) { original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX; }
++            direct_word_missing = false;
+             cstring_array_foreach(prev_tag_features, fidx, feature, { original_events[e].id = crf_get_state_trans_feature_id(self, feature, &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 1; })
+             uint32_t *sindptr = self->weights->indptr->a, *sindices = self->weights->indices->a;
+             double *sdata = self->weights->data->a, *state_scores = state_score(crf_context, t);

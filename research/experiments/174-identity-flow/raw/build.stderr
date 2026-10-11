@@ -1,0 +1,256 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/libpostal.c:10:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_parser.h:52:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/averaged_perceptron.h:27:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+1 warning generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:10:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/language_classifier.h:13:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/logistic_regression.h:26:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:825:74: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  825 |                 log_debug("phrase.start = %zu, prev_phrase_end = %zu\n", phrase.start, prev_phrase_end);
+      |                                           ~~~                            ^~~~~~~~~~~~
+      |                                           %u
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:872:89: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'bool' [-Wformat]
+  872 |                     log_debug("have_strictly_ignorable=%zu, phrase_is_canonical=%zu\n", have_strictly_ignorable, phrase_is_canonical);
+      |                                                        ~~~                              ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:872:114: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'bool' [-Wformat]
+  872 |                     log_debug("have_strictly_ignorable=%zu, phrase_is_canonical=%zu\n", have_strictly_ignorable, phrase_is_canonical);
+      |                                                                                 ~~~                              ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:932:26: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+  932 |                     bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                          ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1184:46: warning: unused variable 'start_index' [-Wunused-variable]
+ 1184 |                                     uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                                              ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1202:38: warning: unused variable 'start_index' [-Wunused-variable]
+ 1202 |                             uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                                      ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1235:26: warning: unused variable 'start_index' [-Wunused-variable]
+ 1235 |                 uint32_t start_index = cstring_array_start_token(tree->strings);
+      |                          ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1310:22: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+ 1310 |                 bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                      ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1344:22: warning: unused variable 'have_period_affixes' [-Wunused-variable]
+ 1344 |                 bool have_period_affixes = add_period_affixes_or_token(tree, str, token, options);
+      |                      ^~~~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/expand.c:1440:11: warning: unused variable 'lang' [-Wunused-variable]
+ 1440 |     char *lang;
+      |           ^~~~
+11 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_dictionary.c:63:47: warning: second argument to 'va_arg' is of promotable type 'uint16_t' (aka 'unsigned short'); this va_arg has undefined behavior because arguments will be promoted to 'int' [-Wvarargs]
+   63 |         uint16_t dictionary_id = va_arg(args, uint16_t);
+      |                                               ^~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/__stdarg_va_arg.h:20:47: note: expanded from macro 'va_arg'
+   20 | #define va_arg(ap, type) __builtin_va_arg(ap, type)
+      |                                               ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_dictionary.c:173:10: warning: variable 'is_phrase' set but not used [-Wunused-but-set-variable]
+  173 |     bool is_phrase = false;
+      |          ^
+2 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/transliterate.c:614:12: warning: variable 'group_num_start' set but not used [-Wunused-but-set-variable]
+  614 |     size_t group_num_start = 0;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/transliterate.c:615:12: warning: variable 'group_num_len' set but not used [-Wunused-but-set-variable]
+  615 |     size_t group_num_len = 0;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/transliterate.c:1027:26: warning: variable 'added_previous_phrase' set but not used [-Wunused-but-set-variable]
+ 1027 |                     bool added_previous_phrase = false;
+      |                          ^
+3 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/trie.c:1074:13: warning: unused variable 'base' [-Wunused-variable]
+ 1074 |     int32_t base;
+      |             ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/trie.c:1075:13: warning: unused variable 'check' [-Wunused-variable]
+ 1075 |     int32_t check;
+      |             ^~~~~
+2 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/trie_search.c:184:16: warning: initialization of pointer of type 'phrase_array *' to null from a constant boolean expression [-Wbool-conversion]
+  184 |         return false;
+      |                ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/trie_search.c:897:72: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  897 |                     log_debug("No space transition, phrase_len=%zu\n", phrase_len);
+      |                                                                ~~~     ^~~~~~~~~~
+      |                                                                %u
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/log/log.h:52:119: note: expanded from macro 'log_debug'
+   52 | #define log_debug(M, ...) do { if (0) fprintf(stderr, "\33[34mDEBUG\33[39m " M "  \33[90m at %s (%s:%d) \33[39m\n", ##__VA_ARGS__, __func__, __FILE__, __LINE__); } while (0)
+      |                                                                              ~                                        ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/trie_search.c:854:12: warning: variable 'separator_char_len' set but not used [-Wunused-but-set-variable]
+  854 |     size_t separator_char_len = 0;
+      |            ^
+3 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/string_utils.c:116:17: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  116 |     for (size_t count = 0; (temp = strstr(start, replace)); count++) {
+      |                 ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/string_utils.c:193:18: warning: variable 'remaining' set but not used [-Wunused-but-set-variable]
+  193 |     ssize_t len, remaining;
+      |                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/string_utils.c:384:13: warning: unused variable 'num_utf8_chars' [-Wunused-variable]
+  384 |     ssize_t num_utf8_chars = 0;
+      |             ^~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/string_utils.c:521:12: warning: unused variable 'remaining' [-Wunused-variable]
+  521 |     size_t remaining = len;
+      |            ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/string_utils.c:687:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  687 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/string_utils.c:713:10: warning: unused variable 'ignorable' [-Wunused-variable]
+  713 |     bool ignorable = true;
+      |          ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/string_utils.c:876:13: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  876 |     ssize_t index = 0;
+      |             ^
+7 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/normalize.c:269:22: warning: unused variable 'key' [-Wunused-variable]
+  269 |             khiter_t key = kh_put(int_set, scripts, (khint_t)script, &ret);
+      |                      ^~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/normalize.c:208:11: warning: unused variable 'numex_replaced' [-Wunused-variable]
+  208 |     char *numex_replaced = NULL;
+      |           ^~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/normalize.c:374:14: warning: unused variable 'is_hyphen' [-Wunused-variable]
+  374 |         bool is_hyphen = utf8_is_hyphen(ch);
+      |              ^~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/normalize.c:367:10: warning: unused variable 'append_char' [-Wunused-variable]
+  367 |     bool append_char = true;
+      |          ^~~~~~~~~~~
+4 warnings generated.
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:805:18: warning: unused variable 'rule_index' [-Wunused-variable]
+  805 |         uint32_t rule_index = phrase.data;
+      |                  ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:703:19: warning: unused variable 'ch' [-Wunused-variable]
+  703 |     unsigned char ch = '\0';
+      |                   ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:706:10: warning: unused variable 'advance_state' [-Wunused-variable]
+  706 |     bool advance_state = true;
+      |          ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:714:17: warning: unused variable 'number_str' [-Wunused-variable]
+  714 |     char_array *number_str = NULL;
+      |                 ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:978:10: warning: unused variable 'whole_tokens_only' [-Wunused-variable]
+  978 |     bool whole_tokens_only = language->whole_tokens_only;
+      |          ^~~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/numex.c:1073:10: warning: unused variable 'ignorable' [-Wunused-variable]
+ 1073 |     bool ignorable = true;
+      |          ^~~~~~~~~
+6 warnings generated.
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/address_parser.h:52:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/averaged_perceptron.h:27:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:491:10: warning: unused variable 'has_key' [-Wunused-variable]
+  491 |     bool has_key = trie_get_data(parser->vocab, word, &count);
+      |          ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:961:5: error: use of undeclared identifier 'trie_ftt_slot'
+  961 |     trie_ftt_slot = NULL; trie_ftt_n = 0;
+      |     ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:961:27: error: use of undeclared identifier 'trie_ftt_n'
+  961 |     trie_ftt_slot = NULL; trie_ftt_n = 0;
+      |                           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1296:13: warning: unused variable 'token' [-Wunused-variable]
+ 1296 |     token_t token = tokenized->tokens->a[i];
+      |             ^~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1385:13: warning: unused variable 'membership' [-Wunused-variable]
+ 1385 |     int64_t membership;
+      |             ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1413:14: warning: unused variable 'phrase' [-Wunused-variable]
+ 1413 |     phrase_t phrase;
+      |              ^~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1693:64: error: use of undeclared identifier 'trie_ftt_slot'; did you mean 'trie_get_root'?
+ 1693 |         if ((size_t)j < trie_ftt_n && trie_ftt_slot != NULL && trie_ftt_slot[j] >= 0 &&
+      |                                                                ^~~~~~~~~~~~~
+      |                                                                trie_get_root
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src/trie.h:93:13: note: 'trie_get_root' declared here
+   93 | trie_node_t trie_get_root(trie_t *self);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1693:64: error: subscript of pointer to function type 'trie_node_t (trie_t *)' (aka 'struct trie_node (struct trie *)')
+ 1693 |         if ((size_t)j < trie_ftt_n && trie_ftt_slot != NULL && trie_ftt_slot[j] >= 0 &&
+      |                                                                ^~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1693:25: error: use of undeclared identifier 'trie_ftt_n'
+ 1693 |         if ((size_t)j < trie_ftt_n && trie_ftt_slot != NULL && trie_ftt_slot[j] >= 0 &&
+      |                         ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1693:39: error: use of undeclared identifier 'trie_ftt_slot'
+ 1693 |         if ((size_t)j < trie_ftt_n && trie_ftt_slot != NULL && trie_ftt_slot[j] >= 0 &&
+      |                                       ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1701:34: error: use of undeclared identifier 'trie_ftt_slot'
+ 1701 |                 slot = (uint32_t)trie_ftt_slot[j];
+      |                                  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1938:13: error: use of undeclared identifier 'APF'
+ 1938 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_STREET, "street", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1938:100: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1938 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_STREET, "street", phrase_string, phrase_string_len);
+      |                                                                                                    ^~~~~~~~~~~~~~~~~
+      |                                                                                                    phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1888:11: note: 'phrase_string' declared here
+ 1888 |     char *phrase_string = NULL;
+      |           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1939:13: error: use of undeclared identifier 'APF'
+ 1939 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_NAME, "name", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1939:96: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1939 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_NAME, "name", phrase_string, phrase_string_len);
+      |                                                                                                ^~~~~~~~~~~~~~~~~
+      |                                                                                                phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1888:11: note: 'phrase_string' declared here
+ 1888 |     char *phrase_string = NULL;
+      |           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1940:13: error: use of undeclared identifier 'APF'
+ 1940 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_CATEGORY, "category", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1940:104: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1940 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_CATEGORY, "category", phrase_string, phrase_string_len);
+      |                                                                                                        ^~~~~~~~~~~~~~~~~
+      |                                                                                                        phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1888:11: note: 'phrase_string' declared here
+ 1888 |     char *phrase_string = NULL;
+      |           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1941:13: error: use of undeclared identifier 'APF'
+ 1941 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_UNIT, "unit", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1941:96: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1941 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_UNIT, "unit", phrase_string, phrase_string_len);
+      |                                                                                                ^~~~~~~~~~~~~~~~~
+      |                                                                                                phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1888:11: note: 'phrase_string' declared here
+ 1888 |     char *phrase_string = NULL;
+      |           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1942:13: error: use of undeclared identifier 'APF'
+ 1942 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_PO_BOX, "po_box", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1942:100: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1942 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_PO_BOX, "po_box", phrase_string, phrase_string_len);
+      |                                                                                                    ^~~~~~~~~~~~~~~~~
+      |                                                                                                    phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1888:11: note: 'phrase_string' declared here
+ 1888 |     char *phrase_string = NULL;
+      |           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1943:13: error: use of undeclared identifier 'APF'
+ 1943 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_LEVEL, "level", phrase_string, phrase_string_len);
+      |             ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1943:98: error: use of undeclared identifier 'phrase_string_len'; did you mean 'phrase_string'?
+ 1943 |             APF(features, address_phrase_types, LIBPOSTAL_ADDRESS_LEVEL, "level", phrase_string, phrase_string_len);
+      |                                                                                                  ^~~~~~~~~~~~~~~~~
+      |                                                                                                  phrase_string
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/174-identity-flow/artifacts/identity/src/address_parser.c:1888:11: note: 'phrase_string' declared here
+ 1888 |     char *phrase_string = NULL;
+      |           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+5 warnings and 20 errors generated.

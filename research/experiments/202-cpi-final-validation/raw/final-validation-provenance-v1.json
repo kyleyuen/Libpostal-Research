@@ -1,0 +1,690 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-10T07:27:16.699182+00:00",
+  "experiment": "202 accepted packaged CPI final validation",
+  "parser_source_changed": false,
+  "cohorts": [
+    {
+      "run_id": "202-final-senzing-v2",
+      "start": "2026-10-09T21:52:44-0700",
+      "final_run_log_line": "2026-10-09T22:05:46-0700 done: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/202-final-senzing-v2",
+      "argv": [
+        "research/suite/run_suite.py",
+        "--config",
+        "research/experiments/202-cpi-final-validation/raw/senzing-timing-v1.json",
+        "--run-id",
+        "202-final-senzing-v2",
+        "--stages",
+        "integrity,timing,memory,threads,report"
+      ],
+      "config": {
+        "path": "research/experiments/202-cpi-final-validation/raw/senzing-timing-v1.json",
+        "sha256": "04d7a4170c4a974dd19afa50a3826056129d1eaa870ab3bda58714f187420be4",
+        "bytes": 2554
+      },
+      "rounds": 3,
+      "passes": 200,
+      "datasets": [
+        {
+          "name": "golden-v1",
+          "source": "senzing",
+          "addresses": 12863,
+          "txt": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+            "sha256": "02252919fc2a24a3f0af41f3f7c5d6f8aaed6a5eb9548a2dcff6a4fcfe5f6c91"
+          },
+          "tsv": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/v1-all.tsv",
+            "sha256": "43224e8b6381bf5b72f18601a28750ac500c6f40c30a739183b56a3f60cd57db"
+          }
+        },
+        {
+          "name": "novel",
+          "source": "senzing-style",
+          "addresses": 12863,
+          "txt": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt",
+            "sha256": "a424c53e75d3d55f4172f7b13a59bf5ece961bf0f4acd7b85e214ce0aee09d47"
+          },
+          "tsv": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.tsv",
+            "sha256": "0b4c11201bd6fff7d959d1c0e124ea20bcac3364a811b3b73c5538003a0c5815"
+          }
+        }
+      ],
+      "timing_capture_count": 12,
+      "timing_exit_codes": [
+        "0"
+      ],
+      "artifacts": {
+        "original-000": {
+          "bench_ext": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+            "sha256": "a4968702ab9415f3fc71f509d73284e5d228073c49c825aeb7798b5b6e061a50"
+          },
+          "dump_outputs": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+            "sha256": "578a62678e98af38909bd112f8ac859852f0936dab9deeacf10eedd2f4b86a0d"
+          },
+          "fuzz_pipeline": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/fuzz_baseline",
+            "sha256": "5a657303e17cc2c48a6eaa92add370d2cd40f0dff4c9c21eeac1175d116fe95c"
+          }
+        },
+        "cpi-packaged": {
+          "bench_ext": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext",
+            "sha256": "c5612825963a18be1f4e7869da2bb2dc6fedf3f098189d195bad765247b43c5a"
+          },
+          "dump_outputs": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/dump_outputs",
+            "sha256": "ad8c83813018cd9168a444ecbb6fdc338a9624ebe931bace269e4916d2355f62"
+          },
+          "fuzz_pipeline": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/fuzz_pipeline",
+            "sha256": "456120c213405495e18e68de6c68ebf3b3ee5bfa618cdf302a7db35590cefc79"
+          }
+        }
+      },
+      "model_sha256": null,
+      "invocation": {
+        "path": "research/suite/results/202-final-senzing-v2/invocation.json",
+        "sha256": "d34bee942a2c4e62950e4d006f87ef1e3f857b8107934abe029ad0d3e42c3326",
+        "bytes": 375
+      },
+      "suite_config": {
+        "path": "research/suite/results/202-final-senzing-v2/suite.json",
+        "sha256": "04d7a4170c4a974dd19afa50a3826056129d1eaa870ab3bda58714f187420be4",
+        "bytes": 2554
+      },
+      "manifest": {
+        "path": "research/suite/results/202-final-senzing-v2/manifest.json",
+        "sha256": "d9a2bbbbdfb75ccced7d1bc7c400a655ef08a2656a294c8c6c5d520bb42b2050",
+        "bytes": 3715
+      },
+      "results": {
+        "path": "research/suite/results/202-final-senzing-v2/results.json",
+        "sha256": "3775b5c54be07444f0c36ba550b8beaeff9302005ac03db349af2ea443084976",
+        "bytes": 4419
+      },
+      "run_log": {
+        "path": "research/suite/results/202-final-senzing-v2/run.log",
+        "sha256": "bf9c376e18705c3330107aa77bd1195d22a79e3e0a2dcf4e013302984c91d440",
+        "bytes": 1793
+      },
+      "gate_log": {
+        "path": "research/suite/results/202-final-senzing-v2/gate.log",
+        "sha256": "26aa86670b817166da86aae808bd798c2cb509c32785fa37ff31902270d2650b",
+        "bytes": 992
+      },
+      "environment_log": {
+        "path": "research/suite/results/202-final-senzing-v2/env.txt",
+        "sha256": "63c0afba9ea364239edadf9241b0bbff8cbfae0c4ee3b042cb8003d987c021c7",
+        "bytes": 12218
+      },
+      "report": {
+        "path": "research/suite/results/202-final-senzing-v2/report.md",
+        "sha256": "2b65bad9458a11c46b9fd6191f9f3aaaf8620ff77a7678d55c9b0364f6c87eb0",
+        "bytes": 2491
+      }
+    },
+    {
+      "run_id": "202-ac-osm-v3-v13-resumed-v1",
+      "start": "2026-10-09T23:03:34-0700",
+      "final_run_log_line": "2026-10-10T00:07:22-0700 done: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/202-ac-osm-v3-v13-resumed-v1",
+      "argv": [
+        "research/suite/run_suite.py",
+        "--config",
+        "research/experiments/202-cpi-final-validation/raw/osm-ac-resumed-v1.json",
+        "--run-id",
+        "202-ac-osm-v3-v13-resumed-v1",
+        "--stages",
+        "integrity,timing,memory,threads,report"
+      ],
+      "config": {
+        "path": "research/experiments/202-cpi-final-validation/raw/osm-ac-resumed-v1.json",
+        "sha256": "cd0d79842147fbb1fb1d503fa216466414dfae40d7c536adc8eb7dba81e9bc82",
+        "bytes": 4798
+      },
+      "rounds": 3,
+      "passes": 420,
+      "datasets": [
+        {
+          "name": "osm-v3",
+          "source": "openstreetmap",
+          "addresses": 11405,
+          "txt": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.txt",
+            "sha256": "43594f43a39b30c46ef6adf99f70a8e435c0fa7d59fce8199611c8d927027c80"
+          },
+          "tsv": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v3-osm/osm.tsv",
+            "sha256": "45b6b9b5244594e8c46ca2b8fb25cc6bcc8089eae36e78128a556539228a145f"
+          }
+        },
+        {
+          "name": "unseen-v4",
+          "source": "openstreetmap",
+          "addresses": 10293,
+          "txt": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.txt",
+            "sha256": "7d6ae0bd3da7c731e3842e55ba06981d17530e2e0d483f08ca24d815336e5013"
+          },
+          "tsv": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v4-osm-unseen/unseen.tsv",
+            "sha256": "37a8306e98615d5d2c314c10337ed2d53e30736ef3c653e38f88ac74d146d339"
+          }
+        },
+        {
+          "name": "unseen-v5",
+          "source": "openstreetmap",
+          "addresses": 8794,
+          "txt": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v5-osm-unseen/unseen5.txt",
+            "sha256": "1d2c61777ea36c5d640cc6b4022411812272ef1d4e71063a915c027ef246221a"
+          },
+          "tsv": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v5-osm-unseen/unseen5.tsv",
+            "sha256": "2f81b72375e4a2e6be3a3237675555a22f2f9c5998edb2c78db5df0d2d6b89ee"
+          }
+        },
+        {
+          "name": "unseen-v6",
+          "source": "openstreetmap",
+          "addresses": 9450,
+          "txt": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v6-osm-unseen/unseen6.txt",
+            "sha256": "5d84824e3e3c4c7f3b3b28210f3a668e199ac698d8b1a0f51d40285d8d4c4acb"
+          },
+          "tsv": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v6-osm-unseen/unseen6.tsv",
+            "sha256": "44218f8a24c98250c46f68f03f3ada386cd017505d2b64e6d6cc5276785bbb45"
+          }
+        },
+        {
+          "name": "unseen-v7",
+          "source": "openstreetmap",
+          "addresses": 8973,
+          "txt": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v7-osm-unseen/unseen7.txt",
+            "sha256": "9377e25c9802e4fb9b8853646d766aab5075b258b57c107d32161c861dfdebd1"
+          },
+          "tsv": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v7-osm-unseen/unseen7.tsv",
+            "sha256": "500633c3ec7ce3a029c4cb322833ab12e664683c429b7c6de0012dd0fc370f81"
+          }
+        },
+        {
+          "name": "unseen-v8",
+          "source": "openstreetmap",
+          "addresses": 9981,
+          "txt": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.txt",
+            "sha256": "f2928154d081d3520e937defad7d22794cdd99a777743b511ee766ad50455563"
+          },
+          "tsv": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v8-osm-unseen/unseen8.tsv",
+            "sha256": "3a0f0a4a78f4b0b89b13a3049ceee02f9e7387836b2772cff797c6f2a1a82d7d"
+          }
+        },
+        {
+          "name": "unseen-v9",
+          "source": "openstreetmap",
+          "addresses": 9480,
+          "txt": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v9-osm-unseen/unseen9.txt",
+            "sha256": "15ef8f0552f2f74c9c3d996593103c3750d9b931233f4e46837906d7f452fe90"
+          },
+          "tsv": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v9-osm-unseen/unseen9.tsv",
+            "sha256": "67a3c0d7e7fecc968a90fc84a87f2acba86c55cf72d1c753736ab96080855461"
+          }
+        },
+        {
+          "name": "unseen-v10",
+          "source": "openstreetmap",
+          "addresses": 8567,
+          "txt": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.txt",
+            "sha256": "75df7735bb21334069ee79585783bbd7e37bbad28156adf6a6a4229eafc7ba07"
+          },
+          "tsv": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v10-osm-unseen/unseen10.tsv",
+            "sha256": "e2eb178ddcc03fb56ed5e09b02099fa9b9b6e7736c9fef8b405cef5320a915cd"
+          }
+        },
+        {
+          "name": "unseen-v11",
+          "source": "openstreetmap",
+          "addresses": 7882,
+          "txt": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.txt",
+            "sha256": "3ee15729bf8527e67896f4d0b588da26bfa30ef8b658a2086625da00029b0773"
+          },
+          "tsv": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v11-osm-unseen/unseen11.tsv",
+            "sha256": "1ddc587c2f3c9b25bb3ea2049cfb025929761c5f9f8f4e6a11b79e327848b898"
+          }
+        },
+        {
+          "name": "unseen-v12",
+          "source": "openstreetmap",
+          "addresses": 8273,
+          "txt": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v12-osm-unseen/unseen12.txt",
+            "sha256": "78b80c180873d9638692219c930f3e48d3cc45b5eff304311c4ed5d0ce9e2834"
+          },
+          "tsv": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v12-osm-unseen/unseen12.tsv",
+            "sha256": "deaff65d688fa5255556aafcb1e4feda02244fa02fc0bace5e1e3a6af1d85dd1"
+          }
+        },
+        {
+          "name": "unseen-v13",
+          "source": "openstreetmap",
+          "addresses": 9716,
+          "txt": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v13-osm-unseen/unseen13.txt",
+            "sha256": "0f5462fadcfe2884412a643e8e2b222dfe8e5528e3d5698533b3abb849e26c3c"
+          },
+          "tsv": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v13-osm-unseen/unseen13.tsv",
+            "sha256": "45986e9aa4240cc11f8472fcfe7277458e1ac467009b5dcab6035da61e162696"
+          }
+        }
+      ],
+      "timing_capture_count": 66,
+      "timing_exit_codes": [
+        "0"
+      ],
+      "artifacts": {
+        "original-000": {
+          "bench_ext": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+            "sha256": "a4968702ab9415f3fc71f509d73284e5d228073c49c825aeb7798b5b6e061a50"
+          },
+          "dump_outputs": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+            "sha256": "578a62678e98af38909bd112f8ac859852f0936dab9deeacf10eedd2f4b86a0d"
+          },
+          "fuzz_pipeline": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/fuzz_baseline",
+            "sha256": "5a657303e17cc2c48a6eaa92add370d2cd40f0dff4c9c21eeac1175d116fe95c"
+          }
+        },
+        "cpi-packaged": {
+          "bench_ext": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext",
+            "sha256": "c5612825963a18be1f4e7869da2bb2dc6fedf3f098189d195bad765247b43c5a"
+          },
+          "dump_outputs": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/dump_outputs",
+            "sha256": "ad8c83813018cd9168a444ecbb6fdc338a9624ebe931bace269e4916d2355f62"
+          },
+          "fuzz_pipeline": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/fuzz_pipeline",
+            "sha256": "456120c213405495e18e68de6c68ebf3b3ee5bfa618cdf302a7db35590cefc79"
+          }
+        }
+      },
+      "model_sha256": null,
+      "invocation": {
+        "path": "research/suite/results/202-ac-osm-v3-v13-resumed-v1/invocation.json",
+        "sha256": "854169959ccabe7167c1e7676b20767864be232bfc5191a4be0611de3b374169",
+        "bytes": 523
+      },
+      "suite_config": {
+        "path": "research/suite/results/202-ac-osm-v3-v13-resumed-v1/suite.json",
+        "sha256": "cd0d79842147fbb1fb1d503fa216466414dfae40d7c536adc8eb7dba81e9bc82",
+        "bytes": 4798
+      },
+      "manifest": {
+        "path": "research/suite/results/202-ac-osm-v3-v13-resumed-v1/manifest.json",
+        "sha256": "313f86a56aa40d3b1a443ed2df3cb050930e587218d8c690fbf0efbec4f47345",
+        "bytes": 7270
+      },
+      "results": {
+        "path": "research/suite/results/202-ac-osm-v3-v13-resumed-v1/results.json",
+        "sha256": "fb3f658c219d06e3526364f527d60440d7585c1d7e622b40f0a1ff33f53a3f1e",
+        "bytes": 17009
+      },
+      "run_log": {
+        "path": "research/suite/results/202-ac-osm-v3-v13-resumed-v1/run.log",
+        "sha256": "6df8442b5c19ad78f53c0d84f275a33ba717d3c7b00f4cf350ad417f85a73876",
+        "bytes": 6391
+      },
+      "gate_log": {
+        "path": "research/suite/results/202-ac-osm-v3-v13-resumed-v1/gate.log",
+        "sha256": "cb9e476bdeed9044ff5c2a08935539381e7703126e88cc297bbfe0aec596524a",
+        "bytes": 4340
+      },
+      "environment_log": {
+        "path": "research/suite/results/202-ac-osm-v3-v13-resumed-v1/env.txt",
+        "sha256": "ea23933bca58e393eb12f7db53f7c8001898ac410b8ff4d9aa3bce2398795d86",
+        "bytes": 64847
+      },
+      "report": {
+        "path": "research/suite/results/202-ac-osm-v3-v13-resumed-v1/report.md",
+        "sha256": "aada49dc2c1b466fa8c2ceea71b311416ef0e427da3e64d96f844a40c432d3ba",
+        "bytes": 3455
+      }
+    },
+    {
+      "run_id": "202-ac-unseen-v14-resumed-v1",
+      "start": "2026-10-10T00:07:38-0700",
+      "final_run_log_line": "2026-10-10T00:13:57-0700 done: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/202-ac-unseen-v14-resumed-v1",
+      "argv": [
+        "research/suite/run_suite.py",
+        "--config",
+        "research/experiments/202-cpi-final-validation/raw/v14-ac-resumed-v1.json",
+        "--run-id",
+        "202-ac-unseen-v14-resumed-v1",
+        "--stages",
+        "integrity,timing,memory,threads,report"
+      ],
+      "config": {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-ac-resumed-v1.json",
+        "sha256": "2fb4c7c1e1bff94510236de2d8b314189b06f9c60afc15d4422763c3fd6641f1",
+        "bytes": 2289
+      },
+      "rounds": 3,
+      "passes": 2300,
+      "datasets": [
+        {
+          "name": "unseen-v14",
+          "source": "openstreetmap",
+          "addresses": 1801,
+          "txt": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.txt",
+            "sha256": "68e60e0da7e28258489f492c8682aed25c66a3054bbc56a29b5413711398d61b"
+          },
+          "tsv": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv",
+            "sha256": "c795d62b629390c7ddf01d416f0d030e0bd9f075cb33d514ce10792b5b05e977"
+          }
+        }
+      ],
+      "timing_capture_count": 6,
+      "timing_exit_codes": [
+        "0"
+      ],
+      "artifacts": {
+        "original-000": {
+          "bench_ext": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+            "sha256": "a4968702ab9415f3fc71f509d73284e5d228073c49c825aeb7798b5b6e061a50"
+          },
+          "dump_outputs": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/dump_outputs",
+            "sha256": "578a62678e98af38909bd112f8ac859852f0936dab9deeacf10eedd2f4b86a0d"
+          },
+          "fuzz_pipeline": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/fuzz_baseline",
+            "sha256": "5a657303e17cc2c48a6eaa92add370d2cd40f0dff4c9c21eeac1175d116fe95c"
+          }
+        },
+        "cpi-packaged": {
+          "bench_ext": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext",
+            "sha256": "c5612825963a18be1f4e7869da2bb2dc6fedf3f098189d195bad765247b43c5a"
+          },
+          "dump_outputs": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/dump_outputs",
+            "sha256": "ad8c83813018cd9168a444ecbb6fdc338a9624ebe931bace269e4916d2355f62"
+          },
+          "fuzz_pipeline": {
+            "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/fuzz_pipeline",
+            "sha256": "456120c213405495e18e68de6c68ebf3b3ee5bfa618cdf302a7db35590cefc79"
+          }
+        }
+      },
+      "model_sha256": null,
+      "invocation": {
+        "path": "research/suite/results/202-ac-unseen-v14-resumed-v1/invocation.json",
+        "sha256": "21b4f876abd8c45830a0c421e26bcfab6bcf8cd8e7b981a009784b47256b9584",
+        "bytes": 373
+      },
+      "suite_config": {
+        "path": "research/suite/results/202-ac-unseen-v14-resumed-v1/suite.json",
+        "sha256": "2fb4c7c1e1bff94510236de2d8b314189b06f9c60afc15d4422763c3fd6641f1",
+        "bytes": 2289
+      },
+      "manifest": {
+        "path": "research/suite/results/202-ac-unseen-v14-resumed-v1/manifest.json",
+        "sha256": "f2f541fa8bfa4b888b5d444d79f2c1929332091e75126048bae11f611aea1c7d",
+        "bytes": 2890
+      },
+      "results": {
+        "path": "research/suite/results/202-ac-unseen-v14-resumed-v1/results.json",
+        "sha256": "74830b542ba97b712ffba2a921d65f097ea1cfab9ca6845c12f0780cc7db7e3d",
+        "bytes": 2886
+      },
+      "run_log": {
+        "path": "research/suite/results/202-ac-unseen-v14-resumed-v1/run.log",
+        "sha256": "34b0d985d860fb5bb996e03fad0f9ab833e75a28f994f70c7dbde1e4068412b7",
+        "bytes": 1397
+      },
+      "gate_log": {
+        "path": "research/suite/results/202-ac-unseen-v14-resumed-v1/gate.log",
+        "sha256": "4d74819af766df74810bf6f47dfc2bee28ec49ad74da057250fdbc9f022d43de",
+        "bytes": 620
+      },
+      "environment_log": {
+        "path": "research/suite/results/202-ac-unseen-v14-resumed-v1/env.txt",
+        "sha256": "3191ed78d5d738b0e6340c4b35883bb4caab1dba13f76c10c5779db4c24f235f",
+        "bytes": 5841
+      },
+      "report": {
+        "path": "research/suite/results/202-ac-unseen-v14-resumed-v1/report.md",
+        "sha256": "42c308ff3db66a7fe02deb98298a644ce272a865eb03e07c7657f9abf7af10a0",
+        "bytes": 2284
+      }
+    }
+  ],
+  "correctness_checks": [
+    {
+      "evidence": {
+        "path": "research/experiments/202-cpi-final-validation/raw/202-observed13-integrity-correctness-v1.bytewise.json",
+        "sha256": "82d6bd1f5f51eb77c66eec9dd4640195b1e756ea1a188171242554aab9fc933f",
+        "bytes": 7016
+      },
+      "scope": "13 datasets, 128540 rows"
+    },
+    {
+      "evidence": {
+        "path": "research/experiments/202-cpi-final-validation/raw/202-fresh-v14-correctness-v1.bytewise.json",
+        "sha256": "224062886ede3f68d18f7c64284e129f74c862bffa80e19bdfe470645f418281",
+        "bytes": 609
+      },
+      "scope": "fresh unseen-v14, 1801 rows"
+    },
+    {
+      "evidence": {
+        "path": "research/experiments/202-cpi-final-validation/raw/observed13-integrity-correctness-v1.json",
+        "sha256": "f5b1eac33505a263ba90d84ab4e4c036bb4a7808a1c46d261daafb41121b15e6",
+        "bytes": 5308
+      },
+      "scope": "13 datasets, 128540 rows"
+    }
+  ],
+  "fuzz": {
+    "scope": "two 2,000,000-case digest/status comparisons, seeds 1 and 2; not serialized component output byte comparisons",
+    "files": [
+      {
+        "path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_fuzz_s1.txt",
+        "sha256": "03c006745ec01b40f251f55a87d920aec382819688fee32ef7361771e313c487",
+        "bytes": 33153776
+      },
+      {
+        "path": "research/suite/results/202-observed13-integrity-correctness-v1/correctness/cpi-packaged_fuzz_s2.txt",
+        "sha256": "d6ce9ec63c1dae32fd796ecc819b60edd8f36119450a64cd5c6e01487dcf249f",
+        "bytes": 33152308
+      }
+    ],
+    "exact_accepted_cpi_serializer_fuzz": "not run"
+  },
+  "prior_api_evidence": {
+    "manifest": {
+      "path": "research/experiments/201-cpi-work-and-memory-prep/raw/api-memory-v1/capture/manifest.json",
+      "sha256": "df1f3a6d1b925cd7daf305b0a13300b040ec1f1e175f7f73615e4865f65c0c65",
+      "bytes": 21080
+    },
+    "scope": "78 safe registry cases; archive-linked shared-library adaptation; prior experiment 201, not a fresh 202 check"
+  },
+  "v14_live_thread_supplement": {
+    "files": [
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/capture_threads.py",
+        "sha256": "c6e7df90abc837854bf960c8b61b70b94f3423050b778c9dc0ef63e19cd2ed05",
+        "bytes": 3339
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/manifest.json",
+        "sha256": "fbc8e5583b7264180b5829ca1fdb5951826de8b6ce2749afaf5f38df420212a7",
+        "bytes": 4385
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/launcher-start.utc",
+        "sha256": "0949eb446b9546c02b45370fe9958489fdb0f5506da6009395ac1223dd98c00b",
+        "bytes": 21
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/launcher-end.utc",
+        "sha256": "e73e1cbf5dbf691114e2002076ff21d37017f7397adeacaacc4c5422422caedf",
+        "bytes": 21
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/launcher.exit",
+        "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "bytes": 2
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/launcher.stdout",
+        "sha256": "fbc8e5583b7264180b5829ca1fdb5951826de8b6ce2749afaf5f38df420212a7",
+        "bytes": 4385
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/launcher.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/original-000/gate.stdout",
+        "sha256": "6e1cb4345e091de4beff7634451244a9b2dfbf8bebfde9caf27d20b2a3635256",
+        "bytes": 37
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/original-000/gate.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/original-000/gate.exit",
+        "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "bytes": 2
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/original-000/command.json",
+        "sha256": "1f809260c0939a78a30b1dcb0612019a989999bddc76f228dcddc265622cb01d",
+        "bytes": 448
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/original-000/stdout.log",
+        "sha256": "50bc91a337b2e07dfd197847bd8d45d11ba391e155238d2f5ecf328ac34fc531",
+        "bytes": 49152
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/original-000/stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/original-000/result.json",
+        "sha256": "84e4ea7191a8623eaf032c76bd666ec6e0cd987564906c3cd4d4f57b30f58ab6",
+        "bytes": 1701
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/cpi-packaged/gate.stdout",
+        "sha256": "6e1cb4345e091de4beff7634451244a9b2dfbf8bebfde9caf27d20b2a3635256",
+        "bytes": 37
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/cpi-packaged/gate.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/cpi-packaged/gate.exit",
+        "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "bytes": 2
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/cpi-packaged/command.json",
+        "sha256": "5578628ea6bd19b14db6c8f35f511c040b0c33e31fa3138819c9328f88228214",
+        "bytes": 439
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/cpi-packaged/stdout.log",
+        "sha256": "d53b0029e64878a76c4658779f4155bdf8b97af84cc2f07e37dd0d03c08db7fc",
+        "bytes": 126976
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/cpi-packaged/stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "path": "research/experiments/202-cpi-final-validation/raw/v14-thread-supplement-v1/cpi-packaged/result.json",
+        "sha256": "1b443a2e5a2b9e916d0bf682d8af4ebb27419faaa3002300574aa8e105e84344",
+        "bytes": 1692
+      }
+    ],
+    "passes": 5000,
+    "samples_per_role": 6,
+    "sample_interval_seconds": 3,
+    "live_thread_count_each_sample": 1,
+    "process_killed_after_samples": true
+  },
+  "artifact_archives": {
+    "original_000_libpostal_a": {
+      "path": "research/experiments/000-baseline/artifacts/libpostal.a",
+      "sha256": "30de6ef223346735ac3035654ff0d435e5e621dccc94dc77869807dbf146fe22",
+      "bytes": 13641784
+    },
+    "accepted_119_cpi_libpostal_a": {
+      "path": "research/experiments/119-component-phrase-ids/artifacts/cpi/libpostal.a",
+      "sha256": "e56d3ae4799966543a5841ebce89f26fb5eeed396d862f6b31e4076354675a4e",
+      "bytes": 8135320
+    }
+  },
+  "historical_attempts": {
+    "partial_ac_osm": "research/suite/results/202-final-osm-observed13-v1/",
+    "battery_attempts": [
+      "research/suite/results/202-battery-osm-v3-v13-v1/",
+      "research/suite/results/202-battery-osm-v3-v13-v2/"
+    ],
+    "excluded_from_final_timing": true
+  },
+  "report_hashes": [
+    {
+      "path": "research/experiments/202-cpi-final-validation/FINAL_VALIDATION_REPORT.md",
+      "sha256": "f91f458c4e9b884ae2914573e1e40a3c57c04cece32b6532598a1cb9df358190",
+      "bytes": 10130
+    },
+    {
+      "path": "research/experiments/202-cpi-final-validation/README.md",
+      "sha256": "535f167c25ec30f4b828add16faaf3e838ac2568c33f99c22937efca52e0e4aa",
+      "bytes": 1757
+    },
+    {
+      "path": "research/experiments/202-cpi-final-validation/raw/osm-ac-resumed-final-audit-v1.md",
+      "sha256": "a42ef9fd8501033f7392f7562a6de77c0d2f5442dc5a7336ccf36ab35df55e80",
+      "bytes": 4552
+    },
+    {
+      "path": "research/experiments/202-cpi-final-validation/raw/final-independent-audit-v1.md",
+      "sha256": "72d5995ab04ffb80bc9ebd5142de1a038a98dd4353e9a9e32ef18dea15eab548",
+      "bytes": 4751
+    }
+  ]
+}

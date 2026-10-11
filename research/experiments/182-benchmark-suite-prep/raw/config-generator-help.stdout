@@ -1,0 +1,6 @@
+Make an isolated suite config for original 000 vs cpi vs a release candidate.
+
+Usage: python3 make_run_config.py /absolute/path/to/release-harness-dir [output.json]
+The release directory must contain bench_ext, dump_outputs, fuzz_pipeline.
+No benchmark is started; this only writes the experiment-local config.
+

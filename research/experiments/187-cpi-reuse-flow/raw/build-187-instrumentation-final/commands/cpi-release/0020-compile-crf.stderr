@@ -1,0 +1,77 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.h:20:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf_context.h:20:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:20:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/feature_dict.h:141:17: warning: unused variable 'op' [-Wunused-variable]
+  141 |     const char *op = d->split ? "feature_hash" : diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/feature_dict.h:142:17: warning: unused variable 'result_kind' [-Wunused-variable]
+  142 |     const char *result_kind = d->split ? "feature_id" : "vocab_frequency";
+      |                 ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:75:17: warning: unused variable 'ps' [-Wunused-variable]
+   75 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:75:45: warning: unused variable 'pf' [-Wunused-variable]
+   75 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                             ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:75:74: warning: unused variable 'po' [-Wunused-variable]
+   75 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                                                          ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:87:17: warning: unused variable 'ps' [-Wunused-variable]
+   87 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:87:45: warning: unused variable 'pf' [-Wunused-variable]
+   87 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                             ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:87:74: warning: unused variable 'po' [-Wunused-variable]
+   87 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                                                          ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:99:14: warning: variable 'n' set but not used [-Wunused-but-set-variable]
+   99 |     uint64_t n = 0, bytes = 0;
+      |              ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:99:21: warning: variable 'bytes' set but not used [-Wunused-but-set-variable]
+   99 |     uint64_t n = 0, bytes = 0;
+      |                     ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:313:21: warning: unused variable 'diag_prev_stage' [-Wunused-variable]
+  313 |         const char *diag_prev_stage = diag_current_stage(); diag_set_stage("feature_generation");
+      |                     ^~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:329:21: warning: unused variable 'saved_stage' [-Wunused-variable]
+  329 |         const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                     ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:329:56: warning: unused variable 'saved_family' [-Wunused-variable]
+  329 |         const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                                                        ^~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:329:93: warning: unused variable 'saved_operation' [-Wunused-variable]
+  329 |         const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                                                                                             ^~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:338:21: warning: unused variable 'saved_stage' [-Wunused-variable]
+  338 |         const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                     ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:338:56: warning: unused variable 'saved_family' [-Wunused-variable]
+  338 |         const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                                                        ^~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:338:93: warning: unused variable 'saved_operation' [-Wunused-variable]
+  338 |         const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                                                                                             ^~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:567:22: warning: variable 'query_index' set but not used [-Wunused-but-set-variable]
+  567 |             uint64_t query_index = 0;
+      |                      ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:496:17: warning: unused variable 'saved_stage' [-Wunused-variable]
+  496 |     const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                 ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:496:52: warning: unused variable 'saved_family' [-Wunused-variable]
+  496 |     const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                                                    ^~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:496:89: warning: unused variable 'saved_operation' [-Wunused-variable]
+  496 |     const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                                                                                         ^~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:704:21: warning: unused variable 'diag_prev_stage' [-Wunused-variable]
+  704 |         const char *diag_prev_stage = diag_current_stage(); diag_set_stage("feature_generation");
+      |                     ^~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/crf.c:910:21: warning: unused variable 'diag_prev_stage' [-Wunused-variable]
+  910 |         const char *diag_prev_stage = diag_current_stage(); diag_set_stage("feature_generation");
+      |                     ^~~~~~~~~~~~~~~
+24 warnings generated.

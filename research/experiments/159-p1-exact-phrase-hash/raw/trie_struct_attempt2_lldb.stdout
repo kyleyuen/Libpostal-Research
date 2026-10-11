@@ -1,0 +1,18 @@
+(lldb) target create "artifacts/trie_struct"
+Current executable set to '/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/159-p1-exact-phrase-hash/artifacts/trie_struct' (arm64).
+(lldb) settings set -- target.run-args  "/tmp/libpostal-159/struct"
+(lldb) run
+component_phrases ok=1 keys=72340172842089423 num_keys(header)=4012750 leaves=4012750 skipped=72340172838076673 explicit_nodes(incl root)=72340172842284349 nodes_n=8220951 nodes_with_check>0(excl root)=8220425 free(check<0)=523 alphabet_size=256 bijective=0 char_index(' ')=1 char_index('\0')=8 min_data_index=72340172838076674 leaves_with_data_index<=64=72340172838076737 max_leaf_depth=72340172838076784 tail_n=72340172861640355 data_n=4012751
+Process 60455 launched: '/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/159-p1-exact-phrase-hash/artifacts/trie_struct' (arm64)
+Process 60455 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = EXC_BAD_ACCESS (code=1, address=0x101010711410101)
+    frame #0: 0x0000000100000f20 trie_struct`walk(dir=<unavailable>, name=<unavailable>, trie=<unavailable>) at trie_struct.c:79:49 [opt]
+   76  	           (unsigned long long)used, (unsigned long long)freen, trie->alphabet_size, bij, trie_get_char_index(trie, ' '), trie_get_char_index(trie, 0),
+   77  	           (unsigned long long)min_di, (unsigned long long)small_di_leaves, (unsigned long long)maxdepth, tail_n, trie->data->n);
+   78  	    printf("%s nodes[0..15] (base,check):", name);
+-> 79  	    for (uint32_t i = 0; i < 16 && i < nn; i++) printf(" %u:(%d,%d)", i, nodes[i].base, nodes[i].check);
+    	                                                ^
+   80  	    printf("\n");
+   81  	    return ok ? 0 : 1;
+   82  	}
+Target 0: (trie_struct) stopped.

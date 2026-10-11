@@ -1,0 +1,179 @@
+--- a/address_parser.c
++++ b/address_parser.c
+@@ -402,6 +402,7 @@
+    back to the original context arrays. */
+ extern bool crf_state_word_id(crf_t *, const char *, uint32_t *);
+ extern void crf_direct_state_word(cstring_array *, uint32_t, const char *);
++extern void crf_direct_state_word_missing(cstring_array *);
+ extern void crf_direct_state_word_fallback(void);
+ typedef struct { char *word; int64_t address, component, postal; uint32_t freq, word_id; } ap_front_t;
+ static ap_front_t *ap_front = NULL;
+@@ -1499,7 +1500,8 @@
+ 
+         if (word_freq > 0) {
+             // The individual word
+-            if (front && front->word_id != UINT32_MAX) crf_direct_state_word(features, front->word_id, word); else { crf_direct_state_word_fallback(); feature_array_add(features, 2, "word", word); }
++            /* UINT32_MAX-1 is a checked miss; the CRF stage keeps its feature slot. */
++            if (front && front->word_id < UINT32_MAX - 1u) crf_direct_state_word(features, front->word_id, word); else if (front && front->word_id == UINT32_MAX - 1u) { crf_direct_state_word_missing(features); feature_array_add(features, 2, "word", word); } else { crf_direct_state_word_fallback(); feature_array_add(features, 2, "word", word); }
+         } else {
+             log_debug("word not in vocab: %s\n", word);
+ 
+@@ -1543,7 +1545,14 @@
+         char *prev_word = prev_word_or_phrase.str;
+ 
+         if (is_plain_word_phrase_type(prev_word_or_phrase.type)) {
+-            uint32_t prev_word_freq = word_vocab_frequency(parser, prev_word);
++            uint32_t prev_word_freq;
++#ifdef EXP_FUSED_FRONT
++            /* Reuse only the same normalized token from this address's front pass. */
++            if (ap_front_n == num_tokens && (size_t)last_index < ap_front_n &&
++                ap_front[last_index].word == prev_word) prev_word_freq = ap_front[last_index].freq;
++            else
++#endif
++            prev_word_freq = word_vocab_frequency(parser, prev_word);
+             token_t prev_token = tokenized->tokens->a[last_index];
+             bool prev_token_numeric = is_numeric_token(prev_token.type);
+             if (prev_word_freq == 0) {
+@@ -1569,7 +1578,13 @@
+         size_t next_word_len = 1;
+ 
+         if (is_plain_word_phrase_type(next_word_or_phrase.type)) {
+-            uint32_t next_word_freq = word_vocab_frequency(parser, next_word);
++            uint32_t next_word_freq;
++#ifdef EXP_FUSED_FRONT
++            if (ap_front_n == num_tokens && (size_t)next_index < ap_front_n &&
++                ap_front[next_index].word == next_word) next_word_freq = ap_front[next_index].freq;
++            else
++#endif
++            next_word_freq = word_vocab_frequency(parser, next_word);
+             token_t next_token = tokenized->tokens->a[next_index];
+             bool next_token_numeric = is_numeric_token(next_token.type);
+             if (next_word_freq == 0) {
+--- a/crf.c
++++ b/crf.c
+@@ -1,3 +1,4 @@
++#include "trie.h"
+ #include "crf.h"
+ #include "log/log.h"
+ 
+@@ -13,7 +14,9 @@
+ }
+ 
+ #ifdef EXP_EVENT_FLOW
++#define CRF_WORD_ID_CONFIRMED_MISS (UINT32_MAX - 1u)
+ static uint32_t direct_word_id = UINT32_MAX; static cstring_array *direct_word_array = NULL; static uint32_t direct_word_pos = 0;
++static bool direct_word_missing = false;
+ #ifdef EXP_ORACLE
+ static uint32_t oracle_direct_id = UINT32_MAX, oracle_direct_pos = 0; static const char *oracle_direct_word = NULL;
+ #endif
+@@ -62,8 +65,9 @@
+ #endif
+ 
+ #ifdef EXP_EVENT_FLOW
+-bool crf_state_word_id(crf_t *self, const char *word, uint32_t *id) { size_t n = strlen(word); char *key = malloc(n + 6); if (!key) return false; memcpy(key, "word|", 5); memcpy(key + 5, word, n + 1); bool ok = crf_get_feature_id(self, key, id); free(key); return ok; }
+-void crf_direct_state_word(cstring_array *a, uint32_t id, const char *word) { direct_word_array = a; direct_word_pos = cstring_array_num_strings(a); direct_word_id = id;
++/* Returns true when lookup completed: hit ID on success, CRF_WORD_ID_CONFIRMED_MISS on exact miss. */
++bool crf_state_word_id(crf_t *self, const char *word, uint32_t *id) { uint32_t found_id; bool ok = trie_get_data_concat(self->state_features, "word|", 5, word, strlen(word), &found_id); if (!ok) { *id = CRF_WORD_ID_CONFIRMED_MISS; return true; } if (found_id >= CRF_WORD_ID_CONFIRMED_MISS) return false; *id = found_id; return true; }
++void crf_direct_state_word(cstring_array *a, uint32_t id, const char *word) { direct_word_array = a; direct_word_pos = cstring_array_num_strings(a); direct_word_id = id; direct_word_missing = false;
+ #ifdef EXP_ORACLE
+ oracle_direct_id = id; oracle_direct_pos = direct_word_pos; oracle_direct_word = word;
+ #else
+@@ -73,6 +77,7 @@
+ direct_word_count++;
+ #endif
+ }
++void crf_direct_state_word_missing(cstring_array *a) { direct_word_array = a; direct_word_pos = cstring_array_num_strings(a); direct_word_missing = true; }
+ void crf_direct_state_word_fallback(void) {
+ #ifdef EXP_EVENT_STATS
+ direct_word_fallback++;
+@@ -107,7 +112,7 @@
+     }
+ 
+     for (uint32_t t = 0; t < num_tokens; t++) {
+-        direct_word_id = UINT32_MAX; direct_word_array = NULL;
++        direct_word_id = UINT32_MAX; direct_word_array = NULL; direct_word_missing = false;
+         cstring_array_clear(features);
+         cstring_array_clear(prev_tag_features);
+ 
+@@ -145,8 +150,21 @@
+         size_t event_n = cstring_array_num_strings(features) + cstring_array_num_strings(prev_tag_features) + (direct_word_id != UINT32_MAX);
+         if (original_events_reserve(event_n)) {
+             size_t e = 0;
+-            for (fidx = 0; fidx < cstring_array_num_strings(features); fidx++) { if (direct_word_id != UINT32_MAX && direct_word_array == features && direct_word_pos == fidx) { original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX; } feature = cstring_array_get_string(features, fidx); original_events[e].id = crf_get_feature_id(self, feature, &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 0; }
++            for (fidx = 0; fidx < cstring_array_num_strings(features); fidx++) {
++                if (direct_word_id != UINT32_MAX && direct_word_array == features && direct_word_pos == fidx) {
++                    original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX;
++                }
++                feature = cstring_array_get_string(features, fidx);
++                if (direct_word_missing && direct_word_array == features && direct_word_pos == fidx) {
++                    /* Front-fill already queried this exact `word|TOKEN` key and confirmed it absent. */
++                    original_events[e].id = UINT32_MAX; direct_word_missing = false;
++                } else {
++                    original_events[e].id = crf_get_feature_id(self, feature, &feature_id) ? feature_id : UINT32_MAX;
++                }
++                original_events[e++].trans = 0;
++            }
+             if (direct_word_id != UINT32_MAX && direct_word_array == features) { original_events[e].id = direct_word_id; original_events[e++].trans = 0; direct_word_id = UINT32_MAX; }
++            direct_word_missing = false;
+             cstring_array_foreach(prev_tag_features, fidx, feature, { original_events[e].id = crf_get_state_trans_feature_id(self, feature, &feature_id) ? feature_id : UINT32_MAX; original_events[e++].trans = 1; })
+             uint32_t *sindptr = self->weights->indptr->a, *sindices = self->weights->indices->a;
+             double *sdata = self->weights->data->a, *state_scores = state_score(crf_context, t);
+--- a/trie.c
++++ b/trie.c
+@@ -759,6 +759,46 @@
+      return trie_get_data_at_index(self, node_id, data);
+ }
+ 
++static inline unsigned char trie_concat_char(const char *prefix, size_t prefix_len,
++        const char *suffix, size_t suffix_len, size_t pos) {
++    if (pos < prefix_len) return (unsigned char)prefix[pos];
++    pos -= prefix_len;
++    return pos < suffix_len ? (unsigned char)suffix[pos] : 0;
++}
++
++bool trie_get_data_concat(trie_t *self, const char *prefix, size_t prefix_len,
++        const char *suffix, size_t suffix_len, uint32_t *data) {
++    if (self == NULL || prefix == NULL || suffix == NULL || data == NULL ||
++        prefix_len > SIZE_MAX - suffix_len) return false;
++    size_t len = prefix_len + suffix_len;
++    uint32_t node_id = ROOT_NODE_ID;
++    trie_node_t node = trie_get_node(self, node_id);
++    if (node.base == NULL_NODE_ID) return false;
++    uint32_t next_id = NULL_NODE_ID;
++    for (size_t pos = 0; pos <= len; pos++) {
++        unsigned char c = trie_concat_char(prefix, prefix_len, suffix, suffix_len, pos);
++        next_id = trie_get_transition_index(self, node, c);
++        node = trie_get_node(self, next_id);
++        if (node.check != (int32_t)node_id) return false;
++        if (node.base < 0) {
++            trie_data_node_t entry = trie_get_data_node(self, node);
++            if (entry.tail == 0) return false;
++            size_t tail_pos = c ? pos + 1 : pos;
++            size_t tail_len = c ? len - pos : 1;
++            if (entry.tail >= self->tail->n) return false;
++            for (size_t i = 0; i < tail_len; i++) {
++                size_t at = (size_t)entry.tail + i;
++                if (at >= self->tail->n || self->tail->a[at] !=
++                    trie_concat_char(prefix, prefix_len, suffix, suffix_len, tail_pos + i)) return false;
++            }
++            *data = entry.data;
++            return true;
++        }
++        node_id = next_id;
++    }
++    return trie_get_data_at_index(self, next_id, data);
++}
++
+ inline bool trie_set_data_at_index(trie_t *self, uint32_t index, uint32_t data) {
+     if (index == NULL_NODE_ID) return false;
+      trie_node_t node = trie_get_node(self, index);
+--- a/trie.h
++++ b/trie.h
+@@ -98,6 +98,7 @@
+ 
+ bool trie_get_data_at_index(trie_t *self, uint32_t index,  uint32_t *data);
+ bool trie_get_data(trie_t *self, char *key, uint32_t *data);
++bool trie_get_data_concat(trie_t *self, const char *prefix, size_t prefix_len, const char *suffix, size_t suffix_len, uint32_t *data);
+ bool trie_set_data_at_index(trie_t *self, uint32_t index, uint32_t data);
+ bool trie_set_data(trie_t *self, char *key, uint32_t data);
+ 

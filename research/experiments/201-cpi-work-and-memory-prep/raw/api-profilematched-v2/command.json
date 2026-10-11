@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "/usr/bin/caffeinate",
+    "-i",
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/run_api_edge_compare.py",
+    "--baseline",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/000-baseline/artifacts/libpostal.dylib",
+    "--candidate",
+    "cpi-profilematched=/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/artifacts/api-cpi-archive-v1/cpi-profilematched-no-pgo.dylib",
+    "--candidate",
+    "199-mimalloc-v2=/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/api-mimalloc-v2/libpostal.dylib",
+    "--candidate",
+    "cpi-archive-mimalloc=/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/artifacts/api-cpi-archive-v1/cpi-mimalloc.dylib",
+    "--candidate",
+    "cpi-archive-no-mimalloc=/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/201-cpi-work-and-memory-prep/artifacts/api-cpi-archive-v1/cpi-no-mimalloc.dylib",
+    "--cases",
+    "research/experiments/186-architecture-benchmark/edge-cases.json",
+    "--datadir",
+    "/Users/kyle/.cache/libpostal-profile/libpostal",
+    "--model-manifest-sha256",
+    "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad",
+    "--out",
+    "research/experiments/201-cpi-work-and-memory-prep/raw/api-profilematched-v2/capture"
+  ],
+  "cwd": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "start_utc": "2026-10-09T08:22:44.322136+00:00",
+  "lock": "held internally by run_api_edge_compare.py",
+  "per_role_gate": "research/tools/env_gate.sh"
+}

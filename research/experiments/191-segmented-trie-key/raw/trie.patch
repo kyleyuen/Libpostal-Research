@@ -1,0 +1,49 @@
+--- libpostal/src/trie.c	2026-09-28 15:50:15
++++ research/experiments/191-segmented-trie-key/sources/trie.c	2026-10-07 19:14:48
+@@ -757,6 +757,46 @@
+ inline bool trie_get_data(trie_t *self, char *key, uint32_t *data) {
+      uint32_t node_id = trie_get(self, key);
+      return trie_get_data_at_index(self, node_id, data);
++}
++
++static inline unsigned char trie_concat_char(const char *prefix, size_t prefix_len,
++        const char *suffix, size_t suffix_len, size_t pos) {
++    if (pos < prefix_len) return (unsigned char)prefix[pos];
++    pos -= prefix_len;
++    return pos < suffix_len ? (unsigned char)suffix[pos] : 0;
++}
++
++bool trie_get_data_concat(trie_t *self, const char *prefix, size_t prefix_len,
++        const char *suffix, size_t suffix_len, uint32_t *data) {
++    if (self == NULL || prefix == NULL || suffix == NULL || data == NULL ||
++        prefix_len > SIZE_MAX - suffix_len) return false;
++    size_t len = prefix_len + suffix_len;
++    uint32_t node_id = ROOT_NODE_ID;
++    trie_node_t node = trie_get_node(self, node_id);
++    if (node.base == NULL_NODE_ID) return false;
++    uint32_t next_id = NULL_NODE_ID;
++    for (size_t pos = 0; pos <= len; pos++) {
++        unsigned char c = trie_concat_char(prefix, prefix_len, suffix, suffix_len, pos);
++        next_id = trie_get_transition_index(self, node, c);
++        node = trie_get_node(self, next_id);
++        if (node.check != (int32_t)node_id) return false;
++        if (node.base < 0) {
++            trie_data_node_t entry = trie_get_data_node(self, node);
++            if (entry.tail == 0) return false;
++            size_t tail_pos = c ? pos + 1 : pos;
++            size_t tail_len = c ? len - pos : 1;
++            if (entry.tail >= self->tail->n) return false;
++            for (size_t i = 0; i < tail_len; i++) {
++                size_t at = (size_t)entry.tail + i;
++                if (at >= self->tail->n || self->tail->a[at] !=
++                    trie_concat_char(prefix, prefix_len, suffix, suffix_len, tail_pos + i)) return false;
++            }
++            *data = entry.data;
++            return true;
++        }
++        node_id = next_id;
++    }
++    return trie_get_data_at_index(self, next_id, data);
+ }
+ 
+ inline bool trie_set_data_at_index(trie_t *self, uint32_t index, uint32_t data) {

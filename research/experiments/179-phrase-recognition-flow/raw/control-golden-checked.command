@@ -1,0 +1,1 @@
+/Users/kyle/Library/Application\ Support/Headroom/headroom/bin/rtk /Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/tools/model_slot.sh /usr/bin/time -l /Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/179-phrase-recognition-flow/artifacts/control/dump_outputs /Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/profiling/golden-v1/all.txt 

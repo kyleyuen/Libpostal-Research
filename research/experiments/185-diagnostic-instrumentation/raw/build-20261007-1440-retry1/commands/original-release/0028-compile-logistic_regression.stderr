@@ -1,0 +1,30 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/logistic_regression.c:3:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/logistic_regression.h:26:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/logistic_regression.c:45:12: warning: unused variable 'n' [-Wunused-variable]
+   45 |     size_t n = x->n;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/logistic_regression.c:63:13: warning: unused variable 'expected_values' [-Wunused-variable]
+   63 |     double *expected_values = p_y->values;
+      |             ^~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/logistic_regression.c:91:12: warning: unused variable 'num_features' [-Wunused-variable]
+   91 |     size_t num_features = n;
+      |            ^~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/logistic_regression.c:93:14: warning: unused variable 'i' [-Wunused-variable]
+   93 |     uint32_t i, j;
+      |              ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/logistic_regression.c:95:12: warning: unused variable 'residual' [-Wunused-variable]
+   95 |     double residual;
+      |            ^~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/logistic_regression.c:103:13: warning: unused variable 'theta_values' [-Wunused-variable]
+  103 |     double *theta_values = theta->values;
+      |             ^~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/logistic_regression.c:104:13: warning: unused variable 'predicted_values' [-Wunused-variable]
+  104 |     double *predicted_values = p_y->values;
+      |             ^~~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/original/logistic_regression.c:105:13: warning: unused variable 'gradient_values' [-Wunused-variable]
+  105 |     double *gradient_values = gradient->values;
+      |             ^~~~~~~~~~~~~~~
+9 warnings generated.

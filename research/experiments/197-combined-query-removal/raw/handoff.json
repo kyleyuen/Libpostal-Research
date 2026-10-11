@@ -1,0 +1,58 @@
+{
+  "experiment_id": 197,
+  "name": "combined-query-removal",
+  "hypothesis": "Compose individually screened segmented word-key trie query (191), guarded adjacent vocab-frequency reuse (192), and exact confirmed duplicate-miss skip (193) to cut measured lookup/allocation work while preserving emitted feature multiplicity and same-address guards.",
+  "parent_experiments": [
+    191,
+    192,
+    193
+  ],
+  "individual_ablations": {
+    "191": "research/experiments/191-segmented-trie-key/raw/handoff.json (individually screened dev + golden)",
+    "192": "research/experiments/192-reuse-front-neighbor-frequency/raw/handoff.json (individually screened dev + golden)",
+    "193": "research/experiments/193-skip-confirmed-word-miss/raw/handoff.json (individually screened dev + golden)"
+  },
+  "base_source": "181 source; three independent deltas from experiments 191, 192, 193",
+  "source_tree": "research/experiments/197-combined-query-removal/sources",
+  "source_manifest_path": "research/experiments/197-combined-query-removal/raw/source_manifest.sha256",
+  "source_manifest_sha256": "d6fc6c8ca1095527e082aae03d163bcb730be0ccb080de90100f5222a55fe98b",
+  "patch_path": "research/experiments/197-combined-query-removal/raw/source_delta.patch",
+  "patch_sha256": "f0d13e26942e8e3e1de31c94a5792b23756d1a3a1e34dd157241a0f58ed3931e",
+  "builds": {
+    "release": {
+      "library": "research/experiments/197-combined-query-removal/artifacts/release/libpostal.a",
+      "dumper": "research/experiments/197-combined-query-removal/artifacts/release/dump_outputs",
+      "flags": "-DHAVE_CONFIG_H -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS -O2 -DEXP_FUSED_FRONT -DEXP_EVENT_FLOW -DLIBPOSTAL_DATA_DIR=\"/Users/kyle/.cache/libpostal-profile/libpostal\"",
+      "command_log": "research/experiments/197-combined-query-removal/raw/build_release.*",
+      "binary_sha256": "6adb04370fdeb835239c8a1130d97d98769c29b466f817102416c2a7d061eecf"
+    },
+    "diagnostic": {
+      "library": null,
+      "dumper": null,
+      "flags": null,
+      "command_log": null,
+      "binary_sha256": null,
+      "unavailable_reason": "benchmark_186 will build isolated 185-hook derivative from this immutable three-parent delta."
+    }
+  },
+  "metrics": {
+    "supported": [
+      "previous/next same-address frequency reuse and fallback counts",
+      "exact prefill miss-marker and scorer skip counts",
+      "segmented trie key prefix/tail bytes; joined-key allocations avoided",
+      "CRF weight rows/additions and output/thread checks"
+    ],
+    "unavailable": {
+      "combined_speed": "pending serialized development and golden capture",
+      "memory": "pending serialized benchmark screen"
+    }
+  },
+  "model_manifest_sha256": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad",
+  "build_exit_code": 0,
+  "parser_invoked": false,
+  "selfcheck": {
+    "command": "artifacts/test_segmented_key",
+    "exit_code": 0,
+    "stdout": "raw/selfcheck.stdout"
+  }
+}

@@ -1,25 +1,29 @@
 #!/bin/bash
-# One-command benchmark: original libpostal vs the optimized build "cpi", on every dataset in this repository.
+# One-command benchmark: original libpostal vs the optimized build "cpi", on every enabled dataset.
 # macOS on Apple Silicon, bash 3.2. Nothing outside WORK_DIR (default ~/.cache/libpostal-speedup) and research/suite/results is written.
 #
-#   benchmark/run.sh                      fetch libpostal + model, build both, verify, time (about 1 hour), write the report
-#   benchmark/run.sh --quick              same, 1 round x 3 passes, small fuzz: a ~15-minute smoke test (numbers are rough)
+#   benchmark/run.sh                      fetch libpostal + model, build both, run the suite, write the report (duration varies)
+#   benchmark/run.sh --setup-only          prepare source, model, builds and suite config; stop before running the benchmark suite
+#   benchmark/run.sh --quick              same setup, then run one smoke round with three passes and small fuzz (not for acceptance)
 #   benchmark/run.sh --model-dir DIR      use an existing libpostal v1.0.0 model directory instead of downloading (~1 GB)
+#   benchmark/run.sh --cpi-source 203|119  select the candidate source snapshot (default: accepted memory-fixed 203)
 #   benchmark/run.sh --deps               install missing Homebrew packages (autoconf automake libtool mimalloc) first
 #   benchmark/run.sh --no-gate            do not require AC power / no thermal warning before each timed run
-#   benchmark/run.sh --include-reserved   also run the never-used unseen sets v12, v13 (spends them)
+#   benchmark/run.sh --include-reserved   include any datasets marked reserved in suite.json
 #   extra arguments after -- go to research/suite/run_suite.py (e.g. -- --datasets osm-v3 --rounds 3)
 set -euo pipefail
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 W="${WORK_DIR:-$HOME/.cache/libpostal-speedup}"
 COMMIT=25099c506612b34b23b1bfe286ca6321fcf06f35          # libpostal commit used for every measurement in this repository
 MODEL_URL=https://github.com/openvenues/libpostal/releases/download/v1.0.0
-MODEL_DIR=""; QUICK=0; DEPS=0; SUITE_ARGS=()
+MODEL_DIR=""; QUICK=0; DEPS=0; SETUP_ONLY=0; CPI_SOURCE=203; SUITE_ARGS=()
 while [ $# -gt 0 ]; do case "$1" in
-  --model-dir) MODEL_DIR=$2; shift 2;; --quick) QUICK=1; shift;; --deps) DEPS=1; shift;;
+  --model-dir) MODEL_DIR=$2; shift 2;; --quick) QUICK=1; shift;; --deps) DEPS=1; shift;; --setup-only) SETUP_ONLY=1; shift;;
+  --cpi-source) CPI_SOURCE=$2; shift 2;;
   --no-gate) SUITE_ARGS+=(--no-gate); shift;; --include-reserved) SUITE_ARGS+=(--include-reserved); shift;;
-  --) shift; SUITE_ARGS+=("$@"); break;; -h|--help) sed -n 2,13p "$0"; exit 0;; *) echo "unknown option $1"; exit 2;; esac; done
+  --) shift; SUITE_ARGS+=("$@"); break;; -h|--help) sed -n 2,12p "$0"; exit 0;; *) echo "unknown option $1"; exit 2;; esac; done
 case "$W" in *" "*) echo "WORK_DIR must not contain spaces (libpostal's build embeds the model path): $W"; exit 2;; esac
+case "$CPI_SOURCE" in 203|119) ;; *) echo "--cpi-source must be 203 or 119"; exit 2;; esac
 mkdir -p "$W/logs" "$W/bin/original" "$W/bin/cpi" "$W/data"
 say() { echo "[$(date '+%H:%M:%S')] $*"; }
 run_logged() { local name=$1; shift; if ! "$@" > "$W/logs/$name.log" 2>&1; then echo "FAILED: $name (log: $W/logs/$name.log)"; tail -20 "$W/logs/$name.log"; exit 1; fi; }
@@ -62,10 +66,18 @@ say "4/6 build the original (reference) harness"
 HARNESS=("$ROOT/research/tools/bench_ext.c" "$ROOT/research/experiments/003-batched-lookups/tools/dump_outputs.c" "$ROOT/research/tools/fuzz_pipeline.c")
 for h in "${HARNESS[@]}"; do n=$(basename "$h" .c); run_logged link_original_$n clang -O2 -g -I"$SRC" "$h" "$SRC/.libs/libpostal.a" -lm -o "$W/bin/original/$n"; done
 
-say "5/6 build the optimized version (cpi: sources in research/final/119-cpi, PGO trained on golden-v1 development, LTO, mimalloc)"
-C="$ROOT/research/final/119-cpi/sources"
+if [ "$CPI_SOURCE" = 203 ]; then
+  C="$ROOT/research/final/203-cpi-memory/sources"
+  CPI_DESC="memory-fixed CPI from research/final/203-cpi-memory (streamed postcode graph loader)"
+else
+  C="$ROOT/research/final/119-cpi/sources"
+  CPI_DESC="CPI from research/final/119-cpi (pre-streaming postcode graph loader)"
+fi
+SWITCH_FILE="$ROOT/research/final/119-cpi/switches.txt"
+[ -d "$C" ] || { echo "candidate source directory not found: $C"; exit 1; }
+say "5/6 build the optimized version (cpi source $CPI_SOURCE: $C, PGO trained on golden-v1 development, LTO, mimalloc)"
 BASE="-std=gnu2x -DHAVE_CONFIG_H -Wall -Wno-unused-function -Wno-unused-parameter -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -g -D LIBPOSTAL_EXPORTS"
-SW="-DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE $(cat "$ROOT/research/final/119-cpi/switches.txt")"
+SW="-DEXP_NO_RESET -DEXP_DEDUP_BATCH -DEXP_FEATURE_DICT -DEXP_DIRECT_KEYS -DEXP_WEIGHT_PREFETCH -DEXP_LEAN_CONTEXT -DEXP_VOCAB_DICT -DEXP_ASCII_NORM -DEXP_ADMIN_SHARE -DEXP_FAST_APPEND -DEXP_FAST_JOIN -DEXP_VOCAB_MEMO -DEXP_INT_KEYS -DEXP_TRANS_SKIP -DEXP_NORM_TABLE -DEXP_CANON_CONST -DEXP_RESPONSE_BLOCK -DEXP_REUSE -DEXP_VITERBI_NEON -DEXP_TOKEN_ASCII -DEXP_FD_INLINE $(cat "$SWITCH_FILE")"
 CHANGED="crf trie string_utils address_parser features trie_search transliterate normalize crf_context libpostal tokens"
 LIBSRC="strndup libpostal expand address_dictionary transliterate tokens trie trie_search trie_utils string_utils file_utils utf8proc/utf8proc normalize numex features unicode_scripts address_parser address_parser_io averaged_perceptron crf crf_context sparse_matrix averaged_perceptron_tagger graph graph_builder language_classifier language_features logistic_regression logistic minibatch float_utils ngrams place near_dupe double_metaphone geohash/geohash dedupe string_similarity acronyms soft_tfidf jaccard"
 DD="-DLIBPOSTAL_DATA_DIR=\"$W/data/libpostal\""
@@ -86,8 +98,8 @@ run_logged build_cpi build_cpi "$W/build/cpi" "-fprofile-instr-use=$P/dev.profda
 for n in bench_ext dump_outputs fuzz_pipeline; do cp "$W/build/cpi/$n" "$W/bin/cpi/$n"; done
 ( cd "$W/bin" && find original cpi -maxdepth 1 -type f -exec shasum -a 256 {} + > "$W/logs/binaries.sha256" )
 
-say "6/6 benchmark suite (correctness, timing, memory, threads, report)"
-python3 - "$ROOT" "$W" <<'PY'
+say "6/6 suite configuration"
+python3 - "$ROOT" "$W" "$CPI_DESC" <<'PY'
 import json, sys
 root, w = sys.argv[1], sys.argv[2]
 c = json.load(open(f"{root}/research/suite/suite.json"))
@@ -95,10 +107,17 @@ c["workspace"] = root; c["model_dir"] = f"{w}/data/libpostal"
 c["variants"] = [
   {"name": "original", "role": "baseline", "enabled": True, "desc": "libpostal 25099c50 built with its own autotools (-O2)",
    "bench_ext": f"{w}/bin/original/bench_ext", "dump_outputs": f"{w}/bin/original/dump_outputs", "fuzz_pipeline": f"{w}/bin/original/fuzz_pipeline"},
-  {"name": "cpi", "role": "candidate", "enabled": True, "desc": "optimized build from research/final/119-cpi",
+  {"name": "cpi", "role": "candidate", "enabled": True, "desc": sys.argv[3],
    "bench_ext": f"{w}/bin/cpi/bench_ext", "dump_outputs": f"{w}/bin/cpi/dump_outputs", "fuzz_pipeline": f"{w}/bin/cpi/fuzz_pipeline"}]
 json.dump(c, open(f"{w}/suite.json", "w"), indent=1)
 PY
+if [ "$SETUP_ONLY" = 1 ]; then
+  say "setup complete; benchmark suite was not run"
+  say "generated config: $W/suite.json"
+  echo "To run the benchmark later: python3 \"$ROOT/research/suite/run_suite.py\" --config \"$W/suite.json\""
+  exit 0
+fi
 if [ $QUICK = 1 ]; then SUITE_ARGS=(--rounds 1 --passes 3 --fuzz-count 20000 "${SUITE_ARGS[@]+"${SUITE_ARGS[@]}"}"); fi
+say "run suite (correctness, timing, memory, threads, report)"
 python3 "$ROOT/research/suite/run_suite.py" --config "$W/suite.json" "${SUITE_ARGS[@]+"${SUITE_ARGS[@]}"}"
 say "done: the report is research/suite/results/<newest>/report.md"

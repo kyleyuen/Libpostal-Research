@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/run_locked.py",
+    "--",
+    "bash",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/tools/build_cc.sh",
+    "cpi_201_matched_v1",
+    "clang",
+    "none",
+    "-O2 -flto",
+    "-O0",
+    "-flto",
+    "/opt/homebrew/opt/mimalloc/lib/mimalloc.o"
+  ],
+  "cwd": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "env_overrides": {
+    "EXTRA_SW": "-DEXP_NAME_LEN -DEXP_NORM_HANGUL -DEXP_ROW_PACK -DEXP_ROLE_IDS -DEXP_WORD_MEMO -DEXP_WM_CANON -DEXP_CONST_IDS -DEXP_ST_ROW0 -DEXP_LOADF=3 -DEXP_VITERBI20 -DEXP_TRANS_ALIAS -DEXP_PC_COMPRESS -DEXP_FTT -DEXP_FTT_ROLE_PREFETCH -DEXP_NAME_BYTE -DEXP_LETTERS_FAST -DEXP_FA_LEN -DEXP_DIGITS_FAST -DEXP_FTT_PF1 -DEXP_FTT_PF2 -DEXP_PC_PREFETCH -DEXP_VITERBI_MAXONLY -DEXP_VITERBI_FMAX -DEXP_NORM_PAIR -DEXP_PS_FLAGS -DEXP_ROW_LINES=8 -DEXP_ROW_STEP=128 -DEXP_ROW_TRANS_ONLY -DEXP_CP_IDS"
+  },
+  "start_utc": "2026-10-09T08:19:17.967126+00:00",
+  "flags": {
+    "profile": "none",
+    "library": "-O2 -flto",
+    "scanner": "-O0",
+    "link": "-flto",
+    "allocator_object": "/opt/homebrew/opt/mimalloc/lib/mimalloc.o"
+  },
+  "switch_file": "research/experiments/119-component-phrase-ids/raw/switches_cpi.txt",
+  "switch_file_sha256": "8e4e410df4e133bae4f3e966a4c0d19fd137d60eadaf3302cd86ad2db9413042"
+}

@@ -87,3 +87,11 @@ The memory-side experiments listed in handoff §6 (15 rejected) each recovered a
 - **Why the 145 ceiling cannot be reached this way.** cpi's string emission is already cheap, and its probes are already batched and prefetched. Deriving the integer parts per token (memo, vocabulary probe, unit) costs as much as the string emission saved.
 - **The remaining exact route** would rebuild context fill so that unit ids come out of the work it already does. §5 showed that even the outer ceiling of all front-half string paths stops at ≈6.9× golden-v1 / 6.7× OSM.
 - **Final answer:** under byte-identical output, **cpi (6.08× golden-v1, 5.93× novel, 5.78× OSM, validated in 121) remains the deliverable.** The rewrite track produced no measured gain.
+
+## 9. Correction after experiment 151 (2026-10-05T14:56-0700)
+
+§6's first bullet ("exact algebraic restructuring … is ruled out by byte-identity, because it changes floating-point order") is **wrong as a general statement**. Byte-identity applies to the output labels, not to the score bits. Experiment 151 rebuilt every original score bit-exactly from the oracles. It then bounded the error of reordered-double and float32 arithmetic (including the original's own rounding) and propagated the bounds through the original Viterbi. Results:
+- every decision on the original path is strictly separated for **100% of golden-v1, novel and OSM addresses**;
+- **99.94–99.99%** of fuzz addresses are certified; the remainder are 15 exact ties, which fall back.
+
+A certified argmax with an exact fallback is therefore legal under hard rule 1. The 0.8–0.9 µs "fixed by byte-identity" bucket (141) is fixed only for *this* implementation strategy. §5's "no identified exact path reaches 7.8×" remains true for the *current architecture*. It does not bound a different architecture; see `experiments/151-optimality-bound/README.md` and `PLAN.md`.

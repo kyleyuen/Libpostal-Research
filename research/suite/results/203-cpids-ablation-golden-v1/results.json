@@ -1,0 +1,228 @@
+{
+ "run": "203-cpids-ablation-golden-v1",
+ "generated": "2026-10-10T01:17:51-0700",
+ "settings": {
+  "rounds": 3,
+  "passes": 3,
+  "settle_load_1min": 2.5,
+  "settle_max_wait_s": 180,
+  "correctness_jobs": 1,
+  "fuzz_count": 0,
+  "fuzz_seeds": [],
+  "fuzz_corpora": [],
+  "bootstrap_resamples": 1000,
+  "bootstrap_seed": 20261010,
+  "steady_dataset": "golden-v1",
+  "steady_passes_before_sample": 3,
+  "thread_check_dataset": "golden-v1",
+  "sleep_between_runs_s": 2,
+  "country_min_n": 50
+ },
+ "baseline": "original-000",
+ "datasets": {
+  "golden-v1": {
+   "source": "senzing",
+   "kind": "development+validation (PGO trained on its development split)",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 33.8165,
+     "warm_min_us": 33.5975,
+     "warm_max_us": 34.3525,
+     "cold_median_us": 36.751,
+     "setup_median_s": 2.669,
+     "peak_rss_max": 2614067200,
+     "peak_footprint_max": 2613233872
+    },
+    "cpi-119": {
+     "rounds": 3,
+     "warm_median_us": 5.4675,
+     "warm_min_us": 5.467,
+     "warm_max_us": 5.8655,
+     "cold_median_us": 6.362,
+     "setup_median_s": 11.675,
+     "peak_rss_max": 2537046016,
+     "peak_footprint_max": 2537343352
+    },
+    "cpi-119-no-cp-ids": {
+     "rounds": 3,
+     "warm_median_us": 5.692,
+     "warm_min_us": 5.6915,
+     "warm_max_us": 5.797499999999999,
+     "cold_median_us": 8.328,
+     "setup_median_s": 9.382,
+     "peak_rss_max": 2537046016,
+     "peak_footprint_max": 2537359760
+    }
+   },
+   "speedup": {
+    "cpi-119": {
+     "median": 6.185002286236854,
+     "geomean": 6.060619527344786,
+     "ci95": [
+      5.359040198314134,
+      6.854046190358478
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.727985678970249,
+      6.2836107554417415
+     ],
+     "min": 5.727985678970249,
+     "max": 6.2836107554417415,
+     "rounds": 3,
+     "per_round": [
+      6.2836107554417415,
+      5.727985678970249,
+      6.185002286236854
+     ],
+     "ratio_of_medians": 6.185002286236854,
+     "cold_median": 5.697736560829928,
+     "per_country": {
+      "n": 81,
+      "min_addresses": 50,
+      "min": 5.036772677990604,
+      "median": 6.125857582209604,
+      "max": 7.20542934154794
+     }
+    },
+    "cpi-119-no-cp-ids": {
+     "median": 5.925398878827081,
+     "geomean": 5.923165389597287,
+     "ci95": [
+      5.874677431151148,
+      5.972053554206544
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.90258257203092,
+      5.941579548449442
+     ],
+     "min": 5.90258257203092,
+     "max": 5.941579548449442,
+     "rounds": 3,
+     "per_round": [
+      5.925398878827081,
+      5.90258257203092,
+      5.941579548449442
+     ],
+     "ratio_of_medians": 5.941057624736471,
+     "cold_median": 4.412944284341979,
+     "per_country": {
+      "n": 81,
+      "min_addresses": 50,
+      "min": 2.0133827118929384,
+      "median": 5.865312459567861,
+      "max": 6.859756097560975
+     }
+    }
+   }
+  }
+ },
+ "aggregate": {
+  "cpi-119": {
+   "datasets": 1,
+   "source_weighted_geomean": 6.185002286236854,
+   "geomean_all_datasets": 6.185002286236854,
+   "min": 6.185002286236854,
+   "max": 6.185002286236854,
+   "geomean_by_source": {
+    "senzing": 6.185002286236854
+   },
+   "datasets_by_source": {
+    "senzing": 1
+   }
+  },
+  "cpi-119-no-cp-ids": {
+   "datasets": 1,
+   "source_weighted_geomean": 5.925398878827081,
+   "geomean_all_datasets": 5.925398878827081,
+   "min": 5.925398878827081,
+   "max": 5.925398878827081,
+   "geomean_by_source": {
+    "senzing": 5.925398878827081
+   },
+   "datasets_by_source": {
+    "senzing": 1
+   }
+  }
+ },
+ "correctness": {
+  "dumps": {
+   "cpi-119/golden-v1": {
+    "identical": true,
+    "candidate_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+    "baseline_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+    "lines": 12863
+   },
+   "cpi-119-no-cp-ids/golden-v1": {
+    "identical": true,
+    "candidate_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+    "baseline_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+    "lines": 12863
+   }
+  },
+  "frozen": {
+   "cpi-119/golden-v1": "RESULT: IDENTICAL",
+   "cpi-119-no-cp-ids/golden-v1": "RESULT: IDENTICAL"
+  },
+  "fuzz": {},
+  "negative_control": {
+   "dataset": "golden-v1",
+   "detected": true
+  }
+ },
+ "memory": {
+  "original-000": {
+   "steady_footprint": "2492 MB",
+   "dataset": "golden-v1",
+   "after_passes": 3
+  },
+  "cpi-119": {
+   "steady_footprint": "1927 MB",
+   "dataset": "golden-v1",
+   "after_passes": 3
+  },
+  "cpi-119-no-cp-ids": {
+   "steady_footprint": "1878 MB",
+   "dataset": "golden-v1",
+   "after_passes": 3
+  }
+ },
+ "threads": {
+  "original-000": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  },
+  "cpi-119": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  },
+  "cpi-119-no-cp-ids": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  }
+ },
+ "manifest": "manifest.json"
+}

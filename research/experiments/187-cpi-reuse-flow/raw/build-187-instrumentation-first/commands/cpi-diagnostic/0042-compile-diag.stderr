@@ -1,0 +1,14 @@
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/diag.c:118:241: warning: format specifies type 'unsigned long' but the argument has type 'const char *' [-Wformat]
+  118 |     fprintf(trace_file, ",\"dictionary_id\":\"ptr:%" PRIxPTR "\",\"dictionary_generation\":null,\"model_generation\":null,\"generation_reason\":\"CPI setup epoch is not instrumented\",\"operation\":\"%s\",\"family\":\"%s\",\"key_hex\":\"", kind, ptr, op, family);
+      |                                                   ~~~~~~~~~~                                                                                                                                                                                    ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/diag.c:118:247: warning: format specifies type 'char *' but the argument has type 'uintptr_t' (aka 'unsigned long') [-Wformat]
+  118 |     fprintf(trace_file, ",\"dictionary_id\":\"ptr:%" PRIxPTR "\",\"dictionary_generation\":null,\"model_generation\":null,\"generation_reason\":\"CPI setup epoch is not instrumented\",\"operation\":\"%s\",\"family\":\"%s\",\"key_hex\":\"", kind, ptr, op, family);
+      |                                                                                                                                                                                                         ~~                                            ^~~
+      |                                                                                                                                                                                                         %lu
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/diag.c:118:256: warning: data argument not used by format string [-Wformat-extra-args]
+  118 |     fprintf(trace_file, ",\"dictionary_id\":\"ptr:%" PRIxPTR "\",\"dictionary_generation\":null,\"model_generation\":null,\"generation_reason\":\"CPI setup epoch is not instrumented\",\"operation\":\"%s\",\"family\":\"%s\",\"key_hex\":\"", kind, ptr, op, family);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                 ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/diag.c:207:116: error: non-void function 'repeat_event' should return a value [-Wreturn-mismatch]
+  207 |         if (npatterns == MAX_PATTERNS) { omitted_patterns++; omitted_observations += total; observations += total; return; }
+      |                                                                                                                    ^
+3 warnings and 1 error generated.

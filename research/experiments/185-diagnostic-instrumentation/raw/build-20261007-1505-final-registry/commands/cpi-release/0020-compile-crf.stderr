@@ -1,0 +1,67 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.h:20:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf_context.h:20:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:69:17: warning: unused variable 'ps' [-Wunused-variable]
+   69 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:69:45: warning: unused variable 'pf' [-Wunused-variable]
+   69 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                             ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:69:74: warning: unused variable 'po' [-Wunused-variable]
+   69 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                                                          ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:81:17: warning: unused variable 'ps' [-Wunused-variable]
+   81 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                 ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:81:45: warning: unused variable 'pf' [-Wunused-variable]
+   81 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                             ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:81:74: warning: unused variable 'po' [-Wunused-variable]
+   81 |     const char *ps = diag_current_stage(), *pf = diag_current_family(), *po = diag_current_operation();
+      |                                                                          ^~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:93:14: warning: variable 'n' set but not used [-Wunused-but-set-variable]
+   93 |     uint64_t n = 0, bytes = 0;
+      |              ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:93:21: warning: variable 'bytes' set but not used [-Wunused-but-set-variable]
+   93 |     uint64_t n = 0, bytes = 0;
+      |                     ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:307:21: warning: unused variable 'diag_prev_stage' [-Wunused-variable]
+  307 |         const char *diag_prev_stage = diag_current_stage(); diag_set_stage("feature_generation");
+      |                     ^~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:323:21: warning: unused variable 'saved_stage' [-Wunused-variable]
+  323 |         const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                     ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:323:56: warning: unused variable 'saved_family' [-Wunused-variable]
+  323 |         const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                                                        ^~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:323:93: warning: unused variable 'saved_operation' [-Wunused-variable]
+  323 |         const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                                                                                             ^~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:332:21: warning: unused variable 'saved_stage' [-Wunused-variable]
+  332 |         const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                     ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:332:56: warning: unused variable 'saved_family' [-Wunused-variable]
+  332 |         const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                                                        ^~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:332:93: warning: unused variable 'saved_operation' [-Wunused-variable]
+  332 |         const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                                                                                             ^~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:490:17: warning: unused variable 'saved_stage' [-Wunused-variable]
+  490 |     const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                 ^~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:490:52: warning: unused variable 'saved_family' [-Wunused-variable]
+  490 |     const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                                                    ^~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:490:89: warning: unused variable 'saved_operation' [-Wunused-variable]
+  490 |     const char *saved_stage=diag_current_stage(), *saved_family=diag_current_family(), *saved_operation=diag_current_operation();
+      |                                                                                         ^~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:683:21: warning: unused variable 'diag_prev_stage' [-Wunused-variable]
+  683 |         const char *diag_prev_stage = diag_current_stage(); diag_set_stage("feature_generation");
+      |                     ^~~~~~~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/source/cpi/crf.c:877:21: warning: unused variable 'diag_prev_stage' [-Wunused-variable]
+  877 |         const char *diag_prev_stage = diag_current_stage(); diag_set_stage("feature_generation");
+      |                     ^~~~~~~~~~~~~~~
+21 warnings generated.

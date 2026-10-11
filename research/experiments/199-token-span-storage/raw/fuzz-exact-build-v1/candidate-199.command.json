@@ -1,0 +1,23 @@
+{
+  "name": "candidate-199",
+  "archive": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release/libpostal.a",
+  "archive_sha256": "447e00b40cff2dbb2c4b388b8a844fd01bfc1610463f93432de3a2eb4960f576",
+  "argv": [
+    "/usr/bin/clang",
+    "-O2",
+    "-g",
+    "-I",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/libpostal/src",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/fuzz_pipeline_exact.c",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/release/libpostal.a",
+    "-lm",
+    "-o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-v1/candidate-199/fuzz_pipeline_exact"
+  ],
+  "start_utc": "2026-10-08T04:46:11.448374+00:00",
+  "end_utc": "2026-10-08T04:47:14.629505+00:00",
+  "exit": 0,
+  "stdout": "",
+  "stderr": "warning: (arm64) /tmp/lto.o unable to open object file: No such file or directory\n",
+  "binary_sha256": "8ac95fd1ef5ca196a6fea9e094f14f0b94d592bdc8a3a72ed74015ae890b0c08"
+}

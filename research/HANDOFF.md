@@ -1,3 +1,9 @@
+> **Current state: [HANDOFF_2026-10-10.md](HANDOFF_2026-10-10.md)** (203 streamed CPI candidate validated and promoted for measured default-parser scope; 119 and 202 remain historical records).
+
+> **Historical handoff: [HANDOFF_2026-10-07.md](HANDOFF_2026-10-07.md)** (state through experiments 188–201; its no-promotion status predates experiments 202–203).
+
+> **Start here: [HANDOFF_2026-10-06.md](HANDOFF_2026-10-06.md)** (state after 158–162: redesign closed by kill rules; 161fx = cpi + both API fixes at speed parity; next = promote/validate 161fx, user decision).
+
 > **Superseded as the starting point by `HANDOFF_2026-10-04.md`** (consolidated state, measurements, lessons and remaining ideas through experiment 140).
 
 > **Start here: [HANDOFF_2026-10-03.md](HANDOFF_2026-10-03.md)** (restart summary: state, lessons, what failed, untried ideas, next steps). This file keeps the running history.

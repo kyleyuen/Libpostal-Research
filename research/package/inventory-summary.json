@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "generated_from": "git ls-files --others/--ignored plus current lstat sizes",
+  "hashing_performed": false,
+  "staging_or_archiving_performed": false,
+  "tracked_paths_not_relisted": 32587,
+  "git_add_candidates": {
+    "files": 12177,
+    "bytes": 347461693
+  },
+  "release_paths": {
+    "files": 37101,
+    "bytes": 41303385437
+  },
+  "local_exclusions": {
+    "files": 25985,
+    "bytes": 5792646958
+  },
+  "notes": [
+    "The Git list is a proposal, not an executed git add.",
+    "Release paths are content to retain outside ordinary Git; split/compress only after freeze.",
+    "The nested upstream libpostal checkout and external model cache are excluded and require pinned retrieval.",
+    "Excluded 1 Python/profile/lock cache paths from the clone allowlist; path metadata only.",
+    "Included the 182 original-000 harness binaries used by the clone verifier; per-file sizes below 50 MB.",
+    "Explicitly included the two pinned original 011 fuzz references required by clone validation.",
+    "Added a versioned clone-review document/provenance hash snapshot and sidecar."
+  ]
+}

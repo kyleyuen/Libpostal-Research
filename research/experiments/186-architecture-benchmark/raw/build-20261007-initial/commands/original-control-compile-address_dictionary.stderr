@@ -1,0 +1,41 @@
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/address_dictionary.c:63:47: warning: second argument to 'va_arg' is of promotable type 'uint16_t' (aka 'unsigned short'); this va_arg has undefined behavior because arguments will be promoted to 'int' [-Wvarargs]
+   63 |         uint16_t dictionary_id = va_arg(args, uint16_t);
+      |                                               ^~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/__stdarg_va_arg.h:20:47: note: expanded from macro 'va_arg'
+   20 | #define va_arg(ap, type) __builtin_va_arg(ap, type)
+      |                                               ^~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/address_dictionary.c:173:10: warning: variable 'is_phrase' set but not used [-Wunused-but-set-variable]
+  173 |     bool is_phrase = false;
+      |          ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/address_dictionary.c:666:59: error: expected expression
+  666 |         return address_dictionary_load(filename == NULL ? DEFAULT_ADDRESS_EXPANSION_PATH: filename);
+      |                                                           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/address_dictionary.h:25:40: note: expanded from macro 'DEFAULT_ADDRESS_EXPANSION_PATH'
+   25 | #define DEFAULT_ADDRESS_EXPANSION_PATH LIBPOSTAL_DATA_DIR PATH_SEPARATOR LIBPOSTAL_ADDRESS_EXPANSIONS_SUBDIR PATH_SEPARATOR ADDRESS_DICTIONARY_DATA_FILE
+      |                                        ^
+<command line>:3:28: note: expanded from macro 'LIBPOSTAL_DATA_DIR'
+    3 | #define LIBPOSTAL_DATA_DIR \/Users/kyle/.cache/libpostal-profile/libpostal\\
+      |                            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/address_dictionary.c:666:59: error: expected ':'
+  666 |         return address_dictionary_load(filename == NULL ? DEFAULT_ADDRESS_EXPANSION_PATH: filename);
+      |                                                           ^
+      |                                                           : 
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/address_dictionary.h:25:40: note: expanded from macro 'DEFAULT_ADDRESS_EXPANSION_PATH'
+   25 | #define DEFAULT_ADDRESS_EXPANSION_PATH LIBPOSTAL_DATA_DIR PATH_SEPARATOR LIBPOSTAL_ADDRESS_EXPANSIONS_SUBDIR PATH_SEPARATOR ADDRESS_DICTIONARY_DATA_FILE
+      |                                        ^
+<command line>:3:28: note: expanded from macro 'LIBPOSTAL_DATA_DIR'
+    3 | #define LIBPOSTAL_DATA_DIR \/Users/kyle/.cache/libpostal-profile/libpostal\\
+      |                            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/address_dictionary.c:666:57: note: to match this '?'
+  666 |         return address_dictionary_load(filename == NULL ? DEFAULT_ADDRESS_EXPANSION_PATH: filename);
+      |                                                         ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/address_dictionary.c:666:59: error: expected expression
+  666 |         return address_dictionary_load(filename == NULL ? DEFAULT_ADDRESS_EXPANSION_PATH: filename);
+      |                                                           ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/186-architecture-benchmark/source/original/address_dictionary.h:25:40: note: expanded from macro 'DEFAULT_ADDRESS_EXPANSION_PATH'
+   25 | #define DEFAULT_ADDRESS_EXPANSION_PATH LIBPOSTAL_DATA_DIR PATH_SEPARATOR LIBPOSTAL_ADDRESS_EXPANSIONS_SUBDIR PATH_SEPARATOR ADDRESS_DICTIONARY_DATA_FILE
+      |                                        ^
+<command line>:3:28: note: expanded from macro 'LIBPOSTAL_DATA_DIR'
+    3 | #define LIBPOSTAL_DATA_DIR \/Users/kyle/.cache/libpostal-profile/libpostal\\
+      |                            ^
+2 warnings and 3 errors generated.

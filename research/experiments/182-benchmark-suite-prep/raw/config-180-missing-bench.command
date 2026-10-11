@@ -1,0 +1,1 @@
+/opt/homebrew/bin/python3 research/experiments/182-benchmark-suite-prep/tools/make_run_config.py /Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/180-integrated-identity-events/artifacts /Users/kyle/Desktop/HW/CSCI\ 201\ Reserach/research/experiments/182-benchmark-suite-prep/raw/unusable-180-config.json 

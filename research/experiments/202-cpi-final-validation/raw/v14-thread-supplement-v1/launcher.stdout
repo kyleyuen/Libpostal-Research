@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-10T07:16:14.013853+00:00",
+  "input": {
+    "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv",
+    "sha256": "c795d62b629390c7ddf01d416f0d030e0bd9f075cb33d514ce10792b5b05e977",
+    "bytes": 70677
+  },
+  "passes": 5000,
+  "sample_interval_seconds": 3,
+  "samples_per_role": 6,
+  "roles": [
+    {
+      "name": "original-000",
+      "gate_exit": 0,
+      "status": "sampled",
+      "pid": 71392,
+      "command": [
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/182-benchmark-suite-prep/artifacts/original-000/bench_ext",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv",
+        "5000"
+      ],
+      "executable_sha256": "a4968702ab9415f3fc71f509d73284e5d228073c49c825aeb7798b5b6e061a50",
+      "samples": [
+        {
+          "sample": 1,
+          "utc": "2026-10-10T07:16:17.117852+00:00",
+          "pid": 71392,
+          "alive": true,
+          "thread_count": 1,
+          "ps_exit": 0
+        },
+        {
+          "sample": 2,
+          "utc": "2026-10-10T07:16:20.127231+00:00",
+          "pid": 71392,
+          "alive": true,
+          "thread_count": 1,
+          "ps_exit": 0
+        },
+        {
+          "sample": 3,
+          "utc": "2026-10-10T07:16:23.134135+00:00",
+          "pid": 71392,
+          "alive": true,
+          "thread_count": 1,
+          "ps_exit": 0
+        },
+        {
+          "sample": 4,
+          "utc": "2026-10-10T07:16:26.143201+00:00",
+          "pid": 71392,
+          "alive": true,
+          "thread_count": 1,
+          "ps_exit": 0
+        },
+        {
+          "sample": 5,
+          "utc": "2026-10-10T07:16:29.152737+00:00",
+          "pid": 71392,
+          "alive": true,
+          "thread_count": 1,
+          "ps_exit": 0
+        },
+        {
+          "sample": 6,
+          "utc": "2026-10-10T07:16:32.161834+00:00",
+          "pid": 71392,
+          "alive": true,
+          "thread_count": 1,
+          "ps_exit": 0
+        }
+      ],
+      "max_alive_thread_count": 1,
+      "natural_exit_before_sampling_complete": false,
+      "intentional_kill_after_samples": true,
+      "wrapper_exit_after_intentional_kill": -9,
+      "process_exit_if_natural": null,
+      "completed_utc": "2026-10-10T07:16:32.219456+00:00"
+    },
+    {
+      "name": "cpi-packaged",
+      "gate_exit": 0,
+      "status": "sampled",
+      "pid": 71505,
+      "command": [
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/119-component-phrase-ids/artifacts/cpi/bench_ext",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v14-osm-unseen/unseen14.tsv",
+        "5000"
+      ],
+      "executable_sha256": "c5612825963a18be1f4e7869da2bb2dc6fedf3f098189d195bad765247b43c5a",
+      "samples": [
+        {
+          "sample": 1,
+          "utc": "2026-10-10T07:16:35.299705+00:00",
+          "pid": 71505,
+          "alive": true,
+          "thread_count": 1,
+          "ps_exit": 0
+        },
+        {
+          "sample": 2,
+          "utc": "2026-10-10T07:16:38.308659+00:00",
+          "pid": 71505,
+          "alive": true,
+          "thread_count": 1,
+          "ps_exit": 0
+        },
+        {
+          "sample": 3,
+          "utc": "2026-10-10T07:16:41.318638+00:00",
+          "pid": 71505,
+          "alive": true,
+          "thread_count": 1,
+          "ps_exit": 0
+        },
+        {
+          "sample": 4,
+          "utc": "2026-10-10T07:16:44.325512+00:00",
+          "pid": 71505,
+          "alive": true,
+          "thread_count": 1,
+          "ps_exit": 0
+        },
+        {
+          "sample": 5,
+          "utc": "2026-10-10T07:16:47.334312+00:00",
+          "pid": 71505,
+          "alive": true,
+          "thread_count": 1,
+          "ps_exit": 0
+        },
+        {
+          "sample": 6,
+          "utc": "2026-10-10T07:16:50.341485+00:00",
+          "pid": 71505,
+          "alive": true,
+          "thread_count": 1,
+          "ps_exit": 0
+        }
+      ],
+      "max_alive_thread_count": 1,
+      "natural_exit_before_sampling_complete": false,
+      "intentional_kill_after_samples": true,
+      "wrapper_exit_after_intentional_kill": -9,
+      "process_exit_if_natural": null,
+      "completed_utc": "2026-10-10T07:16:50.364032+00:00"
+    }
+  ],
+  "completed_utc": "2026-10-10T07:16:50.364272+00:00"
+}

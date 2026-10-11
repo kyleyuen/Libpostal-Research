@@ -1,0 +1,18 @@
+golden-v1: bounded=False addresses_seen=12860 tokens_seen=75656 feature_records=702370 missing_ids=98994 families={'S': 590014, 'P': 112356} distinct_ids=133821 ids_reused_across_token_positions=45758 ids_reused_across_addresses=36951 duplicate_same_token_id_records=5480
+SAMPLE (0, 0, 'S', '0', 12)
+SAMPLE (0, 0, 'S', '1', 264515)
+SAMPLE (0, 0, 'S', '2', 264516)
+SAMPLE (0, 0, 'S', '3', 657)
+SAMPLE (0, 1, 'S', '0', 330)
+osm-v3: bounded=False addresses_seen=11405 tokens_seen=61157 feature_records=546890 missing_ids=51128 families={'S': 458398, 'P': 88492} distinct_ids=29585 ids_reused_across_token_positions=19294 ids_reused_across_addresses=18499 duplicate_same_token_id_records=3388
+SAMPLE (0, 0, 'S', '0', 12)
+SAMPLE (0, 0, 'S', '1', 3414604)
+SAMPLE (0, 0, 'S', '2', 3414605)
+SAMPLE (0, 0, 'S', '3', 3414606)
+SAMPLE (0, 0, 'S', '4', 3414607)
+fuzz-s1-200k: bounded=True addresses_seen=6233 tokens_seen=48329 feature_records=500000 missing_ids=81681 families={'S': 422145, 'P': 77855} distinct_ids=87247 ids_reused_across_token_positions=38238 ids_reused_across_addresses=29597 duplicate_same_token_id_records=3453
+SAMPLE (0, 0, 'S', '0', 295)
+SAMPLE (0, 0, 'S', '1', 12)
+SAMPLE (0, 0, 'S', '2', 296)
+SAMPLE (0, 0, 'S', '3', 297)
+SAMPLE (0, 0, 'S', '4', 3643)

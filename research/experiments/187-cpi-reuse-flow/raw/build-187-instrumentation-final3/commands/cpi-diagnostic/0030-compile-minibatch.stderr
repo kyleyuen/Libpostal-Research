@@ -1,0 +1,19 @@
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/minibatch.c:1:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/minibatch.h:9:
+In file included from /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/sparse_matrix.h:46:
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/matrix.h:21:2: warning: "No CBLAS" [-W#warnings]
+   21 | #warning "No CBLAS"
+      |  ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/minibatch.c:8:14: warning: unused variable 'feature_id' [-Wunused-variable]
+    8 |     uint32_t feature_id;
+      |              ^~~~~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/minibatch.c:12:12: warning: unused variable 'm' [-Wunused-variable]
+   12 |     size_t m = minibatch->n;
+      |            ^
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/minibatch.c:53:17: warning: unused variable 'feature' [-Wunused-variable]
+   53 |     const char *feature;
+      |                 ^~~~~~~
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/source/cpi/minibatch.c:102:17: warning: unused variable 'label' [-Wunused-variable]
+  102 |     const char *label;
+      |                 ^~~~~
+5 warnings generated.

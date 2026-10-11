@@ -1,0 +1,10 @@
+--- a/trie.h
++++ b/trie.h
+@@ -98,6 +98,7 @@
+ 
+ bool trie_get_data_at_index(trie_t *self, uint32_t index,  uint32_t *data);
+ bool trie_get_data(trie_t *self, char *key, uint32_t *data);
++bool trie_get_data_len(trie_t *self, char *key, size_t len, uint32_t *data);
+ bool trie_set_data_at_index(trie_t *self, uint32_t index, uint32_t data);
+ bool trie_set_data(trie_t *self, char *key, uint32_t data);
+ 

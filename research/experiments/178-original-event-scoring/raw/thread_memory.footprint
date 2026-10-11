@@ -1,0 +1,32 @@
+======================================================================
+dump_outputs [26041]: 64-bit    Footprint: 72 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+  41 MB        0 B          0 B         12    MALLOC_SMALL
+  30 MB        0 B          0 B          4    MALLOC_LARGE
+ 512 KB        0 B          0 B          8    MALLOC metadata
+ 256 KB        0 B          0 B          1    page table
+ 132 KB        0 B          0 B         35    __DATA_DIRTY
+  74 KB      16 KB          0 B         34    __DATA
+  64 KB        0 B          0 B          1    MALLOC_TINY
+  50 KB        0 B          0 B        126    unused dyld shared cache area
+  32 KB        0 B          0 B          3    untagged (VM_ALLOCATE)
+  32 KB        0 B          0 B          2    stack
+  32 KB        0 B          0 B          2    __TPRO_CONST
+  16 KB        0 B          0 B          1    os_alloc_once
+  16 KB        0 B          0 B          1    tag 22
+    0 B     176 KB          0 B         46    __TEXT
+    0 B      16 KB          0 B         43    __DATA_CONST
+    0 B      16 KB          0 B          3    __LINKEDIT
+    0 B        0 B          0 B         45    __AUTH_CONST
+    0 B        0 B          0 B         12    __AUTH
+    0 B        0 B          0 B          1    mapped file
+    ---        ---          ---        ---    ---
+  72 MB     224 KB          0 B        382    TOTAL
+
+Auxiliary data:
+    phys_footprint: 71 MB
+    phys_footprint_peak: 71 MB
+

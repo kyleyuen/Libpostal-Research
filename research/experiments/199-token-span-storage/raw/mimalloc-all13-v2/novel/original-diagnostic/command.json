@@ -1,0 +1,55 @@
+{
+  "argv": [
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1625-pattern-summary-fix/original/diagnostic/dump_outputs",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+  ],
+  "cwd": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "start": "2026-10-07T21:40:01.672104-07:00",
+  "env_overrides": {
+    "MEASUREMENTS_JSON": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/mimalloc-all13-v2/novel/original-diagnostic/metrics.json"
+  },
+  "timing_use": "command provenance only; not a performance measurement",
+  "monitored_argv": [
+    "/usr/bin/time",
+    "-l",
+    "-o",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/mimalloc-all13-v2/novel/original-diagnostic/time-l.txt",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/artifacts/build-20261007-1625-pattern-summary-fix/original/diagnostic/dump_outputs",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+  ],
+  "resource_log": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/mimalloc-all13-v2/novel/original-diagnostic/time-l.txt",
+  "exit": 0,
+  "end": "2026-10-07T21:40:06.240598-07:00",
+  "duration_seconds": 4.568508040858433,
+  "thread_sample_count": 21,
+  "thread_counts_observed": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "resource_summary": {
+    "peak_rss_bytes": 2612854784,
+    "peak_rss_reason": null,
+    "peak_footprint_bytes": 2612070608,
+    "peak_footprint_reason": null,
+    "raw_time_log": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/raw/mimalloc-all13-v2/novel/original-diagnostic/time-l.txt"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "started_utc": "2026-10-07T23:53:53.318123+00:00",
+  "mode": "fake ctypes library; no real parser/model loaded",
+  "checks": [
+    {
+      "name": "safe/full capture, null-vs-empty, unsafe omission",
+      "exit": 0,
+      "rows": 78,
+      "stderr": "captured=78 skipped_unsafe_or_non_utf8=4 output=/var/folders/1j/qs56sm5x07n313fqb_98q31h0000gn/T/tmp77c45gid/all.jsonl\n"
+    },
+    {
+      "name": "API-only requested order",
+      "exit": 0,
+      "rows": 2,
+      "stderr": "captured=2 skipped_unsafe_or_non_utf8=80 output=/var/folders/1j/qs56sm5x07n313fqb_98q31h0000gn/T/tmp77c45gid/subset.jsonl\n"
+    },
+    {
+      "name": "trace-safe named subset/environment/finalizer",
+      "exit": 0,
+      "rows": 4,
+      "trace_end": {
+        "trace_end": true,
+        "expected_addresses": 4
+      },
+      "stderr": "captured=4 skipped_unsafe_or_non_utf8=78 output=/var/folders/1j/qs56sm5x07n313fqb_98q31h0000gn/T/tmp77c45gid/trace-output.jsonl\nTRACE_FINISH=0 trace=/var/folders/1j/qs56sm5x07n313fqb_98q31h0000gn/T/tmp77c45gid/trace.jsonl\n"
+    },
+    {
+      "name": "exact-byte positive control",
+      "exit": 0,
+      "stderr": "captured=2 skipped_unsafe_or_non_utf8=80 output=/var/folders/1j/qs56sm5x07n313fqb_98q31h0000gn/T/tmp77c45gid/compare.jsonl\nBYTE_COMPARE=IDENTICAL expected=/var/folders/1j/qs56sm5x07n313fqb_98q31h0000gn/T/tmp77c45gid/same.jsonl\n"
+    },
+    {
+      "name": "exact-byte negative control",
+      "exit": 1,
+      "stderr": "captured=2 skipped_unsafe_or_non_utf8=80 output=/var/folders/1j/qs56sm5x07n313fqb_98q31h0000gn/T/tmp77c45gid/different.jsonl\nBYTE_COMPARE=DIFFERENT expected=/var/folders/1j/qs56sm5x07n313fqb_98q31h0000gn/T/tmp77c45gid/same.jsonl\n"
+    },
+    {
+      "name": "duplicate-ID validation",
+      "exit": 0
+    }
+  ],
+  "exit": 0,
+  "finished_utc": "2026-10-07T23:53:53.330509+00:00"
+}

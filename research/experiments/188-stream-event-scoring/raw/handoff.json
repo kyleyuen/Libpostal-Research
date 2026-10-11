@@ -1,0 +1,37 @@
+{
+  "experiment_id": 188,
+  "name": "stream-event-scoring",
+  "hypothesis": "Stream feature ID resolution directly into the existing state then transition score arrays, preserving each event's position and score-addition order while removing temporary event records, their capacity growth, and their write/read pass.",
+  "base_source": "research/experiments/181-release-180/sources",
+  "source_tree": "research/experiments/188-stream-event-scoring/sources",
+  "source_manifest_path": "research/experiments/188-stream-event-scoring/raw/source_manifest.sha256",
+  "source_manifest_sha256": "2c1565653d130d20652f0313b8efb238a568ebb5a8cbb006cf3f42a00bd310a9",
+  "patch_path": "research/experiments/188-stream-event-scoring/raw/crf.patch",
+  "patch_sha256": "0c9249d690e7fcb173bce57f77c2d9d2a748ec3d9e14ee10a21a340988861f56",
+  "builds": {
+    "release": {
+      "library": "research/experiments/188-stream-event-scoring/artifacts/release/libpostal.a",
+      "dumper": "research/experiments/188-stream-event-scoring/artifacts/release/dump_outputs",
+      "flags": "research/experiments/188-stream-event-scoring/raw/build_flags.txt",
+      "command_log": "research/experiments/188-stream-event-scoring/raw/build_release.* and raw/link_dylib.*",
+      "binary_sha256": "36d276d9c4fc70537c1157bdbf371e8a0a8f4187c03906ad3f5c8e59c263ac7a"
+    },
+    "diagnostic": {
+      "library": null,
+      "dumper": null,
+      "flags": null,
+      "command_log": null,
+      "binary_sha256": null,
+      "unavailable_reason": "186 diagnostic hooks are original-source scoped. Merging them into 181's carried-ID architecture needs a separately calibrated adapter; no matching diagnostic build was claimed or run."
+    }
+  },
+  "metrics": {
+    "supported": ["final parser output parity", "one parsing thread", "throughput and peak/steady footprint through serialized benchmark"],
+    "unavailable": {
+      "candidate operation counters": "No source-compatible 186 diagnostic build; counts for removed event staging and direct lookup/weight work are code-structural only."
+    }
+  },
+  "model_manifest_sha256": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad",
+  "build_exit_code": 0,
+  "parser_invoked": false
+}

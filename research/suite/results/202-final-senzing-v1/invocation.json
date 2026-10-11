@@ -1,0 +1,20 @@
+{
+ "argv": [
+  "research/suite/run_suite.py",
+  "--config",
+  "research/experiments/202-cpi-final-validation/raw/senzing-timing-v1.json",
+  "--run-id",
+  "202-final-senzing-v1",
+  "--stages",
+  "integrity,timing,memory,threads,report"
+ ],
+ "start": "2026-10-09T21:44:53-0700",
+ "variants": [
+  "original-000",
+  "cpi-packaged"
+ ],
+ "datasets": [
+  "golden-v1",
+  "novel"
+ ]
+}

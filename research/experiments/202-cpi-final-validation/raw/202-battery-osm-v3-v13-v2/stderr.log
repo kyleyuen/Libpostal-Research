@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/run_suite.py", line 445, in <module>
+    main()
+    ~~~~^^
+  File "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/run_suite.py", line 439, in main
+    {"integrity": stage_integrity, "correctness": stage_correctness, "timing": stage_timing, "memory": stage_memory,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     "threads": stage_threads, "report": stage_report}[name](cfg, run)
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/run_suite.py", line 216, in stage_timing
+    gate(cfg, run)
+    ~~~~^^^^^^^^^^
+  File "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/run_suite.py", line 186, in gate
+    r = subprocess.run([g], capture_output=True, text=True)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 555, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1990, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: '/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/202-cpi-final-validation/raw/env_gate_battery_v1.sh'

@@ -1,0 +1,8 @@
+{
+  "command": "python3 -m py_compile research/tools/fuzz_pipeline_exact.c research/tools/build_fuzz_exact_pair.py research/tools/run_parallel_fuzz_check.py",
+  "timestamp_utc": "unavailable in tool record; not reconstructed",
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "File \"research/tools/fuzz_pipeline_exact.c\", line 23\n    static int utf8_ok(const unsigned char *p, size_t n) {   // strict UTF-8 validity (no overlongs, no surrogates, <= U+10FFFF)\nSyntaxError: invalid decimal literal",
+  "resolution": "Python bytecode compilation was then run only on the Python helpers; the C harness was compiled with clang and both link builds exited 0."
+}

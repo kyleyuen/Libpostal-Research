@@ -1,0 +1,5 @@
+addresses 11405 tokens/addr 5.362  label mismatches vs K0: K1 0 K2 0  K2 fallbacks 0 (0.0000%)
+K0 original CSR f64    pass1 2.473  cold median p2..12 2.317 [2.260-2.514]  warm 1.730 [1.602-4.116] us/addr
+K1 packed f64 exact    pass1 1.621  cold median p2..12 1.410 [1.338-1.741]  warm 1.052 [0.799-1.068] us/addr
+K2 certified f32       pass1 1.356  cold median p2..12 1.141 [0.976-1.414]  warm 0.728 [0.693-0.934] us/addr
+K2 fallbacks incl. timing passes: 0

@@ -1,0 +1,2 @@
+EXTRA_SW is read from research/experiments/119-component-phrase-ids/raw/switches_cpi.txt; invoke through: /Users/kyle/Library/Application Support/Headroom/headroom/bin/rtk bash research/experiments/198-certified-viterbi/tools/run_build.sh
+The wrapper builds name `release` with clang; profile mode none; library flags `-O2 -ffp-contract=off -fno-fast-math`; scanner flags `-O0`; no extra link flags. Experiment-local build.sh adds `-DEXP_CERT_F32_VITERBI`.

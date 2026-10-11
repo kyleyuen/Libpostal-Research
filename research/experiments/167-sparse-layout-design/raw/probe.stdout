@@ -1,0 +1,19 @@
+probe=167 sparse layout evidence
+timestamp=2026-10-05T22:38:17-0700
+181737d30977adc9d287e3f7a1cfafd7277525d4
+a13d85161d1620412a71c209e29e292bcdca0a398b7c9d02c7386ac48a9b1a8e  research/experiments/135-weight-compressibility-probe/raw/probe.stderr
+f0de4777d35512a368faae3f402995145e12fd720914a2874b9e7b7c48b730d4  research/experiments/153-record-format/raw/a2.stdout
+336d9173f6c9f7b0094c4f15b5237d8571360c8558e61cf9cf8a0de31914b4a0  research/experiments/162-joint-timing/README.md
+WD_PROBE state rows=11470623 nonempty=11470623 records=33799350 mean_row=2.9 | distinct values=22123311 (65.4548% of records) most_common_value_count=132 | top256 cover 0.0% top4096 0.3% top65536 2.1% | float32-exact 0.0% zero 18
+WD_PROBE state bits per record: class 5 + value index 25 = 30 (now 80) | total 322.3 MB -> 120.9 MB (+ 168.8 MB value table) | expected 128-B lines per row (uniform start) 1.22 -> 1.08
+WD_PROBE trans rows=2086474 nonempty=2086474 records=13369573 mean_row=6.4 | distinct values=12450028 (93.1221% of records) most_common_value_count=1052 | top256 cover 0.0% top4096 0.2% top65536 1.6% | float32-exact 0.0% zero 1052
+WD_PROBE trans bits per record: class 9 + value index 24 = 33 (now 80) | total 127.5 MB -> 52.6 MB (+ 95.0 MB value table) | expected 128-B lines per row (uniform start) 1.49 -> 1.20
+entries 17251657 = state 11470623 + trans 2086474 + vocab; records 10025721 (unit 5893398, pair 4130025, own 2298; vocab-only 2687878); families 58; duplicate slots 0
+verify: rows bit-identical 13557097  mismatched 0  unmapped 0 | vocab freq ok 3694560 bad 0 | mean index probes per lookup 1.246
+sizes MB: arena f64 795.9, f32 577.9 (record key bytes 160.1); index 268.4 => total f64 1064.4, f32 846.4
+O3i corpus=golden-v1 rows=702370 hit_rate=85.9057 miss_rate=14.0943
+O3i corpus=novel rows=713995 hit_rate=84.2310 miss_rate=15.7690
+O3i corpus=osm-v3 rows=546890 hit_rate=90.6511 miss_rate=9.3489
+O3i corpus=fuzz-s1-200k rows=14030294 hit_rate=83.6624 miss_rate=16.3376
+| 160b | 0.843 | **0.710** | 0.714 | **0.665** | 4.07× | 1,072 (P = 2,189) |
+| 160c | 0.978 | **0.833** | 0.873 | **0.822** | 4.70× | 1,072 (P = 2,189) |

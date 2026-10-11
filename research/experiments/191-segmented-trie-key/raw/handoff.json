@@ -1,0 +1,37 @@
+{
+  "experiment_id": 191,
+  "name": "segmented-trie-key",
+  "hypothesis": "Traverse the exact `word|TOKEN` dictionary key as two byte segments, eliminating construction/copying of its contiguous temporary key while preserving the existing trie walk and compressed-tail comparison semantics.",
+  "base_source": "research/experiments/181-release-180/sources plus original libpostal trie.c/trie.h",
+  "source_tree": "research/experiments/191-segmented-trie-key/sources",
+  "source_manifest_path": "research/experiments/191-segmented-trie-key/raw/source_manifest.sha256",
+  "source_manifest_sha256": "4f09f5bcf4f86847493e30f3513048dc70daf5cf6f279c4c66cd3bce03d672fb",
+  "patch_paths": ["research/experiments/191-segmented-trie-key/raw/crf.patch", "research/experiments/191-segmented-trie-key/raw/trie.patch", "research/experiments/191-segmented-trie-key/raw/trie_header.patch"],
+  "patch_sha256": ["0731b2c92ee60cb252eff5f6e55eb33ba8027f293ee987d9b37d7879431412ba", "5e7981c86c788a0af3be79d92273d97bc18e5f5351dba47a50d1837accc5a515", "6c7647482805a5495647357e7f34d55c27a2892eca7c4dc38b786122122b46aa"],
+  "builds": {
+    "release": {
+      "library": "research/experiments/191-segmented-trie-key/artifacts/release/libpostal.a",
+      "dumper": "research/experiments/191-segmented-trie-key/artifacts/release/dump_outputs",
+      "flags": "research/experiments/191-segmented-trie-key/raw/build_flags.txt",
+      "command_log": "research/experiments/191-segmented-trie-key/raw/build_release.*",
+      "binary_sha256": "8a3e49110c1f6b026905bd333a5da877f9d0030f520d282107eb23211fb2525d"
+    },
+    "diagnostic": {
+      "library": null,
+      "dumper": null,
+      "flags": null,
+      "command_log": null,
+      "binary_sha256": null,
+      "build_request": "Apply these exact patches to fresh 185 prototype181 instrumentation. Add diagnostic-only counts for control bytes materialized (`n+6` per eligible direct lookup), candidate materialized bytes (0), trie transitions, and compressed-tail compared bytes; calibrate hit/miss/tail-positive/tail-negative cases before workload runs."
+    }
+  },
+  "metrics": {
+    "supported": ["temporary key allocation/copy bytes", "trie transition and tail compare work", "lookup calls/hits/misses", "output parity, one parsing thread, throughput and peak/steady footprint"],
+    "unavailable": {
+      "universal equivalence": "Finite workload tests do not certify arbitrary keys; preserve the original key lookup fallback where segmented behavior is unsupported."
+    }
+  },
+  "model_manifest_sha256": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad",
+  "build_exit_code": 0,
+  "parser_invoked": false
+}

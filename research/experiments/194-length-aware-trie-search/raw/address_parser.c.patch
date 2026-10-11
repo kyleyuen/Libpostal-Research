@@ -1,0 +1,64 @@
+--- a/address_parser.c
++++ b/address_parser.c
+@@ -377,10 +377,14 @@
+     free(self);
+ }
+ 
+-static inline uint32_t word_vocab_frequency(address_parser_t *parser, char *word) {   
++static inline uint32_t word_vocab_frequency_len(address_parser_t *parser, char *word, size_t len) {
+     uint32_t count = 0;
+-    bool has_key = trie_get_data(parser->vocab, word, &count);
++    bool has_key = trie_get_data_len(parser->vocab, word, len, &count);
+     return count;
++}
++
++static inline uint32_t word_vocab_frequency(address_parser_t *parser, char *word) {
++    return word_vocab_frequency_len(parser, word, strlen(word));
+ }
+ 
+ inline void address_parser_normalize_token(cstring_array *array, char *str, token_t token) {
+@@ -409,7 +413,7 @@
+ static bool ap_front_fill(address_parser_context_t *c, address_parser_t *p) {
+     size_t n = c->normalized_tokens->n;
+     if (n > ap_front_cap) { ap_front_t *p = realloc(ap_front, n * sizeof(*p)); if (!p) { ap_front_n = 0; return false; } ap_front = p; ap_front_cap = n; }
+-    for (size_t i = 0; i < n; i++) { char *w = cstring_array_get_string(c->normalized, i); uint32_t f = word_vocab_frequency(p, w), id = UINT32_MAX; if (f) crf_state_word_id(p->model.crf, w, &id); ap_front[i] = (ap_front_t){w, c->address_phrase_memberships->a[i], c->component_phrase_memberships->a[i], c->postal_code_phrase_memberships->a[i], f, id}; }
++    for (size_t i = 0; i < n; i++) { char *w = cstring_array_get_string(c->normalized, i); uint32_t f = word_vocab_frequency_len(p, w, (size_t)cstring_array_token_length(c->normalized, i)), id = UINT32_MAX; if (f) crf_state_word_id(p->model.crf, w, &id); ap_front[i] = (ap_front_t){w, c->address_phrase_memberships->a[i], c->component_phrase_memberships->a[i], c->postal_code_phrase_memberships->a[i], f, id}; }
+     ap_front_n = n; return true;
+ }
+ 
+@@ -1377,7 +1381,7 @@
+         }
+     }
+ 
+-    uint32_t word_freq = front ? front->freq : word_vocab_frequency(parser, word);
++    uint32_t word_freq = front ? front->freq : word_vocab_frequency_len(parser, word, word_len);
+ 
+     bool is_word = is_word_token(token.type);
+ 
+@@ -1475,7 +1479,7 @@
+ 
+                 uint32_t sub_word_freq = word_freq;
+                 if (is_hyphenated) {
+-                    sub_word_freq = word_vocab_frequency(parser, sub_word);
++                    sub_word_freq = word_vocab_frequency_len(parser, sub_word, sub_word_len);
+                     if (sub_word_freq > 0) {
+                         feature_array_add(features, 2, "sub_word", sub_word);
+                     }
+@@ -1543,7 +1547,7 @@
+         char *prev_word = prev_word_or_phrase.str;
+ 
+         if (is_plain_word_phrase_type(prev_word_or_phrase.type)) {
+-            uint32_t prev_word_freq = word_vocab_frequency(parser, prev_word);
++            uint32_t prev_word_freq = word_vocab_frequency_len(parser, prev_word, (size_t)cstring_array_token_length(normalized, (uint32_t)last_index));
+             token_t prev_token = tokenized->tokens->a[last_index];
+             bool prev_token_numeric = is_numeric_token(prev_token.type);
+             if (prev_word_freq == 0) {
+@@ -1569,7 +1573,7 @@
+         size_t next_word_len = 1;
+ 
+         if (is_plain_word_phrase_type(next_word_or_phrase.type)) {
+-            uint32_t next_word_freq = word_vocab_frequency(parser, next_word);
++            uint32_t next_word_freq = word_vocab_frequency_len(parser, next_word, (size_t)cstring_array_token_length(normalized, (uint32_t)next_index));
+             token_t next_token = tokenized->tokens->a[next_index];
+             bool next_token_numeric = is_numeric_token(next_token.type);
+             if (next_word_freq == 0) {

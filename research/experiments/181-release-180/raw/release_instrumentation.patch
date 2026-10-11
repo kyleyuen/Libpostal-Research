@@ -1,0 +1,51 @@
+--- research/experiments/180-integrated-identity-events/sources/crf.c	2026-10-05 23:54:47
++++ research/experiments/181-release-180/sources/crf.c	2026-10-06 00:09:56
+@@ -13,8 +13,14 @@
+ }
+ 
+ #ifdef EXP_EVENT_FLOW
+-static uint32_t direct_word_id = UINT32_MAX, oracle_direct_id = UINT32_MAX; static cstring_array *direct_word_array = NULL; static uint32_t direct_word_pos = 0, oracle_direct_pos = 0; static const char *oracle_direct_word = NULL; static uint64_t direct_word_count = 0, direct_word_fallback = 0;
++static uint32_t direct_word_id = UINT32_MAX; static cstring_array *direct_word_array = NULL; static uint32_t direct_word_pos = 0;
++#ifdef EXP_ORACLE
++static uint32_t oracle_direct_id = UINT32_MAX, oracle_direct_pos = 0; static const char *oracle_direct_word = NULL;
+ #endif
++#ifdef EXP_EVENT_STATS
++static uint64_t direct_word_count = 0, direct_word_fallback = 0;
++#endif
++#endif
+ #ifdef EXP_ORACLE
+ // 142 stage oracles (see address_parser.c). O3k/O3i: every key in emission order (duplicates kept) and its id or '-'.
+ // O4: state row dense, state-transition row sparse (index:bits for every entry whose bits are not +0.0). fprintf only.
+@@ -57,8 +63,21 @@
+ 
+ #ifdef EXP_EVENT_FLOW
+ bool crf_state_word_id(crf_t *self, const char *word, uint32_t *id) { size_t n = strlen(word); char *key = malloc(n + 6); if (!key) return false; memcpy(key, "word|", 5); memcpy(key + 5, word, n + 1); bool ok = crf_get_feature_id(self, key, id); free(key); return ok; }
+-void crf_direct_state_word(cstring_array *a, uint32_t id, const char *word) { direct_word_array = a; direct_word_pos = cstring_array_num_strings(a); direct_word_id = id; oracle_direct_id = id; oracle_direct_pos = direct_word_pos; oracle_direct_word = word; direct_word_count++; }
+-void crf_direct_state_word_fallback(void) { direct_word_fallback++; }
++void crf_direct_state_word(cstring_array *a, uint32_t id, const char *word) { direct_word_array = a; direct_word_pos = cstring_array_num_strings(a); direct_word_id = id;
++#ifdef EXP_ORACLE
++oracle_direct_id = id; oracle_direct_pos = direct_word_pos; oracle_direct_word = word;
++#else
++(void)word;
++#endif
++#ifdef EXP_EVENT_STATS
++direct_word_count++;
++#endif
++}
++void crf_direct_state_word_fallback(void) {
++#ifdef EXP_EVENT_STATS
++direct_word_fallback++;
++#endif
++}
+ typedef struct { uint32_t id; uint8_t trans; } original_event_t;
+ static original_event_t *original_events = NULL;
+ static size_t original_events_cap = 0;
+@@ -184,7 +203,7 @@
+         oracle_scores(self, crf_context, t);
+ #endif
+     }
+-#ifdef EXP_EVENT_FLOW
++#ifdef EXP_EVENT_STATS
+     if (getenv("EXP180_STATS") != NULL) fprintf(stderr, "EXP180 direct_word=%llu fallback_word=%llu\n", (unsigned long long)direct_word_count, (unsigned long long)direct_word_fallback);
+ #endif
+     return true;

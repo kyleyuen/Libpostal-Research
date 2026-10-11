@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-10-07T18:13:23.453858-07:00",
+  "result_paths": [
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/results/golden-preservation-build-187-final4/results.json",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/results/remaining12-build-187-final4/results.json"
+  ],
+  "records": 13,
+  "unique_workloads": 13,
+  "addresses": 128540,
+  "all_byte_checks": true,
+  "all_observed_threads_one": true,
+  "all_analyses_complete": true,
+  "query_rows": 8903320,
+  "consumer_rows": 6767700,
+  "physical_search_totals_by_family": {
+    "address_phrase": 529951,
+    "component_phrase": 128540,
+    "postal_phrase": 128540,
+    "state_feature": 1859856,
+    "transition_feature": 70173,
+    "word_vocab": 1322284
+  },
+  "potential_repeat_search_upper_bounds_by_family": {
+    "address_phrase": 651,
+    "state_feature": 93395,
+    "transition_feature": 778,
+    "word_vocab": 310066
+  },
+  "observed_answer_reuse_totals_by_family": {
+    "word_vocab": 546206
+  },
+  "precomputed_id_totals_by_family": {
+    "state_feature": 3373241,
+    "transition_feature": 944529
+  },
+  "repeat_evidence_totals": {
+    "consumer-link-incomplete": 249635,
+    "negative-answer-or-consumer-proof-incomplete": 98957,
+    "observed-match-covered-sites-coverage-partial": 56298
+  }
+}

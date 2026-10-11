@@ -1,0 +1,3 @@
+command: python3 research/tools/run_locked.py -- /tmp/libpostal-speedup-203-setup/bin/cpi/dump_outputs research/experiments/203-cpi-memory-regression/raw/portable-runner-setup-v1/smoke-input.txt > research/experiments/203-cpi-memory-regression/raw/portable-runner-setup-v1/cpi203.stdout.jsonl 2> research/experiments/203-cpi-memory-setup-v1/cpi203.stderr.txt
+exit: 1
+stderr: zsh: no such file or directory (redirection target typo); parser process did not start

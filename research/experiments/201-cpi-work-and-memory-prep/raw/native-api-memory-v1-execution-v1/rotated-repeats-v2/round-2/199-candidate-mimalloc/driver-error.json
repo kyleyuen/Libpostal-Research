@@ -1,0 +1,10 @@
+{
+  "status": "failed-before-parser",
+  "failure": "FileExistsError: run_measurements.capture() creates the capture directory, but the repeat driver pre-created it to write gate logs. AC gate passed, then capture setup failed before process creation.",
+  "preserved_existing_gate_records": [
+    "gate.stdout",
+    "gate.stderr",
+    "gate.exit"
+  ],
+  "observed_recorded_at": "2026-10-09T08:57:41.709922+00:00"
+}

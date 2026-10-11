@@ -1,0 +1,58 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/tools/test_cpi_reuse_flow.py"
+      ],
+      "start_utc": "2026-10-08T00:48:31.942237+00:00",
+      "end_utc": "2026-10-08T00:48:31.986224+00:00",
+      "elapsed_seconds": 0.04392412514425814,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_answer_disagreement_does_not_become_reuse_candidate (__main__.ReuseFlowTests.test_answer_disagreement_does_not_become_reuse_candidate) ... ok\ntest_answer_reuse_requires_exact_producer_identity (__main__.ReuseFlowTests.test_answer_reuse_requires_exact_producer_identity) ... ok\ntest_missing_consumer_is_explicit (__main__.ReuseFlowTests.test_missing_consumer_is_explicit) ... ok\ntest_overflow_rejected (__main__.ReuseFlowTests.test_overflow_rejected) ... ok\ntest_phrase_boolean_miss_has_unknown_result_shape (__main__.ReuseFlowTests.test_phrase_boolean_miss_has_unknown_result_shape) ... ok\ntest_repeated_answer_links_to_matching_consumers_and_liveness (__main__.ReuseFlowTests.test_repeated_answer_links_to_matching_consumers_and_liveness) ... ok\ntest_source_proof_is_within_parse_only_and_separate_from_epoch (__main__.ReuseFlowTests.test_source_proof_is_within_parse_only_and_separate_from_epoch) ... ok\ntest_unknown_generation_stays_unproven (__main__.ReuseFlowTests.test_unknown_generation_stays_unproven) ... ok\ntest_unknown_record_rejected (__main__.ReuseFlowTests.test_unknown_record_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.004s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/tools/run_cpi_reuse_flow.py",
+        "--mode",
+        "smoke"
+      ],
+      "start_utc": "2026-10-08T00:48:31.986247+00:00",
+      "end_utc": "2026-10-08T00:48:32.019367+00:00",
+      "elapsed_seconds": 0.0331383750308305,
+      "exit_code": 0,
+      "stdout": "{\n  \"mode\": \"preflight only; no process launched\",\n  \"workload_mode\": \"smoke\",\n  \"ready\": true,\n  \"problems\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/tools/run_cpi_reuse_flow.py",
+        "--mode",
+        "golden-preservation"
+      ],
+      "start_utc": "2026-10-08T00:48:32.019388+00:00",
+      "end_utc": "2026-10-08T00:48:32.058602+00:00",
+      "elapsed_seconds": 0.03924808278679848,
+      "exit_code": 0,
+      "stdout": "{\n  \"mode\": \"preflight only; no process launched\",\n  \"workload_mode\": \"golden-preservation\",\n  \"ready\": true,\n  \"problems\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/187-cpi-reuse-flow/tools/run_cpi_reuse_flow.py",
+        "--mode",
+        "remaining12"
+      ],
+      "start_utc": "2026-10-08T00:48:32.058632+00:00",
+      "end_utc": "2026-10-08T00:48:32.138647+00:00",
+      "elapsed_seconds": 0.08005649992264807,
+      "exit_code": 0,
+      "stdout": "{\n  \"mode\": \"preflight only; no process launched\",\n  \"workload_mode\": \"remaining12\",\n  \"ready\": true,\n  \"problems\": []\n}\n",
+      "stderr": ""
+    }
+  ]
+}

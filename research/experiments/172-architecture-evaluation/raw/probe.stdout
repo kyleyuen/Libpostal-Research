@@ -1,0 +1,15 @@
+baseline=original	enabled_variants=original,cpi	rounds=5	passes=20	fuzz_count=2000000	fuzz_seeds=[1, 2]
+dataset=golden-v1	reserved=false	txt_lines=12863	tsv_lines=12863
+dataset=novel	reserved=false	txt_lines=12863	tsv_lines=12863
+dataset=osm-v3	reserved=false	txt_lines=11405	tsv_lines=11405
+dataset=unseen-v4	reserved=false	txt_lines=10293	tsv_lines=10293
+dataset=unseen-v5	reserved=false	txt_lines=8794	tsv_lines=8794
+dataset=unseen-v6	reserved=false	txt_lines=9450	tsv_lines=9450
+dataset=unseen-v7	reserved=false	txt_lines=8973	tsv_lines=8973
+dataset=unseen-v8	reserved=false	txt_lines=9981	tsv_lines=9981
+dataset=unseen-v9	reserved=false	txt_lines=9480	tsv_lines=9480
+dataset=unseen-v10	reserved=false	txt_lines=8567	tsv_lines=8567
+dataset=unseen-v11	reserved=false	txt_lines=7882	tsv_lines=7882
+dataset=unseen-v12	reserved=true	inputs_not_opened=true
+dataset=unseen-v13	reserved=true	inputs_not_opened=true
+oracle=fuzz-s1-200k	O1_addresses=178955	input=/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/oracles/v1/fuzz-s1-200k/O1.txt.gz

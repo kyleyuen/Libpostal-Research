@@ -1,0 +1,70 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/015-integer-keys/tools/compare_frozen.py",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/results/full13-20261007/golden-v1/original/stdout",
+    "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/baseline-outputs.jsonl"
+  ],
+  "cwd": "/Users/kyle/Desktop/HW/CSCI 201 Reserach",
+  "start": "2026-10-07T15:02:01.970475-07:00",
+  "end": "2026-10-07T15:02:02.044747-07:00",
+  "exit_code": 0,
+  "stdout": "reference=12863 dump=12863 unique_dump=12863 missing=0 mismatched=0\nRESULT: IDENTICAL\n",
+  "stderr": "",
+  "dump_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/185-diagnostic-instrumentation/results/full13-20261007/golden-v1/original/stdout",
+  "dump_sha256": "45574ee2b1972f1acf2dbf53eb1fc2c25f8e1972cd5c22e8071fe3606c5c8c63",
+  "reference_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/baseline-outputs.jsonl",
+  "reference_sha256": "c2d9ce7e6a014f6f5fd0ecf644f09c7863f4e028993acd21b7a1344f172bf084",
+  "first_dump_row": {
+    "address": "riečna 588/13, 95801 partizánske sk",
+    "components": [
+      [
+        "road",
+        "riečna"
+      ],
+      [
+        "house_number",
+        "588/13"
+      ],
+      [
+        "postcode",
+        "95801"
+      ],
+      [
+        "city",
+        "partizánske"
+      ],
+      [
+        "country",
+        "sk"
+      ]
+    ]
+  },
+  "first_reference_row": {
+    "id": "0001f4302f01f3354c19a09dfe18762826574d2e484d8fd03677b40a499e5459",
+    "components": [
+      [
+        "road",
+        "riečna"
+      ],
+      [
+        "house_number",
+        "588/13"
+      ],
+      [
+        "postcode",
+        "95801"
+      ],
+      [
+        "city",
+        "partizánske"
+      ],
+      [
+        "country",
+        "sk"
+      ]
+    ]
+  },
+  "finding": "Frozen reference stores id plus ordered components; original dumper stores address plus ordered components. The trusted comparator hashes dumper address to match reference id and compares component arrays in order.",
+  "scope": "file comparison only; no parser process launched"
+}

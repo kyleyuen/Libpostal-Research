@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "kind": "fuzz_correctness_only",
+  "seed": 1,
+  "input_count_per_variant": 200000,
+  "model_manifest_sha256": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad",
+  "corpora": [
+    {
+      "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+      "sha256": "02252919fc2a24a3f0af41f3f7c5d6f8aaed6a5eb9548a2dcff6a4fcfe5f6c91"
+    },
+    {
+      "path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt",
+      "sha256": "a424c53e75d3d55f4172f7b13a59bf5ece961bf0f4acd7b85e214ce0aee09d47"
+    }
+  ],
+  "started_utc": "2026-10-08T04:56:19.980638+00:00",
+  "timing_use": "command provenance only; not a performance measurement",
+  "roles": [
+    {
+      "role": "original-000",
+      "binary": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-v1/original-000/fuzz_pipeline_exact",
+      "binary_sha256": "89f39cba96861f8a82e092d13ae1a91fa5af3f624476038f8da6010b083984dc",
+      "gate_start_utc": "2026-10-08T04:56:19.986757+00:00",
+      "gate_end_utc": "2026-10-08T04:56:20.057433+00:00",
+      "gate_exit": 0,
+      "argv": [
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-v1/original-000/fuzz_pipeline_exact",
+        "1",
+        "200000",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+      ],
+      "start_utc": "2026-10-08T04:56:20.057459+00:00",
+      "end_utc": "2026-10-08T04:56:32.397961+00:00",
+      "exit": 0,
+      "stdout_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/197-combined-query-removal/raw/fuzz-exact-200k-seed1/original-000/stdout",
+      "stdout_sha256": "d9331f364b6ed77c56e3bb695599c308162da54ed13442384c7f69f155d73030",
+      "stdout_bytes": 57956637,
+      "output_rows": 200000,
+      "threads_observed": [
+        1
+      ],
+      "command_record": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/197-combined-query-removal/raw/fuzz-exact-200k-seed1/original-000/command.json"
+    },
+    {
+      "role": "candidate",
+      "binary": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-candidates-v1/candidate-197/fuzz_pipeline_exact",
+      "binary_sha256": "b9efff5bc350f29c7e3d2976fb1f0f60fd18011e7c5bb5b5023ffcc573dc81b8",
+      "gate_start_utc": "2026-10-08T04:56:32.445915+00:00",
+      "gate_end_utc": "2026-10-08T04:56:32.517669+00:00",
+      "gate_exit": 0,
+      "argv": [
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-candidates-v1/candidate-197/fuzz_pipeline_exact",
+        "1",
+        "200000",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+      ],
+      "start_utc": "2026-10-08T04:56:32.517693+00:00",
+      "end_utc": "2026-10-08T04:56:43.962207+00:00",
+      "exit": 0,
+      "stdout_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/197-combined-query-removal/raw/fuzz-exact-200k-seed1/candidate/stdout",
+      "stdout_sha256": "d9331f364b6ed77c56e3bb695599c308162da54ed13442384c7f69f155d73030",
+      "stdout_bytes": 57956637,
+      "output_rows": 200000,
+      "threads_observed": [
+        1
+      ],
+      "command_record": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/197-combined-query-removal/raw/fuzz-exact-200k-seed1/candidate/command.json"
+    }
+  ],
+  "output_byte_identical": true,
+  "output_rows_reconciled": true,
+  "status": "pass",
+  "commands": [
+    {
+      "role": "original-000",
+      "argv": [
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-v1/original-000/fuzz_pipeline_exact",
+        "1",
+        "200000",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+      ],
+      "start_utc": "2026-10-08T04:56:20.057459+00:00",
+      "end_utc": "2026-10-08T04:56:32.397961+00:00",
+      "exit": 0
+    },
+    {
+      "role": "candidate",
+      "argv": [
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/199-token-span-storage/artifacts/fuzz-exact-candidates-v1/candidate-197/fuzz_pipeline_exact",
+        "1",
+        "200000",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+        "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+      ],
+      "start_utc": "2026-10-08T04:56:32.517693+00:00",
+      "end_utc": "2026-10-08T04:56:43.962207+00:00",
+      "exit": 0
+    }
+  ],
+  "ended_utc": "2026-10-08T04:56:44.031863+00:00"
+}

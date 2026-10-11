@@ -1,0 +1,60 @@
+{
+  "experiment_id": 200,
+  "name": "fused ASCII normalization/tokenization pipeline",
+  "hypothesis": "Drive the unchanged scanner once over a conservative ASCII letters/digits/spaces address, lower/copy scanner-consumed bytes into one output buffer, and record scanner token spans in that traversal. Unsupported bytes or scanner behavior discard partial work and use original normalization plus tokenization.",
+  "base_source": "experiment 119 source snapshot (commit 181737d30977adc9d287e3f7a1cfafd7277525d4)",
+  "source_tree": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/sources",
+  "source_manifest_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/source-manifest.sha256",
+  "source_manifest_sha256": "5931eb4479db88cbc6e1342700581b93c0d3616f8aca5cc8cf62a42c7c3c568d",
+  "patch_path": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/source.patch",
+  "patch_sha256": "aaedd8ac5b6bad78dfa7383e8e87b07dd8ed9f5493062647e689845d7b7cff59",
+  "builds": {
+    "release": {
+      "library": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/artifacts/release/libpostal.a",
+      "dumper": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/artifacts/release/dump_outputs",
+      "flags": "clang; experiment 119/CPI switch set plus -DEXP_FUSED_ASCII_PIPE; library -O2 -flto; scanner -O0; link -flto; no PGO; no EXP_CERT_F32_VITERBI or EXP_TOKEN_SLICES",
+      "command_log": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/build.command",
+      "binary_sha256": "36184790c0ef6f94a4b0be93b694f4d96d6408f3d6b9b54d2d511a5d77257fd2",
+      "dumper_sha256": "8f3b3d2597f355ad1e9750f49924b52ec824ab19e65c765f03a268100dc6a674",
+      "build_stdout": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/build.stdout",
+      "build_stderr": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/200-fused-ascii-pipeline/raw/build.stderr",
+      "build_exit_code": 0,
+      "scanner_object_reused_from": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/experiments/198-certified-viterbi/artifacts/release-v3/obj/scanner.o",
+      "scanner_object_sha256": "06cfaf25be695731afa6e0b63a9f773a7d2a6e52c7315325767aeef6a442a381",
+      "scanner_source_sha256": "3c985905ac4c0b5f05de8515e9851c7ea927e832f4dfbddf92ad5f3fb93902a8",
+      "scanner_compile_flags": "clang -O0; exact unchanged generated scanner object reuse",
+      "compiler_lock": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/analysis/parallel-exploration-2026-10-07/WORKLOAD.lock"
+    },
+    "diagnostic": {
+      "library": null,
+      "dumper": null,
+      "flags": null,
+      "command_log": null,
+      "binary_sha256": null
+    }
+  },
+  "metrics": {
+    "supported": [
+      "candidate source implementation",
+      "release build exit code",
+      "release library/dumper SHA-256"
+    ],
+    "unavailable": {
+      "exact_output": "Parser not invoked; benchmark worker owns golden-v1 screen.",
+      "speed": "No parser/model benchmark run by implementation worker.",
+      "memory": "No parser/model benchmark run by implementation worker.",
+      "eligible_input_coverage": "No corpus/model workload run by implementation worker.",
+      "diagnostic_counters": "No diagnostic derivative built."
+    }
+  },
+  "model_manifest_sha256": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad",
+  "build_exit_code": 0,
+  "parser_invoked": false,
+  "implementation_kind": "runnable structural implementation; exactness/performance pending benchmark worker",
+  "artifacts_sha256": {
+    "libpostal.a": "36184790c0ef6f94a4b0be93b694f4d96d6408f3d6b9b54d2d511a5d77257fd2",
+    "dump_outputs": "8f3b3d2597f355ad1e9750f49924b52ec824ab19e65c765f03a268100dc6a674",
+    "bench_ext": "23bbcbaa47a417a16eab2e1ffdba7ada590a55722b4ac80c6d388304d124650a",
+    "fuzz_pipeline": "3bd6a65e5b2788c6fe32c9b4899b5edd3d415fb49f4e85fa616333a08e3bb518"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "experiment_id": 192,
+  "name": "reuse-front-neighbor-frequency",
+  "hypothesis": "Use the same-address, same-index front-record word frequency for previous and next plain-word context features when count and exact word-pointer identity match; otherwise keep the original vocabulary lookup.",
+  "base_source": "research/experiments/181-release-180/sources",
+  "source_tree": "research/experiments/192-reuse-front-neighbor-frequency/sources",
+  "source_manifest_path": "research/experiments/192-reuse-front-neighbor-frequency/raw/source_manifest.sha256",
+  "source_manifest_sha256": "add801245884103d19b7dfb9a34765a7addd56c13277bdb1e96b5ecbd1400f48",
+  "patch_path": "research/experiments/192-reuse-front-neighbor-frequency/raw/address_parser.c.patch",
+  "patch_sha256": "5d2198d94074bdfe1993c50b9656ede3d0244b9e812e59e70532bde83aa57962",
+  "builds": {
+    "release": {
+      "library": "research/experiments/192-reuse-front-neighbor-frequency/artifacts/release/libpostal.a",
+      "dumper": "research/experiments/192-reuse-front-neighbor-frequency/artifacts/release/dump_outputs",
+      "flags": "research/experiments/192-reuse-front-neighbor-frequency/raw/build_flags.txt",
+      "command_log": "research/experiments/192-reuse-front-neighbor-frequency/raw/build_release.*",
+      "binary_sha256": "33cf8218cf33b783de211bff5a96dab5e4cd8a11e2efb411fa8c5854121861d8"
+    },
+    "diagnostic": {
+      "library": null,
+      "dumper": null,
+      "flags": null,
+      "command_log": null,
+      "binary_sha256": null,
+      "unavailable_reason": "Benchmark worker will produce an isolated 185-hook derivative from this exact release patch; none built by implementation author."
+    }
+  },
+  "metrics": {
+    "supported": [
+      "final parser output parity",
+      "single-thread check",
+      "speed and peak/steady footprint through serialized benchmark",
+      "neighbor-frequency reuse and vocabulary-query count via isolated diagnostic derivative"
+    ],
+    "unavailable": {}
+  },
+  "diagnostic_requests": [
+    "Count previous-neighbor and next-neighbor cache reuse only when `ap_front_n == num_tokens`, index is in range, and `ap_front[index].word == phrase_helper_result` pointer matches. Count fallback original query for all others. Report word-vocabulary query total/stage."
+  ],
+  "model_manifest_sha256": "1d4e0863c590577de70b39219b56195d324823d2c5033e829b93266829f4b2ad",
+  "build_exit_code": 0,
+  "parser_invoked": false
+}

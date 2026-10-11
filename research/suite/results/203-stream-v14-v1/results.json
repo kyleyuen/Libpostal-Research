@@ -1,0 +1,101 @@
+{
+ "run": "203-stream-v14-v1",
+ "generated": "2026-10-10T18:27:46-0700",
+ "settings": {
+  "rounds": 3,
+  "passes": 2300,
+  "settle_load_1min": 2.5,
+  "settle_max_wait_s": 180,
+  "correctness_jobs": 1,
+  "fuzz_count": 0,
+  "fuzz_seeds": [],
+  "fuzz_corpora": [
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+  ],
+  "bootstrap_resamples": 1000,
+  "bootstrap_seed": 20261004,
+  "steady_dataset": "golden-v1",
+  "steady_passes_before_sample": 3,
+  "thread_check_dataset": "golden-v1",
+  "sleep_between_runs_s": 2,
+  "country_min_n": 50
+ },
+ "baseline": "original-000",
+ "datasets": {
+  "unseen-v14": {
+   "source": "openstreetmap",
+   "kind": "spent unseen (observed in experiment 202)",
+   "variants": {
+    "original-000": {
+     "rounds": 3,
+     "warm_median_us": 15.117,
+     "warm_min_us": 14.885,
+     "warm_max_us": 15.146,
+     "cold_median_us": 19.887,
+     "setup_median_s": 2.828,
+     "peak_rss_max": 2611593216,
+     "peak_footprint_max": 2611546320
+    },
+    "cpi-stream-203": {
+     "rounds": 3,
+     "warm_median_us": 2.643,
+     "warm_min_us": 2.586,
+     "warm_max_us": 2.648,
+     "cold_median_us": 3.992,
+     "setup_median_s": 9.687,
+     "peak_rss_max": 2094579712,
+     "peak_footprint_max": 2094073920
+    }
+   },
+   "speedup": {
+    "cpi-stream-203": {
+     "median": 5.719788519637462,
+     "geomean": 5.731780888135215,
+     "ci95": [
+      5.680031188107402,
+      5.784002069984918
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      5.719636776390466,
+      5.75599381283836
+     ],
+     "min": 5.719636776390466,
+     "max": 5.75599381283836,
+     "rounds": 3,
+     "per_round": [
+      5.75599381283836,
+      5.719636776390466,
+      5.719788519637462
+     ],
+     "ratio_of_medians": 5.719636776390466,
+     "cold_median": 5.367611336032389,
+     "per_country": {
+      "n": 9,
+      "min_addresses": 50,
+      "min": 5.155238095238095,
+      "median": 5.662743655755793,
+      "max": 6.1460160121997705
+     }
+    }
+   }
+  }
+ },
+ "aggregate": {
+  "cpi-stream-203": {
+   "datasets": 1,
+   "source_weighted_geomean": 5.719788519637462,
+   "geomean_all_datasets": 5.719788519637462,
+   "min": 5.719788519637462,
+   "max": 5.719788519637462,
+   "geomean_by_source": {
+    "openstreetmap": 5.719788519637462
+   },
+   "datasets_by_source": {
+    "openstreetmap": 1
+   }
+  }
+ },
+ "manifest": "manifest.json"
+}

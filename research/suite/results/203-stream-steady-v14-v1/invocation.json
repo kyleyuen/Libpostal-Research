@@ -1,0 +1,23 @@
+{
+ "argv": [
+  "research/suite/run_suite.py",
+  "--config",
+  "research/experiments/203-cpi-memory-regression/raw/stream-timing-v1/v14.json",
+  "--datasets",
+  "unseen-v14",
+  "--variants",
+  "cpi-stream-203",
+  "--run-id",
+  "203-stream-steady-v14-v1",
+  "--stages",
+  "memory"
+ ],
+ "start": "2026-10-10T18:33:40-0700",
+ "variants": [
+  "original-000",
+  "cpi-stream-203"
+ ],
+ "datasets": [
+  "unseen-v14"
+ ]
+}

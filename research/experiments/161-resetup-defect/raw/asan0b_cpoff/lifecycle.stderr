@@ -1,0 +1,63 @@
+=================================================================
+==85087==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x61b0000014c0 at pc 0x00010561243c bp 0x00016b5367e0 sp 0x00016b535fa0
+WRITE of size 2240 at 0x61b0000014c0 thread T0
+    #0 0x000105612438 in __asan_memset+0x21c (libclang_rt.asan_osx_dynamic.dylib:arm64+0x52438)
+    #1 0x0001048ee254 in crf_context_set_num_items_lean crf.c:747
+    #2 0x0001048ee254 in crf_tagger_score crf.c:842
+    #3 0x0001048ef564 in crf_tagger_score_viterbi crf.c:1022
+    #4 0x0001048ef564 in crf_tagger_predict crf.c:1045
+    #5 0x0001048dc4d0 in address_parser_predict address_parser.c:2393
+    #6 0x0001048dce28 in address_parser_parse address_parser.c:2615
+    #7 0x00010491d574 in libpostal_parse_address libpostal.c:280
+    #8 0x0001048c91ec in parse_print api_probe2.c:16
+    #9 0x0001048c8a1c in main api_probe2.c:86
+    #10 0x000187063dfc in start+0x1b4c (dyld:arm64e+0x1fdfc)
+
+0x61b0000014c0 is located 0 bytes after 1600-byte region [0x61b000000e80,0x61b0000014c0)
+allocated by thread T0 here:
+    #0 0x00010561540c in malloc+0x70 (libclang_rt.asan_osx_dynamic.dylib:arm64+0x5540c)
+    #1 0x0001048e40d0 in double_matrix_new matrix.h:447
+    #2 0x0001048e40d0 in double_matrix_new_zeros matrix.h:447
+    #3 0x0001048e40d0 in crf_context_new crf_context.c:29
+    #4 0x0001048f0318 in crf_read crf.c:1221
+    #5 0x0001048f1e1c in crf_load crf.c:1237
+    #6 0x0001048cee74 in address_parser_load address_parser.c:294
+    #7 0x00010491e2c8 in libpostal_setup_parser_datadir libpostal.c:451
+    #8 0x00010491e2c8 in libpostal_setup_parser libpostal.c:464
+    #9 0x0001048c8a10 in main api_probe2.c:85
+    #10 0x000187063dfc in start+0x1b4c (dyld:arm64e+0x1fdfc)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow crf.c:747 in crf_context_set_num_items_lean
+Shadow bytes around the buggy address:
+  0x61b000001200: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x61b000001280: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x61b000001300: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x61b000001380: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x61b000001400: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x61b000001480: 00 00 00 00 00 00 00 00[fa]fa fa fa fa fa fa fa
+  0x61b000001500: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x61b000001580: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x61b000001600: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x61b000001680: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x61b000001700: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==85087==ABORTING
+/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/tools/model_slot.sh: line 7: 85087 Abort trap: 6           "$@"

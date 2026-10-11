@@ -1,0 +1,7 @@
+addresses 12860  passes 3
+layout P (probe + packed-f64 row): probes/addr 54.62  rows/addr 46.92  distinct lines/addr 152.24
+layout C (compiled records, f32): records/addr 16.57  record lines/addr 64.22  distinct lines/addr incl. index 80.79
+LRU 16 MiB layout P: last-pass misses/addr 32.61
+LRU 16 MiB layout C: last-pass misses/addr 14.08
+LRU 48 MiB layout P: last-pass misses/addr 0.00
+LRU 48 MiB layout C: last-pass misses/addr 0.00

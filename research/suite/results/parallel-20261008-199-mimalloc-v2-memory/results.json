@@ -1,0 +1,74 @@
+{
+ "run": "parallel-20261008-199-mimalloc-v2-memory",
+ "generated": "2026-10-07T21:55:11-0700",
+ "settings": {
+  "rounds": 5,
+  "passes": 20,
+  "settle_load_1min": 2.5,
+  "settle_max_wait_s": 1800,
+  "correctness_jobs": 1,
+  "fuzz_count": 2000000,
+  "fuzz_seeds": [
+   1,
+   2
+  ],
+  "fuzz_corpora": [
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+  ],
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261004,
+  "steady_dataset": "golden-v1",
+  "steady_passes_before_sample": 3,
+  "thread_check_dataset": "golden-v1",
+  "sleep_between_runs_s": 2,
+  "country_min_n": 50
+ },
+ "baseline": "original-000",
+ "datasets": {
+  "golden-v1": {
+   "source": "senzing",
+   "kind": "development+validation (PGO trained on its development split)",
+   "variants": {},
+   "speedup": {}
+  }
+ },
+ "aggregate": {},
+ "memory": {
+  "original-000": {
+   "steady_footprint": "2156 MB",
+   "dataset": "golden-v1",
+   "after_passes": 3
+  },
+  "199-token-span-storage-mimalloc-v2": {
+   "steady_footprint": "1927 MB",
+   "dataset": "golden-v1",
+   "after_passes": 3
+  }
+ },
+ "threads": {
+  "original-000": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  },
+  "199-token-span-storage-mimalloc-v2": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  }
+ },
+ "manifest": "manifest.json"
+}

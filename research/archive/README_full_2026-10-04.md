@@ -1,5 +1,7 @@
 # Making libpostal's address parser faster — results and how we got here
 
+> Historical snapshot, preserved for the 2026-10-04 results. Later measurements and coverage changed the project status; any ceiling or unseen-set statements below are retired and must not be treated as current findings. Use the current [root README](../../README.md) and linked outcome report for the verified status.
+
 **Question:** can libpostal's address parser run **3.5× faster on one thread**, with **byte-identical output** and **no more memory** than the original?
 
 **Where we are (measured 2026-10-04 01:38–01:50 PDT on a cleaned machine in [experiment 121](research/experiments/121-validate-cpi/README.md); unseen sets in [115](research/experiments/115-unseen9-remeasure/README.md), [120](research/experiments/120-unseen10-remeasure/README.md); AC, sequential timing, 5 rounds):**
