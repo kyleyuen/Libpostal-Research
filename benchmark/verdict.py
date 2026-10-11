@@ -78,7 +78,13 @@ def main():
         so, sn = st.median(o["setup_s"] for o, _ in pairs), st.median(n["setup_s"] for _, n in pairs)
         wo, wn = st.median(o["warm"] for o, _ in pairs), st.median(n["warm"] for _, n in pairs)
         be = (sn - so) * 1e6 / (wo - wn) if wn < wo and sn > so else 0
-        datasets[ds] = {"rounds": len(pairs), "speedup_geomean": round(gm, 3), "ci95": [round(x, 2) if x else None for x in ci],
+        per_cc = {}
+        for c in sorted(set.intersection(*[set(o["countries"]) & set(n["countries"]) for o, n in pairs])):
+            rr = [o["countries"][c][0] / n["countries"][c][0] for o, n in pairs]
+            per_cc[c] = {"addresses": pairs[0][0]["countries"][c][1], "original_us": round(st.median(o["countries"][c][0] for o, _ in pairs), 3),
+                         "optimized_us": round(st.median(n["countries"][c][0] for _, n in pairs), 3), "speedup_median": round(st.median(rr), 3),
+                         "speedup_min": round(min(rr), 3), "speedup_max": round(max(rr), 3)}
+        datasets[ds] = {"rounds": len(pairs), "per_country": per_cc, "speedup_geomean": round(gm, 3), "ci95": [round(x, 2) if x else None for x in ci],
                         "speedup_min": round(min(ratios), 3), "speedup_max": round(max(ratios), 3),
                         "original_us_per_address": round(wo, 3), "optimized_us_per_address": round(wn, 3),
                         "original_setup_s": round(so, 2), "optimized_setup_s": round(sn, 2), "breakeven_addresses": round(be),
@@ -124,6 +130,14 @@ def main():
               for d, x in datasets.items()]
         L += ["", "Warm speedup excludes startup. Break-even is how many addresses one process must parse before the optimized build's slower startup is repaid.",
               "Full tables, per-country numbers and raw logs: `report.md`, `timing/`, `env.txt`."]
+        for d, x in datasets.items():
+            pc = x["per_country"]
+            if len(pc) < 2: continue
+            L += ["", f"## Per-country warm speed: {d} ({len(pc)} countries)", "",
+                  "Last timed pass of each run (warm; startup and build excluded), median over rounds. Countries under 50 addresses are noisy.", "",
+                  "| Country | Addresses | Original µs/addr | Optimized µs/addr | Speedup (median) | Min–max over rounds |", "|---|---:|---:|---:|---:|---|"]
+            L += [f"| {c} | {y['addresses']:,} | {y['original_us']} | {y['optimized_us']} | {y['speedup_median']:.2f}× | {y['speedup_min']:.2f}–{y['speedup_max']:.2f} |"
+                  for c, y in sorted(pc.items(), key=lambda kv: -kv[1]["addresses"])]
     open(os.path.join(run, "VERDICT.md"), "w").write("\n".join(L) + "\n")
     print("\n".join(L))
     return {"PASS": 0, "FAIL": 1, "INCONCLUSIVE": 3}[verdict]
