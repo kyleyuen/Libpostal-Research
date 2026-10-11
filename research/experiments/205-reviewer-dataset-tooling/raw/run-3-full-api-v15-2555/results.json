@@ -1,0 +1,165 @@
+{
+ "run": "20261010-235244-v15-tooling-check",
+ "generated": "2026-10-11T00:07:58-0700",
+ "settings": {
+  "rounds": 3,
+  "passes": 1566,
+  "settle_load_1min": 2.5,
+  "settle_max_wait_s": 300,
+  "correctness_jobs": 3,
+  "fuzz_count": 2000000,
+  "fuzz_seeds": [
+   1,
+   2
+  ],
+  "fuzz_corpora": [
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v1/all.txt",
+   "/Users/kyle/Desktop/HW/CSCI 201 Reserach/profiling/golden-v2-novel/novel.txt"
+  ],
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261004,
+  "steady_dataset": "v15-tooling-check",
+  "steady_passes_before_sample": 3,
+  "thread_check_dataset": "v15-tooling-check",
+  "sleep_between_runs_s": 2,
+  "country_min_n": 50
+ },
+ "baseline": "original",
+ "datasets": {
+  "v15-tooling-check": {
+   "source": "reviewer",
+   "kind": "reviewer-supplied (never used for tuning or PGO)",
+   "variants": {
+    "original": {
+     "rounds": 3,
+     "warm_median_us": 32.26,
+     "warm_min_us": 32.169,
+     "warm_max_us": 35.289,
+     "cold_median_us": 91.765,
+     "setup_median_s": 3.18,
+     "peak_rss_max": 2255831040,
+     "peak_footprint_max": 2612611280
+    },
+    "optimized": {
+     "rounds": 3,
+     "warm_median_us": 4.658,
+     "warm_min_us": 4.23,
+     "warm_max_us": 4.689,
+     "cold_median_us": 25.755,
+     "setup_median_s": 10.228,
+     "peak_rss_max": 2031943680,
+     "peak_footprint_max": 2110277672
+    }
+   },
+   "speedup": {
+    "optimized": {
+     "median": 6.906182911120651,
+     "geomean": 7.345821941066761,
+     "ci95": [
+      5.586422733831399,
+      9.659329871881909
+     ],
+     "ci_method": "t-interval on log per-round ratios",
+     "bootstrap_median_ci95": [
+      6.879931755171678,
+      8.342553191489362
+     ],
+     "min": 6.879931755171678,
+     "max": 8.342553191489362,
+     "rounds": 3,
+     "per_round": [
+      8.342553191489362,
+      6.906182911120651,
+      6.879931755171678
+     ],
+     "ratio_of_medians": 6.925719192786603,
+     "cold_median": 3.4634051640458168,
+     "per_country": {
+      "n": 1,
+      "min_addresses": 50,
+      "min": 6.89202762084118,
+      "median": 6.89202762084118,
+      "max": 6.89202762084118
+     }
+    }
+   }
+  }
+ },
+ "aggregate": {
+  "optimized": {
+   "datasets": 1,
+   "source_weighted_geomean": 6.90618291112065,
+   "geomean_all_datasets": 6.90618291112065,
+   "min": 6.906182911120651,
+   "max": 6.906182911120651,
+   "geomean_by_source": {
+    "reviewer": 6.90618291112065
+   },
+   "datasets_by_source": {
+    "reviewer": 1
+   }
+  }
+ },
+ "correctness": {
+  "dumps": {
+   "optimized/v15-tooling-check": {
+    "identical": true,
+    "candidate_sha256": "7eb894eb9be8cfe42fa07cde13ded8b2078fb7710c940cbe00c294b95d03d7fe",
+    "baseline_sha256": "7eb894eb9be8cfe42fa07cde13ded8b2078fb7710c940cbe00c294b95d03d7fe",
+    "lines": 2555
+   }
+  },
+  "frozen": {},
+  "fuzz": {
+   "optimized/s1": {
+    "identical": true,
+    "inputs": 2000000
+   },
+   "optimized/s2": {
+    "identical": true,
+    "inputs": 2000000
+   }
+  },
+  "negative_control": {
+   "dataset": "v15-tooling-check",
+   "detected": true
+  }
+ },
+ "memory": {
+  "original": {
+   "steady_footprint": "2171 MB",
+   "dataset": "v15-tooling-check",
+   "after_passes": 3
+  },
+  "optimized": {
+   "steady_footprint": "1945 MB",
+   "dataset": "v15-tooling-check",
+   "after_passes": 3
+  }
+ },
+ "threads": {
+  "original": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  },
+  "optimized": {
+   "samples": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "max_threads": 1
+  }
+ },
+ "manifest": "manifest.json"
+}

@@ -1,0 +1,50 @@
+{
+ "run": "run-1-quick-v15-300",
+ "original": "original",
+ "optimized": "optimized",
+ "overall": "PASS",
+ "checks": {
+  "correctness": {
+   "pass": true,
+   "detail": "1 dump(s) covering 300 addresses and 2 fuzz stream(s) byte-identical; negative control detected"
+  },
+  "speed": {
+   "pass": true,
+   "detail": "v15: 5.74x (95% CI None-None; per round 5.74-5.74)"
+  },
+  "memory": {
+   "pass": true,
+   "inconclusive": false,
+   "detail": "optimized peak RSS and peak footprint <= original in 1/1 same-round pairs"
+  },
+  "threads": {
+   "pass": true,
+   "detail": "optimized: 3 live sample(s), max 1 thread(s); raw samples [1, 1, 1, 0, 0, 0] (0 = process already finished)"
+  }
+ },
+ "datasets": {
+  "v15": {
+   "rounds": 1,
+   "speedup_geomean": 5.744,
+   "ci95": [
+    null,
+    null
+   ],
+   "speedup_min": 5.744,
+   "speedup_max": 5.744,
+   "original_us_per_address": 14.631,
+   "optimized_us_per_address": 2.547,
+   "original_setup_s": 2.7,
+   "optimized_setup_s": 9.72,
+   "breakeven_addresses": 580875,
+   "peak_rss_bytes": {
+    "original": 2610462720,
+    "optimized": 2090467328
+   },
+   "peak_footprint_bytes": {
+    "original": 2610694352,
+    "optimized": 2090174528
+   }
+  }
+ }
+}

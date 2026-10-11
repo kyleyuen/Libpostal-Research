@@ -1,0 +1,69 @@
+[23:52:39] 1/6 checks
+[23:52:40] 2/6 libpostal 25099c506612b34b23b1bfe286ca6321fcf06f35 -> /private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/libpostal
+[23:52:40] 3/6 model (libpostal v1.0.0 data) -> /private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/data/libpostal
+[23:52:44] 4-5/6 reusing the identical original and optimized builds in /private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/bin (use --rebuild to force)
+[23:52:44] 6/6 suite configuration
+dataset v15-tooling-check: 2,555 addresses (2,555 unique), txt (country placeholder xx); 1566 passes per timed run
+[23:52:44] run suite (correctness, timing, memory, threads, report) -> /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-235244-v15-tooling-check
+2026-10-10T23:52:44-0700 === stage integrity
+2026-10-10T23:52:45-0700 integrity: 1 datasets (2,555 addresses), 2 variants, 8 model files hashed
+2026-10-10T23:52:45-0700 === stage correctness
+2026-10-10T23:52:45-0700 correctness: 3 jobs, 3 in parallel
+2026-10-10T23:52:58-0700   optimized dump v15-tooling-check: exit 0 (13s)
+2026-10-10T23:53:15-0700   optimized fuzz s1: exit 0 (30s)
+2026-10-10T23:53:15-0700   optimized fuzz s2: exit 0 (30s)
+2026-10-10T23:53:16-0700 correctness: 1 dumps, 2 fuzz runs, mismatches: none
+2026-10-10T23:53:16-0700 === stage timing
+2026-10-10T23:53:16-0700 settle: waiting up to 300s for 1-minute load < 2.5 (now 5.02); close busy apps to start sooner
+2026-10-10T23:58:16-0700 settle: gave up after 300s (load (4.72802734375, 4.02490234375, 3.62255859375)); continuing, recorded
+2026-10-10T23:58:45-0700 timing 1/6 v15-tooling-check__optimized__r1 exit 0 load 4.04
+2026-10-11T00:01:18-0700 timing 2/6 v15-tooling-check__original__r1 exit 0 load 4.72
+2026-10-11T00:03:36-0700 timing 3/6 v15-tooling-check__original__r2 exit 0 load 4.06
+2026-10-11T00:04:09-0700 timing 4/6 v15-tooling-check__optimized__r2 exit 0 load 3.41
+2026-10-11T00:04:43-0700 timing 5/6 v15-tooling-check__optimized__r3 exit 0 load 3.04
+2026-10-11T00:07:00-0700 timing 6/6 v15-tooling-check__original__r3 exit 0 load 2.94
+2026-10-11T00:07:02-0700 === stage memory
+2026-10-11T00:07:11-0700 memory: original steady footprint 2171 MB
+2026-10-11T00:07:22-0700 memory: optimized steady footprint 1945 MB
+2026-10-11T00:07:22-0700 === stage threads
+2026-10-11T00:07:40-0700 threads: original [1, 1, 1, 1, 1, 1]
+2026-10-11T00:07:58-0700 threads: optimized [1, 1, 1, 1, 1, 1]
+2026-10-11T00:07:58-0700 === stage report
+2026-10-11T00:07:58-0700 report: results.json and report.md written
+2026-10-11T00:07:58-0700 done: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-235244-v15-tooling-check
+[00:07:58] public-API comparison on 2555 addresses -> /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-235244-v15-tooling-check/api
+parse_options   PASS  exit 0/0  stdout lines 15330/15330
+expand          PASS  exit 0/0  stdout lines 5110/5110
+classify        PASS  exit 0/0  stdout lines 2555/2555
+dedupe          PASS  exit 0/0  stdout lines 2555/2555
+toponym         PASS  exit -11/-11  stdout lines 189/189  NOTE: both builds exit -11 identically after 189 lines (upstream behavior, reproduced)
+normalize       PASS  exit 0/0  stdout lines 12775/12775
+print_features  FAIL  exit 0/-6  stdout lines 159/1  STDOUT DIFFERS  STDERR DIFFERS
+lifecycle       PASS  exit 0/0  stdout lines 600/600
+api parity: FAIL (7/8 modes) -> /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-235244-v15-tooling-check/api/api_parity.json
+[00:10:14] verdict
+# Verdict: FAIL
+
+Run `20261010-235244-v15-tooling-check`: `optimized` (optimized) compared with `original` (original libpostal) on the same inputs and machine.
+
+| Check | Result | Detail |
+|---|---|---|
+| correctness | PASS | 1 dump(s) covering 2,555 addresses and 2 fuzz stream(s) byte-identical; negative control detected |
+| speed | PASS | v15-tooling-check: 7.35x (95% CI 5.59-9.66; per round 6.88-8.34) |
+| memory | FAIL | optimized peak RSS and peak footprint <= original in 1/3 same-round pairs |
+| threads | PASS | optimized: 6 live sample(s), max 1 thread(s); raw samples [1, 1, 1, 1, 1, 1] (0 = process already finished) |
+| api | KNOWN LIMITATION | 7/8 public-API modes identical on 2,555 addresses; FAILED: print_features; toponym: both builds exit -11 identically after 189 lines (upstream behavior, reproduced) |
+
+KNOWN LIMITATION: `libpostal_parser_print_features(true)` (a debugging switch that prints internal parser features) makes the optimized build stop with an error by design; every other API family must match. See research/experiments/204-public-api-parity/README.md.
+
+| Dataset | Warm speedup | Original µs/addr | Optimized µs/addr | Startup s (orig / opt) | Break-even addresses |
+|---|---:|---:|---:|---|---:|
+| v15-tooling-check | 7.35× | 32.26 | 4.658 | 3.18 / 10.23 | 255,344 |
+
+Warm speedup excludes startup. Break-even is how many addresses one process must parse before the optimized build's slower startup is repaid.
+Full tables, per-country numbers and raw logs: `report.md`, `timing/`, `env.txt`.
+[00:10:14] done: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-235244-v15-tooling-check/VERDICT.md (full report: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-235244-v15-tooling-check/report.md)
+real 1055.27
+user 745.83
+sys 23.85
+exit=1

@@ -1,0 +1,29 @@
+[23:34:01] 1/6 checks
+[23:34:02] 2/6 libpostal 25099c506612b34b23b1bfe286ca6321fcf06f35 -> /private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/libpostal
+[23:34:02] 3/6 model (libpostal v1.0.0 data) -> /private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/data/libpostal
+[23:34:06] 4/6 build the original (reference) harness
+[23:34:06] 5/6 build the optimized version (source 203: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/final/203-cpi-memory/sources, PGO trained on golden-v1 development, LTO, mimalloc; about 10 minutes)
+[23:41:56] 6/6 suite configuration
+[23:41:56] public-API comparison on 4356 addresses -> /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-234156-repository-datasets/api
+parse_options   PASS  exit 0/0  stdout lines 26136/26136
+expand          PASS  exit 0/0  stdout lines 8712/8712
+classify        PASS  exit 0/0  stdout lines 4356/4356
+dedupe          PASS  exit 0/0  stdout lines 4356/4356
+toponym         PASS  exit -11/-11  stdout lines 189/189  NOTE: both builds exit -11 identically after 189 lines (upstream behavior, reproduced)
+normalize       PASS  exit 0/0  stdout lines 21780/21780
+print_features  FAIL  exit 0/-6  stdout lines 159/1  STDOUT DIFFERS  STDERR DIFFERS
+lifecycle       PASS  exit 0/0  stdout lines 600/600
+api parity: FAIL (7/8 modes) -> /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-234156-repository-datasets/api/api_parity.json
+[23:44:14] verdict
+# Verdict: FAIL
+
+Run `20261010-234156-repository-datasets`: `optimized` (optimized) compared with `original` (original libpostal) on the same inputs and machine.
+
+| Check | Result | Detail |
+|---|---|---|
+| api | FAIL | 7/8 public-API modes identical on 4,356 addresses; FAILED: print_features; toponym: both builds exit -11 identically after 189 lines (upstream behavior, reproduced) |
+[23:44:14] done: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-234156-repository-datasets/VERDICT.md (full report: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-234156-repository-datasets/report.md)
+real 612.90
+user 596.62
+sys 12.84
+exit=1

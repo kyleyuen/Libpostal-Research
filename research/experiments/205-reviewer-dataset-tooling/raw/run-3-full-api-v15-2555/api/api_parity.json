@@ -1,0 +1,194 @@
+{
+ "started": "2026-10-11T00:07:58-0700",
+ "input": "/Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-235244-v15-tooling-check/api/input.txt",
+ "input_sha256": "4198f6507d4a302266973cff24df708ef41b83f979ed430ea6a3b8a7b44db188",
+ "addresses": 2555,
+ "original": {
+  "path": "/private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/bin/original/api_suite",
+  "sha256": "635670ae925afdc1e1227fe320790cb22d12837d48dd9ca0d5900c989295787c"
+ },
+ "optimized": {
+  "path": "/private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/bin/cpi/api_suite",
+  "sha256": "347f7900cf3ccd5e30c7cc83fdffc84f2782f817805895419955b00a3d99890f"
+ },
+ "modes": {
+  "parse_options": {
+   "original": {
+    "exit": 0,
+    "seconds": 3.498,
+    "stdout_sha256": "1e676d937b18ab4e717cea4a301a32780309bde636c3b7e907774c106444fd02",
+    "stdout_lines": 15330,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "optimized": {
+    "exit": 0,
+    "seconds": 10.368,
+    "stdout_sha256": "1e676d937b18ab4e717cea4a301a32780309bde636c3b7e907774c106444fd02",
+    "stdout_lines": 15330,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "stdout_identical": true,
+   "exit_identical": true,
+   "stderr_identical": true,
+   "stderr_identical_ignoring_line_numbers": true,
+   "pass": true,
+   "note": ""
+  },
+  "expand": {
+   "original": {
+    "exit": 0,
+    "seconds": 3.354,
+    "stdout_sha256": "a380dfab7928a6b2c58e07ce3d19e49be34003241385013a8cd9c2adc0fe670a",
+    "stdout_lines": 5110,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "optimized": {
+    "exit": 0,
+    "seconds": 10.37,
+    "stdout_sha256": "a380dfab7928a6b2c58e07ce3d19e49be34003241385013a8cd9c2adc0fe670a",
+    "stdout_lines": 5110,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "stdout_identical": true,
+   "exit_identical": true,
+   "stderr_identical": true,
+   "stderr_identical_ignoring_line_numbers": true,
+   "pass": true,
+   "note": ""
+  },
+  "classify": {
+   "original": {
+    "exit": 0,
+    "seconds": 3.013,
+    "stdout_sha256": "15932aa82ce306b758c650cbcf4a37ded6a795247488fd8ab7a06fdb12c77bcf",
+    "stdout_lines": 2555,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "optimized": {
+    "exit": 0,
+    "seconds": 10.404,
+    "stdout_sha256": "15932aa82ce306b758c650cbcf4a37ded6a795247488fd8ab7a06fdb12c77bcf",
+    "stdout_lines": 2555,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "stdout_identical": true,
+   "exit_identical": true,
+   "stderr_identical": true,
+   "stderr_identical_ignoring_line_numbers": true,
+   "pass": true,
+   "note": ""
+  },
+  "dedupe": {
+   "original": {
+    "exit": 0,
+    "seconds": 4.467,
+    "stdout_sha256": "15b61de66f0cf544b75248c6f878e93f5736ee2f5327d03677c06c0e6b86b227",
+    "stdout_lines": 2555,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "optimized": {
+    "exit": 0,
+    "seconds": 10.929,
+    "stdout_sha256": "15b61de66f0cf544b75248c6f878e93f5736ee2f5327d03677c06c0e6b86b227",
+    "stdout_lines": 2555,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "stdout_identical": true,
+   "exit_identical": true,
+   "stderr_identical": true,
+   "stderr_identical_ignoring_line_numbers": true,
+   "pass": true,
+   "note": ""
+  },
+  "toponym": {
+   "original": {
+    "exit": -11,
+    "seconds": 3.015,
+    "stdout_sha256": "b209911a47a32905ed29a22a6f3d0615d50adbf8df4501faf25dcc5640eee3ed",
+    "stdout_lines": 189,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "optimized": {
+    "exit": -11,
+    "seconds": 10.357,
+    "stdout_sha256": "b209911a47a32905ed29a22a6f3d0615d50adbf8df4501faf25dcc5640eee3ed",
+    "stdout_lines": 189,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "stdout_identical": true,
+   "exit_identical": true,
+   "stderr_identical": true,
+   "stderr_identical_ignoring_line_numbers": true,
+   "pass": true,
+   "note": "both builds exit -11 identically after 189 lines (upstream behavior, reproduced)"
+  },
+  "normalize": {
+   "original": {
+    "exit": 0,
+    "seconds": 3.404,
+    "stdout_sha256": "6053a75901b41b12b7414537baca93bec7bc13345af5d97b7192d70a741e3d3e",
+    "stdout_lines": 12775,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "optimized": {
+    "exit": 0,
+    "seconds": 10.876,
+    "stdout_sha256": "6053a75901b41b12b7414537baca93bec7bc13345af5d97b7192d70a741e3d3e",
+    "stdout_lines": 12775,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "stdout_identical": true,
+   "exit_identical": true,
+   "stderr_identical": true,
+   "stderr_identical_ignoring_line_numbers": true,
+   "pass": true,
+   "note": ""
+  },
+  "print_features": {
+   "original": {
+    "exit": 0,
+    "seconds": 2.929,
+    "stdout_sha256": "a35a96d1da8d15dca35de3e97ed1b43b231c93f2e3c35e51a4f07b913218e153",
+    "stdout_lines": 159,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "optimized": {
+    "exit": -6,
+    "seconds": 10.148,
+    "stdout_sha256": "f55dc8f10a983ea749d75855d0d8533bed4a254c366851273c1c8d8c85944475",
+    "stdout_lines": 1,
+    "stderr_sha256": "329a381fae59cea685f09a46cebc34ce28c6eb75478bf7602d10233460c8b082"
+   },
+   "stdout_identical": false,
+   "exit_identical": false,
+   "stderr_identical": false,
+   "stderr_identical_ignoring_line_numbers": false,
+   "pass": false,
+   "note": ""
+  },
+  "lifecycle": {
+   "original": {
+    "exit": 0,
+    "seconds": 8.62,
+    "stdout_sha256": "be5c9c5ce374ceaa4ac0f427018e035d733a526ad02d88385e1e45682516ee4d",
+    "stdout_lines": 600,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "optimized": {
+    "exit": 0,
+    "seconds": 29.971,
+    "stdout_sha256": "be5c9c5ce374ceaa4ac0f427018e035d733a526ad02d88385e1e45682516ee4d",
+    "stdout_lines": 600,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "stdout_identical": true,
+   "exit_identical": true,
+   "stderr_identical": true,
+   "stderr_identical_ignoring_line_numbers": true,
+   "pass": true,
+   "note": ""
+  }
+ },
+ "pass": false,
+ "finished": "2026-10-11T00:10:14-0700"
+}

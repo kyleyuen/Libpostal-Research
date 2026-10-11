@@ -1,0 +1,59 @@
+{
+ "datasets": {
+  "v15": {
+   "txt": {
+    "path": "/private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/datasets/v15/v15.txt",
+    "sha256": "87e7dd51efa3cb65a62088c2a4ad9012a0deed31fde48ddfb9e8edbb7e391374"
+   },
+   "tsv": {
+    "path": "/private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/datasets/v15/v15.tsv",
+    "sha256": "87ab5d74bb127a3cced9440ee36c15cf211fbb7db66d42b432bf31fafc00bea7"
+   },
+   "addresses": 300
+  }
+ },
+ "variants": {
+  "original": {
+   "bench_ext": {
+    "path": "/private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/bin/original/bench_ext",
+    "sha256": "d83e8089e43c313239a2226b8a9850f90715094284bab1abbae940e5f6a62e78"
+   },
+   "dump_outputs": {
+    "path": "/private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/bin/original/dump_outputs",
+    "sha256": "a5f2939863be13daaeb256bbefeeddd58c53b3ee6475306bd819db071b78e988"
+   },
+   "fuzz_pipeline": {
+    "path": "/private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/bin/original/fuzz_pipeline",
+    "sha256": "325f7aaeef0961fb94d341febc0e03364af3fd25e13323ea05445edb4a5cd284"
+   }
+  },
+  "optimized": {
+   "bench_ext": {
+    "path": "/private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/bin/cpi/bench_ext",
+    "sha256": "692944f2a556ef9301c465246a2629394b28f52fd206c2ceea6dbc34a7e7c83b"
+   },
+   "dump_outputs": {
+    "path": "/private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/bin/cpi/dump_outputs",
+    "sha256": "b7e3a225f2ff212800b268e9893dc7fb3a8c1acaf870e9482008f4a7b07911e6"
+   },
+   "fuzz_pipeline": {
+    "path": "/private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/bin/cpi/fuzz_pipeline",
+    "sha256": "8376103a21e13ef6ac740a8fc83ee17ea4e7bdf45e1e9a7001af5b175dcff3df"
+   }
+  }
+ },
+ "model": {
+  "address_expansions/address_dictionary.dat": "9fbf8779942bcc84841ac948ebd0c910b37edc7ff812125f09b6c39018747b1d",
+  "address_parser/address_parser_crf.dat": "e44b308e9e1942efe8ad8226929e29ca49e9ea2900ed36625c601c53509ba5c1",
+  "address_parser/address_parser_phrases.dat": "739643ea06d8c492ba57bd51ba1dc1243853e7f8c6130e3a7bd30150221119e6",
+  "address_parser/address_parser_postal_codes.dat": "7c5b20c541c16758cc73c41025f2327be525831dff272a6b4c3aeb901e481b1b",
+  "address_parser/address_parser_vocab.trie": "962a985f29530440035bd379826f38e35f0f0fc718926444658d89bbd70829b1",
+  "language_classifier/language_classifier.dat": "f0800eb07610b7ecb771a01b037a4c9ea6eed01668c2e1b863a2202f3db9e13c",
+  "numex/numex.dat": "269630109fac796ab576b7fb29a36f3279c0c194e46a9abe91684653bf082a38",
+  "transliteration/transliteration.dat": "db75453e1d8a24302be0831304f9bb4792d41ea4e5a5e645c3839ee04763e64c"
+ },
+ "suite": {
+  "run_suite.py": "ded4a5c064cc1c71e3eaacc2fc98cea0358933955dad6e9f8d9e7bde574156b8",
+  "suite.json": "99143fabe963df77a1cc10123cf402caa2214fcf5001fe2248d5dc1e30fe7f3e"
+ }
+}

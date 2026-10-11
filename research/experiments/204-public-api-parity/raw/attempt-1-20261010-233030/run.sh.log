@@ -1,0 +1,28 @@
+[23:22:33] 1/6 checks
+[23:22:34] 2/6 libpostal 25099c506612b34b23b1bfe286ca6321fcf06f35 -> /private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/libpostal
+[23:22:34] 3/6 model (libpostal v1.0.0 data) -> /private/tmp/claude-501/-Users-kyle-Desktop-HW-CSCI-201-Reserach/86a740f7-c3eb-4dda-a337-47908c8ddb83/scratchpad/build-audit/work/data/libpostal
+[23:22:38] 4/6 build the original (reference) harness
+[23:22:38] 5/6 build the optimized version (source 203: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/final/203-cpi-memory/sources, PGO trained on golden-v1 development, LTO, mimalloc; about 10 minutes)
+[23:30:30] 6/6 suite configuration
+[23:30:30] public-API comparison on 4356 addresses -> /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-233030-repository-datasets/api
+parse_options   PASS  exit 0/0  stdout lines 26136/26136
+expand          PASS  exit 0/0  stdout lines 8712/8712
+classify        PASS  exit 0/0  stdout lines 4356/4356
+dedupe          PASS  exit -11/-11  stdout lines 190/190
+normalize       PASS  exit 0/0  stdout lines 21780/21780
+print_features  FAIL  exit 0/-6  stdout lines 159/1  STDOUT DIFFERS  STDERR DIFFERS
+lifecycle       PASS  exit 0/0  stdout lines 600/600
+api parity: FAIL (6/7 modes) -> /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-233030-repository-datasets/api/api_parity.json
+[23:32:26] verdict
+# Verdict: FAIL
+
+Run `20261010-233030-repository-datasets`: `optimized` (optimized) compared with `original` (original libpostal) on the same inputs and machine.
+
+| Check | Result | Detail |
+|---|---|---|
+| api | FAIL | 6/7 public-API modes identical on 4,356 addresses; FAILED: print_features |
+[23:32:26] done: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-233030-repository-datasets/VERDICT.md (full report: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261010-233030-repository-datasets/report.md)
+real 592.97
+user 580.53
+sys 9.99
+exit=1

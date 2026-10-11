@@ -196,6 +196,9 @@ def gate(cfg, run):
 
 def settle(cfg, run):
     s = cfg["settings"]; t0 = time.time()
+    if os.getloadavg()[0] >= s["settle_load_1min"]:
+        log(run, f"settle: waiting up to {s['settle_max_wait_s']}s for 1-minute load < {s['settle_load_1min']} (now {os.getloadavg()[0]:.2f}); "
+                 "close busy apps to start sooner")
     while os.getloadavg()[0] >= s["settle_load_1min"]:
         if time.time() - t0 > s["settle_max_wait_s"]:
             log(run, f"settle: gave up after {s['settle_max_wait_s']}s (load {os.getloadavg()}); continuing, recorded"); return False
@@ -246,7 +249,8 @@ def stage_threads(cfg, run):
     d = next((x for x in cfg["datasets"] if x["name"] == s["thread_check_dataset"]), cfg["datasets"][0])
     for v in cfg["variants"]:
         gate(cfg, run)
-        p = subprocess.Popen([v["bench_ext"], d["tsv"], "200"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        # at least 200 passes; a small reviewer dataset uses its timing pass count so the process is still parsing while sampled
+        p = subprocess.Popen([v["bench_ext"], d["tsv"], str(max(200, s["passes"]))], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         counts = []
         for _ in range(6):
             time.sleep(3)

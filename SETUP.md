@@ -36,6 +36,9 @@ By default, work files go under `~/.cache/libpostal-speedup/`; the repository re
 
 | Option | Effect |
 | --- | --- |
+| `--dataset FILE [--name NAME]` | Test your own addresses (one per line, or country TAB address) instead of the repository datasets. See [TESTING.md](TESTING.md). |
+| `--api` / `--api-only` | Also (or only) compare every public libpostal API call between the two builds. Downloads the 50 MB language classifier once. |
+| `--rebuild` | Rebuild both versions even if an identical build already exists in the work directory. Otherwise a build is reused only when every build input is unchanged. |
 | `--model-dir DIR` | Use an existing libpostal v1.0.0 model directory instead of downloading it. Its files are still checked against `benchmark/model_sha256.txt`. |
 | `WORK_DIR=/path ./benchmark/run.sh ...` | Put builds, model and logs somewhere other than `~/.cache/libpostal-speedup/`. The path must not contain spaces, because libpostal's build embeds the model path. |
 | `--quick` | After setup, run one short smoke round (three passes, small fuzz). This is a sanity check, not an acceptance run. |

@@ -1,0 +1,13 @@
+{
+ "run": "20261010-234156-repository-datasets",
+ "original": "original",
+ "optimized": "optimized",
+ "overall": "FAIL",
+ "checks": {
+  "api": {
+   "pass": false,
+   "detail": "7/8 public-API modes identical on 4,356 addresses; FAILED: print_features; toponym: both builds exit -11 identically after 189 lines (upstream behavior, reproduced)"
+  }
+ },
+ "datasets": {}
+}
