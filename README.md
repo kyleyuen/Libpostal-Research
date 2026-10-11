@@ -1,6 +1,12 @@
 # Libpostal address parser optimization
 
-**Result.** On one Apple Silicon Mac, the optimized build of libpostal's default address parser parsed addresses 5.5–6.1× faster than the original once loaded (warm parsing), on one thread, with byte-identical output on all 130,341 tested rows (14 datasets) and lower peak memory in all 42 paired runs. The original target was 3.5×. The cost is startup: loading takes about 6.9 s longer (9.64 s vs 2.79 s median), so the optimized build only finishes sooner overall once one process parses roughly 260,000–550,000 addresses (see [Startup cost](#startup-cost)). Every other public libpostal API family (expansion, language classification, deduplication, normalization, parsing with options, repeated setup/teardown) gave identical results on 4,356 addresses; the one exception is the feature-printing debugging switch, which the optimized build refuses by design ([experiment 204](research/experiments/204-public-api-parity/README.md)).
+**Result.** On one Apple Silicon Mac, the optimized build of libpostal's default address parser parsed addresses 5.5–6.1× faster than the original once loaded (warm parsing), on one thread, with byte-identical output on all 130,341 tested rows (14 datasets) and lower peak memory in all 42 paired runs. The original target was 3.5×. The cost is startup: loading takes about 6.9 s longer (9.64 s vs 2.79 s median), so the optimized build only finishes sooner overall once one process parses roughly 260,000–550,000 addresses (see [Startup cost](#startup-cost)). In a public-API comparison of fresh builds, every family except one gave byte-identical results ([experiment 204](research/experiments/204-public-api-parity/README.md)):
+
+- Expansion, language classification, deduplication, normalization and parsing with options were compared on 4,356 addresses.
+- Repeated setup/teardown was compared on 200 addresses.
+- The toponym check was compared on 189 address pairs before upstream libpostal crashed identically in both builds.
+
+The one exception is the feature-printing debugging switch, which the optimized build refuses by design. These are finite inputs.
 
 The current candidate is called **203** (its experiment number). It builds on the **CPI** (component phrase IDs) design from experiment 119 and adds a streamed postcode-graph loader, so the full graph index and its compressed form are never resident at the same time during setup.
 
@@ -72,7 +78,7 @@ The paired benchmark TSV has no header and each row is a lowercase two-letter co
 | Startup | Slower: 9.64 s vs 2.79 s median (+6.87 s). |
 | Peak memory | Lower peak physical footprint and lower peak RSS in all 42 paired runs. |
 | Threads | One parser thread in all 36 live samples. |
-| Public API | 7 of 8 API families byte-identical on 4,356 addresses; feature printing refused by design ([204](research/experiments/204-public-api-parity/README.md)). |
+| Public API | 7 of 8 API families byte-identical on fresh builds (most on 4,356 addresses; toponym 189 pairs, lifecycle 200); feature printing refused by design ([204](research/experiments/204-public-api-parity/README.md)). |
 
 These checks passed on the 130,341 tested rows. Finite checks do not prove behavior for every possible input.
 

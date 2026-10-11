@@ -12,7 +12,7 @@ Checks, all comparing the optimized build with the original on the same inputs:
   threads      at most one thread in every live sample of the optimized build
   api          (only with --api) every public-API mode identical
 Startup cost and the break-even address count are reported, not gated. A positive peak-RSS delta is INCONCLUSIVE
-(not PASS) when either process's RSS was below 0.95 x its footprint, i.e. the OS was paging it; rerun with more free
+(not PASS) when the original's RSS was below 0.95 x its footprint, i.e. the OS was paging it; rerun with more free
 memory. Exit status: 0 PASS, 1 FAIL, 3 INCONCLUSIVE.
 """
 import glob, json, os, statistics as st, sys
@@ -26,7 +26,7 @@ def load(run, name):
     return json.load(open(p)) if os.path.exists(p) else None
 
 
-PAGED = 0.95   # RSS/footprint below this marks a paged capture (both builds measured 1.00 on the unloaded 203 runs)
+PAGED = 0.95   # original RSS/footprint below this marks a paged original capture (41 of 42 published 203 original captures: 1.000; one v14 round: 0.836)
 
 
 def le(a, b):
@@ -66,12 +66,13 @@ def main():
             if not le(n["peak_footprint"], o["peak_footprint"]):
                 mem_bad += 1; mem_notes.append(f"{ds}: peak footprint +{n['peak_footprint'] - o['peak_footprint']:,} B")
             elif not le(n["peak_rss"], o["peak_rss"]):
-                # METHOD.md: a capture problem that makes the sign uncertain is inconclusive and must be repeated. RSS below
-                # PAGED x footprint means the OS had compressed or paged out part of that process, so its RSS understates its memory.
-                ratio = min(o["peak_rss"] / o["peak_footprint"], n["peak_rss"] / n["peak_footprint"])
+                # METHOD.md: a capture problem that makes the sign uncertain is inconclusive and must be repeated. Only a paged
+                # original can make the optimized build look worse: its RSS is then below PAGED x its footprint because the OS
+                # compressed or paged out part of it. (A paged optimized process only lowers its own RSS.)
+                ratio = o["peak_rss"] / o["peak_footprint"]
                 d = f"{ds}: peak RSS +{n['peak_rss'] - o['peak_rss']:,} B"
                 if ratio < PAGED:
-                    mem_unsure += 1; mem_notes.append(d + f" while paged (RSS/footprint {ratio:.2f}; footprint lower)")
+                    mem_unsure += 1; mem_notes.append(d + f" while the original was paged (its RSS/footprint {ratio:.2f}; footprint lower)")
                 else:
                     mem_bad += 1; mem_notes.append(d)
         so, sn = st.median(o["setup_s"] for o, _ in pairs), st.median(n["setup_s"] for _, n in pairs)

@@ -1,5 +1,5 @@
 {
- "run": "20261010-235244-v15-tooling-check",
+ "run": "run-3-full-api-v15-2555",
  "original": "original",
  "optimized": "optimized",
  "overall": "INCONCLUSIVE",
@@ -15,7 +15,7 @@
   "memory": {
    "pass": false,
    "inconclusive": true,
-   "detail": "optimized peak RSS and peak footprint <= original in 1/3 same-round pairs; v15-tooling-check: peak RSS +238,567,424 B while paged (RSS/footprint 0.69; footprint lower); v15-tooling-check: peak RSS +90,783,744 B while paged (RSS/footprint 0.73; footprint lower); INCONCLUSIVE: the machine was paging memory during the run - free memory (close apps) and rerun"
+   "detail": "optimized peak RSS and peak footprint <= original in 1/3 same-round pairs; v15-tooling-check: peak RSS +238,567,424 B while the original was paged (its RSS/footprint 0.69; footprint lower); v15-tooling-check: peak RSS +90,783,744 B while the original was paged (its RSS/footprint 0.73; footprint lower); INCONCLUSIVE: the machine was paging memory during the run - free memory (close apps) and rerun"
   },
   "threads": {
    "pass": true,
