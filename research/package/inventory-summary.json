@@ -5,8 +5,8 @@
   "staging_or_archiving_performed": false,
   "tracked_paths_not_relisted": 32587,
   "git_add_candidates": {
-    "files": 12177,
-    "bytes": 347461693
+    "files": 12290,
+    "bytes": 348128512
   },
   "release_paths": {
     "files": 37101,
@@ -23,6 +23,7 @@
     "Excluded 1 Python/profile/lock cache paths from the clone allowlist; path metadata only.",
     "Included the 182 original-000 harness binaries used by the clone verifier; per-file sizes below 50 MB.",
     "Explicitly included the two pinned original 011 fuzz references required by clone validation.",
-    "Added a versioned clone-review document/provenance hash snapshot and sidecar."
+    "Added a versioned clone-review document/provenance hash snapshot and sidecar.",
+    "Appended 111 previously omitted staged research documentation/source paths; no files were hashed or copied by inventory update."
   ]
 }

@@ -7,11 +7,11 @@ controls staging, commit, push, and visibility.
 ## Clone-resident 203 evidence
 
 The versioned allowlist is `git-add-candidates.tsv`; the inventory snapshot is
-`inventory-summary.json`. The current proposal contains 12,177 paths totaling
-347,461,693 bytes. It does not hash or copy files. The updated list drops one
-Python bytecode cache and adds the original-000 harness executables and hash
-list used by the verifier, plus the two pinned original fuzz streams; restage
-the updated allowlist and summary. It explicitly
+`inventory-summary.json`. The current proposal contains 12,290 paths totaling
+348,128,512 bytes. It does not hash or copy files. The updated list includes
+the original-000 harness executables, two pinned fuzz streams, final reports,
+linked audit notes, authored research tools, and current provenance snapshot;
+restage the updated allowlist and summary. It explicitly
 overrides broad ignore rules for the
 promoted 203 package, original-000 artifacts, and clone-verification evidence.
 

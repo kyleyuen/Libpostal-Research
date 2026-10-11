@@ -88,6 +88,10 @@ def git_candidate(rel: str, size: int) -> bool:
         return True
     if rel.startswith("research/package/"):
         return True
+    if rel.startswith("research/") and p.suffix.lower() == ".md":
+        return size <= MAX_GIT_SOURCE_FILE
+    if rel.startswith("research/tools/") and p.suffix.lower() in SOURCE_SUFFIXES:
+        return size <= MAX_GIT_SOURCE_FILE
     # Clone-first 203 review is self-contained in Git: promoted source/build
     # manifests, exact output streams, the copied original JSONL references,
     # and the complete timing/steady/thread evidence. All these files are

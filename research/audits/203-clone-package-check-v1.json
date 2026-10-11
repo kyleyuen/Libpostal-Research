@@ -31,5 +31,17 @@
     "verifier_cwd": "/tmp",
     "verifier_exit": 0,
     "runner_help_exit": 0
+  },
+  "remote_clone_first_check": {
+    "timestamp_utc": "2026-10-11T02:31:41.493293+00:00",
+    "commit": "0ae3d222",
+    "clone_succeeded": true,
+    "evidence_verifier_exit": 0,
+    "package_manifest_exit": 1,
+    "missing_manifest_targets": [
+      "research/experiments/202-cpi-final-validation/FINAL_VALIDATION_REPORT.md",
+      "research/experiments/203-cpi-memory-regression/FINAL_VALIDATION_REPORT.md"
+    ],
+    "decision": "Packaging failure; add missing reports and linked audit notes before final delivery. Numerical evidence passed."
   }
 }
