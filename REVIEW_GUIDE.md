@@ -6,7 +6,7 @@ This guide is for a source and evidence review of the libpostal CPI optimization
 
 The 203 candidate output comparison covered 14 datasets and 130,341 rows. Candidate dumps were compared byte-for-byte with cached original-generated JSONLs. Thirteen references were older caches; the v14 original reference came from a fresh original run in 202, not a new original run in 203. Input and artifact hashes were checked, along with frozen golden-v1 and novel outputs. A negative control changed one output byte and confirmed the comparison detected it. These finite checks do not prove correctness for all addresses or API states. Two candidate fuzz jobs matched preserved original digest/status references, but did not rerun the original fuzz jobs or compare each parser output byte-by-byte.
 
-The timing cohorts used three rounds and group-specific passes: 200 for Senzing, 420 for OSM, and 2,300 for v14. All 84 captures exited normally, met the 10-second minimum, and passed the AC-power gate; system load varied. Warm-parsing ratios were 6.11× for golden-v1, 5.83× for novel, 5.55× geometric mean across the 11 OSM datasets, and 5.72× for v14. These cohorts were timed separately, so there is no pooled 203 speed estimate. Every paired per-round ratio exceeded 1. Candidate startup was slower in each cohort.
+The timing cohorts used three rounds and group-specific passes: 200 for Senzing, 420 for OSM, and 2,300 for v14. All 84 captures exited normally, met the 10-second minimum, and passed the AC-power gate; system load varied. Warm-parsing ratios were 6.11× for golden-v1, 5.83× for novel, 5.55× geometric mean across the 11 OSM datasets, and 5.72× for v14. These cohorts were timed separately, so there is no pooled 203 speed estimate. Every paired per-round ratio exceeded 1. Candidate startup was slower in each cohort: 9.64 s vs 2.79 s median, so the candidate only finishes sooner overall after about 260,000–550,000 addresses in one process (see the README [Startup cost](README.md#startup-cost) section).
 
 Across 42 original/candidate pairs from 84 captures, candidate peak RSS and physical footprint did not exceed the corresponding original readings. Peak-footprint reductions ranged from 502,775,976 to 517,472,400 bytes. In the historical 202 check, 119 CPI passed the global maximum comparison by 70,500,184 bytes but failed all six Senzing per-pair footprint checks: golden-v1’s maximum delta was +131,236,152 bytes, and the Senzing subgroup maximum was +58,982,640 bytes (novel, round 2). The streaming 203 candidate passed the paired gate. Steady memory and thread evidence are representative samples, not measurements for every dataset and process state. Direct live samples for golden-v1, OSM v3, and v14 observed one parser thread. Each of the six baseline/candidate roles had six live samples after at least 50 parse passes; every sample showed one thread. Thread-capture processes were intentionally terminated after sampling.
 
@@ -20,7 +20,7 @@ Across 42 original/candidate pairs from 84 captures, candidate peak RSS and phys
 
 ## 203 review evidence paths
 
-From the repository root, run `python3 research/tools/verify_203_clone_evidence.py` to verify the included source/package hashes, all 14 output pairs, timing records, paired memory deltas, and live thread samples. This checks preserved evidence; it does not rerun parsing or validate the external model files.
+From the repository root, run `python3 research/tools/verify_203_clone_evidence.py` to verify the included source/package hashes, all 14 output pairs, timing records, paired memory deltas, and live thread samples. This checks preserved evidence; it does not rerun parsing or validate the external model files. The original dataset manifest can also be checked with `cd profiling && shasum -a 256 -c SHA256SUMS`; in a clone, exactly 6 entries fail because those files (`golden-v1/records.jsonl` and the `parser_profile` binaries and their debug symbols) are too large or binary for git. Their sizes and hashes are listed in `research/EXCLUDED_FILES.sha256`.
 
 - Promoted source and build identity: `research/final/203-cpi-memory/`.
 - Inputs and dataset provenance: `profiling/`, including `profiling/golden-v14-osm-unseen/`.
@@ -35,14 +35,4 @@ The 203 final validation report links these paths and explains each gate. The re
 
 `profiling/golden-v1/all.txt` contains one address per line. The paired benchmark TSV files have no header and contain a lowercase two-letter country code, a tab, and the address; rows align with their text files. The Senzing CSV has 21 source fields, listed in [README.md](README.md). `records.jsonl` entries contain `id`, `address`, `country_codes`, `source_rows`, and `split`; nested `source_rows` carry source CSV fields. Frozen `baseline-outputs.jsonl` entries contain `id` and ordered `components` pairs (`label`, `component`). Live dump JSONL uses `address` and `components`.
 
-For the source map and evidence paths, see [README.md](README.md). For a locally prepared environment, use [SETUP.md](SETUP.md). The repository is private and requires GitHub access. The 203 review uses repository paths listed below; setup retrieves the external model only if building is needed.
-
-## Optional ChatGPT review
-
-ChatGPT does not automatically have access to this private GitHub repository. Provide the relevant cloned files or repository access through the normal GitHub workflow. A review can be done from documents and source without running the benchmark.
-
-Copyable review prompt:
-
-```text
-Review this libpostal parser optimization using the supplied source and evidence. Read README.md, REVIEW_GUIDE.md, research/final/203-cpi-memory/README.md, and the experiment 203 validation report. Trace each claimed gain to raw timing records; check byte-parity scope, paired and global memory results, startup cost, API limits, and failed attempts. Separate measured results from inference, identify missing or conflicting evidence, and do not run benchmarks.
-```
+For the source map and evidence paths, see [README.md](README.md). For a locally prepared environment, use [SETUP.md](SETUP.md). The repository is private and requires GitHub access. The 203 review uses the repository paths listed above; setup retrieves the external model only if building is needed.
