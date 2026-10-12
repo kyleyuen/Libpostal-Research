@@ -16,6 +16,27 @@ The one exception is the feature-printing debugging switch. The optimized build 
 
 The current candidate is called **203**, which is its experiment number. It builds on the **CPI** (component phrase IDs) design from experiment 119. It adds a streamed postcode-graph loader, so the full graph index and its compressed form are never in memory at the same time during setup.
 
+## Datasets tested
+
+Fifteen datasets in total: 14 small ones used throughout the project (130,341 addresses) and one large open-data set, v15 (7,266,489 addresses). Together they cover the same **88 countries**. None of them is ground truth: each test checks that the optimized build gives exactly the same output as the original.
+
+| Dataset | Where the addresses come from | Addresses | Countries |
+| --- | --- | ---: | ---: |
+| golden-v1 | [Senzing libpostal-data v1.2.0 public test data](profiling/golden-v1/README.md), mostly OpenStreetMap-derived. Split into development (10,308, used for PGO training) and validation (2,555). | 12,863 | 88 |
+| novel | [Rebuilt from golden-v1's fields](profiling/golden-v2-novel/README.md) in new orders, separators and casing, 25% with a road-name typo. No string appears in golden-v1. | 12,863 | 88 |
+| osm-v3 | [OpenStreetMap via Overpass](profiling/golden-v3-osm/README.md): 700 m around 64 cities on six continents, at most 200 per city. | 11,405 | 49 |
+| unseen-v4 | [OpenStreetMap](profiling/golden-v4-osm-unseen/README.md), same method, 58 new cities. | 10,293 | 42 |
+| unseen-v5 to v13 | OpenStreetMap, same method, a new city list for each set (v5 8,794 · v6 9,450 · v7 8,973 · v8 9,981 · v9 9,480 · v10 8,567 · v11 7,882 · v12 8,273 · v13 9,716). | 81,116 | 38–42 each |
+| unseen-v14 | [OpenStreetMap](profiling/golden-v14-osm-unseen/README.md), 15 cities in 14 countries, audited to share no city with v3–v13. Built 2026-10-10. | 1,801 | 12 |
+| **v15** | **[OpenAddresses](https://openaddresses.io) (288 files, 60 countries) and OpenStreetMap (32 countries, Geofabrik extracts clipped to each country's border, plus Overpass for four small ones). Up to 100,000 per country, randomly sampled with a fixed seed. Built 2026-10-11 ([experiment 206](research/experiments/206-v15-88-country-benchmark/README.md)).** | **7,266,489** | **88** |
+| **Total** | | **7,396,830** | **88** |
+
+In v15, 62 countries have the full 100,000 addresses, 15 have 20,000–100,000, and 11 have fewer than 20,000 because that is all the open data has. [Experiment 206](research/experiments/206-v15-88-country-benchmark/README.md) lists every country's address count, source and speedup.
+
+Data licences: OpenStreetMap data is © OpenStreetMap contributors under the ODbL. The Senzing data is Apache-2.0. OpenAddresses licences vary by source. The v15 addresses are not stored in this repository: [experiment 206](research/experiments/206-v15-88-country-benchmark/README.md) has the exact file list, hashes and scripts to rebuild them.
+
+**The 88 countries:** Argentina (ar), Armenia (am), Australia (au), Austria (at), Azerbaijan (az), Bangladesh (bd), Belarus (by), Belgium (be), Bosnia and Herzegovina (ba), Brazil (br), Bulgaria (bg), Canada (ca), Chile (cl), China (cn), Colombia (co), Croatia (hr), Cyprus (cy), Czechia (cz), Denmark (dk), Ecuador (ec), Egypt (eg), Estonia (ee), Faroe Islands (fo), Finland (fi), France (fr), Georgia (ge), Germany (de), Greece (gr), Guatemala (gt), Hungary (hu), Iceland (is), India (in), Indonesia (id), Ireland (ie), Isle of Man (im), Israel (il), Italy (it), Jamaica (jm), Japan (jp), Kazakhstan (kz), Kosovo (xk), Kuwait (kw), Kyrgyzstan (kg), Latvia (lv), Liechtenstein (li), Lithuania (lt), Luxembourg (lu), Malaysia (my), Mexico (mx), Moldova (md), Netherlands (nl), New Caledonia (nc), New Zealand (nz), North Macedonia (mk), Norway (no), Pakistan (pk), Peru (pe), Philippines (ph), Poland (pl), Portugal (pt), Puerto Rico (pr), Qatar (qa), Reunion (re), Romania (ro), Russia (ru), San Marino (sm), Serbia (rs), Singapore (sg), Slovakia (sk), Slovenia (si), South Africa (za), South Korea (kr), Spain (es), Suriname (sr), Sweden (se), Switzerland (ch), Taiwan (tw), Tajikistan (tj), Tanzania (tz), Trinidad and Tobago (tt), Turkiye (tr), Ukraine (ua), United Arab Emirates (ae), United Kingdom (gb), United States (us), Uruguay (uy), Uzbekistan (uz), Vietnam (vn).
+
 ## Glossary
 
 | Term | Meaning |
