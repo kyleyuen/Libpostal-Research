@@ -1,0 +1,25 @@
+{
+ "dumps": {
+  "optimized/v15": {
+   "identical": true,
+   "candidate_sha256": "0d712e80580cf1bfbe756af604bedd042a49fbb9a287deef8a54a4691ec5199b",
+   "baseline_sha256": "0d712e80580cf1bfbe756af604bedd042a49fbb9a287deef8a54a4691ec5199b",
+   "lines": 7266620
+  }
+ },
+ "frozen": {},
+ "fuzz": {
+  "optimized/s1": {
+   "identical": true,
+   "inputs": 2000000
+  },
+  "optimized/s2": {
+   "identical": true,
+   "inputs": 2000000
+  }
+ },
+ "negative_control": {
+  "dataset": "v15",
+  "detected": true
+ }
+}

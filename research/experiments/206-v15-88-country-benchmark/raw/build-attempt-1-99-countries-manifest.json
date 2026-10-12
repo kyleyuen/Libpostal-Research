@@ -1,0 +1,2772 @@
+{
+ "created": "2026-10-11T16:28:48-0700",
+ "out": "/Users/kyle/v15-data/v15.tsv",
+ "seed": 20261011,
+ "per_country": 100000,
+ "min_per_country": 20000,
+ "order_rules": "number street first: ae au bd be ca eg fr gb ie il im in jm kw lu my nc nz pf ph pk pr qa re sg tt tz us za; postcode-first east Asian order: cn hk jp kr tw; all others: street number, postcode city",
+ "total": 7266693,
+ "countries": {
+  "ab": {
+   "kept": 54,
+   "usable_records": 54,
+   "duplicates_of_kept": 2
+  },
+  "ae": {
+   "kept": 100000,
+   "usable_records": 216475,
+   "duplicates_of_kept": 10629
+  },
+  "am": {
+   "kept": 100000,
+   "usable_records": 116554,
+   "duplicates_of_kept": 4350
+  },
+  "ar": {
+   "kept": 100000,
+   "usable_records": 425204,
+   "duplicates_of_kept": 22890
+  },
+  "at": {
+   "kept": 100000,
+   "usable_records": 227902,
+   "duplicates_of_kept": 53
+  },
+  "au": {
+   "kept": 100000,
+   "usable_records": 260060,
+   "duplicates_of_kept": 12614
+  },
+  "az": {
+   "kept": 19051,
+   "usable_records": 19051,
+   "duplicates_of_kept": 1435
+  },
+  "ba": {
+   "kept": 100000,
+   "usable_records": 167747,
+   "duplicates_of_kept": 3178
+  },
+  "bd": {
+   "kept": 18126,
+   "usable_records": 18126,
+   "duplicates_of_kept": 3838
+  },
+  "be": {
+   "kept": 100000,
+   "usable_records": 848739,
+   "duplicates_of_kept": 40
+  },
+  "bg": {
+   "kept": 100000,
+   "usable_records": 1669999,
+   "duplicates_of_kept": 451312
+  },
+  "br": {
+   "kept": 100000,
+   "usable_records": 136499,
+   "duplicates_of_kept": 42207
+  },
+  "bs": {
+   "kept": 1,
+   "usable_records": 1,
+   "duplicates_of_kept": 0
+  },
+  "by": {
+   "kept": 100000,
+   "usable_records": 204550,
+   "duplicates_of_kept": 16652
+  },
+  "ca": {
+   "kept": 100000,
+   "usable_records": 130001,
+   "duplicates_of_kept": 2976
+  },
+  "ch": {
+   "kept": 100000,
+   "usable_records": 184150,
+   "duplicates_of_kept": 6148
+  },
+  "cl": {
+   "kept": 100000,
+   "usable_records": 3999384,
+   "duplicates_of_kept": 182415
+  },
+  "cn": {
+   "kept": 95221,
+   "usable_records": 95221,
+   "duplicates_of_kept": 12773
+  },
+  "co": {
+   "kept": 100000,
+   "usable_records": 411095,
+   "duplicates_of_kept": 12349
+  },
+  "cy": {
+   "kept": 27192,
+   "usable_records": 27192,
+   "duplicates_of_kept": 1315
+  },
+  "cz": {
+   "kept": 100000,
+   "usable_records": 2056728,
+   "duplicates_of_kept": 1553
+  },
+  "de": {
+   "kept": 100000,
+   "usable_records": 228015,
+   "duplicates_of_kept": 40
+  },
+  "dk": {
+   "kept": 100000,
+   "usable_records": 3933400,
+   "duplicates_of_kept": 6
+  },
+  "do": {
+   "kept": 1,
+   "usable_records": 1,
+   "duplicates_of_kept": 0
+  },
+  "ea": {
+   "kept": 1,
+   "usable_records": 1,
+   "duplicates_of_kept": 0
+  },
+  "ec": {
+   "kept": 11745,
+   "usable_records": 11745,
+   "duplicates_of_kept": 1187
+  },
+  "ee": {
+   "kept": 100000,
+   "usable_records": 1160698,
+   "duplicates_of_kept": 196663
+  },
+  "eg": {
+   "kept": 100000,
+   "usable_records": 1540791,
+   "duplicates_of_kept": 385
+  },
+  "es": {
+   "kept": 100000,
+   "usable_records": 176836,
+   "duplicates_of_kept": 1271
+  },
+  "fi": {
+   "kept": 100000,
+   "usable_records": 3336984,
+   "duplicates_of_kept": 171916
+  },
+  "fo": {
+   "kept": 26471,
+   "usable_records": 26471,
+   "duplicates_of_kept": 1
+  },
+  "fr": {
+   "kept": 100000,
+   "usable_records": 161498,
+   "duplicates_of_kept": 96
+  },
+  "gb": {
+   "kept": 100000,
+   "usable_records": 5126052,
+   "duplicates_of_kept": 15450
+  },
+  "ge": {
+   "kept": 94111,
+   "usable_records": 94111,
+   "duplicates_of_kept": 31983
+  },
+  "gr": {
+   "kept": 100000,
+   "usable_records": 1502222,
+   "duplicates_of_kept": 105316
+  },
+  "gt": {
+   "kept": 6384,
+   "usable_records": 6384,
+   "duplicates_of_kept": 382
+  },
+  "hk": {
+   "kept": 419,
+   "usable_records": 419,
+   "duplicates_of_kept": 60
+  },
+  "hr": {
+   "kept": 100000,
+   "usable_records": 1682867,
+   "duplicates_of_kept": 1
+  },
+  "hu": {
+   "kept": 100000,
+   "usable_records": 741450,
+   "duplicates_of_kept": 21103
+  },
+  "id": {
+   "kept": 43474,
+   "usable_records": 43474,
+   "duplicates_of_kept": 5050
+  },
+  "ie": {
+   "kept": 100000,
+   "usable_records": 370135,
+   "duplicates_of_kept": 13246
+  },
+  "il": {
+   "kept": 80719,
+   "usable_records": 80719,
+   "duplicates_of_kept": 843
+  },
+  "im": {
+   "kept": 6708,
+   "usable_records": 6708,
+   "duplicates_of_kept": 148
+  },
+  "in": {
+   "kept": 65280,
+   "usable_records": 65280,
+   "duplicates_of_kept": 4736
+  },
+  "iq": {
+   "kept": 1,
+   "usable_records": 1,
+   "duplicates_of_kept": 0
+  },
+  "is": {
+   "kept": 100000,
+   "usable_records": 112506,
+   "duplicates_of_kept": 2743
+  },
+  "it": {
+   "kept": 100000,
+   "usable_records": 161545,
+   "duplicates_of_kept": 21086
+  },
+  "jm": {
+   "kept": 20938,
+   "usable_records": 20938,
+   "duplicates_of_kept": 2573
+  },
+  "jp": {
+   "kept": 100000,
+   "usable_records": 218389,
+   "duplicates_of_kept": 60203
+  },
+  "kg": {
+   "kept": 91844,
+   "usable_records": 91844,
+   "duplicates_of_kept": 4920
+  },
+  "kr": {
+   "kept": 100000,
+   "usable_records": 271555,
+   "duplicates_of_kept": 380483
+  },
+  "kw": {
+   "kept": 100000,
+   "usable_records": 103610,
+   "duplicates_of_kept": 43574
+  },
+  "kz": {
+   "kept": 100000,
+   "usable_records": 974866,
+   "duplicates_of_kept": 140071
+  },
+  "li": {
+   "kept": 12966,
+   "usable_records": 12966,
+   "duplicates_of_kept": 0
+  },
+  "lt": {
+   "kept": 100000,
+   "usable_records": 1135713,
+   "duplicates_of_kept": 2800
+  },
+  "lu": {
+   "kept": 100000,
+   "usable_records": 179124,
+   "duplicates_of_kept": 496
+  },
+  "lv": {
+   "kept": 100000,
+   "usable_records": 372041,
+   "duplicates_of_kept": 49
+  },
+  "md": {
+   "kept": 100000,
+   "usable_records": 966267,
+   "duplicates_of_kept": 15908
+  },
+  "mk": {
+   "kept": 13010,
+   "usable_records": 13010,
+   "duplicates_of_kept": 1138
+  },
+  "mo": {
+   "kept": 2,
+   "usable_records": 2,
+   "duplicates_of_kept": 0
+  },
+  "ms": {
+   "kept": 1,
+   "usable_records": 1,
+   "duplicates_of_kept": 0
+  },
+  "mx": {
+   "kept": 100000,
+   "usable_records": 27103172,
+   "duplicates_of_kept": 4132683
+  },
+  "my": {
+   "kept": 100000,
+   "usable_records": 169582,
+   "duplicates_of_kept": 6386
+  },
+  "nc": {
+   "kept": 51702,
+   "usable_records": 51702,
+   "duplicates_of_kept": 0
+  },
+  "nl": {
+   "kept": 100000,
+   "usable_records": 9934833,
+   "duplicates_of_kept": 323
+  },
+  "no": {
+   "kept": 100000,
+   "usable_records": 184529,
+   "duplicates_of_kept": 100
+  },
+  "nz": {
+   "kept": 100000,
+   "usable_records": 203815,
+   "duplicates_of_kept": 9375
+  },
+  "pe": {
+   "kept": 28223,
+   "usable_records": 28223,
+   "duplicates_of_kept": 96
+  },
+  "ph": {
+   "kept": 50210,
+   "usable_records": 50210,
+   "duplicates_of_kept": 4347
+  },
+  "pk": {
+   "kept": 93445,
+   "usable_records": 93445,
+   "duplicates_of_kept": 7633
+  },
+  "pl": {
+   "kept": 100000,
+   "usable_records": 141731,
+   "duplicates_of_kept": 4
+  },
+  "pr": {
+   "kept": 100000,
+   "usable_records": 115137,
+   "duplicates_of_kept": 10671
+  },
+  "pt": {
+   "kept": 100000,
+   "usable_records": 4395209,
+   "duplicates_of_kept": 15877
+  },
+  "qa": {
+   "kept": 100000,
+   "usable_records": 163657,
+   "duplicates_of_kept": 1
+  },
+  "re": {
+   "kept": 100000,
+   "usable_records": 340253,
+   "duplicates_of_kept": 481
+  },
+  "ro": {
+   "kept": 100000,
+   "usable_records": 890316,
+   "duplicates_of_kept": 39874
+  },
+  "rs": {
+   "kept": 100000,
+   "usable_records": 2088979,
+   "duplicates_of_kept": 634377
+  },
+  "ru": {
+   "kept": 100000,
+   "usable_records": 224997,
+   "duplicates_of_kept": 3764
+  },
+  "se": {
+   "kept": 100000,
+   "usable_records": 157431,
+   "duplicates_of_kept": 732
+  },
+  "sg": {
+   "kept": 100000,
+   "usable_records": 142193,
+   "duplicates_of_kept": 21
+  },
+  "si": {
+   "kept": 100000,
+   "usable_records": 573634,
+   "duplicates_of_kept": 0
+  },
+  "sk": {
+   "kept": 100000,
+   "usable_records": 766197,
+   "duplicates_of_kept": 21
+  },
+  "sm": {
+   "kept": 11514,
+   "usable_records": 11514,
+   "duplicates_of_kept": 61
+  },
+  "sr": {
+   "kept": 7628,
+   "usable_records": 7628,
+   "duplicates_of_kept": 270
+  },
+  "tj": {
+   "kept": 17807,
+   "usable_records": 17807,
+   "duplicates_of_kept": 1572
+  },
+  "tm": {
+   "kept": 4,
+   "usable_records": 4,
+   "duplicates_of_kept": 0
+  },
+  "tr": {
+   "kept": 100000,
+   "usable_records": 204510,
+   "duplicates_of_kept": 15826
+  },
+  "tt": {
+   "kept": 88446,
+   "usable_records": 88446,
+   "duplicates_of_kept": 7386
+  },
+  "tw": {
+   "kept": 100000,
+   "usable_records": 317163,
+   "duplicates_of_kept": 468
+  },
+  "tz": {
+   "kept": 15957,
+   "usable_records": 15957,
+   "duplicates_of_kept": 4702
+  },
+  "ua": {
+   "kept": 100000,
+   "usable_records": 194168,
+   "duplicates_of_kept": 1820
+  },
+  "us": {
+   "kept": 100000,
+   "usable_records": 126909,
+   "duplicates_of_kept": 3300
+  },
+  "uy": {
+   "kept": 100000,
+   "usable_records": 119615,
+   "duplicates_of_kept": 13896
+  },
+  "uz": {
+   "kept": 100000,
+   "usable_records": 224821,
+   "duplicates_of_kept": 13560
+  },
+  "ve": {
+   "kept": 1,
+   "usable_records": 1,
+   "duplicates_of_kept": 0
+  },
+  "vi": {
+   "kept": 3,
+   "usable_records": 3,
+   "duplicates_of_kept": 0
+  },
+  "vn": {
+   "kept": 68033,
+   "usable_records": 68033,
+   "duplicates_of_kept": 5001
+  },
+  "xk": {
+   "kept": 100000,
+   "usable_records": 409563,
+   "duplicates_of_kept": 1047
+  },
+  "za": {
+   "kept": 100000,
+   "usable_records": 275053,
+   "duplicates_of_kept": 12425
+  }
+ },
+ "below_minimum": [
+  "ab",
+  "az",
+  "bd",
+  "bs",
+  "do",
+  "ea",
+  "ec",
+  "gt",
+  "hk",
+  "im",
+  "iq",
+  "li",
+  "mk",
+  "mo",
+  "ms",
+  "sm",
+  "sr",
+  "tj",
+  "tm",
+  "tz",
+  "ve",
+  "vi"
+ ],
+ "inputs": [
+  {
+   "input": "ae=oa/ae/932989.geojson.gz",
+   "country": "ae",
+   "sha256": "887b8ed6bcdcfc0abccf647a204297ac1f573a60c0a361e1f84f982b043f8420",
+   "records": 19642,
+   "skipped": 0
+  },
+  {
+   "input": "ae=oa/ae/321972.geojson.gz",
+   "country": "ae",
+   "sha256": "c05f079b921d83415b8d5dc73176192945ea76849fe15ccfd591f1b4adf5a3b0",
+   "records": 146787,
+   "skipped": 91726
+  },
+  {
+   "input": "ar=oa/ar/932983.geojson.gz",
+   "country": "ar",
+   "sha256": "264159b100cf8c95aeda2627a02125e243bbaadd6cdfa0bee2460957710f49d6",
+   "records": 30550,
+   "skipped": 193
+  },
+  {
+   "input": "ar=oa/ar/928024.geojson.gz",
+   "country": "ar",
+   "sha256": "d2ceca7b8d57d1ae97eb636b0aab0688f6203c8eb5f855628931d09df09c0598",
+   "records": 417737,
+   "skipped": 0
+  },
+  {
+   "input": "at=oa/at/928022.geojson.gz",
+   "country": "at",
+   "sha256": "60ffd585e2a7bb3a0ff96f751676ca0bd014b3243bfb78ac9bcf91ebe3edac7b",
+   "records": 230015,
+   "skipped": 2060
+  },
+  {
+   "input": "au=oa/au/932949.geojson.gz",
+   "country": "au",
+   "sha256": "410a2386e0a57a391b059b97f6284c5059be85b3f88199d38b66a19b5fa495c5",
+   "records": 8737,
+   "skipped": 517
+  },
+  {
+   "input": "au=oa/au/932899.geojson.gz",
+   "country": "au",
+   "sha256": "d0cbe64cd242b88b69c0b2296c2f800f0f8a9424afd7c7aeb9e1f84e1ca4fc9c",
+   "records": 28258,
+   "skipped": 1755
+  },
+  {
+   "input": "au=oa/au/932972.geojson.gz",
+   "country": "au",
+   "sha256": "f847d92f58ae62cc361a139d042edab45e9c6579546817e38657873099773d1d",
+   "records": 32055,
+   "skipped": 0
+  },
+  {
+   "input": "au=oa/au/927983.geojson.gz",
+   "country": "au",
+   "sha256": "65769adc13f7e9baf72f93ce8b81c1952c16ad3bf766396c9dc947d65bc95fad",
+   "records": 33937,
+   "skipped": 28609
+  },
+  {
+   "input": "au=oa/au/932968.geojson.gz",
+   "country": "au",
+   "sha256": "a985bb216edbccf2d5fd01be6c3d37486b1b253a007f8671d38c751ec18a64f4",
+   "records": 34992,
+   "skipped": 3073
+  },
+  {
+   "input": "au=oa/au/932906.geojson.gz",
+   "country": "au",
+   "sha256": "04554172a31bdb8737f3c704959c12d8544256b7ba0cd802d728790e78b4e12a",
+   "records": 63721,
+   "skipped": 653
+  },
+  {
+   "input": "au=oa/au/932909.geojson.gz",
+   "country": "au",
+   "sha256": "401d3e2f656819a14b811a53a65a0de5bcfbe91ae75cb23cbf9983a0967ea823",
+   "records": 141190,
+   "skipped": 119710
+  },
+  {
+   "input": "au=oa/au/932951.geojson.gz",
+   "country": "au",
+   "sha256": "afcf3ad5423a73c05cf417def1ac0037f401a70adb8b71c0f5cc679d3b1d5cda",
+   "records": 84101,
+   "skipped": 0
+  },
+  {
+   "input": "be=oa/be/927931.geojson.gz",
+   "country": "be",
+   "sha256": "673854d51844707381d08e2d2da5b6fdac41039f2f827190e2ec5d798e24dda2",
+   "records": 848779,
+   "skipped": 0
+  },
+  {
+   "input": "bg=oa/bg/932883.geojson.gz",
+   "country": "bg",
+   "sha256": "e84e6363edb02141983da2d3e6532b6782d6af22c2aa0b8750fd0f3726951c00",
+   "records": 125245,
+   "skipped": 15
+  },
+  {
+   "input": "bg=oa/bg/927922.geojson.gz",
+   "country": "bg",
+   "sha256": "98d75520dd826375ff470e5c23c714288d6c09d4bc2780ad4454f3d91475a056",
+   "records": 3048277,
+   "skipped": 1052196
+  },
+  {
+   "input": "br=oa/br/932844.geojson.gz",
+   "country": "br",
+   "sha256": "3a55b4e817b0dac7895398fedc453266f8f48023305e1ec246cd23b3043f3546",
+   "records": 59916,
+   "skipped": 59916
+  },
+  {
+   "input": "br=oa/br/932851.geojson.gz",
+   "country": "br",
+   "sha256": "1cf16544bc5ae01d3479e4b76df67a04c1fbd876585960741e27bc77ba527bb7",
+   "records": 85373,
+   "skipped": 12929
+  },
+  {
+   "input": "br=oa/br/927891.geojson.gz",
+   "country": "br",
+   "sha256": "33f50325e7d073251aa5094eb340f8557218406bf657533b619c96cda9793fe7",
+   "records": 106590,
+   "skipped": 328
+  },
+  {
+   "input": "by=oa/by/932837.geojson.gz",
+   "country": "by",
+   "sha256": "284b9d30ff9465ea627059f99b1b94c8c57aa6bc6ea305cf8eeb8dc554d14453",
+   "records": 338852,
+   "skipped": 117650
+  },
+  {
+   "input": "ca=oa/ca/932735.geojson.gz",
+   "country": "ca",
+   "sha256": "a5377fff5a1d45039ec969819533eb765ffe2c9dbe020f1b7a4539e2ca37a9ef",
+   "records": 1653,
+   "skipped": 1653
+  },
+  {
+   "input": "ca=oa/ca/932828.geojson.gz",
+   "country": "ca",
+   "sha256": "c41739f12c7e564aa0b99cab6009b2ab6c4e107b553634c0668b40f90f439184",
+   "records": 1645,
+   "skipped": 49
+  },
+  {
+   "input": "ca=oa/ca/932711.geojson.gz",
+   "country": "ca",
+   "sha256": "6f7ca47f29798c8a4ccfe11de7901b6ea9350a806f1916b8d0e83196e9c4e3c5",
+   "records": 1581,
+   "skipped": 138
+  },
+  {
+   "input": "ca=oa/ca/932738.geojson.gz",
+   "country": "ca",
+   "sha256": "ef51c7d39ffa41e11a6b3b2fdc9131ce5b513cc62ededfee21088dd1270fe2fb",
+   "records": 1923,
+   "skipped": 9
+  },
+  {
+   "input": "ca=oa/ca/932697.geojson.gz",
+   "country": "ca",
+   "sha256": "cd159bb307d5aa358e2ec559081625588813f3e52ec7dbdd35d9e7fce356bfa6",
+   "records": 2739,
+   "skipped": 2739
+  },
+  {
+   "input": "ca=oa/ca/932629.geojson.gz",
+   "country": "ca",
+   "sha256": "e306100470070ecf1b6c723cb17a6a27d15936dd75edf1b0c28e49a43f33e97a",
+   "records": 3238,
+   "skipped": 384
+  },
+  {
+   "input": "ca=oa/ca/932679.geojson.gz",
+   "country": "ca",
+   "sha256": "cf2a2e9b609153465a956c93513a7dec68de5482c6b28036f4b05626250606db",
+   "records": 2868,
+   "skipped": 28
+  },
+  {
+   "input": "ca=oa/ca/932654.geojson.gz",
+   "country": "ca",
+   "sha256": "72b5625a21830c729e8d25e25af36fdff90156c3c9e8bcae17d7c62557adfd9d",
+   "records": 3960,
+   "skipped": 77
+  },
+  {
+   "input": "ca=oa/ca/932801.geojson.gz",
+   "country": "ca",
+   "sha256": "e4b336edfa84dd561a65e64f7bbce40bac940cfca554a433e5f769554e40f48e",
+   "records": 4444,
+   "skipped": 4444
+  },
+  {
+   "input": "ca=oa/ca/932666.geojson.gz",
+   "country": "ca",
+   "sha256": "07bb1233d4e37cb3a3f3997d1f5f36489f63c9d92bcb9e08c74d61a4a88cf8c2",
+   "records": 4617,
+   "skipped": 294
+  },
+  {
+   "input": "ca=oa/ca/932741.geojson.gz",
+   "country": "ca",
+   "sha256": "4a2c32188cb908d7f085c81224c27ace13d66b7efb6c139b4071fb75500f39b3",
+   "records": 6595,
+   "skipped": 6595
+  },
+  {
+   "input": "ca=oa/ca/932721.geojson.gz",
+   "country": "ca",
+   "sha256": "e6b7e789b95eb49d7e5e1ca7cb9a0a01c040e23a7cedf630b796afff81641d0d",
+   "records": 4725,
+   "skipped": 2
+  },
+  {
+   "input": "ca=oa/ca/932759.geojson.gz",
+   "country": "ca",
+   "sha256": "ed6f1c8c45e003d5d9596e3dafe5a495fbdece826a2e51443e9bb3172ff9c752",
+   "records": 4931,
+   "skipped": 13
+  },
+  {
+   "input": "ca=oa/ca/932664.geojson.gz",
+   "country": "ca",
+   "sha256": "a80926a5fb529cf9896fc55e357b7f6f88ac3513914b700f4b962d1c60939d7c",
+   "records": 6067,
+   "skipped": 244
+  },
+  {
+   "input": "ca=oa/ca/932773.geojson.gz",
+   "country": "ca",
+   "sha256": "ed59a5c457a87093e29c58aab55f605097264d90cada715bd694abf2e229ffaf",
+   "records": 5875,
+   "skipped": 192
+  },
+  {
+   "input": "ca=oa/ca/932689.geojson.gz",
+   "country": "ca",
+   "sha256": "03c9c0a5332c051d63b05a02c82af2da5327569d62e5bff8753c6982a278f77c",
+   "records": 5569,
+   "skipped": 0
+  },
+  {
+   "input": "ca=oa/ca/932683.geojson.gz",
+   "country": "ca",
+   "sha256": "62425413b3a118e8422bac784f0dbe023767ee380e94478f509920f54a6dc28a",
+   "records": 7004,
+   "skipped": 1320
+  },
+  {
+   "input": "ca=oa/ca/368360.geojson.gz",
+   "country": "ca",
+   "sha256": "d8320b7123692425506f5f4061a3bb0d4eb41a6d926a8b4e4adb9c9da0626677",
+   "records": 7578,
+   "skipped": 0
+  },
+  {
+   "input": "ca=oa/ca/932644.geojson.gz",
+   "country": "ca",
+   "sha256": "89cc991526dac6db42c40306dc23c2acbe0a677a1d16b4e9deea08c1993f4cc5",
+   "records": 7314,
+   "skipped": 1
+  },
+  {
+   "input": "ca=oa/ca/932754.geojson.gz",
+   "country": "ca",
+   "sha256": "eb14f3e2fcb655e700ffe0143310b346a4ecdd6f0e3a7b9e974e9262e6193a4b",
+   "records": 6713,
+   "skipped": 16
+  },
+  {
+   "input": "ca=oa/ca/932608.geojson.gz",
+   "country": "ca",
+   "sha256": "47e98776fb84f5e51c792cceaf99b3dbb948314ced976faee664e5d26635c180",
+   "records": 7837,
+   "skipped": 24
+  },
+  {
+   "input": "ca=oa/ca/182015.geojson.gz",
+   "country": "ca",
+   "sha256": "bac41c072ec8c35f53a218d354ff5db50a8683a59147648725b5080a89d5cd9c",
+   "records": 9832,
+   "skipped": 9832
+  },
+  {
+   "input": "ca=oa/ca/932672.geojson.gz",
+   "country": "ca",
+   "sha256": "fb921a3a3c5a543c7853e73c84e87f2340e1a81c2b24950075f87d3d45b51638",
+   "records": 6192,
+   "skipped": 329
+  },
+  {
+   "input": "ca=oa/ca/932825.geojson.gz",
+   "country": "ca",
+   "sha256": "d4d261c528a95087d249f6682d5ec9e96ff3d644b47b54066a6ff50f13f5b1fa",
+   "records": 7139,
+   "skipped": 17
+  },
+  {
+   "input": "ca=oa/ca/932681.geojson.gz",
+   "country": "ca",
+   "sha256": "8ffd1bde9c194fd2f29eae2060fe5fedc0275aa1db8724cea31b22e631ffb207",
+   "records": 7149,
+   "skipped": 409
+  },
+  {
+   "input": "ca=oa/ca/932781.geojson.gz",
+   "country": "ca",
+   "sha256": "8923fa1cd838231933774b15670dc3b676c8b597961ce087aac2e6a96998f808",
+   "records": 7493,
+   "skipped": 0
+  },
+  {
+   "input": "ca=oa/ca/932757.geojson.gz",
+   "country": "ca",
+   "sha256": "4a998f819e5a6865a92b0c1e836df809879dc5283efe39c0d08cee47bb420fa1",
+   "records": 7208,
+   "skipped": 490
+  },
+  {
+   "input": "ca=oa/ca/932783.geojson.gz",
+   "country": "ca",
+   "sha256": "479de616e66e31fc74be6ab367da69c153af85bf5bbaa8c7af959c51eb37df5f",
+   "records": 8847,
+   "skipped": 1
+  },
+  {
+   "input": "ca=oa/ca/312663.geojson.gz",
+   "country": "ca",
+   "sha256": "70fa6952e04acc64f2926a588e65e1f41cb4427092ec2ad30dd9908def3bb894",
+   "records": 9675,
+   "skipped": 134
+  },
+  {
+   "input": "ch=oa/ch/932521.geojson.gz",
+   "country": "ch",
+   "sha256": "6051ada752046e0c2be4cab167e01cc011a5b959988588ddec7c642e7682358d",
+   "records": 10303,
+   "skipped": 805
+  },
+  {
+   "input": "ch=oa/ch/932524.geojson.gz",
+   "country": "ch",
+   "sha256": "01b0d4ff7be87b99e32266d72710352dd359a1a94df56db571d5f288ed2cbad4",
+   "records": 20173,
+   "skipped": 0
+  },
+  {
+   "input": "ch=oa/ch/932527.geojson.gz",
+   "country": "ch",
+   "sha256": "8d9cd96ef9f63fec85aca06349fab90f60da458dfcbf37d205060ff01350e665",
+   "records": 18023,
+   "skipped": 0
+  },
+  {
+   "input": "ch=oa/ch/932532.geojson.gz",
+   "country": "ch",
+   "sha256": "6c16af00e39e82d568bdf93c9d769e398390add20e3dba9acdca55ead65d8166",
+   "records": 32253,
+   "skipped": 1
+  },
+  {
+   "input": "ch=oa/ch/932528.geojson.gz",
+   "country": "ch",
+   "sha256": "735ebff2aba0633b7e35319f58ab62f98ac4207836cfa61992d16d69d3aa015a",
+   "records": 50981,
+   "skipped": 0
+  },
+  {
+   "input": "ch=oa/ch/932520.geojson.gz",
+   "country": "ch",
+   "sha256": "71511d09742a51e11855ecd83fadb99bb1a0434810685de6715efd258c043cbb",
+   "records": 59371,
+   "skipped": 0
+  },
+  {
+   "input": "cl=oa/cl/927560.geojson.gz",
+   "country": "cl",
+   "sha256": "de508e2121f2ed1911eada2f7f43866a1387d6314c05ee5d864e57bb1f79e9a1",
+   "records": 4219988,
+   "skipped": 38189
+  },
+  {
+   "input": "cn=oa/cn/932518.geojson.gz",
+   "country": "cn",
+   "sha256": "8e1beed0107c1d8b7f296f22a418d2e9f00749fc1b4426a0b6872b3f08730a27",
+   "records": 3428,
+   "skipped": 0
+  },
+  {
+   "input": "co=oa/co/932516.geojson.gz",
+   "country": "co",
+   "sha256": "d8de9c57fcf760a435cb48d4d9e79b4496baf00f87204536d98fb071535f32a1",
+   "records": 43035,
+   "skipped": 0
+  },
+  {
+   "input": "co=oa/co/932517.geojson.gz",
+   "country": "co",
+   "sha256": "310cb6447156ed569f08ae06e56044594b2b0494c4eaa302fba26c1f05d5e85c",
+   "records": 380656,
+   "skipped": 247
+  },
+  {
+   "input": "cy=oa/cy/932512.geojson.gz",
+   "country": "cy",
+   "sha256": "e7d9bf73ad10c0fb6101c7e7e621f7927fa1590043758f3495b5e89ccaa3c59e",
+   "records": 80934,
+   "skipped": 80934
+  },
+  {
+   "input": "cz=oa/cz/932511.geojson.gz",
+   "country": "cz",
+   "sha256": "9a341391f1f57ad86e3b64c5c04248aa40f8df7f626f98aab3c429167a1ef727",
+   "records": 2998722,
+   "skipped": 940441
+  },
+  {
+   "input": "de=oa/de/932487.geojson.gz",
+   "country": "de",
+   "sha256": "a436d9d897a993b5918063d4dddda2b93ed7660082eeb52b88962e5fd66f166a",
+   "records": 17142,
+   "skipped": 0
+  },
+  {
+   "input": "de=oa/de/932492.geojson.gz",
+   "country": "de",
+   "sha256": "e3b9a9ec2d81cb1298fae7e75f57400a7cda0c0f4520fe7aa8b82eba04d670aa",
+   "records": 26949,
+   "skipped": 0
+  },
+  {
+   "input": "de=oa/de/932495.geojson.gz",
+   "country": "de",
+   "sha256": "ad5a6a749553e67b79a03790e0b62ea11b76883d10da6e1e93fd76ab3be0fd85",
+   "records": 35812,
+   "skipped": 0
+  },
+  {
+   "input": "de=oa/de/932486.geojson.gz",
+   "country": "de",
+   "sha256": "105be246cb742244233f2f24351f776657099fb7409665ed384df9603ea201be",
+   "records": 55878,
+   "skipped": 0
+  },
+  {
+   "input": "de=oa/de/932496.geojson.gz",
+   "country": "de",
+   "sha256": "8eb1f0e7555c861e43ea21418f3cf599500565bf12efb76ae7ce77ffd468b89a",
+   "records": 92274,
+   "skipped": 0
+  },
+  {
+   "input": "dk=oa/dk/927515.geojson.gz",
+   "country": "dk",
+   "sha256": "3d2773525815efea6d74126c99d97c504e07d4ce370657fe6dccd9f3d095a2cd",
+   "records": 3933406,
+   "skipped": 0
+  },
+  {
+   "input": "ee=oa/ee/932473.geojson.gz",
+   "country": "ee",
+   "sha256": "23b64547cb7ae5c59ed052c6803d5ecae96c584321999ff506d7e96949f45876",
+   "records": 2452977,
+   "skipped": 1095616
+  },
+  {
+   "input": "eg=oa/eg/927513.geojson.gz",
+   "country": "eg",
+   "sha256": "a8365a8a5377e5443699e03c59f1a3ffeab68c8d14a57a2a0818908f3680e26b",
+   "records": 2969909,
+   "skipped": 1428733
+  },
+  {
+   "input": "es=oa/es/932471.geojson.gz",
+   "country": "es",
+   "sha256": "9f2c7e300db308763ec07bdca3dae1bf87fa073371b2dc32d6ccc1abb239585f",
+   "records": 181170,
+   "skipped": 3063
+  },
+  {
+   "input": "fi=oa/fi/927504.geojson.gz",
+   "country": "fi",
+   "sha256": "4713dadb1b1496fd65f7de23cbfe296057660812f229a86a23fa90ca8f6ef368",
+   "records": 3862373,
+   "skipped": 353473
+  },
+  {
+   "input": "fo=oa/fo/932425.geojson.gz",
+   "country": "fo",
+   "sha256": "9fb14ebcf61a976e5dbd53f8d4daba172a53afccc58473a4407a53f4042b6aaa",
+   "records": 26472,
+   "skipped": 0
+  },
+  {
+   "input": "fr=oa/fr/932119.geojson.gz",
+   "country": "fr",
+   "sha256": "47555590523d056e0a014e550b167b2c53609d39f972e9a6b4320c3bdad7e1e5",
+   "records": 3049,
+   "skipped": 0
+  },
+  {
+   "input": "fr=oa/fr/932121.geojson.gz",
+   "country": "fr",
+   "sha256": "fbc363e4be5e494c676b3f74d0aad2fba9485abf72d28aaff4e0d606a9d0c59d",
+   "records": 5553,
+   "skipped": 0
+  },
+  {
+   "input": "fr=oa/fr/725369.geojson.gz",
+   "country": "fr",
+   "sha256": "287c11b570a1c6b7f44780fec85ef85fdcfa75553a1e86e0e2a08671dae36b03",
+   "records": 7658,
+   "skipped": 958
+  },
+  {
+   "input": "fr=oa/fr/932120.geojson.gz",
+   "country": "fr",
+   "sha256": "7b1a412a2e1621ad0368125894d2364deb448cf5d264b8fd0d859eb966d033d1",
+   "records": 7358,
+   "skipped": 0
+  },
+  {
+   "input": "fr=oa/fr/725370.geojson.gz",
+   "country": "fr",
+   "sha256": "864b5c892591dc1fe2638bb055af7d675abb85ce0a0b626d0b3141be5835a852",
+   "records": 41179,
+   "skipped": 0
+  },
+  {
+   "input": "fr=oa/fr/932152.geojson.gz",
+   "country": "fr",
+   "sha256": "234aeece5abfbf44c8ab24e07eb382396b30a07ce13aa5c39284a72f85e1e48d",
+   "records": 45068,
+   "skipped": 0
+  },
+  {
+   "input": "fr=oa/fr/932122.geojson.gz",
+   "country": "fr",
+   "sha256": "7125d0a800aa2a4cf9ce297a229865a27549012a4b6802a22ae02c1a21239a82",
+   "records": 52687,
+   "skipped": 0
+  },
+  {
+   "input": "gr=oa/gr/932115.geojson.gz",
+   "country": "gr",
+   "sha256": "2121554d1549b10d12aca80569de53d0d5b56669b3ccb89b58abeb04e0d0679f",
+   "records": 10877,
+   "skipped": 103
+  },
+  {
+   "input": "gr=oa/gr/927143.geojson.gz",
+   "country": "gr",
+   "sha256": "e5218b096fb76c7c84ea25d620d05598ea0b69e6e0e9f91bbb9f26110c513d48",
+   "records": 2292989,
+   "skipped": 696225
+  },
+  {
+   "input": "hr=oa/hr/932099.geojson.gz",
+   "country": "hr",
+   "sha256": "f962a430cdc6c23f62edaab7f6f2ecf5ced720686f127e5fa3f4e5e5026f0abe",
+   "records": 1682868,
+   "skipped": 0
+  },
+  {
+   "input": "il=oa/il/932098.geojson.gz",
+   "country": "il",
+   "sha256": "c80e71a329494e7a9a10bcc1142b3dee310123b5b8c5cc9807002c89ecc2a2b0",
+   "records": 29387,
+   "skipped": 0
+  },
+  {
+   "input": "il=oa/il/932097.geojson.gz",
+   "country": "il",
+   "sha256": "9c79fce2ce9831e51ffcb2173da7e4433b6efe771a909e79d8e656b47b19e4e4",
+   "records": 52175,
+   "skipped": 0
+  },
+  {
+   "input": "is=oa/is/927134.geojson.gz",
+   "country": "is",
+   "sha256": "e94360af5873c8d2622f8798aef4ba4479fe31944cc178ca67734465314b13a0",
+   "records": 139564,
+   "skipped": 24315
+  },
+  {
+   "input": "it=oa/it/932092.geojson.gz",
+   "country": "it",
+   "sha256": "70e38f690456766372d8170c47229a72710d234a0386329a509d6af344e4e266",
+   "records": 11189,
+   "skipped": 5
+  },
+  {
+   "input": "it=oa/it/312901.geojson.gz",
+   "country": "it",
+   "sha256": "69f55518960f327b25d060f2d8387787a5c961f6a6f83a28f9790b81d555f25b",
+   "records": 11189,
+   "skipped": 5
+  },
+  {
+   "input": "it=oa/it/932079.geojson.gz",
+   "country": "it",
+   "sha256": "bec74344080e7e3a67341dd784f418b9c2b0a0a202d36d95f681d8a66d3baba6",
+   "records": 10996,
+   "skipped": 10990
+  },
+  {
+   "input": "it=oa/it/932056.geojson.gz",
+   "country": "it",
+   "sha256": "c29c37ecf30581a194cfb6c8c142b72f50acc40466cb8ae26bce5c52ccb25729",
+   "records": 17956,
+   "skipped": 0
+  },
+  {
+   "input": "it=oa/it/312900.geojson.gz",
+   "country": "it",
+   "sha256": "528625078c82d90270234c91e12c35207a6611cb086763f73e9617b1d937e442",
+   "records": 17956,
+   "skipped": 0
+  },
+  {
+   "input": "it=oa/it/932072.geojson.gz",
+   "country": "it",
+   "sha256": "b9a2c1fdf9c14cc883681d6f2977b5921955bb17c4ab1f85158f350947677414",
+   "records": 19186,
+   "skipped": 0
+  },
+  {
+   "input": "it=oa/it/932074.geojson.gz",
+   "country": "it",
+   "sha256": "d50ef631e646fcd197afbc8aef6bb0bdb303b1b39e9350b6eaf86af684749c30",
+   "records": 53008,
+   "skipped": 3
+  },
+  {
+   "input": "it=oa/it/317948.geojson.gz",
+   "country": "it",
+   "sha256": "c6e0aa03f833d3bce8186c034ac37b17e783091b0c5216a09255aba24ad5ba9c",
+   "records": 52154,
+   "skipped": 0
+  },
+  {
+   "input": "jm=oa/jm/927092.geojson.gz",
+   "country": "jm",
+   "sha256": "b5da48a1c7608a169d3afba9cf1ad1e9f70b551b40eed2e1d5774bbb41e70f71",
+   "records": 188794,
+   "skipped": 169652
+  },
+  {
+   "input": "jp=oa/jp/932010.geojson.gz",
+   "country": "jp",
+   "sha256": "159dcb02d69289901efd3cf6d49faa55348bc3cee1fe8a381a6b3366d4b9675c",
+   "records": 85451,
+   "skipped": 0
+  },
+  {
+   "input": "jp=oa/jp/932044.geojson.gz",
+   "country": "jp",
+   "sha256": "e102c42d2149ac094d7cad57847c146116fd7f9f3ff17d0f9255a12eceb93711",
+   "records": 81493,
+   "skipped": 0
+  },
+  {
+   "input": "jp=oa/jp/932030.geojson.gz",
+   "country": "jp",
+   "sha256": "ac15891d2ac82580160d629f1c6d196cf029a3dbe94a67b94c477afa8bb9016e",
+   "records": 111648,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931970.geojson.gz",
+   "country": "kr",
+   "sha256": "5012c86ce9db514799f271c411fb4e1813f51e44dd4770a9ed2ebd332d498ed1",
+   "records": 16292,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931948.geojson.gz",
+   "country": "kr",
+   "sha256": "058750ae7a512e78879ab2fe3b216bb6c24509bcbaf64645e2c87c4ec190190e",
+   "records": 17740,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931982.geojson.gz",
+   "country": "kr",
+   "sha256": "d386093ac37900a236dce70477c40037b2a2d4935f392053b65f7149163b0a28",
+   "records": 18960,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931960.geojson.gz",
+   "country": "kr",
+   "sha256": "7fa28ee2ec3faa92737e0e0f447ef8c29ca4a6418a9ce2eca5818c227091e6bb",
+   "records": 18401,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931942.geojson.gz",
+   "country": "kr",
+   "sha256": "13e4d9375deec26fdddb88d3ee8b2d2ba34f1346ee95064d8338b3d55dcaa62d",
+   "records": 20407,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931952.geojson.gz",
+   "country": "kr",
+   "sha256": "b807f5e14251e40397dc7b85122caa5adcd37f23515216457ece276a24de2b5b",
+   "records": 20990,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931976.geojson.gz",
+   "country": "kr",
+   "sha256": "0e3c39bbb5870e8bdda1b74bf40082901f7017fa0c72b438e1c924abfec6193d",
+   "records": 21274,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931958.geojson.gz",
+   "country": "kr",
+   "sha256": "45018e9cc598d761efdb353ae9e6f980437120bd786a7620c8bfe5bbe8c27686",
+   "records": 19471,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931968.geojson.gz",
+   "country": "kr",
+   "sha256": "762abe759f952d0e32be2380a760900e07387f3e4a0fc4bc15bd20e7773eafce",
+   "records": 24237,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931938.geojson.gz",
+   "country": "kr",
+   "sha256": "ff152dc1da10c58ee9b475932315e7ea1fbc340e750bc8c6b973d93b71c3a8c3",
+   "records": 25995,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931974.geojson.gz",
+   "country": "kr",
+   "sha256": "d7f7c5650bc5eaf339341172fb8dc6d675c1836590dbb5cfdcbbf55299b20e36",
+   "records": 24096,
+   "skipped": 3
+  },
+  {
+   "input": "kr=oa/kr/931956.geojson.gz",
+   "country": "kr",
+   "sha256": "1d8c5d7338b5a6c6c3323e0e48e0c3c9effdbe7c77d01f6d39550034548a09d8",
+   "records": 26801,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931964.geojson.gz",
+   "country": "kr",
+   "sha256": "2de0ae2b4519b646b229620631cbc82f4f7acf051e426ec32b3987d8088d8d5e",
+   "records": 27129,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931950.geojson.gz",
+   "country": "kr",
+   "sha256": "56100d41442e9c7ae1db1b520d20efe20ff9db152fc4e8561cb55a2465f1ba74",
+   "records": 25405,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931962.geojson.gz",
+   "country": "kr",
+   "sha256": "012e823f107699d900fa7d4cd68f947786c9ad62405bd70a3ca04f980108d0a5",
+   "records": 28005,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931984.geojson.gz",
+   "country": "kr",
+   "sha256": "fe5dda452f4466ba0f795248c3c9a5debee40e39e5ede888d4b88f48c97aa79d",
+   "records": 28997,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931940.geojson.gz",
+   "country": "kr",
+   "sha256": "79dadc918332ef3fd3471348ed8404d1210024558dee1dfad917d4508a871421",
+   "records": 28974,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931986.geojson.gz",
+   "country": "kr",
+   "sha256": "4787f14e61c7dc3b5b57a7545f2a60394d4ff88b05de024dbeeaf8860d232a08",
+   "records": 25504,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931944.geojson.gz",
+   "country": "kr",
+   "sha256": "e53ab58ce895da68de21562f2fd6a47c08d22361e5e989fc8ae724ef48b40b25",
+   "records": 29183,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931972.geojson.gz",
+   "country": "kr",
+   "sha256": "39af81f37bb6339bbdfe3ad846e9718469d28870de9fbc03d8c36139b7aafc61",
+   "records": 26860,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931978.geojson.gz",
+   "country": "kr",
+   "sha256": "1e9408bd414c20fed61e217e17808af352ca576151854970f20334c73e55d151",
+   "records": 31087,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931980.geojson.gz",
+   "country": "kr",
+   "sha256": "842a0f237f1caf6c615bfd1b67721bbab3c7cc72b4d7c6c6e538ed4b5a2836f3",
+   "records": 30833,
+   "skipped": 1
+  },
+  {
+   "input": "kr=oa/kr/931946.geojson.gz",
+   "country": "kr",
+   "sha256": "27ed51cc2d85dde72b25bbd59cddd5690d32095ed19b8175b70b8fc86020b95e",
+   "records": 36222,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931966.geojson.gz",
+   "country": "kr",
+   "sha256": "6c851377c2495bcfe5be18ad18e328eda1d183abe1e0b904ed71dd41d1ff4b7b",
+   "records": 36804,
+   "skipped": 0
+  },
+  {
+   "input": "kr=oa/kr/931954.geojson.gz",
+   "country": "kr",
+   "sha256": "9e78d23dbad7ef4c1fffd02c89c7669203b0144f98ff119db24b54f5304d7597",
+   "records": 42375,
+   "skipped": 0
+  },
+  {
+   "input": "kz=oa/kz/223368.geojson.gz",
+   "country": "kz",
+   "sha256": "a5a14e2ac2f8e906cf2fb76eab3337ee9a3993d5bf0d4f090bd5e4d950725390",
+   "records": 8,
+   "skipped": 8
+  },
+  {
+   "input": "kz=oa/kz/223369.geojson.gz",
+   "country": "kz",
+   "sha256": "6e4d47f503302e094aa16faf227f845262004be7e210e4e8e5bd1ad1f6966ea8",
+   "records": 83,
+   "skipped": 83
+  },
+  {
+   "input": "kz=oa/kz/931932.geojson.gz",
+   "country": "kz",
+   "sha256": "5099a589e1a9a53ecad36d8559d1740ee4f9b9513b59266a61ca953b349f85b3",
+   "records": 1248860,
+   "skipped": 133923
+  },
+  {
+   "input": "li=oa/li/931931.geojson.gz",
+   "country": "li",
+   "sha256": "498074805e730363fbe139142bcce9a5037aae954483a157d46c184a4ff75e33",
+   "records": 12966,
+   "skipped": 0
+  },
+  {
+   "input": "lt=oa/lt/931930.geojson.gz",
+   "country": "lt",
+   "sha256": "82e626f02faddef3dd8f23bb08bffff28c45d8850c73ebd19a4d29debe1e04bc",
+   "records": 82385,
+   "skipped": 0
+  },
+  {
+   "input": "lt=oa/lt/926971.geojson.gz",
+   "country": "lt",
+   "sha256": "b3029a540c13293de01ca5d29c8fb783fba00004347771cb58aeb340ee4b9b0c",
+   "records": 1130148,
+   "skipped": 74020
+  },
+  {
+   "input": "lu=oa/lu/931928.geojson.gz",
+   "country": "lu",
+   "sha256": "b654d5129565c59f538bd2f1d603ea41dcf587c59e0c926a147108fb6be0303b",
+   "records": 179635,
+   "skipped": 15
+  },
+  {
+   "input": "lv=oa/lv/931927.geojson.gz",
+   "country": "lv",
+   "sha256": "6c75945ab9859eb23a180ac3569f733096acd8301753fed43c8f1e96297bdabc",
+   "records": 48753,
+   "skipped": 0
+  },
+  {
+   "input": "lv=oa/lv/931926.geojson.gz",
+   "country": "lv",
+   "sha256": "f9c885fb620d1719dcacbf3396f96bd5a30346dca12e75fffcd44143171f5b19",
+   "records": 550686,
+   "skipped": 227349
+  },
+  {
+   "input": "mx=oa/mx/793708.geojson.gz",
+   "country": "mx",
+   "sha256": "614d1ebbf4ddf557a0951854657fc937e08e6d6817582920449c92bd03c4b437",
+   "records": 31236822,
+   "skipped": 967
+  },
+  {
+   "input": "nc=oa/nc/931891.geojson.gz",
+   "country": "nc",
+   "sha256": "36c0d2435efbebcc3d35f083f4d1f30eb3a8bdae6ce3773aea6a8bb4bde0bd9d",
+   "records": 51702,
+   "skipped": 0
+  },
+  {
+   "input": "nl=oa/nl/916199.geojson.gz",
+   "country": "nl",
+   "sha256": "32de3c39922e557ffd6aedf69ffb6ca6261a48447cc68c85aa7fb37ce444aeaa",
+   "records": 9935156,
+   "skipped": 0
+  },
+  {
+   "input": "no=oa/no/931875.geojson.gz",
+   "country": "no",
+   "sha256": "1c1ab0fe3f3da5556fb5e461759feb3ff555bff72bebdb6c5f137ad3b5053a2a",
+   "records": 2435,
+   "skipped": 0
+  },
+  {
+   "input": "no=oa/no/931842.geojson.gz",
+   "country": "no",
+   "sha256": "834399e7cbec98e7d0c46f2b5e71e02dcc9861c599876bb4f6efb316553e3027",
+   "records": 64033,
+   "skipped": 4393
+  },
+  {
+   "input": "no=oa/no/931845.geojson.gz",
+   "country": "no",
+   "sha256": "3bf89f4d68db3641a10962ed139534fdd41bc4d015f91e131e6ba6ab4f5b17ef",
+   "records": 123255,
+   "skipped": 701
+  },
+  {
+   "input": "nz=oa/nz/931831.geojson.gz",
+   "country": "nz",
+   "sha256": "6d56063696949497329d4d6a30fa04b1a03fe11750965d24e737a516c80e4808",
+   "records": 21571,
+   "skipped": 1
+  },
+  {
+   "input": "nz=oa/nz/931837.geojson.gz",
+   "country": "nz",
+   "sha256": "bba5de7b10f1baf852b27a669bbcf010f58b16b797fde13481a433fb6185d431",
+   "records": 33267,
+   "skipped": 398
+  },
+  {
+   "input": "nz=oa/nz/926877.geojson.gz",
+   "country": "nz",
+   "sha256": "9728e0d3c95d671abf144e8a72a912f34fe2d491adefa50e3e73f19af293d9ef",
+   "records": 39406,
+   "skipped": 0
+  },
+  {
+   "input": "nz=oa/nz/931829.geojson.gz",
+   "country": "nz",
+   "sha256": "ccc93db5f3e30eef49b7456fd1a29a69500dde17ef610b810dbcf2315251d0c3",
+   "records": 53048,
+   "skipped": 101
+  },
+  {
+   "input": "nz=oa/nz/931836.geojson.gz",
+   "country": "nz",
+   "sha256": "ce8536f47dd0b56901c3a010dc605ac26ede6aef65c897d333e9d4afa44d19ba",
+   "records": 66398,
+   "skipped": 0
+  },
+  {
+   "input": "pe=oa/pe/931828.geojson.gz",
+   "country": "pe",
+   "sha256": "1102c526fab79819b447bf9e44a37a1fc92e921f803da63246f174b7e9193bed",
+   "records": 28318,
+   "skipped": 0
+  },
+  {
+   "input": "pl=oa/pl/931820.geojson.gz",
+   "country": "pl",
+   "sha256": "5c19569a7210525eb22137f72ab504dea169b7c5e2bcbbf6f5e32e9aba0b6083",
+   "records": 203728,
+   "skipped": 61993
+  },
+  {
+   "input": "pr=oa/pr/80500.geojson.gz",
+   "country": "pr",
+   "sha256": "143a6a28b97832897f55382d2730f3f6411347c89cc21a31ca980738e5b222d5",
+   "records": 135800,
+   "skipped": 9992
+  },
+  {
+   "input": "pt=oa/pt/931808.geojson.gz",
+   "country": "pt",
+   "sha256": "69770ebf0dd42fa2ccfa44199a3c6c88b0a4561d2950aad03dc8651ae96d9855",
+   "records": 5911139,
+   "skipped": 1500053
+  },
+  {
+   "input": "qa=oa/qa/931807.geojson.gz",
+   "country": "qa",
+   "sha256": "83d2fa5f31cf014989d9845e9b22dd749cad844a1eb7ebb42a4c6e2ffa0ee455",
+   "records": 163658,
+   "skipped": 0
+  },
+  {
+   "input": "re=oa/re/932125.geojson.gz",
+   "country": "re",
+   "sha256": "5ac4a37add7c1245dd019a9e6f0060002aaf296f0ec8b10e1007e44940c040fe",
+   "records": 340734,
+   "skipped": 0
+  },
+  {
+   "input": "rs=oa/rs/921065.geojson.gz",
+   "country": "rs",
+   "sha256": "7cd39c8ebb533812404e7d19fa9d400ea7a1dbd1ec1d39be731566e181e45d98",
+   "records": 2724376,
+   "skipped": 1020
+  },
+  {
+   "input": "ru=oa/ru/101127.geojson.gz",
+   "country": "ru",
+   "sha256": "7240251d8b8405b497f2e7f0181f0e027c13514f0b2be36a31c2be878e09239f",
+   "records": 3751,
+   "skipped": 874
+  },
+  {
+   "input": "ru=oa/ru/101126.geojson.gz",
+   "country": "ru",
+   "sha256": "5b8dd06c8c332fa3d9e31287b5b58f86bb72b1bc7dce784af869127c9f4fa2dc",
+   "records": 8625,
+   "skipped": 751
+  },
+  {
+   "input": "ru=oa/ru/101130.geojson.gz",
+   "country": "ru",
+   "sha256": "78df12ed83b190d179806b8a1203a2b027c9c068e5bc8508f81f2144d2f04252",
+   "records": 27852,
+   "skipped": 11735
+  },
+  {
+   "input": "ru=oa/ru/101128.geojson.gz",
+   "country": "ru",
+   "sha256": "177f9b80329fb9d0452d0b30c94b6ad3b924734e78504ea292af4013cba5fcb2",
+   "records": 45187,
+   "skipped": 6826
+  },
+  {
+   "input": "ru=oa/ru/101129.geojson.gz",
+   "country": "ru",
+   "sha256": "9b7cf30cc8839a2d51149c463d43203752bebc707883e2a7d94a9d59a2e494c5",
+   "records": 52286,
+   "skipped": 14610
+  },
+  {
+   "input": "ru=oa/ru/931796.geojson.gz",
+   "country": "ru",
+   "sha256": "c2df6bbb53fdc092b370cd40eb62e30e511fef5766fb2d045944caa407b7cc61",
+   "records": 128877,
+   "skipped": 3022
+  },
+  {
+   "input": "se=oa/se/931780.geojson.gz",
+   "country": "se",
+   "sha256": "290dba5b8ad2bca0e67883b6af28f7f16c7985db1f66e7b9bfeea7042b933b2a",
+   "records": 106,
+   "skipped": 106
+  },
+  {
+   "input": "se=oa/se/931775.geojson.gz",
+   "country": "se",
+   "sha256": "4301dcae9009b4608d4105712399178d9b0529c2e1de3879cef6f4af120a047b",
+   "records": 6152,
+   "skipped": 0
+  },
+  {
+   "input": "se=oa/se/931767.geojson.gz",
+   "country": "se",
+   "sha256": "09412d8de1f201bc84c621ad5bafe1f3e2dc40d65a41aae100d4b3d42d4a1702",
+   "records": 20283,
+   "skipped": 0
+  },
+  {
+   "input": "se=oa/se/931786.geojson.gz",
+   "country": "se",
+   "sha256": "0deaa0ab1fa1a863f1f9b2b10b7f61cc8a5573059133cc6c3f925c86b051b01c",
+   "records": 16741,
+   "skipped": 0
+  },
+  {
+   "input": "se=oa/se/931779.geojson.gz",
+   "country": "se",
+   "sha256": "f3842b95cccb90257b718eb3102bf01aa8ccd7fd579a100a344fdb7da6546f8d",
+   "records": 23248,
+   "skipped": 34
+  },
+  {
+   "input": "se=oa/se/931776.geojson.gz",
+   "country": "se",
+   "sha256": "f0475c6ad3a6daf857b5c8d22637b596917e86e74f4677a415f020db3214ae2d",
+   "records": 25461,
+   "skipped": 203
+  },
+  {
+   "input": "se=oa/se/931785.geojson.gz",
+   "country": "se",
+   "sha256": "a2403c70635058683eb15e41076caf1e1f7614c1ce0bafbb35b7bc437ea7fbfe",
+   "records": 32113,
+   "skipped": 1
+  },
+  {
+   "input": "se=oa/se/931784.geojson.gz",
+   "country": "se",
+   "sha256": "2cac61ffd608af3cba7cbc5e0dcddf09b479e86280830d575867d16b4afe6463",
+   "records": 34403,
+   "skipped": 0
+  },
+  {
+   "input": "sg=oa/sg/931766.geojson.gz",
+   "country": "sg",
+   "sha256": "407d0cdce20f55b24e56cdc8af07b9035691a6cba03550e852ce071d6c421061",
+   "records": 142231,
+   "skipped": 17
+  },
+  {
+   "input": "si=oa/si/399702.geojson.gz",
+   "country": "si",
+   "sha256": "240daf96f61313e969eb31ca4de4e66a466c755936abacbb6bfd6f45ea68f1e8",
+   "records": 573634,
+   "skipped": 0
+  },
+  {
+   "input": "sk=oa/sk/931763.geojson.gz",
+   "country": "sk",
+   "sha256": "ab6770a901ad8b96d8ec529b9b473bccb05b6de7ae70151b9ec543533433dfcc",
+   "records": 1739536,
+   "skipped": 973318
+  },
+  {
+   "input": "tt=oa/tt/931759.geojson.gz",
+   "country": "tt",
+   "sha256": "11783edec60873a2a6c88a234b4e8b044f48063fb08f69f87e9d48cf818f76cd",
+   "records": 2095,
+   "skipped": 0
+  },
+  {
+   "input": "tt=oa/tt/931756.geojson.gz",
+   "country": "tt",
+   "sha256": "9254e415bf6f52452e97f8ee9635f4c9eda7f27977574db1d9d59b2a0537b85f",
+   "records": 15405,
+   "skipped": 0
+  },
+  {
+   "input": "tt=oa/tt/931758.geojson.gz",
+   "country": "tt",
+   "sha256": "c720e3e41b518496a3e237f639a55a5b8946c2a07c9ad01f64ef608ac8848b22",
+   "records": 23126,
+   "skipped": 0
+  },
+  {
+   "input": "tt=oa/tt/931757.geojson.gz",
+   "country": "tt",
+   "sha256": "8224e233e0ace5fdd710d5b3026f37e81864a823cfcfb50928d93e0435678da8",
+   "records": 24788,
+   "skipped": 0
+  },
+  {
+   "input": "tt=oa/tt/931760.geojson.gz",
+   "country": "tt",
+   "sha256": "c2e03a8020a88203243ec956ff29342444559e333e55016151bc10023d214fe9",
+   "records": 30685,
+   "skipped": 267
+  },
+  {
+   "input": "tw=oa/tw/931735.geojson.gz",
+   "country": "tw",
+   "sha256": "55be64e1f37b0de57bc5512336df09fb2207fef8ce68e353eb2af29425610471",
+   "records": 32005,
+   "skipped": 6
+  },
+  {
+   "input": "tw=oa/tw/931731.geojson.gz",
+   "country": "tw",
+   "sha256": "3d37f114b5185c4c1115d080aed12e2001ecd0819d810e87b13322b338d57c0d",
+   "records": 40609,
+   "skipped": 1
+  },
+  {
+   "input": "tw=oa/tw/931726.geojson.gz",
+   "country": "tw",
+   "sha256": "269574bb243426c37aa194d4c7b74f53fcbb155b0ff8dde1ac15ca021bed2667",
+   "records": 93671,
+   "skipped": 4
+  },
+  {
+   "input": "tw=oa/tw/931750.geojson.gz",
+   "country": "tw",
+   "sha256": "920949de9e66348826605553f204c86f97b20f98950ec5fd8e96f4b301816a16",
+   "records": 151358,
+   "skipped": 1
+  },
+  {
+   "input": "ua=oa/ua/931722.geojson.gz",
+   "country": "ua",
+   "sha256": "b3a8f7da4ecfbc79b98b4bb6423f5e8ffebddc1b4ea5051721e5290794cf5236",
+   "records": 29917,
+   "skipped": 0
+  },
+  {
+   "input": "ua=oa/ua/931721.geojson.gz",
+   "country": "ua",
+   "sha256": "49e489fb60963d48696f5c40927136a34b828390c52cc6abd62a575cbaed91d9",
+   "records": 78855,
+   "skipped": 0
+  },
+  {
+   "input": "ua=oa/ua/931723.geojson.gz",
+   "country": "ua",
+   "sha256": "ebda31e3442819bedc6ee22262fb6c194ecb68694627ff407ce4edb2abe5ac73",
+   "records": 119686,
+   "skipped": 32470
+  },
+  {
+   "input": "us=oa/us/314376.geojson.gz",
+   "country": "us",
+   "sha256": "82d9ef43cf620c6aaa74a32f301b93a6dd6d98efd9fcf59ddbc62257f9526040",
+   "records": 1,
+   "skipped": 1
+  },
+  {
+   "input": "us=oa/us/928698.geojson.gz",
+   "country": "us",
+   "sha256": "c2b56b47ecbee45db5cf030d456d795491e16f96becaea0264a7595d2ef307dd",
+   "records": 55,
+   "skipped": 55
+  },
+  {
+   "input": "us=oa/us/928929.geojson.gz",
+   "country": "us",
+   "sha256": "9320b6eadb6e82ff76353adea2297100632fc18b8f2f5e52158adb5dfdd411ce",
+   "records": 72,
+   "skipped": 46
+  },
+  {
+   "input": "us=oa/us/928943.geojson.gz",
+   "country": "us",
+   "sha256": "8264525c59ed0f092c1f8fc95eeeff74a7aeab353d37ce57b14381b2fbfdc16e",
+   "records": 107,
+   "skipped": 34
+  },
+  {
+   "input": "us=oa/us/930618.geojson.gz",
+   "country": "us",
+   "sha256": "7fd29ce52b2ab9590cd2f59e775ea4558933f6a123a6cb681882cf1ac9943d77",
+   "records": 259,
+   "skipped": 259
+  },
+  {
+   "input": "us=oa/us/202040.geojson.gz",
+   "country": "us",
+   "sha256": "9dd12fa74b7a2779478112f233427041e002fedaabbf686df2caa2ead1f5118a",
+   "records": 235,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/928906.geojson.gz",
+   "country": "us",
+   "sha256": "c03f94ef7689039cb07aaa223b8ff92e27c220a7727d293c43d8b79d5f9eb9a8",
+   "records": 275,
+   "skipped": 211
+  },
+  {
+   "input": "us=oa/us/202044.geojson.gz",
+   "country": "us",
+   "sha256": "8c9fce499663f5b9c1aeb99b03d518af3e3d760eb7fb403d99a7eaf828841a12",
+   "records": 243,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/929711.geojson.gz",
+   "country": "us",
+   "sha256": "01ecb7a8501561df4cd28e8d208b0f9ba21223c8b571090eb0d7f420a5f6bab2",
+   "records": 390,
+   "skipped": 390
+  },
+  {
+   "input": "us=oa/us/929263.geojson.gz",
+   "country": "us",
+   "sha256": "7d20112610b554257d7f20828e7c206d6cd45900fcf532b5b5610fb9cc8b6b48",
+   "records": 394,
+   "skipped": 230
+  },
+  {
+   "input": "us=oa/us/202063.geojson.gz",
+   "country": "us",
+   "sha256": "62c98bbec3b32d26cc98977c90b04f15506afd4168ab8d35e014ff3e509f74b3",
+   "records": 356,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/928955.geojson.gz",
+   "country": "us",
+   "sha256": "f92f9ad1a8a7395487d7b42324efad7a9d3a94ae2dc391fb1bf9e1124effba91",
+   "records": 490,
+   "skipped": 263
+  },
+  {
+   "input": "us=oa/us/928931.geojson.gz",
+   "country": "us",
+   "sha256": "16151cf28323b272c85fcbe2f44ee0cbb56826aee3d7eb88dd14abdd4f655605",
+   "records": 625,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/929771.geojson.gz",
+   "country": "us",
+   "sha256": "be87f8f077a8e413ea193ae3a7641c3b4f65eae4fb14f67594cc32cef7649675",
+   "records": 720,
+   "skipped": 329
+  },
+  {
+   "input": "us=oa/us/201884.geojson.gz",
+   "country": "us",
+   "sha256": "b79e9a2bba6756d89d732b2bbcd39cc1677e9b4dcbaecc0f342834e1741481a9",
+   "records": 609,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/931676.geojson.gz",
+   "country": "us",
+   "sha256": "b8360faeb1b0f0d92c05bbf4189cec2d8baebc98a1a5bcca4a5c87efa0b3b071",
+   "records": 823,
+   "skipped": 63
+  },
+  {
+   "input": "us=oa/us/931682.geojson.gz",
+   "country": "us",
+   "sha256": "5dafe187e1542c03a2e37bc652fd1333c35392f4d53fc23cb3ce01a1fcd1351f",
+   "records": 880,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/202041.geojson.gz",
+   "country": "us",
+   "sha256": "c50977bda94ab51e83f9b4a340e8475dc5e8365095538e6a63247790209b46da",
+   "records": 777,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/928915.geojson.gz",
+   "country": "us",
+   "sha256": "c4d937f15407c377071b9d96ef3a15efdc11becb9abae8a907199960f2bd53cf",
+   "records": 1066,
+   "skipped": 1066
+  },
+  {
+   "input": "us=oa/us/202085.geojson.gz",
+   "country": "us",
+   "sha256": "f61a0b113923e4aef53c89de0543799a69ab4cf814baef56fd3a54449b42bcfe",
+   "records": 898,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/928978.geojson.gz",
+   "country": "us",
+   "sha256": "e12dc37de3056b5641761e21de8f9290543effe1691933fc9327c30ec4f2fd5c",
+   "records": 909,
+   "skipped": 3
+  },
+  {
+   "input": "us=oa/us/931716.geojson.gz",
+   "country": "us",
+   "sha256": "3024d85a8242665e75da06535c78bc8ca6c004d824c655e1c8e20f3364e14570",
+   "records": 979,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/931705.geojson.gz",
+   "country": "us",
+   "sha256": "4515d6fd47edcdd0cea58c3d87494a599b9f4b293e42662603c054b294c860c9",
+   "records": 1058,
+   "skipped": 5
+  },
+  {
+   "input": "us=oa/us/202133.geojson.gz",
+   "country": "us",
+   "sha256": "44a9f7e3e4f578480c0c1d27a59347dd8a37b3bac501d251743f002596dc6096",
+   "records": 1047,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/929261.geojson.gz",
+   "country": "us",
+   "sha256": "98ceba79456aff7a3d027acf9d9dea392558d5af0dd1ce87221c391bdaa6ce4e",
+   "records": 1146,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/931711.geojson.gz",
+   "country": "us",
+   "sha256": "42b4c61f482745a06684cc207cf35979a0ade64d325759ba129b393bad61206a",
+   "records": 1166,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/928890.geojson.gz",
+   "country": "us",
+   "sha256": "6f4c78eacd6b965d7529aa64b29248bce560d97854937594798b7eeece5e1414",
+   "records": 1110,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/202140.geojson.gz",
+   "country": "us",
+   "sha256": "f492b6b8ef7d8cfe74af0be0848a3ffaae45f4df332cac06141bdb00166fa7bd",
+   "records": 993,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/201984.geojson.gz",
+   "country": "us",
+   "sha256": "aacd34222dd719aff286122d642fca8a7418a41e3db273284d81e97cf4990fa8",
+   "records": 1067,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/201890.geojson.gz",
+   "country": "us",
+   "sha256": "c38390e3de18c393c5fd10252afd60b49c915e19f9f644a3d6011107fe460d9e",
+   "records": 1061,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/201993.geojson.gz",
+   "country": "us",
+   "sha256": "bfb77bc5bb93fa5adbf36862a50416bcf9c7c08acefb92a0029d0fcfbbbc365d",
+   "records": 1058,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/929201.geojson.gz",
+   "country": "us",
+   "sha256": "c48feb4985700560f20a391f96c542f20e733b0dce81c3c54ed14c2fc5333a95",
+   "records": 1136,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/201955.geojson.gz",
+   "country": "us",
+   "sha256": "261363e1f20374fcad79571f2cf5290af7c6b996b8b17a490693b0954dd70ca7",
+   "records": 1216,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/202094.geojson.gz",
+   "country": "us",
+   "sha256": "f89f68b2695a5f23dba3ae96fa49eedfdb3dd95d1a02695cef1a32f520000b00",
+   "records": 1157,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/929859.geojson.gz",
+   "country": "us",
+   "sha256": "61150e3636bfee65b83ebc150050f879de31b10debdded1fea11d815f3946c4d",
+   "records": 1205,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/201956.geojson.gz",
+   "country": "us",
+   "sha256": "08076bddd2d8ad447d2b5b5ef51fae5d77c829ebde5360506a33afc219c20560",
+   "records": 1141,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/928912.geojson.gz",
+   "country": "us",
+   "sha256": "87e811f36c5b979edd8ad0367e6090de3553f6716ca98340cda821c5d0c3c4b7",
+   "records": 1056,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/929185.geojson.gz",
+   "country": "us",
+   "sha256": "dd324a1affa8f629b9af88b0941a3716bdd987329a0129fe30808670ec8b5222",
+   "records": 1196,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/201873.geojson.gz",
+   "country": "us",
+   "sha256": "9bcd7ec374837d5bad99afd293d3df3c5b2eadb7276963a79b2650047f508f7c",
+   "records": 1230,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/930728.geojson.gz",
+   "country": "us",
+   "sha256": "06535bfdfc26e3bf32ce4cbe77e4f5d9df21ae86c3aee25dc0677fbc9e62e762",
+   "records": 1324,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/202134.geojson.gz",
+   "country": "us",
+   "sha256": "335498746ceab2a18e5d9febc15c1f828dd3bb09afcd90c43d1f3e540ee4bf8a",
+   "records": 1246,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/928933.geojson.gz",
+   "country": "us",
+   "sha256": "53a225c418085a8f80ae1a35922f6af3696137c80ac31277a2b0050f284206d5",
+   "records": 1349,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/931069.geojson.gz",
+   "country": "us",
+   "sha256": "d0da33b0837287073da9b55e0a8b09de23614d220d7508170cc5142f7e083f3b",
+   "records": 1561,
+   "skipped": 4
+  },
+  {
+   "input": "us=oa/us/202059.geojson.gz",
+   "country": "us",
+   "sha256": "c4f92a85de1249afbdc4ebd8db70ca57235be0e2ac5b50cc8e8b77161485bc6d",
+   "records": 1292,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/201943.geojson.gz",
+   "country": "us",
+   "sha256": "edba268bef68831317dc6ee5c783048a429d35797c01c26addcc1676679730c6",
+   "records": 1385,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/929595.geojson.gz",
+   "country": "us",
+   "sha256": "faa54473771d2ebfbc642e37d22b89e06530daf928b301d1528e868316c23ad8",
+   "records": 1370,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/202143.geojson.gz",
+   "country": "us",
+   "sha256": "9529360f39ecdeb828116e0f7c84c726ef216a9b328016782615455616e82748",
+   "records": 1326,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/362602.geojson.gz",
+   "country": "us",
+   "sha256": "95d4a83ca1ec96646bb6cc823da7709d3043f7af821effd40cf6511570521308",
+   "records": 1469,
+   "skipped": 5
+  },
+  {
+   "input": "us=oa/us/928872.geojson.gz",
+   "country": "us",
+   "sha256": "aa7162abe5f012ada8f5f502464dc8cb816bb5264f322d682f92caf482020578",
+   "records": 1877,
+   "skipped": 1877
+  },
+  {
+   "input": "us=oa/us/929240.geojson.gz",
+   "country": "us",
+   "sha256": "c672f6b672a18acbf56effc671e617316b18b3c8bbfc8859fca19fe76898e06b",
+   "records": 1469,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/202074.geojson.gz",
+   "country": "us",
+   "sha256": "f98a2eef9e8f2dba24fd815dbb90d46aa0c2d994ebb211d879ba6a1edb72a48a",
+   "records": 1446,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/928949.geojson.gz",
+   "country": "us",
+   "sha256": "85a699a5ecaf01238bf798f569124b6cbdbfda6833dbc9e1ac507e5bb90aa8ea",
+   "records": 1524,
+   "skipped": 28
+  },
+  {
+   "input": "us=oa/us/201969.geojson.gz",
+   "country": "us",
+   "sha256": "a7f3da725321dd5e716c00213d316c02b2e33a2be1000aea1dac5ceb184f4d7d",
+   "records": 1491,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/928756.geojson.gz",
+   "country": "us",
+   "sha256": "ea5c192148c5ccbf9b9e3baa2ccd1346cf46e0ade9994456ab605b1d202a10cf",
+   "records": 1748,
+   "skipped": 9
+  },
+  {
+   "input": "us=oa/us/930591.geojson.gz",
+   "country": "us",
+   "sha256": "61dd16729ebea8448d6df94a18004bcb39a8beb8cf4b7a3701fddf314d079f3c",
+   "records": 1535,
+   "skipped": 8
+  },
+  {
+   "input": "us=oa/us/928988.geojson.gz",
+   "country": "us",
+   "sha256": "2f346527b923e76f3212d5c42b42ed445ea7f29454a057c1c8309e7f18776286",
+   "records": 1621,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/202026.geojson.gz",
+   "country": "us",
+   "sha256": "088512aeca0ea316519b109ace3fa92fc323d298a6f845cd5156e09da2dfb1fb",
+   "records": 1510,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/202128.geojson.gz",
+   "country": "us",
+   "sha256": "e139bcb5e8b985c26a878a9b775f7138189462edb8fd9483f8a76f05178dd7c7",
+   "records": 1563,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/858746.geojson.gz",
+   "country": "us",
+   "sha256": "bf7c89036bef01a632f98ee08890df2324bf2f2bcd360f12d6a690e4824be05e",
+   "records": 1875,
+   "skipped": 245
+  },
+  {
+   "input": "us=oa/us/202124.geojson.gz",
+   "country": "us",
+   "sha256": "0315c1dbb38d9b95f1d31fed8caa970c1fd212f3aa58b4807a74f141eeb6a2e1",
+   "records": 1580,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/929577.geojson.gz",
+   "country": "us",
+   "sha256": "2a3a6d5c114e7624a3e30cc11442d2e1fcdcf7d83911c9494c8621ac9a75aba1",
+   "records": 1694,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/929453.geojson.gz",
+   "country": "us",
+   "sha256": "fa54841dbe1898c49827f6dd127eb8a005d2bc6647022e29cda6952d362d8e97",
+   "records": 1702,
+   "skipped": 6
+  },
+  {
+   "input": "us=oa/us/928941.geojson.gz",
+   "country": "us",
+   "sha256": "f8acc2fa9b39bdbf464e2208ace7cc8302a1fcab7a76d6ff906ee45a75c259ea",
+   "records": 1499,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/201959.geojson.gz",
+   "country": "us",
+   "sha256": "200be09df1fc5ba3f84f9abefeb875f3bffa49432b43170c60484742d5497b0b",
+   "records": 1637,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/931707.geojson.gz",
+   "country": "us",
+   "sha256": "cf6099712fe7ab7a3189e632c70f6b892f06818ed848c81e1a7da9ac005a37c9",
+   "records": 1967,
+   "skipped": 47
+  },
+  {
+   "input": "us=oa/us/930638.geojson.gz",
+   "country": "us",
+   "sha256": "a6ea24c19daffb70cfa348b2d1e8d0a5302ae1ac1ca7a1a4f626c00056704fa4",
+   "records": 1914,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/928921.geojson.gz",
+   "country": "us",
+   "sha256": "927dcb3ceab51f67dc2bfa0ef37051e46e14f01e0a9b467642d73631fd9291bf",
+   "records": 2415,
+   "skipped": 2415
+  },
+  {
+   "input": "us=oa/us/201948.geojson.gz",
+   "country": "us",
+   "sha256": "b9086946b75891f6a1440bd973ee06eeda259a181b1e4654d6206fa536dc5903",
+   "records": 1853,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/202165.geojson.gz",
+   "country": "us",
+   "sha256": "670ed83f64ee731cd5c53d6d73cecfed7b999c1dd36c631ae93ec1b445817195",
+   "records": 1845,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/931458.geojson.gz",
+   "country": "us",
+   "sha256": "227c0b03cd6e494398f71b51b9d9b586651d258447244c6a81f7a6db363d47a2",
+   "records": 2125,
+   "skipped": 361
+  },
+  {
+   "input": "us=oa/us/930527.geojson.gz",
+   "country": "us",
+   "sha256": "c92ce7e6b47f67206e0fa3a492c07767a4574a408687573b2c560db24e5ee296",
+   "records": 2056,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/930309.geojson.gz",
+   "country": "us",
+   "sha256": "c84c0659724c09eee5e27a6f14e2d9384f0ec96a6945db9d78b173071f0169d2",
+   "records": 2075,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/931678.geojson.gz",
+   "country": "us",
+   "sha256": "cd6355987be682206672c836b67cf2ddd8b4eca2d8adc0a95d3805dcd502eb52",
+   "records": 2437,
+   "skipped": 1653
+  },
+  {
+   "input": "us=oa/us/202003.geojson.gz",
+   "country": "us",
+   "sha256": "9d04bca1993e1905f7211453909a813baff04731aaaae8369a991ae94a6ebd44",
+   "records": 1942,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/923783.geojson.gz",
+   "country": "us",
+   "sha256": "61e2b11b9227d1994e057d2d04e00adc82a65f3dd76d5573338993f1ee9e56c3",
+   "records": 2779,
+   "skipped": 2779
+  },
+  {
+   "input": "us=oa/us/931699.geojson.gz",
+   "country": "us",
+   "sha256": "581f3355c2b126bda1ebf18d6f7a88c810eb62180d12dd528b79126ad86a2a8d",
+   "records": 2147,
+   "skipped": 1
+  },
+  {
+   "input": "us=oa/us/930297.geojson.gz",
+   "country": "us",
+   "sha256": "2ec4836cb9faeda7e625770d6871eefc45a0a8c274f3378f9f9e94e6e879a4f2",
+   "records": 2232,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/425716.geojson.gz",
+   "country": "us",
+   "sha256": "709577471ca854862b629ce02cb7c34881190e37c6cb35d7dceef9a6dabbe5c2",
+   "records": 2461,
+   "skipped": 466
+  },
+  {
+   "input": "us=oa/us/928899.geojson.gz",
+   "country": "us",
+   "sha256": "44c709f96147fa5d6a6df0d0740c91597ae4f5cb844b9cda1a8cc282c7b071e7",
+   "records": 1803,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/928919.geojson.gz",
+   "country": "us",
+   "sha256": "11afd7f6685fdeb116e534a21f14c955e99f8ccbd03141d6ff15104cdc81aa0b",
+   "records": 2885,
+   "skipped": 2885
+  },
+  {
+   "input": "us=oa/us/202013.geojson.gz",
+   "country": "us",
+   "sha256": "339c0551add44dc6edfedde78d8d827de4a2740107b599a8e0e0e4c006fe3d49",
+   "records": 2032,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/202107.geojson.gz",
+   "country": "us",
+   "sha256": "ce3adf473dee2a5b71bbe1b146d3f872339a4efa76e495e85e1453593cbe80f7",
+   "records": 2232,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/930823.geojson.gz",
+   "country": "us",
+   "sha256": "b68a9f400c888b5622a81eb5bbcd4e01edbfd514e631993066015fb9727076ac",
+   "records": 2455,
+   "skipped": 582
+  },
+  {
+   "input": "us=oa/us/929362.geojson.gz",
+   "country": "us",
+   "sha256": "da6ac9e6eb8439ac15c6d1b69ef7cd7fe59b94e306ac650f2d98b5c639c3d56a",
+   "records": 3203,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/930844.geojson.gz",
+   "country": "us",
+   "sha256": "c79fe41ad76de11ce8c171266c57e3993871914b4d20de79511cbc4b8e663a46",
+   "records": 2605,
+   "skipped": 1289
+  },
+  {
+   "input": "us=oa/us/202169.geojson.gz",
+   "country": "us",
+   "sha256": "9780bcabfced88036d97f280ee47d0e92732f43b2df20a242d830d98d96247b4",
+   "records": 2135,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/547863.geojson.gz",
+   "country": "us",
+   "sha256": "332dcce6fadcc230c091f48278527ddc7172efbcc812efe5fec189cfb15d4d85",
+   "records": 3149,
+   "skipped": 3149
+  },
+  {
+   "input": "us=oa/us/931495.geojson.gz",
+   "country": "us",
+   "sha256": "9faea999fb55620a5aafb30b5477a50fb431288218e4440fa537cc391950001c",
+   "records": 2738,
+   "skipped": 1
+  },
+  {
+   "input": "us=oa/us/931145.geojson.gz",
+   "country": "us",
+   "sha256": "e99e0358942b1771156af75f24dc75760fbf01cfc14aa50aab5391dd3cfc5009",
+   "records": 3149,
+   "skipped": 3149
+  },
+  {
+   "input": "us=oa/us/202076.geojson.gz",
+   "country": "us",
+   "sha256": "8497208a50d7f873fd93e821852d5b6b36eb441edd08c12b92fb26fa7e384e0f",
+   "records": 2199,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/929867.geojson.gz",
+   "country": "us",
+   "sha256": "3dfae744a4bdbf74630f1dbdc542936a5e3b418e1f893674bdbe9255d63ced48",
+   "records": 2467,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/929481.geojson.gz",
+   "country": "us",
+   "sha256": "2c72cc0e3ab821737957fd4b65a19ee435a1ab35f14d65e518800695baedbb2a",
+   "records": 2318,
+   "skipped": 204
+  },
+  {
+   "input": "us=oa/us/928713.geojson.gz",
+   "country": "us",
+   "sha256": "62ef272be98566413826429e4aa7b451b0b4901cecbbe67d219bf9fa961825c5",
+   "records": 2770,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/928672.geojson.gz",
+   "country": "us",
+   "sha256": "350ef2ff586005cf7f0536f46cb4f791391c5df9bec851e9d098e7a8dce0a417",
+   "records": 2443,
+   "skipped": 4
+  },
+  {
+   "input": "us=oa/us/202030.geojson.gz",
+   "country": "us",
+   "sha256": "3718c419edcd15a7939567cfc11f31e1ee467fbe51cad2a44b489cbc619eaa1e",
+   "records": 2171,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/931686.geojson.gz",
+   "country": "us",
+   "sha256": "0734ffc177b431256f9a9e296dd061a7392f0985dbe81ab3a0db73579e10e851",
+   "records": 2706,
+   "skipped": 64
+  },
+  {
+   "input": "us=oa/us/554859.geojson.gz",
+   "country": "us",
+   "sha256": "d20e99da3b67612179be24cba31493ec7ad74be4779184b381f584dc3d9b7cdb",
+   "records": 2853,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/202126.geojson.gz",
+   "country": "us",
+   "sha256": "3cee23b47a4ab3427160c282e216120d798f8f271b0bcd2adae7f23e8d645af0",
+   "records": 2455,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/202079.geojson.gz",
+   "country": "us",
+   "sha256": "6bc8f11c8ee1517282cdd3ca3917c471592e44d8c68551d8e8e039210d6678e2",
+   "records": 2439,
+   "skipped": 0
+  },
+  {
+   "input": "us=oa/us/929412.geojson.gz",
+   "country": "us",
+   "sha256": "95879d82a69e76cf6c5444d993ebccb693c25d349673d43d7fdb93d57bd98520",
+   "records": 2641,
+   "skipped": 0
+  },
+  {
+   "input": "uy=oa/uy/928095.geojson.gz",
+   "country": "uy",
+   "sha256": "3bfc5080043b2183def96e80799d9280371be23374f06f8ed6e8a70f08c639a2",
+   "records": 10102,
+   "skipped": 15
+  },
+  {
+   "input": "uy=oa/uy/928082.geojson.gz",
+   "country": "uy",
+   "sha256": "b31f534ca87e8551344f5716d747d696b538138f987236544785feae972e7a70",
+   "records": 15901,
+   "skipped": 49
+  },
+  {
+   "input": "uy=oa/uy/928089.geojson.gz",
+   "country": "uy",
+   "sha256": "64fdd3af6501a7e03cf1944b64e58254ee75f36ee9fa3e3f4cede2e12388cf08",
+   "records": 18535,
+   "skipped": 34
+  },
+  {
+   "input": "uy=oa/uy/928097.geojson.gz",
+   "country": "uy",
+   "sha256": "875d80506a2fe14afdcd4d81ce5a81448eaa947fab20d2b33f6984c36b58479f",
+   "records": 19291,
+   "skipped": 61
+  },
+  {
+   "input": "uy=oa/uy/928094.geojson.gz",
+   "country": "uy",
+   "sha256": "0fd589dcfd2744bd448a3bf58337e4147e8bd5ff85f935ad72bedb2be8a7d7fb",
+   "records": 21609,
+   "skipped": 51
+  },
+  {
+   "input": "uy=oa/uy/928096.geojson.gz",
+   "country": "uy",
+   "sha256": "fa1a6ab8b501a8049474e6a8d66794480038522e0c534b50470c036b87298d67",
+   "records": 23606,
+   "skipped": 71
+  },
+  {
+   "input": "uy=oa/uy/928101.geojson.gz",
+   "country": "uy",
+   "sha256": "6a74fb359128fb0e5518b0c9e5ddc906ca0795a36271ee93946b7b597c3c5622",
+   "records": 24787,
+   "skipped": 39
+  },
+  {
+   "input": "xk=oa/xk/285064.geojson.gz",
+   "country": "xk",
+   "sha256": "b40213d63d594b1d4a0ea9e33152a3742c9e0473d9168197bbd1462fee8dc093",
+   "records": 446296,
+   "skipped": 35686
+  },
+  {
+   "input": "za=oa/za/928061.geojson.gz",
+   "country": "za",
+   "sha256": "257b1d1bf66a4273889619f5705a5610bc2834e504f40aea18afadef5595bfba",
+   "records": 39951,
+   "skipped": 1171
+  },
+  {
+   "input": "za=oa/za/928075.geojson.gz",
+   "country": "za",
+   "sha256": "246f44a4fe4b92914a46e4f8e464646432c0e2f74b714d21687642726b3dcd50",
+   "records": 294153,
+   "skipped": 45455
+  },
+  {
+   "input": "ae=osm/ae.jsonl",
+   "country": "ae",
+   "sha256": "a00c81d9c5c1fb54160870c70217228a272106fd63d9904c4981eacf90f44b85",
+   "records": 152401,
+   "skipped": 0
+  },
+  {
+   "input": "am=osm/am.jsonl",
+   "country": "am",
+   "sha256": "3c2fc5fa726b18d9bf54ab068945685170d76b1e598f438d0dc53ef8a1022907",
+   "records": 120904,
+   "skipped": 0
+  },
+  {
+   "input": "az=osm/az.jsonl",
+   "country": "az",
+   "sha256": "238e774263ba4e7163df30179605d2f8640b8ccae87f579164cea4aed58287fa",
+   "records": 20486,
+   "skipped": 0
+  },
+  {
+   "input": "ba=osm/ba.jsonl",
+   "country": "ba",
+   "sha256": "bc0651ee4d54c6d2f959d18162098d7474db39aa2351e51d4eff6cc12af0f3a4",
+   "records": 170926,
+   "skipped": 0
+  },
+  {
+   "input": "bd=osm/bd.jsonl",
+   "country": "bd",
+   "sha256": "9de5ae24f09aa61e0dd9bcdd30bb34b9afe7d76eb7464c2a4d501de8019f0b31",
+   "records": 21964,
+   "skipped": 0
+  },
+  {
+   "input": "cn=osm/cn.jsonl",
+   "country": "cn",
+   "sha256": "305cf73e47c1ce8faf4140435351fc4e84b5cb035d711da4cf198c47320935e0",
+   "records": 105047,
+   "skipped": 0
+  },
+  {
+   "input": "cy=osm/cy.jsonl",
+   "country": "cy",
+   "sha256": "36cdadf6f529ad29af98b6e3e4e68ad925361eef7d9bd2fc67bdf3d8fcc88e49",
+   "records": 28509,
+   "skipped": 0
+  },
+  {
+   "input": "ec=osm/ec.jsonl",
+   "country": "ec",
+   "sha256": "77bb8ff2cea6bc6fc67d2b48b85ca3efc3f951fa8b7c90d084de6f31500e85ce",
+   "records": 12934,
+   "skipped": 1
+  },
+  {
+   "input": "gb=osm/gb.jsonl",
+   "country": "gb",
+   "sha256": "4ba0885e8bbf617a9e31700a874bce80d44091a16a711e13ea21c5bf995ca4c2",
+   "records": 5141502,
+   "skipped": 0
+  },
+  {
+   "input": "ge=osm/ge.jsonl",
+   "country": "ge",
+   "sha256": "2ff7ecb38a82092748c9c3bde161ef6f72833bc2891eee51d0a07a9a5a71ba70",
+   "records": 126150,
+   "skipped": 0
+  },
+  {
+   "input": "gt=osm/gt.jsonl",
+   "country": "gt",
+   "sha256": "af5b94cf9e88baa01e3e645da2fafbd21ba2a14514c4ecf099fc4413868e4ccf",
+   "records": 6767,
+   "skipped": 0
+  },
+  {
+   "input": "hu=osm/hu.jsonl",
+   "country": "hu",
+   "sha256": "1f4591af2eb5d1679ae9d6ffefc466ea8ec2423846e3a083afd7164c3806fd4b",
+   "records": 762553,
+   "skipped": 0
+  },
+  {
+   "input": "id=osm/id.jsonl",
+   "country": "id",
+   "sha256": "570ec69ae89a864ead756fc3f3e848874eb5f3c66f18101f70b3a4528431ac67",
+   "records": 48560,
+   "skipped": 0
+  },
+  {
+   "input": "ie=osm/ie.jsonl",
+   "country": "ie",
+   "sha256": "6fccf3b7abb0b99e4b77b3629d297ef97cafaff4da3f86b6703c75d2bb759fd5",
+   "records": 383382,
+   "skipped": 1
+  },
+  {
+   "input": "im=osm/im.jsonl",
+   "country": "im",
+   "sha256": "2731c707dc01e705f6c2d5741457527497103a0414e7b2ffb7980b9d3cc57054",
+   "records": 6856,
+   "skipped": 0
+  },
+  {
+   "input": "in=osm/in.jsonl",
+   "country": "in",
+   "sha256": "17f63f79b1eee60a92e61625a8c82e7f088271b2ca26cda4b639edb6e8b6cb1a",
+   "records": 69981,
+   "skipped": 0
+  },
+  {
+   "input": "jm=osm/jm.jsonl",
+   "country": "jm",
+   "sha256": "8de74bd85c2e4d869a8dcfaf6446428540e68cb52cc250cfa28d65ed5b7ea5c1",
+   "records": 4369,
+   "skipped": 0
+  },
+  {
+   "input": "kg=osm/kg.jsonl",
+   "country": "kg",
+   "sha256": "a912bb964e5660967baecde03f6d2e012b5264de650cd9fd7d7b85ca384163df",
+   "records": 96765,
+   "skipped": 0
+  },
+  {
+   "input": "kw=osm/kw.jsonl",
+   "country": "kw",
+   "sha256": "8f832c9893636bc1eb64029a39fef2b3f524304ca62f011792c70d787d0873ac",
+   "records": 147185,
+   "skipped": 0
+  },
+  {
+   "input": "md=osm/md.jsonl",
+   "country": "md",
+   "sha256": "4116eca8f93c99a550c1f829f1101d1fdb47d5e201093b33b6c4dccd89903312",
+   "records": 982175,
+   "skipped": 0
+  },
+  {
+   "input": "mk=osm/mk.jsonl",
+   "country": "mk",
+   "sha256": "bb768435cd06f06872950af4359f4fdfbce581c16f5c65466a2ac7fbcc1a3b80",
+   "records": 14148,
+   "skipped": 0
+  },
+  {
+   "input": "my=osm/my.jsonl",
+   "country": "my",
+   "sha256": "7dc5d0c2d26f2ab83c0f09bd455ffc85ad84ea4908a0a5d463622a519ca812f4",
+   "records": 175969,
+   "skipped": 0
+  },
+  {
+   "input": "ph=osm/ph.jsonl",
+   "country": "ph",
+   "sha256": "c4284d903b32603305f9e5210b628abe83b2336a35d0ccd277d21a03f7f4f3c8",
+   "records": 54557,
+   "skipped": 0
+  },
+  {
+   "input": "pk=osm/pk.jsonl",
+   "country": "pk",
+   "sha256": "a7bce5b00f7998e58ad5ea951bad28a2c80085127e6bffb02c35fafaa0785cfc",
+   "records": 101078,
+   "skipped": 0
+  },
+  {
+   "input": "ro=osm/ro.jsonl",
+   "country": "ro",
+   "sha256": "6290ee04d43cec9f155042dc00553986ac3365d7a01e055f509f8ba3b13ebd7d",
+   "records": 930194,
+   "skipped": 0
+  },
+  {
+   "input": "sm=osm/sm.jsonl",
+   "country": "sm",
+   "sha256": "7b2236352752c76a7deb7139e590e5d21285e7ce96af2f726358d1acfa12f175",
+   "records": 11575,
+   "skipped": 0
+  },
+  {
+   "input": "sr=osm/sr.jsonl",
+   "country": "sr",
+   "sha256": "0f2d7aecd060b0c39f5781d87ed079bd4b1d2ef70c4439af167c4b7a87d59233",
+   "records": 7898,
+   "skipped": 0
+  },
+  {
+   "input": "tj=osm/tj.jsonl",
+   "country": "tj",
+   "sha256": "656f43b5ce9938aa6ae338999573e56e6978a96e1ece1e219138a075a421a4f5",
+   "records": 19379,
+   "skipped": 0
+  },
+  {
+   "input": "tr=osm/tr.jsonl",
+   "country": "tr",
+   "sha256": "8e068363d6adf4f4ed43630eb3e6db3e2178748c4a71d88f23213dd08b7271d0",
+   "records": 220335,
+   "skipped": 1
+  },
+  {
+   "input": "tz=osm/tz.jsonl",
+   "country": "tz",
+   "sha256": "580179756ab3ad9474ff10c426bcbf8270ab28bee00bbf8e0fed9fac9cbdc4dd",
+   "records": 20659,
+   "skipped": 0
+  },
+  {
+   "input": "uz=osm/uz.jsonl",
+   "country": "uz",
+   "sha256": "09bf385db7c54b4e2eb09917c99febfa530d617fef5f5a1e18732975c520ff68",
+   "records": 238381,
+   "skipped": 0
+  },
+  {
+   "input": "vn=osm/vn.jsonl",
+   "country": "vn",
+   "sha256": "ba6499fc91f804dd4c0f528d0f4e0e057c0912507d2c3c3531b0ceb35f9e7129",
+   "records": 73038,
+   "skipped": 0
+  }
+ ]
+}

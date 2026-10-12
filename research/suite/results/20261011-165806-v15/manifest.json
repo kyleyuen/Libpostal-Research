@@ -1,0 +1,58 @@
+{
+ "datasets": {
+  "v15": {
+   "txt": {
+    "path": "/Users/kyle/v15-data/work/datasets/v15/v15.txt",
+    "sha256": "d8a8684c0f208028577794d296a713a60a9f02fb94f93720205f627654dfe0f4"
+   },
+   "tsv": {
+    "path": "/Users/kyle/v15-data/work/datasets/v15/v15.tsv",
+    "sha256": "e2e20f7304917fcb2c3e47024fafa1dc6587262d59f9e31bfad4b5218422c6ce"
+   },
+   "addresses": 7266620
+  }
+ },
+ "variants": {
+  "original": {
+   "bench_ext": {
+    "path": "/Users/kyle/v15-data/work/bin/original/bench_ext",
+    "sha256": "4b46d87e07f5a39112c0b989b37fb86dec3d02c4ff8beea2772ad9da2d51c8fb"
+   },
+   "dump_outputs": {
+    "path": "/Users/kyle/v15-data/work/bin/original/dump_outputs",
+    "sha256": "2fbb6085a2b1eb6ecc9c99bea514e7c83d4e064ca2dfbbbfcf4df7ce4e4388e9"
+   },
+   "fuzz_pipeline": {
+    "path": "/Users/kyle/v15-data/work/bin/original/fuzz_pipeline",
+    "sha256": "783840a650f64f6fb49d68dfdb8b97fb81ea58182206495bbf26728dd88bac5b"
+   }
+  },
+  "optimized": {
+   "bench_ext": {
+    "path": "/Users/kyle/v15-data/work/bin/cpi/bench_ext",
+    "sha256": "a756423ce1280739e2251dd9345ae3d0f52f6f3c6133c36214db35d897842d01"
+   },
+   "dump_outputs": {
+    "path": "/Users/kyle/v15-data/work/bin/cpi/dump_outputs",
+    "sha256": "53a24e8fa5ad39538553ce419cb17474058e6469edc6911160f8434860ecec98"
+   },
+   "fuzz_pipeline": {
+    "path": "/Users/kyle/v15-data/work/bin/cpi/fuzz_pipeline",
+    "sha256": "8b4f5fd525ff10f44b7e8b165073a6e0cd14cb7017f7f7b3ef1d3b81a1ba2bc0"
+   }
+  }
+ },
+ "model": {
+  "address_expansions/address_dictionary.dat": "9fbf8779942bcc84841ac948ebd0c910b37edc7ff812125f09b6c39018747b1d",
+  "address_parser/address_parser_crf.dat": "e44b308e9e1942efe8ad8226929e29ca49e9ea2900ed36625c601c53509ba5c1",
+  "address_parser/address_parser_phrases.dat": "739643ea06d8c492ba57bd51ba1dc1243853e7f8c6130e3a7bd30150221119e6",
+  "address_parser/address_parser_postal_codes.dat": "7c5b20c541c16758cc73c41025f2327be525831dff272a6b4c3aeb901e481b1b",
+  "address_parser/address_parser_vocab.trie": "962a985f29530440035bd379826f38e35f0f0fc718926444658d89bbd70829b1",
+  "numex/numex.dat": "269630109fac796ab576b7fb29a36f3279c0c194e46a9abe91684653bf082a38",
+  "transliteration/transliteration.dat": "db75453e1d8a24302be0831304f9bb4792d41ea4e5a5e645c3839ee04763e64c"
+ },
+ "suite": {
+  "run_suite.py": "c5c9402e42ae5f297039acd4907dfb7b7a77400c8f1d80171f160216c5d7bfdc",
+  "suite.json": "99143fabe963df77a1cc10123cf402caa2214fcf5001fe2248d5dc1e30fe7f3e"
+ }
+}

@@ -48,3 +48,7 @@ Full per-country table: [table.md](table.md). Source selection per country, whic
 - The OpenAddresses size estimates assume 27 bytes per address. Sources with more fields per record would hold fewer addresses than estimated. Only countries estimated at 800k or more rely on the estimate.
 - Licenses differ by source: OpenAddresses is per source (many attribution or share-alike), OpenStreetMap is ODbL, and Overture is per source. A test set built from them should stay outside the repository, or carry the matching attribution.
 - Converting structured records to one-line addresses uses a simplified per-country order (`benchmark/build_dataset.py`). That affects how hard the test is, not whether the two builds agree.
+
+## Follow-up
+
+Plan B was carried out in [experiment 206](../../experiments/206-v15-88-country-benchmark/README.md) (2026-10-11). The download used OpenAddresses for 60 countries and Geofabrik extracts for most OpenStreetMap countries, because the public Overpass servers were failing. Puerto Rico and Réunion were found in OpenAddresses, and the UK, Malaysia and India were obtained from OpenStreetMap, so none of the five countries listed as unknown above remained unknown. The final counts differ from the estimates above; [206](../../experiments/206-v15-88-country-benchmark/README.md) has the measured numbers.

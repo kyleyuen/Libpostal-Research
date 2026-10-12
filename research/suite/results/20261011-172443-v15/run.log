@@ -1,0 +1,27 @@
+2026-10-11T17:24:43-0700 === stage integrity
+2026-10-11T17:24:44-0700 integrity: 1 datasets (7,266,489 addresses), 2 variants, 7 model files hashed
+2026-10-11T17:24:44-0700 === stage correctness
+2026-10-11T17:24:44-0700 correctness: 4 jobs, 3 in parallel
+2026-10-11T17:38:46-0700   baseline dump v15: exit 0 (841s)
+2026-10-11T17:38:46-0700   optimized dump v15: exit 0 (841s)
+2026-10-11T17:38:46-0700   optimized fuzz s1: exit 0 (841s)
+2026-10-11T17:39:09-0700   optimized fuzz s2: exit 0 (24s)
+2026-10-11T17:39:11-0700 correctness: 1 dumps, 2 fuzz runs, mismatches: none
+2026-10-11T17:39:11-0700 === stage timing
+2026-10-11T17:39:11-0700 settle: waiting up to 300s for 1-minute load < 2.5 (now 3.58); close busy apps to start sooner
+2026-10-11T17:40:11-0700 settle: load 1.79 < 2.5 after 60s
+2026-10-11T17:41:26-0700 timing 1/6 v15__optimized__r1 exit 0 load 2.00
+2026-10-11T17:46:55-0700 timing 2/6 v15__original__r1 exit 0 load 1.79
+2026-10-11T17:52:20-0700 timing 3/6 v15__original__r2 exit 0 load 1.09
+2026-10-11T17:53:38-0700 timing 4/6 v15__optimized__r2 exit 0 load 1.16
+2026-10-11T17:54:56-0700 timing 5/6 v15__optimized__r3 exit 0 load 1.36
+2026-10-11T18:00:22-0700 timing 6/6 v15__original__r3 exit 0 load 1.07
+2026-10-11T18:00:24-0700 === stage memory
+2026-10-11T18:05:25-0700 memory: original steady footprint 2546 MB
+2026-10-11T18:10:25-0700 memory: optimized steady footprint 2314 MB
+2026-10-11T18:10:25-0700 === stage threads
+2026-10-11T18:10:44-0700 threads: original [1, 1, 1, 1, 1, 1]
+2026-10-11T18:11:02-0700 threads: optimized [1, 1, 1, 1, 1, 1]
+2026-10-11T18:11:02-0700 === stage report
+2026-10-11T18:11:02-0700 report: results.json and report.md written
+2026-10-11T18:11:02-0700 done: /Users/kyle/Desktop/HW/CSCI 201 Reserach/research/suite/results/20261011-172443-v15

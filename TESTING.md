@@ -14,7 +14,7 @@ This prints `PASS` if the published outputs, timing captures, memory pairs, and 
 
 ## 2. Test on your own addresses (the main test)
 
-Make a text file with one address per line, for example `v15.txt`. Any source works: OpenStreetMap, a CSV column, your own list. If you have country codes, a TSV of `country<TAB>address` also works. The parser never sees the country; it is used only to break timings down by country. Use UTF-8. A few thousand addresses or more gives stable timings, though correctness counts at any size. Your file is copied into the work directory and the repository's datasets are not touched.
+Make a text file with one address per line, for example `v15.txt`. Any source works: OpenStreetMap, a CSV column, your own list. If you have country codes, a TSV of `country<TAB>address` also works. The parser never sees the country; it is used only to break timings down by country. Use UTF-8. A few thousand addresses or more gives stable timings, though correctness counts at any size. Your file is copied into the work directory and the repository's datasets are not touched. To build such a file from OpenAddresses, Overture or OpenStreetMap exports, use `benchmark/build_dataset.py` (see its `--help`); [experiment 206](research/experiments/206-v15-88-country-benchmark/README.md) shows a full 88-country example.
 
 ```sh
 ./benchmark/run.sh --dataset /path/to/v15.txt --name v15 --api

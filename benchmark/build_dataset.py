@@ -3,8 +3,8 @@
 
 usage: build_dataset.py --out v15.tsv [--per-country N] [--min-per-country M] [--seed S] INPUT [INPUT ...]
 
-Each INPUT is CC=PATH (country code given) or PATH (country taken from the record, or from an
-OpenAddresses path such as .../us/ca/city.geojson). Files may be gzip-compressed. Accepted records:
+Each INPUT is CC=PATH (country code given; it overrides any country field in the records) or PATH (country taken
+from the record, or from an OpenAddresses path such as .../us/ca/city.geojson). Files may be gzip-compressed. Accepted records:
   OpenAddresses  GeoJSON lines (batch output) with properties number/street/unit/city/district/region/postcode,
                  or the classic CSV with NUMBER,STREET,UNIT,CITY,DISTRICT,REGION,POSTCODE columns
   Overture       addresses exported to CSV or newline JSON, e.g. with DuckDB:
@@ -16,7 +16,7 @@ OpenAddresses path such as .../us/ca/city.geojson). Files may be gzip-compressed
 Each record becomes one line in the usual local order (simplified; see ORDER): "street number, postcode city" for
 most of Europe and Latin America, "number street, city region postcode" for English-speaking and some other
 countries, and "postcode region city street number" for Japan, Korea, China, Taiwan and Hong Kong. Records without a
-street or a house number are skipped. Up to N addresses per country are kept by seeded reservoir sampling (same
+street or a house number (or whose street or number has no letter or digit) are skipped. Up to N addresses per country are kept by seeded reservoir sampling (same
 inputs and seed -> same file); a string already in the kept sample is not added twice, so memory stays O(N) per
 country even for very large inputs. Writes OUT and OUT.manifest.json (per-country counts, input SHA-256 values,
 seed, skips). Countries below M are listed as short; nothing is padded or synthesized.
@@ -100,8 +100,10 @@ def main():
         for p in records(path):
             n_in += 1
             if not isinstance(p, dict): n_skip += 1; continue
-            f = fields(p); cc = f["cc"] or cc0
-            if not re.fullmatch(r"[a-z]{2}", cc) or not f["street"] or not f["number"]: n_skip += 1; continue
+            f = fields(p); cc = cc0 or f["cc"]   # a given CC= wins: OSM addr:country tags include typos (VI in Vietnam)
+            # a street or number without any letter or digit ("-", "- -" in OSM) is a placeholder, not an address; libpostal returns
+            # no components for such a line, which the timing harness rejects
+            if not re.fullmatch(r"[a-z]{2}", cc) or not re.search(r"\w", f["street"]) or not re.search(r"\w", f["number"]): n_skip += 1; continue
             s = fmt(cc, f)
             st = stats.setdefault(cc, {"usable_records": 0, "duplicates_of_kept": 0})
             k, ks = keep.setdefault(cc, []), kept.setdefault(cc, set())

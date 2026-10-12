@@ -8,7 +8,7 @@ Start with the [root README](../README.md) and [REVIEW_GUIDE.md](../REVIEW_GUIDE
 | --- | --- |
 | [METHOD.md](METHOD.md) | Measurement protocol, gates, and acceptance rules. |
 | [final/203-cpi-memory/](final/203-cpi-memory/README.md) | Promoted candidate: source, build record, PGO profile, tested binaries, hashes. |
-| [experiments/README.md](experiments/README.md) | Ledger of all 206 experiments (000–205), including rejected and inconclusive ones. |
+| [experiments/README.md](experiments/README.md) | Ledger of all 207 experiments (000–206), including rejected and inconclusive ones. |
 | [experiments/203-cpi-memory-regression/](experiments/203-cpi-memory-regression/README.md) | The experiment that produced the current candidate, with its final validation report. |
 | [suite/](suite/) | Validation runner, its configuration, and raw results (`suite/results/203-stream-*`). |
 | [tools/](tools/) | Harnesses and verifiers, including `verify_203_clone_evidence.py`. |
@@ -16,6 +16,8 @@ Start with the [root README](../README.md) and [REVIEW_GUIDE.md](../REVIEW_GUIDE
 | [analysis/203-startup-breakeven/](analysis/203-startup-breakeven/README.md) | Startup cost and break-even computed from the 203 raw captures. |
 | [experiments/204-public-api-parity/](experiments/204-public-api-parity/README.md) | Public-API comparison of the 203 candidate with the original. |
 | [experiments/205-reviewer-dataset-tooling/](experiments/205-reviewer-dataset-tooling/README.md) | Checks of the bring-your-own-dataset command described in [TESTING.md](../TESTING.md). |
+| [experiments/206-v15-88-country-benchmark/](experiments/206-v15-88-country-benchmark/README.md) | v15: 7.27 million open-data addresses from 88 countries, with the full per-country speed table. |
+| [analysis/v15-source-scout-2026-10-11/](analysis/v15-source-scout-2026-10-11/README.md) | Which open sources cover each of the 88 countries, and how many addresses each has. |
 
 ## Supporting history
 

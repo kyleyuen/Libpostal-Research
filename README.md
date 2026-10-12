@@ -8,6 +8,8 @@
 
 The one exception is the feature-printing debugging switch, which the optimized build refuses by design. These are finite inputs.
 
+On a separate, much larger test of 7,266,489 real addresses from 88 countries built from OpenAddresses and OpenStreetMap, the optimized build was 4.96× faster warm (every country between 3.83× and 6.17×), with byte-identical output, lower peak memory and one thread ([experiment 206](research/experiments/206-v15-88-country-benchmark/README.md)).
+
 The current candidate is called **203** (its experiment number). It builds on the **CPI** (component phrase IDs) design from experiment 119 and adds a streamed postcode-graph loader, so the full graph index and its compressed form are never resident at the same time during setup.
 
 ## Glossary
@@ -49,7 +51,7 @@ Upstream [libpostal](https://github.com/openvenues/libpostal) (MIT License, © 2
 - **Build configuration**: `-O2`, full LTO, PGO, an `-O1` tokenizer, and mimalloc ([BUILD.md](research/final/203-cpi-memory/BUILD.md)).
 - **Measurement and verification tooling**: the suite runner ([research/suite/](research/suite/)), the benchmark, dump and fuzz harnesses and verifiers in [research/tools/](research/tools/), and [benchmark/run.sh](benchmark/run.sh).
 - **Datasets and references**: the versioned test sets and frozen original outputs under [profiling/](profiling/).
-- **Experiment history**: 206 numbered experiments (000–205), including rejected ones, in the [experiment ledger](research/experiments/README.md).
+- **Experiment history**: 207 numbered experiments (000–206), including rejected ones, in the [experiment ledger](research/experiments/README.md).
 
 The speedup therefore combines source changes, compiler settings (LTO and PGO) and the allocator. It is not a purely algorithmic ratio.
 
@@ -78,6 +80,7 @@ The paired benchmark TSV has no header and each row is a lowercase two-letter co
 | Startup | Slower: 9.64 s vs 2.79 s median (+6.87 s). |
 | Peak memory | Lower peak physical footprint and lower peak RSS in all 42 paired runs. |
 | Threads | One parser thread in all 36 live samples. |
+| Large open-data test (v15) | 7,266,489 real addresses from 88 countries (OpenAddresses + OpenStreetMap): warm 4.96× (95% CI 4.81–5.12), every country 3.83×–6.17×; byte-identical; lower peak memory 3/3; one thread ([206](research/experiments/206-v15-88-country-benchmark/README.md)). |
 | Public API | 7 of 8 API families byte-identical on fresh builds (most on 4,356 addresses; toponym 189 pairs, lifecycle 200); feature printing refused by design ([204](research/experiments/204-public-api-parity/README.md)). |
 
 These checks passed on the 130,341 tested rows. Finite checks do not prove behavior for every possible input.
@@ -112,7 +115,7 @@ The optimized build therefore suits long-running services and large batch jobs. 
 | `profiling/` | Versioned datasets, annotations, and frozen output references. |
 | `research/final/203-cpi-memory/` | Current streamed CPI source, tested binaries, PGO profile, and build records. |
 | `research/final/119-cpi/` | Preserved pre-streaming CPI source and build records. |
-| `research/experiments/` | One directory per numbered experiment (000–205), indexed by the [ledger](research/experiments/README.md). |
+| `research/experiments/` | One directory per numbered experiment (000–206), indexed by the [ledger](research/experiments/README.md). |
 | `research/experiments/000-baseline/artifacts/` | Preserved original binaries. |
 | `research/suite/` and `research/tools/` | Validation runner, configurations, results, and helper scripts. |
 | `research/audits/`, `research/analysis/` | Independent audits of the 203 result and cross-experiment analyses. |
