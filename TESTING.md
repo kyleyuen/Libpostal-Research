@@ -22,6 +22,16 @@ Make a text file with one address per line, for example `v15.txt`. Any source wo
 
 The first run downloads libpostal and its model (about 810 MB) and builds both versions, which takes about 8 minutes of building plus the download. Later runs reuse the build. A full run on 2,555 addresses with `--api` took 17.6 minutes with the build already present; 5 of those minutes were spent waiting for a busy machine to quiet down. For a quick sanity check first, add `--quick`; for a 300-address file that took 3.6 minutes with the build already present.
 
+**How long a run takes** (measured on the M4 Pro, build already present):
+
+| Dataset | Command | Time |
+| --- | --- | --- |
+| 300 addresses | `--quick` | 3.6 min |
+| 2,555 addresses | full, with `--api` | 17.6 min, 5 of them waiting for a busy machine to settle |
+| 7,266,489 addresses (v15, [206](research/experiments/206-v15-88-country-benchmark/README.md)) | full, no `--api` | about 33 min: correctness 3, timing 20, memory and threads 11 |
+
+Small files still take several minutes, because timing runs enough passes to measure at least about 12 seconds per run. Start with `--quick` to check everything works, then do the full run. Closing other apps before the run gives steadier timings.
+
 Each run does the following, comparing the original libpostal with the optimized build on your file:
 
 - **Correctness**: parses every address with both builds and requires byte-identical output. It also runs two 2-million-input fuzz streams and a negative control that must detect a one-byte change.
@@ -55,7 +65,7 @@ Results go to `research/suite/results/<time>-v15/`:
 ## Reading the numbers fairly
 
 - Speedups are for warm parsing: model loaded, many passes. The optimized build starts about 7 seconds slower, so it only finishes sooner overall once one process parses a few hundred thousand addresses. The verdict reports this break-even for your data.
-- All published timings come from one Apple M4 Pro. Your machine will give different absolute numbers; the ratio is the comparison that matters.
+- All published timings come from one Apple M4 Pro. M1, M2 and M3 Macs have not been tested. Your µs per address will differ, and so may the speedup, because the build and its PGO profile were tuned on the M4 Pro. Compare the two builds on your own machine, which is what the verdict does; don't compare your numbers with the published ones.
 - PGO (profile-guided optimization) was trained on the repository's golden-v1 development addresses. Your own dataset was never used for tuning, so it is a fair out-of-sample test.
 - Byte-identical output on your file shows the two builds agree on those inputs. It does not prove agreement on every possible input.
 

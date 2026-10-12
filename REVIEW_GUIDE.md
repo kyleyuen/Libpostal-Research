@@ -22,6 +22,8 @@ Across 42 original/candidate pairs from 84 captures, candidate peak RSS and phys
 
 From the repository root, run `python3 research/tools/verify_203_clone_evidence.py` to verify the included source/package hashes, all 14 output pairs, timing records, paired memory deltas, and live thread samples. This checks preserved evidence; it does not rerun parsing or validate the external model files. The original dataset manifest can also be checked with `cd profiling && shasum -a 256 -c SHA256SUMS`; in a clone, exactly 6 entries fail because those files (`golden-v1/records.jsonl` and the `parser_profile` binaries and their debug symbols) are too large or binary for git. Their sizes and hashes are listed in `research/EXCLUDED_FILES.sha256`.
 
+A few frozen build records, such as `research/final/203-cpi-memory/BUILD.md` and `profiling/README.md`, name paths on the author's Mac (`/Users/kyle/.cache/...`). They record where the original build ran, and they are hash-pinned, so they were left unchanged. Nothing reads those paths: `benchmark/run.sh` builds everything in its own `WORK_DIR`. The PGO profile named in `BUILD.md` is committed as `research/final/203-cpi-memory/pgo/dev.profdata`, with the same SHA-256.
+
 - Promoted source and build identity: `research/final/203-cpi-memory/`.
 - Inputs and dataset provenance: `profiling/`, including `profiling/golden-v14-osm-unseen/`.
 - All 14 candidate output JSONLs: `research/suite/results/203-stream-output-v1/correctness/`; the 14 original JSONLs are in `research/suite/results/203-stream-output-v1/clone-evidence/original/`. `clone-evidence/manifest.json` maps each original cache to the candidate output and records rows and hashes.

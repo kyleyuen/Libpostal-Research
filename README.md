@@ -2,6 +2,8 @@
 
 **Result.** On one Apple Silicon Mac, the optimized build of libpostal's default address parser is 5.5–6.1× faster than the original once it is loaded (warm parsing). That is on one thread. The original target was 3.5×. Output is byte-identical on all 130,341 tested rows (14 datasets). Peak memory is lower in all 42 paired runs.
 
+**Tested on 7.27 million real addresses from 88 countries.** The largest test used 7,266,489 addresses from OpenAddresses and OpenStreetMap, up to 100,000 per country. The optimized build was **4.96× faster** warm (95% CI 4.81–5.12), and **every one of the 88 countries was above the 3.5× target** (3.83× to 6.17×). Output was byte-identical on every address, peak memory was lower, and it ran on one thread ([experiment 206](research/experiments/206-v15-88-country-benchmark/README.md)).
+
 The cost is startup. Loading takes about 6.9 s longer (9.64 s vs 2.79 s median). So the optimized build only finishes sooner overall once one process parses roughly 260,000–550,000 addresses (see [Startup cost](#startup-cost)).
 
 I also compared the public API on fresh builds. Every family except one gave byte-identical results ([experiment 204](research/experiments/204-public-api-parity/README.md)):
@@ -11,8 +13,6 @@ I also compared the public API on fresh builds. Every family except one gave byt
 - The toponym check: compared on 189 address pairs, until upstream libpostal crashed identically in both builds.
 
 The one exception is the feature-printing debugging switch. The optimized build refuses it by design. These inputs are finite.
-
-A separate, much larger test used 7,266,489 real addresses from 88 countries, built from OpenAddresses and OpenStreetMap. The optimized build was 4.96× faster warm, and every country fell between 3.83× and 6.17×. Output was byte-identical, peak memory was lower, and it ran on one thread ([experiment 206](research/experiments/206-v15-88-country-benchmark/README.md)).
 
 The current candidate is called **203**, which is its experiment number. It builds on the **CPI** (component phrase IDs) design from experiment 119. It adds a streamed postcode-graph loader, so the full graph index and its compressed form are never in memory at the same time during setup.
 
@@ -49,7 +49,7 @@ For a guided review, follow [REVIEW_GUIDE.md](REVIEW_GUIDE.md). The [promoted 20
 
 ## What this project changed vs upstream libpostal
 
-Upstream [libpostal](https://github.com/openvenues/libpostal) (MIT License, © 2015 openvenues; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)) is not vendored. Setup fetches it at commit `25099c506612b34b23b1bfe286ca6321fcf06f35`. This project's own work is:
+Upstream [libpostal](https://github.com/openvenues/libpostal) (MIT License, © 2015 openvenues; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)) is not vendored. Setup fetches it at commit `25099c506612b34b23b1bfe286ca6321fcf06f35`. This project's own work is under the MIT License ([LICENSE](LICENSE)) and is:
 
 - **Parser source changes** are in [research/final/203-cpi-memory/sources/](research/final/203-cpi-memory/sources/). Twelve upstream files are modified: +2,627 / −54 lines against the pinned commit. The biggest are `address_parser.c` (+927), `crf.c` (+896), `trie_search.c` (+228) and `features.c` (+195). There are also three new headers (`feature_dict.h`, `stream_postcode_graph.h`, `fa_nb.h`; 654 lines). `tokens.c` is carried unchanged. Most changes sit behind the `EXP_*` compile switches in [BUILD_SWITCHES.txt](research/final/203-cpi-memory/BUILD_SWITCHES.txt).
 - **Build configuration** is `-O2`, full LTO, PGO, an `-O1` tokenizer, and mimalloc ([BUILD.md](research/final/203-cpi-memory/BUILD.md)).
