@@ -88,7 +88,7 @@ Timing used three rounds, with at least 10 seconds of parsing per capture: 200 p
 
 The promoted 203 build uses Apple Clang 17, `-O2`, full LTO, an `-O1` tokenizer, mimalloc 3, and the whole-library PGO profile trained on golden-v1 development data. The profile is committed as [pgo/dev.profdata](research/final/203-cpi-memory/pgo/dev.profdata). Model data is libpostal v1.0.0. Setup checks it against recorded SHA-256 hashes.
 
-Machine: Apple M4 Pro (Mac16,8), 28,160 MB memory, macOS 26.5.2, Apple Clang 17.0.0, Python 3.14.4. All timing comes from this one machine; other Apple Silicon generations are untested. See [SETUP.md](SETUP.md) and the [203 build record](research/final/203-cpi-memory/BUILD.md).
+Machine: MacBook Pro, Apple M4 Pro (Mac16,8), 12 cores (8 performance, 4 efficiency), 24 GB memory, macOS 26.5.2, Apple Clang 17.0.0, Python 3.14.4. All timing comes from this one machine; other Apple Silicon generations are untested. See [SETUP.md](SETUP.md) and the [203 build record](research/final/203-cpi-memory/BUILD.md).
 
 ## Data and file formats
 
